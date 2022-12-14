@@ -1,0 +1,56 @@
+name: Routine submodule updates
+on:
+  schedule:
+    - cron: '0 9 * * *' # once a day at 9 am runs
+  push: 
+    branches:
+      - 'main'
+jobs:
+  update_submodules:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository and submodules
+      uses: actions/checkout@v2
+      with:
+        submodules: recursive
+    - name: List files in the repository (Useful for debugging)
+      run: |
+        tree ${{ github.workspace }}
+    - name: setup python
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.10.6 #install the python needed
+    - name: Install requirements
+      run: |
+        pip install -r requirements.txt        
+    - name: Run column name check and export to docs
+      run: |
+        python test_columns.py 
+    - name: Run file extension test and export to docs
+      run: |
+        python test_file_ext.py
+    - name: Commit the results
+      run: |
+        git config --local user.name "robot"
+        git add -A
+        git commit -m "auto submodule updates"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
+    - name: Remove github things # Required so that you can push to another directory
+      run: |
+        rm -rf .git
+    - name: Remove github submodules # Required so that you can push to another directory
+      run: |
+        rm .gitmodules
+    - name: Push directory to another repository
+      uses: cpina/github-action-push-to-another-repository@main
+      env:
+        SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+      with:
+        source-directory: .
+        destination-github-username: 'uva-bi-sdad'
+        destination-repository-name: 'sdc.all'
+        target-branch: main
