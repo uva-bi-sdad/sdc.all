@@ -1,0 +1,19 @@
+{
+  "category": "Broadband",
+  "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
+  "full_name": "percent_above_threshold:perc_total_100_20_using_devices",
+  "measure": "perc_total_100_20_using_devices",
+  "short_name": "Percent Fast (total)",
+  "long_name": "Percent of the Total Population with Fast Internet Speed",
+  "short_description": "Percent of the total population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
+  "statement": "{value} of the total population in {features.name} has a fast internet speed.",
+  "type": "percent",
+  "equity_category": "Availability",
+  "sources": [
+    {
+      "name": "Ookla",
+      "date_accessed": 2021,
+      "url": "https://www.ookla.com/ookla-for-good/open-data"
+    }
+  ]
+}

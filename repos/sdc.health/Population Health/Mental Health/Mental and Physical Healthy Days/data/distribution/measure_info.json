@@ -1,0 +1,42 @@
+{
+    "perc_poor_ment_hlth_days_14_and_over": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_poor_ment_hlth_days_14_and_over",
+        "measure_table": "dc_health_behavior_diet.ncr_trct_sdad_2015_2019_brfss_sae.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "prevalence estimate"
+    },
+    "perc_poor_phys_hlth_days_14_and_over": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_poor_phys_hlth_days_14_and_over",
+        "measure_table": "dc_health_behavior_diet.ncr_trct_sdad_2015_2019_brfss_sae.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "prevalence estimate"
+    }
+}

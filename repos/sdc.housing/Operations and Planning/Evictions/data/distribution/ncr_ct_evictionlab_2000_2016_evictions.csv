@@ -1,0 +1,477 @@
+geoid,region_type,region_name,year,measure,value,measure_type
+11001,county,District of Columbia,2000,eviction-filings,0,count
+11001,county,District of Columbia,2001,eviction-filings,0,count
+11001,county,District of Columbia,2002,eviction-filings,0,count
+11001,county,District of Columbia,2003,eviction-filings,0,count
+11001,county,District of Columbia,2004,eviction-filings,0,count
+11001,county,District of Columbia,2005,eviction-filings,0,count
+11001,county,District of Columbia,2006,eviction-filings,45213,count
+11001,county,District of Columbia,2007,eviction-filings,45256,count
+11001,county,District of Columbia,2008,eviction-filings,43502,count
+11001,county,District of Columbia,2009,eviction-filings,37286,count
+11001,county,District of Columbia,2010,eviction-filings,32473,count
+11001,county,District of Columbia,2011,eviction-filings,30733,count
+11001,county,District of Columbia,2012,eviction-filings,29121,count
+11001,county,District of Columbia,2013,eviction-filings,0,count
+11001,county,District of Columbia,2014,eviction-filings,0,count
+11001,county,District of Columbia,2015,eviction-filings,0,count
+11001,county,District of Columbia,2016,eviction-filings,27434,count
+24017,county,"Charles County, Maryland",2000,eviction-filings,0,count
+24017,county,"Charles County, Maryland",2001,eviction-filings,0,count
+24017,county,"Charles County, Maryland",2002,eviction-filings,0,count
+24017,county,"Charles County, Maryland",2003,eviction-filings,0,count
+24017,county,"Charles County, Maryland",2004,eviction-filings,0,count
+24017,county,"Charles County, Maryland",2005,eviction-filings,0,count
+24017,county,"Charles County, Maryland",2006,eviction-filings,2509,count
+24017,county,"Charles County, Maryland",2007,eviction-filings,1578,count
+24017,county,"Charles County, Maryland",2008,eviction-filings,0,count
+24017,county,"Charles County, Maryland",2009,eviction-filings,0,count
+24017,county,"Charles County, Maryland",2010,eviction-filings,0,count
+24017,county,"Charles County, Maryland",2011,eviction-filings,0,count
+24017,county,"Charles County, Maryland",2012,eviction-filings,0,count
+24017,county,"Charles County, Maryland",2013,eviction-filings,0,count
+24017,county,"Charles County, Maryland",2014,eviction-filings,0,count
+24017,county,"Charles County, Maryland",2015,eviction-filings,0,count
+24017,county,"Charles County, Maryland",2016,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2000,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2001,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2002,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2003,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2004,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2005,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2006,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2007,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2008,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2009,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2010,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2011,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2012,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2013,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2014,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2015,eviction-filings,0,count
+24021,county,"Frederick County, Maryland",2016,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2000,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2001,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2002,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2003,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2004,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2005,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2006,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2007,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2008,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2009,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2010,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2011,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2012,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2013,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2014,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2015,eviction-filings,0,count
+24031,county,"Montgomery County, Maryland",2016,eviction-filings,0,count
+24033,county,"Prince George's County, Maryland",2000,eviction-filings,0,count
+24033,county,"Prince George's County, Maryland",2001,eviction-filings,0,count
+24033,county,"Prince George's County, Maryland",2002,eviction-filings,0,count
+24033,county,"Prince George's County, Maryland",2003,eviction-filings,0,count
+24033,county,"Prince George's County, Maryland",2004,eviction-filings,0,count
+24033,county,"Prince George's County, Maryland",2005,eviction-filings,0,count
+24033,county,"Prince George's County, Maryland",2006,eviction-filings,0,count
+24033,county,"Prince George's County, Maryland",2007,eviction-filings,0,count
+24033,county,"Prince George's County, Maryland",2008,eviction-filings,0,count
+24033,county,"Prince George's County, Maryland",2009,eviction-filings,72442,count
+24033,county,"Prince George's County, Maryland",2010,eviction-filings,128501,count
+24033,county,"Prince George's County, Maryland",2011,eviction-filings,129901,count
+24033,county,"Prince George's County, Maryland",2012,eviction-filings,129865,count
+24033,county,"Prince George's County, Maryland",2013,eviction-filings,135369,count
+24033,county,"Prince George's County, Maryland",2014,eviction-filings,143753,count
+24033,county,"Prince George's County, Maryland",2015,eviction-filings,132827,count
+24033,county,"Prince George's County, Maryland",2016,eviction-filings,136730,count
+51013,county,"Arlington County, Virginia",2000,eviction-filings,0,count
+51013,county,"Arlington County, Virginia",2001,eviction-filings,2138,count
+51013,county,"Arlington County, Virginia",2002,eviction-filings,2004,count
+51013,county,"Arlington County, Virginia",2003,eviction-filings,1972,count
+51013,county,"Arlington County, Virginia",2004,eviction-filings,2190,count
+51013,county,"Arlington County, Virginia",2005,eviction-filings,1768,count
+51013,county,"Arlington County, Virginia",2006,eviction-filings,1800,count
+51013,county,"Arlington County, Virginia",2007,eviction-filings,0,count
+51013,county,"Arlington County, Virginia",2008,eviction-filings,0,count
+51013,county,"Arlington County, Virginia",2009,eviction-filings,0,count
+51013,county,"Arlington County, Virginia",2010,eviction-filings,0,count
+51013,county,"Arlington County, Virginia",2011,eviction-filings,0,count
+51013,county,"Arlington County, Virginia",2012,eviction-filings,0,count
+51013,county,"Arlington County, Virginia",2013,eviction-filings,0,count
+51013,county,"Arlington County, Virginia",2014,eviction-filings,0,count
+51013,county,"Arlington County, Virginia",2015,eviction-filings,1497,count
+51013,county,"Arlington County, Virginia",2016,eviction-filings,1724,count
+51059,county,"Fairfax County, Virginia",2000,eviction-filings,0,count
+51059,county,"Fairfax County, Virginia",2001,eviction-filings,0,count
+51059,county,"Fairfax County, Virginia",2002,eviction-filings,0,count
+51059,county,"Fairfax County, Virginia",2003,eviction-filings,2356,count
+51059,county,"Fairfax County, Virginia",2004,eviction-filings,4478,count
+51059,county,"Fairfax County, Virginia",2005,eviction-filings,6469,count
+51059,county,"Fairfax County, Virginia",2006,eviction-filings,7946,count
+51059,county,"Fairfax County, Virginia",2007,eviction-filings,0,count
+51059,county,"Fairfax County, Virginia",2008,eviction-filings,0,count
+51059,county,"Fairfax County, Virginia",2009,eviction-filings,0,count
+51059,county,"Fairfax County, Virginia",2010,eviction-filings,0,count
+51059,county,"Fairfax County, Virginia",2011,eviction-filings,7655,count
+51059,county,"Fairfax County, Virginia",2012,eviction-filings,7064,count
+51059,county,"Fairfax County, Virginia",2013,eviction-filings,7018,count
+51059,county,"Fairfax County, Virginia",2014,eviction-filings,6253,count
+51059,county,"Fairfax County, Virginia",2015,eviction-filings,5950,count
+51059,county,"Fairfax County, Virginia",2016,eviction-filings,7050,count
+51107,county,"Loudoun County, Virginia",2000,eviction-filings,0,count
+51107,county,"Loudoun County, Virginia",2001,eviction-filings,0,count
+51107,county,"Loudoun County, Virginia",2002,eviction-filings,839,count
+51107,county,"Loudoun County, Virginia",2003,eviction-filings,1176,count
+51107,county,"Loudoun County, Virginia",2004,eviction-filings,1533,count
+51107,county,"Loudoun County, Virginia",2005,eviction-filings,1445,count
+51107,county,"Loudoun County, Virginia",2006,eviction-filings,1649,count
+51107,county,"Loudoun County, Virginia",2007,eviction-filings,925,count
+51107,county,"Loudoun County, Virginia",2008,eviction-filings,1195,count
+51107,county,"Loudoun County, Virginia",2009,eviction-filings,1008,count
+51107,county,"Loudoun County, Virginia",2010,eviction-filings,1441,count
+51107,county,"Loudoun County, Virginia",2011,eviction-filings,1432,count
+51107,county,"Loudoun County, Virginia",2012,eviction-filings,1567,count
+51107,county,"Loudoun County, Virginia",2013,eviction-filings,1858,count
+51107,county,"Loudoun County, Virginia",2014,eviction-filings,1541,count
+51107,county,"Loudoun County, Virginia",2015,eviction-filings,1362,count
+51107,county,"Loudoun County, Virginia",2016,eviction-filings,1544,count
+51153,county,"Prince William County, Virginia",2000,eviction-filings,1635,count
+51153,county,"Prince William County, Virginia",2001,eviction-filings,1776,count
+51153,county,"Prince William County, Virginia",2002,eviction-filings,3236,count
+51153,county,"Prince William County, Virginia",2003,eviction-filings,3554,count
+51153,county,"Prince William County, Virginia",2004,eviction-filings,4809,count
+51153,county,"Prince William County, Virginia",2005,eviction-filings,5257,count
+51153,county,"Prince William County, Virginia",2006,eviction-filings,5807,count
+51153,county,"Prince William County, Virginia",2007,eviction-filings,3363,count
+51153,county,"Prince William County, Virginia",2008,eviction-filings,3766,count
+51153,county,"Prince William County, Virginia",2009,eviction-filings,2802,count
+51153,county,"Prince William County, Virginia",2010,eviction-filings,2961,count
+51153,county,"Prince William County, Virginia",2011,eviction-filings,3571,count
+51153,county,"Prince William County, Virginia",2012,eviction-filings,4417,count
+51153,county,"Prince William County, Virginia",2013,eviction-filings,4621,count
+51153,county,"Prince William County, Virginia",2014,eviction-filings,4580,count
+51153,county,"Prince William County, Virginia",2015,eviction-filings,4392,count
+51153,county,"Prince William County, Virginia",2016,eviction-filings,4875,count
+51510,county,"Alexandria city, Virginia",2000,eviction-filings,1048,count
+51510,county,"Alexandria city, Virginia",2001,eviction-filings,1068,count
+51510,county,"Alexandria city, Virginia",2002,eviction-filings,3365,count
+51510,county,"Alexandria city, Virginia",2003,eviction-filings,3246,count
+51510,county,"Alexandria city, Virginia",2004,eviction-filings,3505,count
+51510,county,"Alexandria city, Virginia",2005,eviction-filings,3580,count
+51510,county,"Alexandria city, Virginia",2006,eviction-filings,3188,count
+51510,county,"Alexandria city, Virginia",2007,eviction-filings,0,count
+51510,county,"Alexandria city, Virginia",2008,eviction-filings,0,count
+51510,county,"Alexandria city, Virginia",2009,eviction-filings,0,count
+51510,county,"Alexandria city, Virginia",2010,eviction-filings,0,count
+51510,county,"Alexandria city, Virginia",2011,eviction-filings,0,count
+51510,county,"Alexandria city, Virginia",2012,eviction-filings,0,count
+51510,county,"Alexandria city, Virginia",2013,eviction-filings,0,count
+51510,county,"Alexandria city, Virginia",2014,eviction-filings,0,count
+51510,county,"Alexandria city, Virginia",2015,eviction-filings,0,count
+51510,county,"Alexandria city, Virginia",2016,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2000,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2001,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2002,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2003,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2004,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2005,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2006,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2007,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2008,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2009,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2010,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2011,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2012,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2013,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2014,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2015,eviction-filings,0,count
+51600,county,"Fairfax city, Virginia",2016,eviction-filings,0,count
+51610,county,"Falls Church city, Virginia",2000,eviction-filings,22,count
+51610,county,"Falls Church city, Virginia",2001,eviction-filings,34,count
+51610,county,"Falls Church city, Virginia",2002,eviction-filings,21,count
+51610,county,"Falls Church city, Virginia",2003,eviction-filings,22,count
+51610,county,"Falls Church city, Virginia",2004,eviction-filings,46,count
+51610,county,"Falls Church city, Virginia",2005,eviction-filings,58,count
+51610,county,"Falls Church city, Virginia",2006,eviction-filings,49,count
+51610,county,"Falls Church city, Virginia",2007,eviction-filings,31,count
+51610,county,"Falls Church city, Virginia",2008,eviction-filings,24,count
+51610,county,"Falls Church city, Virginia",2009,eviction-filings,32,count
+51610,county,"Falls Church city, Virginia",2010,eviction-filings,20,count
+51610,county,"Falls Church city, Virginia",2011,eviction-filings,21,count
+51610,county,"Falls Church city, Virginia",2012,eviction-filings,0,count
+51610,county,"Falls Church city, Virginia",2013,eviction-filings,0,count
+51610,county,"Falls Church city, Virginia",2014,eviction-filings,0,count
+51610,county,"Falls Church city, Virginia",2015,eviction-filings,0,count
+51610,county,"Falls Church city, Virginia",2016,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2000,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2001,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2002,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2003,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2004,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2005,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2006,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2007,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2008,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2009,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2010,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2011,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2012,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2013,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2014,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2015,eviction-filings,0,count
+51683,county,"Manassas city, Virginia",2016,eviction-filings,0,count
+51685,county,"Manassas Park city, Virginia",2000,eviction-filings,39,count
+51685,county,"Manassas Park city, Virginia",2001,eviction-filings,34,count
+51685,county,"Manassas Park city, Virginia",2002,eviction-filings,73,count
+51685,county,"Manassas Park city, Virginia",2003,eviction-filings,54,count
+51685,county,"Manassas Park city, Virginia",2004,eviction-filings,66,count
+51685,county,"Manassas Park city, Virginia",2005,eviction-filings,103,count
+51685,county,"Manassas Park city, Virginia",2006,eviction-filings,113,count
+51685,county,"Manassas Park city, Virginia",2007,eviction-filings,119,count
+51685,county,"Manassas Park city, Virginia",2008,eviction-filings,133,count
+51685,county,"Manassas Park city, Virginia",2009,eviction-filings,90,count
+51685,county,"Manassas Park city, Virginia",2010,eviction-filings,91,count
+51685,county,"Manassas Park city, Virginia",2011,eviction-filings,124,count
+51685,county,"Manassas Park city, Virginia",2012,eviction-filings,152,count
+51685,county,"Manassas Park city, Virginia",2013,eviction-filings,214,count
+51685,county,"Manassas Park city, Virginia",2014,eviction-filings,141,count
+51685,county,"Manassas Park city, Virginia",2015,eviction-filings,118,count
+51685,county,"Manassas Park city, Virginia",2016,eviction-filings,121,count
+11001,county,District of Columbia,2000,evictions,0,count
+11001,county,District of Columbia,2001,evictions,0,count
+11001,county,District of Columbia,2002,evictions,0,count
+11001,county,District of Columbia,2003,evictions,0,count
+11001,county,District of Columbia,2004,evictions,0,count
+11001,county,District of Columbia,2005,evictions,0,count
+11001,county,District of Columbia,2006,evictions,1336,count
+11001,county,District of Columbia,2007,evictions,1048,count
+11001,county,District of Columbia,2008,evictions,1466,count
+11001,county,District of Columbia,2009,evictions,1503,count
+11001,county,District of Columbia,2010,evictions,1572,count
+11001,county,District of Columbia,2011,evictions,1484,count
+11001,county,District of Columbia,2012,evictions,1531,count
+11001,county,District of Columbia,2013,evictions,0,count
+11001,county,District of Columbia,2014,evictions,0,count
+11001,county,District of Columbia,2015,evictions,0,count
+11001,county,District of Columbia,2016,evictions,4537,count
+24017,county,"Charles County, Maryland",2000,evictions,0,count
+24017,county,"Charles County, Maryland",2001,evictions,0,count
+24017,county,"Charles County, Maryland",2002,evictions,0,count
+24017,county,"Charles County, Maryland",2003,evictions,0,count
+24017,county,"Charles County, Maryland",2004,evictions,0,count
+24017,county,"Charles County, Maryland",2005,evictions,0,count
+24017,county,"Charles County, Maryland",2006,evictions,764,count
+24017,county,"Charles County, Maryland",2007,evictions,899,count
+24017,county,"Charles County, Maryland",2008,evictions,0,count
+24017,county,"Charles County, Maryland",2009,evictions,0,count
+24017,county,"Charles County, Maryland",2010,evictions,0,count
+24017,county,"Charles County, Maryland",2011,evictions,0,count
+24017,county,"Charles County, Maryland",2012,evictions,0,count
+24017,county,"Charles County, Maryland",2013,evictions,0,count
+24017,county,"Charles County, Maryland",2014,evictions,0,count
+24017,county,"Charles County, Maryland",2015,evictions,0,count
+24017,county,"Charles County, Maryland",2016,evictions,0,count
+24021,county,"Frederick County, Maryland",2000,evictions,0,count
+24021,county,"Frederick County, Maryland",2001,evictions,0,count
+24021,county,"Frederick County, Maryland",2002,evictions,0,count
+24021,county,"Frederick County, Maryland",2003,evictions,0,count
+24021,county,"Frederick County, Maryland",2004,evictions,0,count
+24021,county,"Frederick County, Maryland",2005,evictions,0,count
+24021,county,"Frederick County, Maryland",2006,evictions,0,count
+24021,county,"Frederick County, Maryland",2007,evictions,0,count
+24021,county,"Frederick County, Maryland",2008,evictions,0,count
+24021,county,"Frederick County, Maryland",2009,evictions,0,count
+24021,county,"Frederick County, Maryland",2010,evictions,0,count
+24021,county,"Frederick County, Maryland",2011,evictions,0,count
+24021,county,"Frederick County, Maryland",2012,evictions,0,count
+24021,county,"Frederick County, Maryland",2013,evictions,0,count
+24021,county,"Frederick County, Maryland",2014,evictions,0,count
+24021,county,"Frederick County, Maryland",2015,evictions,0,count
+24021,county,"Frederick County, Maryland",2016,evictions,0,count
+24031,county,"Montgomery County, Maryland",2000,evictions,0,count
+24031,county,"Montgomery County, Maryland",2001,evictions,0,count
+24031,county,"Montgomery County, Maryland",2002,evictions,0,count
+24031,county,"Montgomery County, Maryland",2003,evictions,0,count
+24031,county,"Montgomery County, Maryland",2004,evictions,0,count
+24031,county,"Montgomery County, Maryland",2005,evictions,0,count
+24031,county,"Montgomery County, Maryland",2006,evictions,0,count
+24031,county,"Montgomery County, Maryland",2007,evictions,0,count
+24031,county,"Montgomery County, Maryland",2008,evictions,0,count
+24031,county,"Montgomery County, Maryland",2009,evictions,0,count
+24031,county,"Montgomery County, Maryland",2010,evictions,0,count
+24031,county,"Montgomery County, Maryland",2011,evictions,0,count
+24031,county,"Montgomery County, Maryland",2012,evictions,0,count
+24031,county,"Montgomery County, Maryland",2013,evictions,0,count
+24031,county,"Montgomery County, Maryland",2014,evictions,0,count
+24031,county,"Montgomery County, Maryland",2015,evictions,0,count
+24031,county,"Montgomery County, Maryland",2016,evictions,0,count
+24033,county,"Prince George's County, Maryland",2000,evictions,0,count
+24033,county,"Prince George's County, Maryland",2001,evictions,0,count
+24033,county,"Prince George's County, Maryland",2002,evictions,0,count
+24033,county,"Prince George's County, Maryland",2003,evictions,0,count
+24033,county,"Prince George's County, Maryland",2004,evictions,0,count
+24033,county,"Prince George's County, Maryland",2005,evictions,0,count
+24033,county,"Prince George's County, Maryland",2006,evictions,0,count
+24033,county,"Prince George's County, Maryland",2007,evictions,0,count
+24033,county,"Prince George's County, Maryland",2008,evictions,0,count
+24033,county,"Prince George's County, Maryland",2009,evictions,980,count
+24033,county,"Prince George's County, Maryland",2010,evictions,1936,count
+24033,county,"Prince George's County, Maryland",2011,evictions,1317,count
+24033,county,"Prince George's County, Maryland",2012,evictions,4905,count
+24033,county,"Prince George's County, Maryland",2013,evictions,1105,count
+24033,county,"Prince George's County, Maryland",2014,evictions,2704,count
+24033,county,"Prince George's County, Maryland",2015,evictions,3110,count
+24033,county,"Prince George's County, Maryland",2016,evictions,4684,count
+51013,county,"Arlington County, Virginia",2000,evictions,0,count
+51013,county,"Arlington County, Virginia",2001,evictions,1131,count
+51013,county,"Arlington County, Virginia",2002,evictions,1128,count
+51013,county,"Arlington County, Virginia",2003,evictions,1123,count
+51013,county,"Arlington County, Virginia",2004,evictions,763,count
+51013,county,"Arlington County, Virginia",2005,evictions,612,count
+51013,county,"Arlington County, Virginia",2006,evictions,575,count
+51013,county,"Arlington County, Virginia",2007,evictions,0,count
+51013,county,"Arlington County, Virginia",2008,evictions,0,count
+51013,county,"Arlington County, Virginia",2009,evictions,0,count
+51013,county,"Arlington County, Virginia",2010,evictions,0,count
+51013,county,"Arlington County, Virginia",2011,evictions,0,count
+51013,county,"Arlington County, Virginia",2012,evictions,0,count
+51013,county,"Arlington County, Virginia",2013,evictions,0,count
+51013,county,"Arlington County, Virginia",2014,evictions,0,count
+51013,county,"Arlington County, Virginia",2015,evictions,487,count
+51013,county,"Arlington County, Virginia",2016,evictions,535,count
+51059,county,"Fairfax County, Virginia",2000,evictions,0,count
+51059,county,"Fairfax County, Virginia",2001,evictions,0,count
+51059,county,"Fairfax County, Virginia",2002,evictions,0,count
+51059,county,"Fairfax County, Virginia",2003,evictions,1671,count
+51059,county,"Fairfax County, Virginia",2004,evictions,3414,count
+51059,county,"Fairfax County, Virginia",2005,evictions,1717,count
+51059,county,"Fairfax County, Virginia",2006,evictions,1871,count
+51059,county,"Fairfax County, Virginia",2007,evictions,0,count
+51059,county,"Fairfax County, Virginia",2008,evictions,0,count
+51059,county,"Fairfax County, Virginia",2009,evictions,0,count
+51059,county,"Fairfax County, Virginia",2010,evictions,0,count
+51059,county,"Fairfax County, Virginia",2011,evictions,2132,count
+51059,county,"Fairfax County, Virginia",2012,evictions,1865,count
+51059,county,"Fairfax County, Virginia",2013,evictions,1823,count
+51059,county,"Fairfax County, Virginia",2014,evictions,1917,count
+51059,county,"Fairfax County, Virginia",2015,evictions,1729,count
+51059,county,"Fairfax County, Virginia",2016,evictions,2438,count
+51107,county,"Loudoun County, Virginia",2000,evictions,0,count
+51107,county,"Loudoun County, Virginia",2001,evictions,0,count
+51107,county,"Loudoun County, Virginia",2002,evictions,308,count
+51107,county,"Loudoun County, Virginia",2003,evictions,469,count
+51107,county,"Loudoun County, Virginia",2004,evictions,551,count
+51107,county,"Loudoun County, Virginia",2005,evictions,537,count
+51107,county,"Loudoun County, Virginia",2006,evictions,590,count
+51107,county,"Loudoun County, Virginia",2007,evictions,700,count
+51107,county,"Loudoun County, Virginia",2008,evictions,1063,count
+51107,county,"Loudoun County, Virginia",2009,evictions,871,count
+51107,county,"Loudoun County, Virginia",2010,evictions,745,count
+51107,county,"Loudoun County, Virginia",2011,evictions,567,count
+51107,county,"Loudoun County, Virginia",2012,evictions,595,count
+51107,county,"Loudoun County, Virginia",2013,evictions,621,count
+51107,county,"Loudoun County, Virginia",2014,evictions,508,count
+51107,county,"Loudoun County, Virginia",2015,evictions,525,count
+51107,county,"Loudoun County, Virginia",2016,evictions,482,count
+51153,county,"Prince William County, Virginia",2000,evictions,1376,count
+51153,county,"Prince William County, Virginia",2001,evictions,1341,count
+51153,county,"Prince William County, Virginia",2002,evictions,1238,count
+51153,county,"Prince William County, Virginia",2003,evictions,1427,count
+51153,county,"Prince William County, Virginia",2004,evictions,1644,count
+51153,county,"Prince William County, Virginia",2005,evictions,1725,count
+51153,county,"Prince William County, Virginia",2006,evictions,1862,count
+51153,county,"Prince William County, Virginia",2007,evictions,2328,count
+51153,county,"Prince William County, Virginia",2008,evictions,3233,count
+51153,county,"Prince William County, Virginia",2009,evictions,2305,count
+51153,county,"Prince William County, Virginia",2010,evictions,1694,count
+51153,county,"Prince William County, Virginia",2011,evictions,1842,count
+51153,county,"Prince William County, Virginia",2012,evictions,1708,count
+51153,county,"Prince William County, Virginia",2013,evictions,1542,count
+51153,county,"Prince William County, Virginia",2014,evictions,1595,count
+51153,county,"Prince William County, Virginia",2015,evictions,1591,count
+51153,county,"Prince William County, Virginia",2016,evictions,1652,count
+51510,county,"Alexandria city, Virginia",2000,evictions,769,count
+51510,county,"Alexandria city, Virginia",2001,evictions,572,count
+51510,county,"Alexandria city, Virginia",2002,evictions,816,count
+51510,county,"Alexandria city, Virginia",2003,evictions,910,count
+51510,county,"Alexandria city, Virginia",2004,evictions,883,count
+51510,county,"Alexandria city, Virginia",2005,evictions,930,count
+51510,county,"Alexandria city, Virginia",2006,evictions,817,count
+51510,county,"Alexandria city, Virginia",2007,evictions,0,count
+51510,county,"Alexandria city, Virginia",2008,evictions,0,count
+51510,county,"Alexandria city, Virginia",2009,evictions,0,count
+51510,county,"Alexandria city, Virginia",2010,evictions,0,count
+51510,county,"Alexandria city, Virginia",2011,evictions,0,count
+51510,county,"Alexandria city, Virginia",2012,evictions,0,count
+51510,county,"Alexandria city, Virginia",2013,evictions,0,count
+51510,county,"Alexandria city, Virginia",2014,evictions,0,count
+51510,county,"Alexandria city, Virginia",2015,evictions,0,count
+51510,county,"Alexandria city, Virginia",2016,evictions,0,count
+51600,county,"Fairfax city, Virginia",2000,evictions,0,count
+51600,county,"Fairfax city, Virginia",2001,evictions,0,count
+51600,county,"Fairfax city, Virginia",2002,evictions,0,count
+51600,county,"Fairfax city, Virginia",2003,evictions,0,count
+51600,county,"Fairfax city, Virginia",2004,evictions,0,count
+51600,county,"Fairfax city, Virginia",2005,evictions,0,count
+51600,county,"Fairfax city, Virginia",2006,evictions,0,count
+51600,county,"Fairfax city, Virginia",2007,evictions,0,count
+51600,county,"Fairfax city, Virginia",2008,evictions,0,count
+51600,county,"Fairfax city, Virginia",2009,evictions,0,count
+51600,county,"Fairfax city, Virginia",2010,evictions,0,count
+51600,county,"Fairfax city, Virginia",2011,evictions,0,count
+51600,county,"Fairfax city, Virginia",2012,evictions,0,count
+51600,county,"Fairfax city, Virginia",2013,evictions,0,count
+51600,county,"Fairfax city, Virginia",2014,evictions,0,count
+51600,county,"Fairfax city, Virginia",2015,evictions,0,count
+51600,county,"Fairfax city, Virginia",2016,evictions,0,count
+51610,county,"Falls Church city, Virginia",2000,evictions,21,count
+51610,county,"Falls Church city, Virginia",2001,evictions,23,count
+51610,county,"Falls Church city, Virginia",2002,evictions,11,count
+51610,county,"Falls Church city, Virginia",2003,evictions,16,count
+51610,county,"Falls Church city, Virginia",2004,evictions,18,count
+51610,county,"Falls Church city, Virginia",2005,evictions,20,count
+51610,county,"Falls Church city, Virginia",2006,evictions,14,count
+51610,county,"Falls Church city, Virginia",2007,evictions,17,count
+51610,county,"Falls Church city, Virginia",2008,evictions,19,count
+51610,county,"Falls Church city, Virginia",2009,evictions,25,count
+51610,county,"Falls Church city, Virginia",2010,evictions,17,count
+51610,county,"Falls Church city, Virginia",2011,evictions,8,count
+51610,county,"Falls Church city, Virginia",2012,evictions,0,count
+51610,county,"Falls Church city, Virginia",2013,evictions,0,count
+51610,county,"Falls Church city, Virginia",2014,evictions,0,count
+51610,county,"Falls Church city, Virginia",2015,evictions,0,count
+51610,county,"Falls Church city, Virginia",2016,evictions,0,count
+51683,county,"Manassas city, Virginia",2000,evictions,0,count
+51683,county,"Manassas city, Virginia",2001,evictions,0,count
+51683,county,"Manassas city, Virginia",2002,evictions,0,count
+51683,county,"Manassas city, Virginia",2003,evictions,0,count
+51683,county,"Manassas city, Virginia",2004,evictions,0,count
+51683,county,"Manassas city, Virginia",2005,evictions,0,count
+51683,county,"Manassas city, Virginia",2006,evictions,0,count
+51683,county,"Manassas city, Virginia",2007,evictions,0,count
+51683,county,"Manassas city, Virginia",2008,evictions,0,count
+51683,county,"Manassas city, Virginia",2009,evictions,0,count
+51683,county,"Manassas city, Virginia",2010,evictions,0,count
+51683,county,"Manassas city, Virginia",2011,evictions,0,count
+51683,county,"Manassas city, Virginia",2012,evictions,0,count
+51683,county,"Manassas city, Virginia",2013,evictions,0,count
+51683,county,"Manassas city, Virginia",2014,evictions,0,count
+51683,county,"Manassas city, Virginia",2015,evictions,0,count
+51683,county,"Manassas city, Virginia",2016,evictions,0,count
+51685,county,"Manassas Park city, Virginia",2000,evictions,37,count
+51685,county,"Manassas Park city, Virginia",2001,evictions,26,count
+51685,county,"Manassas Park city, Virginia",2002,evictions,37,count
+51685,county,"Manassas Park city, Virginia",2003,evictions,20,count
+51685,county,"Manassas Park city, Virginia",2004,evictions,34,count
+51685,county,"Manassas Park city, Virginia",2005,evictions,47,count
+51685,county,"Manassas Park city, Virginia",2006,evictions,34,count
+51685,county,"Manassas Park city, Virginia",2007,evictions,97,count
+51685,county,"Manassas Park city, Virginia",2008,evictions,127,count
+51685,county,"Manassas Park city, Virginia",2009,evictions,84,count
+51685,county,"Manassas Park city, Virginia",2010,evictions,59,count
+51685,county,"Manassas Park city, Virginia",2011,evictions,73,count
+51685,county,"Manassas Park city, Virginia",2012,evictions,57,count
+51685,county,"Manassas Park city, Virginia",2013,evictions,79,count
+51685,county,"Manassas Park city, Virginia",2014,evictions,52,count
+51685,county,"Manassas Park city, Virginia",2015,evictions,39,count
+51685,county,"Manassas Park city, Virginia",2016,evictions,51,count

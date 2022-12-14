@@ -1,0 +1,121 @@
+geoid,region_type,region_name,year,measure,value,measure_type
+51_ahec_01,ahec region,Blue Ridge,2016,degrees_awarded_undergraduate,951,count
+51_ahec_02,ahec region,Capital,2016,degrees_awarded_undergraduate,487,count
+51_ahec_03,ahec region,Northern Virginia,2016,degrees_awarded_undergraduate,833,count
+51_ahec_04,ahec region,Eastern Virginia,2016,degrees_awarded_undergraduate,754,count
+51_ahec_06,ahec region,South Central,2016,degrees_awarded_undergraduate,220,count
+51_ahec_07,ahec region,Southside,2016,degrees_awarded_undergraduate,136,count
+51_ahec_08,ahec region,Southwest,2016,degrees_awarded_undergraduate,383,count
+51_ahec_01,ahec region,Blue Ridge,2017,degrees_awarded_undergraduate,878,count
+51_ahec_02,ahec region,Capital,2017,degrees_awarded_undergraduate,464,count
+51_ahec_03,ahec region,Northern Virginia,2017,degrees_awarded_undergraduate,869,count
+51_ahec_04,ahec region,Eastern Virginia,2017,degrees_awarded_undergraduate,739,count
+51_ahec_06,ahec region,South Central,2017,degrees_awarded_undergraduate,268,count
+51_ahec_07,ahec region,Southside,2017,degrees_awarded_undergraduate,94,count
+51_ahec_08,ahec region,Southwest,2017,degrees_awarded_undergraduate,360,count
+51_ahec_01,ahec region,Blue Ridge,2018,degrees_awarded_undergraduate,831,count
+51_ahec_02,ahec region,Capital,2018,degrees_awarded_undergraduate,458,count
+51_ahec_03,ahec region,Northern Virginia,2018,degrees_awarded_undergraduate,907,count
+51_ahec_04,ahec region,Eastern Virginia,2018,degrees_awarded_undergraduate,739,count
+51_ahec_06,ahec region,South Central,2018,degrees_awarded_undergraduate,241,count
+51_ahec_07,ahec region,Southside,2018,degrees_awarded_undergraduate,123,count
+51_ahec_08,ahec region,Southwest,2018,degrees_awarded_undergraduate,403,count
+51_ahec_01,ahec region,Blue Ridge,2019,degrees_awarded_undergraduate,849,count
+51_ahec_02,ahec region,Capital,2019,degrees_awarded_undergraduate,412,count
+51_ahec_03,ahec region,Northern Virginia,2019,degrees_awarded_undergraduate,831,count
+51_ahec_04,ahec region,Eastern Virginia,2019,degrees_awarded_undergraduate,706,count
+51_ahec_06,ahec region,South Central,2019,degrees_awarded_undergraduate,222,count
+51_ahec_07,ahec region,Southside,2019,degrees_awarded_undergraduate,87,count
+51_ahec_08,ahec region,Southwest,2019,degrees_awarded_undergraduate,403,count
+51_ahec_01,ahec region,Blue Ridge,2016,degrees_awarded_graduate,332,count
+51_ahec_02,ahec region,Capital,2016,degrees_awarded_graduate,316,count
+51_ahec_03,ahec region,Northern Virginia,2016,degrees_awarded_graduate,347,count
+51_ahec_04,ahec region,Eastern Virginia,2016,degrees_awarded_graduate,327,count
+51_ahec_06,ahec region,South Central,2016,degrees_awarded_graduate,114,count
+51_ahec_07,ahec region,Southside,2016,degrees_awarded_graduate,49,count
+51_ahec_08,ahec region,Southwest,2016,degrees_awarded_graduate,195,count
+51_ahec_01,ahec region,Blue Ridge,2017,degrees_awarded_graduate,375,count
+51_ahec_02,ahec region,Capital,2017,degrees_awarded_graduate,274,count
+51_ahec_03,ahec region,Northern Virginia,2017,degrees_awarded_graduate,327,count
+51_ahec_04,ahec region,Eastern Virginia,2017,degrees_awarded_graduate,300,count
+51_ahec_06,ahec region,South Central,2017,degrees_awarded_graduate,140,count
+51_ahec_07,ahec region,Southside,2017,degrees_awarded_graduate,43,count
+51_ahec_08,ahec region,Southwest,2017,degrees_awarded_graduate,239,count
+51_ahec_01,ahec region,Blue Ridge,2018,degrees_awarded_graduate,394,count
+51_ahec_02,ahec region,Capital,2018,degrees_awarded_graduate,339,count
+51_ahec_03,ahec region,Northern Virginia,2018,degrees_awarded_graduate,328,count
+51_ahec_04,ahec region,Eastern Virginia,2018,degrees_awarded_graduate,248,count
+51_ahec_06,ahec region,South Central,2018,degrees_awarded_graduate,163,count
+51_ahec_07,ahec region,Southside,2018,degrees_awarded_graduate,46,count
+51_ahec_08,ahec region,Southwest,2018,degrees_awarded_graduate,203,count
+51_ahec_01,ahec region,Blue Ridge,2019,degrees_awarded_graduate,437,count
+51_ahec_02,ahec region,Capital,2019,degrees_awarded_graduate,325,count
+51_ahec_03,ahec region,Northern Virginia,2019,degrees_awarded_graduate,394,count
+51_ahec_04,ahec region,Eastern Virginia,2019,degrees_awarded_graduate,278,count
+51_ahec_06,ahec region,South Central,2019,degrees_awarded_graduate,181,count
+51_ahec_07,ahec region,Southside,2019,degrees_awarded_graduate,46,count
+51_ahec_08,ahec region,Southwest,2019,degrees_awarded_graduate,245,count
+51_ahec_01,ahec region,Blue Ridge,2016,degrees_awarded_first_professional,78,count
+51_ahec_02,ahec region,Capital,2016,degrees_awarded_first_professional,150,count
+51_ahec_03,ahec region,Northern Virginia,2016,degrees_awarded_first_professional,157,count
+51_ahec_04,ahec region,Eastern Virginia,2016,degrees_awarded_first_professional,103,count
+51_ahec_05,ahec region,Rappahannock,2016,degrees_awarded_first_professional,15,count
+51_ahec_06,ahec region,South Central,2016,degrees_awarded_first_professional,12,count
+51_ahec_07,ahec region,Southside,2016,degrees_awarded_first_professional,9,count
+51_ahec_08,ahec region,Southwest,2016,degrees_awarded_first_professional,92,count
+51_ahec_01,ahec region,Blue Ridge,2017,degrees_awarded_first_professional,94,count
+51_ahec_02,ahec region,Capital,2017,degrees_awarded_first_professional,129,count
+51_ahec_03,ahec region,Northern Virginia,2017,degrees_awarded_first_professional,178,count
+51_ahec_04,ahec region,Eastern Virginia,2017,degrees_awarded_first_professional,111,count
+51_ahec_05,ahec region,Rappahannock,2017,degrees_awarded_first_professional,18,count
+51_ahec_06,ahec region,South Central,2017,degrees_awarded_first_professional,18,count
+51_ahec_07,ahec region,Southside,2017,degrees_awarded_first_professional,12,count
+51_ahec_08,ahec region,Southwest,2017,degrees_awarded_first_professional,101,count
+51_ahec_01,ahec region,Blue Ridge,2018,degrees_awarded_first_professional,96,count
+51_ahec_02,ahec region,Capital,2018,degrees_awarded_first_professional,117,count
+51_ahec_03,ahec region,Northern Virginia,2018,degrees_awarded_first_professional,214,count
+51_ahec_04,ahec region,Eastern Virginia,2018,degrees_awarded_first_professional,125,count
+51_ahec_05,ahec region,Rappahannock,2018,degrees_awarded_first_professional,19,count
+51_ahec_06,ahec region,South Central,2018,degrees_awarded_first_professional,34,count
+51_ahec_07,ahec region,Southside,2018,degrees_awarded_first_professional,3,count
+51_ahec_08,ahec region,Southwest,2018,degrees_awarded_first_professional,78,count
+51_ahec_01,ahec region,Blue Ridge,2019,degrees_awarded_first_professional,99,count
+51_ahec_02,ahec region,Capital,2019,degrees_awarded_first_professional,119,count
+51_ahec_03,ahec region,Northern Virginia,2019,degrees_awarded_first_professional,201,count
+51_ahec_04,ahec region,Eastern Virginia,2019,degrees_awarded_first_professional,114,count
+51_ahec_05,ahec region,Rappahannock,2019,degrees_awarded_first_professional,18,count
+51_ahec_06,ahec region,South Central,2019,degrees_awarded_first_professional,40,count
+51_ahec_07,ahec region,Southside,2019,degrees_awarded_first_professional,7,count
+51_ahec_08,ahec region,Southwest,2019,degrees_awarded_first_professional,102,count
+51_ahec_01,ahec region,Blue Ridge,2016,degrees_awarded_two_year,1153,count
+51_ahec_02,ahec region,Capital,2016,degrees_awarded_two_year,765,count
+51_ahec_03,ahec region,Northern Virginia,2016,degrees_awarded_two_year,411,count
+51_ahec_04,ahec region,Eastern Virginia,2016,degrees_awarded_two_year,810,count
+51_ahec_05,ahec region,Rappahannock,2016,degrees_awarded_two_year,476,count
+51_ahec_06,ahec region,South Central,2016,degrees_awarded_two_year,445,count
+51_ahec_07,ahec region,Southside,2016,degrees_awarded_two_year,465,count
+51_ahec_08,ahec region,Southwest,2016,degrees_awarded_two_year,1098,count
+51_ahec_01,ahec region,Blue Ridge,2017,degrees_awarded_two_year,1122,count
+51_ahec_02,ahec region,Capital,2017,degrees_awarded_two_year,726,count
+51_ahec_03,ahec region,Northern Virginia,2017,degrees_awarded_two_year,444,count
+51_ahec_04,ahec region,Eastern Virginia,2017,degrees_awarded_two_year,856,count
+51_ahec_05,ahec region,Rappahannock,2017,degrees_awarded_two_year,608,count
+51_ahec_06,ahec region,South Central,2017,degrees_awarded_two_year,610,count
+51_ahec_07,ahec region,Southside,2017,degrees_awarded_two_year,372,count
+51_ahec_08,ahec region,Southwest,2017,degrees_awarded_two_year,1144,count
+51_ahec_01,ahec region,Blue Ridge,2018,degrees_awarded_two_year,1138,count
+51_ahec_02,ahec region,Capital,2018,degrees_awarded_two_year,636,count
+51_ahec_03,ahec region,Northern Virginia,2018,degrees_awarded_two_year,375,count
+51_ahec_04,ahec region,Eastern Virginia,2018,degrees_awarded_two_year,905,count
+51_ahec_05,ahec region,Rappahannock,2018,degrees_awarded_two_year,482,count
+51_ahec_06,ahec region,South Central,2018,degrees_awarded_two_year,540,count
+51_ahec_07,ahec region,Southside,2018,degrees_awarded_two_year,390,count
+51_ahec_08,ahec region,Southwest,2018,degrees_awarded_two_year,1121,count
+51_ahec_01,ahec region,Blue Ridge,2019,degrees_awarded_two_year,1099,count
+51_ahec_02,ahec region,Capital,2019,degrees_awarded_two_year,532,count
+51_ahec_03,ahec region,Northern Virginia,2019,degrees_awarded_two_year,278,count
+51_ahec_04,ahec region,Eastern Virginia,2019,degrees_awarded_two_year,673,count
+51_ahec_05,ahec region,Rappahannock,2019,degrees_awarded_two_year,502,count
+51_ahec_06,ahec region,South Central,2019,degrees_awarded_two_year,461,count
+51_ahec_07,ahec region,Southside,2019,degrees_awarded_two_year,345,count
+51_ahec_08,ahec region,Southwest,2019,degrees_awarded_two_year,1217,count

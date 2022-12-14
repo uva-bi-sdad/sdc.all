@@ -1,0 +1,120 @@
+{
+  "name": "sdc.housing_dev",
+  "measure_not_found": [
+    "/home/runner/work/sdc.housing_dev/sdc.housing_dev/data/housing_access/distribution/ncr_cttrbg_acs5_2009_2019_housing_access.csv",
+    "/home/runner/work/sdc.housing_dev/sdc.housing_dev/data/housing_access/distribution/ncr_cttrbg_acs5_2009_2019_housing_access.csv.xz"
+  ],
+  "count": 18,
+  "utc_audited": "2022-11-18 23:11:51",
+  "data": [
+    {
+      "name": "empty_file",
+      "path": "data/housing_rent/distribution/empty_file",
+      "md5": "68b329da9893e34099c7d8ad5cb9c940",
+      "size": 1
+    },
+    {
+      "name": "ncr_cttrbg_acs5_2009_2019_housing_access.csv",
+      "path": "data/housing_access/distribution/ncr_cttrbg_acs5_2009_2019_housing_access.csv",
+      "md5": "356a05e860e4c3d1a37dfb98d42e15fd",
+      "size": 23840729
+    },
+    {
+      "name": "measure_info.json",
+      "path": "data/housing_access/distribution/measure_info.json",
+      "md5": "f8a9ea30e914f96b257b6555e13e460c",
+      "size": 1545
+    },
+    {
+      "name": "ncr_cttrbg_acs5_2009_2019_housing_access.csv.xz",
+      "path": "data/housing_access/distribution/ncr_cttrbg_acs5_2009_2019_housing_access.csv.xz",
+      "md5": "39a46ac8c15684cd31bb1382252958ca",
+      "size": 718656
+    },
+    {
+      "name": "ncr_bg_evictionlab_2000_2016_evictions.csv",
+      "path": "Operations and Planning/Evictions/data/distribution/ncr_bg_evictionlab_2000_2016_evictions.csv",
+      "md5": "9784d7579af16a871c7a0bf881683687",
+      "size": 12931826
+    },
+    {
+      "name": "ncr_tr_evictionlab_2000_2016_evictions.csv",
+      "path": "Operations and Planning/Evictions/data/distribution/ncr_tr_evictionlab_2000_2016_evictions.csv",
+      "md5": "fa1d0ad5562b4c615e82eef8e7c5594b",
+      "size": 3945956
+    },
+    {
+      "name": "measure_info_ncr_bg_evictionlab_2000_2016_evictions.json",
+      "path": "Operations and Planning/Evictions/data/distribution/measure_info_ncr_bg_evictionlab_2000_2016_evictions.json",
+      "md5": "d0f58c1c01edab816b80f591e9df9be3",
+      "size": 1062
+    },
+    {
+      "name": "measure_info_ncr_ct_evictionlab_2000_2016_evictions.json",
+      "path": "Operations and Planning/Evictions/data/distribution/measure_info_ncr_ct_evictionlab_2000_2016_evictions.json",
+      "md5": "dbf5b193ed1ba381f9f18b7e465d4d85",
+      "size": 1062
+    },
+    {
+      "name": "ncr_ct_evictionlab_2000_2016_evictions.csv",
+      "path": "Operations and Planning/Evictions/data/distribution/ncr_ct_evictionlab_2000_2016_evictions.csv",
+      "md5": "3fbe411d2f5315ea330ed9da6709b117",
+      "size": 32940
+    },
+    {
+      "name": "measure_info_ncr_tr_evictionlab_2000_2016_evictions.json",
+      "path": "Operations and Planning/Evictions/data/distribution/measure_info_ncr_tr_evictionlab_2000_2016_evictions.json",
+      "md5": "657d613dd6fa2834650cda1f737315d4",
+      "size": 1062
+    },
+    {
+      "name": "temp",
+      "path": "Operations and Planning/Evictions/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Operations and Planning/Evictions/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "measure_info_vadcmd_ct_acs_2014_2019_cost_burdened_hhs.json",
+      "path": "Operations and Planning/Cost-burdened HHs/data/distribution/measure_info_vadcmd_ct_acs_2014_2019_cost_burdened_hhs.json",
+      "md5": "c577ac62f1d34a6a68d685ede365a409",
+      "size": 4208
+    },
+    {
+      "name": "vadcmd_ct_acs_2014_2019_cost_burdened_hhs.csv",
+      "path": "Operations and Planning/Cost-burdened HHs/data/distribution/vadcmd_ct_acs_2014_2019_cost_burdened_hhs.csv",
+      "md5": "066c9420c9d1dabce12aa6fb3c14b217",
+      "size": 47032
+    },
+    {
+      "name": "measure_info_vadcmd_tr_acs_2014_2019_cost_burdened_hhs.json",
+      "path": "Operations and Planning/Cost-burdened HHs/data/distribution/measure_info_vadcmd_tr_acs_2014_2019_cost_burdened_hhs.json",
+      "md5": "f009a85492f7bae67c38531df0b1312f",
+      "size": 4208
+    },
+    {
+      "name": "vadcmd_tr_acs_2014_2019_cost_burdened_hhs.csv",
+      "path": "Operations and Planning/Cost-burdened HHs/data/distribution/vadcmd_tr_acs_2014_2019_cost_burdened_hhs.csv",
+      "md5": "a3877df605e238be50649be019f8bcda",
+      "size": 5584153
+    },
+    {
+      "name": "temp",
+      "path": "Operations and Planning/Cost-burdened HHs/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Operations and Planning/Cost-burdened HHs/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    }
+  ],
+  "_references": {}
+}

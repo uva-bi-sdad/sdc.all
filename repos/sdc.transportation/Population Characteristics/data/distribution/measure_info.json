@@ -1,0 +1,56 @@
+{
+  "commutes:commute_time": {
+    "category": "Transportation",
+    "type": "drive time",
+    "short_name": "Commute time",
+    "long_name": "Mean commute time",
+    "short_description": "Mean commute time.",
+    "long_description": "Self-reported mean travel time to work. Based on American Community Survey Table S0801 ACS 5-year estimates.",
+    "statement": "The mean commute time in {features.name} is {value}.",
+    "equity_category": "Status",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "Table S0801",
+        "date_accessed": "2022",
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "carpools:perc_carpool": {
+    "category": "Transportation",
+    "type": "percent",
+    "short_name": "Carpool to work",
+    "long_name": "Percentage carpool to work",
+    "short_description": "Population self-reported to carpool to work.",
+    "long_description": "Percentage of population self-reported to carpool to work. Based on American Community Survey Table S0801 ACS 5-year estimates.",
+    "statement": "{value} of the population in {features.name} carpools to work.",
+    "equity_category": "Status",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "Table S0801",
+        "date_accessed": "2022",
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "vehicles:perc_no_vehicle": {
+    "category": "Transportation",
+    "type": "percent",
+    "short_name": "Without vehicle",
+    "long_name": "Percentage of households without vehicle available",
+    "short_description": "Households self-reported to not have a vehicle available at home.",
+    "long_description": "Percentage of households self-reported to not have a vehicle available at home. Based on American Community Survey Table S2504 ACS 5-year estimates.",
+    "statement": "{value} of households in {features.name} do not have a vehicle available at home.",
+    "equity_category": "Status",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "Table S2504",
+        "date_accessed": "2022",
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  }
+}

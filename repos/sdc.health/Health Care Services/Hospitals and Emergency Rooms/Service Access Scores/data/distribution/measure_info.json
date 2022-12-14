@@ -1,0 +1,219 @@
+{
+  "_references": {
+    "wan12": {
+      "id": "wan12",
+      "author": [
+        {
+          "given": "Neng",
+          "family": "Wan"
+        },
+        {
+          "given": "Bin",
+          "family": "Zou"
+        },
+        {
+          "given": "Troy",
+          "family": "Sternberg"
+        }
+      ],
+      "year": 2012,
+      "title": "A three-step floating catchment area method for analyzing spatial access to health services",
+      "journal": "International Journal of Geographical Information Science",
+      "volume": "26",
+      "page": "1073–1089",
+      "doi": "10.1080/13658816.2011.624987"
+    },
+    "bii21": {
+      "id": "bii21",
+      "author": [
+        {
+          "family": "Biocomplexity Institute and Initiative"
+        }
+      ],
+      "year": 2021,
+      "title": "catchment: Calculate spatial access and availability metrics",
+      "version": "0.0.1",
+      "url": "https://github.com/uva-bi-sdad/catchment"
+    }
+  },
+  "hhs:hospitals_per_100k": {
+    "category": "Health",
+    "full_name": "hhs:hospitals_per_100k",
+    "measure": "hospitals_per_100k",
+    "type": "per 100k",
+    "short_name": "Hospital Beds",
+    "long_name": "Hospital beds per 100k people",
+    "short_description": "Number of hospital beds per 100k people.",
+    "long_description": "Number of hospital beds per 100k people, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) hospitals as listed by the U.S. Health and Human Services, with number of beds (overall average of 7 day averages) as supply values, (b) Census block groups, with supply values as the total population as reported the American Community Survey 5-year summaries, and (c) distance between hospital locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+    "statement": "There are {value} hospital beds per 100k people in {features.name}.",
+    "equity_category": "Accessibility",
+    "citations": ["wan12", "bii21"],
+    "sources": [
+      {
+        "name": "U.S. Department of Health & Human Services",
+        "location": "Hospital > COVID-19 Reported Patient Impact and Hospital Capacity by Facility",
+        "location_url": "https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u",
+        "date_accessed": 2022,
+        "url": "https://healthdata.gov"
+      },
+      {
+        "name": "American Community Survey",
+        "location": "data/5_year_seq_by_state",
+        "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
+        "date_accessed": 2022,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      },
+      {
+        "name": "Open Source Routing Machine",
+        "date_accessed": 2022,
+        "url": "http://project-osrm.org"
+      }
+    ]
+  },
+  "hhs:intensive_care_per_100k": {
+    "category": "Health",
+    "full_name": "hhs:intensive_care_per_100k",
+    "measure": "intensive_care_per_100k",
+    "type": "per 100k",
+    "short_name": "Intensive Care Unit Beds",
+    "long_name": "Intensive care unit beds per 100k people",
+    "short_description": "Number of Intensive care unit beds per 100k people.",
+    "long_description": "Number of Intensive care unit beds per 100k people, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) hospitals with intensive care unit beds as listed by the U.S. Health and Human Services, with number of intensive care unit beds (overall average of 7 day averages) as supply values, (b) Census block groups, with supply values as the total population as reported the American Community Survey 5-year summaries, and (c) distance between hospital locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+    "statement": "There are {value} intensive care unit beds per 100k people in {features.name}.",
+    "equity_category": "Accessibility",
+    "citations": ["wan12", "bii21"],
+    "sources": [
+      {
+        "name": "U.S. Department of Health & Human Services",
+        "location": "Hospital > COVID-19 Reported Patient Impact and Hospital Capacity by Facility",
+        "location_url": "https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u",
+        "date_accessed": 2022,
+        "url": "https://healthdata.gov"
+      },
+      {
+        "name": "American Community Survey",
+        "location": "data/5_year_seq_by_state",
+        "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
+        "date_accessed": 2022,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      },
+      {
+        "name": "Open Source Routing Machine",
+        "date_accessed": 2022,
+        "url": "http://project-osrm.org"
+      }
+    ]
+  },
+  "hhs:childrens_hospitals_per_100k": {
+    "category": "Health",
+    "full_name": "hhs:childrens_hospitals_per_100k",
+    "measure": "childrens_hospitals_per_100k",
+    "type": "per 100k",
+    "short_name": "Children's Hospital Beds",
+    "long_name": "Children's hospital beds per 100k people",
+    "short_description": "Number of children's hospital beds per 100k people.",
+    "long_description": "Number of children's hospital beds per 100k people, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) children's hospitals as listed by the U.S. Health and Human Services, with number of beds (overall average of 7 day averages) as supply values, (b) Census block groups, with supply values as the total population as reported the American Community Survey 5-year summaries, and (c) distance between hospital locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+    "statement": "There are {value} children's hospital beds per 100k people in {features.name}.",
+    "equity_category": "Accessibility",
+    "citations": ["wan12", "bii21"],
+    "sources": [
+      {
+        "name": "U.S. Department of Health & Human Services",
+        "location": "Hospital > COVID-19 Reported Patient Impact and Hospital Capacity by Facility",
+        "location_url": "https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u",
+        "date_accessed": 2022,
+        "url": "https://healthdata.gov"
+      },
+      {
+        "name": "American Community Survey",
+        "location": "data/5_year_seq_by_state",
+        "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
+        "date_accessed": 2022,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      },
+      {
+        "name": "Open Source Routing Machine",
+        "date_accessed": 2022,
+        "url": "http://project-osrm.org"
+      }
+    ]
+  },
+  "hhs:hospitals_min_drivetime": {
+    "category": "Health",
+    "full_name": "hhs:hospitals_min_drivetime",
+    "measure": "hospitals_min_drivetime",
+    "type": "minutes",
+    "short_name": "Hospital Drive Time",
+    "long_name": "Drive time to nearest hospital",
+    "short_description": "Drive time to the nearest hospital.",
+    "long_description": "Minimal drive time to a hospital from the Census block group centroid, as calculated by the Open Source Routing Machine in 2022. Hospital locations are from the U.S. Health and Human Services. All distances are calculated at the block group level, then averaged up to higher-level geographies.",
+    "statement": "It takes {value} to drive to a hospital from {features.name}'s block group centroids on average.",
+    "equity_category": "Accessibility",
+    "sources": [
+      {
+        "name": "U.S. Department of Health & Human Services",
+        "location": "Hospital > COVID-19 Reported Patient Impact and Hospital Capacity by Facility",
+        "location_url": "https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u",
+        "date_accessed": 2022,
+        "url": "https://healthdata.gov"
+      },
+      {
+        "name": "Open Source Routing Machine",
+        "date_accessed": 2022,
+        "url": "http://project-osrm.org"
+      }
+    ]
+  },
+  "hhs:intensive_care_min_drivetime": {
+    "category": "Health",
+    "full_name": "hhs:intensive_care_min_drivetime",
+    "measure": "intensive_care_min_drivetime",
+    "type": "minutes",
+    "short_name": "Intensive Care Unit Drive Time",
+    "long_name": "Drive time to nearest hospital with intensive care unit beds",
+    "short_description": "Drive time to the nearest hospital with intensive care unit beds.",
+    "long_description": "Minimal drive time to a hospital with intensive care unit beds from the Census block group centroid, as calculated by the Open Source Routing Machine in 2022. Hospital locations are from the U.S. Health and Human Services. All distances are calculated at the block group level, then averaged up to higher-level geographies.",
+    "statement": "It takes {value} to drive to a hospital with intensive care unit beds from {features.name}'s block group centroids on average.",
+    "equity_category": "Accessibility",
+    "sources": [
+      {
+        "name": "U.S. Department of Health & Human Services",
+        "location": "Hospital > COVID-19 Reported Patient Impact and Hospital Capacity by Facility",
+        "location_url": "https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u",
+        "date_accessed": 2022,
+        "url": "https://healthdata.gov"
+      },
+      {
+        "name": "Open Source Routing Machine",
+        "date_accessed": 2022,
+        "url": "http://project-osrm.org"
+      }
+    ]
+  },
+  "hhs:childrens_hospitals_min_drivetime": {
+    "category": "Health",
+    "full_name": "hhs:childrens_hospitals_min_drivetime",
+    "measure": "childrens_hospitals_min_drivetime",
+    "type": "minutes",
+    "short_name": "Children's Hospital Drive Time",
+    "long_name": "Drive time to nearest children's hospital",
+    "short_description": "Drive time to the nearest children's hospital.",
+    "long_description": "Minimal drive time to a children's hospital from the Census block group centroid, as calculated by the Open Source Routing Machine in 2022. Hospital locations are from the U.S. Health and Human Services. All distances are calculated at the block group level, then averaged up to higher-level geographies.",
+    "statement": "It takes {value} to drive to a children's hospital from {features.name}'s block group centroids on average.",
+    "equity_category": "Accessibility",
+    "sources": [
+      {
+        "name": "U.S. Department of Health & Human Services",
+        "location": "Hospital > COVID-19 Reported Patient Impact and Hospital Capacity by Facility",
+        "location_url": "https://healthdata.gov/Hospital/COVID-19-Reported-Patient-Impact-and-Hospital-Capa/anag-cw7u",
+        "date_accessed": 2022,
+        "url": "https://healthdata.gov"
+      },
+      {
+        "name": "Open Source Routing Machine",
+        "date_accessed": 2022,
+        "url": "http://project-osrm.org"
+      }
+    ]
+  }
+}

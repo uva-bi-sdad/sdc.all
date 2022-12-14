@@ -1,0 +1,1042 @@
+{
+    "density": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "density",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "density"
+    },
+    "density_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "density_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "hh_limited_english": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "hh_limited_english",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "hh_limited_english_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "hh_limited_english_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "num_vet_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "num_vet_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "perc_20_64": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_20_64",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percent"
+    },
+    "perc_20_64_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_20_64_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "perc_65_plus": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_65_plus",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percent"
+    },
+    "perc_65_plus_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_65_plus_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "perc_AAPI": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_AAPI",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percent"
+    },
+    "perc_AAPI_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_AAPI_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "perc_black": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_black",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percent"
+    },
+    "perc_black_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_black_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "perc_hh_limited_english": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_hh_limited_english",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percent"
+    },
+    "perc_hh_limited_english_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_hh_limited_english_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "perc_hispanic_or_latino": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_hispanic_or_latino",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percent"
+    },
+    "perc_hispanic_or_latino_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_hispanic_or_latino_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "perc_native": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_native",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percent"
+    },
+    "perc_native_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_native_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "perc_other": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_other",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percent"
+    },
+    "perc_other_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_other_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "perc_two_or_more_races": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_two_or_more_races",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percent"
+    },
+    "perc_two_or_more_races_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_two_or_more_races_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "perc_under_20": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_under_20",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percent"
+    },
+    "perc_under_20_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_under_20_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "perc_veteran": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_veteran",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percent"
+    },
+    "perc_veteran_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_veteran_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "perc_white": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_white",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percent"
+    },
+    "perc_white_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_white_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "pop_20_64": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_20_64",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "pop_20_64_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_20_64_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "pop_65_plus": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_65_plus",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "pop_65_plus_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_65_plus_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "pop_AAPI": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_AAPI",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "pop_AAPI_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_AAPI_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "pop_black": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_black",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "pop_black_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_black_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "pop_hispanic_or_latino": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_hispanic_or_latino",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "pop_hispanic_or_latino_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_hispanic_or_latino_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "pop_native": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_native",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "pop_native_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_native_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "pop_other": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_other",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "pop_other_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_other_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "pop_total": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_total",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "pop_total_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_total_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "pop_two_or_more_races": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_two_or_more_races",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "pop_two_or_more_races_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_two_or_more_races_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "pop_under_20": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_under_20",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "pop_under_20_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_under_20_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    },
+    "pop_veteran": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_veteran",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "pop_white": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_white",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "pop_white_MOE": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "pop_white_MOE",
+        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "MOE"
+    }
+}

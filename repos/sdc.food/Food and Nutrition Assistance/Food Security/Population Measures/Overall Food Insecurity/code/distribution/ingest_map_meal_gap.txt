@@ -1,0 +1,11 @@
+Map the Meal Gap Data 
+
+- Requested from the link on 
+https://www.feedingamerica.org/research/map-the-meal-gap/by-county
+
+- Requested data from the years 2009-2019
+
+- Data Received 2/16/22
+
+- The resulting Excel (.xlsx) files are in the "Food and Nutrition Assistance/Food Security/Household Food Insecurity/data/original" folder for the years 2010-2019.  The naming convention for each file is MMG[year made available]_[year of data]Data_ToShare.xlsx
+ 

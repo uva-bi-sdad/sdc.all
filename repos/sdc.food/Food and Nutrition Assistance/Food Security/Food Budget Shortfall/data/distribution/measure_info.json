@@ -1,0 +1,22 @@
+{
+    "weighted_budget_shortfall": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "weighted_budget_shortfall",
+        "measure_table": "va_hdct_fa_2014_2019_food_budget_shortfall.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "cost"
+    }
+}

@@ -1,0 +1,2145 @@
+geoid,region_type,region_name,year,value,measure,measure_type
+51001,county,"Accomack County, Virginia",2016,3,degrees_awarded_undergraduate,count
+51003,county,"Albemarle County, Virginia",2016,53,degrees_awarded_undergraduate,count
+51005,county,"Alleghany County, Virginia",2016,3,degrees_awarded_undergraduate,count
+51007,county,"Amelia County, Virginia",2016,3,degrees_awarded_undergraduate,count
+51009,county,"Amherst County, Virginia",2016,8,degrees_awarded_undergraduate,count
+51011,county,"Appomattox County, Virginia",2016,4,degrees_awarded_undergraduate,count
+51013,county,"Arlington County, Virginia",2016,64,degrees_awarded_undergraduate,count
+51015,county,"Augusta County, Virginia",2016,58,degrees_awarded_undergraduate,count
+51017,county,"Bath County, Virginia",2016,1,degrees_awarded_undergraduate,count
+51019,county,"Bedford County, Virginia",2016,39,degrees_awarded_undergraduate,count
+51021,county,"Bland County, Virginia",2016,1,degrees_awarded_undergraduate,count
+51023,county,"Botetourt County, Virginia",2016,20,degrees_awarded_undergraduate,count
+51025,county,"Brunswick County, Virginia",2016,5,degrees_awarded_undergraduate,count
+51027,county,"Buchanan County, Virginia",2016,4,degrees_awarded_undergraduate,count
+51029,county,"Buckingham County, Virginia",2016,8,degrees_awarded_undergraduate,count
+51031,county,"Campbell County, Virginia",2016,24,degrees_awarded_undergraduate,count
+51033,county,"Caroline County, Virginia",2016,10,degrees_awarded_undergraduate,count
+51035,county,"Carroll County, Virginia",2016,9,degrees_awarded_undergraduate,count
+51036,county,"Charles City County, Virginia",2016,3,degrees_awarded_undergraduate,count
+51037,county,"Charlotte County, Virginia",2016,8,degrees_awarded_undergraduate,count
+51041,county,"Chesterfield County, Virginia",2016,173,degrees_awarded_undergraduate,count
+51043,county,"Clarke County, Virginia",2016,6,degrees_awarded_undergraduate,count
+51045,county,"Craig County, Virginia",2016,2,degrees_awarded_undergraduate,count
+51047,county,"Culpeper County, Virginia",2016,23,degrees_awarded_undergraduate,count
+51049,county,"Cumberland County, Virginia",2016,5,degrees_awarded_undergraduate,count
+51051,county,"Dickenson County, Virginia",2016,2,degrees_awarded_undergraduate,count
+51053,county,"Dinwiddie County, Virginia",2016,7,degrees_awarded_undergraduate,count
+51057,county,"Essex County, Virginia",2016,3,degrees_awarded_undergraduate,count
+51059,county,"Fairfax County, Virginia",2016,508,degrees_awarded_undergraduate,count
+51061,county,"Fauquier County, Virginia",2016,36,degrees_awarded_undergraduate,count
+51063,county,"Floyd County, Virginia",2016,10,degrees_awarded_undergraduate,count
+51065,county,"Fluvanna County, Virginia",2016,17,degrees_awarded_undergraduate,count
+51067,county,"Franklin County, Virginia",2016,34,degrees_awarded_undergraduate,count
+51069,county,"Frederick County, Virginia",2016,64,degrees_awarded_undergraduate,count
+51071,county,"Giles County, Virginia",2016,9,degrees_awarded_undergraduate,count
+51073,county,"Gloucester County, Virginia",2016,11,degrees_awarded_undergraduate,count
+51075,county,"Goochland County, Virginia",2016,10,degrees_awarded_undergraduate,count
+51077,county,"Grayson County, Virginia",2016,6,degrees_awarded_undergraduate,count
+51079,county,"Greene County, Virginia",2016,9,degrees_awarded_undergraduate,count
+51081,county,"Greensville County, Virginia",2016,7,degrees_awarded_undergraduate,count
+51083,county,"Halifax County, Virginia",2016,26,degrees_awarded_undergraduate,count
+51085,county,"Hanover County, Virginia",2016,73,degrees_awarded_undergraduate,count
+51087,county,"Henrico County, Virginia",2016,131,degrees_awarded_undergraduate,count
+51089,county,"Henry County, Virginia",2016,14,degrees_awarded_undergraduate,count
+51091,county,"Highland County, Virginia",2016,2,degrees_awarded_undergraduate,count
+51093,county,"Isle of Wight County, Virginia",2016,13,degrees_awarded_undergraduate,count
+51095,county,"James City County, Virginia",2016,27,degrees_awarded_undergraduate,count
+51097,county,"King and Queen County, Virginia",2016,2,degrees_awarded_undergraduate,count
+51099,county,"King George County, Virginia",2016,6,degrees_awarded_undergraduate,count
+51101,county,"King William County, Virginia",2016,8,degrees_awarded_undergraduate,count
+51103,county,"Lancaster County, Virginia",2016,6,degrees_awarded_undergraduate,count
+51105,county,"Lee County, Virginia",2016,1,degrees_awarded_undergraduate,count
+51107,county,"Loudoun County, Virginia",2016,165,degrees_awarded_undergraduate,count
+51109,county,"Louisa County, Virginia",2016,22,degrees_awarded_undergraduate,count
+51111,county,"Lunenburg County, Virginia",2016,4,degrees_awarded_undergraduate,count
+51113,county,"Madison County, Virginia",2016,10,degrees_awarded_undergraduate,count
+51115,county,"Mathews County, Virginia",2016,2,degrees_awarded_undergraduate,count
+51117,county,"Mecklenburg County, Virginia",2016,19,degrees_awarded_undergraduate,count
+51119,county,"Middlesex County, Virginia",2016,3,degrees_awarded_undergraduate,count
+51121,county,"Montgomery County, Virginia",2016,36,degrees_awarded_undergraduate,count
+51125,county,"Nelson County, Virginia",2016,14,degrees_awarded_undergraduate,count
+51127,county,"New Kent County, Virginia",2016,9,degrees_awarded_undergraduate,count
+51131,county,"Northampton County, Virginia",2016,5,degrees_awarded_undergraduate,count
+51133,county,"Northumberland County, Virginia",2016,2,degrees_awarded_undergraduate,count
+51135,county,"Nottoway County, Virginia",2016,10,degrees_awarded_undergraduate,count
+51137,county,"Orange County, Virginia",2016,15,degrees_awarded_undergraduate,count
+51139,county,"Page County, Virginia",2016,12,degrees_awarded_undergraduate,count
+51141,county,"Patrick County, Virginia",2016,9,degrees_awarded_undergraduate,count
+51143,county,"Pittsylvania County, Virginia",2016,31,degrees_awarded_undergraduate,count
+51145,county,"Powhatan County, Virginia",2016,16,degrees_awarded_undergraduate,count
+51147,county,"Prince Edward County, Virginia",2016,5,degrees_awarded_undergraduate,count
+51149,county,"Prince George County, Virginia",2016,12,degrees_awarded_undergraduate,count
+51153,county,"Prince William County, Virginia",2016,185,degrees_awarded_undergraduate,count
+51155,county,"Pulaski County, Virginia",2016,6,degrees_awarded_undergraduate,count
+51157,county,"Rappahannock County, Virginia",2016,4,degrees_awarded_undergraduate,count
+51159,county,"Richmond County, Virginia",2016,5,degrees_awarded_undergraduate,count
+51161,county,"Roanoke County, Virginia",2016,90,degrees_awarded_undergraduate,count
+51163,county,"Rockbridge County, Virginia",2016,9,degrees_awarded_undergraduate,count
+51165,county,"Rockingham County, Virginia",2016,55,degrees_awarded_undergraduate,count
+51167,county,"Russell County, Virginia",2016,7,degrees_awarded_undergraduate,count
+51169,county,"Scott County, Virginia",2016,2,degrees_awarded_undergraduate,count
+51171,county,"Shenandoah County, Virginia",2016,29,degrees_awarded_undergraduate,count
+51173,county,"Smyth County, Virginia",2016,6,degrees_awarded_undergraduate,count
+51175,county,"Southampton County, Virginia",2016,8,degrees_awarded_undergraduate,count
+51177,county,"Spotsylvania County, Virginia",2016,63,degrees_awarded_undergraduate,count
+51179,county,"Stafford County, Virginia",2016,71,degrees_awarded_undergraduate,count
+51181,county,"Surry County, Virginia",2016,4,degrees_awarded_undergraduate,count
+51183,county,"Sussex County, Virginia",2016,1,degrees_awarded_undergraduate,count
+51185,county,"Tazewell County, Virginia",2016,12,degrees_awarded_undergraduate,count
+51187,county,"Warren County, Virginia",2016,19,degrees_awarded_undergraduate,count
+51191,county,"Washington County, Virginia",2016,11,degrees_awarded_undergraduate,count
+51193,county,"Westmoreland County, Virginia",2016,3,degrees_awarded_undergraduate,count
+51195,county,"Wise County, Virginia",2016,6,degrees_awarded_undergraduate,count
+51197,county,"Wythe County, Virginia",2016,9,degrees_awarded_undergraduate,count
+51199,county,"York County, Virginia",2016,31,degrees_awarded_undergraduate,count
+51510,county,"Alexandria city, Virginia",2016,33,degrees_awarded_undergraduate,count
+51515,county,"Bedford city, Virginia",2016,5,degrees_awarded_undergraduate,count
+51520,county,"Bristol city, Virginia",2016,3,degrees_awarded_undergraduate,count
+51530,county,"Buena Vista city, Virginia",2016,7,degrees_awarded_undergraduate,count
+51540,county,"Charlottesville city, Virginia",2016,26,degrees_awarded_undergraduate,count
+51550,county,"Chesapeake city, Virginia",2016,126,degrees_awarded_undergraduate,count
+51570,county,"Colonial Heights city, Virginia",2016,7,degrees_awarded_undergraduate,count
+51580,county,"Covington city, Virginia",2016,14,degrees_awarded_undergraduate,count
+51590,county,"Danville city, Virginia",2016,27,degrees_awarded_undergraduate,count
+51595,county,"Emporia city, Virginia",2016,3,degrees_awarded_undergraduate,count
+51600,county,"Fairfax city, Virginia",2016,23,degrees_awarded_undergraduate,count
+51610,county,"Falls Church city, Virginia",2016,4,degrees_awarded_undergraduate,count
+51620,county,"Franklin city, Virginia",2016,5,degrees_awarded_undergraduate,count
+51630,county,"Fredericksburg city, Virginia",2016,9,degrees_awarded_undergraduate,count
+51640,county,"Galax city, Virginia",2016,8,degrees_awarded_undergraduate,count
+51650,county,"Hampton city, Virginia",2016,46,degrees_awarded_undergraduate,count
+51660,county,"Harrisonburg city, Virginia",2016,37,degrees_awarded_undergraduate,count
+51670,county,"Hopewell city, Virginia",2016,4,degrees_awarded_undergraduate,count
+51678,county,"Lexington city, Virginia",2016,3,degrees_awarded_undergraduate,count
+51680,county,"Lynchburg city, Virginia",2016,49,degrees_awarded_undergraduate,count
+51683,county,"Manassas city, Virginia",2016,12,degrees_awarded_undergraduate,count
+51685,county,"Manassas Park city, Virginia",2016,4,degrees_awarded_undergraduate,count
+51690,county,"Martinsville city, Virginia",2016,10,degrees_awarded_undergraduate,count
+51700,county,"Newport News city, Virginia",2016,56,degrees_awarded_undergraduate,count
+51710,county,"Norfolk city, Virginia",2016,82,degrees_awarded_undergraduate,count
+51720,county,"Norton city, Virginia",2016,1,degrees_awarded_undergraduate,count
+51730,county,"Petersburg city, Virginia",2016,5,degrees_awarded_undergraduate,count
+51735,county,"Poquoson city, Virginia",2016,11,degrees_awarded_undergraduate,count
+51740,county,"Portsmouth city, Virginia",2016,34,degrees_awarded_undergraduate,count
+51750,county,"Radford city, Virginia",2016,32,degrees_awarded_undergraduate,count
+51760,county,"Richmond city, Virginia",2016,65,degrees_awarded_undergraduate,count
+51770,county,"Roanoke city, Virginia",2016,53,degrees_awarded_undergraduate,count
+51775,county,"Salem city, Virginia",2016,20,degrees_awarded_undergraduate,count
+51790,county,"Staunton city, Virginia",2016,17,degrees_awarded_undergraduate,count
+51800,county,"Suffolk city, Virginia",2016,47,degrees_awarded_undergraduate,count
+51810,county,"Virginia Beach city, Virginia",2016,223,degrees_awarded_undergraduate,count
+51820,county,"Waynesboro city, Virginia",2016,16,degrees_awarded_undergraduate,count
+51830,county,"Williamsburg city, Virginia",2016,3,degrees_awarded_undergraduate,count
+51840,county,"Winchester city, Virginia",2016,18,degrees_awarded_undergraduate,count
+51001,county,"Accomack County, Virginia",2017,13,degrees_awarded_undergraduate,count
+51003,county,"Albemarle County, Virginia",2017,43,degrees_awarded_undergraduate,count
+51005,county,"Alleghany County, Virginia",2017,4,degrees_awarded_undergraduate,count
+51007,county,"Amelia County, Virginia",2017,4,degrees_awarded_undergraduate,count
+51009,county,"Amherst County, Virginia",2017,16,degrees_awarded_undergraduate,count
+51011,county,"Appomattox County, Virginia",2017,13,degrees_awarded_undergraduate,count
+51013,county,"Arlington County, Virginia",2017,52,degrees_awarded_undergraduate,count
+51015,county,"Augusta County, Virginia",2017,55,degrees_awarded_undergraduate,count
+51017,county,"Bath County, Virginia",2017,1,degrees_awarded_undergraduate,count
+51019,county,"Bedford County, Virginia",2017,41,degrees_awarded_undergraduate,count
+51021,county,"Bland County, Virginia",2017,0,degrees_awarded_undergraduate,count
+51023,county,"Botetourt County, Virginia",2017,26,degrees_awarded_undergraduate,count
+51025,county,"Brunswick County, Virginia",2017,7,degrees_awarded_undergraduate,count
+51027,county,"Buchanan County, Virginia",2017,4,degrees_awarded_undergraduate,count
+51029,county,"Buckingham County, Virginia",2017,6,degrees_awarded_undergraduate,count
+51031,county,"Campbell County, Virginia",2017,32,degrees_awarded_undergraduate,count
+51033,county,"Caroline County, Virginia",2017,10,degrees_awarded_undergraduate,count
+51035,county,"Carroll County, Virginia",2017,8,degrees_awarded_undergraduate,count
+51036,county,"Charles City County, Virginia",2017,5,degrees_awarded_undergraduate,count
+51037,county,"Charlotte County, Virginia",2017,7,degrees_awarded_undergraduate,count
+51041,county,"Chesterfield County, Virginia",2017,170,degrees_awarded_undergraduate,count
+51043,county,"Clarke County, Virginia",2017,8,degrees_awarded_undergraduate,count
+51045,county,"Craig County, Virginia",2017,2,degrees_awarded_undergraduate,count
+51047,county,"Culpeper County, Virginia",2017,9,degrees_awarded_undergraduate,count
+51049,county,"Cumberland County, Virginia",2017,4,degrees_awarded_undergraduate,count
+51051,county,"Dickenson County, Virginia",2017,0,degrees_awarded_undergraduate,count
+51053,county,"Dinwiddie County, Virginia",2017,6,degrees_awarded_undergraduate,count
+51057,county,"Essex County, Virginia",2017,7,degrees_awarded_undergraduate,count
+51059,county,"Fairfax County, Virginia",2017,512,degrees_awarded_undergraduate,count
+51061,county,"Fauquier County, Virginia",2017,23,degrees_awarded_undergraduate,count
+51063,county,"Floyd County, Virginia",2017,5,degrees_awarded_undergraduate,count
+51065,county,"Fluvanna County, Virginia",2017,8,degrees_awarded_undergraduate,count
+51067,county,"Franklin County, Virginia",2017,30,degrees_awarded_undergraduate,count
+51069,county,"Frederick County, Virginia",2017,48,degrees_awarded_undergraduate,count
+51071,county,"Giles County, Virginia",2017,6,degrees_awarded_undergraduate,count
+51073,county,"Gloucester County, Virginia",2017,7,degrees_awarded_undergraduate,count
+51075,county,"Goochland County, Virginia",2017,11,degrees_awarded_undergraduate,count
+51077,county,"Grayson County, Virginia",2017,7,degrees_awarded_undergraduate,count
+51079,county,"Greene County, Virginia",2017,10,degrees_awarded_undergraduate,count
+51081,county,"Greensville County, Virginia",2017,4,degrees_awarded_undergraduate,count
+51083,county,"Halifax County, Virginia",2017,16,degrees_awarded_undergraduate,count
+51085,county,"Hanover County, Virginia",2017,62,degrees_awarded_undergraduate,count
+51087,county,"Henrico County, Virginia",2017,129,degrees_awarded_undergraduate,count
+51089,county,"Henry County, Virginia",2017,31,degrees_awarded_undergraduate,count
+51091,county,"Highland County, Virginia",2017,0,degrees_awarded_undergraduate,count
+51093,county,"Isle of Wight County, Virginia",2017,13,degrees_awarded_undergraduate,count
+51095,county,"James City County, Virginia",2017,33,degrees_awarded_undergraduate,count
+51097,county,"King and Queen County, Virginia",2017,3,degrees_awarded_undergraduate,count
+51099,county,"King George County, Virginia",2017,12,degrees_awarded_undergraduate,count
+51101,county,"King William County, Virginia",2017,11,degrees_awarded_undergraduate,count
+51103,county,"Lancaster County, Virginia",2017,1,degrees_awarded_undergraduate,count
+51105,county,"Lee County, Virginia",2017,2,degrees_awarded_undergraduate,count
+51107,county,"Loudoun County, Virginia",2017,192,degrees_awarded_undergraduate,count
+51109,county,"Louisa County, Virginia",2017,9,degrees_awarded_undergraduate,count
+51111,county,"Lunenburg County, Virginia",2017,2,degrees_awarded_undergraduate,count
+51113,county,"Madison County, Virginia",2017,4,degrees_awarded_undergraduate,count
+51115,county,"Mathews County, Virginia",2017,7,degrees_awarded_undergraduate,count
+51117,county,"Mecklenburg County, Virginia",2017,12,degrees_awarded_undergraduate,count
+51119,county,"Middlesex County, Virginia",2017,4,degrees_awarded_undergraduate,count
+51121,county,"Montgomery County, Virginia",2017,44,degrees_awarded_undergraduate,count
+51125,county,"Nelson County, Virginia",2017,8,degrees_awarded_undergraduate,count
+51127,county,"New Kent County, Virginia",2017,13,degrees_awarded_undergraduate,count
+51131,county,"Northampton County, Virginia",2017,1,degrees_awarded_undergraduate,count
+51133,county,"Northumberland County, Virginia",2017,2,degrees_awarded_undergraduate,count
+51135,county,"Nottoway County, Virginia",2017,4,degrees_awarded_undergraduate,count
+51137,county,"Orange County, Virginia",2017,22,degrees_awarded_undergraduate,count
+51139,county,"Page County, Virginia",2017,20,degrees_awarded_undergraduate,count
+51141,county,"Patrick County, Virginia",2017,12,degrees_awarded_undergraduate,count
+51143,county,"Pittsylvania County, Virginia",2017,25,degrees_awarded_undergraduate,count
+51145,county,"Powhatan County, Virginia",2017,18,degrees_awarded_undergraduate,count
+51147,county,"Prince Edward County, Virginia",2017,7,degrees_awarded_undergraduate,count
+51149,county,"Prince George County, Virginia",2017,7,degrees_awarded_undergraduate,count
+51153,county,"Prince William County, Virginia",2017,225,degrees_awarded_undergraduate,count
+51155,county,"Pulaski County, Virginia",2017,12,degrees_awarded_undergraduate,count
+51157,county,"Rappahannock County, Virginia",2017,1,degrees_awarded_undergraduate,count
+51159,county,"Richmond County, Virginia",2017,5,degrees_awarded_undergraduate,count
+51161,county,"Roanoke County, Virginia",2017,83,degrees_awarded_undergraduate,count
+51163,county,"Rockbridge County, Virginia",2017,8,degrees_awarded_undergraduate,count
+51165,county,"Rockingham County, Virginia",2017,55,degrees_awarded_undergraduate,count
+51167,county,"Russell County, Virginia",2017,2,degrees_awarded_undergraduate,count
+51169,county,"Scott County, Virginia",2017,1,degrees_awarded_undergraduate,count
+51171,county,"Shenandoah County, Virginia",2017,28,degrees_awarded_undergraduate,count
+51173,county,"Smyth County, Virginia",2017,9,degrees_awarded_undergraduate,count
+51175,county,"Southampton County, Virginia",2017,4,degrees_awarded_undergraduate,count
+51177,county,"Spotsylvania County, Virginia",2017,61,degrees_awarded_undergraduate,count
+51179,county,"Stafford County, Virginia",2017,68,degrees_awarded_undergraduate,count
+51181,county,"Surry County, Virginia",2017,1,degrees_awarded_undergraduate,count
+51183,county,"Sussex County, Virginia",2017,0,degrees_awarded_undergraduate,count
+51185,county,"Tazewell County, Virginia",2017,8,degrees_awarded_undergraduate,count
+51187,county,"Warren County, Virginia",2017,20,degrees_awarded_undergraduate,count
+51191,county,"Washington County, Virginia",2017,7,degrees_awarded_undergraduate,count
+51193,county,"Westmoreland County, Virginia",2017,2,degrees_awarded_undergraduate,count
+51195,county,"Wise County, Virginia",2017,10,degrees_awarded_undergraduate,count
+51197,county,"Wythe County, Virginia",2017,10,degrees_awarded_undergraduate,count
+51199,county,"York County, Virginia",2017,32,degrees_awarded_undergraduate,count
+51510,county,"Alexandria city, Virginia",2017,40,degrees_awarded_undergraduate,count
+51515,county,"Bedford city, Virginia",2017,2,degrees_awarded_undergraduate,count
+51520,county,"Bristol city, Virginia",2017,0,degrees_awarded_undergraduate,count
+51530,county,"Buena Vista city, Virginia",2017,3,degrees_awarded_undergraduate,count
+51540,county,"Charlottesville city, Virginia",2017,18,degrees_awarded_undergraduate,count
+51550,county,"Chesapeake city, Virginia",2017,128,degrees_awarded_undergraduate,count
+51570,county,"Colonial Heights city, Virginia",2017,6,degrees_awarded_undergraduate,count
+51580,county,"Covington city, Virginia",2017,10,degrees_awarded_undergraduate,count
+51590,county,"Danville city, Virginia",2017,35,degrees_awarded_undergraduate,count
+51595,county,"Emporia city, Virginia",2017,0,degrees_awarded_undergraduate,count
+51600,county,"Fairfax city, Virginia",2017,16,degrees_awarded_undergraduate,count
+51610,county,"Falls Church city, Virginia",2017,0,degrees_awarded_undergraduate,count
+51620,county,"Franklin city, Virginia",2017,4,degrees_awarded_undergraduate,count
+51630,county,"Fredericksburg city, Virginia",2017,12,degrees_awarded_undergraduate,count
+51640,county,"Galax city, Virginia",2017,6,degrees_awarded_undergraduate,count
+51650,county,"Hampton city, Virginia",2017,55,degrees_awarded_undergraduate,count
+51660,county,"Harrisonburg city, Virginia",2017,19,degrees_awarded_undergraduate,count
+51670,county,"Hopewell city, Virginia",2017,1,degrees_awarded_undergraduate,count
+51678,county,"Lexington city, Virginia",2017,4,degrees_awarded_undergraduate,count
+51680,county,"Lynchburg city, Virginia",2017,39,degrees_awarded_undergraduate,count
+51683,county,"Manassas city, Virginia",2017,19,degrees_awarded_undergraduate,count
+51685,county,"Manassas Park city, Virginia",2017,5,degrees_awarded_undergraduate,count
+51690,county,"Martinsville city, Virginia",2017,22,degrees_awarded_undergraduate,count
+51700,county,"Newport News city, Virginia",2017,44,degrees_awarded_undergraduate,count
+51710,county,"Norfolk city, Virginia",2017,79,degrees_awarded_undergraduate,count
+51720,county,"Norton city, Virginia",2017,0,degrees_awarded_undergraduate,count
+51730,county,"Petersburg city, Virginia",2017,6,degrees_awarded_undergraduate,count
+51735,county,"Poquoson city, Virginia",2017,10,degrees_awarded_undergraduate,count
+51740,county,"Portsmouth city, Virginia",2017,39,degrees_awarded_undergraduate,count
+51750,county,"Radford city, Virginia",2017,30,degrees_awarded_undergraduate,count
+51760,county,"Richmond city, Virginia",2017,50,degrees_awarded_undergraduate,count
+51770,county,"Roanoke city, Virginia",2017,43,degrees_awarded_undergraduate,count
+51775,county,"Salem city, Virginia",2017,21,degrees_awarded_undergraduate,count
+51790,county,"Staunton city, Virginia",2017,20,degrees_awarded_undergraduate,count
+51800,county,"Suffolk city, Virginia",2017,39,degrees_awarded_undergraduate,count
+51810,county,"Virginia Beach city, Virginia",2017,209,degrees_awarded_undergraduate,count
+51820,county,"Waynesboro city, Virginia",2017,15,degrees_awarded_undergraduate,count
+51830,county,"Williamsburg city, Virginia",2017,6,degrees_awarded_undergraduate,count
+51840,county,"Winchester city, Virginia",2017,15,degrees_awarded_undergraduate,count
+51001,county,"Accomack County, Virginia",2018,17,degrees_awarded_undergraduate,count
+51003,county,"Albemarle County, Virginia",2018,35,degrees_awarded_undergraduate,count
+51005,county,"Alleghany County, Virginia",2018,2,degrees_awarded_undergraduate,count
+51007,county,"Amelia County, Virginia",2018,4,degrees_awarded_undergraduate,count
+51009,county,"Amherst County, Virginia",2018,9,degrees_awarded_undergraduate,count
+51011,county,"Appomattox County, Virginia",2018,3,degrees_awarded_undergraduate,count
+51013,county,"Arlington County, Virginia",2018,66,degrees_awarded_undergraduate,count
+51015,county,"Augusta County, Virginia",2018,43,degrees_awarded_undergraduate,count
+51017,county,"Bath County, Virginia",2018,4,degrees_awarded_undergraduate,count
+51019,county,"Bedford County, Virginia",2018,48,degrees_awarded_undergraduate,count
+51021,county,"Bland County, Virginia",2018,0,degrees_awarded_undergraduate,count
+51023,county,"Botetourt County, Virginia",2018,30,degrees_awarded_undergraduate,count
+51025,county,"Brunswick County, Virginia",2018,8,degrees_awarded_undergraduate,count
+51027,county,"Buchanan County, Virginia",2018,2,degrees_awarded_undergraduate,count
+51029,county,"Buckingham County, Virginia",2018,2,degrees_awarded_undergraduate,count
+51031,county,"Campbell County, Virginia",2018,34,degrees_awarded_undergraduate,count
+51033,county,"Caroline County, Virginia",2018,9,degrees_awarded_undergraduate,count
+51035,county,"Carroll County, Virginia",2018,10,degrees_awarded_undergraduate,count
+51036,county,"Charles City County, Virginia",2018,0,degrees_awarded_undergraduate,count
+51037,county,"Charlotte County, Virginia",2018,9,degrees_awarded_undergraduate,count
+51041,county,"Chesterfield County, Virginia",2018,182,degrees_awarded_undergraduate,count
+51043,county,"Clarke County, Virginia",2018,4,degrees_awarded_undergraduate,count
+51045,county,"Craig County, Virginia",2018,1,degrees_awarded_undergraduate,count
+51047,county,"Culpeper County, Virginia",2018,17,degrees_awarded_undergraduate,count
+51049,county,"Cumberland County, Virginia",2018,4,degrees_awarded_undergraduate,count
+51051,county,"Dickenson County, Virginia",2018,1,degrees_awarded_undergraduate,count
+51053,county,"Dinwiddie County, Virginia",2018,11,degrees_awarded_undergraduate,count
+51057,county,"Essex County, Virginia",2018,4,degrees_awarded_undergraduate,count
+51059,county,"Fairfax County, Virginia",2018,545,degrees_awarded_undergraduate,count
+51061,county,"Fauquier County, Virginia",2018,31,degrees_awarded_undergraduate,count
+51063,county,"Floyd County, Virginia",2018,10,degrees_awarded_undergraduate,count
+51065,county,"Fluvanna County, Virginia",2018,12,degrees_awarded_undergraduate,count
+51067,county,"Franklin County, Virginia",2018,35,degrees_awarded_undergraduate,count
+51069,county,"Frederick County, Virginia",2018,55,degrees_awarded_undergraduate,count
+51071,county,"Giles County, Virginia",2018,7,degrees_awarded_undergraduate,count
+51073,county,"Gloucester County, Virginia",2018,10,degrees_awarded_undergraduate,count
+51075,county,"Goochland County, Virginia",2018,10,degrees_awarded_undergraduate,count
+51077,county,"Grayson County, Virginia",2018,4,degrees_awarded_undergraduate,count
+51079,county,"Greene County, Virginia",2018,10,degrees_awarded_undergraduate,count
+51081,county,"Greensville County, Virginia",2018,7,degrees_awarded_undergraduate,count
+51083,county,"Halifax County, Virginia",2018,22,degrees_awarded_undergraduate,count
+51085,county,"Hanover County, Virginia",2018,67,degrees_awarded_undergraduate,count
+51087,county,"Henrico County, Virginia",2018,105,degrees_awarded_undergraduate,count
+51089,county,"Henry County, Virginia",2018,24,degrees_awarded_undergraduate,count
+51091,county,"Highland County, Virginia",2018,0,degrees_awarded_undergraduate,count
+51093,county,"Isle of Wight County, Virginia",2018,16,degrees_awarded_undergraduate,count
+51095,county,"James City County, Virginia",2018,33,degrees_awarded_undergraduate,count
+51097,county,"King and Queen County, Virginia",2018,3,degrees_awarded_undergraduate,count
+51099,county,"King George County, Virginia",2018,9,degrees_awarded_undergraduate,count
+51101,county,"King William County, Virginia",2018,3,degrees_awarded_undergraduate,count
+51103,county,"Lancaster County, Virginia",2018,4,degrees_awarded_undergraduate,count
+51105,county,"Lee County, Virginia",2018,4,degrees_awarded_undergraduate,count
+51107,county,"Loudoun County, Virginia",2018,175,degrees_awarded_undergraduate,count
+51109,county,"Louisa County, Virginia",2018,15,degrees_awarded_undergraduate,count
+51111,county,"Lunenburg County, Virginia",2018,3,degrees_awarded_undergraduate,count
+51113,county,"Madison County, Virginia",2018,6,degrees_awarded_undergraduate,count
+51115,county,"Mathews County, Virginia",2018,6,degrees_awarded_undergraduate,count
+51117,county,"Mecklenburg County, Virginia",2018,15,degrees_awarded_undergraduate,count
+51119,county,"Middlesex County, Virginia",2018,2,degrees_awarded_undergraduate,count
+51121,county,"Montgomery County, Virginia",2018,48,degrees_awarded_undergraduate,count
+51125,county,"Nelson County, Virginia",2018,8,degrees_awarded_undergraduate,count
+51127,county,"New Kent County, Virginia",2018,11,degrees_awarded_undergraduate,count
+51131,county,"Northampton County, Virginia",2018,1,degrees_awarded_undergraduate,count
+51133,county,"Northumberland County, Virginia",2018,5,degrees_awarded_undergraduate,count
+51135,county,"Nottoway County, Virginia",2018,3,degrees_awarded_undergraduate,count
+51137,county,"Orange County, Virginia",2018,16,degrees_awarded_undergraduate,count
+51139,county,"Page County, Virginia",2018,14,degrees_awarded_undergraduate,count
+51141,county,"Patrick County, Virginia",2018,9,degrees_awarded_undergraduate,count
+51143,county,"Pittsylvania County, Virginia",2018,23,degrees_awarded_undergraduate,count
+51145,county,"Powhatan County, Virginia",2018,14,degrees_awarded_undergraduate,count
+51147,county,"Prince Edward County, Virginia",2018,12,degrees_awarded_undergraduate,count
+51149,county,"Prince George County, Virginia",2018,6,degrees_awarded_undergraduate,count
+51153,county,"Prince William County, Virginia",2018,208,degrees_awarded_undergraduate,count
+51155,county,"Pulaski County, Virginia",2018,13,degrees_awarded_undergraduate,count
+51157,county,"Rappahannock County, Virginia",2018,3,degrees_awarded_undergraduate,count
+51159,county,"Richmond County, Virginia",2018,2,degrees_awarded_undergraduate,count
+51161,county,"Roanoke County, Virginia",2018,83,degrees_awarded_undergraduate,count
+51163,county,"Rockbridge County, Virginia",2018,8,degrees_awarded_undergraduate,count
+51165,county,"Rockingham County, Virginia",2018,37,degrees_awarded_undergraduate,count
+51167,county,"Russell County, Virginia",2018,6,degrees_awarded_undergraduate,count
+51169,county,"Scott County, Virginia",2018,2,degrees_awarded_undergraduate,count
+51171,county,"Shenandoah County, Virginia",2018,23,degrees_awarded_undergraduate,count
+51173,county,"Smyth County, Virginia",2018,2,degrees_awarded_undergraduate,count
+51175,county,"Southampton County, Virginia",2018,7,degrees_awarded_undergraduate,count
+51177,county,"Spotsylvania County, Virginia",2018,57,degrees_awarded_undergraduate,count
+51179,county,"Stafford County, Virginia",2018,66,degrees_awarded_undergraduate,count
+51181,county,"Surry County, Virginia",2018,3,degrees_awarded_undergraduate,count
+51183,county,"Sussex County, Virginia",2018,0,degrees_awarded_undergraduate,count
+51185,county,"Tazewell County, Virginia",2018,9,degrees_awarded_undergraduate,count
+51187,county,"Warren County, Virginia",2018,8,degrees_awarded_undergraduate,count
+51191,county,"Washington County, Virginia",2018,16,degrees_awarded_undergraduate,count
+51193,county,"Westmoreland County, Virginia",2018,7,degrees_awarded_undergraduate,count
+51195,county,"Wise County, Virginia",2018,11,degrees_awarded_undergraduate,count
+51197,county,"Wythe County, Virginia",2018,8,degrees_awarded_undergraduate,count
+51199,county,"York County, Virginia",2018,33,degrees_awarded_undergraduate,count
+51510,county,"Alexandria city, Virginia",2018,40,degrees_awarded_undergraduate,count
+51515,county,"Bedford city, Virginia",2018,6,degrees_awarded_undergraduate,count
+51520,county,"Bristol city, Virginia",2018,1,degrees_awarded_undergraduate,count
+51530,county,"Buena Vista city, Virginia",2018,3,degrees_awarded_undergraduate,count
+51540,county,"Charlottesville city, Virginia",2018,19,degrees_awarded_undergraduate,count
+51550,county,"Chesapeake city, Virginia",2018,134,degrees_awarded_undergraduate,count
+51570,county,"Colonial Heights city, Virginia",2018,5,degrees_awarded_undergraduate,count
+51580,county,"Covington city, Virginia",2018,6,degrees_awarded_undergraduate,count
+51590,county,"Danville city, Virginia",2018,21,degrees_awarded_undergraduate,count
+51595,county,"Emporia city, Virginia",2018,0,degrees_awarded_undergraduate,count
+51600,county,"Fairfax city, Virginia",2018,21,degrees_awarded_undergraduate,count
+51610,county,"Falls Church city, Virginia",2018,6,degrees_awarded_undergraduate,count
+51620,county,"Franklin city, Virginia",2018,6,degrees_awarded_undergraduate,count
+51630,county,"Fredericksburg city, Virginia",2018,13,degrees_awarded_undergraduate,count
+51640,county,"Galax city, Virginia",2018,5,degrees_awarded_undergraduate,count
+51650,county,"Hampton city, Virginia",2018,37,degrees_awarded_undergraduate,count
+51660,county,"Harrisonburg city, Virginia",2018,31,degrees_awarded_undergraduate,count
+51670,county,"Hopewell city, Virginia",2018,4,degrees_awarded_undergraduate,count
+51678,county,"Lexington city, Virginia",2018,5,degrees_awarded_undergraduate,count
+51680,county,"Lynchburg city, Virginia",2018,51,degrees_awarded_undergraduate,count
+51683,county,"Manassas city, Virginia",2018,14,degrees_awarded_undergraduate,count
+51685,county,"Manassas Park city, Virginia",2018,7,degrees_awarded_undergraduate,count
+51690,county,"Martinsville city, Virginia",2018,13,degrees_awarded_undergraduate,count
+51700,county,"Newport News city, Virginia",2018,56,degrees_awarded_undergraduate,count
+51710,county,"Norfolk city, Virginia",2018,81,degrees_awarded_undergraduate,count
+51720,county,"Norton city, Virginia",2018,2,degrees_awarded_undergraduate,count
+51730,county,"Petersburg city, Virginia",2018,10,degrees_awarded_undergraduate,count
+51735,county,"Poquoson city, Virginia",2018,7,degrees_awarded_undergraduate,count
+51740,county,"Portsmouth city, Virginia",2018,22,degrees_awarded_undergraduate,count
+51750,county,"Radford city, Virginia",2018,23,degrees_awarded_undergraduate,count
+51760,county,"Richmond city, Virginia",2018,64,degrees_awarded_undergraduate,count
+51770,county,"Roanoke city, Virginia",2018,68,degrees_awarded_undergraduate,count
+51775,county,"Salem city, Virginia",2018,29,degrees_awarded_undergraduate,count
+51790,county,"Staunton city, Virginia",2018,16,degrees_awarded_undergraduate,count
+51800,county,"Suffolk city, Virginia",2018,40,degrees_awarded_undergraduate,count
+51810,county,"Virginia Beach city, Virginia",2018,214,degrees_awarded_undergraduate,count
+51820,county,"Waynesboro city, Virginia",2018,17,degrees_awarded_undergraduate,count
+51830,county,"Williamsburg city, Virginia",2018,0,degrees_awarded_undergraduate,count
+51840,county,"Winchester city, Virginia",2018,16,degrees_awarded_undergraduate,count
+51001,county,"Accomack County, Virginia",2019,4,degrees_awarded_undergraduate,count
+51003,county,"Albemarle County, Virginia",2019,36,degrees_awarded_undergraduate,count
+51005,county,"Alleghany County, Virginia",2019,2,degrees_awarded_undergraduate,count
+51007,county,"Amelia County, Virginia",2019,3,degrees_awarded_undergraduate,count
+51009,county,"Amherst County, Virginia",2019,14,degrees_awarded_undergraduate,count
+51011,county,"Appomattox County, Virginia",2019,5,degrees_awarded_undergraduate,count
+51013,county,"Arlington County, Virginia",2019,56,degrees_awarded_undergraduate,count
+51015,county,"Augusta County, Virginia",2019,36,degrees_awarded_undergraduate,count
+51017,county,"Bath County, Virginia",2019,3,degrees_awarded_undergraduate,count
+51019,county,"Bedford County, Virginia",2019,46,degrees_awarded_undergraduate,count
+51021,county,"Bland County, Virginia",2019,4,degrees_awarded_undergraduate,count
+51023,county,"Botetourt County, Virginia",2019,37,degrees_awarded_undergraduate,count
+51025,county,"Brunswick County, Virginia",2019,7,degrees_awarded_undergraduate,count
+51027,county,"Buchanan County, Virginia",2019,3,degrees_awarded_undergraduate,count
+51029,county,"Buckingham County, Virginia",2019,7,degrees_awarded_undergraduate,count
+51031,county,"Campbell County, Virginia",2019,28,degrees_awarded_undergraduate,count
+51033,county,"Caroline County, Virginia",2019,13,degrees_awarded_undergraduate,count
+51035,county,"Carroll County, Virginia",2019,4,degrees_awarded_undergraduate,count
+51036,county,"Charles City County, Virginia",2019,0,degrees_awarded_undergraduate,count
+51037,county,"Charlotte County, Virginia",2019,5,degrees_awarded_undergraduate,count
+51041,county,"Chesterfield County, Virginia",2019,137,degrees_awarded_undergraduate,count
+51043,county,"Clarke County, Virginia",2019,6,degrees_awarded_undergraduate,count
+51045,county,"Craig County, Virginia",2019,0,degrees_awarded_undergraduate,count
+51047,county,"Culpeper County, Virginia",2019,22,degrees_awarded_undergraduate,count
+51049,county,"Cumberland County, Virginia",2019,2,degrees_awarded_undergraduate,count
+51051,county,"Dickenson County, Virginia",2019,3,degrees_awarded_undergraduate,count
+51053,county,"Dinwiddie County, Virginia",2019,5,degrees_awarded_undergraduate,count
+51057,county,"Essex County, Virginia",2019,7,degrees_awarded_undergraduate,count
+51059,county,"Fairfax County, Virginia",2019,491,degrees_awarded_undergraduate,count
+51061,county,"Fauquier County, Virginia",2019,36,degrees_awarded_undergraduate,count
+51063,county,"Floyd County, Virginia",2019,6,degrees_awarded_undergraduate,count
+51065,county,"Fluvanna County, Virginia",2019,16,degrees_awarded_undergraduate,count
+51067,county,"Franklin County, Virginia",2019,29,degrees_awarded_undergraduate,count
+51069,county,"Frederick County, Virginia",2019,34,degrees_awarded_undergraduate,count
+51071,county,"Giles County, Virginia",2019,7,degrees_awarded_undergraduate,count
+51073,county,"Gloucester County, Virginia",2019,8,degrees_awarded_undergraduate,count
+51075,county,"Goochland County, Virginia",2019,8,degrees_awarded_undergraduate,count
+51077,county,"Grayson County, Virginia",2019,8,degrees_awarded_undergraduate,count
+51079,county,"Greene County, Virginia",2019,11,degrees_awarded_undergraduate,count
+51081,county,"Greensville County, Virginia",2019,4,degrees_awarded_undergraduate,count
+51083,county,"Halifax County, Virginia",2019,12,degrees_awarded_undergraduate,count
+51085,county,"Hanover County, Virginia",2019,57,degrees_awarded_undergraduate,count
+51087,county,"Henrico County, Virginia",2019,120,degrees_awarded_undergraduate,count
+51089,county,"Henry County, Virginia",2019,19,degrees_awarded_undergraduate,count
+51091,county,"Highland County, Virginia",2019,2,degrees_awarded_undergraduate,count
+51093,county,"Isle of Wight County, Virginia",2019,19,degrees_awarded_undergraduate,count
+51095,county,"James City County, Virginia",2019,34,degrees_awarded_undergraduate,count
+51097,county,"King and Queen County, Virginia",2019,2,degrees_awarded_undergraduate,count
+51099,county,"King George County, Virginia",2019,11,degrees_awarded_undergraduate,count
+51101,county,"King William County, Virginia",2019,8,degrees_awarded_undergraduate,count
+51103,county,"Lancaster County, Virginia",2019,2,degrees_awarded_undergraduate,count
+51105,county,"Lee County, Virginia",2019,1,degrees_awarded_undergraduate,count
+51107,county,"Loudoun County, Virginia",2019,207,degrees_awarded_undergraduate,count
+51109,county,"Louisa County, Virginia",2019,16,degrees_awarded_undergraduate,count
+51111,county,"Lunenburg County, Virginia",2019,7,degrees_awarded_undergraduate,count
+51113,county,"Madison County, Virginia",2019,3,degrees_awarded_undergraduate,count
+51115,county,"Mathews County, Virginia",2019,3,degrees_awarded_undergraduate,count
+51117,county,"Mecklenburg County, Virginia",2019,8,degrees_awarded_undergraduate,count
+51119,county,"Middlesex County, Virginia",2019,7,degrees_awarded_undergraduate,count
+51121,county,"Montgomery County, Virginia",2019,39,degrees_awarded_undergraduate,count
+51125,county,"Nelson County, Virginia",2019,6,degrees_awarded_undergraduate,count
+51127,county,"New Kent County, Virginia",2019,9,degrees_awarded_undergraduate,count
+51131,county,"Northampton County, Virginia",2019,3,degrees_awarded_undergraduate,count
+51133,county,"Northumberland County, Virginia",2019,3,degrees_awarded_undergraduate,count
+51135,county,"Nottoway County, Virginia",2019,2,degrees_awarded_undergraduate,count
+51137,county,"Orange County, Virginia",2019,15,degrees_awarded_undergraduate,count
+51139,county,"Page County, Virginia",2019,9,degrees_awarded_undergraduate,count
+51141,county,"Patrick County, Virginia",2019,5,degrees_awarded_undergraduate,count
+51143,county,"Pittsylvania County, Virginia",2019,23,degrees_awarded_undergraduate,count
+51145,county,"Powhatan County, Virginia",2019,18,degrees_awarded_undergraduate,count
+51147,county,"Prince Edward County, Virginia",2019,8,degrees_awarded_undergraduate,count
+51149,county,"Prince George County, Virginia",2019,5,degrees_awarded_undergraduate,count
+51153,county,"Prince William County, Virginia",2019,214,degrees_awarded_undergraduate,count
+51155,county,"Pulaski County, Virginia",2019,14,degrees_awarded_undergraduate,count
+51157,county,"Rappahannock County, Virginia",2019,3,degrees_awarded_undergraduate,count
+51159,county,"Richmond County, Virginia",2019,4,degrees_awarded_undergraduate,count
+51161,county,"Roanoke County, Virginia",2019,88,degrees_awarded_undergraduate,count
+51163,county,"Rockbridge County, Virginia",2019,4,degrees_awarded_undergraduate,count
+51165,county,"Rockingham County, Virginia",2019,47,degrees_awarded_undergraduate,count
+51167,county,"Russell County, Virginia",2019,8,degrees_awarded_undergraduate,count
+51169,county,"Scott County, Virginia",2019,4,degrees_awarded_undergraduate,count
+51171,county,"Shenandoah County, Virginia",2019,15,degrees_awarded_undergraduate,count
+51173,county,"Smyth County, Virginia",2019,9,degrees_awarded_undergraduate,count
+51175,county,"Southampton County, Virginia",2019,4,degrees_awarded_undergraduate,count
+51177,county,"Spotsylvania County, Virginia",2019,58,degrees_awarded_undergraduate,count
+51179,county,"Stafford County, Virginia",2019,72,degrees_awarded_undergraduate,count
+51181,county,"Surry County, Virginia",2019,2,degrees_awarded_undergraduate,count
+51183,county,"Sussex County, Virginia",2019,1,degrees_awarded_undergraduate,count
+51185,county,"Tazewell County, Virginia",2019,10,degrees_awarded_undergraduate,count
+51187,county,"Warren County, Virginia",2019,14,degrees_awarded_undergraduate,count
+51191,county,"Washington County, Virginia",2019,14,degrees_awarded_undergraduate,count
+51193,county,"Westmoreland County, Virginia",2019,2,degrees_awarded_undergraduate,count
+51195,county,"Wise County, Virginia",2019,14,degrees_awarded_undergraduate,count
+51197,county,"Wythe County, Virginia",2019,8,degrees_awarded_undergraduate,count
+51199,county,"York County, Virginia",2019,32,degrees_awarded_undergraduate,count
+51510,county,"Alexandria city, Virginia",2019,33,degrees_awarded_undergraduate,count
+51515,county,"Bedford city, Virginia",2019,1,degrees_awarded_undergraduate,count
+51520,county,"Bristol city, Virginia",2019,1,degrees_awarded_undergraduate,count
+51530,county,"Buena Vista city, Virginia",2019,3,degrees_awarded_undergraduate,count
+51540,county,"Charlottesville city, Virginia",2019,16,degrees_awarded_undergraduate,count
+51550,county,"Chesapeake city, Virginia",2019,125,degrees_awarded_undergraduate,count
+51570,county,"Colonial Heights city, Virginia",2019,5,degrees_awarded_undergraduate,count
+51580,county,"Covington city, Virginia",2019,7,degrees_awarded_undergraduate,count
+51590,county,"Danville city, Virginia",2019,29,degrees_awarded_undergraduate,count
+51595,county,"Emporia city, Virginia",2019,0,degrees_awarded_undergraduate,count
+51600,county,"Fairfax city, Virginia",2019,19,degrees_awarded_undergraduate,count
+51610,county,"Falls Church city, Virginia",2019,2,degrees_awarded_undergraduate,count
+51620,county,"Franklin city, Virginia",2019,2,degrees_awarded_undergraduate,count
+51630,county,"Fredericksburg city, Virginia",2019,13,degrees_awarded_undergraduate,count
+51640,county,"Galax city, Virginia",2019,5,degrees_awarded_undergraduate,count
+51650,county,"Hampton city, Virginia",2019,39,degrees_awarded_undergraduate,count
+51660,county,"Harrisonburg city, Virginia",2019,37,degrees_awarded_undergraduate,count
+51670,county,"Hopewell city, Virginia",2019,4,degrees_awarded_undergraduate,count
+51678,county,"Lexington city, Virginia",2019,2,degrees_awarded_undergraduate,count
+51680,county,"Lynchburg city, Virginia",2019,40,degrees_awarded_undergraduate,count
+51683,county,"Manassas city, Virginia",2019,10,degrees_awarded_undergraduate,count
+51685,county,"Manassas Park city, Virginia",2019,6,degrees_awarded_undergraduate,count
+51690,county,"Martinsville city, Virginia",2019,12,degrees_awarded_undergraduate,count
+51700,county,"Newport News city, Virginia",2019,59,degrees_awarded_undergraduate,count
+51710,county,"Norfolk city, Virginia",2019,79,degrees_awarded_undergraduate,count
+51720,county,"Norton city, Virginia",2019,0,degrees_awarded_undergraduate,count
+51730,county,"Petersburg city, Virginia",2019,5,degrees_awarded_undergraduate,count
+51735,county,"Poquoson city, Virginia",2019,5,degrees_awarded_undergraduate,count
+51740,county,"Portsmouth city, Virginia",2019,27,degrees_awarded_undergraduate,count
+51750,county,"Radford city, Virginia",2019,26,degrees_awarded_undergraduate,count
+51760,county,"Richmond city, Virginia",2019,58,degrees_awarded_undergraduate,count
+51770,county,"Roanoke city, Virginia",2019,58,degrees_awarded_undergraduate,count
+51775,county,"Salem city, Virginia",2019,23,degrees_awarded_undergraduate,count
+51790,county,"Staunton city, Virginia",2019,10,degrees_awarded_undergraduate,count
+51800,county,"Suffolk city, Virginia",2019,44,degrees_awarded_undergraduate,count
+51810,county,"Virginia Beach city, Virginia",2019,197,degrees_awarded_undergraduate,count
+51820,county,"Waynesboro city, Virginia",2019,14,degrees_awarded_undergraduate,count
+51830,county,"Williamsburg city, Virginia",2019,4,degrees_awarded_undergraduate,count
+51840,county,"Winchester city, Virginia",2019,13,degrees_awarded_undergraduate,count
+51001,county,"Accomack County, Virginia",2016,4,degrees_awarded_graduate,count
+51003,county,"Albemarle County, Virginia",2016,25,degrees_awarded_graduate,count
+51005,county,"Alleghany County, Virginia",2016,1,degrees_awarded_graduate,count
+51007,county,"Amelia County, Virginia",2016,2,degrees_awarded_graduate,count
+51009,county,"Amherst County, Virginia",2016,11,degrees_awarded_graduate,count
+51011,county,"Appomattox County, Virginia",2016,0,degrees_awarded_graduate,count
+51013,county,"Arlington County, Virginia",2016,44,degrees_awarded_graduate,count
+51015,county,"Augusta County, Virginia",2016,26,degrees_awarded_graduate,count
+51017,county,"Bath County, Virginia",2016,1,degrees_awarded_graduate,count
+51019,county,"Bedford County, Virginia",2016,25,degrees_awarded_graduate,count
+51021,county,"Bland County, Virginia",2016,1,degrees_awarded_graduate,count
+51023,county,"Botetourt County, Virginia",2016,10,degrees_awarded_graduate,count
+51025,county,"Brunswick County, Virginia",2016,1,degrees_awarded_graduate,count
+51027,county,"Buchanan County, Virginia",2016,3,degrees_awarded_graduate,count
+51029,county,"Buckingham County, Virginia",2016,1,degrees_awarded_graduate,count
+51031,county,"Campbell County, Virginia",2016,14,degrees_awarded_graduate,count
+51033,county,"Caroline County, Virginia",2016,2,degrees_awarded_graduate,count
+51035,county,"Carroll County, Virginia",2016,2,degrees_awarded_graduate,count
+51036,county,"Charles City County, Virginia",2016,1,degrees_awarded_graduate,count
+51037,county,"Charlotte County, Virginia",2016,2,degrees_awarded_graduate,count
+51041,county,"Chesterfield County, Virginia",2016,83,degrees_awarded_graduate,count
+51043,county,"Clarke County, Virginia",2016,1,degrees_awarded_graduate,count
+51045,county,"Craig County, Virginia",2016,2,degrees_awarded_graduate,count
+51047,county,"Culpeper County, Virginia",2016,4,degrees_awarded_graduate,count
+51049,county,"Cumberland County, Virginia",2016,3,degrees_awarded_graduate,count
+51051,county,"Dickenson County, Virginia",2016,2,degrees_awarded_graduate,count
+51053,county,"Dinwiddie County, Virginia",2016,3,degrees_awarded_graduate,count
+51057,county,"Essex County, Virginia",2016,1,degrees_awarded_graduate,count
+51059,county,"Fairfax County, Virginia",2016,198,degrees_awarded_graduate,count
+51061,county,"Fauquier County, Virginia",2016,10,degrees_awarded_graduate,count
+51063,county,"Floyd County, Virginia",2016,3,degrees_awarded_graduate,count
+51065,county,"Fluvanna County, Virginia",2016,7,degrees_awarded_graduate,count
+51067,county,"Franklin County, Virginia",2016,13,degrees_awarded_graduate,count
+51069,county,"Frederick County, Virginia",2016,14,degrees_awarded_graduate,count
+51071,county,"Giles County, Virginia",2016,7,degrees_awarded_graduate,count
+51073,county,"Gloucester County, Virginia",2016,6,degrees_awarded_graduate,count
+51075,county,"Goochland County, Virginia",2016,6,degrees_awarded_graduate,count
+51077,county,"Grayson County, Virginia",2016,3,degrees_awarded_graduate,count
+51079,county,"Greene County, Virginia",2016,3,degrees_awarded_graduate,count
+51081,county,"Greensville County, Virginia",2016,3,degrees_awarded_graduate,count
+51083,county,"Halifax County, Virginia",2016,5,degrees_awarded_graduate,count
+51085,county,"Hanover County, Virginia",2016,27,degrees_awarded_graduate,count
+51087,county,"Henrico County, Virginia",2016,88,degrees_awarded_graduate,count
+51089,county,"Henry County, Virginia",2016,9,degrees_awarded_graduate,count
+51091,county,"Highland County, Virginia",2016,1,degrees_awarded_graduate,count
+51093,county,"Isle of Wight County, Virginia",2016,8,degrees_awarded_graduate,count
+51095,county,"James City County, Virginia",2016,19,degrees_awarded_graduate,count
+51097,county,"King and Queen County, Virginia",2016,3,degrees_awarded_graduate,count
+51099,county,"King George County, Virginia",2016,2,degrees_awarded_graduate,count
+51101,county,"King William County, Virginia",2016,4,degrees_awarded_graduate,count
+51103,county,"Lancaster County, Virginia",2016,3,degrees_awarded_graduate,count
+51105,county,"Lee County, Virginia",2016,1,degrees_awarded_graduate,count
+51107,county,"Loudoun County, Virginia",2016,56,degrees_awarded_graduate,count
+51109,county,"Louisa County, Virginia",2016,4,degrees_awarded_graduate,count
+51111,county,"Lunenburg County, Virginia",2016,1,degrees_awarded_graduate,count
+51113,county,"Madison County, Virginia",2016,1,degrees_awarded_graduate,count
+51115,county,"Mathews County, Virginia",2016,3,degrees_awarded_graduate,count
+51117,county,"Mecklenburg County, Virginia",2016,3,degrees_awarded_graduate,count
+51119,county,"Middlesex County, Virginia",2016,2,degrees_awarded_graduate,count
+51121,county,"Montgomery County, Virginia",2016,30,degrees_awarded_graduate,count
+51125,county,"Nelson County, Virginia",2016,2,degrees_awarded_graduate,count
+51127,county,"New Kent County, Virginia",2016,8,degrees_awarded_graduate,count
+51131,county,"Northampton County, Virginia",2016,2,degrees_awarded_graduate,count
+51133,county,"Northumberland County, Virginia",2016,1,degrees_awarded_graduate,count
+51135,county,"Nottoway County, Virginia",2016,3,degrees_awarded_graduate,count
+51137,county,"Orange County, Virginia",2016,2,degrees_awarded_graduate,count
+51139,county,"Page County, Virginia",2016,3,degrees_awarded_graduate,count
+51141,county,"Patrick County, Virginia",2016,0,degrees_awarded_graduate,count
+51143,county,"Pittsylvania County, Virginia",2016,10,degrees_awarded_graduate,count
+51145,county,"Powhatan County, Virginia",2016,8,degrees_awarded_graduate,count
+51147,county,"Prince Edward County, Virginia",2016,7,degrees_awarded_graduate,count
+51149,county,"Prince George County, Virginia",2016,5,degrees_awarded_graduate,count
+51153,county,"Prince William County, Virginia",2016,63,degrees_awarded_graduate,count
+51155,county,"Pulaski County, Virginia",2016,3,degrees_awarded_graduate,count
+51157,county,"Rappahannock County, Virginia",2016,0,degrees_awarded_graduate,count
+51159,county,"Richmond County, Virginia",2016,2,degrees_awarded_graduate,count
+51161,county,"Roanoke County, Virginia",2016,30,degrees_awarded_graduate,count
+51163,county,"Rockbridge County, Virginia",2016,4,degrees_awarded_graduate,count
+51165,county,"Rockingham County, Virginia",2016,23,degrees_awarded_graduate,count
+51167,county,"Russell County, Virginia",2016,0,degrees_awarded_graduate,count
+51169,county,"Scott County, Virginia",2016,1,degrees_awarded_graduate,count
+51171,county,"Shenandoah County, Virginia",2016,3,degrees_awarded_graduate,count
+51173,county,"Smyth County, Virginia",2016,5,degrees_awarded_graduate,count
+51175,county,"Southampton County, Virginia",2016,3,degrees_awarded_graduate,count
+51177,county,"Spotsylvania County, Virginia",2016,10,degrees_awarded_graduate,count
+51179,county,"Stafford County, Virginia",2016,24,degrees_awarded_graduate,count
+51181,county,"Surry County, Virginia",2016,1,degrees_awarded_graduate,count
+51183,county,"Sussex County, Virginia",2016,1,degrees_awarded_graduate,count
+51185,county,"Tazewell County, Virginia",2016,2,degrees_awarded_graduate,count
+51187,county,"Warren County, Virginia",2016,4,degrees_awarded_graduate,count
+51191,county,"Washington County, Virginia",2016,5,degrees_awarded_graduate,count
+51193,county,"Westmoreland County, Virginia",2016,1,degrees_awarded_graduate,count
+51195,county,"Wise County, Virginia",2016,2,degrees_awarded_graduate,count
+51197,county,"Wythe County, Virginia",2016,1,degrees_awarded_graduate,count
+51199,county,"York County, Virginia",2016,15,degrees_awarded_graduate,count
+51510,county,"Alexandria city, Virginia",2016,24,degrees_awarded_graduate,count
+51515,county,"Bedford city, Virginia",2016,5,degrees_awarded_graduate,count
+51520,county,"Bristol city, Virginia",2016,4,degrees_awarded_graduate,count
+51530,county,"Buena Vista city, Virginia",2016,0,degrees_awarded_graduate,count
+51540,county,"Charlottesville city, Virginia",2016,23,degrees_awarded_graduate,count
+51550,county,"Chesapeake city, Virginia",2016,45,degrees_awarded_graduate,count
+51570,county,"Colonial Heights city, Virginia",2016,4,degrees_awarded_graduate,count
+51580,county,"Covington city, Virginia",2016,1,degrees_awarded_graduate,count
+51590,county,"Danville city, Virginia",2016,5,degrees_awarded_graduate,count
+51595,county,"Emporia city, Virginia",2016,2,degrees_awarded_graduate,count
+51600,county,"Fairfax city, Virginia",2016,4,degrees_awarded_graduate,count
+51610,county,"Falls Church city, Virginia",2016,7,degrees_awarded_graduate,count
+51620,county,"Franklin city, Virginia",2016,2,degrees_awarded_graduate,count
+51630,county,"Fredericksburg city, Virginia",2016,3,degrees_awarded_graduate,count
+51640,county,"Galax city, Virginia",2016,0,degrees_awarded_graduate,count
+51650,county,"Hampton city, Virginia",2016,22,degrees_awarded_graduate,count
+51660,county,"Harrisonburg city, Virginia",2016,20,degrees_awarded_graduate,count
+51670,county,"Hopewell city, Virginia",2016,2,degrees_awarded_graduate,count
+51678,county,"Lexington city, Virginia",2016,1,degrees_awarded_graduate,count
+51680,county,"Lynchburg city, Virginia",2016,34,degrees_awarded_graduate,count
+51683,county,"Manassas city, Virginia",2016,6,degrees_awarded_graduate,count
+51685,county,"Manassas Park city, Virginia",2016,1,degrees_awarded_graduate,count
+51690,county,"Martinsville city, Virginia",2016,1,degrees_awarded_graduate,count
+51700,county,"Newport News city, Virginia",2016,18,degrees_awarded_graduate,count
+51710,county,"Norfolk city, Virginia",2016,52,degrees_awarded_graduate,count
+51720,county,"Norton city, Virginia",2016,0,degrees_awarded_graduate,count
+51730,county,"Petersburg city, Virginia",2016,4,degrees_awarded_graduate,count
+51735,county,"Poquoson city, Virginia",2016,3,degrees_awarded_graduate,count
+51740,county,"Portsmouth city, Virginia",2016,15,degrees_awarded_graduate,count
+51750,county,"Radford city, Virginia",2016,21,degrees_awarded_graduate,count
+51760,county,"Richmond city, Virginia",2016,91,degrees_awarded_graduate,count
+51770,county,"Roanoke city, Virginia",2016,37,degrees_awarded_graduate,count
+51775,county,"Salem city, Virginia",2016,18,degrees_awarded_graduate,count
+51790,county,"Staunton city, Virginia",2016,12,degrees_awarded_graduate,count
+51800,county,"Suffolk city, Virginia",2016,14,degrees_awarded_graduate,count
+51810,county,"Virginia Beach city, Virginia",2016,88,degrees_awarded_graduate,count
+51820,county,"Waynesboro city, Virginia",2016,6,degrees_awarded_graduate,count
+51830,county,"Williamsburg city, Virginia",2016,4,degrees_awarded_graduate,count
+51840,county,"Winchester city, Virginia",2016,9,degrees_awarded_graduate,count
+51001,county,"Accomack County, Virginia",2017,5,degrees_awarded_graduate,count
+51003,county,"Albemarle County, Virginia",2017,36,degrees_awarded_graduate,count
+51005,county,"Alleghany County, Virginia",2017,3,degrees_awarded_graduate,count
+51007,county,"Amelia County, Virginia",2017,2,degrees_awarded_graduate,count
+51009,county,"Amherst County, Virginia",2017,7,degrees_awarded_graduate,count
+51011,county,"Appomattox County, Virginia",2017,5,degrees_awarded_graduate,count
+51013,county,"Arlington County, Virginia",2017,35,degrees_awarded_graduate,count
+51015,county,"Augusta County, Virginia",2017,20,degrees_awarded_graduate,count
+51017,county,"Bath County, Virginia",2017,0,degrees_awarded_graduate,count
+51019,county,"Bedford County, Virginia",2017,35,degrees_awarded_graduate,count
+51021,county,"Bland County, Virginia",2017,2,degrees_awarded_graduate,count
+51023,county,"Botetourt County, Virginia",2017,7,degrees_awarded_graduate,count
+51025,county,"Brunswick County, Virginia",2017,2,degrees_awarded_graduate,count
+51027,county,"Buchanan County, Virginia",2017,1,degrees_awarded_graduate,count
+51029,county,"Buckingham County, Virginia",2017,2,degrees_awarded_graduate,count
+51031,county,"Campbell County, Virginia",2017,15,degrees_awarded_graduate,count
+51033,county,"Caroline County, Virginia",2017,4,degrees_awarded_graduate,count
+51035,county,"Carroll County, Virginia",2017,2,degrees_awarded_graduate,count
+51036,county,"Charles City County, Virginia",2017,0,degrees_awarded_graduate,count
+51037,county,"Charlotte County, Virginia",2017,2,degrees_awarded_graduate,count
+51041,county,"Chesterfield County, Virginia",2017,64,degrees_awarded_graduate,count
+51043,county,"Clarke County, Virginia",2017,4,degrees_awarded_graduate,count
+51045,county,"Craig County, Virginia",2017,1,degrees_awarded_graduate,count
+51047,county,"Culpeper County, Virginia",2017,3,degrees_awarded_graduate,count
+51049,county,"Cumberland County, Virginia",2017,0,degrees_awarded_graduate,count
+51051,county,"Dickenson County, Virginia",2017,0,degrees_awarded_graduate,count
+51053,county,"Dinwiddie County, Virginia",2017,6,degrees_awarded_graduate,count
+51057,county,"Essex County, Virginia",2017,1,degrees_awarded_graduate,count
+51059,county,"Fairfax County, Virginia",2017,197,degrees_awarded_graduate,count
+51061,county,"Fauquier County, Virginia",2017,13,degrees_awarded_graduate,count
+51063,county,"Floyd County, Virginia",2017,3,degrees_awarded_graduate,count
+51065,county,"Fluvanna County, Virginia",2017,8,degrees_awarded_graduate,count
+51067,county,"Franklin County, Virginia",2017,11,degrees_awarded_graduate,count
+51069,county,"Frederick County, Virginia",2017,18,degrees_awarded_graduate,count
+51071,county,"Giles County, Virginia",2017,8,degrees_awarded_graduate,count
+51073,county,"Gloucester County, Virginia",2017,3,degrees_awarded_graduate,count
+51075,county,"Goochland County, Virginia",2017,3,degrees_awarded_graduate,count
+51077,county,"Grayson County, Virginia",2017,0,degrees_awarded_graduate,count
+51079,county,"Greene County, Virginia",2017,1,degrees_awarded_graduate,count
+51081,county,"Greensville County, Virginia",2017,0,degrees_awarded_graduate,count
+51083,county,"Halifax County, Virginia",2017,4,degrees_awarded_graduate,count
+51085,county,"Hanover County, Virginia",2017,33,degrees_awarded_graduate,count
+51087,county,"Henrico County, Virginia",2017,80,degrees_awarded_graduate,count
+51089,county,"Henry County, Virginia",2017,8,degrees_awarded_graduate,count
+51091,county,"Highland County, Virginia",2017,0,degrees_awarded_graduate,count
+51093,county,"Isle of Wight County, Virginia",2017,6,degrees_awarded_graduate,count
+51095,county,"James City County, Virginia",2017,18,degrees_awarded_graduate,count
+51097,county,"King and Queen County, Virginia",2017,2,degrees_awarded_graduate,count
+51099,county,"King George County, Virginia",2017,3,degrees_awarded_graduate,count
+51101,county,"King William County, Virginia",2017,1,degrees_awarded_graduate,count
+51103,county,"Lancaster County, Virginia",2017,0,degrees_awarded_graduate,count
+51105,county,"Lee County, Virginia",2017,2,degrees_awarded_graduate,count
+51107,county,"Loudoun County, Virginia",2017,65,degrees_awarded_graduate,count
+51109,county,"Louisa County, Virginia",2017,4,degrees_awarded_graduate,count
+51111,county,"Lunenburg County, Virginia",2017,1,degrees_awarded_graduate,count
+51113,county,"Madison County, Virginia",2017,1,degrees_awarded_graduate,count
+51115,county,"Mathews County, Virginia",2017,1,degrees_awarded_graduate,count
+51117,county,"Mecklenburg County, Virginia",2017,5,degrees_awarded_graduate,count
+51119,county,"Middlesex County, Virginia",2017,2,degrees_awarded_graduate,count
+51121,county,"Montgomery County, Virginia",2017,40,degrees_awarded_graduate,count
+51125,county,"Nelson County, Virginia",2017,3,degrees_awarded_graduate,count
+51127,county,"New Kent County, Virginia",2017,6,degrees_awarded_graduate,count
+51131,county,"Northampton County, Virginia",2017,1,degrees_awarded_graduate,count
+51133,county,"Northumberland County, Virginia",2017,1,degrees_awarded_graduate,count
+51135,county,"Nottoway County, Virginia",2017,1,degrees_awarded_graduate,count
+51137,county,"Orange County, Virginia",2017,2,degrees_awarded_graduate,count
+51139,county,"Page County, Virginia",2017,3,degrees_awarded_graduate,count
+51141,county,"Patrick County, Virginia",2017,2,degrees_awarded_graduate,count
+51143,county,"Pittsylvania County, Virginia",2017,7,degrees_awarded_graduate,count
+51145,county,"Powhatan County, Virginia",2017,3,degrees_awarded_graduate,count
+51147,county,"Prince Edward County, Virginia",2017,3,degrees_awarded_graduate,count
+51149,county,"Prince George County, Virginia",2017,5,degrees_awarded_graduate,count
+51153,county,"Prince William County, Virginia",2017,52,degrees_awarded_graduate,count
+51155,county,"Pulaski County, Virginia",2017,4,degrees_awarded_graduate,count
+51157,county,"Rappahannock County, Virginia",2017,1,degrees_awarded_graduate,count
+51159,county,"Richmond County, Virginia",2017,4,degrees_awarded_graduate,count
+51161,county,"Roanoke County, Virginia",2017,54,degrees_awarded_graduate,count
+51163,county,"Rockbridge County, Virginia",2017,4,degrees_awarded_graduate,count
+51165,county,"Rockingham County, Virginia",2017,26,degrees_awarded_graduate,count
+51167,county,"Russell County, Virginia",2017,4,degrees_awarded_graduate,count
+51169,county,"Scott County, Virginia",2017,0,degrees_awarded_graduate,count
+51171,county,"Shenandoah County, Virginia",2017,8,degrees_awarded_graduate,count
+51173,county,"Smyth County, Virginia",2017,9,degrees_awarded_graduate,count
+51175,county,"Southampton County, Virginia",2017,6,degrees_awarded_graduate,count
+51177,county,"Spotsylvania County, Virginia",2017,26,degrees_awarded_graduate,count
+51179,county,"Stafford County, Virginia",2017,17,degrees_awarded_graduate,count
+51181,county,"Surry County, Virginia",2017,0,degrees_awarded_graduate,count
+51183,county,"Sussex County, Virginia",2017,1,degrees_awarded_graduate,count
+51185,county,"Tazewell County, Virginia",2017,6,degrees_awarded_graduate,count
+51187,county,"Warren County, Virginia",2017,3,degrees_awarded_graduate,count
+51191,county,"Washington County, Virginia",2017,7,degrees_awarded_graduate,count
+51193,county,"Westmoreland County, Virginia",2017,1,degrees_awarded_graduate,count
+51195,county,"Wise County, Virginia",2017,2,degrees_awarded_graduate,count
+51197,county,"Wythe County, Virginia",2017,8,degrees_awarded_graduate,count
+51199,county,"York County, Virginia",2017,11,degrees_awarded_graduate,count
+51510,county,"Alexandria city, Virginia",2017,31,degrees_awarded_graduate,count
+51515,county,"Bedford city, Virginia",2017,1,degrees_awarded_graduate,count
+51520,county,"Bristol city, Virginia",2017,5,degrees_awarded_graduate,count
+51530,county,"Buena Vista city, Virginia",2017,0,degrees_awarded_graduate,count
+51540,county,"Charlottesville city, Virginia",2017,19,degrees_awarded_graduate,count
+51550,county,"Chesapeake city, Virginia",2017,39,degrees_awarded_graduate,count
+51570,county,"Colonial Heights city, Virginia",2017,5,degrees_awarded_graduate,count
+51580,county,"Covington city, Virginia",2017,0,degrees_awarded_graduate,count
+51590,county,"Danville city, Virginia",2017,7,degrees_awarded_graduate,count
+51595,county,"Emporia city, Virginia",2017,0,degrees_awarded_graduate,count
+51600,county,"Fairfax city, Virginia",2017,5,degrees_awarded_graduate,count
+51610,county,"Falls Church city, Virginia",2017,2,degrees_awarded_graduate,count
+51620,county,"Franklin city, Virginia",2017,2,degrees_awarded_graduate,count
+51630,county,"Fredericksburg city, Virginia",2017,4,degrees_awarded_graduate,count
+51640,county,"Galax city, Virginia",2017,2,degrees_awarded_graduate,count
+51650,county,"Hampton city, Virginia",2017,21,degrees_awarded_graduate,count
+51660,county,"Harrisonburg city, Virginia",2017,19,degrees_awarded_graduate,count
+51670,county,"Hopewell city, Virginia",2017,1,degrees_awarded_graduate,count
+51678,county,"Lexington city, Virginia",2017,3,degrees_awarded_graduate,count
+51680,county,"Lynchburg city, Virginia",2017,51,degrees_awarded_graduate,count
+51683,county,"Manassas city, Virginia",2017,5,degrees_awarded_graduate,count
+51685,county,"Manassas Park city, Virginia",2017,0,degrees_awarded_graduate,count
+51690,county,"Martinsville city, Virginia",2017,2,degrees_awarded_graduate,count
+51700,county,"Newport News city, Virginia",2017,22,degrees_awarded_graduate,count
+51710,county,"Norfolk city, Virginia",2017,37,degrees_awarded_graduate,count
+51720,county,"Norton city, Virginia",2017,1,degrees_awarded_graduate,count
+51730,county,"Petersburg city, Virginia",2017,8,degrees_awarded_graduate,count
+51735,county,"Poquoson city, Virginia",2017,2,degrees_awarded_graduate,count
+51740,county,"Portsmouth city, Virginia",2017,14,degrees_awarded_graduate,count
+51750,county,"Radford city, Virginia",2017,27,degrees_awarded_graduate,count
+51760,county,"Richmond city, Virginia",2017,80,degrees_awarded_graduate,count
+51770,county,"Roanoke city, Virginia",2017,31,degrees_awarded_graduate,count
+51775,county,"Salem city, Virginia",2017,10,degrees_awarded_graduate,count
+51790,county,"Staunton city, Virginia",2017,13,degrees_awarded_graduate,count
+51800,county,"Suffolk city, Virginia",2017,13,degrees_awarded_graduate,count
+51810,county,"Virginia Beach city, Virginia",2017,91,degrees_awarded_graduate,count
+51820,county,"Waynesboro city, Virginia",2017,10,degrees_awarded_graduate,count
+51830,county,"Williamsburg city, Virginia",2017,1,degrees_awarded_graduate,count
+51840,county,"Winchester city, Virginia",2017,18,degrees_awarded_graduate,count
+51001,county,"Accomack County, Virginia",2018,1,degrees_awarded_graduate,count
+51003,county,"Albemarle County, Virginia",2018,32,degrees_awarded_graduate,count
+51005,county,"Alleghany County, Virginia",2018,5,degrees_awarded_graduate,count
+51007,county,"Amelia County, Virginia",2018,4,degrees_awarded_graduate,count
+51009,county,"Amherst County, Virginia",2018,7,degrees_awarded_graduate,count
+51011,county,"Appomattox County, Virginia",2018,8,degrees_awarded_graduate,count
+51013,county,"Arlington County, Virginia",2018,39,degrees_awarded_graduate,count
+51015,county,"Augusta County, Virginia",2018,23,degrees_awarded_graduate,count
+51017,county,"Bath County, Virginia",2018,0,degrees_awarded_graduate,count
+51019,county,"Bedford County, Virginia",2018,37,degrees_awarded_graduate,count
+51021,county,"Bland County, Virginia",2018,0,degrees_awarded_graduate,count
+51023,county,"Botetourt County, Virginia",2018,11,degrees_awarded_graduate,count
+51025,county,"Brunswick County, Virginia",2018,2,degrees_awarded_graduate,count
+51027,county,"Buchanan County, Virginia",2018,0,degrees_awarded_graduate,count
+51029,county,"Buckingham County, Virginia",2018,3,degrees_awarded_graduate,count
+51031,county,"Campbell County, Virginia",2018,17,degrees_awarded_graduate,count
+51033,county,"Caroline County, Virginia",2018,1,degrees_awarded_graduate,count
+51035,county,"Carroll County, Virginia",2018,3,degrees_awarded_graduate,count
+51036,county,"Charles City County, Virginia",2018,0,degrees_awarded_graduate,count
+51037,county,"Charlotte County, Virginia",2018,0,degrees_awarded_graduate,count
+51041,county,"Chesterfield County, Virginia",2018,108,degrees_awarded_graduate,count
+51043,county,"Clarke County, Virginia",2018,3,degrees_awarded_graduate,count
+51045,county,"Craig County, Virginia",2018,0,degrees_awarded_graduate,count
+51047,county,"Culpeper County, Virginia",2018,7,degrees_awarded_graduate,count
+51049,county,"Cumberland County, Virginia",2018,0,degrees_awarded_graduate,count
+51051,county,"Dickenson County, Virginia",2018,2,degrees_awarded_graduate,count
+51053,county,"Dinwiddie County, Virginia",2018,3,degrees_awarded_graduate,count
+51057,county,"Essex County, Virginia",2018,2,degrees_awarded_graduate,count
+51059,county,"Fairfax County, Virginia",2018,187,degrees_awarded_graduate,count
+51061,county,"Fauquier County, Virginia",2018,16,degrees_awarded_graduate,count
+51063,county,"Floyd County, Virginia",2018,1,degrees_awarded_graduate,count
+51065,county,"Fluvanna County, Virginia",2018,3,degrees_awarded_graduate,count
+51067,county,"Franklin County, Virginia",2018,9,degrees_awarded_graduate,count
+51069,county,"Frederick County, Virginia",2018,23,degrees_awarded_graduate,count
+51071,county,"Giles County, Virginia",2018,6,degrees_awarded_graduate,count
+51073,county,"Gloucester County, Virginia",2018,8,degrees_awarded_graduate,count
+51075,county,"Goochland County, Virginia",2018,6,degrees_awarded_graduate,count
+51077,county,"Grayson County, Virginia",2018,0,degrees_awarded_graduate,count
+51079,county,"Greene County, Virginia",2018,6,degrees_awarded_graduate,count
+51081,county,"Greensville County, Virginia",2018,2,degrees_awarded_graduate,count
+51083,county,"Halifax County, Virginia",2018,4,degrees_awarded_graduate,count
+51085,county,"Hanover County, Virginia",2018,39,degrees_awarded_graduate,count
+51087,county,"Henrico County, Virginia",2018,110,degrees_awarded_graduate,count
+51089,county,"Henry County, Virginia",2018,7,degrees_awarded_graduate,count
+51091,county,"Highland County, Virginia",2018,0,degrees_awarded_graduate,count
+51093,county,"Isle of Wight County, Virginia",2018,7,degrees_awarded_graduate,count
+51095,county,"James City County, Virginia",2018,12,degrees_awarded_graduate,count
+51097,county,"King and Queen County, Virginia",2018,0,degrees_awarded_graduate,count
+51099,county,"King George County, Virginia",2018,2,degrees_awarded_graduate,count
+51101,county,"King William County, Virginia",2018,2,degrees_awarded_graduate,count
+51103,county,"Lancaster County, Virginia",2018,2,degrees_awarded_graduate,count
+51105,county,"Lee County, Virginia",2018,1,degrees_awarded_graduate,count
+51107,county,"Loudoun County, Virginia",2018,68,degrees_awarded_graduate,count
+51109,county,"Louisa County, Virginia",2018,2,degrees_awarded_graduate,count
+51111,county,"Lunenburg County, Virginia",2018,1,degrees_awarded_graduate,count
+51113,county,"Madison County, Virginia",2018,0,degrees_awarded_graduate,count
+51115,county,"Mathews County, Virginia",2018,2,degrees_awarded_graduate,count
+51117,county,"Mecklenburg County, Virginia",2018,5,degrees_awarded_graduate,count
+51119,county,"Middlesex County, Virginia",2018,1,degrees_awarded_graduate,count
+51121,county,"Montgomery County, Virginia",2018,38,degrees_awarded_graduate,count
+51125,county,"Nelson County, Virginia",2018,4,degrees_awarded_graduate,count
+51127,county,"New Kent County, Virginia",2018,2,degrees_awarded_graduate,count
+51131,county,"Northampton County, Virginia",2018,1,degrees_awarded_graduate,count
+51133,county,"Northumberland County, Virginia",2018,3,degrees_awarded_graduate,count
+51135,county,"Nottoway County, Virginia",2018,3,degrees_awarded_graduate,count
+51137,county,"Orange County, Virginia",2018,6,degrees_awarded_graduate,count
+51139,county,"Page County, Virginia",2018,5,degrees_awarded_graduate,count
+51141,county,"Patrick County, Virginia",2018,1,degrees_awarded_graduate,count
+51143,county,"Pittsylvania County, Virginia",2018,5,degrees_awarded_graduate,count
+51145,county,"Powhatan County, Virginia",2018,4,degrees_awarded_graduate,count
+51147,county,"Prince Edward County, Virginia",2018,5,degrees_awarded_graduate,count
+51149,county,"Prince George County, Virginia",2018,10,degrees_awarded_graduate,count
+51153,county,"Prince William County, Virginia",2018,71,degrees_awarded_graduate,count
+51155,county,"Pulaski County, Virginia",2018,5,degrees_awarded_graduate,count
+51157,county,"Rappahannock County, Virginia",2018,0,degrees_awarded_graduate,count
+51159,county,"Richmond County, Virginia",2018,1,degrees_awarded_graduate,count
+51161,county,"Roanoke County, Virginia",2018,45,degrees_awarded_graduate,count
+51163,county,"Rockbridge County, Virginia",2018,2,degrees_awarded_graduate,count
+51165,county,"Rockingham County, Virginia",2018,31,degrees_awarded_graduate,count
+51167,county,"Russell County, Virginia",2018,1,degrees_awarded_graduate,count
+51169,county,"Scott County, Virginia",2018,1,degrees_awarded_graduate,count
+51171,county,"Shenandoah County, Virginia",2018,5,degrees_awarded_graduate,count
+51173,county,"Smyth County, Virginia",2018,4,degrees_awarded_graduate,count
+51175,county,"Southampton County, Virginia",2018,1,degrees_awarded_graduate,count
+51177,county,"Spotsylvania County, Virginia",2018,18,degrees_awarded_graduate,count
+51179,county,"Stafford County, Virginia",2018,22,degrees_awarded_graduate,count
+51181,county,"Surry County, Virginia",2018,0,degrees_awarded_graduate,count
+51183,county,"Sussex County, Virginia",2018,1,degrees_awarded_graduate,count
+51185,county,"Tazewell County, Virginia",2018,3,degrees_awarded_graduate,count
+51187,county,"Warren County, Virginia",2018,5,degrees_awarded_graduate,count
+51191,county,"Washington County, Virginia",2018,7,degrees_awarded_graduate,count
+51193,county,"Westmoreland County, Virginia",2018,2,degrees_awarded_graduate,count
+51195,county,"Wise County, Virginia",2018,0,degrees_awarded_graduate,count
+51197,county,"Wythe County, Virginia",2018,2,degrees_awarded_graduate,count
+51199,county,"York County, Virginia",2018,15,degrees_awarded_graduate,count
+51510,county,"Alexandria city, Virginia",2018,14,degrees_awarded_graduate,count
+51515,county,"Bedford city, Virginia",2018,2,degrees_awarded_graduate,count
+51520,county,"Bristol city, Virginia",2018,1,degrees_awarded_graduate,count
+51530,county,"Buena Vista city, Virginia",2018,1,degrees_awarded_graduate,count
+51540,county,"Charlottesville city, Virginia",2018,28,degrees_awarded_graduate,count
+51550,county,"Chesapeake city, Virginia",2018,36,degrees_awarded_graduate,count
+51570,county,"Colonial Heights city, Virginia",2018,3,degrees_awarded_graduate,count
+51580,county,"Covington city, Virginia",2018,0,degrees_awarded_graduate,count
+51590,county,"Danville city, Virginia",2018,6,degrees_awarded_graduate,count
+51595,county,"Emporia city, Virginia",2018,1,degrees_awarded_graduate,count
+51600,county,"Fairfax city, Virginia",2018,8,degrees_awarded_graduate,count
+51610,county,"Falls Church city, Virginia",2018,2,degrees_awarded_graduate,count
+51620,county,"Franklin city, Virginia",2018,1,degrees_awarded_graduate,count
+51630,county,"Fredericksburg city, Virginia",2018,3,degrees_awarded_graduate,count
+51640,county,"Galax city, Virginia",2018,2,degrees_awarded_graduate,count
+51650,county,"Hampton city, Virginia",2018,17,degrees_awarded_graduate,count
+51660,county,"Harrisonburg city, Virginia",2018,19,degrees_awarded_graduate,count
+51670,county,"Hopewell city, Virginia",2018,0,degrees_awarded_graduate,count
+51678,county,"Lexington city, Virginia",2018,0,degrees_awarded_graduate,count
+51680,county,"Lynchburg city, Virginia",2018,69,degrees_awarded_graduate,count
+51683,county,"Manassas city, Virginia",2018,4,degrees_awarded_graduate,count
+51685,county,"Manassas Park city, Virginia",2018,3,degrees_awarded_graduate,count
+51690,county,"Martinsville city, Virginia",2018,4,degrees_awarded_graduate,count
+51700,county,"Newport News city, Virginia",2018,22,degrees_awarded_graduate,count
+51710,county,"Norfolk city, Virginia",2018,31,degrees_awarded_graduate,count
+51720,county,"Norton city, Virginia",2018,0,degrees_awarded_graduate,count
+51730,county,"Petersburg city, Virginia",2018,2,degrees_awarded_graduate,count
+51735,county,"Poquoson city, Virginia",2018,2,degrees_awarded_graduate,count
+51740,county,"Portsmouth city, Virginia",2018,5,degrees_awarded_graduate,count
+51750,county,"Radford city, Virginia",2018,16,degrees_awarded_graduate,count
+51760,county,"Richmond city, Virginia",2018,67,degrees_awarded_graduate,count
+51770,county,"Roanoke city, Virginia",2018,40,degrees_awarded_graduate,count
+51775,county,"Salem city, Virginia",2018,9,degrees_awarded_graduate,count
+51790,county,"Staunton city, Virginia",2018,10,degrees_awarded_graduate,count
+51800,county,"Suffolk city, Virginia",2018,22,degrees_awarded_graduate,count
+51810,county,"Virginia Beach city, Virginia",2018,65,degrees_awarded_graduate,count
+51820,county,"Waynesboro city, Virginia",2018,12,degrees_awarded_graduate,count
+51830,county,"Williamsburg city, Virginia",2018,1,degrees_awarded_graduate,count
+51840,county,"Winchester city, Virginia",2018,14,degrees_awarded_graduate,count
+51001,county,"Accomack County, Virginia",2019,0,degrees_awarded_graduate,count
+51003,county,"Albemarle County, Virginia",2019,40,degrees_awarded_graduate,count
+51005,county,"Alleghany County, Virginia",2019,0,degrees_awarded_graduate,count
+51007,county,"Amelia County, Virginia",2019,2,degrees_awarded_graduate,count
+51009,county,"Amherst County, Virginia",2019,8,degrees_awarded_graduate,count
+51011,county,"Appomattox County, Virginia",2019,5,degrees_awarded_graduate,count
+51013,county,"Arlington County, Virginia",2019,41,degrees_awarded_graduate,count
+51015,county,"Augusta County, Virginia",2019,25,degrees_awarded_graduate,count
+51017,county,"Bath County, Virginia",2019,0,degrees_awarded_graduate,count
+51019,county,"Bedford County, Virginia",2019,45,degrees_awarded_graduate,count
+51021,county,"Bland County, Virginia",2019,3,degrees_awarded_graduate,count
+51023,county,"Botetourt County, Virginia",2019,10,degrees_awarded_graduate,count
+51025,county,"Brunswick County, Virginia",2019,2,degrees_awarded_graduate,count
+51027,county,"Buchanan County, Virginia",2019,2,degrees_awarded_graduate,count
+51029,county,"Buckingham County, Virginia",2019,2,degrees_awarded_graduate,count
+51031,county,"Campbell County, Virginia",2019,21,degrees_awarded_graduate,count
+51033,county,"Caroline County, Virginia",2019,1,degrees_awarded_graduate,count
+51035,county,"Carroll County, Virginia",2019,2,degrees_awarded_graduate,count
+51036,county,"Charles City County, Virginia",2019,0,degrees_awarded_graduate,count
+51037,county,"Charlotte County, Virginia",2019,4,degrees_awarded_graduate,count
+51041,county,"Chesterfield County, Virginia",2019,103,degrees_awarded_graduate,count
+51043,county,"Clarke County, Virginia",2019,4,degrees_awarded_graduate,count
+51045,county,"Craig County, Virginia",2019,2,degrees_awarded_graduate,count
+51047,county,"Culpeper County, Virginia",2019,9,degrees_awarded_graduate,count
+51049,county,"Cumberland County, Virginia",2019,2,degrees_awarded_graduate,count
+51051,county,"Dickenson County, Virginia",2019,0,degrees_awarded_graduate,count
+51053,county,"Dinwiddie County, Virginia",2019,4,degrees_awarded_graduate,count
+51057,county,"Essex County, Virginia",2019,3,degrees_awarded_graduate,count
+51059,county,"Fairfax County, Virginia",2019,228,degrees_awarded_graduate,count
+51061,county,"Fauquier County, Virginia",2019,11,degrees_awarded_graduate,count
+51063,county,"Floyd County, Virginia",2019,4,degrees_awarded_graduate,count
+51065,county,"Fluvanna County, Virginia",2019,12,degrees_awarded_graduate,count
+51067,county,"Franklin County, Virginia",2019,11,degrees_awarded_graduate,count
+51069,county,"Frederick County, Virginia",2019,22,degrees_awarded_graduate,count
+51071,county,"Giles County, Virginia",2019,3,degrees_awarded_graduate,count
+51073,county,"Gloucester County, Virginia",2019,5,degrees_awarded_graduate,count
+51075,county,"Goochland County, Virginia",2019,8,degrees_awarded_graduate,count
+51077,county,"Grayson County, Virginia",2019,2,degrees_awarded_graduate,count
+51079,county,"Greene County, Virginia",2019,5,degrees_awarded_graduate,count
+51081,county,"Greensville County, Virginia",2019,2,degrees_awarded_graduate,count
+51083,county,"Halifax County, Virginia",2019,4,degrees_awarded_graduate,count
+51085,county,"Hanover County, Virginia",2019,29,degrees_awarded_graduate,count
+51087,county,"Henrico County, Virginia",2019,103,degrees_awarded_graduate,count
+51089,county,"Henry County, Virginia",2019,7,degrees_awarded_graduate,count
+51091,county,"Highland County, Virginia",2019,0,degrees_awarded_graduate,count
+51093,county,"Isle of Wight County, Virginia",2019,5,degrees_awarded_graduate,count
+51095,county,"James City County, Virginia",2019,12,degrees_awarded_graduate,count
+51097,county,"King and Queen County, Virginia",2019,1,degrees_awarded_graduate,count
+51099,county,"King George County, Virginia",2019,1,degrees_awarded_graduate,count
+51101,county,"King William County, Virginia",2019,5,degrees_awarded_graduate,count
+51103,county,"Lancaster County, Virginia",2019,2,degrees_awarded_graduate,count
+51105,county,"Lee County, Virginia",2019,2,degrees_awarded_graduate,count
+51107,county,"Loudoun County, Virginia",2019,69,degrees_awarded_graduate,count
+51109,county,"Louisa County, Virginia",2019,5,degrees_awarded_graduate,count
+51111,county,"Lunenburg County, Virginia",2019,2,degrees_awarded_graduate,count
+51113,county,"Madison County, Virginia",2019,3,degrees_awarded_graduate,count
+51115,county,"Mathews County, Virginia",2019,1,degrees_awarded_graduate,count
+51117,county,"Mecklenburg County, Virginia",2019,4,degrees_awarded_graduate,count
+51119,county,"Middlesex County, Virginia",2019,1,degrees_awarded_graduate,count
+51121,county,"Montgomery County, Virginia",2019,32,degrees_awarded_graduate,count
+51125,county,"Nelson County, Virginia",2019,0,degrees_awarded_graduate,count
+51127,county,"New Kent County, Virginia",2019,2,degrees_awarded_graduate,count
+51131,county,"Northampton County, Virginia",2019,2,degrees_awarded_graduate,count
+51133,county,"Northumberland County, Virginia",2019,1,degrees_awarded_graduate,count
+51135,county,"Nottoway County, Virginia",2019,0,degrees_awarded_graduate,count
+51137,county,"Orange County, Virginia",2019,7,degrees_awarded_graduate,count
+51139,county,"Page County, Virginia",2019,4,degrees_awarded_graduate,count
+51141,county,"Patrick County, Virginia",2019,3,degrees_awarded_graduate,count
+51143,county,"Pittsylvania County, Virginia",2019,8,degrees_awarded_graduate,count
+51145,county,"Powhatan County, Virginia",2019,5,degrees_awarded_graduate,count
+51147,county,"Prince Edward County, Virginia",2019,4,degrees_awarded_graduate,count
+51149,county,"Prince George County, Virginia",2019,4,degrees_awarded_graduate,count
+51153,county,"Prince William County, Virginia",2019,86,degrees_awarded_graduate,count
+51155,county,"Pulaski County, Virginia",2019,1,degrees_awarded_graduate,count
+51157,county,"Rappahannock County, Virginia",2019,0,degrees_awarded_graduate,count
+51159,county,"Richmond County, Virginia",2019,5,degrees_awarded_graduate,count
+51161,county,"Roanoke County, Virginia",2019,45,degrees_awarded_graduate,count
+51163,county,"Rockbridge County, Virginia",2019,2,degrees_awarded_graduate,count
+51165,county,"Rockingham County, Virginia",2019,23,degrees_awarded_graduate,count
+51167,county,"Russell County, Virginia",2019,4,degrees_awarded_graduate,count
+51169,county,"Scott County, Virginia",2019,1,degrees_awarded_graduate,count
+51171,county,"Shenandoah County, Virginia",2019,7,degrees_awarded_graduate,count
+51173,county,"Smyth County, Virginia",2019,11,degrees_awarded_graduate,count
+51175,county,"Southampton County, Virginia",2019,1,degrees_awarded_graduate,count
+51177,county,"Spotsylvania County, Virginia",2019,29,degrees_awarded_graduate,count
+51179,county,"Stafford County, Virginia",2019,30,degrees_awarded_graduate,count
+51181,county,"Surry County, Virginia",2019,1,degrees_awarded_graduate,count
+51183,county,"Sussex County, Virginia",2019,0,degrees_awarded_graduate,count
+51185,county,"Tazewell County, Virginia",2019,6,degrees_awarded_graduate,count
+51187,county,"Warren County, Virginia",2019,6,degrees_awarded_graduate,count
+51191,county,"Washington County, Virginia",2019,9,degrees_awarded_graduate,count
+51193,county,"Westmoreland County, Virginia",2019,3,degrees_awarded_graduate,count
+51195,county,"Wise County, Virginia",2019,0,degrees_awarded_graduate,count
+51197,county,"Wythe County, Virginia",2019,4,degrees_awarded_graduate,count
+51199,county,"York County, Virginia",2019,16,degrees_awarded_graduate,count
+51510,county,"Alexandria city, Virginia",2019,22,degrees_awarded_graduate,count
+51515,county,"Bedford city, Virginia",2019,1,degrees_awarded_graduate,count
+51520,county,"Bristol city, Virginia",2019,3,degrees_awarded_graduate,count
+51530,county,"Buena Vista city, Virginia",2019,0,degrees_awarded_graduate,count
+51540,county,"Charlottesville city, Virginia",2019,26,degrees_awarded_graduate,count
+51550,county,"Chesapeake city, Virginia",2019,40,degrees_awarded_graduate,count
+51570,county,"Colonial Heights city, Virginia",2019,3,degrees_awarded_graduate,count
+51580,county,"Covington city, Virginia",2019,4,degrees_awarded_graduate,count
+51590,county,"Danville city, Virginia",2019,10,degrees_awarded_graduate,count
+51595,county,"Emporia city, Virginia",2019,1,degrees_awarded_graduate,count
+51600,county,"Fairfax city, Virginia",2019,6,degrees_awarded_graduate,count
+51610,county,"Falls Church city, Virginia",2019,2,degrees_awarded_graduate,count
+51620,county,"Franklin city, Virginia",2019,2,degrees_awarded_graduate,count
+51630,county,"Fredericksburg city, Virginia",2019,8,degrees_awarded_graduate,count
+51640,county,"Galax city, Virginia",2019,2,degrees_awarded_graduate,count
+51650,county,"Hampton city, Virginia",2019,21,degrees_awarded_graduate,count
+51660,county,"Harrisonburg city, Virginia",2019,34,degrees_awarded_graduate,count
+51670,county,"Hopewell city, Virginia",2019,0,degrees_awarded_graduate,count
+51678,county,"Lexington city, Virginia",2019,2,degrees_awarded_graduate,count
+51680,county,"Lynchburg city, Virginia",2019,69,degrees_awarded_graduate,count
+51683,county,"Manassas city, Virginia",2019,5,degrees_awarded_graduate,count
+51685,county,"Manassas Park city, Virginia",2019,4,degrees_awarded_graduate,count
+51690,county,"Martinsville city, Virginia",2019,4,degrees_awarded_graduate,count
+51700,county,"Newport News city, Virginia",2019,16,degrees_awarded_graduate,count
+51710,county,"Norfolk city, Virginia",2019,34,degrees_awarded_graduate,count
+51720,county,"Norton city, Virginia",2019,1,degrees_awarded_graduate,count
+51730,county,"Petersburg city, Virginia",2019,8,degrees_awarded_graduate,count
+51735,county,"Poquoson city, Virginia",2019,5,degrees_awarded_graduate,count
+51740,county,"Portsmouth city, Virginia",2019,8,degrees_awarded_graduate,count
+51750,county,"Radford city, Virginia",2019,22,degrees_awarded_graduate,count
+51760,county,"Richmond city, Virginia",2019,72,degrees_awarded_graduate,count
+51770,county,"Roanoke city, Virginia",2019,57,degrees_awarded_graduate,count
+51775,county,"Salem city, Virginia",2019,13,degrees_awarded_graduate,count
+51790,county,"Staunton city, Virginia",2019,9,degrees_awarded_graduate,count
+51800,county,"Suffolk city, Virginia",2019,16,degrees_awarded_graduate,count
+51810,county,"Virginia Beach city, Virginia",2019,87,degrees_awarded_graduate,count
+51820,county,"Waynesboro city, Virginia",2019,7,degrees_awarded_graduate,count
+51830,county,"Williamsburg city, Virginia",2019,2,degrees_awarded_graduate,count
+51840,county,"Winchester city, Virginia",2019,9,degrees_awarded_graduate,count
+51001,county,"Accomack County, Virginia",2016,2,degrees_awarded_first_professional,count
+51003,county,"Albemarle County, Virginia",2016,5,degrees_awarded_first_professional,count
+51005,county,"Alleghany County, Virginia",2016,1,degrees_awarded_first_professional,count
+51007,county,"Amelia County, Virginia",2016,0,degrees_awarded_first_professional,count
+51009,county,"Amherst County, Virginia",2016,0,degrees_awarded_first_professional,count
+51011,county,"Appomattox County, Virginia",2016,0,degrees_awarded_first_professional,count
+51013,county,"Arlington County, Virginia",2016,7,degrees_awarded_first_professional,count
+51015,county,"Augusta County, Virginia",2016,6,degrees_awarded_first_professional,count
+51017,county,"Bath County, Virginia",2016,0,degrees_awarded_first_professional,count
+51019,county,"Bedford County, Virginia",2016,3,degrees_awarded_first_professional,count
+51021,county,"Bland County, Virginia",2016,0,degrees_awarded_first_professional,count
+51023,county,"Botetourt County, Virginia",2016,1,degrees_awarded_first_professional,count
+51025,county,"Brunswick County, Virginia",2016,1,degrees_awarded_first_professional,count
+51027,county,"Buchanan County, Virginia",2016,5,degrees_awarded_first_professional,count
+51029,county,"Buckingham County, Virginia",2016,0,degrees_awarded_first_professional,count
+51031,county,"Campbell County, Virginia",2016,1,degrees_awarded_first_professional,count
+51033,county,"Caroline County, Virginia",2016,1,degrees_awarded_first_professional,count
+51035,county,"Carroll County, Virginia",2016,0,degrees_awarded_first_professional,count
+51036,county,"Charles City County, Virginia",2016,0,degrees_awarded_first_professional,count
+51037,county,"Charlotte County, Virginia",2016,0,degrees_awarded_first_professional,count
+51041,county,"Chesterfield County, Virginia",2016,28,degrees_awarded_first_professional,count
+51043,county,"Clarke County, Virginia",2016,0,degrees_awarded_first_professional,count
+51045,county,"Craig County, Virginia",2016,0,degrees_awarded_first_professional,count
+51047,county,"Culpeper County, Virginia",2016,1,degrees_awarded_first_professional,count
+51049,county,"Cumberland County, Virginia",2016,0,degrees_awarded_first_professional,count
+51051,county,"Dickenson County, Virginia",2016,0,degrees_awarded_first_professional,count
+51053,county,"Dinwiddie County, Virginia",2016,0,degrees_awarded_first_professional,count
+51057,county,"Essex County, Virginia",2016,0,degrees_awarded_first_professional,count
+51059,county,"Fairfax County, Virginia",2016,117,degrees_awarded_first_professional,count
+51061,county,"Fauquier County, Virginia",2016,2,degrees_awarded_first_professional,count
+51063,county,"Floyd County, Virginia",2016,0,degrees_awarded_first_professional,count
+51065,county,"Fluvanna County, Virginia",2016,0,degrees_awarded_first_professional,count
+51067,county,"Franklin County, Virginia",2016,2,degrees_awarded_first_professional,count
+51069,county,"Frederick County, Virginia",2016,10,degrees_awarded_first_professional,count
+51071,county,"Giles County, Virginia",2016,1,degrees_awarded_first_professional,count
+51073,county,"Gloucester County, Virginia",2016,4,degrees_awarded_first_professional,count
+51075,county,"Goochland County, Virginia",2016,3,degrees_awarded_first_professional,count
+51077,county,"Grayson County, Virginia",2016,0,degrees_awarded_first_professional,count
+51079,county,"Greene County, Virginia",2016,0,degrees_awarded_first_professional,count
+51081,county,"Greensville County, Virginia",2016,0,degrees_awarded_first_professional,count
+51083,county,"Halifax County, Virginia",2016,1,degrees_awarded_first_professional,count
+51085,county,"Hanover County, Virginia",2016,16,degrees_awarded_first_professional,count
+51087,county,"Henrico County, Virginia",2016,48,degrees_awarded_first_professional,count
+51089,county,"Henry County, Virginia",2016,3,degrees_awarded_first_professional,count
+51091,county,"Highland County, Virginia",2016,0,degrees_awarded_first_professional,count
+51093,county,"Isle of Wight County, Virginia",2016,3,degrees_awarded_first_professional,count
+51095,county,"James City County, Virginia",2016,8,degrees_awarded_first_professional,count
+51097,county,"King and Queen County, Virginia",2016,0,degrees_awarded_first_professional,count
+51099,county,"King George County, Virginia",2016,1,degrees_awarded_first_professional,count
+51101,county,"King William County, Virginia",2016,0,degrees_awarded_first_professional,count
+51103,county,"Lancaster County, Virginia",2016,1,degrees_awarded_first_professional,count
+51105,county,"Lee County, Virginia",2016,2,degrees_awarded_first_professional,count
+51107,county,"Loudoun County, Virginia",2016,31,degrees_awarded_first_professional,count
+51109,county,"Louisa County, Virginia",2016,0,degrees_awarded_first_professional,count
+51111,county,"Lunenburg County, Virginia",2016,0,degrees_awarded_first_professional,count
+51113,county,"Madison County, Virginia",2016,0,degrees_awarded_first_professional,count
+51115,county,"Mathews County, Virginia",2016,0,degrees_awarded_first_professional,count
+51117,county,"Mecklenburg County, Virginia",2016,3,degrees_awarded_first_professional,count
+51119,county,"Middlesex County, Virginia",2016,0,degrees_awarded_first_professional,count
+51121,county,"Montgomery County, Virginia",2016,54,degrees_awarded_first_professional,count
+51125,county,"Nelson County, Virginia",2016,1,degrees_awarded_first_professional,count
+51127,county,"New Kent County, Virginia",2016,1,degrees_awarded_first_professional,count
+51131,county,"Northampton County, Virginia",2016,0,degrees_awarded_first_professional,count
+51133,county,"Northumberland County, Virginia",2016,0,degrees_awarded_first_professional,count
+51135,county,"Nottoway County, Virginia",2016,1,degrees_awarded_first_professional,count
+51137,county,"Orange County, Virginia",2016,0,degrees_awarded_first_professional,count
+51139,county,"Page County, Virginia",2016,0,degrees_awarded_first_professional,count
+51141,county,"Patrick County, Virginia",2016,0,degrees_awarded_first_professional,count
+51143,county,"Pittsylvania County, Virginia",2016,0,degrees_awarded_first_professional,count
+51145,county,"Powhatan County, Virginia",2016,2,degrees_awarded_first_professional,count
+51147,county,"Prince Edward County, Virginia",2016,1,degrees_awarded_first_professional,count
+51149,county,"Prince George County, Virginia",2016,1,degrees_awarded_first_professional,count
+51153,county,"Prince William County, Virginia",2016,22,degrees_awarded_first_professional,count
+51155,county,"Pulaski County, Virginia",2016,1,degrees_awarded_first_professional,count
+51157,county,"Rappahannock County, Virginia",2016,0,degrees_awarded_first_professional,count
+51159,county,"Richmond County, Virginia",2016,1,degrees_awarded_first_professional,count
+51161,county,"Roanoke County, Virginia",2016,7,degrees_awarded_first_professional,count
+51163,county,"Rockbridge County, Virginia",2016,1,degrees_awarded_first_professional,count
+51165,county,"Rockingham County, Virginia",2016,4,degrees_awarded_first_professional,count
+51167,county,"Russell County, Virginia",2016,1,degrees_awarded_first_professional,count
+51169,county,"Scott County, Virginia",2016,1,degrees_awarded_first_professional,count
+51171,county,"Shenandoah County, Virginia",2016,4,degrees_awarded_first_professional,count
+51173,county,"Smyth County, Virginia",2016,0,degrees_awarded_first_professional,count
+51175,county,"Southampton County, Virginia",2016,1,degrees_awarded_first_professional,count
+51177,county,"Spotsylvania County, Virginia",2016,2,degrees_awarded_first_professional,count
+51179,county,"Stafford County, Virginia",2016,5,degrees_awarded_first_professional,count
+51181,county,"Surry County, Virginia",2016,0,degrees_awarded_first_professional,count
+51183,county,"Sussex County, Virginia",2016,0,degrees_awarded_first_professional,count
+51185,county,"Tazewell County, Virginia",2016,6,degrees_awarded_first_professional,count
+51187,county,"Warren County, Virginia",2016,1,degrees_awarded_first_professional,count
+51191,county,"Washington County, Virginia",2016,1,degrees_awarded_first_professional,count
+51193,county,"Westmoreland County, Virginia",2016,0,degrees_awarded_first_professional,count
+51195,county,"Wise County, Virginia",2016,4,degrees_awarded_first_professional,count
+51197,county,"Wythe County, Virginia",2016,1,degrees_awarded_first_professional,count
+51199,county,"York County, Virginia",2016,7,degrees_awarded_first_professional,count
+51510,county,"Alexandria city, Virginia",2016,5,degrees_awarded_first_professional,count
+51515,county,"Bedford city, Virginia",2016,0,degrees_awarded_first_professional,count
+51520,county,"Bristol city, Virginia",2016,0,degrees_awarded_first_professional,count
+51530,county,"Buena Vista city, Virginia",2016,0,degrees_awarded_first_professional,count
+51540,county,"Charlottesville city, Virginia",2016,2,degrees_awarded_first_professional,count
+51550,county,"Chesapeake city, Virginia",2016,14,degrees_awarded_first_professional,count
+51570,county,"Colonial Heights city, Virginia",2016,0,degrees_awarded_first_professional,count
+51580,county,"Covington city, Virginia",2016,0,degrees_awarded_first_professional,count
+51590,county,"Danville city, Virginia",2016,0,degrees_awarded_first_professional,count
+51595,county,"Emporia city, Virginia",2016,0,degrees_awarded_first_professional,count
+51600,county,"Fairfax city, Virginia",2016,1,degrees_awarded_first_professional,count
+51610,county,"Falls Church city, Virginia",2016,1,degrees_awarded_first_professional,count
+51620,county,"Franklin city, Virginia",2016,0,degrees_awarded_first_professional,count
+51630,county,"Fredericksburg city, Virginia",2016,2,degrees_awarded_first_professional,count
+51640,county,"Galax city, Virginia",2016,1,degrees_awarded_first_professional,count
+51650,county,"Hampton city, Virginia",2016,6,degrees_awarded_first_professional,count
+51660,county,"Harrisonburg city, Virginia",2016,1,degrees_awarded_first_professional,count
+51670,county,"Hopewell city, Virginia",2016,1,degrees_awarded_first_professional,count
+51678,county,"Lexington city, Virginia",2016,0,degrees_awarded_first_professional,count
+51680,county,"Lynchburg city, Virginia",2016,5,degrees_awarded_first_professional,count
+51683,county,"Manassas city, Virginia",2016,4,degrees_awarded_first_professional,count
+51685,county,"Manassas Park city, Virginia",2016,0,degrees_awarded_first_professional,count
+51690,county,"Martinsville city, Virginia",2016,0,degrees_awarded_first_professional,count
+51700,county,"Newport News city, Virginia",2016,8,degrees_awarded_first_professional,count
+51710,county,"Norfolk city, Virginia",2016,12,degrees_awarded_first_professional,count
+51720,county,"Norton city, Virginia",2016,0,degrees_awarded_first_professional,count
+51730,county,"Petersburg city, Virginia",2016,0,degrees_awarded_first_professional,count
+51735,county,"Poquoson city, Virginia",2016,3,degrees_awarded_first_professional,count
+51740,county,"Portsmouth city, Virginia",2016,1,degrees_awarded_first_professional,count
+51750,county,"Radford city, Virginia",2016,0,degrees_awarded_first_professional,count
+51760,county,"Richmond city, Virginia",2016,52,degrees_awarded_first_professional,count
+51770,county,"Roanoke city, Virginia",2016,4,degrees_awarded_first_professional,count
+51775,county,"Salem city, Virginia",2016,1,degrees_awarded_first_professional,count
+51790,county,"Staunton city, Virginia",2016,1,degrees_awarded_first_professional,count
+51800,county,"Suffolk city, Virginia",2016,6,degrees_awarded_first_professional,count
+51810,county,"Virginia Beach city, Virginia",2016,28,degrees_awarded_first_professional,count
+51820,county,"Waynesboro city, Virginia",2016,0,degrees_awarded_first_professional,count
+51830,county,"Williamsburg city, Virginia",2016,2,degrees_awarded_first_professional,count
+51840,county,"Winchester city, Virginia",2016,6,degrees_awarded_first_professional,count
+51001,county,"Accomack County, Virginia",2017,1,degrees_awarded_first_professional,count
+51003,county,"Albemarle County, Virginia",2017,15,degrees_awarded_first_professional,count
+51005,county,"Alleghany County, Virginia",2017,2,degrees_awarded_first_professional,count
+51007,county,"Amelia County, Virginia",2017,1,degrees_awarded_first_professional,count
+51009,county,"Amherst County, Virginia",2017,2,degrees_awarded_first_professional,count
+51011,county,"Appomattox County, Virginia",2017,0,degrees_awarded_first_professional,count
+51013,county,"Arlington County, Virginia",2017,9,degrees_awarded_first_professional,count
+51015,county,"Augusta County, Virginia",2017,3,degrees_awarded_first_professional,count
+51017,county,"Bath County, Virginia",2017,1,degrees_awarded_first_professional,count
+51019,county,"Bedford County, Virginia",2017,5,degrees_awarded_first_professional,count
+51021,county,"Bland County, Virginia",2017,1,degrees_awarded_first_professional,count
+51023,county,"Botetourt County, Virginia",2017,6,degrees_awarded_first_professional,count
+51025,county,"Brunswick County, Virginia",2017,0,degrees_awarded_first_professional,count
+51027,county,"Buchanan County, Virginia",2017,4,degrees_awarded_first_professional,count
+51029,county,"Buckingham County, Virginia",2017,1,degrees_awarded_first_professional,count
+51031,county,"Campbell County, Virginia",2017,1,degrees_awarded_first_professional,count
+51033,county,"Caroline County, Virginia",2017,1,degrees_awarded_first_professional,count
+51035,county,"Carroll County, Virginia",2017,1,degrees_awarded_first_professional,count
+51036,county,"Charles City County, Virginia",2017,0,degrees_awarded_first_professional,count
+51037,county,"Charlotte County, Virginia",2017,1,degrees_awarded_first_professional,count
+51041,county,"Chesterfield County, Virginia",2017,32,degrees_awarded_first_professional,count
+51043,county,"Clarke County, Virginia",2017,2,degrees_awarded_first_professional,count
+51045,county,"Craig County, Virginia",2017,2,degrees_awarded_first_professional,count
+51047,county,"Culpeper County, Virginia",2017,0,degrees_awarded_first_professional,count
+51049,county,"Cumberland County, Virginia",2017,0,degrees_awarded_first_professional,count
+51051,county,"Dickenson County, Virginia",2017,4,degrees_awarded_first_professional,count
+51053,county,"Dinwiddie County, Virginia",2017,0,degrees_awarded_first_professional,count
+51057,county,"Essex County, Virginia",2017,0,degrees_awarded_first_professional,count
+51059,county,"Fairfax County, Virginia",2017,136,degrees_awarded_first_professional,count
+51061,county,"Fauquier County, Virginia",2017,2,degrees_awarded_first_professional,count
+51063,county,"Floyd County, Virginia",2017,4,degrees_awarded_first_professional,count
+51065,county,"Fluvanna County, Virginia",2017,0,degrees_awarded_first_professional,count
+51067,county,"Franklin County, Virginia",2017,4,degrees_awarded_first_professional,count
+51069,county,"Frederick County, Virginia",2017,7,degrees_awarded_first_professional,count
+51071,county,"Giles County, Virginia",2017,1,degrees_awarded_first_professional,count
+51073,county,"Gloucester County, Virginia",2017,3,degrees_awarded_first_professional,count
+51075,county,"Goochland County, Virginia",2017,1,degrees_awarded_first_professional,count
+51077,county,"Grayson County, Virginia",2017,1,degrees_awarded_first_professional,count
+51079,county,"Greene County, Virginia",2017,1,degrees_awarded_first_professional,count
+51081,county,"Greensville County, Virginia",2017,2,degrees_awarded_first_professional,count
+51083,county,"Halifax County, Virginia",2017,0,degrees_awarded_first_professional,count
+51085,county,"Hanover County, Virginia",2017,3,degrees_awarded_first_professional,count
+51087,county,"Henrico County, Virginia",2017,43,degrees_awarded_first_professional,count
+51089,county,"Henry County, Virginia",2017,1,degrees_awarded_first_professional,count
+51091,county,"Highland County, Virginia",2017,0,degrees_awarded_first_professional,count
+51093,county,"Isle of Wight County, Virginia",2017,1,degrees_awarded_first_professional,count
+51095,county,"James City County, Virginia",2017,6,degrees_awarded_first_professional,count
+51097,county,"King and Queen County, Virginia",2017,0,degrees_awarded_first_professional,count
+51099,county,"King George County, Virginia",2017,0,degrees_awarded_first_professional,count
+51101,county,"King William County, Virginia",2017,1,degrees_awarded_first_professional,count
+51103,county,"Lancaster County, Virginia",2017,0,degrees_awarded_first_professional,count
+51105,county,"Lee County, Virginia",2017,0,degrees_awarded_first_professional,count
+51107,county,"Loudoun County, Virginia",2017,28,degrees_awarded_first_professional,count
+51109,county,"Louisa County, Virginia",2017,0,degrees_awarded_first_professional,count
+51111,county,"Lunenburg County, Virginia",2017,0,degrees_awarded_first_professional,count
+51113,county,"Madison County, Virginia",2017,1,degrees_awarded_first_professional,count
+51115,county,"Mathews County, Virginia",2017,0,degrees_awarded_first_professional,count
+51117,county,"Mecklenburg County, Virginia",2017,1,degrees_awarded_first_professional,count
+51119,county,"Middlesex County, Virginia",2017,2,degrees_awarded_first_professional,count
+51121,county,"Montgomery County, Virginia",2017,35,degrees_awarded_first_professional,count
+51125,county,"Nelson County, Virginia",2017,0,degrees_awarded_first_professional,count
+51127,county,"New Kent County, Virginia",2017,0,degrees_awarded_first_professional,count
+51131,county,"Northampton County, Virginia",2017,1,degrees_awarded_first_professional,count
+51133,county,"Northumberland County, Virginia",2017,0,degrees_awarded_first_professional,count
+51135,county,"Nottoway County, Virginia",2017,1,degrees_awarded_first_professional,count
+51137,county,"Orange County, Virginia",2017,1,degrees_awarded_first_professional,count
+51139,county,"Page County, Virginia",2017,0,degrees_awarded_first_professional,count
+51141,county,"Patrick County, Virginia",2017,0,degrees_awarded_first_professional,count
+51143,county,"Pittsylvania County, Virginia",2017,3,degrees_awarded_first_professional,count
+51145,county,"Powhatan County, Virginia",2017,3,degrees_awarded_first_professional,count
+51147,county,"Prince Edward County, Virginia",2017,2,degrees_awarded_first_professional,count
+51149,county,"Prince George County, Virginia",2017,2,degrees_awarded_first_professional,count
+51153,county,"Prince William County, Virginia",2017,21,degrees_awarded_first_professional,count
+51155,county,"Pulaski County, Virginia",2017,1,degrees_awarded_first_professional,count
+51157,county,"Rappahannock County, Virginia",2017,0,degrees_awarded_first_professional,count
+51159,county,"Richmond County, Virginia",2017,0,degrees_awarded_first_professional,count
+51161,county,"Roanoke County, Virginia",2017,9,degrees_awarded_first_professional,count
+51163,county,"Rockbridge County, Virginia",2017,0,degrees_awarded_first_professional,count
+51165,county,"Rockingham County, Virginia",2017,5,degrees_awarded_first_professional,count
+51167,county,"Russell County, Virginia",2017,3,degrees_awarded_first_professional,count
+51169,county,"Scott County, Virginia",2017,0,degrees_awarded_first_professional,count
+51171,county,"Shenandoah County, Virginia",2017,4,degrees_awarded_first_professional,count
+51173,county,"Smyth County, Virginia",2017,2,degrees_awarded_first_professional,count
+51175,county,"Southampton County, Virginia",2017,0,degrees_awarded_first_professional,count
+51177,county,"Spotsylvania County, Virginia",2017,5,degrees_awarded_first_professional,count
+51179,county,"Stafford County, Virginia",2017,6,degrees_awarded_first_professional,count
+51181,county,"Surry County, Virginia",2017,0,degrees_awarded_first_professional,count
+51183,county,"Sussex County, Virginia",2017,1,degrees_awarded_first_professional,count
+51185,county,"Tazewell County, Virginia",2017,6,degrees_awarded_first_professional,count
+51187,county,"Warren County, Virginia",2017,0,degrees_awarded_first_professional,count
+51191,county,"Washington County, Virginia",2017,5,degrees_awarded_first_professional,count
+51193,county,"Westmoreland County, Virginia",2017,0,degrees_awarded_first_professional,count
+51195,county,"Wise County, Virginia",2017,1,degrees_awarded_first_professional,count
+51197,county,"Wythe County, Virginia",2017,0,degrees_awarded_first_professional,count
+51199,county,"York County, Virginia",2017,11,degrees_awarded_first_professional,count
+51510,county,"Alexandria city, Virginia",2017,7,degrees_awarded_first_professional,count
+51515,county,"Bedford city, Virginia",2017,0,degrees_awarded_first_professional,count
+51520,county,"Bristol city, Virginia",2017,1,degrees_awarded_first_professional,count
+51530,county,"Buena Vista city, Virginia",2017,0,degrees_awarded_first_professional,count
+51540,county,"Charlottesville city, Virginia",2017,6,degrees_awarded_first_professional,count
+51550,county,"Chesapeake city, Virginia",2017,22,degrees_awarded_first_professional,count
+51570,county,"Colonial Heights city, Virginia",2017,1,degrees_awarded_first_professional,count
+51580,county,"Covington city, Virginia",2017,1,degrees_awarded_first_professional,count
+51590,county,"Danville city, Virginia",2017,1,degrees_awarded_first_professional,count
+51595,county,"Emporia city, Virginia",2017,0,degrees_awarded_first_professional,count
+51600,county,"Fairfax city, Virginia",2017,1,degrees_awarded_first_professional,count
+51610,county,"Falls Church city, Virginia",2017,1,degrees_awarded_first_professional,count
+51620,county,"Franklin city, Virginia",2017,1,degrees_awarded_first_professional,count
+51630,county,"Fredericksburg city, Virginia",2017,3,degrees_awarded_first_professional,count
+51640,county,"Galax city, Virginia",2017,0,degrees_awarded_first_professional,count
+51650,county,"Hampton city, Virginia",2017,7,degrees_awarded_first_professional,count
+51660,county,"Harrisonburg city, Virginia",2017,6,degrees_awarded_first_professional,count
+51670,county,"Hopewell city, Virginia",2017,0,degrees_awarded_first_professional,count
+51678,county,"Lexington city, Virginia",2017,0,degrees_awarded_first_professional,count
+51680,county,"Lynchburg city, Virginia",2017,3,degrees_awarded_first_professional,count
+51683,county,"Manassas city, Virginia",2017,2,degrees_awarded_first_professional,count
+51685,county,"Manassas Park city, Virginia",2017,1,degrees_awarded_first_professional,count
+51690,county,"Martinsville city, Virginia",2017,2,degrees_awarded_first_professional,count
+51700,county,"Newport News city, Virginia",2017,6,degrees_awarded_first_professional,count
+51710,county,"Norfolk city, Virginia",2017,7,degrees_awarded_first_professional,count
+51720,county,"Norton city, Virginia",2017,0,degrees_awarded_first_professional,count
+51730,county,"Petersburg city, Virginia",2017,0,degrees_awarded_first_professional,count
+51735,county,"Poquoson city, Virginia",2017,2,degrees_awarded_first_professional,count
+51740,county,"Portsmouth city, Virginia",2017,0,degrees_awarded_first_professional,count
+51750,county,"Radford city, Virginia",2017,0,degrees_awarded_first_professional,count
+51760,county,"Richmond city, Virginia",2017,46,degrees_awarded_first_professional,count
+51770,county,"Roanoke city, Virginia",2017,8,degrees_awarded_first_professional,count
+51775,county,"Salem city, Virginia",2017,3,degrees_awarded_first_professional,count
+51790,county,"Staunton city, Virginia",2017,0,degrees_awarded_first_professional,count
+51800,county,"Suffolk city, Virginia",2017,5,degrees_awarded_first_professional,count
+51810,county,"Virginia Beach city, Virginia",2017,33,degrees_awarded_first_professional,count
+51820,county,"Waynesboro city, Virginia",2017,2,degrees_awarded_first_professional,count
+51830,county,"Williamsburg city, Virginia",2017,4,degrees_awarded_first_professional,count
+51840,county,"Winchester city, Virginia",2017,7,degrees_awarded_first_professional,count
+51001,county,"Accomack County, Virginia",2018,1,degrees_awarded_first_professional,count
+51003,county,"Albemarle County, Virginia",2018,14,degrees_awarded_first_professional,count
+51005,county,"Alleghany County, Virginia",2018,0,degrees_awarded_first_professional,count
+51007,county,"Amelia County, Virginia",2018,0,degrees_awarded_first_professional,count
+51009,county,"Amherst County, Virginia",2018,3,degrees_awarded_first_professional,count
+51011,county,"Appomattox County, Virginia",2018,0,degrees_awarded_first_professional,count
+51013,county,"Arlington County, Virginia",2018,10,degrees_awarded_first_professional,count
+51015,county,"Augusta County, Virginia",2018,3,degrees_awarded_first_professional,count
+51017,county,"Bath County, Virginia",2018,0,degrees_awarded_first_professional,count
+51019,county,"Bedford County, Virginia",2018,10,degrees_awarded_first_professional,count
+51021,county,"Bland County, Virginia",2018,0,degrees_awarded_first_professional,count
+51023,county,"Botetourt County, Virginia",2018,5,degrees_awarded_first_professional,count
+51025,county,"Brunswick County, Virginia",2018,0,degrees_awarded_first_professional,count
+51027,county,"Buchanan County, Virginia",2018,6,degrees_awarded_first_professional,count
+51029,county,"Buckingham County, Virginia",2018,1,degrees_awarded_first_professional,count
+51031,county,"Campbell County, Virginia",2018,3,degrees_awarded_first_professional,count
+51033,county,"Caroline County, Virginia",2018,0,degrees_awarded_first_professional,count
+51035,county,"Carroll County, Virginia",2018,2,degrees_awarded_first_professional,count
+51036,county,"Charles City County, Virginia",2018,1,degrees_awarded_first_professional,count
+51037,county,"Charlotte County, Virginia",2018,0,degrees_awarded_first_professional,count
+51041,county,"Chesterfield County, Virginia",2018,32,degrees_awarded_first_professional,count
+51043,county,"Clarke County, Virginia",2018,0,degrees_awarded_first_professional,count
+51045,county,"Craig County, Virginia",2018,1,degrees_awarded_first_professional,count
+51047,county,"Culpeper County, Virginia",2018,1,degrees_awarded_first_professional,count
+51049,county,"Cumberland County, Virginia",2018,0,degrees_awarded_first_professional,count
+51051,county,"Dickenson County, Virginia",2018,3,degrees_awarded_first_professional,count
+51053,county,"Dinwiddie County, Virginia",2018,0,degrees_awarded_first_professional,count
+51057,county,"Essex County, Virginia",2018,0,degrees_awarded_first_professional,count
+51059,county,"Fairfax County, Virginia",2018,169,degrees_awarded_first_professional,count
+51061,county,"Fauquier County, Virginia",2018,6,degrees_awarded_first_professional,count
+51063,county,"Floyd County, Virginia",2018,0,degrees_awarded_first_professional,count
+51065,county,"Fluvanna County, Virginia",2018,3,degrees_awarded_first_professional,count
+51067,county,"Franklin County, Virginia",2018,4,degrees_awarded_first_professional,count
+51069,county,"Frederick County, Virginia",2018,8,degrees_awarded_first_professional,count
+51071,county,"Giles County, Virginia",2018,1,degrees_awarded_first_professional,count
+51073,county,"Gloucester County, Virginia",2018,2,degrees_awarded_first_professional,count
+51075,county,"Goochland County, Virginia",2018,2,degrees_awarded_first_professional,count
+51077,county,"Grayson County, Virginia",2018,0,degrees_awarded_first_professional,count
+51079,county,"Greene County, Virginia",2018,1,degrees_awarded_first_professional,count
+51081,county,"Greensville County, Virginia",2018,0,degrees_awarded_first_professional,count
+51083,county,"Halifax County, Virginia",2018,1,degrees_awarded_first_professional,count
+51085,county,"Hanover County, Virginia",2018,9,degrees_awarded_first_professional,count
+51087,county,"Henrico County, Virginia",2018,40,degrees_awarded_first_professional,count
+51089,county,"Henry County, Virginia",2018,1,degrees_awarded_first_professional,count
+51091,county,"Highland County, Virginia",2018,0,degrees_awarded_first_professional,count
+51093,county,"Isle of Wight County, Virginia",2018,1,degrees_awarded_first_professional,count
+51095,county,"James City County, Virginia",2018,9,degrees_awarded_first_professional,count
+51097,county,"King and Queen County, Virginia",2018,0,degrees_awarded_first_professional,count
+51099,county,"King George County, Virginia",2018,1,degrees_awarded_first_professional,count
+51101,county,"King William County, Virginia",2018,1,degrees_awarded_first_professional,count
+51103,county,"Lancaster County, Virginia",2018,0,degrees_awarded_first_professional,count
+51105,county,"Lee County, Virginia",2018,1,degrees_awarded_first_professional,count
+51107,county,"Loudoun County, Virginia",2018,30,degrees_awarded_first_professional,count
+51109,county,"Louisa County, Virginia",2018,0,degrees_awarded_first_professional,count
+51111,county,"Lunenburg County, Virginia",2018,0,degrees_awarded_first_professional,count
+51113,county,"Madison County, Virginia",2018,0,degrees_awarded_first_professional,count
+51115,county,"Mathews County, Virginia",2018,1,degrees_awarded_first_professional,count
+51117,county,"Mecklenburg County, Virginia",2018,0,degrees_awarded_first_professional,count
+51119,county,"Middlesex County, Virginia",2018,1,degrees_awarded_first_professional,count
+51121,county,"Montgomery County, Virginia",2018,20,degrees_awarded_first_professional,count
+51125,county,"Nelson County, Virginia",2018,0,degrees_awarded_first_professional,count
+51127,county,"New Kent County, Virginia",2018,1,degrees_awarded_first_professional,count
+51131,county,"Northampton County, Virginia",2018,2,degrees_awarded_first_professional,count
+51133,county,"Northumberland County, Virginia",2018,0,degrees_awarded_first_professional,count
+51135,county,"Nottoway County, Virginia",2018,0,degrees_awarded_first_professional,count
+51137,county,"Orange County, Virginia",2018,1,degrees_awarded_first_professional,count
+51139,county,"Page County, Virginia",2018,1,degrees_awarded_first_professional,count
+51141,county,"Patrick County, Virginia",2018,2,degrees_awarded_first_professional,count
+51143,county,"Pittsylvania County, Virginia",2018,3,degrees_awarded_first_professional,count
+51145,county,"Powhatan County, Virginia",2018,2,degrees_awarded_first_professional,count
+51147,county,"Prince Edward County, Virginia",2018,1,degrees_awarded_first_professional,count
+51149,county,"Prince George County, Virginia",2018,0,degrees_awarded_first_professional,count
+51153,county,"Prince William County, Virginia",2018,19,degrees_awarded_first_professional,count
+51155,county,"Pulaski County, Virginia",2018,1,degrees_awarded_first_professional,count
+51157,county,"Rappahannock County, Virginia",2018,0,degrees_awarded_first_professional,count
+51159,county,"Richmond County, Virginia",2018,1,degrees_awarded_first_professional,count
+51161,county,"Roanoke County, Virginia",2018,9,degrees_awarded_first_professional,count
+51163,county,"Rockbridge County, Virginia",2018,1,degrees_awarded_first_professional,count
+51165,county,"Rockingham County, Virginia",2018,6,degrees_awarded_first_professional,count
+51167,county,"Russell County, Virginia",2018,4,degrees_awarded_first_professional,count
+51169,county,"Scott County, Virginia",2018,1,degrees_awarded_first_professional,count
+51171,county,"Shenandoah County, Virginia",2018,2,degrees_awarded_first_professional,count
+51173,county,"Smyth County, Virginia",2018,2,degrees_awarded_first_professional,count
+51175,county,"Southampton County, Virginia",2018,0,degrees_awarded_first_professional,count
+51177,county,"Spotsylvania County, Virginia",2018,4,degrees_awarded_first_professional,count
+51179,county,"Stafford County, Virginia",2018,7,degrees_awarded_first_professional,count
+51181,county,"Surry County, Virginia",2018,0,degrees_awarded_first_professional,count
+51183,county,"Sussex County, Virginia",2018,0,degrees_awarded_first_professional,count
+51185,county,"Tazewell County, Virginia",2018,4,degrees_awarded_first_professional,count
+51187,county,"Warren County, Virginia",2018,4,degrees_awarded_first_professional,count
+51191,county,"Washington County, Virginia",2018,4,degrees_awarded_first_professional,count
+51193,county,"Westmoreland County, Virginia",2018,1,degrees_awarded_first_professional,count
+51195,county,"Wise County, Virginia",2018,2,degrees_awarded_first_professional,count
+51197,county,"Wythe County, Virginia",2018,0,degrees_awarded_first_professional,count
+51199,county,"York County, Virginia",2018,8,degrees_awarded_first_professional,count
+51510,county,"Alexandria city, Virginia",2018,11,degrees_awarded_first_professional,count
+51515,county,"Bedford city, Virginia",2018,0,degrees_awarded_first_professional,count
+51520,county,"Bristol city, Virginia",2018,1,degrees_awarded_first_professional,count
+51530,county,"Buena Vista city, Virginia",2018,0,degrees_awarded_first_professional,count
+51540,county,"Charlottesville city, Virginia",2018,8,degrees_awarded_first_professional,count
+51550,county,"Chesapeake city, Virginia",2018,30,degrees_awarded_first_professional,count
+51570,county,"Colonial Heights city, Virginia",2018,0,degrees_awarded_first_professional,count
+51580,county,"Covington city, Virginia",2018,0,degrees_awarded_first_professional,count
+51590,county,"Danville city, Virginia",2018,1,degrees_awarded_first_professional,count
+51595,county,"Emporia city, Virginia",2018,0,degrees_awarded_first_professional,count
+51600,county,"Fairfax city, Virginia",2018,3,degrees_awarded_first_professional,count
+51610,county,"Falls Church city, Virginia",2018,1,degrees_awarded_first_professional,count
+51620,county,"Franklin city, Virginia",2018,2,degrees_awarded_first_professional,count
+51630,county,"Fredericksburg city, Virginia",2018,0,degrees_awarded_first_professional,count
+51640,county,"Galax city, Virginia",2018,1,degrees_awarded_first_professional,count
+51650,county,"Hampton city, Virginia",2018,4,degrees_awarded_first_professional,count
+51660,county,"Harrisonburg city, Virginia",2018,3,degrees_awarded_first_professional,count
+51670,county,"Hopewell city, Virginia",2018,0,degrees_awarded_first_professional,count
+51678,county,"Lexington city, Virginia",2018,0,degrees_awarded_first_professional,count
+51680,county,"Lynchburg city, Virginia",2018,10,degrees_awarded_first_professional,count
+51683,county,"Manassas city, Virginia",2018,1,degrees_awarded_first_professional,count
+51685,county,"Manassas Park city, Virginia",2018,0,degrees_awarded_first_professional,count
+51690,county,"Martinsville city, Virginia",2018,1,degrees_awarded_first_professional,count
+51700,county,"Newport News city, Virginia",2018,6,degrees_awarded_first_professional,count
+51710,county,"Norfolk city, Virginia",2018,13,degrees_awarded_first_professional,count
+51720,county,"Norton city, Virginia",2018,0,degrees_awarded_first_professional,count
+51730,county,"Petersburg city, Virginia",2018,0,degrees_awarded_first_professional,count
+51735,county,"Poquoson city, Virginia",2018,2,degrees_awarded_first_professional,count
+51740,county,"Portsmouth city, Virginia",2018,1,degrees_awarded_first_professional,count
+51750,county,"Radford city, Virginia",2018,2,degrees_awarded_first_professional,count
+51760,county,"Richmond city, Virginia",2018,30,degrees_awarded_first_professional,count
+51770,county,"Roanoke city, Virginia",2018,4,degrees_awarded_first_professional,count
+51775,county,"Salem city, Virginia",2018,4,degrees_awarded_first_professional,count
+51790,county,"Staunton city, Virginia",2018,1,degrees_awarded_first_professional,count
+51800,county,"Suffolk city, Virginia",2018,6,degrees_awarded_first_professional,count
+51810,county,"Virginia Beach city, Virginia",2018,33,degrees_awarded_first_professional,count
+51820,county,"Waynesboro city, Virginia",2018,0,degrees_awarded_first_professional,count
+51830,county,"Williamsburg city, Virginia",2018,3,degrees_awarded_first_professional,count
+51840,county,"Winchester city, Virginia",2018,3,degrees_awarded_first_professional,count
+51001,county,"Accomack County, Virginia",2019,1,degrees_awarded_first_professional,count
+51003,county,"Albemarle County, Virginia",2019,13,degrees_awarded_first_professional,count
+51005,county,"Alleghany County, Virginia",2019,0,degrees_awarded_first_professional,count
+51007,county,"Amelia County, Virginia",2019,2,degrees_awarded_first_professional,count
+51009,county,"Amherst County, Virginia",2019,0,degrees_awarded_first_professional,count
+51011,county,"Appomattox County, Virginia",2019,0,degrees_awarded_first_professional,count
+51013,county,"Arlington County, Virginia",2019,8,degrees_awarded_first_professional,count
+51015,county,"Augusta County, Virginia",2019,3,degrees_awarded_first_professional,count
+51017,county,"Bath County, Virginia",2019,0,degrees_awarded_first_professional,count
+51019,county,"Bedford County, Virginia",2019,5,degrees_awarded_first_professional,count
+51021,county,"Bland County, Virginia",2019,1,degrees_awarded_first_professional,count
+51023,county,"Botetourt County, Virginia",2019,2,degrees_awarded_first_professional,count
+51025,county,"Brunswick County, Virginia",2019,0,degrees_awarded_first_professional,count
+51027,county,"Buchanan County, Virginia",2019,7,degrees_awarded_first_professional,count
+51029,county,"Buckingham County, Virginia",2019,0,degrees_awarded_first_professional,count
+51031,county,"Campbell County, Virginia",2019,5,degrees_awarded_first_professional,count
+51033,county,"Caroline County, Virginia",2019,1,degrees_awarded_first_professional,count
+51035,county,"Carroll County, Virginia",2019,0,degrees_awarded_first_professional,count
+51036,county,"Charles City County, Virginia",2019,0,degrees_awarded_first_professional,count
+51037,county,"Charlotte County, Virginia",2019,0,degrees_awarded_first_professional,count
+51041,county,"Chesterfield County, Virginia",2019,28,degrees_awarded_first_professional,count
+51043,county,"Clarke County, Virginia",2019,0,degrees_awarded_first_professional,count
+51045,county,"Craig County, Virginia",2019,0,degrees_awarded_first_professional,count
+51047,county,"Culpeper County, Virginia",2019,0,degrees_awarded_first_professional,count
+51049,county,"Cumberland County, Virginia",2019,1,degrees_awarded_first_professional,count
+51051,county,"Dickenson County, Virginia",2019,1,degrees_awarded_first_professional,count
+51053,county,"Dinwiddie County, Virginia",2019,0,degrees_awarded_first_professional,count
+51057,county,"Essex County, Virginia",2019,0,degrees_awarded_first_professional,count
+51059,county,"Fairfax County, Virginia",2019,153,degrees_awarded_first_professional,count
+51061,county,"Fauquier County, Virginia",2019,4,degrees_awarded_first_professional,count
+51063,county,"Floyd County, Virginia",2019,0,degrees_awarded_first_professional,count
+51065,county,"Fluvanna County, Virginia",2019,0,degrees_awarded_first_professional,count
+51067,county,"Franklin County, Virginia",2019,2,degrees_awarded_first_professional,count
+51069,county,"Frederick County, Virginia",2019,9,degrees_awarded_first_professional,count
+51071,county,"Giles County, Virginia",2019,3,degrees_awarded_first_professional,count
+51073,county,"Gloucester County, Virginia",2019,1,degrees_awarded_first_professional,count
+51075,county,"Goochland County, Virginia",2019,4,degrees_awarded_first_professional,count
+51077,county,"Grayson County, Virginia",2019,0,degrees_awarded_first_professional,count
+51079,county,"Greene County, Virginia",2019,1,degrees_awarded_first_professional,count
+51081,county,"Greensville County, Virginia",2019,0,degrees_awarded_first_professional,count
+51083,county,"Halifax County, Virginia",2019,2,degrees_awarded_first_professional,count
+51085,county,"Hanover County, Virginia",2019,18,degrees_awarded_first_professional,count
+51087,county,"Henrico County, Virginia",2019,34,degrees_awarded_first_professional,count
+51089,county,"Henry County, Virginia",2019,3,degrees_awarded_first_professional,count
+51091,county,"Highland County, Virginia",2019,0,degrees_awarded_first_professional,count
+51093,county,"Isle of Wight County, Virginia",2019,2,degrees_awarded_first_professional,count
+51095,county,"James City County, Virginia",2019,4,degrees_awarded_first_professional,count
+51097,county,"King and Queen County, Virginia",2019,0,degrees_awarded_first_professional,count
+51099,county,"King George County, Virginia",2019,0,degrees_awarded_first_professional,count
+51101,county,"King William County, Virginia",2019,2,degrees_awarded_first_professional,count
+51103,county,"Lancaster County, Virginia",2019,0,degrees_awarded_first_professional,count
+51105,county,"Lee County, Virginia",2019,0,degrees_awarded_first_professional,count
+51107,county,"Loudoun County, Virginia",2019,38,degrees_awarded_first_professional,count
+51109,county,"Louisa County, Virginia",2019,2,degrees_awarded_first_professional,count
+51111,county,"Lunenburg County, Virginia",2019,0,degrees_awarded_first_professional,count
+51113,county,"Madison County, Virginia",2019,1,degrees_awarded_first_professional,count
+51115,county,"Mathews County, Virginia",2019,0,degrees_awarded_first_professional,count
+51117,county,"Mecklenburg County, Virginia",2019,1,degrees_awarded_first_professional,count
+51119,county,"Middlesex County, Virginia",2019,0,degrees_awarded_first_professional,count
+51121,county,"Montgomery County, Virginia",2019,39,degrees_awarded_first_professional,count
+51125,county,"Nelson County, Virginia",2019,1,degrees_awarded_first_professional,count
+51127,county,"New Kent County, Virginia",2019,0,degrees_awarded_first_professional,count
+51131,county,"Northampton County, Virginia",2019,0,degrees_awarded_first_professional,count
+51133,county,"Northumberland County, Virginia",2019,0,degrees_awarded_first_professional,count
+51135,county,"Nottoway County, Virginia",2019,0,degrees_awarded_first_professional,count
+51137,county,"Orange County, Virginia",2019,0,degrees_awarded_first_professional,count
+51139,county,"Page County, Virginia",2019,1,degrees_awarded_first_professional,count
+51141,county,"Patrick County, Virginia",2019,0,degrees_awarded_first_professional,count
+51143,county,"Pittsylvania County, Virginia",2019,3,degrees_awarded_first_professional,count
+51145,county,"Powhatan County, Virginia",2019,1,degrees_awarded_first_professional,count
+51147,county,"Prince Edward County, Virginia",2019,0,degrees_awarded_first_professional,count
+51149,county,"Prince George County, Virginia",2019,0,degrees_awarded_first_professional,count
+51153,county,"Prince William County, Virginia",2019,30,degrees_awarded_first_professional,count
+51155,county,"Pulaski County, Virginia",2019,0,degrees_awarded_first_professional,count
+51157,county,"Rappahannock County, Virginia",2019,1,degrees_awarded_first_professional,count
+51159,county,"Richmond County, Virginia",2019,3,degrees_awarded_first_professional,count
+51161,county,"Roanoke County, Virginia",2019,17,degrees_awarded_first_professional,count
+51163,county,"Rockbridge County, Virginia",2019,2,degrees_awarded_first_professional,count
+51165,county,"Rockingham County, Virginia",2019,5,degrees_awarded_first_professional,count
+51167,county,"Russell County, Virginia",2019,4,degrees_awarded_first_professional,count
+51169,county,"Scott County, Virginia",2019,0,degrees_awarded_first_professional,count
+51171,county,"Shenandoah County, Virginia",2019,4,degrees_awarded_first_professional,count
+51173,county,"Smyth County, Virginia",2019,2,degrees_awarded_first_professional,count
+51175,county,"Southampton County, Virginia",2019,0,degrees_awarded_first_professional,count
+51177,county,"Spotsylvania County, Virginia",2019,7,degrees_awarded_first_professional,count
+51179,county,"Stafford County, Virginia",2019,4,degrees_awarded_first_professional,count
+51181,county,"Surry County, Virginia",2019,0,degrees_awarded_first_professional,count
+51183,county,"Sussex County, Virginia",2019,0,degrees_awarded_first_professional,count
+51185,county,"Tazewell County, Virginia",2019,6,degrees_awarded_first_professional,count
+51187,county,"Warren County, Virginia",2019,0,degrees_awarded_first_professional,count
+51191,county,"Washington County, Virginia",2019,0,degrees_awarded_first_professional,count
+51193,county,"Westmoreland County, Virginia",2019,0,degrees_awarded_first_professional,count
+51195,county,"Wise County, Virginia",2019,3,degrees_awarded_first_professional,count
+51197,county,"Wythe County, Virginia",2019,2,degrees_awarded_first_professional,count
+51199,county,"York County, Virginia",2019,15,degrees_awarded_first_professional,count
+51510,county,"Alexandria city, Virginia",2019,5,degrees_awarded_first_professional,count
+51515,county,"Bedford city, Virginia",2019,1,degrees_awarded_first_professional,count
+51520,county,"Bristol city, Virginia",2019,1,degrees_awarded_first_professional,count
+51530,county,"Buena Vista city, Virginia",2019,0,degrees_awarded_first_professional,count
+51540,county,"Charlottesville city, Virginia",2019,7,degrees_awarded_first_professional,count
+51550,county,"Chesapeake city, Virginia",2019,22,degrees_awarded_first_professional,count
+51570,county,"Colonial Heights city, Virginia",2019,2,degrees_awarded_first_professional,count
+51580,county,"Covington city, Virginia",2019,0,degrees_awarded_first_professional,count
+51590,county,"Danville city, Virginia",2019,3,degrees_awarded_first_professional,count
+51595,county,"Emporia city, Virginia",2019,0,degrees_awarded_first_professional,count
+51600,county,"Fairfax city, Virginia",2019,2,degrees_awarded_first_professional,count
+51610,county,"Falls Church city, Virginia",2019,1,degrees_awarded_first_professional,count
+51620,county,"Franklin city, Virginia",2019,1,degrees_awarded_first_professional,count
+51630,county,"Fredericksburg city, Virginia",2019,0,degrees_awarded_first_professional,count
+51640,county,"Galax city, Virginia",2019,0,degrees_awarded_first_professional,count
+51650,county,"Hampton city, Virginia",2019,5,degrees_awarded_first_professional,count
+51660,county,"Harrisonburg city, Virginia",2019,2,degrees_awarded_first_professional,count
+51670,county,"Hopewell city, Virginia",2019,0,degrees_awarded_first_professional,count
+51678,county,"Lexington city, Virginia",2019,1,degrees_awarded_first_professional,count
+51680,county,"Lynchburg city, Virginia",2019,18,degrees_awarded_first_professional,count
+51683,county,"Manassas city, Virginia",2019,0,degrees_awarded_first_professional,count
+51685,county,"Manassas Park city, Virginia",2019,2,degrees_awarded_first_professional,count
+51690,county,"Martinsville city, Virginia",2019,2,degrees_awarded_first_professional,count
+51700,county,"Newport News city, Virginia",2019,7,degrees_awarded_first_professional,count
+51710,county,"Norfolk city, Virginia",2019,13,degrees_awarded_first_professional,count
+51720,county,"Norton city, Virginia",2019,1,degrees_awarded_first_professional,count
+51730,county,"Petersburg city, Virginia",2019,1,degrees_awarded_first_professional,count
+51735,county,"Poquoson city, Virginia",2019,2,degrees_awarded_first_professional,count
+51740,county,"Portsmouth city, Virginia",2019,1,degrees_awarded_first_professional,count
+51750,county,"Radford city, Virginia",2019,2,degrees_awarded_first_professional,count
+51760,county,"Richmond city, Virginia",2019,32,degrees_awarded_first_professional,count
+51770,county,"Roanoke city, Virginia",2019,8,degrees_awarded_first_professional,count
+51775,county,"Salem city, Virginia",2019,3,degrees_awarded_first_professional,count
+51790,county,"Staunton city, Virginia",2019,1,degrees_awarded_first_professional,count
+51800,county,"Suffolk city, Virginia",2019,6,degrees_awarded_first_professional,count
+51810,county,"Virginia Beach city, Virginia",2019,32,degrees_awarded_first_professional,count
+51820,county,"Waynesboro city, Virginia",2019,1,degrees_awarded_first_professional,count
+51830,county,"Williamsburg city, Virginia",2019,1,degrees_awarded_first_professional,count
+51840,county,"Winchester city, Virginia",2019,2,degrees_awarded_first_professional,count
+51001,county,"Accomack County, Virginia",2016,39,degrees_awarded_two_year,count
+51003,county,"Albemarle County, Virginia",2016,163,degrees_awarded_two_year,count
+51005,county,"Alleghany County, Virginia",2016,18,degrees_awarded_two_year,count
+51007,county,"Amelia County, Virginia",2016,18,degrees_awarded_two_year,count
+51009,county,"Amherst County, Virginia",2016,24,degrees_awarded_two_year,count
+51011,county,"Appomattox County, Virginia",2016,17,degrees_awarded_two_year,count
+51013,county,"Arlington County, Virginia",2016,29,degrees_awarded_two_year,count
+51015,county,"Augusta County, Virginia",2016,66,degrees_awarded_two_year,count
+51017,county,"Bath County, Virginia",2016,7,degrees_awarded_two_year,count
+51019,county,"Bedford County, Virginia",2016,53,degrees_awarded_two_year,count
+51021,county,"Bland County, Virginia",2016,18,degrees_awarded_two_year,count
+51023,county,"Botetourt County, Virginia",2016,27,degrees_awarded_two_year,count
+51025,county,"Brunswick County, Virginia",2016,31,degrees_awarded_two_year,count
+51027,county,"Buchanan County, Virginia",2016,25,degrees_awarded_two_year,count
+51029,county,"Buckingham County, Virginia",2016,40,degrees_awarded_two_year,count
+51031,county,"Campbell County, Virginia",2016,83,degrees_awarded_two_year,count
+51033,county,"Caroline County, Virginia",2016,16,degrees_awarded_two_year,count
+51035,county,"Carroll County, Virginia",2016,59,degrees_awarded_two_year,count
+51036,county,"Charles City County, Virginia",2016,8,degrees_awarded_two_year,count
+51037,county,"Charlotte County, Virginia",2016,36,degrees_awarded_two_year,count
+51041,county,"Chesterfield County, Virginia",2016,292,degrees_awarded_two_year,count
+51043,county,"Clarke County, Virginia",2016,24,degrees_awarded_two_year,count
+51045,county,"Craig County, Virginia",2016,4,degrees_awarded_two_year,count
+51047,county,"Culpeper County, Virginia",2016,67,degrees_awarded_two_year,count
+51049,county,"Cumberland County, Virginia",2016,9,degrees_awarded_two_year,count
+51051,county,"Dickenson County, Virginia",2016,43,degrees_awarded_two_year,count
+51053,county,"Dinwiddie County, Virginia",2016,21,degrees_awarded_two_year,count
+51057,county,"Essex County, Virginia",2016,23,degrees_awarded_two_year,count
+51059,county,"Fairfax County, Virginia",2016,223,degrees_awarded_two_year,count
+51061,county,"Fauquier County, Virginia",2016,77,degrees_awarded_two_year,count
+51063,county,"Floyd County, Virginia",2016,20,degrees_awarded_two_year,count
+51065,county,"Fluvanna County, Virginia",2016,49,degrees_awarded_two_year,count
+51067,county,"Franklin County, Virginia",2016,41,degrees_awarded_two_year,count
+51069,county,"Frederick County, Virginia",2016,87,degrees_awarded_two_year,count
+51071,county,"Giles County, Virginia",2016,21,degrees_awarded_two_year,count
+51073,county,"Gloucester County, Virginia",2016,67,degrees_awarded_two_year,count
+51075,county,"Goochland County, Virginia",2016,4,degrees_awarded_two_year,count
+51077,county,"Grayson County, Virginia",2016,31,degrees_awarded_two_year,count
+51079,county,"Greene County, Virginia",2016,38,degrees_awarded_two_year,count
+51081,county,"Greensville County, Virginia",2016,28,degrees_awarded_two_year,count
+51083,county,"Halifax County, Virginia",2016,53,degrees_awarded_two_year,count
+51085,county,"Hanover County, Virginia",2016,57,degrees_awarded_two_year,count
+51087,county,"Henrico County, Virginia",2016,196,degrees_awarded_two_year,count
+51089,county,"Henry County, Virginia",2016,51,degrees_awarded_two_year,count
+51091,county,"Highland County, Virginia",2016,1,degrees_awarded_two_year,count
+51093,county,"Isle of Wight County, Virginia",2016,34,degrees_awarded_two_year,count
+51095,county,"James City County, Virginia",2016,27,degrees_awarded_two_year,count
+51097,county,"King and Queen County, Virginia",2016,8,degrees_awarded_two_year,count
+51099,county,"King George County, Virginia",2016,40,degrees_awarded_two_year,count
+51101,county,"King William County, Virginia",2016,25,degrees_awarded_two_year,count
+51103,county,"Lancaster County, Virginia",2016,19,degrees_awarded_two_year,count
+51105,county,"Lee County, Virginia",2016,54,degrees_awarded_two_year,count
+51107,county,"Loudoun County, Virginia",2016,61,degrees_awarded_two_year,count
+51109,county,"Louisa County, Virginia",2016,52,degrees_awarded_two_year,count
+51111,county,"Lunenburg County, Virginia",2016,23,degrees_awarded_two_year,count
+51113,county,"Madison County, Virginia",2016,21,degrees_awarded_two_year,count
+51115,county,"Mathews County, Virginia",2016,18,degrees_awarded_two_year,count
+51117,county,"Mecklenburg County, Virginia",2016,92,degrees_awarded_two_year,count
+51119,county,"Middlesex County, Virginia",2016,13,degrees_awarded_two_year,count
+51121,county,"Montgomery County, Virginia",2016,58,degrees_awarded_two_year,count
+51125,county,"Nelson County, Virginia",2016,16,degrees_awarded_two_year,count
+51127,county,"New Kent County, Virginia",2016,30,degrees_awarded_two_year,count
+51131,county,"Northampton County, Virginia",2016,14,degrees_awarded_two_year,count
+51133,county,"Northumberland County, Virginia",2016,20,degrees_awarded_two_year,count
+51135,county,"Nottoway County, Virginia",2016,25,degrees_awarded_two_year,count
+51137,county,"Orange County, Virginia",2016,43,degrees_awarded_two_year,count
+51139,county,"Page County, Virginia",2016,28,degrees_awarded_two_year,count
+51141,county,"Patrick County, Virginia",2016,17,degrees_awarded_two_year,count
+51143,county,"Pittsylvania County, Virginia",2016,62,degrees_awarded_two_year,count
+51145,county,"Powhatan County, Virginia",2016,28,degrees_awarded_two_year,count
+51147,county,"Prince Edward County, Virginia",2016,40,degrees_awarded_two_year,count
+51149,county,"Prince George County, Virginia",2016,15,degrees_awarded_two_year,count
+51153,county,"Prince William County, Virginia",2016,103,degrees_awarded_two_year,count
+51155,county,"Pulaski County, Virginia",2016,37,degrees_awarded_two_year,count
+51157,county,"Rappahannock County, Virginia",2016,7,degrees_awarded_two_year,count
+51159,county,"Richmond County, Virginia",2016,22,degrees_awarded_two_year,count
+51161,county,"Roanoke County, Virginia",2016,82,degrees_awarded_two_year,count
+51163,county,"Rockbridge County, Virginia",2016,10,degrees_awarded_two_year,count
+51165,county,"Rockingham County, Virginia",2016,55,degrees_awarded_two_year,count
+51167,county,"Russell County, Virginia",2016,39,degrees_awarded_two_year,count
+51169,county,"Scott County, Virginia",2016,33,degrees_awarded_two_year,count
+51171,county,"Shenandoah County, Virginia",2016,53,degrees_awarded_two_year,count
+51173,county,"Smyth County, Virginia",2016,39,degrees_awarded_two_year,count
+51175,county,"Southampton County, Virginia",2016,34,degrees_awarded_two_year,count
+51177,county,"Spotsylvania County, Virginia",2016,88,degrees_awarded_two_year,count
+51179,county,"Stafford County, Virginia",2016,91,degrees_awarded_two_year,count
+51181,county,"Surry County, Virginia",2016,3,degrees_awarded_two_year,count
+51183,county,"Sussex County, Virginia",2016,4,degrees_awarded_two_year,count
+51185,county,"Tazewell County, Virginia",2016,82,degrees_awarded_two_year,count
+51187,county,"Warren County, Virginia",2016,30,degrees_awarded_two_year,count
+51191,county,"Washington County, Virginia",2016,84,degrees_awarded_two_year,count
+51193,county,"Westmoreland County, Virginia",2016,26,degrees_awarded_two_year,count
+51195,county,"Wise County, Virginia",2016,117,degrees_awarded_two_year,count
+51197,county,"Wythe County, Virginia",2016,55,degrees_awarded_two_year,count
+51199,county,"York County, Virginia",2016,27,degrees_awarded_two_year,count
+51510,county,"Alexandria city, Virginia",2016,33,degrees_awarded_two_year,count
+51515,county,"Bedford city, Virginia",2016,0,degrees_awarded_two_year,count
+51520,county,"Bristol city, Virginia",2016,22,degrees_awarded_two_year,count
+51530,county,"Buena Vista city, Virginia",2016,5,degrees_awarded_two_year,count
+51540,county,"Charlottesville city, Virginia",2016,36,degrees_awarded_two_year,count
+51550,county,"Chesapeake city, Virginia",2016,90,degrees_awarded_two_year,count
+51570,county,"Colonial Heights city, Virginia",2016,16,degrees_awarded_two_year,count
+51580,county,"Covington city, Virginia",2016,3,degrees_awarded_two_year,count
+51590,county,"Danville city, Virginia",2016,65,degrees_awarded_two_year,count
+51595,county,"Emporia city, Virginia",2016,6,degrees_awarded_two_year,count
+51600,county,"Fairfax city, Virginia",2016,5,degrees_awarded_two_year,count
+51610,county,"Falls Church city, Virginia",2016,4,degrees_awarded_two_year,count
+51620,county,"Franklin city, Virginia",2016,21,degrees_awarded_two_year,count
+51630,county,"Fredericksburg city, Virginia",2016,49,degrees_awarded_two_year,count
+51640,county,"Galax city, Virginia",2016,24,degrees_awarded_two_year,count
+51650,county,"Hampton city, Virginia",2016,47,degrees_awarded_two_year,count
+51660,county,"Harrisonburg city, Virginia",2016,22,degrees_awarded_two_year,count
+51670,county,"Hopewell city, Virginia",2016,9,degrees_awarded_two_year,count
+51678,county,"Lexington city, Virginia",2016,0,degrees_awarded_two_year,count
+51680,county,"Lynchburg city, Virginia",2016,55,degrees_awarded_two_year,count
+51683,county,"Manassas city, Virginia",2016,13,degrees_awarded_two_year,count
+51685,county,"Manassas Park city, Virginia",2016,1,degrees_awarded_two_year,count
+51690,county,"Martinsville city, Virginia",2016,18,degrees_awarded_two_year,count
+51700,county,"Newport News city, Virginia",2016,77,degrees_awarded_two_year,count
+51710,county,"Norfolk city, Virginia",2016,63,degrees_awarded_two_year,count
+51720,county,"Norton city, Virginia",2016,22,degrees_awarded_two_year,count
+51730,county,"Petersburg city, Virginia",2016,12,degrees_awarded_two_year,count
+51735,county,"Poquoson city, Virginia",2016,5,degrees_awarded_two_year,count
+51740,county,"Portsmouth city, Virginia",2016,48,degrees_awarded_two_year,count
+51750,county,"Radford city, Virginia",2016,12,degrees_awarded_two_year,count
+51760,county,"Richmond city, Virginia",2016,134,degrees_awarded_two_year,count
+51770,county,"Roanoke city, Virginia",2016,55,degrees_awarded_two_year,count
+51775,county,"Salem city, Virginia",2016,14,degrees_awarded_two_year,count
+51790,county,"Staunton city, Virginia",2016,14,degrees_awarded_two_year,count
+51800,county,"Suffolk city, Virginia",2016,52,degrees_awarded_two_year,count
+51810,county,"Virginia Beach city, Virginia",2016,187,degrees_awarded_two_year,count
+51820,county,"Waynesboro city, Virginia",2016,19,degrees_awarded_two_year,count
+51830,county,"Williamsburg city, Virginia",2016,4,degrees_awarded_two_year,count
+51840,county,"Winchester city, Virginia",2016,53,degrees_awarded_two_year,count
+51001,county,"Accomack County, Virginia",2017,46,degrees_awarded_two_year,count
+51003,county,"Albemarle County, Virginia",2017,146,degrees_awarded_two_year,count
+51005,county,"Alleghany County, Virginia",2017,22,degrees_awarded_two_year,count
+51007,county,"Amelia County, Virginia",2017,20,degrees_awarded_two_year,count
+51009,county,"Amherst County, Virginia",2017,35,degrees_awarded_two_year,count
+51011,county,"Appomattox County, Virginia",2017,11,degrees_awarded_two_year,count
+51013,county,"Arlington County, Virginia",2017,32,degrees_awarded_two_year,count
+51015,county,"Augusta County, Virginia",2017,60,degrees_awarded_two_year,count
+51017,county,"Bath County, Virginia",2017,6,degrees_awarded_two_year,count
+51019,county,"Bedford County, Virginia",2017,74,degrees_awarded_two_year,count
+51021,county,"Bland County, Virginia",2017,10,degrees_awarded_two_year,count
+51023,county,"Botetourt County, Virginia",2017,42,degrees_awarded_two_year,count
+51025,county,"Brunswick County, Virginia",2017,24,degrees_awarded_two_year,count
+51027,county,"Buchanan County, Virginia",2017,57,degrees_awarded_two_year,count
+51029,county,"Buckingham County, Virginia",2017,37,degrees_awarded_two_year,count
+51031,county,"Campbell County, Virginia",2017,112,degrees_awarded_two_year,count
+51033,county,"Caroline County, Virginia",2017,44,degrees_awarded_two_year,count
+51035,county,"Carroll County, Virginia",2017,39,degrees_awarded_two_year,count
+51036,county,"Charles City County, Virginia",2017,5,degrees_awarded_two_year,count
+51037,county,"Charlotte County, Virginia",2017,21,degrees_awarded_two_year,count
+51041,county,"Chesterfield County, Virginia",2017,277,degrees_awarded_two_year,count
+51043,county,"Clarke County, Virginia",2017,12,degrees_awarded_two_year,count
+51045,county,"Craig County, Virginia",2017,5,degrees_awarded_two_year,count
+51047,county,"Culpeper County, Virginia",2017,75,degrees_awarded_two_year,count
+51049,county,"Cumberland County, Virginia",2017,9,degrees_awarded_two_year,count
+51051,county,"Dickenson County, Virginia",2017,38,degrees_awarded_two_year,count
+51053,county,"Dinwiddie County, Virginia",2017,14,degrees_awarded_two_year,count
+51057,county,"Essex County, Virginia",2017,21,degrees_awarded_two_year,count
+51059,county,"Fairfax County, Virginia",2017,223,degrees_awarded_two_year,count
+51061,county,"Fauquier County, Virginia",2017,36,degrees_awarded_two_year,count
+51063,county,"Floyd County, Virginia",2017,11,degrees_awarded_two_year,count
+51065,county,"Fluvanna County, Virginia",2017,48,degrees_awarded_two_year,count
+51067,county,"Franklin County, Virginia",2017,35,degrees_awarded_two_year,count
+51069,county,"Frederick County, Virginia",2017,87,degrees_awarded_two_year,count
+51071,county,"Giles County, Virginia",2017,9,degrees_awarded_two_year,count
+51073,county,"Gloucester County, Virginia",2017,38,degrees_awarded_two_year,count
+51075,county,"Goochland County, Virginia",2017,13,degrees_awarded_two_year,count
+51077,county,"Grayson County, Virginia",2017,26,degrees_awarded_two_year,count
+51079,county,"Greene County, Virginia",2017,36,degrees_awarded_two_year,count
+51081,county,"Greensville County, Virginia",2017,13,degrees_awarded_two_year,count
+51083,county,"Halifax County, Virginia",2017,72,degrees_awarded_two_year,count
+51085,county,"Hanover County, Virginia",2017,63,degrees_awarded_two_year,count
+51087,county,"Henrico County, Virginia",2017,187,degrees_awarded_two_year,count
+51089,county,"Henry County, Virginia",2017,45,degrees_awarded_two_year,count
+51091,county,"Highland County, Virginia",2017,2,degrees_awarded_two_year,count
+51093,county,"Isle of Wight County, Virginia",2017,21,degrees_awarded_two_year,count
+51095,county,"James City County, Virginia",2017,30,degrees_awarded_two_year,count
+51097,county,"King and Queen County, Virginia",2017,6,degrees_awarded_two_year,count
+51099,county,"King George County, Virginia",2017,42,degrees_awarded_two_year,count
+51101,county,"King William County, Virginia",2017,19,degrees_awarded_two_year,count
+51103,county,"Lancaster County, Virginia",2017,9,degrees_awarded_two_year,count
+51105,county,"Lee County, Virginia",2017,51,degrees_awarded_two_year,count
+51107,county,"Loudoun County, Virginia",2017,54,degrees_awarded_two_year,count
+51109,county,"Louisa County, Virginia",2017,46,degrees_awarded_two_year,count
+51111,county,"Lunenburg County, Virginia",2017,21,degrees_awarded_two_year,count
+51113,county,"Madison County, Virginia",2017,23,degrees_awarded_two_year,count
+51115,county,"Mathews County, Virginia",2017,21,degrees_awarded_two_year,count
+51117,county,"Mecklenburg County, Virginia",2017,62,degrees_awarded_two_year,count
+51119,county,"Middlesex County, Virginia",2017,14,degrees_awarded_two_year,count
+51121,county,"Montgomery County, Virginia",2017,59,degrees_awarded_two_year,count
+51125,county,"Nelson County, Virginia",2017,12,degrees_awarded_two_year,count
+51127,county,"New Kent County, Virginia",2017,23,degrees_awarded_two_year,count
+51131,county,"Northampton County, Virginia",2017,15,degrees_awarded_two_year,count
+51133,county,"Northumberland County, Virginia",2017,24,degrees_awarded_two_year,count
+51135,county,"Nottoway County, Virginia",2017,14,degrees_awarded_two_year,count
+51137,county,"Orange County, Virginia",2017,65,degrees_awarded_two_year,count
+51139,county,"Page County, Virginia",2017,21,degrees_awarded_two_year,count
+51141,county,"Patrick County, Virginia",2017,24,degrees_awarded_two_year,count
+51143,county,"Pittsylvania County, Virginia",2017,125,degrees_awarded_two_year,count
+51145,county,"Powhatan County, Virginia",2017,30,degrees_awarded_two_year,count
+51147,county,"Prince Edward County, Virginia",2017,19,degrees_awarded_two_year,count
+51149,county,"Prince George County, Virginia",2017,13,degrees_awarded_two_year,count
+51153,county,"Prince William County, Virginia",2017,124,degrees_awarded_two_year,count
+51155,county,"Pulaski County, Virginia",2017,44,degrees_awarded_two_year,count
+51157,county,"Rappahannock County, Virginia",2017,5,degrees_awarded_two_year,count
+51159,county,"Richmond County, Virginia",2017,22,degrees_awarded_two_year,count
+51161,county,"Roanoke County, Virginia",2017,98,degrees_awarded_two_year,count
+51163,county,"Rockbridge County, Virginia",2017,14,degrees_awarded_two_year,count
+51165,county,"Rockingham County, Virginia",2017,44,degrees_awarded_two_year,count
+51167,county,"Russell County, Virginia",2017,58,degrees_awarded_two_year,count
+51169,county,"Scott County, Virginia",2017,47,degrees_awarded_two_year,count
+51171,county,"Shenandoah County, Virginia",2017,53,degrees_awarded_two_year,count
+51173,county,"Smyth County, Virginia",2017,34,degrees_awarded_two_year,count
+51175,county,"Southampton County, Virginia",2017,15,degrees_awarded_two_year,count
+51177,county,"Spotsylvania County, Virginia",2017,174,degrees_awarded_two_year,count
+51179,county,"Stafford County, Virginia",2017,150,degrees_awarded_two_year,count
+51181,county,"Surry County, Virginia",2017,4,degrees_awarded_two_year,count
+51183,county,"Sussex County, Virginia",2017,5,degrees_awarded_two_year,count
+51185,county,"Tazewell County, Virginia",2017,75,degrees_awarded_two_year,count
+51187,county,"Warren County, Virginia",2017,14,degrees_awarded_two_year,count
+51191,county,"Washington County, Virginia",2017,73,degrees_awarded_two_year,count
+51193,county,"Westmoreland County, Virginia",2017,24,degrees_awarded_two_year,count
+51195,county,"Wise County, Virginia",2017,110,degrees_awarded_two_year,count
+51197,county,"Wythe County, Virginia",2017,73,degrees_awarded_two_year,count
+51199,county,"York County, Virginia",2017,32,degrees_awarded_two_year,count
+51510,county,"Alexandria city, Virginia",2017,32,degrees_awarded_two_year,count
+51515,county,"Bedford city, Virginia",2017,3,degrees_awarded_two_year,count
+51520,county,"Bristol city, Virginia",2017,22,degrees_awarded_two_year,count
+51530,county,"Buena Vista city, Virginia",2017,3,degrees_awarded_two_year,count
+51540,county,"Charlottesville city, Virginia",2017,51,degrees_awarded_two_year,count
+51550,county,"Chesapeake city, Virginia",2017,93,degrees_awarded_two_year,count
+51570,county,"Colonial Heights city, Virginia",2017,3,degrees_awarded_two_year,count
+51580,county,"Covington city, Virginia",2017,12,degrees_awarded_two_year,count
+51590,county,"Danville city, Virginia",2017,95,degrees_awarded_two_year,count
+51595,county,"Emporia city, Virginia",2017,4,degrees_awarded_two_year,count
+51600,county,"Fairfax city, Virginia",2017,7,degrees_awarded_two_year,count
+51610,county,"Falls Church city, Virginia",2017,8,degrees_awarded_two_year,count
+51620,county,"Franklin city, Virginia",2017,12,degrees_awarded_two_year,count
+51630,county,"Fredericksburg city, Virginia",2017,104,degrees_awarded_two_year,count
+51640,county,"Galax city, Virginia",2017,11,degrees_awarded_two_year,count
+51650,county,"Hampton city, Virginia",2017,74,degrees_awarded_two_year,count
+51660,county,"Harrisonburg city, Virginia",2017,25,degrees_awarded_two_year,count
+51670,county,"Hopewell city, Virginia",2017,9,degrees_awarded_two_year,count
+51678,county,"Lexington city, Virginia",2017,6,degrees_awarded_two_year,count
+51680,county,"Lynchburg city, Virginia",2017,69,degrees_awarded_two_year,count
+51683,county,"Manassas city, Virginia",2017,15,degrees_awarded_two_year,count
+51685,county,"Manassas Park city, Virginia",2017,3,degrees_awarded_two_year,count
+51690,county,"Martinsville city, Virginia",2017,17,degrees_awarded_two_year,count
+51700,county,"Newport News city, Virginia",2017,122,degrees_awarded_two_year,count
+51710,county,"Norfolk city, Virginia",2017,74,degrees_awarded_two_year,count
+51720,county,"Norton city, Virginia",2017,18,degrees_awarded_two_year,count
+51730,county,"Petersburg city, Virginia",2017,11,degrees_awarded_two_year,count
+51735,county,"Poquoson city, Virginia",2017,2,degrees_awarded_two_year,count
+51740,county,"Portsmouth city, Virginia",2017,32,degrees_awarded_two_year,count
+51750,county,"Radford city, Virginia",2017,19,degrees_awarded_two_year,count
+51760,county,"Richmond city, Virginia",2017,125,degrees_awarded_two_year,count
+51770,county,"Roanoke city, Virginia",2017,65,degrees_awarded_two_year,count
+51775,county,"Salem city, Virginia",2017,16,degrees_awarded_two_year,count
+51790,county,"Staunton city, Virginia",2017,22,degrees_awarded_two_year,count
+51800,county,"Suffolk city, Virginia",2017,45,degrees_awarded_two_year,count
+51810,county,"Virginia Beach city, Virginia",2017,202,degrees_awarded_two_year,count
+51820,county,"Waynesboro city, Virginia",2017,16,degrees_awarded_two_year,count
+51830,county,"Williamsburg city, Virginia",2017,6,degrees_awarded_two_year,count
+51840,county,"Winchester city, Virginia",2017,36,degrees_awarded_two_year,count
+51001,county,"Accomack County, Virginia",2018,41,degrees_awarded_two_year,count
+51003,county,"Albemarle County, Virginia",2018,96,degrees_awarded_two_year,count
+51005,county,"Alleghany County, Virginia",2018,38,degrees_awarded_two_year,count
+51007,county,"Amelia County, Virginia",2018,21,degrees_awarded_two_year,count
+51009,county,"Amherst County, Virginia",2018,38,degrees_awarded_two_year,count
+51011,county,"Appomattox County, Virginia",2018,23,degrees_awarded_two_year,count
+51013,county,"Arlington County, Virginia",2018,25,degrees_awarded_two_year,count
+51015,county,"Augusta County, Virginia",2018,87,degrees_awarded_two_year,count
+51017,county,"Bath County, Virginia",2018,5,degrees_awarded_two_year,count
+51019,county,"Bedford County, Virginia",2018,73,degrees_awarded_two_year,count
+51021,county,"Bland County, Virginia",2018,17,degrees_awarded_two_year,count
+51023,county,"Botetourt County, Virginia",2018,32,degrees_awarded_two_year,count
+51025,county,"Brunswick County, Virginia",2018,29,degrees_awarded_two_year,count
+51027,county,"Buchanan County, Virginia",2018,43,degrees_awarded_two_year,count
+51029,county,"Buckingham County, Virginia",2018,29,degrees_awarded_two_year,count
+51031,county,"Campbell County, Virginia",2018,79,degrees_awarded_two_year,count
+51033,county,"Caroline County, Virginia",2018,16,degrees_awarded_two_year,count
+51035,county,"Carroll County, Virginia",2018,31,degrees_awarded_two_year,count
+51036,county,"Charles City County, Virginia",2018,12,degrees_awarded_two_year,count
+51037,county,"Charlotte County, Virginia",2018,16,degrees_awarded_two_year,count
+51041,county,"Chesterfield County, Virginia",2018,222,degrees_awarded_two_year,count
+51043,county,"Clarke County, Virginia",2018,22,degrees_awarded_two_year,count
+51045,county,"Craig County, Virginia",2018,9,degrees_awarded_two_year,count
+51047,county,"Culpeper County, Virginia",2018,51,degrees_awarded_two_year,count
+51049,county,"Cumberland County, Virginia",2018,25,degrees_awarded_two_year,count
+51051,county,"Dickenson County, Virginia",2018,47,degrees_awarded_two_year,count
+51053,county,"Dinwiddie County, Virginia",2018,14,degrees_awarded_two_year,count
+51057,county,"Essex County, Virginia",2018,18,degrees_awarded_two_year,count
+51059,county,"Fairfax County, Virginia",2018,175,degrees_awarded_two_year,count
+51061,county,"Fauquier County, Virginia",2018,64,degrees_awarded_two_year,count
+51063,county,"Floyd County, Virginia",2018,14,degrees_awarded_two_year,count
+51065,county,"Fluvanna County, Virginia",2018,30,degrees_awarded_two_year,count
+51067,county,"Franklin County, Virginia",2018,48,degrees_awarded_two_year,count
+51069,county,"Frederick County, Virginia",2018,135,degrees_awarded_two_year,count
+51071,county,"Giles County, Virginia",2018,20,degrees_awarded_two_year,count
+51073,county,"Gloucester County, Virginia",2018,60,degrees_awarded_two_year,count
+51075,county,"Goochland County, Virginia",2018,12,degrees_awarded_two_year,count
+51077,county,"Grayson County, Virginia",2018,13,degrees_awarded_two_year,count
+51079,county,"Greene County, Virginia",2018,15,degrees_awarded_two_year,count
+51081,county,"Greensville County, Virginia",2018,21,degrees_awarded_two_year,count
+51083,county,"Halifax County, Virginia",2018,64,degrees_awarded_two_year,count
+51085,county,"Hanover County, Virginia",2018,62,degrees_awarded_two_year,count
+51087,county,"Henrico County, Virginia",2018,174,degrees_awarded_two_year,count
+51089,county,"Henry County, Virginia",2018,47,degrees_awarded_two_year,count
+51091,county,"Highland County, Virginia",2018,2,degrees_awarded_two_year,count
+51093,county,"Isle of Wight County, Virginia",2018,23,degrees_awarded_two_year,count
+51095,county,"James City County, Virginia",2018,35,degrees_awarded_two_year,count
+51097,county,"King and Queen County, Virginia",2018,6,degrees_awarded_two_year,count
+51099,county,"King George County, Virginia",2018,48,degrees_awarded_two_year,count
+51101,county,"King William County, Virginia",2018,39,degrees_awarded_two_year,count
+51103,county,"Lancaster County, Virginia",2018,18,degrees_awarded_two_year,count
+51105,county,"Lee County, Virginia",2018,59,degrees_awarded_two_year,count
+51107,county,"Loudoun County, Virginia",2018,63,degrees_awarded_two_year,count
+51109,county,"Louisa County, Virginia",2018,32,degrees_awarded_two_year,count
+51111,county,"Lunenburg County, Virginia",2018,21,degrees_awarded_two_year,count
+51113,county,"Madison County, Virginia",2018,13,degrees_awarded_two_year,count
+51115,county,"Mathews County, Virginia",2018,20,degrees_awarded_two_year,count
+51117,county,"Mecklenburg County, Virginia",2018,66,degrees_awarded_two_year,count
+51119,county,"Middlesex County, Virginia",2018,14,degrees_awarded_two_year,count
+51121,county,"Montgomery County, Virginia",2018,52,degrees_awarded_two_year,count
+51125,county,"Nelson County, Virginia",2018,8,degrees_awarded_two_year,count
+51127,county,"New Kent County, Virginia",2018,22,degrees_awarded_two_year,count
+51131,county,"Northampton County, Virginia",2018,12,degrees_awarded_two_year,count
+51133,county,"Northumberland County, Virginia",2018,16,degrees_awarded_two_year,count
+51135,county,"Nottoway County, Virginia",2018,16,degrees_awarded_two_year,count
+51137,county,"Orange County, Virginia",2018,36,degrees_awarded_two_year,count
+51139,county,"Page County, Virginia",2018,17,degrees_awarded_two_year,count
+51141,county,"Patrick County, Virginia",2018,20,degrees_awarded_two_year,count
+51143,county,"Pittsylvania County, Virginia",2018,76,degrees_awarded_two_year,count
+51145,county,"Powhatan County, Virginia",2018,16,degrees_awarded_two_year,count
+51147,county,"Prince Edward County, Virginia",2018,23,degrees_awarded_two_year,count
+51149,county,"Prince George County, Virginia",2018,12,degrees_awarded_two_year,count
+51153,county,"Prince William County, Virginia",2018,111,degrees_awarded_two_year,count
+51155,county,"Pulaski County, Virginia",2018,20,degrees_awarded_two_year,count
+51157,county,"Rappahannock County, Virginia",2018,8,degrees_awarded_two_year,count
+51159,county,"Richmond County, Virginia",2018,35,degrees_awarded_two_year,count
+51161,county,"Roanoke County, Virginia",2018,98,degrees_awarded_two_year,count
+51163,county,"Rockbridge County, Virginia",2018,27,degrees_awarded_two_year,count
+51165,county,"Rockingham County, Virginia",2018,70,degrees_awarded_two_year,count
+51167,county,"Russell County, Virginia",2018,53,degrees_awarded_two_year,count
+51169,county,"Scott County, Virginia",2018,51,degrees_awarded_two_year,count
+51171,county,"Shenandoah County, Virginia",2018,73,degrees_awarded_two_year,count
+51173,county,"Smyth County, Virginia",2018,39,degrees_awarded_two_year,count
+51175,county,"Southampton County, Virginia",2018,20,degrees_awarded_two_year,count
+51177,county,"Spotsylvania County, Virginia",2018,90,degrees_awarded_two_year,count
+51179,county,"Stafford County, Virginia",2018,76,degrees_awarded_two_year,count
+51181,county,"Surry County, Virginia",2018,0,degrees_awarded_two_year,count
+51183,county,"Sussex County, Virginia",2018,1,degrees_awarded_two_year,count
+51185,county,"Tazewell County, Virginia",2018,74,degrees_awarded_two_year,count
+51187,county,"Warren County, Virginia",2018,48,degrees_awarded_two_year,count
+51191,county,"Washington County, Virginia",2018,81,degrees_awarded_two_year,count
+51193,county,"Westmoreland County, Virginia",2018,26,degrees_awarded_two_year,count
+51195,county,"Wise County, Virginia",2018,125,degrees_awarded_two_year,count
+51197,county,"Wythe County, Virginia",2018,56,degrees_awarded_two_year,count
+51199,county,"York County, Virginia",2018,46,degrees_awarded_two_year,count
+51510,county,"Alexandria city, Virginia",2018,32,degrees_awarded_two_year,count
+51515,county,"Bedford city, Virginia",2018,6,degrees_awarded_two_year,count
+51520,county,"Bristol city, Virginia",2018,21,degrees_awarded_two_year,count
+51530,county,"Buena Vista city, Virginia",2018,5,degrees_awarded_two_year,count
+51540,county,"Charlottesville city, Virginia",2018,36,degrees_awarded_two_year,count
+51550,county,"Chesapeake city, Virginia",2018,100,degrees_awarded_two_year,count
+51570,county,"Colonial Heights city, Virginia",2018,4,degrees_awarded_two_year,count
+51580,county,"Covington city, Virginia",2018,13,degrees_awarded_two_year,count
+51590,county,"Danville city, Virginia",2018,86,degrees_awarded_two_year,count
+51595,county,"Emporia city, Virginia",2018,5,degrees_awarded_two_year,count
+51600,county,"Fairfax city, Virginia",2018,6,degrees_awarded_two_year,count
+51610,county,"Falls Church city, Virginia",2018,10,degrees_awarded_two_year,count
+51620,county,"Franklin city, Virginia",2018,8,degrees_awarded_two_year,count
+51630,county,"Fredericksburg city, Virginia",2018,66,degrees_awarded_two_year,count
+51640,county,"Galax city, Virginia",2018,9,degrees_awarded_two_year,count
+51650,county,"Hampton city, Virginia",2018,76,degrees_awarded_two_year,count
+51660,county,"Harrisonburg city, Virginia",2018,27,degrees_awarded_two_year,count
+51670,county,"Hopewell city, Virginia",2018,12,degrees_awarded_two_year,count
+51678,county,"Lexington city, Virginia",2018,2,degrees_awarded_two_year,count
+51680,county,"Lynchburg city, Virginia",2018,80,degrees_awarded_two_year,count
+51683,county,"Manassas city, Virginia",2018,14,degrees_awarded_two_year,count
+51685,county,"Manassas Park city, Virginia",2018,2,degrees_awarded_two_year,count
+51690,county,"Martinsville city, Virginia",2018,12,degrees_awarded_two_year,count
+51700,county,"Newport News city, Virginia",2018,110,degrees_awarded_two_year,count
+51710,county,"Norfolk city, Virginia",2018,64,degrees_awarded_two_year,count
+51720,county,"Norton city, Virginia",2018,21,degrees_awarded_two_year,count
+51730,county,"Petersburg city, Virginia",2018,15,degrees_awarded_two_year,count
+51735,county,"Poquoson city, Virginia",2018,5,degrees_awarded_two_year,count
+51740,county,"Portsmouth city, Virginia",2018,50,degrees_awarded_two_year,count
+51750,county,"Radford city, Virginia",2018,8,degrees_awarded_two_year,count
+51760,county,"Richmond city, Virginia",2018,112,degrees_awarded_two_year,count
+51770,county,"Roanoke city, Virginia",2018,58,degrees_awarded_two_year,count
+51775,county,"Salem city, Virginia",2018,19,degrees_awarded_two_year,count
+51790,county,"Staunton city, Virginia",2018,19,degrees_awarded_two_year,count
+51800,county,"Suffolk city, Virginia",2018,40,degrees_awarded_two_year,count
+51810,county,"Virginia Beach city, Virginia",2018,222,degrees_awarded_two_year,count
+51820,county,"Waynesboro city, Virginia",2018,18,degrees_awarded_two_year,count
+51830,county,"Williamsburg city, Virginia",2018,5,degrees_awarded_two_year,count
+51840,county,"Winchester city, Virginia",2018,63,degrees_awarded_two_year,count
+51001,county,"Accomack County, Virginia",2019,58,degrees_awarded_two_year,count
+51003,county,"Albemarle County, Virginia",2019,115,degrees_awarded_two_year,count
+51005,county,"Alleghany County, Virginia",2019,22,degrees_awarded_two_year,count
+51007,county,"Amelia County, Virginia",2019,10,degrees_awarded_two_year,count
+51009,county,"Amherst County, Virginia",2019,22,degrees_awarded_two_year,count
+51011,county,"Appomattox County, Virginia",2019,16,degrees_awarded_two_year,count
+51013,county,"Arlington County, Virginia",2019,19,degrees_awarded_two_year,count
+51015,county,"Augusta County, Virginia",2019,72,degrees_awarded_two_year,count
+51017,county,"Bath County, Virginia",2019,5,degrees_awarded_two_year,count
+51019,county,"Bedford County, Virginia",2019,52,degrees_awarded_two_year,count
+51021,county,"Bland County, Virginia",2019,13,degrees_awarded_two_year,count
+51023,county,"Botetourt County, Virginia",2019,28,degrees_awarded_two_year,count
+51025,county,"Brunswick County, Virginia",2019,25,degrees_awarded_two_year,count
+51027,county,"Buchanan County, Virginia",2019,42,degrees_awarded_two_year,count
+51029,county,"Buckingham County, Virginia",2019,37,degrees_awarded_two_year,count
+51031,county,"Campbell County, Virginia",2019,68,degrees_awarded_two_year,count
+51033,county,"Caroline County, Virginia",2019,19,degrees_awarded_two_year,count
+51035,county,"Carroll County, Virginia",2019,48,degrees_awarded_two_year,count
+51036,county,"Charles City County, Virginia",2019,5,degrees_awarded_two_year,count
+51037,county,"Charlotte County, Virginia",2019,16,degrees_awarded_two_year,count
+51041,county,"Chesterfield County, Virginia",2019,190,degrees_awarded_two_year,count
+51043,county,"Clarke County, Virginia",2019,21,degrees_awarded_two_year,count
+51045,county,"Craig County, Virginia",2019,5,degrees_awarded_two_year,count
+51047,county,"Culpeper County, Virginia",2019,49,degrees_awarded_two_year,count
+51049,county,"Cumberland County, Virginia",2019,15,degrees_awarded_two_year,count
+51051,county,"Dickenson County, Virginia",2019,51,degrees_awarded_two_year,count
+51053,county,"Dinwiddie County, Virginia",2019,8,degrees_awarded_two_year,count
+51057,county,"Essex County, Virginia",2019,14,degrees_awarded_two_year,count
+51059,county,"Fairfax County, Virginia",2019,130,degrees_awarded_two_year,count
+51061,county,"Fauquier County, Virginia",2019,61,degrees_awarded_two_year,count
+51063,county,"Floyd County, Virginia",2019,22,degrees_awarded_two_year,count
+51065,county,"Fluvanna County, Virginia",2019,31,degrees_awarded_two_year,count
+51067,county,"Franklin County, Virginia",2019,30,degrees_awarded_two_year,count
+51069,county,"Frederick County, Virginia",2019,115,degrees_awarded_two_year,count
+51071,county,"Giles County, Virginia",2019,14,degrees_awarded_two_year,count
+51073,county,"Gloucester County, Virginia",2019,67,degrees_awarded_two_year,count
+51075,county,"Goochland County, Virginia",2019,6,degrees_awarded_two_year,count
+51077,county,"Grayson County, Virginia",2019,18,degrees_awarded_two_year,count
+51079,county,"Greene County, Virginia",2019,26,degrees_awarded_two_year,count
+51081,county,"Greensville County, Virginia",2019,7,degrees_awarded_two_year,count
+51083,county,"Halifax County, Virginia",2019,68,degrees_awarded_two_year,count
+51085,county,"Hanover County, Virginia",2019,53,degrees_awarded_two_year,count
+51087,county,"Henrico County, Virginia",2019,138,degrees_awarded_two_year,count
+51089,county,"Henry County, Virginia",2019,35,degrees_awarded_two_year,count
+51091,county,"Highland County, Virginia",2019,4,degrees_awarded_two_year,count
+51093,county,"Isle of Wight County, Virginia",2019,13,degrees_awarded_two_year,count
+51095,county,"James City County, Virginia",2019,33,degrees_awarded_two_year,count
+51097,county,"King and Queen County, Virginia",2019,5,degrees_awarded_two_year,count
+51099,county,"King George County, Virginia",2019,63,degrees_awarded_two_year,count
+51101,county,"King William County, Virginia",2019,40,degrees_awarded_two_year,count
+51103,county,"Lancaster County, Virginia",2019,14,degrees_awarded_two_year,count
+51105,county,"Lee County, Virginia",2019,56,degrees_awarded_two_year,count
+51107,county,"Loudoun County, Virginia",2019,33,degrees_awarded_two_year,count
+51109,county,"Louisa County, Virginia",2019,43,degrees_awarded_two_year,count
+51111,county,"Lunenburg County, Virginia",2019,14,degrees_awarded_two_year,count
+51113,county,"Madison County, Virginia",2019,16,degrees_awarded_two_year,count
+51115,county,"Mathews County, Virginia",2019,20,degrees_awarded_two_year,count
+51117,county,"Mecklenburg County, Virginia",2019,85,degrees_awarded_two_year,count
+51119,county,"Middlesex County, Virginia",2019,13,degrees_awarded_two_year,count
+51121,county,"Montgomery County, Virginia",2019,68,degrees_awarded_two_year,count
+51125,county,"Nelson County, Virginia",2019,21,degrees_awarded_two_year,count
+51127,county,"New Kent County, Virginia",2019,28,degrees_awarded_two_year,count
+51131,county,"Northampton County, Virginia",2019,9,degrees_awarded_two_year,count
+51133,county,"Northumberland County, Virginia",2019,17,degrees_awarded_two_year,count
+51135,county,"Nottoway County, Virginia",2019,6,degrees_awarded_two_year,count
+51137,county,"Orange County, Virginia",2019,43,degrees_awarded_two_year,count
+51139,county,"Page County, Virginia",2019,17,degrees_awarded_two_year,count
+51141,county,"Patrick County, Virginia",2019,15,degrees_awarded_two_year,count
+51143,county,"Pittsylvania County, Virginia",2019,100,degrees_awarded_two_year,count
+51145,county,"Powhatan County, Virginia",2019,13,degrees_awarded_two_year,count
+51147,county,"Prince Edward County, Virginia",2019,19,degrees_awarded_two_year,count
+51149,county,"Prince George County, Virginia",2019,15,degrees_awarded_two_year,count
+51153,county,"Prince William County, Virginia",2019,90,degrees_awarded_two_year,count
+51155,county,"Pulaski County, Virginia",2019,48,degrees_awarded_two_year,count
+51157,county,"Rappahannock County, Virginia",2019,18,degrees_awarded_two_year,count
+51159,county,"Richmond County, Virginia",2019,23,degrees_awarded_two_year,count
+51161,county,"Roanoke County, Virginia",2019,65,degrees_awarded_two_year,count
+51163,county,"Rockbridge County, Virginia",2019,10,degrees_awarded_two_year,count
+51165,county,"Rockingham County, Virginia",2019,61,degrees_awarded_two_year,count
+51167,county,"Russell County, Virginia",2019,48,degrees_awarded_two_year,count
+51169,county,"Scott County, Virginia",2019,67,degrees_awarded_two_year,count
+51171,county,"Shenandoah County, Virginia",2019,56,degrees_awarded_two_year,count
+51173,county,"Smyth County, Virginia",2019,69,degrees_awarded_two_year,count
+51175,county,"Southampton County, Virginia",2019,12,degrees_awarded_two_year,count
+51177,county,"Spotsylvania County, Virginia",2019,89,degrees_awarded_two_year,count
+51179,county,"Stafford County, Virginia",2019,90,degrees_awarded_two_year,count
+51181,county,"Surry County, Virginia",2019,2,degrees_awarded_two_year,count
+51183,county,"Sussex County, Virginia",2019,1,degrees_awarded_two_year,count
+51185,county,"Tazewell County, Virginia",2019,73,degrees_awarded_two_year,count
+51187,county,"Warren County, Virginia",2019,66,degrees_awarded_two_year,count
+51191,county,"Washington County, Virginia",2019,104,degrees_awarded_two_year,count
+51193,county,"Westmoreland County, Virginia",2019,28,degrees_awarded_two_year,count
+51195,county,"Wise County, Virginia",2019,117,degrees_awarded_two_year,count
+51197,county,"Wythe County, Virginia",2019,80,degrees_awarded_two_year,count
+51199,county,"York County, Virginia",2019,27,degrees_awarded_two_year,count
+51510,county,"Alexandria city, Virginia",2019,17,degrees_awarded_two_year,count
+51515,county,"Bedford city, Virginia",2019,6,degrees_awarded_two_year,count
+51520,county,"Bristol city, Virginia",2019,36,degrees_awarded_two_year,count
+51530,county,"Buena Vista city, Virginia",2019,2,degrees_awarded_two_year,count
+51540,county,"Charlottesville city, Virginia",2019,47,degrees_awarded_two_year,count
+51550,county,"Chesapeake city, Virginia",2019,64,degrees_awarded_two_year,count
+51570,county,"Colonial Heights city, Virginia",2019,7,degrees_awarded_two_year,count
+51580,county,"Covington city, Virginia",2019,2,degrees_awarded_two_year,count
+51590,county,"Danville city, Virginia",2019,65,degrees_awarded_two_year,count
+51595,county,"Emporia city, Virginia",2019,2,degrees_awarded_two_year,count
+51600,county,"Fairfax city, Virginia",2019,2,degrees_awarded_two_year,count
+51610,county,"Falls Church city, Virginia",2019,4,degrees_awarded_two_year,count
+51620,county,"Franklin city, Virginia",2019,3,degrees_awarded_two_year,count
+51630,county,"Fredericksburg city, Virginia",2019,51,degrees_awarded_two_year,count
+51640,county,"Galax city, Virginia",2019,10,degrees_awarded_two_year,count
+51650,county,"Hampton city, Virginia",2019,66,degrees_awarded_two_year,count
+51660,county,"Harrisonburg city, Virginia",2019,21,degrees_awarded_two_year,count
+51670,county,"Hopewell city, Virginia",2019,5,degrees_awarded_two_year,count
+51678,county,"Lexington city, Virginia",2019,1,degrees_awarded_two_year,count
+51680,county,"Lynchburg city, Virginia",2019,76,degrees_awarded_two_year,count
+51683,county,"Manassas city, Virginia",2019,14,degrees_awarded_two_year,count
+51685,county,"Manassas Park city, Virginia",2019,2,degrees_awarded_two_year,count
+51690,county,"Martinsville city, Virginia",2019,6,degrees_awarded_two_year,count
+51700,county,"Newport News city, Virginia",2019,75,degrees_awarded_two_year,count
+51710,county,"Norfolk city, Virginia",2019,65,degrees_awarded_two_year,count
+51720,county,"Norton city, Virginia",2019,18,degrees_awarded_two_year,count
+51730,county,"Petersburg city, Virginia",2019,10,degrees_awarded_two_year,count
+51735,county,"Poquoson city, Virginia",2019,7,degrees_awarded_two_year,count
+51740,county,"Portsmouth city, Virginia",2019,37,degrees_awarded_two_year,count
+51750,county,"Radford city, Virginia",2019,12,degrees_awarded_two_year,count
+51760,county,"Richmond city, Virginia",2019,92,degrees_awarded_two_year,count
+51770,county,"Roanoke city, Virginia",2019,61,degrees_awarded_two_year,count
+51775,county,"Salem city, Virginia",2019,20,degrees_awarded_two_year,count
+51790,county,"Staunton city, Virginia",2019,18,degrees_awarded_two_year,count
+51800,county,"Suffolk city, Virginia",2019,26,degrees_awarded_two_year,count
+51810,county,"Virginia Beach city, Virginia",2019,139,degrees_awarded_two_year,count
+51820,county,"Waynesboro city, Virginia",2019,21,degrees_awarded_two_year,count
+51830,county,"Williamsburg city, Virginia",2019,9,degrees_awarded_two_year,count
+51840,county,"Winchester city, Virginia",2019,55,degrees_awarded_two_year,count

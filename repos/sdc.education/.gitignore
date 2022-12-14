@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.httr-oauth
+.DS_Store
+.netlify
+*.Rproj
+node_modules
+package-lock.json
+dist
+original

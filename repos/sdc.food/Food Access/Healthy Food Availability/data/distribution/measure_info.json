@@ -1,0 +1,21 @@
+{
+  "mrfei:mrfei": {
+    "category": "Nutrition and Food Security",
+    "measure_table": "va_catr_sdad_2021_mrfei",
+    "full_name": "mrfei:mrfei",
+    "measure": "mrfei",
+    "short_name": "Retail food environment index",
+    "long_name": "Retail food environment index",
+    "short_description": "The number of available healthy and less healthy food retailers. A higher score indicates more available healthy options per less healthy options. A score of 0 indicates available no options (food desert).",
+    "statement": "The Retail food environment index is {value} in {features.name}.",
+    "type": "index",
+    "equity_category": "Availability",
+    "sources": [
+      {
+        "name": "OpenStreetMap",
+        "date_accessed": 2021,
+        "url": "https://www.openstreetmap.org/"
+      }
+    ]
+  }
+}

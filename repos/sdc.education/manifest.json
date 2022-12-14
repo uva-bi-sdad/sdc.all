@@ -1,0 +1,144 @@
+{
+  "name": "sdc.education_dev",
+  "measure_not_found": [
+    "/home/runner/work/sdc.education_dev/sdc.education_dev/data/nces/distribution/nces.csv.xz",
+    "/home/runner/work/sdc.education_dev/sdc.education_dev/data/vdoe/distribution/va_hdctsd_vdoe_2019_2021_3rd_grade_mean_median_read_score.csv.xz"
+  ],
+  "count": 16,
+  "utc_audited": "2022-11-07 16:38:42",
+  "data": [
+    {
+      "name": "measure_info.json",
+      "path": "data/dss/distribution/measure_info.json",
+      "md5": "af4108e91e8ef64a09b04185b44ccefe",
+      "size": 5978
+    },
+    {
+      "name": "dataset_doi",
+      "path": "data/dss/distribution/dataset_doi",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "va_hdcttrbg_dss_2021_daycare_access_scores.csv.bz2",
+      "path": "data/dss/distribution/va_hdcttrbg_dss_2021_daycare_access_scores.csv.bz2",
+      "md5": "115bf6bc8584535ac0ff81758bf611e4",
+      "size": 210620
+    },
+    {
+      "name": "nces.csv.xz",
+      "path": "data/nces/distribution/nces.csv.xz",
+      "md5": "1fecfe33bbc7bde613504584431b4e40",
+      "size": 6916980
+    },
+    {
+      "name": "measure_info.json",
+      "path": "data/nces/distribution/measure_info.json",
+      "md5": "65ebf0b691c3d103fa224f9d2c66cbeb",
+      "size": 19814
+    },
+    {
+      "name": "points_2016.geojson",
+      "path": "data/nces/distribution/points_2016.geojson",
+      "md5": "ebd951beda8e201f72c1de09ead75d2a",
+      "size": 176590
+    },
+    {
+      "name": "points_2014.geojson",
+      "path": "data/nces/distribution/points_2014.geojson",
+      "md5": "77d88eb6ca9861295ca5b0b4f063c19b",
+      "size": 190964
+    },
+    {
+      "name": "points_2019.geojson",
+      "path": "data/nces/distribution/points_2019.geojson",
+      "md5": "01c89ab0b9294926298c93673c191462",
+      "size": 157198
+    },
+    {
+      "name": "points_2015.geojson",
+      "path": "data/nces/distribution/points_2015.geojson",
+      "md5": "3bf4d6c6ec1a3f67a7ecaa4549f71bdf",
+      "size": 186142
+    },
+    {
+      "name": "points_2013.geojson",
+      "path": "data/nces/distribution/points_2013.geojson",
+      "md5": "4ddb03bec1db790b2342584af8189c3f",
+      "size": 193480
+    },
+    {
+      "name": "points_2018.geojson",
+      "path": "data/nces/distribution/points_2018.geojson",
+      "md5": "a9be6f716d6d8360f0db8ab7539651a3",
+      "size": 164296
+    },
+    {
+      "name": "points_2017.geojson",
+      "path": "data/nces/distribution/points_2017.geojson",
+      "md5": "953bdf9a1038fae1ef552935557dc28b",
+      "size": 171137
+    },
+    {
+      "name": "points_2020.geojson",
+      "path": "data/nces/distribution/points_2020.geojson",
+      "md5": "6cc75cae3cb4b3ef52b4d022c57b0f68",
+      "size": 152629
+    },
+    {
+      "name": "measure_info.json",
+      "path": "data/vdoe/distribution/measure_info.json",
+      "md5": "6b6f081215f8f2633cc1a7a7841bc69a",
+      "size": 2112
+    },
+    {
+      "name": "va_hdctsd_vdoe_2019_2021_3rd_grade_mean_median_read_score.csv.xz",
+      "path": "data/vdoe/distribution/va_hdctsd_vdoe_2019_2021_3rd_grade_mean_median_read_score.csv.xz",
+      "md5": "7dfe6fd85bf3e26b68d93f2863a8f367",
+      "size": 7328
+    },
+    {
+      "name": "dataset_doi",
+      "path": "data/vdoe/distribution/dataset_doi",
+      "md5": "96b9d65eced911932e4a3e82417e5d14",
+      "size": 23
+    }
+  ],
+  "_references": {
+    "wan12": {
+      "id": "wan12",
+      "author": [
+        {
+          "given": "Neng",
+          "family": "Wan"
+        },
+        {
+          "given": "Bin",
+          "family": "Zou"
+        },
+        {
+          "given": "Troy",
+          "family": "Sternberg"
+        }
+      ],
+      "year": 2012,
+      "title": "A three-step floating catchment area method for analyzing spatial access to health services",
+      "journal": "International Journal of Geographical Information Science",
+      "volume": "26",
+      "page": "1073\u20131089",
+      "doi": "10.1080/13658816.2011.624987"
+    },
+    "bii21": {
+      "id": "bii21",
+      "author": [
+        {
+          "family": "Biocomplexity Institute and Initiative"
+        }
+      ],
+      "year": 2021,
+      "title": "catchment: Calculate spatial access and availability metrics",
+      "version": "0.0.1",
+      "url": "https://github.com/uva-bi-sdad/catchment"
+    }
+  }
+}

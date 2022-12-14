@@ -1,0 +1,134 @@
+geoid,region_type,region_name,year,value,measure,measure_type
+51001,county,"Accomack County, Virginia",2019,79.83349009823769,perc_dental_visit,percent
+51003,county,"Albemarle County, Virginia",2019,74.41965926143865,perc_dental_visit,percent
+51005,county,"Alleghany County, Virginia",2019,71.95593525876933,perc_dental_visit,percent
+51007,county,"Amelia County, Virginia",2019,76.56111051906322,perc_dental_visit,percent
+51009,county,"Amherst County, Virginia",2019,74.92772509742566,perc_dental_visit,percent
+51011,county,"Appomattox County, Virginia",2019,72.24516497111092,perc_dental_visit,percent
+51013,county,"Arlington County, Virginia",2019,68.13882692569003,perc_dental_visit,percent
+51015,county,"Augusta County, Virginia",2019,73.20992607231011,perc_dental_visit,percent
+51017,county,"Bath County, Virginia",2019,78.3436039,perc_dental_visit,percent
+51019,county,"Bedford County, Virginia",2019,76.58312706132577,perc_dental_visit,percent
+51021,county,"Bland County, Virginia",2019,79.56960970617821,perc_dental_visit,percent
+51023,county,"Botetourt County, Virginia",2019,77.05461354179083,perc_dental_visit,percent
+51025,county,"Brunswick County, Virginia",2019,69.05142007397977,perc_dental_visit,percent
+51027,county,"Buchanan County, Virginia",2019,73.1587216320406,perc_dental_visit,percent
+51029,county,"Buckingham County, Virginia",2019,60.75483593820539,perc_dental_visit,percent
+51031,county,"Campbell County, Virginia",2019,75.62910258758212,perc_dental_visit,percent
+51033,county,"Caroline County, Virginia",2019,78.95768040307397,perc_dental_visit,percent
+51035,county,"Carroll County, Virginia",2019,81.40038913483623,perc_dental_visit,percent
+51036,county,"Charles City County, Virginia",2019,61.30551518978968,perc_dental_visit,percent
+51037,county,"Charlotte County, Virginia",2019,61.29395383491997,perc_dental_visit,percent
+51041,county,"Chesterfield County, Virginia",2019,70.22476287325513,perc_dental_visit,percent
+51043,county,"Clarke County, Virginia",2019,74.9544139709046,perc_dental_visit,percent
+51045,county,"Craig County, Virginia",2019,70.32508907500001,perc_dental_visit,percent
+51047,county,"Culpeper County, Virginia",2019,71.8400545744039,perc_dental_visit,percent
+51049,county,"Cumberland County, Virginia",2019,76.98772376789965,perc_dental_visit,percent
+51051,county,"Dickenson County, Virginia",2019,74.63171562827418,perc_dental_visit,percent
+51053,county,"Dinwiddie County, Virginia",2019,65.22529668742004,perc_dental_visit,percent
+51057,county,"Essex County, Virginia",2019,64.60267428265463,perc_dental_visit,percent
+51059,county,"Fairfax County, Virginia",2019,69.31206171583796,perc_dental_visit,percent
+51061,county,"Fauquier County, Virginia",2019,70.82058710821511,perc_dental_visit,percent
+51063,county,"Floyd County, Virginia",2019,71.13288459482841,perc_dental_visit,percent
+51065,county,"Fluvanna County, Virginia",2019,66.31406192615077,perc_dental_visit,percent
+51067,county,"Franklin County, Virginia",2019,67.38255356789684,perc_dental_visit,percent
+51069,county,"Frederick County, Virginia",2019,71.49583689869549,perc_dental_visit,percent
+51071,county,"Giles County, Virginia",2019,69.5876839025897,perc_dental_visit,percent
+51073,county,"Gloucester County, Virginia",2019,79.08132231759562,perc_dental_visit,percent
+51075,county,"Goochland County, Virginia",2019,67.6911607233516,perc_dental_visit,percent
+51077,county,"Grayson County, Virginia",2019,70.29602009840397,perc_dental_visit,percent
+51079,county,"Greene County, Virginia",2019,68.50953648042511,perc_dental_visit,percent
+51081,county,"Greensville County, Virginia",2019,63.46900644841814,perc_dental_visit,percent
+51083,county,"Halifax County, Virginia",2019,65.13533142408151,perc_dental_visit,percent
+51085,county,"Hanover County, Virginia",2019,67.03854669514047,perc_dental_visit,percent
+51087,county,"Henrico County, Virginia",2019,67.67932651068031,perc_dental_visit,percent
+51089,county,"Henry County, Virginia",2019,70.63501109708278,perc_dental_visit,percent
+51091,county,"Highland County, Virginia",2019,84.89472537500001,perc_dental_visit,percent
+51093,county,"Isle of Wight County, Virginia",2019,72.31109787520718,perc_dental_visit,percent
+51095,county,"James City County, Virginia",2019,67.61897459064691,perc_dental_visit,percent
+51097,county,"King and Queen County, Virginia",2019,70.64435617657016,perc_dental_visit,percent
+51099,county,"King George County, Virginia",2019,74.3030985278484,perc_dental_visit,percent
+51101,county,"King William County, Virginia",2019,73.96798360677913,perc_dental_visit,percent
+51103,county,"Lancaster County, Virginia",2019,74.35047094772902,perc_dental_visit,percent
+51105,county,"Lee County, Virginia",2019,73.26612994214867,perc_dental_visit,percent
+51107,county,"Loudoun County, Virginia",2019,70.13503188421042,perc_dental_visit,percent
+51109,county,"Louisa County, Virginia",2019,61.62557195567332,perc_dental_visit,percent
+51111,county,"Lunenburg County, Virginia",2019,69.01682449074622,perc_dental_visit,percent
+51113,county,"Madison County, Virginia",2019,65.31745324288322,perc_dental_visit,percent
+51115,county,"Mathews County, Virginia",2019,63.956650136298755,perc_dental_visit,percent
+51117,county,"Mecklenburg County, Virginia",2019,65.988953865,perc_dental_visit,percent
+51119,county,"Middlesex County, Virginia",2019,76.82034926760328,perc_dental_visit,percent
+51121,county,"Montgomery County, Virginia",2019,68.9294635083412,perc_dental_visit,percent
+51125,county,"Nelson County, Virginia",2019,76.14319306465659,perc_dental_visit,percent
+51127,county,"New Kent County, Virginia",2019,79.21397768613005,perc_dental_visit,percent
+51131,county,"Northampton County, Virginia",2019,56.98061391993219,perc_dental_visit,percent
+51133,county,"Northumberland County, Virginia",2019,62.30129615393823,perc_dental_visit,percent
+51135,county,"Nottoway County, Virginia",2019,71.10649294215882,perc_dental_visit,percent
+51137,county,"Orange County, Virginia",2019,69.08947345357528,perc_dental_visit,percent
+51139,county,"Page County, Virginia",2019,70.15740315285197,perc_dental_visit,percent
+51141,county,"Patrick County, Virginia",2019,70.94649677656122,perc_dental_visit,percent
+51143,county,"Pittsylvania County, Virginia",2019,77.4719752559709,perc_dental_visit,percent
+51145,county,"Powhatan County, Virginia",2019,69.0551232461034,perc_dental_visit,percent
+51147,county,"Prince Edward County, Virginia",2019,75.25111425333542,perc_dental_visit,percent
+51149,county,"Prince George County, Virginia",2019,72.83766514698934,perc_dental_visit,percent
+51153,county,"Prince William County, Virginia",2019,63.950737567465545,perc_dental_visit,percent
+51155,county,"Pulaski County, Virginia",2019,72.1119778111919,perc_dental_visit,percent
+51157,county,"Rappahannock County, Virginia",2019,72.00481747382099,perc_dental_visit,percent
+51159,county,"Richmond County, Virginia",2019,77.1633456601138,perc_dental_visit,percent
+51161,county,"Roanoke County, Virginia",2019,70.84305038506491,perc_dental_visit,percent
+51163,county,"Rockbridge County, Virginia",2019,78.04656728756557,perc_dental_visit,percent
+51165,county,"Rockingham County, Virginia",2019,76.93662161087889,perc_dental_visit,percent
+51167,county,"Russell County, Virginia",2019,78.14917102444693,perc_dental_visit,percent
+51169,county,"Scott County, Virginia",2019,73.43052397445395,perc_dental_visit,percent
+51171,county,"Shenandoah County, Virginia",2019,64.62002353571712,perc_dental_visit,percent
+51173,county,"Smyth County, Virginia",2019,73.07782731921414,perc_dental_visit,percent
+51175,county,"Southampton County, Virginia",2019,70.3502949050145,perc_dental_visit,percent
+51177,county,"Spotsylvania County, Virginia",2019,68.11632784648,perc_dental_visit,percent
+51179,county,"Stafford County, Virginia",2019,69.7455974199834,perc_dental_visit,percent
+51181,county,"Surry County, Virginia",2019,66.77464515944925,perc_dental_visit,percent
+51183,county,"Sussex County, Virginia",2019,70.0812411381208,perc_dental_visit,percent
+51185,county,"Tazewell County, Virginia",2019,81.39706877711417,perc_dental_visit,percent
+51187,county,"Warren County, Virginia",2019,75.53362805541765,perc_dental_visit,percent
+51191,county,"Washington County, Virginia",2019,77.30075929656472,perc_dental_visit,percent
+51193,county,"Westmoreland County, Virginia",2019,70.89919889698197,perc_dental_visit,percent
+51195,county,"Wise County, Virginia",2019,69.04316186669571,perc_dental_visit,percent
+51197,county,"Wythe County, Virginia",2019,69.3350039453911,perc_dental_visit,percent
+51199,county,"York County, Virginia",2019,75.00489095250667,perc_dental_visit,percent
+51510,county,"Alexandria city, Virginia",2019,71.55658686782864,perc_dental_visit,percent
+51520,county,"Bristol city, Virginia",2019,75.65381043987783,perc_dental_visit,percent
+51530,county,"Buena Vista city, Virginia",2019,67.990520225,perc_dental_visit,percent
+51540,county,"Charlottesville city, Virginia",2019,66.51306858686235,perc_dental_visit,percent
+51550,county,"Chesapeake city, Virginia",2019,62.3257382548015,perc_dental_visit,percent
+51570,county,"Colonial Heights city, Virginia",2019,70.2090852209455,perc_dental_visit,percent
+51580,county,"Covington city, Virginia",2019,74.60552204588693,perc_dental_visit,percent
+51590,county,"Danville city, Virginia",2019,66.60848587139418,perc_dental_visit,percent
+51595,county,"Emporia city, Virginia",2019,73.75532242629723,perc_dental_visit,percent
+51600,county,"Fairfax city, Virginia",2019,69.35362288223331,perc_dental_visit,percent
+51610,county,"Falls Church city, Virginia",2019,71.42857271535742,perc_dental_visit,percent
+51620,county,"Franklin city, Virginia",2019,62.83224008734544,perc_dental_visit,percent
+51630,county,"Fredericksburg city, Virginia",2019,72.81761356598014,perc_dental_visit,percent
+51640,county,"Galax city, Virginia",2019,80.34660313678948,perc_dental_visit,percent
+51650,county,"Hampton city, Virginia",2019,70.25743628676618,perc_dental_visit,percent
+51660,county,"Harrisonburg city, Virginia",2019,74.518672011585,perc_dental_visit,percent
+51670,county,"Hopewell city, Virginia",2019,64.31956567466534,perc_dental_visit,percent
+51678,county,"Lexington city, Virginia",2019,69.11263642499999,perc_dental_visit,percent
+51680,county,"Lynchburg city, Virginia",2019,68.77610129167324,perc_dental_visit,percent
+51683,county,"Manassas city, Virginia",2019,72.76832391585431,perc_dental_visit,percent
+51685,county,"Manassas Park city, Virginia",2019,70.84293055933028,perc_dental_visit,percent
+51690,county,"Martinsville city, Virginia",2019,75.95186171959651,perc_dental_visit,percent
+51700,county,"Newport News city, Virginia",2019,68.09006174207039,perc_dental_visit,percent
+51710,county,"Norfolk city, Virginia",2019,67.25320049563337,perc_dental_visit,percent
+51720,county,"Norton city, Virginia",2019,59.43335830000001,perc_dental_visit,percent
+51730,county,"Petersburg city, Virginia",2019,60.4179386138456,perc_dental_visit,percent
+51735,county,"Poquoson city, Virginia",2019,72.40386083626306,perc_dental_visit,percent
+51740,county,"Portsmouth city, Virginia",2019,64.64066720171232,perc_dental_visit,percent
+51750,county,"Radford city, Virginia",2019,66.34428680101153,perc_dental_visit,percent
+51760,county,"Richmond city, Virginia",2019,62.77039845166378,perc_dental_visit,percent
+51770,county,"Roanoke city, Virginia",2019,71.44194683309821,perc_dental_visit,percent
+51775,county,"Salem city, Virginia",2019,78.8551059133737,perc_dental_visit,percent
+51790,county,"Staunton city, Virginia",2019,64.613802727906,perc_dental_visit,percent
+51800,county,"Suffolk city, Virginia",2019,69.12371304165823,perc_dental_visit,percent
+51810,county,"Virginia Beach city, Virginia",2019,66.01055380167661,perc_dental_visit,percent
+51820,county,"Waynesboro city, Virginia",2019,75.4627740788281,perc_dental_visit,percent
+51830,county,"Williamsburg city, Virginia",2019,58.270726094138645,perc_dental_visit,percent
+51840,county,"Winchester city, Virginia",2019,65.85625221324985,perc_dental_visit,percent

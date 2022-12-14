@@ -1,0 +1,22 @@
+{
+    "avg_monthly_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "avg_monthly_rate",
+        "measure_table": "va_hdct_vdh_2015_2021_drug_overdose_ed_visits.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "rate per 100k"
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "median_household_income": [
+        {
+            "category": "Financial Well Being",
+            "equity_category": "Status",
+            "full_name": "household_income:nrc:median_household_income",
+            "long_description": "",
+            "long_name": "MEDIAN HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2019 INFLATION-ADJUSTED DOLLARS), ACS 5-Year Estimates",
+            "measure": "median_household_income",
+            "measure_table": "ncr_cttrbg_2015_2019_median_household_income",
+            "short_description": "",
+            "short_name": "Median Household Income",
+            "sources": [
+                {
+                    "date_accessed": 2022,
+                    "name": "Census Bureau, American Community Survey",
+                    "url": "https://www.census.gov/programs-surveys/acs"
+                }
+            ],
+            "statement": "the median household income in {features.name} is {value}.",
+            "type": "dollar"
+        },
+        {
+            "category": "Financial Well Being",
+            "equity_category": "Status",
+            "full_name": "household_income:va:median_household_income",
+            "long_description": "",
+            "long_name": "MEDIAN HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2019 INFLATION-ADJUSTED DOLLARS), ACS 5-Year Estimates",
+            "measure": "median_household_income",
+            "measure_table": "va_cttrbg_2015_2019_median_household_income",
+            "short_description": "",
+            "short_name": "Median Household Income",
+            "sources": [
+                {
+                    "date_accessed": 2022,
+                    "name": "Census Bureau, American Community Survey",
+                    "url": "https://www.census.gov/programs-surveys/acs"
+                }
+            ],
+            "statement": "the median household income in {features.name} is {value}.",
+            "type": "dollar"
+        }
+    ]
+}

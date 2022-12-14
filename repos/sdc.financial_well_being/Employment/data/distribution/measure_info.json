@@ -1,0 +1,23 @@
+{
+  "emp_rate:emp_rate": {
+    "category": "Employment/Workforce Development",
+    "measure_table": "civilian_employment_rate",
+    "full_name": "civilian_employment_rate:employment_rate",
+    "measure": "employment_rate",
+    "type": "percent",
+    "short_name": "Percentage employed",
+    "long_name": "Percentage civilian employed",
+    "short_description": "Population self-reported as employed as a percentage of total civilian workforce population.",
+    "long_description": "Population self-reported as employed as a percentage of total civilian workforce population. Based on American Community Survey Table B23025 ACS 2015/2019 5-year estimates.",
+    "statement": "{value} of the population in {features.name} is employed.",
+    "equity_category": "Status",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "Table B23025",
+        "date_accessed": "2021",
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  }
+}

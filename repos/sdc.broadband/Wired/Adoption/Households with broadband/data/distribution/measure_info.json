@@ -1,0 +1,20 @@
+{
+  "category": "Broadband",
+  "measure_table": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev",
+  "full_name": "broadband_withoutint_compdev:perc_hh_with_broadband",
+  "measure": "perc_hh_with_broadband",
+  "type": "percent",
+  "short_name": "Households with broadband",
+  "long_name": "Percentage of households with broadband",
+  "short_description": "Percentage of households self-reported to have a broadband internet connection (any type of internet other than a dial-up)",
+  "long_description": "Percentage of households self-reported to have a broadband internet connection. Broadband internet is defined as any type of internet other than a dial-up. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
+  "statement": "{value} of households in {features.name} have a broadband connection.",
+  "equity_category": "Availability",
+  "sources": [
+    {
+      "name": "American Community Survey Table B28002",
+      "date_accessed": 2021,
+      "url": "https://www.census.gov/programs-surveys/acs.html"
+    }
+  ]
+}

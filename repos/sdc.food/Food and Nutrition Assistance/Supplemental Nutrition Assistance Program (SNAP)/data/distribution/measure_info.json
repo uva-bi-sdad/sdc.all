@@ -1,0 +1,62 @@
+{
+    "hh_received_snap_cnt": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "Count of Households That Received SNAP",
+        "measure": "hh_received_snap_cnt",
+        "measure_table": "va_hdcttrbg_acs_2013_2020_hh_receiving_snap.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "American Community Survey (ACS)",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+        "hh_received_snap_pct": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "Percent of Households That Received SNAP",
+        "measure": "hh_received_snap_pct",
+        "measure_table": "va_hdcttrbg_acs_2013_2020_hh_receiving_snap.csv.xz",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "American Community Survey (ACS)",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+        "population": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "Population Count",
+        "measure": "hh_received_snap_pct",
+        "measure_table": "va_hdcttrbg_acs_2013_2020_hh_receiving_snap.csv.xz",
+        "short_description": "",
+        "short_name": "Population",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "American Community Survey (ACS)",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    }
+}

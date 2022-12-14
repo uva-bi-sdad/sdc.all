@@ -1,0 +1,22 @@
+{
+    "perc_annual_checkup": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "perc_annual_checkup",
+        "measure_table": "va_tr_brfss_2019_percent_annual_checkup",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percent"
+    }
+}

@@ -1,0 +1,134 @@
+geoid,region_type,region_name,year,value,measure,measure_type
+51001,county,"Accomack County, Virginia",2019,76.83018775150822,perc_annual_checkup,percent
+51003,county,"Albemarle County, Virginia",2019,74.74781223350179,perc_annual_checkup,percent
+51005,county,"Alleghany County, Virginia",2019,79.15634906486618,perc_annual_checkup,percent
+51007,county,"Amelia County, Virginia",2019,75.10720840939128,perc_annual_checkup,percent
+51009,county,"Amherst County, Virginia",2019,78.77155895390399,perc_annual_checkup,percent
+51011,county,"Appomattox County, Virginia",2019,72.89725773343652,perc_annual_checkup,percent
+51013,county,"Arlington County, Virginia",2019,70.25726910678983,perc_annual_checkup,percent
+51015,county,"Augusta County, Virginia",2019,75.07941345875612,perc_annual_checkup,percent
+51017,county,"Bath County, Virginia",2019,74.57754937499999,perc_annual_checkup,percent
+51019,county,"Bedford County, Virginia",2019,76.18227261154011,perc_annual_checkup,percent
+51021,county,"Bland County, Virginia",2019,79.72742304322469,perc_annual_checkup,percent
+51023,county,"Botetourt County, Virginia",2019,75.14957123359991,perc_annual_checkup,percent
+51025,county,"Brunswick County, Virginia",2019,80.49841063991504,perc_annual_checkup,percent
+51027,county,"Buchanan County, Virginia",2019,74.94450116975585,perc_annual_checkup,percent
+51029,county,"Buckingham County, Virginia",2019,77.03340368217619,perc_annual_checkup,percent
+51031,county,"Campbell County, Virginia",2019,75.67665491294842,perc_annual_checkup,percent
+51033,county,"Caroline County, Virginia",2019,73.11170896133216,perc_annual_checkup,percent
+51035,county,"Carroll County, Virginia",2019,77.44763181758843,perc_annual_checkup,percent
+51036,county,"Charles City County, Virginia",2019,79.21169437718454,perc_annual_checkup,percent
+51037,county,"Charlotte County, Virginia",2019,80.9166010587843,perc_annual_checkup,percent
+51041,county,"Chesterfield County, Virginia",2019,74.77709898504033,perc_annual_checkup,percent
+51043,county,"Clarke County, Virginia",2019,74.29910757191735,perc_annual_checkup,percent
+51045,county,"Craig County, Virginia",2019,71.0305218,perc_annual_checkup,percent
+51047,county,"Culpeper County, Virginia",2019,73.8646981674454,perc_annual_checkup,percent
+51049,county,"Cumberland County, Virginia",2019,77.30106123606386,perc_annual_checkup,percent
+51051,county,"Dickenson County, Virginia",2019,75.75247723887858,perc_annual_checkup,percent
+51053,county,"Dinwiddie County, Virginia",2019,77.11707358328513,perc_annual_checkup,percent
+51057,county,"Essex County, Virginia",2019,81.30628360765131,perc_annual_checkup,percent
+51059,county,"Fairfax County, Virginia",2019,73.64942301128315,perc_annual_checkup,percent
+51061,county,"Fauquier County, Virginia",2019,74.85445763056674,perc_annual_checkup,percent
+51063,county,"Floyd County, Virginia",2019,76.6825494375,perc_annual_checkup,percent
+51065,county,"Fluvanna County, Virginia",2019,79.08970208114845,perc_annual_checkup,percent
+51067,county,"Franklin County, Virginia",2019,72.24744534009527,perc_annual_checkup,percent
+51069,county,"Frederick County, Virginia",2019,73.98470718627283,perc_annual_checkup,percent
+51071,county,"Giles County, Virginia",2019,74.16455382857949,perc_annual_checkup,percent
+51073,county,"Gloucester County, Virginia",2019,75.18989137675814,perc_annual_checkup,percent
+51075,county,"Goochland County, Virginia",2019,73.70078086763627,perc_annual_checkup,percent
+51077,county,"Grayson County, Virginia",2019,78.5191845642434,perc_annual_checkup,percent
+51079,county,"Greene County, Virginia",2019,74.68398835717056,perc_annual_checkup,percent
+51081,county,"Greensville County, Virginia",2019,80.61556338305412,perc_annual_checkup,percent
+51083,county,"Halifax County, Virginia",2019,76.75422317656432,perc_annual_checkup,percent
+51085,county,"Hanover County, Virginia",2019,75.31919861634832,perc_annual_checkup,percent
+51087,county,"Henrico County, Virginia",2019,77.02055550079336,perc_annual_checkup,percent
+51089,county,"Henry County, Virginia",2019,78.00314348139463,perc_annual_checkup,percent
+51091,county,"Highland County, Virginia",2019,76.17363945,perc_annual_checkup,percent
+51093,county,"Isle of Wight County, Virginia",2019,75.10489681957043,perc_annual_checkup,percent
+51095,county,"James City County, Virginia",2019,77.42806395007187,perc_annual_checkup,percent
+51097,county,"King and Queen County, Virginia",2019,76.72814230278756,perc_annual_checkup,percent
+51099,county,"King George County, Virginia",2019,74.47346744458049,perc_annual_checkup,percent
+51101,county,"King William County, Virginia",2019,73.17251854718478,perc_annual_checkup,percent
+51103,county,"Lancaster County, Virginia",2019,82.39306810668758,perc_annual_checkup,percent
+51105,county,"Lee County, Virginia",2019,79.39018958806847,perc_annual_checkup,percent
+51107,county,"Loudoun County, Virginia",2019,73.09626082341848,perc_annual_checkup,percent
+51109,county,"Louisa County, Virginia",2019,75.86307467525182,perc_annual_checkup,percent
+51111,county,"Lunenburg County, Virginia",2019,77.87622275309484,perc_annual_checkup,percent
+51113,county,"Madison County, Virginia",2019,75.78027726674794,perc_annual_checkup,percent
+51115,county,"Mathews County, Virginia",2019,77.47430499116078,perc_annual_checkup,percent
+51117,county,"Mecklenburg County, Virginia",2019,79.86383292951116,perc_annual_checkup,percent
+51119,county,"Middlesex County, Virginia",2019,76.02038052427366,perc_annual_checkup,percent
+51121,county,"Montgomery County, Virginia",2019,70.4316480478018,perc_annual_checkup,percent
+51125,county,"Nelson County, Virginia",2019,78.70921552454044,perc_annual_checkup,percent
+51127,county,"New Kent County, Virginia",2019,74.83492162968886,perc_annual_checkup,percent
+51131,county,"Northampton County, Virginia",2019,74.95141064858734,perc_annual_checkup,percent
+51133,county,"Northumberland County, Virginia",2019,75.24083859093757,perc_annual_checkup,percent
+51135,county,"Nottoway County, Virginia",2019,69.47493764570136,perc_annual_checkup,percent
+51137,county,"Orange County, Virginia",2019,71.9385662603676,perc_annual_checkup,percent
+51139,county,"Page County, Virginia",2019,73.42291228519066,perc_annual_checkup,percent
+51141,county,"Patrick County, Virginia",2019,77.02282883594145,perc_annual_checkup,percent
+51143,county,"Pittsylvania County, Virginia",2019,76.52713377263133,perc_annual_checkup,percent
+51145,county,"Powhatan County, Virginia",2019,75.73322652940364,perc_annual_checkup,percent
+51147,county,"Prince Edward County, Virginia",2019,69.28969864201416,perc_annual_checkup,percent
+51149,county,"Prince George County, Virginia",2019,74.71469981687154,perc_annual_checkup,percent
+51153,county,"Prince William County, Virginia",2019,73.06910148435432,perc_annual_checkup,percent
+51155,county,"Pulaski County, Virginia",2019,76.4187611544551,perc_annual_checkup,percent
+51157,county,"Rappahannock County, Virginia",2019,73.28107171534484,perc_annual_checkup,percent
+51159,county,"Richmond County, Virginia",2019,76.70219614925637,perc_annual_checkup,percent
+51161,county,"Roanoke County, Virginia",2019,74.16465459798755,perc_annual_checkup,percent
+51163,county,"Rockbridge County, Virginia",2019,77.60518305428286,perc_annual_checkup,percent
+51165,county,"Rockingham County, Virginia",2019,74.76016783877209,perc_annual_checkup,percent
+51167,county,"Russell County, Virginia",2019,73.49290393019126,perc_annual_checkup,percent
+51169,county,"Scott County, Virginia",2019,76.4462891045251,perc_annual_checkup,percent
+51171,county,"Shenandoah County, Virginia",2019,77.02660680158618,perc_annual_checkup,percent
+51173,county,"Smyth County, Virginia",2019,72.64540114378656,perc_annual_checkup,percent
+51175,county,"Southampton County, Virginia",2019,75.90932141106417,perc_annual_checkup,percent
+51177,county,"Spotsylvania County, Virginia",2019,74.78747138746978,perc_annual_checkup,percent
+51179,county,"Stafford County, Virginia",2019,72.5157655657269,perc_annual_checkup,percent
+51181,county,"Surry County, Virginia",2019,80.37458641389095,perc_annual_checkup,percent
+51183,county,"Sussex County, Virginia",2019,77.52034562787364,perc_annual_checkup,percent
+51185,county,"Tazewell County, Virginia",2019,75.6438479056891,perc_annual_checkup,percent
+51187,county,"Warren County, Virginia",2019,73.85392173617679,perc_annual_checkup,percent
+51191,county,"Washington County, Virginia",2019,74.48829228045342,perc_annual_checkup,percent
+51193,county,"Westmoreland County, Virginia",2019,80.45528697334964,perc_annual_checkup,percent
+51195,county,"Wise County, Virginia",2019,75.26160130683664,perc_annual_checkup,percent
+51197,county,"Wythe County, Virginia",2019,76.57072014734608,perc_annual_checkup,percent
+51199,county,"York County, Virginia",2019,75.52319159953998,perc_annual_checkup,percent
+51510,county,"Alexandria city, Virginia",2019,73.55644357149541,perc_annual_checkup,percent
+51520,county,"Bristol city, Virginia",2019,76.19896658327134,perc_annual_checkup,percent
+51530,county,"Buena Vista city, Virginia",2019,77.29629154999999,perc_annual_checkup,percent
+51540,county,"Charlottesville city, Virginia",2019,70.4274492001353,perc_annual_checkup,percent
+51550,county,"Chesapeake city, Virginia",2019,75.7425268317372,perc_annual_checkup,percent
+51570,county,"Colonial Heights city, Virginia",2019,78.14974711776262,perc_annual_checkup,percent
+51580,county,"Covington city, Virginia",2019,75.70522105082004,perc_annual_checkup,percent
+51590,county,"Danville city, Virginia",2019,78.95616034088756,perc_annual_checkup,percent
+51595,county,"Emporia city, Virginia",2019,79.90031981989428,perc_annual_checkup,percent
+51600,county,"Fairfax city, Virginia",2019,73.96272994444536,perc_annual_checkup,percent
+51610,county,"Falls Church city, Virginia",2019,70.892674748543,perc_annual_checkup,percent
+51620,county,"Franklin city, Virginia",2019,79.1745614367126,perc_annual_checkup,percent
+51630,county,"Fredericksburg city, Virginia",2019,71.82822762772251,perc_annual_checkup,percent
+51640,county,"Galax city, Virginia",2019,78.71238683271605,perc_annual_checkup,percent
+51650,county,"Hampton city, Virginia",2019,77.23415720388532,perc_annual_checkup,percent
+51660,county,"Harrisonburg city, Virginia",2019,64.86316729314358,perc_annual_checkup,percent
+51670,county,"Hopewell city, Virginia",2019,76.29387220346274,perc_annual_checkup,percent
+51678,county,"Lexington city, Virginia",2019,69.652858075,perc_annual_checkup,percent
+51680,county,"Lynchburg city, Virginia",2019,72.06437618564809,perc_annual_checkup,percent
+51683,county,"Manassas city, Virginia",2019,70.27122170456335,perc_annual_checkup,percent
+51685,county,"Manassas Park city, Virginia",2019,73.00434010310374,perc_annual_checkup,percent
+51690,county,"Martinsville city, Virginia",2019,80.48140346312147,perc_annual_checkup,percent
+51700,county,"Newport News city, Virginia",2019,74.15834331231082,perc_annual_checkup,percent
+51710,county,"Norfolk city, Virginia",2019,72.06845945857002,perc_annual_checkup,percent
+51720,county,"Norton city, Virginia",2019,71.6738208,perc_annual_checkup,percent
+51730,county,"Petersburg city, Virginia",2019,76.54936680637165,perc_annual_checkup,percent
+51735,county,"Poquoson city, Virginia",2019,73.91536532866695,perc_annual_checkup,percent
+51740,county,"Portsmouth city, Virginia",2019,78.73248102819822,perc_annual_checkup,percent
+51750,county,"Radford city, Virginia",2019,67.90122893896245,perc_annual_checkup,percent
+51760,county,"Richmond city, Virginia",2019,75.42926654264595,perc_annual_checkup,percent
+51770,county,"Roanoke city, Virginia",2019,77.24071119603079,perc_annual_checkup,percent
+51775,county,"Salem city, Virginia",2019,78.49131084149124,perc_annual_checkup,percent
+51790,county,"Staunton city, Virginia",2019,74.07448840745,perc_annual_checkup,percent
+51800,county,"Suffolk city, Virginia",2019,78.39106290463374,perc_annual_checkup,percent
+51810,county,"Virginia Beach city, Virginia",2019,73.98320967838569,perc_annual_checkup,percent
+51820,county,"Waynesboro city, Virginia",2019,77.90028907321282,perc_annual_checkup,percent
+51830,county,"Williamsburg city, Virginia",2019,67.63465528653242,perc_annual_checkup,percent
+51840,county,"Winchester city, Virginia",2019,70.46029173874481,perc_annual_checkup,percent

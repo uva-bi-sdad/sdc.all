@@ -1,0 +1,160 @@
+{
+  "daycare_access_scores:daycare_cnt": {
+    "category": "Education",
+    "measure_table": "dc_education_training.va_hdcttrbg_dss_2021_daycare_access_scores",
+    "full_name": "daycare_services_access_scores:daycare_cnt",
+    "measure": "daycare_cnt",
+    "type": "count",
+    "short_name": "Day care capacity",
+    "long_name": "Access to day care by capacity",
+    "short_description": "Count of day care capacity (seats) based on provider locations",
+    "long_description": "Count of day care capacity (seats) based on provider locations. Address and capacity data were collected from Virginia Department of Social Services day care search tool.",
+    "statement": "There are {value} daycare seats in {features.name}.",
+    "equity_category": "Availability",
+    "sources": [
+      {
+        "name": "Virginia Department of Social Services",
+        "date_accessed": 2021,
+        "url": "https://www.dss.virginia.gov/facility/search/cc.cgi"
+      }
+    ]
+  },
+  "daycare_access_scores:daycare_3sfca": {
+    "category": "Education",
+    "measure_table": "dc_education_training.va_hdcttrbg_dss_2021_daycare_access_scores",
+    "full_name": "daycare_access_scores:daycare_3sfca",
+    "measure": "daycare_3sfca",
+    "type": "index",
+    "short_name": "Day care geographic availability",
+    "long_name": "Day care geographic availability (3-step floating catchment area)",
+    "short_description": "Index of day care availability based on supply of and demand for providers",
+    "long_description": "Day care availability based on 3-step floating catchment areas. This method is an aggregation of day care facilities per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Provider address data were collected from Virginia Department of Social Services day care search tool. The demand for day care services is the population 0-15 years old and the supply is the capacity of day cares (number of seats).",
+    "statement": "The daycare availability for {features.name} is {value}.",
+    "equity_category": "Availability",
+    "citations": [
+      "lou04",
+      "lou09",
+      "lou03",
+      "saxon20"
+    ],
+    "sources": [
+      {
+        "name": "Virginia Department of Social Services",
+        "date_accessed": 2021,
+        "url": "https://www.dss.virginia.gov/facility/search/cc.cgi"
+      }
+    ]
+  },
+  "daycare_access_scores:daycare_median_drive_time_top5": {
+    "category": "Education",
+    "measure_table": "dc_education_training.va_hdcttrbg_dss_2021_daycare_access_scores",
+    "full_name": "daycare_access_scores:daycare_median_drive_time_top5",
+    "measure": "median_drive_time_top5",
+    "type": "drive time",
+    "short_name": "Day care availability (drive time)",
+    "long_name": "Day care availability by median drive time to the five closest day cares in minutes",
+    "short_description": "Median drive time (minutes) to the five closest day cares from centroid of selected region",
+    "long_description": "Median drive time in minutes to the five closest day cares from centroid of selected region. Address data were collected from the Virginia Department of Social Services Child Day Care Facility search (Dataset for year 2019). Drive times were computed using Open Source Routing Machine (Using roads for year 2022).",
+    "statement": "The median drive time to the five closest day cares to {features.name} is {value}.",
+    "equity_category": "Availability",
+    "sources": [
+      {
+        "name": "Virginia Department of Social Services",
+        "date_accessed": 2021,
+        "url": "https://www.dss.virginia.gov/facility/search/cc.cgi"
+      }
+    ]
+  },
+    "_references": {
+    "lou04": {
+      "id": "lou04",
+      "author": [
+        {
+          "given": "Wei",
+          "family": "Lou"
+        }
+      ],
+      "year": 2004,
+      "title": "Using a gis-based floating catchment method to assess areas with shortage of physicians",
+      "journal": "Health & Place",
+      "volume": "10",
+      "number": 1,
+      "page": "1-11",
+      "doi": "10.1016/S1353-8292(02)00067-9"
+    },
+    "lou09": {
+      "id": "lou09",
+      "author": [
+        {
+          "given": "Wei",
+          "family": "Lou"
+        },
+        {
+          "given": "Yi",
+          "family": "Qi"
+        }
+      ],
+      "year": 2009,
+      "title": "An enhanced two-step floating catchment area (e2sfca) method for measuring spatial accessibility to primary care physicians",
+      "journal": "Health & Place",
+      "volume": "15",
+      "number": 4,
+      "page": "1100-1107",
+      "doi": "10.1016/j.healthplace.2009.06.002"
+    },
+    "lou03": {
+      "id": "lou03",
+      "author": [
+        {
+          "given": "Wei",
+          "family": "Lou"
+        },
+        {
+          "given": "Fahui",
+          "family": "Wang"
+        }
+      ],
+      "year": 2003,
+      "title": "Measures of spatial accessibility to health care in a gis environment: synthesis and a case study in the Chicago region",
+      "journal": "Environment and Planning B: Planning and Design",
+      "volume": "30",
+      "number": 6,
+      "page": "865-884",
+      "doi": "10.1068/b29120"
+    },
+    "saxon20": {
+      "id": "saxon20",
+      "author": [
+        {
+          "given": "James",
+          "family": "Saxon"
+        },
+        {
+          "given": "Julia",
+          "family": "Koschinsky"
+        },
+        {
+          "given": "Karina",
+          "family": "Acosta"
+        },
+        {
+          "given": "Vidal",
+          "family": "Anguiano"
+        },
+        {
+          "given": "Luc",
+          "family": "Anselin"
+        },
+        {
+          "given": "Sergio",
+          "family": "Rey"
+        }
+      ],
+      "year": 2020,
+      "title": "An Open Software Environment to Make Spatial Access Metrics More Accessible",
+      "journal": "University of Chicago: Center for Spatial Data Science",
+      "volume": "Preprint",
+      "doi": "10.13140/RG.2.2.12396.28807"
+    }
+  }
+}
