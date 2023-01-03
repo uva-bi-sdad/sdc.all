@@ -32,9 +32,10 @@ def evaluate_folder(req_cols, dirpath):
                 try:
                     df = pd.read_csv(path.resolve())
                     cols = set(df.columns)
-                    is_valid = len(cols.intersection(req_cols)) == len(
-                        req_cols
-                    ) and len(df.columns) == len(req_cols)
+                    # is_valid = len(cols.intersection(req_cols)) == len(
+                    #     req_cols
+                    # ) and len(df.columns) == len(req_cols)
+                    is_valid = len(req_cols - cols) == 0
 
                     if is_valid:
                         report += "\t<p>[VALID] %s</p>\n" % (full_path)
