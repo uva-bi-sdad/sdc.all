@@ -8,6 +8,7 @@ import json
 import urllib.request
 from string import Template
 import traceback
+from pytz import timezone
 
 
 def evaluate_folder(req_cols, dirpath):
@@ -18,7 +19,7 @@ def evaluate_folder(req_cols, dirpath):
         if not os.path.isdir(subdir):
             continue
         report += "<h3> %s </h3>\n" % (dir)
-        for path in Path(subdir).rglob("distribution/**/*"):
+        for path in sorted(Path(subdir).rglob("distribution/**/*")):
             logging.debug("\tEvaluating: %s" % path.name)
 
             if not os.path.isfile(path):
@@ -65,7 +66,8 @@ if __name__ == "__main__":
     print(req_cols)
 
     report = evaluate_folder(req_cols, "./repos")
-    time_checked = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    tz = timezone("EST")
+    time_checked = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 
     print(time_checked)
 
