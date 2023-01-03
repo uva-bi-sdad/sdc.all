@@ -1,0 +1,948 @@
+{
+  "Accommodation_and_Food_Services_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Accommodation and Food Services LQ",
+    "long_name": "Accommodation and Food Services Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Accommodation and Food Services industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Administrativea and Support and Waste Management and Remediation Services LQ",
+    "long_name": "Administrativea and Support and Waste Management and Remediation Services Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Administrativea and Support and Waste Management and Remediation Services industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Arts,_Entertainment,_and_Recreation_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Arts, Entertainment, and Recreation LQ",
+    "long_name": "Arts, Entertainment, and Recreation Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Arts, Entertainment, and Recreation industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Educational_Services_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Educational Services LQ",
+    "long_name": "Educational Services Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Educational Services industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Finance_and_Insurance_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Finance and Insurance LQ",
+    "long_name": "Finance and Insurance Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Finance and Insurance industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Manufacturing_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Manufacturing LQ",
+    "long_name": "Manufacturing Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Manufacturing industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Other_Services_(except_Public_Administration)_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Other Services (except Public Administration) LQ",
+    "long_name": "Accommodation and Food Services Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Other Services (except Public Administration) industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Professional,_Scientific,_and_Technical_Services_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Professional, Scientific, and Technical Services LQ",
+    "long_name": "Professional, Scientific, and Technical Services Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Professional, Scientific, and Technical Services industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Retail_Trade_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Retail Trade LQ",
+    "long_name": "Retail Trade Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Retail Trade industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Construction_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Construction LQ",
+    "long_name": "Construction Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Construction industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Health_Care_and_Social_Assistance_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Health Care and Social Assistance LQ",
+    "long_name": "Health Care and Social Assistance Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Health Care and Social Assistance industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Real_Estate_and_Rental_and_Leasing_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Real Estate and Rental and Leasing LQ",
+    "long_name": "Real Estate and Rental and Leasing Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Real Estate and Rental and Leasing industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Wholesale_Trade_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Wholesale Trade LQ",
+    "long_name": "Wholesale Trade Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Wholesale Trade industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Information_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Information LQ",
+    "long_name": "Information Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Information industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Nonclassifiable_Establishments_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Nonclassifiable Establishments LQ",
+    "long_name": "Nonclassifiable Establishments Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Nonclassifiable Establishments industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Transportation_and_Warehousing_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Transportation and Warehousing LQ",
+    "long_name": "Transportation and Warehousing Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Transportation and Warehousing industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Management_of_Companies_and_Enterprises_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Management of Companies and Enterprises LQ",
+    "long_name": "Management of Companies and Enterprises Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Management of Companies and Enterprises industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Agriculture,_Forestry,_Fishing_and_Hunting_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Agriculture, Forestry, Fishing and Hunting LQ",
+    "long_name": "Agriculture, Forestry, Fishing and Hunting Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Agriculture, Forestry, Fishing and Hunting industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Public_Administration_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Public Administration LQ",
+    "long_name": "Public Administration Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Public Administration industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Utilities_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Utilities LQ",
+    "long_name": "Utilities Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Utilities industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Mining,_Quarrying,_and_Oil_and_Gas_Extraction_LQ": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Mining, Quarrying, and Oil and Gas Extraction LQ",
+    "long_name": "Mining, Quarrying, and Oil and Gas Extraction Location Quotient",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Mining, Quarrying, and Oil and Gas Extraction industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Accommodation_and_Food_Services_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Accommodation and Food Services HHI",
+    "long_name": "Accommodation and Food Services Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Accommodation and Food Services industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Administrativea and Support and Waste Management and Remediation Services HHI",
+    "long_name": "Administrativea and Support and Waste Management and Remediation Services Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Administrativea and Support and Waste Management and Remediation Services industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Arts,_Entertainment,_and_Recreation_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Arts, Entertainment, and Recreation HHI",
+    "long_name": "Arts, Entertainment, and Recreation Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Arts, Entertainment, and Recreation industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Educational_Services_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Educational Services HHI",
+    "long_name": "Educational Services Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Educational Services industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Finance_and_Insurance_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Finance and Insurance HHI",
+    "long_name": "Finance and Insurance Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Finance and Insurance industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Manufacturing_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Manufacturing HHI",
+    "long_name": "Manufacturing Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Manufacturing industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Accommodation_and_Food_Services_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Accommodation and Food Services HHI",
+    "long_name": "Accommodation and Food Services Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Accommodation and Food Services Industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Other_Services_(except_Public_Administration)_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Other Services (except Public Administration) HHI",
+    "long_name": "Accommodation and Food Services Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Other Services (except Public Administration) industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Professional,_Scientific,_and_Technical_Services_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Professional, Scientific, and Technical Services HHI",
+    "long_name": "Professional, Scientific, and Technical Services Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Professional, Scientific, and Technical Services industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Retail_Trade_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Retail Trade HHI",
+    "long_name": "Retail Trade Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Retail Trade industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Construction_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Construction HHI",
+    "long_name": "Construction Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Construction industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Health_Care_and_Social_Assistance_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Health Care and Social Assistance HHI",
+    "long_name": "Health Care and Social Assistance Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Health Care and Social Assistance industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Real_Estate_and_Rental_and_Leasing_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Real Estate and Rental and Leasing HHI",
+    "long_name": "Real Estate and Rental and Leasing Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Real Estate and Rental and Leasing industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Wholesale_Trade_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Wholesale Trade HHI",
+    "long_name": "Wholesale Trade Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Wholesale Trade industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Information_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Information HHI",
+    "long_name": "Information Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Information industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Nonclassifiable_Establishments_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Nonclassifiable Establishments HHI",
+    "long_name": "Nonclassifiable Establishments Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Nonclassifiable Establishments industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Transportation_and_Warehousing_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Transportation and Warehousing HHI",
+    "long_name": "Transportation and Warehousing Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Transportation and Warehousing industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Management_of_Companies_and_Enterprises_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Management of Companies and Enterprises HHI",
+    "long_name": "Management of Companies and Enterprises Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Management of Companies and Enterprises industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Agriculture,_Forestry,_Fishing_and_Hunting_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Agriculture, Forestry, Fishing and Hunting HHI",
+    "long_name": "Agriculture, Forestry, Fishing and Hunting Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Agriculture, Forestry, Fishing and Hunting industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Public_Administration_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Public Administration HHI",
+    "long_name": "Public Administration Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Public Administration industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Utilities_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Utilities HHI",
+    "long_name": "Utilities Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Utilities industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  },
+  
+  "Mining,_Quarrying,_and_Oil_and_Gas_Extraction_HHI": {
+    "category": "Business climate",
+    "type": "",
+    "short_name": "Mining, Quarrying, and Oil and Gas Extraction HHI",
+    "long_name": "Mining, Quarrying, and Oil and Gas Extraction Herfindahl-Hirschman Index",
+    "short_description": "Industry activity (measure by employment) compared to the county average",
+    "long_description": "Industry activity (measure by employment) compared to the county average",
+    "statement": "Mining, Quarrying, and Oil and Gas Extraction industry activity in {features.name} is {value}.",
+    "equity_category": "",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": "2022"
+      },
+      {
+        "name": "BEA what are the location quotient?",
+        "date_accessed": "2022",
+        "url": "https://www.bea.gov/help/faq/478"
+      }
+    ]
+  }
+  
+  }

@@ -1,0 +1,70 @@
+{
+  "name": "sdc.business_climate_dev",
+  "measure_not_found": [
+    "/home/runner/work/sdc.business_climate_dev/sdc.business_climate_dev/ownership_diversity/VA/fairfax/overall/data/distribution/year_indus_features.csv.xz",
+    "/home/runner/work/sdc.business_climate_dev/sdc.business_climate_dev/ownership_diversity/VA/fairfax/overall/data/distribution/HHI_small_business.csv.xz",
+    "/home/runner/work/sdc.business_climate_dev/sdc.business_climate_dev/ownership_diversity/VA/fairfax/overall/data/distribution/LQ_minorityowned_business.csv.xz",
+    "/home/runner/work/sdc.business_climate_dev/sdc.business_climate_dev/ownership_diversity/VA/fairfax/overall/data/distribution/LQ_small_business.csv.xz",
+    "/home/runner/work/sdc.business_climate_dev/sdc.business_climate_dev/ownership_diversity/VA/fairfax/overall/data/distribution/HHI_minorityowned_business.csv.xz",
+    "/home/runner/work/sdc.business_climate_dev/sdc.business_climate_dev/ownership_diversity/VA/fairfax/overall/data/distribution/year_geo_features.csv.xz"
+  ],
+  "count": 9,
+  "utc_audited": "2022-12-02 17:22:19",
+  "data": [
+    {
+      "name": "temp",
+      "path": "ownership_diversity/VA/fairfax/overall/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "year_indus_features.csv.xz",
+      "path": "ownership_diversity/VA/fairfax/overall/data/distribution/year_indus_features.csv.xz",
+      "md5": "50beebcc6ca572b42d55e08aadd67159",
+      "size": 3116
+    },
+    {
+      "name": "measure_info.json",
+      "path": "ownership_diversity/VA/fairfax/overall/data/distribution/measure_info.json",
+      "md5": "68eef51b29f485ab6fb705f975f21fbe",
+      "size": 32736
+    },
+    {
+      "name": "HHI_small_business.csv.xz",
+      "path": "ownership_diversity/VA/fairfax/overall/data/distribution/HHI_small_business.csv.xz",
+      "md5": "e84de71af29f8bd8701e520f0f52d65d",
+      "size": 1180
+    },
+    {
+      "name": "LQ_minorityowned_business.csv.xz",
+      "path": "ownership_diversity/VA/fairfax/overall/data/distribution/LQ_minorityowned_business.csv.xz",
+      "md5": "ab36e76adc6315fb43a8abe71be748ab",
+      "size": 140452
+    },
+    {
+      "name": "LQ_small_business.csv.xz",
+      "path": "ownership_diversity/VA/fairfax/overall/data/distribution/LQ_small_business.csv.xz",
+      "md5": "f0148ffbdae76e8e2401770f3558226f",
+      "size": 794280
+    },
+    {
+      "name": "HHI_minorityowned_business.csv.xz",
+      "path": "ownership_diversity/VA/fairfax/overall/data/distribution/HHI_minorityowned_business.csv.xz",
+      "md5": "26d12d63229d4edfca4197d69c566e7c",
+      "size": 1172
+    },
+    {
+      "name": "year_geo_features.csv.xz",
+      "path": "ownership_diversity/VA/fairfax/overall/data/distribution/year_geo_features.csv.xz",
+      "md5": "b4374a6e6c165e638f355c8805b2eb02",
+      "size": 49668
+    },
+    {
+      "name": "temp",
+      "path": "ownership_diversity/VA/fairfax/overall/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    }
+  ],
+  "_references": {}
+}
