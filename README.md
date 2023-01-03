@@ -1,5 +1,6 @@
-# data_center
-A test repository where the public data repos are submodules, to see if we can have feedback on the state of the data.
+# Testing
+
+A test repository where the public data repos are submodules, to see if we can have feedback on the state of the data without needing to run it individually on our own computers
 
 ## Adding submodules
 Follow [this link](https://github.blog/2016-02-01-working-with-submodules/), but generally
