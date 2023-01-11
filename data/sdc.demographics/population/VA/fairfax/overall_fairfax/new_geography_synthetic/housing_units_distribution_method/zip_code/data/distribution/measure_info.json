@@ -1,222 +1,170 @@
 {
-    "pop_20_64": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_20_64",
-        "measure_table": "va059_zc_sdad_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": null
-    },
-    "pop_65_plus": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_65_plus",
-        "measure_table": "va059_zc_sdad_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": null
-    },
-    "pop_AAPI": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_AAPI",
-        "measure_table": "va059_zc_sdad_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": null
-    },
-    "pop_black": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_black",
-        "measure_table": "va059_zc_sdad_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": null
-    },
-    "pop_female": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_female",
-        "measure_table": "va059_zc_sdad_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": null
-    },
-    "pop_hispanic_or_latino": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_hispanic_or_latino",
-        "measure_table": "va059_zc_sdad_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": null
-    },
-    "pop_male": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_male",
-        "measure_table": "va059_zc_sdad_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": null
-    },
-    "pop_native": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_native",
-        "measure_table": "va059_zc_sdad_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": null
-    },
-    "pop_under_20": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_under_20",
-        "measure_table": "va059_zc_sdad_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": null
-    },
+   "total_pop": {
+    "category": "Demographics",
+    "type": "count",
+    "short_name": "Total population",
+    "long_name": "Total population (count)",
+    "short_description": "Total population.",
+    "long_description": "Total population.",
+    "statement": "The total population is {value} in {features.name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "date_accessed": 2022,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+    
     "pop_white": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_white",
-        "measure_table": "va059_zc_sdad_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": null
-    },
-    "total_pop": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "total_pop",
-        "measure_table": "va059_zc_sdad_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": null
-    }
+    "category": "Demographics",
+    "type": "count",
+    "short_name": "Population under age 20",
+    "long_name": "Population  under age 20",
+    "short_description": "Total population under age 20.",
+    "long_description": "Total population under age 20.",
+    "statement": "The total population under age 20 is {value} in {features.name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "date_accessed": 2022,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+    
+    "pop_20_64": {
+    "category": "Demographics",
+    "type": "count",
+    "short_name": "20 to 64 population",
+    "long_name": "Population aging between 20 to 64.",
+    "short_description": "Population aging between 20 to 64.",
+    "long_description": "Population aging between 20 to 64.",
+    "statement": "The total population aging between 20 to 64 is {value} in {features.name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "date_accessed": 2022,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+    
+    "pop_65_plus": {
+    "category": "Demographics",
+    "type": "count",
+    "short_name": "Population over age 65",
+    "long_name": "Population over age 65",
+    "short_description": "Total population over age 65.",
+    "long_description": "Total population over age 65.",
+    "statement": "The total population over age 65 is {value} in {features.name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "date_accessed": 2022,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  
+  "pop_male": {
+    "category": "Demographics",
+    "type": "count",
+    "short_name": "Male population",
+    "long_name": "Male population",
+    "short_description": "Population of male.",
+    "long_description": "Population of male.",
+    "statement": "The population of male is {value} in {features.name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "date_accessed": 2022,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+    
+   "pop_male": {
+    "category": "Demographics",
+    "type": "count",
+    "short_name": "Female population",
+    "long_name": "Female population",
+    "short_description": "Population of female.",
+    "long_description": "Population of female.",
+    "statement": "The population of female is {value} in {features.name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "date_accessed": 2022,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  
+  "pop_white": {
+    "category": "Demographics",
+    "type": "count",
+    "short_name": "White population",
+    "long_name": "White population (count)",
+    "short_description": "Population of white.",
+    "long_description": "Population of white.",
+    "statement": "The population of white is {value} in {features.name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "date_accessed": 2022,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  
+  "pop_black": {
+    "category": "Demographics",
+    "type": "count",
+    "short_name": "Black or afro-american population",
+    "long_name": "Black or afro-american population (count)",
+    "short_description": "Population of Black or afro-american.",
+    "long_description": "Population of Black or afro-american.",
+    "statement": "The population of Black or afro-american is {value} in {features.name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "date_accessed": 2022,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  
+  "pop_AAPI": {
+    "category": "Demographics",
+    "type": "count",
+    "short_name": "Asian population",
+    "long_name": "Asian population (count)",
+    "short_description": "Population of asian.",
+    "long_description": "Population of asian.",
+    "statement": "The population of asian is {value} in {features.name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "date_accessed": 2022,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  
+  "pop_hispanic_or_latino": {
+    "category": "Demographics",
+    "type": "count",
+    "short_name": "Hispanic or latino population",
+    "long_name": "Hispanic or latino population (count)",
+    "short_description": "Population of hispanic or latino.",
+    "long_description": "Population of hispanic or latino.",
+    "statement": "The population of hispanic or latino is {value} in {features.name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "date_accessed": 2022,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
 }

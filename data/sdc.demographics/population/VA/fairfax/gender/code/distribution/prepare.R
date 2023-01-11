@@ -9,10 +9,9 @@ uploadpath = "population/VA/fairfax/overall_fairfax/"
 acs_data <- read_csv(xzfile(paste0(uploadpath, "new_geography_synthetic/housing_units_distribution_method/parcels/data/working/acs_data.csv.xz")))
 
 # shape acs variable to the same format than others data
-acs_data <- acs_data %>% mutate(region_type='block group', year=2019)
-colnames(acs_data) <- c('geoid','region_name','measure','value','region_type','year')
-acs_data <- acs_data %>% select(geoid,region_type,year,region_name,measure,value)
-acs_data <- acs_data %>% mutate(synthetic_method=NA)
+acs_data <- acs_data %>% mutate(region_type='block group', year=2019, measure_type='count', MOE='') %>% select(geoid=bg_geoid,region_type,region_name=name,year,measure=variable,measure_type,MOE,value=estimate) %>%
+  mutate(measure=recode(measure, "male"="pop_male", "female"="pop_female"))
+
 
 # method 1: (hud=housing units distribution) ----------------------------------------
 zc_hud_data <- read_csv(xzfile(paste0(uploadpath,"new_geography_synthetic/housing_units_distribution_method/zip_code/data/distribution/va059_zc_sdad_2019_demographics.csv.xz")))
@@ -31,7 +30,7 @@ pd_hud_data <- pd_hud_data %>% filter(measure %in% gender)
 sd_hud_data <- sd_hud_data %>% filter(measure %in% gender)
 hsr_hud_data <- hsr_hud_data %>% filter(measure %in% gender)
 hud_data <- rbind(zc_hud_data,pd_hud_data,sd_hud_data,hsr_hud_data)
-hud_data <- hud_data %>% mutate(synthetic_method="housing units distribution")
+
 
 # method 2: two stages IPF  ---------------------------------------------------
 
@@ -42,7 +41,7 @@ gender_data <- rbind(acs_data,hud_data)
 
 # compress and save -----------------------------------------------------------------
 savepath = "population/VA/fairfax/gender/data/distribution/"
-write_csv(gender_data, xzfile(paste0(savepath,"va059_sdad_2019_gender.csv.xz"), compression = 9))
+write_csv(gender_data, xzfile(paste0(savepath,"va059_bgzcpdsdhsr_sdad_2019_gender.csv.xz"), compression = 9))
 
 
 
