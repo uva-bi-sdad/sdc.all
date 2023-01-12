@@ -19,7 +19,7 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Dentists/Service Catchment Scores/data/distribution/va_hdcttrbgca_webmd_2021_access_scores_dentists.csv"
   ],
   "count": 92,
-  "utc_audited": "2022-12-13 23:12:49",
+  "utc_audited": "2023-01-11 21:45:49",
   "data": [
     {
       "name": "kotelchuck_2014_2020.csv",
@@ -475,8 +475,8 @@
     {
       "name": "va_ahec_schev_2016_2019_health_degrees_awarded.csv",
       "path": "Health Care Services/Health Professionals/VA Graduates/data/distribution/va_ahec_schev_2016_2019_health_degrees_awarded.csv",
-      "md5": "565546839476d4ceb24d0523135d4631",
-      "size": 9575
+      "md5": "f52a0d06a20689b4a180f41d74ed9f79",
+      "size": 10991
     },
     {
       "name": "va_hd_schev_2016_2019_health_degrees_awarded.csv",
