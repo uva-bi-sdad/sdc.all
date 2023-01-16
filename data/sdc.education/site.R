@@ -1,9 +1,8 @@
 input_variable("shapes", list(
-  "selected_variable == 3rd_grade_mean_median_read_score:mean_read_pass_rate" = "county",
-  "selected_variable == 3rd_grade_mean_median_read_score:median_read_pass_rate" = "county",
-  "selected_variable == health_literacy_estimates:health_literacy_estimate" = "county",
-  "selected_variable == post_hs_education:num_post_hs_edu" = "tract",
-  "selected_variable == post_hs_education:perc_post_hs_edu" = "tract"
+  "selected_variable == mean_read_pass_rate" = "county",
+  "selected_variable == median_read_pass_rate" = "county",
+  "selected_variable == acs_postsecondary_count" = "tract",
+  "selected_variable == acs_postsecondary_percent" = "tract"
 ), "block_group")
 
 input_dataview(
@@ -43,8 +42,9 @@ page_section(
     )
   ),
   page_section(
+    type = "col",
     {
-      layers <- lapply(list.files("data/nces", "^points_", recursive = TRUE, full.names = TRUE), function(f) {
+      layers <- lapply(list.files("Post-Secondary/data/distribution", "^points_", recursive = TRUE, full.names = TRUE), function(f) {
         list(
           url = f, time = as.numeric(gsub("[^0-9]", "", f))
         )
@@ -67,61 +67,61 @@ page_section(
             name = "tract",
             time = 2010,
             url = paste0(
-              "https://raw.githubusercontent.com/uva-bi-sdad/dc.geographies/main/data/",
-              "va_geo_census_cb_2010_census_tracts/distribution/va_geo_census_cb_2010_census_tracts.geojson"
+              "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/",
+              "VA/Census%20Geographies/Tract/2010/data/distribution/va_geo_census_cb_2010_census_tracts.geojson"
             )
           ),
           list(
             name = "county",
             time = 2010,
             url = paste0(
-              "https://raw.githubusercontent.com/uva-bi-sdad/dc.geographies/main/data/",
-              "va_geo_census_cb_2010_counties/distribution/va_geo_census_cb_2010_counties.geojson"
+              "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/",
+              "VA/Census%20Geographies/County/2010/data/distribution/va_geo_census_cb_2010_counties.geojson"
             )
           ),
           list(
             name = "tract",
             time = 2020,
             url = paste0(
-              "https://raw.githubusercontent.com/uva-bi-sdad/dc.geographies/main/data/",
-              "va_geo_census_cb_2020_census_tracts/distribution/va_geo_census_cb_2020_census_tracts.geojson"
+              "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/",
+              "VA/Census%20Geographies/Tract/2020/data/distribution/va_geo_census_cb_2020_census_tracts.geojson"
             )
           ),
           list(
             name = "county",
             time = 2020,
             url = paste0(
-              "https://raw.githubusercontent.com/uva-bi-sdad/dc.geographies/main/data/",
-              "va_geo_census_cb_2020_counties/distribution/va_geo_census_cb_2020_counties.geojson"
+              "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/",
+              "VA/Census%20Geographies/County/2020/data/distribution/va_geo_census_cb_2020_counties.geojson"
             )
           )
         ),
         overlays = c(
           list(
             list(
-              variable = "nces:schools_2year_per_100k",
+              variable = "schools_2year_per_100k",
               source = layers,
               filter = list(feature = "ICLEVEL", operator = "=", value = 2)
             ),
             list(
-              variable = "nces:schools_under2year_per_100k",
+              variable = "schools_under2year_per_100k",
               source = layers,
               filter = list(feature = "ICLEVEL", operator = "=", value = 3)
             ),
             list(
-              variable = "nces:schools_2year_min_drivetime",
+              variable = "schools_2year_min_drivetime",
               source = layers,
               filter = list(feature = "ICLEVEL", operator = "=", value = 2)
             ),
             list(
-              variable = "nces:schools_under2year_min_drivetime",
+              variable = "schools_under2year_min_drivetime",
               source = layers,
               filter = list(feature = "ICLEVEL", operator = "=", value = 3)
             )
           ),
           lapply(c("biomedical", "computer", "engineering", "physical", "science"), function(p) {
             list(
-              variable = paste0("nces:schools_2year_with_", p, "_program_per_100k"),
+              variable = paste0("schools_2year_with_", p, "_program_per_100k"),
               source = layers,
               filter = list(
                 list(feature = "ICLEVEL", operator = "=", value = 2),

@@ -1,9 +1,10 @@
 library(community)
 library(jsonlite)
 
-datasets <- paste0(list.dirs("data", recursive = FALSE), "/distribution")
-data_reformat_sdad(list.files(datasets, "\\.csv\\.[gbx]z2?$", full.names = TRUE), "docs/data")
-info <- lapply(list.files(datasets, "measure_info.*\\.json", full.names = TRUE), read_json)
+datasets <- paste0(list.dirs("."), "/data/distribution")
+datasets <- datasets[dir.exists(datasets)]
+data_reformat_sdad(list.files(datasets, "\\.csv", full.names = TRUE), "docs/data")
+info <- lapply(list.files(datasets, "measure_info\\.json", full.names = TRUE), read_json)
 agg_info <- list()
 for (m in info) {
   for (e in names(m)) {
@@ -17,19 +18,15 @@ if (length(agg_info)) {
   )
 }
 
+files <- paste0("docs/data/", list.files("docs/data/", "\\.csv\\.xz$"))
 data_add(
-  c(
-    county = "county.csv.xz",
-    tract = "tract.csv.xz",
-    block_group = "block_group.csv.xz"
-  ),
-  meta = rep(list(list(
+  structure(files, names = gsub("^docs/data/|\\.csv\\.xz$", "", files)),
+  meta = list(
     ids = list(variable = "ID", map = "data/entity_info.json"),
     time = "time",
     variables = "docs/data/measure_info.json"
-  )), 3),
+  ),
   dir = "docs/data",
-  clean = TRUE,
   refresh = TRUE
 )
 
