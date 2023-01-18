@@ -1,0 +1,11 @@
+Feeding America Sub-County Food Insecurity Data 
+
+- Requested from the link sent by email from research@feedingamerica.org 
+
+- Requested data from the year 2020 for the entire US
+
+- Data Received 11/23/22
+
+- Geographies: American Indian Tribal Areas, state legislative districts, census places (municipalities), Public Use Microdata Areas (PUMAS), census tracts, ZIP Code Tabulation Areas (ZCTAs) 
+
+

@@ -1,30 +1,253 @@
 {
   "name": "sdc.food_dev",
   "measure_not_found": [
-    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Supplemental Nutrition Assistance Program (SNAP)/data/distribution/ncr_cttrbg_acs_2013_2020_hh_receiving_snap.csv.xz",
+    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food Access/Supermarket Drive Times/data/distribution/va_cttr_osrm_2021_supermarket_drive_times.csv.xz",
+    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food Access/Food Items/data/distribution/va_013_cabg_sdad_2021_latino_east_african_gravity_models.csv.xz",
+    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food Access/Healthy Food Availability/data/distribution/va013_catr_sdad_2022_mrfei.csv.xz",
+    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/ncr_ct_fa_2014_2019_food_security.csv.xz",
+    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/va_hdct_fa_2014_2019_food_security.csv.xz",
+    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/va_hdct_fa_2014_2019_overall_food_insecurity.csv.xz",
+    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/ncr_ct_fa_2014_2019_overall_food_insecurity.csv.xz",
+    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Food Security/Population Measures/Children's Food Insecurity/data/distribution/va_hdct_fa_2014_2019_childrens_food_insecurity.csv.xz",
+    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Food Security/Population Measures/Children's Food Insecurity/data/distribution/ncr_ct_fa_2014_2019_childrens_food_insecurity.csv.xz",
     "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Food Security/Food Secure Average Meal Cost/data/distribution/va_hdct_fa_2014_2019_food_secure_avg_meal_cost.csv.xz",
     "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Food Security/Food Secure Average Meal Cost/data/distribution/ncr_ct_fa_2014_2019_food_secure_avg_meal_cost.csv.xz",
     "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Food Security/Food Budget Shortfall/data/distribution/ncr_ct_fa_2014_2019_food_budget_shortfall.csv.xz",
-    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Food Security/Population Measures/Children's Food Insecurity/data/distribution/va_hdct_fa_2014_2019_childrens_food_insecurity.csv.xz",
-    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Food Security/Population Measures/Children's Food Insecurity/data/distribution/ncr_ct_fa_2014_2019_childrens_food_insecurity.csv.xz",
-    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/va_hdct_fa_2014_2019_overall_food_insecurity.csv.xz",
-    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/ncr_ct_fa_2014_2019_overall_food_insecurity.csv.xz",
-    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/va_hdct_fa_2014_2019_food_security.csv.xz",
-    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/ncr_ct_fa_2014_2019_food_security.csv.xz",
-    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food Access/Food Items/data/distribution/va_013_cabg_sdad_2021_latino_east_african_gravity_models.csv.xz",
-    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food Access/Supermarket Drive Times/data/distribution/va_cttr_osrm_2021_supermarket_drive_times.csv.xz",
-    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food Access/Healthy Food Availability/data/distribution/va013_catr_sdad_2022_mrfei.csv.xz",
-    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food Security Estimates Fairfax County/data/distribution/fairfax_tr_mult_2022_food_insecurity_estimates.csv",
-    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food Security Estimates Fairfax County/data/distribution/fairfax_tr_feedamerica_2020_food_insecurity.csv"
+    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Supplemental Nutrition Assistance Program (SNAP)/data/distribution/ncr_cttrbg_acs_2013_2020_hh_receiving_snap.csv.xz",
+    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food Security Estimates Fairfax County/data/distribution/fairfax_tr_feedamerica_2020_food_insecurity.csv",
+    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food Security Estimates Fairfax County/data/distribution/fairfax_tr_mult_2022_food_insecurity_estimates.csv"
   ],
-  "count": 50,
-  "utc_audited": "2022-12-13 22:00:58",
+  "count": 49,
+  "utc_audited": "2023-01-03 15:30:38",
   "data": [
     {
+      "name": "va_cttr_osrm_2021_supermarket_drive_times.csv.xz",
+      "path": "Food Access/Supermarket Drive Times/data/distribution/va_cttr_osrm_2021_supermarket_drive_times.csv.xz",
+      "md5": "09f762f703fd71a6351252765ac559bc",
+      "size": 50480
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Food Access/Supermarket Drive Times/data/distribution/measure_info.json",
+      "md5": "99914b932bd37a50b983c5e7c90ae93b",
+      "size": 2
+    },
+    {
       "name": "temp",
-      "path": "Food and Nutrition Assistance/Supplemental Nutrition Assistance Program (SNAP)/docs/distribution/temp",
+      "path": "Food Access/Supermarket Drive Times/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Food Access/Supermarket Drive Times/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "va_013_cabg_sdad_2021_latino_east_african_gravity_models.csv.xz",
+      "path": "Food Access/Food Items/data/distribution/va_013_cabg_sdad_2021_latino_east_african_gravity_models.csv.xz",
+      "md5": "015d7a6507b8371c52c024964e67356b",
+      "size": 165744
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Food Access/Food Items/data/distribution/measure_info.json",
+      "md5": "37cf6d7de87dac84bfc947985c26b320",
+      "size": 32877
+    },
+    {
+      "name": "temp",
+      "path": "Food Access/Food Items/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Food Access/Food Items/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "va013_catr_sdad_2022_mrfei.csv.xz",
+      "path": "Food Access/Healthy Food Availability/data/distribution/va013_catr_sdad_2022_mrfei.csv.xz",
+      "md5": "15650a160f70b8e07472dc6f98dc9b13",
+      "size": 1652
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Food Access/Healthy Food Availability/data/distribution/measure_info.json",
+      "md5": "e53225cae0f0cd7e84ac35ab3d48a9d1",
+      "size": 809
+    },
+    {
+      "name": "temp",
+      "path": "Food Access/Healthy Food Availability/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Food Access/Healthy Food Availability/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "ncr_ct_fa_2014_2019_food_security.csv.xz",
+      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/ncr_ct_fa_2014_2019_food_security.csv.xz",
+      "md5": "811bda3745c8136ec43cfed12ef2727d",
+      "size": 3088
+    },
+    {
+      "name": "va_hdct_fa_2014_2019_food_security.csv.xz",
+      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/va_hdct_fa_2014_2019_food_security.csv.xz",
+      "md5": "078ab68f4d107a662657f7f7f2851922",
+      "size": 32572
+    },
+    {
+      "name": "va_hdct_fa_2014_2019_overall_food_insecurity.csv.xz",
+      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/va_hdct_fa_2014_2019_overall_food_insecurity.csv.xz",
+      "md5": "de1225da26cdb0b44b54338fb176bc8a",
+      "size": 10856
+    },
+    {
+      "name": "ncr_ct_fa_2014_2019_overall_food_insecurity.csv.xz",
+      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/ncr_ct_fa_2014_2019_overall_food_insecurity.csv.xz",
+      "md5": "571872571fbd14e0429d1432483d83b6",
+      "size": 1192
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/measure_info.json",
+      "md5": "a60930887223774f631dda7d64d98d3b",
+      "size": 5725
+    },
+    {
+      "name": "Map the Meal Gap 2020 Technical Brief-Updated.pdf",
+      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/docs/distribution/Map the Meal Gap 2020 Technical Brief-Updated.pdf",
+      "md5": "8f5e61cb70f5c6f09994a72476a0874c",
+      "size": 705032
+    },
+    {
+      "name": "Map the Meal Gap Overview and FAQ 10.2020.pdf",
+      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/docs/distribution/Map the Meal Gap Overview and FAQ 10.2020.pdf",
+      "md5": "1e3154334ae3d13f7c33b78522c0066e",
+      "size": 236029
+    },
+    {
+      "name": "Map the Meal Gap 2021 Technical Report note.txt",
+      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/docs/distribution/Map the Meal Gap 2021 Technical Report note.txt",
+      "md5": "1964ce383f87f9aa687b819577c4c255",
+      "size": 70
+    },
+    {
+      "name": "prepare_map_meal_gap.R",
+      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/code/distribution/prepare_map_meal_gap.R",
+      "md5": "1aa063b9c080c0f1ec300e98b49b9fdc",
+      "size": 13892
+    },
+    {
+      "name": "prepare_map_meal_gap_overall.R",
+      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/code/distribution/prepare_map_meal_gap_overall.R",
+      "md5": "9035ad383042a9dc1e1b715a4d616277",
+      "size": 1426
+    },
+    {
+      "name": "ingest_map_meal_gap.txt",
+      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/code/distribution/ingest_map_meal_gap.txt",
+      "md5": "bce1d8777abaebdc0a886296fc0c94ec",
+      "size": 454
+    },
+    {
+      "name": "va_hdct_fa_2014_2019_childrens_food_insecurity.csv.xz",
+      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Children's Food Insecurity/data/distribution/va_hdct_fa_2014_2019_childrens_food_insecurity.csv.xz",
+      "md5": "4c85bafd3962ea3734eff46a06fbff2c",
+      "size": 10916
+    },
+    {
+      "name": "ncr_ct_fa_2014_2019_childrens_food_insecurity.csv.xz",
+      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Children's Food Insecurity/data/distribution/ncr_ct_fa_2014_2019_childrens_food_insecurity.csv.xz",
+      "md5": "b24935e4c1987dd022949685bc6efb91",
+      "size": 1196
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Children's Food Insecurity/data/distribution/measure_info.json",
+      "md5": "ef707051c193ca9205da863b76d54592",
+      "size": 3325
+    },
+    {
+      "name": "temp",
+      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Children's Food Insecurity/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "prepare.R",
+      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Children's Food Insecurity/code/distribution/prepare.R",
+      "md5": "d89f7954d2974fedec19c6d881e7972e",
+      "size": 1478
+    },
+    {
+      "name": "va_hdct_fa_2014_2019_food_secure_avg_meal_cost.csv.xz",
+      "path": "Food and Nutrition Assistance/Food Security/Food Secure Average Meal Cost/data/distribution/va_hdct_fa_2014_2019_food_secure_avg_meal_cost.csv.xz",
+      "md5": "5afdffc624da50f388861a5cf2f1749c",
+      "size": 5440
+    },
+    {
+      "name": "ncr_ct_fa_2014_2019_food_secure_avg_meal_cost.csv.xz",
+      "path": "Food and Nutrition Assistance/Food Security/Food Secure Average Meal Cost/data/distribution/ncr_ct_fa_2014_2019_food_secure_avg_meal_cost.csv.xz",
+      "md5": "88c4798c1339b51160d726188c6b4b86",
+      "size": 684
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Food and Nutrition Assistance/Food Security/Food Secure Average Meal Cost/data/distribution/measure_info.json",
+      "md5": "c07b829f0f627df8ace041824c734579",
+      "size": 1026
+    },
+    {
+      "name": "temp",
+      "path": "Food and Nutrition Assistance/Food Security/Food Secure Average Meal Cost/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "prepare.R",
+      "path": "Food and Nutrition Assistance/Food Security/Food Secure Average Meal Cost/code/distribution/prepare.R",
+      "md5": "5bcc4dc486c3b8b8996ad718c7d3028e",
+      "size": 1372
+    },
+    {
+      "name": "va_hdct_fa_2014_2019_food_budget_shortfall.csv.xz",
+      "path": "Food and Nutrition Assistance/Food Security/Food Budget Shortfall/data/distribution/va_hdct_fa_2014_2019_food_budget_shortfall.csv.xz",
+      "md5": "1115a1d59cc71ba56969dca91f1338a3",
+      "size": 5112,
+      "measure_info": []
+    },
+    {
+      "name": "ncr_ct_fa_2014_2019_food_budget_shortfall.csv.xz",
+      "path": "Food and Nutrition Assistance/Food Security/Food Budget Shortfall/data/distribution/ncr_ct_fa_2014_2019_food_budget_shortfall.csv.xz",
+      "md5": "6c57389e4a8253aebfc3a17a2d118b3e",
+      "size": 768
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Food and Nutrition Assistance/Food Security/Food Budget Shortfall/data/distribution/measure_info.json",
+      "md5": "b78fac9c938334cea691dfda46b8d2db",
+      "size": 567
+    },
+    {
+      "name": "temp",
+      "path": "Food and Nutrition Assistance/Food Security/Food Budget Shortfall/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "prepare.R",
+      "path": "Food and Nutrition Assistance/Food Security/Food Budget Shortfall/code/distribution/prepare.R",
+      "md5": "577fbe3ac06b116337cac0a4db3a2a0f",
+      "size": 1375
     },
     {
       "name": "va_hdcttrbg_acs_2013_2020_hh_receiving_snap.csv.xz",
@@ -46,6 +269,12 @@
       "size": 1869
     },
     {
+      "name": "temp",
+      "path": "Food and Nutrition Assistance/Supplemental Nutrition Assistance Program (SNAP)/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
       "name": "prepare.R",
       "path": "Food and Nutrition Assistance/Supplemental Nutrition Assistance Program (SNAP)/code/distribution/prepare.R",
       "md5": "7b7dbe2af272420b75aa452441e389f6",
@@ -58,239 +287,10 @@
       "size": 1196
     },
     {
-      "name": "temp",
-      "path": "Food and Nutrition Assistance/Food Security/Food Secure Average Meal Cost/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "va_hdct_fa_2014_2019_food_secure_avg_meal_cost.csv.xz",
-      "path": "Food and Nutrition Assistance/Food Security/Food Secure Average Meal Cost/data/distribution/va_hdct_fa_2014_2019_food_secure_avg_meal_cost.csv.xz",
-      "md5": "5afdffc624da50f388861a5cf2f1749c",
-      "size": 5440
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Food and Nutrition Assistance/Food Security/Food Secure Average Meal Cost/data/distribution/measure_info.json",
-      "md5": "c07b829f0f627df8ace041824c734579",
-      "size": 1026
-    },
-    {
-      "name": "ncr_ct_fa_2014_2019_food_secure_avg_meal_cost.csv.xz",
-      "path": "Food and Nutrition Assistance/Food Security/Food Secure Average Meal Cost/data/distribution/ncr_ct_fa_2014_2019_food_secure_avg_meal_cost.csv.xz",
-      "md5": "88c4798c1339b51160d726188c6b4b86",
-      "size": 684
-    },
-    {
-      "name": "prepare.R",
-      "path": "Food and Nutrition Assistance/Food Security/Food Secure Average Meal Cost/code/distribution/prepare.R",
-      "md5": "5bcc4dc486c3b8b8996ad718c7d3028e",
-      "size": 1372
-    },
-    {
-      "name": "temp",
-      "path": "Food and Nutrition Assistance/Food Security/Food Budget Shortfall/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Food and Nutrition Assistance/Food Security/Food Budget Shortfall/data/distribution/measure_info.json",
-      "md5": "b78fac9c938334cea691dfda46b8d2db",
-      "size": 567
-    },
-    {
-      "name": "va_hdct_fa_2014_2019_food_budget_shortfall.csv.xz",
-      "path": "Food and Nutrition Assistance/Food Security/Food Budget Shortfall/data/distribution/va_hdct_fa_2014_2019_food_budget_shortfall.csv.xz",
-      "md5": "1115a1d59cc71ba56969dca91f1338a3",
-      "size": 5112,
-      "measure_info": []
-    },
-    {
-      "name": "ncr_ct_fa_2014_2019_food_budget_shortfall.csv.xz",
-      "path": "Food and Nutrition Assistance/Food Security/Food Budget Shortfall/data/distribution/ncr_ct_fa_2014_2019_food_budget_shortfall.csv.xz",
-      "md5": "6c57389e4a8253aebfc3a17a2d118b3e",
-      "size": 768
-    },
-    {
-      "name": "prepare.R",
-      "path": "Food and Nutrition Assistance/Food Security/Food Budget Shortfall/code/distribution/prepare.R",
-      "md5": "577fbe3ac06b116337cac0a4db3a2a0f",
-      "size": 1375
-    },
-    {
-      "name": "temp",
-      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Children's Food Insecurity/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "va_hdct_fa_2014_2019_childrens_food_insecurity.csv.xz",
-      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Children's Food Insecurity/data/distribution/va_hdct_fa_2014_2019_childrens_food_insecurity.csv.xz",
-      "md5": "4c85bafd3962ea3734eff46a06fbff2c",
-      "size": 10916
-    },
-    {
-      "name": "ncr_ct_fa_2014_2019_childrens_food_insecurity.csv.xz",
-      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Children's Food Insecurity/data/distribution/ncr_ct_fa_2014_2019_childrens_food_insecurity.csv.xz",
-      "md5": "b24935e4c1987dd022949685bc6efb91",
-      "size": 1196
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Children's Food Insecurity/data/distribution/measure_info.json",
-      "md5": "ef707051c193ca9205da863b76d54592",
-      "size": 3325
-    },
-    {
-      "name": "prepare.R",
-      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Children's Food Insecurity/code/distribution/prepare.R",
-      "md5": "d89f7954d2974fedec19c6d881e7972e",
-      "size": 1478
-    },
-    {
-      "name": "Map the Meal Gap Overview and FAQ 10.2020.pdf",
-      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/docs/distribution/Map the Meal Gap Overview and FAQ 10.2020.pdf",
-      "md5": "1e3154334ae3d13f7c33b78522c0066e",
-      "size": 236029
-    },
-    {
-      "name": "Map the Meal Gap 2020 Technical Brief-Updated.pdf",
-      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/docs/distribution/Map the Meal Gap 2020 Technical Brief-Updated.pdf",
-      "md5": "8f5e61cb70f5c6f09994a72476a0874c",
-      "size": 705032
-    },
-    {
-      "name": "Map the Meal Gap 2021 Technical Report note.txt",
-      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/docs/distribution/Map the Meal Gap 2021 Technical Report note.txt",
-      "md5": "1964ce383f87f9aa687b819577c4c255",
-      "size": 70
-    },
-    {
-      "name": "va_hdct_fa_2014_2019_overall_food_insecurity.csv.xz",
-      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/va_hdct_fa_2014_2019_overall_food_insecurity.csv.xz",
-      "md5": "de1225da26cdb0b44b54338fb176bc8a",
-      "size": 10856
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/measure_info.json",
-      "md5": "a60930887223774f631dda7d64d98d3b",
-      "size": 5725
-    },
-    {
-      "name": "ncr_ct_fa_2014_2019_overall_food_insecurity.csv.xz",
-      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/ncr_ct_fa_2014_2019_overall_food_insecurity.csv.xz",
-      "md5": "571872571fbd14e0429d1432483d83b6",
-      "size": 1192
-    },
-    {
-      "name": "va_hdct_fa_2014_2019_food_security.csv.xz",
-      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/va_hdct_fa_2014_2019_food_security.csv.xz",
-      "md5": "078ab68f4d107a662657f7f7f2851922",
-      "size": 32572
-    },
-    {
-      "name": "ncr_ct_fa_2014_2019_food_security.csv.xz",
-      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/data/distribution/ncr_ct_fa_2014_2019_food_security.csv.xz",
-      "md5": "811bda3745c8136ec43cfed12ef2727d",
-      "size": 3088
-    },
-    {
-      "name": "prepare_map_meal_gap_overall.R",
-      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/code/distribution/prepare_map_meal_gap_overall.R",
-      "md5": "9035ad383042a9dc1e1b715a4d616277",
-      "size": 1426
-    },
-    {
-      "name": "prepare_map_meal_gap.R",
-      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/code/distribution/prepare_map_meal_gap.R",
-      "md5": "1aa063b9c080c0f1ec300e98b49b9fdc",
-      "size": 13892
-    },
-    {
-      "name": "ingest_map_meal_gap.txt",
-      "path": "Food and Nutrition Assistance/Food Security/Population Measures/Overall Food Insecurity/code/distribution/ingest_map_meal_gap.txt",
-      "md5": "bce1d8777abaebdc0a886296fc0c94ec",
-      "size": 454
-    },
-    {
-      "name": "temp",
-      "path": "Food Access/Food Items/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Food Access/Food Items/data/distribution/measure_info.json",
-      "md5": "37cf6d7de87dac84bfc947985c26b320",
-      "size": 32877
-    },
-    {
-      "name": "va_013_cabg_sdad_2021_latino_east_african_gravity_models.csv.xz",
-      "path": "Food Access/Food Items/data/distribution/va_013_cabg_sdad_2021_latino_east_african_gravity_models.csv.xz",
-      "md5": "015d7a6507b8371c52c024964e67356b",
-      "size": 165744
-    },
-    {
-      "name": "temp",
-      "path": "Food Access/Food Items/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Food Access/Supermarket Drive Times/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Food Access/Supermarket Drive Times/data/distribution/measure_info.json",
-      "md5": "99914b932bd37a50b983c5e7c90ae93b",
-      "size": 2
-    },
-    {
-      "name": "va_cttr_osrm_2021_supermarket_drive_times.csv.xz",
-      "path": "Food Access/Supermarket Drive Times/data/distribution/va_cttr_osrm_2021_supermarket_drive_times.csv.xz",
-      "md5": "09f762f703fd71a6351252765ac559bc",
-      "size": 50480
-    },
-    {
-      "name": "temp",
-      "path": "Food Access/Supermarket Drive Times/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Food Access/Healthy Food Availability/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "va013_catr_sdad_2022_mrfei.csv.xz",
-      "path": "Food Access/Healthy Food Availability/data/distribution/va013_catr_sdad_2022_mrfei.csv.xz",
-      "md5": "15650a160f70b8e07472dc6f98dc9b13",
-      "size": 1652
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Food Access/Healthy Food Availability/data/distribution/measure_info.json",
-      "md5": "e53225cae0f0cd7e84ac35ab3d48a9d1",
-      "size": 809
-    },
-    {
-      "name": "temp",
-      "path": "Food Access/Healthy Food Availability/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Food Security Estimates Fairfax County/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "fairfax_tr_feedamerica_2020_food_insecurity.csv",
+      "path": "Food Security Estimates Fairfax County/data/distribution/fairfax_tr_feedamerica_2020_food_insecurity.csv",
+      "md5": "00a986e62751136d7ef6835386c6fa19",
+      "size": 44004
     },
     {
       "name": "fairfax_tr_mult_2022_food_insecurity_estimates.csv",
@@ -305,16 +305,10 @@
       "size": 32736
     },
     {
-      "name": "Rplots.pdf",
-      "path": "Food Security Estimates Fairfax County/data/distribution/Rplots.pdf",
-      "md5": "635f63485ad02b5e0b6d1a6d5d1dbf1f",
-      "size": 5455
-    },
-    {
-      "name": "fairfax_tr_feedamerica_2020_food_insecurity.csv",
-      "path": "Food Security Estimates Fairfax County/data/distribution/fairfax_tr_feedamerica_2020_food_insecurity.csv",
-      "md5": "00a986e62751136d7ef6835386c6fa19",
-      "size": 44004
+      "name": "temp",
+      "path": "Food Security Estimates Fairfax County/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
     },
     {
       "name": "temp",

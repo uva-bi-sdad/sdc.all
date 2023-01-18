@@ -194,7 +194,7 @@ locations$lid <- vapply(paste0(round(locations$long, 6), round(locations$lat, 6)
 pop_file <- paste0(dir, "/original/population", year)
 dir.create(pop_file, FALSE)
 
-vars <- c("SEX.BY.AGE_Male_Under.5", "SEX.BY.AGE_Male_5.to.9", "SEX.BY.AGE_Male_10.to.14")
+vars <- paste0("SEX.BY.AGE_", rep(c("Female", "Male"), 3), rep(c("_Under.5", "_5.to.9", "_10.to.14"), each = 2))
 population <- do.call(rbind, lapply(states, function(s) {
   pop <- download_census_population(pop_file, s, year, include_margins = TRUE)
   err <- pop$margins
@@ -208,17 +208,17 @@ population <- do.call(rbind, lapply(states, function(s) {
   IDs <- union(pop$GEOID, shapes$GEOID)
   shapes <- shapes[IDs, ]
   total <- rowSums(pop[IDs, vars], na.rm = TRUE)
-  over_4 <- rowSums(pop[IDs, vars[-2]], na.rm = TRUE)
-  under_10 <- rowSums(pop[IDs, vars[-3]], na.rm = TRUE)
+  over_4 <- rowSums(pop[IDs, vars[-(1:2)]], na.rm = TRUE)
+  under_10 <- rowSums(pop[IDs, vars[1:4]], na.rm = TRUE)
   res <- data.frame(
     GEOID = IDs,
     state = s,
     population_under_15 = total,
     population_under_15_error = total + sqrt(rowSums((err[IDs, vars] / 1.645) ^ 2, na.rm = TRUE)) * 1.645,
     population_over_4 = over_4,
-    population_over_4_error = over_4 + sqrt(rowSums((err[IDs, vars[-2]] / 1.645) ^ 2, na.rm = TRUE)) * 1.645,
+    population_over_4_error = over_4 + sqrt(rowSums((err[IDs, vars[-(1:2)]] / 1.645) ^ 2, na.rm = TRUE)) * 1.645,
     population_under_10 = under_10,
-    population_under_10_error = under_10 + sqrt(rowSums((err[IDs, vars[-3]] / 1.645) ^ 2, na.rm = TRUE)) * 1.645,
+    population_under_10_error = under_10 + sqrt(rowSums((err[IDs, vars[1:4]] / 1.645) ^ 2, na.rm = TRUE)) * 1.645,
     st_coordinates(st_centroid(shapes))
   )
   st_geometry(res) <- st_geometry(shapes)

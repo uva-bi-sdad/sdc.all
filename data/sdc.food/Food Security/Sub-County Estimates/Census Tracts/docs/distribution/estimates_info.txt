@@ -1,0 +1,18 @@
+Email from Feeding America:
+
+1. It is important to recognize that the further the Map the Meal Gap data are disaggregated, the greater the uncertainty due to the smaller sample sizes. Thus, sub-county estimates have a greater amount of uncertainty than other MMG estimates. Please let us know if you have any questions.
+
+2. Food insecurity estimates were suppressed, or we were unable to estimate food insecurity, for the following cases: 
+•	Geographies with 100% unemployment.
+•	Geographies for which one or more Map the Meal Gap model variables (non-undergrad poverty rate, percent Black, percent Hispanic, unemployment rate, percent disabled, homeownership rate, and median household income) was missing.
+•	Geographies with fewer than 500 people. 
+•	Geographies with greater than 50% of the labor force in the military, as these geographies usually have characteristics that are inconsistent with the average geography.
+•	Geographies with median income equal to or greater than $100,000 and homeownership rates of less than 30%. This is because high income areas generally also have high rates of homeownership but in some parts of the country, rental rates are much higher and, thus, homeownership rates are lower, which leads to inflated food insecurity.
+•	Geographies for which 30% or higher of the population are undergraduates. Starting with the MMG 2020 (2018 data year) we began to use the poverty rate among non-college students rather than the poverty rate among all persons. This led to more reasonable values for food insecurity in counties with high proportions of college students. However, homeownership rates in high college student areas are often depressed, given that college students usually do not own their own homes, which leads to artificially high food insecurity rates. 
+•	Geographies with the disability rate at or above 50%.
+
+3. ZCTA and census tract results do not aggregate up to the county food insecurity rates. They will be close but not exactly the same. One reason ZCTA estimates don’t add up to county estimates is because they’re not county-based geographies. While census tracts must stay within a single county, ZCTAs can span multiple counties and sometimes even cross into bordering states. Unlike our state and service area estimates, which are in fact district and county aggregates, our ZCTA and census tract values (as well as all other subcounty geographies) are estimated directly using our model. In other words, county and subcounty estimates are calculated independently of one another. Another reason the results don’t aggregate up to county values is that the county-level estimates use 2020 1-year unemployment from the Bureau of Labor Statistics, while subcounty results use the American Community Survey 2016-2020 5-year unemployment rate.
+
+4. Food banks are free to use these estimates in whatever manner they wish, and the estimates are free of charge. We ask that you email us at research@feedingamerica.org with whatever questions you have. In addition, we ask for any feedback you may have including issues you see with some of the food insecurity rates estimated for specific sub-county geographies. For more on the Map the Meal Gap methods, please see the Technical Brief (https://www.feedingamerica.org/research/map-the-meal-gap/how-we-got-the-map-data).
+
+5. When using these estimates, please cite us at: Gundersen, C., Strayer, M., Dewey, A., Hake, M., & Engelhard, E. (2022). Map the Meal Gap 2022: An Analysis of County and Congressional District Food Insecurity and County Food Cost in the United States in 2020. Feeding America.
