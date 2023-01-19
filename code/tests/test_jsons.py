@@ -29,7 +29,7 @@ def evaluate_folder(dirpath):
             parent_dir = path.parent
 
             if path.suffix in [".json"]:
-                full_path = path.name
+                full_path = path.resolve()
                 try:
                     j = json.load(open(path.resolve()))
                     report += "\t<p>[VALID] %s</p>\n" % (full_path)
@@ -63,5 +63,5 @@ if __name__ == "__main__":
     )
 
     print(t.substitute(time_checked=time_checked, report=report))
-    with open("./docs/test_json.html", "w") as f:
+    with open("./docs/test_jsons.html", "w") as f:
         f.write(t.substitute(time_checked=time_checked, report=report))
