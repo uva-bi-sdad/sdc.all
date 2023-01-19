@@ -1,4 +1,4 @@
-## THIS IS THE PART OF THE FILE WE WORKED ON OVER ZOOM
+## THIS IS THE PART OF THE FILE WE WORKED ON OVER ZOOM!
 # Get census sex population characteristics variables
 # Age by sex S0101_C01_001 total population
 # Age by sex S0101_C03_001 percent male

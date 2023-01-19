@@ -1,0 +1,1887 @@
+geoid,consumer_opportunity_quintile,consumer_opportunity_level,region_name,region_type
+51001090300,1,Very Low,"Census Tract 903, Accomack County, Virginia",tract
+51001090800,1,Very Low,"Census Tract 908, Accomack County, Virginia",tract
+51001090500,2,Low,"Census Tract 905, Accomack County, Virginia",tract
+51001980200,2,Low,"Census Tract 9802, Accomack County, Virginia",tract
+51001090400,2,Low,"Census Tract 904, Accomack County, Virginia",tract
+51001090600,3,Average,"Census Tract 906, Accomack County, Virginia",tract
+51001090700,3,Average,"Census Tract 907, Accomack County, Virginia",tract
+51001090100,3,Average,"Census Tract 901, Accomack County, Virginia",tract
+51001090200,4,High,"Census Tract 902, Accomack County, Virginia",tract
+51003011302,1,Very Low,"Census Tract 113.02, Albemarle County, Virginia",tract
+51003011400,3,Average,"Census Tract 114, Albemarle County, Virginia",tract
+51003010901,3,Average,"Census Tract 109.01, Albemarle County, Virginia",tract
+51003010700,3,Average,"Census Tract 107, Albemarle County, Virginia",tract
+51003010902,3,Average,"Census Tract 109.02, Albemarle County, Virginia",tract
+51003011301,3,Average,"Census Tract 113.01, Albemarle County, Virginia",tract
+51003011100,4,High,"Census Tract 111, Albemarle County, Virginia",tract
+51003010800,4,High,"Census Tract 108, Albemarle County, Virginia",tract
+51003010601,4,High,"Census Tract 106.01, Albemarle County, Virginia",tract
+51003010201,4,High,"Census Tract 102.01, Albemarle County, Virginia",tract
+51003011000,5,Very High,"Census Tract 110, Albemarle County, Virginia",tract
+51003010500,5,Very High,"Census Tract 105, Albemarle County, Virginia",tract
+51003010300,5,Very High,"Census Tract 103, Albemarle County, Virginia",tract
+51003010903,5,Very High,"Census Tract 109.03, Albemarle County, Virginia",tract
+51003010100,5,Very High,"Census Tract 101, Albemarle County, Virginia",tract
+51003011201,5,Very High,"Census Tract 112.01, Albemarle County, Virginia",tract
+51003011202,5,Very High,"Census Tract 112.02, Albemarle County, Virginia",tract
+51003010202,5,Very High,"Census Tract 102.02, Albemarle County, Virginia",tract
+51003010401,5,Very High,"Census Tract 104.01, Albemarle County, Virginia",tract
+51003010402,5,Very High,"Census Tract 104.02, Albemarle County, Virginia",tract
+51003010602,5,Very High,"Census Tract 106.02, Albemarle County, Virginia",tract
+51003011303,5,Very High,"Census Tract 113.03, Albemarle County, Virginia",tract
+51510201203,1,Very Low,"Census Tract 2012.03, Alexandria city, Virginia",tract
+51510200104,2,Low,"Census Tract 2001.04, Alexandria city, Virginia",tract
+51510200103,2,Low,"Census Tract 2001.03, Alexandria city, Virginia",tract
+51510200102,3,Average,"Census Tract 2001.02, Alexandria city, Virginia",tract
+51510200105,3,Average,"Census Tract 2001.05, Alexandria city, Virginia",tract
+51510200500,3,Average,"Census Tract 2005, Alexandria city, Virginia",tract
+51510201204,3,Average,"Census Tract 2012.04, Alexandria city, Virginia",tract
+51510200405,3,Average,"Census Tract 2004.05, Alexandria city, Virginia",tract
+51510200406,3,Average,"Census Tract 2004.06, Alexandria city, Virginia",tract
+51510200201,4,High,"Census Tract 2002.01, Alexandria city, Virginia",tract
+51510200301,4,High,"Census Tract 2003.01, Alexandria city, Virginia",tract
+51510200302,4,High,"Census Tract 2003.02, Alexandria city, Virginia",tract
+51510200303,4,High,"Census Tract 2003.03, Alexandria city, Virginia",tract
+51510200600,4,High,"Census Tract 2006, Alexandria city, Virginia",tract
+51510201600,4,High,"Census Tract 2016, Alexandria city, Virginia",tract
+51510200106,4,High,"Census Tract 2001.06, Alexandria city, Virginia",tract
+51510200107,4,High,"Census Tract 2001.07, Alexandria city, Virginia",tract
+51510200701,4,High,"Census Tract 2007.01, Alexandria city, Virginia",tract
+51510200403,4,High,"Census Tract 2004.03, Alexandria city, Virginia",tract
+51510200202,5,Very High,"Census Tract 2002.02, Alexandria city, Virginia",tract
+51510200801,5,Very High,"Census Tract 2008.01, Alexandria city, Virginia",tract
+51510200802,5,Very High,"Census Tract 2008.02, Alexandria city, Virginia",tract
+51510200900,5,Very High,"Census Tract 2009, Alexandria city, Virginia",tract
+51510201000,5,Very High,"Census Tract 2010, Alexandria city, Virginia",tract
+51510201100,5,Very High,"Census Tract 2011, Alexandria city, Virginia",tract
+51510201202,5,Very High,"Census Tract 2012.02, Alexandria city, Virginia",tract
+51510201300,5,Very High,"Census Tract 2013, Alexandria city, Virginia",tract
+51510201400,5,Very High,"Census Tract 2014, Alexandria city, Virginia",tract
+51510201500,5,Very High,"Census Tract 2015, Alexandria city, Virginia",tract
+51510201801,5,Very High,"Census Tract 2018.01, Alexandria city, Virginia",tract
+51510201802,5,Very High,"Census Tract 2018.02, Alexandria city, Virginia",tract
+51510201900,5,Very High,"Census Tract 2019, Alexandria city, Virginia",tract
+51510202001,5,Very High,"Census Tract 2020.01, Alexandria city, Virginia",tract
+51510202002,5,Very High,"Census Tract 2020.02, Alexandria city, Virginia",tract
+51510200407,5,Very High,"Census Tract 2004.07, Alexandria city, Virginia",tract
+51510200702,5,Very High,"Census Tract 2007.02, Alexandria city, Virginia",tract
+51510200703,5,Very High,"Census Tract 2007.03, Alexandria city, Virginia",tract
+51510200404,5,Very High,"Census Tract 2004.04, Alexandria city, Virginia",tract
+51005080301,3,Average,"Census Tract 803.01, Alleghany County, Virginia",tract
+51005080302,3,Average,"Census Tract 803.02, Alleghany County, Virginia",tract
+51005070100,3,Average,"Census Tract 701, Alleghany County, Virginia",tract
+51005080100,4,High,"Census Tract 801, Alleghany County, Virginia",tract
+51005080201,4,High,"Census Tract 802.01, Alleghany County, Virginia",tract
+51005080202,4,High,"Census Tract 802.02, Alleghany County, Virginia",tract
+51007930200,2,Low,"Census Tract 9302, Amelia County, Virginia",tract
+51007930100,3,Average,"Census Tract 9301, Amelia County, Virginia",tract
+51009010503,1,Very Low,"Census Tract 105.03, Amherst County, Virginia",tract
+51009010504,1,Very Low,"Census Tract 105.04, Amherst County, Virginia",tract
+51009010600,1,Very Low,"Census Tract 106, Amherst County, Virginia",tract
+51009010502,1,Very Low,"Census Tract 105.02, Amherst County, Virginia",tract
+51009010200,2,Low,"Census Tract 102, Amherst County, Virginia",tract
+51009010401,2,Low,"Census Tract 104.01, Amherst County, Virginia",tract
+51009010402,2,Low,"Census Tract 104.02, Amherst County, Virginia",tract
+51009010100,3,Average,"Census Tract 101, Amherst County, Virginia",tract
+51009010300,4,High,"Census Tract 103, Amherst County, Virginia",tract
+51011040200,3,Average,"Census Tract 402, Appomattox County, Virginia",tract
+51011040300,3,Average,"Census Tract 403, Appomattox County, Virginia",tract
+51011040100,3,Average,"Census Tract 401, Appomattox County, Virginia",tract
+51013103401,1,Very Low,"Census Tract 1034.01, Arlington County, Virginia",tract
+51013102200,1,Very Low,"Census Tract 1022, Arlington County, Virginia",tract
+51013102701,1,Very Low,"Census Tract 1027.01, Arlington County, Virginia",tract
+51013980200,1,Very Low,"Census Tract 9802, Arlington County, Virginia",tract
+51013980100,1,Very Low,"Census Tract 9801, Arlington County, Virginia",tract
+51013102003,2,Low,"Census Tract 1020.03, Arlington County, Virginia",tract
+51013102001,2,Low,"Census Tract 1020.01, Arlington County, Virginia",tract
+51013102600,3,Average,"Census Tract 1026, Arlington County, Virginia",tract
+51013102302,3,Average,"Census Tract 1023.02, Arlington County, Virginia",tract
+51013102801,3,Average,"Census Tract 1028.01, Arlington County, Virginia",tract
+51013102100,4,High,"Census Tract 1021, Arlington County, Virginia",tract
+51013103800,4,High,"Census Tract 1038, Arlington County, Virginia",tract
+51013103100,4,High,"Census Tract 1031, Arlington County, Virginia",tract
+51013100800,4,High,"Census Tract 1008, Arlington County, Virginia",tract
+51013101200,4,High,"Census Tract 1012, Arlington County, Virginia",tract
+51013102400,4,High,"Census Tract 1024, Arlington County, Virginia",tract
+51013102500,4,High,"Census Tract 1025, Arlington County, Virginia",tract
+51013103300,4,High,"Census Tract 1033, Arlington County, Virginia",tract
+51013102002,4,High,"Census Tract 1020.02, Arlington County, Virginia",tract
+51013102702,4,High,"Census Tract 1027.02, Arlington County, Virginia",tract
+51013103502,4,High,"Census Tract 1035.02, Arlington County, Virginia",tract
+51013103602,4,High,"Census Tract 1036.02, Arlington County, Virginia",tract
+51013102902,4,High,"Census Tract 1029.02, Arlington County, Virginia",tract
+51013100200,5,Very High,"Census Tract 1002, Arlington County, Virginia",tract
+51013103000,5,Very High,"Census Tract 1030, Arlington County, Virginia",tract
+51013100100,5,Very High,"Census Tract 1001, Arlington County, Virginia",tract
+51013100300,5,Very High,"Census Tract 1003, Arlington County, Virginia",tract
+51013101500,5,Very High,"Census Tract 1015, Arlington County, Virginia",tract
+51013101100,5,Very High,"Census Tract 1011, Arlington County, Virginia",tract
+51013100700,5,Very High,"Census Tract 1007, Arlington County, Virginia",tract
+51013100400,5,Very High,"Census Tract 1004, Arlington County, Virginia",tract
+51013100900,5,Very High,"Census Tract 1009, Arlington County, Virginia",tract
+51013101000,5,Very High,"Census Tract 1010, Arlington County, Virginia",tract
+51013101300,5,Very High,"Census Tract 1013, Arlington County, Virginia",tract
+51013100500,5,Very High,"Census Tract 1005, Arlington County, Virginia",tract
+51013100600,5,Very High,"Census Tract 1006, Arlington County, Virginia",tract
+51013101900,5,Very High,"Census Tract 1019, Arlington County, Virginia",tract
+51013103200,5,Very High,"Census Tract 1032, Arlington County, Virginia",tract
+51013103700,5,Very High,"Census Tract 1037, Arlington County, Virginia",tract
+51013103402,5,Very High,"Census Tract 1034.02, Arlington County, Virginia",tract
+51013101601,5,Very High,"Census Tract 1016.01, Arlington County, Virginia",tract
+51013101603,5,Very High,"Census Tract 1016.03, Arlington County, Virginia",tract
+51013101401,5,Very High,"Census Tract 1014.01, Arlington County, Virginia",tract
+51013101404,5,Very High,"Census Tract 1014.04, Arlington County, Virginia",tract
+51013101403,5,Very High,"Census Tract 1014.03, Arlington County, Virginia",tract
+51013101402,5,Very High,"Census Tract 1014.02, Arlington County, Virginia",tract
+51013102301,5,Very High,"Census Tract 1023.01, Arlington County, Virginia",tract
+51013101803,5,Very High,"Census Tract 1018.03, Arlington County, Virginia",tract
+51013101703,5,Very High,"Census Tract 1017.03, Arlington County, Virginia",tract
+51013101702,5,Very High,"Census Tract 1017.02, Arlington County, Virginia",tract
+51013102802,5,Very High,"Census Tract 1028.02, Arlington County, Virginia",tract
+51013103501,5,Very High,"Census Tract 1035.01, Arlington County, Virginia",tract
+51013102901,5,Very High,"Census Tract 1029.01, Arlington County, Virginia",tract
+51013103601,5,Very High,"Census Tract 1036.01, Arlington County, Virginia",tract
+51013101701,5,Very High,"Census Tract 1017.01, Arlington County, Virginia",tract
+51013101802,5,Very High,"Census Tract 1018.02, Arlington County, Virginia",tract
+51013101602,5,Very High,"Census Tract 1016.02, Arlington County, Virginia",tract
+51013101801,5,Very High,"Census Tract 1018.01, Arlington County, Virginia",tract
+51013103503,5,Very High,"Census Tract 1035.03, Arlington County, Virginia",tract
+51015070500,1,Very Low,"Census Tract 705, Augusta County, Virginia",tract
+51015071102,1,Very Low,"Census Tract 711.02, Augusta County, Virginia",tract
+51015070100,1,Very Low,"Census Tract 701, Augusta County, Virginia",tract
+51015070600,2,Low,"Census Tract 706, Augusta County, Virginia",tract
+51015070700,2,Low,"Census Tract 707, Augusta County, Virginia",tract
+51015071101,2,Low,"Census Tract 711.01, Augusta County, Virginia",tract
+51015071200,3,Average,"Census Tract 712, Augusta County, Virginia",tract
+51015070900,3,Average,"Census Tract 709, Augusta County, Virginia",tract
+51015070300,3,Average,"Census Tract 703, Augusta County, Virginia",tract
+51015070400,3,Average,"Census Tract 704, Augusta County, Virginia",tract
+51015070200,3,Average,"Census Tract 702, Augusta County, Virginia",tract
+51015071000,3,Average,"Census Tract 710, Augusta County, Virginia",tract
+51015070800,4,High,"Census Tract 708, Augusta County, Virginia",tract
+51017920100,4,High,"Census Tract 9201, Bath County, Virginia",tract
+51515050100,3,Average,"Census Tract 501, Bedford city, Virginia",tract
+51019030501,1,Very Low,"Census Tract 305.01, Bedford County, Virginia",tract
+51019030603,2,Low,"Census Tract 306.03, Bedford County, Virginia",tract
+51019030604,2,Low,"Census Tract 306.04, Bedford County, Virginia",tract
+51019030402,2,Low,"Census Tract 304.02, Bedford County, Virginia",tract
+51019030601,3,Average,"Census Tract 306.01, Bedford County, Virginia",tract
+51019030401,3,Average,"Census Tract 304.01, Bedford County, Virginia",tract
+51019030202,3,Average,"Census Tract 302.02, Bedford County, Virginia",tract
+51019030605,3,Average,"Census Tract 306.05, Bedford County, Virginia",tract
+51019030300,3,Average,"Census Tract 303, Bedford County, Virginia",tract
+51019030602,3,Average,"Census Tract 306.02, Bedford County, Virginia",tract
+51019030104,3,Average,"Census Tract 301.04, Bedford County, Virginia",tract
+51019030504,3,Average,"Census Tract 305.04, Bedford County, Virginia",tract
+51019030503,3,Average,"Census Tract 305.03, Bedford County, Virginia",tract
+51019030101,4,High,"Census Tract 301.01, Bedford County, Virginia",tract
+51019030201,4,High,"Census Tract 302.01, Bedford County, Virginia",tract
+51019030103,5,Very High,"Census Tract 301.03, Bedford County, Virginia",tract
+51021040100,1,Very Low,"Census Tract 401, Bland County, Virginia",tract
+51021040200,4,High,"Census Tract 402, Bland County, Virginia",tract
+51023040100,3,Average,"Census Tract 401, Botetourt County, Virginia",tract
+51023040200,3,Average,"Census Tract 402, Botetourt County, Virginia",tract
+51023040401,3,Average,"Census Tract 404.01, Botetourt County, Virginia",tract
+51023040402,3,Average,"Census Tract 404.02, Botetourt County, Virginia",tract
+51023040502,3,Average,"Census Tract 405.02, Botetourt County, Virginia",tract
+51023040501,3,Average,"Census Tract 405.01, Botetourt County, Virginia",tract
+51023040302,5,Very High,"Census Tract 403.02, Botetourt County, Virginia",tract
+51023040301,5,Very High,"Census Tract 403.01, Botetourt County, Virginia",tract
+51520020300,1,Very Low,"Census Tract 203, Bristol city, Virginia",tract
+51520020200,2,Low,"Census Tract 202, Bristol city, Virginia",tract
+51520020100,2,Low,"Census Tract 201, Bristol city, Virginia",tract
+51520020400,3,Average,"Census Tract 204, Bristol city, Virginia",tract
+51025930100,1,Very Low,"Census Tract 9301, Brunswick County, Virginia",tract
+51025930203,1,Very Low,"Census Tract 9302.03, Brunswick County, Virginia",tract
+51025930300,2,Low,"Census Tract 9303, Brunswick County, Virginia",tract
+51025930201,2,Low,"Census Tract 9302.01, Brunswick County, Virginia",tract
+51025930202,3,Average,"Census Tract 9302.02, Brunswick County, Virginia",tract
+51027010100,1,Very Low,"Census Tract 101, Buchanan County, Virginia",tract
+51027010500,2,Low,"Census Tract 105, Buchanan County, Virginia",tract
+51027010400,2,Low,"Census Tract 104, Buchanan County, Virginia",tract
+51027010700,2,Low,"Census Tract 107, Buchanan County, Virginia",tract
+51027010200,2,Low,"Census Tract 102, Buchanan County, Virginia",tract
+51027010300,2,Low,"Census Tract 103, Buchanan County, Virginia",tract
+51027010600,3,Average,"Census Tract 106, Buchanan County, Virginia",tract
+51029930202,1,Very Low,"Census Tract 9302.02, Buckingham County, Virginia",tract
+51029930201,1,Very Low,"Census Tract 9302.01, Buckingham County, Virginia",tract
+51029930102,2,Low,"Census Tract 9301.02, Buckingham County, Virginia",tract
+51029930101,2,Low,"Census Tract 9301.01, Buckingham County, Virginia",tract
+51530930600,1,Very Low,"Census Tract 9306, Buena Vista city, Virginia",tract
+51031020900,1,Very Low,"Census Tract 209, Campbell County, Virginia",tract
+51031020401,1,Very Low,"Census Tract 204.01, Campbell County, Virginia",tract
+51031020500,2,Low,"Census Tract 205, Campbell County, Virginia",tract
+51031020800,2,Low,"Census Tract 208, Campbell County, Virginia",tract
+51031020600,2,Low,"Census Tract 206, Campbell County, Virginia",tract
+51031020700,2,Low,"Census Tract 207, Campbell County, Virginia",tract
+51031020102,2,Low,"Census Tract 201.02, Campbell County, Virginia",tract
+51031020402,2,Low,"Census Tract 204.02, Campbell County, Virginia",tract
+51031020300,3,Average,"Census Tract 203, Campbell County, Virginia",tract
+51031020200,3,Average,"Census Tract 202, Campbell County, Virginia",tract
+51031020101,3,Average,"Census Tract 201.01, Campbell County, Virginia",tract
+51031020403,4,High,"Census Tract 204.03, Campbell County, Virginia",tract
+51033030400,1,Very Low,"Census Tract 304, Caroline County, Virginia",tract
+51033030100,2,Low,"Census Tract 301, Caroline County, Virginia",tract
+51033030300,2,Low,"Census Tract 303, Caroline County, Virginia",tract
+51033030500,2,Low,"Census Tract 305, Caroline County, Virginia",tract
+51033030600,2,Low,"Census Tract 306, Caroline County, Virginia",tract
+51033030202,2,Low,"Census Tract 302.02, Caroline County, Virginia",tract
+51033030201,3,Average,"Census Tract 302.01, Caroline County, Virginia",tract
+51035080602,1,Very Low,"Census Tract 806.02, Carroll County, Virginia",tract
+51035080500,2,Low,"Census Tract 805, Carroll County, Virginia",tract
+51035080200,2,Low,"Census Tract 802, Carroll County, Virginia",tract
+51035080400,2,Low,"Census Tract 804, Carroll County, Virginia",tract
+51035080300,2,Low,"Census Tract 803, Carroll County, Virginia",tract
+51035080100,3,Average,"Census Tract 801, Carroll County, Virginia",tract
+51035080601,3,Average,"Census Tract 806.01, Carroll County, Virginia",tract
+51036600200,2,Low,"Census Tract 6002, Charles City County, Virginia",tract
+51036600100,2,Low,"Census Tract 6001, Charles City County, Virginia",tract
+51036600300,3,Average,"Census Tract 6003, Charles City County, Virginia",tract
+51037930100,1,Very Low,"Census Tract 9301, Charlotte County, Virginia",tract
+51037930200,1,Very Low,"Census Tract 9302, Charlotte County, Virginia",tract
+51037930300,1,Very Low,"Census Tract 9303, Charlotte County, Virginia",tract
+51540000600,2,Low,"Census Tract 6, Charlottesville city, Virginia",tract
+51540000501,2,Low,"Census Tract 5.01, Charlottesville city, Virginia",tract
+51540000401,2,Low,"Census Tract 4.01, Charlottesville city, Virginia",tract
+51540000402,2,Low,"Census Tract 4.02, Charlottesville city, Virginia",tract
+51540000201,3,Average,"Census Tract 2.01, Charlottesville city, Virginia",tract
+51540000302,4,High,"Census Tract 3.02, Charlottesville city, Virginia",tract
+51540000900,4,High,"Census Tract 9, Charlottesville city, Virginia",tract
+51540000202,4,High,"Census Tract 2.02, Charlottesville city, Virginia",tract
+51540000502,4,High,"Census Tract 5.02, Charlottesville city, Virginia",tract
+51540000800,4,High,"Census Tract 8, Charlottesville city, Virginia",tract
+51540000700,5,Very High,"Census Tract 7, Charlottesville city, Virginia",tract
+51540001000,5,Very High,"Census Tract 10, Charlottesville city, Virginia",tract
+51550020001,1,Very Low,"Census Tract 200.01, Chesapeake city, Virginia",tract
+51550020002,1,Very Low,"Census Tract 200.02, Chesapeake city, Virginia",tract
+51550020100,1,Very Low,"Census Tract 201, Chesapeake city, Virginia",tract
+51550020200,1,Very Low,"Census Tract 202, Chesapeake city, Virginia",tract
+51550020300,1,Very Low,"Census Tract 203, Chesapeake city, Virginia",tract
+51550020400,1,Very Low,"Census Tract 204, Chesapeake city, Virginia",tract
+51550020700,1,Very Low,"Census Tract 207, Chesapeake city, Virginia",tract
+51550020903,1,Very Low,"Census Tract 209.03, Chesapeake city, Virginia",tract
+51550021403,1,Very Low,"Census Tract 214.03, Chesapeake city, Virginia",tract
+51550020500,1,Very Low,"Census Tract 205, Chesapeake city, Virginia",tract
+51550021301,2,Low,"Census Tract 213.01, Chesapeake city, Virginia",tract
+51550021402,2,Low,"Census Tract 214.02, Chesapeake city, Virginia",tract
+51550021404,2,Low,"Census Tract 214.04, Chesapeake city, Virginia",tract
+51550021501,2,Low,"Census Tract 215.01, Chesapeake city, Virginia",tract
+51550021602,2,Low,"Census Tract 216.02, Chesapeake city, Virginia",tract
+51550020905,2,Low,"Census Tract 209.05, Chesapeake city, Virginia",tract
+51550020906,2,Low,"Census Tract 209.06, Chesapeake city, Virginia",tract
+51550020003,3,Average,"Census Tract 200.03, Chesapeake city, Virginia",tract
+51550020600,3,Average,"Census Tract 206, Chesapeake city, Virginia",tract
+51550021200,3,Average,"Census Tract 212, Chesapeake city, Virginia",tract
+51550021302,3,Average,"Census Tract 213.02, Chesapeake city, Virginia",tract
+51550021401,3,Average,"Census Tract 214.01, Chesapeake city, Virginia",tract
+51550020805,3,Average,"Census Tract 208.05, Chesapeake city, Virginia",tract
+51550020809,3,Average,"Census Tract 208.09, Chesapeake city, Virginia",tract
+51550020807,4,High,"Census Tract 208.07, Chesapeake city, Virginia",tract
+51550020806,4,High,"Census Tract 208.06, Chesapeake city, Virginia",tract
+51550020804,4,High,"Census Tract 208.04, Chesapeake city, Virginia",tract
+51550020904,4,High,"Census Tract 209.04, Chesapeake city, Virginia",tract
+51550021006,4,High,"Census Tract 210.06, Chesapeake city, Virginia",tract
+51550021005,4,High,"Census Tract 210.05, Chesapeake city, Virginia",tract
+51550021004,4,High,"Census Tract 210.04, Chesapeake city, Virginia",tract
+51550021101,4,High,"Census Tract 211.01, Chesapeake city, Virginia",tract
+51550021102,4,High,"Census Tract 211.02, Chesapeake city, Virginia",tract
+51550021502,4,High,"Census Tract 215.02, Chesapeake city, Virginia",tract
+51550021601,4,High,"Census Tract 216.01, Chesapeake city, Virginia",tract
+51550021009,4,High,"Census Tract 210.09, Chesapeake city, Virginia",tract
+51550020808,4,High,"Census Tract 208.08, Chesapeake city, Virginia",tract
+51550021013,4,High,"Census Tract 210.13, Chesapeake city, Virginia",tract
+51550021012,4,High,"Census Tract 210.12, Chesapeake city, Virginia",tract
+51550021010,4,High,"Census Tract 210.10, Chesapeake city, Virginia",tract
+51550021011,4,High,"Census Tract 210.11, Chesapeake city, Virginia",tract
+51041100300,1,Very Low,"Census Tract 1003, Chesterfield County, Virginia",tract
+51041100406,1,Very Low,"Census Tract 1004.06, Chesterfield County, Virginia",tract
+51041100814,1,Very Low,"Census Tract 1008.14, Chesterfield County, Virginia",tract
+51041100107,1,Very Low,"Census Tract 1001.07, Chesterfield County, Virginia",tract
+51041100806,1,Very Low,"Census Tract 1008.06, Chesterfield County, Virginia",tract
+51041100404,1,Very Low,"Census Tract 1004.04, Chesterfield County, Virginia",tract
+51041100210,1,Very Low,"Census Tract 1002.10, Chesterfield County, Virginia",tract
+51041100818,1,Very Low,"Census Tract 1008.18, Chesterfield County, Virginia",tract
+51041100410,1,Very Low,"Census Tract 1004.10, Chesterfield County, Virginia",tract
+51041100407,1,Very Low,"Census Tract 1004.07, Chesterfield County, Virginia",tract
+51041100205,1,Very Low,"Census Tract 1002.05, Chesterfield County, Virginia",tract
+51041100701,1,Very Low,"Census Tract 1007.01, Chesterfield County, Virginia",tract
+51041100506,1,Very Low,"Census Tract 1005.06, Chesterfield County, Virginia",tract
+51041100405,1,Very Low,"Census Tract 1004.05, Chesterfield County, Virginia",tract
+51041100921,2,Low,"Census Tract 1009.21, Chesterfield County, Virginia",tract
+51041100816,2,Low,"Census Tract 1008.16, Chesterfield County, Virginia",tract
+51041100922,2,Low,"Census Tract 1009.22, Chesterfield County, Virginia",tract
+51041100923,2,Low,"Census Tract 1009.23, Chesterfield County, Virginia",tract
+51041100920,2,Low,"Census Tract 1009.20, Chesterfield County, Virginia",tract
+51041100815,2,Low,"Census Tract 1008.15, Chesterfield County, Virginia",tract
+51041100933,2,Low,"Census Tract 1009.33, Chesterfield County, Virginia",tract
+51041100934,2,Low,"Census Tract 1009.34, Chesterfield County, Virginia",tract
+51041100508,2,Low,"Census Tract 1005.08, Chesterfield County, Virginia",tract
+51041100819,2,Low,"Census Tract 1008.19, Chesterfield County, Virginia",tract
+51041100409,2,Low,"Census Tract 1004.09, Chesterfield County, Virginia",tract
+51041100820,2,Low,"Census Tract 1008.20, Chesterfield County, Virginia",tract
+51041100907,2,Low,"Census Tract 1009.07, Chesterfield County, Virginia",tract
+51041100702,2,Low,"Census Tract 1007.02, Chesterfield County, Virginia",tract
+51041100600,2,Low,"Census Tract 1006, Chesterfield County, Virginia",tract
+51041100817,2,Low,"Census Tract 1008.17, Chesterfield County, Virginia",tract
+51041100919,2,Low,"Census Tract 1009.19, Chesterfield County, Virginia",tract
+51041100915,3,Average,"Census Tract 1009.15, Chesterfield County, Virginia",tract
+51041100505,3,Average,"Census Tract 1005.05, Chesterfield County, Virginia",tract
+51041101012,3,Average,"Census Tract 1010.12, Chesterfield County, Virginia",tract
+51041100510,3,Average,"Census Tract 1005.10, Chesterfield County, Virginia",tract
+51041101013,3,Average,"Census Tract 1010.13, Chesterfield County, Virginia",tract
+51041100507,3,Average,"Census Tract 1005.07, Chesterfield County, Virginia",tract
+51041100910,3,Average,"Census Tract 1009.10, Chesterfield County, Virginia",tract
+51041100804,3,Average,"Census Tract 1008.04, Chesterfield County, Virginia",tract
+51041100805,3,Average,"Census Tract 1008.05, Chesterfield County, Virginia",tract
+51041100807,3,Average,"Census Tract 1008.07, Chesterfield County, Virginia",tract
+51041100206,3,Average,"Census Tract 1002.06, Chesterfield County, Virginia",tract
+51041100812,4,High,"Census Tract 1008.12, Chesterfield County, Virginia",tract
+51041100932,4,High,"Census Tract 1009.32, Chesterfield County, Virginia",tract
+51041100209,4,High,"Census Tract 1002.09, Chesterfield County, Virginia",tract
+51041100509,4,High,"Census Tract 1005.09, Chesterfield County, Virginia",tract
+51041100821,4,High,"Census Tract 1008.21, Chesterfield County, Virginia",tract
+51041101011,4,High,"Census Tract 1010.11, Chesterfield County, Virginia",tract
+51041100823,4,High,"Census Tract 1008.23, Chesterfield County, Virginia",tract
+51041101009,4,High,"Census Tract 1010.09, Chesterfield County, Virginia",tract
+51041100928,4,High,"Census Tract 1009.28, Chesterfield County, Virginia",tract
+51041100927,4,High,"Census Tract 1009.27, Chesterfield County, Virginia",tract
+51041100403,4,High,"Census Tract 1004.03, Chesterfield County, Virginia",tract
+51041100703,4,High,"Census Tract 1007.03, Chesterfield County, Virginia",tract
+51041101004,5,Very High,"Census Tract 1010.04, Chesterfield County, Virginia",tract
+51041100926,5,Very High,"Census Tract 1009.26, Chesterfield County, Virginia",tract
+51041101008,5,Very High,"Census Tract 1010.08, Chesterfield County, Virginia",tract
+51041100931,5,Very High,"Census Tract 1009.31, Chesterfield County, Virginia",tract
+51041100930,5,Very High,"Census Tract 1009.30, Chesterfield County, Virginia",tract
+51041100924,5,Very High,"Census Tract 1009.24, Chesterfield County, Virginia",tract
+51041100822,5,Very High,"Census Tract 1008.22, Chesterfield County, Virginia",tract
+51041101010,5,Very High,"Census Tract 1010.10, Chesterfield County, Virginia",tract
+51041100936,5,Very High,"Census Tract 1009.36, Chesterfield County, Virginia",tract
+51041100935,5,Very High,"Census Tract 1009.35, Chesterfield County, Virginia",tract
+51041100912,5,Very High,"Census Tract 1009.12, Chesterfield County, Virginia",tract
+51041101003,5,Very High,"Census Tract 1010.03, Chesterfield County, Virginia",tract
+51041100929,5,Very High,"Census Tract 1009.29, Chesterfield County, Virginia",tract
+51041100208,5,Very High,"Census Tract 1002.08, Chesterfield County, Virginia",tract
+51041101007,5,Very High,"Census Tract 1010.07, Chesterfield County, Virginia",tract
+51041100106,5,Very High,"Census Tract 1001.06, Chesterfield County, Virginia",tract
+51041100902,5,Very High,"Census Tract 1009.02, Chesterfield County, Virginia",tract
+51043010200,3,Average,"Census Tract 102, Clarke County, Virginia",tract
+51043010100,4,High,"Census Tract 101, Clarke County, Virginia",tract
+51043010300,4,High,"Census Tract 103, Clarke County, Virginia",tract
+51570830200,1,Very Low,"Census Tract 8302, Colonial Heights city, Virginia",tract
+51570830400,1,Very Low,"Census Tract 8304, Colonial Heights city, Virginia",tract
+51570830500,2,Low,"Census Tract 8305, Colonial Heights city, Virginia",tract
+51570830100,4,High,"Census Tract 8301, Colonial Heights city, Virginia",tract
+51570830300,4,High,"Census Tract 8303, Colonial Heights city, Virginia",tract
+51580060100,1,Very Low,"Census Tract 601, Covington city, Virginia",tract
+51580060200,3,Average,"Census Tract 602, Covington city, Virginia",tract
+51045050100,3,Average,"Census Tract 501, Craig County, Virginia",tract
+51047930300,1,Very Low,"Census Tract 9303, Culpeper County, Virginia",tract
+51047930400,1,Very Low,"Census Tract 9304, Culpeper County, Virginia",tract
+51047930502,1,Very Low,"Census Tract 9305.02, Culpeper County, Virginia",tract
+51047930101,1,Very Low,"Census Tract 9301.01, Culpeper County, Virginia",tract
+51047930501,2,Low,"Census Tract 9305.01, Culpeper County, Virginia",tract
+51047930202,3,Average,"Census Tract 9302.02, Culpeper County, Virginia",tract
+51047930201,3,Average,"Census Tract 9302.01, Culpeper County, Virginia",tract
+51047930102,4,High,"Census Tract 9301.02, Culpeper County, Virginia",tract
+51049930200,1,Very Low,"Census Tract 9302, Cumberland County, Virginia",tract
+51049930100,1,Very Low,"Census Tract 9301, Cumberland County, Virginia",tract
+51590000200,1,Very Low,"Census Tract 2, Danville city, Virginia",tract
+51590000300,1,Very Low,"Census Tract 3, Danville city, Virginia",tract
+51590000400,1,Very Low,"Census Tract 4, Danville city, Virginia",tract
+51590000600,1,Very Low,"Census Tract 6, Danville city, Virginia",tract
+51590000900,1,Very Low,"Census Tract 9, Danville city, Virginia",tract
+51590001000,1,Very Low,"Census Tract 10, Danville city, Virginia",tract
+51590001100,1,Very Low,"Census Tract 11, Danville city, Virginia",tract
+51590001200,1,Very Low,"Census Tract 12, Danville city, Virginia",tract
+51590001400,1,Very Low,"Census Tract 14, Danville city, Virginia",tract
+51590001301,1,Very Low,"Census Tract 13.01, Danville city, Virginia",tract
+51590001302,1,Very Low,"Census Tract 13.02, Danville city, Virginia",tract
+51590000100,2,Low,"Census Tract 1, Danville city, Virginia",tract
+51590980100,2,Low,"Census Tract 9801, Danville city, Virginia",tract
+51590000800,3,Average,"Census Tract 8, Danville city, Virginia",tract
+51590000500,4,High,"Census Tract 5, Danville city, Virginia",tract
+51590000700,4,High,"Census Tract 7, Danville city, Virginia",tract
+51051040100,2,Low,"Census Tract 401, Dickenson County, Virginia",tract
+51051040300,2,Low,"Census Tract 403, Dickenson County, Virginia",tract
+51051040400,3,Average,"Census Tract 404, Dickenson County, Virginia",tract
+51051040200,3,Average,"Census Tract 402, Dickenson County, Virginia",tract
+51053840300,1,Very Low,"Census Tract 8403, Dinwiddie County, Virginia",tract
+51053840100,1,Very Low,"Census Tract 8401, Dinwiddie County, Virginia",tract
+51053840600,2,Low,"Census Tract 8406, Dinwiddie County, Virginia",tract
+51053840400,2,Low,"Census Tract 8404, Dinwiddie County, Virginia",tract
+51053840500,2,Low,"Census Tract 8405, Dinwiddie County, Virginia",tract
+51053840200,3,Average,"Census Tract 8402, Dinwiddie County, Virginia",tract
+51595890100,1,Very Low,"Census Tract 8901, Emporia city, Virginia",tract
+51595890200,2,Low,"Census Tract 8902, Emporia city, Virginia",tract
+51057950700,1,Very Low,"Census Tract 9507, Essex County, Virginia",tract
+51057950800,2,Low,"Census Tract 9508, Essex County, Virginia",tract
+51057950600,3,Average,"Census Tract 9506, Essex County, Virginia",tract
+51600300400,4,High,"Census Tract 3004, Fairfax city, Virginia",tract
+51600300100,4,High,"Census Tract 3001, Fairfax city, Virginia",tract
+51600300200,5,Very High,"Census Tract 3002, Fairfax city, Virginia",tract
+51600300500,5,Very High,"Census Tract 3005, Fairfax city, Virginia",tract
+51600300300,5,Very High,"Census Tract 3003, Fairfax city, Virginia",tract
+51059980100,1,Very Low,"Census Tract 9801, Fairfax County, Virginia",tract
+51059451601,1,Very Low,"Census Tract 4516.01, Fairfax County, Virginia",tract
+51059421400,1,Very Low,"Census Tract 4214, Fairfax County, Virginia",tract
+51059421900,1,Very Low,"Census Tract 4219, Fairfax County, Virginia",tract
+51059980300,1,Very Low,"Census Tract 9803, Fairfax County, Virginia",tract
+51059421600,1,Very Low,"Census Tract 4216, Fairfax County, Virginia",tract
+51059430600,1,Very Low,"Census Tract 4306, Fairfax County, Virginia",tract
+51059451400,1,Very Low,"Census Tract 4514, Fairfax County, Virginia",tract
+51059416200,1,Very Low,"Census Tract 4162, Fairfax County, Virginia",tract
+51059452301,1,Very Low,"Census Tract 4523.01, Fairfax County, Virginia",tract
+51059450702,2,Low,"Census Tract 4507.02, Fairfax County, Virginia",tract
+51059452302,2,Low,"Census Tract 4523.02, Fairfax County, Virginia",tract
+51059451501,2,Low,"Census Tract 4515.01, Fairfax County, Virginia",tract
+51059450200,2,Low,"Census Tract 4502, Fairfax County, Virginia",tract
+51059421701,2,Low,"Census Tract 4217.01, Fairfax County, Virginia",tract
+51059452200,2,Low,"Census Tract 4522, Fairfax County, Virginia",tract
+51059421500,2,Low,"Census Tract 4215, Fairfax County, Virginia",tract
+51059421800,2,Low,"Census Tract 4218, Fairfax County, Virginia",tract
+51059452700,2,Low,"Census Tract 4527, Fairfax County, Virginia",tract
+51059415401,2,Low,"Census Tract 4154.01, Fairfax County, Virginia",tract
+51059452502,2,Low,"Census Tract 4525.02, Fairfax County, Virginia",tract
+51059461902,2,Low,"Census Tract 4619.02, Fairfax County, Virginia",tract
+51059480902,2,Low,"Census Tract 4809.02, Fairfax County, Virginia",tract
+51059482302,2,Low,"Census Tract 4823.02, Fairfax County, Virginia",tract
+51059450602,3,Average,"Census Tract 4506.02, Fairfax County, Virginia",tract
+51059451502,3,Average,"Census Tract 4515.02, Fairfax County, Virginia",tract
+51059452102,3,Average,"Census Tract 4521.02, Fairfax County, Virginia",tract
+51059415300,3,Average,"Census Tract 4153, Fairfax County, Virginia",tract
+51059420600,3,Average,"Census Tract 4206, Fairfax County, Virginia",tract
+51059450300,3,Average,"Census Tract 4503, Fairfax County, Virginia",tract
+51059421702,3,Average,"Census Tract 4217.02, Fairfax County, Virginia",tract
+51059421002,3,Average,"Census Tract 4210.02, Fairfax County, Virginia",tract
+51059422101,3,Average,"Census Tract 4221.01, Fairfax County, Virginia",tract
+51059492300,3,Average,"Census Tract 4923, Fairfax County, Virginia",tract
+51059481000,3,Average,"Census Tract 4810, Fairfax County, Virginia",tract
+51059420100,3,Average,"Census Tract 4201, Fairfax County, Virginia",tract
+51059491601,3,Average,"Census Tract 4916.01, Fairfax County, Virginia",tract
+51059491303,3,Average,"Census Tract 4913.03, Fairfax County, Virginia",tract
+51059491202,3,Average,"Census Tract 4912.02, Fairfax County, Virginia",tract
+51059482201,3,Average,"Census Tract 4822.01, Fairfax County, Virginia",tract
+51059491701,3,Average,"Census Tract 4917.01, Fairfax County, Virginia",tract
+51059491702,3,Average,"Census Tract 4917.02, Fairfax County, Virginia",tract
+51059491703,3,Average,"Census Tract 4917.03, Fairfax County, Virginia",tract
+51059460701,3,Average,"Census Tract 4607.01, Fairfax County, Virginia",tract
+51059490501,3,Average,"Census Tract 4905.01, Fairfax County, Virginia",tract
+51059471402,3,Average,"Census Tract 4714.02, Fairfax County, Virginia",tract
+51059471301,3,Average,"Census Tract 4713.01, Fairfax County, Virginia",tract
+51059480903,3,Average,"Census Tract 4809.03, Fairfax County, Virginia",tract
+51059481202,3,Average,"Census Tract 4812.02, Fairfax County, Virginia",tract
+51059431002,4,High,"Census Tract 4310.02, Fairfax County, Virginia",tract
+51059440202,4,High,"Census Tract 4402.02, Fairfax County, Virginia",tract
+51059440201,4,High,"Census Tract 4402.01, Fairfax County, Virginia",tract
+51059450701,4,High,"Census Tract 4507.01, Fairfax County, Virginia",tract
+51059452801,4,High,"Census Tract 4528.01, Fairfax County, Virginia",tract
+51059451900,4,High,"Census Tract 4519, Fairfax County, Virginia",tract
+51059420400,4,High,"Census Tract 4204, Fairfax County, Virginia",tract
+51059416000,4,High,"Census Tract 4160, Fairfax County, Virginia",tract
+51059440600,4,High,"Census Tract 4406, Fairfax County, Virginia",tract
+51059450100,4,High,"Census Tract 4501, Fairfax County, Virginia",tract
+51059420800,4,High,"Census Tract 4208, Fairfax County, Virginia",tract
+51059431400,4,High,"Census Tract 4314, Fairfax County, Virginia",tract
+51059432702,4,High,"Census Tract 4327.02, Fairfax County, Virginia",tract
+51059420503,4,High,"Census Tract 4205.03, Fairfax County, Virginia",tract
+51059421001,4,High,"Census Tract 4210.01, Fairfax County, Virginia",tract
+51059422402,4,High,"Census Tract 4224.02, Fairfax County, Virginia",tract
+51059422401,4,High,"Census Tract 4224.01, Fairfax County, Virginia",tract
+51059431801,4,High,"Census Tract 4318.01, Fairfax County, Virginia",tract
+51059481103,4,High,"Census Tract 4811.03, Fairfax County, Virginia",tract
+51059432202,4,High,"Census Tract 4322.02, Fairfax County, Virginia",tract
+51059452501,4,High,"Census Tract 4525.01, Fairfax County, Virginia",tract
+51059492400,4,High,"Census Tract 4924, Fairfax County, Virginia",tract
+51059440800,4,High,"Census Tract 4408, Fairfax County, Virginia",tract
+51059430400,4,High,"Census Tract 4304, Fairfax County, Virginia",tract
+51059430500,4,High,"Census Tract 4305, Fairfax County, Virginia",tract
+51059452400,4,High,"Census Tract 4524, Fairfax County, Virginia",tract
+51059471100,4,High,"Census Tract 4711, Fairfax County, Virginia",tract
+51059482100,4,High,"Census Tract 4821, Fairfax County, Virginia",tract
+51059431600,4,High,"Census Tract 4316, Fairfax County, Virginia",tract
+51059422000,4,High,"Census Tract 4220, Fairfax County, Virginia",tract
+51059420300,4,High,"Census Tract 4203, Fairfax County, Virginia",tract
+51059430700,4,High,"Census Tract 4307, Fairfax County, Virginia",tract
+51059450800,4,High,"Census Tract 4508, Fairfax County, Virginia",tract
+51059452000,4,High,"Census Tract 4520, Fairfax County, Virginia",tract
+51059450500,4,High,"Census Tract 4505, Fairfax County, Virginia",tract
+51059452600,4,High,"Census Tract 4526, Fairfax County, Virginia",tract
+51059491201,4,High,"Census Tract 4912.01, Fairfax County, Virginia",tract
+51059491102,4,High,"Census Tract 4911.02, Fairfax County, Virginia",tract
+51059491301,4,High,"Census Tract 4913.01, Fairfax County, Virginia",tract
+51059491402,4,High,"Census Tract 4914.02, Fairfax County, Virginia",tract
+51059491401,4,High,"Census Tract 4914.01, Fairfax County, Virginia",tract
+51059420202,4,High,"Census Tract 4202.02, Fairfax County, Virginia",tract
+51059491302,4,High,"Census Tract 4913.02, Fairfax County, Virginia",tract
+51059430901,4,High,"Census Tract 4309.01, Fairfax County, Virginia",tract
+51059480203,4,High,"Census Tract 4802.03, Fairfax County, Virginia",tract
+51059471401,4,High,"Census Tract 4714.01, Fairfax County, Virginia",tract
+51059432201,4,High,"Census Tract 4322.01, Fairfax County, Virginia",tract
+51059422102,4,High,"Census Tract 4221.02, Fairfax County, Virginia",tract
+51059422202,4,High,"Census Tract 4222.02, Fairfax County, Virginia",tract
+51059481101,4,High,"Census Tract 4811.01, Fairfax County, Virginia",tract
+51059451602,4,High,"Census Tract 4516.02, Fairfax County, Virginia",tract
+51059452802,4,High,"Census Tract 4528.02, Fairfax County, Virginia",tract
+51059461602,4,High,"Census Tract 4616.02, Fairfax County, Virginia",tract
+51059461901,4,High,"Census Tract 4619.01, Fairfax County, Virginia",tract
+51059420502,4,High,"Census Tract 4205.02, Fairfax County, Virginia",tract
+51059471202,4,High,"Census Tract 4712.02, Fairfax County, Virginia",tract
+51059471201,4,High,"Census Tract 4712.01, Fairfax County, Virginia",tract
+51059480505,4,High,"Census Tract 4805.05, Fairfax County, Virginia",tract
+51059480802,4,High,"Census Tract 4808.02, Fairfax County, Virginia",tract
+51059480801,4,High,"Census Tract 4808.01, Fairfax County, Virginia",tract
+51059482202,4,High,"Census Tract 4822.02, Fairfax County, Virginia",tract
+51059480901,4,High,"Census Tract 4809.01, Fairfax County, Virginia",tract
+51059491801,4,High,"Census Tract 4918.01, Fairfax County, Virginia",tract
+51059491704,4,High,"Census Tract 4917.04, Fairfax County, Virginia",tract
+51059491602,4,High,"Census Tract 4916.02, Fairfax County, Virginia",tract
+51059490103,4,High,"Census Tract 4901.03, Fairfax County, Virginia",tract
+51059490502,5,Very High,"Census Tract 4905.02, Fairfax County, Virginia",tract
+51059450601,5,Very High,"Census Tract 4506.01, Fairfax County, Virginia",tract
+51059415900,5,Very High,"Census Tract 4159, Fairfax County, Virginia",tract
+51059416100,5,Very High,"Census Tract 4161, Fairfax County, Virginia",tract
+51059432600,5,Very High,"Census Tract 4326, Fairfax County, Virginia",tract
+51059461500,5,Very High,"Census Tract 4615, Fairfax County, Virginia",tract
+51059460600,5,Very High,"Census Tract 4606, Fairfax County, Virginia",tract
+51059421200,5,Very High,"Census Tract 4212, Fairfax County, Virginia",tract
+51059492000,5,Very High,"Census Tract 4920, Fairfax County, Virginia",tract
+51059492100,5,Very High,"Census Tract 4921, Fairfax County, Virginia",tract
+51059431300,5,Very High,"Census Tract 4313, Fairfax County, Virginia",tract
+51059432300,5,Very High,"Census Tract 4323, Fairfax County, Virginia",tract
+51059432500,5,Very High,"Census Tract 4325, Fairfax County, Virginia",tract
+51059431500,5,Very High,"Census Tract 4315, Fairfax County, Virginia",tract
+51059491000,5,Very High,"Census Tract 4910, Fairfax County, Virginia",tract
+51059415402,5,Very High,"Census Tract 4154.02, Fairfax County, Virginia",tract
+51059432701,5,Very High,"Census Tract 4327.01, Fairfax County, Virginia",tract
+51059420203,5,Very High,"Census Tract 4202.03, Fairfax County, Virginia",tract
+51059481701,5,Very High,"Census Tract 4817.01, Fairfax County, Virginia",tract
+51059481702,5,Very High,"Census Tract 4817.02, Fairfax County, Virginia",tract
+51059482602,5,Very High,"Census Tract 4826.02, Fairfax County, Virginia",tract
+51059482504,5,Very High,"Census Tract 4825.04, Fairfax County, Virginia",tract
+51059481106,5,Very High,"Census Tract 4811.06, Fairfax County, Virginia",tract
+51059422301,5,Very High,"Census Tract 4223.01, Fairfax County, Virginia",tract
+51059422302,5,Very High,"Census Tract 4223.02, Fairfax County, Virginia",tract
+51059421103,5,Very High,"Census Tract 4211.03, Fairfax County, Virginia",tract
+51059440502,5,Very High,"Census Tract 4405.02, Fairfax County, Virginia",tract
+51059431802,5,Very High,"Census Tract 4318.02, Fairfax County, Virginia",tract
+51059430201,5,Very High,"Census Tract 4302.01, Fairfax County, Virginia",tract
+51059492202,5,Very High,"Census Tract 4922.02, Fairfax County, Virginia",tract
+51059481104,5,Very High,"Census Tract 4811.04, Fairfax County, Virginia",tract
+51059430202,5,Very High,"Census Tract 4302.02, Fairfax County, Virginia",tract
+51059440501,5,Very High,"Census Tract 4405.01, Fairfax County, Virginia",tract
+51059440701,5,Very High,"Census Tract 4407.01, Fairfax County, Virginia",tract
+51059440702,5,Very High,"Census Tract 4407.02, Fairfax County, Virginia",tract
+51059430802,5,Very High,"Census Tract 4308.02, Fairfax County, Virginia",tract
+51059452101,5,Very High,"Census Tract 4521.01, Fairfax County, Virginia",tract
+51059431001,5,Very High,"Census Tract 4310.01, Fairfax County, Virginia",tract
+51059430101,5,Very High,"Census Tract 4301.01, Fairfax County, Virginia",tract
+51059430902,5,Very High,"Census Tract 4309.02, Fairfax County, Virginia",tract
+51059432402,5,Very High,"Census Tract 4324.02, Fairfax County, Virginia",tract
+51059415100,5,Very High,"Census Tract 4151, Fairfax County, Virginia",tract
+51059415200,5,Very High,"Census Tract 4152, Fairfax County, Virginia",tract
+51059415500,5,Very High,"Census Tract 4155, Fairfax County, Virginia",tract
+51059415600,5,Very High,"Census Tract 4156, Fairfax County, Virginia",tract
+51059416300,5,Very High,"Census Tract 4163, Fairfax County, Virginia",tract
+51059415700,5,Very High,"Census Tract 4157, Fairfax County, Virginia",tract
+51059415800,5,Very High,"Census Tract 4158, Fairfax County, Virginia",tract
+51059431900,5,Very High,"Census Tract 4319, Fairfax County, Virginia",tract
+51059432000,5,Very High,"Census Tract 4320, Fairfax County, Virginia",tract
+51059432100,5,Very High,"Census Tract 4321, Fairfax County, Virginia",tract
+51059480100,5,Very High,"Census Tract 4801, Fairfax County, Virginia",tract
+51059480300,5,Very High,"Census Tract 4803, Fairfax County, Virginia",tract
+51059471000,5,Very High,"Census Tract 4710, Fairfax County, Virginia",tract
+51059470100,5,Very High,"Census Tract 4701, Fairfax County, Virginia",tract
+51059470300,5,Very High,"Census Tract 4703, Fairfax County, Virginia",tract
+51059470400,5,Very High,"Census Tract 4704, Fairfax County, Virginia",tract
+51059470500,5,Very High,"Census Tract 4705, Fairfax County, Virginia",tract
+51059470600,5,Very High,"Census Tract 4706, Fairfax County, Virginia",tract
+51059470700,5,Very High,"Census Tract 4707, Fairfax County, Virginia",tract
+51059461700,5,Very High,"Census Tract 4617, Fairfax County, Virginia",tract
+51059470800,5,Very High,"Census Tract 4708, Fairfax County, Virginia",tract
+51059470900,5,Very High,"Census Tract 4709, Fairfax County, Virginia",tract
+51059460100,5,Very High,"Census Tract 4601, Fairfax County, Virginia",tract
+51059460900,5,Very High,"Census Tract 4609, Fairfax County, Virginia",tract
+51059461000,5,Very High,"Census Tract 4610, Fairfax County, Virginia",tract
+51059481600,5,Very High,"Census Tract 4816, Fairfax County, Virginia",tract
+51059460200,5,Very High,"Census Tract 4602, Fairfax County, Virginia",tract
+51059481400,5,Very High,"Census Tract 4814, Fairfax County, Virginia",tract
+51059481500,5,Very High,"Census Tract 4815, Fairfax County, Virginia",tract
+51059481900,5,Very High,"Census Tract 4819, Fairfax County, Virginia",tract
+51059482400,5,Very High,"Census Tract 4824, Fairfax County, Virginia",tract
+51059460400,5,Very High,"Census Tract 4604, Fairfax County, Virginia",tract
+51059460300,5,Very High,"Census Tract 4603, Fairfax County, Virginia",tract
+51059460800,5,Very High,"Census Tract 4608, Fairfax County, Virginia",tract
+51059421300,5,Very High,"Census Tract 4213, Fairfax County, Virginia",tract
+51059432800,5,Very High,"Census Tract 4328, Fairfax County, Virginia",tract
+51059420700,5,Very High,"Census Tract 4207, Fairfax County, Virginia",tract
+51059440300,5,Very High,"Census Tract 4403, Fairfax County, Virginia",tract
+51059451000,5,Very High,"Census Tract 4510, Fairfax County, Virginia",tract
+51059450400,5,Very High,"Census Tract 4504, Fairfax County, Virginia",tract
+51059450900,5,Very High,"Census Tract 4509, Fairfax County, Virginia",tract
+51059451100,5,Very High,"Census Tract 4511, Fairfax County, Virginia",tract
+51059451200,5,Very High,"Census Tract 4512, Fairfax County, Virginia",tract
+51059451300,5,Very High,"Census Tract 4513, Fairfax County, Virginia",tract
+51059451800,5,Very High,"Census Tract 4518, Fairfax County, Virginia",tract
+51059491502,5,Very High,"Census Tract 4915.02, Fairfax County, Virginia",tract
+51059490101,5,Very High,"Census Tract 4901.01, Fairfax County, Virginia",tract
+51059491101,5,Very High,"Census Tract 4911.01, Fairfax County, Virginia",tract
+51059491403,5,Very High,"Census Tract 4914.03, Fairfax County, Virginia",tract
+51059491103,5,Very High,"Census Tract 4911.03, Fairfax County, Virginia",tract
+51059422201,5,Very High,"Census Tract 4222.01, Fairfax County, Virginia",tract
+51059481102,5,Very High,"Census Tract 4811.02, Fairfax County, Virginia",tract
+51059420501,5,Very High,"Census Tract 4205.01, Fairfax County, Virginia",tract
+51059421101,5,Very High,"Census Tract 4211.01, Fairfax County, Virginia",tract
+51059480504,5,Very High,"Census Tract 4805.04, Fairfax County, Virginia",tract
+51059430801,5,Very High,"Census Tract 4308.01, Fairfax County, Virginia",tract
+51059421102,5,Very High,"Census Tract 4211.02, Fairfax County, Virginia",tract
+51059430102,5,Very High,"Census Tract 4301.02, Fairfax County, Virginia",tract
+51059491404,5,Very High,"Census Tract 4914.04, Fairfax County, Virginia",tract
+51059491405,5,Very High,"Census Tract 4914.05, Fairfax County, Virginia",tract
+51059432401,5,Very High,"Census Tract 4324.01, Fairfax County, Virginia",tract
+51059492203,5,Very High,"Census Tract 4922.03, Fairfax County, Virginia",tract
+51059481201,5,Very High,"Census Tract 4812.01, Fairfax County, Virginia",tract
+51059482502,5,Very High,"Census Tract 4825.02, Fairfax County, Virginia",tract
+51059440100,5,Very High,"Census Tract 4401, Fairfax County, Virginia",tract
+51059461100,5,Very High,"Census Tract 4611, Fairfax County, Virginia",tract
+51059420201,5,Very High,"Census Tract 4202.01, Fairfax County, Virginia",tract
+51059482501,5,Very High,"Census Tract 4825.01, Fairfax County, Virginia",tract
+51059481105,5,Very High,"Census Tract 4811.05, Fairfax County, Virginia",tract
+51059492500,5,Very High,"Census Tract 4925, Fairfax County, Virginia",tract
+51059461202,5,Very High,"Census Tract 4612.02, Fairfax County, Virginia",tract
+51059482301,5,Very High,"Census Tract 4823.01, Fairfax County, Virginia",tract
+51059492201,5,Very High,"Census Tract 4922.01, Fairfax County, Virginia",tract
+51059482303,5,Very High,"Census Tract 4823.03, Fairfax County, Virginia",tract
+51059461201,5,Very High,"Census Tract 4612.01, Fairfax County, Virginia",tract
+51059461802,5,Very High,"Census Tract 4618.02, Fairfax County, Virginia",tract
+51059460502,5,Very High,"Census Tract 4605.02, Fairfax County, Virginia",tract
+51059460501,5,Very High,"Census Tract 4605.01, Fairfax County, Virginia",tract
+51059480202,5,Very High,"Census Tract 4802.02, Fairfax County, Virginia",tract
+51059491803,5,Very High,"Census Tract 4918.03, Fairfax County, Virginia",tract
+51059482601,5,Very High,"Census Tract 4826.01, Fairfax County, Virginia",tract
+51059461601,5,Very High,"Census Tract 4616.01, Fairfax County, Virginia",tract
+51059460702,5,Very High,"Census Tract 4607.02, Fairfax County, Virginia",tract
+51059461801,5,Very High,"Census Tract 4618.01, Fairfax County, Virginia",tract
+51059491705,5,Very High,"Census Tract 4917.05, Fairfax County, Virginia",tract
+51059471304,5,Very High,"Census Tract 4713.04, Fairfax County, Virginia",tract
+51059480201,5,Very High,"Census Tract 4802.01, Fairfax County, Virginia",tract
+51059471303,5,Very High,"Census Tract 4713.03, Fairfax County, Virginia",tract
+51059480401,5,Very High,"Census Tract 4804.01, Fairfax County, Virginia",tract
+51059480402,5,Very High,"Census Tract 4804.02, Fairfax County, Virginia",tract
+51059480502,5,Very High,"Census Tract 4805.02, Fairfax County, Virginia",tract
+51059482001,5,Very High,"Census Tract 4820.01, Fairfax County, Virginia",tract
+51059480501,5,Very High,"Census Tract 4805.01, Fairfax County, Virginia",tract
+51059480503,5,Very High,"Census Tract 4805.03, Fairfax County, Virginia",tract
+51059482203,5,Very High,"Census Tract 4822.03, Fairfax County, Virginia",tract
+51059482002,5,Very High,"Census Tract 4820.02, Fairfax County, Virginia",tract
+51059422403,5,Very High,"Census Tract 4224.03, Fairfax County, Virginia",tract
+51059430203,5,Very High,"Census Tract 4302.03, Fairfax County, Virginia",tract
+51059491501,5,Very High,"Census Tract 4915.01, Fairfax County, Virginia",tract
+51059482503,5,Very High,"Census Tract 4825.03, Fairfax County, Virginia",tract
+51059491802,5,Very High,"Census Tract 4918.02, Fairfax County, Virginia",tract
+51610500300,5,Very High,"Census Tract 5003, Falls Church city, Virginia",tract
+51610500100,5,Very High,"Census Tract 5001, Falls Church city, Virginia",tract
+51610500200,5,Very High,"Census Tract 5002, Falls Church city, Virginia",tract
+51061930706,2,Low,"Census Tract 9307.06, Fauquier County, Virginia",tract
+51061930707,2,Low,"Census Tract 9307.07, Fauquier County, Virginia",tract
+51061930402,3,Average,"Census Tract 9304.02, Fauquier County, Virginia",tract
+51061930207,3,Average,"Census Tract 9302.07, Fauquier County, Virginia",tract
+51061930206,3,Average,"Census Tract 9302.06, Fauquier County, Virginia",tract
+51061930704,3,Average,"Census Tract 9307.04, Fauquier County, Virginia",tract
+51061930703,3,Average,"Census Tract 9307.03, Fauquier County, Virginia",tract
+51061930205,3,Average,"Census Tract 9302.05, Fauquier County, Virginia",tract
+51061930100,4,High,"Census Tract 9301, Fauquier County, Virginia",tract
+51061930403,4,High,"Census Tract 9304.03, Fauquier County, Virginia",tract
+51061930302,4,High,"Census Tract 9303.02, Fauquier County, Virginia",tract
+51061930204,4,High,"Census Tract 9302.04, Fauquier County, Virginia",tract
+51061930705,4,High,"Census Tract 9307.05, Fauquier County, Virginia",tract
+51061930303,4,High,"Census Tract 9303.03, Fauquier County, Virginia",tract
+51061930401,5,Very High,"Census Tract 9304.01, Fauquier County, Virginia",tract
+51061930203,5,Very High,"Census Tract 9302.03, Fauquier County, Virginia",tract
+51061930304,5,Very High,"Census Tract 9303.04, Fauquier County, Virginia",tract
+51063920200,2,Low,"Census Tract 9202, Floyd County, Virginia",tract
+51063920101,2,Low,"Census Tract 9201.01, Floyd County, Virginia",tract
+51063920102,3,Average,"Census Tract 9201.02, Floyd County, Virginia",tract
+51065020200,3,Average,"Census Tract 202, Fluvanna County, Virginia",tract
+51065020300,3,Average,"Census Tract 203, Fluvanna County, Virginia",tract
+51065020102,4,High,"Census Tract 201.02, Fluvanna County, Virginia",tract
+51065020101,4,High,"Census Tract 201.01, Fluvanna County, Virginia",tract
+51620090200,1,Very Low,"Census Tract 902, Franklin city, Virginia",tract
+51620090100,2,Low,"Census Tract 901, Franklin city, Virginia",tract
+51067020600,1,Very Low,"Census Tract 206, Franklin County, Virginia",tract
+51067020800,1,Very Low,"Census Tract 208, Franklin County, Virginia",tract
+51067020200,1,Very Low,"Census Tract 202, Franklin County, Virginia",tract
+51067020900,1,Very Low,"Census Tract 209, Franklin County, Virginia",tract
+51067020700,2,Low,"Census Tract 207, Franklin County, Virginia",tract
+51067020500,3,Average,"Census Tract 205, Franklin County, Virginia",tract
+51067020300,3,Average,"Census Tract 203, Franklin County, Virginia",tract
+51067020400,3,Average,"Census Tract 204, Franklin County, Virginia",tract
+51067020102,4,High,"Census Tract 201.02, Franklin County, Virginia",tract
+51067020101,5,Very High,"Census Tract 201.01, Franklin County, Virginia",tract
+51069050900,1,Very Low,"Census Tract 509, Frederick County, Virginia",tract
+51069050700,2,Low,"Census Tract 507, Frederick County, Virginia",tract
+51069051102,2,Low,"Census Tract 511.02, Frederick County, Virginia",tract
+51069050801,2,Low,"Census Tract 508.01, Frederick County, Virginia",tract
+51069050400,3,Average,"Census Tract 504, Frederick County, Virginia",tract
+51069050500,3,Average,"Census Tract 505, Frederick County, Virginia",tract
+51069050300,3,Average,"Census Tract 503, Frederick County, Virginia",tract
+51069050100,3,Average,"Census Tract 501, Frederick County, Virginia",tract
+51069051000,3,Average,"Census Tract 510, Frederick County, Virginia",tract
+51069050802,3,Average,"Census Tract 508.02, Frederick County, Virginia",tract
+51069050803,3,Average,"Census Tract 508.03, Frederick County, Virginia",tract
+51069050600,4,High,"Census Tract 506, Frederick County, Virginia",tract
+51069050200,4,High,"Census Tract 502, Frederick County, Virginia",tract
+51069051101,4,High,"Census Tract 511.01, Frederick County, Virginia",tract
+51630000400,1,Very Low,"Census Tract 4, Fredericksburg city, Virginia",tract
+51630000200,1,Very Low,"Census Tract 2, Fredericksburg city, Virginia",tract
+51630000302,1,Very Low,"Census Tract 3.02, Fredericksburg city, Virginia",tract
+51630000500,2,Low,"Census Tract 5, Fredericksburg city, Virginia",tract
+51630000100,4,High,"Census Tract 1, Fredericksburg city, Virginia",tract
+51630000301,4,High,"Census Tract 3.01, Fredericksburg city, Virginia",tract
+51640070102,2,Low,"Census Tract 701.02, Galax city, Virginia",tract
+51640070101,2,Low,"Census Tract 701.01, Galax city, Virginia",tract
+51071930300,2,Low,"Census Tract 9303, Giles County, Virginia",tract
+51071930200,2,Low,"Census Tract 9302, Giles County, Virginia",tract
+51071930400,3,Average,"Census Tract 9304, Giles County, Virginia",tract
+51071930100,4,High,"Census Tract 9301, Giles County, Virginia",tract
+51073100202,2,Low,"Census Tract 1002.02, Gloucester County, Virginia",tract
+51073100302,2,Low,"Census Tract 1003.02, Gloucester County, Virginia",tract
+51073100100,3,Average,"Census Tract 1001, Gloucester County, Virginia",tract
+51073100400,3,Average,"Census Tract 1004, Gloucester County, Virginia",tract
+51073100500,3,Average,"Census Tract 1005, Gloucester County, Virginia",tract
+51073100301,3,Average,"Census Tract 1003.01, Gloucester County, Virginia",tract
+51073100203,3,Average,"Census Tract 1002.03, Gloucester County, Virginia",tract
+51073100201,4,High,"Census Tract 1002.01, Gloucester County, Virginia",tract
+51075400300,2,Low,"Census Tract 4003, Goochland County, Virginia",tract
+51075400500,3,Average,"Census Tract 4005, Goochland County, Virginia",tract
+51075400400,4,High,"Census Tract 4004, Goochland County, Virginia",tract
+51075400200,4,High,"Census Tract 4002, Goochland County, Virginia",tract
+51075400100,5,Very High,"Census Tract 4001, Goochland County, Virginia",tract
+51077060300,1,Very Low,"Census Tract 603, Grayson County, Virginia",tract
+51077060102,1,Very Low,"Census Tract 601.02, Grayson County, Virginia",tract
+51077060101,1,Very Low,"Census Tract 601.01, Grayson County, Virginia",tract
+51077060201,2,Low,"Census Tract 602.01, Grayson County, Virginia",tract
+51077060202,3,Average,"Census Tract 602.02, Grayson County, Virginia",tract
+51079030200,1,Very Low,"Census Tract 302, Greene County, Virginia",tract
+51079030101,2,Low,"Census Tract 301.01, Greene County, Virginia",tract
+51079030102,3,Average,"Census Tract 301.02, Greene County, Virginia",tract
+51081880200,2,Low,"Census Tract 8802, Greensville County, Virginia",tract
+51081880101,2,Low,"Census Tract 8801.01, Greensville County, Virginia",tract
+51081880102,4,High,"Census Tract 8801.02, Greensville County, Virginia",tract
+51083930100,1,Very Low,"Census Tract 9301, Halifax County, Virginia",tract
+51083930201,1,Very Low,"Census Tract 9302.01, Halifax County, Virginia",tract
+51083930202,1,Very Low,"Census Tract 9302.02, Halifax County, Virginia",tract
+51083930301,1,Very Low,"Census Tract 9303.01, Halifax County, Virginia",tract
+51083930600,1,Very Low,"Census Tract 9306, Halifax County, Virginia",tract
+51083930400,2,Low,"Census Tract 9304, Halifax County, Virginia",tract
+51083930800,2,Low,"Census Tract 9308, Halifax County, Virginia",tract
+51083930302,2,Low,"Census Tract 9303.02, Halifax County, Virginia",tract
+51083930500,3,Average,"Census Tract 9305, Halifax County, Virginia",tract
+51650010701,1,Very Low,"Census Tract 107.01, Hampton city, Virginia",tract
+51650011400,1,Very Low,"Census Tract 114, Hampton city, Virginia",tract
+51650010313,1,Very Low,"Census Tract 103.13, Hampton city, Virginia",tract
+51650012000,1,Very Low,"Census Tract 120, Hampton city, Virginia",tract
+51650010501,1,Very Low,"Census Tract 105.01, Hampton city, Virginia",tract
+51650010601,1,Very Low,"Census Tract 106.01, Hampton city, Virginia",tract
+51650011300,1,Very Low,"Census Tract 113, Hampton city, Virginia",tract
+51650011000,1,Very Low,"Census Tract 110, Hampton city, Virginia",tract
+51650010502,1,Very Low,"Census Tract 105.02, Hampton city, Virginia",tract
+51650010104,1,Very Low,"Census Tract 101.04, Hampton city, Virginia",tract
+51650010602,1,Very Low,"Census Tract 106.02, Hampton city, Virginia",tract
+51650011800,1,Very Low,"Census Tract 118, Hampton city, Virginia",tract
+51650010900,1,Very Low,"Census Tract 109, Hampton city, Virginia",tract
+51650010309,2,Low,"Census Tract 103.09, Hampton city, Virginia",tract
+51650011600,2,Low,"Census Tract 116, Hampton city, Virginia",tract
+51650010314,2,Low,"Census Tract 103.14, Hampton city, Virginia",tract
+51650010800,2,Low,"Census Tract 108, Hampton city, Virginia",tract
+51650011200,2,Low,"Census Tract 112, Hampton city, Virginia",tract
+51650010304,2,Low,"Census Tract 103.04, Hampton city, Virginia",tract
+51650010306,2,Low,"Census Tract 103.06, Hampton city, Virginia",tract
+51650010702,2,Low,"Census Tract 107.02, Hampton city, Virginia",tract
+51650010400,2,Low,"Census Tract 104, Hampton city, Virginia",tract
+51650011900,2,Low,"Census Tract 119, Hampton city, Virginia",tract
+51650012100,3,Average,"Census Tract 121, Hampton city, Virginia",tract
+51650010311,3,Average,"Census Tract 103.11, Hampton city, Virginia",tract
+51650010312,3,Average,"Census Tract 103.12, Hampton city, Virginia",tract
+51650010310,3,Average,"Census Tract 103.10, Hampton city, Virginia",tract
+51650011500,3,Average,"Census Tract 115, Hampton city, Virginia",tract
+51650010703,3,Average,"Census Tract 107.03, Hampton city, Virginia",tract
+51650011100,3,Average,"Census Tract 111, Hampton city, Virginia",tract
+51650010307,4,High,"Census Tract 103.07, Hampton city, Virginia",tract
+51650010103,4,High,"Census Tract 101.03, Hampton city, Virginia",tract
+51650010200,4,High,"Census Tract 102, Hampton city, Virginia",tract
+51085321201,2,Low,"Census Tract 3212.01, Hanover County, Virginia",tract
+51085321001,2,Low,"Census Tract 3210.01, Hanover County, Virginia",tract
+51085321202,2,Low,"Census Tract 3212.02, Hanover County, Virginia",tract
+51085320601,3,Average,"Census Tract 3206.01, Hanover County, Virginia",tract
+51085320100,3,Average,"Census Tract 3201, Hanover County, Virginia",tract
+51085321100,3,Average,"Census Tract 3211, Hanover County, Virginia",tract
+51085320602,3,Average,"Census Tract 3206.02, Hanover County, Virginia",tract
+51085321300,3,Average,"Census Tract 3213, Hanover County, Virginia",tract
+51085320400,4,High,"Census Tract 3204, Hanover County, Virginia",tract
+51085320500,4,High,"Census Tract 3205, Hanover County, Virginia",tract
+51085320200,4,High,"Census Tract 3202, Hanover County, Virginia",tract
+51085321002,4,High,"Census Tract 3210.02, Hanover County, Virginia",tract
+51085320900,4,High,"Census Tract 3209, Hanover County, Virginia",tract
+51085320300,4,High,"Census Tract 3203, Hanover County, Virginia",tract
+51085320801,4,High,"Census Tract 3208.01, Hanover County, Virginia",tract
+51085320702,4,High,"Census Tract 3207.02, Hanover County, Virginia",tract
+51085320701,4,High,"Census Tract 3207.01, Hanover County, Virginia",tract
+51085321403,4,High,"Census Tract 3214.03, Hanover County, Virginia",tract
+51085321402,4,High,"Census Tract 3214.02, Hanover County, Virginia",tract
+51085321401,4,High,"Census Tract 3214.01, Hanover County, Virginia",tract
+51085320805,5,Very High,"Census Tract 3208.05, Hanover County, Virginia",tract
+51085320804,5,Very High,"Census Tract 3208.04, Hanover County, Virginia",tract
+51085320803,5,Very High,"Census Tract 3208.03, Hanover County, Virginia",tract
+51660000402,1,Very Low,"Census Tract 4.02, Harrisonburg city, Virginia",tract
+51660000302,1,Very Low,"Census Tract 3.02, Harrisonburg city, Virginia",tract
+51660000101,1,Very Low,"Census Tract 1.01, Harrisonburg city, Virginia",tract
+51660000203,2,Low,"Census Tract 2.03, Harrisonburg city, Virginia",tract
+51660000205,2,Low,"Census Tract 2.05, Harrisonburg city, Virginia",tract
+51660000204,2,Low,"Census Tract 2.04, Harrisonburg city, Virginia",tract
+51660000206,2,Low,"Census Tract 2.06, Harrisonburg city, Virginia",tract
+51660000102,3,Average,"Census Tract 1.02, Harrisonburg city, Virginia",tract
+51660000207,3,Average,"Census Tract 2.07, Harrisonburg city, Virginia",tract
+51660000401,3,Average,"Census Tract 4.01, Harrisonburg city, Virginia",tract
+51660000301,3,Average,"Census Tract 3.01, Harrisonburg city, Virginia",tract
+51087200409,1,Very Low,"Census Tract 2004.09, Henrico County, Virginia",tract
+51087200412,1,Very Low,"Census Tract 2004.12, Henrico County, Virginia",tract
+51087200410,1,Very Low,"Census Tract 2004.10, Henrico County, Virginia",tract
+51087200805,1,Very Low,"Census Tract 2008.05, Henrico County, Virginia",tract
+51087201101,1,Very Low,"Census Tract 2011.01, Henrico County, Virginia",tract
+51087201202,1,Very Low,"Census Tract 2012.02, Henrico County, Virginia",tract
+51087200123,1,Very Low,"Census Tract 2001.23, Henrico County, Virginia",tract
+51087201501,1,Very Low,"Census Tract 2015.01, Henrico County, Virginia",tract
+51087200905,1,Very Low,"Census Tract 2009.05, Henrico County, Virginia",tract
+51087200407,2,Low,"Census Tract 2004.07, Henrico County, Virginia",tract
+51087200126,2,Low,"Census Tract 2001.26, Henrico County, Virginia",tract
+51087200411,2,Low,"Census Tract 2004.11, Henrico County, Virginia",tract
+51087200804,2,Low,"Census Tract 2008.04, Henrico County, Virginia",tract
+51087200700,2,Low,"Census Tract 2007, Henrico County, Virginia",tract
+51087201002,2,Low,"Census Tract 2010.02, Henrico County, Virginia",tract
+51087201201,2,Low,"Census Tract 2012.01, Henrico County, Virginia",tract
+51087201102,2,Low,"Census Tract 2011.02, Henrico County, Virginia",tract
+51087201403,2,Low,"Census Tract 2014.03, Henrico County, Virginia",tract
+51087201003,2,Low,"Census Tract 2010.03, Henrico County, Virginia",tract
+51087201401,2,Low,"Census Tract 2014.01, Henrico County, Virginia",tract
+51087200501,2,Low,"Census Tract 2005.01, Henrico County, Virginia",tract
+51087201701,2,Low,"Census Tract 2017.01, Henrico County, Virginia",tract
+51087200105,2,Low,"Census Tract 2001.05, Henrico County, Virginia",tract
+51087200600,2,Low,"Census Tract 2006, Henrico County, Virginia",tract
+51087200503,3,Average,"Census Tract 2005.03, Henrico County, Virginia",tract
+51087200104,3,Average,"Census Tract 2001.04, Henrico County, Virginia",tract
+51087200305,3,Average,"Census Tract 2003.05, Henrico County, Virginia",tract
+51087200303,3,Average,"Census Tract 2003.03, Henrico County, Virginia",tract
+51087200404,3,Average,"Census Tract 2004.04, Henrico County, Virginia",tract
+51087200801,3,Average,"Census Tract 2008.01, Henrico County, Virginia",tract
+51087201001,3,Average,"Census Tract 2010.01, Henrico County, Virginia",tract
+51087200802,3,Average,"Census Tract 2008.02, Henrico County, Virginia",tract
+51087200903,3,Average,"Census Tract 2009.03, Henrico County, Virginia",tract
+51087200904,3,Average,"Census Tract 2009.04, Henrico County, Virginia",tract
+51087200906,3,Average,"Census Tract 2009.06, Henrico County, Virginia",tract
+51087201404,3,Average,"Census Tract 2014.04, Henrico County, Virginia",tract
+51087201502,3,Average,"Census Tract 2015.02, Henrico County, Virginia",tract
+51087201602,3,Average,"Census Tract 2016.02, Henrico County, Virginia",tract
+51087201601,3,Average,"Census Tract 2016.01, Henrico County, Virginia",tract
+51087200106,3,Average,"Census Tract 2001.06, Henrico County, Virginia",tract
+51087200502,3,Average,"Census Tract 2005.02, Henrico County, Virginia",tract
+51087200125,3,Average,"Census Tract 2001.25, Henrico County, Virginia",tract
+51087200302,4,High,"Census Tract 2003.02, Henrico County, Virginia",tract
+51087200406,4,High,"Census Tract 2004.06, Henrico County, Virginia",tract
+51087200414,4,High,"Census Tract 2004.14, Henrico County, Virginia",tract
+51087200127,4,High,"Census Tract 2001.27, Henrico County, Virginia",tract
+51087200112,4,High,"Census Tract 2001.12, Henrico County, Virginia",tract
+51087200201,4,High,"Census Tract 2002.01, Henrico County, Virginia",tract
+51087200109,5,Very High,"Census Tract 2001.09, Henrico County, Virginia",tract
+51087200202,5,Very High,"Census Tract 2002.02, Henrico County, Virginia",tract
+51087200301,5,Very High,"Census Tract 2003.01, Henrico County, Virginia",tract
+51087200121,5,Very High,"Census Tract 2001.21, Henrico County, Virginia",tract
+51087200119,5,Very High,"Census Tract 2001.19, Henrico County, Virginia",tract
+51087200120,5,Very High,"Census Tract 2001.20, Henrico County, Virginia",tract
+51087200122,5,Very High,"Census Tract 2001.22, Henrico County, Virginia",tract
+51087200128,5,Very High,"Census Tract 2001.28, Henrico County, Virginia",tract
+51087200129,5,Very High,"Census Tract 2001.29, Henrico County, Virginia",tract
+51087200130,5,Very High,"Census Tract 2001.30, Henrico County, Virginia",tract
+51087200108,5,Very High,"Census Tract 2001.08, Henrico County, Virginia",tract
+51087200124,5,Very High,"Census Tract 2001.24, Henrico County, Virginia",tract
+51087200107,5,Very High,"Census Tract 2001.07, Henrico County, Virginia",tract
+51087200116,5,Very High,"Census Tract 2001.16, Henrico County, Virginia",tract
+51087200413,5,Very High,"Census Tract 2004.13, Henrico County, Virginia",tract
+51089011000,1,Very Low,"Census Tract 110, Henry County, Virginia",tract
+51089010500,1,Very Low,"Census Tract 105, Henry County, Virginia",tract
+51089010200,1,Very Low,"Census Tract 102, Henry County, Virginia",tract
+51089010800,1,Very Low,"Census Tract 108, Henry County, Virginia",tract
+51089010602,1,Very Low,"Census Tract 106.02, Henry County, Virginia",tract
+51089011200,1,Very Low,"Census Tract 112, Henry County, Virginia",tract
+51089011100,1,Very Low,"Census Tract 111, Henry County, Virginia",tract
+51089011300,1,Very Low,"Census Tract 113, Henry County, Virginia",tract
+51089010100,1,Very Low,"Census Tract 101, Henry County, Virginia",tract
+51089010700,2,Low,"Census Tract 107, Henry County, Virginia",tract
+51089010400,2,Low,"Census Tract 104, Henry County, Virginia",tract
+51089010900,2,Low,"Census Tract 109, Henry County, Virginia",tract
+51089010300,3,Average,"Census Tract 103, Henry County, Virginia",tract
+51089010601,3,Average,"Census Tract 106.01, Henry County, Virginia",tract
+51091970100,1,Very Low,"Census Tract 9701, Highland County, Virginia",tract
+51670820300,1,Very Low,"Census Tract 8203, Hopewell city, Virginia",tract
+51670820100,1,Very Low,"Census Tract 8201, Hopewell city, Virginia",tract
+51670820600,1,Very Low,"Census Tract 8206, Hopewell city, Virginia",tract
+51670820700,1,Very Low,"Census Tract 8207, Hopewell city, Virginia",tract
+51670820400,2,Low,"Census Tract 8204, Hopewell city, Virginia",tract
+51670820500,2,Low,"Census Tract 8205, Hopewell city, Virginia",tract
+51093280400,1,Very Low,"Census Tract 2804, Isle of Wight County, Virginia",tract
+51093280300,2,Low,"Census Tract 2803, Isle of Wight County, Virginia",tract
+51093280105,2,Low,"Census Tract 2801.05, Isle of Wight County, Virginia",tract
+51093280103,3,Average,"Census Tract 2801.03, Isle of Wight County, Virginia",tract
+51093280200,3,Average,"Census Tract 2802, Isle of Wight County, Virginia",tract
+51093280101,3,Average,"Census Tract 2801.01, Isle of Wight County, Virginia",tract
+51093280104,4,High,"Census Tract 2801.04, Isle of Wight County, Virginia",tract
+51093280106,4,High,"Census Tract 2801.06, Isle of Wight County, Virginia",tract
+51095080102,1,Very Low,"Census Tract 801.02, James City County, Virginia",tract
+51095080402,2,Low,"Census Tract 804.02, James City County, Virginia",tract
+51095080301,2,Low,"Census Tract 803.01, James City County, Virginia",tract
+51095080205,2,Low,"Census Tract 802.05, James City County, Virginia",tract
+51095080401,4,High,"Census Tract 804.01, James City County, Virginia",tract
+51095080203,4,High,"Census Tract 802.03, James City County, Virginia",tract
+51095080303,4,High,"Census Tract 803.03, James City County, Virginia",tract
+51095080206,4,High,"Census Tract 802.06, James City County, Virginia",tract
+51095080202,5,Very High,"Census Tract 802.02, James City County, Virginia",tract
+51095080101,5,Very High,"Census Tract 801.01, James City County, Virginia",tract
+51095080304,5,Very High,"Census Tract 803.04, James City County, Virginia",tract
+51097950400,2,Low,"Census Tract 9504, King and Queen County, Virginia",tract
+51097950500,3,Average,"Census Tract 9505, King and Queen County, Virginia",tract
+51099040100,2,Low,"Census Tract 401, King George County, Virginia",tract
+51099040300,3,Average,"Census Tract 403, King George County, Virginia",tract
+51099040500,3,Average,"Census Tract 405, King George County, Virginia",tract
+51099040200,4,High,"Census Tract 402, King George County, Virginia",tract
+51099040400,4,High,"Census Tract 404, King George County, Virginia",tract
+51101950200,3,Average,"Census Tract 9502, King William County, Virginia",tract
+51101950300,3,Average,"Census Tract 9503, King William County, Virginia",tract
+51101950102,3,Average,"Census Tract 9501.02, King William County, Virginia",tract
+51101950101,3,Average,"Census Tract 9501.01, King William County, Virginia",tract
+51103030200,3,Average,"Census Tract 302, Lancaster County, Virginia",tract
+51103030300,4,High,"Census Tract 303, Lancaster County, Virginia",tract
+51103030100,4,High,"Census Tract 301, Lancaster County, Virginia",tract
+51105950300,1,Very Low,"Census Tract 9503, Lee County, Virginia",tract
+51105950600,1,Very Low,"Census Tract 9506, Lee County, Virginia",tract
+51105950500,2,Low,"Census Tract 9505, Lee County, Virginia",tract
+51105950100,2,Low,"Census Tract 9501, Lee County, Virginia",tract
+51105950400,2,Low,"Census Tract 9504, Lee County, Virginia",tract
+51105950200,2,Low,"Census Tract 9502, Lee County, Virginia",tract
+51678930500,2,Low,"Census Tract 9305, Lexington city, Virginia",tract
+51107610505,1,Very Low,"Census Tract 6105.05, Loudoun County, Virginia",tract
+51107980100,1,Very Low,"Census Tract 9801, Loudoun County, Virginia",tract
+51107611002,2,Low,"Census Tract 6110.02, Loudoun County, Virginia",tract
+51107610603,2,Low,"Census Tract 6106.03, Loudoun County, Virginia",tract
+51107611602,2,Low,"Census Tract 6116.02, Loudoun County, Virginia",tract
+51107611400,3,Average,"Census Tract 6114, Loudoun County, Virginia",tract
+51107611204,3,Average,"Census Tract 6112.04, Loudoun County, Virginia",tract
+51107611018,3,Average,"Census Tract 6110.18, Loudoun County, Virginia",tract
+51107611501,3,Average,"Census Tract 6115.01, Loudoun County, Virginia",tract
+51107611205,4,High,"Census Tract 6112.05, Loudoun County, Virginia",tract
+51107610800,4,High,"Census Tract 6108, Loudoun County, Virginia",tract
+51107610900,4,High,"Census Tract 6109, Loudoun County, Virginia",tract
+51107611101,4,High,"Census Tract 6111.01, Loudoun County, Virginia",tract
+51107611700,4,High,"Census Tract 6117, Loudoun County, Virginia",tract
+51107611005,4,High,"Census Tract 6110.05, Loudoun County, Virginia",tract
+51107611300,4,High,"Census Tract 6113, Loudoun County, Virginia",tract
+51107610506,4,High,"Census Tract 6105.06, Loudoun County, Virginia",tract
+51107610201,4,High,"Census Tract 6102.01, Loudoun County, Virginia",tract
+51107610703,4,High,"Census Tract 6107.03, Loudoun County, Virginia",tract
+51107610202,4,High,"Census Tract 6102.02, Loudoun County, Virginia",tract
+51107610702,4,High,"Census Tract 6107.02, Loudoun County, Virginia",tract
+51107611011,4,High,"Census Tract 6110.11, Loudoun County, Virginia",tract
+51107611024,4,High,"Census Tract 6110.24, Loudoun County, Virginia",tract
+51107611014,4,High,"Census Tract 6110.14, Loudoun County, Virginia",tract
+51107611601,4,High,"Census Tract 6116.01, Loudoun County, Virginia",tract
+51107611502,4,High,"Census Tract 6115.02, Loudoun County, Virginia",tract
+51107610101,4,High,"Census Tract 6101.01, Loudoun County, Virginia",tract
+51107611015,4,High,"Census Tract 6110.15, Loudoun County, Virginia",tract
+51107610504,4,High,"Census Tract 6105.04, Loudoun County, Virginia",tract
+51107610400,5,Very High,"Census Tract 6104, Loudoun County, Virginia",tract
+51107610300,5,Very High,"Census Tract 6103, Loudoun County, Virginia",tract
+51107611102,5,Very High,"Census Tract 6111.02, Loudoun County, Virginia",tract
+51107611004,5,Very High,"Census Tract 6110.04, Loudoun County, Virginia",tract
+51107610601,5,Very High,"Census Tract 6106.01, Loudoun County, Virginia",tract
+51107610602,5,Very High,"Census Tract 6106.02, Loudoun County, Virginia",tract
+51107611202,5,Very High,"Census Tract 6112.02, Loudoun County, Virginia",tract
+51107611012,5,Very High,"Census Tract 6110.12, Loudoun County, Virginia",tract
+51107611013,5,Very High,"Census Tract 6110.13, Loudoun County, Virginia",tract
+51107610701,5,Very High,"Census Tract 6107.01, Loudoun County, Virginia",tract
+51107610503,5,Very High,"Census Tract 6105.03, Loudoun County, Virginia",tract
+51107610102,5,Very High,"Census Tract 6101.02, Loudoun County, Virginia",tract
+51107610507,5,Very High,"Census Tract 6105.07, Loudoun County, Virginia",tract
+51107610604,5,Very High,"Census Tract 6106.04, Loudoun County, Virginia",tract
+51107611025,5,Very High,"Census Tract 6110.25, Loudoun County, Virginia",tract
+51107611806,5,Very High,"Census Tract 6118.06, Loudoun County, Virginia",tract
+51107611801,5,Very High,"Census Tract 6118.01, Loudoun County, Virginia",tract
+51107611019,5,Very High,"Census Tract 6110.19, Loudoun County, Virginia",tract
+51107611207,5,Very High,"Census Tract 6112.07, Loudoun County, Virginia",tract
+51107611206,5,Very High,"Census Tract 6112.06, Loudoun County, Virginia",tract
+51107611209,5,Very High,"Census Tract 6112.09, Loudoun County, Virginia",tract
+51107611208,5,Very High,"Census Tract 6112.08, Loudoun County, Virginia",tract
+51107611802,5,Very High,"Census Tract 6118.02, Loudoun County, Virginia",tract
+51107611023,5,Very High,"Census Tract 6110.23, Loudoun County, Virginia",tract
+51107611804,5,Very High,"Census Tract 6118.04, Loudoun County, Virginia",tract
+51107611803,5,Very High,"Census Tract 6118.03, Loudoun County, Virginia",tract
+51107611805,5,Very High,"Census Tract 6118.05, Loudoun County, Virginia",tract
+51107611022,5,Very High,"Census Tract 6110.22, Loudoun County, Virginia",tract
+51107611021,5,Very High,"Census Tract 6110.21, Loudoun County, Virginia",tract
+51107611010,5,Very High,"Census Tract 6110.10, Loudoun County, Virginia",tract
+51107611009,5,Very High,"Census Tract 6110.09, Loudoun County, Virginia",tract
+51107611016,5,Very High,"Census Tract 6110.16, Loudoun County, Virginia",tract
+51107611017,5,Very High,"Census Tract 6110.17, Loudoun County, Virginia",tract
+51107611006,5,Very High,"Census Tract 6110.06, Loudoun County, Virginia",tract
+51107611020,5,Very High,"Census Tract 6110.20, Loudoun County, Virginia",tract
+51107611900,5,Very High,"Census Tract 6119, Loudoun County, Virginia",tract
+51109950202,2,Low,"Census Tract 9502.02, Louisa County, Virginia",tract
+51109950201,2,Low,"Census Tract 9502.01, Louisa County, Virginia",tract
+51109950100,3,Average,"Census Tract 9501, Louisa County, Virginia",tract
+51109950400,3,Average,"Census Tract 9504, Louisa County, Virginia",tract
+51109950300,3,Average,"Census Tract 9503, Louisa County, Virginia",tract
+51109950500,3,Average,"Census Tract 9505, Louisa County, Virginia",tract
+51111930100,1,Very Low,"Census Tract 9301, Lunenburg County, Virginia",tract
+51111930200,2,Low,"Census Tract 9302, Lunenburg County, Virginia",tract
+51111930300,2,Low,"Census Tract 9303, Lunenburg County, Virginia",tract
+51680000202,1,Very Low,"Census Tract 2.02, Lynchburg city, Virginia",tract
+51680000400,1,Very Low,"Census Tract 4, Lynchburg city, Virginia",tract
+51680000600,1,Very Low,"Census Tract 6, Lynchburg city, Virginia",tract
+51680000500,1,Very Low,"Census Tract 5, Lynchburg city, Virginia",tract
+51680000900,1,Very Low,"Census Tract 9, Lynchburg city, Virginia",tract
+51680001100,1,Very Low,"Census Tract 11, Lynchburg city, Virginia",tract
+51680000700,1,Very Low,"Census Tract 7, Lynchburg city, Virginia",tract
+51680001900,1,Very Low,"Census Tract 19, Lynchburg city, Virginia",tract
+51680001600,1,Very Low,"Census Tract 16, Lynchburg city, Virginia",tract
+51680001800,1,Very Low,"Census Tract 18, Lynchburg city, Virginia",tract
+51680000802,1,Very Low,"Census Tract 8.02, Lynchburg city, Virginia",tract
+51680000801,2,Low,"Census Tract 8.01, Lynchburg city, Virginia",tract
+51680001000,2,Low,"Census Tract 10, Lynchburg city, Virginia",tract
+51680001700,2,Low,"Census Tract 17, Lynchburg city, Virginia",tract
+51680000300,3,Average,"Census Tract 3, Lynchburg city, Virginia",tract
+51680000203,4,High,"Census Tract 2.03, Lynchburg city, Virginia",tract
+51680001400,4,High,"Census Tract 14, Lynchburg city, Virginia",tract
+51680000201,5,Very High,"Census Tract 2.01, Lynchburg city, Virginia",tract
+51680000100,5,Very High,"Census Tract 1, Lynchburg city, Virginia",tract
+51113930100,3,Average,"Census Tract 9301, Madison County, Virginia",tract
+51113930200,3,Average,"Census Tract 9302, Madison County, Virginia",tract
+51683910302,1,Very Low,"Census Tract 9103.02, Manassas city, Virginia",tract
+51683910202,2,Low,"Census Tract 9102.02, Manassas city, Virginia",tract
+51683910201,2,Low,"Census Tract 9102.01, Manassas city, Virginia",tract
+51683910301,2,Low,"Census Tract 9103.01, Manassas city, Virginia",tract
+51683910401,2,Low,"Census Tract 9104.01, Manassas city, Virginia",tract
+51683910100,4,High,"Census Tract 9101, Manassas city, Virginia",tract
+51683910402,4,High,"Census Tract 9104.02, Manassas city, Virginia",tract
+51685920100,2,Low,"Census Tract 9201, Manassas Park city, Virginia",tract
+51685920200,3,Average,"Census Tract 9202, Manassas Park city, Virginia",tract
+51690000100,1,Very Low,"Census Tract 1, Martinsville city, Virginia",tract
+51690000300,1,Very Low,"Census Tract 3, Martinsville city, Virginia",tract
+51690000400,1,Very Low,"Census Tract 4, Martinsville city, Virginia",tract
+51690000200,2,Low,"Census Tract 2, Martinsville city, Virginia",tract
+51690000500,4,High,"Census Tract 5, Martinsville city, Virginia",tract
+51115951400,4,High,"Census Tract 9514, Mathews County, Virginia",tract
+51115951300,4,High,"Census Tract 9513, Mathews County, Virginia",tract
+51117930400,1,Very Low,"Census Tract 9304, Mecklenburg County, Virginia",tract
+51117930500,1,Very Low,"Census Tract 9305, Mecklenburg County, Virginia",tract
+51117930101,1,Very Low,"Census Tract 9301.01, Mecklenburg County, Virginia",tract
+51117930300,2,Low,"Census Tract 9303, Mecklenburg County, Virginia",tract
+51117930600,2,Low,"Census Tract 9306, Mecklenburg County, Virginia",tract
+51117930200,2,Low,"Census Tract 9302, Mecklenburg County, Virginia",tract
+51117930102,2,Low,"Census Tract 9301.02, Mecklenburg County, Virginia",tract
+51117930700,3,Average,"Census Tract 9307, Mecklenburg County, Virginia",tract
+51117930800,3,Average,"Census Tract 9308, Mecklenburg County, Virginia",tract
+51119950900,3,Average,"Census Tract 9509, Middlesex County, Virginia",tract
+51119951000,4,High,"Census Tract 9510, Middlesex County, Virginia",tract
+51119951100,4,High,"Census Tract 9511, Middlesex County, Virginia",tract
+51119951200,5,Very High,"Census Tract 9512, Middlesex County, Virginia",tract
+51121020202,1,Very Low,"Census Tract 202.02, Montgomery County, Virginia",tract
+51121020800,2,Low,"Census Tract 208, Montgomery County, Virginia",tract
+51121020900,2,Low,"Census Tract 209, Montgomery County, Virginia",tract
+51121021400,2,Low,"Census Tract 214, Montgomery County, Virginia",tract
+51121021000,2,Low,"Census Tract 210, Montgomery County, Virginia",tract
+51121021200,3,Average,"Census Tract 212, Montgomery County, Virginia",tract
+51121020201,3,Average,"Census Tract 202.01, Montgomery County, Virginia",tract
+51121021500,4,High,"Census Tract 215, Montgomery County, Virginia",tract
+51121020500,4,High,"Census Tract 205, Montgomery County, Virginia",tract
+51121020600,4,High,"Census Tract 206, Montgomery County, Virginia",tract
+51121020700,4,High,"Census Tract 207, Montgomery County, Virginia",tract
+51121021100,4,High,"Census Tract 211, Montgomery County, Virginia",tract
+51121021300,5,Very High,"Census Tract 213, Montgomery County, Virginia",tract
+51121020100,5,Very High,"Census Tract 201, Montgomery County, Virginia",tract
+51121020300,5,Very High,"Census Tract 203, Montgomery County, Virginia",tract
+51121020400,5,Very High,"Census Tract 204, Montgomery County, Virginia",tract
+51125950100,2,Low,"Census Tract 9501, Nelson County, Virginia",tract
+51125950300,2,Low,"Census Tract 9503, Nelson County, Virginia",tract
+51125950200,4,High,"Census Tract 9502, Nelson County, Virginia",tract
+51127700100,3,Average,"Census Tract 7001, New Kent County, Virginia",tract
+51127700300,3,Average,"Census Tract 7003, New Kent County, Virginia",tract
+51127700200,4,High,"Census Tract 7002, New Kent County, Virginia",tract
+51700030800,1,Very Low,"Census Tract 308, Newport News city, Virginia",tract
+51700030500,1,Very Low,"Census Tract 305, Newport News city, Virginia",tract
+51700032212,1,Very Low,"Census Tract 322.12, Newport News city, Virginia",tract
+51700030900,1,Very Low,"Census Tract 309, Newport News city, Virginia",tract
+51700032123,1,Very Low,"Census Tract 321.23, Newport News city, Virginia",tract
+51700031400,1,Very Low,"Census Tract 314, Newport News city, Virginia",tract
+51700030600,1,Very Low,"Census Tract 306, Newport News city, Virginia",tract
+51700032005,1,Very Low,"Census Tract 320.05, Newport News city, Virginia",tract
+51700031300,1,Very Low,"Census Tract 313, Newport News city, Virginia",tract
+51700031200,1,Very Low,"Census Tract 312, Newport News city, Virginia",tract
+51700032128,1,Very Low,"Census Tract 321.28, Newport News city, Virginia",tract
+51700032126,1,Very Low,"Census Tract 321.26, Newport News city, Virginia",tract
+51700032225,1,Very Low,"Census Tract 322.25, Newport News city, Virginia",tract
+51700032006,1,Very Low,"Census Tract 320.06, Newport News city, Virginia",tract
+51700030300,1,Very Low,"Census Tract 303, Newport News city, Virginia",tract
+51700032300,1,Very Low,"Census Tract 323, Newport News city, Virginia",tract
+51700030400,1,Very Low,"Census Tract 304, Newport News city, Virginia",tract
+51700030100,1,Very Low,"Census Tract 301, Newport News city, Virginia",tract
+51700032124,2,Low,"Census Tract 321.24, Newport News city, Virginia",tract
+51700032400,2,Low,"Census Tract 324, Newport News city, Virginia",tract
+51700032113,2,Low,"Census Tract 321.13, Newport News city, Virginia",tract
+51700031601,2,Low,"Census Tract 316.01, Newport News city, Virginia",tract
+51700032117,2,Low,"Census Tract 321.17, Newport News city, Virginia",tract
+51700032129,2,Low,"Census Tract 321.29, Newport News city, Virginia",tract
+51700032223,2,Low,"Census Tract 322.23, Newport News city, Virginia",tract
+51700032224,2,Low,"Census Tract 322.24, Newport News city, Virginia",tract
+51700032132,2,Low,"Census Tract 321.32, Newport News city, Virginia",tract
+51700032226,2,Low,"Census Tract 322.26, Newport News city, Virginia",tract
+51700032127,2,Low,"Census Tract 321.27, Newport News city, Virginia",tract
+51700031701,2,Low,"Census Tract 317.01, Newport News city, Virginia",tract
+51700031100,3,Average,"Census Tract 311, Newport News city, Virginia",tract
+51700032211,3,Average,"Census Tract 322.11, Newport News city, Virginia",tract
+51700031602,3,Average,"Census Tract 316.02, Newport News city, Virginia",tract
+51700031901,3,Average,"Census Tract 319.01, Newport News city, Virginia",tract
+51700032007,3,Average,"Census Tract 320.07, Newport News city, Virginia",tract
+51700032131,3,Average,"Census Tract 321.31, Newport News city, Virginia",tract
+51700031500,4,High,"Census Tract 315, Newport News city, Virginia",tract
+51700032001,4,High,"Census Tract 320.01, Newport News city, Virginia",tract
+51700032002,4,High,"Census Tract 320.02, Newport News city, Virginia",tract
+51700032114,4,High,"Census Tract 321.14, Newport News city, Virginia",tract
+51700031702,4,High,"Census Tract 317.02, Newport News city, Virginia",tract
+51700031902,4,High,"Census Tract 319.02, Newport News city, Virginia",tract
+51700032130,4,High,"Census Tract 321.30, Newport News city, Virginia",tract
+51700031800,5,Very High,"Census Tract 318, Newport News city, Virginia",tract
+51710004100,1,Very Low,"Census Tract 41, Norfolk city, Virginia",tract
+51710004200,1,Very Low,"Census Tract 42, Norfolk city, Virginia",tract
+51710004600,1,Very Low,"Census Tract 46, Norfolk city, Virginia",tract
+51710005000,1,Very Low,"Census Tract 50, Norfolk city, Virginia",tract
+51710005100,1,Very Low,"Census Tract 51, Norfolk city, Virginia",tract
+51710005500,1,Very Low,"Census Tract 55, Norfolk city, Virginia",tract
+51710005701,1,Very Low,"Census Tract 57.01, Norfolk city, Virginia",tract
+51710005702,1,Very Low,"Census Tract 57.02, Norfolk city, Virginia",tract
+51710005800,1,Very Low,"Census Tract 58, Norfolk city, Virginia",tract
+51710005901,1,Very Low,"Census Tract 59.01, Norfolk city, Virginia",tract
+51710005902,1,Very Low,"Census Tract 59.02, Norfolk city, Virginia",tract
+51710006100,1,Very Low,"Census Tract 61, Norfolk city, Virginia",tract
+51710980200,1,Very Low,"Census Tract 9802, Norfolk city, Virginia",tract
+51710006400,1,Very Low,"Census Tract 64, Norfolk city, Virginia",tract
+51710006604,1,Very Low,"Census Tract 66.04, Norfolk city, Virginia",tract
+51710980300,1,Very Low,"Census Tract 9803, Norfolk city, Virginia",tract
+51710006902,1,Very Low,"Census Tract 69.02, Norfolk city, Virginia",tract
+51710007002,1,Very Low,"Census Tract 70.02, Norfolk city, Virginia",tract
+51710006501,1,Very Low,"Census Tract 65.01, Norfolk city, Virginia",tract
+51710000901,1,Very Low,"Census Tract 9.01, Norfolk city, Virginia",tract
+51710000902,1,Very Low,"Census Tract 9.02, Norfolk city, Virginia",tract
+51710001100,1,Very Low,"Census Tract 11, Norfolk city, Virginia",tract
+51710001300,1,Very Low,"Census Tract 13, Norfolk city, Virginia",tract
+51710000100,1,Very Low,"Census Tract 1, Norfolk city, Virginia",tract
+51710000201,1,Very Low,"Census Tract 2.01, Norfolk city, Virginia",tract
+51710000400,1,Very Low,"Census Tract 4, Norfolk city, Virginia",tract
+51710000600,1,Very Low,"Census Tract 6, Norfolk city, Virginia",tract
+51710000800,1,Very Low,"Census Tract 8, Norfolk city, Virginia",tract
+51710002500,1,Very Low,"Census Tract 25, Norfolk city, Virginia",tract
+51710002600,1,Very Low,"Census Tract 26, Norfolk city, Virginia",tract
+51710002700,1,Very Low,"Census Tract 27, Norfolk city, Virginia",tract
+51710002900,1,Very Low,"Census Tract 29, Norfolk city, Virginia",tract
+51710003100,1,Very Low,"Census Tract 31, Norfolk city, Virginia",tract
+51710003200,1,Very Low,"Census Tract 32, Norfolk city, Virginia",tract
+51710003300,1,Very Low,"Census Tract 33, Norfolk city, Virginia",tract
+51710003400,1,Very Low,"Census Tract 34, Norfolk city, Virginia",tract
+51710003501,1,Very Low,"Census Tract 35.01, Norfolk city, Virginia",tract
+51710004300,2,Low,"Census Tract 43, Norfolk city, Virginia",tract
+51710004400,2,Low,"Census Tract 44, Norfolk city, Virginia",tract
+51710004700,2,Low,"Census Tract 47, Norfolk city, Virginia",tract
+51710004800,2,Low,"Census Tract 48, Norfolk city, Virginia",tract
+51710005601,2,Low,"Census Tract 56.01, Norfolk city, Virginia",tract
+51710005602,2,Low,"Census Tract 56.02, Norfolk city, Virginia",tract
+51710005903,2,Low,"Census Tract 59.03, Norfolk city, Virginia",tract
+51710006000,2,Low,"Census Tract 60, Norfolk city, Virginia",tract
+51710006603,2,Low,"Census Tract 66.03, Norfolk city, Virginia",tract
+51710006607,2,Low,"Census Tract 66.07, Norfolk city, Virginia",tract
+51710006901,2,Low,"Census Tract 69.01, Norfolk city, Virginia",tract
+51710007001,2,Low,"Census Tract 70.01, Norfolk city, Virginia",tract
+51710001200,2,Low,"Census Tract 12, Norfolk city, Virginia",tract
+51710001400,2,Low,"Census Tract 14, Norfolk city, Virginia",tract
+51710000300,2,Low,"Census Tract 3, Norfolk city, Virginia",tract
+51710001600,2,Low,"Census Tract 16, Norfolk city, Virginia",tract
+51710001700,2,Low,"Census Tract 17, Norfolk city, Virginia",tract
+51710004500,3,Average,"Census Tract 45, Norfolk city, Virginia",tract
+51710006200,3,Average,"Census Tract 62, Norfolk city, Virginia",tract
+51710006601,3,Average,"Census Tract 66.01, Norfolk city, Virginia",tract
+51710006602,3,Average,"Census Tract 66.02, Norfolk city, Virginia",tract
+51710006606,3,Average,"Census Tract 66.06, Norfolk city, Virginia",tract
+51710006800,3,Average,"Census Tract 68, Norfolk city, Virginia",tract
+51710001500,3,Average,"Census Tract 15, Norfolk city, Virginia",tract
+51710000202,3,Average,"Census Tract 2.02, Norfolk city, Virginia",tract
+51710000500,3,Average,"Census Tract 5, Norfolk city, Virginia",tract
+51710000700,3,Average,"Census Tract 7, Norfolk city, Virginia",tract
+51710003000,3,Average,"Census Tract 30, Norfolk city, Virginia",tract
+51710003600,3,Average,"Census Tract 36, Norfolk city, Virginia",tract
+51710006502,4,High,"Census Tract 65.02, Norfolk city, Virginia",tract
+51710006605,4,High,"Census Tract 66.05, Norfolk city, Virginia",tract
+51710002000,4,High,"Census Tract 20, Norfolk city, Virginia",tract
+51710002300,4,High,"Census Tract 23, Norfolk city, Virginia",tract
+51710002800,4,High,"Census Tract 28, Norfolk city, Virginia",tract
+51710003700,4,High,"Census Tract 37, Norfolk city, Virginia",tract
+51710003800,4,High,"Census Tract 38, Norfolk city, Virginia",tract
+51710004001,5,Very High,"Census Tract 40.01, Norfolk city, Virginia",tract
+51710004002,5,Very High,"Census Tract 40.02, Norfolk city, Virginia",tract
+51710004900,5,Very High,"Census Tract 49, Norfolk city, Virginia",tract
+51710002200,5,Very High,"Census Tract 22, Norfolk city, Virginia",tract
+51710002100,5,Very High,"Census Tract 21, Norfolk city, Virginia",tract
+51710002400,5,Very High,"Census Tract 24, Norfolk city, Virginia",tract
+51131930200,2,Low,"Census Tract 9302, Northampton County, Virginia",tract
+51131930300,3,Average,"Census Tract 9303, Northampton County, Virginia",tract
+51131930100,3,Average,"Census Tract 9301, Northampton County, Virginia",tract
+51133020100,3,Average,"Census Tract 201, Northumberland County, Virginia",tract
+51133020200,4,High,"Census Tract 202, Northumberland County, Virginia",tract
+51133020300,4,High,"Census Tract 203, Northumberland County, Virginia",tract
+51720960100,3,Average,"Census Tract 9601, Norton city, Virginia",tract
+51135000300,1,Very Low,"Census Tract 3, Nottoway County, Virginia",tract
+51135000100,1,Very Low,"Census Tract 1, Nottoway County, Virginia",tract
+51135000200,2,Low,"Census Tract 2, Nottoway County, Virginia",tract
+51135980100,4,High,"Census Tract 9801, Nottoway County, Virginia",tract
+51137110200,1,Very Low,"Census Tract 1102, Orange County, Virginia",tract
+51137110300,2,Low,"Census Tract 1103, Orange County, Virginia",tract
+51137110102,2,Low,"Census Tract 1101.02, Orange County, Virginia",tract
+51137110103,3,Average,"Census Tract 1101.03, Orange County, Virginia",tract
+51137110104,4,High,"Census Tract 1101.04, Orange County, Virginia",tract
+51139030400,1,Very Low,"Census Tract 304, Page County, Virginia",tract
+51139030200,2,Low,"Census Tract 302, Page County, Virginia",tract
+51139030500,2,Low,"Census Tract 305, Page County, Virginia",tract
+51139030300,3,Average,"Census Tract 303, Page County, Virginia",tract
+51139030100,3,Average,"Census Tract 301, Page County, Virginia",tract
+51141030302,1,Very Low,"Census Tract 303.02, Patrick County, Virginia",tract
+51141030100,2,Low,"Census Tract 301, Patrick County, Virginia",tract
+51141030200,2,Low,"Census Tract 302, Patrick County, Virginia",tract
+51141030301,3,Average,"Census Tract 303.01, Patrick County, Virginia",tract
+51730810100,1,Very Low,"Census Tract 8101, Petersburg city, Virginia",tract
+51730811300,1,Very Low,"Census Tract 8113, Petersburg city, Virginia",tract
+51730810300,1,Very Low,"Census Tract 8103, Petersburg city, Virginia",tract
+51730810400,1,Very Low,"Census Tract 8104, Petersburg city, Virginia",tract
+51730810500,1,Very Low,"Census Tract 8105, Petersburg city, Virginia",tract
+51730810600,1,Very Low,"Census Tract 8106, Petersburg city, Virginia",tract
+51730810700,1,Very Low,"Census Tract 8107, Petersburg city, Virginia",tract
+51730811200,1,Very Low,"Census Tract 8112, Petersburg city, Virginia",tract
+51730810900,2,Low,"Census Tract 8109, Petersburg city, Virginia",tract
+51730811000,2,Low,"Census Tract 8110, Petersburg city, Virginia",tract
+51730811100,2,Low,"Census Tract 8111, Petersburg city, Virginia",tract
+51143010100,1,Very Low,"Census Tract 101, Pittsylvania County, Virginia",tract
+51143010600,1,Very Low,"Census Tract 106, Pittsylvania County, Virginia",tract
+51143010700,1,Very Low,"Census Tract 107, Pittsylvania County, Virginia",tract
+51143011300,1,Very Low,"Census Tract 113, Pittsylvania County, Virginia",tract
+51143010300,1,Very Low,"Census Tract 103, Pittsylvania County, Virginia",tract
+51143011200,1,Very Low,"Census Tract 112, Pittsylvania County, Virginia",tract
+51143011001,1,Very Low,"Census Tract 110.01, Pittsylvania County, Virginia",tract
+51143010500,2,Low,"Census Tract 105, Pittsylvania County, Virginia",tract
+51143010900,2,Low,"Census Tract 109, Pittsylvania County, Virginia",tract
+51143011400,2,Low,"Census Tract 114, Pittsylvania County, Virginia",tract
+51143010400,2,Low,"Census Tract 104, Pittsylvania County, Virginia",tract
+51143010200,2,Low,"Census Tract 102, Pittsylvania County, Virginia",tract
+51143010801,2,Low,"Census Tract 108.01, Pittsylvania County, Virginia",tract
+51143011002,2,Low,"Census Tract 110.02, Pittsylvania County, Virginia",tract
+51143010802,2,Low,"Census Tract 108.02, Pittsylvania County, Virginia",tract
+51143011100,3,Average,"Census Tract 111, Pittsylvania County, Virginia",tract
+51735340300,3,Average,"Census Tract 3403, Poquoson city, Virginia",tract
+51735340200,4,High,"Census Tract 3402, Poquoson city, Virginia",tract
+51735340100,5,Very High,"Census Tract 3401, Poquoson city, Virginia",tract
+51740210500,1,Very Low,"Census Tract 2105, Portsmouth city, Virginia",tract
+51740211400,1,Very Low,"Census Tract 2114, Portsmouth city, Virginia",tract
+51740211500,1,Very Low,"Census Tract 2115, Portsmouth city, Virginia",tract
+51740212500,1,Very Low,"Census Tract 2125, Portsmouth city, Virginia",tract
+51740212702,1,Very Low,"Census Tract 2127.02, Portsmouth city, Virginia",tract
+51740211700,1,Very Low,"Census Tract 2117, Portsmouth city, Virginia",tract
+51740212000,1,Very Low,"Census Tract 2120, Portsmouth city, Virginia",tract
+51740212100,1,Very Low,"Census Tract 2121, Portsmouth city, Virginia",tract
+51740212300,1,Very Low,"Census Tract 2123, Portsmouth city, Virginia",tract
+51740212400,1,Very Low,"Census Tract 2124, Portsmouth city, Virginia",tract
+51740213101,1,Very Low,"Census Tract 2131.01, Portsmouth city, Virginia",tract
+51740212801,1,Very Low,"Census Tract 2128.01, Portsmouth city, Virginia",tract
+51740213200,1,Very Low,"Census Tract 2132, Portsmouth city, Virginia",tract
+51740210200,2,Low,"Census Tract 2102, Portsmouth city, Virginia",tract
+51740210600,2,Low,"Census Tract 2106, Portsmouth city, Virginia",tract
+51740211600,2,Low,"Census Tract 2116, Portsmouth city, Virginia",tract
+51740212600,2,Low,"Census Tract 2126, Portsmouth city, Virginia",tract
+51740212701,2,Low,"Census Tract 2127.01, Portsmouth city, Virginia",tract
+51740211900,2,Low,"Census Tract 2119, Portsmouth city, Virginia",tract
+51740213103,2,Low,"Census Tract 2131.03, Portsmouth city, Virginia",tract
+51740210300,3,Average,"Census Tract 2103, Portsmouth city, Virginia",tract
+51740210900,3,Average,"Census Tract 2109, Portsmouth city, Virginia",tract
+51740211100,3,Average,"Census Tract 2111, Portsmouth city, Virginia",tract
+51740211800,3,Average,"Census Tract 2118, Portsmouth city, Virginia",tract
+51740213001,3,Average,"Census Tract 2130.01, Portsmouth city, Virginia",tract
+51740213104,3,Average,"Census Tract 2131.04, Portsmouth city, Virginia",tract
+51740210400,4,High,"Census Tract 2104, Portsmouth city, Virginia",tract
+51740212900,4,High,"Census Tract 2129, Portsmouth city, Virginia",tract
+51740980100,4,High,"Census Tract 9801, Portsmouth city, Virginia",tract
+51740213002,4,High,"Census Tract 2130.02, Portsmouth city, Virginia",tract
+51740212802,4,High,"Census Tract 2128.02, Portsmouth city, Virginia",tract
+51145500400,3,Average,"Census Tract 5004, Powhatan County, Virginia",tract
+51145500102,4,High,"Census Tract 5001.02, Powhatan County, Virginia",tract
+51145500200,4,High,"Census Tract 5002, Powhatan County, Virginia",tract
+51145500101,4,High,"Census Tract 5001.01, Powhatan County, Virginia",tract
+51145500300,5,Very High,"Census Tract 5003, Powhatan County, Virginia",tract
+51147930100,1,Very Low,"Census Tract 9301, Prince Edward County, Virginia",tract
+51147930203,1,Very Low,"Census Tract 9302.03, Prince Edward County, Virginia",tract
+51147930202,2,Low,"Census Tract 9302.02, Prince Edward County, Virginia",tract
+51147930300,3,Average,"Census Tract 9303, Prince Edward County, Virginia",tract
+51147930201,3,Average,"Census Tract 9302.01, Prince Edward County, Virginia",tract
+51149850100,1,Very Low,"Census Tract 8501, Prince George County, Virginia",tract
+51149850200,1,Very Low,"Census Tract 8502, Prince George County, Virginia",tract
+51149850301,2,Low,"Census Tract 8503.01, Prince George County, Virginia",tract
+51149850502,2,Low,"Census Tract 8505.02, Prince George County, Virginia",tract
+51149850501,3,Average,"Census Tract 8505.01, Prince George County, Virginia",tract
+51149850400,4,High,"Census Tract 8504, Prince George County, Virginia",tract
+51149850302,4,High,"Census Tract 8503.02, Prince George County, Virginia",tract
+51153900901,1,Very Low,"Census Tract 9009.01, Prince William County, Virginia",tract
+51153900404,1,Very Low,"Census Tract 9004.04, Prince William County, Virginia",tract
+51153900600,1,Very Low,"Census Tract 9006, Prince William County, Virginia",tract
+51153901702,1,Very Low,"Census Tract 9017.02, Prince William County, Virginia",tract
+51153901701,1,Very Low,"Census Tract 9017.01, Prince William County, Virginia",tract
+51153900202,1,Very Low,"Census Tract 9002.02, Prince William County, Virginia",tract
+51153900203,1,Very Low,"Census Tract 9002.03, Prince William County, Virginia",tract
+51153900410,1,Very Low,"Census Tract 9004.10, Prince William County, Virginia",tract
+51153900409,1,Very Low,"Census Tract 9004.09, Prince William County, Virginia",tract
+51153901408,1,Very Low,"Census Tract 9014.08, Prince William County, Virginia",tract
+51153901211,2,Low,"Census Tract 9012.11, Prince William County, Virginia",tract
+51153901100,2,Low,"Census Tract 9011, Prince William County, Virginia",tract
+51153900403,2,Low,"Census Tract 9004.03, Prince William County, Virginia",tract
+51153901900,2,Low,"Census Tract 9019, Prince William County, Virginia",tract
+51153901601,2,Low,"Census Tract 9016.01, Prince William County, Virginia",tract
+51153901403,2,Low,"Census Tract 9014.03, Prince William County, Virginia",tract
+51153900702,2,Low,"Census Tract 9007.02, Prince William County, Virginia",tract
+51153900201,2,Low,"Census Tract 9002.01, Prince William County, Virginia",tract
+51153900501,2,Low,"Census Tract 9005.01, Prince William County, Virginia",tract
+51153900407,2,Low,"Census Tract 9004.07, Prince William County, Virginia",tract
+51153901417,2,Low,"Census Tract 9014.17, Prince William County, Virginia",tract
+51153901407,2,Low,"Census Tract 9014.07, Prince William County, Virginia",tract
+51153901203,3,Average,"Census Tract 9012.03, Prince William County, Virginia",tract
+51153901008,3,Average,"Census Tract 9010.08, Prince William County, Virginia",tract
+51153900300,3,Average,"Census Tract 9003, Prince William County, Virginia",tract
+51153901602,3,Average,"Census Tract 9016.02, Prince William County, Virginia",tract
+51153900408,3,Average,"Census Tract 9004.08, Prince William County, Virginia",tract
+51153900904,3,Average,"Census Tract 9009.04, Prince William County, Virginia",tract
+51153900802,3,Average,"Census Tract 9008.02, Prince William County, Virginia",tract
+51153901304,3,Average,"Census Tract 9013.04, Prince William County, Virginia",tract
+51153901230,3,Average,"Census Tract 9012.30, Prince William County, Virginia",tract
+51153901228,3,Average,"Census Tract 9012.28, Prince William County, Virginia",tract
+51153901227,3,Average,"Census Tract 9012.27, Prince William County, Virginia",tract
+51153901212,3,Average,"Census Tract 9012.12, Prince William County, Virginia",tract
+51153901001,3,Average,"Census Tract 9010.01, Prince William County, Virginia",tract
+51153901223,4,High,"Census Tract 9012.23, Prince William County, Virginia",tract
+51153901208,4,High,"Census Tract 9012.08, Prince William County, Virginia",tract
+51153901222,4,High,"Census Tract 9012.22, Prince William County, Virginia",tract
+51153901209,4,High,"Census Tract 9012.09, Prince William County, Virginia",tract
+51153900801,4,High,"Census Tract 9008.01, Prince William County, Virginia",tract
+51153900905,4,High,"Census Tract 9009.05, Prince William County, Virginia",tract
+51153901306,4,High,"Census Tract 9013.06, Prince William County, Virginia",tract
+51153901305,4,High,"Census Tract 9013.05, Prince William County, Virginia",tract
+51153901416,4,High,"Census Tract 9014.16, Prince William County, Virginia",tract
+51153901231,4,High,"Census Tract 9012.31, Prince William County, Virginia",tract
+51153901010,4,High,"Census Tract 9010.10, Prince William County, Virginia",tract
+51153901226,4,High,"Census Tract 9012.26, Prince William County, Virginia",tract
+51153901229,4,High,"Census Tract 9012.29, Prince William County, Virginia",tract
+51153901303,4,High,"Census Tract 9013.03, Prince William County, Virginia",tract
+51153901237,4,High,"Census Tract 9012.37, Prince William County, Virginia",tract
+51153901225,4,High,"Census Tract 9012.25, Prince William County, Virginia",tract
+51153901410,4,High,"Census Tract 9014.10, Prince William County, Virginia",tract
+51153901412,4,High,"Census Tract 9014.12, Prince William County, Virginia",tract
+51153901507,4,High,"Census Tract 9015.07, Prince William County, Virginia",tract
+51153901409,4,High,"Census Tract 9014.09, Prince William County, Virginia",tract
+51153901509,4,High,"Census Tract 9015.09, Prince William County, Virginia",tract
+51153901414,4,High,"Census Tract 9014.14, Prince William County, Virginia",tract
+51153901413,4,High,"Census Tract 9014.13, Prince William County, Virginia",tract
+51153900701,4,High,"Census Tract 9007.01, Prince William County, Virginia",tract
+51153901508,4,High,"Census Tract 9015.08, Prince William County, Virginia",tract
+51153901506,4,High,"Census Tract 9015.06, Prince William County, Virginia",tract
+51153901005,5,Very High,"Census Tract 9010.05, Prince William County, Virginia",tract
+51153901221,5,Very High,"Census Tract 9012.21, Prince William County, Virginia",tract
+51153900100,5,Very High,"Census Tract 9001, Prince William County, Virginia",tract
+51153901219,5,Very High,"Census Tract 9012.19, Prince William County, Virginia",tract
+51153900502,5,Very High,"Census Tract 9005.02, Prince William County, Virginia",tract
+51153901011,5,Very High,"Census Tract 9010.11, Prince William County, Virginia",tract
+51153901012,5,Very High,"Census Tract 9010.12, Prince William County, Virginia",tract
+51153901232,5,Very High,"Census Tract 9012.32, Prince William County, Virginia",tract
+51153901233,5,Very High,"Census Tract 9012.33, Prince William County, Virginia",tract
+51153901009,5,Very High,"Census Tract 9010.09, Prince William County, Virginia",tract
+51153901236,5,Very High,"Census Tract 9012.36, Prince William County, Virginia",tract
+51153901224,5,Very High,"Census Tract 9012.24, Prince William County, Virginia",tract
+51153901234,5,Very High,"Census Tract 9012.34, Prince William County, Virginia",tract
+51153901235,5,Very High,"Census Tract 9012.35, Prince William County, Virginia",tract
+51153901415,5,Very High,"Census Tract 9014.15, Prince William County, Virginia",tract
+51153901504,5,Very High,"Census Tract 9015.04, Prince William County, Virginia",tract
+51153901503,5,Very High,"Census Tract 9015.03, Prince William County, Virginia",tract
+51153901411,5,Very High,"Census Tract 9014.11, Prince William County, Virginia",tract
+51153901511,5,Very High,"Census Tract 9015.11, Prince William County, Virginia",tract
+51153901505,5,Very High,"Census Tract 9015.05, Prince William County, Virginia",tract
+51153901510,5,Very High,"Census Tract 9015.10, Prince William County, Virginia",tract
+51155210700,2,Low,"Census Tract 2107, Pulaski County, Virginia",tract
+51155210400,2,Low,"Census Tract 2104, Pulaski County, Virginia",tract
+51155210201,2,Low,"Census Tract 2102.01, Pulaski County, Virginia",tract
+51155210100,3,Average,"Census Tract 2101, Pulaski County, Virginia",tract
+51155210600,3,Average,"Census Tract 2106, Pulaski County, Virginia",tract
+51155210500,3,Average,"Census Tract 2105, Pulaski County, Virginia",tract
+51155210202,3,Average,"Census Tract 2102.02, Pulaski County, Virginia",tract
+51155210300,3,Average,"Census Tract 2103, Pulaski County, Virginia",tract
+51750010101,1,Very Low,"Census Tract 101.01, Radford city, Virginia",tract
+51750010200,2,Low,"Census Tract 102, Radford city, Virginia",tract
+51750010102,5,Very High,"Census Tract 101.02, Radford city, Virginia",tract
+51157950100,2,Low,"Census Tract 9501, Rappahannock County, Virginia",tract
+51157950200,2,Low,"Census Tract 9502, Rappahannock County, Virginia",tract
+51760021000,1,Very Low,"Census Tract 210, Richmond city, Virginia",tract
+51760021100,1,Very Low,"Census Tract 211, Richmond city, Virginia",tract
+51760010900,1,Very Low,"Census Tract 109, Richmond city, Virginia",tract
+51760020900,1,Very Low,"Census Tract 209, Richmond city, Virginia",tract
+51760071002,1,Very Low,"Census Tract 710.02, Richmond city, Virginia",tract
+51760070700,1,Very Low,"Census Tract 707, Richmond city, Virginia",tract
+51760010200,1,Very Low,"Census Tract 102, Richmond city, Virginia",tract
+51760010300,1,Very Low,"Census Tract 103, Richmond city, Virginia",tract
+51760010700,1,Very Low,"Census Tract 107, Richmond city, Virginia",tract
+51760010800,1,Very Low,"Census Tract 108, Richmond city, Virginia",tract
+51760041300,1,Very Low,"Census Tract 413, Richmond city, Virginia",tract
+51760040200,1,Very Low,"Census Tract 402, Richmond city, Virginia",tract
+51760070801,1,Very Low,"Census Tract 708.01, Richmond city, Virginia",tract
+51760060400,1,Very Low,"Census Tract 604, Richmond city, Virginia",tract
+51760070900,1,Very Low,"Census Tract 709, Richmond city, Virginia",tract
+51760011100,1,Very Low,"Census Tract 111, Richmond city, Virginia",tract
+51760011000,1,Very Low,"Census Tract 110, Richmond city, Virginia",tract
+51760041200,1,Very Low,"Census Tract 412, Richmond city, Virginia",tract
+51760020100,1,Very Low,"Census Tract 201, Richmond city, Virginia",tract
+51760020400,1,Very Low,"Census Tract 204, Richmond city, Virginia",tract
+51760020300,1,Very Low,"Census Tract 203, Richmond city, Virginia",tract
+51760020700,1,Very Low,"Census Tract 207, Richmond city, Virginia",tract
+51760060200,1,Very Low,"Census Tract 602, Richmond city, Virginia",tract
+51760060800,1,Very Low,"Census Tract 608, Richmond city, Virginia",tract
+51760060900,1,Very Low,"Census Tract 609, Richmond city, Virginia",tract
+51760021200,1,Very Low,"Census Tract 212, Richmond city, Virginia",tract
+51760010402,1,Very Low,"Census Tract 104.02, Richmond city, Virginia",tract
+51760070602,1,Very Low,"Census Tract 706.02, Richmond city, Virginia",tract
+51760070601,1,Very Low,"Census Tract 706.01, Richmond city, Virginia",tract
+51760061000,1,Very Low,"Census Tract 610, Richmond city, Virginia",tract
+51760071001,2,Low,"Census Tract 710.01, Richmond city, Virginia",tract
+51760070802,2,Low,"Census Tract 708.02, Richmond city, Virginia",tract
+51760041400,2,Low,"Census Tract 414, Richmond city, Virginia",tract
+51760060500,2,Low,"Census Tract 605, Richmond city, Virginia",tract
+51760060700,2,Low,"Census Tract 607, Richmond city, Virginia",tract
+51760030500,2,Low,"Census Tract 305, Richmond city, Virginia",tract
+51760010401,2,Low,"Census Tract 104.01, Richmond city, Virginia",tract
+51760070300,3,Average,"Census Tract 703, Richmond city, Virginia",tract
+51760071100,3,Average,"Census Tract 711, Richmond city, Virginia",tract
+51760041600,3,Average,"Census Tract 416, Richmond city, Virginia",tract
+51760040800,3,Average,"Census Tract 408, Richmond city, Virginia",tract
+51760040900,3,Average,"Census Tract 409, Richmond city, Virginia",tract
+51760041100,3,Average,"Census Tract 411, Richmond city, Virginia",tract
+51760010600,3,Average,"Census Tract 106, Richmond city, Virginia",tract
+51760030200,3,Average,"Census Tract 302, Richmond city, Virginia",tract
+51760020200,3,Average,"Census Tract 202, Richmond city, Virginia",tract
+51760010500,4,High,"Census Tract 105, Richmond city, Virginia",tract
+51760060600,4,High,"Census Tract 606, Richmond city, Virginia",tract
+51760040600,4,High,"Census Tract 406, Richmond city, Virginia",tract
+51760030100,4,High,"Census Tract 301, Richmond city, Virginia",tract
+51760020500,4,High,"Census Tract 205, Richmond city, Virginia",tract
+51760020600,4,High,"Census Tract 206, Richmond city, Virginia",tract
+51760050500,5,Very High,"Census Tract 505, Richmond city, Virginia",tract
+51760070400,5,Very High,"Census Tract 704, Richmond city, Virginia",tract
+51760070100,5,Very High,"Census Tract 701, Richmond city, Virginia",tract
+51760050600,5,Very High,"Census Tract 506, Richmond city, Virginia",tract
+51760050400,5,Very High,"Census Tract 504, Richmond city, Virginia",tract
+51760050200,5,Very High,"Census Tract 502, Richmond city, Virginia",tract
+51760050300,5,Very High,"Census Tract 503, Richmond city, Virginia",tract
+51760050100,5,Very High,"Census Tract 501, Richmond city, Virginia",tract
+51760040700,5,Very High,"Census Tract 407, Richmond city, Virginia",tract
+51760041000,5,Very High,"Census Tract 410, Richmond city, Virginia",tract
+51760040500,5,Very High,"Census Tract 405, Richmond city, Virginia",tract
+51760040400,5,Very High,"Census Tract 404, Richmond city, Virginia",tract
+51760040300,5,Very High,"Census Tract 403, Richmond city, Virginia",tract
+51760020800,5,Very High,"Census Tract 208, Richmond city, Virginia",tract
+51159040200,2,Low,"Census Tract 402, Richmond County, Virginia",tract
+51159040100,3,Average,"Census Tract 401, Richmond County, Virginia",tract
+51770000500,1,Very Low,"Census Tract 5, Roanoke city, Virginia",tract
+51770000300,1,Very Low,"Census Tract 3, Roanoke city, Virginia",tract
+51770001000,1,Very Low,"Census Tract 10, Roanoke city, Virginia",tract
+51770001200,1,Very Low,"Census Tract 12, Roanoke city, Virginia",tract
+51770000100,1,Very Low,"Census Tract 1, Roanoke city, Virginia",tract
+51770002400,1,Very Low,"Census Tract 24, Roanoke city, Virginia",tract
+51770000602,1,Very Low,"Census Tract 6.02, Roanoke city, Virginia",tract
+51770002600,1,Very Low,"Census Tract 26, Roanoke city, Virginia",tract
+51770000601,1,Very Low,"Census Tract 6.01, Roanoke city, Virginia",tract
+51770002700,1,Very Low,"Census Tract 27, Roanoke city, Virginia",tract
+51770002500,1,Very Low,"Census Tract 25, Roanoke city, Virginia",tract
+51770002800,1,Very Low,"Census Tract 28, Roanoke city, Virginia",tract
+51770000900,1,Very Low,"Census Tract 9, Roanoke city, Virginia",tract
+51770001900,2,Low,"Census Tract 19, Roanoke city, Virginia",tract
+51770001800,2,Low,"Census Tract 18, Roanoke city, Virginia",tract
+51770002200,2,Low,"Census Tract 22, Roanoke city, Virginia",tract
+51770002300,2,Low,"Census Tract 23, Roanoke city, Virginia",tract
+51770003100,3,Average,"Census Tract 31, Roanoke city, Virginia",tract
+51770000400,3,Average,"Census Tract 4, Roanoke city, Virginia",tract
+51770001100,4,High,"Census Tract 11, Roanoke city, Virginia",tract
+51770002100,4,High,"Census Tract 21, Roanoke city, Virginia",tract
+51770003000,4,High,"Census Tract 30, Roanoke city, Virginia",tract
+51770002900,5,Very High,"Census Tract 29, Roanoke city, Virginia",tract
+51161031000,2,Low,"Census Tract 310, Roanoke County, Virginia",tract
+51161031102,2,Low,"Census Tract 311.02, Roanoke County, Virginia",tract
+51161031101,2,Low,"Census Tract 311.01, Roanoke County, Virginia",tract
+51161030300,2,Low,"Census Tract 303, Roanoke County, Virginia",tract
+51161030203,3,Average,"Census Tract 302.03, Roanoke County, Virginia",tract
+51161030204,3,Average,"Census Tract 302.04, Roanoke County, Virginia",tract
+51161030900,4,High,"Census Tract 309, Roanoke County, Virginia",tract
+51161031201,4,High,"Census Tract 312.01, Roanoke County, Virginia",tract
+51161030100,4,High,"Census Tract 301, Roanoke County, Virginia",tract
+51161030201,4,High,"Census Tract 302.01, Roanoke County, Virginia",tract
+51161030702,4,High,"Census Tract 307.02, Roanoke County, Virginia",tract
+51161030205,4,High,"Census Tract 302.05, Roanoke County, Virginia",tract
+51161030801,4,High,"Census Tract 308.01, Roanoke County, Virginia",tract
+51161030500,5,Very High,"Census Tract 305, Roanoke County, Virginia",tract
+51161031202,5,Very High,"Census Tract 312.02, Roanoke County, Virginia",tract
+51161030600,5,Very High,"Census Tract 306, Roanoke County, Virginia",tract
+51161030701,5,Very High,"Census Tract 307.01, Roanoke County, Virginia",tract
+51161030802,5,Very High,"Census Tract 308.02, Roanoke County, Virginia",tract
+51163930400,2,Low,"Census Tract 9304, Rockbridge County, Virginia",tract
+51163930100,3,Average,"Census Tract 9301, Rockbridge County, Virginia",tract
+51163930200,3,Average,"Census Tract 9302, Rockbridge County, Virginia",tract
+51163930300,4,High,"Census Tract 9303, Rockbridge County, Virginia",tract
+51165010900,1,Very Low,"Census Tract 109, Rockingham County, Virginia",tract
+51165010200,1,Very Low,"Census Tract 102, Rockingham County, Virginia",tract
+51165012000,1,Very Low,"Census Tract 120, Rockingham County, Virginia",tract
+51165010500,1,Very Low,"Census Tract 105, Rockingham County, Virginia",tract
+51165011000,1,Very Low,"Census Tract 110, Rockingham County, Virginia",tract
+51165010700,2,Low,"Census Tract 107, Rockingham County, Virginia",tract
+51165010800,2,Low,"Census Tract 108, Rockingham County, Virginia",tract
+51165010100,2,Low,"Census Tract 101, Rockingham County, Virginia",tract
+51165011100,2,Low,"Census Tract 111, Rockingham County, Virginia",tract
+51165011200,2,Low,"Census Tract 112, Rockingham County, Virginia",tract
+51165010600,2,Low,"Census Tract 106, Rockingham County, Virginia",tract
+51165010400,3,Average,"Census Tract 104, Rockingham County, Virginia",tract
+51165011400,3,Average,"Census Tract 114, Rockingham County, Virginia",tract
+51165011600,3,Average,"Census Tract 116, Rockingham County, Virginia",tract
+51165011700,3,Average,"Census Tract 117, Rockingham County, Virginia",tract
+51165011900,4,High,"Census Tract 119, Rockingham County, Virginia",tract
+51165010300,4,High,"Census Tract 103, Rockingham County, Virginia",tract
+51165011500,4,High,"Census Tract 115, Rockingham County, Virginia",tract
+51165011800,4,High,"Census Tract 118, Rockingham County, Virginia",tract
+51167030100,1,Very Low,"Census Tract 301, Russell County, Virginia",tract
+51167030300,2,Low,"Census Tract 303, Russell County, Virginia",tract
+51167030600,2,Low,"Census Tract 306, Russell County, Virginia",tract
+51167030200,3,Average,"Census Tract 302, Russell County, Virginia",tract
+51167030500,3,Average,"Census Tract 305, Russell County, Virginia",tract
+51167030402,3,Average,"Census Tract 304.02, Russell County, Virginia",tract
+51167030401,3,Average,"Census Tract 304.01, Russell County, Virginia",tract
+51775010300,1,Very Low,"Census Tract 103, Salem city, Virginia",tract
+51775010100,2,Low,"Census Tract 101, Salem city, Virginia",tract
+51775010200,3,Average,"Census Tract 102, Salem city, Virginia",tract
+51775010502,3,Average,"Census Tract 105.02, Salem city, Virginia",tract
+51775010501,3,Average,"Census Tract 105.01, Salem city, Virginia",tract
+51169030600,1,Very Low,"Census Tract 306, Scott County, Virginia",tract
+51169030200,2,Low,"Census Tract 302, Scott County, Virginia",tract
+51169030500,2,Low,"Census Tract 305, Scott County, Virginia",tract
+51169030400,2,Low,"Census Tract 304, Scott County, Virginia",tract
+51169030100,3,Average,"Census Tract 301, Scott County, Virginia",tract
+51169030300,3,Average,"Census Tract 303, Scott County, Virginia",tract
+51171040700,2,Low,"Census Tract 407, Shenandoah County, Virginia",tract
+51171040500,2,Low,"Census Tract 405, Shenandoah County, Virginia",tract
+51171040100,2,Low,"Census Tract 401, Shenandoah County, Virginia",tract
+51171040800,3,Average,"Census Tract 408, Shenandoah County, Virginia",tract
+51171040600,3,Average,"Census Tract 406, Shenandoah County, Virginia",tract
+51171040300,3,Average,"Census Tract 403, Shenandoah County, Virginia",tract
+51171040202,3,Average,"Census Tract 402.02, Shenandoah County, Virginia",tract
+51171040400,4,High,"Census Tract 404, Shenandoah County, Virginia",tract
+51171040201,4,High,"Census Tract 402.01, Shenandoah County, Virginia",tract
+51173030600,1,Very Low,"Census Tract 306, Smyth County, Virginia",tract
+51173030200,2,Low,"Census Tract 302, Smyth County, Virginia",tract
+51173030302,2,Low,"Census Tract 303.02, Smyth County, Virginia",tract
+51173030701,2,Low,"Census Tract 307.01, Smyth County, Virginia",tract
+51173030100,3,Average,"Census Tract 301, Smyth County, Virginia",tract
+51173030400,3,Average,"Census Tract 304, Smyth County, Virginia",tract
+51173030500,3,Average,"Census Tract 305, Smyth County, Virginia",tract
+51173030702,3,Average,"Census Tract 307.02, Smyth County, Virginia",tract
+51173030301,3,Average,"Census Tract 303.01, Smyth County, Virginia",tract
+51175200200,1,Very Low,"Census Tract 2002, Southampton County, Virginia",tract
+51175200500,1,Very Low,"Census Tract 2005, Southampton County, Virginia",tract
+51175200300,1,Very Low,"Census Tract 2003, Southampton County, Virginia",tract
+51175200400,2,Low,"Census Tract 2004, Southampton County, Virginia",tract
+51175200100,3,Average,"Census Tract 2001, Southampton County, Virginia",tract
+51177020307,1,Very Low,"Census Tract 203.07, Spotsylvania County, Virginia",tract
+51177020110,1,Very Low,"Census Tract 201.10, Spotsylvania County, Virginia",tract
+51177020403,1,Very Low,"Census Tract 204.03, Spotsylvania County, Virginia",tract
+51177020108,2,Low,"Census Tract 201.08, Spotsylvania County, Virginia",tract
+51177020405,2,Low,"Census Tract 204.05, Spotsylvania County, Virginia",tract
+51177020408,2,Low,"Census Tract 204.08, Spotsylvania County, Virginia",tract
+51177020113,2,Low,"Census Tract 201.13, Spotsylvania County, Virginia",tract
+51177020305,2,Low,"Census Tract 203.05, Spotsylvania County, Virginia",tract
+51177020311,2,Low,"Census Tract 203.11, Spotsylvania County, Virginia",tract
+51177020406,2,Low,"Census Tract 204.06, Spotsylvania County, Virginia",tract
+51177020203,2,Low,"Census Tract 202.03, Spotsylvania County, Virginia",tract
+51177020404,2,Low,"Census Tract 204.04, Spotsylvania County, Virginia",tract
+51177020106,3,Average,"Census Tract 201.06, Spotsylvania County, Virginia",tract
+51177020109,3,Average,"Census Tract 201.09, Spotsylvania County, Virginia",tract
+51177020310,3,Average,"Census Tract 203.10, Spotsylvania County, Virginia",tract
+51177020309,3,Average,"Census Tract 203.09, Spotsylvania County, Virginia",tract
+51177020306,3,Average,"Census Tract 203.06, Spotsylvania County, Virginia",tract
+51177020114,3,Average,"Census Tract 201.14, Spotsylvania County, Virginia",tract
+51177020112,3,Average,"Census Tract 201.12, Spotsylvania County, Virginia",tract
+51177020202,3,Average,"Census Tract 202.02, Spotsylvania County, Virginia",tract
+51177020304,3,Average,"Census Tract 203.04, Spotsylvania County, Virginia",tract
+51177020201,3,Average,"Census Tract 202.01, Spotsylvania County, Virginia",tract
+51177020111,3,Average,"Census Tract 201.11, Spotsylvania County, Virginia",tract
+51177020205,3,Average,"Census Tract 202.05, Spotsylvania County, Virginia",tract
+51177020104,4,High,"Census Tract 201.04, Spotsylvania County, Virginia",tract
+51177020105,4,High,"Census Tract 201.05, Spotsylvania County, Virginia",tract
+51177020407,4,High,"Census Tract 204.07, Spotsylvania County, Virginia",tract
+51177020308,4,High,"Census Tract 203.08, Spotsylvania County, Virginia",tract
+51177020204,4,High,"Census Tract 202.04, Spotsylvania County, Virginia",tract
+51177020107,4,High,"Census Tract 201.07, Spotsylvania County, Virginia",tract
+51179010201,1,Very Low,"Census Tract 102.01, Stafford County, Virginia",tract
+51179010304,1,Very Low,"Census Tract 103.04, Stafford County, Virginia",tract
+51179010207,2,Low,"Census Tract 102.07, Stafford County, Virginia",tract
+51179010204,3,Average,"Census Tract 102.04, Stafford County, Virginia",tract
+51179010504,3,Average,"Census Tract 105.04, Stafford County, Virginia",tract
+51179010202,3,Average,"Census Tract 102.02, Stafford County, Virginia",tract
+51179010301,3,Average,"Census Tract 103.01, Stafford County, Virginia",tract
+51179010303,3,Average,"Census Tract 103.03, Stafford County, Virginia",tract
+51179010210,3,Average,"Census Tract 102.10, Stafford County, Virginia",tract
+51179010211,3,Average,"Census Tract 102.11, Stafford County, Virginia",tract
+51179010108,3,Average,"Census Tract 101.08, Stafford County, Virginia",tract
+51179010305,3,Average,"Census Tract 103.05, Stafford County, Virginia",tract
+51179010503,4,High,"Census Tract 105.03, Stafford County, Virginia",tract
+51179010403,4,High,"Census Tract 104.03, Stafford County, Virginia",tract
+51179010404,4,High,"Census Tract 104.04, Stafford County, Virginia",tract
+51179010406,4,High,"Census Tract 104.06, Stafford County, Virginia",tract
+51179010405,4,High,"Census Tract 104.05, Stafford County, Virginia",tract
+51179010502,4,High,"Census Tract 105.02, Stafford County, Virginia",tract
+51179010105,4,High,"Census Tract 101.05, Stafford County, Virginia",tract
+51179010206,4,High,"Census Tract 102.06, Stafford County, Virginia",tract
+51179010205,4,High,"Census Tract 102.05, Stafford County, Virginia",tract
+51179010103,4,High,"Census Tract 101.03, Stafford County, Virginia",tract
+51179010106,4,High,"Census Tract 101.06, Stafford County, Virginia",tract
+51179010212,4,High,"Census Tract 102.12, Stafford County, Virginia",tract
+51179010214,4,High,"Census Tract 102.14, Stafford County, Virginia",tract
+51179010107,4,High,"Census Tract 101.07, Stafford County, Virginia",tract
+51179010213,4,High,"Census Tract 102.13, Stafford County, Virginia",tract
+51790000200,1,Very Low,"Census Tract 2, Staunton city, Virginia",tract
+51790000600,1,Very Low,"Census Tract 6, Staunton city, Virginia",tract
+51790000400,2,Low,"Census Tract 4, Staunton city, Virginia",tract
+51790000100,3,Average,"Census Tract 1, Staunton city, Virginia",tract
+51790000300,3,Average,"Census Tract 3, Staunton city, Virginia",tract
+51790000500,4,High,"Census Tract 5, Staunton city, Virginia",tract
+51800065100,1,Very Low,"Census Tract 651, Suffolk city, Virginia",tract
+51800065300,1,Very Low,"Census Tract 653, Suffolk city, Virginia",tract
+51800065400,1,Very Low,"Census Tract 654, Suffolk city, Virginia",tract
+51800065500,1,Very Low,"Census Tract 655, Suffolk city, Virginia",tract
+51800075501,1,Very Low,"Census Tract 755.01, Suffolk city, Virginia",tract
+51800075601,1,Very Low,"Census Tract 756.01, Suffolk city, Virginia",tract
+51800075204,1,Very Low,"Census Tract 752.04, Suffolk city, Virginia",tract
+51800075802,1,Very Low,"Census Tract 758.02, Suffolk city, Virginia",tract
+51800075703,2,Low,"Census Tract 757.03, Suffolk city, Virginia",tract
+51800075803,2,Low,"Census Tract 758.03, Suffolk city, Virginia",tract
+51800075701,2,Low,"Census Tract 757.01, Suffolk city, Virginia",tract
+51800075801,2,Low,"Census Tract 758.01, Suffolk city, Virginia",tract
+51800075401,2,Low,"Census Tract 754.01, Suffolk city, Virginia",tract
+51800075502,3,Average,"Census Tract 755.02, Suffolk city, Virginia",tract
+51800075702,3,Average,"Census Tract 757.02, Suffolk city, Virginia",tract
+51800075402,3,Average,"Census Tract 754.02, Suffolk city, Virginia",tract
+51800075403,3,Average,"Census Tract 754.03, Suffolk city, Virginia",tract
+51800075602,3,Average,"Census Tract 756.02, Suffolk city, Virginia",tract
+51800065200,4,High,"Census Tract 652, Suffolk city, Virginia",tract
+51800075302,4,High,"Census Tract 753.02, Suffolk city, Virginia",tract
+51800075405,4,High,"Census Tract 754.05, Suffolk city, Virginia",tract
+51800075203,4,High,"Census Tract 752.03, Suffolk city, Virginia",tract
+51800075202,4,High,"Census Tract 752.02, Suffolk city, Virginia",tract
+51800075101,4,High,"Census Tract 751.01, Suffolk city, Virginia",tract
+51800075404,4,High,"Census Tract 754.04, Suffolk city, Virginia",tract
+51800075201,5,Very High,"Census Tract 752.01, Suffolk city, Virginia",tract
+51800075301,5,Very High,"Census Tract 753.01, Suffolk city, Virginia",tract
+51800075102,5,Very High,"Census Tract 751.02, Suffolk city, Virginia",tract
+51181860100,2,Low,"Census Tract 8601, Surry County, Virginia",tract
+51181860200,2,Low,"Census Tract 8602, Surry County, Virginia",tract
+51183870100,1,Very Low,"Census Tract 8701, Sussex County, Virginia",tract
+51183870300,1,Very Low,"Census Tract 8703, Sussex County, Virginia",tract
+51183870400,1,Very Low,"Census Tract 8704, Sussex County, Virginia",tract
+51183870201,2,Low,"Census Tract 8702.01, Sussex County, Virginia",tract
+51183870202,4,High,"Census Tract 8702.02, Sussex County, Virginia",tract
+51185020200,1,Very Low,"Census Tract 202, Tazewell County, Virginia",tract
+51185020100,1,Very Low,"Census Tract 201, Tazewell County, Virginia",tract
+51185020500,1,Very Low,"Census Tract 205, Tazewell County, Virginia",tract
+51185020900,1,Very Low,"Census Tract 209, Tazewell County, Virginia",tract
+51185021000,1,Very Low,"Census Tract 210, Tazewell County, Virginia",tract
+51185020800,2,Low,"Census Tract 208, Tazewell County, Virginia",tract
+51185020300,2,Low,"Census Tract 203, Tazewell County, Virginia",tract
+51185020400,2,Low,"Census Tract 204, Tazewell County, Virginia",tract
+51185021100,3,Average,"Census Tract 211, Tazewell County, Virginia",tract
+51185020600,3,Average,"Census Tract 206, Tazewell County, Virginia",tract
+51185020700,4,High,"Census Tract 207, Tazewell County, Virginia",tract
+51810040200,1,Very Low,"Census Tract 402, Virginia Beach city, Virginia",tract
+51810041004,1,Very Low,"Census Tract 410.04, Virginia Beach city, Virginia",tract
+51810043200,1,Very Low,"Census Tract 432, Virginia Beach city, Virginia",tract
+51810045000,1,Very Low,"Census Tract 450, Virginia Beach city, Virginia",tract
+51810044807,1,Very Low,"Census Tract 448.07, Virginia Beach city, Virginia",tract
+51810044805,1,Very Low,"Census Tract 448.05, Virginia Beach city, Virginia",tract
+51810044806,1,Very Low,"Census Tract 448.06, Virginia Beach city, Virginia",tract
+51810045200,1,Very Low,"Census Tract 452, Virginia Beach city, Virginia",tract
+51810045415,1,Very Low,"Census Tract 454.15, Virginia Beach city, Virginia",tract
+51810045810,1,Very Low,"Census Tract 458.10, Virginia Beach city, Virginia",tract
+51810046213,1,Very Low,"Census Tract 462.13, Virginia Beach city, Virginia",tract
+51810040000,1,Very Low,"Census Tract 400, Virginia Beach city, Virginia",tract
+51810040403,1,Very Low,"Census Tract 404.03, Virginia Beach city, Virginia",tract
+51810046014,2,Low,"Census Tract 460.14, Virginia Beach city, Virginia",tract
+51810046221,2,Low,"Census Tract 462.21, Virginia Beach city, Virginia",tract
+51810046220,2,Low,"Census Tract 462.20, Virginia Beach city, Virginia",tract
+51810040402,2,Low,"Census Tract 404.02, Virginia Beach city, Virginia",tract
+51810046224,2,Low,"Census Tract 462.24, Virginia Beach city, Virginia",tract
+51810040801,2,Low,"Census Tract 408.01, Virginia Beach city, Virginia",tract
+51810044001,2,Low,"Census Tract 440.01, Virginia Beach city, Virginia",tract
+51810045414,2,Low,"Census Tract 454.14, Virginia Beach city, Virginia",tract
+51810045405,2,Low,"Census Tract 454.05, Virginia Beach city, Virginia",tract
+51810045407,2,Low,"Census Tract 454.07, Virginia Beach city, Virginia",tract
+51810045408,2,Low,"Census Tract 454.08, Virginia Beach city, Virginia",tract
+51810045805,2,Low,"Census Tract 458.05, Virginia Beach city, Virginia",tract
+51810046012,2,Low,"Census Tract 460.12, Virginia Beach city, Virginia",tract
+51810046013,2,Low,"Census Tract 460.13, Virginia Beach city, Virginia",tract
+51810040802,2,Low,"Census Tract 408.02, Virginia Beach city, Virginia",tract
+51810042802,2,Low,"Census Tract 428.02, Virginia Beach city, Virginia",tract
+51810044200,2,Low,"Census Tract 442, Virginia Beach city, Virginia",tract
+51810045806,2,Low,"Census Tract 458.06, Virginia Beach city, Virginia",tract
+51810045808,2,Low,"Census Tract 458.08, Virginia Beach city, Virginia",tract
+51810045809,2,Low,"Census Tract 458.09, Virginia Beach city, Virginia",tract
+51810046011,2,Low,"Census Tract 460.11, Virginia Beach city, Virginia",tract
+51810044004,2,Low,"Census Tract 440.04, Virginia Beach city, Virginia",tract
+51810045604,2,Low,"Census Tract 456.04, Virginia Beach city, Virginia",tract
+51810045427,2,Low,"Census Tract 454.27, Virginia Beach city, Virginia",tract
+51810046015,3,Average,"Census Tract 460.15, Virginia Beach city, Virginia",tract
+51810045807,3,Average,"Census Tract 458.07, Virginia Beach city, Virginia",tract
+51810046223,3,Average,"Census Tract 462.23, Virginia Beach city, Virginia",tract
+51810046222,3,Average,"Census Tract 462.22, Virginia Beach city, Virginia",tract
+51810040600,3,Average,"Census Tract 406, Virginia Beach city, Virginia",tract
+51810041002,3,Average,"Census Tract 410.02, Virginia Beach city, Virginia",tract
+51810046225,3,Average,"Census Tract 462.25, Virginia Beach city, Virginia",tract
+51810045603,3,Average,"Census Tract 456.03, Virginia Beach city, Virginia",tract
+51810042400,3,Average,"Census Tract 424, Virginia Beach city, Virginia",tract
+51810042600,3,Average,"Census Tract 426, Virginia Beach city, Virginia",tract
+51810044402,3,Average,"Census Tract 444.02, Virginia Beach city, Virginia",tract
+51810044808,3,Average,"Census Tract 448.08, Virginia Beach city, Virginia",tract
+51810045406,3,Average,"Census Tract 454.06, Virginia Beach city, Virginia",tract
+51810045417,3,Average,"Census Tract 454.17, Virginia Beach city, Virginia",tract
+51810045801,3,Average,"Census Tract 458.01, Virginia Beach city, Virginia",tract
+51810045803,3,Average,"Census Tract 458.03, Virginia Beach city, Virginia",tract
+51810046005,3,Average,"Census Tract 460.05, Virginia Beach city, Virginia",tract
+51810046206,3,Average,"Census Tract 462.06, Virginia Beach city, Virginia",tract
+51810046400,3,Average,"Census Tract 464, Virginia Beach city, Virginia",tract
+51810041003,3,Average,"Census Tract 410.03, Virginia Beach city, Virginia",tract
+51810041801,3,Average,"Census Tract 418.01, Virginia Beach city, Virginia",tract
+51810041802,3,Average,"Census Tract 418.02, Virginia Beach city, Virginia",tract
+51810042801,3,Average,"Census Tract 428.01, Virginia Beach city, Virginia",tract
+51810046010,3,Average,"Census Tract 460.10, Virginia Beach city, Virginia",tract
+51810046219,3,Average,"Census Tract 462.19, Virginia Beach city, Virginia",tract
+51810046217,3,Average,"Census Tract 462.17, Virginia Beach city, Virginia",tract
+51810045428,3,Average,"Census Tract 454.28, Virginia Beach city, Virginia",tract
+51810045421,4,High,"Census Tract 454.21, Virginia Beach city, Virginia",tract
+51810045422,4,High,"Census Tract 454.22, Virginia Beach city, Virginia",tract
+51810045423,4,High,"Census Tract 454.23, Virginia Beach city, Virginia",tract
+51810046016,4,High,"Census Tract 460.16, Virginia Beach city, Virginia",tract
+51810045424,4,High,"Census Tract 454.24, Virginia Beach city, Virginia",tract
+51810041200,4,High,"Census Tract 412, Virginia Beach city, Virginia",tract
+51810045425,4,High,"Census Tract 454.25, Virginia Beach city, Virginia",tract
+51810041600,4,High,"Census Tract 416, Virginia Beach city, Virginia",tract
+51810042201,4,High,"Census Tract 422.01, Virginia Beach city, Virginia",tract
+51810043400,4,High,"Census Tract 434, Virginia Beach city, Virginia",tract
+51810045601,4,High,"Census Tract 456.01, Virginia Beach city, Virginia",tract
+51810046009,4,High,"Census Tract 460.09, Virginia Beach city, Virginia",tract
+51810046002,4,High,"Census Tract 460.02, Virginia Beach city, Virginia",tract
+51810046006,4,High,"Census Tract 460.06, Virginia Beach city, Virginia",tract
+51810046211,4,High,"Census Tract 462.11, Virginia Beach city, Virginia",tract
+51810046204,4,High,"Census Tract 462.04, Virginia Beach city, Virginia",tract
+51810046207,4,High,"Census Tract 462.07, Virginia Beach city, Virginia",tract
+51810045420,4,High,"Census Tract 454.20, Virginia Beach city, Virginia",tract
+51810046214,4,High,"Census Tract 462.14, Virginia Beach city, Virginia",tract
+51810046216,4,High,"Census Tract 462.16, Virginia Beach city, Virginia",tract
+51810043003,4,High,"Census Tract 430.03, Virginia Beach city, Virginia",tract
+51810043004,4,High,"Census Tract 430.04, Virginia Beach city, Virginia",tract
+51810044003,4,High,"Census Tract 440.03, Virginia Beach city, Virginia",tract
+51810045426,4,High,"Census Tract 454.26, Virginia Beach city, Virginia",tract
+51810045412,5,Very High,"Census Tract 454.12, Virginia Beach city, Virginia",tract
+51810040404,5,Very High,"Census Tract 404.04, Virginia Beach city, Virginia",tract
+51810041400,5,Very High,"Census Tract 414, Virginia Beach city, Virginia",tract
+51810042000,5,Very High,"Census Tract 420, Virginia Beach city, Virginia",tract
+51810042202,5,Very High,"Census Tract 422.02, Virginia Beach city, Virginia",tract
+51810043002,5,Very High,"Census Tract 430.02, Virginia Beach city, Virginia",tract
+51810043600,5,Very High,"Census Tract 436, Virginia Beach city, Virginia",tract
+51810043800,5,Very High,"Census Tract 438, Virginia Beach city, Virginia",tract
+51810044401,5,Very High,"Census Tract 444.01, Virginia Beach city, Virginia",tract
+51810044600,5,Very High,"Census Tract 446, Virginia Beach city, Virginia",tract
+51810046212,5,Very High,"Census Tract 462.12, Virginia Beach city, Virginia",tract
+51187020500,1,Very Low,"Census Tract 205, Warren County, Virginia",tract
+51187020300,2,Low,"Census Tract 203, Warren County, Virginia",tract
+51187020400,2,Low,"Census Tract 204, Warren County, Virginia",tract
+51187020700,2,Low,"Census Tract 207, Warren County, Virginia",tract
+51187020602,2,Low,"Census Tract 206.02, Warren County, Virginia",tract
+51187020100,3,Average,"Census Tract 201, Warren County, Virginia",tract
+51187020601,3,Average,"Census Tract 206.01, Warren County, Virginia",tract
+51187020200,4,High,"Census Tract 202, Warren County, Virginia",tract
+51191010502,1,Very Low,"Census Tract 105.02, Washington County, Virginia",tract
+51191010602,1,Very Low,"Census Tract 106.02, Washington County, Virginia",tract
+51191010700,2,Low,"Census Tract 107, Washington County, Virginia",tract
+51191010300,2,Low,"Census Tract 103, Washington County, Virginia",tract
+51191010900,2,Low,"Census Tract 109, Washington County, Virginia",tract
+51191010402,2,Low,"Census Tract 104.02, Washington County, Virginia",tract
+51191010100,3,Average,"Census Tract 101, Washington County, Virginia",tract
+51191010200,3,Average,"Census Tract 102, Washington County, Virginia",tract
+51191010800,3,Average,"Census Tract 108, Washington County, Virginia",tract
+51191010501,3,Average,"Census Tract 105.01, Washington County, Virginia",tract
+51191010601,3,Average,"Census Tract 106.01, Washington County, Virginia",tract
+51191011000,4,High,"Census Tract 110, Washington County, Virginia",tract
+51191010401,4,High,"Census Tract 104.01, Washington County, Virginia",tract
+51820003200,1,Very Low,"Census Tract 32, Waynesboro city, Virginia",tract
+51820003100,1,Very Low,"Census Tract 31, Waynesboro city, Virginia",tract
+51820003300,1,Very Low,"Census Tract 33, Waynesboro city, Virginia",tract
+51820003500,4,High,"Census Tract 35, Waynesboro city, Virginia",tract
+51820003400,4,High,"Census Tract 34, Waynesboro city, Virginia",tract
+51193010100,2,Low,"Census Tract 101, Westmoreland County, Virginia",tract
+51193010300,2,Low,"Census Tract 103, Westmoreland County, Virginia",tract
+51193010400,2,Low,"Census Tract 104, Westmoreland County, Virginia",tract
+51193010200,4,High,"Census Tract 102, Westmoreland County, Virginia",tract
+51830370200,2,Low,"Census Tract 3702, Williamsburg city, Virginia",tract
+51830370300,3,Average,"Census Tract 3703, Williamsburg city, Virginia",tract
+51830370100,5,Very High,"Census Tract 3701, Williamsburg city, Virginia",tract
+51840000100,1,Very Low,"Census Tract 1, Winchester city, Virginia",tract
+51840000201,2,Low,"Census Tract 2.01, Winchester city, Virginia",tract
+51840000301,2,Low,"Census Tract 3.01, Winchester city, Virginia",tract
+51840000302,3,Average,"Census Tract 3.02, Winchester city, Virginia",tract
+51840000202,4,High,"Census Tract 2.02, Winchester city, Virginia",tract
+51195931500,1,Very Low,"Census Tract 9315, Wise County, Virginia",tract
+51195931600,1,Very Low,"Census Tract 9316, Wise County, Virginia",tract
+51195931400,2,Low,"Census Tract 9314, Wise County, Virginia",tract
+51195931200,2,Low,"Census Tract 9312, Wise County, Virginia",tract
+51195930700,2,Low,"Census Tract 9307, Wise County, Virginia",tract
+51195931100,2,Low,"Census Tract 9311, Wise County, Virginia",tract
+51195931700,2,Low,"Census Tract 9317, Wise County, Virginia",tract
+51195930800,2,Low,"Census Tract 9308, Wise County, Virginia",tract
+51195931300,3,Average,"Census Tract 9313, Wise County, Virginia",tract
+51195931000,3,Average,"Census Tract 9310, Wise County, Virginia",tract
+51195930900,3,Average,"Census Tract 9309, Wise County, Virginia",tract
+51197050200,2,Low,"Census Tract 502, Wythe County, Virginia",tract
+51197050100,3,Average,"Census Tract 501, Wythe County, Virginia",tract
+51197050401,3,Average,"Census Tract 504.01, Wythe County, Virginia",tract
+51197050302,3,Average,"Census Tract 503.02, Wythe County, Virginia",tract
+51197050301,3,Average,"Census Tract 503.01, Wythe County, Virginia",tract
+51197050402,3,Average,"Census Tract 504.02, Wythe County, Virginia",tract
+51199050500,1,Very Low,"Census Tract 505, York County, Virginia",tract
+51199050900,2,Low,"Census Tract 509, York County, Virginia",tract
+51199050204,3,Average,"Census Tract 502.04, York County, Virginia",tract
+51199050306,3,Average,"Census Tract 503.06, York County, Virginia",tract
+51199050402,4,High,"Census Tract 504.02, York County, Virginia",tract
+51199050303,4,High,"Census Tract 503.03, York County, Virginia",tract
+51199051100,4,High,"Census Tract 511, York County, Virginia",tract
+51199051000,4,High,"Census Tract 510, York County, Virginia",tract
+51199050401,5,Very High,"Census Tract 504.01, York County, Virginia",tract
+51199050205,5,Very High,"Census Tract 502.05, York County, Virginia",tract
+51199050203,5,Very High,"Census Tract 502.03, York County, Virginia",tract
+51199050304,5,Very High,"Census Tract 503.04, York County, Virginia",tract
+51199050206,5,Very High,"Census Tract 502.06, York County, Virginia",tract
+51199050305,5,Very High,"Census Tract 503.05, York County, Virginia",tract
