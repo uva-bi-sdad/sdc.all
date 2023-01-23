@@ -64,7 +64,7 @@ if __name__ == "__main__":
     test = Test(
         __file__,
         "Column Test",
-        "Checks whether or not csvs have the predetermined column names for each csv",
+        "Checks whether or not file (not a .xz or .csv) extensions are correct?",
     )
     report = evaluate_folder("./data")
     test.export_html(report)
