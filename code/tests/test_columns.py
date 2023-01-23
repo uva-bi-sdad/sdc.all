@@ -9,6 +9,7 @@ import urllib.request
 from string import Template
 import traceback
 from pytz import timezone
+from test import Test
 
 
 def evaluate_folder(req_cols, dirpath):
@@ -63,28 +64,13 @@ if __name__ == "__main__":
         req_cols = json.load(url)
 
     req_cols = set(req_cols)
-    print(req_cols)
+    print("Columns found: %s" % req_cols)
 
-    report = evaluate_folder(req_cols, "./data")
-    tz = timezone("EST")
-    time_checked = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
-
-    print(time_checked)
-
-    t = Template(
-        """
-    <html>
-        <head>
-        <title>Column Test</title>
-        </head>
-        <body>
-            Last updated: $time_checked
-            $report
-        </body>
-    </html>
-    """
+    test = Test(
+        __file__,
+        "Column Test",
+        "Checks whether or not csvs have the predetermined column names for each csv",
     )
 
-    print(t.substitute(time_checked=time_checked, report=report))
-    with open("./docs/column_test.html", "w") as f:
-        f.write(t.substitute(time_checked=time_checked, report=report))
+    report = evaluate_folder(req_cols, "./data")
+    test.export_html(report)

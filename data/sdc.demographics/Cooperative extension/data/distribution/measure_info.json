@@ -1,13 +1,13 @@
 {
   "demographics:perc_male":{
     "category": "Demographics",
-    "measure_table" : "va_cttr_2017_2021_perc_male",
-    "full_name": "demographics:perc_male",
+    "measure_table" : "va_cttr_2010_2021_perc_male"
+    "full_name": "demographics:perc_male"
     "measure": "perc_male",
     "short_name": "Male population",
     "long_name": "Male population (percent)",
-    "short_description": "The percent of males in population. Based on American Community Survey ACS 2017/2021 5-year estimates.",
-    "long_description": "The percent of males in the total population in percent. Based on American Community Survey ACS 2017/2020 5-year estimates table S0101.",
+    "short_description": "The percent of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
+    "long_description": "The percent of males in the total population in percent. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
     "statement": "The male population is {value} in {features.name}.",
     "type": "percent",
     "equity_category": "Status",

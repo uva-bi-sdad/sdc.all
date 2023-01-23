@@ -8,6 +8,7 @@ import json
 import urllib.request
 from string import Template
 import traceback
+from test import Test
 
 
 def evaluate_folder(dirpath):
@@ -60,34 +61,10 @@ def evaluate_folder(dirpath):
 
 
 if __name__ == "__main__":
-
-    # with urllib.request.urlopen(
-    #    "https://raw.githubusercontent.com/uva-bi-sdad/data_repo_structure/main/col_names.json"
-    # ) as url:
-    #    req_cols = json.load(url)
-
-    # req_cols = set(req_cols)
-    # print(req_cols)
-
-    report = evaluate_folder("./data")
-    time_checked = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-    print(time_checked)
-
-    t = Template(
-        """
-    <html>
-        <head>
-        <title>File Extension Test</title>
-        </head>
-        <body>
-            Last updated: $time_checked
-            $report
-        </body>
-    </html>
-    """
+    test = Test(
+        __file__,
+        "Column Test",
+        "Checks whether or not csvs have the predetermined column names for each csv",
     )
-
-    print(t.substitute(time_checked=time_checked, report=report))
-    with open("./docs/file_extension_test.html", "w") as f:
-        f.write(t.substitute(time_checked=time_checked, report=report))
+    report = evaluate_folder("./data")
+    test.export_html(report)

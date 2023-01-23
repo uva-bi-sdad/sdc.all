@@ -9,6 +9,7 @@ import urllib.request
 from string import Template
 import traceback
 from pytz import timezone
+from test import Test
 
 
 def evaluate_folder(dirpath):
@@ -41,27 +42,9 @@ def evaluate_folder(dirpath):
 
 if __name__ == "__main__":
     report = evaluate_folder("./data")
-    tz = timezone("EST")
-    time_checked = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
-    print(time_checked)
-
-    t = Template(
-        """
-    <html>
-        <head>
-        <title>JSON Test</title>
-        <p>
-            This test looks for JSON files and attempts to open them. Files that can be looaded pass this test.
-        </p>
-        </head>
-        <body>
-            Last updated: $time_checked
-            $report
-        </body>
-    </html>
-    """
+    test = Test(
+        __file__,
+        "Json test",
+        "Checks whether encountered jsons are valid jsons that can be read",
     )
-
-    print(t.substitute(time_checked=time_checked, report=report))
-    with open("./docs/test_jsons.html", "w") as f:
-        f.write(t.substitute(time_checked=time_checked, report=report))
+    test.export_html(report)
