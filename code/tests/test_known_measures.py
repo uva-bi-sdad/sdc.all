@@ -20,7 +20,7 @@ def evaluate_folder(known_measure_set, dirpath):
         if not os.path.isdir(subdir):
             continue
         report += "<h3> %s </h3>\n" % (dir)
-        for path in sorted(Path(subdir).rglob("distribution/**/*")):
+        for path in Path(subdir).rglob("distribution/**/*"):
             logging.debug("\tEvaluating: %s" % path.name)
 
             if not os.path.isfile(path):
@@ -32,7 +32,11 @@ def evaluate_folder(known_measure_set, dirpath):
             if path.suffix in [".xz", ".csv"]:
                 full_path = path.resolve()
                 try:
-                    df = pd.read_csv(full_path)
+                    df = pd.read_csv(full_path, low_memory=False)
+                    if not "measure" in df.columns:
+                        report += "\t<p>[NO MEASURE COL] %s</p>\n" % (full_path)
+                        continue
+
                     measures = set(df["measure"])
                     is_valid = len(measures - known_measure_set) == 0
 
@@ -47,7 +51,6 @@ def evaluate_folder(known_measure_set, dirpath):
                                 full_path,
                             )
                         )
-
                 except:
                     print(traceback.format_exc())
                     report += "\t<p>[ERROR] %s</p>\n" % (full_path)
