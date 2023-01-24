@@ -16,6 +16,9 @@ class Test(ABC):
             <html>
                 <head>
                 <title>$test_name</title>
+                <p>
+                    $test_description
+                </p>
                 </head>
                 <body>
                     Last updated: $time_checked
@@ -35,6 +38,9 @@ class Test(ABC):
         with open("./docs/tests/%s.html" % (self.scriptname), "w") as f:
             f.write(
                 self.template.substitute(
-                    test_name=self.name, time_checked=time_checked, report=report
+                    test_name=self.name,
+                    test_description=self.description,
+                    time_checked=time_checked,
+                    report=report,
                 )
             )
