@@ -1,40 +1,178 @@
 {
   "name": "sdc.broadband_dev",
   "measure_not_found": [
-    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Adoption/Households without internet access/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Adoption/Households without a computer/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Adoption/Households with broadband/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Adoption/Households with cable, fiber optic, or DSL/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Affordability/Percentage of income for internet (average)/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Affordability/Percentage of income for good internet/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Affordability/Percentage of income for fast internet/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Accessibility/Percent Good (internet-connected)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
     "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Accessibility/Percent Fast (internet-connected)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Accessibility/Percent Good (total)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Accessibility/Percent Fast (total)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
     "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Accessibility/Average Upload Speed/data/distribution/ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
-    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Accessibility/Average Download Speed/data/distribution/ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz"
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Accessibility/Average Download Speed/data/distribution/ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Accessibility/Percent Good (internet-connected)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Accessibility/Percent Fast (total)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Accessibility/Percent Good (total)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Adoption/Households without internet access/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Adoption/Households with broadband/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Adoption/Households without a computer/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Adoption/Households with cable, fiber optic, or DSL/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Affordability/Percentage of income for good internet/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Affordability/Percentage of income for internet (average)/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+    "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Affordability/Percentage of income for fast internet/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz"
   ],
   "count": 52,
-  "utc_audited": "2023-01-10 14:49:56",
+  "utc_audited": "2023-01-26 20:34:14",
   "data": [
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Accessibility/Percent Fast (internet-connected)/data/distribution/measure_info.json",
+      "md5": "3f09d4961d4da6f40a1234b16b9a8bd1",
+      "size": 903
+    },
+    {
+      "name": "ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "path": "Wired/Accessibility/Percent Fast (internet-connected)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "md5": "8fed99ee86047b4e695e8fa163ce6d55",
+      "size": 475424
+    },
+    {
+      "name": "temp",
+      "path": "Wired/Accessibility/Percent Fast (internet-connected)/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Wired/Accessibility/Percent Fast (internet-connected)/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Accessibility/Average Upload Speed/data/distribution/measure_info.json",
+      "md5": "c3af91d56821a1a76f1bd387eb68e697",
+      "size": 663
+    },
+    {
+      "name": "ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+      "path": "Wired/Accessibility/Average Upload Speed/data/distribution/ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+      "md5": "3074b3b06f3891fef7feabbda60468f9",
+      "size": 455296
+    },
+    {
+      "name": "temp",
+      "path": "Wired/Accessibility/Average Upload Speed/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Wired/Accessibility/Average Upload Speed/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Accessibility/Average Download Speed/data/distribution/measure_info.json",
+      "md5": "56035c96dccd8510c35f592485ee4745",
+      "size": 675
+    },
+    {
+      "name": "ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+      "path": "Wired/Accessibility/Average Download Speed/data/distribution/ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
+      "md5": "b830e63f7b98216debf3e7d03ebd1405",
+      "size": 458380
+    },
+    {
+      "name": "temp",
+      "path": "Wired/Accessibility/Average Download Speed/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Wired/Accessibility/Average Download Speed/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Accessibility/Percent Good (internet-connected)/data/distribution/measure_info.json",
+      "md5": "89dba4451d182daa308ade0007b7727e",
+      "size": 872
+    },
+    {
+      "name": "ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "path": "Wired/Accessibility/Percent Good (internet-connected)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "md5": "26bff30225673bf57feaaf5892666586",
+      "size": 458604
+    },
+    {
+      "name": "temp",
+      "path": "Wired/Accessibility/Percent Good (internet-connected)/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Wired/Accessibility/Percent Good (internet-connected)/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Accessibility/Percent Fast (total)/data/distribution/measure_info.json",
+      "md5": "67ab63e8359093ebb03fd275581a5f68",
+      "size": 851
+    },
+    {
+      "name": "ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "path": "Wired/Accessibility/Percent Fast (total)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "md5": "06040e0d3f69c08e54e6fd23600382f6",
+      "size": 478108
+    },
+    {
+      "name": "temp",
+      "path": "Wired/Accessibility/Percent Fast (total)/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Wired/Accessibility/Percent Fast (total)/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Accessibility/Percent Good (total)/data/distribution/measure_info.json",
+      "md5": "92740a6915b875c5214403c8e68efe96",
+      "size": 820
+    },
+    {
+      "name": "ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "path": "Wired/Accessibility/Percent Good (total)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
+      "md5": "91848c1e6090d96e83291deafcaa1c65",
+      "size": 463680
+    },
+    {
+      "name": "temp",
+      "path": "Wired/Accessibility/Percent Good (total)/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Wired/Accessibility/Percent Good (total)/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Adoption/Households without internet access/data/distribution/measure_info.json",
+      "md5": "4b015bf6206df20a63dd13c4470043b6",
+      "size": 982
+    },
     {
       "name": "ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
       "path": "Wired/Adoption/Households without internet access/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
       "md5": "9ebe369c433d3e2f4f47ccb0fcd72fb5",
       "size": 432288
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Adoption/Households without internet access/data/distribution/measure_info.json",
-      "md5": "190ae91d3dc576e678967d0f8fadf058",
-      "size": 952
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Adoption/Households without internet access/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
     },
     {
       "name": "temp",
@@ -43,28 +181,16 @@
       "size": 0
     },
     {
-      "name": "ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "path": "Wired/Adoption/Households without a computer/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
-      "md5": "1a9dd742f61fa0ce5d1b0333a27d3dce",
-      "size": 422780
+      "name": "temp",
+      "path": "Wired/Adoption/Households without internet access/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
     },
     {
       "name": "measure_info.json",
-      "path": "Wired/Adoption/Households without a computer/data/distribution/measure_info.json",
-      "md5": "f0c9470d4c9f058eb55cdde818525893",
-      "size": 960
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Adoption/Households without a computer/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Adoption/Households without a computer/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "path": "Wired/Adoption/Households with broadband/data/distribution/measure_info.json",
+      "md5": "09679185d99e5a6ec9a9e70e09bd8e2c",
+      "size": 1088
     },
     {
       "name": "ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
@@ -73,10 +199,10 @@
       "size": 435728
     },
     {
-      "name": "measure_info.json",
-      "path": "Wired/Adoption/Households with broadband/data/distribution/measure_info.json",
-      "md5": "90e23cac0adfe4244300d3ad5a58094f",
-      "size": 1058
+      "name": "temp",
+      "path": "Wired/Adoption/Households with broadband/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
     },
     {
       "name": "temp",
@@ -85,10 +211,34 @@
       "size": 0
     },
     {
+      "name": "measure_info.json",
+      "path": "Wired/Adoption/Households without a computer/data/distribution/measure_info.json",
+      "md5": "9880ad1b47238a5b6aae6dfdb4ac72e7",
+      "size": 990
+    },
+    {
+      "name": "ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "path": "Wired/Adoption/Households without a computer/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
+      "md5": "1a9dd742f61fa0ce5d1b0333a27d3dce",
+      "size": 422780
+    },
+    {
       "name": "temp",
-      "path": "Wired/Adoption/Households with broadband/code/distribution/temp",
+      "path": "Wired/Adoption/Households without a computer/code/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Wired/Adoption/Households without a computer/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Adoption/Households with cable, fiber optic, or DSL/data/distribution/measure_info.json",
+      "md5": "0b8327ccc777324724918209226fbce5",
+      "size": 1191
     },
     {
       "name": "ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
@@ -97,44 +247,14 @@
       "size": 8248
     },
     {
-      "name": "measure_info.json",
-      "path": "Wired/Adoption/Households with cable, fiber optic, or DSL/data/distribution/measure_info.json",
-      "md5": "3d9c84ef5b1b0c626e8b3967dd006ecc",
-      "size": 1161
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Adoption/Households with cable, fiber optic, or DSL/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
       "name": "temp",
       "path": "Wired/Adoption/Households with cable, fiber optic, or DSL/code/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     },
     {
-      "name": "ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-      "path": "Wired/Affordability/Percentage of income for internet (average)/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-      "md5": "5b3c038be513d80d2d866f0c3acf6350",
-      "size": 193212
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Affordability/Percentage of income for internet (average)/data/distribution/measure_info.json",
-      "md5": "c16512b7e68f650fa36bea5b52436b61",
-      "size": 1070
-    },
-    {
       "name": "temp",
-      "path": "Wired/Affordability/Percentage of income for internet (average)/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Affordability/Percentage of income for internet (average)/code/distribution/temp",
+      "path": "Wired/Adoption/Households with cable, fiber optic, or DSL/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     },
@@ -147,8 +267,14 @@
     {
       "name": "measure_info.json",
       "path": "Wired/Affordability/Percentage of income for good internet/data/distribution/measure_info.json",
-      "md5": "5938cd9ea018eb7d2671968a87f90fad",
-      "size": 1071
+      "md5": "0770399a2feb791bd6f5d226d89b63d0",
+      "size": 1111
+    },
+    {
+      "name": "temp",
+      "path": "Wired/Affordability/Percentage of income for good internet/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
     },
     {
       "name": "temp",
@@ -157,8 +283,26 @@
       "size": 0
     },
     {
+      "name": "ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+      "path": "Wired/Affordability/Percentage of income for internet (average)/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
+      "md5": "5b3c038be513d80d2d866f0c3acf6350",
+      "size": 193212
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Wired/Affordability/Percentage of income for internet (average)/data/distribution/measure_info.json",
+      "md5": "c54a8172934caf7f033254574e0e90bc",
+      "size": 1110
+    },
+    {
       "name": "temp",
-      "path": "Wired/Affordability/Percentage of income for good internet/code/distribution/temp",
+      "path": "Wired/Affordability/Percentage of income for internet (average)/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Wired/Affordability/Percentage of income for internet (average)/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     },
@@ -171,14 +315,8 @@
     {
       "name": "measure_info.json",
       "path": "Wired/Affordability/Percentage of income for fast internet/data/distribution/measure_info.json",
-      "md5": "178c78a2881842f41d2bbe9bb30a61f9",
-      "size": 1073
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Affordability/Percentage of income for fast internet/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "md5": "1a3ab942d8086ece85ff0e6ea934ff72",
+      "size": 1113
     },
     {
       "name": "temp",
@@ -187,146 +325,8 @@
       "size": 0
     },
     {
-      "name": "ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "path": "Wired/Accessibility/Percent Good (internet-connected)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "md5": "26bff30225673bf57feaaf5892666586",
-      "size": 458604
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Accessibility/Percent Good (internet-connected)/data/distribution/measure_info.json",
-      "md5": "b54f805945f907afb1139e832675a1c1",
-      "size": 844
-    },
-    {
       "name": "temp",
-      "path": "Wired/Accessibility/Percent Good (internet-connected)/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent Good (internet-connected)/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "path": "Wired/Accessibility/Percent Fast (internet-connected)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "md5": "8fed99ee86047b4e695e8fa163ce6d55",
-      "size": 475424
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Accessibility/Percent Fast (internet-connected)/data/distribution/measure_info.json",
-      "md5": "e969083aec21da69e6383f94a2664807",
-      "size": 875
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent Fast (internet-connected)/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent Fast (internet-connected)/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "path": "Wired/Accessibility/Percent Good (total)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "md5": "91848c1e6090d96e83291deafcaa1c65",
-      "size": 463680
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Accessibility/Percent Good (total)/data/distribution/measure_info.json",
-      "md5": "209fcf1078448d48d647169809cb67f0",
-      "size": 792
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent Good (total)/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent Good (total)/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "path": "Wired/Accessibility/Percent Fast (total)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-      "md5": "06040e0d3f69c08e54e6fd23600382f6",
-      "size": 478108
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Accessibility/Percent Fast (total)/data/distribution/measure_info.json",
-      "md5": "6c95c7860f21215eab3c1c3065bfcf62",
-      "size": 823
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent Fast (total)/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Percent Fast (total)/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
-      "path": "Wired/Accessibility/Average Upload Speed/data/distribution/ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
-      "md5": "3074b3b06f3891fef7feabbda60468f9",
-      "size": 455296
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Accessibility/Average Upload Speed/data/distribution/measure_info.json",
-      "md5": "51538d4e8cb9dbd43b9170142f38476d",
-      "size": 635
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Average Upload Speed/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Average Upload Speed/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
-      "path": "Wired/Accessibility/Average Download Speed/data/distribution/ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",
-      "md5": "b830e63f7b98216debf3e7d03ebd1405",
-      "size": 458380
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Wired/Accessibility/Average Download Speed/data/distribution/measure_info.json",
-      "md5": "3b9e2505dd4cd7cb53d909f5d0114e14",
-      "size": 647
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Average Download Speed/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Wired/Accessibility/Average Download Speed/code/distribution/temp",
+      "path": "Wired/Affordability/Percentage of income for fast internet/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     }

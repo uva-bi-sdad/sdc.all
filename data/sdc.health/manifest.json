@@ -35,7 +35,7 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Mental Health/Mental and Physical Healthy Days/data/distribution/dc_health_behavior_diet.ncr_trct_sdad_2015_2019_brfss_sae.csv.xz"
   ],
   "count": 122,
-  "utc_audited": "2023-01-26 20:29:08",
+  "utc_audited": "2023-01-26 21:00:54",
   "data": [
     {
       "name": "ncr_bgtrct_2015_access_scores_hospitals.csv",
@@ -64,8 +64,8 @@
     {
       "name": "measure_info.json",
       "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/measure_info.json",
-      "md5": "614e29ce518fed578318e1d51e6a1331",
-      "size": 11186
+      "md5": "87b7978658f33cb1684b727393f9b423",
+      "size": 13570
     },
     {
       "name": "ncr_bgtrct_2019_access_scores_hospitals.csv",
@@ -424,8 +424,8 @@
     {
       "name": "measure_info.json",
       "path": "Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/measure_info.json",
-      "md5": "da47a2611e7ec524635c134550aa5274",
-      "size": 5949
+      "md5": "404662a06c8d79f3c2ccbf994cd09542",
+      "size": 5896
     },
     {
       "name": "ncr_bgtrct_gmap_2022_access_scores_urgent_care_centers.csv",

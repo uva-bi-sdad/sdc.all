@@ -2313,6 +2313,72 @@
         "statement": "{value} of the population has health insurance in {features.name}.",
         "type": "percent"
     },
+    "hosp_3sfca": {
+        "category": "Health",
+        "citations": [
+            "lou04",
+            "lou09",
+            "lou03",
+            "saxon20"
+        ],
+        "equity_category": "Availability",
+        "full_name": "access_scores_hospitals:hosp_3sfca",
+        "long_description": "Hospital access score based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
+        "long_name": "Hospital geographic availability (3-step floating catchment areas)",
+        "measure": "hospital_3sfca",
+        "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2021_access_scores_hospitals",
+        "short_description": "Index of hospital availability based on supply and demand of facilities",
+        "short_name": "Hospital geographic availability",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "Center for Medicare and Medicaid Services",
+                "url": "https://data.cms.gov/provider-data/topics/hospitals"
+            }
+        ],
+        "statement": "The hospital geographic availability score for {features.name} is {value}.",
+        "type": "index"
+    },
+    "hosp_cnt": {
+        "category": "Health",
+        "equity_category": "Availability",
+        "full_name": "access_scores_hospitals:hosp_beds_cnt",
+        "long_description": "Count of hospitals based on facility locations. Location data were collected from the Center for Medicare and Medicaid Services.",
+        "long_name": "Availability of hospitals by count",
+        "measure": "hospital_cnt",
+        "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2021_access_scores_hospitals",
+        "short_description": "Count of hospitals based on facility locations",
+        "short_name": "Hospital availability (count)",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "Center for Medicare and Medicaid Services",
+                "url": "https://data.cms.gov/provider-data/topics/hospitals"
+            }
+        ],
+        "statement": "There are {value} hospitals in {features.name}.",
+        "type": "count"
+    },
+    "hosp_near_10_median": {
+        "category": "Health",
+        "equity_category": "Availability",
+        "full_name": "access_scores_hospitals:hosp_near_10_median",
+        "long_description": "Median drive time in minutes to the ten closest hospitals. Facility location data were collected from the Center for Medicare and Medicaid Services. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
+        "long_name": "Hospital availability by median drive time to the ten closest facilities in minutes",
+        "measure": "hospital_near_10_median",
+        "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2021_access_scores_hospitals",
+        "short_description": "Median drive time (minutes) to the ten closest hospitals",
+        "short_name": "Hospital drive time",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "Center for Medicare and Medicaid Services",
+                "url": "https://data.cms.gov/provider-data/topics/hospitals"
+            }
+        ],
+        "statement": "The median drive time to the ten closest hospitals to {features.name} is {value}.",
+        "type": "drive time"
+    },
     "hosuing_access:median_home_value": {
         "category": "Housing",
         "equity_category": "Status",
@@ -3733,44 +3799,44 @@
         "type": "MOE"
     },
     "perc_poor_ment_hlth_days_14_and_over": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
+        "category": "Health",
+        "equity_category": "Status",
+        "full_name": "brfss_sae:perc_poor_ment_hlth_days_14_and_over",
+        "long_description": "Percent of the population self-reporting poor mental health in over 14 days of the previous month. Based on the Virginia Behavioral Risk Factor Surveillance Survey.",
+        "long_name": "Percentage reporting poor mental health",
         "measure": "perc_poor_ment_hlth_days_14_and_over",
-        "measure_table": "dc_health_behavior_diet.ncr_trct_sdad_2015_2019_brfss_sae.csv.xz",
-        "short_description": "",
-        "short_name": "",
+        "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2015_2019_percent_poor_ment_hlth_days_14_and_over",
+        "short_description": "Percent of the population self-reporting poor mental health",
+        "short_name": "Percentage reporting poor mental health",
         "sources": [
             {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "date_accessed": 2021,
+                "name": "Virginia Behavioral Risk Factor Surveillance System",
+                "url": "https://www.vdh.virginia.gov/brfss/"
             }
         ],
-        "statement": "",
-        "type": "prevalence estimate"
+        "statement": "{value} of the population in {features.name} reports poor mental health.",
+        "type": "percent"
     },
     "perc_poor_phys_hlth_days_14_and_over": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
+        "category": "Health",
+        "equity_category": "Status",
+        "full_name": "brfss_sae:perc_poor_phys_hlth_days_14_and_over",
+        "long_description": "Percent of the population self-reporting poor physical health in over 14 days of the previous month. Based on the Virginia Behavioral Risk Factor Surveillance Survey.",
+        "long_name": "Percentage reporting poor physical health",
         "measure": "perc_poor_phys_hlth_days_14_and_over",
-        "measure_table": "dc_health_behavior_diet.ncr_trct_sdad_2015_2019_brfss_sae.csv.xz",
-        "short_description": "",
-        "short_name": "",
+        "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2015_2019_percent_poor_phys_hlth_days_14_and_over",
+        "short_description": "Percent of the population self-reporting poor physical health",
+        "short_name": "Percentage reporting poor physical health",
         "sources": [
             {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "date_accessed": 2021,
+                "name": "Virginia Behavioral Risk Factor Surveillance System",
+                "url": "https://www.vdh.virginia.gov/brfss/"
             }
         ],
-        "statement": "",
-        "type": "prevalence estimate"
+        "statement": "{value} of the population in {features.name} reports poor physical health.",
+        "type": "percent"
     },
     "perc_total_100_20_using_devices": {
         "category": "Broadband",
@@ -4951,6 +5017,25 @@
         ],
         "statement": "There are {value} <2-year schools per 100k people over 14 in {region_name}.",
         "type": "per 100k"
+    },
+    "speed_measurements:devices": {
+        "category": "Broadband",
+        "equity_category": "Accessibility",
+        "full_name": "speed_measurements:devices",
+        "long_name": "Number of devices",
+        "measure": "devices",
+        "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
+        "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
+        "short_name": "Number of devices",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "Ookla",
+                "url": "https://www.ookla.com/ookla-for-good/open-data"
+            }
+        ],
+        "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
+        "type": "count"
     },
     "substance_access_scores:subs_10near_median": {
         "category": "Health",
