@@ -1,9 +1,8 @@
 {
-  "speed_measurements:devices": {
+  "devices": {
     "category": "Broadband",
     "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
     "full_name": "speed_measurements:devices",
-    "measure": "devices",
     "short_name": "Number of devices",
     "long_name": "Number of devices",
     "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
