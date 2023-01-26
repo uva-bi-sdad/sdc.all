@@ -13,13 +13,20 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Mental Health/Service Access Scores/data/distribution/va_hdcttrbgca_samhsa_2021_access_scores_mental.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/va_hdcttrbgca_hifld_2021_access_scores_urgent.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Drug and Rehab/Service Catchment Scores/data/distribution/va_hdcttrbgca_samhsa_2021_access_scores_substance.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Substance Abuse/Drug Overdose ER Visits/data/distribution/va_hdct_vdh_2015_2021_drug_overdose_ed_visits.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Literacy/data/distribution/ncr_cttr_acs_2010_2019_post_hs_education.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Literacy/data/distribution/va_hccttr_sdad_2019_health_literacy_estimates.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Literacy/data/distribution/va_hdcttr_acs_2010_2019_post_hs_education.csv.xz",
-    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/System Usage and Insurance/Without Health Insurance/data/distribution/ncr_cttrbg_acs5_2015_2019_no_health_insurance_19_to_64.csv.xz"
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Literacy/data/distribution/va_hdcttr_acs_2015_2019_post_hs_education.csv.xz",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Reproductive Health/Prenatal Care Adequacy/data/distribution/kotelchuck_2014_2020.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/System Usage and Insurance/Preventable Hospitalizations/data/distribution/va_ct_chr_2015_2021_preventable_hospitalizations.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/System Usage and Insurance/Without Health Insurance/data/distribution/ncr_cttrbg_acs5_2015_2019_no_health_insurance_19_to_64.csv.xz",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/System Usage and Insurance/Without Health Insurance/data/distribution/va_hdcttr_acs5_2015_2019_no_health_insurance_19_to_64.csv.xz",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Mental Health/Mental and Physical Healthy Days/data/distribution/dc_health_behavior_diet.va_trcthd_sdad_2015_2019_brfss_sae.csv.xz",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Mental Health/Mental and Physical Healthy Days/data/distribution/dc_health_behavior_diet.ncr_trct_sdad_2015_2019_brfss_sae.csv.xz"
   ],
-  "count": 112,
-  "utc_audited": "2023-01-19 19:23:40",
+  "count": 113,
+  "utc_audited": "2023-01-20 15:26:41",
   "data": [
     {
       "name": "measure_info.json",
@@ -409,8 +416,7 @@
       "name": "va_hdct_vdh_2015_2021_drug_overdose_ed_visits.csv.xz",
       "path": "Population Health/Substance Abuse/Drug Overdose ER Visits/data/distribution/va_hdct_vdh_2015_2021_drug_overdose_ed_visits.csv.xz",
       "md5": "836e3952e4ac1192019eb43bc103c255",
-      "size": 11300,
-      "measure_info": []
+      "size": 11300
     },
     {
       "name": "temp",
@@ -452,8 +458,7 @@
       "name": "va_hdcttr_acs_2015_2019_post_hs_education.csv.xz",
       "path": "Population Health/Health Literacy/data/distribution/va_hdcttr_acs_2015_2019_post_hs_education.csv.xz",
       "md5": "a60503290e9bfe9735c013b1710b408d",
-      "size": 40804,
-      "measure_info": []
+      "size": 40804
     },
     {
       "name": "temp",
@@ -477,8 +482,7 @@
       "name": "kotelchuck_2014_2020.csv",
       "path": "Population Health/Reproductive Health/Prenatal Care Adequacy/data/distribution/kotelchuck_2014_2020.csv",
       "md5": "484cdce3e87f51a13ea8a105fd7cca1e",
-      "size": 657203,
-      "measure_info": []
+      "size": 657203
     },
     {
       "name": "temp",
@@ -539,6 +543,12 @@
       "path": "Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_job_participation_index.csv",
       "md5": "5f8f89f6957e2049e9970d87cb1eb66f",
       "size": 142376
+    },
+    {
+      "name": "va_tr_vdh_2017_health_opportunity_profile.csv",
+      "path": "Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_health_opportunity_profile.csv",
+      "md5": "13af8bc0c7d15493d088d0c03fbe700c",
+      "size": 142381
     },
     {
       "name": "va_tr_vdh_2017_community_environmental_profile.csv",
@@ -622,8 +632,7 @@
       "name": "va_ct_chr_2015_2021_preventable_hospitalizations.csv",
       "path": "Population Health/System Usage and Insurance/Preventable Hospitalizations/data/distribution/va_ct_chr_2015_2021_preventable_hospitalizations.csv",
       "md5": "091cca8e007c774c54a597b56fd1190c",
-      "size": 86790,
-      "measure_info": []
+      "size": 86790
     },
     {
       "name": "temp",
@@ -653,8 +662,7 @@
       "name": "va_hdcttr_acs5_2015_2019_no_health_insurance_19_to_64.csv.xz",
       "path": "Population Health/System Usage and Insurance/Without Health Insurance/data/distribution/va_hdcttr_acs5_2015_2019_no_health_insurance_19_to_64.csv.xz",
       "md5": "9848772e50179691fb5367dbb10c6465",
-      "size": 202628,
-      "measure_info": []
+      "size": 202628
     },
     {
       "name": "temp",
@@ -678,15 +686,13 @@
       "name": "dc_health_behavior_diet.va_trcthd_sdad_2015_2019_brfss_sae.csv.xz",
       "path": "Population Health/Mental Health/Mental and Physical Healthy Days/data/distribution/dc_health_behavior_diet.va_trcthd_sdad_2015_2019_brfss_sae.csv.xz",
       "md5": "12541f8a6e55d3940f320bf4b0dfabf8",
-      "size": 171304,
-      "measure_info": []
+      "size": 171304
     },
     {
       "name": "dc_health_behavior_diet.ncr_trct_sdad_2015_2019_brfss_sae.csv.xz",
       "path": "Population Health/Mental Health/Mental and Physical Healthy Days/data/distribution/dc_health_behavior_diet.ncr_trct_sdad_2015_2019_brfss_sae.csv.xz",
       "md5": "6c961ff4e6f5e8ea32d43f1e94b509b2",
-      "size": 94520,
-      "measure_info": []
+      "size": 94520
     },
     {
       "name": "temp",
