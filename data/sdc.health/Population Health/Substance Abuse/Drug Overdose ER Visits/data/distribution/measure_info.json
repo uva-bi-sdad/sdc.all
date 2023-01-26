@@ -1,22 +1,22 @@
 {
-    "avg_monthly_rate": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "avg_monthly_rate",
-        "measure_table": "va_hdct_vdh_2015_2021_drug_overdose_ed_visits.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "rate per 100k"
-    }
+  "avg_monthly_rate": {
+    "category": "Behavioral Health, Substance Use Disorder and Recovery",
+    "measure_table": "drug_overdose_ed_visits",
+    "full_name": "drug_overdose_ed_visits:avg_overdose_per_100",
+    "measure": "avg_overdose_per_100k",
+    "type": "rate",
+    "short_name": "Monthly average ED visits for drug overdose",
+    "long_name": "Monthly average emergency department visits for drug overdose rate per 100,000 residents",
+    "short_description": "Monthly average emergency department visits for drug overdose per 100,000 residents.",
+    "long_description": "Monthly average emergency department visits for drug overdose per 100,000 residents.",
+    "statement": "The average emergency department visits for drug overdose rate in {features.name} is {value}.",
+    "equity_category": "Status",
+    "sources": [
+      {
+        "name": "Virginia Department of Health",
+        "date_accessed": "2021",
+        "url": "https://www.vdh.virginia.gov/surveillance-and-investigation/syndromic-surveillance/drug-overdose-surveillance/"
+      }
+    ]
+  }
 }

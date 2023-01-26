@@ -1,8 +1,8 @@
 {
   "demographics:perc_male":{
     "category": "Demographics",
-    "measure_table" : "va_cttr_2010_2021_perc_male"
-    "full_name": "demographics:perc_male"
+    "measure_table" : "va_cttr_2010_2021_perc_male",
+    "full_name": "demographics:perc_male",
     "measure": "perc_male",
     "short_name": "Male population",
     "long_name": "Male population (percent)",

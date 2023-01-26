@@ -51,5 +51,5 @@ if __name__ == "__main__":
     for f in fail:
         print(f)
     print("-" * 80)
-    with open("./data/temp/measure_info_all.json", "w") as f:
+    with open("./data/measure_info_all.json", "w") as f:
         json.dump(merged_json, f, sort_keys=True, indent=4)

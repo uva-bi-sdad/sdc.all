@@ -194,3 +194,4 @@ dmypy.json
 cython_debug/
 
 *.zip
+**/temp/*

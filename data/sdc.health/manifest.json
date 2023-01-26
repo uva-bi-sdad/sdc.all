@@ -1,7 +1,15 @@
 {
   "name": "sdc.health_dev",
   "measure_not_found": [
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2015_access_scores_hospitals.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2020_access_scores_hospitals.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2021_access_scores_hospitals.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2016_access_scores_hospitals.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2019_access_scores_hospitals.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2018_access_scores_hospitals.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2017_access_scores_hospitals.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/va_hdcttrbgca_hifld_2021_access_scores_hospitals.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2022_access_scores_hospitals.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Dentists/Service Catchment Scores/data/distribution/va_hdcttrbgca_webmd_2021_access_scores_dentists.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Health Professionals/VA Graduates/data/distribution/va_hd_schev_2016_2019_health_degrees_awarded.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Health Professionals/VA Graduates/data/distribution/va_ct_schev_2016_2019_health_degrees_awarded.csv",
@@ -12,6 +20,7 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Physicians/Primary Care/Service Access Scores/data/distribution/va_hdcttrbgca_webmd_2021_access_scores_primcare.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Mental Health/Service Access Scores/data/distribution/va_hdcttrbgca_samhsa_2021_access_scores_mental.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/va_hdcttrbgca_hifld_2021_access_scores_urgent.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/ncr_bgtrct_gmap_2022_access_scores_urgent_care_centers.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Drug and Rehab/Service Catchment Scores/data/distribution/va_hdcttrbgca_samhsa_2021_access_scores_substance.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Substance Abuse/Drug Overdose ER Visits/data/distribution/va_hdct_vdh_2015_2021_drug_overdose_ed_visits.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Literacy/data/distribution/ncr_cttr_acs_2010_2019_post_hs_education.csv.xz",
@@ -25,9 +34,33 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Mental Health/Mental and Physical Healthy Days/data/distribution/dc_health_behavior_diet.va_trcthd_sdad_2015_2019_brfss_sae.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Mental Health/Mental and Physical Healthy Days/data/distribution/dc_health_behavior_diet.ncr_trct_sdad_2015_2019_brfss_sae.csv.xz"
   ],
-  "count": 113,
-  "utc_audited": "2023-01-20 15:26:41",
+  "count": 122,
+  "utc_audited": "2023-01-26 20:29:08",
   "data": [
+    {
+      "name": "ncr_bgtrct_2015_access_scores_hospitals.csv",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2015_access_scores_hospitals.csv",
+      "md5": "f7e5d7de5056c8523a763a76213b7b90",
+      "size": 7084099
+    },
+    {
+      "name": "ncr_bgtrct_2020_access_scores_hospitals.csv",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2020_access_scores_hospitals.csv",
+      "md5": "9c4e26fa50dbb189f644326e365d98d1",
+      "size": 7725417
+    },
+    {
+      "name": "ncr_bgtrct_2021_access_scores_hospitals.csv",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2021_access_scores_hospitals.csv",
+      "md5": "071944bc8ff277989bf2ac0a5e0eddb5",
+      "size": 7725919
+    },
+    {
+      "name": "ncr_bgtrct_2016_access_scores_hospitals.csv",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2016_access_scores_hospitals.csv",
+      "md5": "db61accc9e962bb4df9673a3316ed97d",
+      "size": 7083828
+    },
     {
       "name": "measure_info.json",
       "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/measure_info.json",
@@ -35,10 +68,34 @@
       "size": 11186
     },
     {
+      "name": "ncr_bgtrct_2019_access_scores_hospitals.csv",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2019_access_scores_hospitals.csv",
+      "md5": "8cffb84983e72429f4e6caf17e8ed2ac",
+      "size": 7083737
+    },
+    {
+      "name": "ncr_bgtrct_2018_access_scores_hospitals.csv",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2018_access_scores_hospitals.csv",
+      "md5": "0274a5c9aed6487fc8db77bb54d92a17",
+      "size": 7083825
+    },
+    {
+      "name": "ncr_bgtrct_2017_access_scores_hospitals.csv",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2017_access_scores_hospitals.csv",
+      "md5": "d8b67182b98ea07b98d0c3125d9217a2",
+      "size": 7083544
+    },
+    {
       "name": "va_hdcttrbgca_hifld_2021_access_scores_hospitals.csv",
       "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/va_hdcttrbgca_hifld_2021_access_scores_hospitals.csv",
       "md5": "b0a7aea17a34c76e8fe9529ea73f3b67",
       "size": 6875681
+    },
+    {
+      "name": "ncr_bgtrct_2022_access_scores_hospitals.csv",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2022_access_scores_hospitals.csv",
+      "md5": "432396547a212fcded669f868e3e3a46",
+      "size": 7723306
     },
     {
       "name": "temp",
@@ -337,8 +394,8 @@
     {
       "name": "measure_info.json",
       "path": "Health Care Services/Mental Health/Service Access Scores/data/distribution/measure_info.json",
-      "md5": "996937cb91f6034be83433fa9b6a6752",
-      "size": 6922
+      "md5": "eeae851bff84c3ac9cd6c65f168a7bfe",
+      "size": 5434
     },
     {
       "name": "va_hdcttrbgca_samhsa_2021_access_scores_mental.csv",
@@ -369,6 +426,12 @@
       "path": "Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/measure_info.json",
       "md5": "da47a2611e7ec524635c134550aa5274",
       "size": 5949
+    },
+    {
+      "name": "ncr_bgtrct_gmap_2022_access_scores_urgent_care_centers.csv",
+      "path": "Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/ncr_bgtrct_gmap_2022_access_scores_urgent_care_centers.csv",
+      "md5": "a69d40a9f509336165699947c9c3d0c5",
+      "size": 7764683
     },
     {
       "name": "temp",
@@ -409,8 +472,8 @@
     {
       "name": "measure_info.json",
       "path": "Population Health/Substance Abuse/Drug Overdose ER Visits/data/distribution/measure_info.json",
-      "md5": "371e5681502891fde40da8b58aeb7d09",
-      "size": 561
+      "md5": "0f3d3da91a33d7113bb198237a636629",
+      "size": 1073
     },
     {
       "name": "va_hdct_vdh_2015_2021_drug_overdose_ed_visits.csv.xz",
@@ -649,8 +712,8 @@
     {
       "name": "measure_info.json",
       "path": "Population Health/System Usage and Insurance/Without Health Insurance/data/distribution/measure_info.json",
-      "md5": "090c7653eaaaee025d7cba007dc9b72f",
-      "size": 1114
+      "md5": "ed88f760f5ab8de64c6c65c83c05dd35",
+      "size": 1778
     },
     {
       "name": "ncr_cttrbg_acs5_2015_2019_no_health_insurance_19_to_64.csv.xz",

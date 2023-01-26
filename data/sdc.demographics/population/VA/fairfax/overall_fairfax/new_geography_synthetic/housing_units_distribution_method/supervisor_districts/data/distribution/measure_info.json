@@ -83,40 +83,6 @@
       }
     ]
   },
-    
-   "pop_male": {
-    "category": "Demographics",
-    "type": "count",
-    "short_name": "Female population",
-    "long_name": "Female population",
-    "short_description": "Population of female.",
-    "long_description": "Population of female.",
-    "statement": "The population of female is {value} in {features.name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "date_accessed": 2022,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  
-  "pop_white": {
-    "category": "Demographics",
-    "type": "count",
-    "short_name": "White population",
-    "long_name": "White population (count)",
-    "short_description": "Population of white.",
-    "long_description": "Population of white.",
-    "statement": "The population of white is {value} in {features.name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "date_accessed": 2022,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
   
   "pop_black": {
     "category": "Demographics",
@@ -167,4 +133,5 @@
         "url": "https://www.census.gov/programs-surveys/acs.html"
       }
     ]
+}
 }

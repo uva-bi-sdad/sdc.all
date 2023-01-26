@@ -1,5 +1,5 @@
 {
-  "access_scores_ems:urgent_near_10_median": {
+  "urgent_near_10_median": {
     "category": "Health",
     "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2021_access_scores_ems",
     "full_name": "access_scores_ems:urgent_near_10_median",
@@ -19,7 +19,7 @@
       }
     ]
   },
-  "access_scores_ems:urgent_cnt": {
+  "urgent_cnt": {
     "category": "Health",
     "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2021_urgent_access_scores",
     "full_name": "access_scores_ems:urgent_cnt",
@@ -39,7 +39,7 @@
       }
     ]
   },
-  "access_scores_ems:urgent_3sfca": {
+  "urgent_3sfca": {
     "category": "Health",
     "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2021_urgent_access_scores",
     "full_name": "access_scores_ems:urgent_3sfca",

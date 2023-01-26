@@ -1,5 +1,22 @@
 {
-  "access_scores_mental:mental_cnt": {
+  "mental_10_near_median": {
+    "category": "Health",
+    "type": "drive time",
+    "short_name": "Mental health availability (drive time)",
+    "long_name": "Mental health availability by median drive time to the ten closest facilities in minutes",
+    "short_description": "Median drive time (minutes) to the ten closest mental health facilities",
+    "long_description": "Median drive time in minutes to the ten closest mental health facilities. Facility location data were collected from the Substance Abuse and Mental Health Services Administration (SAMHSA) repository. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
+    "statement": "The median drive time to the ten closest mental health facilities to {features.name} is {value}.",
+    "equity_category": "Availability",
+    "sources": [
+      {
+        "name": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
+        "date_accessed": 2021,
+        "url": "https://findtreatment.gov/"
+      }
+    ]
+  },
+  "mental_cnt": {
     "category": "Health",
     "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2021_mental_access_scores",
     "full_name": "access_scores_mental:mental_cnt",
@@ -8,7 +25,7 @@
     "short_name": "Mental health services availability (count)",
     "long_name": "Availability of mental health services by count",
     "short_description": "Count of mental health facilities based on facility locations",
-    "long_description": "Count of mental health facilities based on facility locations. Location data were collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository.",
+    "long_description": "Count of mental health facilities based on facility locations. Location data were collected from the Substance Abuse and Mental Health Services Administration (SAMHSA) repository.",
     "statement": "There are {value} mental health facilities in {features.name}.",
     "equity_category" : "Availability",
     "sources": [
@@ -19,7 +36,7 @@
       }
     ]
   },
-  "access_scores_mental:mental_3sfca": {
+  "mental_3sfca": {
     "category": "Health",
     "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2021_mental_access_scores",
     "full_name": "access_scores_mental:mental_3sfca",
@@ -136,97 +153,5 @@
     "volume": "Preprint",
     "doi": "10.13140/RG.2.2.12396.28807"
   }
-},
-  "_references": {
-      "lou04": {
-        "id": "lou04",
-        "author": [
-          {
-            "given": "Wei",
-            "family": "Lou"
-          }
-        ],
-        "year": 2004,
-        "title": "Using a gis-based floating catchment method to assess areas with shortage of physicians",
-        "journal": "Health & Place",
-        "volume": "10",
-        "number": 1,
-        "page": "1-11",
-        "doi": "10.1016/S1353-8292(02)00067-9"
-      },
-      "lou09": {
-        "id": "lou09",
-        "author": [
-          {
-            "given": "Wei",
-            "family": "Lou"
-          },
-          {
-            "given": "Yi",
-            "family": "Qi"
-          }
-        ],
-        "year": 2009,
-        "title": "An enhanced two-step floating catchment area (e2sfca) method for measuring spatial accessibility to primary care physicians",
-        "journal": "Health & Place",
-        "volume": "15",
-        "number": 4,
-        "page": "1100-1107",
-        "doi": "10.1016/j.healthplace.2009.06.002"
-      },
-      "lou03": {
-        "id": "lou03",
-        "author": [
-          {
-            "given": "Wei",
-            "family": "Lou"
-          },
-          {
-            "given": "Fahui",
-            "family": "Wang"
-          }
-        ],
-        "year": 2003,
-        "title": "Measures of spatial accessibility to health care in a gis environment: synthesis and a case study in the Chicago region",
-        "journal": "Environment and Planning B: Planning and Design",
-        "volume": "30",
-        "number": 6,
-        "page": "865-884",
-        "doi": "10.1068/b29120"
-      },
-      "saxon20": {
-        "id": "saxon20",
-        "author": [
-          {
-            "given": "James",
-            "family": "Saxon"
-          },
-          {
-            "given": "Julia",
-            "family": "Koschinsky"
-          },
-          {
-            "given": "Karina",
-            "family": "Acosta"
-          },
-          {
-            "given": "Vidal",
-            "family": "Anguiano"
-          },
-          {
-            "given": "Luc",
-            "family": "Anselin"
-          },
-          {
-            "given": "Sergio",
-            "family": "Rey"
-          }
-        ],
-        "year": 2020,
-        "title": "An Open Software Environment to Make Spatial Access Metrics More Accessible",
-        "journal": "University of Chicago: Center for Spatial Data Science",
-        "volume": "Preprint",
-        "doi": "10.13140/RG.2.2.12396.28807"
-      }
-    }
+}
 }
