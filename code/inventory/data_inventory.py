@@ -40,7 +40,8 @@ def evaluate_folder(dirpath):
                 # if path is not a file, skip to the next file to check
                 continue
 
-            parent_dir = path.parent
+            parent_dir = str(path.parent).split('sdc.').pop()
+            parent_dir = re.search('/(.*?)/data/distribution', parent_dir).group(1)
             
             full_path = path.name
 
@@ -88,11 +89,11 @@ def evaluate_folder(dirpath):
                         temp_df = pd.DataFrame([temp_row])
                         inventory_df = pd.concat([inventory_df, temp_df], ignore_index = True) 
                     
-                    report += "\t<p><font color='green'> [INVENTORIED] </font> %s</p>\n" % (full_path)
+                    report += "\t<p><font color='green'> [INVENTORIED] </font> %s: %s</p>\n" % (parent_dir, full_path)
                     
                 except:
                     print(traceback.format_exc())
-                    report += "\t<p><font color='red'> [ERROR] </font> %s</p>\n" % (full_path)
+                    report += "\t<p><font color='red'> [ERROR] </font> %s: %s</p>\n" % (parent_dir, full_path)
                        
     # combine inventory information for measures listed more than once (e.g. in an NCR and VA file) 
 
