@@ -1,182 +1,162 @@
 {
-    "adequate": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "adequate",
-        "measure_table": "kotelchuck_2014_2020.csv",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "adequate_pc": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "adequate_pc",
-        "measure_table": "kotelchuck_2014_2020.csv",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "proportion"
-    },
-    "adequateplus": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "adequateplus",
-        "measure_table": "kotelchuck_2014_2020.csv",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "adequateplus_pc": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "adequateplus_pc",
-        "measure_table": "kotelchuck_2014_2020.csv",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "proportion"
-    },
-    "inadequate": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "inadequate",
-        "measure_table": "kotelchuck_2014_2020.csv",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "inadequate_pc": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "inadequate_pc",
-        "measure_table": "kotelchuck_2014_2020.csv",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "proportion"
-    },
-    "intermediate": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "intermediate",
-        "measure_table": "kotelchuck_2014_2020.csv",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "intermediate_pc": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "intermediate_pc",
-        "measure_table": "kotelchuck_2014_2020.csv",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "proportion"
-    },
-    "total": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "total",
-        "measure_table": "kotelchuck_2014_2020.csv",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    }
+  "kotelchuck_apncu_index:adequateplus_pc": {
+    "category": "Health",
+    "measure_table": "kotelchuck_apncu_index",
+    "full_name": "kotelchuck_apncu_index:adequateplus_pc",
+    "measure": "adequateplus",
+    "type": "percent",
+    "short_name": "Kotelchuck (adequate plus percent)",
+    "long_name": "Adequacy of Prenatal Care Utilization: Adequate Plus",
+    "short_description": "Adequacy of Prenatal Care Utilization (APNCU): Adequate Plus",
+    "long_description": "Adequacy of Prenatal Care Utilization (APNCU) index, also known as the Kotelchuck index, with a rating of adequate plus.  Proportion of pregnant mothers receiving prenatal care beyond adequate levels. Adequate Plus  prenatal care occurs when prenatal care begins from 1st through 4th month and the proportion of the number of recommended visits is  110% or more. The recommended number of prenatal care visits received from the time prenatal care began until the time of delivery is defined by the American College of Obstetricians and Gynecologists.",
+    "statement": "{value} of the cases in {features.name} rated as adequate plus.",
+    "equity_category": "Status",
+    "sources": [
+      {
+        "name": "Centers for Disease Control and Prevention",
+        "date_accessed": "2022",
+        "url": "https://www.cdc.gov"
+      }
+    ]
+  },
+  "kotelchuck_apncu_index:adequate_pc": {
+    "category": "Health",
+    "measure_table": "kotelchuck_apncu_index",
+    "full_name": "kotelchuck_apncu_index:adequate_pc",
+    "measure": "adequate",
+    "type": "percent",
+    "short_name": "Kotelchuck (adequate percent)",
+    "long_name": "Adequacy of Prenatal Care Utilization: Adequate",
+    "short_description": "Adequacy of Prenatal Care Utilization (APNCU): Adequate",
+    "long_description": "Adequacy of Prenatal Care Utilization (APNCU) index, also known as the Kotelchuck index, with a rating of adequate. Proportion of pregnant mothers receiving adequate prenatal care.  Adequate prenatal care occurs when prenatal care begins from 1st through 4th month and the proportion of the number of recommended visits is between 80% and 109%. The recommended number of prenatal care visits received from the time prenatal care began until the time of delivery is defined by the American College of Obstetricians and Gynecologists.",
+    "statement": "{value} of the cases in {features.name} rated as adequate.",
+    "equity_category": "Status",
+    "sources": [
+      {
+        "name": "Centers for Disease Control and Prevention",
+        "date_accessed": "2022",
+        "url": "https://www.cdc.gov"
+      }
+    ]
+  },
+  "kotelchuck_apncu_index:intermediate_pc": {
+    "category": "Health",
+    "measure_table": "kotelchuck_apncu_index",
+    "full_name": "kotelchuck_apncu_index:intermediate_pc",
+    "measure": "intermediate",
+    "type": "percent",
+    "short_name": "Kotelchuck (intermediate percent)",
+    "long_name": "Adequacy of Prenatal Care Utilization: Intermediate",
+    "short_description": "Adequacy of Prenatal Care Utilization (APNCU): Intermediate",
+    "long_description": "Adequacy of Prenatal Care Utilization (APNCU) index, also known as the Kotelchuck index, with a rating of intermediate. Proportion of pregnant mothers receiving intermediate prenatal care. Intermediate prenatal care occurs when prenatal care begins from 1st through 4th month, and the proportion of the number of visits is between 50-79%.   The recommended number of prenatal care visits received from the time prenatal care began until the time of delivery is defined by the American College of Obstetricians and Gynecologists.",
+    "statement": "{value} of the cases in {features.name} rated as intermediate.",
+    "equity_category": "Status",
+    "sources": [
+      {
+        "name": "Centers for Disease Control and Prevention",
+        "date_accessed": "2022",
+        "url": "https://www.cdc.gov"
+      }
+    ]
+  },
+  "kotelchuck_apncu_index:inadequate_pc": {
+    "category": "Health",
+    "measure_table": "kotelchuck_apncu_index",
+    "full_name": "kotelchuck_apncu_index:inadequate_pc",
+    "measure": "inadequate_pc",
+    "type": "percent",
+    "short_name": "Kotelchuck (inadequate percent)",
+    "long_name": "Adequacy of Prenatal Care Utilization: Inadequate",
+    "short_description": "Adequacy of Prenatal Care Utilization (APNCU): Inadequate",
+    "long_description": "Adequacy of Prenatal Care Utilization (APNCU) index, also known as the Kotelchuck index, with a rating of inadequate. Proportion of pregnant mothers receiving inadequate prenatal care. Inadequate levels occurs when prenatal care begins in the 5th month or later or no prenatal care, regardless of the number of visits or, with less than 50% or more recommended visits received from 1st through 4th month.  The recommended number of prenatal care visits received from the time prenatal care began until the time of delivery is defined by the American College of Obstetricians and Gynecologists.",
+    "statement": "{value} of the cases in {features.name} rated as inadequate.",
+    "equity_category": "Status",
+    "sources": [
+      {
+        "name": "Centers for Disease Control and Prevention",
+        "date_accessed": "2022",
+        "url": "https://www.cdc.gov"
+      }
+    ]
+  },
+  "kotelchuck_apncu_index:adequateplus": {
+    "category": "Health",
+    "measure_table": "kotelchuck_apncu_index",
+    "full_name": "kotelchuck_apncu_index:adequateplus",
+    "measure": "adequateplus",
+    "type": "integer",
+    "short_name": "Kotelchuck (adequate plus count)",
+    "long_name": "Adequacy of Prenatal Care Utilization: Adequate Plus",
+    "short_description": "Adequacy of Prenatal Care Utilization (APNCU): Adequate Plus",
+    "long_description": "Adequacy of Prenatal Care Utilization (APNCU) index, also known as the Kotelchuck index, with a rating of adequate plus.  Adequate Plus  prenatal care occurs when prenatal care begins from 1st through 4th month and the proportion of the number of recommended visits is  110% or more. The recommended number of prenatal care visits received from the time prenatal care began until the time of delivery is defined by the American College of Obstetricians and Gynecologists.",
+    "statement": "There are {value} cases rated as adequate plus in {features.name}.",
+    "equity_category": "Status",
+    "sources": [
+      {
+        "name": "Centers for Disease Control and Prevention",
+        "date_accessed": "2022",
+        "url": "https://www.cdc.gov"
+      }
+    ]
+  },
+  "kotelchuck_apncu_index:adequate": {
+    "category": "Health",
+    "measure_table": "kotelchuck_apncu_index",
+    "full_name": "kotelchuck_apncu_index:adequate",
+    "measure": "adequate",
+    "type": "integer",
+    "short_name": "Kotelchuck (adequate count)",
+    "long_name": "Adequacy of Prenatal Care Utilization: Adequate",
+    "short_description": "Adequacy of Prenatal Care Utilization (APNCU): Adequate",
+    "long_description": "Adequacy of Prenatal Care Utilization (APNCU) index, also known as the Kotelchuck index, with a rating of adequate. Adequate prenatal care occurs when prenatal care begins from 1st through 4th month and the proportion of the number of recommended visits is between 80% and 109%. The recommended number of prenatal care visits received from the time prenatal care began until the time of delivery is defined by the American College of Obstetricians and Gynecologists.",
+    "statement": "There are {value} cases rated as adequate in {features.name}.",
+    "equity_category": "Status",
+    "sources": [
+      {
+        "name": "Centers for Disease Control and Prevention",
+        "date_accessed": "2022",
+        "url": "https://www.cdc.gov"
+      }
+    ]
+  },
+  "kotelchuck_apncu_index:intermediate": {
+    "category": "Health",
+    "measure_table": "kotelchuck_apncu_index",
+    "full_name": "kotelchuck_apncu_index:intermediate",
+    "measure": "intermediate",
+    "type": "integer",
+    "short_name": "Kotelchuck (intermediate count)",
+    "long_name": "Adequacy of Prenatal Care Utilization: Intermediate",
+    "short_description": "Adequacy of Prenatal Care Utilization (APNCU): Intermediate",
+    "long_description": "Adequacy of Prenatal Care Utilization (APNCU) index, also known as the Kotelchuck index, with a rating of intermediate. Intermediate prenatal care occurs when prenatal care begins from 1st through 4th month, and the proportion of the number of visits is between 50-79%.   The recommended number of prenatal care visits received from the time prenatal care began until the time of delivery is defined by the American College of Obstetricians and Gynecologists.",
+    "statement": "There are {value} cases rated as intermediate in {features.name}.",
+    "equity_category": "Status",
+    "sources": [
+      {
+        "name": "Centers for Disease Control and Prevention",
+        "date_accessed": "2022",
+        "url": "https://www.cdc.gov"
+      }
+    ]
+  },
+  "kotelchuck_apncu_index:inadequate": {
+    "category": "Health",
+    "measure_table": "kotelchuck_apncu_index",
+    "full_name": "kotelchuck_apncu_index:inadequate",
+    "measure": "inadequate",
+    "type": "integer",
+    "short_name": "Kotelchuck (inadequate count)",
+    "long_name": "Adequacy of Prenatal Care Utilization: Inadequate",
+    "short_description": "Adequacy of Prenatal Care Utilization (APNCU): Inadequate",
+    "long_description": "Adequacy of Prenatal Care Utilization (APNCU) index, also known as the Kotelchuck index, with a rating of inadequate. Inadequate levels occurs when prenatal care begins in the 5th month or later or no prenatal care, regardless of the number of visits or, with less than 50% or more recommended visits received from 1st through 4th month.  The recommended number of prenatal care visits received from the time prenatal care began until the time of delivery is defined by the American College of Obstetricians and Gynecologists.",
+    "statement": "There are {value} cases rated as inadequate in {features.name}.",
+    "equity_category": "Status",
+    "sources": [
+      {
+        "name": "Centers for Disease Control and Prevention",
+        "date_accessed": "2022",
+        "url": "https://www.cdc.gov"
+      }
+    ]
+  }
 }

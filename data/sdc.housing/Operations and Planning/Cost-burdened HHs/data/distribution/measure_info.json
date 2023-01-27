@@ -6,7 +6,7 @@
         "long_description": "",
         "long_name": "",
         "measure": "morgage30",
-        "measure_table": "vadcmd_tr_acs_2014_2019_cost_burdened_hhs",
+        "measure_table": "vadcmd_ct_acs_2014_2019_cost_burdened_hhs",
         "short_description": "",
         "short_name": "",
         "sources": [
@@ -26,7 +26,7 @@
         "long_description": "",
         "long_name": "",
         "measure": "own_morgage",
-        "measure_table": "vadcmd_tr_acs_2014_2019_cost_burdened_hhs",
+        "measure_table": "vadcmd_ct_acs_2014_2019_cost_burdened_hhs",
         "short_description": "",
         "short_name": "",
         "sources": [
@@ -46,7 +46,7 @@
         "long_description": "",
         "long_name": "",
         "measure": "owners",
-        "measure_table": "vadcmd_tr_acs_2014_2019_cost_burdened_hhs",
+        "measure_table": "vadcmd_ct_acs_2014_2019_cost_burdened_hhs",
         "short_description": "",
         "short_name": "",
         "sources": [
@@ -66,7 +66,7 @@
         "long_description": "",
         "long_name": "",
         "measure": "per_above30",
-        "measure_table": "vadcmd_tr_acs_2014_2019_cost_burdened_hhs",
+        "measure_table": "vadcmd_ct_acs_2014_2019_cost_burdened_hhs",
         "short_description": "",
         "short_name": "",
         "sources": [
@@ -86,7 +86,7 @@
         "long_description": "",
         "long_name": "",
         "measure": "rent30",
-        "measure_table": "vadcmd_tr_acs_2014_2019_cost_burdened_hhs",
+        "measure_table": "vadcmd_ct_acs_2014_2019_cost_burdened_hhs",
         "short_description": "",
         "short_name": "",
         "sources": [
@@ -106,7 +106,7 @@
         "long_description": "",
         "long_name": "",
         "measure": "renters",
-        "measure_table": "vadcmd_tr_acs_2014_2019_cost_burdened_hhs",
+        "measure_table": "vadcmd_ct_acs_2014_2019_cost_burdened_hhs",
         "short_description": "",
         "short_name": "",
         "sources": [
@@ -126,7 +126,7 @@
         "long_description": "",
         "long_name": "",
         "measure": "tot_above30",
-        "measure_table": "vadcmd_tr_acs_2014_2019_cost_burdened_hhs",
+        "measure_table": "vadcmd_ct_acs_2014_2019_cost_burdened_hhs",
         "short_description": "",
         "short_name": "",
         "sources": [
@@ -146,7 +146,7 @@
         "long_description": "",
         "long_name": "",
         "measure": "tot_units",
-        "measure_table": "vadcmd_tr_acs_2014_2019_cost_burdened_hhs",
+        "measure_table": "vadcmd_ct_acs_2014_2019_cost_burdened_hhs",
         "short_description": "",
         "short_name": "",
         "sources": [

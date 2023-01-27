@@ -6,7 +6,7 @@
         "long_description": "",
         "long_name": "",
         "measure": "eviction-filings",
-        "measure_table": "ncr_tr_evictionlab_2000_2016_evictions",
+        "measure_table": "ncr_bg_evictionlab_2000_2016_evictions",
         "short_description": "",
         "short_name": "",
         "sources": [
@@ -26,7 +26,7 @@
         "long_description": "",
         "long_name": "",
         "measure": "evictions",
-        "measure_table": "ncr_tr_evictionlab_2000_2016_evictions",
+        "measure_table": "ncr_bg_evictionlab_2000_2016_evictions",
         "short_description": "",
         "short_name": "",
         "sources": [

@@ -6,8 +6,8 @@
     "/home/runner/work/sdc.education_dev/sdc.education_dev/Daycare/data/distribution/vdss.csv.xz",
     "/home/runner/work/sdc.education_dev/sdc.education_dev/Reading/data/distribution/va_hdctsd_vdoe_2019_2021_3rd_grade_mean_median_read_score.csv.xz"
   ],
-  "count": 24,
-  "utc_audited": "2023-01-14 21:18:13",
+  "count": 25,
+  "utc_audited": "2023-01-17 12:00:45",
   "data": [
     {
       "name": "temp",
@@ -16,10 +16,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "Postsecondary/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "ingest_acs.R",
+      "path": "Postsecondary/code/distribution/ingest_acs.R",
+      "md5": "185925744263d8aafa22a699e54cf089",
+      "size": 4851
+    },
+    {
+      "name": "ingest_nces.R",
+      "path": "Postsecondary/code/distribution/ingest_nces.R",
+      "md5": "11c9735b20b1067961fcc9b010ee6ab8",
+      "size": 13422
     },
     {
       "name": "points_2017.geojson",
@@ -100,22 +106,22 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "Daycare/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "ingest.R",
+      "path": "Daycare/code/distribution/ingest.R",
+      "md5": "71e2b6888558e839cfa7f27afe53f035",
+      "size": 15673
     },
     {
       "name": "points_2021.geojson",
       "path": "Daycare/data/distribution/points_2021.geojson",
-      "md5": "e1f13c9f60f4fada3d00202d784902cc",
-      "size": 2400567
+      "md5": "24925d757226d99288b61d0ace2e7d56",
+      "size": 2246630
     },
     {
       "name": "vdss.csv.xz",
       "path": "Daycare/data/distribution/vdss.csv.xz",
-      "md5": "3125c21cff8a40774d3e2bd82c2929b4",
-      "size": 554644
+      "md5": "88edebb6ec901babd28f48273094f4e9",
+      "size": 554072
     },
     {
       "name": "measure_info.json",
@@ -130,10 +136,10 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "Reading/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "reading_scores.R",
+      "path": "Reading/code/distribution/reading_scores.R",
+      "md5": "d242d7c8d0b9e0ecbeef36396314725b",
+      "size": 12741
     },
     {
       "name": "measure_info.json",
