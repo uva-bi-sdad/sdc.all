@@ -18,6 +18,10 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Physicians/OB-GYN/Service Access Scores/data/distribution/va_hdcttrbgca_webmd_2021_access_scores_obgyn.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Physicians/Pediatric/Service Access Scores/data/distribution/va_hdcttrbgca_webmd_2021_access_scores_pediatrics.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Physicians/Primary Care/Service Access Scores/data/distribution/va_hdcttrbgca_webmd_2021_access_scores_primcare.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/PCNA Measures/Check-up and Dental Visits/data/distribution/va_ct_brfss_2019_percent_annual_checkup.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/PCNA Measures/Check-up and Dental Visits/data/distribution/va_tr_brfss_2018_percent_annual_dental_visit.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/PCNA Measures/Check-up and Dental Visits/data/distribution/va_ct_brfss_2018_percent_annual_dental_visit.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/PCNA Measures/Check-up and Dental Visits/data/distribution/va_tr_brfss_2019_percent_annual_checkup.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Mental Health/Service Access Scores/data/distribution/va_hdcttrbgca_samhsa_2021_access_scores_mental.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/va_hdcttrbgca_hifld_2021_access_scores_urgent.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/ncr_bgtrct_gmap_2022_access_scores_urgent_care_centers.csv",
@@ -35,7 +39,7 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Mental Health/Mental and Physical Healthy Days/data/distribution/dc_health_behavior_diet.ncr_trct_sdad_2015_2019_brfss_sae.csv.xz"
   ],
   "count": 122,
-  "utc_audited": "2023-01-26 21:04:23",
+  "utc_audited": "2023-01-27 16:00:39",
   "data": [
     {
       "name": "ncr_bgtrct_2015_access_scores_hospitals.csv",
@@ -350,16 +354,16 @@
       "size": 548
     },
     {
+      "name": "measure_info.json",
+      "path": "Health Care Services/PCNA Measures/Check-up and Dental Visits/data/distribution/measure_info.json",
+      "md5": "c08627e06510a92bea6de2fdf07dfbd4",
+      "size": 1102
+    },
+    {
       "name": "va_ct_brfss_2018_percent_annual_dental_visit.csv",
       "path": "Health Care Services/PCNA Measures/Check-up and Dental Visits/data/distribution/va_ct_brfss_2018_percent_annual_dental_visit.csv",
       "md5": "3cf30812716d08362c36e84f2ede0fed",
       "size": 11995
-    },
-    {
-      "name": "measure_info_va_ct_brfss_2018_percent_annual_dental_visit.json",
-      "path": "Health Care Services/PCNA Measures/Check-up and Dental Visits/data/distribution/measure_info_va_ct_brfss_2018_percent_annual_dental_visit.json",
-      "md5": "e2cd8bf648a0e3c3430a90a7b6a7838e",
-      "size": 549
     },
     {
       "name": "va_tr_brfss_2019_percent_annual_checkup.csv",
@@ -538,8 +542,8 @@
     {
       "name": "measure_info.json",
       "path": "Population Health/Reproductive Health/Prenatal Care Adequacy/data/distribution/measure_info.json",
-      "md5": "37ddc573f4e43f5dc98e1c885f9e1000",
-      "size": 4643
+      "md5": "bd3b201b8bcd64cdfe12a015e809be49",
+      "size": 10171
     },
     {
       "name": "kotelchuck_2014_2020.csv",
