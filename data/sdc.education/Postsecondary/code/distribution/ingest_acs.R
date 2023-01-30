@@ -41,6 +41,7 @@ for (location in tolower(states)) {
   }
 }
 entity_names <- unlist(lapply(entity_info, "[[", "region_name"))
+entity_names <- entity_names[!grepl(", NA", entity_names, fixed = TRUE)]
 
 # download and aggregate ACS data
 ## for margin or error:

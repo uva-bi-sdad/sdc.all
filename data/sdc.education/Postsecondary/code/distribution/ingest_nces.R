@@ -255,6 +255,7 @@ for (location in c("dc", "md", "va")) {
   }
 }
 entity_names <- unlist(lapply(entity_info, "[[", "region_name"))
+entity_names <- entity_names[!grepl(", NA", entity_names, fixed = TRUE)]
 
 # reformat and save
 final <- do.call(rbind, lapply(data, function(d) {
@@ -268,9 +269,8 @@ final <- do.call(rbind, lapply(data, function(d) {
   d$region_type <- c(
     "5" = "county", "8" = "health district", "11" = "tract", "12" = "block group"
   )[as.character(nchar(d$GEOID))]
-  rownames(d) <- d$GEOID
-  present_ids <- d$GEOID[d$GEOID %in% names(entity_names)]
-  d[present_ids, "region_name"] <- entity_names[present_ids]
+  d <- d[d$GEOID %in% names(entity_names),]
+  d$region_name <- entity_names[d$GEOID]
   do.call(rbind, lapply(split(d, seq_len(nrow(d))), function(r) {
     data.frame(
       geoid = r$GEOID,

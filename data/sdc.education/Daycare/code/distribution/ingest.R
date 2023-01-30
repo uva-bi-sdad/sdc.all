@@ -33,6 +33,7 @@ for (level in list(c("Block%20Group", "census_block_groups"), c("Tract", "census
   }
 }
 entity_names <- unlist(lapply(entity_info, "[[", "region_name"))
+entity_names <- entity_names[!grepl(", NA", entity_names, fixed = TRUE)]
 
 # download data
 locations_file <- paste0(dir, "/working/locations_", year, ".csv")
@@ -352,9 +353,8 @@ varerrors <- paste0(varnames, "_error")
 d$region_type <- c(
   "5" = "county", "8" = "health district", "11" = "tract", "12" = "block group"
 )[as.character(nchar(d$GEOID))]
-rownames(d) <- d$GEOID
-present_ids <- d$GEOID[d$GEOID %in% names(entity_names)]
-d[present_ids, "region_name"] <- entity_names[present_ids]
+d <- d[d$GEOID %in% names(entity_names),]
+d$region_name <- entity_names[d$GEOID]
 final <- do.call(rbind, lapply(split(d, seq_len(nrow(d))), function(r) {
   data.frame(
     geoid = r$GEOID,
