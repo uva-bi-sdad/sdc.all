@@ -65,11 +65,7 @@ if __name__ == "__main__":
     ) as url:
         measure_info = json.load(url)
 
-    # cleaning the json data to extract known names of measures
-    known_measure_set = set()
-    for k in measure_info.keys():
-        if "measure" in measure_info[k]:
-            known_measure_set.add(measure_info[k]["measure"])
+    known_measure_set = set(measure_info.keys())
 
     print("Length of known measures set: %s" % len(known_measure_set))
     test = Test(

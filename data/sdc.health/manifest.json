@@ -32,6 +32,24 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Literacy/data/distribution/va_hdcttr_acs_2010_2019_post_hs_education.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Literacy/data/distribution/va_hdcttr_acs_2015_2019_post_hs_education.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Reproductive Health/Prenatal Care Adequacy/data/distribution/kotelchuck_2014_2020.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_food_accessibility_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_employment_accessibility_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_affordability_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_pop_density_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_material_deprivation_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_income_inequality_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_segregation_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_job_participation_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_health_opportunity_profile.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_community_environmental_profile.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_consumer_opportunity_profile.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_air_quality_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_pop_churning_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_education_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_access_to_care_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_economic_opportunity_profile.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_walkability_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_wellness_diparity_profile.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/System Usage and Insurance/Preventable Hospitalizations/data/distribution/va_ct_chr_2015_2021_preventable_hospitalizations.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/System Usage and Insurance/Without Health Insurance/data/distribution/ncr_cttrbg_acs5_2015_2019_no_health_insurance_19_to_64.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/System Usage and Insurance/Without Health Insurance/data/distribution/va_hdcttr_acs5_2015_2019_no_health_insurance_19_to_64.csv.xz",
@@ -39,7 +57,7 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Mental Health/Mental and Physical Healthy Days/data/distribution/dc_health_behavior_diet.ncr_trct_sdad_2015_2019_brfss_sae.csv.xz"
   ],
   "count": 122,
-  "utc_audited": "2023-01-27 16:00:39",
+  "utc_audited": "2023-01-31 16:37:49",
   "data": [
     {
       "name": "ncr_bgtrct_2015_access_scores_hospitals.csv",
@@ -452,8 +470,8 @@
     {
       "name": "measure_info.json",
       "path": "Health Care Services/Drug and Rehab/Service Catchment Scores/data/distribution/measure_info.json",
-      "md5": "bce1f8d2f00fbbbe2c66f0bee338211a",
-      "size": 5957
+      "md5": "72fea292b3dc0f3654e5694bbfa72e7f",
+      "size": 5887
     },
     {
       "name": "va_hdcttrbgca_samhsa_2021_access_scores_substance.csv",
@@ -600,6 +618,12 @@
       "size": 142372
     },
     {
+      "name": "measure_info.json",
+      "path": "Population Health/Health Opportunity Index/data/distribution/measure_info.json",
+      "md5": "8a80554c91d9fca8acb82f023de02f11",
+      "size": 3
+    },
+    {
       "name": "va_tr_vdh_2017_segregation_index.csv",
       "path": "Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_segregation_index.csv",
       "md5": "b0996ee8d9545a1c1caedc4e75c59249",
@@ -660,12 +684,6 @@
       "size": 142386
     },
     {
-      "name": "measure_info_va_tr_brfss_2019_percent_annual_checkup.json",
-      "path": "Population Health/Health Opportunity Index/data/distribution/measure_info_va_tr_brfss_2019_percent_annual_checkup.json",
-      "md5": "99914b932bd37a50b983c5e7c90ae93b",
-      "size": 2
-    },
-    {
       "name": "va_tr_vdh_2017_walkability_index.csv",
       "path": "Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_walkability_index.csv",
       "md5": "6814c4f1ee8c7e2c4366a95e140fc25d",
@@ -692,8 +710,8 @@
     {
       "name": "measure_info.json",
       "path": "Population Health/System Usage and Insurance/Preventable Hospitalizations/data/distribution/measure_info.json",
-      "md5": "1f83b985a442b1ddfad58302ae79973f",
-      "size": 563
+      "md5": "316d700353edf9581d58da8198032c17",
+      "size": 1092
     },
     {
       "name": "va_ct_chr_2015_2021_preventable_hospitalizations.csv",

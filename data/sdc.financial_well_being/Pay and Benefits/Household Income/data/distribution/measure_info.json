@@ -1,44 +1,22 @@
 {
-    "median_household_income": [
+    "median_household_income":
         {
             "category": "Financial Well Being",
             "equity_category": "Status",
-            "full_name": "household_income:nrc:median_household_income",
-            "long_description": "",
-            "long_name": "MEDIAN HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2019 INFLATION-ADJUSTED DOLLARS), ACS 5-Year Estimates",
-            "measure": "median_household_income",
+            "long_description": "Self-reported median household income in the past 12 months (in 2019 inflation adjusted-dollars. Based on the American Community Survey Table B19013 ACS 2015/2019 5-year estimates.",
+            "long_name": "Median household income",
             "measure_table": "ncr_cttrbg_2015_2019_median_household_income",
-            "short_description": "",
-            "short_name": "Median Household Income",
+            "short_description": "Self-reported median household income in the past 12 months (in 2019 inflation adjusted-dollars.",
+            "short_name": "Median household income",
             "sources": [
                 {
                     "date_accessed": 2022,
-                    "name": "Census Bureau, American Community Survey",
+                    "name": "American Community Survey",
+                    "location": "Table B19013",
                     "url": "https://www.census.gov/programs-surveys/acs"
                 }
             ],
-            "statement": "the median household income in {features.name} is {value}.",
-            "type": "dollar"
-        },
-        {
-            "category": "Financial Well Being",
-            "equity_category": "Status",
-            "full_name": "household_income:va:median_household_income",
-            "long_description": "",
-            "long_name": "MEDIAN HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2019 INFLATION-ADJUSTED DOLLARS), ACS 5-Year Estimates",
-            "measure": "median_household_income",
-            "measure_table": "va_cttrbg_2015_2019_median_household_income",
-            "short_description": "",
-            "short_name": "Median Household Income",
-            "sources": [
-                {
-                    "date_accessed": 2022,
-                    "name": "Census Bureau, American Community Survey",
-                    "url": "https://www.census.gov/programs-surveys/acs"
-                }
-            ],
-            "statement": "the median household income in {features.name} is {value}.",
+            "statement": "The median household income in {features.name} is {value} per year.",
             "type": "dollar"
         }
-    ]
 }

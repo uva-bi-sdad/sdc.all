@@ -1,5 +1,5 @@
 {
-  "commutes:commute_time": {
+  "commute_time": {
     "category": "Transportation",
     "type": "drive time",
     "short_name": "Commute time",
@@ -17,7 +17,7 @@
       }
     ]
   },
-  "carpools:perc_carpool": {
+  "perc_carpool": {
     "category": "Transportation",
     "type": "percent",
     "short_name": "Carpool to work",
@@ -35,7 +35,7 @@
       }
     ]
   },
-  "vehicles:perc_no_vehicle": {
+  "perc_no_vehicle": {
     "category": "Transportation",
     "type": "percent",
     "short_name": "Without vehicle",

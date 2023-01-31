@@ -1011,52 +1011,6 @@
         "statement": "The primary care availability for {features.name} is {value}.",
         "type": "index"
     },
-    "access_scores_substance:subs_3sfca": {
-        "category": "Health",
-        "citations": [
-            "lou04",
-            "lou09",
-            "lou03",
-            "saxon20"
-        ],
-        "equity_category": "Availability",
-        "full_name": "access_scores_substance:subs_3sfca",
-        "long_description": "Substance use/behavioral health services availability based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
-        "long_name": "Substance use/behavioral health services geographic availability (3-step floating catchment areas)",
-        "measure": "subs_3sfca",
-        "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2021_substance_access_scores",
-        "short_description": "Index of substance use/behavioral health services availability based on supply and demand of facilities",
-        "short_name": "Substance use/behavioral health services geographic availability",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
-                "url": "https://www.samhsa.gov/"
-            }
-        ],
-        "statement": "The substance use/behavioral health services availability for {features.name} is {value}.",
-        "type": "index"
-    },
-    "access_scores_substance:subs_cnt": {
-        "category": "Health",
-        "equity_category": "Availability",
-        "full_name": "access_scores_substance:subs_cnt",
-        "long_description": "Count of substance use/behavioral health facilities based on facility locations. Location data were collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository.",
-        "long_name": "Availability of substance use/behavioral health by count",
-        "measure": "subs_cnt",
-        "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2021_substance_access_scores",
-        "short_description": "Count of substance use/behavioral health facilities based on facility locations",
-        "short_name": "Substance use/behavioral health availability (count)",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
-                "url": "https://www.samhsa.gov/"
-            }
-        ],
-        "statement": "There are {value} substance use facilities in {features.name}.",
-        "type": "count"
-    },
     "acs_postsecondary_count": {
         "category": "Education",
         "equity_category": "Status",
@@ -1155,25 +1109,7 @@
         "statement": "The average upload speed is {value} in {features.name}.",
         "type": "internet speed"
     },
-    "carpools:perc_carpool": {
-        "category": "Transportation",
-        "equity_category": "Status",
-        "long_description": "Percentage of population self-reported to carpool to work. Based on American Community Survey Table S0801 ACS 5-year estimates.",
-        "long_name": "Percentage carpool to work",
-        "short_description": "Population self-reported to carpool to work.",
-        "short_name": "Carpool to work",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "location": "Table S0801",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "{value} of the population in {features.name} carpools to work.",
-        "type": "percent"
-    },
-    "commutes:commute_time": {
+    "commute_time": {
         "category": "Transportation",
         "equity_category": "Status",
         "long_description": "Self-reported mean travel time to work. Based on American Community Survey Table S0801 ACS 5-year estimates.",
@@ -3205,48 +3141,25 @@
         "statement": "In most regions, {value} of 3rd graders pass reading in {region_name}.",
         "type": "percent"
     },
-    "median_household_income": [
-        {
-            "category": "Financial Well Being",
-            "equity_category": "Status",
-            "full_name": "household_income:nrc:median_household_income",
-            "long_description": "",
-            "long_name": "MEDIAN HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2019 INFLATION-ADJUSTED DOLLARS), ACS 5-Year Estimates",
-            "measure": "median_household_income",
-            "measure_table": "ncr_cttrbg_2015_2019_median_household_income",
-            "short_description": "",
-            "short_name": "Median Household Income",
-            "sources": [
-                {
-                    "date_accessed": 2022,
-                    "name": "Census Bureau, American Community Survey",
-                    "url": "https://www.census.gov/programs-surveys/acs"
-                }
-            ],
-            "statement": "the median household income in {features.name} is {value}.",
-            "type": "dollar"
-        },
-        {
-            "category": "Financial Well Being",
-            "equity_category": "Status",
-            "full_name": "household_income:va:median_household_income",
-            "long_description": "",
-            "long_name": "MEDIAN HOUSEHOLD INCOME IN THE PAST 12 MONTHS (IN 2019 INFLATION-ADJUSTED DOLLARS), ACS 5-Year Estimates",
-            "measure": "median_household_income",
-            "measure_table": "va_cttrbg_2015_2019_median_household_income",
-            "short_description": "",
-            "short_name": "Median Household Income",
-            "sources": [
-                {
-                    "date_accessed": 2022,
-                    "name": "Census Bureau, American Community Survey",
-                    "url": "https://www.census.gov/programs-surveys/acs"
-                }
-            ],
-            "statement": "the median household income in {features.name} is {value}.",
-            "type": "dollar"
-        }
-    ],
+    "median_household_income": {
+        "category": "Financial Well Being",
+        "equity_category": "Status",
+        "long_description": "Self-reported median household income in the past 12 months (in 2019 inflation adjusted-dollars. Based on the American Community Survey Table B19013 ACS 2015/2019 5-year estimates.",
+        "long_name": "Median household income",
+        "measure_table": "ncr_cttrbg_2015_2019_median_household_income",
+        "short_description": "Self-reported median household income in the past 12 months (in 2019 inflation adjusted-dollars.",
+        "short_name": "Median household income",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "location": "Table B19013",
+                "name": "American Community Survey",
+                "url": "https://www.census.gov/programs-surveys/acs"
+            }
+        ],
+        "statement": "The median household income in {features.name} is {value} per year.",
+        "type": "dollar"
+    },
     "median_read_pass_rate": {
         "category": "Education",
         "equity_category": "Status",
@@ -3268,23 +3181,6 @@
         ],
         "statement": "On average, {value} of 3rd graders pass reading in {region_name}.",
         "type": "percent"
-    },
-    "mental_10_near_median": {
-        "category": "Health",
-        "equity_category": "Availability",
-        "long_description": "Median drive time in minutes to the ten closest mental health facilities. Facility location data were collected from the Substance Abuse and Mental Health Services Administration (SAMHSA) repository. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
-        "long_name": "Mental health availability by median drive time to the ten closest facilities in minutes",
-        "short_description": "Median drive time (minutes) to the ten closest mental health facilities",
-        "short_name": "Mental health availability (drive time)",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
-                "url": "https://findtreatment.gov/"
-            }
-        ],
-        "statement": "The median drive time to the ten closest mental health facilities to {features.name} is {value}.",
-        "type": "drive time"
     },
     "mental_3sfca": {
         "category": "Health",
@@ -3331,6 +3227,23 @@
         ],
         "statement": "There are {value} mental health facilities in {features.name}.",
         "type": "count"
+    },
+    "mental_near_10_median": {
+        "category": "Health",
+        "equity_category": "Availability",
+        "long_description": "Median drive time in minutes to the ten closest mental health facilities. Facility location data were collected from the Substance Abuse and Mental Health Services Administration (SAMHSA) repository. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
+        "long_name": "Mental health availability by median drive time to the ten closest facilities in minutes",
+        "short_description": "Median drive time (minutes) to the ten closest mental health facilities",
+        "short_name": "Mental health availability (drive time)",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
+                "url": "https://findtreatment.gov/"
+            }
+        ],
+        "statement": "The median drive time to the ten closest mental health facilities to {features.name} is {value}.",
+        "type": "drive time"
     },
     "morgage30": {
         "category": "",
@@ -3628,6 +3541,24 @@
         "statement": "",
         "type": "MOE"
     },
+    "perc_carpool": {
+        "category": "Transportation",
+        "equity_category": "Status",
+        "long_description": "Percentage of population self-reported to carpool to work. Based on American Community Survey Table S0801 ACS 5-year estimates.",
+        "long_name": "Percentage carpool to work",
+        "short_description": "Population self-reported to carpool to work.",
+        "short_name": "Carpool to work",
+        "sources": [
+            {
+                "date_accessed": "2022",
+                "location": "Table S0801",
+                "name": "American Community Survey",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "{value} of the population in {features.name} carpools to work.",
+        "type": "percent"
+    },
     "perc_hh_limited_english": {
         "category": "",
         "equity_category": "",
@@ -3895,6 +3826,24 @@
         ],
         "statement": "",
         "type": "MOE"
+    },
+    "perc_no_vehicle": {
+        "category": "Transportation",
+        "equity_category": "Status",
+        "long_description": "Percentage of households self-reported to not have a vehicle available at home. Based on American Community Survey Table S2504 ACS 5-year estimates.",
+        "long_name": "Percentage of households without vehicle available",
+        "short_description": "Households self-reported to not have a vehicle available at home.",
+        "short_name": "Without vehicle",
+        "sources": [
+            {
+                "date_accessed": "2022",
+                "location": "Table S2504",
+                "name": "American Community Survey",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "{value} of households in {features.name} do not have a vehicle available at home.",
+        "type": "percent"
     },
     "perc_other": {
         "category": "",
@@ -4719,24 +4668,21 @@
         "type": "percent"
     },
     "prevent_hosp_rate": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "prevent_hosp_rate",
-        "measure_table": "va_ct_chr_2015_2021_preventable_hospitalizations.csv",
-        "short_description": "",
-        "short_name": "",
+        "category": "Health",
+        "long_description": "Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees. Ambulatory care refers to diagnoses that are usually treatable in outpatient settings. This data is based on Medicare claims and comes from County Health Rankings.",
+        "long_name": "Preventable hospital stays per 100,000 Medicare enrollees",
+        "measure_table": "dc_health_behavior_diet.va_hdct_chr_2015_2021_preventable_hospitalizations",
+        "short_description": "Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees",
+        "short_name": "Preventable hospitalizations per 100,000",
         "sources": [
             {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "date_accessed": 2021,
+                "name": "County Health Rankings",
+                "url": "https://www.countyhealthrankings.org/app/virginia/2021/measure/factors/5/description"
             }
         ],
-        "statement": "",
-        "type": "rate per 100K"
+        "statement": "{value} of the hospitalizations in {features.name} were preventable (due to conditions usually treated in outpatient settings).",
+        "type": "rate"
     },
     "rent30": {
         "category": "",
@@ -5196,7 +5142,53 @@
         "statement": "There are {value} <2-year schools per 100k people over 14 in {region_name}.",
         "type": "per 100k"
     },
-    "substance_access_scores:subs_10near_median": {
+    "subs_3sfca": {
+        "category": "Health",
+        "citations": [
+            "lou04",
+            "lou09",
+            "lou03",
+            "saxon20"
+        ],
+        "equity_category": "Availability",
+        "full_name": "access_scores_substance:subs_3sfca",
+        "long_description": "Substance use/behavioral health services availability based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
+        "long_name": "Substance use/behavioral health services geographic availability (3-step floating catchment areas)",
+        "measure": "subs_3sfca",
+        "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2021_substance_access_scores",
+        "short_description": "Index of substance use/behavioral health services availability based on supply and demand of facilities",
+        "short_name": "Substance use/behavioral health services geographic availability",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
+                "url": "https://www.samhsa.gov/"
+            }
+        ],
+        "statement": "The substance use/behavioral health services availability for {features.name} is {value}.",
+        "type": "index"
+    },
+    "subs_cnt": {
+        "category": "Health",
+        "equity_category": "Availability",
+        "full_name": "access_scores_substance:subs_cnt",
+        "long_description": "Count of substance use/behavioral health facilities based on facility locations. Location data were collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository.",
+        "long_name": "Availability of substance use/behavioral health by count",
+        "measure": "subs_cnt",
+        "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2021_substance_access_scores",
+        "short_description": "Count of substance use/behavioral health facilities based on facility locations",
+        "short_name": "Substance use/behavioral health availability (count)",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
+                "url": "https://www.samhsa.gov/"
+            }
+        ],
+        "statement": "There are {value} substance use facilities in {features.name}.",
+        "type": "count"
+    },
+    "subs_near_10_median": {
         "category": "Health",
         "equity_category": "Availability",
         "full_name": "substance_access_scores:subs_10near_median",
@@ -5337,24 +5329,6 @@
         ],
         "statement": "The median drive time to the ten closest emergency medical service facilities to {features.name} is {value}.",
         "type": "drive time"
-    },
-    "vehicles:perc_no_vehicle": {
-        "category": "Transportation",
-        "equity_category": "Status",
-        "long_description": "Percentage of households self-reported to not have a vehicle available at home. Based on American Community Survey Table S2504 ACS 5-year estimates.",
-        "long_name": "Percentage of households without vehicle available",
-        "short_description": "Households self-reported to not have a vehicle available at home.",
-        "short_name": "Without vehicle",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "location": "Table S2504",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "{value} of households in {features.name} do not have a vehicle available at home.",
-        "type": "percent"
     },
     "weighted_budget_shortfall": {
         "category": "",

@@ -59,7 +59,7 @@ def evaluate_folder(req_cols, dirpath):
 if __name__ == "__main__":
 
     with urllib.request.urlopen(
-        "https://raw.githubusercontent.com/uva-bi-sdad/data_repo_structure/main/col_names.json"
+        "https://raw.githubusercontent.com/uva-bi-sdad/data_repo_structure/main/column_structure.json"
     ) as url:
         req_cols = json.load(url)
 
