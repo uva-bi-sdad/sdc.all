@@ -39,8 +39,27 @@ geofeatures <- block_groups("VA", "059", 2020) %>%
 geofeatures <- setDT(st_drop_geometry(geofeatures))
 
 
-# description of business activities in fairfax
-tab <- crosstable(mi_features, c(small, solo_proprietor, company_type, trade_status) , by=minority, total='both')
+# business profile over time
+#tab <- crosstable(mi_features, c(small, solo_proprietor, company_type, trade_status) , by=minority, total='both')
+temp01 <- mi_fairfax_features %>%
+  mutate(size=if_else(small==1,'small','not_small'),
+         sole_proprietor=if_else(solo_proprietor==1,'soleproprietor','notsoleproprietor'),
+         minorityowned=if_else(minority==1,'minorityowned','notminority'),
+         trade=case_when(
+           trade_status=='Both' ~ "Import_Export",
+           trade_status=='Importer' ~ "Importer",
+           trade_status=='Exporter' ~ "Exporter",
+           is.na(trade_status)==T ~ "Domestic")) %>%
+  unique() %>%
+  group_by(size, sole_proprietor, company_type, trade, minorityowned) %>%
+  summarize(Number_company=length(duns))
+
+# save the data ---------------------------------------------------------------------------------------
+savepath = "ownership_diversity/VA/fairfax/overall/data/working/"
+readr::write_csv(temp01, xzfile(paste0(savepath,"va059_ct_mi_20102020_business_profile.csv.xz"), compression = 9))
+
+
+
 
 
 # summary of all business activities in fairfax at the county level -------------------------------------------
@@ -163,6 +182,8 @@ business_activities02 <- temp02 %>%
 # save the data ---------------------------------------------------------------------------------------
 savepath = "ownership_diversity/VA/fairfax/overall/data/distribution/"
 readr::write_csv(business_activities02, xzfile(paste0(savepath,"va059_ct_mi_20102020_small_business_activities_by_industry.csv.xz"), compression = 9))
+
+
 
 
 
