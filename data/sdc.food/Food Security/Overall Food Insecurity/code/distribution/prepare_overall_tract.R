@@ -10,7 +10,7 @@ library(stringr)
 # ingest original data -----------------
 #
 
-data_path = "Food\ Security/Sub-County\ Estimates/Census\ Tracts/data/original/"
+data_path = "Food\ Security/Overall\ Food\ Insecurity/data/original/"
 
 df <- read_excel(paste0(data_path, "US_tract_2020.xlsx"), sheet = 1)
 
@@ -21,11 +21,10 @@ df <- read_excel(paste0(data_path, "US_tract_2020.xlsx"), sheet = 1)
 
 va_df <- df %>%
   filter(state == "VA") %>%
-  select(TractID, geography, total_population_2020, 
+  select(TractID, geography, 
          percent_food_insecure_2020, number_food_insecure_2020) %>%
   rename(geoid = TractID, 
          region_name = geography,
-         total_population = total_population_2020,
          percent_food_insecure = percent_food_insecure_2020,
          number_food_insecure = number_food_insecure_2020) %>%
   mutate(region_type = "tract", 
@@ -33,7 +32,7 @@ va_df <- df %>%
          moe = "",
          measure_type = "count",
          percent_food_insecure = percent_food_insecure*100) %>%
-  pivot_longer(cols = total_population:number_food_insecure,
+  pivot_longer(cols = percent_food_insecure:number_food_insecure,
                names_to = "measure",
                values_to = "value")
 
@@ -51,11 +50,10 @@ va_df <- va_df[ , c(1,3,2,4,7,8,6,5)]
 
 ncr_df <- df %>%
   filter(state == "VA" | state == "MD" | state == "DC") %>%
-  select(TractID, geography, total_population_2020, 
+  select(TractID, geography,  
          percent_food_insecure_2020, number_food_insecure_2020) %>%
   rename(geoid = TractID, 
          region_name = geography,
-         total_population = total_population_2020,
          percent_food_insecure = percent_food_insecure_2020,
          number_food_insecure = number_food_insecure_2020) %>%
   mutate(region_type = "tract", 
@@ -63,7 +61,7 @@ ncr_df <- df %>%
          moe = "",
          measure_type = "count",
          percent_food_insecure = percent_food_insecure*100) %>%
-  pivot_longer(cols = total_population:number_food_insecure,
+  pivot_longer(cols = percent_food_insecure:number_food_insecure,
                names_to = "measure",
                values_to = "value")
 
@@ -85,6 +83,6 @@ ncr_df <- ncr_df %>%
 # write data ---------------------------------
 #
 
-write_csv(va_df, xzfile("Food\ Security/Sub-County\ Estimates/Census\ Tracts/data/distribution/va_tr_fa_2020_food_insecurity.csv.xz", compression = 9))
-write_csv(ncr_df, xzfile("Food\ Security/Sub-County\ Estimates/Census\ Tracts/data/distribution/ncr_tr_fa_2020_food_insecurity.csv.xz", compression = 9))
+write_csv(va_df, xzfile("Food\ Security/Overall\ Food\ Insecurity/data/working/va_tr_fa_2020_food_insecurity.csv.xz", compression = 9))
+write_csv(ncr_df, xzfile("Food\ Security/Overall\ Food\ Insecurity/data/working/ncr_tr_fa_2020_food_insecurity.csv.xz", compression = 9))
 
