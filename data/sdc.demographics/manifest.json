@@ -2,27 +2,124 @@
   "name": "sdc.demographics_dev",
   "measure_not_found": [
     "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Cooperative extension/data/distribution/va_cttr_2010_2021_perc_male.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/old_folder/acs_demographics/data/distribution/va_hdcttr_acs_2009_2019_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/population/DC/gender/data/distribution/dc001_sdad_2019_gender.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/population/DC/race/data/distribution/dc001_sdad_2019_race.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/population/DC/age/data/distribution/dc001_sdad_2019_age.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/population/VA/arlington/gender/data/distribution/va013_sdad_2019_gender.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/population/VA/arlington/race/data/distribution/va013_sdad_2019_race.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/population/VA/arlington/age/data/distribution/va013_sdad_2019_age.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/population/VA/fairfax/gender/data/distribution/va059_bgzcpdsdhsr_sdad_2019_gender.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/population/VA/fairfax/race/data/distribution/va059_bgzcpdsdhsr_sdad_2019_race.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/human_service_regions/data/distribution/va059_hsr_sdad_2019_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/zip_code/data/distribution/va059_zc_sdad_2019_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/supervisor_districts/data/distribution/va059_sd_sdad_2019_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/planning_districts/data/distribution/va059_pd_sdad_2019_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/population/VA/fairfax/age/data/distribution/va059_bgzcpdsdhsr_sdad_2019_age.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/population/NCR/old/data/distribution/ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/population/NCR/age/data/distribution/ncr_sdad_2019_age.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/population/NCR/age/data/distribution/ncr_sdad_2019_gender.csv.xz"
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Gender/data/distribution/ncr_trctbg_acs_20092020_gender_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Gender/data/distribution/va_trctbg_acs_20092020_gender_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Age/data/distribution/ncr_trctbg_acs_20092020_age_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Age/data/distribution/va_trctbg_acs_20092020_age_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Race/data/distribution/ncr_trctbg_acs_20092020_race_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Race/data/distribution/va_trctbg_acs_20092020_race_demographics.csv.xz"
   ],
-  "count": 113,
-  "utc_audited": "2023-01-26 20:44:36",
+  "count": 39,
+  "utc_audited": "2023-02-08 17:47:22",
   "data": [
+    {
+      "name": "temp",
+      "path": "Synthetic_population/Housing_units_distribution/Fairfax/data/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "ingest01.R",
+      "path": "Synthetic_population/Housing_units_distribution/Fairfax/code/distribution/ingest01.R",
+      "md5": "46f98a607ff0c0f4aad35f803e7bfd13",
+      "size": 2998
+    },
+    {
+      "name": "temp",
+      "path": "Synthetic_population/Housing_units_distribution/Fairfax/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "prepare01.R",
+      "path": "Synthetic_population/Housing_units_distribution/Fairfax/code/distribution/prepare01.R",
+      "md5": "7830db3a8ce244e50945a000a55a8203",
+      "size": 8204
+    },
+    {
+      "name": "ingest02.R",
+      "path": "Synthetic_population/Housing_units_distribution/Fairfax/code/distribution/ingest02.R",
+      "md5": "f26de4060e707c99ec1606f28a72b1c9",
+      "size": 3742
+    },
+    {
+      "name": "temp",
+      "path": "Synthetic_population/Housing_units_distribution/Fairfax/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Synthetic_population/Housing_units_distribution/DC/data/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "ingest01.R",
+      "path": "Synthetic_population/Housing_units_distribution/DC/code/distribution/ingest01.R",
+      "md5": "d607b562e012ab402f24d7258582aa10",
+      "size": 2800
+    },
+    {
+      "name": "temp",
+      "path": "Synthetic_population/Housing_units_distribution/DC/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "prepare01.R",
+      "path": "Synthetic_population/Housing_units_distribution/DC/code/distribution/prepare01.R",
+      "md5": "58406b744447456235dd8ddcd23782c3",
+      "size": 7093
+    },
+    {
+      "name": "ingest02.R",
+      "path": "Synthetic_population/Housing_units_distribution/DC/code/distribution/ingest02.R",
+      "md5": "8b3b210430b068cd161b5d6854c28c5d",
+      "size": 3759
+    },
+    {
+      "name": "temp",
+      "path": "Synthetic_population/Housing_units_distribution/DC/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Synthetic_population/Housing_units_distribution/Arlington/data/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "ingest01.R",
+      "path": "Synthetic_population/Housing_units_distribution/Arlington/code/distribution/ingest01.R",
+      "md5": "32ed7d8e24bf6a860032a298fdd69c7d",
+      "size": 1119
+    },
+    {
+      "name": "temp",
+      "path": "Synthetic_population/Housing_units_distribution/Arlington/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "prepare01.R",
+      "path": "Synthetic_population/Housing_units_distribution/Arlington/code/distribution/prepare01.R",
+      "md5": "7f6aab2b2fc30949437c2e2c9f35028f",
+      "size": 7670
+    },
+    {
+      "name": "ingest02.R",
+      "path": "Synthetic_population/Housing_units_distribution/Arlington/code/distribution/ingest02.R",
+      "md5": "b64f937bca930942ee2547f6a9ae922a",
+      "size": 3759
+    },
+    {
+      "name": "temp",
+      "path": "Synthetic_population/Housing_units_distribution/Arlington/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
     {
       "name": "measure_info.json",
       "path": "Cooperative extension/data/distribution/measure_info.json",
@@ -49,655 +146,103 @@
     },
     {
       "name": "measure_info.json",
-      "path": "old_folder/acs_demographics/data/distribution/measure_info.json",
-      "md5": "5e58a24fa0af1666ba3f563f7387b4fb",
-      "size": 11293
+      "path": "Gender/data/distribution/measure_info.json",
+      "md5": "501b641275bcb314267f4a4922434893",
+      "size": 1461
     },
     {
-      "name": "va_hdcttr_acs_2009_2019_demographics.csv.xz",
-      "path": "old_folder/acs_demographics/data/distribution/va_hdcttr_acs_2009_2019_demographics.csv.xz",
-      "md5": "83734acabf1cf4cbd9c7febef81cfef3",
-      "size": 8879076
+      "name": "ncr_trctbg_acs_20092020_gender_demographics.csv.xz",
+      "path": "Gender/data/distribution/ncr_trctbg_acs_20092020_gender_demographics.csv.xz",
+      "md5": "30e7d3cc2ce155c579144cd7530156e4",
+      "size": 266744
     },
     {
-      "name": "temp",
-      "path": "old_folder/acs_demographics/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "old_folder/acs_demographics/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "dc001_sdad_2019_gender.csv.xz",
-      "path": "population/DC/gender/data/distribution/dc001_sdad_2019_gender.csv.xz",
-      "md5": "07b176cab8e49cf8e9a55347659b3abf",
-      "size": 5420
-    },
-    {
-      "name": "measure_info.json",
-      "path": "population/DC/gender/data/distribution/measure_info.json",
-      "md5": "83a470144a5687a8cc7bb752d47ad85c",
-      "size": 1008
-    },
-    {
-      "name": "temp",
-      "path": "population/DC/gender/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare.R",
-      "path": "population/DC/gender/code/distribution/prepare.R",
-      "md5": "2a94d50a8bdeaa4c776f7750d898b2bc",
-      "size": 1133
-    },
-    {
-      "name": "temp",
-      "path": "population/DC/gender/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "dc001_sdad_2019_race.csv.xz",
-      "path": "population/DC/race/data/distribution/dc001_sdad_2019_race.csv.xz",
-      "md5": "6a9511b6a15707cd20a86261cef5c3b4",
-      "size": 3244
-    },
-    {
-      "name": "measure_info.json",
-      "path": "population/DC/race/data/distribution/measure_info.json",
-      "md5": "85fa713c5439e9f695a7b7ee7692446d",
-      "size": 511
-    },
-    {
-      "name": "temp",
-      "path": "population/DC/race/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare.R",
-      "path": "population/DC/race/code/distribution/prepare.R",
-      "md5": "4e8b6afe3a5a5038eb83abc24a0eb5d6",
-      "size": 1191
-    },
-    {
-      "name": "temp",
-      "path": "population/DC/race/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "population/DC/overall_DC/new_geography_synthetic/housing_units_distribution_method/ssl/data/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "va_trctbg_acs_20092020_gender_demographics.csv.xz",
+      "path": "Gender/data/distribution/va_trctbg_acs_20092020_gender_demographics.csv.xz",
+      "md5": "9891dd30322f0203ddb88d9e511a518c",
+      "size": 2363672
     },
     {
       "name": "ingest01.R",
-      "path": "population/DC/overall_DC/new_geography_synthetic/housing_units_distribution_method/ssl/code/distribution/ingest01.R",
-      "md5": "d607b562e012ab402f24d7258582aa10",
-      "size": 2800
+      "path": "Gender/code/distribution/ingest01.R",
+      "md5": "071b4dada9560e07d0bccb46d26ed616",
+      "size": 4543
+    },
+    {
+      "name": "ingest_acs.R",
+      "path": "Gender/code/distribution/ingest_acs.R",
+      "md5": "faa4e3e5408c4fbe0d2b307f98589831",
+      "size": 5656
     },
     {
       "name": "temp",
-      "path": "population/DC/overall_DC/new_geography_synthetic/housing_units_distribution_method/ssl/code/distribution/temp",
+      "path": "Gender/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     },
     {
-      "name": "prepare01.R",
-      "path": "population/DC/overall_DC/new_geography_synthetic/housing_units_distribution_method/ssl/code/distribution/prepare01.R",
-      "md5": "58406b744447456235dd8ddcd23782c3",
-      "size": 7093
-    },
-    {
-      "name": "ingest02.R",
-      "path": "population/DC/overall_DC/new_geography_synthetic/housing_units_distribution_method/ssl/code/distribution/ingest02.R",
-      "md5": "8b3b210430b068cd161b5d6854c28c5d",
-      "size": 3759
-    },
-    {
-      "name": "temp",
-      "path": "population/DC/overall_DC/new_geography_synthetic/housing_units_distribution_method/ssl/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "dc001_sdad_2019_age.csv.xz",
-      "path": "population/DC/age/data/distribution/dc001_sdad_2019_age.csv.xz",
-      "md5": "43437303fac0922a989afc1adaecfdab",
-      "size": 9708
+      "name": "ncr_trctbg_acs_20092020_age_demographics.csv.xz",
+      "path": "Age/data/distribution/ncr_trctbg_acs_20092020_age_demographics.csv.xz",
+      "md5": "9f436b86307c22fcb1a9cf2e923b7712",
+      "size": 356108
     },
     {
       "name": "measure_info.json",
-      "path": "population/DC/age/data/distribution/measure_info.json",
-      "md5": "cbb76ce4c066e3a6e6b2244960356a5f",
-      "size": 2044
+      "path": "Age/data/distribution/measure_info.json",
+      "md5": "f6695142a474ad9d76ab071b6dd8b9dc",
+      "size": 2315
+    },
+    {
+      "name": "va_trctbg_acs_20092020_age_demographics.csv.xz",
+      "path": "Age/data/distribution/va_trctbg_acs_20092020_age_demographics.csv.xz",
+      "md5": "91d6487a4f073a4b2509961fe1d8338a",
+      "size": 3543652
+    },
+    {
+      "name": "prepare_living_units_distribution.R",
+      "path": "Age/code/distribution/prepare_living_units_distribution.R",
+      "md5": "299fac5d0d40e456a1e66e868508d267",
+      "size": 3111
+    },
+    {
+      "name": "ingest_acs.R",
+      "path": "Age/code/distribution/ingest_acs.R",
+      "md5": "7f8521ebf34c050dd9e9a8c89e6ea1cc",
+      "size": 8700
     },
     {
       "name": "temp",
-      "path": "population/DC/age/code/distribution/temp",
+      "path": "Age/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     },
     {
-      "name": "prepare.R",
-      "path": "population/DC/age/code/distribution/prepare.R",
-      "md5": "4e7092f72db4302c6ac1ed5b0992d6c0",
-      "size": 1153
-    },
-    {
-      "name": "temp",
-      "path": "population/DC/age/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "ncr_trctbg_acs_20092020_race_demographics.csv.xz",
+      "path": "Race/data/distribution/ncr_trctbg_acs_20092020_race_demographics.csv.xz",
+      "md5": "f13e69a0a69cb438f90b3ce599392f5a",
+      "size": 539632
     },
     {
       "name": "measure_info.json",
-      "path": "population/VA/arlington/gender/data/distribution/measure_info.json",
-      "md5": "ecd7887df022447023833a0182197483",
-      "size": 1008
+      "path": "Race/data/distribution/measure_info.json",
+      "md5": "58b8d802226e80d3cc54a0af514a93fe",
+      "size": 3762
     },
     {
-      "name": "va013_sdad_2019_gender.csv.xz",
-      "path": "population/VA/arlington/gender/data/distribution/va013_sdad_2019_gender.csv.xz",
-      "md5": "f3cdf0c0828872797e09647e750a9e0c",
-      "size": 2336
+      "name": "va_trctbg_acs_20092020_race_demographics.csv.xz",
+      "path": "Race/data/distribution/va_trctbg_acs_20092020_race_demographics.csv.xz",
+      "md5": "eeb1e2f231265cd8b646de7dd6b162cf",
+      "size": 4781136
     },
     {
-      "name": "temp",
-      "path": "population/VA/arlington/gender/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare.R",
-      "path": "population/VA/arlington/gender/code/distribution/prepare.R",
-      "md5": "2fe9c6f553504db86227756dac80638b",
-      "size": 1838
+      "name": "ingest_acs.R",
+      "path": "Race/code/distribution/ingest_acs.R",
+      "md5": "59e503dd059b458ebc5d608aa6dc6317",
+      "size": 6544
     },
     {
       "name": "temp",
-      "path": "population/VA/arlington/gender/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "measure_info.json",
-      "path": "population/VA/arlington/race/data/distribution/measure_info.json",
-      "md5": "84f7c20e7a8b2f83bb1f69639436e0ca",
-      "size": 511
-    },
-    {
-      "name": "va013_sdad_2019_race.csv.xz",
-      "path": "population/VA/arlington/race/data/distribution/va013_sdad_2019_race.csv.xz",
-      "md5": "86463dfba8d6a6df871de3043715c600",
-      "size": 1456
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/arlington/race/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare.R",
-      "path": "population/VA/arlington/race/code/distribution/prepare.R",
-      "md5": "d9a1b4d24e3949dafa2e251258f20a78",
-      "size": 1893
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/arlington/race/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "measure_info.json",
-      "path": "population/VA/arlington/age/data/distribution/measure_info.json",
-      "md5": "74d8ab41e819cb09b6dff453e50e2202",
-      "size": 2044
-    },
-    {
-      "name": "va013_sdad_2019_age.csv.xz",
-      "path": "population/VA/arlington/age/data/distribution/va013_sdad_2019_age.csv.xz",
-      "md5": "6682ce6097cc75e8510069792cb28103",
-      "size": 4048
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/arlington/age/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare.R",
-      "path": "population/VA/arlington/age/code/distribution/prepare.R",
-      "md5": "7f572cd4ab442281031bc20751245db5",
-      "size": 1855
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/arlington/age/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/arlington/overall_arlington/new_geography_synthetic/housing_units_distribution_method/parcels/data/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "ingest01.R",
-      "path": "population/VA/arlington/overall_arlington/new_geography_synthetic/housing_units_distribution_method/parcels/code/distribution/ingest01.R",
-      "md5": "32ed7d8e24bf6a860032a298fdd69c7d",
-      "size": 1119
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/arlington/overall_arlington/new_geography_synthetic/housing_units_distribution_method/parcels/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare01.R",
-      "path": "population/VA/arlington/overall_arlington/new_geography_synthetic/housing_units_distribution_method/parcels/code/distribution/prepare01.R",
-      "md5": "7f6aab2b2fc30949437c2e2c9f35028f",
-      "size": 7670
-    },
-    {
-      "name": "ingest02.R",
-      "path": "population/VA/arlington/overall_arlington/new_geography_synthetic/housing_units_distribution_method/parcels/code/distribution/ingest02.R",
-      "md5": "b64f937bca930942ee2547f6a9ae922a",
-      "size": 3759
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/arlington/overall_arlington/new_geography_synthetic/housing_units_distribution_method/parcels/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/arlington/overall_arlington/new_geography_synthetic/housing_units_distribution_method/civic_association/data/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "civic_assoc_primary_care_catchment.R",
-      "path": "population/VA/arlington/overall_arlington/new_geography_synthetic/housing_units_distribution_method/civic_association/code/distribution/civic_assoc_primary_care_catchment.R",
-      "md5": "91da74330cb773dce2de3213846c32bb",
-      "size": 1712
-    },
-    {
-      "name": "civic_assoc_parcels.R",
-      "path": "population/VA/arlington/overall_arlington/new_geography_synthetic/housing_units_distribution_method/civic_association/code/distribution/civic_assoc_parcels.R",
-      "md5": "7d32d1e598cf7b631fa7ef124d9de21c",
-      "size": 5373
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/arlington/overall_arlington/new_geography_synthetic/housing_units_distribution_method/civic_association/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "measure_info.json",
-      "path": "population/VA/fairfax/gender/data/distribution/measure_info.json",
-      "md5": "3c22e90e6d735268498339453d870854",
-      "size": 1013
-    },
-    {
-      "name": "va059_bgzcpdsdhsr_sdad_2019_gender.csv.xz",
-      "path": "population/VA/fairfax/gender/data/distribution/va059_bgzcpdsdhsr_sdad_2019_gender.csv.xz",
-      "md5": "0e9f2cbd39378996b97144896af94eab",
-      "size": 9948
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/gender/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare.R",
-      "path": "population/VA/fairfax/gender/code/distribution/prepare.R",
-      "md5": "87e67834c99a21ba2e2b383c209049ad",
-      "size": 2560
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/gender/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "measure_info.json",
-      "path": "population/VA/fairfax/race/data/distribution/measure_info.json",
-      "md5": "9718ba52c5bdd4802ccaaab9cc5f59f9",
-      "size": 2724
-    },
-    {
-      "name": "va059_bgzcpdsdhsr_sdad_2019_race.csv.xz",
-      "path": "population/VA/fairfax/race/data/distribution/va059_bgzcpdsdhsr_sdad_2019_race.csv.xz",
-      "md5": "0e9f2cbd39378996b97144896af94eab",
-      "size": 9948
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/race/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare.R",
-      "path": "population/VA/fairfax/race/code/distribution/prepare.R",
-      "md5": "f9f130c7ba44c56ad72bc51a7f900300",
-      "size": 2664
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/race/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "va059_hsr_sdad_2019_demographics.csv.xz",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/human_service_regions/data/distribution/va059_hsr_sdad_2019_demographics.csv.xz",
-      "md5": "ff9bfe8d4f6ca3c31ca33a5aac6a2d5f",
-      "size": 800
-    },
-    {
-      "name": "measure_info.json",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/human_service_regions/data/distribution/measure_info.json",
-      "md5": "b8dcefa6ebedd29514d795f70be6d111",
-      "size": 4393
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/human_service_regions/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare.R",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/human_service_regions/code/distribution/prepare.R",
-      "md5": "0fc1f68315c9a8660fc291a692be31bd",
-      "size": 2947
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/human_service_regions/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/census_designated_places/Franconia/data/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare01.R",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/census_designated_places/Franconia/code/distribution/prepare01.R",
-      "md5": "8485c67f18ace3f3199be1201cd5022d",
-      "size": 3120
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/census_designated_places/Franconia/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/census_designated_places/Springfield/data/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare01.R",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/census_designated_places/Springfield/code/distribution/prepare01.R",
-      "md5": "efb16a1593c5bebf44f2a708aaf7de62",
-      "size": 3151
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/census_designated_places/Springfield/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/census_designated_places/Tysons/data/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare01.R",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/census_designated_places/Tysons/code/distribution/prepare01.R",
-      "md5": "05906aab69855ab17a518e2ae385e0ab",
-      "size": 3076
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/census_designated_places/Tysons/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/parcels/data/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "ingest01.R",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/parcels/code/distribution/ingest01.R",
-      "md5": "eb9e7f20c9f58580741c72ca00bbebdd",
-      "size": 2903
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/parcels/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare01.R",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/parcels/code/distribution/prepare01.R",
-      "md5": "8490495edb29b6559106294bed2ae229",
-      "size": 8203
-    },
-    {
-      "name": "ingest02.R",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/parcels/code/distribution/ingest02.R",
-      "md5": "f26de4060e707c99ec1606f28a72b1c9",
-      "size": 3742
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/parcels/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "measure_info.json",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/zip_code/data/distribution/measure_info.json",
-      "md5": "7054660bb92d4061a352967619801fe8",
-      "size": 5418
-    },
-    {
-      "name": "va059_zc_sdad_2019_demographics.csv.xz",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/zip_code/data/distribution/va059_zc_sdad_2019_demographics.csv.xz",
-      "md5": "d2fc5098a6b706150685df1713208464",
-      "size": 6848
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/zip_code/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare.R",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/zip_code/code/distribution/prepare.R",
-      "md5": "7ed998137c3659087c43a66ebfe7d861",
-      "size": 2638
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/zip_code/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "measure_info.json",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/supervisor_districts/data/distribution/measure_info.json",
-      "md5": "7054660bb92d4061a352967619801fe8",
-      "size": 5418
-    },
-    {
-      "name": "va059_sd_sdad_2019_demographics.csv.xz",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/supervisor_districts/data/distribution/va059_sd_sdad_2019_demographics.csv.xz",
-      "md5": "0b372b2e3f74b566cb89973dcb6aba16",
-      "size": 1620
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/supervisor_districts/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare.R",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/supervisor_districts/code/distribution/prepare.R",
-      "md5": "a2bf2d912de2f70caa076709e537628a",
-      "size": 2579
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/supervisor_districts/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "measure_info.json",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/planning_districts/data/distribution/measure_info.json",
-      "md5": "7054660bb92d4061a352967619801fe8",
-      "size": 5418
-    },
-    {
-      "name": "va059_pd_sdad_2019_demographics.csv.xz",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/planning_districts/data/distribution/va059_pd_sdad_2019_demographics.csv.xz",
-      "md5": "0860a4525f048b445cb803465a2604b2",
-      "size": 2272
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/planning_districts/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare.R",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/planning_districts/code/distribution/prepare.R",
-      "md5": "0f02c1222d6cbae7b0dc486fdb0ab34a",
-      "size": 2675
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/overall_fairfax/new_geography_synthetic/housing_units_distribution_method/planning_districts/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "va059_bgzcpdsdhsr_sdad_2019_age.csv.xz",
-      "path": "population/VA/fairfax/age/data/distribution/va059_bgzcpdsdhsr_sdad_2019_age.csv.xz",
-      "md5": "e1b562814d84937598b94e3fd3a5e1f0",
-      "size": 17424
-    },
-    {
-      "name": "measure_info.json",
-      "path": "population/VA/fairfax/age/data/distribution/measure_info.json",
-      "md5": "a6f18cbb35906cdfb260fde6a54e8110",
-      "size": 2191
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/age/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare.R",
-      "path": "population/VA/fairfax/age/code/distribution/prepare.R",
-      "md5": "64bd79b629a63e731e7e3eb83cc10b1c",
-      "size": 2476
-    },
-    {
-      "name": "temp",
-      "path": "population/VA/fairfax/age/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "measure_info.json",
-      "path": "population/NCR/old/data/distribution/measure_info.json",
-      "md5": "b4a7a22a8946f28130dbb8052a78aace",
-      "size": 28068
-    },
-    {
-      "name": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-      "path": "population/NCR/old/data/distribution/ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-      "md5": "3dfef8afd7aec50ed062802281fbf8e2",
-      "size": 13722628
-    },
-    {
-      "name": "temp",
-      "path": "population/NCR/old/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "population/NCR/old/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "ncr_sdad_2019_age.csv.xz",
-      "path": "population/NCR/age/data/distribution/ncr_sdad_2019_age.csv.xz",
-      "md5": "194b33462e8916a9e6a62cb37aca73fe",
-      "size": 26352
-    },
-    {
-      "name": "measure_info.json",
-      "path": "population/NCR/age/data/distribution/measure_info.json",
-      "md5": "d7dd1dc8acdbbf460e3083d0c8082b15",
-      "size": 1004
-    },
-    {
-      "name": "ncr_sdad_2019_gender.csv.xz",
-      "path": "population/NCR/age/data/distribution/ncr_sdad_2019_gender.csv.xz",
-      "md5": "04a1bd1bd44b6eb264d150c34dc6bf18",
-      "size": 14512
-    },
-    {
-      "name": "temp",
-      "path": "population/NCR/age/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "population/NCR/age/docs/distribution/temp",
+      "path": "Race/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     }

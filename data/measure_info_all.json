@@ -1571,6 +1571,22 @@
         "statement": "The primary care availability for {features.name} is {value}.",
         "type": "index"
     },
+    "access_to_care_index": {
+        "category": "Health Opportunity Index",
+        "long_description": "Whether community members have access to a primary care physician and the means to pay for care. It includes the proportion of uninsured residents and the number of physicians within 30 miles of the community.",
+        "long_name": "Access to care indicator",
+        "short_description": "Whether community members have access to a primary care physician and the means to pay for care..",
+        "short_name": "Access to care indicator",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
+            }
+        ],
+        "statement": "The access to care indicator in {features.name} is {value}.",
+        "type": "index"
+    },
     "acs_postsecondary_count": {
         "category": "Education",
         "equity_category": "Status",
@@ -1612,6 +1628,38 @@
         ],
         "statement": "{value} of those in {region_name} report any postsecondary education.",
         "type": "percent"
+    },
+    "affordability_index": {
+        "category": "Health Opportunity Index",
+        "long_description": "The proportion of a community\u2019s income spent on housing and transportation. This indicates how much income remains for other priorities, including food, health care and social activities.",
+        "long_name": "Affordability indicator",
+        "short_description": "The proportion of a community\u2019s income spent on housing and transportation.",
+        "short_name": "Affordability indicator",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
+            }
+        ],
+        "statement": "The affordability indicator in {features.name} is {value}.",
+        "type": "index"
+    },
+    "air_quality_index": {
+        "category": "Health Opportunity Index",
+        "long_description": "Includes EPA measures of pollution, including on-road, non-road and non-point pollution, and EPA measures of neurological, cancer and respiration risk.",
+        "long_name": "Air quality indicator",
+        "short_description": "Includes EPA measures of pollution, including on-road, non-road and non-point pollution, and EPA measures of neurological, cancer and respiration risk..",
+        "short_name": "Air quality indicator",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
+            }
+        ],
+        "statement": "The air quality indicator in {features.name} is {value}.",
+        "type": "index"
     },
     "avg_down_using_devices": {
         "category": "Broadband",
@@ -1669,6 +1717,22 @@
         "statement": "The average upload speed is {value} in {features.name}.",
         "type": "internet speed"
     },
+    "community_environmental_profile": {
+        "category": "Health Opportunity Index",
+        "long_description": "A measure of the natural, built and social environment of a community. It includes the air quality indicator, the population churning indicator, the population density indicator, and the walkability indicator.",
+        "long_name": "Community environmentalprofile",
+        "short_description": "A measure of the natural, built and social environment of a community.",
+        "short_name": "Community environmental profile",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
+            }
+        ],
+        "statement": "The community environmental profile in {features.name} is {value}.",
+        "type": "index"
+    },
     "commute_time": {
         "category": "Transportation",
         "equity_category": "Status",
@@ -1686,6 +1750,22 @@
         ],
         "statement": "The mean commute time in {features.name} is {value}.",
         "type": "drive time"
+    },
+    "consumer_opportunity_profile": {
+        "category": "Health Opportunity Index",
+        "long_description": "A measure of the consumer resources available within a community. It includes the affordability indicator, the education indicator, the food accessbility indicator, and the material deprevation indicator.",
+        "long_name": "Consumer opportunity profile",
+        "short_description": "A measure of the consumer resources available within a community.",
+        "short_name": "Consumer opportunity profile",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
+            }
+        ],
+        "statement": "The consumer opportunity profile in {features.name} is {value}.",
+        "type": "index"
     },
     "daycare_capacity": {
         "category": "Education",
@@ -1882,74 +1962,11 @@
         "statement": "There are {value} day care seats per 1,000 children under 10 in {region_name}.",
         "type": "per 1k"
     },
-    "demographics:perc_20_64": {
-        "category": "Demographics",
-        "equity_category": "Status",
-        "full_name": "acs_demographics:perc_20_64",
-        "long_description": "The percent of the population between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-        "long_name": "20 to 64 population (percent)",
-        "measure": "perc_20_64",
-        "measure_table": "ncr_cttrbg_2009_2019_acs_demographics",
-        "short_description": "The percent of the population between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "20 to 64 population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B01001",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The percent of the population between age 20 and 64 is {value} in {features.name}.",
-        "type": "percent"
-    },
-    "demographics:perc_65_plus": {
-        "category": "Demographics",
-        "equity_category": "Status",
-        "full_name": "demographics:perc_65_plus",
-        "long_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-        "long_name": "65 plus population (percent)",
-        "measure": "perc_65_plus",
-        "measure_table": "ncr_cttrbg_2009_2019_acs_demographics",
-        "short_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "65 plus population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B01001",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The percent of the population over age 64 is {value} in {features.name}.",
-        "type": "percent"
-    },
-    "demographics:perc_AAPI": {
-        "category": "Demographics",
-        "equity_category": "Status",
-        "full_name": "acs_demographics:perc_AAPI",
-        "long_description": "The Asian American/Pacific Islander population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-        "long_name": "Asian American/Pacific Islander population (percent)",
-        "measure": "perc_AAPI",
-        "measure_table": "ncr_cttrbg_2009_2019_acs_demographics",
-        "short_description": "The Asian American/Pacific Islander population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Asian American/Pacific Islander population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B01001",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Asian American/Pacific Islander population is {value} in {features.name}.",
-        "type": "percent"
-    },
     "demographics:perc_black": {
         "category": "Demographics",
         "equity_category": "Status",
-        "full_name": "acs_demographics:perc_black",
         "long_description": "The Black population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
         "long_name": "Black population (percent)",
-        "measure": "perc_black",
-        "measure_table": "ncr_cttrbg_2009_2019_acs_demographics",
         "short_description": "The Black population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_name": "Black population",
         "sources": [
@@ -1962,44 +1979,21 @@
         "statement": "The Black population is {value} in {features.name}.",
         "type": "percent"
     },
-    "demographics:perc_hh_limited_english": {
+    "demographics:perc_female": {
         "category": "Demographics",
         "equity_category": "Status",
-        "full_name": "acs_demographics:perc_hh_limited_english",
-        "long_description": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates Table C16002.",
-        "long_name": "Limited English households (percent)",
-        "measure": "perc_hh_limited_english",
-        "measure_table": "ncr_cttrbg_2009_2019_acs_demographics",
-        "short_description": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Limited English households",
+        "long_description": "The percent of females in the total population in percent. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
+        "long_name": "Male population (percent)",
+        "short_description": "The percent of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
+        "short_name": "Female population",
         "sources": [
             {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table C16002",
+                "date_accessed": 2022,
+                "name": "American Community Survey Table S0101",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "The percent of households with limited English is {value} in {features.name}.",
-        "type": "percent"
-    },
-    "demographics:perc_hispanic_or_latino": {
-        "category": "Demographics",
-        "equity_category": "Status",
-        "full_name": "acs_demographics:perc_hispanic_or_latino",
-        "long_description": "The Hispanic/Latino population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-        "long_name": "Hispanic/Latino population (percent)",
-        "measure": "perc_hispanic_or_latino",
-        "measure_table": "ncr_cttrbg_2009_2019_acs_demographics",
-        "short_description": "The Hispanic/Latino population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Hispanic/Latino population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B01001",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Hispanic/Latino population is {value} in {features.name}.",
+        "statement": "The female population is {value} in {features.name}.",
         "type": "percent"
     },
     "demographics:perc_male": {
@@ -2021,166 +2015,6 @@
         ],
         "statement": "The male population is {value} in {features.name}.",
         "type": "percent"
-    },
-    "demographics:perc_native": {
-        "category": "Demographics",
-        "equity_category": "Status",
-        "full_name": "acs_demographics:perc_native",
-        "long_description": "The Native population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-        "long_name": "Native population (percent)",
-        "measure": "perc_native",
-        "measure_table": "ncr_cttrbg_2009_2019_acs_demographics",
-        "short_description": "The Native population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Native population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B01001",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Native population is {value} in {features.name}.",
-        "type": "percent"
-    },
-    "demographics:perc_other": {
-        "category": "Demographics",
-        "equity_category": "Status",
-        "full_name": "demographics:perc_other",
-        "long_description": "The Other racial population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-        "long_name": "Other racial population (percent)",
-        "measure": "perc_other",
-        "measure_table": "ncr_cttrbg_2009_2019_acs_demographics",
-        "short_description": "The Other racial population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Other racial population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B01001",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Other racial population is {value} in {features.name}.",
-        "type": "percent"
-    },
-    "demographics:perc_two_or_more_races": {
-        "category": "Demographics",
-        "equity_category": "Status",
-        "full_name": "acs_demographics:perc_two_or_more_races",
-        "long_description": "The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-        "long_name": "Two or more races population (percent)",
-        "measure": "perc_two_or_more_races",
-        "measure_table": "ncr_cttrbg_2009_2019_acs_demographics",
-        "short_description": "The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Two or more races population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B01001",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The two or more races population is {value} in {features.name}.",
-        "type": "percent"
-    },
-    "demographics:perc_under_20": {
-        "category": "Demographics",
-        "equity_category": "Status",
-        "full_name": "acs_demographics:perc_under_20",
-        "long_description": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-        "long_name": "Under 20 population (percent)",
-        "measure": "perc_under_20",
-        "measure_table": "ncr_cttrbg_2009_2019_acs_demographics",
-        "short_description": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Under 20 population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B01001",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The percent of the population under age 20 is {value} in {features.name}.",
-        "type": "percent"
-    },
-    "demographics:perc_veteran": {
-        "category": "Demographics",
-        "equity_category": "Status",
-        "full_name": "acs_demographics:perc_veteran",
-        "long_description": "The Veteran population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-        "long_name": "Veteran population (percent)",
-        "measure": "perc_veteran",
-        "measure_table": "ncr_cttrbg_2009_2019_acs_demographics",
-        "short_description": "The Veteran population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Veteran population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B01001",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Veteran population is {value} in {features.name}.",
-        "type": "percent"
-    },
-    "demographics:perc_white": {
-        "category": "Demographics",
-        "equity_category": "Status",
-        "full_name": "acs_demographics:perc_white",
-        "long_description": "The White population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-        "long_name": "White population (percent)",
-        "measure": "perc_white",
-        "measure_table": "ncr_cttrbg_2009_2019_acs_demographics",
-        "short_description": "The White population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "White population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B01001",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The White population is {value} in {features.name}.",
-        "type": "percent"
-    },
-    "density": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "density",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "density"
-    },
-    "density_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "density_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
     },
     "devices": {
         "category": "Broadband",
@@ -2219,6 +2053,38 @@
         ],
         "statement": "Earnings per job in {features.name} is {value}.",
         "type": "dollar"
+    },
+    "economic_opportunity_profile": {
+        "category": "Health Opportunity Index",
+        "long_description": "A measure of the economic opportunities available within a community. Includes the employment accessibility indicator, the income inequality indicator, and the job participation indicator.",
+        "long_name": "Economic opportunity profile",
+        "short_description": "A measure of the economic opportunities available within a community.",
+        "short_name": "Economic opportunity profile",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
+            }
+        ],
+        "statement": "The economic opportunity profile in {features.name} is {value}.",
+        "type": "index"
+    },
+    "education_index": {
+        "category": "Health Opportunity Index",
+        "long_description": "The average number of years of schooling among adults in the community. It can range from zero (those with no formal schooling) to 20 (those with a doctorate/professional degree).",
+        "long_name": "Education Indicator",
+        "short_description": "The average number of years of schooling among adults in the community. ",
+        "short_name": "Education Indicator",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
+            }
+        ],
+        "statement": "The education indicator in {features.name} is {value}.",
+        "type": "index"
     },
     "emp_rate:emp_rate": {
         "category": "Employment/Workforce Development",
@@ -2261,6 +2127,22 @@
         "statement": "",
         "type": "count"
     },
+    "employment_accessibility_index": {
+        "category": "Health Opportunity Index",
+        "long_description": " A measure of the number of jobs accessible to members of the community. Accessibility is determined by distance: close jobs are more accessible than jobs farther away.",
+        "long_name": "Employment accesibility index",
+        "short_description": " A measure of the number of jobs accessible to members of the community.",
+        "short_name": "Employment accesibility index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
+            }
+        ],
+        "statement": "The employment accessibility index in {features.name} is {value}.",
+        "type": "index"
+    },
     "eviction-filings": {
         "category": "",
         "equity_category": "",
@@ -2301,25 +2183,21 @@
         "statement": "",
         "type": "count"
     },
-    "female": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "female",
-        "measure_table": "va013_sdad_2019_gender.csv.xz",
-        "short_description": "",
-        "short_name": "",
+    "food_accessibility_index": {
+        "category": "Health Opportunity Index",
+        "long_description": "A measure of access to food by low income people within a community. It measures the proportion of the low income community that has a large grocery store within 1 mile in urban areas or 10 miles in rural areas.",
+        "long_name": "Food Accessibility Indicator",
+        "short_description": "A measure of access to food by low income people within a community.",
+        "short_name": "Food Accessibility Indicator",
         "sources": [
             {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "statement": "",
-        "type": null
+        "statement": "The food accessibility indicator in {features.name} is {value}.",
+        "type": "index"
     },
     "food_insecurity_and_cost:Child_Food_Insecurity_Rate": {
         "category": "Nutrition and Food Security",
@@ -2429,6 +2307,22 @@
         "statement": "The health literacy composite for {features.name} is {value}.",
         "type": "index"
     },
+    "health_opportunity_profile": {
+        "category": "Health Opportunity Index",
+        "long_description": "A group of indicators that provide broad insight into the overall opportunity Virginians have to live long and healthy lives based on the Social Determinants of Health. It is a hierarchical index that allows users to examine social determinants of health at multiple levels of detail in Virginia. It is made up of over 30 variables, combined into 13 indicators, grouped into four profiles, which are aggregated into a single Health Opportunity Index. The HOI is reported at both the census tract and county/independent city level.",
+        "long_name": "Health opportunity index",
+        "short_description": "A group of indicators that provide broad insight into the overall opportunity Virginians have to live long and healthy lives.",
+        "short_name": "Health opportunity index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
+            }
+        ],
+        "statement": "The health opportunity index in {features.name} is {value}.",
+        "type": "index"
+    },
     "health_professionals:degrees_awarded_first_professional": {
         "category": "Health",
         "equity_category": "Status",
@@ -2504,46 +2398,6 @@
         ],
         "statement": "The number of undergraduate degrees awarded is {value}.",
         "type": "count"
-    },
-    "hh_limited_english": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "hh_limited_english",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "hh_limited_english_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "hh_limited_english_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
     },
     "hh_received_snap_cnt": {
         "category": "Nutrition and Food Security",
@@ -2890,6 +2744,38 @@
         ],
         "statement": "The median gross rent is {value} in {features.name}.",
         "type": "dollars"
+    },
+    "income_inequality_index": {
+        "category": "Health Opportunity Index",
+        "long_description": "The Gini Index, a common measure of income inequality, measures whether the income earned within a community is distributed broadly or concentrated within the hands of small number of households.",
+        "long_name": "Income Inequality Indicator",
+        "short_description": "The Gini Index, a common measure of income inequality.",
+        "short_name": "Income Inequality Indicator",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
+            }
+        ],
+        "statement": "The income inequality index in {features.name} is {value}.",
+        "type": "index"
+    },
+    "job_participation_index": {
+        "category": "Health Opportunity Index",
+        "long_description": "The percentage of individuals 16-64 years of age active in the civilian labor force. It includes both those currently working and those seeking work.",
+        "long_name": "Job participation index",
+        "short_description": "The percentage of individuals 16-64 years of age active in the civilian labor force.",
+        "short_name": "Job participation index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
+            }
+        ],
+        "statement": "The job participation index in {features.name} is {value}.",
+        "type": "index"
     },
     "kotelchuck_apncu_index:adequate": {
         "category": "Health",
@@ -3679,25 +3565,21 @@
         "statement": "The tuna availability in {features.name} is {value}.",
         "type": "float"
     },
-    "male": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "male",
-        "measure_table": "va013_sdad_2019_gender.csv.xz",
-        "short_description": "",
-        "short_name": "",
+    "material_deprevation_index": {
+        "category": "Health Opportunity Index",
+        "long_description": "Based on the Towsend Material Deprivation Index, it examines the private material resources available to households in a community. 4 indicators make up Towsend: overcrowding (>2 persons per room), unemployment, % of persons no vehicle or car, and % of person who rent.",
+        "long_name": "Material deprivation indicator",
+        "short_description": "Based on the Towsend Material Deprivation Index, it examines the private material resources available to households in a community.",
+        "short_name": "Material deprivation indicator",
         "sources": [
             {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "statement": "",
-        "type": null
+        "statement": "The material deprivation indicator in {features.name} is {value}.",
+        "type": "index"
     },
     "mean_read_pass_rate": {
         "category": "Education",
@@ -3881,26 +3763,6 @@
         "statement": "{value} of the population does not have health insurance in {features.name}.",
         "type": "percent"
     },
-    "num_vet_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "num_vet_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
-    },
     "number_food_insecure": {
         "category": "Nutrition and Food Security",
         "equity_category": "",
@@ -3978,165 +3840,39 @@
         "statement": "",
         "type": "percent"
     },
-    "perc_20_64": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_20_64",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
+    "perc_amr_ind_alone": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The Native population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Native population (percent)",
+        "short_description": "The Native population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Native population",
         "sources": [
             {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "",
+        "statement": "The Native population is {value} in {features.name}.",
         "type": "percent"
     },
-    "perc_20_64_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_20_64_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
+    "perc_asian_alone": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The Asian American/Pacific Islander population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Asian American/Pacific Islander population (percent)",
+        "short_description": "The Asian American/Pacific Islander population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Asian American/Pacific Islander population",
         "sources": [
             {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "",
-        "type": "MOE"
-    },
-    "perc_65_plus": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_65_plus",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
+        "statement": "The Asian American/Pacific Islander population is {value} in {features.name}.",
         "type": "percent"
-    },
-    "perc_65_plus_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_65_plus_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
-    },
-    "perc_AAPI": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_AAPI",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "percent"
-    },
-    "perc_AAPI_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_AAPI_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
-    },
-    "perc_black": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_black",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "percent"
-    },
-    "perc_black_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_black_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
     },
     "perc_carpool": {
         "category": "Transportation",
@@ -4155,46 +3891,6 @@
         ],
         "statement": "{value} of the population in {features.name} carpools to work.",
         "type": "percent"
-    },
-    "perc_hh_limited_english": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_hh_limited_english",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "percent"
-    },
-    "perc_hh_limited_english_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_hh_limited_english_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
     },
     "perc_hh_with_broadband": {
         "category": "Broadband",
@@ -4272,45 +3968,22 @@
         "statement": "{value} of households in {features.name} do not have internet access.",
         "type": "percent"
     },
-    "perc_hispanic_or_latino": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_hispanic_or_latino",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
+    "perc_hispanic": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The Hispanic/Latino population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Hispanic/Latino population (percent)",
+        "short_description": "The Hispanic/Latino population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Hispanic/Latino population",
         "sources": [
             {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "",
+        "statement": "The Hispanic/Latino population is {value} in {features.name}.",
         "type": "percent"
-    },
-    "perc_hispanic_or_latino_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_hispanic_or_latino_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
     },
     "perc_income_avg_nat_package": {
         "category": "Broadband",
@@ -4384,45 +4057,22 @@
         "statement": "Good internet costs {value} of the median household income in {features.name}.",
         "type": "percent"
     },
-    "perc_native": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_native",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
+    "perc_male": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The percent of males in the total population in percent. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
+        "long_name": "Male population (percent)",
+        "short_description": "The percent of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
+        "short_name": "Male population",
         "sources": [
             {
                 "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "name": "American Community Survey Table S0101",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "",
+        "statement": "The male population is {value} in {features.name}.",
         "type": "percent"
-    },
-    "perc_native_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_native_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
     },
     "perc_no_vehicle": {
         "category": "Transportation",
@@ -4441,46 +4091,6 @@
         ],
         "statement": "{value} of households in {features.name} do not have a vehicle available at home.",
         "type": "percent"
-    },
-    "perc_other": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_other",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "percent"
-    },
-    "perc_other_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_other_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
     },
     "perc_poor_ment_hlth_days_14_and_over": {
         "category": "Health",
@@ -4522,6 +4132,57 @@
         "statement": "{value} of the population in {features.name} reports poor physical health.",
         "type": "percent"
     },
+    "perc_pop_20_64": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The percent of the population between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "20 to 64 population (percent)",
+        "short_description": "The percent of the population between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "20 to 64 population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The percent of the population between age 20 and 64 is {value} in {features.name}.",
+        "type": "percent"
+    },
+    "perc_pop_65_plus": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "65 plus population (percent)",
+        "short_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "65 plus population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The percent of the population over age 64 is {value} in {features.name}.",
+        "type": "percent"
+    },
+    "perc_pop_under_20": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Under 20 population (percent)",
+        "short_description": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Under 20 population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The percent of the population under age 20 is {value} in {features.name}.",
+        "type": "percent"
+    },
     "perc_total_100_20_using_devices": {
         "category": "Broadband",
         "equity_category": "Availability",
@@ -4557,126 +4218,6 @@
         ],
         "statement": "{value} of the total population in {features.name} has a good internet speed.",
         "type": "percent"
-    },
-    "perc_two_or_more_races": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_two_or_more_races",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "percent"
-    },
-    "perc_two_or_more_races_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_two_or_more_races_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
-    },
-    "perc_under_20": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_under_20",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "percent"
-    },
-    "perc_under_20_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_under_20_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
-    },
-    "perc_veteran": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_veteran",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "percent"
-    },
-    "perc_veteran_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_veteran_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
     },
     "perc_w_int_100_20_using_devices": {
         "category": "Broadband",
@@ -4714,45 +4255,22 @@
         "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
         "type": "percent"
     },
-    "perc_white": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_white",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
+    "perc_wht_alone": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The White population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "White population (percent)",
+        "short_description": "The White population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "White population",
         "sources": [
             {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "",
+        "statement": "The White population is {value} in {features.name}.",
         "type": "percent"
-    },
-    "perc_white_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "perc_white_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
     },
     "percent_food_insecure": {
         "category": "Nutrition and Food Security",
@@ -4771,457 +4289,37 @@
         "statement": "{value} percent of the population in {features.name} are food insecure.",
         "type": "percent"
     },
-    "pop_20_64": {
-        "category": "Demographics",
-        "long_description": "Population aging between 20 to 64.",
-        "long_name": "Population aging between 20 to 64.",
-        "short_description": "Population aging between 20 to 64.",
-        "short_name": "20 to 64 population",
+    "pop_churning_index": {
+        "category": "Health Opportunity Index",
+        "long_description": "The amount of population turnover within a community. It measure the rate at which people both move into a community and move out of a community.",
+        "long_name": "Population churning index",
+        "short_description": "The amount of population turnover within a community.",
+        "short_name": "Population churning index",
         "sources": [
             {
-                "date_accessed": 2022,
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "statement": "The total population aging between 20 to 64 is {value} in {features.name}.",
-        "type": "count"
+        "statement": "The population churning index in {features.name} is {value}.",
+        "type": "index"
     },
-    "pop_20_64_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_20_64_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
+    "pop_density_index": {
+        "category": "Health Opportunity Index",
+        "long_description": "A measure of population density that takes into account the density levels most people in the community experience.",
+        "long_name": "Population density indicator",
+        "short_description": "A measure of population density that takes into account the density levels most people in the community experience.",
+        "short_name": "Population density indicator",
         "sources": [
             {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "statement": "",
-        "type": "MOE"
-    },
-    "pop_65_plus": {
-        "category": "Demographics",
-        "long_description": "Total population over age 65.",
-        "long_name": "Population over age 65",
-        "short_description": "Total population over age 65.",
-        "short_name": "Population over age 65",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The total population over age 65 is {value} in {features.name}.",
-        "type": "count"
-    },
-    "pop_65_plus_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_65_plus_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
-    },
-    "pop_AAPI": {
-        "category": "Demographics",
-        "long_description": "Population of asian.",
-        "long_name": "Asian population (count)",
-        "short_description": "Population of asian.",
-        "short_name": "Asian population",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The population of asian is {value} in {features.name}.",
-        "type": "count"
-    },
-    "pop_AAPI_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_AAPI_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
-    },
-    "pop_black": {
-        "category": "Demographics",
-        "long_description": "Population of Black or afro-american.",
-        "long_name": "Black or afro-american population (count)",
-        "short_description": "Population of Black or afro-american.",
-        "short_name": "Black or afro-american population",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The population of Black or afro-american is {value} in {features.name}.",
-        "type": "count"
-    },
-    "pop_black_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_black_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
-    },
-    "pop_hispanic_or_latino": {
-        "category": "Demographics",
-        "long_description": "Population of hispanic or latino.",
-        "long_name": "Hispanic or latino population (count)",
-        "short_description": "Population of hispanic or latino.",
-        "short_name": "Hispanic or latino population",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The population of hispanic or latino is {value} in {features.name}.",
-        "type": "count"
-    },
-    "pop_hispanic_or_latino_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_hispanic_or_latino_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
-    },
-    "pop_male": {
-        "category": "Demographics",
-        "long_description": "Population of male.",
-        "long_name": "Male population",
-        "short_description": "Population of male.",
-        "short_name": "Male population",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The population of male is {value} in {features.name}.",
-        "type": "count"
-    },
-    "pop_native": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_native",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "pop_native_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_native_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
-    },
-    "pop_other": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_other",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "pop_other_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_other_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
-    },
-    "pop_total": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_total",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "pop_total_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_total_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
-    },
-    "pop_two_or_more_races": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_two_or_more_races",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "pop_two_or_more_races_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_two_or_more_races_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
-    },
-    "pop_under_20": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_under_20",
-        "measure_table": "va013_sdad_2019_age.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": null
-    },
-    "pop_under_20_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_under_20_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
-    },
-    "pop_veteran": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_veteran",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "pop_white": {
-        "category": "Demographics",
-        "long_description": "Population of white.",
-        "long_name": "White population (count)",
-        "short_description": "Population of white.",
-        "short_name": "White population",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The population of white is {value} in {features.name}.",
-        "type": "count"
-    },
-    "pop_white_MOE": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "pop_white_MOE",
-        "measure_table": "ncr_cttrbg_acs_2009_2019_demographics.csv.xz",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "MOE"
+        "statement": "The population density indicator in {features.name} is {value}.",
+        "type": "index"
     },
     "population": {
         "category": "Nutrition and Food Security",
@@ -5756,6 +4854,22 @@
         "statement": "There are {value} <2-year schools per 100k people over 14 in {region_name}.",
         "type": "per 100k"
     },
+    "segregation_index": {
+        "category": "Health Opportunity Index",
+        "long_description": "A measure of whether and how much people of different racial and ethnic backgrounds live together in diverse communities. It includes measures of both community diversity and the distance between communities with different racial or ethnic profiles.",
+        "long_name": "Segregation indicator",
+        "short_description": "A measure of whether and how much people of different racial and ethnic backgrounds live together in diverse communities.",
+        "short_name": "Segregation indicator",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
+            }
+        ],
+        "statement": "The segregation indicator in {features.name} is {value}.",
+        "type": "index"
+    },
     "subs_3sfca": {
         "category": "Health",
         "citations": [
@@ -5862,22 +4976,6 @@
         "statement": "",
         "type": "count"
     },
-    "total_pop": {
-        "category": "Demographics",
-        "long_description": "Total population.",
-        "long_name": "Total population (count)",
-        "short_description": "Total population.",
-        "short_name": "Total population",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The total population is {value} in {features.name}.",
-        "type": "count"
-    },
     "urgent_3sfca": {
         "category": "Health",
         "citations": [
@@ -5944,6 +5042,22 @@
         "statement": "The median drive time to the ten closest emergency medical service facilities to {features.name} is {value}.",
         "type": "drive time"
     },
+    "walkability_index": {
+        "category": "Health Opportunity Index",
+        "long_description": "A measure of how walkable a community is based on residential and employment density, land use (destination) diversity, street connectivity and public transit accessibility.",
+        "long_name": "Job participation index",
+        "short_description": "A measure of how walkable a community is.",
+        "short_name": "Job participation index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
+            }
+        ],
+        "statement": "The walkability indicator in {features.name} is {value}.",
+        "type": "index"
+    },
     "weighted_budget_shortfall": {
         "category": "",
         "equity_category": "",
@@ -5963,5 +5077,21 @@
         ],
         "statement": "",
         "type": "cost"
+    },
+    "wellness_disparity_profile": {
+        "category": "Health Opportunity Index",
+        "long_description": "A measure of the disparate access to health services within a community. It includes the access to care indicator and the segregation indicator.",
+        "long_name": "Wellness disparity profile",
+        "short_description": "A measure of the disparate access to health services within a community.",
+        "short_name": "Wellness disparity profile",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
+            }
+        ],
+        "statement": "The wellness disparity profile in {features.name} is {value}.",
+        "type": "index"
     }
 }

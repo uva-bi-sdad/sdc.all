@@ -34,19 +34,19 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Reproductive Health/Prenatal Care Adequacy/data/distribution/kotelchuck_2014_2020.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_food_accessibility_index.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_employment_accessibility_index.csv",
-    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_affordability_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_community_environmental_profile.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_pop_density_index.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_material_deprivation_index.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_income_inequality_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_air_quality_index.csv.xz",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_access_to_care_index.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_segregation_index.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_job_participation_index.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_health_opportunity_profile.csv",
-    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_community_environmental_profile.csv",
-    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_consumer_opportunity_profile.csv",
-    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_air_quality_index.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_pop_churning_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_consumer_opportunity_profile.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_education_index.csv",
-    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_access_to_care_index.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_affordability_index.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_economic_opportunity_profile.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_walkability_index.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_wellness_diparity_profile.csv",
@@ -56,8 +56,8 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Mental Health/Mental and Physical Healthy Days/data/distribution/dc_health_behavior_diet.va_trcthd_sdad_2015_2019_brfss_sae.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Mental Health/Mental and Physical Healthy Days/data/distribution/dc_health_behavior_diet.ncr_trct_sdad_2015_2019_brfss_sae.csv.xz"
   ],
-  "count": 122,
-  "utc_audited": "2023-01-31 16:37:49",
+  "count": 139,
+  "utc_audited": "2023-02-08 22:24:14",
   "data": [
     {
       "name": "ncr_bgtrct_2015_access_scores_hospitals.csv",
@@ -416,8 +416,8 @@
     {
       "name": "measure_info.json",
       "path": "Health Care Services/Mental Health/Service Access Scores/data/distribution/measure_info.json",
-      "md5": "eeae851bff84c3ac9cd6c65f168a7bfe",
-      "size": 5434
+      "md5": "201453d513759ef2c713b7cff41fe09a",
+      "size": 5435
     },
     {
       "name": "va_hdcttrbgca_samhsa_2021_access_scores_mental.csv",
@@ -594,10 +594,10 @@
       "size": 142375
     },
     {
-      "name": "va_tr_vdh_2017_affordability_index.csv",
-      "path": "Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_affordability_index.csv",
-      "md5": "f81a27b68af2c75f2ded18e890b6b156",
-      "size": 142358
+      "name": "va_tr_vdh_2017_community_environmental_profile.csv.xz",
+      "path": "Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_community_environmental_profile.csv.xz",
+      "md5": "285781ca53ee1e513f51cc67e699dd41",
+      "size": 10600
     },
     {
       "name": "va_tr_vdh_2017_pop_density_index.csv",
@@ -624,6 +624,18 @@
       "size": 3
     },
     {
+      "name": "va_tr_vdh_2017_air_quality_index.csv.xz",
+      "path": "Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_air_quality_index.csv.xz",
+      "md5": "f675046d48292b97e8360597cc740439",
+      "size": 10084
+    },
+    {
+      "name": "va_tr_vdh_2017_access_to_care_index.csv.xz",
+      "path": "Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_access_to_care_index.csv.xz",
+      "md5": "75cef911654ae76ec3336b24a54e6dbc",
+      "size": 10012
+    },
+    {
       "name": "va_tr_vdh_2017_segregation_index.csv",
       "path": "Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_segregation_index.csv",
       "md5": "b0996ee8d9545a1c1caedc4e75c59249",
@@ -642,28 +654,16 @@
       "size": 142381
     },
     {
-      "name": "va_tr_vdh_2017_community_environmental_profile.csv",
-      "path": "Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_community_environmental_profile.csv",
-      "md5": "5a64accfebb69f9336bbcd4258d8603c",
-      "size": 142388
-    },
-    {
-      "name": "va_tr_vdh_2017_consumer_opportunity_profile.csv",
-      "path": "Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_consumer_opportunity_profile.csv",
-      "md5": "8dc9222d4567ed63e3e479fe1d700876",
-      "size": 142386
-    },
-    {
-      "name": "va_tr_vdh_2017_air_quality_index.csv",
-      "path": "Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_air_quality_index.csv",
-      "md5": "2bbaa8530b716d3b0d127668a61d7303",
-      "size": 142362
-    },
-    {
       "name": "va_tr_vdh_2017_pop_churning_index.csv",
       "path": "Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_pop_churning_index.csv",
       "md5": "9bfbdbc47114fcc6ef6efbebfda89814",
       "size": 142315
+    },
+    {
+      "name": "va_tr_vdh_2017_consumer_opportunity_profile.csv.xz",
+      "path": "Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_consumer_opportunity_profile.csv.xz",
+      "md5": "a5ebd5d9f1eeef195591223ae24ed0d0",
+      "size": 10556
     },
     {
       "name": "va_tr_vdh_2017_education_index.csv",
@@ -672,10 +672,10 @@
       "size": 142363
     },
     {
-      "name": "va_tr_vdh_2017_access_to_care_index.csv",
-      "path": "Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_access_to_care_index.csv",
-      "md5": "a405913b65b3a536541dd749c65cfa35",
-      "size": 142365
+      "name": "va_tr_vdh_2017_affordability_index.csv.xz",
+      "path": "Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_affordability_index.csv.xz",
+      "md5": "0c1a3a09e9fe4628e120b421431a1c2e",
+      "size": 10564
     },
     {
       "name": "va_tr_vdh_2017_economic_opportunity_profile.csv",
@@ -696,10 +696,112 @@
       "size": 142382
     },
     {
-      "name": "temp",
-      "path": "Population Health/Health Opportunity Index/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "prepare_wellness_disparity.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_wellness_disparity.R",
+      "md5": "012833c517c11ad97d5849b1c2af9eb8",
+      "size": 2485
+    },
+    {
+      "name": "prepare_food_accessibility.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_food_accessibility.R",
+      "md5": "4e1775488f1ec8d00edd76ff3a92e9a5",
+      "size": 2496
+    },
+    {
+      "name": "prepare_population_density.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_population_density.R",
+      "md5": "669211cdeacaf3c01f7fe49c63055257",
+      "size": 2363
+    },
+    {
+      "name": "prepare_education.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_education.R",
+      "md5": "82cbfcab27243146bb66ae5076f93020",
+      "size": 2406
+    },
+    {
+      "name": "prepare_income_inequality.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_income_inequality.R",
+      "md5": "def1b95447c6b1b9cd67af34250eed2e",
+      "size": 2273
+    },
+    {
+      "name": "prepare_access_care.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_access_care.R",
+      "md5": "a8ff1903440210922d47c7d266ced39b",
+      "size": 2491
+    },
+    {
+      "name": "prepare_segregation.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_segregation.R",
+      "md5": "d66acfde07b24d9a3662b262560a05b4",
+      "size": 2485
+    },
+    {
+      "name": "prepare_job_participation.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_job_participation.R",
+      "md5": "77bf149c3232e3cdce8a4562ddad0d7d",
+      "size": 3681
+    },
+    {
+      "name": "prepare_walkability.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_walkability.R",
+      "md5": "12848061a7ea611f54974a08deed26ab",
+      "size": 2410
+    },
+    {
+      "name": "prepare_affordability.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_affordability.R",
+      "md5": "c55b600fbac8fbb26439e9ef40888a59",
+      "size": 2469
+    },
+    {
+      "name": "prepare_health_opportunity.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_health_opportunity.R",
+      "md5": "455c176b5e94d1c623cb110311d3b834",
+      "size": 2209
+    },
+    {
+      "name": "prepare_economic_opportunity.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_economic_opportunity.R",
+      "md5": "10d90da4691c300828784208c1af53ac",
+      "size": 2554
+    },
+    {
+      "name": "prepare_air_quality.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_air_quality.R",
+      "md5": "dd2e63cb95be8e320c84596848fc5c2b",
+      "size": 2430
+    },
+    {
+      "name": "prepare_material_deprivation.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_material_deprivation.R",
+      "md5": "97c999ca11667dc0b14de22c2ba13914",
+      "size": 2423
+    },
+    {
+      "name": "prepare_population_churning.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_population_churning.R",
+      "md5": "cbb6cd651738d1c3c6db291edeff7413",
+      "size": 2400
+    },
+    {
+      "name": "prepare_employment_access.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_employment_access.R",
+      "md5": "8ddaa72a3986c15302941a4262b703f0",
+      "size": 2459
+    },
+    {
+      "name": "prepare_community_environment.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_community_environment.R",
+      "md5": "1960f1f41b6184a2374107469a7ba0d8",
+      "size": 2394
+    },
+    {
+      "name": "prepare_consumer_opportunity.R",
+      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_consumer_opportunity.R",
+      "md5": "b721c796b9ade3c4f368892e3de8c44e",
+      "size": 2382
     },
     {
       "name": "temp",
