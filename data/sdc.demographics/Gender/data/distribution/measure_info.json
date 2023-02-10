@@ -20,7 +20,7 @@
   "category": "Demographics",
   "equity_category": "Status",
   "long_description": "The percent of females in the total population in percent. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
-  "long_name": "Male population (percent)",
+  "long_name": "Female population (percent)",
   "short_description": "The percent of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
   "short_name": "Female population",
   "sources": [

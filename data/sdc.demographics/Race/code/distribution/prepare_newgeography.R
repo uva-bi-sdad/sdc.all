@@ -63,6 +63,7 @@ zc_dmg <- merge(zc_pc_map, fairfax_pc_dmg, by.x='parid', by.y='geoid', all.y=T) 
 
 fairfax_newgeo_dmg <- rbind(hsr_dmg,pd_dmg,sd_dmg,zc_dmg) %>%
   pivot_wider(names_from='measure', values_from='value') %>%
+  filter(!is.na(geoid)) %>%
   mutate(perc_wht_alone = 100*wht_alone/total_pop,
          perc_afr_amer_alone = 100*afr_amer_alone/total_pop,
          perc_amr_ind_alone = 100*amr_ind_alone/total_pop,
@@ -102,6 +103,7 @@ civic_dmg <- merge(civic_pc_map, arl_pc_dmg, by.x='parid', by.y='geoid', all.y=T
 
 arl_newgeo_dmg <- civic_dmg %>%
   pivot_wider(names_from='measure', values_from='value') %>%
+  filter(!is.na(geoid)) %>%
   mutate(perc_wht_alone = 100*wht_alone/total_pop,
          perc_afr_amer_alone = 100*afr_amer_alone/total_pop,
          perc_amr_ind_alone = 100*amr_ind_alone/total_pop,

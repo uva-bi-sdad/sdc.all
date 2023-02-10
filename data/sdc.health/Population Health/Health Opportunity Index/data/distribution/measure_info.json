@@ -1,5 +1,5 @@
 {
-  "economic_opportunity_profile": {
+  "economic_opportunity_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
     "short_name": "Economic opportunity profile",
@@ -15,11 +15,11 @@
       }
     ]
   },
-  "education_index": {
+  "education_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
-    "short_name": "Education Indicator",
-    "long_name": "Education Indicator",
+    "short_name": "Education indicator",
+    "long_name": "Education indicator",
     "short_description": "The average number of years of schooling among adults in the community. ",
     "long_description": "The average number of years of schooling among adults in the community. It can range from zero (those with no formal schooling) to 20 (those with a doctorate/professional degree).",
     "statement": "The education indicator in {features.name} is {value}.",
@@ -31,14 +31,14 @@
       }
     ]
   },
-    "employment_accessibility_index": {
+    "employment_access_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
-    "short_name": "Employment accesibility index",
-    "long_name": "Employment accesibility index",
+    "short_name": "Employment accessibility indicator",
+    "long_name": "Employment accessibility indicator",
     "short_description": " A measure of the number of jobs accessible to members of the community.",
     "long_description": " A measure of the number of jobs accessible to members of the community. Accessibility is determined by distance: close jobs are more accessible than jobs farther away.",
-    "statement": "The employment accessibility index in {features.name} is {value}.",
+    "statement": "The employment accessibility indicator in {features.name} is {value}.",
     "sources": [
       {
         "name": "Virginia Department of Health",
@@ -47,11 +47,11 @@
       }
     ]
   },
-  "food_accessibility_index": {
+  "food_accessibility_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
-    "short_name": "Food Accessibility Indicator",
-    "long_name": "Food Accessibility Indicator",
+    "short_name": "Food accessibility indicator",
+    "long_name": "Food accessibility indicator",
     "short_description": "A measure of access to food by low income people within a community.",
     "long_description": "A measure of access to food by low income people within a community. It measures the proportion of the low income community that has a large grocery store within 1 mile in urban areas or 10 miles in rural areas.",
     "statement": "The food accessibility indicator in {features.name} is {value}.",
@@ -63,7 +63,7 @@
       }
     ]
   },
-    "health_opportunity_profile": {
+    "health_opportunity_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
     "short_name": "Health opportunity index",
@@ -79,11 +79,11 @@
       }
     ]
   },
-  "income_inequality_index": {
+  "income_inequality_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
-    "short_name": "Income Inequality Indicator",
-    "long_name": "Income Inequality Indicator",
+    "short_name": "Income inequality indicator",
+    "long_name": "Income inequality indicator",
     "short_description": "The Gini Index, a common measure of income inequality.",
     "long_description": "The Gini Index, a common measure of income inequality, measures whether the income earned within a community is distributed broadly or concentrated within the hands of small number of households.",
     "statement": "The income inequality index in {features.name} is {value}.",
@@ -95,14 +95,14 @@
       }
     ]
   },
-    "job_participation_index": {
+    "job_participation_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
-    "short_name": "Job participation index",
-    "long_name": "Job participation index",
+    "short_name": "Job participation indicator",
+    "long_name": "Job participation indicator",
     "short_description": "The percentage of individuals 16-64 years of age active in the civilian labor force.",
     "long_description": "The percentage of individuals 16-64 years of age active in the civilian labor force. It includes both those currently working and those seeking work.",
-    "statement": "The job participation index in {features.name} is {value}.",
+    "statement": "The job participation indicator in {features.name} is {value}.",
     "sources": [
       {
         "name": "Virginia Department of Health",
@@ -111,7 +111,7 @@
       }
     ]
   },
-  "material_deprevation_index": {
+  "material_deprivation_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
     "short_name": "Material deprivation indicator",
@@ -127,7 +127,7 @@
       }
     ]
   },
-   "pop_churning_index": {
+   "pop_churning_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
     "short_name": "Population churning index",
@@ -143,7 +143,7 @@
       }
     ]
   },
-  "pop_density_index": {
+  "pop_density_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
     "short_name": "Population density indicator",
@@ -159,7 +159,7 @@
       }
     ]
   },
-  "segregation_index": {
+  "segregation_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
     "short_name": "Segregation indicator",
@@ -175,11 +175,11 @@
       }
     ]
   },
-   "walkability_index": {
+   "walkability_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
-    "short_name": "Job participation index",
-    "long_name": "Job participation index",
+    "short_name": "Walkability indicator",
+    "long_name": "Walkability indicator",
     "short_description": "A measure of how walkable a community is.",
     "long_description": "A measure of how walkable a community is based on residential and employment density, land use (destination) diversity, street connectivity and public transit accessibility.",
     "statement": "The walkability indicator in {features.name} is {value}.",
@@ -191,7 +191,7 @@
       }
     ]
   },
-  "wellness_disparity_profile": {
+  "wellness_disparity_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
     "short_name": "Wellness disparity profile",
@@ -207,7 +207,7 @@
       }
     ]
   },
-    "consumer_opportunity_profile": {
+    "consumer_opportunity_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
     "short_name": "Consumer opportunity profile",
@@ -223,7 +223,7 @@
       }
     ]
   },
-  "affordability_index": {
+  "affordability_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
     "short_name": "Affordability indicator",
@@ -239,7 +239,7 @@
       }
     ]
   },
-    "air_quality_index": {
+    "air_quality_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
     "short_name": "Air quality indicator",
@@ -255,11 +255,11 @@
       }
     ]
   },
-  "community_environmental_profile": {
+  "community_environment_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
     "short_name": "Community environmental profile",
-    "long_name": "Community environmentalprofile",
+    "long_name": "Community environmental profile",
     "short_description": "A measure of the natural, built and social environment of a community.",
     "long_description": "A measure of the natural, built and social environment of a community. It includes the air quality indicator, the population churning indicator, the population density indicator, and the walkability indicator.",
     "statement": "The community environmental profile in {features.name} is {value}.",
@@ -271,7 +271,7 @@
       }
     ]
   },
-  "access_to_care_index": {
+  "access_care_indicator": {
     "category": "Health Opportunity Index",
     "type": "index",
     "short_name": "Access to care indicator",

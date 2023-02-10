@@ -67,7 +67,7 @@
   "statement": "The Asian American/Pacific Islander population is {value} in {features.name}.",
   "type": "percent"
 },
-  "demographics:perc_black": {
+  "perc_afr_amer_alone": {
     "category": "Demographics",
     "equity_category": "Status",
     "long_description": "The Black population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",

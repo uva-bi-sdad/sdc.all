@@ -118,7 +118,8 @@ acs_data_ncr <- acs_data_ncr_wd %>%
   mutate(measure_type=case_when(
     grepl('pop',measure)==T ~ "count",
     grepl('perc',measure)==T ~ "percentage"),
-    MOE='')
+    MOE='',
+    census_year=if_else(year<2020,2010,2020))
 
 
 
@@ -135,9 +136,11 @@ temp_tr2010 <- read_sf('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geogra
   select(geoid,region_type,year) %>% st_drop_geometry()
 temp_tr2020 <- read_sf('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/NCR/Census%20Geographies/Tract/2020/data/distribution/ncr_geo_census_cb_2020_census_tracts.geojson') %>%
   select(geoid,region_type,year) %>% st_drop_geometry()
-ncr_geo <- rbind(temp_bg2010,temp_bg2020,temp_ct2010,temp_ct2020,temp_tr2010,temp_tr2020)
+ncr_geo <- rbind(temp_bg2010,temp_bg2020,temp_ct2010,temp_ct2020,temp_tr2010,temp_tr2020) %>%
+  rename(census_year=year)
 
-acs_data_ncr <- merge(acs_data_ncr, ncr_geo, by.x=c('geoid','region_type','year'), by.y=c('geoid','region_type','year'), all.y=T)
+acs_data_ncr <- merge(acs_data_ncr, ncr_geo, by.x=c('geoid','region_type','census_year'), by.y=c('geoid','region_type','census_year'), all.y=T) %>%
+  select(geoid,region_name,region_type,year,measure,value,MOE)
 
 
 

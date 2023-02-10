@@ -44,7 +44,7 @@ entity_names <- unlist(lapply(entity_info, "[[", "region_name"))
 entity_names <- entity_names[!grepl(", NA", entity_names, fixed = TRUE)]
 
 # download and aggregate ACS data
-## for margin or error:
+## for margin of error:
 ## https://www2.census.gov/programs-surveys/acs/tech_docs/accuracy/2021_ACS_Accuracy_Document_Worked_Examples.pdf
 data <- do.call(rbind, lapply(states, function(state) {
   do.call(rbind, lapply(years, function(year) {

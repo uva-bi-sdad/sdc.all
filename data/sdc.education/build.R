@@ -1,6 +1,10 @@
 library(community)
 library(jsonlite)
 
+# check data and measure info
+check_repository()
+
+# rebuild site
 datasets <- paste0(list.dirs("."), "/data/distribution")
 datasets <- datasets[dir.exists(datasets)]
 data_reformat_sdad(list.files(datasets, "\\.csv", full.names = TRUE), "docs/data")
