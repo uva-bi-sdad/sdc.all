@@ -1,62 +1,16 @@
 {
   "name": "sdc.business_climate_dev",
   "measure_not_found": [
-    "/home/runner/work/sdc.business_climate_dev/sdc.business_climate_dev/ownership_diversity/VA/fairfax/overall/data/distribution/va059_bg_mi_20102020_small_business_activities_by_industry.csv.xz",
     "/home/runner/work/sdc.business_climate_dev/sdc.business_climate_dev/ownership_diversity/VA/fairfax/overall/data/distribution/va059_ct_mi_20102020_small_business_activities_by_industry.csv.xz",
     "/home/runner/work/sdc.business_climate_dev/sdc.business_climate_dev/ownership_diversity/VA/fairfax/overall/data/distribution/va059_bg_mi_20102020_all_business_activities_by_industry.csv.xz",
-    "/home/runner/work/sdc.business_climate_dev/sdc.business_climate_dev/ownership_diversity/VA/fairfax/overall/data/distribution/va059_ct_mi_20102020_all_business_activities_by_industry.csv.xz"
+    "/home/runner/work/sdc.business_climate_dev/sdc.business_climate_dev/ownership_diversity/VA/fairfax/overall/data/distribution/va059_bg_mi_20102020_small_business_activities_by_industry.csv.xz",
+    "/home/runner/work/sdc.business_climate_dev/sdc.business_climate_dev/ownership_diversity/VA/fairfax/overall/data/distribution/va059_ct_mi_20102020_all_business_activities_by_industry.csv.xz",
+    "/home/runner/work/sdc.business_climate_dev/sdc.business_climate_dev/employment_diversity/VA/fairfax/overall/data/distribution/vadcmd_bgtrct_lodes_20102019_number_of_jobs.csv.xz",
+    "/home/runner/work/sdc.business_climate_dev/sdc.business_climate_dev/employment_diversity/VA/fairfax/overall/data/distribution/va_bgtrct_acs_20132019_laborforce.csv.xz"
   ],
-  "count": 21,
-  "utc_audited": "2023-01-10 11:18:17",
+  "count": 23,
+  "utc_audited": "2023-02-14 16:46:02",
   "data": [
-    {
-      "name": "vadcmd_bgtrct_lodes_20102019_number_of_jobs.csv.xz",
-      "path": "employment_diversity/VA/fairfax/overall/data/distribution/vadcmd_bgtrct_lodes_20102019_number_of_jobs.csv.xz",
-      "md5": "ecee7c9d5c4c52b8ddcf20017ac4c79d",
-      "size": 14263368
-    },
-    {
-      "name": "va_bgtrct_acs_20132019_laborforce.csv.xz",
-      "path": "employment_diversity/VA/fairfax/overall/data/distribution/va_bgtrct_acs_20132019_laborforce.csv.xz",
-      "md5": "bf19ecb224a5b52b57c0b2fda6bd8838",
-      "size": 511572
-    },
-    {
-      "name": "measure_info_vadcmd_bgtrct_lodes_20102019_number_of_jobs.json",
-      "path": "employment_diversity/VA/fairfax/overall/data/distribution/measure_info_vadcmd_bgtrct_lodes_20102019_number_of_jobs.json",
-      "md5": "7b7ea32558c7c81042c3b7687d7ef8f3",
-      "size": 16360
-    },
-    {
-      "name": "measure_info_va_bgtrct_acs_20132019_laborforce.json",
-      "path": "employment_diversity/VA/fairfax/overall/data/distribution/measure_info_va_bgtrct_acs_20132019_laborforce.json",
-      "md5": "7c277868cd6fa40c6f5c62fb0e2c8211",
-      "size": 1038
-    },
-    {
-      "name": "temp",
-      "path": "employment_diversity/VA/fairfax/overall/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "ingest01.R",
-      "path": "employment_diversity/VA/fairfax/overall/code/distribution/ingest01.R",
-      "md5": "bac79e76fb632e8e060fe28585b49d3a",
-      "size": 8856
-    },
-    {
-      "name": "ingest02.R",
-      "path": "employment_diversity/VA/fairfax/overall/code/distribution/ingest02.R",
-      "md5": "5a01668a2a6c32a48766d1f57618f0d6",
-      "size": 5119
-    },
-    {
-      "name": "va059_bg_mi_20102020_small_business_activities_by_industry.csv.xz",
-      "path": "ownership_diversity/VA/fairfax/overall/data/distribution/va059_bg_mi_20102020_small_business_activities_by_industry.csv.xz",
-      "md5": "b770885bfe4295091ff83f1b10f7bcae",
-      "size": 8250000
-    },
     {
       "name": "va059_ct_mi_20102020_small_business_activities_by_industry.csv.xz",
       "path": "ownership_diversity/VA/fairfax/overall/data/distribution/va059_ct_mi_20102020_small_business_activities_by_industry.csv.xz",
@@ -70,16 +24,70 @@
       "size": 8449096
     },
     {
+      "name": "measure_info.json",
+      "path": "ownership_diversity/VA/fairfax/overall/data/distribution/measure_info.json",
+      "md5": "43ad2d870f7012cbd7d6474a1c9100a3",
+      "size": 42038
+    },
+    {
+      "name": "va059_bg_mi_20102020_small_business_activities_by_industry.csv.xz",
+      "path": "ownership_diversity/VA/fairfax/overall/data/distribution/va059_bg_mi_20102020_small_business_activities_by_industry.csv.xz",
+      "md5": "b770885bfe4295091ff83f1b10f7bcae",
+      "size": 8250000
+    },
+    {
       "name": "va059_ct_mi_20102020_all_business_activities_by_industry.csv.xz",
       "path": "ownership_diversity/VA/fairfax/overall/data/distribution/va059_ct_mi_20102020_all_business_activities_by_industry.csv.xz",
       "md5": "4ebe9f6953d37494557efd1e71d02baf",
       "size": 18688
     },
     {
-      "name": "measure_info.json",
-      "path": "ownership_diversity/VA/fairfax/overall/data/distribution/measure_info.json",
-      "md5": "43ad2d870f7012cbd7d6474a1c9100a3",
-      "size": 42038
+      "name": "ingest01.R",
+      "path": "ownership_diversity/VA/fairfax/overall/code/distribution/ingest01.R",
+      "md5": "847703f62e1948714b4a2e6ab8b4870a",
+      "size": 6991
+    },
+    {
+      "name": "prepare01.R",
+      "path": "ownership_diversity/VA/fairfax/overall/code/distribution/prepare01.R",
+      "md5": "b6cf70d46baf0bc9037ea3ec8b3bc80e",
+      "size": 3282
+    },
+    {
+      "name": "output02.R",
+      "path": "ownership_diversity/VA/fairfax/overall/code/distribution/output02.R",
+      "md5": "f9e41f7618f658f0d251a297c805d562",
+      "size": 8940
+    },
+    {
+      "name": "prepare03.R",
+      "path": "ownership_diversity/VA/fairfax/overall/code/distribution/prepare03.R",
+      "md5": "efa54f79211a753267841b84422205c1",
+      "size": 4905
+    },
+    {
+      "name": "output01.R",
+      "path": "ownership_diversity/VA/fairfax/overall/code/distribution/output01.R",
+      "md5": "50eeaf2c789e98a258520817e6ba3828",
+      "size": 18699
+    },
+    {
+      "name": "prepare04.R",
+      "path": "ownership_diversity/VA/fairfax/overall/code/distribution/prepare04.R",
+      "md5": "1be5eae4ca4987f76dd1d1cac682de80",
+      "size": 17981
+    },
+    {
+      "name": "prepare02.R",
+      "path": "ownership_diversity/VA/fairfax/overall/code/distribution/prepare02.R",
+      "md5": "12554bdc9e1a160d56c8946a7fb2f242",
+      "size": 4458
+    },
+    {
+      "name": "D&B Data Collection and Sources.docx",
+      "path": "ownership_diversity/VA/fairfax/overall/docs/distribution/D&B Data Collection and Sources.docx",
+      "md5": "cc4849571431b61882ddadee0a4334fd",
+      "size": 26131
     },
     {
       "name": "Analysis v01.pptx",
@@ -94,46 +102,52 @@
       "size": 0
     },
     {
-      "name": "D&B Data Collection and Sources.docx",
-      "path": "ownership_diversity/VA/fairfax/overall/docs/distribution/D&B Data Collection and Sources.docx",
-      "md5": "cc4849571431b61882ddadee0a4334fd",
-      "size": 26131
+      "name": "vadcmd_bgtrct_lodes_20102019_number_of_jobs.csv.xz",
+      "path": "employment_diversity/VA/fairfax/overall/data/distribution/vadcmd_bgtrct_lodes_20102019_number_of_jobs.csv.xz",
+      "md5": "ecee7c9d5c4c52b8ddcf20017ac4c79d",
+      "size": 14263368
+    },
+    {
+      "name": "measure_info.json",
+      "path": "employment_diversity/VA/fairfax/overall/data/distribution/measure_info.json",
+      "md5": "059aed786045c50c57d5427cce375b57",
+      "size": 17405
+    },
+    {
+      "name": "va_bgtrct_acs_20132019_laborforce.csv.xz",
+      "path": "employment_diversity/VA/fairfax/overall/data/distribution/va_bgtrct_acs_20132019_laborforce.csv.xz",
+      "md5": "bf19ecb224a5b52b57c0b2fda6bd8838",
+      "size": 511572
     },
     {
       "name": "ingest01.R",
-      "path": "ownership_diversity/VA/fairfax/overall/code/distribution/ingest01.R",
-      "md5": "847703f62e1948714b4a2e6ab8b4870a",
-      "size": 6991
-    },
-    {
-      "name": "output.R",
-      "path": "ownership_diversity/VA/fairfax/overall/code/distribution/output.R",
-      "md5": "aaa41515433839d51d9b15f9e948106e",
-      "size": 6771
-    },
-    {
-      "name": "prepare04.R",
-      "path": "ownership_diversity/VA/fairfax/overall/code/distribution/prepare04.R",
-      "md5": "017902d4425bbd813bf761ac2773dbdd",
-      "size": 17095
-    },
-    {
-      "name": "prepare03.R",
-      "path": "ownership_diversity/VA/fairfax/overall/code/distribution/prepare03.R",
-      "md5": "efa54f79211a753267841b84422205c1",
-      "size": 4905
-    },
-    {
-      "name": "prepare02.R",
-      "path": "ownership_diversity/VA/fairfax/overall/code/distribution/prepare02.R",
-      "md5": "12554bdc9e1a160d56c8946a7fb2f242",
-      "size": 4458
+      "path": "employment_diversity/VA/fairfax/overall/code/distribution/ingest01.R",
+      "md5": "bac79e76fb632e8e060fe28585b49d3a",
+      "size": 8856
     },
     {
       "name": "prepare01.R",
-      "path": "ownership_diversity/VA/fairfax/overall/code/distribution/prepare01.R",
-      "md5": "b6cf70d46baf0bc9037ea3ec8b3bc80e",
-      "size": 3282
+      "path": "employment_diversity/VA/fairfax/overall/code/distribution/prepare01.R",
+      "md5": "862d630fc4650546af424c80b47738b8",
+      "size": 6694
+    },
+    {
+      "name": "ingest02.R",
+      "path": "employment_diversity/VA/fairfax/overall/code/distribution/ingest02.R",
+      "md5": "5a01668a2a6c32a48766d1f57618f0d6",
+      "size": 5119
+    },
+    {
+      "name": "prepare02.R",
+      "path": "employment_diversity/VA/fairfax/overall/code/distribution/prepare02.R",
+      "md5": "9493563dfd8e34166064b61dc136b6b6",
+      "size": 5197
+    },
+    {
+      "name": "temp",
+      "path": "employment_diversity/VA/fairfax/overall/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
     }
   ],
   "_references": {}
