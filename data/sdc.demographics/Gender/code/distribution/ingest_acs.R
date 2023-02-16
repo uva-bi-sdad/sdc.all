@@ -92,11 +92,11 @@ for (state in states){
 # 1. Gender distribution for VA
 acs_data_va <- acs_data_va_wd %>%
   mutate(total_pop=total_popE,
-         male = maleE, 
-         female = femaleE,
-         perc_male = 100*male/total_pop,
-         perc_female = 100*female/total_pop) %>%
-  dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,total_pop,male,female,perc_male,perc_female) %>%
+         pop_male = maleE, 
+         pop_female = femaleE,
+         perc_male = 100*pop_male/total_pop,
+         perc_female = 100*pop_female/total_pop) %>%
+  dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,total_pop,pop_male,pop_female,perc_male,perc_female) %>%
   gather(measure, value, -c(geoid, region_name, region_type, year)) %>%
   select(geoid,region_name,region_type,year,measure,value) %>%
   mutate(measure_type=case_when(
@@ -108,11 +108,11 @@ acs_data_va <- acs_data_va_wd %>%
 #2. Age distribution afor NCR
 acs_data_ncr <- acs_data_ncr_wd %>%
   mutate(total_pop=total_popE,
-         male = maleE, 
-         female = femaleE,
-         perc_male = 100*male/total_pop,
-         perc_female = 100*female/total_pop) %>%
-  dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,total_pop,male,female,perc_male,perc_female) %>%
+         pop_male = maleE, 
+         pop_female = femaleE,
+         perc_male = 100*pop_male/total_pop,
+         perc_female = 100*pop_female/total_pop) %>%
+  dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,total_pop,pop_male,pop_female,perc_male,perc_female) %>%
   gather(measure, value, -c(geoid, region_name, region_type, year)) %>%
   select(geoid,region_name,region_type,year,measure,value) %>%
   mutate(measure_type=case_when(
@@ -140,7 +140,7 @@ ncr_geo <- rbind(temp_bg2010,temp_bg2020,temp_ct2010,temp_ct2020,temp_tr2010,tem
   rename(census_year=year)
 
 acs_data_ncr <- merge(acs_data_ncr, ncr_geo, by.x=c('geoid','region_type','census_year'), by.y=c('geoid','region_type','census_year'), all.y=T) %>%
-  select(geoid,region_name,region_type,year,measure,value,MOE)
+  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
 
 
 

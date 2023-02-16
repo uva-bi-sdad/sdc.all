@@ -18,21 +18,20 @@ census_api_key(Sys.getenv('census_api_key'))
 
 # list of variables
 named_acs_var_list <- c(
-  total = "B16002_001",
-  english_only = "B16002_002",
-  spanish = "B16002_003",
-  other_indo_european = "B16002_006",
-  asian_pacific_insland = "B16002_009",
-  other_language = "B16002_012")
+  total_hh = "C16002_001",
+  limited_english_spanish = "C16002_004",
+  limited_english_indo_europe = "C16002_007",
+  limited_english_asian_pacific = "C16002_010",
+  limited_english_other_language = "C16002_013")
 
 # list of geography level
-geographies <- c('tract','county','block group')
+geographies <- c('county','tract','block group')
 
 # list of states
 states <- c('VA','MD','DC')
 
-# list of years
-years <- 2009:2020
+# periods (this table start in 2016)
+years <- 2016:2020
 
 # Download the data from ACS for VA and NCR
 # 1. Virginia (all census geographies) . (comments: block groups information are available after 2012)
@@ -94,37 +93,31 @@ for (state in states){
 
 # 1. Language distribution for VA
 acs_data_va <- acs_data_va_wd %>%
-  mutate(total=totalE,
-         english_only = english_onlyE, spanish = spanishE, other_indo_european = other_indo_europeanE, asian_pacific_insland = asian_pacific_inslandE, other_language = other_languageE,
-         perc_english_only = 100*english_only/total,
-         perc_spanish = 100*spanish/total,
-         perc_other_indo_european = 100*other_indo_european/total,
-         perc_asian_pacific_insland = 100*asian_pacific_insland/total,
-         perc_other_language = 100*other_language/total) %>%
-  dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,total,english_only,spanish,other_indo_european,asian_pacific_insland,other_language,perc_english_only,perc_spanish,perc_other_indo_european,perc_asian_pacific_insland,perc_other_language) %>%
+  mutate(total_hh=total_hhE,
+         hh_limited_english = limited_english_spanishE + limited_english_indo_europeE + limited_english_asian_pacificE + limited_english_other_languageE,
+         perc_hh_limited_english = (hh_limited_english)/total_hhE,
+         hh_limited_english_MOE = sqrt(sum(limited_english_spanishM^2, limited_english_indo_europeM^2, limited_english_asian_pacificM^2, limited_english_other_languageM^2, na.rm=T)) )%>%
+  dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,total_hh,hh_limited_english,perc_hh_limited_english) %>%
   gather(measure, value, -c(geoid, region_name, region_type, year)) %>%
   select(geoid,region_name,region_type,year,measure,value) %>%
   mutate(measure_type=case_when(
-    grepl('pop',measure)==T ~ "count",
-    grepl('perc',measure)==T ~ "percentage"),
-         MOE='')
+    grepl('perc',measure)==T ~ "percentage",
+    grepl('hh',measure)==T ~ "count"),
+    MOE='')
 
 
 #2. Language distribution afor NCR
 acs_data_ncr <- acs_data_ncr_wd %>%
-  mutate(total=totalE,
-         english_only = english_onlyE, spanish = spanishE, other_indo_european = other_indo_europeanE, asian_pacific_insland = asian_pacific_inslandE, other_language = other_languageE,
-         perc_english_only = 100*english_only/total,
-         perc_spanish = 100*spanish/total,
-         perc_other_indo_european = 100*other_indo_european/total,
-         perc_asian_pacific_insland = 100*asian_pacific_insland/total,
-         perc_other_language = 100*other_language/total) %>%
-  dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,total,english_only,spanish,other_indo_european,asian_pacific_insland,other_language,perc_english_only,perc_spanish,perc_other_indo_european,perc_asian_pacific_insland,perc_other_language) %>%
+  mutate(total_hh=total_hhE,
+         hh_limited_english = limited_english_spanishE + limited_english_indo_europeE + limited_english_asian_pacificE + limited_english_other_languageE,
+         perc_hh_limited_english = (hh_limited_english)/total_hhE,
+         hh_limited_english_MOE = sqrt(sum(limited_english_spanishM^2, limited_english_indo_europeM^2, limited_english_asian_pacificM^2, limited_english_other_languageM^2, na.rm=T)) )%>%
+  dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,total_hh,hh_limited_english,perc_hh_limited_english) %>%
   gather(measure, value, -c(geoid, region_name, region_type, year)) %>%
   select(geoid,region_name,region_type,year,measure,value) %>%
   mutate(measure_type=case_when(
-    grepl('pop',measure)==T ~ "count",
-    grepl('perc',measure)==T ~ "percentage"),
+    grepl('perc',measure)==T ~ "percentage",
+    grepl('hh',measure)==T ~ "count"),
     MOE='',
     census_year=if_else(year<2020,2010,2020))
 
@@ -147,7 +140,7 @@ ncr_geo <- rbind(temp_bg2010,temp_bg2020,temp_ct2010,temp_ct2020,temp_tr2010,tem
   rename(census_year=year)
 
 acs_data_ncr <- merge(acs_data_ncr, ncr_geo, by.x=c('geoid','region_type','census_year'), by.y=c('geoid','region_type','census_year'), all.y=T) %>%
-  select(geoid,region_name,region_type,year,measure,value,MOE)
+  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
 
 
 

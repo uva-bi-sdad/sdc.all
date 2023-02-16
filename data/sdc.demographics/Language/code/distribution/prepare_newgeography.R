@@ -28,7 +28,7 @@ fairfax_pc_dmg <- read_csv(xzfile("Synthetic_population/Housing_units_distributi
 fairfax_pc_geo <- sf::st_read(unzip("Synthetic_population/Housing_units_distribution/Fairfax/data/working/fairfax_parcel_geometry.geojson.zip", "Synthetic_population/Housing_units_distribution/Fairfax/data/working/fairfax_parcel_geometry.geojson"))
 file.remove("Synthetic_population/Housing_units_distribution/Fairfax/data/working/fairfax_parcel_geometry.geojson")
 fairfax_pc_geo <- fairfax_pc_geo %>% select(parid=geoid, geometry)
-fairfax_pc_dmg <- fairfax_pc_dmg %>% select(geoid,measure,value) %>% filter(measure %in% c('english_only','spanish','other_indo_european','asian_pacific_insland','other_language','total'))
+fairfax_pc_dmg <- fairfax_pc_dmg %>% select(geoid,measure,value) %>% filter(measure %in% c('total_hh','hh_limited_english'))
 
 # upload new geographies and mapping with parcels (comments: just add a new geography below and the intersects with parcels)
 sf::sf_use_s2(FALSE)
@@ -64,11 +64,7 @@ zc_dmg <- merge(zc_pc_map, fairfax_pc_dmg, by.x='parid', by.y='geoid', all.y=T) 
 fairfax_newgeo_dmg <- rbind(hsr_dmg,pd_dmg,sd_dmg,zc_dmg) %>%
   pivot_wider(names_from='measure', values_from='value') %>%
   filter(!is.na(geoid)) %>%
-  mutate(perc_english_only = 100*english_only/total,
-         perc_spanish = 100*spanish/total,
-         perc_other_indo_european = 100*other_indo_european/total,
-         perc_asian_pacific_insland = 100*asian_pacific_insland/total,
-         perc_other_language = 100*other_language/total) %>%
+  mutate(perc_hh_limited_english = (hh_limited_english)/total_hh) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
   mutate(MOE='')
 
@@ -87,7 +83,7 @@ arl_pc_dmg <- read_csv(xzfile("Synthetic_population/Housing_units_distribution/A
 arl_pc_geo <- sf::st_read(unzip("Synthetic_population/Housing_units_distribution/Arlington/data/working/arl_parcel_geometry.geojson.zip", "Synthetic_population/Housing_units_distribution/Arlington/data/working/arl_parcel_geometry.geojson"))
 file.remove("Synthetic_population/Housing_units_distribution/Arlington/data/working/arl_parcel_geometry.geojson")
 arl_pc_geo <- arl_pc_geo %>% select(parid=geoid, geometry)
-arl_pc_dmg <- arl_pc_dmg %>% select(geoid,measure,value) %>% filter(measure %in% c('english_only','spanish','other_indo_european','asian_pacific_insland','other_language','total'))
+arl_pc_dmg <- arl_pc_dmg %>% select(geoid,measure,value) %>% filter(measure %in% c('total_hh','hh_limited_english'))
 
 # upload new geographies and mapping with parcels (comments: just add a new geography below and the intersects with parcels)
 sf::sf_use_s2(FALSE)
@@ -104,11 +100,7 @@ civic_dmg <- merge(civic_pc_map, arl_pc_dmg, by.x='parid', by.y='geoid', all.y=T
 arl_newgeo_dmg <- civic_dmg %>%
   pivot_wider(names_from='measure', values_from='value') %>%
   filter(!is.na(geoid)) %>%
-  mutate(perc_english_only = 100*english_only/total,
-         perc_spanish = 100*spanish/total,
-         perc_other_indo_european = 100*other_indo_european/total,
-         perc_asian_pacific_insland = 100*asian_pacific_insland/total,
-         perc_other_language = 100*other_language/total) %>%
+  mutate(perc_hh_limited_english = (hh_limited_english)/total_hh) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
   mutate(MOE='')
 

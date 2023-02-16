@@ -6,10 +6,11 @@ library(tigris)
 library(httr)
 library(rjson)
 library(data.table)
+library(stringr)
 
 # Get parcels block data ------------------------------------------------------------------
-# census blocks data
-fairfax_blocks <- blocks("VA", "059", 2020)
+# census blocks data from 2010
+fairfax_blocks <- blocks("VA", "059", 2010)
 fairfax_blocks_wgs84 <-st_transform(fairfax_blocks, 4326)
 
 #fairfax_address_points <- st_read("data-raw/Fairfax Address_Points/Address_Points.shp")
@@ -29,7 +30,7 @@ fairfax_address_points_blocks_unq <- fairfax_address_points_blocks[, .SD[1], "PA
 
 # merge (left Join) parcels
 fairfax_parcels_blocks_wgs84 <- merge(fairfax_parcels_wgs84, fairfax_address_points_blocks_unq, by.x = "PIN", by.y = "PARCEL_PIN", all.x = TRUE)
-fairfax_parcels_blocks <- fairfax_parcels_blocks_wgs84 %>% dplyr::select(PIN,GEOID20) 
+fairfax_parcels_blocks <- fairfax_parcels_blocks_wgs84 %>% dplyr::select(PIN,GEOID10) 
 
 
 
@@ -48,7 +49,7 @@ fairfax_parcels_blocks <- fairfax_parcels_blocks[!is.na(fairfax_parcels_blocks$G
 
 # save the data in the working folder (cautious: the size of the data may be too big)
 fairfax_parcels_blocks <- sf::st_as_sf(fairfax_parcels_blocks)
-fairfax_parcels_blocks <- fairfax_parcels_blocks %>% select(PARID,GEOID20,LIVUNIT,geometry)
+fairfax_parcels_blocks <- fairfax_parcels_blocks %>% select(PARID,GEOID10,LIVUNIT,geometry)
 
 
 
@@ -60,7 +61,7 @@ temp <- fairfax_parcels_blocks %>%
   mutate(PARID=str_replace_all(PARID," ","_"),
          length=nchar(PARID),
          PARID=str_pad(PARID, max(nchar(PARID)), side="left", pad="x"),
-         bg_geoid=substr(GEOID20, 1, 12)) %>%
+         bg_geoid=substr(GEOID10, 1, 12)) %>%
   group_by(PARID,bg_geoid) %>%
   summarise(liv_unit=sum(LIVUNIT, na.rm=T),
             geometry = st_union(geometry))

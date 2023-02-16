@@ -131,8 +131,8 @@ acs_data_va <- acs_data_va_wd %>%
   gather(measure, value, -c(geoid, region_name, region_type, year)) %>%
   select(geoid,region_name,region_type,year,measure,value) %>%
   mutate(measure_type=case_when(
-    grepl('pop',measure)==T ~ "count",
-    grepl('perc',measure)==T ~ "percentage"),
+    grepl('perc',measure)==T ~ "percentage",
+    grepl('pop',measure)==T ~ "count"),
          MOE='')
 
 
@@ -154,8 +154,8 @@ acs_data_ncr <- acs_data_ncr_wd %>%
   gather(measure, value, -c(geoid, region_name, region_type, year)) %>%
   select(geoid,region_name,region_type,year,measure,value) %>%
   mutate(measure_type=case_when(
-    grepl('pop',measure)==T ~ "count",
-    grepl('perc',measure)==T ~ "percentage"),
+    grepl('perc',measure)==T ~ "percentage",
+    grepl('pop',measure)==T ~ "count"),
     MOE='',
     census_year=if_else(year<2020,2010,2020))
 
@@ -177,7 +177,7 @@ ncr_geo <- rbind(temp_bg2010,temp_bg2020,temp_ct2010,temp_ct2020,temp_tr2010,tem
   rename(census_year=year)
 
 acs_data_ncr <- merge(acs_data_ncr, ncr_geo, by.x=c('geoid','region_type','census_year'), by.y=c('geoid','region_type','census_year'), all.y=T) %>%
-  select(geoid,region_name,region_type,year,measure,value,MOE)
+  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
 
 # Save the data ----------------------------------------------------------------------------------
 savepath = "Age/data/distribution/"

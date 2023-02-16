@@ -4,6 +4,10 @@ library(httr)
 library(rjson)
 library(sp)
 library("rgdal", lib.loc="/usr/local/lib/R/site-library")
+library(dplyr)
+library(tigris)
+library(stringr)
+library(data.table)
 
 
 

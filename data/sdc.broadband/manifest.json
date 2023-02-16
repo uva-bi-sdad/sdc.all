@@ -17,7 +17,7 @@
     "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Affordability/Percentage of income for fast internet/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz"
   ],
   "count": 56,
-  "utc_audited": "2023-01-26 21:12:19",
+  "utc_audited": "2023-01-26 21:22:38",
   "data": [
     {
       "name": "measure_info.json",
@@ -118,8 +118,8 @@
     {
       "name": "measure_info.json",
       "path": "Wired/Accessibility/Number of devices/data/distribution/measure_info.json",
-      "md5": "c0701abcf0fc9e6bf28cacea84a3c750",
-      "size": 717
+      "md5": "f4418103c5321fd14484a3882cd0f1a9",
+      "size": 672
     },
     {
       "name": "ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz",

@@ -25,25 +25,19 @@ acs_age <- read.csv("Age/data/distribution/va_trctbg_acs_20092020_age_demographi
 acs_gender <- read.csv("Gender/data/distribution/va_trctbg_acs_20092020_gender_demographics.csv.xz") %>% filter(region_type=='block group') %>% filter(!(measure=='total_pop'))
 acs_race <- read.csv("Race/data/distribution/va_trctbg_acs_20092020_race_demographics.csv.xz") %>% filter(region_type=='block group') %>% filter(!(measure=='total_pop'))
 acs_language <- read.csv("Language/data/distribution/va_trctbg_acs_20092020_language_demographics.csv.xz") %>% filter(region_type=='block group')
-acs <- rbind(acs_age,acs_gender,acs_race,acs_language)
+acs <- rbind(acs_age,acs_gender,acs_race,acs_language) #%>% mutate(census_year=if_else(year<2020,2010,2020))
 
 
 # subset the acs data to fairfax ----------------------------------------------------
 # get the acs demographics for 2019
 fairfax_bg2010 <- block_groups("VA", "059", 2010) %>% select(geoid=GEOID) %>% mutate(geoid=as.numeric(geoid)) 
 fairfax_bg2010 <- unique(fairfax_bg2010$geoid)
-
-fairfax_acs2010 <- acs %>%
-  filter(year==2019) %>%
-  filter(geoid %in% fairfax_bg2010) 
+fairfax_acs2010 <- acs %>% filter(geoid %in% fairfax_bg2010) 
 
 # get the acs demographics for 2020
 fairfax_bg2020 <- block_groups("VA", "059", 2020) %>% select(geoid=GEOID) %>% mutate(geoid=as.numeric(geoid))
 fairfax_bg2020 <- unique(fairfax_bg2020$geoid)
-
-fairfax_acs2020 <- acs %>%
-  filter(year==2020) %>%
-  filter(geoid %in% fairfax_bg2020) 
+fairfax_acs2020 <- acs %>% filter(geoid %in% fairfax_bg2020) 
 
 
 
@@ -69,7 +63,7 @@ fairfax_parcel_dmg <- merge(fairfax_acs2010, temp, by.x='geoid', by.y='bg_geo', 
          region_name=paste0('parcel ',parid),
          region_type='parcel') %>%
   filter(!is.na(measure)) %>%
-  select(geoid=parid,region_name,region_type,measure,value)
+  select(geoid=parid,region_name,region_type,year,measure,value)
 
 
 # save the data

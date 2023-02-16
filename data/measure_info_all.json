@@ -1962,23 +1962,6 @@
         "statement": "There are {value} day care seats per 1,000 children under 10 in {region_name}.",
         "type": "per 1k"
     },
-    "demographics:perc_female": {
-        "category": "Demographics",
-        "equity_category": "Status",
-        "long_description": "The percent of females in the total population in percent. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
-        "long_name": "Female population (percent)",
-        "short_description": "The percent of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-        "short_name": "Female population",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "American Community Survey Table S0101",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The female population is {value} in {features.name}.",
-        "type": "percent"
-    },
     "demographics:perc_male": {
         "category": "Demographics",
         "equity_category": "Status",
@@ -2381,6 +2364,22 @@
         ],
         "statement": "The number of undergraduate degrees awarded is {value}.",
         "type": "count"
+    },
+    "hh_limited_english": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates Table C16002.",
+        "long_name": "Limited English households",
+        "short_description": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Limited English households",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "American Community Survey Table C16002",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The count of households with limited English is {value} in {features.name}."
     },
     "hh_received_snap_cnt": {
         "category": "Nutrition and Food Security",
@@ -3751,7 +3750,7 @@
         "equity_category": "",
         "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the number of people in food insecure households.  The brief providing the methodology of calculating these estimates is available at Feeding America's Map the Meal Gap website (linked below). Food insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
         "long_name": "Estimated number of total people in food insecure households",
-        "short_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the number of people in food insecure households.  The brief providing the methodology of calculating these estimates is available at Feeding America's Map the Meal Gap website (linked below).",
+        "short_description": "Food insecure persons are people living in households experiencing food insecurity (a lack of access to enough food for an active, healthy life).",
         "short_name": "Food Insecure Population Count",
         "sources": [
             {
@@ -3823,57 +3822,6 @@
         "statement": "",
         "type": "percent"
     },
-    "perc_afr_amer_alone": {
-        "category": "Demographics",
-        "equity_category": "Status",
-        "long_description": "The Black population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-        "long_name": "Black population (percent)",
-        "short_description": "The Black population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Black population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B01001",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Black population is {value} in {features.name}.",
-        "type": "percent"
-    },
-    "perc_amr_ind_alone": {
-        "category": "Demographics",
-        "equity_category": "Status",
-        "long_description": "The Native population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-        "long_name": "Native population (percent)",
-        "short_description": "The Native population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Native population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B01001",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Native population is {value} in {features.name}.",
-        "type": "percent"
-    },
-    "perc_asian_alone": {
-        "category": "Demographics",
-        "equity_category": "Status",
-        "long_description": "The Asian American/Pacific Islander population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-        "long_name": "Asian American/Pacific Islander population (percent)",
-        "short_description": "The Asian American/Pacific Islander population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Asian American/Pacific Islander population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B01001",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Asian American/Pacific Islander population is {value} in {features.name}.",
-        "type": "percent"
-    },
     "perc_carpool": {
         "category": "Transportation",
         "equity_category": "Status",
@@ -3891,6 +3839,38 @@
         ],
         "statement": "{value} of the population in {features.name} carpools to work.",
         "type": "percent"
+    },
+    "perc_female": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The percent of females in the total population. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
+        "long_name": "Female population (percent)",
+        "short_description": "The percent of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
+        "short_name": "Female population",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "American Community Survey Table S0101",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The female population is {value} in {features.name}."
+    },
+    "perc_hh_limited_english": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates Table C16002.",
+        "long_name": "Limited English households (percent)",
+        "short_description": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Limited English households",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "American Community Survey Table C16002",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The percent of households with limited English is {value} in {features.name}."
     },
     "perc_hh_with_broadband": {
         "category": "Broadband",
@@ -3968,23 +3948,6 @@
         "statement": "{value} of households in {features.name} do not have internet access.",
         "type": "percent"
     },
-    "perc_hispanic": {
-        "category": "Demographics",
-        "equity_category": "Status",
-        "long_description": "The Hispanic/Latino population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-        "long_name": "Hispanic/Latino population (percent)",
-        "short_description": "The Hispanic/Latino population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Hispanic/Latino population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B01001",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Hispanic/Latino population is {value} in {features.name}.",
-        "type": "percent"
-    },
     "perc_income_avg_nat_package": {
         "category": "Broadband",
         "equity_category": "Affordability",
@@ -4060,13 +4023,13 @@
     "perc_male": {
         "category": "Demographics",
         "equity_category": "Status",
-        "long_description": "The percent of males in the total population in percent. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
+        "long_description": "The percent of males in the total population. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
         "long_name": "Male population (percent)",
         "short_description": "The percent of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
         "short_name": "Male population",
         "sources": [
             {
-                "date_accessed": 2022,
+                "date_accessed": 2023,
                 "name": "American Community Survey Table S0101",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
@@ -4219,6 +4182,22 @@
         "statement": "{value} of the total population in {features.name} has a good internet speed.",
         "type": "percent"
     },
+    "perc_veteran": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The Veteran population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B21001.",
+        "long_name": "Veteran population (percent)",
+        "short_description": "The Veteran population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Veteran population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The Veteran population is {value} in {features.name}."
+    },
     "perc_w_int_100_20_using_devices": {
         "category": "Broadband",
         "equity_category": "Availability",
@@ -4255,29 +4234,12 @@
         "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
         "type": "percent"
     },
-    "perc_wht_alone": {
-        "category": "Demographics",
-        "equity_category": "Status",
-        "long_description": "The White population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-        "long_name": "White population (percent)",
-        "short_description": "The White population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "White population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B01001",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The White population is {value} in {features.name}.",
-        "type": "percent"
-    },
     "percent_food_insecure": {
         "category": "Nutrition and Food Security",
         "equity_category": "",
         "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the percent of people in food insecure households.  The brief providing the methodology of calculating these estimates is available at Feeding America's Map the Meal Gap website (linked below). Food insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
         "long_name": "Estimated percentage of total people in food insecure households",
-        "short_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the percent of people in food insecure households.  The brief providing the methodology of calculating these estimates is available at Feeding America's Map the Meal Gap website (linked below).",
+        "short_description": "Food insecure persons are people living in households experiencing food insecurity (a lack of access to enough food for an active, healthy life).",
         "short_name": "Food Insecure Population Percentage",
         "sources": [
             {
@@ -4320,6 +4282,55 @@
         ],
         "statement": "The population density indicator in {features.name} is {value}.",
         "type": "index"
+    },
+    "pop_female": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The count of females in the total population. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
+        "long_name": "Female population (count)",
+        "short_description": "The count of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
+        "short_name": "Female population",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "American Community Survey Table S0101",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The female population is {value} in {features.name}."
+    },
+    "pop_male": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The count of males in the total population. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
+        "long_name": "Male population (count)",
+        "short_description": "The count of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
+        "short_name": "Male population",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "American Community Survey Table S0101",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The male population is {value} in {features.name}.",
+        "type": "percent"
+    },
+    "pop_veteran": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The Veteran population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B21001.",
+        "long_name": "Veteran population (count)",
+        "short_description": "The Veteran population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Veteran population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The Veteran population is {value} in {features.name}."
     },
     "population": {
         "category": "Nutrition and Food Security",
@@ -4976,6 +4987,22 @@
         "statement": "",
         "type": "count"
     },
+    "total_hh": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The count of households. Based on American Community Survey ACS 2015/2019 5-year estimates Table C16002.",
+        "long_name": "Total count of households",
+        "short_description": "The count of households. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Total count of households",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "American Community Survey Table C16002",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The count of households is {value} in {features.name}."
+    },
     "urgent_3sfca": {
         "category": "Health",
         "citations": [
@@ -4985,61 +5012,70 @@
             "saxon20"
         ],
         "equity_category": "Availability",
-        "full_name": "access_scores_ems:urgent_3sfca",
-        "long_description": "Emergency medical services availability based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
-        "long_name": "Emergency medical services geographic availability (3-step floating catchment areas)",
+        "full_name": "access_scores_urgent:urgent_3sfca",
+        "layer": {
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/dc.hifld.urgent/master/data/points_2022.geojson"
+        },
+        "long_description": "Urgent care availability based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
+        "long_name": "Urgent care geographic availability (3-step floating catchment areas)",
         "measure": "urgent_3sfca",
         "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2021_urgent_access_scores",
-        "short_description": "Index of emergency medical services availability based on supply and demand of facilities",
-        "short_name": "Emergency medical services geographic availability",
+        "short_description": "Index of urgent care availability based on supply and demand of facilities",
+        "short_name": "Urgent care geographic availability",
         "sources": [
             {
-                "date_accessed": 2021,
-                "name": "Homeland Infrastructure Foundation-Level Data (HIFLD)",
-                "url": "https://hifld-geoplatform.opendata.arcgis.com/"
+                "date_accessed": 2022,
+                "name": "Google Maps",
+                "url": "https://www.google.com/maps"
             }
         ],
-        "statement": "The emergency medical services availability for {features.name} is {value}.",
+        "statement": "The urgent care availability for {features.name} is {value}.",
         "type": "index"
     },
     "urgent_cnt": {
         "category": "Health",
         "equity_category": "Availability",
-        "full_name": "access_scores_ems:urgent_cnt",
-        "long_description": "Count of emergency medical services facilities based on facility locations. Location data was collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository.",
-        "long_name": "Availability of emergency medical services by count",
+        "full_name": "access_scores_urgent:urgent_cnt",
+        "layer": {
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/dc.hifld.urgent/master/data/points_2022.geojson"
+        },
+        "long_description": "Count of urgent care facilities based on facility locations. Location data was collected from Google Maps.",
+        "long_name": "Availability of urgent care by count",
         "measure": "urgent_cnt",
         "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2021_urgent_access_scores",
-        "short_description": "Count of emergency medical services facilities based on facility locations",
-        "short_name": "Emergency medical services availability (count)",
+        "short_description": "Count of urgent care facilities based on facility locations",
+        "short_name": "Urgent care availability (count)",
         "sources": [
             {
-                "date_accessed": 2021,
-                "name": "Homeland Infrastructure Foundation-Level Data (HIFLD)",
+                "date_accessed": 2022,
+                "name": "Google Maps",
                 "url": "https://hifld-geoplatform.opendata.arcgis.com/"
             }
         ],
-        "statement": "There are {value} emergency medical services facilities in {features.name}.",
+        "statement": "There are {value} urgent care facilities in {features.name}.",
         "type": "count"
     },
     "urgent_near_10_median": {
         "category": "Health",
         "equity_category": "Availability",
-        "full_name": "access_scores_ems:urgent_near_10_median",
-        "long_description": "Median drive time in minutes to the ten closest emergency medical services facilities. Facility location data were collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
-        "long_name": "Emergency medical services availability by median drive time to the ten closest facilities in minutes",
+        "full_name": "access_scores_urgent:urgent_near_10_median",
+        "layer": {
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/dc.hifld.urgent/master/data/points_2022.geojson"
+        },
+        "long_description": "Median drive time in minutes to the ten closest urgent care facilities. Facility location data were collected from Google Maps. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
+        "long_name": "Urgent care availability by median drive time to the ten closest facilities in minutes",
         "measure": "urgent_near_10_median",
-        "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2021_access_scores_ems",
-        "short_description": "Median drive time (minutes) to the ten closest emergency medical services facilities",
-        "short_name": "Emergency medical services availability (drive time)",
+        "measure_table": "dc_health_behavior_diet.va_hdcttr_sdad_2021_access_scores_urgent",
+        "short_description": "Median drive time (minutes) to the ten closest urgent care facilities",
+        "short_name": "Urgent care availability (drive time)",
         "sources": [
             {
-                "date_accessed": 2021,
-                "name": "Homeland Infrastructure Foundation-Level Data (HIFLD)",
-                "url": "https://hifld-geoplatform.opendata.arcgis.com/"
+                "date_accessed": 2022,
+                "name": "Google Maps",
+                "url": "https://www.google.com/maps"
             }
         ],
-        "statement": "The median drive time to the ten closest emergency medical service facilities to {features.name} is {value}.",
+        "statement": "The median drive time to the ten closest urgent care facilities to {features.name} is {value}.",
         "type": "drive time"
     },
     "walkability_indicator": {
