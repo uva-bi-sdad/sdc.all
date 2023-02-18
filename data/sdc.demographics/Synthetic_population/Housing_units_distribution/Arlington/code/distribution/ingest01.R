@@ -16,7 +16,7 @@ library(data.table)
 va_arl_housing_units <- sf::st_read("https://arlgis.arlingtonva.us/arcgis/rest/services/Open_Data/od_MHUD_Polygons/FeatureServer/0/query?outFields=*&where=1%3D1&f=geojson")
 
 # filter to unique parcel, with census block and total housing units on the parcel
-va_arl_block_parcels <- unique(va_arl_housing_units[, c("RPC_Master", "Full_Block", "Total_Units")])
+va_arl_block_parcels <- unique(va_arl_housing_units[, c("RPC_Master","Year_Built","Full_Block","Total_Units")])
 
 # save the data in the working folder (cautious: the size of the data may be too big)
 va_arl_block_parcels <- sf::st_as_sf(va_arl_block_parcels)
@@ -28,14 +28,15 @@ temp <- va_arl_block_parcels %>%
          length=nchar(RPC_Master),
          RPC_Master=str_pad(RPC_Master, max(nchar(RPC_Master)), side="left", pad="x"),
          bg_geoid=substr(Full_Block, 1, 12)) %>%
-  group_by(RPC_Master,bg_geoid) %>%
+  group_by(RPC_Master,bg_geoid,Year_Built) %>%
   summarise(liv_unit=sum(Total_Units, na.rm=T),
+            year=Year_Built,
             geometry = st_union(geometry))
 
 temp01 <- temp %>%
   mutate(region_name=paste0("parcel ",RPC_Master),
          region_type="parcel",
-         year=format(Sys.Date(), "%Y"),
+         #year=format(Sys.Date(), "%Y"),
          geoid=paste0(bg_geoid,RPC_Master)) %>%
   select(geoid,region_name,region_type,year,liv_unit)
 
@@ -43,7 +44,7 @@ arl_parcel_geometry <- temp01 %>%
   select(geoid,region_name,region_type,year)
 
 parcel_livunit <- setDT(temp01) %>%
-  select(geoid,liv_unit)
+  select(geoid,year,liv_unit)
 
 
 # save the data -------------------------------------------------------------------------------------

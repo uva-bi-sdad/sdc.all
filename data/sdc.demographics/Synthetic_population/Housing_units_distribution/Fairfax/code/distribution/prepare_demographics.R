@@ -25,7 +25,8 @@ acs_age <- read.csv("Age/data/distribution/va_trctbg_acs_20092020_age_demographi
 acs_gender <- read.csv("Gender/data/distribution/va_trctbg_acs_20092020_gender_demographics.csv.xz") %>% filter(region_type=='block group') %>% filter(!(measure=='total_pop'))
 acs_race <- read.csv("Race/data/distribution/va_trctbg_acs_20092020_race_demographics.csv.xz") %>% filter(region_type=='block group') %>% filter(!(measure=='total_pop'))
 acs_language <- read.csv("Language/data/distribution/va_trctbg_acs_20092020_language_demographics.csv.xz") %>% filter(region_type=='block group')
-acs <- rbind(acs_age,acs_gender,acs_race,acs_language) #%>% mutate(census_year=if_else(year<2020,2010,2020))
+acs_veteran <- read.csv("Veteran/data/distribution/va_trctbg_acs_20092020_veteran_demographics.csv.xz") %>% filter(region_type=='block group')
+acs <- rbind(acs_age,acs_gender,acs_race,acs_language,acs_veteran) #%>% mutate(census_year=if_else(year<2020,2010,2020))
 
 
 # subset the acs data to fairfax ----------------------------------------------------

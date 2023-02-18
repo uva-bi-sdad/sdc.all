@@ -10,7 +10,7 @@ library(stringr)
 
 # Get parcels block data ------------------------------------------------------------------
 # census blocks data from 2010
-fairfax_blocks <- blocks("VA", "059", 2010)
+fairfax_blocks <- blocks("VA", "059", 2020)
 fairfax_blocks_wgs84 <-st_transform(fairfax_blocks, 4326)
 
 #fairfax_address_points <- st_read("data-raw/Fairfax Address_Points/Address_Points.shp")

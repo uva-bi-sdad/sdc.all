@@ -8,7 +8,7 @@
   "short_name": "20 to 64 population",
   "sources": [
     {
-      "date_accessed": 2021,
+      "date_accessed": 2023,
       "name": "American Community Survey Table B01001",
       "url": "https://www.census.gov/programs-surveys/acs.html"
     }
@@ -25,7 +25,7 @@
   "short_name": "65 plus population",
   "sources": [
     {
-      "date_accessed": 2021,
+      "date_accessed": 2023,
       "name": "American Community Survey Table B01001",
       "url": "https://www.census.gov/programs-surveys/acs.html"
     }
@@ -42,12 +42,80 @@
     "short_name": "Under 20 population",
     "sources": [
       {
-        "date_accessed": 2021,
+        "date_accessed": 2023,
         "name": "American Community Survey Table B01001",
         "url": "https://www.census.gov/programs-surveys/acs.html"
       }
     ],
     "statement": "The percent of the population under age 20 is {value} in {features.name}.",
     "type": "percent"
+  },
+  "pop_20_64": {
+  "category": "Demographics",
+  "equity_category": "Status",
+  "long_description": "The population between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+  "long_name": "20 to 64 population (count)",
+  "short_description": "The population between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+  "short_name": "20 to 64 population",
+  "sources": [
+    {
+      "date_accessed": 2023,
+      "name": "American Community Survey Table B01001",
+      "url": "https://www.census.gov/programs-surveys/acs.html"
+    }
+  ],
+  "statement": "The population between age 20 and 64 is {value} in {features.name}.",
+  "type": "percent"
+},
+  "pop_65_plus": {
+  "category": "Demographics",
+  "equity_category": "Status",
+  "long_description": "The population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+  "long_name": "65 plus population (count)",
+  "short_description": "The population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+  "short_name": "65 plus population",
+  "sources": [
+    {
+      "date_accessed": 2023,
+      "name": "American Community Survey Table B01001",
+      "url": "https://www.census.gov/programs-surveys/acs.html"
+    }
+  ],
+  "statement": "The population over age 64 is {value} in {features.name}.",
+  "type": "percent"
+},
+  "pop_under_20": {
+    "category": "Demographics",
+    "equity_category": "Status",
+    "long_description": "The population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+    "long_name": "Under 20 population (count)",
+    "short_description": "The population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+    "short_name": "Under 20 population",
+    "sources": [
+      {
+        "date_accessed": 2023,
+        "name": "American Community Survey Table B01001",
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ],
+    "statement": "The population under age 20 is {value} in {features.name}.",
+    "type": "percent"
+  },
+  "total_pop": {
+    "category": "Demographics",
+    "equity_category": "Status",
+    "long_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+    "long_name": "Population (count)",
+    "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+    "short_name": "Under 20 population",
+    "sources": [
+      {
+        "date_accessed": 2023,
+        "name": "American Community Survey Table B01001",
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ],
+    "statement": "Total count of the population is {value} in {features.name}.",
+    "type": "count"
   }
 }
