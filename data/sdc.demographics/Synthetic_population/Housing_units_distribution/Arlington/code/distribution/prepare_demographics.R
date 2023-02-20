@@ -26,20 +26,20 @@ acs_gender <- read.csv("Gender/data/distribution/va_trctbg_acs_20092020_gender_d
 acs_race <- read.csv("Race/data/distribution/va_trctbg_acs_20092020_race_demographics.csv.xz") %>% filter(region_type=='block group') %>% filter(!(measure=='total_pop'))
 acs_language <- read.csv("Language/data/distribution/va_trctbg_acs_20092020_language_demographics.csv.xz") %>% filter(region_type=='block group')
 acs_veteran <- read.csv("Veteran/data/distribution/va_trctbg_acs_20092020_veteran_demographics.csv.xz") %>% filter(region_type=='block group')
-acs <- rbind(acs_age,acs_gender,acs_race,acs_language) %>% filter(measure_type=='count')
+acs <- rbind(acs_age,acs_gender,acs_race,acs_language) %>% filter(measure_type=='count') %>% mutate(census_year=if_else(year<2020,2010,2020))
 
 
 
 # subset the acs data to fairfax ----------------------------------------------------
 # get the acs demographics for 2019
-arl_bg2010 <- block_groups("VA", "013", 2010) %>% select(geoid=GEOID) %>% mutate(geoid=as.numeric(geoid), census_year=2010) 
+arl_bg2010 <- block_groups("VA", "013", 2010) %>% select(geoid=GEOID) %>% mutate(geoid=as.numeric(geoid)) 
 arl_bg2010 <- unique(arl_bg2010$geoid)
-arl_acs2010<- acs %>% filter(geoid %in% arl_bg2010) %>% mutate(census_year=2010)
+arl_acs2010<- acs %>% filter((geoid %in% arl_bg2010) & (census_year=2010))
 
 # get the acs demographics for 2020
-arl_bg2020 <- block_groups("VA", "013", 2020) %>% select(geoid=GEOID) %>% mutate(geoid=as.numeric(geoid), census_year=2020)
+arl_bg2020 <- block_groups("VA", "013", 2020) %>% select(geoid=GEOID) %>% mutate(geoid=as.numeric(geoid))
 arl_bg2020 <- unique(arl_bg2020$geoid)
-arl_acs2020 <- acs %>% filter(geoid %in% arl_bg2020) %>% mutate(census_year=2020)
+arl_acs2020 <- acs %>% filter((geoid %in% arl_bg2020) & (census_year=2020))
 arl_acs <- rbind(arl_acs2010,arl_acs2020)
 
 
@@ -67,8 +67,9 @@ for (t in 2009:2020) {
 temp <- temp %>% mutate(census_year=if_else(year<2020,2010,2020))
 
 
+
 # compute the demographics at the parcels --------------------------------------------
-# note: refine the demographics for block groups with the demographics informations
+# note: refine the demographics for block groups with the demographics information
 #       - some block group in parcel_livunit doesn't match the acs (2010) but belong to acs (2020), remove them
 arl_parcel_dmg <- merge(arl_acs, temp, by.x=c('geoid','year','census_year'), by.y=c('bg_geo','year','census_year'), all.y=T) %>%
   mutate(value=mult*value,

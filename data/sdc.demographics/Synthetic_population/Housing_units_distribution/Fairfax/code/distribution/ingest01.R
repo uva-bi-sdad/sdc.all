@@ -10,7 +10,7 @@ library(stringr)
 
 # Get parcels block data ------------------------------------------------------------------
 # census blocks data from 2010
-fairfax_blocks <- blocks("VA", "059", 2020)
+fairfax_blocks <- blocks("VA", "059", 2010)
 fairfax_blocks_wgs84 <-st_transform(fairfax_blocks, 4326)
 
 #fairfax_address_points <- st_read("data-raw/Fairfax Address_Points/Address_Points.shp")
@@ -45,7 +45,7 @@ fairfax_parcels_blocks <- merge(fairfax_housing_units, fairfax_parcels_blocks, b
 
 # Remove all NA units
 fairfax_parcels_blocks <- fairfax_parcels_blocks[!is.na(fairfax_parcels_blocks$LIVUNIT),]
-fairfax_parcels_blocks <- fairfax_parcels_blocks[!is.na(fairfax_parcels_blocks$GEOID20),]
+fairfax_parcels_blocks <- fairfax_parcels_blocks[!is.na(fairfax_parcels_blocks$GEOID10),]
 
 # save the data in the working folder (cautious: the size of the data may be too big)
 fairfax_parcels_blocks <- sf::st_as_sf(fairfax_parcels_blocks)

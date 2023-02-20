@@ -26,20 +26,20 @@ acs_gender <- read.csv("Gender/data/distribution/va_trctbg_acs_20092020_gender_d
 acs_race <- read.csv("Race/data/distribution/va_trctbg_acs_20092020_race_demographics.csv.xz") %>% filter(region_type=='block group') %>% filter(!(measure=='total_pop'))
 acs_language <- read.csv("Language/data/distribution/va_trctbg_acs_20092020_language_demographics.csv.xz") %>% filter(region_type=='block group')
 acs_veteran <- read.csv("Veteran/data/distribution/va_trctbg_acs_20092020_veteran_demographics.csv.xz") %>% filter(region_type=='block group')
-acs <- rbind(acs_age,acs_gender,acs_race,acs_language,acs_veteran) #%>% mutate(census_year=if_else(year<2020,2010,2020))
+acs <- rbind(acs_age,acs_gender,acs_race,acs_language) %>% filter(measure_type=='count') %>% mutate(census_year=if_else(year<2020,2010,2020))
 
 
 # subset the acs data to fairfax ----------------------------------------------------
 # get the acs demographics for 2019
 fairfax_bg2010 <- block_groups("VA", "059", 2010) %>% select(geoid=GEOID) %>% mutate(geoid=as.numeric(geoid)) 
 fairfax_bg2010 <- unique(fairfax_bg2010$geoid)
-fairfax_acs2010 <- acs %>% filter(geoid %in% fairfax_bg2010) 
+fairfax_acs2010 <- acs %>% filter((geoid %in% fairfax_bg2010) & (census_year=2010))
 
 # get the acs demographics for 2020
 fairfax_bg2020 <- block_groups("VA", "059", 2020) %>% select(geoid=GEOID) %>% mutate(geoid=as.numeric(geoid))
 fairfax_bg2020 <- unique(fairfax_bg2020$geoid)
-fairfax_acs2020 <- acs %>% filter(geoid %in% fairfax_bg2020) 
-
+fairfax_acs2020 <- acs %>% filter((geoid %in% fairfax_bg2020) & (census_year=2020))
+fairfax_acs <- rbind(fairfax_acs2010,fairfax_acs2020)
 
 
 # compute the demographic multiplier -------------------------------------------------
@@ -69,7 +69,7 @@ fairfax_parcel_dmg <- merge(fairfax_acs2010, temp, by.x='geoid', by.y='bg_geo', 
 
 # save the data
 savepath = "Synthetic_population/Housing_units_distribution/Fairfax/data/working/"
-readr::write_csv(fairfax_parcel_dmg, xzfile(paste0(savepath,"va059_pc_sdad_2019_demographics.csv.xz"), compression = 9))
+readr::write_csv(fairfax_parcel_dmg, xzfile(paste0(savepath,"va059_pc_sdad_20092020_demographics.csv.xz"), compression = 9))
 
 
 
