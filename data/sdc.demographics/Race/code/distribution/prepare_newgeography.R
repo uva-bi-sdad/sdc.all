@@ -22,13 +22,19 @@ library(rjson)
 
 
 # 1. Case of fairfax county:  --------------------------------------------------------------------
+years <- 2013:2019
 
 #upload data from fairfax (demography and geometry). filter on race
-fairfax_pc_dmg <- read_csv(xzfile("Synthetic_population/Housing_units_distribution/Fairfax/data/working/va059_pc_sdad_20092020_demographics.csv.xz"))
+fairfax_pc_dmg <- NULL
+for (year in years) {
+  temp0 <- read_csv(xzfile(paste0("Synthetic_population/Housing_units_distribution/Fairfax/data/working/va059_pc_sdad_",year,"_demographics.csv.xz")))
+  temp <- temp0 %>% select(geoid,year,measure,value) %>% filter(measure %in% c('pop_wht_alone','pop_afr_amer_alone','pop_native_alone','pop_AAPI','pop_other','pop_two_or_more','pop_hispanic_or_latino','total_race','pop_eth_tot'))
+  fairfax_pc_dmg <- rbind(fairfax_pc_dmg,temp)
+}
+
 fairfax_pc_geo <- sf::st_read(unzip("Synthetic_population/Housing_units_distribution/Fairfax/data/working/fairfax_parcel_geometry.geojson.zip", "Synthetic_population/Housing_units_distribution/Fairfax/data/working/fairfax_parcel_geometry.geojson"))
 file.remove("Synthetic_population/Housing_units_distribution/Fairfax/data/working/fairfax_parcel_geometry.geojson")
 fairfax_pc_geo <- fairfax_pc_geo %>% select(parid=geoid, geometry)
-fairfax_pc_dmg <- fairfax_pc_dmg %>% select(geoid,year,measure,value) %>% filter(measure %in% c('pop_wht_alone','pop_afr_amer_alone','pop_native_alone','pop_AAPI','pop_other','pop_two_or_more','pop_hispanic_or_latino','total_race'))
 
 # upload new geographies and mapping with parcels (comments: just add a new geography below and the intersects with parcels)
 sf::sf_use_s2(FALSE)
@@ -69,26 +75,37 @@ fairfax_newgeo_dmg <- rbind(hsr_dmg,pd_dmg,sd_dmg,zc_dmg) %>%
          perc_native_alone = pop_native_alone/total_race,
          perc_AAPI = pop_AAPI/total_race,
          perc_two_or_more = pop_two_or_more/total_race,
-         perc_other = pop_other/total_race) %>%
+         perc_other = pop_other/total_race,
+         perc_hispanic_or_latino = pop_hispanic_or_latino/pop_eth_tot) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
-  mutate(MOE='')
+  mutate(measure_type=case_when(
+    grepl('perc',measure)==T ~ "percentage",
+    grepl('pop',measure)==T ~ "count",
+    grepl('race',measure)==T ~ "count"),
+    MOE='')
 
 
 # save the data ----------------------------------------------------------------------------------
 savepath = "Race/data/distribution/"
-readr::write_csv(fairfax_newgeo_dmg, xzfile(paste0(savepath,"va059_hsrpdsdzc_sdad_20092020_race_demographics.csv.xz"), compression = 9))
+readr::write_csv(fairfax_newgeo_dmg, xzfile(paste0(savepath,"va059_hsrpdsdzc_sdad_",min(years),max(years),"_race_demographics.csv.xz"), compression = 9))
 
 
 
 
 # 2. Case of arlington county --------------------------------------------------------------------
+arl_pc_dmg <- NULL
+years <- 2013:2020
 
-# upload data from fairfax (demography and geometry). filter by race
-arl_pc_dmg <- read_csv(xzfile("Synthetic_population/Housing_units_distribution/Arlington/data/working/va013_pc_sdad_20092019_demographics.csv.xz"))
+# upload data from arlington (demography and geometry). filter on gender
+for (year in years) {
+  temp0 <- read_csv(xzfile(paste0("Synthetic_population/Housing_units_distribution/Arlington/data/working/va013_pc_sdad_",year,"_demographics.csv.xz")))
+  temp <- temp0 %>% select(geoid,year,measure,value) %>% filter(measure %in% c('pop_wht_alone','pop_afr_amer_alone','pop_native_alone','pop_AAPI','pop_other','pop_two_or_more','pop_hispanic_or_latino','total_race','pop_eth_tot'))
+  arl_pc_dmg <- rbind(arl_pc_dmg,temp)
+}
+
 arl_pc_geo <- sf::st_read(unzip("Synthetic_population/Housing_units_distribution/Arlington/data/working/arl_parcel_geometry.geojson.zip", "Synthetic_population/Housing_units_distribution/Arlington/data/working/arl_parcel_geometry.geojson"))
 file.remove("Synthetic_population/Housing_units_distribution/Arlington/data/working/arl_parcel_geometry.geojson")
 arl_pc_geo <- arl_pc_geo %>% select(parid=geoid, geometry)
-arl_pc_dmg <- arl_pc_dmg %>% select(geoid,year,measure,value) %>% filter(measure %in% c('pop_wht_alone','pop_afr_amer_alone','pop_native_alone','pop_AAPI','pop_other','pop_two_or_more','pop_hispanic_or_latino','total_race'))
 
 # upload new geographies and mapping with parcels (comments: just add a new geography below and the intersects with parcels)
 sf::sf_use_s2(FALSE)
@@ -110,7 +127,8 @@ arl_newgeo_dmg <- civic_dmg %>%
          perc_native_alone = pop_native_alone/total_race,
          perc_AAPI = pop_AAPI/total_race,
          perc_two_or_more = pop_two_or_more/total_race,
-         perc_other = pop_other/total_race) %>%
+         perc_other = pop_other/total_race,
+         perc_hispanic_or_latino = pop_hispanic_or_latino/pop_eth_tot) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
   mutate(measure_type=case_when(
     grepl('perc',measure)==T ~ "percentage",
@@ -121,7 +139,7 @@ arl_newgeo_dmg <- civic_dmg %>%
 
 # save the data ----------------------------------------------------------------------------------
 savepath = "Race/data/distribution/"
-readr::write_csv(arl_newgeo_dmg, xzfile(paste0(savepath,"va013_civic_sdad_20092019_race_demographics.csv.xz"), compression = 9))
+readr::write_csv(arl_newgeo_dmg, xzfile(paste0(savepath,"va013_civic_sdad_",min(years),max(years),"_race_demographics.csv.xz"), compression = 9))
 
 
 

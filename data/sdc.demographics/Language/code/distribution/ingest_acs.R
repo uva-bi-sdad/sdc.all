@@ -25,7 +25,7 @@ named_acs_var_list <- c(
   limited_english_other_language = "C16002_013")
 
 # list of geography level
-geographies <- c('county','tract','block group')
+geographies <- c('tract','county','block group')
 
 # list of states
 states <- c('VA','MD','DC')

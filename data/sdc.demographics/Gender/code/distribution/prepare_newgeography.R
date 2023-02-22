@@ -22,13 +22,20 @@ library(rjson)
 
 
 # 1. Case of fairfax county:  --------------------------------------------------------------------
+years <- 2013:2019
 
 #upload data from fairfax (demography and geometry). filter on gender
-fairfax_pc_dmg <- read_csv(xzfile("Synthetic_population/Housing_units_distribution/Fairfax/data/working/va059_pc_sdad_20092020_demographics.csv.xz"))
+fairfax_pc_dmg <- NULL
+for (year in years) {
+  temp0 <- read_csv(xzfile(paste0("Synthetic_population/Housing_units_distribution/Fairfax/data/working/va059_pc_sdad_",year,"_demographics.csv.xz")))
+  temp <- temp0 %>% select(geoid,year,measure,value) %>% filter(measure %in% c('pop_male','pop_female','total_pop'))
+  fairfax_pc_dmg <- rbind(fairfax_pc_dmg,temp)
+}
+
 fairfax_pc_geo <- sf::st_read(unzip("Synthetic_population/Housing_units_distribution/Fairfax/data/working/fairfax_parcel_geometry.geojson.zip", "Synthetic_population/Housing_units_distribution/Fairfax/data/working/fairfax_parcel_geometry.geojson"))
 file.remove("Synthetic_population/Housing_units_distribution/Fairfax/data/working/fairfax_parcel_geometry.geojson")
 fairfax_pc_geo <- fairfax_pc_geo %>% select(parid=geoid, geometry)
-fairfax_pc_dmg <- fairfax_pc_dmg %>% select(geoid,year,measure,value) %>% filter(measure %in% c('pop_male','pop_female','total_pop'))
+
 
 # upload new geographies and mapping with parcels (comments: just add a new geography below and the intersects with parcels)
 sf::sf_use_s2(FALSE)
@@ -75,13 +82,20 @@ fairfax_newgeo_dmg <- rbind(hsr_dmg,pd_dmg,sd_dmg,zc_dmg) %>%
 
 # save the data ----------------------------------------------------------------------------------
 savepath = "Gender/data/distribution/"
-readr::write_csv(fairfax_newgeo_dmg, xzfile(paste0(savepath,"va059_hsrpdsdzc_sdad_20092020_gender_demographics.csv.xz"), compression = 9))
+readr::write_csv(fairfax_newgeo_dmg, xzfile(paste0(savepath,"va059_hsrpdsdzc_sdad_",min(years),max(years),"_gender_demographics.csv.xz"), compression = 9))
 
 
 # 2. Case of arlington county --------------------------------------------------------------------
+arl_pc_dmg <- NULL
+years <- 2013:2020
 
-# upload data from fairfax (demography and geometry). filter on gender
-arl_pc_dmg <- read_csv(xzfile("Synthetic_population/Housing_units_distribution/Arlington/data/working/va013_pc_sdad_20092019_demographics.csv.xz"))
+# upload data from arlington (demography and geometry). filter on gender
+for (year in years) {
+  temp0 <- read_csv(xzfile(paste0("Synthetic_population/Housing_units_distribution/Arlington/data/working/va013_pc_sdad_",year,"_demographics.csv.xz")))
+  temp <- temp0 %>% select(geoid,year,measure,value) %>% filter(measure %in% c('pop_male','pop_female','total_pop'))
+  arl_pc_dmg <- rbind(arl_pc_dmg,temp)
+}
+
 arl_pc_geo <- sf::st_read(unzip("Synthetic_population/Housing_units_distribution/Arlington/data/working/arl_parcel_geometry.geojson.zip", "Synthetic_population/Housing_units_distribution/Arlington/data/working/arl_parcel_geometry.geojson"))
 file.remove("Synthetic_population/Housing_units_distribution/Arlington/data/working/arl_parcel_geometry.geojson")
 arl_pc_geo <- arl_pc_geo %>% select(parid=geoid, geometry)
@@ -112,7 +126,7 @@ arl_newgeo_dmg <- civic_dmg %>%
 
 # save the data ----------------------------------------------------------------------------------
 savepath = "Gender/data/distribution/"
-readr::write_csv(arl_newgeo_dmg, xzfile(paste0(savepath,"va013_civic_sdad_20092019_gender_demographics.csv.xz"), compression = 9))
+readr::write_csv(arl_newgeo_dmg, xzfile(paste0(savepath,"va013_civic_sdad_",min(years),max(years),"_gender_demographics.csv.xz"), compression = 9))
 
 
 

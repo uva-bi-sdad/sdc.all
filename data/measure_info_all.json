@@ -1,1112 +1,4 @@
 {
-    "Accommodation_and_Food_Services_HHI_all": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Industry concentration in Accommodation and Food Services",
-        "long_name": "Herfindahl-Hirschman Index in Accommodation and Food Services",
-        "short_description": "Industry concentration in Accommodation and Food Services",
-        "short_name": "HHI in Accommodation and Food Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Industry concentration in Accommodation and Food Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Accommodation_and_Food_Services_HHI_minority": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Industry concentration among Minority owned business in Accommodation and Food Services",
-        "long_name": "Minority owned business Herfindahl-Hirschman Index in Accommodation and Food Services",
-        "short_description": "Industry concentration among Minority owned business in Accommodation and Food Services",
-        "short_name": "Minority owned business HHI in Accommodation and Food Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Industry concentration by minority owned business in Accommodation and Food Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Accommodation_and_Food_Services_HHI_small": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Industry concentration among small business in Accommodation and Food Services",
-        "long_name": "Small business Herfindahl-Hirschman Index in Accommodation and Food Services",
-        "short_description": "Industry concentration among small business in Accommodation and Food Services",
-        "short_name": "Small business HHI in Accommodation and Food Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Industry concentration by small business in Accommodation and Food Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Accommodation_and_Food_Services_average_emp_per_minority": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Average employment per business owned by minority in Accommodation and Food Services",
-        "long_name": "Average employment per business owned by minority in Accommodation and Food Services",
-        "short_description": "Average employment per business owned by minority in Accommodation and Food Services",
-        "short_name": "Average employment per business owned by minority in Accommodation and Food Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Average employment per business owned by minority in Accommodation and Food Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Accommodation_and_Food_Services_emp_industry": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Total employment in Accommodation and Food Services",
-        "long_name": "Total employment in Accommodation and Food Services",
-        "short_description": "Total employment in Accommodation and Food Services",
-        "short_name": "Total employment in Accommodation and Food Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Total employment in Accommodation and Food Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Accommodation_and_Food_Services_emp_minority": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Total employment by minority owned business in Accommodation and Food Services",
-        "long_name": "Total employment by minority owned business in Accommodation and Food Services",
-        "short_description": "Total employment by minority owned business in Accommodation and Food Services",
-        "short_name": "Total employment by minority owned business in Accommodation and Food Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Total employment by minority owned business in Accommodation and Food Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Accommodation_and_Food_Services_emp_share_industry": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Share of employment in Accommodation and Food Services",
-        "long_name": "Share of employment in Accommodation and Food Services",
-        "short_description": "Share of employment in Accommodation and Food Services",
-        "short_name": "Share of employment in Accommodation and Food Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Share of employment in Accommodation and Food Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Accommodation_and_Food_Services_emp_share_minority": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Share of employment by minority owned business in Accommodation and Food Services",
-        "long_name": "Share of employment by minority owned business in Accommodation and Food Services",
-        "short_description": "Share of employment by minority owned business in Accommodation and Food Services",
-        "short_name": "Share of employment by minority owned business in Accommodation and Food Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Share of employment by minority owned business in Accommodation and Food Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Accommodation_and_Food_Services_emp_share_small": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Share of employment by small business in Accommodation and Food Services",
-        "long_name": "Share of employment by small business in Accommodation and Food Services",
-        "short_description": "Share of employment by small business in Accommodation and Food Services",
-        "short_name": "Share of employment by small business in Accommodation and Food Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Share of employment by small business in Accommodation and Food Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Accommodation_and_Food_Services_emp_small": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Total employment by small business in Accommodation and Food Services",
-        "long_name": "Total employment by small business in Accommodation and Food Services",
-        "short_description": "Total employment by small business in Accommodation and Food Services",
-        "short_name": "Total employment by small business in Accommodation and Food Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Total employement by small business in Accommodation and Food Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Accommodation_and_Food_Services_numb_companies": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Number of business in Accommodation and Food Services",
-        "long_name": "Number of business in Accommodation and Food Services",
-        "short_description": "Number of business in Accommodation and Food Services",
-        "short_name": "Number of business in Accommodation and Food Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Number of business in Accommodation and Food Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Accommodation_and_Food_Services_numb_minorityowned_companies": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Number of minority owned business in Accommodation and Food Services",
-        "long_name": "Number of minority owned business in Accommodation and Food Services",
-        "short_description": "Number of minority owned business in Accommodation and Food Services",
-        "short_name": "Number of minority owned business in Accommodation and Food Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Number of minority owned business in Accommodation and Food Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Accommodation_and_Food_Services_numb_small_companies": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Number of small business in Accommodation and Food Services",
-        "long_name": "Number of small business in Accommodation and Food Services",
-        "short_description": "Number of small business in Accommodation and Food Services",
-        "short_name": "Number of small business in Accommodation and Food Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Number of small business in Accommodation and Food Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Accommodation_and_Food_Services_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Accommodation_and_Food_Services_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Accommodation_and_Food_Services_pct_minorityowned_companies": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Percentage of minority owned business in Accommodation and Food Services",
-        "long_name": "Percentage of minority owned business in Accommodation and Food Services",
-        "short_description": "Percentage of minority owned business in Accommodation and Food Services",
-        "short_name": "Percentage of minority owned business in Accommodation and Food Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Percentage of minority owned business in Accommodation and Food Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Accommodation_and_Food_Services_pct_small_companies": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Percentage of small business in Accommodation and Food Services",
-        "long_name": "Percentage of small business in Accommodation and Food Services",
-        "short_description": "Percentage of small business in Accommodation and Food Services",
-        "short_name": "Percentage of small business in Accommodation and Food Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "percentage of small business in Accommodation and Food Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Accommodation_and_Food_Services_pct_soloproprietor_companies": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Percentage of sole proprietor business in Accommodation and Food Services",
-        "long_name": "Percentage of sole proprietor business in Accommodation and Food Services",
-        "short_description": "Percentage of sole proprietor business in Accommodation and Food Services",
-        "short_name": "Percentage of sole proprietor business in Accommodation and Food Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Percentage of sole proprietor business in Accommodation and Food Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_HHI_all": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Industry concentration in Agriculture, Forestry, Fishing and  Hunting",
-        "long_name": "Herfindahl-Hirschman Index in Agriculture, Forestry, Fishing and  Hunting",
-        "short_description": "Industry concentration in Agriculture, Forestry, Fishing and  Hunting",
-        "short_name": "HHI in Agriculture, Forestry, Fishing and  Hunting",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Industry concentration in Agriculture, Forestry, Fishing and  Hunting industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_HHI_minority": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Industry concentration among Minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "long_name": "Minority owned business Herfindahl-Hirschman Index in Agriculture, Forestry, Fishing and  Hunting",
-        "short_description": "Industry concentration among Minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_name": "Minority owned business HHI in Agriculture, Forestry, Fishing and  Hunting",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Industry concentration by minority owned business in Agriculture, Forestry, Fishing and  Hunting industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_HHI_small": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Industry concentration among small business in Agriculture, Forestry, Fishing and  Hunting",
-        "long_name": "Small business Herfindahl-Hirschman Index in Agriculture, Forestry, Fishing and  Hunting",
-        "short_description": "Industry concentration among small business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_name": "Small business HHI in Agriculture, Forestry, Fishing and  Hunting",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Industry concentration by small business in Agriculture, Forestry, Fishing and  Hunting industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_average_emp_per_minority": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Average employment per business owned by minority in Agriculture, Forestry, Fishing and  Hunting",
-        "long_name": "Average employment per business owned by minority in Agriculture, Forestry, Fishing and  Hunting",
-        "short_description": "Average employment per business owned by minority in Agriculture, Forestry, Fishing and  Hunting",
-        "short_name": "Average employment per business owned by minority in Agriculture, Forestry, Fishing and  Hunting",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Average employment per business owned by minority in Agriculture, Forestry, Fishing and  Hunting industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_emp_industry": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Total employment in Agriculture, Forestry, Fishing and  Hunting",
-        "long_name": "Total employment in Agriculture, Forestry, Fishing and  Hunting",
-        "short_description": "Total employment in Agriculture, Forestry, Fishing and  Hunting",
-        "short_name": "Total employment in Agriculture, Forestry, Fishing and  Hunting",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Total employment in Agriculture, Forestry, Fishing and  Hunting industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_emp_minority": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Total employment by minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "long_name": "Total employment by minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_description": "Total employment by minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_name": "Total employment by minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Total employment by minority owned business in Agriculture, Forestry, Fishing and  Hunting industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_emp_share_industry": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Share of employment in Agriculture, Forestry, Fishing and  Hunting",
-        "long_name": "Share of employment in Agriculture, Forestry, Fishing and  Hunting",
-        "short_description": "Share of employment in Agriculture, Forestry, Fishing and  Hunting",
-        "short_name": "Share of employment in Agriculture, Forestry, Fishing and  Hunting",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Share of employment in Agriculture, Forestry, Fishing and  Hunting industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_emp_share_minority": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Share of employment by minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "long_name": "Share of employment by minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_description": "Share of employment by minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_name": "Share of employment by minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Share of employment by minority owned business in Agriculture, Forestry, Fishing and  Hunting industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_emp_share_small": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Share of employment by small business in Agriculture, Forestry, Fishing and  Hunting",
-        "long_name": "Share of employment by small business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_description": "Share of employment by small business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_name": "Share of employment by small business in Agriculture, Forestry, Fishing and  Hunting",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Share of employment by small business in Agriculture, Forestry, Fishing and  Hunting industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_emp_small": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Total employment by small Agriculture, Forestry, Fishing and  Hunting",
-        "long_name": "Total employment by small business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_description": "Total employment by small Agriculture, Forestry, Fishing and  Hunting",
-        "short_name": "Total employment by small business in Agriculture, Forestry, Fishing and  Hunting",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Total employement by small business in Agriculture, Forestry, Fishing and  Hunting industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_numb_companies": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Number of business in Administrative and Support and Waste Management and Remediation Services",
-        "long_name": "Number of business in Administrative and Support and Waste Management and Remediation Services",
-        "short_description": "Number of business in Administrative and Support and Waste Management and Remediation Services",
-        "short_name": "Number of business in Administrative and Support and Waste Management and Remediation Services",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Number of business in Administrative and Support and Waste Management and Remediation Services industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_numb_minorityowned_companies": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Number of minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "long_name": "Number of minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_description": "Number of minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_name": "Number of minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Number of minority owned business in Agriculture, Forestry, Fishing and  Hunting industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_numb_small_companies": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Number of small business in Agriculture, Forestry, Fishing and  Hunting",
-        "long_name": "Number of small business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_name": "Number of small business in Agriculture, Forestry, Fishing and  Hunting",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Number of small business in Agriculture, Forestry, Fishing and  Hunting industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_pct_minorityowned_companies": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Percentage of minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "long_name": "Percentage of minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_description": "Percentage of minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_name": "Percentage of minority owned business in Agriculture, Forestry, Fishing and  Hunting",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Percentage of minority owned business in Agriculture, Forestry, Fishing and  Hunting industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_pct_small_companies": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Percentage of small business in Agriculture, Forestry, Fishing and  Hunting",
-        "long_name": "Percentage of small business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_description": "Percentage of small business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_name": "Percentage of small business in Agriculture, Forestry, Fishing and  Hunting",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "percentage of small business in Agriculture, Forestry, Fishing and  Hunting industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Administrative_and_Support_and_Waste_Management_and_Remediation_Services_pct_soloproprietor_companies": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Percentage of sole proprietor business in Agriculture, Forestry, Fishing and  Hunting",
-        "long_name": "Percentage of sole proprietor business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_description": "Percentage of sole proprietor business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_name": "Percentage of sole proprietor business in Agriculture, Forestry, Fishing and  Hunting",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Percentage of sole proprietor business in Agriculture, Forestry, Fishing and  Hunting industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Agriculture,_Forestry,_Fishing_and_Hunting_numb_companies": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Number of business in Agriculture, Forestry, Fishing and  Hunting",
-        "long_name": "Number of business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_description": "Number of business in Agriculture, Forestry, Fishing and  Hunting",
-        "short_name": "Number of business in Agriculture, Forestry, Fishing and  Hunting",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            }
-        ],
-        "statement": "Number of business in Agriculture, Forestry, Fishing and  Hunting industry {features.name} is {value}.",
-        "type": ""
-    },
-    "Agriculture,_Forestry,_Fishing_and_Hunting_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Agriculture,_Forestry,_Fishing_and_Hunting_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "American_indian_and_Alaska_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "American_indian_and_Alaska_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Arts,_Entertainment,_and_Recreation_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Arts,_Entertainment,_and_Recreation_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Asian_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Asian_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Black_or_African_american_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Black_or_African_american_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Construction_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Construction_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Educational_Services_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Educational_Services_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Female_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Female_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Finance_and_Insurance_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Finance_and_Insurance_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Hawaiian_and_other_islander_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Hawaiian_and_other_islander_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Health_Care_and_Social_Assistance_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Health_Care_and_Social_Assistance_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Information_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Information_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Male_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Male_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Management_of_Companies_and_Enterprises_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Management_of_Companies_and_Enterprises_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Manufacturing_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Manufacturing_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Mining,_Quarrying,_and_Oil_and_Gas_Extraction_HHI": {
-        "category": "Business climate",
-        "equity_category": "",
-        "long_description": "Industry activity (measure by employment) compared to the county average",
-        "long_name": "Mining, Quarrying, and Oil and Gas Extraction Herfindahl-Hirschman Index",
-        "short_description": "Industry activity (measure by employment) compared to the county average",
-        "short_name": "Mining, Quarrying, and Oil and Gas Extraction HHI",
-        "sources": [
-            {
-                "date_accessed": "2022",
-                "name": "Mergent Intellect"
-            },
-            {
-                "date_accessed": "2022",
-                "name": "BEA what are the location quotient?",
-                "url": "https://www.bea.gov/help/faq/478"
-            }
-        ],
-        "statement": "Mining, Quarrying, and Oil and Gas Extraction industry activity in {features.name} is {value}.",
-        "type": ""
-    },
-    "Mining,_Quarrying,_and_Oil_and_Gas_Extraction_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Mining,_Quarrying,_and_Oil_and_Gas_Extraction_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Other_Services_(except_Public_Administration)_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Other_Services_(except_Public_Administration)_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Professional,_Scientific,_and_Technical_Services_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Professional,_Scientific,_and_Technical_Services_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Public_Administration_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Public_Administration_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Real_Estate_and_Rental_and_Leasing_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Real_Estate_and_Rental_and_Leasing_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Retail_Trade_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Retail_Trade_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Transportation_and_Warehousing_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Transportation_and_Warehousing_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Two_or_more_races_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Two_or_more_races_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Utilities_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Utilities_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "White_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "White_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
-    "Wholesale_Trade_number_jobs": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "Wholesale_Trade_number_jobs",
-        "measure_table": "vadcmd_bgtrct_lodes_20102019_number_of_jobs",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
     "_references": {
         "liang17": {
             "author": [
@@ -2073,26 +965,6 @@
         "statement": "{value} of the population in {features.name} is employed.",
         "type": "percent"
     },
-    "employed": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "employed",
-        "measure_table": "va_bgtrct_acs_20132019_laborforce",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
-    },
     "employment_access_indicator": {
         "category": "Health Opportunity Index",
         "long_description": " A measure of the number of jobs accessible to members of the community. Accessibility is determined by distance: close jobs are more accessible than jobs farther away.",
@@ -2918,26 +1790,6 @@
         ],
         "statement": "{value} of the cases in {features.name} rated as intermediate.",
         "type": "percent"
-    },
-    "laborforce": {
-        "category": "",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "laborforce",
-        "measure_table": "va_bgtrct_acs_20132019_laborforce",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count"
     },
     "latino_east_african_gravity_models:avocado_ecdf_idx": {
         "category": "Nutrition and Food Security",
@@ -3822,6 +2674,42 @@
         "statement": "",
         "type": "percent"
     },
+    "perc_AAPI": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The Asian American/Pacific Islander population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Asian American/Pacific Islander population (percent)",
+        "measure": "perc_AAPI",
+        "short_description": "The Asian American/Pacific Islander population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Asian American/Pacific Islander population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The Asian American/Pacific Islander population is {value} in {features.name}.",
+        "type": "percent"
+    },
+    "perc_afr_amer_alone": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The Black population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Black population (percent)",
+        "measure": "perc_afr_amer_alone",
+        "short_description": "The Black population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Black population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The Black population is {value} in {features.name}.",
+        "type": "percent"
+    },
     "perc_carpool": {
         "category": "Transportation",
         "equity_category": "Status",
@@ -3948,6 +2836,24 @@
         "statement": "{value} of households in {features.name} do not have internet access.",
         "type": "percent"
     },
+    "perc_hispanic_or_latino": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The Hispanic/Latino population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Hispanic/Latino population (percent)",
+        "measure": "perc_hispanic_or_latino",
+        "short_description": "The Hispanic/Latino population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Hispanic/Latino population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The Hispanic/Latino population is {value} in {features.name}.",
+        "type": "percent"
+    },
     "perc_income_avg_nat_package": {
         "category": "Broadband",
         "equity_category": "Affordability",
@@ -4037,6 +2943,24 @@
         "statement": "The male population is {value} in {features.name}.",
         "type": "percent"
     },
+    "perc_native_alone": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The Native population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Native population (percent)",
+        "measure": "perc_native_alone",
+        "short_description": "The Native population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Native population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The Native population is {value} in {features.name}.",
+        "type": "percent"
+    },
     "perc_no_vehicle": {
         "category": "Transportation",
         "equity_category": "Status",
@@ -4053,6 +2977,24 @@
             }
         ],
         "statement": "{value} of households in {features.name} do not have a vehicle available at home.",
+        "type": "percent"
+    },
+    "perc_other": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The Other racial population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Other racial population (percent)",
+        "measure": "perc_other",
+        "short_description": "The Other racial population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Other racial population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The Other racial population is {value} in {features.name}.",
         "type": "percent"
     },
     "perc_poor_ment_hlth_days_14_and_over": {
@@ -4182,6 +3124,24 @@
         "statement": "{value} of the total population in {features.name} has a good internet speed.",
         "type": "percent"
     },
+    "perc_two_or_more": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Two or more races population (percent)",
+        "measure": "perc_two_or_more",
+        "short_description": "The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Two or more races population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The two or more races population is {value} in {features.name}.",
+        "type": "percent"
+    },
     "perc_veteran": {
         "category": "Demographics",
         "equity_category": "Status",
@@ -4232,6 +3192,24 @@
             }
         ],
         "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
+        "type": "percent"
+    },
+    "perc_wht_alone": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The White population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "White population (percent)",
+        "measure": "perc_wht_alone",
+        "short_description": "The White population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "White population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The White population is {value} in {features.name}.",
         "type": "percent"
     },
     "percent_food_insecure": {
@@ -4285,6 +3263,42 @@
         "statement": "The population over age 64 is {value} in {features.name}.",
         "type": "percent"
     },
+    "pop_AAPI": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The Asian American/Pacific Islander population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Asian American/Pacific Islander population (count)",
+        "measure": "pop_AAPI",
+        "short_description": "The Asian American/Pacific Islander population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Asian American/Pacific Islander population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The Asian American/Pacific Islander population is {value} in {features.name}.",
+        "type": "count"
+    },
+    "pop_afr_amer_alone": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The Black population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Black population (count)",
+        "measure": "pop_afr_amer_alone",
+        "short_description": "The Black population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Black population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The Black population is {value} in {features.name}.",
+        "type": "count"
+    },
     "pop_churning_indicator": {
         "category": "Health Opportunity Index",
         "long_description": "The amount of population turnover within a community. It measure the rate at which people both move into a community and move out of a community.",
@@ -4333,6 +3347,24 @@
         ],
         "statement": "The female population is {value} in {features.name}."
     },
+    "pop_hispanic_or_latino": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The Hispanic/Latino population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Hispanic/Latino population (count)",
+        "measure": "pop_hispanic_or_latino",
+        "short_description": "The Hispanic/Latino population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Hispanic/Latino population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The Hispanic/Latino population is {value} in {features.name}.",
+        "type": "count"
+    },
     "pop_male": {
         "category": "Demographics",
         "equity_category": "Status",
@@ -4349,6 +3381,60 @@
         ],
         "statement": "The male population is {value} in {features.name}.",
         "type": "percent"
+    },
+    "pop_native_alone": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The Native population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Native population (count)",
+        "measure": "pop_native_alone",
+        "short_description": "The Native population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Native population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The Native population is {value} in {features.name}.",
+        "type": "count"
+    },
+    "pop_other": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The Other racial population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Other racial population (count)",
+        "measure": "pop_other",
+        "short_description": "The Other racial population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Other racial population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The Other racial population is {value} in {features.name}.",
+        "type": "count"
+    },
+    "pop_two_or_more": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The two or more races population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Two or more races population (count)",
+        "measure": "pop_two_or_more",
+        "short_description": "The two or more races population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Two or more races population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The two or more races population is {value} in {features.name}.",
+        "type": "count"
     },
     "pop_under_20": {
         "category": "Demographics",
@@ -4382,6 +3468,24 @@
             }
         ],
         "statement": "The Veteran population is {value} in {features.name}."
+    },
+    "pop_wht_alone": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "The White population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "White population (count)",
+        "measure": "pop_wht_alone",
+        "short_description": "The White population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "White population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The White population is {value} in {features.name}.",
+        "type": "count"
     },
     "population": {
         "category": "Nutrition and Food Security",
@@ -5069,6 +4173,24 @@
             }
         ],
         "statement": "Total count of the population is {value} in {features.name}.",
+        "type": "count"
+    },
+    "total_race": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "Total population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Total population (count)",
+        "measure": "total_race",
+        "short_description": "Total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Total population",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "Total population is {value} in {features.name}.",
         "type": "count"
     },
     "urgent_3sfca": {

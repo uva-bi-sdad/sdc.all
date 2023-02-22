@@ -1,32 +1,48 @@
 {
   "name": "sdc.demographics_dev",
   "measure_not_found": [
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Veteran/data/distribution/ncr_trctbg_acs_20092020_veteran_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Veteran/data/distribution/va059_hsrpdsdzc_sdad_20132019_veteran_demographics.csv.xz",
     "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Veteran/data/distribution/va_trctbg_acs_20092020_veteran_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Cooperative extension/data/distribution/va_cttr_2010_2021_perc_male.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Language/data/distribution/ncr_trctbg_acs_20092020_language_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Language/data/distribution/va_trctbg_acs_20092020_language_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Gender/data/distribution/va013_civic_sdad_2019_gender_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Gender/data/distribution/va059_hsrpdsdzc_sdad_2019_gender_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Gender/data/distribution/ncr_trctbg_acs_20092020_gender_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Gender/data/distribution/va_trctbg_acs_20092020_gender_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Age/data/distribution/va013_civic_sdad_2019_age_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Age/data/distribution/ncr_trctbg_acs_20092020_age_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Age/data/distribution/va_trctbg_acs_20092020_age_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Age/data/distribution/va059_hsrpdsdzc_sdad_2019_age_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Race/data/distribution/va013_civic_sdad_2019_race_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Race/data/distribution/va059_hsrpdsdzc_sdad_2019_race_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Veteran/data/distribution/va013_civic_sdad_20132020_veteran_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Veteran/data/distribution/ncr_trctbg_acs_20092020_veteran_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Race/data/distribution/va_trctbg_acs_20092020_race_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Race/data/distribution/va013_civic_sdad_20132020_race_demographics.csv.xz",
     "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Race/data/distribution/ncr_trctbg_acs_20092020_race_demographics.csv.xz",
-    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Race/data/distribution/va_trctbg_acs_20092020_race_demographics.csv.xz"
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Race/data/distribution/va059_hsrpdsdzc_sdad_20132019_race_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Cooperative extension/data/distribution/va_cttr_2010_2021_perc_male.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Gender/data/distribution/va013_civic_sdad_20132020_gender_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Gender/data/distribution/va_trctbg_acs_20092020_gender_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Gender/data/distribution/va059_hsrpdsdzc_sdad_20132019_gender_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Gender/data/distribution/ncr_trctbg_acs_20092020_gender_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Age/data/distribution/ncr_trctbg_acs_20092020_age_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Age/data/distribution/va059_hsrpdsdzc_sdad_20132019_age_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Age/data/distribution/va_trctbg_acs_20092020_age_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Age/data/distribution/va013_civic_sdad_20132020_age_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Language/data/distribution/va_trctbg_acs_20092020_language_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Language/data/distribution/va059_hsrpdsdzc_sdad_20132019_language_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Language/data/distribution/va013_civic_sdad_20132020_language_demographics.csv.xz",
+    "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Language/data/distribution/ncr_trctbg_acs_20092020_language_demographics.csv.xz"
   ],
-  "count": 57,
-  "utc_audited": "2023-02-17 15:59:56",
+  "count": 61,
+  "utc_audited": "2023-02-20 20:10:39",
   "data": [
     {
-      "name": "ncr_trctbg_acs_20092020_veteran_demographics.csv.xz",
-      "path": "Veteran/data/distribution/ncr_trctbg_acs_20092020_veteran_demographics.csv.xz",
-      "md5": "9cc335f6730d72b4b77bc54778a65fef",
-      "size": 589616
+      "name": "temp",
+      "path": "Veteran/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "va059_hsrpdsdzc_sdad_20132019_veteran_demographics.csv.xz",
+      "path": "Veteran/data/distribution/va059_hsrpdsdzc_sdad_20132019_veteran_demographics.csv.xz",
+      "md5": "f98b1b01b24ca211a8b9b791490852bc",
+      "size": 12144
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Veteran/data/distribution/measure_info.json",
+      "md5": "75f98947e6b591ecdf8077b68a9e4dae",
+      "size": 1433
     },
     {
       "name": "va_trctbg_acs_20092020_veteran_demographics.csv.xz",
@@ -35,10 +51,16 @@
       "size": 955420
     },
     {
-      "name": "measure_info.json",
-      "path": "Veteran/data/distribution/measure_info.json",
-      "md5": "75f98947e6b591ecdf8077b68a9e4dae",
-      "size": 1433
+      "name": "va013_civic_sdad_20132020_veteran_demographics.csv.xz",
+      "path": "Veteran/data/distribution/va013_civic_sdad_20132020_veteran_demographics.csv.xz",
+      "md5": "ac1f2378a0967a15f4aa5395e2628d57",
+      "size": 10424
+    },
+    {
+      "name": "ncr_trctbg_acs_20092020_veteran_demographics.csv.xz",
+      "path": "Veteran/data/distribution/ncr_trctbg_acs_20092020_veteran_demographics.csv.xz",
+      "md5": "9cc335f6730d72b4b77bc54778a65fef",
+      "size": 589616
     },
     {
       "name": "ingest_acs.R",
@@ -49,114 +71,60 @@
     {
       "name": "prepare_newgeography.R",
       "path": "Veteran/code/distribution/prepare_newgeography.R",
-      "md5": "495710dc90dfa52577ad7cc72faef54b",
-      "size": 7075
+      "md5": "e9b9c751ab489c3a4f5192304719f55d",
+      "size": 7765
     },
     {
       "name": "temp",
-      "path": "Veteran/docs/distribution/temp",
+      "path": "Race/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "Synthetic_population/Housing_units_distribution/Fairfax/data/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "va_trctbg_acs_20092020_race_demographics.csv.xz",
+      "path": "Race/data/distribution/va_trctbg_acs_20092020_race_demographics.csv.xz",
+      "md5": "4ac8c0411ed7b9123f3b1b55249ecb3f",
+      "size": 6427384
     },
     {
-      "name": "ingest01.R",
-      "path": "Synthetic_population/Housing_units_distribution/Fairfax/code/distribution/ingest01.R",
-      "md5": "be8b672be55c73de8b1fdeec5639d20c",
-      "size": 4355
+      "name": "measure_info.json",
+      "path": "Race/data/distribution/measure_info.json",
+      "md5": "8c631e7a71cf517eda9f487f83edf23b",
+      "size": 11041
     },
     {
-      "name": "temp",
-      "path": "Synthetic_population/Housing_units_distribution/Fairfax/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "va013_civic_sdad_20132020_race_demographics.csv.xz",
+      "path": "Race/data/distribution/va013_civic_sdad_20132020_race_demographics.csv.xz",
+      "md5": "1a84bd7eb3499fc6b9474ad17ef40fa7",
+      "size": 70876
     },
     {
-      "name": "prepare_demographics.R",
-      "path": "Synthetic_population/Housing_units_distribution/Fairfax/code/distribution/prepare_demographics.R",
-      "md5": "0c6cd97a6bae9f858b76893bd56d8967",
-      "size": 3498
+      "name": "ncr_trctbg_acs_20092020_race_demographics.csv.xz",
+      "path": "Race/data/distribution/ncr_trctbg_acs_20092020_race_demographics.csv.xz",
+      "md5": "0c0bec26fa2798d3b035baed06bca895",
+      "size": 4363644
     },
     {
-      "name": "prepare_broadband.R",
-      "path": "Synthetic_population/Housing_units_distribution/Fairfax/code/distribution/prepare_broadband.R",
-      "md5": "1909776b31235a6d901a34106a98acd2",
-      "size": 3750
+      "name": "va059_hsrpdsdzc_sdad_20132019_race_demographics.csv.xz",
+      "path": "Race/data/distribution/va059_hsrpdsdzc_sdad_20132019_race_demographics.csv.xz",
+      "md5": "6c82c3bd72bdb31117938f703bd8b6fd",
+      "size": 90344
     },
     {
-      "name": "temp",
-      "path": "Synthetic_population/Housing_units_distribution/Fairfax/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "ingest_acs.R",
+      "path": "Race/code/distribution/ingest_acs.R",
+      "md5": "e6f594cc8439e2dd0cd85928221c2bfb",
+      "size": 8304
     },
     {
-      "name": "temp",
-      "path": "Synthetic_population/Housing_units_distribution/DC/data/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "ingest_acs_dc.R",
-      "path": "Synthetic_population/Housing_units_distribution/DC/code/distribution/ingest_acs_dc.R",
-      "md5": "1c7874c9f52bed95672255e67db1f154",
-      "size": 4489
-    },
-    {
-      "name": "ingest01.R",
-      "path": "Synthetic_population/Housing_units_distribution/DC/code/distribution/ingest01.R",
-      "md5": "387ab3ab0fecba4d1a12bd06be4ed4c7",
-      "size": 4376
-    },
-    {
-      "name": "prepare_demographics.R",
-      "path": "Synthetic_population/Housing_units_distribution/DC/code/distribution/prepare_demographics.R",
-      "md5": "87e9116880f4c4c9e654d1dbf86f859e",
-      "size": 2208
-    },
-    {
-      "name": "prepare_broadband.R",
-      "path": "Synthetic_population/Housing_units_distribution/DC/code/distribution/prepare_broadband.R",
-      "md5": "8b3b210430b068cd161b5d6854c28c5d",
-      "size": 3759
+      "name": "prepare_newgeography.R",
+      "path": "Race/code/distribution/prepare_newgeography.R",
+      "md5": "0d57fdc5d16f1c4589f81508106ed0f6",
+      "size": 8587
     },
     {
       "name": "temp",
-      "path": "Synthetic_population/Housing_units_distribution/DC/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Synthetic_population/Housing_units_distribution/Arlington/data/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "ingest01.R",
-      "path": "Synthetic_population/Housing_units_distribution/Arlington/code/distribution/ingest01.R",
-      "md5": "331fb4599ee110b1920a7ff7e6947cdc",
-      "size": 2414
-    },
-    {
-      "name": "temp",
-      "path": "Synthetic_population/Housing_units_distribution/Arlington/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare_demographics.R",
-      "path": "Synthetic_population/Housing_units_distribution/Arlington/code/distribution/prepare_demographics.R",
-      "md5": "5424d9783a8c3f136dc6cf638a9aba85",
-      "size": 3885
-    },
-    {
-      "name": "temp",
-      "path": "Synthetic_population/Housing_units_distribution/Arlington/docs/distribution/temp",
+      "path": "Cooperative extension/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     },
@@ -180,57 +148,9 @@
     },
     {
       "name": "temp",
-      "path": "Cooperative extension/docs/distribution/temp",
+      "path": "Gender/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
-    },
-    {
-      "name": "ncr_trctbg_acs_20092020_language_demographics.csv.xz",
-      "path": "Language/data/distribution/ncr_trctbg_acs_20092020_language_demographics.csv.xz",
-      "md5": "b9a9605dd3d6fba23b42285ca8c5e102",
-      "size": 409692
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Language/data/distribution/measure_info.json",
-      "md5": "88b18b3aa147ee505c98705feb3b290c",
-      "size": 2272
-    },
-    {
-      "name": "va_trctbg_acs_20092020_language_demographics.csv.xz",
-      "path": "Language/data/distribution/va_trctbg_acs_20092020_language_demographics.csv.xz",
-      "md5": "76eb33b97e56215873746324b313302a",
-      "size": 602004
-    },
-    {
-      "name": "ingest_acs.R",
-      "path": "Language/code/distribution/ingest_acs.R",
-      "md5": "ae1b9d570f315ae5b6714249f5a0e011",
-      "size": 6556
-    },
-    {
-      "name": "prepare_newgeography.R",
-      "path": "Language/code/distribution/prepare_newgeography.R",
-      "md5": "495710dc90dfa52577ad7cc72faef54b",
-      "size": 7075
-    },
-    {
-      "name": "temp",
-      "path": "Language/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "va013_civic_sdad_2019_gender_demographics.csv.xz",
-      "path": "Gender/data/distribution/va013_civic_sdad_2019_gender_demographics.csv.xz",
-      "md5": "ae0e4a4ae012e66d10561ae6511560de",
-      "size": 4024
-    },
-    {
-      "name": "va059_hsrpdsdzc_sdad_2019_gender_demographics.csv.xz",
-      "path": "Gender/data/distribution/va059_hsrpdsdzc_sdad_2019_gender_demographics.csv.xz",
-      "md5": "1623aa3be43aaf73bb97e0ef9a5a173b",
-      "size": 5088
     },
     {
       "name": "measure_info.json",
@@ -239,16 +159,28 @@
       "size": 3534
     },
     {
-      "name": "ncr_trctbg_acs_20092020_gender_demographics.csv.xz",
-      "path": "Gender/data/distribution/ncr_trctbg_acs_20092020_gender_demographics.csv.xz",
-      "md5": "7d2ea5147b1c6ab418b93e081f4f8d3f",
-      "size": 1518948
+      "name": "va013_civic_sdad_20132020_gender_demographics.csv.xz",
+      "path": "Gender/data/distribution/va013_civic_sdad_20132020_gender_demographics.csv.xz",
+      "md5": "731236ed1b938754be71cfdc6db6d291",
+      "size": 25764
     },
     {
       "name": "va_trctbg_acs_20092020_gender_demographics.csv.xz",
       "path": "Gender/data/distribution/va_trctbg_acs_20092020_gender_demographics.csv.xz",
       "md5": "68b98f70617530dc9cbde9e2197b7957",
       "size": 2391576
+    },
+    {
+      "name": "va059_hsrpdsdzc_sdad_20132019_gender_demographics.csv.xz",
+      "path": "Gender/data/distribution/va059_hsrpdsdzc_sdad_20132019_gender_demographics.csv.xz",
+      "md5": "b2c6731b3d6ff26d69e4ac2e4394b14c",
+      "size": 12684
+    },
+    {
+      "name": "ncr_trctbg_acs_20092020_gender_demographics.csv.xz",
+      "path": "Gender/data/distribution/ncr_trctbg_acs_20092020_gender_demographics.csv.xz",
+      "md5": "7d2ea5147b1c6ab418b93e081f4f8d3f",
+      "size": 1518948
     },
     {
       "name": "ingest_acs.R",
@@ -259,26 +191,26 @@
     {
       "name": "prepare_newgeography.R",
       "path": "Gender/code/distribution/prepare_newgeography.R",
-      "md5": "c42811d16043b0645947966079cd9429",
-      "size": 7102
+      "md5": "cda97f357467819479a8c90f0c826758",
+      "size": 7835
     },
     {
       "name": "temp",
-      "path": "Gender/docs/distribution/temp",
+      "path": "Age/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
-    },
-    {
-      "name": "va013_civic_sdad_2019_age_demographics.csv.xz",
-      "path": "Age/data/distribution/va013_civic_sdad_2019_age_demographics.csv.xz",
-      "md5": "8e599ffaed0e48bbaf406ac52f3db723",
-      "size": 5460
     },
     {
       "name": "ncr_trctbg_acs_20092020_age_demographics.csv.xz",
       "path": "Age/data/distribution/ncr_trctbg_acs_20092020_age_demographics.csv.xz",
       "md5": "a660b7b28c1e3c7f24026d0dcb25de6e",
       "size": 2203532
+    },
+    {
+      "name": "va059_hsrpdsdzc_sdad_20132019_age_demographics.csv.xz",
+      "path": "Age/data/distribution/va059_hsrpdsdzc_sdad_20132019_age_demographics.csv.xz",
+      "md5": "81e7f36a988ca583b61efca26a152abf",
+      "size": 42500
     },
     {
       "name": "measure_info.json",
@@ -293,10 +225,10 @@
       "size": 3463324
     },
     {
-      "name": "va059_hsrpdsdzc_sdad_2019_age_demographics.csv.xz",
-      "path": "Age/data/distribution/va059_hsrpdsdzc_sdad_2019_age_demographics.csv.xz",
-      "md5": "d32218bc992cd871240bc640c5036ea9",
-      "size": 7016
+      "name": "va013_civic_sdad_20132020_age_demographics.csv.xz",
+      "path": "Age/data/distribution/va013_civic_sdad_20132020_age_demographics.csv.xz",
+      "md5": "c4e3f30f9171c74f62190b4298e53f78",
+      "size": 36264
     },
     {
       "name": "ingest_acs.R",
@@ -307,62 +239,158 @@
     {
       "name": "prepare_newgeography.R",
       "path": "Age/code/distribution/prepare_newgeography.R",
-      "md5": "f2d9f4dace8aecbd391f94597bb8a8ee",
-      "size": 7286
+      "md5": "19e82fd5d12103d3eca1988514efca36",
+      "size": 8161
     },
     {
       "name": "temp",
-      "path": "Age/docs/distribution/temp",
+      "path": "Synthetic_population/Housing_units_distribution/DC/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     },
     {
-      "name": "va013_civic_sdad_2019_race_demographics.csv.xz",
-      "path": "Race/data/distribution/va013_civic_sdad_2019_race_demographics.csv.xz",
-      "md5": "43ac62e46e80c2d54a0318f33f40ca0b",
-      "size": 7356
+      "name": "temp",
+      "path": "Synthetic_population/Housing_units_distribution/DC/data/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
     },
     {
-      "name": "va059_hsrpdsdzc_sdad_2019_race_demographics.csv.xz",
-      "path": "Race/data/distribution/va059_hsrpdsdzc_sdad_2019_race_demographics.csv.xz",
-      "md5": "740fbb1a6bf654318d98097e24748cb2",
-      "size": 10384
+      "name": "prepare_demographics.R",
+      "path": "Synthetic_population/Housing_units_distribution/DC/code/distribution/prepare_demographics.R",
+      "md5": "87e9116880f4c4c9e654d1dbf86f859e",
+      "size": 2208
     },
     {
-      "name": "ncr_trctbg_acs_20092020_race_demographics.csv.xz",
-      "path": "Race/data/distribution/ncr_trctbg_acs_20092020_race_demographics.csv.xz",
-      "md5": "0c0bec26fa2798d3b035baed06bca895",
-      "size": 4363644
+      "name": "ingest01.R",
+      "path": "Synthetic_population/Housing_units_distribution/DC/code/distribution/ingest01.R",
+      "md5": "387ab3ab0fecba4d1a12bd06be4ed4c7",
+      "size": 4376
+    },
+    {
+      "name": "prepare_broadband.R",
+      "path": "Synthetic_population/Housing_units_distribution/DC/code/distribution/prepare_broadband.R",
+      "md5": "8b3b210430b068cd161b5d6854c28c5d",
+      "size": 3759
+    },
+    {
+      "name": "ingest_acs_dc.R",
+      "path": "Synthetic_population/Housing_units_distribution/DC/code/distribution/ingest_acs_dc.R",
+      "md5": "1c7874c9f52bed95672255e67db1f154",
+      "size": 4489
+    },
+    {
+      "name": "temp",
+      "path": "Synthetic_population/Housing_units_distribution/Arlington/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Synthetic_population/Housing_units_distribution/Arlington/data/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "prepare_demographics.R",
+      "path": "Synthetic_population/Housing_units_distribution/Arlington/code/distribution/prepare_demographics.R",
+      "md5": "4248c1ffe27b01fb03271b0c5c6ff2ed",
+      "size": 7532
+    },
+    {
+      "name": "ingest01.R",
+      "path": "Synthetic_population/Housing_units_distribution/Arlington/code/distribution/ingest01.R",
+      "md5": "331fb4599ee110b1920a7ff7e6947cdc",
+      "size": 2414
+    },
+    {
+      "name": "temp",
+      "path": "Synthetic_population/Housing_units_distribution/Arlington/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Synthetic_population/Housing_units_distribution/Fairfax/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Synthetic_population/Housing_units_distribution/Fairfax/data/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "prepare_demographics.R",
+      "path": "Synthetic_population/Housing_units_distribution/Fairfax/code/distribution/prepare_demographics.R",
+      "md5": "56a747dc4d557fb658252d4b36c658ef",
+      "size": 7170
+    },
+    {
+      "name": "ingest01.R",
+      "path": "Synthetic_population/Housing_units_distribution/Fairfax/code/distribution/ingest01.R",
+      "md5": "dc14efef8d9914f1bea1fd3a64720751",
+      "size": 4355
+    },
+    {
+      "name": "prepare_broadband.R",
+      "path": "Synthetic_population/Housing_units_distribution/Fairfax/code/distribution/prepare_broadband.R",
+      "md5": "1909776b31235a6d901a34106a98acd2",
+      "size": 3750
+    },
+    {
+      "name": "temp",
+      "path": "Synthetic_population/Housing_units_distribution/Fairfax/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "Language/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
     },
     {
       "name": "measure_info.json",
-      "path": "Race/data/distribution/measure_info.json",
-      "md5": "f11ec64d781e971fc97ba7c3f35048da",
-      "size": 11062
+      "path": "Language/data/distribution/measure_info.json",
+      "md5": "88b18b3aa147ee505c98705feb3b290c",
+      "size": 2272
     },
     {
-      "name": "va_trctbg_acs_20092020_race_demographics.csv.xz",
-      "path": "Race/data/distribution/va_trctbg_acs_20092020_race_demographics.csv.xz",
-      "md5": "4ac8c0411ed7b9123f3b1b55249ecb3f",
-      "size": 6427384
+      "name": "va_trctbg_acs_20092020_language_demographics.csv.xz",
+      "path": "Language/data/distribution/va_trctbg_acs_20092020_language_demographics.csv.xz",
+      "md5": "76eb33b97e56215873746324b313302a",
+      "size": 602004
+    },
+    {
+      "name": "va059_hsrpdsdzc_sdad_20132019_language_demographics.csv.xz",
+      "path": "Language/data/distribution/va059_hsrpdsdzc_sdad_20132019_language_demographics.csv.xz",
+      "md5": "b2c6731b3d6ff26d69e4ac2e4394b14c",
+      "size": 12684
+    },
+    {
+      "name": "va013_civic_sdad_20132020_language_demographics.csv.xz",
+      "path": "Language/data/distribution/va013_civic_sdad_20132020_language_demographics.csv.xz",
+      "md5": "30361f76ba901bfe38aff2ff4b15ea7c",
+      "size": 10980
+    },
+    {
+      "name": "ncr_trctbg_acs_20092020_language_demographics.csv.xz",
+      "path": "Language/data/distribution/ncr_trctbg_acs_20092020_language_demographics.csv.xz",
+      "md5": "b9a9605dd3d6fba23b42285ca8c5e102",
+      "size": 409692
     },
     {
       "name": "ingest_acs.R",
-      "path": "Race/code/distribution/ingest_acs.R",
-      "md5": "e6f594cc8439e2dd0cd85928221c2bfb",
-      "size": 8304
+      "path": "Language/code/distribution/ingest_acs.R",
+      "md5": "e241d41e9e06ed2febf9764bdf5b3d5b",
+      "size": 6556
     },
     {
       "name": "prepare_newgeography.R",
-      "path": "Race/code/distribution/prepare_newgeography.R",
-      "md5": "da159011beb9ba6716bc90f4504908e5",
-      "size": 7577
-    },
-    {
-      "name": "temp",
-      "path": "Race/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "path": "Language/code/distribution/prepare_newgeography.R",
+      "md5": "31431eb0455ce136d6a4f220649d3d31",
+      "size": 7654
     }
   ],
   "_references": {}
