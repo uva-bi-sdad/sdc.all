@@ -1242,6 +1242,7 @@
         "equity_category": "Status",
         "long_description": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates Table C16002.",
         "long_name": "Limited English households",
+        "measure": "hh_limited_english",
         "short_description": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_name": "Limited English households",
         "sources": [
@@ -1251,7 +1252,8 @@
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "The count of households with limited English is {value} in {features.name}."
+        "statement": "The count of households with limited English is {value} in {features.name}.",
+        "type": "count"
     },
     "hh_received_snap_cnt": {
         "category": "Nutrition and Food Security",
@@ -2561,14 +2563,12 @@
         "statement": "",
         "type": "count"
     },
-    "mrfei:mrfei": {
+    "mrfei": {
         "category": "Nutrition and Food Security",
         "equity_category": "Availability",
-        "full_name": "mrfei:mrfei",
+        "long_description": "The number of available healthy and less healthy food retailers. A higher score indicates more available healthy options per less healthy options. A score of 0 indicates no available options (food desert).",
         "long_name": "Retail food environment index",
-        "measure": "mrfei",
-        "measure_table": "va_catr_sdad_2021_mrfei",
-        "short_description": "The number of available healthy and less healthy food retailers. A higher score indicates more available healthy options per less healthy options. A score of 0 indicates available no options (food desert).",
+        "short_description": "The number of available healthy and less healthy food retailers. A higher score indicates more available healthy options per less healthy options. A score of 0 indicates no available options (food desert).",
         "short_name": "Retail food environment index",
         "sources": [
             {
@@ -2733,6 +2733,7 @@
         "equity_category": "Status",
         "long_description": "The percent of females in the total population. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
         "long_name": "Female population (percent)",
+        "measure": "perc_female",
         "short_description": "The percent of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
         "short_name": "Female population",
         "sources": [
@@ -2742,13 +2743,15 @@
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "The female population is {value} in {features.name}."
+        "statement": "The female population is {value} in {features.name}.",
+        "type": "percent"
     },
     "perc_hh_limited_english": {
         "category": "Demographics",
         "equity_category": "Status",
         "long_description": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates Table C16002.",
         "long_name": "Limited English households (percent)",
+        "measure": "perc_hh_limited_english",
         "short_description": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_name": "Limited English households",
         "sources": [
@@ -2758,7 +2761,8 @@
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "The percent of households with limited English is {value} in {features.name}."
+        "statement": "The percent of households with limited English is {value} in {features.name}.",
+        "type": "percent"
     },
     "perc_hh_with_broadband": {
         "category": "Broadband",
@@ -2931,6 +2935,7 @@
         "equity_category": "Status",
         "long_description": "The percent of males in the total population. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
         "long_name": "Male population (percent)",
+        "measure": "perc_male",
         "short_description": "The percent of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
         "short_name": "Male population",
         "sources": [
@@ -3042,6 +3047,7 @@
         "equity_category": "Status",
         "long_description": "The percent of the population between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
         "long_name": "20 to 64 population (percent)",
+        "measure": "perc_pop_20_64",
         "short_description": "The percent of the population between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_name": "20 to 64 population",
         "sources": [
@@ -3059,6 +3065,7 @@
         "equity_category": "Status",
         "long_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
         "long_name": "65 plus population (percent)",
+        "measure": "perc_pop_65_plus",
         "short_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_name": "65 plus population",
         "sources": [
@@ -3076,6 +3083,7 @@
         "equity_category": "Status",
         "long_description": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
         "long_name": "Under 20 population (percent)",
+        "measure": "perc_pop_under_20",
         "short_description": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_name": "Under 20 population",
         "sources": [
@@ -3147,6 +3155,7 @@
         "equity_category": "Status",
         "long_description": "The Veteran population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B21001.",
         "long_name": "Veteran population (percent)",
+        "measure": "perc_veteran",
         "short_description": "The Veteran population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_name": "Veteran population",
         "sources": [
@@ -3156,7 +3165,8 @@
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "The Veteran population is {value} in {features.name}."
+        "statement": "The Veteran population is {value} in {features.name}.",
+        "type": "percent"
     },
     "perc_w_int_100_20_using_devices": {
         "category": "Broadband",
@@ -3234,6 +3244,7 @@
         "equity_category": "Status",
         "long_description": "The population between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
         "long_name": "20 to 64 population (count)",
+        "measure": "pop_20_64",
         "short_description": "The population between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_name": "20 to 64 population",
         "sources": [
@@ -3244,13 +3255,14 @@
             }
         ],
         "statement": "The population between age 20 and 64 is {value} in {features.name}.",
-        "type": "percent"
+        "type": "count"
     },
     "pop_65_plus": {
         "category": "Demographics",
         "equity_category": "Status",
         "long_description": "The population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
         "long_name": "65 plus population (count)",
+        "measure": "pop_65_plus",
         "short_description": "The population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_name": "65 plus population",
         "sources": [
@@ -3261,7 +3273,7 @@
             }
         ],
         "statement": "The population over age 64 is {value} in {features.name}.",
-        "type": "percent"
+        "type": "count"
     },
     "pop_AAPI": {
         "category": "Demographics",
@@ -3331,11 +3343,30 @@
         "statement": "The population density indicator in {features.name} is {value}.",
         "type": "index"
     },
+    "pop_eth_tot": {
+        "category": "Demographics",
+        "equity_category": "Status",
+        "long_description": "Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "long_name": "Total population ethnique(count)",
+        "measure": "pop_eth_tot",
+        "short_description": "Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Total population ethnique",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "name": "American Community Survey Table B01001",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "Total population ethnique is {value} in {features.name}.",
+        "type": "count"
+    },
     "pop_female": {
         "category": "Demographics",
         "equity_category": "Status",
         "long_description": "The count of females in the total population. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
         "long_name": "Female population (count)",
+        "measure": "pop_female",
         "short_description": "The count of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
         "short_name": "Female population",
         "sources": [
@@ -3345,7 +3376,8 @@
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "The female population is {value} in {features.name}."
+        "statement": "The female population is {value} in {features.name}.",
+        "type": "count"
     },
     "pop_hispanic_or_latino": {
         "category": "Demographics",
@@ -3370,6 +3402,7 @@
         "equity_category": "Status",
         "long_description": "The count of males in the total population. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
         "long_name": "Male population (count)",
+        "measure": "pop_male",
         "short_description": "The count of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
         "short_name": "Male population",
         "sources": [
@@ -3380,7 +3413,7 @@
             }
         ],
         "statement": "The male population is {value} in {features.name}.",
-        "type": "percent"
+        "type": "count"
     },
     "pop_native_alone": {
         "category": "Demographics",
@@ -3441,6 +3474,7 @@
         "equity_category": "Status",
         "long_description": "The population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
         "long_name": "Under 20 population (count)",
+        "measure": "pop_under_20",
         "short_description": "The population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_name": "Under 20 population",
         "sources": [
@@ -3451,13 +3485,14 @@
             }
         ],
         "statement": "The population under age 20 is {value} in {features.name}.",
-        "type": "percent"
+        "type": "count"
     },
     "pop_veteran": {
         "category": "Demographics",
         "equity_category": "Status",
         "long_description": "The Veteran population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B21001.",
         "long_name": "Veteran population (count)",
+        "measure": "pop_veteran",
         "short_description": "The Veteran population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_name": "Veteran population",
         "sources": [
@@ -3467,7 +3502,8 @@
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "The Veteran population is {value} in {features.name}."
+        "statement": "The Veteran population is {value} in {features.name}.",
+        "type": "count"
     },
     "pop_wht_alone": {
         "category": "Demographics",
@@ -4147,6 +4183,7 @@
         "equity_category": "Status",
         "long_description": "The count of households. Based on American Community Survey ACS 2015/2019 5-year estimates Table C16002.",
         "long_name": "Total count of households",
+        "measure": "total_hh",
         "short_description": "The count of households. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_name": "Total count of households",
         "sources": [
@@ -4156,13 +4193,15 @@
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "The count of households is {value} in {features.name}."
+        "statement": "The count of households is {value} in {features.name}.",
+        "type": "count"
     },
     "total_pop": {
         "category": "Demographics",
         "equity_category": "Status",
         "long_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
         "long_name": "Population (count)",
+        "measure": "total_pop",
         "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_name": "Under 20 population",
         "sources": [

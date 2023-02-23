@@ -9,8 +9,8 @@
     "/home/runner/work/sdc.housing_dev/sdc.housing_dev/Operations and Planning/Cost-burdened HHs/data/distribution/vadcmd_ct_acs_2014_2019_cost_burdened_hhs.csv",
     "/home/runner/work/sdc.housing_dev/sdc.housing_dev/Operations and Planning/Cost-burdened HHs/data/distribution/vadcmd_tr_acs_2014_2019_cost_burdened_hhs.csv"
   ],
-  "count": 16,
-  "utc_audited": "2023-01-26 23:23:38",
+  "count": 15,
+  "utc_audited": "2023-01-27 16:20:47",
   "data": [
     {
       "name": "ncr_cttrbg_acs5_2009_2019_housing_access.csv.xz",
@@ -77,12 +77,6 @@
       "path": "Operations and Planning/Cost-burdened HHs/data/distribution/measure_info.json",
       "md5": "6eb467b67be61f8dc08186e6cfcf102d",
       "size": 4209
-    },
-    {
-      "name": "measure_info_vadcmd_tr_acs_2014_2019_cost_burdened_hhs.json",
-      "path": "Operations and Planning/Cost-burdened HHs/data/distribution/measure_info_vadcmd_tr_acs_2014_2019_cost_burdened_hhs.json",
-      "md5": "f009a85492f7bae67c38531df0b1312f",
-      "size": 4208
     },
     {
       "name": "vadcmd_ct_acs_2014_2019_cost_burdened_hhs.csv",

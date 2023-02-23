@@ -2,13 +2,19 @@
   "name": "sdc.education_dev",
   "measure_not_found": [
     "/home/runner/work/sdc.education_dev/sdc.education_dev/Reading/data/distribution/va_hdctsd_vdoe_2019_2021_3rd_grade_mean_median_read_score.csv.xz",
-    "/home/runner/work/sdc.education_dev/sdc.education_dev/Postsecondary/data/distribution/nces.csv.xz",
+    "/home/runner/work/sdc.education_dev/sdc.education_dev/Daycare/data/distribution/vdss.csv.xz",
     "/home/runner/work/sdc.education_dev/sdc.education_dev/Postsecondary/data/distribution/acs.csv.xz",
-    "/home/runner/work/sdc.education_dev/sdc.education_dev/Daycare/data/distribution/vdss.csv.xz"
+    "/home/runner/work/sdc.education_dev/sdc.education_dev/Postsecondary/data/distribution/nces.csv.xz"
   ],
   "count": 24,
-  "utc_audited": "2023-01-29 14:20:01",
+  "utc_audited": "2023-02-22 16:25:24",
   "data": [
+    {
+      "name": "temp",
+      "path": "Reading/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
     {
       "name": "measure_info.json",
       "path": "Reading/data/distribution/measure_info.json",
@@ -29,7 +35,37 @@
     },
     {
       "name": "temp",
-      "path": "Reading/docs/distribution/temp",
+      "path": "Daycare/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Daycare/data/distribution/measure_info.json",
+      "md5": "497f6ef96a9f1dc7dc01c9b2b6919ef7",
+      "size": 9494
+    },
+    {
+      "name": "points_2021.geojson",
+      "path": "Daycare/data/distribution/points_2021.geojson",
+      "md5": "24925d757226d99288b61d0ace2e7d56",
+      "size": 2246630
+    },
+    {
+      "name": "vdss.csv.xz",
+      "path": "Daycare/data/distribution/vdss.csv.xz",
+      "md5": "80b4d0df57db74bcf2b9d4bebaab01cd",
+      "size": 553672
+    },
+    {
+      "name": "ingest.R",
+      "path": "Daycare/code/distribution/ingest.R",
+      "md5": "155b062d013cf71bcd9bb8120ba61d6f",
+      "size": 15707
+    },
+    {
+      "name": "temp",
+      "path": "Postsecondary/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     },
@@ -46,6 +82,36 @@
       "size": 186142
     },
     {
+      "name": "measure_info.json",
+      "path": "Postsecondary/data/distribution/measure_info.json",
+      "md5": "9eec0a23cb41128dcf3b80daaf2a38a6",
+      "size": 24276
+    },
+    {
+      "name": "points_2021.geojson",
+      "path": "Postsecondary/data/distribution/points_2021.geojson",
+      "md5": "5cb42d6bb3efada1fae9db837f5d9aa6",
+      "size": 151036
+    },
+    {
+      "name": "points_2020.geojson",
+      "path": "Postsecondary/data/distribution/points_2020.geojson",
+      "md5": "6cc75cae3cb4b3ef52b4d022c57b0f68",
+      "size": 152629
+    },
+    {
+      "name": "acs.csv.xz",
+      "path": "Postsecondary/data/distribution/acs.csv.xz",
+      "md5": "0895b3ad9930472a575d0a2e6ec5d1a9",
+      "size": 1509228
+    },
+    {
+      "name": "points_2016.geojson",
+      "path": "Postsecondary/data/distribution/points_2016.geojson",
+      "md5": "ebd951beda8e201f72c1de09ead75d2a",
+      "size": 176590
+    },
+    {
       "name": "points_2013.geojson",
       "path": "Postsecondary/data/distribution/points_2013.geojson",
       "md5": "4ddb03bec1db790b2342584af8189c3f",
@@ -58,28 +124,10 @@
       "size": 164296
     },
     {
-      "name": "nces.csv.xz",
-      "path": "Postsecondary/data/distribution/nces.csv.xz",
-      "md5": "ee36118b28a967e7e741fd7315b4d476",
-      "size": 12875636
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Postsecondary/data/distribution/measure_info.json",
-      "md5": "9eec0a23cb41128dcf3b80daaf2a38a6",
-      "size": 24276
-    },
-    {
-      "name": "points_2016.geojson",
-      "path": "Postsecondary/data/distribution/points_2016.geojson",
-      "md5": "ebd951beda8e201f72c1de09ead75d2a",
-      "size": 176590
-    },
-    {
-      "name": "points_2020.geojson",
-      "path": "Postsecondary/data/distribution/points_2020.geojson",
-      "md5": "6cc75cae3cb4b3ef52b4d022c57b0f68",
-      "size": 152629
+      "name": "points_2017.geojson",
+      "path": "Postsecondary/data/distribution/points_2017.geojson",
+      "md5": "953bdf9a1038fae1ef552935557dc28b",
+      "size": 171137
     },
     {
       "name": "points_2019.geojson",
@@ -88,70 +136,22 @@
       "size": 157198
     },
     {
-      "name": "acs.csv.xz",
-      "path": "Postsecondary/data/distribution/acs.csv.xz",
-      "md5": "dbb1aa52933f317082b4dbec58243a11",
-      "size": 1529388
-    },
-    {
-      "name": "points_2017.geojson",
-      "path": "Postsecondary/data/distribution/points_2017.geojson",
-      "md5": "953bdf9a1038fae1ef552935557dc28b",
-      "size": 171137
-    },
-    {
-      "name": "points_2021.geojson",
-      "path": "Postsecondary/data/distribution/points_2021.geojson",
-      "md5": "5cb42d6bb3efada1fae9db837f5d9aa6",
-      "size": 151036
-    },
-    {
-      "name": "ingest_nces.R",
-      "path": "Postsecondary/code/distribution/ingest_nces.R",
-      "md5": "51945140f528eae8e5ff74e85011e30a",
-      "size": 13435
+      "name": "nces.csv.xz",
+      "path": "Postsecondary/data/distribution/nces.csv.xz",
+      "md5": "87d6614bc2c7b1e3f31f5f45b0401551",
+      "size": 12875828
     },
     {
       "name": "ingest_acs.R",
       "path": "Postsecondary/code/distribution/ingest_acs.R",
-      "md5": "70ff414dfa02dc74c661178d99d302e4",
-      "size": 4924
+      "md5": "0af4fc14d17352b4aa0c997fe9391dde",
+      "size": 5197
     },
     {
-      "name": "temp",
-      "path": "Postsecondary/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Daycare/data/distribution/measure_info.json",
-      "md5": "497f6ef96a9f1dc7dc01c9b2b6919ef7",
-      "size": 9494
-    },
-    {
-      "name": "vdss.csv.xz",
-      "path": "Daycare/data/distribution/vdss.csv.xz",
-      "md5": "80b4d0df57db74bcf2b9d4bebaab01cd",
-      "size": 553672
-    },
-    {
-      "name": "points_2021.geojson",
-      "path": "Daycare/data/distribution/points_2021.geojson",
-      "md5": "24925d757226d99288b61d0ace2e7d56",
-      "size": 2246630
-    },
-    {
-      "name": "ingest.R",
-      "path": "Daycare/code/distribution/ingest.R",
-      "md5": "088bcb929b60cdbde3ebe216914399f9",
-      "size": 15688
-    },
-    {
-      "name": "temp",
-      "path": "Daycare/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "ingest_nces.R",
+      "path": "Postsecondary/code/distribution/ingest_nces.R",
+      "md5": "09a46f92290b26ce6e820363ccae56cc",
+      "size": 13436
     }
   ],
   "_references": {

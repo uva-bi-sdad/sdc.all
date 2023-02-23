@@ -268,5 +268,23 @@
         "url": "https://www.census.gov/programs-surveys/acs.html"
       }
     ]
+  },
+   "pop_eth_tot": {
+    "category": "Demographics",
+    "measure": "pop_eth_tot",
+    "short_name": "Total population ethnique",
+    "long_name": "Total population ethnique(count)",
+    "short_description": "Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+    "long_description": "Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+    "statement": "Total population ethnique is {value} in {features.name}.",
+    "type": "count",
+    "equity_category" : "Status",
+    "sources": [
+      {
+        "name": "American Community Survey Table B01001",
+        "date_accessed": 2021,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
   }
 }

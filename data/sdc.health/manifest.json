@@ -23,7 +23,6 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/PCNA Measures/Check-up and Dental Visits/data/distribution/va_ct_brfss_2018_percent_annual_dental_visit.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/PCNA Measures/Check-up and Dental Visits/data/distribution/va_tr_brfss_2019_percent_annual_checkup.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Mental Health/Service Access Scores/data/distribution/va_hdcttrbgca_samhsa_2021_access_scores_mental.csv",
-    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/va_hdcttrbgca_hifld_2021_access_scores_urgent.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/ncr_bgtrct_gmap_2022_access_scores_urgent_care_centers.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Drug and Rehab/Service Catchment Scores/data/distribution/va_hdcttrbgca_samhsa_2021_access_scores_substance.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Substance Abuse/Drug Overdose ER Visits/data/distribution/va_hdct_vdh_2015_2021_drug_overdose_ed_visits.csv.xz",
@@ -56,8 +55,8 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Mental Health/Mental and Physical Healthy Days/data/distribution/dc_health_behavior_diet.va_trcthd_sdad_2015_2019_brfss_sae.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Mental Health/Mental and Physical Healthy Days/data/distribution/dc_health_behavior_diet.ncr_trct_sdad_2015_2019_brfss_sae.csv.xz"
   ],
-  "count": 139,
-  "utc_audited": "2023-02-09 20:44:49",
+  "count": 138,
+  "utc_audited": "2023-02-15 17:51:31",
   "data": [
     {
       "name": "ncr_bgtrct_2015_access_scores_hospitals.csv",
@@ -438,16 +437,10 @@
       "size": 12
     },
     {
-      "name": "va_hdcttrbgca_hifld_2021_access_scores_urgent.csv",
-      "path": "Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/va_hdcttrbgca_hifld_2021_access_scores_urgent.csv",
-      "md5": "e564415e7d8a530e3bdbb2fa079c03c3",
-      "size": 6912759
-    },
-    {
       "name": "measure_info.json",
       "path": "Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/measure_info.json",
-      "md5": "404662a06c8d79f3c2ccbf994cd09542",
-      "size": 5896
+      "md5": "70371255340aa5cadad7226e6e719ac7",
+      "size": 5800
     },
     {
       "name": "ncr_bgtrct_gmap_2022_access_scores_urgent_care_centers.csv",

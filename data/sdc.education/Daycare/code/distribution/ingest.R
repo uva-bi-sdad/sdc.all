@@ -41,13 +41,13 @@ if (file.exists(locations_file)) {
   locations <- read.csv(locations_file)
 } else {
   # retrieve locations
-  req = POST(
+  req <- POST(
     "https://www.dss.virginia.gov/facility/search/cc.cgi",
     body = list(
       rm = "Search", search_keywords_name = "", search_exact_fips = "", search_contains_zip = ""
     )
   )
-  
+
   locations <- do.call(rbind, lapply(
     grep(
       "/facility/search/cc2.cgi",
@@ -59,7 +59,8 @@ if (file.exists(locations_file)) {
         id = regmatches(r, regexec(";ID=([^;]+);", r))[[1]],
         name = regmatches(r, regexec(">([^<]+)</a>", r))[[1]],
         quality = regmatches(r, regexec("level_(\\d+)\\.svg", r))[[1]],
-        address = gsub("^\\s+|[\n\t]+", "", gsub("[\n\t]*<br>[\n\t]*", ", ",
+        address = gsub("^\\s+|[\n\t]+", "", gsub(
+          "[\n\t]*<br>[\n\t]*", ", ",
           regmatches(r, regexec(">\n\t+([^<]+<br>[^<]+)</td>", r))[[1]]
         )),
         phone = regmatches(r, regexec("(\\(\\d+\\) [0-9-]+)", r))[[1]]
@@ -67,8 +68,8 @@ if (file.exists(locations_file)) {
     }
   ))
   locations$uid <- paste0(locations$id, "_", vapply(locations$address, digest::digest, ""))
-  locations <- locations[!duplicated(locations$uid),]
-  
+  locations <- locations[!duplicated(locations$uid), ]
+
   # retrieve more info and geocode
   cl <- makeCluster(detectCores() - 2)
   cache <- paste0(dir, "/original/search_cache/")
@@ -97,16 +98,19 @@ if (file.exists(locations_file)) {
       administrator = data_table[grep("Administrator", data_table, fixed = TRUE)[1] + 3],
       capacity = as.numeric(data_table[grep("Capacity", data_table, fixed = TRUE)[1] + 3]),
       ages = sub("(?:NA ?|<.*)+", "", paste(
-        data_table[grep("Ages:", data_table, fixed = TRUE)[1] + (3:6)], collapse = " "
+        data_table[grep("Ages:", data_table, fixed = TRUE)[1] + (3:6)],
+        collapse = " "
       )),
-      inspector =  sub("(?:NA ?|<.*)+", "", paste(
-        data_table[grep("Inspector:", data_table, fixed = TRUE)[1] + (3:4)], collapse = " "
+      inspector = sub("(?:NA ?|<.*)+", "", paste(
+        data_table[grep("Inspector:", data_table, fixed = TRUE)[1] + (3:4)],
+        collapse = " "
       )),
       subsidiary = data_table[grep("Current Subsidy Provider", data_table, fixed = TRUE)[1] + 3],
       facility_id = data_table[grep("License/Facility ID#", data_table, fixed = TRUE)[1] + 3]
     ))
     inspection_table <- strsplit(strsplit(
-      tables[grep("Inspection Date", tables, fixed = TRUE)[1]], "table>", fixed = TRUE
+      tables[grep("Inspection Date", tables, fixed = TRUE)[1]], "table>",
+      fixed = TRUE
     )[[1]][1], "<tr")[[1]]
     inspection_table <- do.call(rbind, lapply(
       strsplit(gsub("[\r\n\t]+|</(?:a|td)", "", inspection_table[
@@ -124,14 +128,14 @@ if (file.exists(locations_file)) {
       }
     ))
     inspections <- if (is.null(inspection_table)) {
-       data.frame(
-         inspections = NA,
-         inspection_first = NA,
-         inspection_last = NA,
-         inspection_shsi = NA,
-         inspection_complicant = NA,
-         inspection_violation = NA
-        )
+      data.frame(
+        inspections = NA,
+        inspection_first = NA,
+        inspection_last = NA,
+        inspection_shsi = NA,
+        inspection_complicant = NA,
+        inspection_violation = NA
+      )
     } else {
       data.frame(
         inspections = nrow(inspection_table),
@@ -146,7 +150,7 @@ if (file.exists(locations_file)) {
         )
       )
     }
-    
+
     if (geocode) {
       coords <- tidygeocoder::geo(a[2], progress_bar = FALSE, quiet = TRUE, method = "arcgis")
       if (is.na(coords$long)) coords <- tidygeocoder::geo(a[2], progress_bar = FALSE, quiet = TRUE)
@@ -156,9 +160,9 @@ if (file.exists(locations_file)) {
     cbind(coords, data, inspections)
   })))
   stopCluster(cl)
-  
+
   locations <- cbind(locations, data[, -1])
-  
+
   ## parse ages
   locations$age_min <- as.integer(
     sub(" year.*$", "", sub("\\s*\\d+ months?|Birth", "", sub(" -.*$", "", locations$ages)))
@@ -168,9 +172,9 @@ if (file.exists(locations_file)) {
     sub(" year.*$", "", sub("\\s*\\d+ months?", "", sub("^[^-]+- ", "", locations$ages)))
   )
   locations$age_max[is.na(locations$age_max)] <- 12
-  
+
   write.csv(locations, locations_file, row.names = FALSE)
-  
+
   points_file <- paste0(dir, "/distribution/points_", year, ".geojson")
   unlink(points_file)
   write_sf(st_as_sf(locations[, c(
@@ -186,7 +190,7 @@ locations$ages[locations$ages == ""] <- "Birth - 12 years 11 months"
 
 
 ## drop unlocated locations
-locations <- locations[!is.na(locations$lat),]
+locations <- locations[!is.na(locations$lat), ]
 
 ## make location IDs
 locations$lid <- vapply(paste0(round(locations$long, 6), round(locations$lat, 6)), digest::digest, "")
@@ -215,16 +219,16 @@ population <- do.call(rbind, lapply(states, function(s) {
     GEOID = IDs,
     state = s,
     population_under_15 = total,
-    population_under_15_error = total + sqrt(rowSums((err[IDs, vars] / 1.645) ^ 2, na.rm = TRUE)) * 1.645,
+    population_under_15_error = total + sqrt(rowSums((err[IDs, vars] / 1.645)^2, na.rm = TRUE)) * 1.645,
     population_over_4 = over_4,
-    population_over_4_error = over_4 + sqrt(rowSums((err[IDs, vars[-(1:2)]] / 1.645) ^ 2, na.rm = TRUE)) * 1.645,
+    population_over_4_error = over_4 + sqrt(rowSums((err[IDs, vars[-(1:2)]] / 1.645)^2, na.rm = TRUE)) * 1.645,
     population_under_10 = under_10,
-    population_under_10_error = under_10 + sqrt(rowSums((err[IDs, vars[1:4]] / 1.645) ^ 2, na.rm = TRUE)) * 1.645,
+    population_under_10_error = under_10 + sqrt(rowSums((err[IDs, vars[1:4]] / 1.645)^2, na.rm = TRUE)) * 1.645,
     st_coordinates(st_centroid(shapes))
   )
   st_geometry(res) <- st_geometry(shapes)
   rownames(res) <- IDs
-  if (anyNA(res$X)) res <- res[!is.na(res$X),]
+  if (anyNA(res$X)) res <- res[!is.na(res$X), ]
   res
 }))
 
@@ -246,12 +250,13 @@ traveltimes <- do.call(rbind, lapply(cost_files, function(f) {
     if (is.null(p)) stop("failed to calculate travel times")
     write.csv(
       cbind(GEOID = rownames(p), as.data.frame(as.matrix(p))),
-      xzfile(f), row.names = FALSE
+      xzfile(f),
+      row.names = FALSE
     )
     p
   }
 }))
-traveltimes <- traveltimes[population$GEOID,]
+traveltimes <- traveltimes[population$GEOID, ]
 
 #
 # calculate outputs
@@ -269,13 +274,13 @@ population$daycare_capacity_error <- 0
 
 # calculate catchment ratios
 population$daycare_per_1k <- catchment_ratio(
-  population, locations[locations$age_min < 5 & locations$age_max > 9,], traveltimes,
+  population, locations[locations$age_min < 5 & locations$age_max > 9, ], traveltimes,
   weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e3,
   consumers_value = "population_under_15", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat"), verbose = TRUE
 )
 population$daycare_per_1k_error <- catchment_ratio(
-  population, locations[locations$age_min < 5 & locations$age_max > 9,], traveltimes,
+  population, locations[locations$age_min < 5 & locations$age_max > 9, ], traveltimes,
   weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e3,
   consumers_value = "population_under_15_error", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat")
@@ -283,13 +288,13 @@ population$daycare_per_1k_error <- catchment_ratio(
 
 ## over 4
 population$daycare_over_4_per_1k <- catchment_ratio(
-  population, locations[locations$age_min > 4,], traveltimes,
+  population, locations[locations$age_min > 4, ], traveltimes,
   weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e3,
   consumers_value = "population_over_4", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat")
 )
 population$daycare_over_4_per_1k_error <- catchment_ratio(
-  population, locations[locations$age_min > 4,], traveltimes,
+  population, locations[locations$age_min > 4, ], traveltimes,
   weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e3,
   consumers_value = "population_over_4_error", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat")
@@ -297,13 +302,13 @@ population$daycare_over_4_per_1k_error <- catchment_ratio(
 
 ## under 10
 population$daycare_under_10_per_1k <- catchment_ratio(
-  population, locations[locations$age_max < 10,], traveltimes,
+  population, locations[locations$age_max < 10, ], traveltimes,
   weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e3,
   consumers_value = "population_under_10", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat")
 )
 population$daycare_under_10_per_1k_error <- catchment_ratio(
-  population, locations[locations$age_max < 10,], traveltimes,
+  population, locations[locations$age_max < 10, ], traveltimes,
   weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e3,
   consumers_value = "population_under_10_error", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat")
@@ -353,7 +358,7 @@ varerrors <- paste0(varnames, "_error")
 d$region_type <- c(
   "5" = "county", "8" = "health district", "11" = "tract", "12" = "block group"
 )[as.character(nchar(d$GEOID))]
-d <- d[d$GEOID %in% names(entity_names),]
+d <- d[d$GEOID %in% names(entity_names), ]
 d$region_name <- entity_names[d$GEOID]
 final <- do.call(rbind, lapply(split(d, seq_len(nrow(d))), function(r) {
   data.frame(

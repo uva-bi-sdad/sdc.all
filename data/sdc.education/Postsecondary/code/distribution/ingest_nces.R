@@ -57,11 +57,11 @@ process_year <- function(year, dir = base_dir, districts = county_districts,
         GEOID = IDs,
         state = s,
         population_over_14 = total,
-        population_over_14_error = total + sqrt(rowSums((err[IDs, vars] / 1.645) ^ 2, na.rm = TRUE)) * 1.645,
+        population_over_14_error = total + sqrt(rowSums((err[IDs, vars] / 1.645)^2, na.rm = TRUE)) * 1.645,
         st_coordinates(st_centroid(shapes[IDs, ]))
       )
       rownames(res) <- IDs
-      if (anyNA(res$X)) res <- res[!is.na(res$X),]
+      if (anyNA(res$X)) res <- res[!is.na(res$X), ]
       res
     }))
     # download and/or load data
@@ -131,7 +131,7 @@ process_year <- function(year, dir = base_dir, districts = county_districts,
         row.names = FALSE
       )
     }
-    traveltimes <- traveltimes[population$GEOID,]
+    traveltimes <- traveltimes[population$GEOID, ]
     #
     # calculate outputs
     #
@@ -269,7 +269,7 @@ final <- do.call(rbind, lapply(data, function(d) {
   d$region_type <- c(
     "5" = "county", "8" = "health district", "11" = "tract", "12" = "block group"
   )[as.character(nchar(d$GEOID))]
-  d <- d[d$GEOID %in% names(entity_names),]
+  d <- d[d$GEOID %in% names(entity_names), ]
   d$region_name <- entity_names[d$GEOID]
   do.call(rbind, lapply(split(d, seq_len(nrow(d))), function(r) {
     data.frame(

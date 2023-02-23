@@ -1,6 +1,7 @@
 {
   "name": "sdc.food_dev",
   "measure_not_found": [
+    "/home/runner/work/sdc.food_dev/sdc.food_dev/Food Security/Overall Food Insecurity/data/distribution/va059_tr_sdad_2022_food_insecurity_estimates.csv",
     "/home/runner/work/sdc.food_dev/sdc.food_dev/Food Security/Overall Food Insecurity/data/distribution/ncr_cttr_fa_2014_2020_overall_food_insecurity.csv.xz",
     "/home/runner/work/sdc.food_dev/sdc.food_dev/Food Security/Overall Food Insecurity/data/distribution/va_hdcttr_fa_2014_2020_overall_food_insecurity.csv.xz",
     "/home/runner/work/sdc.food_dev/sdc.food_dev/Food Security/Food Budget Shortfall/data/distribution/ncr_ct_fa_2014_2019_food_budget_shortfall.csv.xz",
@@ -17,9 +18,15 @@
     "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Supplemental Nutrition Assistance Program (SNAP)/data/distribution/va_hdcttrbg_acs_2013_2020_hh_receiving_snap.csv.xz",
     "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Supplemental Nutrition Assistance Program (SNAP)/data/distribution/ncr_cttrbg_acs_2013_2020_hh_receiving_snap.csv.xz"
   ],
-  "count": 51,
-  "utc_audited": "2023-02-15 21:36:07",
+  "count": 52,
+  "utc_audited": "2023-02-15 22:06:44",
   "data": [
+    {
+      "name": "va059_tr_sdad_2022_food_insecurity_estimates.csv",
+      "path": "Food Security/Overall Food Insecurity/data/distribution/va059_tr_sdad_2022_food_insecurity_estimates.csv",
+      "md5": "ff3481b8f1a65497d06fbafbb00439ea",
+      "size": 210549
+    },
     {
       "name": "ncr_cttr_fa_2014_2020_overall_food_insecurity.csv.xz",
       "path": "Food Security/Overall Food Insecurity/data/distribution/ncr_cttr_fa_2014_2020_overall_food_insecurity.csv.xz",

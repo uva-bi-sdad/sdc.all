@@ -1,0 +1,842 @@
+{
+    "Accommodation and Food Services_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Accommodation and Food Services_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Accommodation and Food Services_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Accommodation and Food Services_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Administrative and Support and Waste Management and Remediation Services_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Administrative and Support and Waste Management and Remediation Services_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Administrative and Support and Waste Management and Remediation Services_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Administrative and Support and Waste Management and Remediation Services_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Agriculture, Forestry, Fishing and Hunting_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Agriculture, Forestry, Fishing and Hunting_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Agriculture, Forestry, Fishing and Hunting_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Agriculture, Forestry, Fishing and Hunting_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Arts, Entertainment, and Recreation_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Arts, Entertainment, and Recreation_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Arts, Entertainment, and Recreation_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Arts, Entertainment, and Recreation_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Construction_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Construction_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Construction_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Construction_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Educational Services_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Educational Services_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Educational Services_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Educational Services_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Finance and Insurance_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Finance and Insurance_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Finance and Insurance_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Finance and Insurance_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Health Care and Social Assistance_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Health Care and Social Assistance_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Health Care and Social Assistance_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Health Care and Social Assistance_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Information_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Information_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Information_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Information_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Management of Companies and Enterprises_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Management of Companies and Enterprises_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Management of Companies and Enterprises_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Management of Companies and Enterprises_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Manufacturing_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Manufacturing_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Manufacturing_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Manufacturing_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Mining, Quarrying, and Oil and Gas Extraction_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Mining, Quarrying, and Oil and Gas Extraction_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Mining, Quarrying, and Oil and Gas Extraction_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Mining, Quarrying, and Oil and Gas Extraction_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Nonclassifiable Establishments_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Nonclassifiable Establishments_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Nonclassifiable Establishments_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Nonclassifiable Establishments_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Other Services (except Public Administration)_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Other Services (except Public Administration)_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Other Services (except Public Administration)_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Other Services (except Public Administration)_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Professional, Scientific, and Technical Services_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Professional, Scientific, and Technical Services_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Professional, Scientific, and Technical Services_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Professional, Scientific, and Technical Services_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Public Administration_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Public Administration_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Public Administration_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Public Administration_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Real Estate and Rental and Leasing_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Real Estate and Rental and Leasing_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Real Estate and Rental and Leasing_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Real Estate and Rental and Leasing_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Retail Trade_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Retail Trade_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Retail Trade_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Retail Trade_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Transportation and Warehousing_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Transportation and Warehousing_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Transportation and Warehousing_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Transportation and Warehousing_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Utilities_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Utilities_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Utilities_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Utilities_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "Wholesale Trade_entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Wholesale Trade_entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "Wholesale Trade_new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Wholesale Trade_new_business",
+        "measure_table": "va059_bg_mi_20102020_entry_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    }
+}

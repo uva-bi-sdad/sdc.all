@@ -1,6 +1,7 @@
 {
   "perc_pop_20_64": {
   "category": "Demographics",
+  "measure": "perc_pop_20_64",
   "equity_category": "Status",
   "long_description": "The percent of the population between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
   "long_name": "20 to 64 population (percent)",
@@ -18,6 +19,7 @@
 },
 "perc_pop_65_plus": {
   "category": "Demographics",
+  "measure": "perc_pop_65_plus",
   "equity_category": "Status",
   "long_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
   "long_name": "65 plus population (percent)",
@@ -35,6 +37,7 @@
 },
   "perc_pop_under_20": {
     "category": "Demographics",
+    "measure": "perc_pop_under_20",
     "equity_category": "Status",
     "long_description": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
     "long_name": "Under 20 population (percent)",
@@ -52,6 +55,7 @@
   },
   "pop_20_64": {
   "category": "Demographics",
+  "measure": "pop_20_64",
   "equity_category": "Status",
   "long_description": "The population between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
   "long_name": "20 to 64 population (count)",
@@ -65,10 +69,11 @@
     }
   ],
   "statement": "The population between age 20 and 64 is {value} in {features.name}.",
-  "type": "percent"
+  "type": "count"
 },
   "pop_65_plus": {
   "category": "Demographics",
+  "measure": "pop_65_plus",
   "equity_category": "Status",
   "long_description": "The population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
   "long_name": "65 plus population (count)",
@@ -82,10 +87,11 @@
     }
   ],
   "statement": "The population over age 64 is {value} in {features.name}.",
-  "type": "percent"
+  "type": "count"
 },
   "pop_under_20": {
     "category": "Demographics",
+    "measure": "pop_under_20",
     "equity_category": "Status",
     "long_description": "The population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
     "long_name": "Under 20 population (count)",
@@ -99,10 +105,11 @@
       }
     ],
     "statement": "The population under age 20 is {value} in {features.name}.",
-    "type": "percent"
+    "type": "count"
   },
   "total_pop": {
     "category": "Demographics",
+    "measure": "total_pop",
     "equity_category": "Status",
     "long_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
     "long_name": "Population (count)",

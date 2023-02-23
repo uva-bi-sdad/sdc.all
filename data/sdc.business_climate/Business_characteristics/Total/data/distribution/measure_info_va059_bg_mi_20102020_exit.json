@@ -1,0 +1,42 @@
+{
+    "exit_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "exit_business",
+        "measure_table": "va059_bg_mi_20102020_exit",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    },
+    "exit_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "exit_rate",
+        "measure_table": "va059_bg_mi_20102020_exit",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    }
+}

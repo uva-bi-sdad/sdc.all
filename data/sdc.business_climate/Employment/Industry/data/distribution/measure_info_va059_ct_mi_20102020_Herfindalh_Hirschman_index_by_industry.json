@@ -1,0 +1,422 @@
+{
+    "Accommodation and Food Services_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Accommodation and Food Services_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Administrative and Support and Waste Management and Remediation Services_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Administrative and Support and Waste Management and Remediation Services_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Agriculture, Forestry, Fishing and Hunting_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Agriculture, Forestry, Fishing and Hunting_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Arts, Entertainment, and Recreation_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Arts, Entertainment, and Recreation_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Construction_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Construction_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Educational Services_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Educational Services_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Finance and Insurance_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Finance and Insurance_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Health Care and Social Assistance_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Health Care and Social Assistance_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Information_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Information_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Management of Companies and Enterprises_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Management of Companies and Enterprises_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Manufacturing_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Manufacturing_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Mining, Quarrying, and Oil and Gas Extraction_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Mining, Quarrying, and Oil and Gas Extraction_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Nonclassifiable Establishments_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Nonclassifiable Establishments_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Other Services (except Public Administration)_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Other Services (except Public Administration)_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Professional, Scientific, and Technical Services_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Professional, Scientific, and Technical Services_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Public Administration_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Public Administration_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Real Estate and Rental and Leasing_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Real Estate and Rental and Leasing_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Retail Trade_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Retail Trade_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Transportation and Warehousing_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Transportation and Warehousing_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Utilities_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Utilities_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    },
+    "Wholesale Trade_Herfindalh_Hirschman_index": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "Wholesale Trade_Herfindalh_Hirschman_index",
+        "measure_table": "va059_ct_mi_20102020_Herfindalh_Hirschman_index_by_industry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "index"
+    }
+}

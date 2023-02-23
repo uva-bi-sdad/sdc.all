@@ -24,7 +24,7 @@
     "/home/runner/work/sdc.demographics_dev/sdc.demographics_dev/Language/data/distribution/ncr_trctbg_acs_20092020_language_demographics.csv.xz"
   ],
   "count": 61,
-  "utc_audited": "2023-02-20 20:10:39",
+  "utc_audited": "2023-02-22 16:18:19",
   "data": [
     {
       "name": "temp",
@@ -41,8 +41,8 @@
     {
       "name": "measure_info.json",
       "path": "Veteran/data/distribution/measure_info.json",
-      "md5": "75f98947e6b591ecdf8077b68a9e4dae",
-      "size": 1433
+      "md5": "8dc4f4a35bc8133cfec2d539df22b49b",
+      "size": 1538
     },
     {
       "name": "va_trctbg_acs_20092020_veteran_demographics.csv.xz",
@@ -89,8 +89,8 @@
     {
       "name": "measure_info.json",
       "path": "Race/data/distribution/measure_info.json",
-      "md5": "8c631e7a71cf517eda9f487f83edf23b",
-      "size": 11041
+      "md5": "145a997ab136af47d41a20ea4abc53d9",
+      "size": 11973
     },
     {
       "name": "va013_civic_sdad_20132020_race_demographics.csv.xz",
@@ -155,8 +155,8 @@
     {
       "name": "measure_info.json",
       "path": "Gender/data/distribution/measure_info.json",
-      "md5": "4f93caeb02bb47c7650b1ba68bf4be23",
-      "size": 3534
+      "md5": "7ccdbb36935d6abf7c70a70747d814fd",
+      "size": 3706
     },
     {
       "name": "va013_civic_sdad_20132020_gender_demographics.csv.xz",
@@ -215,8 +215,8 @@
     {
       "name": "measure_info.json",
       "path": "Age/data/distribution/measure_info.json",
-      "md5": "65043ddb1c7248d2eedde9846464c3bd",
-      "size": 5201
+      "md5": "b75a8471a16d66788be8935ab267cbb3",
+      "size": 5408
     },
     {
       "name": "va_trctbg_acs_20092020_age_demographics.csv.xz",
@@ -353,8 +353,8 @@
     {
       "name": "measure_info.json",
       "path": "Language/data/distribution/measure_info.json",
-      "md5": "88b18b3aa147ee505c98705feb3b290c",
-      "size": 2272
+      "md5": "47b5ef7a447ffa1120b380a9327bf2f7",
+      "size": 2443
     },
     {
       "name": "va_trctbg_acs_20092020_language_demographics.csv.xz",

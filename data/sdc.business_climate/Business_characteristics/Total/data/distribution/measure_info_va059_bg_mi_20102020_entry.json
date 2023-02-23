@@ -1,0 +1,42 @@
+{
+    "entry_rate": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "entry_rate",
+        "measure_table": "va059_bg_mi_20102020_entry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "percentage"
+    },
+    "new_business": {
+        "category": "",
+        "equity_category": "",
+        "full_name": "",
+        "long_description": "",
+        "long_name": "",
+        "measure": "new_business",
+        "measure_table": "va059_bg_mi_20102020_entry",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
+            }
+        ],
+        "statement": "",
+        "type": "count"
+    }
+}

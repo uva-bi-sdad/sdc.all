@@ -1,6 +1,7 @@
 {
   "perc_male": {
   "category": "Demographics",
+  "measure": "perc_male",
   "equity_category": "Status",
   "long_description": "The percent of males in the total population. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
   "long_name": "Male population (percent)",
@@ -18,12 +19,14 @@
 },
   "perc_female": {
   "category": "Demographics",
+  "measure": "perc_female",
   "equity_category": "Status",
   "long_description": "The percent of females in the total population. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
   "long_name": "Female population (percent)",
   "short_description": "The percent of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
   "short_name": "Female population",
   "statement": "The female population is {value} in {features.name}.",
+  "type": "percent",
   "sources": [
     {
       "date_accessed": 2023,
@@ -34,13 +37,14 @@
   },
   "pop_male": {
   "category": "Demographics",
+  "measure": "pop_male",
   "equity_category": "Status",
   "long_description": "The count of males in the total population. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
   "long_name": "Male population (count)",
   "short_description": "The count of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
   "short_name": "Male population",
   "statement": "The male population is {value} in {features.name}.",
-  "type": "percent",
+  "type": "count",
   "sources": [
     {
       "date_accessed": 2023,
@@ -51,12 +55,14 @@
 },
   "pop_female": {
   "category": "Demographics",
+  "measure": "pop_female",
   "equity_category": "Status",
   "long_description": "The count of females in the total population. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
   "long_name": "Female population (count)",
   "short_description": "The count of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
   "short_name": "Female population",
   "statement": "The female population is {value} in {features.name}.",
+  "type": "count",
   "sources": [
     {
       "date_accessed": 2023,
@@ -67,6 +73,7 @@
   },
   "total_pop": {
     "category": "Demographics",
+    "measure": "total_pop",
     "equity_category": "Status",
     "long_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
     "long_name": "Population (count)",

@@ -1,4 +1,5 @@
 base_dir <- "Postsecondary/data"
+dir.create(paste0(base_dir, "/original/reference_shapes"), FALSE, TRUE)
 
 # get health district associations
 va_id_map <- jsonlite::read_json("https://uva-bi-sdad.github.io/community/dist/shapes/VA/entity_info.json")
@@ -44,41 +45,43 @@ entity_names <- unlist(lapply(entity_info, "[[", "region_name"))
 entity_names <- entity_names[!grepl(", NA", entity_names, fixed = TRUE)]
 
 # download and aggregate ACS data
-## for margin of error:
+## for margin or error:
 ## https://www2.census.gov/programs-surveys/acs/tech_docs/accuracy/2021_ACS_Accuracy_Document_Worked_Examples.pdf
 data <- do.call(rbind, lapply(states, function(state) {
   do.call(rbind, lapply(years, function(year) {
-    d <- tidycensus::get_acs(
-      "tract",
-      variables = c(
-        total = "B06009_001",
-        in_college = "B06009_004",
-        college_complete = "B06009_005",
-        post_college = "B06009_006"
-      ),
-      year = year,
-      state = state,
-      output = "wide"
-    )
-    d$acs_postsecondary_count <- rowSums(
-      d[, c("in_collegeE", "college_completeE", "post_collegeE")], na.rm = TRUE
-    )
-    d$acs_postsecondary_count_error <- sqrt(rowSums(
-      (d[, c("in_collegeM", "college_completeM", "post_collegeM")] / 1.645) ^ 2, na.rm = TRUE
-    )) * 1.645
-    d$acs_postsecondary_percent <- d$acs_postsecondary_count / d$totalE * 100
-    d$acs_postsecondary_percent[!is.finite(d$acs_postsecondary_percent)] <- 0
-    d$acs_postsecondary_percent_error <- 1 / d$totalE * (
-      (d$acs_postsecondary_count_error / 1.645) ^ 2 -
-        (d$acs_postsecondary_percent / 100) ^ 2 * (d$totalM / 1.645) ^ 2
-    ) ^ .5 * 100 * 1.645
-    d$acs_postsecondary_percent_error[!is.finite(d$acs_postsecondary_percent_error)] <- 0
-    d <- d[d$GEOID %in% names(entity_names),]
-    d$region_type <- "tract"
-    d$region_name <- entity_names[d$GEOID]
-    d$year <- year
-    do.call(rbind, c(
-      list(rbind(
+    retrieve <- function(layer) {
+      d <- tidycensus::get_acs(
+        layer,
+        variables = c(
+          total = "B06009_001",
+          in_college = "B06009_004",
+          college_complete = "B06009_005",
+          post_college = "B06009_006"
+        ),
+        year = year,
+        state = state,
+        output = "wide"
+      )
+      d$acs_postsecondary_count <- rowSums(
+        d[, c("in_collegeE", "college_completeE", "post_collegeE")],
+        na.rm = TRUE
+      )
+      d$acs_postsecondary_count_error <- sqrt(rowSums(
+        (d[, c("in_collegeM", "college_completeM", "post_collegeM")] / 1.645)^2,
+        na.rm = TRUE
+      )) * 1.645
+      d$acs_postsecondary_percent <- d$acs_postsecondary_count / d$totalE * 100
+      d$acs_postsecondary_percent[!is.finite(d$acs_postsecondary_percent)] <- 0
+      d$acs_postsecondary_percent_error <- 1 / d$totalE * (
+        (d$acs_postsecondary_count_error / 1.645)^2 -
+          (d$acs_postsecondary_percent / 100)^2 * (d$totalM / 1.645)^2
+      )^.5 * 100 * 1.645
+      d$acs_postsecondary_percent_error[!is.finite(d$acs_postsecondary_percent_error)] <- 0
+      d <- d[d$GEOID %in% names(entity_names), ]
+      d$region_type <- layer
+      d$region_name <- entity_names[d$GEOID]
+      d$year <- year
+      list(wide = d, tall = list(rbind(
         cbind(
           d[, c("GEOID", "region_type", "region_name", "year")],
           measure = "acs_postsecondary_count",
@@ -93,15 +96,17 @@ data <- do.call(rbind, lapply(states, function(state) {
           moe = d$acs_postsecondary_percent_error,
           measure_type = "percent"
         )
-      )),
+      )))
+    }
+    counties <- retrieve("county")
+    do.call(rbind, c(
+      retrieve("tract")$tall,
+      counties$tall,
       lapply(
-        list(
-          substring(d$GEOID, 1, 5),
-          county_districts[substring(d$GEOID, 1, 5)]
-        ),
+        list(county_districts[substring(counties$wide$GEOID, 1, 5)]),
         function(set) {
-          d$GEOID <- set
-          do.call(rbind, lapply(split(d, d$GEOID), function(e) {
+          counties$wide$GEOID <- set
+          do.call(rbind, lapply(split(counties$wide, counties$wide$GEOID), function(e) {
             id <- e$GEOID[[1]]
             total <- sum(e$acs_postsecondary_count)
             type <- c("5" = "county", "8" = "health district")[[as.character(nchar(id))]]
