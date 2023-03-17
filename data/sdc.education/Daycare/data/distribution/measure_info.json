@@ -1,9 +1,11 @@
 {
   "daycare_capacity": {
     "category": "Education",
-    "full_name": "daycare_capacity",
     "measure": "daycare_capacity",
     "type": "count",
+    "units": "",
+    "data_type": "numeric",
+    "measure_type": "count",
     "short_name": "Day Care Capacity",
     "long_name": "Day Care Capacity",
     "short_description": "Summed capacity (seats) of all day care providers within the region.",
@@ -25,9 +27,11 @@
   },
   "daycare_min_drivetime": {
     "category": "Education",
-    "full_name": "daycare_min_drivetime",
     "measure": "daycare_min_drivetime",
     "type": "minutes",
+    "units": "minutes",
+    "data_type": "numeric",
+    "measure_type": "time",
     "short_name": "Day Care Drive Time",
     "long_name": "Minutes to Nearest Day Care",
     "short_description": "Time (minutes) to drive to the nearest day care provider.",
@@ -54,9 +58,11 @@
   },
   "daycare_per_1k": {
     "category": "Education",
-    "full_name": "daycare_per_1k",
     "measure": "daycare_per_1k",
     "type": "per 1k",
+    "units": "per 1k",
+    "data_type": "numeric",
+    "measure_type": "ratio",
     "short_name": "Day Care Seats Per 1k Children",
     "long_name": "Day Care Seats Per 1k Children Under 15",
     "short_description": "Number of day care seats per 1,000 children under 15 years of age.",
@@ -88,16 +94,26 @@
     "layer": {
       "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Daycare/data/distribution/points_{time}.geojson",
       "filter": [
-        { "feature": "age_min", "operator": "<", "value": 5 },
-        { "feature": "age_max", "operator": ">", "value": 9 }
+        {
+          "feature": "age_min",
+          "operator": "<",
+          "value": 5
+        },
+        {
+          "feature": "age_max",
+          "operator": ">",
+          "value": 9
+        }
       ]
     }
   },
   "daycare_over_4_per_1k": {
     "category": "Education",
-    "full_name": "daycare_over_4_per_1k",
     "measure": "daycare_over_4_per_1k",
     "type": "per 1k",
+    "units": "per 1k",
+    "data_type": "numeric",
+    "measure_type": "ratio",
     "short_name": "Day Care Seats Per 1k Children (5+)",
     "long_name": "Day Care Seats Per 1k Children Ages 5 to 14",
     "short_description": "Number of day care seats per 1,000 children between 5 and 14 years of age.",
@@ -128,14 +144,20 @@
     ],
     "layer": {
       "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Daycare/data/distribution/points_{time}.geojson",
-      "filter": { "feature": "age_min", "operator": ">", "value": 4 }
+      "filter": {
+        "feature": "age_min",
+        "operator": ">",
+        "value": 4
+      }
     }
   },
   "daycare_under_10_per_1k": {
     "category": "Education",
-    "full_name": "daycare_under_10_per_1k",
     "measure": "daycare_under_10_per_1k",
     "type": "per 1k",
+    "units": "per 1k",
+    "data_type": "numeric",
+    "measure_type": "ratio",
     "short_name": "Day Care Seats Per 1k Children (<10)",
     "long_name": "Day Care Seats Per 1k Children Under 10",
     "short_description": "Number of day care seats per 1,000 children under 10 years of age.",
@@ -166,7 +188,11 @@
     ],
     "layer": {
       "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Daycare/data/distribution/points_{time}.geojson",
-      "filter": { "feature": "age_max", "operator": "<", "value": 10 }
+      "filter": {
+        "feature": "age_max",
+        "operator": "<",
+        "value": 10
+      }
     }
   },
   "_references": {
@@ -190,16 +216,12 @@
       "title": "A three-step floating catchment area method for analyzing spatial access to health services",
       "journal": "International Journal of Geographical Information Science",
       "volume": "26",
-      "page": "1073–1089",
+      "page": "1073\u20131089",
       "doi": "10.1080/13658816.2011.624987"
     },
     "bii21": {
       "id": "bii21",
-      "author": [
-        {
-          "family": "Biocomplexity Institute and Initiative"
-        }
-      ],
+      "author": "Biocomplexity Institute and Initiative",
       "year": 2021,
       "title": "catchment: Calculate spatial access and availability metrics",
       "version": "0.0.1",

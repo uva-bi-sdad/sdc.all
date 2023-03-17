@@ -10,7 +10,7 @@ setnames(dt_ncr, "estimate", "value")
 setnames(dt_ncr, "variable", "measure")
 setnames(dt_ncr, "year", "year")
 
-dt_ncr_final <- dt_ncr[,.(geoid, region_type, region_name, measure, value, moe, year)]
+dt_ncr_final <- dt_ncr[,.(geoid, region_type, region_name, measure, value, moe, year, measure_type)]
 
 readr::write_csv(dt_ncr_final,
                  xzfile("Pay and Benefits/Household Income/data/distribution/ncr_cttrbg_2015_2019_median_household_income.csv.xz"),

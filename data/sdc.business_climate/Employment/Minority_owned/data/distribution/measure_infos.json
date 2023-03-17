@@ -1,0 +1,444 @@
+{
+    "minority_owned_total_employment": {
+        "category": "Business climate",
+        "short_name": "Total employment by minority owned businesses",
+        "long_name": "Total employment by minority owned businesses",
+        "short_description": "Total employment by minority owned businesses",
+        "long_description": "Total employment by minority owned businesses",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "minority_owned_job_creation_new": {
+        "category": "Business climate",
+        "short_name": "Job creation by new businesses owned by minority (count)",
+        "long_name": "Job creation by new businesses owned by minority (count)",
+        "short_description": "Jobs created by new businesses owned by minority (count)",
+        "long_description": "Jobs created by new businesses owned by minority ",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "minority_owned_job_creation_active": {
+        "category": "Business climate",
+        "short_name": "Job creation by active businesses owned by minority (count)",
+        "long_name": "Job creation by active businesses owned by minority (count)",
+        "short_description": "Jobs created by active businesses owned by minority (count)",
+        "long_description": "Jobs created by active businesses owned by minority",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "minority_owned_business_job_creation": {
+        "category": "Business climate",
+        "short_name": "Number of minority owned business creating jobs",
+        "long_name": "Number of minority owned business creating jobs",
+        "short_description": "Number of minority owned business creating jobs",
+        "long_description": "Number of minority owned business creating jobs",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "minority_owned_total_job_creation": {
+        "category": "Business climate",
+        "short_name": "Total jobs creation by minority owned businesses",
+        "long_name": "Total jobs creation by minority owned businesses",
+        "short_description": "Total jobs created by minority owned businesses",
+        "long_description": "Total jobs created by minority owned businesses",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "minority_owned_perc_job_creation_new": {
+        "category": "Business climate",
+        "short_name": "Job creation by new businesses owned by minority (percent)",
+        "long_name": "Job creation by new businesses owned by minority (percent)",
+        "short_description": "Job created by new businesses owned by minority (percent)",
+        "long_description": "Job created by new businesses owned by minority in percent",
+        "statement": "",
+        "type": "percent",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "minority_owned_perc_job_creation_active": {
+        "category": "Business climate",
+        "short_name": "Job creation by active businesses owned by minority (percent)",
+        "long_name": "Job creation by active businesses owned by minority (percent)",
+        "short_description": "Job created by active businesses owned by minority (percent)",
+        "long_description": "Job created by active businesses owned by minority in percent",
+        "statement": "",
+        "type": "percent",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "minority_owned_job_destruction_exit": {
+        "category": "Business climate",
+        "short_name": "Job destruction by exiting minority owned businesses (count)",
+        "long_name": "Job destruction by exiting minority owned businesses (count)",
+        "short_description": "Jobs destroyed by exiting minority owned businesses (count)",
+        "long_description": "Jobs destroyed by exiting minority owned businesses ",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "minority_owned_job_destruction_active": {
+        "category": "Business climate",
+        "short_name": "Job destruction by active minority owned businesses (count)",
+        "long_name": "Job destruction by active minority owned businesses (count)",
+        "short_description": "Jobs destroyed by active minority owned businesses (count)",
+        "long_description": "Jobs destroyed by active minority owned businesses",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "minority_owned_business_job_destruction": {
+        "category": "Business climate",
+        "short_name": "Number of minority owned businesses destroying jobs",
+        "long_name": "Number of minority owned businesses destroying jobs",
+        "short_description": "Number of minority owned businesses destroying jobs",
+        "long_description": "Number of minority owned businesses destroying jobs",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "minority_owned_total_job_destruction": {
+        "category": "Business climate",
+        "short_name": "Total jobs destruction by minority owned businesses",
+        "long_name": "Total jobs destruction by minority owned businesses",
+        "short_description": "Total jobs destroyed by minority owned businesses",
+        "long_description": "Total jobs destroyed by minority owned businesses",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "minority_owned_perc_job_destruction_exit": {
+        "category": "Business climate",
+        "short_name": "Job destruction by exiting minority owned businesses (percent)",
+        "long_name": "Job destruction by exiting minority owned businesses (percent)",
+        "short_description": "Jobs destroyed by exiting minority owned businesses (percent)",
+        "long_description": "Jobs destroyed by exiting minority owned businesses in percent",
+        "statement": "",
+        "type": "percent",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "minority_owned_perc_job_destruction_active": {
+        "category": "Business climate",
+        "short_name": "Job destruction by active minority owned businesses (percent)",
+        "long_name": "Job destruction by active minority owned businesses (percent)",
+        "short_description": "Jobs destroyed by active minority owned businesses (percent)",
+        "long_description": "Jobs destroyed by active minority owned businesses in percent",
+        "statement": "",
+        "type": "percent",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_total_employment": {
+        "category": "Business climate",
+        "short_name": "Total employment by non minority owned businesses",
+        "long_name": "Total employment by non minority owned businesses",
+        "short_description": "Total employment by non minority owned businesses",
+        "long_description": "Total employment by non minority owned businesses",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_job_creation_new": {
+        "category": "Business climate",
+        "short_name": "Job creation by new businesses not owned by minority (count)",
+        "long_name": "Job creation by new businesses not owned by minority (count)",
+        "short_description": "Job created by new businesses not owned by minority (count)",
+        "long_description": "Job created by new businesses not owned by minority ",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_job_creation_active": {
+        "category": "Business climate",
+        "short_name": "Job creation by active businesses not owned by minority (count)",
+        "long_name": "Job creation by active businesses not owned by minority (count)",
+        "short_description": "Job created by active businesses not owned by minority (count)",
+        "long_description": "Job created by active businesses not owned by minority ",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_business_job_creation": {
+        "category": "Business climate",
+        "short_name": "Number of non minority owned business creating jobs",
+        "long_name": "Number of non minority owned business creating jobs",
+        "short_description": "Number of non minority owned business creating jobs",
+        "long_description": "Number of non minority owned business creating jobs",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_total_job_creation": {
+        "category": "Business climate",
+        "short_name": "Total jobs creation by non minority owned businesses",
+        "long_name": "Total jobs creation by non minority owned businesses",
+        "short_description": "Total jobs created by non minority owned businesses",
+        "long_description": "Total jobs created by non minority owned businesses",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_perc_job_creation_new": {
+        "category": "Business climate",
+        "short_name": "Job creation by new businesses not owned by minority (percent)",
+        "long_name": "Job creation by new businesses not owned by minority (percent)",
+        "short_description": "Jobs created by new businesses not owned by minority (percent)",
+        "long_description": "Jobs created by new businesses not owned by minority in percent",
+        "statement": "",
+        "type": "percent",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_perc_job_creation_active": {
+        "category": "Business climate",
+        "short_name": "Job creation by active businesses not owned by minority (percent)",
+        "long_name": "Job creation by active businesses not owned by minority (percent)",
+        "short_description": "Jobs created by active businesses not owned by minority (percent)",
+        "long_description": "Jobs created by active businesses not owned by minority in percent",
+        "statement": "",
+        "type": "percent",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_job_destruction_exit": {
+        "category": "Business climate",
+        "short_name": "Job destruction by exiting non minority owned businesses (count)",
+        "long_name": "Job destruction by exiting non minority owned businesses (count)",
+        "short_description": "Jobs destroyed by exiting non minority owned businesses (count)",
+        "long_description": "Jobs destroyed by exiting non minority owned businesses ",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_job_destruction_active": {
+        "category": "Business climate",
+        "short_name": "Job destruction by active non minority owned businesses (count)",
+        "long_name": "Job destruction by active non minority owned businesses (count)",
+        "short_description": "Jobs destroyed by active non minority owned businesses (count)",
+        "long_description": "Jobs destroyed by active non minority owned businesses ",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_business_job_destruction": {
+        "category": "Business climate",
+        "short_name": "Number of non minority owned businesses destroying jobs",
+        "long_name": "Number of non minority owned businesses destroying jobs",
+        "short_description": "Number of non minority owned businesses destroying jobs",
+        "long_description": "Number of non minority owned businesses destroying jobs",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_total_job_destruction": {
+        "category": "Business climate",
+        "short_name": "Total jobs destruction by non minority owned businesses",
+        "long_name": "Total jobs destruction by non minority owned businesses",
+        "short_description": "Total jobs destroyed by non minority owned businesses",
+        "long_description": "Total jobs destroyed by non minority owned businesses",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_perc_job_destruction_exit": {
+        "category": "Business climate",
+        "short_name": "Job destruction by exiting non minority owned businesses (percent)",
+        "long_name": "Job destruction by exiting non minority owned businesses (percent)",
+        "short_description": "Jobs destroyed by exiting non minority owned businesses (percent)",
+        "long_description": "Jobs destroyed by exiting non minority owned businesses in percent",
+        "statement": "",
+        "type": "percent",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_perc_job_destruction_active": {
+        "category": "Business climate",
+        "short_name": "Job destruction by active non minority owned businesses (percent)",
+        "long_name": "Job destruction by active non minority owned businesses (percent)",
+        "short_description": "Jobs destroyed by active non minority owned businesses (percent)",
+        "long_description": "Jobs destroyed by active non minority owned businesses in percent",
+        "statement": "",
+        "type": "percent",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    }
+}

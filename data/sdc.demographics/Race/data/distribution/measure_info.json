@@ -1,290 +1,338 @@
 {
-  "pop_afr_amer_alone": {
-    "category": "Demographics",
-    "measure": "pop_afr_amer_alone",
-    "short_name": "Black population",
-    "long_name": "Black population (count)",
-    "short_description": "The Black population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The Black population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-    "statement": "The Black population is {value} in {features.name}.",
-    "type": "count",
-    "equity_category" : "Status",
-    "sources": [
-      {
-        "name": "American Community Survey Table B01001",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "pop_native_alone": {
-    "category": "Demographics",
-    "measure": "pop_native_alone",
-    "short_name": "Native population",
-    "long_name": "Native population (count)",
-    "short_description": "The Native population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The Native population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-    "statement": "The Native population is {value} in {features.name}.",
-    "type": "count",
-    "equity_category" : "Status",
-    "sources": [
-      {
-        "name": "American Community Survey Table B01001",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "pop_AAPI": {
-    "category": "Demographics",
-    "measure": "pop_AAPI",
-    "short_name": "Asian American/Pacific Islander population",
-    "long_name": "Asian American/Pacific Islander population (count)",
-    "short_description": "The Asian American/Pacific Islander population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The Asian American/Pacific Islander population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-    "statement": "The Asian American/Pacific Islander population is {value} in {features.name}.",
-    "type": "count",
-    "equity_category" : "Status",
-    "sources": [
-      {
-        "name": "American Community Survey Table B01001",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "pop_wht_alone": {
-    "category": "Demographics",
-    "measure": "pop_wht_alone",
-    "short_name": "White population",
-    "long_name": "White population (count)",
-    "short_description": "The White population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The White population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-    "statement": "The White population is {value} in {features.name}.",
-    "type": "count",
-    "equity_category" : "Status",
-    "sources": [
-      {
-        "name": "American Community Survey Table B01001",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "pop_hispanic_or_latino": {
-    "category": "Demographics",
-    "measure": "pop_hispanic_or_latino",
-    "short_name": "Hispanic/Latino population",
-    "long_name": "Hispanic/Latino population (count)",
-    "short_description": "The Hispanic/Latino population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The Hispanic/Latino population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-    "statement": "The Hispanic/Latino population is {value} in {features.name}.",
-    "type": "count",
-    "equity_category" : "Status",
-    "sources": [
-      {
-        "name": "American Community Survey Table B01001",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "pop_other": {
-    "category": "Demographics",
-    "measure": "pop_other",
-    "short_name": "Other racial population",
-    "long_name": "Other racial population (count)",
-    "short_description": "The Other racial population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The Other racial population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-    "statement": "The Other racial population is {value} in {features.name}.",
-    "type": "count",
-    "equity_category" : "Status",
-    "sources": [
-      {
-        "name": "American Community Survey Table B01001",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "pop_two_or_more": {
-    "category": "Demographics",
-    "measure": "pop_two_or_more",
-    "short_name": "Two or more races population",
-    "long_name": "Two or more races population (count)",
-    "short_description": "The two or more races population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The two or more races population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-    "statement": "The two or more races population is {value} in {features.name}.",
-    "type": "count",
-    "equity_category" : "Status",
-    "sources": [
-      {
-        "name": "American Community Survey Table B01001",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-    "perc_afr_amer_alone": {
-    "category": "Demographics",
-    "measure": "perc_afr_amer_alone",
-    "short_name": "Black population",
-    "long_name": "Black population (percent)",
-    "short_description": "The Black population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The Black population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-    "statement": "The Black population is {value} in {features.name}.",
-    "type": "percent",
-    "equity_category" : "Status",
-    "sources": [
-      {
-        "name": "American Community Survey Table B01001",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "perc_native_alone": {
-    "category": "Demographics",
-    "measure": "perc_native_alone",
-    "short_name": "Native population",
-    "long_name": "Native population (percent)",
-    "short_description": "The Native population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The Native population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-    "statement": "The Native population is {value} in {features.name}.",
-    "type": "percent",
-    "equity_category" : "Status",
-    "sources": [
-      {
-        "name": "American Community Survey Table B01001",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "perc_AAPI": {
-    "category": "Demographics",
-    "measure": "perc_AAPI",
-    "short_name": "Asian American/Pacific Islander population",
-    "long_name": "Asian American/Pacific Islander population (percent)",
-    "short_description": "The Asian American/Pacific Islander population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The Asian American/Pacific Islander population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-    "statement": "The Asian American/Pacific Islander population is {value} in {features.name}.",
-    "type": "percent",
-    "equity_category" : "Status",
-    "sources": [
-      {
-        "name": "American Community Survey Table B01001",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "perc_wht_alone": {
-    "category": "Demographics",
-    "measure": "perc_wht_alone",
-    "short_name": "White population",
-    "long_name": "White population (percent)",
-    "short_description": "The White population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The White population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-    "statement": "The White population is {value} in {features.name}.",
-    "type": "percent",
-    "equity_category" : "Status",
-    "sources": [
-      {
-        "name": "American Community Survey Table B01001",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "perc_hispanic_or_latino": {
-    "category": "Demographics",
-    "measure": "perc_hispanic_or_latino",
-    "short_name": "Hispanic/Latino population",
-    "long_name": "Hispanic/Latino population (percent)",
-    "short_description": "The Hispanic/Latino population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The Hispanic/Latino population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-    "statement": "The Hispanic/Latino population is {value} in {features.name}.",
-    "type": "percent",
-    "equity_category" : "Status",
-    "sources": [
-      {
-        "name": "American Community Survey Table B01001",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "perc_other": {
-    "category": "Demographics",
-    "measure": "perc_other",
-    "short_name": "Other racial population",
-    "long_name": "Other racial population (percent)",
-    "short_description": "The Other racial population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The Other racial population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-    "statement": "The Other racial population is {value} in {features.name}.",
-    "type": "percent",
-    "equity_category" : "Status",
-    "sources": [
-      {
-        "name": "American Community Survey Table B01001",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "perc_two_or_more": {
-    "category": "Demographics",
-    "measure": "perc_two_or_more",
-    "short_name": "Two or more races population",
-    "long_name": "Two or more races population (percent)",
-    "short_description": "The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-    "statement": "The two or more races population is {value} in {features.name}.",
-    "type": "percent",
-    "equity_category" : "Status",
-    "sources": [
-      {
-        "name": "American Community Survey Table B01001",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "total_race": {
-    "category": "Demographics",
-    "measure": "total_race",
-    "short_name": "Total population",
-    "long_name": "Total population (count)",
-    "short_description": "Total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "Total population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-    "statement": "Total population is {value} in {features.name}.",
-    "type": "count",
-    "equity_category" : "Status",
-    "sources": [
-      {
-        "name": "American Community Survey Table B01001",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-   "pop_eth_tot": {
-    "category": "Demographics",
-    "measure": "pop_eth_tot",
-    "short_name": "Total population ethnique",
-    "long_name": "Total population ethnique(count)",
-    "short_description": "Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
-    "statement": "Total population ethnique is {value} in {features.name}.",
-    "type": "count",
-    "equity_category" : "Status",
-    "sources": [
-      {
-        "name": "American Community Survey Table B01001",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  }
+    "pop_afr_amer_alone":{
+        "category":"Demographics",
+        "measure":"pop_afr_amer_alone",
+        "short_name":"Black population",
+        "long_name":"Black population (count)",
+        "short_description":"The Black population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description":"The Black population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "statement":"The Black population is {value} in {features.name}.",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01001",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
+    },
+    "pop_native_alone":{
+        "category":"Demographics",
+        "measure":"pop_native_alone",
+        "short_name":"Native population",
+        "long_name":"Native population (count)",
+        "short_description":"The Native population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description":"The Native population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "statement":"The Native population is {value} in {features.name}.",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01001",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
+    },
+    "pop_AAPI":{
+        "category":"Demographics",
+        "measure":"pop_AAPI",
+        "short_name":"Asian American/Pacific Islander population",
+        "long_name":"Asian American/Pacific Islander population (count)",
+        "short_description":"The Asian American/Pacific Islander population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description":"The Asian American/Pacific Islander population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "statement":"The Asian American/Pacific Islander population is {value} in {features.name}.",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01001",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
+    },
+    "pop_wht_alone":{
+        "category":"Demographics",
+        "measure":"pop_wht_alone",
+        "short_name":"White population",
+        "long_name":"White population (count)",
+        "short_description":"The White population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description":"The White population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "statement":"The White population is {value} in {features.name}.",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01001",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
+    },
+    "pop_hispanic_or_latino":{
+        "category":"Demographics",
+        "measure":"pop_hispanic_or_latino",
+        "short_name":"Hispanic/Latino population",
+        "long_name":"Hispanic/Latino population (count)",
+        "short_description":"The Hispanic/Latino population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description":"The Hispanic/Latino population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "statement":"The Hispanic/Latino population is {value} in {features.name}.",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01001",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
+    },
+    "pop_other":{
+        "category":"Demographics",
+        "measure":"pop_other",
+        "short_name":"Other racial population",
+        "long_name":"Other racial population (count)",
+        "short_description":"The Other racial population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description":"The Other racial population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "statement":"The Other racial population is {value} in {features.name}.",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01001",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
+    },
+    "pop_two_or_more":{
+        "category":"Demographics",
+        "measure":"pop_two_or_more",
+        "short_name":"Two or more races population",
+        "long_name":"Two or more races population (count)",
+        "short_description":"The two or more races population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description":"The two or more races population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "statement":"The two or more races population is {value} in {features.name}.",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01001",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
+    },
+    "perc_afr_amer_alone":{
+        "category":"Demographics",
+        "measure":"perc_afr_amer_alone",
+        "short_name":"Black population",
+        "long_name":"Black population (percent)",
+        "short_description":"The Black population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description":"The Black population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "statement":"The Black population is {value} in {features.name}.",
+        "type":"percent",
+        "equity_category":"Status",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01001",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"percentage"
+    },
+    "perc_native_alone":{
+        "category":"Demographics",
+        "measure":"perc_native_alone",
+        "short_name":"Native population",
+        "long_name":"Native population (percent)",
+        "short_description":"The Native population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description":"The Native population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "statement":"The Native population is {value} in {features.name}.",
+        "type":"percent",
+        "equity_category":"Status",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01001",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"percentage"
+    },
+    "perc_AAPI":{
+        "category":"Demographics",
+        "measure":"perc_AAPI",
+        "short_name":"Asian American/Pacific Islander population",
+        "long_name":"Asian American/Pacific Islander population (percent)",
+        "short_description":"The Asian American/Pacific Islander population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description":"The Asian American/Pacific Islander population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "statement":"The Asian American/Pacific Islander population is {value} in {features.name}.",
+        "type":"percent",
+        "equity_category":"Status",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01001",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"percentage"
+    },
+    "perc_wht_alone":{
+        "category":"Demographics",
+        "measure":"perc_wht_alone",
+        "short_name":"White population",
+        "long_name":"White population (percent)",
+        "short_description":"The White population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description":"The White population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "statement":"The White population is {value} in {features.name}.",
+        "type":"percent",
+        "equity_category":"Status",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01001",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"percentage"
+    },
+    "perc_hispanic_or_latino":{
+        "category":"Demographics",
+        "measure":"perc_hispanic_or_latino",
+        "short_name":"Hispanic/Latino population",
+        "long_name":"Hispanic/Latino population (percent)",
+        "short_description":"The Hispanic/Latino population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description":"The Hispanic/Latino population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "statement":"The Hispanic/Latino population is {value} in {features.name}.",
+        "type":"percent",
+        "equity_category":"Status",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01001",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"percentage"
+    },
+    "perc_other":{
+        "category":"Demographics",
+        "measure":"perc_other",
+        "short_name":"Other racial population",
+        "long_name":"Other racial population (percent)",
+        "short_description":"The Other racial population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description":"The Other racial population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "statement":"The Other racial population is {value} in {features.name}.",
+        "type":"percent",
+        "equity_category":"Status",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01001",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"percentage"
+    },
+    "perc_two_or_more":{
+        "category":"Demographics",
+        "measure":"perc_two_or_more",
+        "short_name":"Two or more races population",
+        "long_name":"Two or more races population (percent)",
+        "short_description":"The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description":"The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "statement":"The two or more races population is {value} in {features.name}.",
+        "type":"percent",
+        "equity_category":"Status",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01001",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"percentage"
+    },
+    "total_race":{
+        "category":"Demographics",
+        "measure":"total_race",
+        "short_name":"Total population",
+        "long_name":"Total population (count)",
+        "short_description":"Total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description":"Total population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "statement":"Total population is {value} in {features.name}.",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01001",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
+    },
+    "pop_eth_tot":{
+        "category":"Demographics",
+        "measure":"pop_eth_tot",
+        "short_name":"Total population ethnique",
+        "long_name":"Total population ethnique(count)",
+        "short_description":"Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description":"Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates Table B01001.",
+        "statement":"Total population ethnique is {value} in {features.name}.",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01001",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
+    }
 }

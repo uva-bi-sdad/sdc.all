@@ -1,36 +1,42 @@
 {
-  "no_hlth_ins_pct": {
-    "category": "Health",
-    "type": "percent",
-    "short_name": "Uninsured population",
-    "long_name": "Percent of population without health insurance",
-    "short_description": "Percent of the population (ages 19-64) self-reported to not be currently covered by any type of health insurance or health coverage plan",
-    "long_description": "Percent of the population self-reported to not be currently covered by any type of health insurance or health coverage plan. Based on American Community Survey Tables B27010 in ACS 2015/2019 5-year estimates.",
-    "statement": "{value} of the population does not have health insurance in {features.name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "location": "Table B27010",
-        "date_accessed": 2022,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "hlth_ins_pct": {
-    "category": "Health",
-    "type": "percent",
-    "short_name": "Insured population",
-    "long_name": "Percent of population with health insurance",
-    "short_description": "Percent of the population (ages 19-64) self-reported to be currently covered by any type of health insurance or health coverage plan",
-    "long_description": "Percent of the population self-reported to be currently covered by any type of health insurance or health coverage plan. Based on American Community Survey Tables B27010 in ACS 2015/2019 5-year estimates.",
-    "statement": "{value} of the population has health insurance in {features.name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "location": "Table B27010",
-        "date_accessed": 2022,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  }
+    "no_hlth_ins_pct":{
+        "category":"Health",
+        "type":"percent",
+        "short_name":"Uninsured population",
+        "long_name":"Percent of population without health insurance",
+        "short_description":"Percent of the population (ages 19-64) self-reported to not be currently covered by any type of health insurance or health coverage plan",
+        "long_description":"Percent of the population self-reported to not be currently covered by any type of health insurance or health coverage plan. Based on American Community Survey Tables B27010 in ACS 2015/2019 5-year estimates.",
+        "statement":"{value} of the population does not have health insurance in {features.name}.",
+        "sources":[
+            {
+                "name":"American Community Survey",
+                "location":"Table B27010",
+                "date_accessed":                2022,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"percent"
+    },
+    "hlth_ins_pct":{
+        "category":"Health",
+        "type":"percent",
+        "short_name":"Insured population",
+        "long_name":"Percent of population with health insurance",
+        "short_description":"Percent of the population (ages 19-64) self-reported to be currently covered by any type of health insurance or health coverage plan",
+        "long_description":"Percent of the population self-reported to be currently covered by any type of health insurance or health coverage plan. Based on American Community Survey Tables B27010 in ACS 2015/2019 5-year estimates.",
+        "statement":"{value} of the population has health insurance in {features.name}.",
+        "sources":[
+            {
+                "name":"American Community Survey",
+                "location":"Table B27010",
+                "date_accessed":                2022,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"percent"
+    }
 }

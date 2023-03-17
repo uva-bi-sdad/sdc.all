@@ -13,6 +13,7 @@ for (g in c("county", "tract", "block group")) {
 
     dt$year <- toString(y)
     dt$region_type <- g
+    dt$measure_type <- "count"
 
     data.table::fwrite(dt,
                        paste0("Pay and Benefits/Household Income/data/original/dmv_", g, "_", y,"_median_household_income.csv"),

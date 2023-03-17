@@ -1,0 +1,87 @@
+{
+    "entry_rate": {
+        "category": "Business climate",
+        "short_name": "Entry rate",
+        "long_name": "Entry rate (percent)",
+        "short_description": "Percentage of new businesses",
+        "long_description": "Percentage of new businesses",
+        "statement": "",
+        "type": "percent",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "new_business": {
+        "category": "Business climate",
+        "short_name": "Number of new businesses (count)",
+        "long_name": "Number of new businesses (count)",
+        "short_description": "Number of new businesses (count)",
+        "long_description": "Number of new businesses (count)",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "exit_rate": {
+        "category": "Business climate",
+        "short_name": "Exit rate",
+        "long_name": "Exit rate (percent)",
+        "short_description": "Percentage of businesses exiting ",
+        "long_description": "Percentage of businesses exiting ",
+        "statement": "",
+        "type": "percent",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "exit_business": {
+        "category": "Business climate",
+        "short_name": "Number of exiting businesses (count)",
+        "long_name": "Number of exiting businesses (count)",
+        "short_description": "Number of exiting businesses (count)",
+        "long_description": "Number of exiting businesses (count)",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "number_business": {
+        "category": "Business climate",
+        "short_name": "Total number of businesses",
+        "long_name": "Number of exiting businesses (count)",
+        "short_description": "Number of exiting businesses (count)",
+        "long_description": "Number of exiting businesses (count)",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    }
+}

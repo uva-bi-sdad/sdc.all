@@ -1,56 +1,65 @@
 {
-    "hh_received_snap_cnt": {
-        "category": "Nutrition and Food Security",
-        "equity_category": "",
-        "long_description": "The number of households in which at least one member of the household received benefits from the Food Stamp Program or the Supplemental Nutrition Assistance Program (SNAP) in the past 12 months.  This does not include households in which at least one member recieved benefits from WIC, the School Lunch Program, or assistance from food banks and not also from the Food Stamp Program or SNAP in the past 12 months.",
-        "long_name": "Count of Households That Received Supplemental Nutrition Assistance Program (SNAP)",
-        "short_description": "The number of households in which at least one member received benefits from the Food Stamp Program or SNAP in the past 12 months",
-        "short_name": "Count of Households That Received SNAP",
-        "sources": [
+    "hh_received_snap_cnt":{
+        "category":"Nutrition and Food Security",
+        "equity_category":"",
+        "long_description":"The number of households in which at least one member of the household received benefits from the Food Stamp Program or the Supplemental Nutrition Assistance Program (SNAP) in the past 12 months.  This does not include households in which at least one member recieved benefits from WIC, the School Lunch Program, or assistance from food banks and not also from the Food Stamp Program or SNAP in the past 12 months.",
+        "long_name":"Count of Households That Received Supplemental Nutrition Assistance Program (SNAP)",
+        "short_description":"The number of households in which at least one member received benefits from the Food Stamp Program or SNAP in the past 12 months",
+        "short_name":"Count of Households That Received SNAP",
+        "sources":[
             {
-                "date_accessed": 2022,
-                "name": "American Community Survey (ACS)",
-                "location": "Table B22010",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
+                "date_accessed":                2022,
+                "name":"American Community Survey (ACS)",
+                "location":"Table B22010",
+                "url":"https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "The count of households that received SNAP in {features.name} is {value}.",
-        "type": ""
+        "statement":"The count of households that received SNAP in {features.name} is {value}.",
+        "type":"",
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
     },
-    "hh_received_snap_pct": {
-        "category": "Nutrition and Food Security",
-        "equity_category": "",
-        "long_description": "The percentage of households in which at least one member of the household received benefits from the Food Stamp Program or the Supplemental Nutrition Assistance Program (SNAP) in the past 12 months.  This does not include households in which at least one member recieved benefits from WIC, the School Lunch Program, or assistance from food banks and not also from the Food Stamp Program or SNAP in the past 12 months.",
-        "long_name": "Percentage of Households That Received Supplemental Nutrition Assistance Program (SNAP)",
-        "short_description": "The percentage of households in which at least one member received benefits from the Food Stamp Program or SNAP in the past 12 months",
-        "short_name": "Percentage of Households That Received SNAP",
-        "sources": [
+    "hh_received_snap_pct":{
+        "category":"Nutrition and Food Security",
+        "equity_category":"",
+        "long_description":"The percentage of households in which at least one member of the household received benefits from the Food Stamp Program or the Supplemental Nutrition Assistance Program (SNAP) in the past 12 months.  This does not include households in which at least one member recieved benefits from WIC, the School Lunch Program, or assistance from food banks and not also from the Food Stamp Program or SNAP in the past 12 months.",
+        "long_name":"Percentage of Households That Received Supplemental Nutrition Assistance Program (SNAP)",
+        "short_description":"The percentage of households in which at least one member received benefits from the Food Stamp Program or SNAP in the past 12 months",
+        "short_name":"Percentage of Households That Received SNAP",
+        "sources":[
             {
-                "date_accessed": 2022,
-                "name": "American Community Survey (ACS)",
-                "location": "Table B22010",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
+                "date_accessed":                2022,
+                "name":"American Community Survey (ACS)",
+                "location":"Table B22010",
+                "url":"https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "The percentage of households that received SNAP in {features.name} is {value}.",
-        "type": ""
+        "statement":"The percentage of households that received SNAP in {features.name} is {value}.",
+        "type":"",
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"percent"
     },
-    "population": {
-        "category": "Nutrition and Food Security",
-        "equity_category": "",
-        "long_description": "Number of households",
-        "long_name": "Count of Households",
-        "short_description": "Number of households",
-        "short_name": "Count of Households",
-        "sources": [
+    "population":{
+        "category":"Nutrition and Food Security",
+        "equity_category":"",
+        "long_description":"Number of households",
+        "long_name":"Count of Households",
+        "short_description":"Number of households",
+        "short_name":"Count of Households",
+        "sources":[
             {
-                "date_accessed": 2022,
-                "name": "American Community Survey (ACS), 5-year estimates",
-                "location": "Table B22010",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
+                "date_accessed":                2022,
+                "name":"American Community Survey (ACS), 5-year estimates",
+                "location":"Table B22010",
+                "url":"https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "The number of households in {features.name} is {value}.",
-        "type": ""
+        "statement":"The number of households in {features.name} is {value}.",
+        "type":"",
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
     }
 }

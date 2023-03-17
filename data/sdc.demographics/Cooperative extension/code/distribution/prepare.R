@@ -56,7 +56,7 @@ for(state in states){
       
       male <- male %>% mutate(value = estimate/total$estimate * 100, moe = moe/total$estimate * 100) %>%
         mutate(measure = "perc_male", year = year, region_type = as.character(geography),
-               measure_type = "float", measure_units = "count") %>% select(-c(estimate)) # measure_units don't know what unit to use
+               measure_type = "percentage", measure_units = "") %>% select(-c(estimate)) # measure_units don't know what unit to use
       
       
       sexes <- rbind(sexes, male)

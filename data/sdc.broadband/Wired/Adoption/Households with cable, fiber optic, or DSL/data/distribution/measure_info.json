@@ -1,21 +1,24 @@
 {
-  "perc_hh_with_cable_fiber_dsl": {
-    "category": "Broadband",
-    "measure_table": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev",
-    "full_name": "broadband_withoutint_compdev:perc_hh_with_cable_fiber_dsl",
-    "type": "percent",
-    "short_name": "Households with cable, fiber optic, or DSL",
-    "long_name": "Percentage of households with a high speed internet service (cable, fiber optic, or DSL)",
-    "short_description": "Percentage of households self-reported to have a high speed internet service (cable, fiber optic, or DSL)",
-    "long_description": "Percentage of households self-reported to have a high speed internet service. A high speed internet service is defined as a cable, fiber optic, or DSL internet connection. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
-    "statement": "{value} of households in {features.name} have a cable, fiber optic, or DSL internet connection.",
-    "equity_category": "Availability",
-    "sources": [
-      {
-        "name": "American Community Survey Table B28002",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  }
+    "perc_hh_with_cable_fiber_dsl":{
+        "category":"Broadband",
+        "measure_table":"dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev",
+        "full_name":"broadband_withoutint_compdev:perc_hh_with_cable_fiber_dsl",
+        "type":"percent",
+        "short_name":"Households with cable, fiber optic, or DSL",
+        "long_name":"Percentage of households with a high speed internet service (cable, fiber optic, or DSL)",
+        "short_description":"Percentage of households self-reported to have a high speed internet service (cable, fiber optic, or DSL)",
+        "long_description":"Percentage of households self-reported to have a high speed internet service. A high speed internet service is defined as a cable, fiber optic, or DSL internet connection. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
+        "statement":"{value} of households in {features.name} have a cable, fiber optic, or DSL internet connection.",
+        "equity_category":"Availability",
+        "sources":[
+            {
+                "name":"American Community Survey Table B28002",
+                "date_accessed":                2021,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"percent"
+    }
 }

@@ -20,16 +20,12 @@
       "title": "A three-step floating catchment area method for analyzing spatial access to health services",
       "journal": "International Journal of Geographical Information Science",
       "volume": "26",
-      "page": "1073–1089",
+      "page": "1073\u20131089",
       "doi": "10.1080/13658816.2011.624987"
     },
     "bii21": {
       "id": "bii21",
-      "author": [
-        {
-          "family": "Biocomplexity Institute and Initiative"
-        }
-      ],
+      "author": "Biocomplexity Institute and Initiative",
       "year": 2021,
       "title": "catchment: Calculate spatial access and availability metrics",
       "version": "0.0.1",
@@ -38,9 +34,11 @@
   },
   "schools_2year_per_100k": {
     "category": "Education",
-    "full_name": "schools_2year_per_100k",
     "measure": "schools_2year_per_100k",
     "type": "per 100k",
+    "units": "per 100k",
+    "data_type": "numeric",
+    "measure_type": "ratio",
     "short_name": "2-year schools",
     "long_name": "2-year schools per 100k people over 14",
     "short_description": "Number of 2-year schools per 100k people over 14.",
@@ -71,14 +69,20 @@
     ],
     "layer": {
       "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
-      "filter": { "feature": "ICLEVEL", "operator": "=", "value": 2 }
+      "filter": {
+        "feature": "ICLEVEL",
+        "operator": "=",
+        "value": 2
+      }
     }
   },
   "schools_2year_min_drivetime": {
     "category": "Education",
-    "full_name": "schools_2year_min_drivetime",
     "measure": "schools_2year_min_drivetime",
     "type": "minutes",
+    "units": "minutes",
+    "data_type": "numeric",
+    "measure_type": "time",
     "short_name": "2-year school drive time",
     "long_name": "drive time to nearest 2-year school",
     "short_description": "Drive time to the nearest 2-year schools.",
@@ -101,14 +105,20 @@
     ],
     "layer": {
       "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
-      "filter": { "feature": "ICLEVEL", "operator": "=", "value": 2 }
+      "filter": {
+        "feature": "ICLEVEL",
+        "operator": "=",
+        "value": 2
+      }
     }
   },
   "schools_under2year_per_100k": {
     "category": "Education",
-    "full_name": "schools_under2year_per_100k",
     "measure": "schools_under2year_per_100k",
     "type": "per 100k",
+    "units": "per 100k",
+    "data_type": "numeric",
+    "measure_type": "ratio",
     "short_name": "<2-year schools",
     "long_name": "<2-year schools per 100k people over 14",
     "short_description": "Number of <2-year schools per 100k people over 14, calculated within floating catchment areas.",
@@ -139,14 +149,20 @@
     ],
     "layer": {
       "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
-      "filter": { "feature": "ICLEVEL", "operator": "=", "value": 3 }
+      "filter": {
+        "feature": "ICLEVEL",
+        "operator": "=",
+        "value": 3
+      }
     }
   },
   "schools_under2year_min_drivetime": {
     "category": "Education",
-    "full_name": "schools_under2year_min_drivetime",
     "measure": "schools_under2year_min_drivetime",
     "type": "minutes",
+    "units": "minutes",
+    "data_type": "numeric",
+    "measure_type": "time",
     "short_name": "<2-year school drive time",
     "long_name": "drive time to nearest <2-year school",
     "short_description": "Drive time to the nearest <2-year schools.",
@@ -169,14 +185,20 @@
     ],
     "layer": {
       "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
-      "filter": { "feature": "ICLEVEL", "operator": "=", "value": 3 }
+      "filter": {
+        "feature": "ICLEVEL",
+        "operator": "=",
+        "value": 3
+      }
     }
   },
   "schools_2year_with_biomedical_program_per_100k": {
     "category": "Education",
-    "full_name": "schools_2year_with_biomedical_program_per_100k",
     "measure": "schools_2year_with_biomedical_program_per_100k",
     "type": "per 100k",
+    "units": "per 100k",
+    "data_type": "numeric",
+    "measure_type": "ratio",
     "short_name": "2-year biomedical programs",
     "long_name": "2-year biomedical programs per 100k people over 14",
     "short_description": "Number of 2-year schools with biomedical programs per 100k people over 14, calculated within floating catchment areas.",
@@ -208,16 +230,26 @@
     "layer": {
       "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
       "filter": [
-        { "feature": "ICLEVEL", "operator": "=", "value": 2 },
-        { "feature": "biomedical", "operator": "=", "value": 1 }
+        {
+          "feature": "ICLEVEL",
+          "operator": "=",
+          "value": 2
+        },
+        {
+          "feature": "biomedical",
+          "operator": "=",
+          "value": 1
+        }
       ]
     }
   },
   "schools_2year_with_computer_program_per_100k": {
     "category": "Education",
-    "full_name": "schools_2year_with_computer_program_per_100k",
     "measure": "schools_2year_with_computer_program_per_100k",
     "type": "per 100k",
+    "units": "per 100k",
+    "data_type": "numeric",
+    "measure_type": "ratio",
     "short_name": "2-year computer science programs",
     "long_name": "2-year computer science programs per 100k people over 14",
     "short_description": "Number of 2-year schools with computer science programs per 100k people over 14, calculated within floating catchment areas.",
@@ -249,16 +281,26 @@
     "layer": {
       "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
       "filter": [
-        { "feature": "ICLEVEL", "operator": "=", "value": 2 },
-        { "feature": "computer", "operator": "=", "value": 1 }
+        {
+          "feature": "ICLEVEL",
+          "operator": "=",
+          "value": 2
+        },
+        {
+          "feature": "computer",
+          "operator": "=",
+          "value": 1
+        }
       ]
     }
   },
   "schools_2year_with_engineering_program_per_100k": {
     "category": "Education",
-    "full_name": "schools_2year_with_engineering_program_per_100k",
     "measure": "schools_2year_with_engineering_program_per_100k",
     "type": "per 100k",
+    "units": "per 100k",
+    "data_type": "numeric",
+    "measure_type": "ratio",
     "short_name": "2-year engineering or related programs",
     "long_name": "2-year engineering or related programs per 100k people over 14",
     "short_description": "Number of 2-year schools with engineering or related programs per 100k people over 14, calculated within floating catchment areas.",
@@ -290,16 +332,26 @@
     "layer": {
       "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
       "filter": [
-        { "feature": "ICLEVEL", "operator": "=", "value": 2 },
-        { "feature": "engineering", "operator": "=", "value": 1 }
+        {
+          "feature": "ICLEVEL",
+          "operator": "=",
+          "value": 2
+        },
+        {
+          "feature": "engineering",
+          "operator": "=",
+          "value": 1
+        }
       ]
     }
   },
   "schools_2year_with_physical_program_per_100k": {
     "category": "Education",
-    "full_name": "schools_2year_with_physical_program_per_100k",
     "measure": "schools_2year_with_physical_program_per_100k",
     "type": "per 100k",
+    "units": "per 100k",
+    "data_type": "numeric",
+    "measure_type": "ratio",
     "short_name": "2-year physical science programs",
     "long_name": "2-year physical science programs per 100k people over 14",
     "short_description": "Number of 2-year schools with physical science programs per 100k people over 14, calculated within floating catchment areas.",
@@ -331,16 +383,26 @@
     "layer": {
       "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
       "filter": [
-        { "feature": "ICLEVEL", "operator": "=", "value": 2 },
-        { "feature": "physical", "operator": "=", "value": 1 }
+        {
+          "feature": "ICLEVEL",
+          "operator": "=",
+          "value": 2
+        },
+        {
+          "feature": "physical",
+          "operator": "=",
+          "value": 1
+        }
       ]
     }
   },
   "schools_2year_with_science_program_per_100k": {
     "category": "Education",
-    "full_name": "schools_2year_with_science_program_per_100k",
     "measure": "schools_2year_with_science_program_per_100k",
     "type": "per 100k",
+    "units": "per 100k",
+    "data_type": "numeric",
+    "measure_type": "ratio",
     "short_name": "2-year science programs",
     "long_name": "2-year science programs per 100k people over 14",
     "short_description": "Number of 2-year schools with science programs per 100k people over 14, calculated within floating catchment areas.",
@@ -372,16 +434,26 @@
     "layer": {
       "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
       "filter": [
-        { "feature": "ICLEVEL", "operator": "=", "value": 2 },
-        { "feature": "science", "operator": "=", "value": 1 }
+        {
+          "feature": "ICLEVEL",
+          "operator": "=",
+          "value": 2
+        },
+        {
+          "feature": "science",
+          "operator": "=",
+          "value": 1
+        }
       ]
     }
   },
   "acs_postsecondary_percent": {
     "category": "Education",
-    "full_name": "acs_postsecondary_percent",
     "measure": "acs_postsecondary_percent",
     "type": "percent",
+    "units": "%",
+    "data_type": "numeric",
+    "measure_type": "percent",
     "short_name": "Postsecondary Education (percent)",
     "long_name": "Estimated Percentage of Population With Any Postsecondary Education",
     "short_description": "Percentage of the population who reported any postsecondary education.",
@@ -400,9 +472,11 @@
   },
   "acs_postsecondary_count": {
     "category": "Education",
-    "full_name": "acs_postsecondary_count",
     "measure": "acs_postsecondary_count",
     "type": "count",
+    "units": "",
+    "data_type": "numeric",
+    "measure_type": "count",
     "short_name": "Postsecondary Education (count)",
     "long_name": "Estimated Number of People With Any Postsecondary Education",
     "short_description": "Number of people who reported any postsecondary education.",

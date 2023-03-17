@@ -25,7 +25,7 @@ job_destruction <- mi_fairfax_features %>%
   select(duns,year,geoid,exit,employment) %>%
   group_by(duns) %>%
   arrange(desc(year), .by_group=TRUE) %>%
-  mutate(employment_diff = c(NA, diff(employment)))%>%
+  mutate(employment_diff = -c(NA, diff(employment)))%>%
   ungroup() %>%
   filter((exit==1)|(employment_diff<0)) %>%
   group_by(geoid,year) %>%

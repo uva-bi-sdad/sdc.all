@@ -8,7 +8,7 @@ setnames(dt_va, "estimate", "value")
 setnames(dt_va, "variable", "measure")
 setnames(dt_va, "year", "year")
 
-dt_va_final <- dt_va[,.(geoid, region_type, region_name, measure, value, moe, year)]
+dt_va_final <- dt_va[,.(geoid, region_type, region_name, measure, value, moe, year, measure_type)]
 
 readr::write_csv(dt_va_final,
                  xzfile("Pay and Benefits/Household Income/data/distribution/va_cttrbg_2015_2019_median_household_income.csv.xz"),

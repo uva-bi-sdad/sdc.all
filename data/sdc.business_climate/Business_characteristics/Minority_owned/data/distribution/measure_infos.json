@@ -1,0 +1,172 @@
+{
+    "minority_owned_entry_rate": {
+        "category": "Business climate",
+        "short_name": "Entry rate among minority owned businesses",
+        "long_name": "Entry rate among minority owned businesses",
+        "short_description": "Percentage of new businesses owned by minority",
+        "long_description": "Percentage of new businesses owned by minority",
+        "statement": "",
+        "type": "percent",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "minority_owned_new_business": {
+        "category": "Business climate",
+        "short_name": "Number of new minority owned businesses (count)",
+        "long_name": "Number of new minority owned businesses (count)",
+        "short_description": "Number of new businesses owned by minority (count)",
+        "long_description": "Number of new businesses owned by minority (count)",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "minority_owned_exit_rate": {
+        "category": "Business climate",
+        "short_name": "Exit rate among minority owned businesses",
+        "long_name": "Exit rate among minority owned businesses",
+        "short_description": "Percentage of minority owned businesses exiting ",
+        "long_description": "Percentage of minority owned businesses exiting ",
+        "statement": "",
+        "type": "percent",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "minority_owned_exit_business": {
+        "category": "Business climate",
+        "short_name": "Number of exiting minority owned businesses (count)",
+        "long_name": "Number of exiting minority owned businesses (count)",
+        "short_description": "Number of exiting minority owned businesses (count)",
+        "long_description": "Number of exiting minority owned businesses (count)",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "minority_owned_number_business": {
+        "category": "Business climate",
+        "short_name": "Total number of minority owned businesses",
+        "long_name": "Total number of minority owned businesses",
+        "short_description": "Total number of minority owned businesses",
+        "long_description": "Total number of minority owned businesses",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_entry_rate": {
+        "category": "Business climate",
+        "short_name": "Entry rate among non minority owned businesses",
+        "long_name": "Entry rate among non minority owned businesses",
+        "short_description": "Percentage of new businesses not owned by minority",
+        "long_description": "Percentage of new businesses not owned by minority",
+        "statement": "",
+        "type": "percent",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_new_business": {
+        "category": "Business climate",
+        "short_name": "Number of new non minority owned businesses (count)",
+        "long_name": "Number of new non minority owned businesses (count)",
+        "short_description": "Number of new businesses owned by minority (count)",
+        "long_description": "Number of new businesses owned by minority (count)",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_exit_rate": {
+        "category": "Business climate",
+        "short_name": "Exit rate among non minority owned businesses",
+        "long_name": "Exit rate among non minority owned businesses",
+        "short_description": "Percentage of businesses owned by minority exiting",
+        "long_description": "Percentage of businesses owned by minority exiting",
+        "statement": "",
+        "type": "percent",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_exit_business": {
+        "category": "Business climate",
+        "short_name": "Number of exiting minority owned businesses (count)",
+        "long_name": "Number of exiting minority owned businesses (count)",
+        "short_description": "Number of businesses owned by minority exiting (count)",
+        "long_description": "Number of businesses owned by minority exiting (count)",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    },
+    "non_minority_owned_number_business": {
+        "category": "Business climate",
+        "short_name": "Total number of non minority owned businesses",
+        "long_name": "Total number of non minority owned businesses",
+        "short_description": "Total number of non minority owned businesses",
+        "long_description": "Total number of non minority owned businesses",
+        "statement": "",
+        "type": "count",
+        "equity_category": "Status",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ]
+    }
+}
