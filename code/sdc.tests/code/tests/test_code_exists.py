@@ -65,8 +65,8 @@ def evaluate_folder(dirpath):
         code_dirs = [d.replace("code/distribution", "data/distribution") for d in code_dirs]
         code_dirs = set(code_dirs)
         
-        good_dirs = data_dirs.intersection(code_dirs)
-        bad_dirs = data_dirs.difference(code_dirs)
+        good_dirs = sorted(list(data_dirs.intersection(code_dirs)))
+        bad_dirs = sorted(list(data_dirs.difference(code_dirs)))
         
         # report results
         
