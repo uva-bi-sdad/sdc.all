@@ -11,6 +11,7 @@ import urllib.request
 from string import Template
 import traceback
 from test import Test
+import re
 
 
 def evaluate_folder(dirpath):
