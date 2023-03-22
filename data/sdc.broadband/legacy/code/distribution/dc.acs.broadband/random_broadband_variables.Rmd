@@ -1,0 +1,188 @@
+---
+title: "random_broadband_variables"
+output: html_document
+---
+
+# imports
+
+```{r}
+# R imports - might have to install some
+library(sf)
+library(tidyverse)
+library(tmap)
+library(tmaptools)
+library(tidycensus)
+library(tigris)
+library(rmapshaper)
+library(matrixStats)
+library(SpatialAcc)
+library(reticulate)
+library(tidygeocoder)
+library(DBI)
+```
+
+# function to extract relevant ACS digital equity variables
+
+```{r}
+acs_vars.broadband <- function(year, geography)
+{
+  dcmdva.ct.demographics <- get_acs(geography = geography,
+                                    year = year,
+                                    variables = c(total_compdev_hh = "B28001_001",
+                                                  has_compdev_hh = "B28001_002",
+                                                  total_intsub_hh = "B28002_001",
+                                                  no_intsub_hh = "B28002_013",
+                                                  has_broadband_hh = "B28002_004",
+                                                  has_cable_fiber_dsl = "B28002_007"),
+                                    state = c("VA", "MD", "DC"),
+                                    survey = "acs5",
+                                    output = "wide",
+                                    geometry = F)
+  return(dcmdva.ct.demographics)
+}
+```
+
+# get digital variables, format data, and subset for NCR
+
+```{r}
+# county
+acs.broadband.vars.ct.2019 <- acs_vars.broadband(2019, "county") %>% mutate(year = 2019)
+acs.broadband.vars.ct.2018 <- acs_vars.broadband(2018, "county") %>% mutate(year = 2018)
+acs.broadband.vars.ct.2017 <- acs_vars.broadband(2017, "county") %>% mutate(year = 2017)
+
+acs.broadband.vars.ct.dmv <- rbind(acs.broadband.vars.ct.2019, acs.broadband.vars.ct.2018, acs.broadband.vars.ct.2017) %>%
+  mutate(num_hh_with_broadband = has_broadband_hhE,
+         num_hh_with_cable_fiber_dsl = has_cable_fiber_dslE,
+         num_hh_without_internet = no_intsub_hhE,
+         num_hh_without_compdev = total_compdev_hhE - has_compdev_hhE,
+         perc_hh_with_broadband = 100*has_broadband_hhE/total_intsub_hhE,
+         perc_hh_with_cable_fiber_dsl = 100*has_cable_fiber_dslE/total_intsub_hhE,
+         perc_hh_without_internet = 100*no_intsub_hhE/total_intsub_hhE,
+         perc_hh_without_compdev = 100*(total_compdev_hhE - has_compdev_hhE)/total_compdev_hhE) %>%
+  select(GEOID, NAME, year,
+         num_hh_with_broadband, num_hh_with_cable_fiber_dsl,
+         num_hh_without_internet, num_hh_without_compdev,
+         perc_hh_with_broadband, perc_hh_with_cable_fiber_dsl,
+         perc_hh_without_internet, perc_hh_without_compdev) %>%
+  gather(measure, value, -c(GEOID, NAME, year)) %>%
+        mutate(region_type = "county",
+               measure_type = ifelse(measure %in% c("perc_hh_with_broadband", "perc_hh_without_internet",
+                                                    "perc_hh_without_compdev", "perc_hh_with_cable_fiber_dsl"), "percent", "count"),
+               measure_units = as.character(NA)) %>%
+  rename(geoid = GEOID, region_name = NAME) %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units")
+
+acs.broadband.vars.ct.ncr <- acs.broadband.vars.ct.dmv[acs.broadband.vars.ct.dmv$geoid %in% c("51013", "51059", "51107", "51510", "51600", "51153", "51683", "51685", "51610", "11001", "24031", "24033", "24017", "24021"),]
+
+# tract
+acs.broadband.vars.tr.2019 <- acs_vars.broadband(2019, "tract") %>% mutate(year = 2019)
+acs.broadband.vars.tr.2018 <- acs_vars.broadband(2018, "tract") %>% mutate(year = 2018)
+acs.broadband.vars.tr.2017 <- acs_vars.broadband(2017, "tract") %>% mutate(year = 2017)
+
+acs.broadband.vars.tr.dmv <- rbind(acs.broadband.vars.tr.2019, acs.broadband.vars.tr.2018, acs.broadband.vars.tr.2017) %>%
+  mutate(num_hh_with_broadband = has_broadband_hhE,
+         num_hh_with_cable_fiber_dsl = has_cable_fiber_dslE,
+         num_hh_without_internet = no_intsub_hhE,
+         num_hh_without_compdev = total_compdev_hhE - has_compdev_hhE,
+         perc_hh_with_broadband = 100*has_broadband_hhE/total_intsub_hhE,
+         perc_hh_with_cable_fiber_dsl = 100*has_cable_fiber_dslE/total_intsub_hhE,
+         perc_hh_without_internet = 100*no_intsub_hhE/total_intsub_hhE,
+         perc_hh_without_compdev = 100*(total_compdev_hhE - has_compdev_hhE)/total_compdev_hhE) %>%
+  select(GEOID, NAME, year, num_hh_with_broadband, num_hh_without_internet, num_hh_without_compdev,
+         perc_hh_with_broadband, perc_hh_without_internet, perc_hh_without_compdev) %>%
+  gather(measure, value, -c(GEOID, NAME, year)) %>%
+        mutate(region_type = "tract",
+               measure_type = ifelse(measure %in% c("perc_hh_with_broadband", "perc_hh_without_internet",
+                                                    "perc_hh_without_compdev", "perc_hh_with_cable_fiber_dsl"), "percent", "count"),
+               measure_units = as.character(NA)) %>%
+  rename(geoid = GEOID, region_name = NAME) %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units")
+
+acs.broadband.vars.tr.ncr <- acs.broadband.vars.tr.dmv[substr(acs.broadband.vars.tr.dmv$geoid, 1, 5) %in% c("51013", "51059", "51107", "51510", "51600", "51153", "51683", "51685", "51610", "11001", "24031", "24033", "24017", "24021"),]
+
+# block group
+acs.broadband.vars.bg.2019 <- acs_vars.broadband(2019, "block group") %>% mutate(year = 2019)
+acs.broadband.vars.bg.2018 <- acs_vars.broadband(2018, "block group") %>% mutate(year = 2018)
+acs.broadband.vars.bg.2017 <- acs_vars.broadband(2017, "block group") %>% mutate(year = 2017)
+
+acs.broadband.vars.bg.dmv <- rbind(acs.broadband.vars.bg.2019, acs.broadband.vars.bg.2018, acs.broadband.vars.bg.2017) %>%
+  mutate(num_hh_with_broadband = has_broadband_hhE,
+         num_hh_with_cable_fiber_dsl = has_cable_fiber_dslE,
+         num_hh_without_internet = no_intsub_hhE,
+         num_hh_without_compdev = total_compdev_hhE - has_compdev_hhE,
+         perc_hh_with_broadband = 100*has_broadband_hhE/total_intsub_hhE,
+         perc_hh_with_cable_fiber_dsl = 100*has_cable_fiber_dslE/total_intsub_hhE,
+         perc_hh_without_internet = 100*no_intsub_hhE/total_intsub_hhE,
+         perc_hh_without_compdev = 100*(total_compdev_hhE - has_compdev_hhE)/total_compdev_hhE) %>%
+  select(GEOID, NAME, year, num_hh_with_broadband, num_hh_without_internet, num_hh_without_compdev,
+         perc_hh_with_broadband, perc_hh_without_internet, perc_hh_without_compdev) %>%
+  gather(measure, value, -c(GEOID, NAME, year)) %>%
+        mutate(region_type = "block group",
+               measure_type = ifelse(measure %in% c("perc_hh_with_broadband", "perc_hh_without_internet",
+                                                    "perc_hh_without_compdev", "perc_hh_with_cable_fiber_dsl"), "percent", "count"),
+               measure_units = as.character(NA)) %>%
+  rename(geoid = GEOID, region_name = NAME) %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units")
+
+acs.broadband.vars.bg.ncr <- acs.broadband.vars.bg.dmv[substr(acs.broadband.vars.bg.dmv$geoid, 1, 5) %in% c("51013", "51059", "51107", "51510", "51600", "51153", "51683", "51685", "51610", "11001", "24031", "24033", "24017", "24021"),]
+```
+
+# write to database
+
+```{r}
+# con <- get_db_conn(db_pass = "rsu8zvrsu8zv")
+# dc_dbWriteTable(con, "dc_digital_communications", "dcmdva_ct_acs_2017_2019_broadband_withoutint_compdev", acs.broadband.vars.ct.dmv)
+# dc_dbWriteTable(con, "dc_digital_communications", "ncr_ct_acs_2017_2019_broadband_withoutint_compdev", acs.broadband.vars.ct.ncr)
+# dc_dbWriteTable(con, "dc_digital_communications", "dcmdva_tr_acs_2017_2019_broadband_withoutint_compdev", acs.broadband.vars.tr.dmv)
+# dc_dbWriteTable(con, "dc_digital_communications", "ncr_tr_acs_2017_2019_broadband_withoutint_compdev", acs.broadband.vars.tr.ncr)
+# dc_dbWriteTable(con, "dc_digital_communications", "dcmdva_bg_acs_2017_2019_broadband_withoutint_compdev", acs.broadband.vars.bg.dmv)
+# dc_dbWriteTable(con, "dc_digital_communications", "ncr_bg_acs_2017_2019_broadband_withoutint_compdev", acs.broadband.vars.bg.ncr)
+# dbDisconnect(con)
+```
+
+# read in health district identifiers
+
+```{r}
+acs.broadband.vars.ct <- rbind(acs.broadband.vars.ct.2019, acs.broadband.vars.ct.2018, acs.broadband.vars.ct.2017)
+
+health_district <- read.csv("/project/biocomplexity/sdad/projects_data/vdh/va_county_to_hd.csv")
+health_district$county_id <- as.character(health_district$county_id)
+
+con <- get_db_conn(db_pass = "rsu8zvrsu8zv")
+health_district_geoids <- st_read(con, query = "SELECT * FROM dc_geographies.va_hd_vdh_2021_health_district_geo_names")
+dbDisconnect(con)
+
+health_district_2 <- left_join(health_district, health_district_geoids, by = c("health_district" = "region_name"))
+```
+
+# construct health district level data
+
+```{r}
+# format data
+acs.broadband.vars.hd.va <- merge(health_district_2, acs.broadband.vars.ct, by.x = "county_id", by.y = "GEOID") %>%
+  group_by(geoid, health_district, year) %>%
+  summarize(num_hh_with_broadband = sum(has_broadband_hhE),
+            num_hh_with_cable_fiber_dsl = sum(has_cable_fiber_dslE),
+            num_hh_without_internet = sum(no_intsub_hhE),
+            num_hh_without_compdev = sum(total_compdev_hhE) - sum(has_compdev_hhE),
+            total_intsub_hh = sum(total_intsub_hhE),
+            total_compdev_hh = sum(total_compdev_hhE)) %>%
+  mutate(perc_hh_with_broadband = 100*num_hh_with_broadband/total_intsub_hh,
+         perc_hh_with_cable_fiber_dsl = 100*num_hh_with_cable_fiber_dsl/total_intsub_hh,
+         perc_hh_without_internet = 100*num_hh_without_internet/total_intsub_hh,
+         perc_hh_without_compdev = 100*num_hh_without_compdev/total_compdev_hh) %>%
+  select(-c(total_intsub_hh, total_compdev_hh)) %>%
+  gather(measure, value, -c(geoid, health_district, year)) %>%
+        mutate(region_type = "health district",
+               measure_type = ifelse(measure %in% c("perc_hh_with_broadband", "perc_hh_without_internet",
+                                                    "perc_hh_without_compdev", "perc_hh_with_cable_fiber_dsl"), "percent", "count"),
+               measure_units = as.character(NA)) %>%
+  rename(region_name = health_district) %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units")
+
+# send to db
+# con <- get_db_conn(db_pass = "rsu8zvrsu8zv")
+# dc_dbWriteTable(con, "dc_digital_communications", "va_hd_acs_2017_2019_broadband_withoutint_compdev", acs.broadband.vars.hd.va)
+# dbDisconnect(con)
+```
+

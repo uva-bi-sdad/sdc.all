@@ -1,0 +1,610 @@
+---
+title: "DMV_Internet_Prices"
+output: html_document
+---
+
+# Important note - the naming should be improved here
+
+# imports
+
+```{r}
+library(sf)
+library(tidyverse)
+library(tmap)
+library(tmaptools)
+library(tigris)
+library(tidycensus)
+library(rmapshaper)
+library(matrixStats)
+library(SpatialAcc)
+library(reticulate)
+library(dplyr)
+library(tidygeocoder)
+library(readxl)
+```
+
+# read in raw package data from step 2
+
+```{r}
+# read in data
+con <- get_db_conn(db_pass = "rsu8zvrsu8zv")
+va_broadband_now_prices <- st_read(con, query = "SELECT * FROM dc_digital_communications.va_bg_broadband_now_2021_all_internet_packages")
+dc_broadband_now_prices <- st_read(con, query = "SELECT * FROM dc_digital_communications.dc_bg_broadband_now_2021_all_internet_packages")
+md_broadband_now_prices <- st_read(con, query = "SELECT * FROM dc_digital_communications.md_bg_broadband_now_2021_all_internet_packages")
+dmv_broadband_now_prices <- st_read(con, query = "SELECT * FROM dc_digital_communications.dmv_bg_broadband_now_2021_all_internet_packages")
+dbDisconnect(con)
+
+# add tract and county columns
+md_broadband_now_prices <- md_broadband_now_prices %>%
+  mutate(block_group = as.character(block_group),
+         tract = substr(block_group, 1, 11),
+         county = substr(block_group, 1, 5))
+va_broadband_now_prices <- va_broadband_now_prices %>%
+  mutate(block_group = as.character(block_group),
+         tract = substr(block_group, 1, 11),
+         county = substr(block_group, 1, 5))
+dc_broadband_now_prices <- dc_broadband_now_prices %>%
+  mutate(block_group = as.character(block_group),
+         tract = substr(block_group, 1, 11),
+         county = substr(block_group, 1, 5))
+dmv_broadband_now_prices <- dmv_broadband_now_prices %>%
+  mutate(block_group = as.character(block_group),
+         tract = substr(block_group, 1, 11),
+         county = substr(block_group, 1, 5))
+```
+
+# Get measures for VA, MD, and DC at tract level
+
+```{r}
+# VIRGINIA
+va_100_min_prices <- va_broadband_now_prices %>%
+  mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA),) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -down_minus_100, n = 1) %>%
+  slice_max(order_by = -price, n = 1)  %>%
+  group_by(tract) %>%
+  summarize(min_price_100 = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract))
+va_100_min_prices.2 <- va_broadband_now_prices %>%
+  mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -price, n = 1)  %>%
+  group_by(tract) %>%
+  summarize(min_price_100_plus = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract)) %>%
+  full_join(va_100_min_prices, by = "tract")
+va_100_med_and_min_prices <- va_broadband_now_prices %>%
+  mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -down_minus_100, n = 1) %>%
+  group_by(tract) %>%
+  summarize(med_price_100 = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract)) %>%
+  full_join(va_100_min_prices.2, by = "tract")
+va_min_prices <- va_broadband_now_prices %>% # find minimum price for 25 in each block group, then median price among those in tract
+  mutate(down_minus_25 = ifelse(download >= 25, download - 25, NA)) %>%
+  drop_na(down_minus_25) %>%
+  mutate(down_minus_100 = ifelse(download <= 100, 100 - download, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -price, n = 1)  %>%
+  group_by(tract) %>%
+  summarize(min_price_25 = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract)) %>%
+  full_join(va_100_med_and_min_prices, by = "tract")
+va_med_and_min_prices <- va_broadband_now_prices %>%
+  mutate(down_minus_25 = ifelse(download >= 25, download - 25, NA)) %>%
+  drop_na(down_minus_25) %>%
+  mutate(down_minus_100 = ifelse(download <= 100, 100 - download, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  summarize(price = median(price, na.rm = T), tract = tract) %>%
+  group_by(tract) %>%
+  summarize(med_price_25 = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract)) %>%
+  full_join(va_min_prices, by = "tract")
+
+# MARYLAND
+md_100_min_prices <- md_broadband_now_prices %>%
+  mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -down_minus_100, n = 1) %>%
+  slice_max(order_by = -price, n = 1)  %>%
+  group_by(tract) %>%
+  summarize(min_price_100 = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract))
+md_100_min_prices.2 <- md_broadband_now_prices %>%
+  mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -price, n = 1)  %>%
+  group_by(tract) %>%
+  summarize(min_price_100_plus = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract)) %>%
+  full_join(md_100_min_prices, by = "tract")
+md_100_med_and_min_prices <- md_broadband_now_prices %>%
+  mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -down_minus_100, n = 1) %>%
+  group_by(tract) %>%
+  summarize(med_price_100 = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract)) %>%
+  full_join(md_100_min_prices.2, by = "tract")
+md_min_prices <- md_broadband_now_prices %>% # find minimum price for 25 in each block group, then median price among those in tract
+  mutate(down_minus_25 = ifelse(download >= 25, download - 25, NA)) %>%
+  drop_na(down_minus_25) %>%
+  mutate(down_minus_100 = ifelse(download <= 100, 100 - download, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -price, n = 1)  %>%
+  group_by(tract) %>%
+  summarize(min_price_25 = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract)) %>%
+  full_join(md_100_med_and_min_prices, by = "tract")
+md_med_and_min_prices <- md_broadband_now_prices %>%
+  mutate(down_minus_25 = ifelse(download >= 25, download - 25, NA)) %>%
+  drop_na(down_minus_25) %>%
+  mutate(down_minus_100 = ifelse(download <= 100, 100 - download, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  summarize(price = median(price, na.rm = T), tract = tract) %>%
+  group_by(tract) %>%
+  summarize(med_price_25 = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract)) %>%
+  full_join(md_min_prices, by = "tract")
+
+# DC
+dc_100_min_prices <- dc_broadband_now_prices %>%
+  mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -down_minus_100, n = 1) %>%
+  slice_max(order_by = -price, n = 1)  %>%
+  group_by(tract) %>%
+  summarize(min_price_100 = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract))
+dc_100_min_prices.2 <- dc_broadband_now_prices %>%
+  mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -price, n = 1)  %>%
+  group_by(tract) %>%
+  summarize(min_price_100_plus = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract)) %>%
+  full_join(dc_100_min_prices, by = "tract")
+dc_100_med_and_min_prices <- dc_broadband_now_prices %>%
+  mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -down_minus_100, n = 1) %>%
+  group_by(tract) %>%
+  summarize(med_price_100 = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract)) %>%
+  full_join(dc_100_min_prices.2, by = "tract")
+dc_min_prices <- dc_broadband_now_prices %>% # find minimum price for 25 in each block group, then median price among those in tract
+  mutate(down_minus_25 = ifelse(download >= 25, download - 25, NA)) %>%
+  drop_na(down_minus_25) %>%
+  mutate(down_minus_100 = ifelse(download <= 100, 100 - download, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -price, n = 1)  %>%
+  group_by(tract) %>%
+  summarize(min_price_25 = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract)) %>%
+  full_join(dc_100_med_and_min_prices, by = "tract")
+dc_med_and_min_prices <- dc_broadband_now_prices %>%
+  mutate(down_minus_25 = ifelse(download >= 25, download - 25, NA)) %>%
+  drop_na(down_minus_25) %>%
+  mutate(down_minus_100 = ifelse(download <= 100, 100 - download, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  summarize(price = median(price, na.rm = T), tract = tract) %>%
+  group_by(tract) %>%
+  summarize(med_price_25 = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract)) %>%
+  full_join(dc_min_prices, by = "tract")
+
+# DMV
+dmv_100_min_prices <- dmv_broadband_now_prices %>%
+  mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -down_minus_100, n = 1) %>%
+  slice_max(order_by = -price, n = 1)  %>%
+  group_by(tract) %>%
+  summarize(min_price_100 = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract))
+dmv_100_min_prices.2 <- dmv_broadband_now_prices %>%
+  mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -price, n = 1)  %>%
+  group_by(tract) %>%
+  summarize(min_price_100_plus = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract)) %>%
+  full_join(dmv_100_min_prices, by = "tract")
+dmv_100_med_and_min_prices <- dmv_broadband_now_prices %>%
+  mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -down_minus_100, n = 1) %>%
+  group_by(tract) %>%
+  summarize(med_price_100 = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract)) %>%
+  full_join(dmv_100_min_prices.2, by = "tract")
+dmv_min_prices <- dmv_broadband_now_prices %>% # find minimum price for 25 in each block group, then median price among those in tract
+  mutate(down_minus_25 = ifelse(download >= 25, download - 25, NA)) %>%
+  drop_na(down_minus_25) %>%
+  mutate(down_minus_100 = ifelse(download <= 100, 100 - download, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -price, n = 1)  %>%
+  group_by(tract) %>%
+  summarize(min_price_25 = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract)) %>%
+  full_join(dmv_100_med_and_min_prices, by = "tract")
+dmv_med_and_min_prices <- dmv_broadband_now_prices %>%
+  mutate(down_minus_25 = ifelse(download >= 25, download - 25, NA)) %>%
+  drop_na(down_minus_25) %>%
+  mutate(down_minus_100 = ifelse(download <= 100, 100 - download, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  summarize(price = median(price, na.rm = T), tract = tract) %>%
+  group_by(tract) %>%
+  summarize(med_price_25 = median(price, na.rm = T)) %>%
+  mutate(tract = as.character(tract)) %>%
+  full_join(dmv_min_prices, by = "tract")
+```
+
+# join with ACS data
+
+```{r}
+# join with ACS
+dmv_prices <- dmv.tr[substr(dmv.tr$GEOID, 1, 5) %in% c("51013", "51059", "51107", "51510", "51600", "51153", "51683", "51685", "51610", "11001", "24031", "24033", "24017", "24021"),] %>% left_join(dmv_med_and_min_prices, by = c("GEOID" = "tract"))
+va_prices <- va.tr %>% left_join(va_med_and_min_prices, by = c("GEOID" = "tract"))
+dc_prices <- dc.tr %>% left_join(dc_med_and_min_prices, by = c("GEOID" = "tract"))
+md_prices <- md.tr %>% left_join(md_med_and_min_prices, by = c("GEOID" = "tract"))
+```
+
+# 
+
+```{r}
+ncr.isp.price <- st_drop_geometry(dmv_prices) %>% mutate(year = 2021, region_type = "tract", measure_type = "price", measure_units = "dollars") %>%
+  gather(measure, value, c(med_price_25, min_price_25, med_price_100, min_price_100_plus, min_price_100)) %>%
+  rename(geoid = GEOID, region_name = NAME) %>%
+  select("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  drop_na()
+
+va.isp.price <- st_drop_geometry(va_prices) %>% mutate(year = 2021, region_type = "tract", measure_type = "price", measure_units = "dollars") %>%
+  gather(measure, value, c(med_price_25, min_price_25, med_price_100, min_price_100_plus, min_price_100)) %>%
+  rename(geoid = GEOID, region_name = NAME) %>%
+  select("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  drop_na()
+
+dc.isp.price <- st_drop_geometry(dc_prices) %>% mutate(year = 2021, region_type = "tract", measure_type = "price", measure_units = "dollars") %>%
+  gather(measure, value, c(med_price_25, min_price_25, med_price_100, min_price_100_plus, min_price_100)) %>%
+  rename(geoid = GEOID, region_name = NAME) %>%
+  select("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  drop_na()
+
+md.isp.price <- st_drop_geometry(md_prices) %>% mutate(year = 2021, region_type = "tract", measure_type = "price", measure_units = "dollars") %>%
+  gather(measure, value, c(med_price_25, min_price_25, med_price_100, min_price_100_plus, min_price_100)) %>%
+  rename(geoid = GEOID, region_name = NAME) %>%
+  select("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  drop_na()
+```
+
+# send first set of data to db
+
+```{r}
+# send to tract level data db
+con <- get_db_conn(db_pass = "rsu8zvrsu8zv")
+dc_dbWriteTable(con, "dc_digital_communications", "ncr_tr_broadband_now_2021_internet_package_price_update", ncr.isp.price)
+dc_dbWriteTable(con, "dc_digital_communications", "va_tr_broadband_now_2021_internet_package_price_update", va.isp.price)
+dc_dbWriteTable(con, "dc_digital_communications", "dc_tr_broadband_now_2021_internet_package_price_update", dc.isp.price)
+dc_dbWriteTable(con, "dc_digital_communications", "md_tr_broadband_now_2021_internet_package_price_update", md.isp.price)
+dbDisconnect(con)
+```
+
+# get county, block group, and health district data for DC, MD, and VA using get_data function
+
+```{r}
+get_data <- function(va_broadband_now_prices, county = T)
+{
+  if (county)
+  {
+    va_100_min_prices <- va_broadband_now_prices %>%
+      mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+      drop_na(down_minus_100) %>%
+      group_by(block_group) %>%
+      slice_max(order_by = -down_minus_100, n = 1) %>%
+      slice_max(order_by = -price, n = 1)  %>%
+      mutate(county = substr(block_group, 1, 5)) %>%
+      group_by(county) %>%
+      summarize(min_price_100 = median(price, na.rm = T))
+    va_100_min_prices.2 <- va_broadband_now_prices %>%
+      mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+      drop_na(down_minus_100) %>%
+      group_by(block_group) %>%
+      slice_max(order_by = -price, n = 1)  %>%
+      mutate(county = substr(block_group, 1, 5)) %>%
+      group_by(county) %>%
+      summarize(min_price_100_plus = median(price, na.rm = T)) %>%
+      full_join(va_100_min_prices, by = "county")
+    va_100_med_and_min_prices <- va_broadband_now_prices %>%
+      mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+      drop_na(down_minus_100) %>%
+      group_by(block_group) %>%
+      slice_max(order_by = -down_minus_100, n = 1) %>%
+      mutate(county = substr(block_group, 1, 5)) %>%
+      group_by(county) %>%
+      summarize(med_price_100 = median(price, na.rm = T)) %>%
+      full_join(va_100_min_prices.2, by = "county")
+    va_min_prices <- va_broadband_now_prices %>% # find minimum price for 25 in each block group, then median price among those in tract
+      mutate(down_minus_25 = ifelse(download >= 25, download - 25, NA)) %>%
+      drop_na(down_minus_25) %>%
+      mutate(down_minus_100 = ifelse(download <= 100, 100 - download, NA)) %>%
+      drop_na(down_minus_100) %>%
+      group_by(block_group) %>%
+      slice_max(order_by = -price, n = 1)  %>%
+      mutate(county = substr(block_group, 1, 5)) %>%
+      group_by(county) %>%
+      summarize(min_price_25 = median(price, na.rm = T)) %>%
+      full_join(va_100_med_and_min_prices, by = "county")
+    va_med_and_min_prices <- va_broadband_now_prices %>%
+      mutate(down_minus_25 = ifelse(download >= 25, download - 25, NA)) %>%
+      drop_na(down_minus_25) %>%
+      mutate(down_minus_100 = ifelse(download <= 100, 100 - download, NA)) %>%
+      drop_na(down_minus_100) %>%
+      group_by(block_group) %>%
+      summarize(price = median(price, na.rm = T), tract = tract) %>%
+      mutate(county = substr(block_group, 1, 5)) %>%
+      group_by(county) %>%
+      summarize(med_price_25 = median(price, na.rm = T)) %>%
+      full_join(va_min_prices, by = "county")
+  }
+  else
+  {
+    va_100_min_prices <- va_broadband_now_prices %>%
+      mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA),) %>%
+      drop_na(down_minus_100) %>%
+      group_by(block_group) %>%
+      slice_max(order_by = -down_minus_100, n = 1) %>%
+      slice_max(order_by = -price, n = 1)  %>%
+      group_by(block_group) %>%
+      summarize(min_price_100 = median(price, na.rm = T))
+    va_100_min_prices.2 <- va_broadband_now_prices %>%
+      mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+      drop_na(down_minus_100) %>%
+      group_by(block_group) %>%
+      slice_max(order_by = -price, n = 1)  %>%
+      group_by(block_group) %>%
+      summarize(min_price_100_plus = median(price, na.rm = T)) %>%
+      full_join(va_100_min_prices, by = "block_group")
+    va_100_med_and_min_prices <- va_broadband_now_prices %>%
+      mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+      drop_na(down_minus_100) %>%
+      group_by(block_group) %>%
+      slice_max(order_by = -down_minus_100, n = 1) %>%
+      group_by(block_group) %>%
+      summarize(med_price_100 = median(price, na.rm = T)) %>%
+      full_join(va_100_min_prices.2, by = "block_group")
+    va_min_prices <- va_broadband_now_prices %>% # find minimum price for 25 in each block group, then median price among those in tract
+      mutate(down_minus_25 = ifelse(download >= 25, download - 25, NA)) %>%
+      drop_na(down_minus_25) %>%
+      mutate(down_minus_100 = ifelse(download <= 100, 100 - download, NA)) %>%
+      drop_na(down_minus_100) %>%
+      group_by(block_group) %>%
+      slice_max(order_by = -price, n = 1)  %>%
+      group_by(block_group) %>%
+      summarize(min_price_25 = median(price, na.rm = T)) %>%
+      full_join(va_100_med_and_min_prices, by = "block_group")
+    va_med_and_min_prices <- va_broadband_now_prices %>%
+      mutate(down_minus_25 = ifelse(download >= 25, download - 25, NA)) %>%
+      drop_na(down_minus_25) %>%
+      mutate(down_minus_100 = ifelse(download <= 100, 100 - download, NA)) %>%
+      drop_na(down_minus_100) %>%
+      group_by(block_group) %>%
+      summarize(price = median(price, na.rm = T), tract = tract) %>%
+      group_by(block_group) %>%
+      summarize(med_price_25 = median(price, na.rm = T)) %>%
+      full_join(va_min_prices, by = "block_group")
+  }
+  return(va_med_and_min_prices)
+}
+
+health_district <- read.csv("/project/biocomplexity/sdad/projects_data/vdh/va_county_to_hd.csv")
+health_district$county_id <- as.character(health_district$county_id)
+
+va_bg_broadband_now_prices2 <- left_join(health_district, va_broadband_now_prices, by = c("county_id" = "county"))
+va_100_min_prices <- va_bg_broadband_now_prices2 %>%
+  mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA),) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -down_minus_100, n = 1) %>%
+  slice_max(order_by = -price, n = 1)  %>%
+  group_by(health_district) %>%
+  summarize(min_price_100 = median(price, na.rm = T))
+va_100_min_prices.2 <- va_bg_broadband_now_prices2 %>%
+  mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -price, n = 1)  %>%
+  group_by(health_district) %>%
+  summarize(min_price_100_plus = median(price, na.rm = T)) %>%
+  full_join(va_100_min_prices, by = "health_district")
+va_100_med_and_min_prices <- va_bg_broadband_now_prices2 %>%
+  mutate(down_minus_100 = ifelse(download >= 100, download - 100, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -down_minus_100, n = 1) %>%
+  group_by(health_district) %>%
+  summarize(med_price_100 = median(price, na.rm = T)) %>%
+  full_join(va_100_min_prices.2, by = "health_district")
+va_min_prices <- va_bg_broadband_now_prices2 %>% # find minimum price for 25 in each block group, then median price among those in tract
+  mutate(down_minus_25 = ifelse(download >= 25, download - 25, NA)) %>%
+  drop_na(down_minus_25) %>%
+  mutate(down_minus_100 = ifelse(download <= 100, 100 - download, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  slice_max(order_by = -price, n = 1)  %>%
+  group_by(health_district) %>%
+  summarize(min_price_25 = median(price, na.rm = T)) %>%
+  full_join(va_100_med_and_min_prices, by = "health_district")
+va_med_and_min_prices.hd <- va_bg_broadband_now_prices2 %>%
+  mutate(down_minus_25 = ifelse(download >= 25, download - 25, NA)) %>%
+  drop_na(down_minus_25) %>%
+  mutate(down_minus_100 = ifelse(download <= 100, 100 - download, NA)) %>%
+  drop_na(down_minus_100) %>%
+  group_by(block_group) %>%
+  summarize(price = median(price, na.rm = T), tract = tract) %>%
+  mutate(county_id = substr(block_group, 1, 5)) %>%
+  right_join(health_district, by = c("county_id")) %>%
+  group_by(health_district) %>%
+  summarize(med_price_25 = median(price, na.rm = T)) %>%
+  full_join(va_min_prices, by = "health_district")
+
+# county
+va_med_and_min_prices.ct <- get_data(va_broadband_now_prices)
+dc_med_and_min_prices.ct <- get_data(dc_broadband_now_prices)
+md_med_and_min_prices.ct <- get_data(md_broadband_now_prices)
+dmv_med_and_min_prices.ct <- get_data(dmv_broadband_now_prices)
+
+# block group
+va_med_and_min_prices.bg <- get_data(va_broadband_now_prices, F)
+dc_med_and_min_prices.bg <- get_data(dc_broadband_now_prices, F)
+md_med_and_min_prices.bg <- get_data(md_broadband_now_prices, F)
+dmv_med_and_min_prices.bg <- get_data(dmv_broadband_now_prices, F)
+```
+
+# get block and county level data initial formatting
+
+```{r}
+dmv.bg <- get_acs(geography = "block group",
+                 year = 2019,
+                 variables = c(median_household_income = "B19013_001"),
+                 state = c("VA", "DC", "MD"),
+                 survey = "acs5",
+                 output = "wide",
+                 geometry = TRUE)
+
+dmv_prices.ct <- dmv.ct[dmv.ct$GEOID  %in% c("51013", "51059", "51107", "51510", "51600", "51153", "51683", "51685", "51610", "11001", "24031", "24033", "24017", "24021"),] %>% left_join(dmv_med_and_min_prices.ct, by = c("GEOID" = "county"))
+dmv_prices.bg <- dmv.bg[substr(dmv.bg$GEOID, 1, 5) %in% c("51013", "51059", "51107", "51510", "51600", "51153", "51683", "51685", "51610", "11001", "24031", "24033", "24017", "24021"),] %>% left_join(dmv_med_and_min_prices.bg, by = c("GEOID" = "block_group"))
+
+va_prices.ct <- va.ct %>% left_join(va_med_and_min_prices.ct, by = c("GEOID" = "county"))
+va_prices.bg <- va.bg %>% left_join(va_med_and_min_prices.bg, by = c("GEOID" = "block_group"))
+
+dc_prices.ct <- dc.ct %>% left_join(dc_med_and_min_prices.ct, by = c("GEOID" = "county"))
+dc_prices.bg <- dc.bg %>% left_join(dc_med_and_min_prices.bg, by = c("GEOID" = "block_group"))
+
+md_prices.ct <- md.ct %>% left_join(md_med_and_min_prices.ct, by = c("GEOID" = "county"))
+md_prices.bg <- md.bg %>% left_join(md_med_and_min_prices.bg, by = c("GEOID" = "block_group"))
+```
+
+# finalize formatting
+
+```{r}
+ncr.isp.price.ct <- st_drop_geometry(dmv_prices.ct) %>%
+  mutate(year = 2021, region_type = "county", measure_type = "price", measure_units = "dollars") %>%
+  gather(measure, value, c(med_price_25, min_price_25, med_price_100, min_price_100_plus, min_price_100)) %>%
+  rename(geoid = GEOID, region_name = NAME) %>%
+  select("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  drop_na()
+ncr.isp.price.bg <- st_drop_geometry(dmv_prices.bg) %>%
+  mutate(year = 2021, region_type = "block group", measure_type = "price", measure_units = "dollars") %>%
+  gather(measure, value, c(med_price_25, min_price_25, med_price_100, min_price_100_plus, min_price_100)) %>%
+  rename(geoid = GEOID, region_name = NAME) %>%
+  select("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  drop_na()
+
+va.isp.price.ct <- st_drop_geometry(va_prices.ct) %>%
+  mutate(year = 2021, region_type = "county", measure_type = "price", measure_units = "dollars") %>%
+  gather(measure, value, c(med_price_25, min_price_25, med_price_100, min_price_100_plus, min_price_100)) %>%
+  rename(geoid = GEOID, region_name = NAME) %>%
+  select("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  drop_na()
+va.isp.price.bg <- st_drop_geometry(va_prices.bg) %>%
+  mutate(year = 2021, region_type = "block group", measure_type = "price", measure_units = "dollars") %>%
+  gather(measure, value, c(med_price_25, min_price_25, med_price_100, min_price_100_plus, min_price_100)) %>%
+  rename(geoid = GEOID, region_name = NAME) %>%
+  select("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  drop_na()
+
+dc.isp.price.ct <- st_drop_geometry(dc_prices.ct) %>%
+  mutate(year = 2021, region_type = "county", measure_type = "price", measure_units = "dollars") %>%
+  gather(measure, value, c(med_price_25, min_price_25, med_price_100, min_price_100_plus, min_price_100)) %>%
+  rename(geoid = GEOID, region_name = NAME) %>%
+  select("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  drop_na()
+dc.isp.price.bg <- st_drop_geometry(dc_prices.bg) %>%
+  mutate(year = 2021, region_type = "block group", measure_type = "price", measure_units = "dollars") %>%
+  gather(measure, value, c(med_price_25, min_price_25, med_price_100, min_price_100_plus, min_price_100)) %>%
+  rename(geoid = GEOID, region_name = NAME) %>%
+  select("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  drop_na()
+
+md.isp.price.ct <- st_drop_geometry(md_prices.ct) %>%
+  mutate(year = 2021, region_type = "county", measure_type = "price", measure_units = "dollars") %>%
+  gather(measure, value, c(med_price_25, min_price_25, med_price_100, min_price_100_plus, min_price_100)) %>%
+  rename(geoid = GEOID, region_name = NAME) %>%
+  select("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  drop_na()
+md.isp.price.bg <- st_drop_geometry(md_prices.bg) %>%
+  mutate(year = 2021, region_type = "block group", measure_type = "price", measure_units = "dollars") %>%
+  gather(measure, value, c(med_price_25, min_price_25, med_price_100, min_price_100_plus, min_price_100)) %>%
+  rename(geoid = GEOID, region_name = NAME) %>%
+  select("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  drop_na()
+```
+
+# send almost all data to db (except for tract level - which I did before adding the rest)
+
+```{r}
+# send to db
+con <- get_db_conn(db_pass = "rsu8zvrsu8zv")
+dc_dbWriteTable(con, "dc_digital_communications", "ncr_ct_broadband_now_2021_internet_package_price", ncr.isp.price.ct)
+dc_dbWriteTable(con, "dc_digital_communications", "va_ct_broadband_now_2021_internet_package_price", va.isp.price.ct)
+dc_dbWriteTable(con, "dc_digital_communications", "dc_ct_broadband_now_2021_internet_package_price", dc.isp.price.ct)
+dc_dbWriteTable(con, "dc_digital_communications", "md_ct_broadband_now_2021_internet_package_price", md.isp.price.ct)
+
+# probably want to change the naming here...
+dc_dbWriteTable(con, "dc_digital_communications", "ncr_bg_broadband_now_2021_internet_package_price_update", ncr.isp.price.bg)
+dc_dbWriteTable(con, "dc_digital_communications", "va_bg_broadband_now_2021_internet_package_price_update", va.isp.price.bg)
+dc_dbWriteTable(con, "dc_digital_communications", "dc_bg_broadband_now_2021_internet_package_price_update", dc.isp.price.bg)
+dc_dbWriteTable(con, "dc_digital_communications", "md_bg_broadband_now_2021_internet_package_price_update", md.isp.price.bg)
+dbDisconnect(con)
+
+# read in health district name
+con <- get_db_conn(db_pass = "rsu8zvrsu8zv")
+health_district_geoids <- st_read(con, query = "SELECT * FROM dc_geographies.va_hd_vdh_2021_health_district_geo_names")
+DBI::dbDisconnect(con)
+
+va.isp.price.hd <- merge(va_med_and_min_prices.hd, health_district_geoids, by.x = "health_district", by.y = "region_name") %>%
+  mutate(year = 2021, region_type = "health district", measure_type = "price", measure_units = "dollars") %>%
+  gather(measure, value, c(med_price_25, min_price_25, med_price_100, min_price_100_plus, min_price_100)) %>%
+  rename(region_name = health_district) %>%
+  select("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  drop_na()
+
+con <- get_db_conn(db_pass = "rsu8zvrsu8zv")
+dc_dbWriteTable(con, "dc_digital_communications", "va_hd_broadband_now_2021_internet_package_price", va.isp.price.hd)
+dbDisconnect(con)
+```

@@ -1,0 +1,84 @@
+---
+title: "plot_broadbandnow"
+output: html_document
+date: "2023-01-16"
+---
+
+```{r}
+library(sf)
+library(tidyverse)
+library(tmap)
+library(tmaptools)
+library(tigris)
+library(tidycensus)
+library(rmapshaper)
+library(matrixStats)
+library(SpatialAcc)
+library(reticulate)
+library(dplyr)
+library(tidygeocoder)
+library(readxl)
+library(DBI)
+library(sf)
+library(mapview)
+library(progress)
+library(RColorBrewer)
+options(tigris_use_cache = TRUE)
+library(mapview)
+```
+
+```{r}
+# getwd()
+bbn_data <- file.path("../data/usa_county_broadbandnow_pirces.csv.xz")
+file.exists(bbn_data)
+
+df <- read.csv(bbn_data)
+df
+```
+```{r}
+usa <- get_acs(geography = "county",
+                 year = 2019,
+                 variables = c(median_household_income = "B19013_001"),
+                 survey = "acs5",
+                 output = "wide",
+                 geometry = T) 
+
+usa <- usa %>% rename("geoid"="GEOID")
+usa
+```
+
+# Join the ACS data with the broadbandnow price data using the geometry and the median household income (E is estimate, M is margin of erro)
+
+```{r}
+combined <- merge(x = usa, y = df, by = c('geoid'))
+```
+
+# Plot the results
+# Price US distribution
+```{r}
+agg <- aggregate(price ~ geoid, df, median)
+agg
+price_us <- merge(x = usa, y = agg, by = c('geoid'))
+
+price_us['prec_hh_income'] <- (price_us['price']*12 / price_us['median_household_incomeE'])*100
+
+# mapview(price_us, zcol="price", col.regions=brewer.pal(5, "Blues"), at = seq(0, 100, 10),  layer.name = c("Median Broadbandnow Prices"))
+mapview(price_us, zcol="prec_hh_income",  layer.name = c("% HH Income"))
+```
+
+
+
+
+
+# Company distribution
+```{r}
+unique(df['name'])
+```
+
+
+
+```{r}
+colnames(combined)
+summary(combined)
+```
+

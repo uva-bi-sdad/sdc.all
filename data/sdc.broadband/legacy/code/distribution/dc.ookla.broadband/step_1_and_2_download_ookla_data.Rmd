@@ -1,0 +1,207 @@
+---
+title: "aws"
+output: html_document
+---
+
+# Need to install aws (pip install aws in terminal)
+
+# might need to copy these lines into terminal instead of running below
+
+
+```{bash}
+aws s3 cp s3://ookla-open-data/shapefiles/performance/type=mobile/year=2019/quarter=1/2019-01-01_performance_mobile_tiles.zip output_2019_q1.zip --no-sign-request
+unzip output_2019_q1.zip
+```
+
+
+```{r}
+library(sf)
+mobile_tiles <- st_read("~/gps_mobile_tiles.shp")
+
+source("src/helper_functions.R")
+con <- get_db_conn(db_pass = "rsu8zvrsu8zv")
+dc_dbWriteTable(con, "dc_working", "reg_tile_ookla_2019q1_quarterly_global_internet_speed_mobile", mobile_tiles)
+DBI::dbDisconnect(con)
+```
+
+
+##### STEP 2
+
+SQL Code for ookla! - Run 
+
+Before this, you need to upload ookla data to the database (should come with quadkey, avg_d_kbps (download), avg_u_kbps (upload), avg_lat_ms (latency), tests, devices, geometry
+
+
+### STEP 2.1: First I like to combine the data so we can run things once (output: dc_working.reg_tile_ookla_2019_to_2021_mobile)
+
+## First add year and quarter columns
+
+alter table dc_working.reg_tile_ookla_2019q1_quarterly_global_internet_speed_mobile add column year integer;
+update dc_working.reg_tile_ookla_2019q1_quarterly_global_internet_speed_mobile set year = 2019;
+alter table dc_working.reg_tile_ookla_2019q1_quarterly_global_internet_speed_mobile add column quarter integer;
+update dc_working.reg_tile_ookla_2019q1_quarterly_global_internet_speed_mobile set quarter = 1;
+
+alter table dc_working.reg_tile_ookla_2019q2_quarterly_global_internet_speed_mobile add column year integer;
+update dc_working.reg_tile_ookla_2019q2_quarterly_global_internet_speed_mobile set year = 2019;
+alter table dc_working.reg_tile_ookla_2019q2_quarterly_global_internet_speed_mobile add column quarter integer;
+update dc_working.reg_tile_ookla_2019q2_quarterly_global_internet_speed_mobile set quarter = 2;
+
+alter table dc_working.reg_tile_ookla_2019q3_quarterly_global_internet_speed_mobile add column year integer;
+update dc_working.reg_tile_ookla_2019q3_quarterly_global_internet_speed_mobile set year = 2019;
+alter table dc_working.reg_tile_ookla_2019q3_quarterly_global_internet_speed_mobile add column quarter integer;
+update dc_working.reg_tile_ookla_2019q3_quarterly_global_internet_speed_mobile set quarter = 3;
+
+alter table dc_working.reg_tile_ookla_2019q4_quarterly_global_internet_speed_mobile add column year integer;
+update dc_working.reg_tile_ookla_2019q4_quarterly_global_internet_speed_mobile set year = 2019;
+alter table dc_working.reg_tile_ookla_2019q4_quarterly_global_internet_speed_mobile add column quarter integer;
+update dc_working.reg_tile_ookla_2019q4_quarterly_global_internet_speed_mobile set quarter = 4;
+
+alter table dc_working.reg_tile_ookla_2020q1_quarterly_global_internet_speed_mobile add column year integer;
+update dc_working.reg_tile_ookla_2020q1_quarterly_global_internet_speed_mobile set year = 2020;
+alter table dc_working.reg_tile_ookla_2020q1_quarterly_global_internet_speed_mobile add column quarter integer;
+update dc_working.reg_tile_ookla_2020q1_quarterly_global_internet_speed_mobile set quarter = 1;
+
+alter table dc_working.reg_tile_ookla_2020q2_quarterly_global_internet_speed_mobile add column year integer;
+update dc_working.reg_tile_ookla_2020q2_quarterly_global_internet_speed_mobile set year = 2020;
+alter table dc_working.reg_tile_ookla_2020q2_quarterly_global_internet_speed_mobile add column quarter integer;
+update dc_working.reg_tile_ookla_2020q2_quarterly_global_internet_speed_mobile set quarter = 2;
+
+alter table dc_working.reg_tile_ookla_2020q3_quarterly_global_internet_speed_mobile add column year integer;
+update dc_working.reg_tile_ookla_2020q3_quarterly_global_internet_speed_mobile set year = 2020;
+alter table dc_working.reg_tile_ookla_2020q3_quarterly_global_internet_speed_mobile add column quarter integer;
+update dc_working.reg_tile_ookla_2020q3_quarterly_global_internet_speed_mobile set quarter = 3;
+
+alter table dc_working.reg_tile_ookla_2020q4_quarterly_global_internet_speed_mobile add column year integer;
+update dc_working.reg_tile_ookla_2020q4_quarterly_global_internet_speed_mobile set year = 2020;
+alter table dc_working.reg_tile_ookla_2020q4_quarterly_global_internet_speed_mobile add column quarter integer;
+update dc_working.reg_tile_ookla_2020q4_quarterly_global_internet_speed_mobile set quarter = 4;
+
+alter table dc_working.reg_tile_ookla_2021q1_quarterly_global_internet_speed_mobile add column year integer;
+update dc_working.reg_tile_ookla_2021q1_quarterly_global_internet_speed_mobile set year = 2021;
+alter table dc_working.reg_tile_ookla_2021q1_quarterly_global_internet_speed_mobile add column quarter integer;
+update dc_working.reg_tile_ookla_2021q1_quarterly_global_internet_speed_mobile set quarter = 1;
+
+alter table dc_working.reg_tile_ookla_2021q2_quarterly_global_internet_speed_mobile add column year integer;
+update dc_working.reg_tile_ookla_2021q2_quarterly_global_internet_speed_mobile set year = 2021;
+alter table dc_working.reg_tile_ookla_2021q2_quarterly_global_internet_speed_mobile add column quarter integer;
+update dc_working.reg_tile_ookla_2021q2_quarterly_global_internet_speed_mobile set quarter = 2;
+
+alter table dc_working.reg_tile_ookla_2021q3_quarterly_global_internet_speed_mobile add column year integer;
+update dc_working.reg_tile_ookla_2021q3_quarterly_global_internet_speed_mobile set year = 2021;
+alter table dc_working.reg_tile_ookla_2021q3_quarterly_global_internet_speed_mobile add column quarter integer;
+update dc_working.reg_tile_ookla_2021q3_quarterly_global_internet_speed_mobile set quarter = 3;
+
+alter table dc_working.reg_tile_ookla_2021q4_quarterly_global_internet_speed_mobile add column year integer;
+update dc_working.reg_tile_ookla_2021q4_quarterly_global_internet_speed_mobile set year = 2021;
+alter table dc_working.reg_tile_ookla_2021q4_quarterly_global_internet_speed_mobile add column quarter integer;
+update dc_working.reg_tile_ookla_2021q4_quarterly_global_internet_speed_mobile set quarter = 4;
+
+## Combine all data
+
+select *
+into dc_working.reg_tile_ookla_2019_to_2021_mobile
+from dc_working.reg_tile_ookla_2019q1_quarterly_global_internet_speed_mobile
+union all
+select *
+from dc_working.reg_tile_ookla_2019q2_quarterly_global_internet_speed_mobile
+union all
+select *
+from dc_working.reg_tile_ookla_2019q3_quarterly_global_internet_speed_mobile
+union all
+select *
+from dc_working.reg_tile_ookla_2019q4_quarterly_global_internet_speed_mobile
+union all
+select *
+from dc_working.reg_tile_ookla_2020q1_quarterly_global_internet_speed_mobile
+union all
+select *
+from dc_working.reg_tile_ookla_2020q2_quarterly_global_internet_speed_mobile
+union all
+select *
+from dc_working.reg_tile_ookla_2020q3_quarterly_global_internet_speed_mobile
+union all
+select *
+from dc_working.reg_tile_ookla_2020q4_quarterly_global_internet_speed_mobile
+union all
+select *
+from dc_working.reg_tile_ookla_2021q1_quarterly_global_internet_speed_mobile
+union all
+select *
+from dc_working.reg_tile_ookla_2021q2_quarterly_global_internet_speed_mobile
+union all
+select *
+from dc_working.reg_tile_ookla_2021q3_quarterly_global_internet_speed_mobile
+union all
+select *
+from dc_working.reg_tile_ookla_2021q4_quarterly_global_internet_speed_mobile
+
+
+### STEP 2.2: Get tiles around/within US (output: dc_working.us_tile_ookla_2019_2021_mobile)
+
+## Add centroids for data (to eventually compare against all of US/DMV)
+
+-- GET CENTROIDS USING CRS 26918
+select avg_d_kbps, avg_u_kbps, avg_lat_ms, tests, devices, geometry, st_transform(st_centroid(geometry),  26918) tile_centroid_26918, year, quarter
+into dc_working.reg_tile_ookla_2019_to_2021_mobile_centroids
+from dc_working.reg_tile_ookla_2019_to_2021_mobile;
+
+## Add geometry column to US multi polygon (with same CRS - column name is geom_26918) - SHOULD BE ALREADY DONE
+
+-- -- ADD NEW GEOMETRY COLUMN geom_26918 ON DOCTORS TABLE USING CRS 26918
+-- alter table dc_working.reg_us_acs_2019_us_multipolygon add column geom_26918 geometry;
+-- update dc_working.reg_us_acs_2019_us_multipolygon set geom_26918 = st_transform(geometry, 26918);
+
+## Perform spatial join
+
+-- SPATIAL JOIN BETWEEN DOCTORS AND CENSUS TRACT CENTROIDS WHERE THEY ARE WITHIN 100 MILES OF EACH OTHER
+-- SAVE INTO NEW TABLE
+select a.*
+into dc_working.us_tile_ookla_2019_2021_mobile
+from dc_working.reg_tile_ookla_2019_to_2021_mobile_centroids as a
+inner join dc_working.reg_us_acs_2019_us_multipolygon as b ON ST_Dwithin(a.tile_centroid_26918, b.geom_26918, 1609.344);
+
+
+### STEP 2.3: Get tiles around/within DMV (output: dc_working.va_tile_ookla_2019_2021_mobile, dc_working.md_tile_ookla_2019_2021_mobile, dc_working.dc_tile_ookla_2019_2021_mobile)
+
+# GETTING TILES AROUND VIRGINIA, MARYLAND, AND DC
+select a.*
+into dc_working.va_tile_ookla_2019_2021_mobile
+from dc_working.us_tile_ookla_2019_2021_mobile as a
+inner join dc_working.reg_va_acs_2019_multipolygon as b ON ST_Dwithin(a.tile_centroid_26918, b.geom_26918, 1609.344);
+
+select a.*
+into dc_working.md_tile_ookla_2019_2021_mobile
+from dc_working.us_tile_ookla_2019_2021_mobile as a
+inner join dc_working.reg_md_acs_2019_multipolygon as b ON ST_Dwithin(a.tile_centroid_26918, b.geom_26918, 1609.344);
+
+select a.*
+into dc_working.dc_tile_ookla_2019_2021_mobile
+from dc_working.us_tile_ookla_2019_2021_mobile as a
+inner join dc_working.reg_dc_acs_2019_multipolygon as b ON ST_Dwithin(a.tile_centroid_26918, b.geom_26918, 1609.344);
+
+
+### STEP 2.4: Get % intersection with block groups (TODO!!!) (Takes a long time to run!)
+
+## Leave data at quarter level and get intersections for various calculations!
+
+select a.*, b."GEOID",
+st_area(st_intersection(a.geometry , b.geometry))/st_area(a.geometry) as tile_percent,
+st_area(st_intersection(b.geometry , a.geometry))/st_area(b.geometry) as bg_percent
+into dc_working.va_bg_ookla_2019_2021_all_quarters_intersection_mobile
+from dc_working.va_tile_ookla_2019_2021_mobile as a, dc_working.va_acs_2019_block_groups as b
+where ST_Intersects(a.geometry, b.geometry);
+
+select a.*, b."GEOID",
+st_area(st_intersection(a.geometry , b.geometry))/st_area(a.geometry) as tile_percent,
+st_area(st_intersection(b.geometry , a.geometry))/st_area(b.geometry) as bg_percent
+into dc_working.md_bg_ookla_2019_2021_all_quarters_intersection_mobile
+from dc_working.md_tile_ookla_2019_2021_mobile as a, dc_working.md_acs_2019_block_groups as b
+where ST_Intersects(a.geometry, b.geometry);
+
+select a.*, b."GEOID",
+st_area(st_intersection(a.geometry , b.geometry))/st_area(a.geometry) as tile_percent,
+st_area(st_intersection(b.geometry , a.geometry))/st_area(b.geometry) as bg_percent
+into dc_working.dc_bg_ookla_2019_2021_all_quarters_intersection_mobile
+from dc_working.dc_tile_ookla_2019_2021_mobile as a, dc_working.dc_acs_2019_block_groups as b
+where ST_Intersects(a.geometry, b.geometry);
+

@@ -1,0 +1,256 @@
+---
+title: "Create or Update Dataset"
+author: "Aaron Schroeder"
+date: "11/18/2021"
+output: html_document
+dataset:
+  citation:
+      title: "Social Data Commons: Digital Communications: ACS Broadband Variables"
+      subtitle: ""
+      dsDescriptionValue: "ACS variables pertaining to internet access"
+      subject: "Social Sciences (Ex: Education, Politics, Sociology, Economics, Psychology)"
+      productionDate: "2022-02-14"
+      timePeriodCoveredStart: "2017-01-01"
+      timePeriodCoveredEnd: "2019-12-31"
+      dataSources:
+        - "ACS"
+      author:
+        - authorName: "Alerte, Zachary"
+          authorAffiliation: "Univeristy of Virginia"
+        - authorName: "Schroeder, Aaron"
+          authorAffiliation: "Univeristy of Virginia"
+      datasetContact:
+        - datasetContactEmail: "ads7fg@virginia.edu"
+          datasetContactName: "Schroeder, Aaron"
+  geospatial:
+    geographicCoverage:
+      country: "United States"
+      state: "Virginia, Maryland, D.C."
+    geographicUnit:
+      - "State Health District"
+      - "County"
+      - "Census Tract"
+      - "Block Group"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Load dataset json template and dataset yml
+
+```{r}
+dataset_metadata <- jsonlite::read_json("dataset-metadata.json")
+yml_metadata <- rmarkdown::yaml_front_matter(here::here("data-raw/dataset_create.Rmd"))
+```
+
+# Set title
+
+```{r}
+dataset_metadata$datasetVersion$metadataBlocks$citation$fields[[1]]$value <- yml_metadata$dataset$citation$title
+```
+
+# Set subtitle
+
+```{r}
+dataset_metadata$datasetVersion$metadataBlocks$citation$fields[[2]]$value <- yml_metadata$dataset$citation$subtitle
+```
+
+# Set description
+
+```{r}
+dataset_metadata$datasetVersion$metadataBlocks$citation$fields[[5]]$value[[1]]$dsDescriptionValue$value <- yml_metadata$dataset$citation$dsDescriptionValue
+```
+
+# Set subject
+
+```{r}
+dataset_metadata$datasetVersion$metadataBlocks$citation$fields[[6]]$value[[1]] <- yml_metadata$dataset$citation$subject
+```
+
+# Set production date
+
+```{r}
+dataset_metadata$datasetVersion$metadataBlocks$citation$fields[[7]]$value <- yml_metadata$dataset$citation$productionDate
+```
+
+# Set Time period covered start date
+
+```{r}
+dataset_metadata$datasetVersion$metadataBlocks$citation$fields[[8]]$value[[1]]$timePeriodCoveredStart$value <- yml_metadata$dataset$citation$timePeriodCoveredStart
+```
+
+# Set Time period covered end date
+
+```{r}
+dataset_metadata$datasetVersion$metadataBlocks$citation$fields[[8]]$value[[1]]$timePeriodCoveredEnd$value <- yml_metadata$dataset$citation$timePeriodCoveredEnd
+```
+
+# Set data sources
+
+```{r}
+## Remove existing data source entries
+dataset_metadata$datasetVersion$metadataBlocks$citation$fields[[9]]$value <- NULL
+## Add data source entries
+data_source_l <- as.list(yml_metadata$dataset$citation$dataSources)
+dataset_metadata$datasetVersion$metadataBlocks$citation$fields[[9]]$value <- data_source_l
+```
+
+# Set authors
+
+```{r}
+## Remove existing author entries
+dataset_metadata$datasetVersion$metadataBlocks$citation$fields[[3]]$value <- NULL
+## Add author entries
+num_yml_authors <- length(yml_metadata$dataset$citation$author)
+for (i in 1:num_yml_authors) {
+  dataset_metadata$datasetVersion$metadataBlocks$citation$fields[[3]]$value[[i]] <-
+    list(
+      authorName = list(
+        value = yml_metadata$dataset$citation$author[[i]]$authorName,
+        typeClass = "primitive",
+        multiple = FALSE,
+        typeName = "authorName"
+      ),
+      authorAffiliation = list(
+        value = yml_metadata$dataset$citation$author[[i]]$authorAffiliation,
+        typeClass = "primitive",
+        multiple = FALSE,
+        typeName = "authorAffiliation"
+      )
+    )
+}
+```
+
+# Set contact
+
+```{r}
+## Remove existing contact entries
+dataset_metadata$datasetVersion$metadataBlocks$citation$fields[[4]]$value <- NULL
+## Add contact entries
+num_yml_contacts <- length(yml_metadata$dataset$citation$datasetContact)
+for (i in 1:num_yml_contacts) {
+  dataset_metadata$datasetVersion$metadataBlocks$citation$fields[[4]]$value[[i]] <-
+    list(
+      datasetContactName = list(
+        value = yml_metadata$dataset$citation$datasetContact[[i]]$datasetContactName,
+        typeClass = "primitive",
+        multiple = FALSE,
+        typeName = "datasetContactName"
+      ),
+      datasetContactEmail = list(
+        value = yml_metadata$dataset$citation$datasetContact[[i]]$datasetContactEmail,
+        typeClass = "primitive",
+        multiple = FALSE,
+        typeName = "datasetContactEmail"
+      )
+    )
+}
+```
+
+# Set geographic coverage
+
+```{r}
+## Remove existing geographic coverage entries
+dataset_metadata$datasetVersion$metadataBlocks$geospatial$fields[[1]]$value <- NULL
+## Add geographic coverage entries
+nms <- names(yml_metadata$dataset$geospatial$geographicCoverage)
+
+if ("country" %in% nms) {
+  dataset_metadata$datasetVersion$metadataBlocks$geospatial$fields[[1]]$value[[1]]$country <-
+    list(
+      typeName = "country",
+      multiple = FALSE,
+      typeClass = "controlledVocabulary",
+      value = yml_metadata$dataset$geospatial$geographicCoverage$country
+    )
+}
+if ("state" %in% nms) {
+  dataset_metadata$datasetVersion$metadataBlocks$geospatial$fields[[1]]$value[[1]]$state <- 
+    list(
+      typeName = "state",
+      multiple = FALSE,
+      typeClass = "primitive",
+      value = yml_metadata$dataset$geospatial$geographicCoverage$state
+  )
+}
+if ("city" %in% nms) {
+  dataset_metadata$datasetVersion$metadataBlocks$geospatial$fields[[1]]$value[[1]]$city <- 
+    list(
+      typeName = "city",
+      multiple = FALSE,
+      typeClass = "primitive",
+      value = yml_metadata$dataset$geospatial$geographicCoverage$city
+  )
+}
+if ("otherGeographicCoverage" %in% nms) {
+  dataset_metadata$datasetVersion$metadataBlocks$geospatial$fields[[1]]$value[[1]]$otherGeographicCoverage <- 
+    list(
+      typeName = "otherGeographicCoverage",
+      multiple = FALSE,
+      typeClass = "primitive",
+      value = yml_metadata$dataset$geospatial$geographicCoverage$otherGeographicCoverage
+  )
+}
+```
+
+# Set geographic unit
+
+```{r}
+## Remove existing geographic unit entries
+dataset_metadata$datasetVersion$metadataBlocks$geospatial$fields[[2]]$value <- NULL
+## Add geographic unit entries
+geo_unit_l <- as.list(yml_metadata$dataset$geospatial$geographicUnit)
+dataset_metadata$datasetVersion$metadataBlocks$geospatial$fields[[2]]$value <- geo_unit_l
+```
+
+# Create or update dataverse dataset
+
+```{r}
+if (file.exists(here::here("data/dataset_doi"))) {
+  dataset_doi <- readLines(here::here("data/dataset_doi"))[1]
+ 
+  if (is.na(dataset_doi)) {
+    ## Create dataset
+    ds_info <- dataverse::create_dataset(
+      dataverse = "biocomplexity",
+      body = dataset_metadata,
+      key = Sys.getenv("DATAVERSE_KEY"),
+      server = Sys.getenv("DATAVERSE_SERVER")
+    )
+  
+    ## Save dataset DOI to data
+    dataset_doi <- ds_info$data$persistentId
+    writeLines(dataset_doi, here::here("data/dataset_doi"))
+    save(dataset_doi, file = here::here("R/sysdata.rda"))
+    
+    ## Add WebApps team as curators to the dataset
+
+    role = list(assignee = "&explicit/5710-SDAD_WebApps", role = "curator")  
+    u = paste0("https://", Sys.getenv("DATAVERSE_SERVER"), 
+               "/api/datasets/:persistentId/assignments?persistentId=", 
+               readLines(here::here("data/dataset_doi"))[1])  
+    r <- httr::POST(u, httr::add_headers("X-Dataverse-key" = Sys.getenv("DATAVERSE_KEY"), 
+                                         "Content-Type" = "application/json"), 
+                    body = role, encode = 'json') 
+    httr::stop_for_status(r)
+    httr::content(r, "text")
+    
+  } else {
+    
+    # remove datasetVersion layer from JSON
+    updated_metadata <- dataset_metadata$datasetVersion
+    
+    dataverse::update_dataset(
+      dataset = dataset_doi,
+      body = updated_metadata,
+      key = Sys.getenv("DATAVERSE_KEY"),
+      server = Sys.getenv("DATAVERSE_SERVER")
+    )
+  }
+}
+
+
+
+```
+

@@ -17,7 +17,7 @@
     "/home/runner/work/sdc.food_dev/sdc.food_dev/Food and Nutrition Assistance/Supplemental Nutrition Assistance Program (SNAP)/data/distribution/va_hdcttrbg_acs_2013_2020_hh_receiving_snap.csv.xz"
   ],
   "count": 54,
-  "utc_audited": "2023-03-14 16:30:19",
+  "utc_audited": "2023-03-14 20:11:12",
   "data": [
     {
       "name": "temp",
@@ -40,8 +40,8 @@
     {
       "name": "measure_info.json",
       "path": "Food Security/Food Secure Average Meal Cost/data/distribution/measure_info.json",
-      "md5": "5ab2f9f31cbfbfb906b78ea0d7cf5bdf",
-      "size": 1001
+      "md5": "cc34549d49c838f1254a6af07c7c1540",
+      "size": 1157
     },
     {
       "name": "va_hdct_fa_2014_2019_food_secure_avg_meal_cost.csv.xz",
@@ -100,8 +100,8 @@
     {
       "name": "measure_info.json",
       "path": "Food Security/Food Budget Shortfall/data/distribution/measure_info.json",
-      "md5": "b78fac9c938334cea691dfda46b8d2db",
-      "size": 567
+      "md5": "c43c3534a7f903130f13c36ec5c8bad3",
+      "size": 649
     },
     {
       "name": "va_hdct_fa_2014_2019_food_budget_shortfall.csv.xz",
@@ -130,8 +130,8 @@
     {
       "name": "measure_info.json",
       "path": "Food Security/Children's Food Insecurity/data/distribution/measure_info.json",
-      "md5": "7f80fedc40791fdeac920db946ec0b46",
-      "size": 3275
+      "md5": "1049a55abb9e61b313d5c71e1bb6a1d3",
+      "size": 3591
     },
     {
       "name": "ncr_ct_fa_2014_2019_childrens_food_insecurity.csv.xz",
@@ -220,8 +220,8 @@
     {
       "name": "measure_info.json",
       "path": "Food Security/Overall Food Insecurity/data/distribution/measure_info.json",
-      "md5": "61a619f66ba0f905a6cc7540e0d622fd",
-      "size": 2939
+      "md5": "2f23ef502b2b12b4798ab78a630f7e22",
+      "size": 3111
     },
     {
       "name": "cdc-mrfei-doc.pdf",
@@ -256,8 +256,8 @@
     {
       "name": "measure_info.json",
       "path": "Food Access/Healthy Food Availability/data/distribution/measure_info.json",
-      "md5": "883252e3f142cc1b4ff8fec29854fc58",
-      "size": 1603
+      "md5": "d0bf6072f76904097105c739ae9aa59a",
+      "size": 1875
     },
     {
       "name": "temp",
@@ -280,8 +280,8 @@
     {
       "name": "measure_info.json",
       "path": "Food Access/Food Items/data/distribution/measure_info.json",
-      "md5": "00a5e2fda561ac8fbd4834189081d6e7",
-      "size": 31757
+      "md5": "070151ddecc7cb405114ea1fbcba216c",
+      "size": 36535
     },
     {
       "name": "temp",
@@ -340,8 +340,8 @@
     {
       "name": "measure_info.json",
       "path": "Food and Nutrition Assistance/Supplemental Nutrition Assistance Program (SNAP)/data/distribution/measure_info.json",
-      "md5": "7b9175f925dc3b62a91d73989b710b6a",
-      "size": 3304
+      "md5": "9893cbc5e7b4ed655b3df87e5923975d",
+      "size": 3558
     }
   ],
   "_references": {
