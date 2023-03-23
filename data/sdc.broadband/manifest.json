@@ -16,9 +16,291 @@
     "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Adoption/Households with broadband/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz",
     "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Adoption/Households with cable, fiber optic, or DSL/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz"
   ],
-  "count": 56,
-  "utc_audited": "2023-03-17 19:13:27",
+  "count": 103,
+  "utc_audited": "2023-03-22 15:20:44",
   "data": [
+    {
+      "name": "temp",
+      "path": "legacy/data/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "legacy/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "230315_batch_fcc_area_api_address.ipynb",
+      "path": "legacy/code/distribution/230315_batch_fcc_area_api_address.ipynb",
+      "md5": "c13ef465abea690d3dd12cf55f885432",
+      "size": 15678
+    },
+    {
+      "name": "bbn_scraper.py",
+      "path": "legacy/code/distribution/bbn_scraper.py",
+      "md5": "dca7a4fcb429193a5055a3fe9b2db1f2",
+      "size": 11371
+    },
+    {
+      "name": "230317_visualize_county_data.ipynb",
+      "path": "legacy/code/distribution/230317_visualize_county_data.ipynb",
+      "md5": "b244b1f9124457294d73e613d2e0b2c0",
+      "size": 23651431
+    },
+    {
+      "name": "230315_spatial_join_with_shapefiles.ipynb",
+      "path": "legacy/code/distribution/230315_spatial_join_with_shapefiles.ipynb",
+      "md5": "23c3639ebcfd60eed85912e93225474f",
+      "size": 1568972
+    },
+    {
+      "name": "plot_broadbandnow+acs.Rmd",
+      "path": "legacy/code/distribution/plot_broadbandnow+acs.Rmd",
+      "md5": "535f669ad58530ba2616142b6fbcd8bd",
+      "size": 1674
+    },
+    {
+      "name": "requirements.txt",
+      "path": "legacy/code/distribution/requirements.txt",
+      "md5": "4a09f6bff022ac02c7dfe7f656e1aa61",
+      "size": 2446
+    },
+    {
+      "name": "combine_csv.py",
+      "path": "legacy/code/distribution/combine_csv.py",
+      "md5": "8887f85be19cde87e5ec94285d404dd1",
+      "size": 1721
+    },
+    {
+      "name": "generalized_ookla_download.Rmd",
+      "path": "legacy/code/distribution/generalized_ookla_download.Rmd",
+      "md5": "0326eed0eac04a624a435777ad98cdca",
+      "size": 2040
+    },
+    {
+      "name": "230315_parse_merge_fcc_geocode_batch_return_address_point.ipynb",
+      "path": "legacy/code/distribution/230315_parse_merge_fcc_geocode_batch_return_address_point.ipynb",
+      "md5": "08185681f46bf49333e8b1d69a6cee6c",
+      "size": 45541
+    },
+    {
+      "name": "dataset-metadata-all-fields.json",
+      "path": "legacy/code/distribution/dc.acs.broadband/dataset-metadata-all-fields.json",
+      "md5": "1b19ef8c2fd41a396bb95d6bf5c6cab2",
+      "size": 49675
+    },
+    {
+      "name": "dataset_add_vdh_ACS_variables.Rmd",
+      "path": "legacy/code/distribution/dc.acs.broadband/dataset_add_vdh_ACS_variables.Rmd",
+      "md5": "d7f1c4e9b762242269802a01562d7f8e",
+      "size": 3008
+    },
+    {
+      "name": "dataset_add_ncr_ACS_variables.Rmd",
+      "path": "legacy/code/distribution/dc.acs.broadband/dataset_add_ncr_ACS_variables.Rmd",
+      "md5": "3a2fa2d47efdfce6e4109ef945f4d7b6",
+      "size": 2939
+    },
+    {
+      "name": "dataset-metadata.json",
+      "path": "legacy/code/distribution/dc.acs.broadband/dataset-metadata.json",
+      "md5": "6e43f8614cf6137ece87f233ea2ec182",
+      "size": 5550
+    },
+    {
+      "name": "dataset_create.Rmd",
+      "path": "legacy/code/distribution/dc.acs.broadband/dataset_create.Rmd",
+      "md5": "f570062073eafb0a8efce1693d1b8483",
+      "size": 7914
+    },
+    {
+      "name": "random_broadband_variables.Rmd",
+      "path": "legacy/code/distribution/dc.acs.broadband/random_broadband_variables.Rmd",
+      "md5": "c484166938bf15576d1c246a613b4f0d",
+      "size": 10579
+    },
+    {
+      "name": "dataset_add_vdh_ookla_broadband_speeds_fixed.Rmd",
+      "path": "legacy/code/distribution/dc.ookla.broadband/dataset_add_vdh_ookla_broadband_speeds_fixed.Rmd",
+      "md5": "6edf487ccb96d6bb1ffe8c20cd9926b0",
+      "size": 2866
+    },
+    {
+      "name": "dataset-metadata-all-fields.json",
+      "path": "legacy/code/distribution/dc.ookla.broadband/dataset-metadata-all-fields.json",
+      "md5": "1b19ef8c2fd41a396bb95d6bf5c6cab2",
+      "size": 49675
+    },
+    {
+      "name": "step_3b_DMV_Ookla_Measurements_Mobile.Rmd",
+      "path": "legacy/code/distribution/dc.ookla.broadband/step_3b_DMV_Ookla_Measurements_Mobile.Rmd",
+      "md5": "2b49d48ba6040de86b72ff27c4f2030e",
+      "size": 107895
+    },
+    {
+      "name": "dataset_add_ncr_ookla_broadband_speeds_mobile.Rmd",
+      "path": "legacy/code/distribution/dc.ookla.broadband/dataset_add_ncr_ookla_broadband_speeds_mobile.Rmd",
+      "md5": "611a3cd0f0759182cee3a7a7f8289e83",
+      "size": 2918
+    },
+    {
+      "name": "step_1_and_2_download_ookla_data.Rmd",
+      "path": "legacy/code/distribution/dc.ookla.broadband/step_1_and_2_download_ookla_data.Rmd",
+      "md5": "599b1b57f392a39e6ea77e115f11a4a5",
+      "size": 10784
+    },
+    {
+      "name": "dataset-metadata.json",
+      "path": "legacy/code/distribution/dc.ookla.broadband/dataset-metadata.json",
+      "md5": "6e43f8614cf6137ece87f233ea2ec182",
+      "size": 5550
+    },
+    {
+      "name": "step_3_generalized.Rmd",
+      "path": "legacy/code/distribution/dc.ookla.broadband/step_3_generalized.Rmd",
+      "md5": "3becce5039c780981a40f07ead82c220",
+      "size": 105087
+    },
+    {
+      "name": "dataset_add_ncr_ookla_broadband_speeds_fixed.Rmd",
+      "path": "legacy/code/distribution/dc.ookla.broadband/dataset_add_ncr_ookla_broadband_speeds_fixed.Rmd",
+      "md5": "5ea9e6fbb5a1f55ac810ed1a034c06d8",
+      "size": 2874
+    },
+    {
+      "name": "dataset_add_vdh_ookla_percent_above_threshold_fixed.Rmd",
+      "path": "legacy/code/distribution/dc.ookla.broadband/dataset_add_vdh_ookla_percent_above_threshold_fixed.Rmd",
+      "md5": "7f9af0dc388dbcd53d2de7388cf087ae",
+      "size": 2901
+    },
+    {
+      "name": "dataset_add_vdh_ookla_broadband_speeds_mobile.Rmd",
+      "path": "legacy/code/distribution/dc.ookla.broadband/dataset_add_vdh_ookla_broadband_speeds_mobile.Rmd",
+      "md5": "cbbecb53b1afadf019a5e1e6e0834aea",
+      "size": 2910
+    },
+    {
+      "name": "dataset_add_vdh_ookla_percent_above_threshold_mobile.Rmd",
+      "path": "legacy/code/distribution/dc.ookla.broadband/dataset_add_vdh_ookla_percent_above_threshold_mobile.Rmd",
+      "md5": "1dc704d842f844a6e8cadee9aa8bc7a4",
+      "size": 2945
+    },
+    {
+      "name": "dataset_create.Rmd",
+      "path": "legacy/code/distribution/dc.ookla.broadband/dataset_create.Rmd",
+      "md5": "c1a9d21257b3f2d9f4d1d3934e24d768",
+      "size": 8071
+    },
+    {
+      "name": "step_3a_DMV_Ookla_Measurements_Fixed.Rmd",
+      "path": "legacy/code/distribution/dc.ookla.broadband/step_3a_DMV_Ookla_Measurements_Fixed.Rmd",
+      "md5": "142fd9f27ad9ff663a558f2761a62756",
+      "size": 107292
+    },
+    {
+      "name": "dataset_add_ncr_percent_above_threshold_fixed.Rmd",
+      "path": "legacy/code/distribution/dc.ookla.broadband/dataset_add_ncr_percent_above_threshold_fixed.Rmd",
+      "md5": "6c0fa7657fe4d35fc590ac0d153fed90",
+      "size": 2908
+    },
+    {
+      "name": "dataset_add_ncr_percent_above_threshold_mobile.Rmd",
+      "path": "legacy/code/distribution/dc.ookla.broadband/dataset_add_ncr_percent_above_threshold_mobile.Rmd",
+      "md5": "99a12bae4e1e87b32d7f69c8aeeae9c4",
+      "size": 2948
+    },
+    {
+      "name": "step_3a_DMV_Internet_Prices.Rmd",
+      "path": "legacy/code/distribution/dc.broadbandnow.broadband.prices/step_3a_DMV_Internet_Prices.Rmd",
+      "md5": "c4ed177634ee39c44152946546ac0258",
+      "size": 30935
+    },
+    {
+      "name": "dataset_add_YOUR_FILE_NAME.Rmd",
+      "path": "legacy/code/distribution/dc.broadbandnow.broadband.prices/dataset_add_YOUR_FILE_NAME.Rmd",
+      "md5": "2bb929b01c30cc697ebf00a612d4a813",
+      "size": 2564
+    },
+    {
+      "name": "dataset-metadata-all-fields.json",
+      "path": "legacy/code/distribution/dc.broadbandnow.broadband.prices/dataset-metadata-all-fields.json",
+      "md5": "1b19ef8c2fd41a396bb95d6bf5c6cab2",
+      "size": 49675
+    },
+    {
+      "name": "dataset_add_vdh_internet_package_price.Rmd",
+      "path": "legacy/code/distribution/dc.broadbandnow.broadband.prices/dataset_add_vdh_internet_package_price.Rmd",
+      "md5": "562fd71f2cd883958a57e8426e73f6bd",
+      "size": 2461
+    },
+    {
+      "name": "step_3b_Price_Code_100_20.Rmd",
+      "path": "legacy/code/distribution/dc.broadbandnow.broadband.prices/step_3b_Price_Code_100_20.Rmd",
+      "md5": "65e0d94947dacacf4bf901ea088fbbd8",
+      "size": 17925
+    },
+    {
+      "name": "dataset-metadata.json",
+      "path": "legacy/code/distribution/dc.broadbandnow.broadband.prices/dataset-metadata.json",
+      "md5": "6e43f8614cf6137ece87f233ea2ec182",
+      "size": 5550
+    },
+    {
+      "name": "dataset_add_vdh_perc_income_on_internet.Rmd",
+      "path": "legacy/code/distribution/dc.broadbandnow.broadband.prices/dataset_add_vdh_perc_income_on_internet.Rmd",
+      "md5": "286567a4d3b49fccc7379ade1d429806",
+      "size": 1800
+    },
+    {
+      "name": "step_4_Perc_Income_on_Internet.Rmd",
+      "path": "legacy/code/distribution/dc.broadbandnow.broadband.prices/step_4_Perc_Income_on_Internet.Rmd",
+      "md5": "dba1ae69f90fcd6696c6a4c438cd1938",
+      "size": 27793
+    },
+    {
+      "name": "dataset_create.Rmd",
+      "path": "legacy/code/distribution/dc.broadbandnow.broadband.prices/dataset_create.Rmd",
+      "md5": "aa596906e6037fb8b1a9693d3f301206",
+      "size": 7968
+    },
+    {
+      "name": "step_2_Broadbandnow_Scraper.ipynb",
+      "path": "legacy/code/distribution/dc.broadbandnow.broadband.prices/step_2_Broadbandnow_Scraper.ipynb",
+      "md5": "9977a2f32fa480d2af7581f3f9d4a065",
+      "size": 437246
+    },
+    {
+      "name": "broadbandnow_get_geo_price.ipynb",
+      "path": "legacy/code/distribution/dc.broadbandnow.broadband.prices/broadbandnow_get_geo_price.ipynb",
+      "md5": "4f4036dc2f495b82e810b45933f323f3",
+      "size": 608
+    },
+    {
+      "name": "dataset_add_ncr_perc_income_on_internet.Rmd",
+      "path": "legacy/code/distribution/dc.broadbandnow.broadband.prices/dataset_add_ncr_perc_income_on_internet.Rmd",
+      "md5": "490909c14042e8b0780209a74142f166",
+      "size": 1694
+    },
+    {
+      "name": "step_1_get_geography_address.Rmd",
+      "path": "legacy/code/distribution/dc.broadbandnow.broadband.prices/step_1_get_geography_address.Rmd",
+      "md5": "f06975dd38aef806c1fee6d2b8aa760a",
+      "size": 6633
+    },
+    {
+      "name": "dataset_add_ncr_internet_package_price.Rmd",
+      "path": "legacy/code/distribution/dc.broadbandnow.broadband.prices/dataset_add_ncr_internet_package_price.Rmd",
+      "md5": "b70fac1297f949e260ddafc091911031",
+      "size": 2487
+    },
+    {
+      "name": "combine_csv_files.ipynb",
+      "path": "legacy/code/distribution/dc.broadbandnow.broadband.prices/combine_csv_files.ipynb",
+      "md5": "d9f5f493bd488a8623f854c38ec9be88",
+      "size": 7632
+    },
     {
       "name": "ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
       "path": "Wired/Accessibility/Percent Fast (total)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
