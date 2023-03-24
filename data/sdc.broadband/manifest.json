@@ -17,7 +17,7 @@
     "/home/runner/work/sdc.broadband_dev/sdc.broadband_dev/Wired/Adoption/Households with cable, fiber optic, or DSL/data/distribution/ncr_hdcttrbg_2017_2019_broadband_withoutint_compdev.csv.xz"
   ],
   "count": 103,
-  "utc_audited": "2023-03-22 15:20:44",
+  "utc_audited": "2023-03-22 17:05:30",
   "data": [
     {
       "name": "temp",

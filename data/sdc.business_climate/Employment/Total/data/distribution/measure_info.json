@@ -1,223 +1,262 @@
 {
-    "total_employment": {
-        "category": "Business climate",
-        "short_name": "Total employment",
-        "long_name": "Total employment",
-        "short_description": "Total employment",
-        "long_description": "Total employment",
-        "statement": "",
-        "type": "count",
-        "equity_category": "Status",
-        "sources": [
+    "total_employment":{
+        "category":"Business climate",
+        "short_name":"Total employment",
+        "long_name":"Total employment",
+        "short_description":"Total employment",
+        "long_description":"Total employment",
+        "statement":"",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
             {
-                "name": "Mergent Intellect",
-                "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "name":"Mergent Intellect",
+                "date_accessed":                2023,
+                "url":"https://www.ftserussell.com/data/mergent-intellect"
             }
-        ]
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
     },
-    "job_creation_new": {
-        "category": "Business climate",
-        "short_name": "Job creation by new business (count)",
-        "long_name": "Job creation by new business (count)",
-        "short_description": "Jobs created by new business (count)",
-        "long_description": "Jobs created by new business (count)",
-        "statement": "",
-        "type": "count",
-        "equity_category": "Status",
-        "sources": [
+    "job_creation_new":{
+        "category":"Business climate",
+        "short_name":"Job creation by new business (count)",
+        "long_name":"Job creation by new business (count)",
+        "short_description":"Jobs created by new business (count)",
+        "long_description":"Jobs created by new business (count)",
+        "statement":"",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
             {
-                "name": "Mergent Intellect",
-                "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "name":"Mergent Intellect",
+                "date_accessed":                2023,
+                "url":"https://www.ftserussell.com/data/mergent-intellect"
             }
-        ]
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
     },
-    "job_creation_active": {
-        "category": "Business climate",
-        "short_name": "Job creation by active business (count)",
-        "long_name": "Job creation by active business (count)",
-        "short_description": "Jobs created by active business (count)",
-        "long_description": "Jobs created by active business (count)",
-        "statement": "",
-        "type": "count",
-        "equity_category": "Status",
-        "sources": [
+    "job_creation_active":{
+        "category":"Business climate",
+        "short_name":"Job creation by active business (count)",
+        "long_name":"Job creation by active business (count)",
+        "short_description":"Jobs created by active business (count)",
+        "long_description":"Jobs created by active business (count)",
+        "statement":"",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
             {
-                "name": "Mergent Intellect",
-                "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "name":"Mergent Intellect",
+                "date_accessed":                2023,
+                "url":"https://www.ftserussell.com/data/mergent-intellect"
             }
-        ]
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
     },
-    "business_job_creation": {
-        "category": "Business climate",
-        "short_name": "Number of business creating jobs",
-        "long_name": "Number of business creating jobs",
-        "short_description": "Number of business creating jobs",
-        "long_description": "Number of business creating jobs",
-        "statement": "",
-        "type": "count",
-        "equity_category": "Status",
-        "sources": [
+    "business_create_job":{
+        "category":"Business climate",
+        "short_name":"Number of business creating jobs",
+        "long_name":"Number of business creating jobs",
+        "short_description":"Number of business creating jobs",
+        "long_description":"Number of business creating jobs",
+        "statement":"",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
             {
-                "name": "Mergent Intellect",
-                "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "name":"Mergent Intellect",
+                "date_accessed":                2023,
+                "url":"https://www.ftserussell.com/data/mergent-intellect"
             }
-        ]
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
     },
-    "total_job_creation": {
-        "category": "Business climate",
-        "short_name": "Total jobs creation",
-        "long_name": "Total jobs creation",
-        "short_description": "Total jobs creation",
-        "long_description": "Total jobs creation",
-        "statement": "",
-        "type": "count",
-        "equity_category": "Status",
-        "sources": [
+    "total_job_creation":{
+        "category":"Business climate",
+        "short_name":"Total jobs creation",
+        "long_name":"Total jobs creation",
+        "short_description":"Total jobs creation",
+        "long_description":"Total jobs creation",
+        "statement":"",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
             {
-                "name": "Mergent Intellect",
-                "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "name":"Mergent Intellect",
+                "date_accessed":                2023,
+                "url":"https://www.ftserussell.com/data/mergent-intellect"
             }
-        ]
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
     },
-    "perc_job_creation_new": {
-        "category": "Business climate",
-        "short_name": "Job creation by new business (percent)",
-        "long_name": "Job creation by new business (percent)",
-        "short_description": "Jobs created by new business (percent)",
-        "long_description": "Jobs created by new business (percent)",
-        "statement": "",
-        "type": "percent",
-        "equity_category": "Status",
-        "sources": [
+    "perc_job_creation_new":{
+        "category":"Business climate",
+        "short_name":"Job creation by new business (percent)",
+        "long_name":"Job creation by new business (percent)",
+        "short_description":"Jobs created by new business (percent)",
+        "long_description":"Jobs created by new business (percent)",
+        "statement":"",
+        "type":"percent",
+        "equity_category":"Status",
+        "sources":[
             {
-                "name": "Mergent Intellect",
-                "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "name":"Mergent Intellect",
+                "date_accessed":                2023,
+                "url":"https://www.ftserussell.com/data/mergent-intellect"
             }
-        ]
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"percentage"
     },
-    "perc_job_creation_active": {
-        "category": "Business climate",
-        "short_name": "Job creation by active business (percent)",
-        "long_name": "Job creation by active business (percent)",
-        "short_description": "Jobs created by active business (percent)",
-        "long_description": "Jobs created by active business (percent)",
-        "statement": "",
-        "type": "percent",
-        "equity_category": "Status",
-        "sources": [
+    "perc_job_creation_active":{
+        "category":"Business climate",
+        "short_name":"Job creation by active business (percent)",
+        "long_name":"Job creation by active business (percent)",
+        "short_description":"Jobs created by active business (percent)",
+        "long_description":"Jobs created by active business (percent)",
+        "statement":"",
+        "type":"percent",
+        "equity_category":"Status",
+        "sources":[
             {
-                "name": "Mergent Intellect",
-                "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "name":"Mergent Intellect",
+                "date_accessed":                2023,
+                "url":"https://www.ftserussell.com/data/mergent-intellect"
             }
-        ]
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"percentage"
     },
-    "job_destruction_exit": {
-        "category": "Business climate",
-        "short_name": "Jobs destruction by exiting business (count)",
-        "long_name": "Jobs destruction by exiting business (count)",
-        "short_description": "Jobs destroyed by exiting business (count)",
-        "long_description": "Jobs destroyed by exiting business (count)",
-        "statement": "",
-        "type": "count",
-        "equity_category": "Status",
-        "sources": [
+    "job_destruction_exit":{
+        "category":"Business climate",
+        "short_name":"Jobs destruction by exiting business (count)",
+        "long_name":"Jobs destruction by exiting business (count)",
+        "short_description":"Jobs destroyed by exiting business (count)",
+        "long_description":"Jobs destroyed by exiting business (count)",
+        "statement":"",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
             {
-                "name": "Mergent Intellect",
-                "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "name":"Mergent Intellect",
+                "date_accessed":                2023,
+                "url":"https://www.ftserussell.com/data/mergent-intellect"
             }
-        ]
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
     },
-    "job_destruction_active": {
-        "category": "Business climate",
-        "short_name": "Jobs destruction by active business (count)",
-        "long_name": "Jobs destruction by active business (count)",
-        "short_description": "Jobs destroyed by active business (count)",
-        "long_description": "Jobs destroyed by active business (count)",
-        "statement": "",
-        "type": "count",
-        "equity_category": "Status",
-        "sources": [
+    "job_destruction_active":{
+        "category":"Business climate",
+        "short_name":"Jobs destruction by active business (count)",
+        "long_name":"Jobs destruction by active business (count)",
+        "short_description":"Jobs destroyed by active business (count)",
+        "long_description":"Jobs destroyed by active business (count)",
+        "statement":"",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
             {
-                "name": "Mergent Intellect",
-                "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "name":"Mergent Intellect",
+                "date_accessed":                2023,
+                "url":"https://www.ftserussell.com/data/mergent-intellect"
             }
-        ]
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
     },
-    "business_job_destruction": {
-        "category": "Business climate",
-        "short_name": "Number of business destroying jobs",
-        "long_name": "Number of business destroying jobs",
-        "short_description": "Number of business destroying jobs",
-        "long_description": "Number of business destroying jobs",
-        "statement": "",
-        "type": "count",
-        "equity_category": "Status",
-        "sources": [
+    "business_destruction_job":{
+        "category":"Business climate",
+        "short_name":"Number of business destroying jobs",
+        "long_name":"Number of business destroying jobs",
+        "short_description":"Number of business destroying jobs",
+        "long_description":"Number of business destroying jobs",
+        "statement":"",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
             {
-                "name": "Mergent Intellect",
-                "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "name":"Mergent Intellect",
+                "date_accessed":                2023,
+                "url":"https://www.ftserussell.com/data/mergent-intellect"
             }
-        ]
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
     },
-    "total_job_destruction": {
-        "category": "Business climate",
-        "short_name": "Total jobs destruction",
-        "long_name": "Total jobs destruction",
-        "short_description": "Total jobs destruction",
-        "long_description": "Total jobs destruction",
-        "statement": "",
-        "type": "count",
-        "equity_category": "Status",
-        "sources": [
+    "total_job_destruction":{
+        "category":"Business climate",
+        "short_name":"Total jobs destruction",
+        "long_name":"Total jobs destruction",
+        "short_description":"Total jobs destruction",
+        "long_description":"Total jobs destruction",
+        "statement":"",
+        "type":"count",
+        "equity_category":"Status",
+        "sources":[
             {
-                "name": "Mergent Intellect",
-                "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "name":"Mergent Intellect",
+                "date_accessed":                2023,
+                "url":"https://www.ftserussell.com/data/mergent-intellect"
             }
-        ]
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
     },
-    "perc_job_destruction_exit": {
-        "category": "Business climate",
-        "short_name": "Jobs destruction by exiting business (percent)",
-        "long_name": "Jobs destruction by exiting business (percent)",
-        "short_description": "Jobs destroyed by exiting business (percent)",
-        "long_description": "Jobs destroyed by exiting business (percent)",
-        "statement": "",
-        "type": "percent",
-        "equity_category": "Status",
-        "sources": [
+    "perc_job_destruction_exit":{
+        "category":"Business climate",
+        "short_name":"Jobs destruction by exiting business (percent)",
+        "long_name":"Jobs destruction by exiting business (percent)",
+        "short_description":"Jobs destroyed by exiting business (percent)",
+        "long_description":"Jobs destroyed by exiting business (percent)",
+        "statement":"",
+        "type":"percent",
+        "equity_category":"Status",
+        "sources":[
             {
-                "name": "Mergent Intellect",
-                "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "name":"Mergent Intellect",
+                "date_accessed":                2023,
+                "url":"https://www.ftserussell.com/data/mergent-intellect"
             }
-        ]
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"percentage"
     },
-    "perc_job_destruction_active": {
-        "category": "Business climate",
-        "short_name": "Jobs destruction by active business (percent)",
-        "long_name": "Jobs destruction by active business (percent)",
-        "short_description": "Jobs destroyed by active business (percent)",
-        "long_description": "Jobs destroyed by active business (percent)",
-        "statement": "",
-        "type": "percent",
-        "equity_category": "Status",
-        "sources": [
+    "perc_job_destruction_active":{
+        "category":"Business climate",
+        "short_name":"Jobs destruction by active business (percent)",
+        "long_name":"Jobs destruction by active business (percent)",
+        "short_description":"Jobs destroyed by active business (percent)",
+        "long_description":"Jobs destroyed by active business (percent)",
+        "statement":"",
+        "type":"percent",
+        "equity_category":"Status",
+        "sources":[
             {
-                "name": "Mergent Intellect",
-                "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "name":"Mergent Intellect",
+                "date_accessed":                2023,
+                "url":"https://www.ftserussell.com/data/mergent-intellect"
             }
-        ]
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"percentage"
     }
 }
