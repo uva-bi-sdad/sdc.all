@@ -7,7 +7,7 @@ library(tidycensus)
 library(tidyverse)
 
 # To see all variable names
-variables <- load_variables(2012, "acs5/subject", cache = TRUE)
+variables <- load_variables(2020, "acs5", cache = TRUE)
 
 # Codes are different for each year ========================
 # S0101_C03_001 = Female!!Estimate!!Total population in 2010
@@ -70,3 +70,31 @@ for(state in states){
 
 
 write_csv(sexes, xzfile("./data/distribution/va_cttr_2010_2021_perc_male.csv.xz", compression = 9))
+
+# <!--------------------------------------------------------------------------------------->
+# <!-------------------- Percent of Children Living with Grandparents ---------------------->
+
+gParentVars <- c("B10001_001") #Estimate!!Total!!Under 6, 6 to 11, 11 to 17 years (Or just under 18)
+# Same for all years
+
+total_gp <- NULL
+total_pop <- NULL
+for(state in states){
+  for(geography in geographies){
+    for(year in years){
+      gpData <- get_acs(geography = geography, variable = gParentVars, state = state, year = year,
+                        geometry = FALSE,
+                        survey = "acs5",cache_table = TRUE, show_call = TRUE) %>% mutate(year = year, region_type = geography, measure_type = "float", measure_units = "count")
+      total_gp <- rbind(total_gp, gpData)
+      popData <- get_acs(geography = geography, variable = "B01003_001", state = state, year = year,
+                        geometry = FALSE,
+                        survey = "acs5",cache_table = TRUE, show_call = TRUE)
+      total_pop <- rbind(total_pop, popData)
+    }
+  }
+}
+total_gp <- total_gp %>% arrange(GEOID, year)
+total_gp<- total_gp %>% mutate(popTotal = total_pop$estimate)
+total_gp <- total_gp %>% mutate(value = estimate / popTotal)
+
+write_csv(total_gp, xzfile("./Cooperative extension/data/distribution/va_cttr_2010_2021_perc_children_raised_by_GPs.csv.xz", compression = 9))

@@ -21,5 +21,25 @@
         "unit":"",
         "data_type":"numeric",
         "measure_type":"percentage"
+    },
+    "perc_children_raised_by_GPs":{
+        "category":"Demographics",
+        "measure_table":"va_cttr_2010_2021_perc_children_raised_by_GPs",
+        "full_name":"demographics:perc_children_raised_by_GPs",
+        "measure":"perc_children_raised_by_GPs",
+        "short_name":"Children Raised by Grandparents",
+        "long_names":"Children Raised by Grandparents (percent)",
+        "short_description":"The percent of children in the population being raised by their grandparents. Based on American Community Survey 2010/2021 5-year estimates.",
+        "long_description":"The percent of children in the population being raised by their grandparents. Based on American Community Survey 2010/2021 5-year estimates.",
+        "statement":"The population of children raised by grandparents is {value} in {features.name}.",
+        "type":"percent",
+        "equity_categorty":"State",
+        "sources":[
+            {
+                "name":"American Community Survey Table B01003",
+                "date_accessed":2022,
+                "url":"https://www.census.gov/programs-surveys/acs.html"
+            }
+        ]   
     }
 }
