@@ -43,21 +43,21 @@ def evaluate_folder(dirpath):
             if path.suffix in [".json"]: 
                 
                 if full_path not in ["measure_info.json"]:
-                    report += "\t<p><font color='red'> [ERROR: MEASURE INFO FILE NAME] </font> %s: %s</p>\n" % (parent_dir, full_path)
+                    report += "\t<p><font color='#D55E00'> [ERROR: MEASURE INFO FILE NAME] </font> %s: %s</p>\n" % (parent_dir, full_path)
                 else: 
-                    report += "\t<p><font color='green'> [VALID] </font> %s: %s</p>\n" % (parent_dir, full_path)
+                    report += "\t<p><font color='#009E73'> [VALID] </font> %s: %s</p>\n" % (parent_dir, full_path)
                     
             # check data files        
             
             elif path.suffix in [".xz", ".csv"]:
 
                 if not (full_path.startswith('ncr') or full_path.startswith('va')):
-                    report += "\t<p><font color='red'> [ERROR: DATA FILE NAME] </font> %s: %s</p>\n" % (parent_dir, full_path)
+                    report += "\t<p><font color='#D55E00'> [ERROR: DATA FILE NAME] </font> %s: %s</p>\n" % (parent_dir, full_path)
                 else: 
-                    report += "\t<p><font color='green'> [VALID] </font> %s: %s</p>\n" % (parent_dir, full_path)
+                    report += "\t<p><font color='#009E73'> [VALID] </font> %s: %s</p>\n" % (parent_dir, full_path)
                   
             else:  
-                report += "\t<p><font color='red'> [ERROR: DATA FILE NAME] </font> %s: %s</p>\n" % (parent_dir, full_path)
+                report += "\t<p><font color='#D55E00'> [ERROR: DATA FILE NAME] </font> %s: %s</p>\n" % (parent_dir, full_path)
                     
                     
     return report

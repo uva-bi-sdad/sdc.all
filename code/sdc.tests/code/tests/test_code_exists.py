@@ -71,12 +71,12 @@ def evaluate_folder(dirpath):
         # report results
         
         if len(good_dirs) > 0:
-            report += "\t<p><font color='green'> [DISTRIBUTION DATA AND CODE] </font></p>\n" 
+            report += "\t<p><font color='#009E73'> [DISTRIBUTION DATA AND CODE] </font></p>\n" 
             for d in good_dirs:
                 report += "\t<p> %s </p>\n" % (d)
             
         if len(bad_dirs) > 0:    
-            report += "\t<p><font color='red'> [DISTRIBUTION DATA AND NO CODE] </font></p>\n" 
+            report += "\t<p><font color='#D55E00'> [DISTRIBUTION DATA AND NO CODE] </font></p>\n" 
             for d in bad_dirs:
                 report += "\t<p> %s </p>\n" % (d)
           
