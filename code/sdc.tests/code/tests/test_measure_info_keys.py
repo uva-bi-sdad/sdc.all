@@ -43,8 +43,11 @@ def evaluate_folder(req_keys, dirpath):
 
             # execute these statements for measure info files
                 
-            parent_dir = str(path.parent).split('sdc.').pop()
-            parent_dir = re.search('/(.*?)/data/distribution', parent_dir).group(1)
+            try:    
+                parent_dir = str(path.parent).split('sdc.').pop()
+                parent_dir = re.search('/(.*?)/data/distribution', parent_dir).group(1)
+            except:
+                parent_dir = "PARENT_DIRECTORY"
             
             f = open(path.resolve())
             mi = json.load(f)
