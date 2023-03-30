@@ -1,0 +1,124 @@
+---
+title: "Untitled"
+author: "cm"
+date: "2/18/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r cars}
+                                    
+"Medical Deductible - Individual - Standard"                       
+"Drug Deductible - Individual - Standard"                         
+"Medical Deductible - Family - Standard"                           
+"Drug Deductible - Family - Standard"                              
+"Medical Deductible - Family (Per Person) - Standard"             
+ "Drug Deductible - Family (Per Person) - Standard"                 
+
+ 
+"Medical Maximum Out Of Pocket - Individual - Standard"            
+"Drug Maximum Out Of Pocket - Individual - Standard"              
+"Medical Maximum Out Of Pocket - Family - Standard"                
+"Drug Maximum Out Of Pocket - Family - Standard"                   
+"Medical Maximum Out Of Pocket - Family (Per Person) - Standard"  
+"Drug Maximum Out Of Pocket - Family (Per Person) - Standard"      
+
+
+
+
+ 
+ "Primary Care Physician - Standard"                                
+"Specialist - Standard"                                           
+ "Emergency Room - Standard"                                        
+"Inpatient Facility - Standard"                                    
+"Inpatient Physician - Standard"                                  
+ "Generic Drugs - Standard"                                         
+"Preferred Brand Drugs - Standard"                                 
+"Non-preferred Brand Drugs - Standard"                            
+"Specialty Drugs - Standard"                                       
+
+```
+
+
+```{r}
+## Deductible
+#remove $
+healthcare_va_county$`Medical Deductible - Individual - Standard` <- gsub( '\\$' ,'', healthcare_va_county$`Medical Deductible - Individual - Standard` )
+healthcare_va_county$`Medical Deductible - Individual - Standard` <- gsub( '\\,' ,'', healthcare_va_county$`Medical Deductible - Individual - Standard` )
+
+
+healthcare_va_county$`Medical Deductible - Family - Standard` <- gsub( '\\$' ,'', healthcare_va_county$`Medical Deductible - Family - Standard` )
+healthcare_va_county$`Medical Deductible - Family - Standard` <- gsub( '\\,' ,'', healthcare_va_county$`Medical Deductible - Family - Standard` )
+
+healthcare_va_county$`Medical Deductible - Family (Per Person) - Standard` <- gsub( '\\$' ,'', healthcare_va_county$`Medical Deductible - Family (Per Person) - Standard` )
+healthcare_va_county$`Medical Deductible - Family (Per Person) - Standard` <- gsub( '\\,' ,'', healthcare_va_county$`Medical Deductible - Family (Per Person) - Standard` )
+
+
+
+
+healthcare_va_county$`Medical Deductible - Individual - Standard` <- as.numeric( healthcare_va_county$`Medical Deductible - Individual - Standard` )
+healthcare_va_county$`Medical Deductible - Family - Standard` <- as.numeric(healthcare_va_county$`Medical Deductible - Family - Standard`)
+healthcare_va_county$`Medical Deductible - Family (Per Person) - Standard` <- as.numeric(healthcare_va_county$`Medical Deductible - Family (Per Person) - Standard`)
+
+
+healthcare_deductible <- healthcare_va_county %>%  group_by(`Metal Level`) %>% summarise(
+                                                                                     deductible_med_indiv = mean(as.numeric(`Medical Deductible - Individual - Standard`), na.rm=TRUE), 
+                                                                                     #deductible_drug_indiv = mean(`Drug Deductible - Individual - Standard`, na.rm=TRUE),
+                                                                                     deductible_med_family = mean(`Medical Deductible - Family - Standard`, na.rm=TRUE),
+                                                                                     #deductible_drug_family = mean(`Drug Deductible - Family - Standard`, na.rm=TRUE),
+                                                                                     deductible_med_fam_pperson = mean(`Medical Deductible - Family (Per Person) - Standard`, na.rm=TRUE),
+                                                                                     #deductible_drug_fam_pperson = mean(`Drug Deductible - Family (Per Person) - Standard`, na.rm=TRUE) 
+                                                                                     )
+#only Bronze
+healthcare_deductible_bronze <- healthcare_deductible %>% filter(`Metal Level` == 'Bronze') %>% pivot_longer( cols = !`Metal Level`)
+
+
+
+
+```
+
+Out-of-pocket
+```{r}
+## Out-of-pocket
+
+"Medical Maximum Out Of Pocket - Individual - Standard"            
+"Medical Maximum Out Of Pocket - Family - Standard"                
+"Medical Maximum Out Of Pocket - Family (Per Person) - Standard"  
+
+
+#remove $
+healthcare_va_county$`Medical Maximum Out Of Pocket - Individual - Standard` <- gsub( '\\$' ,'', healthcare_va_county$`Medical Maximum Out Of Pocket - Individual - Standard` )
+healthcare_va_county$`Medical Maximum Out Of Pocket - Individual - Standard` <- gsub( '\\,' ,'', healthcare_va_county$`Medical Maximum Out Of Pocket - Individual - Standard` )
+
+healthcare_va_county$`Medical Maximum Out Of Pocket - Family - Standard` <- gsub( '\\$' ,'', healthcare_va_county$`Medical Maximum Out Of Pocket - Family - Standard` )
+healthcare_va_county$`Medical Maximum Out Of Pocket - Family - Standard` <- gsub( '\\,' ,'', healthcare_va_county$`Medical Maximum Out Of Pocket - Family - Standard` )
+
+healthcare_va_county$`Medical Maximum Out Of Pocket - Family (Per Person) - Standard` <- gsub( '\\$' ,'', healthcare_va_county$`Medical Maximum Out Of Pocket - Family (Per Person) - Standard` )
+healthcare_va_county$`Medical Maximum Out Of Pocket - Family (Per Person) - Standard` <- gsub( '\\,' ,'', healthcare_va_county$`Medical Maximum Out Of Pocket - Family (Per Person) - Standard` )
+
+#as.numeric
+healthcare_va_county$`Medical Maximum Out Of Pocket - Individual - Standard` <- as.numeric( healthcare_va_county$`Medical Maximum Out Of Pocket - Individual - Standard` )
+healthcare_va_county$`Medical Maximum Out Of Pocket - Family - Standard` <- as.numeric(healthcare_va_county$`Medical Maximum Out Of Pocket - Family - Standard`)
+healthcare_va_county$`Medical Maximum Out Of Pocket - Family (Per Person) - Standard` <- as.numeric(healthcare_va_county$`Medical Maximum Out Of Pocket - Family (Per Person) - Standard`)
+
+
+healthcare_outofpocket <- healthcare_va_county %>%  group_by(`Metal Level`) %>% summarise(
+                                                                                     outofpocket_med_indiv = mean(as.numeric(`Medical Maximum Out Of Pocket - Individual - Standard`), na.rm=TRUE), 
+                                                                                     outofpocket_med_family = mean(`Medical Maximum Out Of Pocket - Family - Standard`, na.rm=TRUE),
+                                                                                     outofpocket_med_fam_pperson = mean(`Medical Maximum Out Of Pocket - Family (Per Person) - Standard`, na.rm=TRUE),
+                                                                                     )
+#only Bronze
+healthcare_outofpocket <- healthcare_outofpocket %>% filter(`Metal Level` == 'Bronze') %>% pivot_longer( cols = !`Metal Level`)
+
+
+
+
+```
+
+
+

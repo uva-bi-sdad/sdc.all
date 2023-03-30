@@ -1,0 +1,702 @@
+{
+    "PM25":{
+        "category":"Environment",
+        "type":"concentration",
+        "short_name":"PM 2.5",
+        "long_name":"Particulate Matter 2.5 level in air",
+        "short_description":"PM 2.5 levels in air, \u00b5g/m3 annual average",
+        "long_description":"The PM 2.5 indicator is a measure of potential exposure to inhalable particles that are 2.5 micrometers or smaller.",
+        "statement":"The annual average concentration of Particulate Matter 2.5 in air in {features.name} is {value}.",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"concentration"
+    },
+    "OZONE":{
+        "category":"Environment",
+        "type":"concentration",
+        "short_name":"Ozone",
+        "long_name":"Ozone level in air",
+        "short_description":"Ozone summer seasonal average of daily maximum 8-hour concentration in air in parts per billion",
+        "long_description":"The ozone indicator is the potential ozone exposure measured in terms of summer seasonal daily average maximum concentrations in an 8-hour period measured in parts per billion.",
+        "statement":"The summer daily average concentration of Ozone in an 8-hour period in {features.name} is {value}.",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"concentration"
+    },
+    "DSLPM":{
+        "category":"Environment",
+        "type":"concentration",
+        "short_name":"DPM",
+        "long_name":"Diesel Particulate Matter level in air",
+        "short_description":"Diesel particulate matter level in air, \u00b5g/m3",
+        "long_description":"Diesel particulate matter is a component of diesel exhaust that includes soot particles made up primarily of carbon, ash, metallic abrasion particles, sulfates and silicates.",
+        "statement":"The Diesel Particulate Matter level in air in {features.name} is {value}.",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"concentration"
+    },
+    "CANCER":{
+        "category":"Environment",
+        "type":"risk index",
+        "short_name":"Cancer Risk",
+        "long_name":"Air Toxics Cancer Risk Index",
+        "short_description":"Lifetime cancer risk from inhalation of air toxics",
+        "long_description":"The air toxics cancer risk indicator is the estimated lifetime inhalation cancer risk from the analyzed carcinogens in ambient outdoor air, as provided by the 2017 Air Toxics data update.",
+        "statement":"The Air Toxics Cancer Risk in {features.name} is {value}-in-1 million over 70 years.",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"risk index"
+    },
+    "RESP":{
+        "category":"Environment",
+        "type":"exposure index",
+        "short_name":"Respiratory HI",
+        "long_name":"Air Toxics Respiratory Hazard Index",
+        "short_description":"Ratio of exposure concentration to health-based reference concentration",
+        "long_description":"The air toxics respiratory hazard index (HI) indicator is the respiratory HI from the analyzed carcinogens in ambient outdoor air, as provided by the 2017 Air Toxics Data Update.",
+        "statement":"The Air Toxics Respiratory Hazard Index in {features.name} is {value}, where values less or equal to 1 are not likely to result in noncancer adverse effects.",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"exposure index"
+    },
+    "PTRAF":{
+        "category":"Environment",
+        "type":"proximity index",
+        "short_name":"Traffic Proximity Index",
+        "long_name":"Traffic Proximity and Volume Index",
+        "short_description":"Count of vehicles (avg. annual daily traffic) at major roads within 500 meters, divided by distance in meters.",
+        "long_description":"Residential proximity to traffic has been associated with various health impacts: asthma exacerbation and possibly onset and mortality; prevalence of coronary vascular disease as well as mortality; and coronary heart disease.",
+        "statement":"The Traffic Proximity Index in {features.name} is {value}.",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"proximity index"
+    },
+    "PRE1960":{
+        "category":"Environment",
+        "type":"count",
+        "short_name":"Lead paint proxy",
+        "long_name":"Number of occupied housing units built pre-1960",
+        "short_description":"Number of occupied of housing units built pre-1960, as an indicator of potential lead paint exposure",
+        "long_description":"The age of housing stock serves as a proxy for potential lead exposure based on regulations banning residential lead-based paint that went into effect in 1978.",
+        "statement":"The number of pre-1960 occupied housing units in {features.name} is {value}.",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"count"
+    },
+    "PRE1960PCT":{
+        "category":"Environment",
+        "type":"percent",
+        "short_name":"Lead paint proxy",
+        "long_name":"Percentage of occupied housing units built pre-1960",
+        "short_description":"Percentage of occupied housing units built pre-1960, as indicator of potential lead paint exposure",
+        "long_description":"The age of housing stock serves as a proxy for potential lead exposure based on regulations banning residential lead-based paint that went into effect in 1978.",
+        "statement":"The percentage of pre-1960 occupied housing units in {features.name} is {value}.",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"percent"
+    },
+    "PNPL":{
+        "category":"Environment",
+        "type":"proximity index",
+        "short_name":"Superfund Proximity Index",
+        "long_name":"Proximity to Superfund (National Priorities List (NPL)) sites",
+        "short_description":"Count of proposed or listed NPL - also known as superfund - sites within 5 km (or nearest one beyond 5 km), each divided by distance in kilometers",
+        "long_description":"The superfund proximity index is the total count of sites proposed and listed on the NPL in each block group within 5 km of the average resident in a block group, divided by distance, calculated as the population-weighted average of blocks in each block group.",
+        "statement":"The Superfund Proximity Index in {features.name} is {value}.",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"proximity index"
+    },
+    "PRMP":{
+        "category":"Environment",
+        "type":"proximity index",
+        "short_name":"RMP Facility Proximity Index",
+        "long_name":"Proximity to Risk Management Plan (RMP) Facilities Index",
+        "short_description":"Count of RMP facilities (facilities that use extremely hazardous substances) within 5 km (or nearest one beyond 5 km), each divided by distance in kilometers",
+        "long_description":"The RMP facility proximity is the total count of RMP facilities in each block group within 5 km of the average resident in a block group, divided by distance, calculated as the population-weighted average of blocks in each block group.",
+        "statement":"The Risk Management Plan Facility Proximity Index in {features.name} is {value}.",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"proximity index"
+    },
+    "PTSDF":{
+        "category":"Environment",
+        "type":"proximity index",
+        "short_name":"Hazardous Waste Proximity Index",
+        "long_name":"Proximity to Treatment Storage and Disposal (TSDF) and Large Quanity Generators (LQG) Facilities Index",
+        "short_description":"Count of hazardous waste facilities (TSDFs and LQGs) within 5 km (or nearest beyond 5 km), each divided by distance in kilometers",
+        "long_description":"The hazardous waste proximity indicator is the total count of hazardous waste facilities in each block group within 5 km of the average resident in a block group, divided by distance, calculated as the population-weighted average of blocks in each block group.",
+        "statement":"The Hazardous Waste Proximity Index in {features.name} is {value}.",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"proximity index"
+    },
+    "UST":{
+        "category":"Environment",
+        "type":"risk index",
+        "short_name":"Underground Storage Tanks Risk Index",
+        "long_name":"Underground Storage Tanks (UST) and Leaking UST (LUST) Risk Index",
+        "short_description":"The number of LUSTs (multiplied by a factor of 7.7) and the number of USTs within a 1,500-foot buffered block group",
+        "long_description":"The UST indicator quantifies the relative risk of being affected by a LUST for a block group. The indicator is derived by the weighted sum of active LUSTs and sum of active and temporarily out of service USTs within a certain distance from a block group.",
+        "statement":"The relative risk from Underground Storage Tanks in {features.name} is {value}.",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"risk index"
+    },
+    "PWDIS":{
+        "category":"Environment",
+        "type":"risk index",
+        "short_name":"Wastewater Discharge Proximity Risk Index",
+        "long_name":"Index for major direct dischargers to water",
+        "short_description":"Risk-Screening Environmental Indicator (RSEI) modeled toxic concentrations at stream segments within 500 meters, divided by distance in kilometers",
+        "long_description":"The wastewater discharge indicator quantifies a block group\u2019s relative risk of exposure to pollutants in water bodies. This is achieved using toxicity-weighted concentrations in stream reach segments within 500 meters of a block centroid, divided by distance in meters, presented as the population-weighted average of blocks in each block group.",
+        "statement":"The relative risk from Wastewater Discharge in {features.name} is {value}.",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"risk index"
+    },
+    "D_PM25_2":{
+        "category":"Environment",
+        "type":"environmental justice index",
+        "short_name":"EJ Index for PM 2.5",
+        "long_name":"EJ Index for Particulate Matter 2.5 level in air",
+        "short_description":" ",
+        "long_description":"The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (national percentiles).",
+        "statement":"In {features.name} the EJ Index for Particulate Matter 2.5 is {value} (national percentiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"environmental justice index"
+    },
+    "D_OZONE_2":{
+        "category":"Environment",
+        "type":"environmental justice index",
+        "short_name":"EJ Index for Ozone",
+        "long_name":"EJ Index for Ozone level in air",
+        "short_description":"Ozone summer seasonal average of daily maximum 8-hour concentration in air in parts per billion",
+        "long_description":"The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "statement":"In {features.name} the EJ Index for Ozone is {value} (national percentiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"environmental justice index"
+    },
+    "D_DSLPM_2":{
+        "category":"Environment",
+        "type":"environmental justice index",
+        "short_name":"EJ Index for DPM",
+        "long_name":"EJ Index for Diesel Particulate Matter level in air",
+        "short_description":"",
+        "long_description":"The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "statement":"In {features.name} the EJ Index for Diesel Particulate Matter is {value} (national percentiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"environmental justice index"
+    },
+    "D_CANCR_2":{
+        "category":"Environment",
+        "type":"environmental justice index",
+        "short_name":"EJ Index for Cancer Risk",
+        "long_name":"EJ Index for Air Toxics Cancer Risk",
+        "short_description":"",
+        "long_description":"The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "statement":"In {features.name} the EJ Index for Air Toxics Cancer Risk is {value} (national percentiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"environmental justice index"
+    },
+    "D_RESP_2":{
+        "category":"Environment",
+        "type":"environmental justice index",
+        "short_name":"EJ Index for Respiratory HI",
+        "long_name":"EJ Index for Air Toxics Respiratory Hazard Index",
+        "short_description":"",
+        "long_description":"The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "statement":"In {features.name} the EJ Index for Air Toxics Respiratory Hazard is {value} (national percentiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"environmental justice index"
+    },
+    "D_PTRAF_2":{
+        "category":"Environment",
+        "type":"environmental justice index",
+        "short_name":"EJ Index for Traffic Proximity",
+        "long_name":"EJ Index for Traffic Proximity and Volume Proximity",
+        "short_description":"",
+        "long_description":"The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "statement":"In {features.name} the EJ Index for Traffic Proximity is {value} (national percentiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"environmental justice index"
+    },
+    "D_LDPNT_2":{
+        "category":"Environment",
+        "type":"environmental justice index",
+        "short_name":"EJ Index for lead paint proxy",
+        "long_name":"EJ Index for percentage of pre-1960 housing (lead paint indicator)",
+        "short_description":"",
+        "long_description":"The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "statement":"In {features.name} the EJ Index for Lead Paint is {value} (national percentiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"environmental justice index"
+    },
+    "D_PNPL_2":{
+        "category":"Environment",
+        "type":"environmental justice index",
+        "short_name":"EJ Index for Superfund Proximity",
+        "long_name":"EJ Index for Proximity to Superfund (National Priorities List (NPL)) sites",
+        "short_description":"",
+        "long_description":"The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "statement":"In {features.name} the EJ Index for Superfund Proximity is {value} (national percentiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"environmental justice index"
+    },
+    "D_PRMP_2":{
+        "category":"Environment",
+        "type":"environmental justice index",
+        "short_name":"EJ Index for RMP Facility Proximity",
+        "long_name":"EJ Index for Proximity to Risk Management Plan (RMP) Facilities",
+        "short_description":"",
+        "long_description":"The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "statement":"In {features.name} the EJ Index for Proximity to Risk Management Plan facilities is {value} (national percentiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"environmental justice index"
+    },
+    "D_PTSDF_2":{
+        "category":"Environment",
+        "type":"environmental justice index",
+        "short_name":"EJ Index for TSDF Proximity",
+        "long_name":"EJ Index for Proximity to Treatment Storage and Disposal (TSDF) facilities",
+        "short_description":"",
+        "long_description":"The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "statement":"In {features.name} the EJ Index for Proximity to Treatment Storage and Disposal (TSDF) facilities is {value} (national percentiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"environmental justice index"
+    },
+    "D_UST_2":{
+        "category":"Environment",
+        "type":"environmental justice index",
+        "short_name":"EJ Index for Risk from Underground Storage Tanks",
+        "long_name":"EJ Index for Risk from Underground Storage Tanks (UST) and Leaking UST (LUST)",
+        "short_description":"",
+        "long_description":"The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "statement":"In {features.name} the EJ Index for Risk from Underground Storage Tanks is {value} (national percentiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"environmental justice index"
+    },
+    "D_PWDIS_2":{
+        "category":"Environment",
+        "type":"environmental justice index",
+        "short_name":"EJ Index for Risk from Wastewater Discharge",
+        "long_name":"EJ Index for Risk from Major Direct Dischargers to Water",
+        "short_description":"",
+        "long_description":"The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "statement":"In {features.name} the EJ Index for Risk from Wastewater Discharge is {value} (national percentiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"environmental justice index"
+    },
+    "PM25_QRT":{
+        "category":"Environment",
+        "type":"concentration",
+        "short_name":"PM 2.5",
+        "long_name":"Particulate Matter 2.5 level in air",
+        "short_description":"PM 2.5 levels in air, \u00b5g/m3 annual average",
+        "long_description":"The PM 2.5 indicator is a measure of potential exposure to inhalable particles that are 2.5 micrometers or smaller.",
+        "statement":"In {features.name} the Particulate Matter 2.5 concentration is in the {value} quartile (National Capital Region quartiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"quartile"
+    },
+    "OZONE_QRT":{
+        "category":"Environment",
+        "type":"concentration",
+        "short_name":"Ozone",
+        "long_name":"Ozone level in air",
+        "short_description":"Ozone summer seasonal average of daily maximum 8-hour concentration in air in parts per billion",
+        "long_description":"The ozone indicator is the potential ozone exposure measured in terms of summer seasonal daily average maximum concentrations in an 8-hour period measured in parts per billion.",
+        "statement":"In {features.name} the Ozone concentration is in the {value} quartile (National Capital Region quartiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"quartile"
+    },
+    "DSLPM_QRT":{
+        "category":"Environment",
+        "type":"concentration",
+        "short_name":"DPM",
+        "long_name":"Diesel Particulate Matter level in air",
+        "short_description":"Diesel Particulate Matter level in air, \u00b5g/m3",
+        "long_description":"Diesel particulate matter is a component of diesel exhaust that includes soot particles made up primarily of carbon, ash, metallic abrasion particles, sulfates and silicates.",
+        "statement":"In {features.name} the Diesel Particulate Matter concentration is in the {value} quartile (National Capital Region quartiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"quartile"
+    },
+    "PTRAF_QRT":{
+        "category":"Environment",
+        "type":"proximity index",
+        "short_name":"Traffic Proximity Index",
+        "long_name":"Traffic Proximity and Volume Index",
+        "short_description":"Count of vehicles (avg. annual daily traffic) at major roads within 500 meters, divided by distance in meters.",
+        "long_description":"Residential proximity to traffic has been associated with various health impacts: asthma exacerbation and possibly onset and mortality; prevalence of coronary vascular disease as well as mortality; and coronary heart disease.",
+        "statement":"In {features.name} the Traffic Proximity Index is in the {value} quartile (National Capital Region quartiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"quartile"
+    },
+    "PRE1960_QRT":{
+        "category":"Environment",
+        "type":"count",
+        "short_name":"Lead paint proxy",
+        "long_name":"Number of occupied housing units built pre-1960",
+        "short_description":"Number of occupied of housing units built pre-1960, as an indicator of potential lead paint exposure",
+        "long_description":"The age of housing stock serves as a proxy for potential lead exposure based on regulations banning residential lead-based paint that went into effect in 1978.",
+        "statement":"In {features.name} the number of occupied pre-1960 housing units is in the {value} quartile (National Capital Region quartiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"quartile"
+    },
+    "PRMP_QRT":{
+        "category":"Environment",
+        "type":"proximity index",
+        "short_name":"RMP Facility Proximity Index",
+        "long_name":"Proximity to Risk Management Plan (RMP) Facilities Index",
+        "short_description":"Count of RMP facilities (facilities that use extremely hazardous substances) within 5 km (or nearest one beyond 5 km), each divided by distance in kilometers",
+        "long_description":"The RMP facility proximity is the total count of RMP facilities in each block group within 5 km of the average resident in a block group, divided by distance, calculated as the population-weighted average of blocks in each block group.",
+        "statement":"In {features.name} the Risk Management Plan (RMP) Facilities Index is in the {value} quartile (National Capital Region quartiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"quartile"
+    },
+    "PNPL_QRT":{
+        "category":"Environment",
+        "type":"proximity index",
+        "short_name":"Superfund Proximity Index",
+        "long_name":"Proximity to Superfund (National Priorities List (NPL)) sites",
+        "short_description":"Count of proposed or listed NPL - also known as superfund - sites within 5 km (or nearest one beyond 5 km), each divided by distance in kilometers",
+        "long_description":"The superfund proximity index is the total count of sites proposed and listed on the NPL in each block group within 5 km of the average resident in a block group, divided by distance, calculated as the population-weighted average of blocks in each block group.",
+        "statement":"In {features.name} the Superfund Proximity Index is in the {value} quartile (National Capital Region quartiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"quartile"
+    },
+    "PTSDF_QRT":{
+        "category":"Environment",
+        "type":"proximity index",
+        "short_name":"Hazardous Waste Proximity Index",
+        "long_name":"Proximity to Treatment Storage and Disposal (TSDF) and Large Quanity Generators (LQG) Facilities Index",
+        "short_description":"Count of hazardous waste facilities (TSDFs and LQGs) within 5 km (or nearest beyond 5 km), each divided by distance in kilometers",
+        "long_description":"The hazardous waste proximity indicator is the total count of hazardous waste facilities in each block group within 5 km of the average resident in a block group, divided by distance, calculated as the population-weighted average of blocks in each block group.",
+        "statement":"In {features.name} the Hazardous Waste Proximity Index is in the {value} quartile (National Capital Region quartiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"quartile"
+    },
+    "UST_QRT":{
+        "category":"Environment",
+        "type":"risk index",
+        "short_name":"Underground Storage Tanks Risk Index",
+        "long_name":"Underground Storage Tanks (UST) and Leaking UST (LUST) Risk Index",
+        "short_description":"The number of LUSTs (multiplied by a factor of 7.7) and the number of USTs within a 1,500-foot buffered block group",
+        "long_description":"The UST indicator quantifies the relative risk of being affected by a LUST for a block group. The indicator is derived by the weighted sum of active LUSTs and sum of active and temporarily out of service USTs within a certain distance from a block group.",
+        "statement":"In {features.name} the Underground Storage Tanks Risk Index is in the {value} quartile (National Capital Region quartiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"quartile"
+    },
+    "PWDIS_QRT":{
+        "category":"Environment",
+        "type":"risk index",
+        "short_name":"Wastewater Discharge Proximity Risk Index",
+        "long_name":"Index for major direct dischargers to water",
+        "short_description":"Risk-Screening Environmental Indicator (RSEI) modeled toxic concentrations at stream segments within 500 meters, divided by distance in kilometers",
+        "long_description":"The wastewater discharge indicator quantifies a census tract\u2019s relative risk of exposure to pollutants in water bodies. This is achieved using toxicity-weighted concentrations in stream reach segments within 500 meters of a block centroid, divided by distance in meters, presented as the population-weighted average of blocks in each block group.",
+        "statement":"In {features.name} the Wastewater Discharge Proximity Risk Index is in the {value} quartile (National Capital Region quartiles).",
+        "sources":[
+            {
+                "name":"Environmental Justice Screen",
+                "location":"EJScreen 2022",
+                "date_accessed":                2023,
+                "url":"https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "unit":"",
+        "data_type":"numeric",
+        "measure_type":"quartile"
+    }
+}

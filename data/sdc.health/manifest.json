@@ -7,7 +7,7 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Literacy/data/distribution/va_hccttr_sdad_2019_health_literacy_estimates.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Literacy/data/distribution/va_hdcttr_acs_2015_2019_post_hs_education.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Literacy/data/distribution/va_hdcttr_acs_2010_2019_post_hs_education.csv.xz",
-    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Reproductive Health/Prenatal Care Adequacy/data/distribution/kotelchuck_2014_2020.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Reproductive Health/Prenatal Care Adequacy/data/distribution/va_ct_nchs_2014_2020_kotelchuck.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/System Usage and Insurance/Without Health Insurance/data/distribution/va_hdcttr_acs5_2015_2019_no_health_insurance_19_to_64.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/System Usage and Insurance/Without Health Insurance/data/distribution/ncr_cttrbg_acs5_2015_2019_no_health_insurance_19_to_64.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/System Usage and Insurance/Preventable Hospitalizations/data/distribution/va_ct_chr_2015_2021_preventable_hospitalizations.csv",
@@ -56,7 +56,7 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Health Professionals/VA Graduates/data/distribution/va_ct_schev_2016_2019_health_degrees_awarded.csv"
   ],
   "count": 136,
-  "utc_audited": "2023-03-22 18:23:41",
+  "utc_audited": "2023-03-28 15:12:51",
   "data": [
     {
       "name": "ncr_trct_sdad_2015_2019_brfss_sae.csv.xz",
@@ -137,8 +137,8 @@
       "size": 11271
     },
     {
-      "name": "kotelchuck_2014_2020.csv",
-      "path": "Population Health/Reproductive Health/Prenatal Care Adequacy/data/distribution/kotelchuck_2014_2020.csv",
+      "name": "va_ct_nchs_2014_2020_kotelchuck.csv",
+      "path": "Population Health/Reproductive Health/Prenatal Care Adequacy/data/distribution/va_ct_nchs_2014_2020_kotelchuck.csv",
       "md5": "484cdce3e87f51a13ea8a105fd7cca1e",
       "size": 657203
     },

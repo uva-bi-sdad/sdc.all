@@ -1,4 +1,24 @@
 {
+    "AVLN_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The avalanche risk index score includes three components: an avalanche risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Avalanche - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The avalanche risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from an avalanche.",
+        "short_name": "Avalanche Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a avalanche risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
+        "unit": ""
+    },
     "Accommodation and Food Services_Herfindalh_Hirschman_index": {
         "category": "Business climate",
         "data_type": "numeric",
@@ -1599,6 +1619,66 @@
         "type": "count",
         "unit": ""
     },
+    "CANCER": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The air toxics cancer risk indicator is the estimated lifetime inhalation cancer risk from the analyzed carcinogens in ambient outdoor air, as provided by the 2017 Air Toxics data update.",
+        "long_name": "Air Toxics Cancer Risk Index",
+        "measure_type": "risk index",
+        "short_description": "Lifetime cancer risk from inhalation of air toxics",
+        "short_name": "Cancer Risk",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "The Air Toxics Cancer Risk in {features.name} is {value}-in-1 million over 70 years.",
+        "type": "risk index",
+        "unit": ""
+    },
+    "CFLD_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The coastal flooding risk index score includes three components: a coastal flooding risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Coastal Flooding - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The coastal flooding risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from a coastal flood.",
+        "short_name": "Coastal Flooding Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a coastal flooding risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
+        "unit": ""
+    },
+    "CWAV_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The cold wave risk index score includes three components: a cold wave risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Cold Wave - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The cold wave risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from a cold wave.",
+        "short_name": "Cold Wave Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a cold wave risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
+        "unit": ""
+    },
     "Child_Food_Insecurity_Rate": {
         "category": "Nutrition and Food Security",
         "data_type": "numeric",
@@ -2043,6 +2123,326 @@
         ],
         "statement": "The average meal cost in {features.name} is {value}.",
         "type": "dollar",
+        "unit": ""
+    },
+    "DRGT_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The drought risk index score includes three components: a drought risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Drought - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The drought risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from a drought.",
+        "short_name": "Drought Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a drought risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
+        "unit": ""
+    },
+    "DSLPM": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "Diesel particulate matter is a component of diesel exhaust that includes soot particles made up primarily of carbon, ash, metallic abrasion particles, sulfates and silicates.",
+        "long_name": "Diesel Particulate Matter level in air",
+        "measure_type": "concentration",
+        "short_description": "Diesel particulate matter level in air, \u00b5g/m3",
+        "short_name": "DPM",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "The Diesel Particulate Matter level in air in {features.name} is {value}.",
+        "type": "concentration",
+        "unit": ""
+    },
+    "DSLPM_QRT": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "Diesel particulate matter is a component of diesel exhaust that includes soot particles made up primarily of carbon, ash, metallic abrasion particles, sulfates and silicates.",
+        "long_name": "Diesel Particulate Matter level in air",
+        "measure_type": "quartile",
+        "short_description": "Diesel Particulate Matter level in air, \u00b5g/m3",
+        "short_name": "DPM",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the Diesel Particulate Matter concentration is in the {value} quartile (National Capital Region quartiles).",
+        "type": "concentration",
+        "unit": ""
+    },
+    "D_CANCR_2": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "long_name": "EJ Index for Air Toxics Cancer Risk",
+        "measure_type": "environmental justice index",
+        "short_description": "",
+        "short_name": "EJ Index for Cancer Risk",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the EJ Index for Air Toxics Cancer Risk is {value} (national percentiles).",
+        "type": "environmental justice index",
+        "unit": ""
+    },
+    "D_DSLPM_2": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "long_name": "EJ Index for Diesel Particulate Matter level in air",
+        "measure_type": "environmental justice index",
+        "short_description": "",
+        "short_name": "EJ Index for DPM",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the EJ Index for Diesel Particulate Matter is {value} (national percentiles).",
+        "type": "environmental justice index",
+        "unit": ""
+    },
+    "D_LDPNT_2": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "long_name": "EJ Index for percentage of pre-1960 housing (lead paint indicator)",
+        "measure_type": "environmental justice index",
+        "short_description": "",
+        "short_name": "EJ Index for lead paint proxy",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the EJ Index for Lead Paint is {value} (national percentiles).",
+        "type": "environmental justice index",
+        "unit": ""
+    },
+    "D_OZONE_2": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "long_name": "EJ Index for Ozone level in air",
+        "measure_type": "environmental justice index",
+        "short_description": "Ozone summer seasonal average of daily maximum 8-hour concentration in air in parts per billion",
+        "short_name": "EJ Index for Ozone",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the EJ Index for Ozone is {value} (national percentiles).",
+        "type": "environmental justice index",
+        "unit": ""
+    },
+    "D_PM25_2": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (national percentiles).",
+        "long_name": "EJ Index for Particulate Matter 2.5 level in air",
+        "measure_type": "environmental justice index",
+        "short_description": " ",
+        "short_name": "EJ Index for PM 2.5",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the EJ Index for Particulate Matter 2.5 is {value} (national percentiles).",
+        "type": "environmental justice index",
+        "unit": ""
+    },
+    "D_PNPL_2": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "long_name": "EJ Index for Proximity to Superfund (National Priorities List (NPL)) sites",
+        "measure_type": "environmental justice index",
+        "short_description": "",
+        "short_name": "EJ Index for Superfund Proximity",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the EJ Index for Superfund Proximity is {value} (national percentiles).",
+        "type": "environmental justice index",
+        "unit": ""
+    },
+    "D_PRMP_2": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "long_name": "EJ Index for Proximity to Risk Management Plan (RMP) Facilities",
+        "measure_type": "environmental justice index",
+        "short_description": "",
+        "short_name": "EJ Index for RMP Facility Proximity",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the EJ Index for Proximity to Risk Management Plan facilities is {value} (national percentiles).",
+        "type": "environmental justice index",
+        "unit": ""
+    },
+    "D_PTRAF_2": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "long_name": "EJ Index for Traffic Proximity and Volume Proximity",
+        "measure_type": "environmental justice index",
+        "short_description": "",
+        "short_name": "EJ Index for Traffic Proximity",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the EJ Index for Traffic Proximity is {value} (national percentiles).",
+        "type": "environmental justice index",
+        "unit": ""
+    },
+    "D_PTSDF_2": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "long_name": "EJ Index for Proximity to Treatment Storage and Disposal (TSDF) facilities",
+        "measure_type": "environmental justice index",
+        "short_description": "",
+        "short_name": "EJ Index for TSDF Proximity",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the EJ Index for Proximity to Treatment Storage and Disposal (TSDF) facilities is {value} (national percentiles).",
+        "type": "environmental justice index",
+        "unit": ""
+    },
+    "D_PWDIS_2": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "long_name": "EJ Index for Risk from Major Direct Dischargers to Water",
+        "measure_type": "environmental justice index",
+        "short_description": "",
+        "short_name": "EJ Index for Risk from Wastewater Discharge",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the EJ Index for Risk from Wastewater Discharge is {value} (national percentiles).",
+        "type": "environmental justice index",
+        "unit": ""
+    },
+    "D_RESP_2": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "long_name": "EJ Index for Air Toxics Respiratory Hazard Index",
+        "measure_type": "environmental justice index",
+        "short_description": "",
+        "short_name": "EJ Index for Respiratory HI",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the EJ Index for Air Toxics Respiratory Hazard is {value} (national percentiles).",
+        "type": "environmental justice index",
+        "unit": ""
+    },
+    "D_UST_2": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The EJ index is calculated for every census tract for each of the 12 environmental indicators. The index is the average of two demographic indicators: percent low-income and percent people of color, times the percentile of the environmental indicator (percentile based on nationwide data).",
+        "long_name": "EJ Index for Risk from Underground Storage Tanks (UST) and Leaking UST (LUST)",
+        "measure_type": "environmental justice index",
+        "short_description": "",
+        "short_name": "EJ Index for Risk from Underground Storage Tanks",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the EJ Index for Risk from Underground Storage Tanks is {value} (national percentiles).",
+        "type": "environmental justice index",
+        "unit": ""
+    },
+    "ERQK_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The earthquake risk index score includes three components: an earthquake risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Earthquake - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The earthquake risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from an earthquake.",
+        "short_name": "Earthquake Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has an earthquake risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
         "unit": ""
     },
     "Educational Services_Herfindalh_Hirschman_index": {
@@ -2845,6 +3245,66 @@
         "type": "count",
         "unit": ""
     },
+    "HAIL_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The hail risk index score includes three components: a hail risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Hail - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The hail risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from hail.",
+        "short_name": "Hail Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a hail risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
+        "unit": ""
+    },
+    "HRCN_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The hurricane risk index score includes three components: a hurricane risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Hurricane - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The hurricane risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from a hurricane.",
+        "short_name": "Hurricane Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a hurricane risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
+        "unit": ""
+    },
+    "HWAV_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The heatwave risk index score includes three components: a heatwave risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Heatwave - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The heatwave risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from a heatwave.",
+        "short_name": "Heatwave Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a heatwave risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
+        "unit": ""
+    },
     "Health Care and Social Assistance_Herfindalh_Hirschman_index": {
         "category": "Business climate",
         "data_type": "numeric",
@@ -3245,6 +3705,26 @@
         "type": "count",
         "unit": ""
     },
+    "ISTM_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The ice storm risk index score includes three components: a ice storm risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Ice Storm - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The ice storm risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from an ice storm.",
+        "short_name": "Ice Storm Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a ice storm risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
+        "unit": ""
+    },
     "Information_Herfindalh_Hirschman_index": {
         "category": "Business climate",
         "data_type": "numeric",
@@ -3643,6 +4123,46 @@
         ],
         "statement": "",
         "type": "count",
+        "unit": ""
+    },
+    "LNDS_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The landslide risk index score includes three components: a landslide risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Landslide - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The landstorm risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from a landslide.",
+        "short_name": "Landslide Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a landslide risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
+        "unit": ""
+    },
+    "LTNG_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The lightning risk index score includes three components: a lightning risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Lightning - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The lightning risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from lightning.",
+        "short_name": "Lightning Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a lightning risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
         "unit": ""
     },
     "Management of Companies and Enterprises_Herfindalh_Hirschman_index": {
@@ -5268,6 +5788,46 @@
         "type": "count",
         "unit": ""
     },
+    "OZONE": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The ozone indicator is the potential ozone exposure measured in terms of summer seasonal daily average maximum concentrations in an 8-hour period measured in parts per billion.",
+        "long_name": "Ozone level in air",
+        "measure_type": "concentration",
+        "short_description": "Ozone summer seasonal average of daily maximum 8-hour concentration in air in parts per billion",
+        "short_name": "Ozone",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "The summer daily average concentration of Ozone in an 8-hour period in {features.name} is {value}.",
+        "type": "concentration",
+        "unit": ""
+    },
+    "OZONE_QRT": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The ozone indicator is the potential ozone exposure measured in terms of summer seasonal daily average maximum concentrations in an 8-hour period measured in parts per billion.",
+        "long_name": "Ozone level in air",
+        "measure_type": "quartile",
+        "short_description": "Ozone summer seasonal average of daily maximum 8-hour concentration in air in parts per billion",
+        "short_name": "Ozone",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the Ozone concentration is in the {value} quartile (National Capital Region quartiles).",
+        "type": "concentration",
+        "unit": ""
+    },
     "Other Services (except Public Administration)_Herfindalh_Hirschman_index": {
         "category": "Business climate",
         "data_type": "numeric",
@@ -5666,6 +6226,306 @@
         ],
         "statement": "",
         "type": "count",
+        "unit": ""
+    },
+    "PM25": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The PM 2.5 indicator is a measure of potential exposure to inhalable particles that are 2.5 micrometers or smaller.",
+        "long_name": "Particulate Matter 2.5 level in air",
+        "measure_type": "concentration",
+        "short_description": "PM 2.5 levels in air, \u00b5g/m3 annual average",
+        "short_name": "PM 2.5",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "The annual average concentration of Particulate Matter 2.5 in air in {features.name} is {value}.",
+        "type": "concentration",
+        "unit": ""
+    },
+    "PM25_QRT": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The PM 2.5 indicator is a measure of potential exposure to inhalable particles that are 2.5 micrometers or smaller.",
+        "long_name": "Particulate Matter 2.5 level in air",
+        "measure_type": "quartile",
+        "short_description": "PM 2.5 levels in air, \u00b5g/m3 annual average",
+        "short_name": "PM 2.5",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the Particulate Matter 2.5 concentration is in the {value} quartile (National Capital Region quartiles).",
+        "type": "concentration",
+        "unit": ""
+    },
+    "PNPL": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The superfund proximity index is the total count of sites proposed and listed on the NPL in each block group within 5 km of the average resident in a block group, divided by distance, calculated as the population-weighted average of blocks in each block group.",
+        "long_name": "Proximity to Superfund (National Priorities List (NPL)) sites",
+        "measure_type": "proximity index",
+        "short_description": "Count of proposed or listed NPL - also known as superfund - sites within 5 km (or nearest one beyond 5 km), each divided by distance in kilometers",
+        "short_name": "Superfund Proximity Index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "The Superfund Proximity Index in {features.name} is {value}.",
+        "type": "proximity index",
+        "unit": ""
+    },
+    "PNPL_QRT": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The superfund proximity index is the total count of sites proposed and listed on the NPL in each block group within 5 km of the average resident in a block group, divided by distance, calculated as the population-weighted average of blocks in each block group.",
+        "long_name": "Proximity to Superfund (National Priorities List (NPL)) sites",
+        "measure_type": "quartile",
+        "short_description": "Count of proposed or listed NPL - also known as superfund - sites within 5 km (or nearest one beyond 5 km), each divided by distance in kilometers",
+        "short_name": "Superfund Proximity Index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the Superfund Proximity Index is in the {value} quartile (National Capital Region quartiles).",
+        "type": "proximity index",
+        "unit": ""
+    },
+    "PRE1960": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The age of housing stock serves as a proxy for potential lead exposure based on regulations banning residential lead-based paint that went into effect in 1978.",
+        "long_name": "Number of occupied housing units built pre-1960",
+        "measure_type": "count",
+        "short_description": "Number of occupied of housing units built pre-1960, as an indicator of potential lead paint exposure",
+        "short_name": "Lead paint proxy",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "The number of pre-1960 occupied housing units in {features.name} is {value}.",
+        "type": "count",
+        "unit": ""
+    },
+    "PRE1960PCT": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The age of housing stock serves as a proxy for potential lead exposure based on regulations banning residential lead-based paint that went into effect in 1978.",
+        "long_name": "Percentage of occupied housing units built pre-1960",
+        "measure_type": "percent",
+        "short_description": "Percentage of occupied housing units built pre-1960, as indicator of potential lead paint exposure",
+        "short_name": "Lead paint proxy",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "The percentage of pre-1960 occupied housing units in {features.name} is {value}.",
+        "type": "percent",
+        "unit": ""
+    },
+    "PRE1960_QRT": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The age of housing stock serves as a proxy for potential lead exposure based on regulations banning residential lead-based paint that went into effect in 1978.",
+        "long_name": "Number of occupied housing units built pre-1960",
+        "measure_type": "quartile",
+        "short_description": "Number of occupied of housing units built pre-1960, as an indicator of potential lead paint exposure",
+        "short_name": "Lead paint proxy",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the number of occupied pre-1960 housing units is in the {value} quartile (National Capital Region quartiles).",
+        "type": "count",
+        "unit": ""
+    },
+    "PRMP": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The RMP facility proximity is the total count of RMP facilities in each block group within 5 km of the average resident in a block group, divided by distance, calculated as the population-weighted average of blocks in each block group.",
+        "long_name": "Proximity to Risk Management Plan (RMP) Facilities Index",
+        "measure_type": "proximity index",
+        "short_description": "Count of RMP facilities (facilities that use extremely hazardous substances) within 5 km (or nearest one beyond 5 km), each divided by distance in kilometers",
+        "short_name": "RMP Facility Proximity Index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "The Risk Management Plan Facility Proximity Index in {features.name} is {value}.",
+        "type": "proximity index",
+        "unit": ""
+    },
+    "PRMP_QRT": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The RMP facility proximity is the total count of RMP facilities in each block group within 5 km of the average resident in a block group, divided by distance, calculated as the population-weighted average of blocks in each block group.",
+        "long_name": "Proximity to Risk Management Plan (RMP) Facilities Index",
+        "measure_type": "quartile",
+        "short_description": "Count of RMP facilities (facilities that use extremely hazardous substances) within 5 km (or nearest one beyond 5 km), each divided by distance in kilometers",
+        "short_name": "RMP Facility Proximity Index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the Risk Management Plan (RMP) Facilities Index is in the {value} quartile (National Capital Region quartiles).",
+        "type": "proximity index",
+        "unit": ""
+    },
+    "PTRAF": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "Residential proximity to traffic has been associated with various health impacts: asthma exacerbation and possibly onset and mortality; prevalence of coronary vascular disease as well as mortality; and coronary heart disease.",
+        "long_name": "Traffic Proximity and Volume Index",
+        "measure_type": "proximity index",
+        "short_description": "Count of vehicles (avg. annual daily traffic) at major roads within 500 meters, divided by distance in meters.",
+        "short_name": "Traffic Proximity Index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "The Traffic Proximity Index in {features.name} is {value}.",
+        "type": "proximity index",
+        "unit": ""
+    },
+    "PTRAF_QRT": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "Residential proximity to traffic has been associated with various health impacts: asthma exacerbation and possibly onset and mortality; prevalence of coronary vascular disease as well as mortality; and coronary heart disease.",
+        "long_name": "Traffic Proximity and Volume Index",
+        "measure_type": "quartile",
+        "short_description": "Count of vehicles (avg. annual daily traffic) at major roads within 500 meters, divided by distance in meters.",
+        "short_name": "Traffic Proximity Index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the Traffic Proximity Index is in the {value} quartile (National Capital Region quartiles).",
+        "type": "proximity index",
+        "unit": ""
+    },
+    "PTSDF": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The hazardous waste proximity indicator is the total count of hazardous waste facilities in each block group within 5 km of the average resident in a block group, divided by distance, calculated as the population-weighted average of blocks in each block group.",
+        "long_name": "Proximity to Treatment Storage and Disposal (TSDF) and Large Quanity Generators (LQG) Facilities Index",
+        "measure_type": "proximity index",
+        "short_description": "Count of hazardous waste facilities (TSDFs and LQGs) within 5 km (or nearest beyond 5 km), each divided by distance in kilometers",
+        "short_name": "Hazardous Waste Proximity Index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "The Hazardous Waste Proximity Index in {features.name} is {value}.",
+        "type": "proximity index",
+        "unit": ""
+    },
+    "PTSDF_QRT": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The hazardous waste proximity indicator is the total count of hazardous waste facilities in each block group within 5 km of the average resident in a block group, divided by distance, calculated as the population-weighted average of blocks in each block group.",
+        "long_name": "Proximity to Treatment Storage and Disposal (TSDF) and Large Quanity Generators (LQG) Facilities Index",
+        "measure_type": "quartile",
+        "short_description": "Count of hazardous waste facilities (TSDFs and LQGs) within 5 km (or nearest beyond 5 km), each divided by distance in kilometers",
+        "short_name": "Hazardous Waste Proximity Index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the Hazardous Waste Proximity Index is in the {value} quartile (National Capital Region quartiles).",
+        "type": "proximity index",
+        "unit": ""
+    },
+    "PWDIS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The wastewater discharge indicator quantifies a block group\u2019s relative risk of exposure to pollutants in water bodies. This is achieved using toxicity-weighted concentrations in stream reach segments within 500 meters of a block centroid, divided by distance in meters, presented as the population-weighted average of blocks in each block group.",
+        "long_name": "Index for major direct dischargers to water",
+        "measure_type": "risk index",
+        "short_description": "Risk-Screening Environmental Indicator (RSEI) modeled toxic concentrations at stream segments within 500 meters, divided by distance in kilometers",
+        "short_name": "Wastewater Discharge Proximity Risk Index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "The relative risk from Wastewater Discharge in {features.name} is {value}.",
+        "type": "risk index",
+        "unit": ""
+    },
+    "PWDIS_QRT": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The wastewater discharge indicator quantifies a census tract\u2019s relative risk of exposure to pollutants in water bodies. This is achieved using toxicity-weighted concentrations in stream reach segments within 500 meters of a block centroid, divided by distance in meters, presented as the population-weighted average of blocks in each block group.",
+        "long_name": "Index for major direct dischargers to water",
+        "measure_type": "quartile",
+        "short_description": "Risk-Screening Environmental Indicator (RSEI) modeled toxic concentrations at stream segments within 500 meters, divided by distance in kilometers",
+        "short_name": "Wastewater Discharge Proximity Risk Index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the Wastewater Discharge Proximity Risk Index is in the {value} quartile (National Capital Region quartiles).",
+        "type": "risk index",
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_Herfindalh_Hirschman_index": {
@@ -6468,6 +7328,66 @@
         "type": "count",
         "unit": ""
     },
+    "RESP": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The air toxics respiratory hazard index (HI) indicator is the respiratory HI from the analyzed carcinogens in ambient outdoor air, as provided by the 2017 Air Toxics Data Update.",
+        "long_name": "Air Toxics Respiratory Hazard Index",
+        "measure_type": "exposure index",
+        "short_description": "Ratio of exposure concentration to health-based reference concentration",
+        "short_name": "Respiratory HI",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "The Air Toxics Respiratory Hazard Index in {features.name} is {value}, where values less or equal to 1 are not likely to result in noncancer adverse effects.",
+        "type": "exposure index",
+        "unit": ""
+    },
+    "RFLD_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The riverine flood risk index score includes three components: a riverine flood risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Riverine Flood - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The riverine flood risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from riverine flood.",
+        "short_name": "Riverine Flood Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a riverine flood risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
+        "unit": ""
+    },
+    "RISK_SCORE": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "In the NRI, the score includes three components: a natural hazards risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "National Risk Index - Score - Composite",
+        "measure_type": "index",
+        "short_description": "The NRI score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk to all 18 hazard types.",
+        "short_name": "National Risk Index (NRI)",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
+        "unit": ""
+    },
     "Real Estate and Rental and Leasing_Herfindalh_Hirschman_index": {
         "category": "Business climate",
         "data_type": "numeric",
@@ -7268,6 +8188,66 @@
         "type": "count",
         "unit": ""
     },
+    "SWND_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The strong wind risk index score includes three components: a strong wind risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Strong Wind - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The strong wind risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from strong winds.",
+        "short_name": "Strong Wind Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a strong wind risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
+        "unit": ""
+    },
+    "TRND_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The tornado risk index score includes three components: a tornado risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Tornado - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The tornado risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from a tornado.",
+        "short_name": "Tornado Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a tornado risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
+        "unit": ""
+    },
+    "TSUN_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The tsunami risk index score includes three components: a tsunami risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Tsunami - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The tsunami risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from a tsunami.",
+        "short_name": "Tsunami Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a tsunami risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
+        "unit": ""
+    },
     "Transportation and Warehousing_Herfindalh_Hirschman_index": {
         "category": "Business climate",
         "data_type": "numeric",
@@ -7668,6 +8648,46 @@
         "type": "count",
         "unit": ""
     },
+    "UST": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The UST indicator quantifies the relative risk of being affected by a LUST for a block group. The indicator is derived by the weighted sum of active LUSTs and sum of active and temporarily out of service USTs within a certain distance from a block group.",
+        "long_name": "Underground Storage Tanks (UST) and Leaking UST (LUST) Risk Index",
+        "measure_type": "risk index",
+        "short_description": "The number of LUSTs (multiplied by a factor of 7.7) and the number of USTs within a 1,500-foot buffered block group",
+        "short_name": "Underground Storage Tanks Risk Index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "The relative risk from Underground Storage Tanks in {features.name} is {value}.",
+        "type": "risk index",
+        "unit": ""
+    },
+    "UST_QRT": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The UST indicator quantifies the relative risk of being affected by a LUST for a block group. The indicator is derived by the weighted sum of active LUSTs and sum of active and temporarily out of service USTs within a certain distance from a block group.",
+        "long_name": "Underground Storage Tanks (UST) and Leaking UST (LUST) Risk Index",
+        "measure_type": "quartile",
+        "short_description": "The number of LUSTs (multiplied by a factor of 7.7) and the number of USTs within a 1,500-foot buffered block group",
+        "short_name": "Underground Storage Tanks Risk Index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "EJScreen 2022",
+                "name": "Environmental Justice Screen",
+                "url": "https://gaftp.epa.gov/EJSCREEN/2022/"
+            }
+        ],
+        "statement": "In {features.name} the Underground Storage Tanks Risk Index is in the {value} quartile (National Capital Region quartiles).",
+        "type": "risk index",
+        "unit": ""
+    },
     "Utilities_Herfindalh_Hirschman_index": {
         "category": "Business climate",
         "data_type": "numeric",
@@ -8066,6 +9086,66 @@
         ],
         "statement": "",
         "type": "count",
+        "unit": ""
+    },
+    "VLCN_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The volcanic activity risk index score includes three components: a volcanic activity risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Volcanic Activity - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The volcanic activity risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from volcanic activity.",
+        "short_name": "Volcanic Activity Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a volcanic activity risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
+        "unit": ""
+    },
+    "WFIR_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The wildfire risk index score includes three components: a wildfire risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Wildfire - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The wildfire risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from a wildfire.",
+        "short_name": "Wildfire Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a wildfire risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
+        "unit": ""
+    },
+    "WNTW_RISKS": {
+        "category": "Environment",
+        "data_type": "numeric",
+        "long_description": "The winter weather risk index score includes three components: a winter weather risk component, a consequence enhancing component (social vulnerability), and a consequence reduction component (community resilience).",
+        "long_name": "Winter Weather - Hazard Type Risk Index Score",
+        "measure_type": "index",
+        "short_description": "The winter weather risk index score is a unitless index (0 minimum risk, 100 maximum risk) calculated to measure a community\u2019s risk from winter weather.",
+        "short_name": "Winter Weather Risk",
+        "sources": [
+            {
+                "date_accessed": 2021,
+                "location": "Census Tract Level",
+                "name": "Federal Emergency Management Agency: National Risk Index",
+                "url": "https://hazards.fema.gov/nri/data-resources"
+            }
+        ],
+        "statement": "{features.name} has a winter weather risk index value of {value} where 0 is the minimum and 100 is the maximum.",
+        "type": "index",
         "unit": ""
     },
     "Wholesale Trade_Herfindalh_Hirschman_index": {

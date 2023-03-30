@@ -1,0 +1,204 @@
+---
+title: "Untitled"
+author: "cm"
+date: "2/21/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+#devtools::install_github("hrbrmstr/albersusa")
+#install.packages("ggiraph")
+#devtools::install_github('davidgohel/ggiraph')
+#install.packages("ggiraph")
+#install.packages('ggiraph', repos='http://cran.us.r-project.org') 
+#install.packages("patchwork")
+#install.packages("geom_sf_interactive")
+
+
+
+library(dplyr)
+library(ggplot2)
+library(ggiraph)
+library(patchwork)
+library(dplyr)
+library(ggplot2)
+
+#install.packages("geom_sf_interactive")
+#library(geom_sf_interactive)
+#library(albersusa)
+```
+
+
+```{r}
+install.packages("albersusa")
+
+library(albersusa)
+us_sf <- usa_sf("lcc") %>%
+  mutate(State = as.character(name))
+
+state_map <- ggplot() +
+  geom_sf_interactive(data = us_sf, size = 0.125, 
+                      aes(data_id = State, tooltip = State)) +
+  theme_void()
+```
+```{r}
+#install.packages("tidycensus")
+
+library(tidycensus)
+library(ggiraph)
+library(tidyverse)
+library(patchwork)
+
+vt_income <- get_acs(
+  geography = "county",
+  variables = "B19013_001",
+  state = "VT",
+  year = 2019,
+  geometry = TRUE
+) %>%
+  mutate(NAME = str_remove(NAME, " County, Vermont"))
+
+vt_map <- ggplot(vt_income, aes(fill = estimate)) + 
+  geom_sf_interactive(aes(data_id = GEOID)) + 
+  scale_fill_distiller(palette = "Greens",
+                       direction = 1, 
+                       guide = FALSE) + 
+  theme_void()
+
+vt_plot <- ggplot(vt_income, aes(x = estimate, y = reorder(NAME, estimate), 
+                                 fill = estimate)) +
+  geom_errorbarh(aes(xmin = estimate - moe, xmax = estimate + moe)) +
+  geom_point_interactive(color = "black", size = 4, shape = 21,
+                         aes(data_id = GEOID)) +
+  scale_fill_distiller(palette = "Greens", direction = 1,
+                       labels = scales::dollar) + 
+  labs(title = "Household income by county in Vermont",
+       subtitle = "2015-2019 American Community Survey",
+       y = "",
+       x = "ACS estimate (bars represent margin of error)",
+       fill = "ACS estimate") + 
+  theme_minimal()
+
+girafe(ggobj = vt_map + vt_plot, width_svg = 10, height_svg = 4) %>%
+  girafe_options(opts_hover(css = "fill:cyan;"))
+```
+
+```{r}
+
+install.packages("remotes")
+remotes::install_github("hrbrmstr/albersusa")
+
+install.packages("albersusa")
+
+
+require(albersusa)
+us_sf <- usa_sf("lcc") %>%
+  mutate(State = as.character(name))
+
+state_map <- ggplot() +
+  geom_sf_interactive(data = us_sf, size = 0.125, 
+                      aes(data_id = State, tooltip = State)) +
+  theme_void()
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(ggiraph)
+library(patchwork)
+
+data_url <- "https://github.com/owid/covid-19-data/raw/master/public/data/vaccinations/us_state_vaccinations.csv"
+
+all_data <- read.csv(data_url)
+all_data$location[all_data$location == "New York State"] <- "New York"
+
+```
+
+```{r}
+not_states_or_dc <- c("American Samoa", "Bureau of Prisons", 
+  "Dept of Defense", "Federated States of Micronesia", "Guam", 
+  "Indian Health Svc", "Long Term Care", "Marshall Islands", 
+  "Northern Mariana Islands", "Puerto Rico", "Republic of Palau", 
+  "United States", "Veterans Health", "Virgin Islands")
+```
+
+
+```{r}
+bar_graph_data_recent <- all_data %>%  
+  filter(date == max(date), !(location %in% not_states_or_dc)) %>%  
+  mutate(
+   PctFullyVaccinated = round(people_fully_vaccinated_per_hundred, 1)  
+  ) %>%  
+  select(State = location, PctFullyVaccinated)
+```
+
+```{r}
+bar_graph <- ggplot(bar_graph_data_recent, 
+                aes(x = reorder(State, PctFullyVaccinated), 
+                    y = PctFullyVaccinated)) +
+  geom_col(color = "black", fill="#0072B2", size = 0.5) +
+  theme_minimal() +
+  theme(axis.text=element_text(size = 10)) +
+  labs(title = "Percent Fully Vaccinated July 2021",
+       subtitle = "Data from Our World in Data GitHub repo"
+       ) +
+   ylab("") +
+   xlab("") +
+  coord_flip()
+
+bar_graph
+```
+
+```{r}
+bar_graph_data_recent <- bar_graph_data_recent %>%
+  mutate(
+    tooltip_text = paste0(toupper(State), "\n", 
+                   PctFullyVaccinated, "%")
+  )
+```
+
+```{r}
+latest_vax_graph <- ggplot(bar_graph_data_recent, 
+                aes(x = reorder(State, PctFullyVaccinated), 
+                    y = PctFullyVaccinated,
+                    tooltip = tooltip_text, data_id = State #<<
+                    )) +
+  geom_col_interactive(color = "black", fill="#0072B2", size = 0.5) +  #<<
+  theme_minimal() +
+  theme(axis.text=element_text(size = 6)) +  #<<
+  labs(title = "Percent Fully Vaccinated July 2021",
+       subtitle = "Data from Our World in Data GitHub repo"
+       ) +
+   ylab("") +
+   xlab("") +
+  coord_flip()
+
+girafe(ggobj = latest_vax_graph, width_svg = 5, height_svg = 4)
+```
+
+```{r}
+bar_graph_data_early <- all_data %>%
+  filter(date == "2021-02-14", !(location %in% not_states_or_dc)) %>%arrange(people_vaccinated_per_hundred) %>%
+  mutate(
+    PctFullyVaccinated = round(people_vaccinated_per_hundred, 1),
+    tooltip_text = paste0(toupper(location), "\n", PctFullyVaccinated, "%")
+  ) %>%
+  select(State = location, PctFullyVaccinated, tooltip_text)
+
+early_vax_graph <- ggplot(bar_graph_data_early, aes(x = reorder(State, PctFullyVaccinated), y = PctFullyVaccinated, tooltip = tooltip_text, data_id = State)) +
+  geom_col_interactive(color = "black", fill="#0072B2", size = 0.5) +
+  theme_minimal() +
+  theme(axis.text=element_text(size = 6)) +
+  labs(title = "Fully Vaccinated as of February 14, 2021",
+       subtitle = "Data from Our World in Data"
+  ) +
+  ylab("") +
+  xlab("") +
+  coord_flip()
+```
+
