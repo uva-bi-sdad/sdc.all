@@ -1,0 +1,384 @@
+---
+title: "catchment_scores"
+author: "--"
+date: "2/4/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# libraries
+```{r}
+library(catchment)
+library(sf)
+library(leaflet)
+library(dplyr)
+```
+# start new
+```{r}
+ rm(list=ls())
+```
+#working directory
+```{r}
+setwd("~/VDH/Floating_Catchment_Areas/dmv/7.1 urgent_dmv_model_2022")
+```
+# read data
+```{r}
+
+year_spec <- 2022
+
+population <- read.csv("population.csv")
+provider <- read.csv("provider.csv")
+rownames(provider) <- provider$ID
+traveltimes <- read.csv("traveltimes_trimmed.csv", row.names = 1)
+```
+# prepare map
+```{r}
+#blockgroup_shapes <- st_transform(read_sf("blockgroups.geojson", as_tibble = FALSE), 4326)
+blockgroup_shapes_va <- st_transform( tigris::block_groups(state = c("VA"), class = "sf", year=year_spec), 4326)
+blockgroup_shapes_dc <- st_transform( tigris::block_groups(state = c("DC"), class = "sf", year=year_spec), 4326)
+blockgroup_shapes_md <- st_transform( tigris::block_groups(state = c("MD"), class = "sf", year=year_spec), 4326)
+blockgroup_shapes_pa <- st_transform( tigris::block_groups(state = c("PA"), class = "sf", year=year_spec), 4326)
+blockgroup_shapes_wv <- st_transform( tigris::block_groups(state = c("WV"), class = "sf", year=year_spec), 4326)
+ 
+blockgroup_shapes_tot <- rbind(blockgroup_shapes_va, blockgroup_shapes_dc ,blockgroup_shapes_md, blockgroup_shapes_pa, blockgroup_shapes_wv )
+geoid_sample <- population$GEOID
+blockgroup_shapes <- blockgroup_shapes_tot %>% filter(GEOID %in% geoid_sample)
+
+rownames(blockgroup_shapes) <- blockgroup_shapes$GEOID
+blockgroup_shapes <- blockgroup_shapes[as.character(population$GEOID),]
+#
+# rownames(blockgroup_shapes_va) <- blockgroup_shapes_va$GEOID
+# blockgroup_shapes_va <- blockgroup_shapes_va[as.character(population$GEOID),]
+# #dc
+# rownames(blockgroup_shapes_dc) <- blockgroup_shapes_dc$GEOID
+# blockgroup_shapes_dc <- blockgroup_shapes_dc[as.character(population$GEOID),]
+
+##new
+shape_counties <- tigris::counties(state = c("VA", "MD", "DC"), class = "sf", year=year_spec)
+shape_counties_dmv <- shape_counties %>% filter(GEOID == 51013 | GEOID ==51059 | GEOID == 51600 | GEOID == 51107 | GEOID == 51610 | GEOID == 51683 | 
+                                                  GEOID == 51685 | GEOID == 51153 | GEOID == 51510 | GEOID == 11001 | GEOID ==  24021 | GEOID == 24031 | GEOID == 24033 | GEOID == 24017) 
+#format for counties
+shape_counties_dmv <- st_transform(shape_counties_dmv, 4326 )
+
+#blockgroup_shapes <- sf::st_as_sf(blockgroup_shapes)
+#create map
+map <- leaflet(blockgroup_shapes, options = leafletOptions(attributionControl = FALSE)) %>%
+  addTiles() %>%
+  addScaleBar("bottomleft") %>%
+  addMapPane("lines", zIndex = 410) %>%
+  addMapPane("points", zIndex = 411) %>%
+  addPolygons(
+    fillColor = colorNumeric("RdYlBu", population$population)(population$population),
+    fillOpacity = 1, stroke = FALSE, group = "Population", label = population$population
+  ) %>%
+  hideGroup("Population") %>%
+  addLayersControl(
+    position = "topleft", overlayGroups = c("Pediatrics", "Population", "Access")
+  ) 
+
+
+
+
+```
+# calculate and display catchment areas
+#Revise titles of figures
+## 2-step
+```{r}
+population$providers_2sfca <- catchment_ratio(
+  population, provider, traveltimes, 30,
+  consumers_value = "population", providers_id = "ID", providers_value = "doctors", verbose = TRUE
+) * 10000
+
+pal <- colorBin("RdYlBu", population$providers_2sfca, bins = 8)
+
+plot_2sfca <- map %>%
+  addControl("Urgent Care Centers Per 10,000 People (2-Step Floating Catchment Area), 2022", "topright") %>%
+  addLegend("bottomright", pal, population$providers_2sfca, opacity = .7) %>%
+  addPolygons(
+    fillColor = pal(population$providers_2sfca), fillOpacity = .7, weight = 1, color = "#000",
+    highlightOptions = highlightOptions(color = "#fff"), group = "Access",
+    label = paste0(
+      "GEOID: ", population$GEOID, ", Population Ages 0-17: ", population$population,
+      ", Per 1k People: ", round(population$providers_2sfca, 4), ", In Region: ",
+      round(population$population * population$providers_2sfca / 1000, 4)
+    )
+  ) %>%
+  addPolylines(data = shape_counties_dmv, color = "black", opacity = 1, weight = 2.5) %>%
+  addCircles(
+    data = provider, color = "blue", lng = ~lon, lat = ~lat, weight = 4,
+    label = ~ paste0("ID: ", ID)
+  ) %>%
+  addCircles(
+    data = provider, color = "blue", lng = ~lon, lat = ~lat, weight = 4,
+    label = ~ paste0("ID: ", ID)
+  )
+
+## enhanced 2-step
+
+weight <- list(c(60, .042), c(30, .377), c(20, .704), c(10, .962))
+population$providers_e2sfca <- catchment_ratio(
+  population, provider, traveltimes, weight,
+  consumers_value = "population", providers_id = "ID", providers_value = "doctors", verbose = TRUE
+) * 10000
+
+pal <- colorBin("RdYlBu", population$providers_e2sfca, bins = 8)
+
+plot_e2sfca <- map %>%
+  addControl("Urgent Care Centers  Per 10,000 People (enhanced 2-Step Floating Catchment Area), 2022", "topright") %>%
+  addLegend("bottomright", pal, population$providers_e2sfca, opacity = .7) %>%
+  addPolygons(
+    fillColor = pal(population$providers_e2sfca), fillOpacity = .7, weight = 1, color = "#000",
+    highlightOptions = highlightOptions(color = "#fff"), group = "Access",
+    label = paste0(
+      "GEOID: ", population$GEOID, ", Population Ages 0-17: ", population$population,
+      ", Per 1k People: ", round(population$providers_e2sfca, 4), ", In Region: ",
+      round(population$population * population$providers_e2sfca / 1000, 4)
+    )
+  ) %>% addPolylines(data = shape_counties_dmv, color = "black", opacity = 1, weight = 2.5) %>%
+  addCircles(
+    data = provider, color = "blue", lng = ~lon, lat = ~lat, weight = 4,
+    label = ~ paste0("ID: ", ID)
+  )
+
+
+## 3-step
+
+population$providers_3sfca <- catchment_ratio(
+  population, provider, traveltimes, "gaussian", normalize_weight = TRUE, scale = 20,
+  consumers_value = "population", providers_id = "ID", providers_value = "doctors", verbose = TRUE
+) * 10000
+
+pal <- colorBin("RdYlBu", population$providers_3sfca, bins = 8)
+
+plot_3sfca <- map %>%
+  addControl("Urgent Care Centers Per 10,000 People (3-Step Floating Catchment Area), 2022", "topright") %>%
+  addLegend("bottomright", pal, population$providers_3sfca, opacity = .7) %>%
+  addPolygons(
+    fillColor = pal(population$providers_3sfca), fillOpacity = .7, weight = 1, color = "#000",
+    highlightOptions = highlightOptions(color = "#fff"), group = "Access",
+    label = paste0(
+      "GEOID: ", population$GEOID, ", Population Ages 0-17: ", population$population,
+      ", Per 1k People: ", round(population$providers_3sfca, 4), ", In Region: ",
+      round(population$population * population$providers_3sfca / 1000, 4)
+    )
+  ) %>% addPolylines(data = shape_counties_dmv, color = "black", opacity = 1, weight = 2.5) %>%
+  addCircles(
+    data = provider, color = "blue", lng = ~lon, lat = ~lat, weight = 4,
+    label = ~ paste0("ID: ", ID)
+  )
+
+```
+#plot summary
+```{r}
+plot_2sfca
+plot_e2sfca
+plot_3sfca
+```
+# Save pgadmin
+```{r}
+######
+#reshape wide-long
+#DEFINE relevant population and names
+dmv_bg_2021_acccess_scores_wide <- population   %>% select( geoid="GEOID", 
+                                                            hosp_pop_cnt ="population",
+                                                            hosp_cnt = "hosp_cnt",
+                                                            #hosp_beds_cnt = "beds_cnt",
+                                                            hosp_near_10_mean = "near_10_mean",
+                                                            hosp_near_10_median = "near_10_median",
+                                                            hosp_2sfca = "providers_2sfca" ,
+                                                            hosp_e2sfca = "providers_e2sfca", 
+                                                            hosp_3sfca = "providers_3sfca" )
+```
+
+# long format block group
+```{r}
+dmv_bg_2021_acccess_scores_bg <- tidyr::gather(dmv_bg_2021_acccess_scores_wide, measure, value, 
+                                            hosp_pop_cnt,
+                                            hosp_cnt,
+                                            #hosp_beds_cnt, 
+                                            hosp_near_10_mean,
+                                            hosp_near_10_median,
+                                            hosp_2sfca, 
+                                            hosp_e2sfca, 
+                                            hosp_3sfca)
+#define year
+dmv_bg_2021_acccess_scores_bg$year <- year_spec
+#define measure type
+dmv_bg_2021_acccess_scores_bg$measure_type <- as.factor(ifelse(dmv_bg_2021_acccess_scores_bg$measure=="hosp_2sfca" |
+                                                            dmv_bg_2021_acccess_scores_bg$measure=="hosp_e2sfca" |
+                                                              dmv_bg_2021_acccess_scores_bg$measure=="hosp_3sfca", 'index','count') )
+```
+
+#include name: geographic name for the smallest geographic unit: block group in this case
+```{r}
+#a) connect
+con <- RPostgreSQL::dbConnect(drv = RPostgreSQL::PostgreSQL(),
+                              dbname = "sdad",
+                              host = "postgis1",
+                              port = 5432,
+                              user = Sys.getenv(x = "DB_USR"),
+                              password = Sys.getenv(x = "DB_PWD"))
+
+#b) query
+name_geo <- sf::st_read(con, 
+  query= "
+SELECT  *
+FROM dc_geographies.ncr_cttrbg_tiger_2010_2020_geo_names "
+)
+
+#join region_name + region_type
+dmv_bg_2021_acccess_scores_bg$geoid <- as.character(dmv_bg_2021_acccess_scores_bg$geoid)
+dmv_bg_2021_acccess_scores_bg <- dmv_bg_2021_acccess_scores_bg %>% left_join(name_geo, by="geoid")
+#order
+dmv_bg_2021_acccess_scores_bg <- dmv_bg_2021_acccess_scores_bg %>% select("geoid","region_type","region_name", "measure", "value", "year", "measure_type")
+######
+```
+
+# AGGREGATION tract
+```{r}
+#generate id tract 
+#the relevant file is WIDE
+dmv_bg_2021_acccess_scores_wide_aggreg <- dmv_bg_2021_acccess_scores_wide  %>% mutate(tract_geoid = substr(geoid,1,11))
+#add region name - tract
+# dmv_bg_2021_acccess_scores_wide_aggreg <- dmv_bg_2021_acccess_scores_wide_aggreg %>% left_join(name_geo, by= c("tract_geoid"= "geoid") )
+
+## measures tract
+dmv_bg_2021_acccess_scores_tract_wide <- dmv_bg_2021_acccess_scores_wide_aggreg %>% group_by(tract_geoid) %>% summarise(
+  hosp_pop = sum(hosp_pop_cnt, na.rm = TRUE), 
+  hosp_cnt = sum(hosp_cnt, na.rm = TRUE), 
+  #hosp_beds_cnt =  sum(hosp_beds_cnt, na.rm = TRUE), 
+  hosp_near_10_mean = weighted.mean(hosp_near_10_mean, hosp_pop_cnt, na.rm = TRUE), 
+  hosp_near_10_median = weighted.mean(hosp_near_10_median, hosp_pop_cnt, na.rm = TRUE), 
+  hosp_2sfca = weighted.mean(hosp_2sfca, hosp_pop_cnt, na.rm = TRUE), 
+  hosp_e2sfca = weighted.mean(hosp_e2sfca, hosp_pop_cnt, na.rm = TRUE),
+  hosp_3sfca = weighted.mean(hosp_3sfca, hosp_pop_cnt, na.rm = TRUE),
+  )
+
+               
+```
+
+# long format tract
+```{r}
+dmv_bg_2021_acccess_scores_tract <- tidyr::gather(dmv_bg_2021_acccess_scores_tract_wide, measure, value, 
+                                            hosp_pop,
+                                            hosp_cnt,
+                                            #hosp_beds_cnt, 
+                                            hosp_near_10_mean,
+                                            hosp_near_10_median,
+                                            hosp_2sfca, 
+                                            hosp_e2sfca, 
+                                            hosp_3sfca)
+#define year
+dmv_bg_2021_acccess_scores_tract$year <- year_spec
+#define measure type
+dmv_bg_2021_acccess_scores_tract$measure_type <- as.factor(ifelse(dmv_bg_2021_acccess_scores_tract$measure=="hosp_2sfca" |
+                                                            dmv_bg_2021_acccess_scores_tract$measure=="hosp_e2sfca" |
+                                                              dmv_bg_2021_acccess_scores_tract$measure=="hosp_3sfca", 'index','count') )
+```
+
+#include name: geographic name for geographic unit: tract in this case
+```{r}
+#join region_name + region_type
+dmv_bg_2021_acccess_scores_tract$tract_geoid <- as.character(dmv_bg_2021_acccess_scores_tract$tract_geoid)
+dmv_bg_2021_acccess_scores_tract <- dmv_bg_2021_acccess_scores_tract %>% left_join(name_geo, by= c("tract_geoid" = "geoid") )
+#order
+dmv_bg_2021_acccess_scores_tract <- dmv_bg_2021_acccess_scores_tract %>% select(geoid="tract_geoid","region_type","region_name", "measure", "value", "year", "measure_type")
+```
+
+
+# AGGREGATION county
+```{r}
+#generate id tract 
+#the relevant file is WIDE
+dmv_bg_2021_acccess_scores_wide_aggreg <- dmv_bg_2021_acccess_scores_wide  %>% mutate(county_geoid = substr(geoid,1,5))
+#add region name - tract
+# dmv_bg_2021_acccess_scores_wide_aggreg <- dmv_bg_2021_acccess_scores_wide_aggreg %>% left_join(name_geo, by= c("tract_geoid"= "geoid") )
+
+## measures tract
+dmv_bg_2021_acccess_scores_county_wide <- dmv_bg_2021_acccess_scores_wide_aggreg %>% group_by(county_geoid) %>% summarise(
+  hosp_pop = sum(hosp_pop_cnt, na.rm = TRUE), 
+  hosp_cnt = sum(hosp_cnt, na.rm = TRUE), 
+  #hosp_beds_cnt =  sum(hosp_beds_cnt, na.rm = TRUE), 
+  hosp_near_10_mean = weighted.mean(hosp_near_10_mean, hosp_pop_cnt, na.rm = TRUE), 
+  hosp_near_10_median = weighted.mean(hosp_near_10_median, hosp_pop_cnt, na.rm = TRUE), 
+  hosp_2sfca = weighted.mean(hosp_2sfca, hosp_pop_cnt, na.rm = TRUE), 
+  hosp_e2sfca = weighted.mean(hosp_e2sfca, hosp_pop_cnt, na.rm = TRUE),
+  hosp_3sfca = weighted.mean(hosp_3sfca, hosp_pop_cnt, na.rm = TRUE),
+  )
+
+               
+```
+
+# long format tract
+```{r}
+dmv_bg_2021_acccess_scores_county <- tidyr::gather(dmv_bg_2021_acccess_scores_county_wide, measure, value, 
+                                            hosp_pop,
+                                            hosp_cnt,
+                                            #hosp_beds_cnt, 
+                                            hosp_near_10_mean,
+                                            hosp_near_10_median,
+                                            hosp_2sfca, 
+                                            hosp_e2sfca, 
+                                            hosp_3sfca)
+#define year
+dmv_bg_2021_acccess_scores_county$year <- year_spec
+#define measure type
+dmv_bg_2021_acccess_scores_county$measure_type <- as.factor(ifelse(dmv_bg_2021_acccess_scores_county$measure=="hosp_2sfca" |
+                                                            dmv_bg_2021_acccess_scores_county$measure=="hosp_e2sfca" |
+                                                              dmv_bg_2021_acccess_scores_county$measure=="hosp_3sfca", 'index','count') )
+```
+
+#include name: geographic name for geographic unit: county in this case
+```{r}
+#join region_name + region_type
+dmv_bg_2021_acccess_scores_county$tract_geoid <- as.character(dmv_bg_2021_acccess_scores_county$county_geoid)
+dmv_bg_2021_acccess_scores_county <- dmv_bg_2021_acccess_scores_county %>% left_join(name_geo, by= c("county_geoid" = "geoid") )
+#order
+dmv_bg_2021_acccess_scores_county <- dmv_bg_2021_acccess_scores_county %>% select(geoid="county_geoid","region_type","region_name", "measure", "value", "year", "measure_type")
+```
+
+# stack all the measures for BLOCK GROUP + TRACT + COUNTY: include NAME
+```{r}
+dmv_bg_2021_acccess_scores_hospitals <- rbind(dmv_bg_2021_acccess_scores_bg, 
+                                    dmv_bg_2021_acccess_scores_tract,
+                                    dmv_bg_2021_acccess_scores_county)
+```
+
+#change one name
+```{r}
+#dmv_bg_2021_acccess_scores_hospitals <- read.csv("dmv_bg_2021_acccess_scores_hospitals")
+
+dmv_bg_2021_acccess_scores_hospitals$measure <- ifelse(dmv_bg_2021_acccess_scores_hospitals$measure=='hosp_pop', 'hosp_pop_cnt' , dmv_bg_2021_acccess_scores_hospitals$measure)
+
+dmv_bg_2021_acccess_scores_hospitals$year <- year_spec
+
+```
+
+```{r}
+#names
+
+dmv_bg_2021_acccess_scores_hospitals <- dmv_bg_2021_acccess_scores_hospitals %>%  
+  mutate(measure = case_when(measure == "hosp_2sfca" ~ "urgent_2sfca",
+                             measure == "hosp_3sfca" ~ "urgent_3sfca",
+                             measure == "hosp_cnt" ~ "urgent_cnt",
+                             measure == "hosp_e2sfca" ~ "urgent_e2sfca",
+                             measure == "hosp_near_10_mean" ~ "urgent_near_10_mean",
+                             measure == "hosp_near_10_median" ~ "urgent_near_10_median",
+                             measure == "hosp_pop_cnt" ~ "urgent_pop_cnt")
+)
+
+```
+
+
+```{r}
+#SAVE with specific name
+#The naming convention for data tables within a schema is as follows: 
+#<location>_<resolution>_<data source>_<time period>_<title> 
+
+write.csv(dmv_bg_2021_acccess_scores_hospitals, "ncr_bgtrct_gmap_2022_access_scores_urgent_care_centers.csv", row.names = FALSE )
+
+```
+
+

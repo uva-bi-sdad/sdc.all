@@ -1,0 +1,250 @@
+---
+title: "prepare data - catchment_scores - obgyn"
+author: "--"
+date: "2/4/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+#libraries
+```{r}
+library(sf)
+library(tidygeocoder)
+library(dplyr)
+library(community)
+library(catchment)
+```
+#clean df
+```{r}
+#start clean
+rm(list=ls())
+```
+#working directory
+```{r}
+setwd("~/VDH/Floating_Catchment_Areas/dmv/1. obgyn_dmv_model/")
+```
+# load data provider
+```{r}
+provider <- read.csv("obgyn.dmv.geo.csv", row.names = 1)
+```
+# fix data
+```{r}
+## collapse by location
+provider$doctors <- 1
+provider$location <- paste0(provider$lat, ",", provider$lat)
+counts <- tapply(provider$doctors, provider$location, sum)
+locations <- which(!duplicated(provider$location))
+provider <- provider[locations,]
+provider$doctors <- counts[provider$location]
+
+## assign IDs just to be explicit
+provider$ID <- paste0("l", seq_len(nrow(provider)))
+
+# exclude any outside of the focal region
+
+## get zipcodes within focal counties
+dmv_counties <- list(
+  dc = "District of Columbia",
+  md = c("Charles", "Frederick", "Montgomery", "Prince George's"),
+  va = c(
+    "Alexandria", "Arlington", "Fairfax", "Falls Church", "Loudoun", "Manassas",
+    "Manassas Park", "Prince William"
+  )
+)
+county_shapes <- read_sf("counties.geojson", as_tibble = FALSE)
+geography_ref <- read.csv(
+  "https://www2.census.gov/geo/docs/maps-data/data/rel/zcta_county_rel_10.txt"
+)
+zips <- unique(unlist(lapply(names(dmv_counties), function(state){
+  GEOIDs <- county_shapes[county_shapes$NAME %in% dmv_counties[[state]], "GEOID", drop = TRUE]
+  formatC(geography_ref[geography_ref$GEOID %in% GEOIDs, "ZCTA5"], width = 5, flag = 0)
+}), use.names = FALSE))
+
+### identify zipcodes that cross county boundaries
+zip_cross <- substr(unique(do.call(paste0,
+  geography_ref[geography_ref$ZCTA5 %in% zips, c("ZCTA5", "GEOID")]
+)), 1, 5)
+zip_cross <- zip_cross[duplicated(zip_cross)]
+
+## identify locations in those boundary zip codes
+potential_ex <- provider[
+  !grepl(paste0("(?:", paste(zips, collapse = "|"), ")$"), provider$address) |
+    (grepl(paste0("(?:", paste(zip_cross, collapse = "|"), ")$"), provider$address) &
+      !grepl(
+        paste0("(?:", paste(unlist(dmv_counties), collapse = "|"), "),"),
+        provider$address
+      )),
+]
+
+## get the counties of those addresses, and exclude any not in the focal set
+potential_ex$county <- reverse_geo(potential_ex$lat, potential_ex$lon, full_results = TRUE, method = "arcgis")$Subregion
+provider <- provider[
+  !provider$address %in% c(potential_ex[
+    !is.na(potential_ex$county) & !grepl(
+      paste0("(?:", paste(unlist(dmv_counties), collapse = "|"), ")"), potential_ex$county
+    ), "address"
+  ], "408 W LOMBARD St, College Park, MD 20742"),
+]
+
+
+
+```
+# data combined
+```{r}
+
+## data combined
+county_names <- list(
+  dc = "District of Columbia",
+  md = c("Charles", "Frederick", "Montgomery", "Prince George's"),
+  va = c("Alexandria", "Arlington", "Fairfax", "Falls Church", "Loudoun", "Manassas", "Manassas Park", "Prince William")
+)
+data <- list()
+shapes <- list()
+
+
+for(state in c("dc", "md", "va")){
+  # get county shapes to identify block groups
+  counties <- download_census_shapes(".", state, "county", paste0(state, "_counties"))
+  blockgroups <- download_census_shapes(".", state, "bg", paste0(state, "_blockgroups"))
+  
+  # save only selected counties
+  counties <- counties[counties$NAME %in% county_names[[state]],]
+  counties[counties$NAME == "Fairfax", "NAME"] <- c("Fairfax City", "Fairfax")
+  shapes[[state]] <- list(
+    counties = counties,
+    blockgroups = blockgroups[substr(blockgroups$GEOID, 1, 5) %in% counties$GEOID,]
+  )
+  
+  # population data
+  data[[state]] <- download_census_population(".", state, 2019, counties = counties$GEOID)
+}
+
+data_combined <- do.call(rbind, lapply(names(data), function(state){
+  d <- data[[state]]$estimates
+  s <- shapes[[state]]$blockgroups
+  rownames(s) <- s$GEOID
+  total <- d$TOTAL.POPULATION_Total
+  total[total == 0] <- 1
+  data.frame(
+    GEOID = d$GEOID,
+    population = d$TOTAL.POPULATION_Total,
+    percent_female = d$SEX.BY.AGE_Female_Female / total * 100,
+    percent_white = d$RACE_Total_White.alone / total * 100,
+    percent_over_49 = rowSums(d[, grep("[5-8][05]", colnames(d))]) / total * 100,
+    female_over_14 = rowSums(d[, grep("Female_(?:[2-9]\\d|1[58])", colnames(d))]),
+    pediatric_pop = rowSums(d[, c(4:7,28:31) ]),
+    
+    st_coordinates(st_centroid(st_geometry(s[as.character(d$GEOID),])))
+  )
+}))
+data_combined <- data_combined[!is.na(data_combined$Y),]
+```
+## travel time
+```{r}
+library(osrm)
+options(osrm.server = "http://104.248.112.16:5000/", osrm.profile = "car")
+if(!file.exists("traveltimes_exercise.csv")){
+  traveltimes <- osrmTable(
+    src = data_combined[, c("GEOID", "X", "Y")],  #population-demand
+    dst = provider[, c("ID", "lon", "lat")]     #providers supply
+  )$duration
+  write.csv(
+    cbind(GEOID = rownames(traveltimes), as.data.frame(traveltimes)),
+    "traveltimes_exercise.csv", row.names = FALSE
+  )
+}
+
+traveltimes <- read.csv("traveltimes_exercise.csv", row.names = 1)
+
+```
+
+
+# add1. Define geography id. This is because the Geography-GEOID from initial file may be outdated
+```{r}
+library(tigris)
+library(maps)
+library(sf)
+# add block geoids
+# get US blocks shapefile
+blocks_VA <- st_as_sf(block_groups(state= "VA", year=2020)) #, year=2010
+blocks_DC <- st_as_sf(block_groups(state= "DC", year=2020)) #, year=2010
+blocks_MD <- st_as_sf(block_groups(state= "MD", year=2020)) #, year=2010
+
+#join
+blocks <- rbind(blocks_VA, blocks_MD)
+blocks <- rbind(blocks, blocks_DC)
+
+# lon and lat to geo-points
+geopts <- provider %>%
+  st_as_sf(coords = c("lon", "lat"), crs = 4269)
+# indeces of bgs which contain a geopoint
+inds <- st_within(geopts$geometry, blocks$geometry, sparse=T)
+blk_list <- c()
+for (i in inds){
+  if (identical(blocks$NAME[i],character(0))){
+    blk_list<- append(blk_list, NA)}
+  else{
+    blk_list <- append(blk_list, blocks$GEOID[i])}
+}
+provider['geoid_blk_new'] <- blk_list
+
+
+# This assumes that you have longitude and latitude of each location and if you want bg or tract or county just replace 'blocks_VA <- st_as_sf(blocks(state="VA"))' with a corresponding value, e.g. 'tracts_VA <- st_as_sf(tracts(state="VA"))'. I believe it uses either tigris or maps package
+
+```
+
+# add2 count providers per geography using matching codes
+```{r}
+
+
+#providers w geoid
+provider$GEOID <- substr(provider$geoid_blk_new, 1, 12 ) 
+#data_combined with geoid: ok
+num_providers <- provider %>% group_by(GEOID) %>% summarise(doctors=sum(doctors))
+
+#join providers to block groups
+data_combined$GEOID <-  as.character( data_combined$GEOID)
+data_combined <- data_combined %>% left_join(num_providers, by= "GEOID" )
+
+```
+# add3 mean and median of 10 nearest drive times 
+```{r}
+#mean of 10 nearest
+top_mean <- function(x) {  
+   mean(head(sort(x ), 10) ) }
+#median of 10 nearest
+top_median <- function(x) {  
+   median(head(sort(x ), 10) ) }
+#apply rowwise
+traveltimes_near <- data.frame(near_10_mean= base::apply(traveltimes, 1, top_mean), 
+                               near_10_median= base::apply(traveltimes, 1, top_median)) 
+#rownames_to_column(traveltimes_near, var = "GEOID")
+traveltimes_near$GEOID <- row.names(traveltimes_near) 
+#join mean median traveltimes to geographies
+data_combined <- data_combined %>% left_join(traveltimes_near, by= "GEOID")
+```
+
+
+
+#prepara data for save
+```{r}
+library(dplyr)
+#raw traveltimes: traveltimes matrix already estimated and with colnames arranged 
+traveltimes <- read.csv("traveltimes_exercise.csv", row.names = 1)
+#population: always recheck relevant population: ie. for pediatrics: pop 0-17 years
+population <- data_combined %>% dplyr::select(GEOID, female_over_14, doctors, near_10_mean, near_10_median)
+# realign travel times
+traveltimes <- traveltimes[as.character(population$GEOID), provider$ID]
+
+```
+# save new data
+```{r}
+write.csv(provider[, c("ID", "address", "lat", "lon", "doctors")], "provider.csv", row.names = FALSE)
+write.csv(cbind(GEOID = rownames(traveltimes), traveltimes), "traveltimes_trimmed.csv", row.names = FALSE)
+write.csv(population, "population.csv", row.names = FALSE)
+```
+
+
+

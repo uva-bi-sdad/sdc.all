@@ -1,0 +1,309 @@
+---
+title: "prepare data for catchment_scores 2015"
+author: "--"
+date: "01/16/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+#libraries
+```{r}
+library(sf)
+library(tidygeocoder)
+library(dplyr)
+library(community)
+library(tidycensus)
+```
+#clean df
+```{r}
+#start clean
+rm(list=ls())
+```
+#working directory
+```{r}
+setwd("~/VDH/Floating_Catchment_Areas/dmv/5.1 hospitals_dmv_model_2015-2022/5.1 hospitals_dmv_model_2016")
+```
+
+
+```{r}
+year_spec <- 2017
+
+#new data
+provider_ncr <- read.csv("~/test_symlink/git/sdc.health_dev/Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/working/ncr_cms_2015_2022_hospitals.csv")  
+#only acute care hospitals
+provider_ncr_acute <- provider_ncr %>% filter(hospital_type =='Acute Care Hospitals') 
+#only year 2021
+provider_ncr_acute_year <- provider_ncr %>% filter(hospital_type =='Acute Care Hospitals') %>% filter(year== year_spec)
+
+```
+
+
+# load data provider
+```{r}
+# provider <- read.csv("hospitals_ncr.csv", row.names = 1)
+# provider <- provider %>% filter(type!= 'MILITARY')
+# provider <- provider %>% filter(name!="NAVAL HEALTH CLINIC (JOHN HENRY BALCH)")
+
+#assign name
+provider <- provider_ncr_acute_year
+#specify name
+names(provider)[names(provider)=='long'] <- 'lon'
+# assign IDs just to be explicit
+provider$ID <- paste0("l", seq_len(nrow(provider)))
+```
+
+
+
+# Data combined: population DMV 
+```{r}
+library(tidycensus)
+library(tidyverse)
+
+census_api_key("eba406410c653b81d6a795ac4e989221f7bdf302")
+
+# counties_ncr <- c(51013 , 51059  ,51600  ,51107  ,51610  ,51683  ,51685  ,51153  ,51510  ,
+#                   11001  , 
+#                   24021  ,24031  ,24033  ,24017) 
+
+buffer_blocks_ncr <- read.csv("~/VDH/Floating_Catchment_Areas/dmv/buffer_blocks_ncr.csv" )
+buffer_blocks_ncr$fips <- substr(buffer_blocks_ncr$identifier,3,5)
+
+
+# Bring in census tract data. 
+pop_va_hosp <- get_acs(geography = "block group", 
+                        year = year_spec,
+                        variables = c(population = "B01003_001E"),
+                        state = "VA",
+                       county = c('013', '059', '600', '107', '610', '683', '685', '153', '510'),
+                       #county = c("013", "059") , 
+                       survey = "acs5",
+                        output = "wide",
+                        geometry = TRUE)
+
+pop_dc_hosp <- get_acs(geography = "block group", 
+                        year = year_spec,
+                        variables = c(population = "B01003_001E"),
+                        state = "DC",
+                        survey = "acs5",
+                        output = "wide",
+                        geometry = TRUE)
+
+pop_md_hosp <- get_acs(geography = "block group", 
+                        year = year_spec,
+                        variables = c(population = "B01003_001E"),
+                        state = "MD",
+                       county = c('021', '031', '033', '017'),
+                       survey = "acs5",
+                        output = "wide",
+                        geometry = TRUE)
+
+
+#neighboring blocks MD: 24 - PA:42 - VA:51 - WV:54
+pop_md_hosp_neig <- get_acs(geography = "block group", 
+                        year = year_spec,
+                        variables = c(population = "B01003_001E"),
+                        state = "MD",
+                         county = unique(buffer_blocks_ncr$fips[buffer_blocks_ncr$STATEFP20=='24']),
+                        survey = "acs5",
+                        output = "wide",
+                        geometry = TRUE)
+
+pop_pa_hosp_neig <- get_acs(geography = "block group", 
+                        year = year_spec,
+                        variables = c(population = "B01003_001E"),
+                        state = "PA",
+                         county = unique(buffer_blocks_ncr$fips[buffer_blocks_ncr$STATEFP20=='42']),
+                        survey = "acs5",
+                        output = "wide",
+                        geometry = TRUE)
+
+pop_va_hosp_neig <- get_acs(geography = "block group", 
+                        year = year_spec,
+                        variables = c(population = "B01003_001E"),
+                        state = "VA",
+                         county = unique(buffer_blocks_ncr$fips[buffer_blocks_ncr$STATEFP20=='51']),
+                        survey = "acs5",
+                        output = "wide",
+                        geometry = TRUE)
+
+pop_wv_hosp_neig <- get_acs(geography = "block group", 
+                        year = year_spec,
+                        variables = c(population = "B01003_001E"),
+                        state = "WV",
+                         county = unique(buffer_blocks_ncr$fips[buffer_blocks_ncr$STATEFP20=='54']),
+                        survey = "acs5",
+                        output = "wide",
+                        geometry = TRUE)
+
+#joint df
+pop_buffer_hosp <- rbind(pop_va_hosp,
+                         pop_dc_hosp,
+                         pop_md_hosp,
+                         pop_md_hosp_neig,
+                         pop_pa_hosp_neig,
+                         pop_va_hosp_neig,
+                         pop_wv_hosp_neig ) %>% unique()
+
+
+#
+va <- pop_buffer_hosp %>% select(GEOID, NAME, population=population )
+
+
+# data combined
+#centroid and coordinates
+
+data_combined <- data.frame(
+  GEOID = va$GEOID,
+  population = va$population,
+sf::st_coordinates(st_centroid(va$geometry))
+)
+
+data_combined <- data_combined %>% filter(!is.na(data_combined$X))
+
+data_combined <- data_combined %>% filter(GEOID != 517000323001 )
+data_combined <- data_combined %>% filter(GEOID != 517000323002 )
+data_combined <- data_combined %>% filter(GEOID != 517000323003 )
+
+```
+
+
+
+
+# Travel time
+```{r}
+library(osrm)
+options(osrm.server = "http://104.248.112.16:5001/", osrm.profile = "car")
+
+if(!file.exists("traveltimes_exercise.csv")){
+  
+  #provider <- st_drop_geometry( provider )
+    
+  traveltimes <- osrmTable(
+    src = data_combined[, c( "X", "Y")],  #population-demand
+    dst =  provider[, c( "lon", "lat")]  #providers supply
+  )$duration
+  
+  names(traveltimes) <-   provider[, c("ID")] 
+  
+  write.csv(
+    cbind(GEOID = data_combined[, c("GEOID")], as.data.frame(traveltimes)),
+    "traveltimes_exercise.csv", row.names = FALSE
+  )
+}
+
+traveltimes <- read.csv("traveltimes_exercise.csv", row.names = 1)
+names(traveltimes) <-   provider[, c("ID")] 
+
+```
+
+
+# add1. Define geography id. This is because the Geography-GEOID from initial file may be outdated
+
+```{r}
+library(tigris)
+library(maps)
+library(sf)
+# add block geoids
+# get US blocks shapefile
+blocks_VA <- st_as_sf(block_groups(state="VA", year=year_spec), crs = 4326) #, year=2010
+blocks_DC <- st_as_sf(block_groups(state= "DC", year=year_spec), crs = 4326) #, year=2010
+blocks_MD <- st_as_sf(block_groups(state= "MD", year=year_spec), crs = 4326) #, year=2010
+blocks_NC <- st_as_sf(block_groups(state= "NC", year=year_spec), crs = 4326) #, year=2010
+blocks_DE <- st_as_sf(block_groups(state= "DE", year=year_spec), crs = 4326) #, year=2010
+blocks_TN <- st_as_sf(block_groups(state= "TN", year=year_spec), crs = 4326) #, year=2010
+blocks_WV <- st_as_sf(block_groups(state= "WV", year=year_spec), crs = 4326) #, year=2010
+blocks_KY <- st_as_sf(block_groups(state= "KY", year=year_spec), crs = 4326) #, year=2010
+blocks_PA <- st_as_sf(block_groups(state= "PA", year=year_spec), crs = 4326) #, year=2010
+
+blocks <- rbind( blocks_VA, blocks_DC, blocks_MD , blocks_NC , blocks_DE , blocks_TN , blocks_WV , blocks_KY , blocks_PA) 
+blocks <- st_transform(blocks, 4326)
+
+
+
+# blocks_DC <- readRDS("~/VDH/Floating_Catchment_Areas/dmv/blocks_DC_2014" )
+# blocks_MD <- readRDS( "~/VDH/Floating_Catchment_Areas/dmv/blocks_MD_2014" )
+#blocks_VA <- readRDS("~/VDH/Floating_Catchment_Areas/dmv/blocks_VA_2014" )
+
+# blocks <- rbind(blocks_VA, blocks_MD)
+# blocks <- rbind(blocks, blocks_DC)
+
+#blocks <- blocks_VA
+# lon and lat to geo-points
+
+geopts <- provider %>%
+  st_as_sf(coords = c("lon", "lat"), crs = 4326)
+
+geopts <- st_transform(geopts, 4326)
+
+# indeces of bgs which contain a geopoint
+inds <- st_within(geopts$geometry, blocks$geometry, sparse=T)
+blk_list <- c()
+for (i in inds){
+  if (identical(blocks$NAME[i],character(0))){
+    blk_list<- append(blk_list, NA)}
+  else{
+    blk_list <- append(blk_list, blocks$GEOID[i])}
+}
+provider['geoid_blk_new'] <- blk_list
+
+
+# This assumes that you have longitude and latitude of each location and if you want bg or tract or county just replace 'blocks_VA <- st_as_sf(blocks(state="VA"))' with a corresponding value, e.g. 'tracts_VA <- st_as_sf(tracts(state="VA"))'. I believe it uses either tigris or maps package
+
+```
+
+# add2 count providers per geography using matching codes
+```{r}
+#obtain geoid
+
+provider$GEOID <- substr(provider$geoid_blk_new, 1,12)
+data_combined$GEOID <- as.character(data_combined$GEOID)
+
+provider$num <- 1
+#number of providers expanded
+num_providers_wide <- full_join(provider %>% select(GEOID, num ), data_combined %>% select(GEOID), by = "GEOID" )
+
+#number providers by GEOID
+hosp_cnt <- num_providers_wide %>% group_by(GEOID) %>% na.omit(name) %>% summarise(hosp_cnt = n( ) )
+
+#join hosp_cnt to geographies
+data_combined <- data_combined %>% left_join(hosp_cnt, by= "GEOID")
+```
+# add3 mean and median of 10 nearest drive times 
+```{r}
+#mean of 10 nearest
+top_mean <- function(x) {  
+   mean(head(sort(x ), 10) ) }
+#median of 10 nearest
+top_median <- function(x) {  
+   median(head(sort(x ), 10) ) }
+#apply rowwise
+traveltimes_near <- data.frame(near_10_mean=apply(traveltimes, 1, top_mean), 
+                               near_10_median=apply(traveltimes, 1, top_median)) 
+#rownames_to_column(traveltimes_near, var = "GEOID")
+traveltimes_near$GEOID <- row.names(traveltimes_near) 
+#join mean median traveltimes to geographies
+data_combined <- data_combined %>% left_join(traveltimes_near, by= "GEOID")
+```
+#prepara data for save: SELECT relevant variables. 
+```{r}
+#raw traveltimes: traveltimes matrix already estimated and with colnames arranged 
+traveltimes <- read.csv("traveltimes_exercise.csv", row.names = 1)
+#population: always recheck relevant population: ie. for pediatrics: pop 0-17 years
+population <- data_combined %>% select(GEOID, population, hosp_cnt, near_10_mean, near_10_median)
+# realign travel times
+names(traveltimes) <-   provider[, c("ID")] 
+traveltimes <- traveltimes[as.character(population$GEOID), provider$ID]
+
+getwd()
+```
+# save new data
+```{r}
+write.csv(provider[, c("ID", "address", "lat", "lon")], "provider.csv", row.names = FALSE)
+write.csv(cbind(GEOID = rownames(traveltimes), traveltimes), "traveltimes_trimmed.csv", row.names = FALSE)
+write.csv(population, "population.csv", row.names = FALSE)
+```
+
+
+

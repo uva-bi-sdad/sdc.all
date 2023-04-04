@@ -281,11 +281,12 @@ def scrape_prices(
     return empty
 
 
-def main(input_file, output_dir):
+def main(input_file, output_dir, headless=False):
     # start driver
     options = Options()
     # Uncomment to run headless (i.e., don't show the browser)
-    # options.add_argument('--headless')
+    if headless:
+        options.add_argument("--headless")
     # options.add_argument('--disable-gpu')  # Last I checked this was necessary.
     driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=options)
     driver.get("https://broadbandnow.com/compare/plans")
@@ -328,6 +329,13 @@ if __name__ == "__main__":
         required=True,
     )
     parser.add_argument("-v", "--verbose", action=argparse.BooleanOptionalAction)
+    parser.add_argument(
+        "-h",
+        "--headless",
+        default=False,
+        help="whether or not to run the browser in headless mode or not",
+        action=argparse.BooleanOptionalAction,
+    )
 
     args = parser.parse_args()
     log_level = logging.INFO
@@ -349,4 +357,4 @@ if __name__ == "__main__":
     import warnings
 
     warnings.filterwarnings("ignore")
-    main(args.input_file, args.output_dir)
+    main(args.input_file, args.output_dir, args.headless)

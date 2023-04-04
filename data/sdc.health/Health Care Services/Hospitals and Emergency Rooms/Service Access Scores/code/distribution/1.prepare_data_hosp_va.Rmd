@@ -1,0 +1,334 @@
+---
+title: "catchment_scores - urgent care - VA"
+author: "--"
+date: "2/4/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Libraries
+```{r}
+library(sf)
+library(tidygeocoder)
+library(dplyr)
+library(community)
+library(readr)
+```
+# Start new
+```{r}
+#start clean
+rm(list=ls())
+```
+# Working directory
+```{r}
+setwd("~/VDH/Floating_Catchment_Areas/va/5. hospitals_va_model")
+```
+
+# List of buffer counties for VA
+```{r}
+source("~/VDH/Floating_Catchment_Areas/va/buffer_counties_va.R")
+```
+# Read data
+```{r}
+#source: HIFLD
+hosp_usa <- read.csv("~/test_symlink/hospitals/Hospitals_usa.csv")
+hosp_va <- hosp_usa %>% filter(STATUS=='OPEN', STATE=='VA')
+#hosp_va_acute <- hosp_va %>% filter(TYPE == 'GENERAL ACUTE CARE') 
+hosp_va <- hosp_va %>% filter(TYPE != 'MILITARY' , TYPE != 'PSYCHIATRIC' , TYPE != 'REHABILITATION') 
+
+hosp_va_buffer <- hosp_usa %>% filter(STATUS=='OPEN', STATE=='VA' | COUNTYFIPS %in% buffer_counties_state$identifier ) 
+
+#acute care
+provider <- hosp_va_buffer %>% filter(TYPE == 'GENERAL ACUTE CARE' | TYPE == 'CRITICAL ACCESS') %>% filter(BEDS > 0)
+
+
+#change names lat lon
+names(provider)[names(provider)=='LATITUDE'] <- 'lat'
+names(provider)[names(provider)=='LONGITUDE'] <- 'lon'
+
+
+
+#Save list of hospitals:93 in VA
+write_csv(provider, "general_acute_care/va_hifld_2021_hospitals.csv")
+#provider <- read.csv("hospitals_ncr.csv", row.names = 1)
+```
+
+# Fix data: cluster providers by lat-lon to have unique geographical providers (e.g. 15 doctors in one location)
+```{r}
+## collapse by location
+provider$doctors <- 1
+provider$location <- paste0(provider$lat, ",", provider$lon)
+counts <- tapply(provider$doctors, provider$location, sum)
+locations <- which(!duplicated(provider$location))
+provider <- provider[locations,]
+provider$doctors <- counts[provider$location]
+
+## assign IDs just to be explicit
+provider$ID <- paste0("l", seq_len(nrow(provider)))
+```
+
+# Data combined: population
+```{r}
+library(tidycensus)
+library(tidyverse)
+
+census_api_key("eba406410c653b81d6a795ac4e989221f7bdf302")
+
+# Bring in census tract data. 
+pop_va_hosp <- get_acs(geography = "block group", 
+                        year = 2020,
+                        variables = c(population = "B01003_001E",
+                                      medinc = "B19013_001E"
+                        ),
+                        state = "VA",
+                        survey = "acs5",
+                        output = "wide",
+                        geometry = TRUE)
+
+pop_dc_hosp <- get_acs(geography = "block group", 
+                        year = 2020,
+                        variables = c(population = "B01003_001E",
+                                      medinc = "B19013_001E"
+                        ),
+                        state = "DC",
+                        survey = "acs5",
+                        output = "wide",
+                        geometry = TRUE)
+
+pop_md_hosp <- get_acs(geography = "block group", 
+                        year = 2020,
+                        variables = c(population = "B01003_001E",
+                                      medinc = "B19013_001E"
+                        ),
+                        state = "MD",
+                         county = buffer_counties_state$NAMELSAD[buffer_counties_state$STUSPS=='MD'],
+                        survey = "acs5",
+                        output = "wide",
+                        geometry = TRUE)
+
+pop_pa_hosp <- get_acs(geography = "block group", 
+                        year = 2020,
+                        variables = c(population = "B01003_001E",
+                                      medinc = "B19013_001E"
+                        ),
+                        state = "PA",
+                         county = buffer_counties_state$NAMELSAD[buffer_counties_state$STUSPS=='PA'],
+                        survey = "acs5",
+                        output = "wide",
+                        geometry = TRUE)
+
+pop_wv_hosp <- get_acs(geography = "block group", 
+                        year = 2020,
+                        variables = c(population = "B01003_001E",
+                                      medinc = "B19013_001E"
+                        ),
+                        state = "WV",
+                         county = buffer_counties_state$NAMELSAD[buffer_counties_state$STUSPS=='WV'],
+                        survey = "acs5",
+                        output = "wide",
+                        geometry = TRUE)
+
+pop_ky_hosp <- get_acs(geography = "block group", 
+                        year = 2020,
+                        variables = c(population = "B01003_001E",
+                                      medinc = "B19013_001E"
+                        ),
+                        state = "KY",
+                         county = buffer_counties_state$NAMELSAD[buffer_counties_state$STUSPS=='KY'],
+                        survey = "acs5",
+                        output = "wide",
+                        geometry = TRUE)
+
+pop_tn_hosp <- get_acs(geography = "block group", 
+                        year = 2020,
+                        variables = c(population = "B01003_001E",
+                                      medinc = "B19013_001E"
+                        ),
+                        state = "TN",
+                         county = buffer_counties_state$NAMELSAD[buffer_counties_state$STUSPS=='TN'],
+                        survey = "acs5",
+                        output = "wide",
+                        geometry = TRUE)
+
+pop_nc_hosp <- get_acs(geography = "block group", 
+                        year = 2020,
+                        variables = c(population = "B01003_001E",
+                                      medinc = "B19013_001E"
+                        ),
+                        state = "NC",
+                         county = buffer_counties_state$NAMELSAD[buffer_counties_state$STUSPS=='NC'],
+                        survey = "acs5",
+                        output = "wide",
+                        geometry = TRUE)
+
+pop_de_hosp <- get_acs(geography = "block group", 
+                        year = 2020,
+                        variables = c(population = "B01003_001E",
+                                      medinc = "B19013_001E"
+                        ),
+                        state = "DE",
+                         county = buffer_counties_state$NAMELSAD[buffer_counties_state$STUSPS=='DE'],
+                        survey = "acs5",
+                        output = "wide",
+                        geometry = TRUE)
+
+#joint df
+pop_buffer_hosp <- rbind(pop_va_hosp, pop_dc_hosp, pop_de_hosp, pop_ky_hosp, pop_md_hosp, pop_nc_hosp, pop_pa_hosp, pop_tn_hosp, pop_wv_hosp)
+
+#
+va <- pop_buffer_hosp %>% select(GEOID, NAME, population=population )
+
+
+# data combined
+#centroid and coordinates
+
+data_combined <- data.frame(
+  GEOID = va$GEOID,
+  population = va$population,
+sf::st_coordinates(st_centroid(va$geometry))
+)
+
+data_combined <- data_combined %>% filter(!is.na(data_combined$X))
+
+data_combined <- data_combined %>% filter(GEOID != 517000323001 )
+data_combined <- data_combined %>% filter(GEOID != 517000323002 )
+data_combined <- data_combined %>% filter(GEOID != 517000323003 )
+
+```
+
+
+# Travel time
+```{r}
+library(osrm)
+options(osrm.server = "http://104.248.112.16:5001/", osrm.profile = "car")
+
+if(!file.exists("traveltimes_exercise.csv")){
+  
+  #provider <- st_drop_geometry( provider )
+    
+  traveltimes <- osrmTable(
+    src = data_combined[, c( "X", "Y")],  #population-demand
+    dst =  provider[, c( "lon", "lat")]  #providers supply
+  )$duration
+  
+  names(traveltimes) <-   provider[, c("ID")] 
+  
+  write.csv(
+    cbind(GEOID = data_combined[, c("GEOID")], as.data.frame(traveltimes)),
+    "traveltimes_exercise.csv", row.names = FALSE
+  )
+}
+
+traveltimes <- read.csv("traveltimes_exercise.csv", row.names = 1)
+names(traveltimes) <-   provider[, c("ID")] 
+
+```
+
+
+# Define geography id - Geography-GEOID from initial file may be outdated
+```{r}
+library(tigris)
+library(maps)
+library(sf)
+# add block geoids
+# get US blocks shapefile
+blocks_VA <- st_as_sf(block_groups(state="VA", year=2020), crs = 4326) #, year=2010
+blocks_DC <- st_as_sf(block_groups(state= "DC", year=2020), crs = 4326) #, year=2010
+blocks_MD <- st_as_sf(block_groups(state= "MD", year=2020), crs = 4326) #, year=2010
+blocks_NC <- st_as_sf(block_groups(state= "NC", year=2020), crs = 4326) #, year=2010
+blocks_DE <- st_as_sf(block_groups(state= "DE", year=2020), crs = 4326) #, year=2010
+blocks_TN <- st_as_sf(block_groups(state= "TN", year=2020), crs = 4326) #, year=2010
+blocks_WV <- st_as_sf(block_groups(state= "WV", year=2020), crs = 4326) #, year=2010
+blocks_KY <- st_as_sf(block_groups(state= "KY", year=2020), crs = 4326) #, year=2010
+blocks_PA <- st_as_sf(block_groups(state= "PA", year=2020), crs = 4326) #, year=2010
+
+blocks <- rbind( blocks_VA, blocks_DC, blocks_MD , blocks_NC , blocks_DE , blocks_TN , blocks_WV , blocks_KY , blocks_PA) 
+blocks <- st_transform(blocks, 4326)
+
+
+
+# blocks_DC <- readRDS("~/VDH/Floating_Catchment_Areas/dmv/blocks_DC_2014" )
+# blocks_MD <- readRDS( "~/VDH/Floating_Catchment_Areas/dmv/blocks_MD_2014" )
+#blocks_VA <- readRDS("~/VDH/Floating_Catchment_Areas/dmv/blocks_VA_2014" )
+
+# blocks <- rbind(blocks_VA, blocks_MD)
+# blocks <- rbind(blocks, blocks_DC)
+
+#blocks <- blocks_VA
+# lon and lat to geo-points
+
+geopts <- provider %>%
+  st_as_sf(coords = c("lon", "lat"), crs = 4326)
+
+geopts <- st_transform(geopts, 4326)
+
+# indeces of bgs which contain a geopoint
+inds <- st_within(geopts$geometry, blocks$geometry, sparse=T)
+blk_list <- c()
+for (i in inds){
+  if (identical(blocks$NAME[i],character(0))){
+    blk_list<- append(blk_list, NA)}
+  else{
+    blk_list <- append(blk_list, blocks$GEOID[i])}
+}
+provider['geoid_blk_new'] <- blk_list
+
+
+# This assumes that you have longitude and latitude of each location and if you want bg or tract or county just replace 'blocks_VA <- st_as_sf(blocks(state="VA"))' with a corresponding value, e.g. 'tracts_VA <- st_as_sf(tracts(state="VA"))'. I believe it uses either tigris or maps package
+
+```
+
+# Add count of providers per geography using matching codes
+```{r}
+
+#providers w geoid
+provider$GEOID <- substr(provider$geoid_blk_new, 1, 12 ) 
+#data_combined with geoid: ok
+num_providers <- provider %>% group_by(GEOID) %>% summarise(prov_cnt = sum(doctors) )
+
+#join providers to block groups
+data_combined$GEOID <-  as.character( data_combined$GEOID)
+data_combined <- data_combined %>% left_join(num_providers, by= "GEOID" )
+
+```
+# Add mean and median of 10 nearest drive times 
+```{r}
+#mean of 10 nearest
+top_mean <- function(x) {  
+   mean(head(sort(x ), 10) ) }
+#median of 10 nearest
+top_median <- function(x) {  
+   median(head(sort(x ), 10) ) }
+#apply rowwise
+traveltimes_near <- data.frame(near_10_mean=apply(traveltimes, 1, top_mean), 
+                               near_10_median=apply(traveltimes, 1, top_median)) 
+#rownames_to_column(traveltimes_near, var = "GEOID")
+traveltimes_near$GEOID <- row.names(traveltimes_near) 
+#join mean median traveltimes to geographies
+data_combined <- data_combined %>% left_join(traveltimes_near, by= "GEOID")
+```
+
+# Prepara data to save
+
+```{r}
+#raw traveltimes: traveltimes matrix already estimated and with colnames arranged 
+traveltimes <- read.csv("traveltimes_exercise.csv", row.names = 1)
+names(traveltimes) <-   provider[, c("ID")] 
+#population: always recheck relevant population: ie. for pediatrics: pop 0-17 years
+population <- data_combined %>% select(GEOID, population, prov_cnt, near_10_mean, near_10_median, X, Y)
+# realign travel times
+traveltimes <- traveltimes[as.character(population$GEOID), provider$ID]
+
+```
+
+# Save files to estimate catchment areas
+```{r}
+write.csv(provider[, c("ID", address="ADDRESS", "lat", "lon", "doctors", beds="BEDS")] , "general_acute_care/provider_20.csv", row.names = FALSE)
+write.csv(cbind(GEOID = rownames(traveltimes), traveltimes), "general_acute_care/traveltimes_trimmed_20.csv", row.names = FALSE)
+write.csv(population, "general_acute_care/population.csv", row.names = FALSE)
+```
+
+
+

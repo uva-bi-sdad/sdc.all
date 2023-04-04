@@ -1,0 +1,447 @@
+---
+title: "catchment_scores - pediatrics - va"
+author: "--"
+date: "2/4/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# Libraries
+```{r}
+library(catchment)
+library(sf)
+library(leaflet)
+library(dplyr)
+```
+# Start new
+```{r}
+ rm(list=ls())
+```
+# Working directory
+```{r}
+setwd("~/VDH/Floating_Catchment_Areas/va/2. pediatrics_va_model/")
+```
+# Read data
+```{r}
+population <- read.csv("population.csv")
+provider <- read_csv("provider_20.csv")
+rownames(provider) <- provider$ID
+traveltimes <- read.csv("traveltimes_trimmed_20.csv", row.names = 1)
+#traveltimes <- traveltimes %>% filter(!is.na(as.data.frame(traveltimes) ))
+```
+# Prepare map
+```{r}
+#blockgroup_shapes <- st_transform(read_sf("blockgroups.geojson", as_tibble = FALSE), 4326)
+blockgroup_shapes <-   st_transform( tigris::block_groups(state = c("VA"), class = "sf", year=2020), 4326)
+
+rownames(blockgroup_shapes) <- blockgroup_shapes$GEOID
+blockgroup_shapes <- blockgroup_shapes[as.character(population$GEOID),]
+##new
+shape_counties <- tigris::counties(state = c("VA"), class = "sf")
+
+#format for counties
+shape_counties <- st_transform(shape_counties, 4326 )
+
+#create map
+map <- leaflet(blockgroup_shapes, options = leafletOptions(attributionControl = FALSE)) %>%
+  addTiles() %>%
+  addScaleBar("bottomleft") %>%
+  addMapPane("lines", zIndex = 410) %>%
+  addMapPane("points", zIndex = 411) %>%
+  addPolygons(
+    fillColor = colorNumeric("RdYlBu", population$population)(population$population),
+    fillOpacity = 1, stroke = FALSE, group = "Population", label = population$pediatric_pop
+  ) %>%
+  hideGroup("Population") %>%
+  addLayersControl(
+    position = "topleft", overlayGroups = c("Pediatrics", "Population", "Access")
+  ) %>%
+  addCircles(
+    data = provider, color = "blue", lng = ~lon, lat = ~lat, weight = 3,
+    label = ~ paste0("ID: ", ID, "  Number Doctors:", doctors), options = pathOptions(pane = "points")
+  )
+
+
+```
+# Estimate catchment areas
+```{r}
+#2sfca
+
+population$providers_2sfca <- catchment_ratio(
+  consumers = population, 
+  providers = provider, 
+  cost = traveltimes,
+  weight = 30, 
+  consumers_id = "GEOID", 
+  consumers_value = "pediatric_pop",
+  consumers_location = c("X", "Y"), 
+  providers_id = "ID",
+  providers_value = "doctors", 
+  providers_location = c("lon", "lat"),
+  verbose = FALSE)*1000
+
+population_plot <- population %>% mutate(state=substr(GEOID,1,2)) %>% filter(state==51)
+
+pal <- colorBin("RdYlBu", population_plot$providers_2sfca, bins = 10)
+
+plot_2sfca <- map %>%
+  addControl("Pediatrics Per 1,000 People (2-Step Floating Catchment Area)", "topright") %>%
+  addLegend("bottomright", pal, population_plot$providers_2sfca, opacity = .7) %>%
+  addPolygons(
+    fillColor = pal(population_plot$providers_2sfca), fillOpacity = .7, weight = 1, color = "#000",
+    highlightOptions = highlightOptions(color = "#fff"), group = "Access",
+    label = paste0(
+      "GEOID: ", population_plot$GEOID, ", Population Ages 0-17: ", population_plot$obgyn_pop,
+      ", Per 1k People: ", round(population_plot$providers_2sfca, 4), ", In Region: ",
+      round(population_plot$population * population_plot$providers_2sfca / 1000, 4)
+    )
+  ) %>%
+  addPolylines(data = shape_counties, color = "black", opacity = 1, weight = 2.5) 
+
+## enhanced 2-step
+
+# weight <- list(c(60, .042), c(30, .377), c(20, .704), c(10, .962))
+#weight <- list(c(60, .042), c(30, .377), c(20, .704), c(10, .962))
+step_weights <- list(c(30, .22), c(20, .68), c(10, 1))
+
+population$providers_e2sfca <- catchment_ratio(
+  consumers = population, 
+  providers = provider, 
+  cost = traveltimes,
+  weight = step_weights, 
+  consumers_id = "GEOID", 
+  consumers_value = "pediatric_pop",
+  consumers_location = c("X", "Y"), 
+  providers_id = "ID",
+  providers_value = "doctors", 
+  providers_location = c("lon", "lat"),
+  verbose = FALSE)*1000
+
+#df for plot
+population_plot <- population %>% mutate(state=substr(GEOID,1,2)) %>% filter(state==51)
+
+pal_e2sfca <- colorBin("RdYlBu", population_plot$providers_e2sfca)
+ 
+plot_e2sfca <- map %>%
+  addControl("Pediatrics Per 1,000 People (enhanced 2-Step Floating Catchment Area)", "topright") %>%
+  addLegend("bottomright", pal_e2sfca, population_plot$providers_e2sfca, opacity = .7) %>%
+  addPolygons(
+    fillColor = pal_e2sfca(population_plot$providers_e2sfca), fillOpacity = .7, weight = 1, color = "#000",
+    highlightOptions = highlightOptions(color = "#fff"), group = "Access",
+    label = paste0(
+      "GEOID: ", population_plot$GEOID, ", Population Ages 0-17: ", population_plot$population,
+      ", Per 1k People: ", round(population_plot$providers_e2sfca, 4), ", In Region: ",
+      round(population_plot$population * population_plot$providers_e2sfca / 1000, 4)
+    )
+  ) %>% addPolylines(data = shape_counties, color = "black", opacity = 1, weight = 2.5) 
+
+
+## 3-step
+
+population$providers_3sfca <- catchment_ratio(
+  consumers = population, 
+  providers = provider, 
+  cost = traveltimes,
+  weight = step_weights, 
+  normalize_weight = TRUE,
+  consumers_id = "GEOID", 
+  consumers_value = "pediatric_pop",
+  consumers_location = c("X", "Y"), 
+  providers_id = "ID",
+  providers_value = "doctors", 
+  providers_location = c("lon", "lat"),
+  verbose = FALSE)*1000
+
+#df for plot
+population_plot <- population %>% mutate(state=substr(GEOID,1,2)) %>% filter(state==51)
+
+pal_3sfca <- colorBin("RdYlBu", population_plot$providers_3sfca)
+
+plot_3sfca <- map %>%
+  addControl("Pediatrics Per 1,000 People (3-Step Floating Catchment Area)", "topright") %>%
+  addLegend("bottomright", pal_3sfca, population_plot$providers_3sfca, opacity = .7) %>%
+  addPolygons(
+    fillColor = pal_3sfca(population_plot$providers_3sfca), fillOpacity = .7, weight = 1, color = "#000",
+    highlightOptions = highlightOptions(color = "#fff"), group = "Access",
+    label = paste0(
+      "GEOID: ", population_plot$GEOID, ", Population Ages 0-17: ", population_plot$population,
+      ", Per 1k People: ", round(population_plot$providers_3sfca, 4), ", In Region: ",
+      round(population_plot$population * population_plot$providers_3sfca / 1000, 4)
+    )
+  ) %>% addPolylines(data = shape_counties, color = "black", opacity = 1, weight = 2.5) 
+
+
+```
+# Plot Catchment Areas 
+```{r}
+plot_2sfca
+plot_e2sfca
+plot_3sfca
+```
+
+# Plot distribution of Catchment Areas
+```{r}
+
+library(ggplot2)
+library(hrbrthemes)
+library(dplyr)
+library(tidyr)
+library(viridis)
+
+Data_1 <- data.frame( Observation = population_plot$providers_2sfca , fca = '2sfca')
+Data_2 <- data.frame( Observation = population_plot$providers_e2sfca , fca = 'e2sfca')
+Data_3 <- data.frame( Observation = population_plot$providers_3sfca, fca = '3sfca' )
+
+CombinedData <- rbind (Data_1, Data_2, Data_3)
+
+
+densities_fca <- ggplot(data=CombinedData, aes(x=Observation, group=fca, fill=fca)) +
+    geom_density(adjust=1.5, alpha=.4) +
+    theme_ipsum() +
+  scale_fill_viridis(discrete=TRUE) +
+  labs(title = 'Distribution of Floating Catchment Areas - Virginia - Pediatrics')
+
+densities_fca
+
+#addit plot
+# dens_plot <- ggplot(CombinedData, aes(x= Observation)) + geom_density(data = Data_1, fill = "red", alpha = 0.8) + 
+#   geom_density(data = Data_2, fill = "blue", alpha = 0.5) + geom_density(data = Data_3, fill = "yellow", alpha = 0.2) + scale_fill_viridis()
+
+
+```
+
+
+
+### Aggregation of Catchment Areas Information
+
+####### Block group #######
+```{r}
+# Reshape wide-long
+
+#DEFINE relevant population and names
+dmv_bg_2021_acccess_scores_wide <- population_plot   %>% dplyr::select( geoid="GEOID", 
+                                                            ped_pop_cnt ="pediatric_pop",
+                                                            ped_cnt = "prov_cnt",
+                                                            ped_near_10_mean = "near_10_mean",
+                                                            ped_near_10_median = "near_10_median",
+                                                            ped_2sfca = "providers_2sfca" ,
+                                                            ped_e2sfca = "providers_e2sfca", 
+                                                            ped_3sfca = "providers_3sfca" )
+
+
+# Long format - block group
+dmv_bg_2021_acccess_scores_bg <- tidyr::gather(dmv_bg_2021_acccess_scores_wide, measure, value, 
+                                            ped_pop_cnt,
+                                            ped_cnt,
+                                            ped_near_10_mean,
+                                            ped_near_10_median,
+                                            ped_2sfca, 
+                                            ped_e2sfca, 
+                                            ped_3sfca)
+#define year
+dmv_bg_2021_acccess_scores_bg$year <- 2021
+#define measure type
+dmv_bg_2021_acccess_scores_bg$measure_type <- as.factor(ifelse(dmv_bg_2021_acccess_scores_bg$measure=="ped_2sfca" |
+                                                            dmv_bg_2021_acccess_scores_bg$measure=="ped_e2sfca" |
+                                                              dmv_bg_2021_acccess_scores_bg$measure=="ped_3sfca", 'index','count') )
+
+
+# Include name: geographic name for geographic unit: block group
+
+#a) connect
+con <- RPostgreSQL::dbConnect(drv = RPostgreSQL::PostgreSQL(),
+                              dbname = "sdad",
+                              host = "postgis1",
+                              port = 5432,
+                              user = Sys.getenv(x = "DB_USR"),
+                              password = Sys.getenv(x = "DB_PWD"))
+
+#b) query
+name_geo <- sf::st_read(con, 
+  query= "
+SELECT  *
+FROM dc_geographies.ncr_cttrbg_tiger_2010_2020_geo_names "
+)
+
+#join region_name + region_type
+dmv_bg_2021_acccess_scores_bg$geoid <- as.character(dmv_bg_2021_acccess_scores_bg$geoid)
+dmv_bg_2021_acccess_scores_bg <- dmv_bg_2021_acccess_scores_bg %>% left_join(name_geo, by="geoid")
+#order
+dmv_bg_2021_acccess_scores_bg <- dmv_bg_2021_acccess_scores_bg %>% dplyr::select("geoid","region_type","region_name", "measure", "value", "year", "measure_type")
+######
+```
+
+####### Tracts #######
+```{r}
+# Aggregate information for tracts
+#generate id tract  #the relevant file is WIDE
+dmv_bg_2021_acccess_scores_wide_aggreg <- dmv_bg_2021_acccess_scores_wide  %>% mutate(tract_geoid = substr(geoid,1,11))
+#add region name - tract
+# dmv_bg_2021_acccess_scores_wide_aggreg <- dmv_bg_2021_acccess_scores_wide_aggreg %>% left_join(name_geo, by= c("tract_geoid"= "geoid") )
+
+## measures tract
+dmv_bg_2021_acccess_scores_tract_wide <- dmv_bg_2021_acccess_scores_wide_aggreg %>% group_by(tract_geoid) %>% dplyr::summarise(
+  ped_pop = sum(ped_pop_cnt, na.rm = TRUE), 
+  ped_cnt = sum(ped_cnt, na.rm = TRUE), 
+  ped_near_10_mean = weighted.mean(ped_near_10_mean, ped_pop_cnt, na.rm = TRUE), 
+  ped_near_10_median = weighted.mean(ped_near_10_median, ped_pop_cnt, na.rm = TRUE), 
+  ped_2sfca = weighted.mean(ped_2sfca, ped_pop_cnt, na.rm = TRUE), 
+  ped_e2sfca = weighted.mean(ped_e2sfca, ped_pop_cnt, na.rm = TRUE),
+  ped_3sfca = weighted.mean(ped_3sfca, ped_pop_cnt, na.rm = TRUE),
+  )
+
+               
+# Long format - tract 
+dmv_bg_2021_acccess_scores_tract <- tidyr::gather(dmv_bg_2021_acccess_scores_tract_wide, measure, value, 
+                                            ped_pop,
+                                            ped_cnt,
+                                            ped_near_10_mean,
+                                            ped_near_10_median,
+                                            ped_2sfca, 
+                                            ped_e2sfca, 
+                                            ped_3sfca)
+#define year
+dmv_bg_2021_acccess_scores_tract$year <- 2021
+#define measure type
+dmv_bg_2021_acccess_scores_tract$measure_type <- as.factor(ifelse(dmv_bg_2021_acccess_scores_tract$measure=="ped_2sfca" |
+                                                            dmv_bg_2021_acccess_scores_tract$measure=="ped_e2sfca" |
+                                                              dmv_bg_2021_acccess_scores_tract$measure=="ped_3sfca", 'index','count') )
+
+
+# Include name: geographic name for geographic unit: tract
+#join region_name + region_type
+dmv_bg_2021_acccess_scores_tract$tract_geoid <- as.character(dmv_bg_2021_acccess_scores_tract$tract_geoid)
+dmv_bg_2021_acccess_scores_tract <- dmv_bg_2021_acccess_scores_tract %>% left_join(name_geo, by= c("tract_geoid" = "geoid") )
+#order
+dmv_bg_2021_acccess_scores_tract <- dmv_bg_2021_acccess_scores_tract %>% dplyr::select(geoid="tract_geoid","region_type","region_name", "measure", "value", "year", "measure_type")
+```
+
+####### County #######
+```{r}
+# Aggregate information for county
+#generate id tract  #the relevant file is WIDE
+dmv_bg_2021_acccess_scores_wide_aggreg <- dmv_bg_2021_acccess_scores_wide  %>% mutate(county_geoid = substr(geoid,1,5))
+#add region name - tract
+# dmv_bg_2021_acccess_scores_wide_aggreg <- dmv_bg_2021_acccess_scores_wide_aggreg %>% left_join(name_geo, by= c("tract_geoid"= "geoid") )
+
+## measures tract
+dmv_bg_2021_acccess_scores_county_wide <- dmv_bg_2021_acccess_scores_wide_aggreg %>% group_by(county_geoid) %>% summarise(
+  ped_pop = sum(ped_pop_cnt, na.rm = TRUE), 
+  ped_cnt = sum(ped_cnt, na.rm = TRUE), 
+  ped_near_10_mean = weighted.mean(ped_near_10_mean, ped_pop_cnt, na.rm = TRUE), 
+  ped_near_10_median = weighted.mean(ped_near_10_median, ped_pop_cnt, na.rm = TRUE), 
+  ped_2sfca = weighted.mean(ped_2sfca, ped_pop_cnt, na.rm = TRUE), 
+  ped_e2sfca = weighted.mean(ped_e2sfca, ped_pop_cnt, na.rm = TRUE),
+  ped_3sfca = weighted.mean(ped_3sfca, ped_pop_cnt, na.rm = TRUE),
+  )
+
+               
+# Long format - county
+dmv_bg_2021_acccess_scores_county <- tidyr::gather(dmv_bg_2021_acccess_scores_county_wide, measure, value, 
+                                            ped_pop,
+                                            ped_cnt,
+                                            ped_near_10_mean,
+                                            ped_near_10_median,
+                                            ped_2sfca, 
+                                            ped_e2sfca, 
+                                            ped_3sfca)
+#define year
+dmv_bg_2021_acccess_scores_county$year <- 2021
+#define measure type
+dmv_bg_2021_acccess_scores_county$measure_type <- as.factor(ifelse(dmv_bg_2021_acccess_scores_county$measure=="ped_2sfca" |
+                                                            dmv_bg_2021_acccess_scores_county$measure=="ped_e2sfca" |
+                                                              dmv_bg_2021_acccess_scores_county$measure=="ped_3sfca", 'index','count') )
+
+
+# Include name: geographic name for geographic unit: county
+#join region_name + region_type
+dmv_bg_2021_acccess_scores_county$tract_geoid <- as.character(dmv_bg_2021_acccess_scores_county$county_geoid)
+dmv_bg_2021_acccess_scores_county <- dmv_bg_2021_acccess_scores_county %>% left_join(name_geo, by= c("county_geoid" = "geoid") )
+#order
+dmv_bg_2021_acccess_scores_county <- dmv_bg_2021_acccess_scores_county %>% dplyr::select(geoid="county_geoid","region_type","region_name", "measure", "value", "year", "measure_type")
+```
+
+####### Health Districts #######
+```{r}
+# Health Districts categories
+health_district <- read.csv("~/spatial_access_health/Locality-to-HD-to-HPR.csv")
+names(health_district)[2] <- "county_geoid"
+health_district$county_geoid <- as.character(health_district$county_geoid )
+
+# Aggregate information for Health district
+#join name of HD
+dmv_bg_2021_acccess_scores_wide_aggreg <- dmv_bg_2021_acccess_scores_wide_aggreg %>% left_join(health_district, by="county_geoid")
+
+## measures tract
+dmv_bg_2021_acccess_scores_hd_wide <- dmv_bg_2021_acccess_scores_wide_aggreg %>% group_by(HealthDistrict) %>% dplyr::summarise(
+  ped_pop = sum(ped_pop_cnt, na.rm = TRUE), 
+  ped_cnt = sum(ped_cnt, na.rm = TRUE), 
+  ped_near_10_mean = weighted.mean(ped_near_10_mean, ped_pop_cnt, na.rm = TRUE), 
+  ped_near_10_median = weighted.mean(ped_near_10_median, ped_pop_cnt, na.rm = TRUE), 
+  ped_2sfca = weighted.mean(ped_2sfca, ped_pop_cnt, na.rm = TRUE), 
+  ped_e2sfca = weighted.mean(ped_e2sfca, ped_pop_cnt, na.rm = TRUE),
+  ped_3sfca = weighted.mean(ped_3sfca, ped_pop_cnt, na.rm = TRUE)
+  )
+
+               
+# Long format - Health district
+dmv_bg_2021_acccess_scores_hd <- tidyr::gather(dmv_bg_2021_acccess_scores_hd_wide, measure, value, 
+                                            ped_pop,
+                                            ped_cnt,
+                                            ped_near_10_mean,
+                                            ped_near_10_median,
+                                            ped_2sfca, 
+                                            ped_e2sfca, 
+                                            ped_3sfca)
+#define year
+dmv_bg_2021_acccess_scores_hd$year <- 2021
+#define measure type
+dmv_bg_2021_acccess_scores_hd$measure_type <- as.factor(ifelse(dmv_bg_2021_acccess_scores_hd$measure=="ped_2sfca" |
+                                                            dmv_bg_2021_acccess_scores_hd$measure=="ped_e2sfca" |
+                                                              dmv_bg_2021_acccess_scores_hd$measure=="ped_3sfca", 'index','count') )
+
+# Include name: geographic name for geographic unit: Health district
+
+con <- RPostgreSQL::dbConnect(drv = RPostgreSQL::PostgreSQL(),
+                              dbname = "sdad",
+                              host = "postgis1",
+                              port = 5432,
+                              user = Sys.getenv(x = "DB_USR"),
+                              password = Sys.getenv(x = "DB_PWD"))
+#b)query
+hd_names  <- sf::st_read(
+  con, 
+  query= "
+    SELECT *
+ FROM dc_geographies.va_hd_vdh_2021_health_district_geo_names"
+)
+
+#create region_type and region_name: join 
+
+dmv_bg_2021_acccess_scores_hd <- dmv_bg_2021_acccess_scores_hd %>% left_join(hd_names, by = c("HealthDistrict"="region_name") )
+#order
+dmv_bg_2021_acccess_scores_hd <- dmv_bg_2021_acccess_scores_hd %>% dplyr::select("geoid","region_type", region_name = "HealthDistrict", "measure", "value", "year", "measure_type")
+
+```
+
+# Combine measures of Block groups + Tracts + County + Health Districts
+```{r}
+va_bg_2021_access_scores_ped <- rbind(dmv_bg_2021_acccess_scores_bg, 
+                                    dmv_bg_2021_acccess_scores_tract,
+                                    dmv_bg_2021_acccess_scores_county, 
+                                    dmv_bg_2021_acccess_scores_hd)
+
+#change one name
+va_bg_2021_access_scores_ped$measure <- ifelse(va_bg_2021_access_scores_ped$measure=='ped_pop', 'ped_pop_cnt' , va_bg_2021_access_scores_ped$measure)
+```
+
+
+# Save information in Working directory and PgAdmin
+```{r}
+
+write.csv(va_bg_2021_access_scores_ped, "va_hdcttrbg_webmd_2021_access_scores_pediatric.csv", row.names = FALSE )
+
+```
+
