@@ -10972,6 +10972,23 @@
         "type": "float",
         "unit": ""
     },
+    "gini_index": {
+        "category": "Financial Well Being",
+        "equity_category": "",
+        "long_description": "The Gini Index is a summary measure of income inequality. The Gini coefficient incorporates the detailed shares data into a single statistic, which summarizes the dispersion of income across the entire income distribution. The Gini coefficient ranges from 0, indicating perfect equality (where everyone receives an equal share), to 1, perfect inequality (where only one recipient or group of recipients receives all the income). The Gini is based on the difference between the Lorenz curve (the observed cumulative income distribution) and the notion of a perfectly equal income distribution.",
+        "long_name": "Income Inequality (Gini Index)",
+        "short_description": "The Gini Index is a summary measure of income inequality.",
+        "short_name": "Income Inequality (Gini Index)",
+        "sources": [
+            {
+                "date_accessed": "2023",
+                "location": "Table B19083",
+                "name": "U.S. Census American Community Survey"
+            }
+        ],
+        "statement": "Income Inequality (Gini Index) in {features.name} is {value}.",
+        "type": ""
+    },
     "greenchiles_ecdf_idx": {
         "category": "Nutrition and Food Security",
         "data_type": "numeric",
@@ -11452,6 +11469,27 @@
         ],
         "statement": "",
         "type": "count",
+        "unit": ""
+    },
+    "job_participate_rate": {
+        "category": "Employment/Workforce Development",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "long_description": "The percentage of individuals 16-64 years of age in the active labor force. The job particpation rate is often used by economists as an indicator of economic development and growth.",
+        "long_name": "Job Participation Pecentage",
+        "measure_type": "percent",
+        "short_description": "The percentage of individuals 16-64 years of age in the active labor force.",
+        "short_name": "Job Participation Pecentage",
+        "sources": [
+            {
+                "date_accessed": "2023",
+                "location": "Table B23025",
+                "name": "American Community Survey",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "{value} of the population in {features.name} is participating in the civilian job force.",
+        "type": "percent",
         "unit": ""
     },
     "job_participation_indicator": {
@@ -15198,7 +15236,7 @@
         "equity_category": "Availability",
         "full_name": "access_scores_urgent:urgent_cnt",
         "layer": {
-            "source": "https://raw.githubusercontent.com/uva-bi-sdad/dc.hifld.urgent/master/data/points_2022.geojson"
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.health_dev/Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/urgent_care_points_2022.geojson"
         },
         "long_description": "Count of urgent care facilities based on facility locations. Location data was collected from Google Maps.",
         "long_name": "Availability of urgent care by count",
@@ -15224,7 +15262,7 @@
         "equity_category": "Availability",
         "full_name": "access_scores_urgent:urgent_near_10_median",
         "layer": {
-            "source": "https://raw.githubusercontent.com/uva-bi-sdad/dc.hifld.urgent/master/data/points_2022.geojson"
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.health_dev/Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/urgent_care_points_2022.geojson"
         },
         "long_description": "Median drive time in minutes to the ten closest urgent care facilities. Facility location data were collected from Google Maps. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
         "long_name": "Urgent care availability by median drive time to the ten closest facilities in minutes",

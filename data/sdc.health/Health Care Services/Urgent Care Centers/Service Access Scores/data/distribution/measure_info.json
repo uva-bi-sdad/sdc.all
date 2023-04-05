@@ -19,7 +19,7 @@
             }
         ],
         "layer":{
-            "source":"https://raw.githubusercontent.com/uva-bi-sdad/dc.hifld.urgent/master/data/points_2022.geojson"
+            "source":"https://raw.githubusercontent.com/uva-bi-sdad/sdc.health_dev/Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/urgent_care_points_2022.geojson"
         },
         "unit":"",
         "data_type":"numeric",
@@ -45,7 +45,7 @@
             }
         ],
         "layer":{
-            "source":"https://raw.githubusercontent.com/uva-bi-sdad/dc.hifld.urgent/master/data/points_2022.geojson"
+            "source":"https://raw.githubusercontent.com/uva-bi-sdad/sdc.health_dev/Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/urgent_care_points_2022.geojson"
         },
         "unit":"",
         "data_type":"numeric",

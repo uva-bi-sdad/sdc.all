@@ -30,10 +30,14 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_material_deprivation_index.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_consumer_opportunity_profile.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Substance Abuse/Drug Overdose ER Visits/data/distribution/va_hdct_vdh_2015_2021_drug_overdose_ed_visits.csv.xz",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Mental Health/Service Access Scores/data/distribution/dmv_cttrbg_samhsa_2021_access_scores_mental.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Mental Health/Service Access Scores/data/distribution/va_hdcttrbgca_samhsa_2021_access_scores_mental.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Physicians/Pediatric/Service Access Scores/data/distribution/dmv_cttrbg_webmd_2021_access_scores_pediatrics.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Physicians/Pediatric/Service Access Scores/data/distribution/va_hdcttrbgca_webmd_2021_access_scores_pediatrics.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Physicians/OB-GYN/Service Access Scores/data/distribution/dmv_cttrbg_webmd_2021_access_scores_obgyn.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Physicians/OB-GYN/Service Access Scores/data/distribution/va_hdcttrbgca_webmd_2021_access_scores_obgyn.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Physicians/Primary Care/Service Access Scores/data/distribution/va_hdcttrbgca_webmd_2021_access_scores_primcare.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Physicians/Primary Care/Service Access Scores/data/distribution/dmv_cttrbg_webmd_2021_acccess_scores_primcare.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/ncr_bgtrct_gmap_2022_access_scores_urgent_care_centers.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2022_access_scores_hospitals.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2021_access_scores_hospitals.csv",
@@ -44,19 +48,22 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2018_access_scores_hospitals.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2016_access_scores_hospitals.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/data/distribution/ncr_bgtrct_2015_access_scores_hospitals.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Drug and Rehab/Service Catchment Scores/data/distribution/dmv_cttrbg_samhsa_2021_access_scores_substance.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Drug and Rehab/Service Catchment Scores/data/distribution/va_hdcttrbgca_samhsa_2021_access_scores_substance.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Dentists/Service Catchment Scores/data/distribution/dmv_cttrbg_webmd_2021_acccess_scores_dentists.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Dentists/Service Catchment Scores/data/distribution/va_hdcttrbgca_webmd_2021_access_scores_dentists.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/PCNA Measures/Check-up and Dental Visits/data/distribution/va_ct_brfss_2018_percent_annual_dental_visit.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/PCNA Measures/Check-up and Dental Visits/data/distribution/va_ct_brfss_2019_percent_annual_checkup.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/PCNA Measures/Check-up and Dental Visits/data/distribution/va_tr_brfss_2019_percent_annual_checkup.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/PCNA Measures/Check-up and Dental Visits/data/distribution/va_tr_brfss_2018_percent_annual_dental_visit.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/EMS/Service Catchment Scores/data/distribution/va_hdcttrbgca_hifld_2021_access_scores_ems.csv",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/EMS/Service Catchment Scores/data/distribution/dmv_cttrbg_hifld_2021_access_scores_ems.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Health Professionals/VA Graduates/data/distribution/va_hd_schev_2016_2019_health_degrees_awarded.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Health Professionals/VA Graduates/data/distribution/va_ahec_schev_2016_2019_health_degrees_awarded.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/Health Professionals/VA Graduates/data/distribution/va_ct_schev_2016_2019_health_degrees_awarded.csv"
   ],
-  "count": 137,
-  "utc_audited": "2023-03-29 18:17:59",
+  "count": 193,
+  "utc_audited": "2023-04-04 21:31:40",
   "data": [
     {
       "name": "ncr_trct_sdad_2015_2019_brfss_sae.csv.xz",
@@ -473,6 +480,12 @@
       "size": 12
     },
     {
+      "name": "dmv_cttrbg_samhsa_2021_access_scores_mental.csv",
+      "path": "Health Care Services/Mental Health/Service Access Scores/data/distribution/dmv_cttrbg_samhsa_2021_access_scores_mental.csv",
+      "md5": "5bb32b1365b1a9e312833b6b605bea5c",
+      "size": 3952324
+    },
+    {
       "name": "va_hdcttrbgca_samhsa_2021_access_scores_mental.csv",
       "path": "Health Care Services/Mental Health/Service Access Scores/data/distribution/va_hdcttrbgca_samhsa_2021_access_scores_mental.csv",
       "md5": "775a7a30294c4ff5b5572bcf85c49341",
@@ -497,6 +510,36 @@
       "size": 12
     },
     {
+      "name": "2.catchment_scores_mental_dmv.Rmd",
+      "path": "Health Care Services/Mental Health/Service Access Scores/code/distribution/2.catchment_scores_mental_dmv.Rmd",
+      "md5": "cd64782447ea2310043c84f1da38dead",
+      "size": 14047
+    },
+    {
+      "name": "1.prepare_data_mental_va.Rmd",
+      "path": "Health Care Services/Mental Health/Service Access Scores/code/distribution/1.prepare_data_mental_va.Rmd",
+      "md5": "169fc37b646b7a6017284536ca192398",
+      "size": 12131
+    },
+    {
+      "name": "2.catchment_scores_mental_va.Rmd",
+      "path": "Health Care Services/Mental Health/Service Access Scores/code/distribution/2.catchment_scores_mental_va.Rmd",
+      "md5": "1de76c85d895c35e55f81d3680f4385a",
+      "size": 19315
+    },
+    {
+      "name": "1.prepare_data_mental_dmv.Rmd",
+      "path": "Health Care Services/Mental Health/Service Access Scores/code/distribution/1.prepare_data_mental_dmv.Rmd",
+      "md5": "fc14587eba3cfeb2654e32e5650dbfd1",
+      "size": 7045
+    },
+    {
+      "name": "dmv_cttrbg_webmd_2021_access_scores_pediatrics.csv",
+      "path": "Health Care Services/Physicians/Pediatric/Service Access Scores/data/distribution/dmv_cttrbg_webmd_2021_access_scores_pediatrics.csv",
+      "md5": "9256b220c3f46c7f0f7e267d8daa65d0",
+      "size": 3930307
+    },
+    {
       "name": "measure_info.json",
       "path": "Health Care Services/Physicians/Pediatric/Service Access Scores/data/distribution/measure_info.json",
       "md5": "b0a9635623b4d84699be8f61000a073d",
@@ -515,10 +558,40 @@
       "size": 12
     },
     {
+      "name": "1.prepare_data_ped_va.Rmd",
+      "path": "Health Care Services/Physicians/Pediatric/Service Access Scores/code/distribution/1.prepare_data_ped_va.Rmd",
+      "md5": "d85711d17f86e85fc29b5578a70becb4",
+      "size": 15976
+    },
+    {
       "name": "temp",
       "path": "Health Care Services/Physicians/Pediatric/Service Access Scores/code/distribution/temp",
       "md5": "178164f81917b8e87073295a635588de",
       "size": 12
+    },
+    {
+      "name": "2.catchment_scores_ped_va.Rmd",
+      "path": "Health Care Services/Physicians/Pediatric/Service Access Scores/code/distribution/2.catchment_scores_ped_va.Rmd",
+      "md5": "b9386bd99a2ac3732b2cfb18961e9eee",
+      "size": 18786
+    },
+    {
+      "name": "2.catchment_scores_ped_dmv.Rmd",
+      "path": "Health Care Services/Physicians/Pediatric/Service Access Scores/code/distribution/2.catchment_scores_ped_dmv.Rmd",
+      "md5": "6be3e755d35295117e46ed722abfb588",
+      "size": 14708
+    },
+    {
+      "name": "1.prepare_data_ped_dmv.Rmd",
+      "path": "Health Care Services/Physicians/Pediatric/Service Access Scores/code/distribution/1.prepare_data_ped_dmv.Rmd",
+      "md5": "e1c9d605f77949fd53bd6434b0e7d6af",
+      "size": 11904
+    },
+    {
+      "name": "dmv_cttrbg_webmd_2021_access_scores_obgyn.csv",
+      "path": "Health Care Services/Physicians/OB-GYN/Service Access Scores/data/distribution/dmv_cttrbg_webmd_2021_access_scores_obgyn.csv",
+      "md5": "693e71bc9ed99d60f45124eaf5a96199",
+      "size": 3980229
     },
     {
       "name": "measure_info.json",
@@ -539,10 +612,34 @@
       "size": 12
     },
     {
+      "name": "2.catchment_scores_obgyn_dmv.Rmd",
+      "path": "Health Care Services/Physicians/OB-GYN/Service Access Scores/code/distribution/2.catchment_scores_obgyn_dmv.Rmd",
+      "md5": "02e2d516d21306cb6bc924cd6ae006d5",
+      "size": 14699
+    },
+    {
       "name": "temp",
       "path": "Health Care Services/Physicians/OB-GYN/Service Access Scores/code/distribution/temp",
       "md5": "178164f81917b8e87073295a635588de",
       "size": 12
+    },
+    {
+      "name": "2.catchment_scores_obgyn_va.Rmd",
+      "path": "Health Care Services/Physicians/OB-GYN/Service Access Scores/code/distribution/2.catchment_scores_obgyn_va.Rmd",
+      "md5": "595ca3af9c523934142d8e184a54b385",
+      "size": 18902
+    },
+    {
+      "name": "1.prepare_data_obgyn_va.Rmd",
+      "path": "Health Care Services/Physicians/OB-GYN/Service Access Scores/code/distribution/1.prepare_data_obgyn_va.Rmd",
+      "md5": "91ecb9dec451a54aee99370e923de3a8",
+      "size": 23021
+    },
+    {
+      "name": "1.prepare_data_obgyn_dmv.Rmd",
+      "path": "Health Care Services/Physicians/OB-GYN/Service Access Scores/code/distribution/1.prepare_data_obgyn_dmv.Rmd",
+      "md5": "ca45c4f4947f504758498a58248d962e",
+      "size": 8169
     },
     {
       "name": "va_hdcttrbgca_webmd_2021_access_scores_primcare.csv",
@@ -557,6 +654,12 @@
       "size": 8487
     },
     {
+      "name": "dmv_cttrbg_webmd_2021_acccess_scores_primcare.csv",
+      "path": "Health Care Services/Physicians/Primary Care/Service Access Scores/data/distribution/dmv_cttrbg_webmd_2021_acccess_scores_primcare.csv",
+      "md5": "d7316eb05065778d469811f560e2c2e1",
+      "size": 4065206
+    },
+    {
       "name": "temp",
       "path": "Health Care Services/Physicians/Primary Care/Service Access Scores/docs/distribution/temp",
       "md5": "178164f81917b8e87073295a635588de",
@@ -569,10 +672,34 @@
       "size": 12
     },
     {
+      "name": "2.catchment_scores_primcare_dmv.Rmd",
+      "path": "Health Care Services/Physicians/Primary Care/Service Access Scores/code/distribution/2.catchment_scores_primcare_dmv.Rmd",
+      "md5": "17953ca63836b6764bc878f700cefb0c",
+      "size": 15050
+    },
+    {
+      "name": "1.prepare_data_primcare_dmv.Rmd",
+      "path": "Health Care Services/Physicians/Primary Care/Service Access Scores/code/distribution/1.prepare_data_primcare_dmv.Rmd",
+      "md5": "a79eb64c0b5ce620495831179aab4e2a",
+      "size": 8857
+    },
+    {
+      "name": "2.catchment_scores_primcare_va.Rmd",
+      "path": "Health Care Services/Physicians/Primary Care/Service Access Scores/code/distribution/2.catchment_scores_primcare_va.Rmd",
+      "md5": "2035b6900599e6af89fac871d31f1952",
+      "size": 19105
+    },
+    {
       "name": "ncr_bgtrct_gmap_2022_access_scores_urgent_care_centers.csv",
       "path": "Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/ncr_bgtrct_gmap_2022_access_scores_urgent_care_centers.csv",
       "md5": "a69d40a9f509336165699947c9c3d0c5",
       "size": 7764683
+    },
+    {
+      "name": "urgent_care_points_2022.geojson",
+      "path": "Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/urgent_care_points_2022.geojson",
+      "md5": "40c901f5fe67710569270cc54c1bcf7d",
+      "size": 243690
     },
     {
       "name": "measure_info.json",
@@ -591,6 +718,30 @@
       "path": "Health Care Services/Urgent Care Centers/Service Access Scores/code/distribution/temp",
       "md5": "178164f81917b8e87073295a635588de",
       "size": 12
+    },
+    {
+      "name": "1.prepare_data_urgent_dmv.Rmd",
+      "path": "Health Care Services/Urgent Care Centers/Service Access Scores/code/distribution/1.prepare_data_urgent_dmv.Rmd",
+      "md5": "1f16509d63e7dead17054abd6d75beed",
+      "size": 14416
+    },
+    {
+      "name": "2.catchment_scores_urgent_va.Rmd",
+      "path": "Health Care Services/Urgent Care Centers/Service Access Scores/code/distribution/2.catchment_scores_urgent_va.Rmd",
+      "md5": "68e97c992ddfa30372ab097710f9fa8e",
+      "size": 18865
+    },
+    {
+      "name": "2.catchment_scores_urgent_dmv.Rmd",
+      "path": "Health Care Services/Urgent Care Centers/Service Access Scores/code/distribution/2.catchment_scores_urgent_dmv.Rmd",
+      "md5": "67ea31280642f0b573e5d77b394e2ad1",
+      "size": 16829
+    },
+    {
+      "name": "1.prepare_data_urgent_va.Rmd",
+      "path": "Health Care Services/Urgent Care Centers/Service Access Scores/code/distribution/1.prepare_data_urgent_va.Rmd",
+      "md5": "b804a678ec16b1a346fba2da83d659f1",
+      "size": 11628
     },
     {
       "name": "ncr_bgtrct_2022_access_scores_hospitals.csv",
@@ -659,16 +810,130 @@
       "size": 12
     },
     {
+      "name": "2.4.catchment_scores_hosp_dmv_2018.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/2.4.catchment_scores_hosp_dmv_2018.Rmd",
+      "md5": "ec4922bc5faf9ad6cc7a98a1236bc069",
+      "size": 16185
+    },
+    {
+      "name": "2.3.catchment_scores_hosp_dmv_2017.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/2.3.catchment_scores_hosp_dmv_2017.Rmd",
+      "md5": "f3c9769f3c2d195a073c291cd6f121ea",
+      "size": 16185
+    },
+    {
       "name": "temp",
       "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/temp",
       "md5": "178164f81917b8e87073295a635588de",
       "size": 12
     },
     {
+      "name": "1.5.prepare_data_hosp_dmv_2019.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/1.5.prepare_data_hosp_dmv_2019.Rmd",
+      "md5": "39014cff585b88894ef0609dc03f8ef5",
+      "size": 10657
+    },
+    {
+      "name": "2.6.catchment_scores_hosp_dmv_2020.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/2.6.catchment_scores_hosp_dmv_2020.Rmd",
+      "md5": "51837af378a493456aa07d383bff8c32",
+      "size": 16185
+    },
+    {
+      "name": "1.2.prepare_data_hosp_dmv_2016.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/1.2.prepare_data_hosp_dmv_2016.Rmd",
+      "md5": "cbf8e2e66a6b9418eaf0f44023392564",
+      "size": 10648
+    },
+    {
+      "name": "1.1.prepare_data_hosp_dmv_2015.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/1.1.prepare_data_hosp_dmv_2015.Rmd",
+      "md5": "73d6c9084889e9361faa760f7f6877a8",
+      "size": 10641
+    },
+    {
+      "name": "2.1.catchment_scores_hosp_dmv_2015.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/2.1.catchment_scores_hosp_dmv_2015.Rmd",
+      "md5": "1f7abe7083f69d3df7957963b495dc85",
+      "size": 16183
+    },
+    {
+      "name": "1.4.prepare_data_hosp_dmv_2018.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/1.4.prepare_data_hosp_dmv_2018.Rmd",
+      "md5": "2db0ae96210aec7fb9b5f9dd14dafe00",
+      "size": 10657
+    },
+    {
+      "name": "2.8.catchment_scores_hosp_dmv_2022.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/2.8.catchment_scores_hosp_dmv_2022.Rmd",
+      "md5": "593cb1139f6e38c5ddcbf7b1a029ccde",
+      "size": 16185
+    },
+    {
+      "name": "1.prepare_data_hosp_va.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/1.prepare_data_hosp_va.Rmd",
+      "md5": "e2c0896ec24dbc21d603199a5353cfd8",
+      "size": 11970
+    },
+    {
+      "name": "1.3.prepare_data_hosp_dmv_2017.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/1.3.prepare_data_hosp_dmv_2017.Rmd",
+      "md5": "5b2d6bcd9ea2acae77914a661e17f7d1",
+      "size": 10648
+    },
+    {
+      "name": "2.catchment_scores_hosp_va.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/2.catchment_scores_hosp_va.Rmd",
+      "md5": "36777f7f72c2a26dbc0ba0fb43da0e60",
+      "size": 18761
+    },
+    {
+      "name": "1.7.prepare_data_hosp_dmv_2021.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/1.7.prepare_data_hosp_dmv_2021.Rmd",
+      "md5": "d4120b56beedca1c608c94cfad27905e",
+      "size": 15175
+    },
+    {
+      "name": "2.7.catchment_scores_hosp_dmv_2021.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/2.7.catchment_scores_hosp_dmv_2021.Rmd",
+      "md5": "10c2af8de630d877dbb94053450c282a",
+      "size": 15817
+    },
+    {
+      "name": "2.5.catchment_scores_hosp_dmv_2019.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/2.5.catchment_scores_hosp_dmv_2019.Rmd",
+      "md5": "eb8e46d620fd4b143ba839406df16c7d",
+      "size": 16185
+    },
+    {
+      "name": "1.6.prepare_data_hosp_dmv_2020.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/1.6.prepare_data_hosp_dmv_2020.Rmd",
+      "md5": "7303846ac906c98fd2196669c488f3a1",
+      "size": 10657
+    },
+    {
+      "name": "1.8.prepare_data_hosp_dmv_2022.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/1.8.prepare_data_hosp_dmv_2022.Rmd",
+      "md5": "6b54ef7471ead271238e63e78d7ddeaf",
+      "size": 10622
+    },
+    {
+      "name": "2.2.catchment_scores_hosp_dmv_2016.Rmd",
+      "path": "Health Care Services/Hospitals and Emergency Rooms/Service Access Scores/code/distribution/2.2.catchment_scores_hosp_dmv_2016.Rmd",
+      "md5": "d7b2828d80c4a348af40a957ec1dfb2d",
+      "size": 16158
+    },
+    {
       "name": "measure_info.json",
       "path": "Health Care Services/Drug and Rehab/Service Catchment Scores/data/distribution/measure_info.json",
       "md5": "69fdd6b0d05fd5d084aa3de8b754587e",
       "size": 7248
+    },
+    {
+      "name": "dmv_cttrbg_samhsa_2021_access_scores_substance.csv",
+      "path": "Health Care Services/Drug and Rehab/Service Catchment Scores/data/distribution/dmv_cttrbg_samhsa_2021_access_scores_substance.csv",
+      "md5": "b98d1083185ec774d944200e35b085d3",
+      "size": 3969303
     },
     {
       "name": "va_hdcttrbgca_samhsa_2021_access_scores_substance.csv",
@@ -687,6 +952,36 @@
       "path": "Health Care Services/Drug and Rehab/Service Catchment Scores/code/distribution/temp",
       "md5": "178164f81917b8e87073295a635588de",
       "size": 12
+    },
+    {
+      "name": "1.prepare_data_subs_dmv.Rmd",
+      "path": "Health Care Services/Drug and Rehab/Service Catchment Scores/code/distribution/1.prepare_data_subs_dmv.Rmd",
+      "md5": "ec286b29a68633768ae449dd5aab6312",
+      "size": 7057
+    },
+    {
+      "name": "2.catchment_scores_subs_va.Rmd",
+      "path": "Health Care Services/Drug and Rehab/Service Catchment Scores/code/distribution/2.catchment_scores_subs_va.Rmd",
+      "md5": "c74dc5c0c524a5025599700377f4a302",
+      "size": 19519
+    },
+    {
+      "name": "2.catchment_scores_subs_dmv.Rmd",
+      "path": "Health Care Services/Drug and Rehab/Service Catchment Scores/code/distribution/2.catchment_scores_subs_dmv.Rmd",
+      "md5": "59a505f7dfcee8ee45d79fc16863c787",
+      "size": 14861
+    },
+    {
+      "name": "1.prepare_data_substance_va.Rmd",
+      "path": "Health Care Services/Drug and Rehab/Service Catchment Scores/code/distribution/1.prepare_data_substance_va.Rmd",
+      "md5": "0a9fcd5fe592aa68be5f590a6cf14484",
+      "size": 11356
+    },
+    {
+      "name": "dmv_cttrbg_webmd_2021_acccess_scores_dentists.csv",
+      "path": "Health Care Services/Dentists/Service Catchment Scores/data/distribution/dmv_cttrbg_webmd_2021_acccess_scores_dentists.csv",
+      "md5": "7a887560442e0da4418135b73a87e967",
+      "size": 3923165
     },
     {
       "name": "va_hdcttrbgca_webmd_2021_access_scores_dentists.csv",
@@ -711,6 +1006,24 @@
       "path": "Health Care Services/Dentists/Service Catchment Scores/code/distribution/temp",
       "md5": "178164f81917b8e87073295a635588de",
       "size": 12
+    },
+    {
+      "name": "2.catchment_scores_dent_dmv.Rmd",
+      "path": "Health Care Services/Dentists/Service Catchment Scores/code/distribution/2.catchment_scores_dent_dmv.Rmd",
+      "md5": "797935190e3e9fb93fceb1de9ffc2204",
+      "size": 14819
+    },
+    {
+      "name": "2.catchment_scores_dent_va.Rmd",
+      "path": "Health Care Services/Dentists/Service Catchment Scores/code/distribution/2.catchment_scores_dent_va.Rmd",
+      "md5": "09170eef274c0b52863188d231277c29",
+      "size": 18717
+    },
+    {
+      "name": "1.prepare_data_dent_dmv.Rmd",
+      "path": "Health Care Services/Dentists/Service Catchment Scores/code/distribution/1.prepare_data_dent_dmv.Rmd",
+      "md5": "98b154b4aa9c375d13e606f124348ac0",
+      "size": 9505
     },
     {
       "name": "va_ct_brfss_2018_percent_annual_dental_visit.csv",
@@ -833,6 +1146,12 @@
       "size": 7081
     },
     {
+      "name": "dmv_cttrbg_hifld_2021_access_scores_ems.csv",
+      "path": "Health Care Services/EMS/Service Catchment Scores/data/distribution/dmv_cttrbg_hifld_2021_access_scores_ems.csv",
+      "md5": "456766946b10785ac5f7c2891a92fdcc",
+      "size": 3857592
+    },
+    {
       "name": "temp",
       "path": "Health Care Services/EMS/Service Catchment Scores/docs/distribution/temp",
       "md5": "178164f81917b8e87073295a635588de",
@@ -843,6 +1162,30 @@
       "path": "Health Care Services/EMS/Service Catchment Scores/code/distribution/temp",
       "md5": "178164f81917b8e87073295a635588de",
       "size": 12
+    },
+    {
+      "name": "1.prepare_data_ems_dmv.Rmd",
+      "path": "Health Care Services/EMS/Service Catchment Scores/code/distribution/1.prepare_data_ems_dmv.Rmd",
+      "md5": "fbf0e98bdf0b7c3a3acf91dd948f08cd",
+      "size": 7634
+    },
+    {
+      "name": "2.catchment_scores_ems_va.Rmd",
+      "path": "Health Care Services/EMS/Service Catchment Scores/code/distribution/2.catchment_scores_ems_va.Rmd",
+      "md5": "f9ae0eae213bc5d20ff5efed3101cf1e",
+      "size": 18471
+    },
+    {
+      "name": "2.catchment_scores_ems_dmv.Rmd",
+      "path": "Health Care Services/EMS/Service Catchment Scores/code/distribution/2.catchment_scores_ems_dmv.Rmd",
+      "md5": "647ff2ec8cf20ab2534d3659c9c77ec8",
+      "size": 14492
+    },
+    {
+      "name": "1.prepare_data_ems_va.Rmd",
+      "path": "Health Care Services/EMS/Service Catchment Scores/code/distribution/1.prepare_data_ems_va.Rmd",
+      "md5": "a4a254ae7c2fc7b0e15bb73abde6f11f",
+      "size": 11608
     },
     {
       "name": "va_hd_schev_2016_2019_health_degrees_awarded.csv",
