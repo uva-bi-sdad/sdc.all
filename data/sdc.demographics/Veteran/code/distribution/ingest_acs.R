@@ -90,7 +90,7 @@ for (state in states){
 
 # 1. Veteran distribution for VA
 acs_data_va <- acs_data_va_wd %>%
-  mutate(pop_veteran = num_vetE, perc_veteran = num_vetE/vet_denomE)%>%
+  mutate(pop_veteran = num_vetE, perc_veteran = 100*num_vetE/vet_denomE)%>%
   dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,pop_veteran,perc_veteran) %>%
   gather(measure, value, -c(geoid, region_name, region_type, year)) %>%
   select(geoid,region_name,region_type,year,measure,value) %>%
@@ -100,9 +100,9 @@ acs_data_va <- acs_data_va_wd %>%
     MOE='')
 
 
-#2. Veteran distribution afor NCR
+#2. Veteran distribution for NCR
 acs_data_ncr <- acs_data_ncr_wd %>%
-  mutate(pop_veteran = num_vetE, perc_veteran = num_vetE/vet_denomE)%>%
+  mutate(pop_veteran = num_vetE, perc_veteran = 100*num_vetE/vet_denomE)%>%
   dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,pop_veteran,perc_veteran) %>%
   gather(measure, value, -c(geoid, region_name, region_type, year)) %>%
   select(geoid,region_name,region_type,year,measure,value) %>%

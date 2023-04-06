@@ -9819,6 +9819,7 @@
             }
         ],
         "statement": "The average download speed is {value} in {features.name}.",
+        "test_key": "test_value2",
         "type": "internet speed",
         "unit": ""
     },
@@ -9863,6 +9864,7 @@
             }
         ],
         "statement": "The average upload speed is {value} in {features.name}.",
+        "test_key": "test_value2",
         "type": "internet speed",
         "unit": ""
     },
@@ -10577,6 +10579,7 @@
             }
         ],
         "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
+        "test_key": "test_value2",
         "type": "count",
         "unit": ""
     },
@@ -13138,6 +13141,7 @@
             }
         ],
         "statement": "{value} of households in {features.name} have a broadband connection.",
+        "test_key": "test_value2",
         "type": "percent",
         "unit": ""
     },
@@ -13160,6 +13164,7 @@
             }
         ],
         "statement": "{value} of households in {features.name} have a cable, fiber optic, or DSL internet connection.",
+        "test_key": "test_value2",
         "type": "percent",
         "unit": ""
     },
@@ -13182,6 +13187,7 @@
             }
         ],
         "statement": "{value} of households in {features.name} do not have a computer or device.",
+        "test_key": "test_value2",
         "type": "percent",
         "unit": ""
     },
@@ -13204,6 +13210,7 @@
             }
         ],
         "statement": "{value} of households in {features.name} do not have internet access.",
+        "test_key": "test_value2",
         "type": "percent",
         "unit": ""
     },
@@ -13252,6 +13259,7 @@
             }
         ],
         "statement": "The national average internet package costs {value} of the median household income in {features.name}.",
+        "test_key": "test_value2",
         "type": "percent",
         "unit": ""
     },
@@ -13279,6 +13287,7 @@
             }
         ],
         "statement": "Fast internet costs {value} of the median household income in {features.name}.",
+        "test_key": "test_value2",
         "type": "percent",
         "unit": ""
     },
@@ -13306,6 +13315,7 @@
             }
         ],
         "statement": "Good internet costs {value} of the median household income in {features.name}.",
+        "test_key": "test_value2",
         "type": "percent",
         "unit": ""
     },
@@ -13623,6 +13633,7 @@
             }
         ],
         "statement": "{value} of the total population in {features.name} has a fast internet speed.",
+        "test_key": "test_value2",
         "type": "percent",
         "unit": ""
     },
@@ -13644,6 +13655,7 @@
             }
         ],
         "statement": "{value} of the total population in {features.name} has a good internet speed.",
+        "test_key": "test_value2",
         "type": "percent",
         "unit": ""
     },
@@ -13707,6 +13719,7 @@
             }
         ],
         "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
+        "test_key": "test_value2",
         "type": "percent",
         "unit": ""
     },
@@ -13728,6 +13741,7 @@
             }
         ],
         "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
+        "test_key": "test_value2",
         "type": "percent",
         "unit": ""
     },

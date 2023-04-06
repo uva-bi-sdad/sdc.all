@@ -777,9 +777,11 @@ demographics,pop_male,2009,2020,,,X,,X,,,X,,X,,,,,X,,,,,,X,
 demographics,pop_female,2009,2020,,,X,,X,,,X,,X,,,,,X,,,,,,X,
 demographics,perc_male,2009,2020,,,X,,X,,,X,,X,,,,,X,,,,,,X,
 demographics,perc_female,2009,2020,,,X,,X,,,X,,X,,,,,X,,,,,,X,
-demographics,hh_limited_english,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
-demographics,total_hh,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
-demographics,perc_hh_limited_english,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
+demographics,pop_female,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
+demographics,pop_male,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
+demographics,total_pop,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
+demographics,perc_male,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
+demographics,perc_female,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
 demographics,pop_female,2013,2020,,,,,,,,,,,,,,X,,,,,,,,
 demographics,pop_male,2013,2020,,,,,,,,,,,,,,X,,,,,,,,
 demographics,total_pop,2013,2020,,,,,,,,,,,,,,X,,,,,,,,
@@ -794,9 +796,12 @@ demographics,perc_veteran,2013,2020,,,,,,,,,,,,,,X,,,,,,,,
 demographics,hh_limited_english,2013,2020,,,,,,,,,,,,,,X,,,,,,,,
 demographics,total_hh,2013,2020,,,,,,,,,,,,,,X,,,,,,,,
 demographics,perc_hh_limited_english,2013,2020,,,,,,,,,,,,,,X,,,,,,,,
-demographics,hh_limited_english,2016,2020,X,,X,,X,X,,X,,X,,X,,,X,,,,,,X,
+demographics,hh_limited_english,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
+demographics,total_hh,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
+demographics,perc_hh_limited_english,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
 demographics,total_hh,2016,2020,X,,X,,X,X,,X,,X,,X,,,X,,,,,,X,
 demographics,perc_hh_limited_english,2016,2020,X,,X,,X,X,,X,,X,,X,,,X,,,,,,X,
+demographics,hh_limited_english,2016,2020,X,,X,,X,X,,X,,X,,X,,,X,,,,,,X,
 demographics,pop_under_20,2009,2020,,,X,,X,,,X,,X,,,,,X,,,,,,X,
 demographics,pop_20_64,2009,2020,,,X,,X,,,X,,X,,,,,X,,,,,,X,
 demographics,pop_65_plus,2009,2020,,,X,,X,,,X,,X,,,,,X,,,,,,X,
@@ -812,7 +817,6 @@ demographics,perc_pop_65_plus,2013,2020,,,,,,,,,,,,,,X,,,,,,,,
 demographics,pop_20_64,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
 demographics,pop_65_plus,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
 demographics,pop_under_20,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
-demographics,total_pop,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
 demographics,perc_pop_under_20,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
 demographics,perc_pop_20_64,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X
 demographics,perc_pop_65_plus,2013,2019,,,,,,,,,,,,,,,,,X,X,,X,,X

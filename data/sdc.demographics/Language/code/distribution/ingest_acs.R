@@ -95,7 +95,7 @@ for (state in states){
 acs_data_va <- acs_data_va_wd %>%
   mutate(total_hh=total_hhE,
          hh_limited_english = limited_english_spanishE + limited_english_indo_europeE + limited_english_asian_pacificE + limited_english_other_languageE,
-         perc_hh_limited_english = (hh_limited_english)/total_hhE,
+         perc_hh_limited_english = 100*(hh_limited_english)/total_hhE,
          hh_limited_english_MOE = sqrt(sum(limited_english_spanishM^2, limited_english_indo_europeM^2, limited_english_asian_pacificM^2, limited_english_other_languageM^2, na.rm=T)) )%>%
   dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,total_hh,hh_limited_english,perc_hh_limited_english) %>%
   gather(measure, value, -c(geoid, region_name, region_type, year)) %>%
@@ -110,7 +110,7 @@ acs_data_va <- acs_data_va_wd %>%
 acs_data_ncr <- acs_data_ncr_wd %>%
   mutate(total_hh=total_hhE,
          hh_limited_english = limited_english_spanishE + limited_english_indo_europeE + limited_english_asian_pacificE + limited_english_other_languageE,
-         perc_hh_limited_english = (hh_limited_english)/total_hhE,
+         perc_hh_limited_english = 100*(hh_limited_english)/total_hhE,
          hh_limited_english_MOE = sqrt(sum(limited_english_spanishM^2, limited_english_indo_europeM^2, limited_english_asian_pacificM^2, limited_english_other_languageM^2, na.rm=T)) )%>%
   dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,total_hh,hh_limited_english,perc_hh_limited_english) %>%
   gather(measure, value, -c(geoid, region_name, region_type, year)) %>%

@@ -70,13 +70,13 @@ zc_dmg <- merge(zc_pc_map, fairfax_pc_dmg, by.x='parid', by.y='geoid', all.y=T) 
 fairfax_newgeo_dmg <- rbind(hsr_dmg,pd_dmg,sd_dmg,zc_dmg) %>%
   pivot_wider(names_from='measure', values_from='value') %>%
   filter(!is.na(geoid)) %>%
-  mutate(perc_wht_alone = pop_wht_alone/total_race,
-         perc_afr_amer_alone = pop_afr_amer_alone/total_race,
-         perc_native_alone = pop_native_alone/total_race,
-         perc_AAPI = pop_AAPI/total_race,
-         perc_two_or_more = pop_two_or_more/total_race,
-         perc_other = pop_other/total_race,
-         perc_hispanic_or_latino = pop_hispanic_or_latino/pop_eth_tot) %>%
+  mutate(perc_wht_alone = 100*pop_wht_alone/total_race,
+         perc_afr_amer_alone = 100*pop_afr_amer_alone/total_race,
+         perc_native_alone = 100*pop_native_alone/total_race,
+         perc_AAPI = 100*pop_AAPI/total_race,
+         perc_two_or_more = 100*pop_two_or_more/total_race,
+         perc_other = 100*pop_other/total_race,
+         perc_hispanic_or_latino = 100*pop_hispanic_or_latino/pop_eth_tot) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
   mutate(measure_type=case_when(
     grepl('perc',measure)==T ~ "percentage",
@@ -111,7 +111,7 @@ arl_pc_geo <- arl_pc_geo %>% select(parid=geoid, geometry)
 sf::sf_use_s2(FALSE)
 civic_geo <- sf::st_read("https://github.com/uva-bi-sdad/sdc.geographies/blob/7723c7ad25b92a7ae7edb88c17b3c561b521a82b/VA/Local%20Geographies/Arlington%20County/Civic%20Associations/2021/data/distribution/va013_geo_arl_2021_civic_associations.geojson?raw=T")
 
-# coments: for some cases the number of rows can be lower than the number of parcels meaning that the new geography doesn't cover all the parcels
+# comments: for some cases the number of rows can be lower than the number of parcels meaning that the new geography doesn't cover all the parcels
 civic_pc_map <- st_join(civic_geo, arl_pc_geo, join = st_intersects) %>% st_drop_geometry() %>% select(-year)
 
 # estimate the demographics for the new geography. all the 
@@ -122,13 +122,13 @@ civic_dmg <- merge(civic_pc_map, arl_pc_dmg, by.x='parid', by.y='geoid', all.y=T
 arl_newgeo_dmg <- civic_dmg %>%
   pivot_wider(names_from='measure', values_from='value') %>%
   filter(!is.na(geoid)) %>%
-  mutate(perc_wht_alone = pop_wht_alone/total_race,
-         perc_afr_amer_alone = pop_afr_amer_alone/total_race,
-         perc_native_alone = pop_native_alone/total_race,
-         perc_AAPI = pop_AAPI/total_race,
-         perc_two_or_more = pop_two_or_more/total_race,
-         perc_other = pop_other/total_race,
-         perc_hispanic_or_latino = pop_hispanic_or_latino/pop_eth_tot) %>%
+  mutate(perc_wht_alone = 100*pop_wht_alone/total_race,
+         perc_afr_amer_alone = 100*pop_afr_amer_alone/total_race,
+         perc_native_alone = 100*pop_native_alone/total_race,
+         perc_AAPI = 100*pop_AAPI/total_race,
+         perc_two_or_more = 100*pop_two_or_more/total_race,
+         perc_other = 100*pop_other/total_race,
+         perc_hispanic_or_latino = 100*pop_hispanic_or_latino/pop_eth_tot) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
   mutate(measure_type=case_when(
     grepl('perc',measure)==T ~ "percentage",

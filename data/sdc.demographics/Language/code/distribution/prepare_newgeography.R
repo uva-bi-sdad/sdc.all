@@ -70,7 +70,7 @@ zc_dmg <- merge(zc_pc_map, fairfax_pc_dmg, by.x='parid', by.y='geoid', all.y=T) 
 fairfax_newgeo_dmg <- rbind(hsr_dmg,pd_dmg,sd_dmg,zc_dmg) %>%
   pivot_wider(names_from='measure', values_from='value') %>%
   filter(!is.na(geoid)) %>%
-  mutate(perc_hh_limited_english = (hh_limited_english)/total_hh) %>%
+  mutate(perc_hh_limited_english = 100*(hh_limited_english)/total_hh) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
   mutate(measure_type=case_when(
     grepl('perc',measure)==T ~ "percentage",
@@ -116,7 +116,7 @@ civic_dmg <- merge(civic_pc_map, arl_pc_dmg, by.x='parid', by.y='geoid', all.y=T
 arl_newgeo_dmg <- civic_dmg %>%
   pivot_wider(names_from='measure', values_from='value') %>%
   filter(!is.na(geoid)) %>%
-  mutate(perc_hh_limited_english = (hh_limited_english)/total_hh) %>%
+  mutate(perc_hh_limited_english = 100*(hh_limited_english)/total_hh) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
   mutate(measure_type=case_when(
     grepl('perc',measure)==T ~ "percentage",
