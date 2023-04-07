@@ -1,63 +1,70 @@
-# Replicating teh VDH's Health Opportunity Index 
-# https://apps.vdh.virginia.gov/omhhe/hoi/dashboards/counties
-
-# packages
 library(readxl)
-library(dplyr)
-library(tidyverse)
+library(data.table)
 library(sf)
-library(reshape2)
 
-# data from HOI website
-orig_df <- read_excel("Population Health/Health Opportunity Index/data/original/hoi.xlsx")
-df_tracts <- orig_df[,c("County Name", "LHD Name", "STFIPS (CountyHOI)", 
-                        "Ctfips", "Profile Selector")] 
-df_tracts <- df_tracts %>% filter(is.na(`Profile Selector`) == FALSE)
-# assign quintiles
-df_tracts <- df_tracts %>% mutate(
-  quintiles = case_when(
-    `Profile Selector` == "Very Low" ~ 1, 
-    `Profile Selector` == "Low" ~ 2,
-    `Profile Selector` == "Average" ~ 3,
-    `Profile Selector` == "High" ~ 4,
-    `Profile Selector` == "Very High" ~ 5
-  )
-)
-df_tracts["new_id"] <- paste0(df_tracts$Ctfips, "_", df_tracts$quintiles)
-# remove duplicates
-df_tracts_nodups <- df_tracts %>% distinct()
-# check if the census tarct ID is unique
-#f_tracts_unq <- df_tracts_nodups %>% distinct(Ctfips, .keep_all = TRUE) # it is unique
+hoi_2017 <- setDT(read_excel("Population Health/Health Opportunity Index/data/original/hoi.xlsx", sheet = 1))
+hoi_2022 <- setDT(read_excel("Population Health/Health Opportunity Index/data/original/hoi_indexes_quintile_2022.xlsx", sheet = 1))
 
-# rename measures
-out_df <- df_tracts_nodups %>% 
-  rename( "geoid"= "Ctfips",
-          "health_opportunity_indicator" = "quintiles")
-out_df <- out_df[,c("geoid", "health_opportunity_indicator")]
+# 2017
+hoi_2017_sel <-
+  hoi_2017[, .(
+    geoid = Ctfips,
+    measure = "health_opportunity_indicator",
+    measure_type = "index",
+    value = `Profile Selector`,
+    year = "2017",
+    moe = ""
+  )]
+
+hoi_2017_sel[value == "Very Low", value := "1"]
+hoi_2017_sel[value == "Low", value := "2"]
+hoi_2017_sel[value == "Average", value := "3"]
+hoi_2017_sel[value == "High", value := "4"]
+hoi_2017_sel[value == "Very High", value := "5"]
+hoi_2017_sel[, value := as.integer(value)]
+
+hoi_2017_sel <- unique(hoi_2017_sel)
 
 # geographies
-geos_data <- st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Census%20Geographies/Tract/2010/data/distribution/va_geo_census_cb_2010_census_tracts.geojson") %>%
-  select(geoid, region_name, region_type)
+geo_names <- fread("https://raw.githubusercontent.com/uva-bi-sdad/sdc.metadata/master/geographies.csv")
+geo_names <- geo_names[year == "2010", .(geoid, region_name, region_type)]
 
-geos_data$geometry <- NULL
+hoi_2017_sel_mrg <- merge(hoi_2017_sel, geo_names, by = "geoid")
+hoi_2017_sel_mrg <- hoi_2017_sel_mrg[, .(geoid, measure, measure_type, region_name, region_type, value, year, moe)]
 
-# add geographies
-out_df <- left_join(out_df, geos_data, by=c("geoid"))
 
-# long format
-out_long <- melt(out_df,
-                 id.vars=c("geoid", "region_type", "region_name"),
-                 variable.name="measure",
-                 value.name="value"
-)
+# 2022
+hoi_2022_sel <- 
+  hoi_2022[, .(
+    geoid = CT, 
+    measure = "health_opportunity_indicator",
+    measure_type = "index",
+    value = `Composite in Quintiles`,
+    year = "2022",
+    moe = ""
+  )]
 
-# add missing columns
-out_long["year"] <- "2017"
-out_long["measure_type"] <- "index"
-out_long["moe"] <- ""
+hoi_2022_sel[value == "Very Low Opportunity", value := "1"]
+hoi_2022_sel[value == "Low Opportunity", value := "2"]
+hoi_2022_sel[value == "Moderate Opportunity", value := "3"]
+hoi_2022_sel[value == "High Opportunity", value := "4"]
+hoi_2022_sel[value == "Very High Opportunity", value := "5"]
+hoi_2022_sel[, value := as.integer(value)]
 
-# Select final columns
-out_long <- out_long[, c("geoid", "region_name", "region_type", "year", "measure", "value", "measure_type", "moe")]
+hoi_2022_sel <- unique(hoi_2022_sel)
 
-# save the dataset 
-write_csv(out_long, xzfile("Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_health_opportunity_profile.csv.xz", compression = 9))
+# geographies
+geo_names <- fread("https://raw.githubusercontent.com/uva-bi-sdad/sdc.metadata/master/geographies.csv")
+geo_names <- geo_names[year == "2020", .(geoid, region_name, region_type)]
+
+hoi_2022_sel_mrg <- merge(hoi_2022_sel, geo_names, by = "geoid")
+hoi_2022_sel_mrg <- hoi_2022_sel_mrg[, .(geoid, measure, measure_type, region_name, region_type, value, year, moe)]
+
+
+# combine
+hoi_sel <- rbindlist(list(hoi_2017_sel, hoi_2022_sel))
+
+
+
+fwrite(hoi_sel_mrg, "Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_2022_health_opportunity_profile.csv")
+

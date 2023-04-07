@@ -1,15 +1,15 @@
 {
     "perc_income_min_price_100": {
         "category": "Broadband",
-        "measure_table": "dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet",
-        "full_name": "perc_income_on_internet:perc_income_min_price_100",
-        "type": "percent",
-        "short_name": "Percentage of income for fast internet",
-        "long_name": "The minimum price for fast internet (100 MB/s upload) as a percentage of median household income",
-        "short_description": "The minimum price for fast internet (100 MB/s upload) as a percent of median household income",
-        "long_description": "The minimum price for fast internet (100 MB/s upload) as a percentage of median household income.",
-        "statement": "Fast internet costs {value} of the median household income in {features.name}.",
+        "citations": "",
+        "data_type": "numeric",
         "equity_category": "Affordability",
+        "layer": "",
+        "long_description": "The minimum price for fast internet (100 MB/s upload) as a percentage of median household income.",
+        "long_name": "The minimum price for fast internet (100 MB/s upload) as a percentage of median household income",
+        "measure_type": "percent",
+        "short_description": "The minimum price for fast internet (100 MB/s upload) as a percent of median household income",
+        "short_name": "Percentage of income for fast internet",
         "sources": [
             {
                 "name": "American Community Survey",
@@ -22,9 +22,8 @@
                 "url": "https://broadbandnow.com/"
             }
         ],
-        "unit": "",
-        "data_type": "numeric",
-        "measure_type": "percent",
-        "test_key": "test_value2"
+        "statement": "Fast internet costs {value} of the median household income in {features.name}.",
+        "type": "percent",
+        "unit": ""
     }
 }

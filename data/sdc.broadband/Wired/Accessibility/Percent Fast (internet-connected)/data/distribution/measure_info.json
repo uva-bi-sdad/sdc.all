@@ -1,14 +1,15 @@
 {
     "perc_w_int_100_20_using_devices": {
         "category": "Broadband",
-        "measure_table": "dcmdva_hdcttrbg_2019_2021q3_percent_above_threshold",
-        "full_name": "percent_above_threshold:perc_w_int_100_20_using_devices",
-        "short_name": "Percent Fast (internet-connected)",
-        "long_name": "Percent of the Internet-Connected Population with Fast Internet Speed",
-        "short_description": "Percent of the internet-connected population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
-        "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
-        "type": "percent",
+        "citations": "",
+        "data_type": "numeric",
         "equity_category": "Availability",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Percent of the Internet-Connected Population with Fast Internet Speed",
+        "measure_type": "percent",
+        "short_description": "Percent of the internet-connected population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
+        "short_name": "Percent Fast (internet-connected)",
         "sources": [
             {
                 "name": "Ookla",
@@ -16,9 +17,8 @@
                 "url": "https://www.ookla.com/ookla-for-good/open-data"
             }
         ],
-        "unit": "",
-        "data_type": "numeric",
-        "measure_type": "percent",
-        "test_key": "test_value2"
+        "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
+        "type": "percent",
+        "unit": ""
     }
 }

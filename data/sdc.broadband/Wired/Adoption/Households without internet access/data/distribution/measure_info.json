@@ -1,15 +1,15 @@
 {
     "perc_hh_without_internet": {
         "category": "Broadband",
-        "measure_table": "dcmdva_hdcttrbg_2017_2019_broadband_withoutint_compdev",
-        "full_name": "broadband_withoutint_compdev:perc_hh_without_internet",
-        "type": "percent",
-        "short_name": "Households without internet access",
-        "long_name": "Percentage of households without internet access",
-        "short_description": "Percentage of households self-reported to not have internet access at home",
-        "long_description": "Percentage of households self-reported to not have internet access at home. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
-        "statement": "{value} of households in {features.name} do not have internet access.",
+        "citations": "",
+        "data_type": "numeric",
         "equity_category": "Availability",
+        "layer": "",
+        "long_description": "Percentage of households self-reported to not have internet access at home. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
+        "long_name": "Percentage of households without internet access",
+        "measure_type": "percent",
+        "short_description": "Percentage of households self-reported to not have internet access at home",
+        "short_name": "Households without internet access",
         "sources": [
             {
                 "name": "American Community Survey Table B28002",
@@ -17,9 +17,8 @@
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "unit": "",
-        "data_type": "numeric",
-        "measure_type": "percent",
-        "test_key": "test_value2"
+        "statement": "{value} of households in {features.name} do not have internet access.",
+        "type": "percent",
+        "unit": ""
     }
 }

@@ -1,14 +1,15 @@
 {
     "avg_up_using_devices": {
         "category": "Broadband",
-        "measure_table": "dcmdva_hdcttrbg_2019_2021q3_speed_measurements",
-        "full_name": "speed_measurements:avg_up_using_devices",
-        "short_name": "Average Upload Speed",
-        "long_name": "Average Upload Speed",
-        "short_description": "Average upload speed weighted by number of devices.",
-        "statement": "The average upload speed is {value} in {features.name}.",
-        "type": "internet speed",
+        "citations": "",
+        "data_type": "numeric",
         "equity_category": "Availability",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Average Upload Speed",
+        "measure_type": "mean",
+        "short_description": "Average upload speed weighted by number of devices.",
+        "short_name": "Average Upload Speed",
         "sources": [
             {
                 "name": "Ookla",
@@ -16,9 +17,8 @@
                 "url": "https://www.ookla.com/ookla-for-good/open-data"
             }
         ],
-        "unit": "",
-        "data_type": "numeric",
-        "measure_type": "mean",
-        "test_key": "test_value2"
+        "statement": "The average upload speed is {value} in {features.name}.",
+        "type": "internet speed",
+        "unit": ""
     }
 }

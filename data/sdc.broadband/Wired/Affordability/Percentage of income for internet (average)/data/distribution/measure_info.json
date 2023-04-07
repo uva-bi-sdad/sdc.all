@@ -1,15 +1,15 @@
 {
     "perc_income_avg_nat_package": {
         "category": "Broadband",
-        "measure_table": "dcmdva_broadbandnow_acs_sdad_2021_perc_income_on_internet",
-        "full_name": "perc_income_on_internet:perc_income_avg_nat_package",
-        "type": "percent",
-        "short_name": "Percentage of income for internet (average)",
-        "long_name": "The national average price for internet as a percentage of average income",
-        "short_description": "The national average price for internet ($64) as a percentage of median household income",
-        "long_description": "The national average price for internet ($64) as a percentage of median household income.",
-        "statement": "The national average internet package costs {value} of the median household income in {features.name}.",
+        "citations": "",
+        "data_type": "numeric",
         "equity_category": "Affordability",
+        "layer": "",
+        "long_description": "The national average price for internet ($64) as a percentage of median household income.",
+        "long_name": "The national average price for internet as a percentage of average income",
+        "measure_type": "percent",
+        "short_description": "The national average price for internet ($64) as a percentage of median household income",
+        "short_name": "Percentage of income for internet (average)",
         "sources": [
             {
                 "name": "American Community Survey",
@@ -22,9 +22,8 @@
                 "url": "https://broadbandnow.com/"
             }
         ],
-        "unit": "",
-        "data_type": "numeric",
-        "measure_type": "percent",
-        "test_key": "test_value2"
+        "statement": "The national average internet package costs {value} of the median household income in {features.name}.",
+        "type": "percent",
+        "unit": ""
     }
 }
