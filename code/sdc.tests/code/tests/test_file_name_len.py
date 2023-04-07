@@ -42,7 +42,7 @@ def evaluate_folder(max_file_length, dirpath):
 if __name__ == "__main__":
     test = Test(
         __file__,
-        "File name lenght check",
+        "File name length check",
         "Checks whether or not file names are less than a prescribed 100 character limit for accessibility on windows platforms",
     )
 
