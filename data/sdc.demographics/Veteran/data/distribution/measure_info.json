@@ -1,44 +1,46 @@
 {
-    "perc_veteran":{
-        "category":"Demographics",
-        "measure":"perc_veteran",
-        "short_name":"Veteran population",
-        "long_name":"Veteran population (percent)",
-        "short_description":"The Veteran population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "long_description":"The Veteran population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B21001.",
-        "statement":"The Veteran population is {value} in {features.name}.",
-        "equity_category":"Status",
-        "type":"percent",
-        "sources":[
+    "perc_veteran": {
+        "category": "Demographics",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "The Veteran population percent. Based on American Community Survey ACS 2015/2019 5-year estimates Table B21001.",
+        "long_name": "Veteran population (percent)",
+        "measure_type": "percentage",
+        "short_description": "The Veteran population population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Veteran population",
+        "sources": [
             {
-                "name":"American Community Survey Table B01001",
-                "date_accessed":                2021,
-                "url":"https://www.census.gov/programs-surveys/acs.html"
+                "name": "American Community Survey Table B01001",
+                "date_accessed": 2021,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
+        "statement": "The Veteran population is {value} in {features.name}.",
+        "type": "percent",
+        "unit": ""
     },
-    "pop_veteran":{
-        "category":"Demographics",
-        "measure":"pop_veteran",
-        "short_name":"Veteran population",
-        "long_name":"Veteran population (count)",
-        "short_description":"The Veteran population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "long_description":"The Veteran population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B21001.",
-        "statement":"The Veteran population is {value} in {features.name}.",
-        "equity_category":"Status",
-        "type":"count",
-        "sources":[
+    "pop_veteran": {
+        "category": "Demographics",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "The Veteran population. Based on American Community Survey ACS 2015/2019 5-year estimates Table B21001.",
+        "long_name": "Veteran population (count)",
+        "measure_type": "count",
+        "short_description": "The Veteran population population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Veteran population",
+        "sources": [
             {
-                "name":"American Community Survey Table B01001",
-                "date_accessed":                2021,
-                "url":"https://www.census.gov/programs-surveys/acs.html"
+                "name": "American Community Survey Table B01001",
+                "date_accessed": 2021,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
+        "statement": "The Veteran population is {value} in {features.name}.",
+        "type": "count",
+        "unit": ""
     }
 }

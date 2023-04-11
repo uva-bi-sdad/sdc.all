@@ -1,65 +1,68 @@
 {
-    "total_hh":{
-        "category":"Demographics",
-        "measure":"total_hh",
-        "equity_category":"Status",
-        "short_name":"Total count of households",
-        "long_name":"Total count of households",
-        "short_description":"The count of households. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "long_description":"The count of households. Based on American Community Survey ACS 2015/2019 5-year estimates Table C16002.",
-        "statement":"The count of households is {value} in {features.name}.",
-        "type":"count",
-        "sources":[
+    "total_hh": {
+        "category": "Demographics",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "The count of households. Based on American Community Survey ACS 2015/2019 5-year estimates Table C16002.",
+        "long_name": "Total count of households",
+        "measure_type": "count",
+        "short_description": "The count of households. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Total count of households",
+        "sources": [
             {
-                "name":"American Community Survey Table C16002",
-                "date_accessed":                2023,
-                "url":"https://www.census.gov/programs-surveys/acs.html"
+                "name": "American Community Survey Table C16002",
+                "date_accessed": 2023,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
+        "statement": "The count of households is {value} in {features.name}.",
+        "type": "count",
+        "unit": ""
     },
-    "hh_limited_english":{
-        "category":"Demographics",
-        "measure":"hh_limited_english",
-        "equity_category":"Status",
-        "short_name":"Limited English households",
-        "long_name":"Limited English households",
-        "short_description":"The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "long_description":"The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates Table C16002.",
-        "statement":"The count of households with limited English is {value} in {features.name}.",
-        "type":"count",
-        "sources":[
+    "hh_limited_english": {
+        "category": "Demographics",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates Table C16002.",
+        "long_name": "Limited English households",
+        "measure_type": "count",
+        "short_description": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Limited English households",
+        "sources": [
             {
-                "name":"American Community Survey Table C16002",
-                "date_accessed":                2023,
-                "url":"https://www.census.gov/programs-surveys/acs.html"
+                "name": "American Community Survey Table C16002",
+                "date_accessed": 2023,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
+        "statement": "The count of households with limited English is {value} in {features.name}.",
+        "type": "count",
+        "unit": ""
     },
-    "perc_hh_limited_english":{
-        "category":"Demographics",
-        "measure":"perc_hh_limited_english",
-        "equity_category":"Status",
-        "short_name":"Limited English households",
-        "long_name":"Limited English households (percent)",
-        "short_description":"The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "long_description":"The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates Table C16002.",
-        "statement":"The percent of households with limited English is {value} in {features.name}.",
-        "type":"percent",
-        "sources":[
+    "perc_hh_limited_english": {
+        "category": "Demographics",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates Table C16002.",
+        "long_name": "Limited English households (percent)",
+        "measure_type": "percentage",
+        "short_description": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_name": "Limited English households",
+        "sources": [
             {
-                "name":"American Community Survey Table C16002",
-                "date_accessed":                2023,
-                "url":"https://www.census.gov/programs-surveys/acs.html"
+                "name": "American Community Survey Table C16002",
+                "date_accessed": 2023,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
+        "statement": "The percent of households with limited English is {value} in {features.name}.",
+        "type": "percent",
+        "unit": ""
     }
 }

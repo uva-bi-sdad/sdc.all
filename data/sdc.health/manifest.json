@@ -63,8 +63,8 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/PCNA Measures/Check-up and Dental Visits/data/distribution/va_tr_brfss_2018_percent_annual_dental_visit.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/PCNA Measures/Check-up and Dental Visits/data/distribution/va_tr_brfss_2019_percent_annual_checkup.csv"
   ],
-  "count": 195,
-  "utc_audited": "2023-04-06 17:20:14",
+  "count": 194,
+  "utc_audited": "2023-04-06 18:19:31",
   "data": [
     {
       "name": "prepare_population_density.R",
@@ -133,12 +133,6 @@
       "size": 2521
     },
     {
-      "name": "prepare_health_opportunity_2.R",
-      "path": "Population Health/Health Opportunity Index/code/distribution/prepare_health_opportunity_2.R",
-      "md5": "08d489d8cccce3c0c8c9b3de927fc231",
-      "size": 1936
-    },
-    {
       "name": "prepare02.R",
       "path": "Population Health/Health Opportunity Index/code/distribution/prepare02.R",
       "md5": "b0b19e709bd8c2b947e32e233ea1d9d6",
@@ -153,8 +147,8 @@
     {
       "name": "prepare_health_opportunity.R",
       "path": "Population Health/Health Opportunity Index/code/distribution/prepare_health_opportunity.R",
-      "md5": "08d489d8cccce3c0c8c9b3de927fc231",
-      "size": 1936
+      "md5": "a1b1cc0a10f6dee273ce8460e95d3c41",
+      "size": 2349
     },
     {
       "name": "prepare_consumer_opportunity.R",
@@ -303,8 +297,8 @@
     {
       "name": "va_cttr_vdh_2017_2022_health_opportunity_profile.csv",
       "path": "Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_2022_health_opportunity_profile.csv",
-      "md5": "a34fce0336191382c76d49b6e2ccad91",
-      "size": 390426
+      "md5": "a254a8f623a2e06f514eb09216031a3c",
+      "size": 529704
     },
     {
       "name": "va_cttr_vdh_2017_air_quality_index.csv.xz",

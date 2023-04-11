@@ -1,45 +1,46 @@
 {
-    "perc_male":{
-        "category":"Demographics",
-        "measure_table":"va_cttr_2010_2021_perc_male",
-        "full_name":"demographics:perc_male",
-        "measure":"perc_male",
-        "short_name":"Male population",
-        "long_name":"Male population (percent)",
-        "short_description":"The percent of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-        "long_description":"The percent of males in the total population in percent. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
-        "statement":"The male population is {value} in {features.name}.",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
+    "perc_male": {
+        "category": "Demographics",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "The percent of males in the total population in percent. Based on American Community Survey ACS 2010/2021 5-year estimates table S0101.",
+        "long_name": "Male population (percent)",
+        "measure_type": "percentage",
+        "short_description": "The percent of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
+        "short_name": "Male population",
+        "sources": [
             {
-                "name":"American Community Survey Table S0101",
-                "date_accessed":                2022,
-                "url":"https://www.census.gov/programs-surveys/acs.html"
+                "name": "American Community Survey Table S0101",
+                "date_accessed": 2022,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
+        "statement": "The male population is {value} in {features.name}.",
+        "type": "percent",
+        "unit": ""
     },
-    "perc_children_raised_by_GPs":{
-        "category":"Demographics",
-        "measure_table":"va_cttr_2010_2021_perc_children_raised_by_GPs",
-        "full_name":"demographics:perc_children_raised_by_GPs",
-        "measure":"perc_children_raised_by_GPs",
-        "short_name":"Children Raised by Grandparents",
-        "long_names":"Children Raised by Grandparents (percent)",
-        "short_description":"The percent of children in the population being raised by their grandparents. Based on American Community Survey 2010/2021 5-year estimates.",
-        "long_description":"The percent of children in the population being raised by their grandparents. Based on American Community Survey 2010/2021 5-year estimates.",
-        "statement":"The population of children raised by grandparents is {value} in {features.name}.",
-        "type":"percent",
-        "equity_categorty":"State",
-        "sources":[
+    "perc_children_raised_by_GPs": {
+        "category": "Demographics",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "State",
+        "layer": "",
+        "long_description": "The percent of children in the population being raised by their grandparents. Based on American Community Survey 2010/2021 5-year estimates.",
+        "long_name": "Children Raised by Grandparents (percent)",
+        "measure_type": "percent",
+        "short_description": "The percent of children in the population being raised by their grandparents. Based on American Community Survey 2010/2021 5-year estimates.",
+        "short_name": "Children Raised by Grandparents",
+        "sources": [
             {
-                "name":"American Community Survey Table B01003",
-                "date_accessed":2022,
-                "url":"https://www.census.gov/programs-surveys/acs.html"
+                "name": "American Community Survey Table B01003",
+                "date_accessed": 2022,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
-        ]   
+        ],
+        "statement": "The population of children raised by grandparents is {value} in {features.name}.",
+        "type": "percent",
+        "unit": ""
     }
 }

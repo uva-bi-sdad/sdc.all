@@ -1,0 +1,79 @@
+{
+  "name": "sdc.environment_dev",
+  "measure_not_found": [
+    "/home/runner/work/sdc.environment_dev/sdc.environment_dev/climate_change/data/distribution/ncr_tr_fema_2019_natural_hazards_risk_scores.csv",
+    "/home/runner/work/sdc.environment_dev/sdc.environment_dev/environmental_justice/data/distribution/ncr_tr_epa_2022_environmental_justice_screen.csv",
+    "/home/runner/work/sdc.environment_dev/sdc.environment_dev/environmental_justice/data/distribution/ncr_bg_epa_2022_environmental_justice_screen.csv"
+  ],
+  "count": 11,
+  "utc_audited": "2023-03-29 19:52:07",
+  "data": [
+    {
+      "name": "ncr_tr_fema_2019_natural_hazards_risk_scores.csv",
+      "path": "climate_change/data/distribution/ncr_tr_fema_2019_natural_hazards_risk_scores.csv",
+      "md5": "22c3e46f3e7b980acfa8f8c24dbecc3c",
+      "size": 2222658
+    },
+    {
+      "name": "measure_info.json",
+      "path": "climate_change/data/distribution/measure_info.json",
+      "md5": "57751b3afa675611241d24fe8127a57e",
+      "size": 21518
+    },
+    {
+      "name": "README",
+      "path": "climate_change/data/distribution/README",
+      "md5": "0824429bac437ef947771ac01a42a8af",
+      "size": 70
+    },
+    {
+      "name": "temp",
+      "path": "climate_change/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "climate_change/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "ncr_tr_epa_2022_environmental_justice_screen.csv",
+      "path": "environmental_justice/data/distribution/ncr_tr_epa_2022_environmental_justice_screen.csv",
+      "md5": "936d4c44d296363dd128f96c21233a7e",
+      "size": 5104206
+    },
+    {
+      "name": "ncr_bg_epa_2022_environmental_justice_screen.csv",
+      "path": "environmental_justice/data/distribution/ncr_bg_epa_2022_environmental_justice_screen.csv",
+      "md5": "acd6c3f5fbc464cc98dca75abc21124f",
+      "size": 13713074
+    },
+    {
+      "name": "measure_info.json",
+      "path": "environmental_justice/data/distribution/measure_info.json",
+      "md5": "f0e8e1cfb09afd3339988789856f5ccf",
+      "size": 37769
+    },
+    {
+      "name": "README",
+      "path": "environmental_justice/data/distribution/README",
+      "md5": "eb21819b096186398182fa87213bb0ac",
+      "size": 60
+    },
+    {
+      "name": "temp",
+      "path": "environmental_justice/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "temp",
+      "path": "environmental_justice/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    }
+  ],
+  "_references": {}
+}
