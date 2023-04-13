@@ -1,36 +1,54 @@
 {
   "name": "sdc.transportation_dev",
   "measure_not_found": [
-    "/home/runner/work/sdc.transportation_dev/sdc.transportation_dev/Population Characteristics/data/distribution/ncr_cttr_acs_2016_2020_commutes.csv.xz",
     "/home/runner/work/sdc.transportation_dev/sdc.transportation_dev/Population Characteristics/data/distribution/ncr_cttr_acs_2016_2020_vehicles.csv.xz",
-    "/home/runner/work/sdc.transportation_dev/sdc.transportation_dev/Population Characteristics/data/distribution/ncr_cttr_acs_2016_2020_carpools.csv.xz"
+    "/home/runner/work/sdc.transportation_dev/sdc.transportation_dev/Population Characteristics/data/distribution/ncr_cttr_acs_2016_2020_carpools.csv.xz",
+    "/home/runner/work/sdc.transportation_dev/sdc.transportation_dev/Population Characteristics/data/distribution/ncr_cttr_acs_2016_2020_commutes.csv.xz"
   ],
   "count": 18,
-  "utc_audited": "2023-02-23 03:34:40",
+  "utc_audited": "2023-03-15 20:21:36",
   "data": [
+    {
+      "name": "temp",
+      "path": "Infrastructure/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "ingest03.R",
+      "path": "Infrastructure/code/distribution/ingest03.R",
+      "md5": "26c46b6c4ff5af847e70ca98b386d7ee",
+      "size": 1817
+    },
+    {
+      "name": "ingest02.R",
+      "path": "Infrastructure/code/distribution/ingest02.R",
+      "md5": "3ba57667b9427e30ecb6bab567f9b2d1",
+      "size": 209
+    },
+    {
+      "name": "prepare02.R",
+      "path": "Infrastructure/code/distribution/prepare02.R",
+      "md5": "cf1a908ca4d3b5fa4bf74aac38ca3965",
+      "size": 181
+    },
+    {
+      "name": "ingest01.R",
+      "path": "Infrastructure/code/distribution/ingest01.R",
+      "md5": "325a971756f0df184511f556262df3ca",
+      "size": 1099
+    },
+    {
+      "name": "temp",
+      "path": "Infrastructure/data/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
     {
       "name": "temp",
       "path": "Cost/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
-    },
-    {
-      "name": "temp.txt",
-      "path": "Cost/data/distribution/temp.txt",
-      "md5": "89f6938e015533aab3abd5e85ca0312d",
-      "size": 121
-    },
-    {
-      "name": "prepare.R",
-      "path": "Cost/code/distribution/prepare.R",
-      "md5": "0b4a0538fd9ab0deab49f995eed563ca",
-      "size": 76
-    },
-    {
-      "name": "ingest.R",
-      "path": "Cost/code/distribution/ingest.R",
-      "md5": "422c0b76f603a95eebb0544425092be4",
-      "size": 71
     },
     {
       "name": "temp",
@@ -39,22 +57,40 @@
       "size": 0
     },
     {
+      "name": "ingest.R",
+      "path": "Cost/code/distribution/ingest.R",
+      "md5": "422c0b76f603a95eebb0544425092be4",
+      "size": 71
+    },
+    {
+      "name": "prepare.R",
+      "path": "Cost/code/distribution/prepare.R",
+      "md5": "0b4a0538fd9ab0deab49f995eed563ca",
+      "size": 76
+    },
+    {
+      "name": "temp.txt",
+      "path": "Cost/data/distribution/temp.txt",
+      "md5": "89f6938e015533aab3abd5e85ca0312d",
+      "size": 121
+    },
+    {
       "name": "temp",
       "path": "Population Characteristics/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     },
     {
-      "name": "ncr_cttr_acs_2016_2020_commutes.csv.xz",
-      "path": "Population Characteristics/data/distribution/ncr_cttr_acs_2016_2020_commutes.csv.xz",
-      "md5": "006b733a3653ae813a4249a968e78075",
-      "size": 26344
+      "name": "temp",
+      "path": "Population Characteristics/code/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
     },
     {
-      "name": "measure_info.json",
-      "path": "Population Characteristics/data/distribution/measure_info.json",
-      "md5": "959156b6113ee42f14dd44629c82269b",
-      "size": 2211
+      "name": "prepare.R",
+      "path": "Population Characteristics/code/distribution/prepare.R",
+      "md5": "d17a2268b1b942eace5c5bf6261640db",
+      "size": 3133
     },
     {
       "name": "ncr_cttr_acs_2016_2020_vehicles.csv.xz",
@@ -69,52 +105,16 @@
       "size": 28516
     },
     {
-      "name": "prepare.R",
-      "path": "Population Characteristics/code/distribution/prepare.R",
-      "md5": "d17a2268b1b942eace5c5bf6261640db",
-      "size": 3133
+      "name": "measure_info.json",
+      "path": "Population Characteristics/data/distribution/measure_info.json",
+      "md5": "6d53f5c92d121df9c8a5dfbe038511ab",
+      "size": 2679
     },
     {
-      "name": "temp",
-      "path": "Population Characteristics/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Infrastructure/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Infrastructure/data/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "ingest03.R",
-      "path": "Infrastructure/code/distribution/ingest03.R",
-      "md5": "26c46b6c4ff5af847e70ca98b386d7ee",
-      "size": 1817
-    },
-    {
-      "name": "ingest01.R",
-      "path": "Infrastructure/code/distribution/ingest01.R",
-      "md5": "325a971756f0df184511f556262df3ca",
-      "size": 1099
-    },
-    {
-      "name": "prepare02.R",
-      "path": "Infrastructure/code/distribution/prepare02.R",
-      "md5": "cf1a908ca4d3b5fa4bf74aac38ca3965",
-      "size": 181
-    },
-    {
-      "name": "ingest02.R",
-      "path": "Infrastructure/code/distribution/ingest02.R",
-      "md5": "3ba57667b9427e30ecb6bab567f9b2d1",
-      "size": 209
+      "name": "ncr_cttr_acs_2016_2020_commutes.csv.xz",
+      "path": "Population Characteristics/data/distribution/ncr_cttr_acs_2016_2020_commutes.csv.xz",
+      "md5": "006b733a3653ae813a4249a968e78075",
+      "size": 26344
     }
   ],
   "_references": {}

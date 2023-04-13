@@ -1,2102 +1,2312 @@
 {
-    "Accommodation and Food Services_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Accommodation and Food Services",
-        "long_name":"Entry rate in Accommodation and Food Services",
-        "short_description":"Number of new businesses in Accommodation and Food Services (in percent)",
-        "long_description":"Number of new businesses in Accommodation and Food Services (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Accommodation and Food Services_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Accommodation and Food Services",
-        "long_name":"Number of new businesses in Accommodation and Food Services",
-        "short_description":"Number of new businesses in Accommodation and Food Services (count)",
-        "long_description":"Number of new businesses in Accommodation and Food Services (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Accommodation and Food Services_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Accommodation and Food Services",
-        "long_name":"Exit rate in Accommodation and Food Services",
-        "short_description":"Number of businesses leaving the Accommodation and Food Services industry (in percent)",
-        "long_description":"Number of businesses leaving the Accommodation and Food Services industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Accommodation and Food Services_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Accommodation and Food Services industry",
-        "long_name":"Number of businesses leaving Accommodation and Food Services industry",
-        "short_description":"Number of businesses leaving Accommodation and Food Services industry (count)",
-        "long_description":"Number of businesses leaving Accommodation and Food Services industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Accommodation and Food Services_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Accommodation and Food Services",
-        "long_name":"Total number of businesses in Accommodation and Food Services",
-        "short_description":"Total number of businesses in Accommodation and Food Services industry (count)",
-        "long_description":"Total number of businesses in Accommodation and Food Services industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Administrative and Support and Waste Management and Remediation Services_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Administrative and Support and Waste Management and Remediation Services",
-        "long_name":"Entry rate in Administrative and Support and Waste Management and Remediation Services",
-        "short_description":"Number of new businesses in Administrative and Support and Waste Management and Remediation Services (in percent)",
-        "long_description":"Number of new businesses in Administrative and Support and Waste Management and Remediation Services (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Administrative and Support and Waste Management and Remediation Services_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Administrative and Support and Waste Management and Remediation Services",
-        "long_name":"Number of new businesses in Administrative and Support and Waste Management and Remediation Services",
-        "short_description":"Number of new businesses in Administrative and Support and Waste Management and Remediation Services (count)",
-        "long_description":"Number of new businesses in Administrative and Support and Waste Management and Remediation Services (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Administrative and Support and Waste Management and Remediation Services_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Administrative and Support and Waste Management and Remediation Services",
-        "long_name":"Exit rate in Administrative and Support and Waste Management and Remediation Services",
-        "short_description":"Number of businesses leaving the Administrative and Support and Waste Management and Remediation Services industry (in percent)",
-        "long_description":"Number of businesses leaving the Administrative and Support and Waste Management and Remediation Services industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Administrative and Support and Waste Management and Remediation Services_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Administrative and Support and Waste Management and Remediation Services industry",
-        "long_name":"Number of businesses leaving Administrative and Support and Waste Management and Remediation Services industry",
-        "short_description":"Number of businesses leaving Administrative and Support and Waste Management and Remediation Services industry (count)",
-        "long_description":"Number of businesses leaving Administrative and Support and Waste Management and Remediation Services industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Administrative and Support and Waste Management and Remediation Services_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Administrative and Support and Waste Management and Remediation Services",
-        "long_name":"Total number of businesses in Administrative and Support and Waste Management and Remediation Services",
-        "short_description":"Total number of businesses in Administrative and Support and Waste Management and Remediation Services industry (count)",
-        "long_description":"Total number of businesses in Administrative and Support and Waste Management and Remediation Services industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Agriculture, Forestry, Fishing and Hunting_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Agriculture, Forestry, Fishing and Hunting",
-        "long_name":"Entry rate in Agriculture, Forestry, Fishing and Hunting",
-        "short_description":"Number of new businesses in Agriculture, Forestry, Fishing and Hunting (in percent)",
-        "long_description":"Number of new businesses in Agriculture, Forestry, Fishing and Hunting (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Agriculture, Forestry, Fishing and Hunting_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Agriculture, Forestry, Fishing and Hunting",
-        "long_name":"Number of new businesses in Agriculture, Forestry, Fishing and Hunting",
-        "short_description":"Number of new businesses in Agriculture, Forestry, Fishing and Hunting (count)",
-        "long_description":"Number of new businesses in Agriculture, Forestry, Fishing and Hunting (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Agriculture, Forestry, Fishing and Hunting_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Agriculture, Forestry, Fishing and Hunting",
-        "long_name":"Exit rate in Agriculture, Forestry, Fishing and Hunting",
-        "short_description":"Number of businesses leaving the Agriculture, Forestry, Fishing and Hunting industry (in percent)",
-        "long_description":"Number of businesses leaving the Agriculture, Forestry, Fishing and Hunting industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Agriculture, Forestry, Fishing and Hunting_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Agriculture, Forestry, Fishing and Hunting industry",
-        "long_name":"Number of businesses leaving Agriculture, Forestry, Fishing and Hunting industry",
-        "short_description":"Number of businesses leaving Agriculture, Forestry, Fishing and Hunting industry (count)",
-        "long_description":"Number of businesses leaving Agriculture, Forestry, Fishing and Hunting industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Agriculture, Forestry, Fishing and Hunting_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Agriculture, Forestry, Fishing and Hunting",
-        "long_name":"Total number of businesses in Agriculture, Forestry, Fishing and Hunting",
-        "short_description":"Total number of businesses in Agriculture, Forestry, Fishing and Hunting industry (count)",
-        "long_description":"Total number of businesses in Agriculture, Forestry, Fishing and Hunting industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Arts, Entertainment, and Recreation_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Arts, Entertainment, and Recreation",
-        "long_name":"Entry rate in Arts, Entertainment, and Recreation",
-        "short_description":"Number of new businesses in Arts, Entertainment, and Recreation (in percent)",
-        "long_description":"Number of new businesses in Arts, Entertainment, and Recreation (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Arts, Entertainment, and Recreation_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Arts, Entertainment, and Recreation",
-        "long_name":"Number of new businesses in Arts, Entertainment, and Recreation",
-        "short_description":"Number of new businesses in Arts, Entertainment, and Recreation (count)",
-        "long_description":"Number of new businesses in Arts, Entertainment, and Recreation (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Arts, Entertainment, and Recreation_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Arts, Entertainment, and Recreation",
-        "long_name":"Exit rate in Arts, Entertainment, and Recreation",
-        "short_description":"Number of businesses leaving the Arts, Entertainment, and Recreation industry (in percent)",
-        "long_description":"Number of businesses leaving the Arts, Entertainment, and Recreation industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Arts, Entertainment, and Recreation_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Arts, Entertainment, and Recreation industry",
-        "long_name":"Number of businesses leaving Arts, Entertainment, and Recreation industry",
-        "short_description":"Number of businesses leaving Arts, Entertainment, and Recreation industry (count)",
-        "long_description":"Number of businesses leaving Arts, Entertainment, and Recreation industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Arts, Entertainment, and Recreation_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Arts, Entertainment, and Recreation",
-        "long_name":"Total number of businesses in Arts, Entertainment, and Recreation",
-        "short_description":"Total number of businesses in Arts, Entertainment, and Recreation industry (count)",
-        "long_description":"Total number of businesses in Arts, Entertainment, and Recreation industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Construction_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Construction",
-        "long_name":"Entry rate in Construction",
-        "short_description":"Number of new businesses in Construction (in percent)",
-        "long_description":"Number of new businesses in Construction (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Construction_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Construction",
-        "long_name":"Number of new businesses in Construction",
-        "short_description":"Number of new businesses in Construction (count)",
-        "long_description":"Number of new businesses in Construction (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Construction_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Construction",
-        "long_name":"Exit rate in Construction",
-        "short_description":"Number of businesses leaving the Construction industry (in percent)",
-        "long_description":"Number of businesses leaving the Construction industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Construction_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Construction industry",
-        "long_name":"Number of businesses leaving Construction industry",
-        "short_description":"Number of businesses leaving Construction industry (count)",
-        "long_description":"Number of businesses leaving Construction industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Construction_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Construction",
-        "long_name":"Total number of businesses in Construction",
-        "short_description":"Total number of businesses in Construction industry (count)",
-        "long_description":"Total number of businesses in Construction industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Educational Services_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Educational Services",
-        "long_name":"Entry rate in Educational Services",
-        "short_description":"Number of new businesses in Educational Services (in percent)",
-        "long_description":"Number of new businesses in Educational Services (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Educational Services_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Educational Services",
-        "long_name":"Number of new businesses in Educational Services",
-        "short_description":"Number of new businesses in Educational Services (count)",
-        "long_description":"Number of new businesses in Educational Services (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Educational Services_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Educational Services",
-        "long_name":"Exit rate in Educational Services",
-        "short_description":"Number of businesses leaving the Educational Services industry (in percent)",
-        "long_description":"Number of businesses leaving the Educational Services industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Educational Services_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Educational Services industry",
-        "long_name":"Number of businesses leaving Educational Services industry",
-        "short_description":"Number of businesses leaving Educational Services industry (count)",
-        "long_description":"Number of businesses leaving Educational Services industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Educational Services_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Educational Services",
-        "long_name":"Total number of businesses in Educational Services",
-        "short_description":"Total number of businesses in Educational Services industry (count)",
-        "long_description":"Total number of businesses in Educational Services industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Finance and Insurance_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Finance and Insurance",
-        "long_name":"Entry rate in Finance and Insurance",
-        "short_description":"Number of new businesses in Finance and Insurance (in percent)",
-        "long_description":"Number of new businesses in Finance and Insurance (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Finance and Insurance_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Finance and Insurance",
-        "long_name":"Number of new businesses in Finance and Insurance",
-        "short_description":"Number of new businesses in Finance and Insurance (count)",
-        "long_description":"Number of new businesses in Finance and Insurance (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Finance and Insurance_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Finance and Insurance",
-        "long_name":"Exit rate in Finance and Insurance",
-        "short_description":"Number of businesses leaving the Finance and Insurance industry (in percent)",
-        "long_description":"Number of businesses leaving the Finance and Insurance industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Finance and Insurance_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Finance and Insurance industry",
-        "long_name":"Number of businesses leaving Finance and Insurance industry",
-        "short_description":"Number of businesses leaving Finance and Insurance industry (count)",
-        "long_description":"Number of businesses leaving Finance and Insurance industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Finance and Insurance_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Finance and Insurance",
-        "long_name":"Total number of businesses in Finance and Insurance",
-        "short_description":"Total number of businesses in Finance and Insurance industry (count)",
-        "long_description":"Total number of businesses in Finance and Insurance industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Health Care and Social Assistance_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Health Care and Social Assistance",
-        "long_name":"Entry rate in Health Care and Social Assistance",
-        "short_description":"Number of new businesses in Health Care and Social Assistance (in percent)",
-        "long_description":"Number of new businesses in Health Care and Social Assistance (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Health Care and Social Assistance_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Health Care and Social Assistance",
-        "long_name":"Number of new businesses in Health Care and Social Assistance",
-        "short_description":"Number of new businesses in Health Care and Social Assistance (count)",
-        "long_description":"Number of new businesses in Health Care and Social Assistance (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Health Care and Social Assistance_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Health Care and Social Assistance",
-        "long_name":"Exit rate in Health Care and Social Assistance",
-        "short_description":"Number of businesses leaving the Health Care and Social Assistance industry (in percent)",
-        "long_description":"Number of businesses leaving the Health Care and Social Assistance industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Health Care and Social Assistance_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Health Care and Social Assistance industry",
-        "long_name":"Number of businesses leaving Health Care and Social Assistance industry",
-        "short_description":"Number of businesses leaving Health Care and Social Assistance industry (count)",
-        "long_description":"Number of businesses leaving Health Care and Social Assistance industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Health Care and Social Assistance_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Health Care and Social Assistance",
-        "long_name":"Total number of businesses in Health Care and Social Assistance",
-        "short_description":"Total number of businesses in Health Care and Social Assistance industry (count)",
-        "long_description":"Total number of businesses in Health Care and Social Assistance industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Information_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Information",
-        "long_name":"Entry rate in Information",
-        "short_description":"Number of new businesses in Information (in percent)",
-        "long_description":"Number of new businesses in Information (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Information_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Information",
-        "long_name":"Number of new businesses in Information",
-        "short_description":"Number of new businesses in Information (count)",
-        "long_description":"Number of new businesses in Information (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Information_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Information",
-        "long_name":"Exit rate in Information",
-        "short_description":"Number of businesses leaving the Information industry (in percent)",
-        "long_description":"Number of businesses leaving the Information industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Information_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Information industry",
-        "long_name":"Number of businesses leaving Information industry",
-        "short_description":"Number of businesses leaving Information industry (count)",
-        "long_description":"Number of businesses leaving Information industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Information_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Information",
-        "long_name":"Total number of businesses in Information",
-        "short_description":"Total number of businesses in Information industry (count)",
-        "long_description":"Total number of businesses in Information industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Management of Companies and Enterprises_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Management of Companies and Enterprises",
-        "long_name":"Entry rate in Management of Companies and Enterprises",
-        "short_description":"Number of new businesses in Management of Companies and Enterprises (in percent)",
-        "long_description":"Number of new businesses in Management of Companies and Enterprises (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Management of Companies and Enterprises_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Management of Companies and Enterprises",
-        "long_name":"Number of new businesses in Management of Companies and Enterprises",
-        "short_description":"Number of new businesses in Management of Companies and Enterprises (count)",
-        "long_description":"Number of new businesses in Management of Companies and Enterprises (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Management of Companies and Enterprises_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Management of Companies and Enterprises",
-        "long_name":"Exit rate in Management of Companies and Enterprises",
-        "short_description":"Number of businesses leaving the Management of Companies and Enterprises industry (in percent)",
-        "long_description":"Number of businesses leaving the Management of Companies and Enterprises industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Management of Companies and Enterprises_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Management of Companies and Enterprises industry",
-        "long_name":"Number of businesses leaving Management of Companies and Enterprises industry",
-        "short_description":"Number of businesses leaving Management of Companies and Enterprises industry (count)",
-        "long_description":"Number of businesses leaving Management of Companies and Enterprises industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Management of Companies and Enterprises_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Management of Companies and Enterprises",
-        "long_name":"Total number of businesses in Management of Companies and Enterprises",
-        "short_description":"Total number of businesses in Management of Companies and Enterprises industry (count)",
-        "long_description":"Total number of businesses in Management of Companies and Enterprises industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Manufacturing_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Manufacturing",
-        "long_name":"Entry rate in Manufacturing",
-        "short_description":"Number of new businesses in Manufacturing (in percent)",
-        "long_description":"Number of new businesses in Manufacturing (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Manufacturing_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Manufacturing",
-        "long_name":"Number of new businesses in Manufacturing",
-        "short_description":"Number of new businesses in Manufacturing (count)",
-        "long_description":"Number of new businesses in Manufacturing (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Manufacturing_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Manufacturing",
-        "long_name":"Exit rate in Manufacturing",
-        "short_description":"Number of businesses leaving the Manufacturing industry (in percent)",
-        "long_description":"Number of businesses leaving the Manufacturing industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Manufacturing_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Manufacturing industry",
-        "long_name":"Number of businesses leaving Manufacturing industry",
-        "short_description":"Number of businesses leaving Manufacturing industry (count)",
-        "long_description":"Number of businesses leaving Manufacturing industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Manufacturing_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Manufacturing",
-        "long_name":"Total number of businesses in Manufacturing",
-        "short_description":"Total number of businesses in Manufacturing industry (count)",
-        "long_description":"Total number of businesses in Manufacturing industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Mining, Quarrying, and Oil and Gas Extraction_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Mining, Quarrying, and Oil and Gas Extraction",
-        "long_name":"Entry rate in Mining, Quarrying, and Oil and Gas Extraction",
-        "short_description":"Number of new businesses in Mining, Quarrying, and Oil and Gas Extraction (in percent)",
-        "long_description":"Number of new businesses in Mining, Quarrying, and Oil and Gas Extraction (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Mining, Quarrying, and Oil and Gas Extraction_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Mining, Quarrying, and Oil and Gas Extraction",
-        "long_name":"Number of new businesses in Mining, Quarrying, and Oil and Gas Extraction",
-        "short_description":"Number of new businesses in Mining, Quarrying, and Oil and Gas Extraction (count)",
-        "long_description":"Number of new businesses in Mining, Quarrying, and Oil and Gas Extraction (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Mining, Quarrying, and Oil and Gas Extraction_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Mining, Quarrying, and Oil and Gas Extraction",
-        "long_name":"Exit rate in Mining, Quarrying, and Oil and Gas Extraction",
-        "short_description":"Number of businesses leaving the Mining, Quarrying, and Oil and Gas Extraction industry (in percent)",
-        "long_description":"Number of businesses leaving the Mining, Quarrying, and Oil and Gas Extraction industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Mining, Quarrying, and Oil and Gas Extraction_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Mining, Quarrying, and Oil and Gas Extraction industry",
-        "long_name":"Number of businesses leaving Mining, Quarrying, and Oil and Gas Extraction industry",
-        "short_description":"Number of businesses leaving Mining, Quarrying, and Oil and Gas Extraction industry (count)",
-        "long_description":"Number of businesses leaving Mining, Quarrying, and Oil and Gas Extraction industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Mining, Quarrying, and Oil and Gas Extraction_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Mining, Quarrying, and Oil and Gas Extraction",
-        "long_name":"Total number of businesses in Mining, Quarrying, and Oil and Gas Extraction",
-        "short_description":"Total number of businesses in Mining, Quarrying, and Oil and Gas Extraction industry (count)",
-        "long_description":"Total number of businesses in Mining, Quarrying, and Oil and Gas Extraction industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Nonclassifiable Establishments_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Nonclassifiable Establishments",
-        "long_name":"Entry rate in Nonclassifiable Establishments",
-        "short_description":"Number of new businesses in Nonclassifiable Establishments (in percent)",
-        "long_description":"Number of new businesses in Nonclassifiable Establishments (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Nonclassifiable Establishments_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Nonclassifiable Establishments",
-        "long_name":"Number of new businesses in Nonclassifiable Establishments",
-        "short_description":"Number of new businesses in Nonclassifiable Establishments (count)",
-        "long_description":"Number of new businesses in Nonclassifiable Establishments (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Nonclassifiable Establishments_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Nonclassifiable Establishments",
-        "long_name":"Exit rate in Nonclassifiable Establishments",
-        "short_description":"Number of businesses leaving the Nonclassifiable Establishments industry (in percent)",
-        "long_description":"Number of businesses leaving the Nonclassifiable Establishments industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Nonclassifiable Establishments_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Nonclassifiable Establishments industry",
-        "long_name":"Number of businesses leaving Nonclassifiable Establishments industry",
-        "short_description":"Number of businesses leaving Nonclassifiable Establishments industry (count)",
-        "long_description":"Number of businesses leaving Nonclassifiable Establishments industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Nonclassifiable Establishments_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Nonclassifiable Establishments",
-        "long_name":"Total number of businesses in Nonclassifiable Establishments",
-        "short_description":"Total number of businesses in Nonclassifiable Establishments industry (count)",
-        "long_description":"Total number of businesses in Nonclassifiable Establishments industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Other Services (except Public Administration)_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Other Services (except Public Administration)",
-        "long_name":"Entry rate in Other Services (except Public Administration)",
-        "short_description":"Number of new businesses in Other Services (except Public Administration) (in percent)",
-        "long_description":"Number of new businesses in Other Services (except Public Administration) (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Other Services (except Public Administration)_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Other Services (except Public Administration)",
-        "long_name":"Number of new businesses in Other Services (except Public Administration)",
-        "short_description":"Number of new businesses in Other Services (except Public Administration) (count)",
-        "long_description":"Number of new businesses in Other Services (except Public Administration) (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Other Services (except Public Administration)_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Other Services (except Public Administration)",
-        "long_name":"Exit rate in Other Services (except Public Administration)",
-        "short_description":"Number of businesses leaving the Other Services (except Public Administration) industry (in percent)",
-        "long_description":"Number of businesses leaving the Other Services (except Public Administration) industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Other Services (except Public Administration)_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Other Services (except Public Administration) industry",
-        "long_name":"Number of businesses leaving Other Services (except Public Administration) industry",
-        "short_description":"Number of businesses leaving Other Services (except Public Administration) industry (count)",
-        "long_description":"Number of businesses leaving Other Services (except Public Administration) industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Other Services (except Public Administration)_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Other Services (except Public Administration)",
-        "long_name":"Total number of businesses in Other Services (except Public Administration)",
-        "short_description":"Total number of businesses in Other Services (except Public Administration) industry (count)",
-        "long_description":"Total number of businesses in Other Services (except Public Administration) industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Professional, Scientific, and Technical Services_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Professional, Scientific, and Technical Services",
-        "long_name":"Entry rate in Professional, Scientific, and Technical Services",
-        "short_description":"Number of new businesses in Professional, Scientific, and Technical Services (in percent)",
-        "long_description":"Number of new businesses in Professional, Scientific, and Technical Services (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Professional, Scientific, and Technical Services_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Professional, Scientific, and Technical Services",
-        "long_name":"Number of new businesses in Professional, Scientific, and Technical Services",
-        "short_description":"Number of new businesses in Professional, Scientific, and Technical Services (count)",
-        "long_description":"Number of new businesses in Professional, Scientific, and Technical Services (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Professional, Scientific, and Technical Services_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Professional, Scientific, and Technical Services",
-        "long_name":"Exit rate in Professional, Scientific, and Technical Services",
-        "short_description":"Number of businesses leaving the Professional, Scientific, and Technical Services industry (in percent)",
-        "long_description":"Number of businesses leaving the Professional, Scientific, and Technical Services industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Professional, Scientific, and Technical Services_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Professional, Scientific, and Technical Services industry",
-        "long_name":"Number of businesses leaving Professional, Scientific, and Technical Services industry",
-        "short_description":"Number of businesses leaving Professional, Scientific, and Technical Services industry (count)",
-        "long_description":"Number of businesses leaving Professional, Scientific, and Technical Services industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Professional, Scientific, and Technical Services_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Professional, Scientific, and Technical Services",
-        "long_name":"Total number of businesses in Professional, Scientific, and Technical Services",
-        "short_description":"Total number of businesses in Professional, Scientific, and Technical Services industry (count)",
-        "long_description":"Total number of businesses in Professional, Scientific, and Technical Services industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Public Administration_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Public Administration",
-        "long_name":"Entry rate in Public Administration",
-        "short_description":"Number of new businesses in Public Administration (in percent)",
-        "long_description":"Number of new businesses in Public Administration (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Public Administration_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Public Administration",
-        "long_name":"Number of new businesses in Public Administration",
-        "short_description":"Number of new businesses in Public Administration (count)",
-        "long_description":"Number of new businesses in Public Administration (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Public Administration_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Public Administration",
-        "long_name":"Exit rate in Public Administration",
-        "short_description":"Number of businesses leaving the Public Administration industry (in percent)",
-        "long_description":"Number of businesses leaving the Public Administration industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Public Administration_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Public Administration industry",
-        "long_name":"Number of businesses leaving Public Administration industry",
-        "short_description":"Number of businesses leaving Public Administration industry (count)",
-        "long_description":"Number of businesses leaving Public Administration industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Public Administration_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Public Administration",
-        "long_name":"Total number of businesses in Public Administration",
-        "short_description":"Total number of businesses in Public Administration industry (count)",
-        "long_description":"Total number of businesses in Public Administration industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Real Estate and Rental and Leasing_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Real Estate and Rental and Leasing",
-        "long_name":"Entry rate in Real Estate and Rental and Leasing",
-        "short_description":"Number of new businesses in Real Estate and Rental and Leasing (in percent)",
-        "long_description":"Number of new businesses in Real Estate and Rental and Leasing (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Real Estate and Rental and Leasing_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Real Estate and Rental and Leasing",
-        "long_name":"Number of new businesses in Real Estate and Rental and Leasing",
-        "short_description":"Number of new businesses in Real Estate and Rental and Leasing (count)",
-        "long_description":"Number of new businesses in Real Estate and Rental and Leasing (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Real Estate and Rental and Leasing_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Real Estate and Rental and Leasing",
-        "long_name":"Exit rate in Real Estate and Rental and Leasing",
-        "short_description":"Number of businesses leaving the Real Estate and Rental and Leasing industry (in percent)",
-        "long_description":"Number of businesses leaving the Real Estate and Rental and Leasing industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Real Estate and Rental and Leasing_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Real Estate and Rental and Leasing industry",
-        "long_name":"Number of businesses leaving Real Estate and Rental and Leasing industry",
-        "short_description":"Number of businesses leaving Real Estate and Rental and Leasing industry (count)",
-        "long_description":"Number of businesses leaving Real Estate and Rental and Leasing industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Real Estate and Rental and Leasing_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Real Estate and Rental and Leasing",
-        "long_name":"Total number of businesses in Real Estate and Rental and Leasing",
-        "short_description":"Total number of businesses in Real Estate and Rental and Leasing industry (count)",
-        "long_description":"Total number of businesses in Real Estate and Rental and Leasing industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Retail Trade_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Retail Trade",
-        "long_name":"Entry rate in Retail Trade",
-        "short_description":"Number of new businesses in Retail Trade (in percent)",
-        "long_description":"Number of new businesses in Retail Trade (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Retail Trade_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Retail Trade",
-        "long_name":"Number of new businesses in Retail Trade",
-        "short_description":"Number of new businesses in Retail Trade (count)",
-        "long_description":"Number of new businesses in Retail Trade (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Retail Trade_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Retail Trade",
-        "long_name":"Exit rate in Retail Trade",
-        "short_description":"Number of businesses leaving the Retail Trade industry (in percent)",
-        "long_description":"Number of businesses leaving the Retail Trade industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Retail Trade_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Retail Trade industry",
-        "long_name":"Number of businesses leaving Retail Trade industry",
-        "short_description":"Number of businesses leaving Retail Trade industry (count)",
-        "long_description":"Number of businesses leaving Retail Trade industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Retail Trade_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Retail Trade",
-        "long_name":"Total number of businesses in Retail Trade",
-        "short_description":"Total number of businesses in Retail Trade industry (count)",
-        "long_description":"Total number of businesses in Retail Trade industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Transportation and Warehousing_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Transportation and Warehousing",
-        "long_name":"Entry rate in Transportation and Warehousing",
-        "short_description":"Number of new businesses in Transportation and Warehousing (in percent)",
-        "long_description":"Number of new businesses in Transportation and Warehousing (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Transportation and Warehousing_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Transportation and Warehousing",
-        "long_name":"Number of new businesses in Transportation and Warehousing",
-        "short_description":"Number of new businesses in Transportation and Warehousing (count)",
-        "long_description":"Number of new businesses in Transportation and Warehousing (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Transportation and Warehousing_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Transportation and Warehousing",
-        "long_name":"Exit rate in Transportation and Warehousing",
-        "short_description":"Number of businesses leaving the Transportation and Warehousing industry (in percent)",
-        "long_description":"Number of businesses leaving the Transportation and Warehousing industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Transportation and Warehousing_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Transportation and Warehousing industry",
-        "long_name":"Number of businesses leaving Transportation and Warehousing industry",
-        "short_description":"Number of businesses leaving Transportation and Warehousing industry (count)",
-        "long_description":"Number of businesses leaving Transportation and Warehousing industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Transportation and Warehousing_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Transportation and Warehousing",
-        "long_name":"Total number of businesses in Transportation and Warehousing",
-        "short_description":"Total number of businesses in Transportation and Warehousing industry (count)",
-        "long_description":"Total number of businesses in Transportation and Warehousing industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Utilities_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Utilities",
-        "long_name":"Entry rate in Utilities",
-        "short_description":"Number of new businesses in Utilities (in percent)",
-        "long_description":"Number of new businesses in Utilities (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Utilities_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Utilities",
-        "long_name":"Number of new businesses in Utilities",
-        "short_description":"Number of new businesses in Utilities (count)",
-        "long_description":"Number of new businesses in Utilities (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Utilities_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Utilities",
-        "long_name":"Exit rate in Utilities",
-        "short_description":"Number of businesses leaving the Utilities industry (in percent)",
-        "long_description":"Number of businesses leaving the Utilities industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Utilities_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Utilities industry",
-        "long_name":"Number of businesses leaving Utilities industry",
-        "short_description":"Number of businesses leaving Utilities industry (count)",
-        "long_description":"Number of businesses leaving Utilities industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Utilities_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Utilities",
-        "long_name":"Total number of businesses in Utilities",
-        "short_description":"Total number of businesses in Utilities industry (count)",
-        "long_description":"Total number of businesses in Utilities industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Wholesale Trade_entry_rate":{
-        "category":"Business climate",
-        "short_name":"Entry rate in Wholesale Trade",
-        "long_name":"Entry rate in Wholesale Trade",
-        "short_description":"Number of new businesses in Wholesale Trade (in percent)",
-        "long_description":"Number of new businesses in Wholesale Trade (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Wholesale Trade_new_business":{
-        "category":"Business climate",
-        "short_name":"Number of new businesses in Wholesale Trade",
-        "long_name":"Number of new businesses in Wholesale Trade",
-        "short_description":"Number of new businesses in Wholesale Trade (count)",
-        "long_description":"Number of new businesses in Wholesale Trade (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Wholesale Trade_exit_business":{
-        "category":"Business climate",
-        "short_name":"Exit rate in Wholesale Trade",
-        "long_name":"Exit rate in Wholesale Trade",
-        "short_description":"Number of businesses leaving the Wholesale Trade industry (in percent)",
-        "long_description":"Number of businesses leaving the Wholesale Trade industry (in percent)",
-        "statement":"",
-        "type":"percent",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
-    },
-    "Wholesale Trade_exit_rate":{
-        "category":"Business climate",
-        "short_name":"Number of businesses leaving Wholesale Trade industry",
-        "long_name":"Number of businesses leaving Wholesale Trade industry",
-        "short_description":"Number of businesses leaving Wholesale Trade industry (count)",
-        "long_description":"Number of businesses leaving Wholesale Trade industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
-    },
-    "Wholesale Trade_number_business":{
-        "category":"Business climate",
-        "short_name":"Total number of businesses in Wholesale Trade",
-        "long_name":"Total number of businesses in Wholesale Trade",
-        "short_description":"Total number of businesses in Wholesale Trade industry (count)",
-        "long_description":"Total number of businesses in Wholesale Trade industry (count)",
-        "statement":"",
-        "type":"count",
-        "equity_category":"Status",
-        "sources":[
-            {
-                "name":"Mergent Intellect",
-                "date_accessed":                2023,
-                "url":"https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
+    "Accommodation and Food Services_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Accommodation and Food Services (in percent)",
+        "long_name": "Entry rate in Accommodation and Food Services",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Accommodation and Food Services (in percent)",
+        "short_name": "Entry rate in Accommodation and Food Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Accommodation and Food Services_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Accommodation and Food Services (count)",
+        "long_name": "Number of new businesses in Accommodation and Food Services",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Accommodation and Food Services (count)",
+        "short_name": "Number of new businesses in Accommodation and Food Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Accommodation and Food Services_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Accommodation and Food Services industry (in percent)",
+        "long_name": "Exit rate in Accommodation and Food Services",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Accommodation and Food Services industry (in percent)",
+        "short_name": "Exit rate in Accommodation and Food Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Accommodation and Food Services_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Accommodation and Food Services industry (count)",
+        "long_name": "Number of businesses leaving Accommodation and Food Services industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Accommodation and Food Services industry (count)",
+        "short_name": "Number of businesses leaving Accommodation and Food Services industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Accommodation and Food Services_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Accommodation and Food Services industry (count)",
+        "long_name": "Total number of businesses in Accommodation and Food Services",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Accommodation and Food Services industry (count)",
+        "short_name": "Total number of businesses in Accommodation and Food Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Administrative and Support and Waste Management and Remediation Services_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Administrative and Support and Waste Management and Remediation Services (in percent)",
+        "long_name": "Entry rate in Administrative and Support and Waste Management and Remediation Services",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Administrative and Support and Waste Management and Remediation Services (in percent)",
+        "short_name": "Entry rate in Administrative and Support and Waste Management and Remediation Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Administrative and Support and Waste Management and Remediation Services_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Administrative and Support and Waste Management and Remediation Services (count)",
+        "long_name": "Number of new businesses in Administrative and Support and Waste Management and Remediation Services",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Administrative and Support and Waste Management and Remediation Services (count)",
+        "short_name": "Number of new businesses in Administrative and Support and Waste Management and Remediation Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Administrative and Support and Waste Management and Remediation Services_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Administrative and Support and Waste Management and Remediation Services industry (in percent)",
+        "long_name": "Exit rate in Administrative and Support and Waste Management and Remediation Services",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Administrative and Support and Waste Management and Remediation Services industry (in percent)",
+        "short_name": "Exit rate in Administrative and Support and Waste Management and Remediation Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Administrative and Support and Waste Management and Remediation Services_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Administrative and Support and Waste Management and Remediation Services industry (count)",
+        "long_name": "Number of businesses leaving Administrative and Support and Waste Management and Remediation Services industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Administrative and Support and Waste Management and Remediation Services industry (count)",
+        "short_name": "Number of businesses leaving Administrative and Support and Waste Management and Remediation Services industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Administrative and Support and Waste Management and Remediation Services_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Administrative and Support and Waste Management and Remediation Services industry (count)",
+        "long_name": "Total number of businesses in Administrative and Support and Waste Management and Remediation Services",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Administrative and Support and Waste Management and Remediation Services industry (count)",
+        "short_name": "Total number of businesses in Administrative and Support and Waste Management and Remediation Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Agriculture, Forestry, Fishing and Hunting_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Agriculture, Forestry, Fishing and Hunting (in percent)",
+        "long_name": "Entry rate in Agriculture, Forestry, Fishing and Hunting",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Agriculture, Forestry, Fishing and Hunting (in percent)",
+        "short_name": "Entry rate in Agriculture, Forestry, Fishing and Hunting",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Agriculture, Forestry, Fishing and Hunting_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Agriculture, Forestry, Fishing and Hunting (count)",
+        "long_name": "Number of new businesses in Agriculture, Forestry, Fishing and Hunting",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Agriculture, Forestry, Fishing and Hunting (count)",
+        "short_name": "Number of new businesses in Agriculture, Forestry, Fishing and Hunting",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Agriculture, Forestry, Fishing and Hunting_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Agriculture, Forestry, Fishing and Hunting industry (in percent)",
+        "long_name": "Exit rate in Agriculture, Forestry, Fishing and Hunting",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Agriculture, Forestry, Fishing and Hunting industry (in percent)",
+        "short_name": "Exit rate in Agriculture, Forestry, Fishing and Hunting",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Agriculture, Forestry, Fishing and Hunting_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Agriculture, Forestry, Fishing and Hunting industry (count)",
+        "long_name": "Number of businesses leaving Agriculture, Forestry, Fishing and Hunting industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Agriculture, Forestry, Fishing and Hunting industry (count)",
+        "short_name": "Number of businesses leaving Agriculture, Forestry, Fishing and Hunting industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Agriculture, Forestry, Fishing and Hunting_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Agriculture, Forestry, Fishing and Hunting industry (count)",
+        "long_name": "Total number of businesses in Agriculture, Forestry, Fishing and Hunting",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Agriculture, Forestry, Fishing and Hunting industry (count)",
+        "short_name": "Total number of businesses in Agriculture, Forestry, Fishing and Hunting",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Arts, Entertainment, and Recreation_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Arts, Entertainment, and Recreation (in percent)",
+        "long_name": "Entry rate in Arts, Entertainment, and Recreation",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Arts, Entertainment, and Recreation (in percent)",
+        "short_name": "Entry rate in Arts, Entertainment, and Recreation",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Arts, Entertainment, and Recreation_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Arts, Entertainment, and Recreation (count)",
+        "long_name": "Number of new businesses in Arts, Entertainment, and Recreation",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Arts, Entertainment, and Recreation (count)",
+        "short_name": "Number of new businesses in Arts, Entertainment, and Recreation",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Arts, Entertainment, and Recreation_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Arts, Entertainment, and Recreation industry (in percent)",
+        "long_name": "Exit rate in Arts, Entertainment, and Recreation",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Arts, Entertainment, and Recreation industry (in percent)",
+        "short_name": "Exit rate in Arts, Entertainment, and Recreation",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Arts, Entertainment, and Recreation_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Arts, Entertainment, and Recreation industry (count)",
+        "long_name": "Number of businesses leaving Arts, Entertainment, and Recreation industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Arts, Entertainment, and Recreation industry (count)",
+        "short_name": "Number of businesses leaving Arts, Entertainment, and Recreation industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Arts, Entertainment, and Recreation_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Arts, Entertainment, and Recreation industry (count)",
+        "long_name": "Total number of businesses in Arts, Entertainment, and Recreation",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Arts, Entertainment, and Recreation industry (count)",
+        "short_name": "Total number of businesses in Arts, Entertainment, and Recreation",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Construction_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Construction (in percent)",
+        "long_name": "Entry rate in Construction",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Construction (in percent)",
+        "short_name": "Entry rate in Construction",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Construction_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Construction (count)",
+        "long_name": "Number of new businesses in Construction",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Construction (count)",
+        "short_name": "Number of new businesses in Construction",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Construction_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Construction industry (in percent)",
+        "long_name": "Exit rate in Construction",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Construction industry (in percent)",
+        "short_name": "Exit rate in Construction",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Construction_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Construction industry (count)",
+        "long_name": "Number of businesses leaving Construction industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Construction industry (count)",
+        "short_name": "Number of businesses leaving Construction industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Construction_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Construction industry (count)",
+        "long_name": "Total number of businesses in Construction",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Construction industry (count)",
+        "short_name": "Total number of businesses in Construction",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Educational Services_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Educational Services (in percent)",
+        "long_name": "Entry rate in Educational Services",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Educational Services (in percent)",
+        "short_name": "Entry rate in Educational Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Educational Services_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Educational Services (count)",
+        "long_name": "Number of new businesses in Educational Services",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Educational Services (count)",
+        "short_name": "Number of new businesses in Educational Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Educational Services_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Educational Services industry (in percent)",
+        "long_name": "Exit rate in Educational Services",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Educational Services industry (in percent)",
+        "short_name": "Exit rate in Educational Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Educational Services_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Educational Services industry (count)",
+        "long_name": "Number of businesses leaving Educational Services industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Educational Services industry (count)",
+        "short_name": "Number of businesses leaving Educational Services industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Educational Services_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Educational Services industry (count)",
+        "long_name": "Total number of businesses in Educational Services",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Educational Services industry (count)",
+        "short_name": "Total number of businesses in Educational Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Finance and Insurance_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Finance and Insurance (in percent)",
+        "long_name": "Entry rate in Finance and Insurance",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Finance and Insurance (in percent)",
+        "short_name": "Entry rate in Finance and Insurance",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Finance and Insurance_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Finance and Insurance (count)",
+        "long_name": "Number of new businesses in Finance and Insurance",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Finance and Insurance (count)",
+        "short_name": "Number of new businesses in Finance and Insurance",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Finance and Insurance_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Finance and Insurance industry (in percent)",
+        "long_name": "Exit rate in Finance and Insurance",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Finance and Insurance industry (in percent)",
+        "short_name": "Exit rate in Finance and Insurance",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Finance and Insurance_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Finance and Insurance industry (count)",
+        "long_name": "Number of businesses leaving Finance and Insurance industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Finance and Insurance industry (count)",
+        "short_name": "Number of businesses leaving Finance and Insurance industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Finance and Insurance_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Finance and Insurance industry (count)",
+        "long_name": "Total number of businesses in Finance and Insurance",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Finance and Insurance industry (count)",
+        "short_name": "Total number of businesses in Finance and Insurance",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Health Care and Social Assistance_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Health Care and Social Assistance (in percent)",
+        "long_name": "Entry rate in Health Care and Social Assistance",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Health Care and Social Assistance (in percent)",
+        "short_name": "Entry rate in Health Care and Social Assistance",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Health Care and Social Assistance_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Health Care and Social Assistance (count)",
+        "long_name": "Number of new businesses in Health Care and Social Assistance",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Health Care and Social Assistance (count)",
+        "short_name": "Number of new businesses in Health Care and Social Assistance",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Health Care and Social Assistance_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Health Care and Social Assistance industry (in percent)",
+        "long_name": "Exit rate in Health Care and Social Assistance",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Health Care and Social Assistance industry (in percent)",
+        "short_name": "Exit rate in Health Care and Social Assistance",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Health Care and Social Assistance_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Health Care and Social Assistance industry (count)",
+        "long_name": "Number of businesses leaving Health Care and Social Assistance industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Health Care and Social Assistance industry (count)",
+        "short_name": "Number of businesses leaving Health Care and Social Assistance industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Health Care and Social Assistance_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Health Care and Social Assistance industry (count)",
+        "long_name": "Total number of businesses in Health Care and Social Assistance",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Health Care and Social Assistance industry (count)",
+        "short_name": "Total number of businesses in Health Care and Social Assistance",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Information_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Information (in percent)",
+        "long_name": "Entry rate in Information",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Information (in percent)",
+        "short_name": "Entry rate in Information",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Information_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Information (count)",
+        "long_name": "Number of new businesses in Information",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Information (count)",
+        "short_name": "Number of new businesses in Information",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Information_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Information industry (in percent)",
+        "long_name": "Exit rate in Information",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Information industry (in percent)",
+        "short_name": "Exit rate in Information",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Information_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Information industry (count)",
+        "long_name": "Number of businesses leaving Information industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Information industry (count)",
+        "short_name": "Number of businesses leaving Information industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Information_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Information industry (count)",
+        "long_name": "Total number of businesses in Information",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Information industry (count)",
+        "short_name": "Total number of businesses in Information",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Management of Companies and Enterprises_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Management of Companies and Enterprises (in percent)",
+        "long_name": "Entry rate in Management of Companies and Enterprises",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Management of Companies and Enterprises (in percent)",
+        "short_name": "Entry rate in Management of Companies and Enterprises",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Management of Companies and Enterprises_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Management of Companies and Enterprises (count)",
+        "long_name": "Number of new businesses in Management of Companies and Enterprises",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Management of Companies and Enterprises (count)",
+        "short_name": "Number of new businesses in Management of Companies and Enterprises",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Management of Companies and Enterprises_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Management of Companies and Enterprises industry (in percent)",
+        "long_name": "Exit rate in Management of Companies and Enterprises",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Management of Companies and Enterprises industry (in percent)",
+        "short_name": "Exit rate in Management of Companies and Enterprises",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Management of Companies and Enterprises_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Management of Companies and Enterprises industry (count)",
+        "long_name": "Number of businesses leaving Management of Companies and Enterprises industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Management of Companies and Enterprises industry (count)",
+        "short_name": "Number of businesses leaving Management of Companies and Enterprises industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Management of Companies and Enterprises_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Management of Companies and Enterprises industry (count)",
+        "long_name": "Total number of businesses in Management of Companies and Enterprises",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Management of Companies and Enterprises industry (count)",
+        "short_name": "Total number of businesses in Management of Companies and Enterprises",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Manufacturing_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Manufacturing (in percent)",
+        "long_name": "Entry rate in Manufacturing",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Manufacturing (in percent)",
+        "short_name": "Entry rate in Manufacturing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Manufacturing_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Manufacturing (count)",
+        "long_name": "Number of new businesses in Manufacturing",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Manufacturing (count)",
+        "short_name": "Number of new businesses in Manufacturing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Manufacturing_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Manufacturing industry (in percent)",
+        "long_name": "Exit rate in Manufacturing",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Manufacturing industry (in percent)",
+        "short_name": "Exit rate in Manufacturing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Manufacturing_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Manufacturing industry (count)",
+        "long_name": "Number of businesses leaving Manufacturing industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Manufacturing industry (count)",
+        "short_name": "Number of businesses leaving Manufacturing industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Manufacturing_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Manufacturing industry (count)",
+        "long_name": "Total number of businesses in Manufacturing",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Manufacturing industry (count)",
+        "short_name": "Total number of businesses in Manufacturing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Mining, Quarrying, and Oil and Gas Extraction_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Mining, Quarrying, and Oil and Gas Extraction (in percent)",
+        "long_name": "Entry rate in Mining, Quarrying, and Oil and Gas Extraction",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Mining, Quarrying, and Oil and Gas Extraction (in percent)",
+        "short_name": "Entry rate in Mining, Quarrying, and Oil and Gas Extraction",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Mining, Quarrying, and Oil and Gas Extraction_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Mining, Quarrying, and Oil and Gas Extraction (count)",
+        "long_name": "Number of new businesses in Mining, Quarrying, and Oil and Gas Extraction",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Mining, Quarrying, and Oil and Gas Extraction (count)",
+        "short_name": "Number of new businesses in Mining, Quarrying, and Oil and Gas Extraction",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Mining, Quarrying, and Oil and Gas Extraction_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Mining, Quarrying, and Oil and Gas Extraction industry (in percent)",
+        "long_name": "Exit rate in Mining, Quarrying, and Oil and Gas Extraction",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Mining, Quarrying, and Oil and Gas Extraction industry (in percent)",
+        "short_name": "Exit rate in Mining, Quarrying, and Oil and Gas Extraction",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Mining, Quarrying, and Oil and Gas Extraction_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Mining, Quarrying, and Oil and Gas Extraction industry (count)",
+        "long_name": "Number of businesses leaving Mining, Quarrying, and Oil and Gas Extraction industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Mining, Quarrying, and Oil and Gas Extraction industry (count)",
+        "short_name": "Number of businesses leaving Mining, Quarrying, and Oil and Gas Extraction industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Mining, Quarrying, and Oil and Gas Extraction_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Mining, Quarrying, and Oil and Gas Extraction industry (count)",
+        "long_name": "Total number of businesses in Mining, Quarrying, and Oil and Gas Extraction",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Mining, Quarrying, and Oil and Gas Extraction industry (count)",
+        "short_name": "Total number of businesses in Mining, Quarrying, and Oil and Gas Extraction",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Nonclassifiable Establishments_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Nonclassifiable Establishments (in percent)",
+        "long_name": "Entry rate in Nonclassifiable Establishments",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Nonclassifiable Establishments (in percent)",
+        "short_name": "Entry rate in Nonclassifiable Establishments",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Nonclassifiable Establishments_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Nonclassifiable Establishments (count)",
+        "long_name": "Number of new businesses in Nonclassifiable Establishments",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Nonclassifiable Establishments (count)",
+        "short_name": "Number of new businesses in Nonclassifiable Establishments",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Nonclassifiable Establishments_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Nonclassifiable Establishments industry (in percent)",
+        "long_name": "Exit rate in Nonclassifiable Establishments",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Nonclassifiable Establishments industry (in percent)",
+        "short_name": "Exit rate in Nonclassifiable Establishments",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Nonclassifiable Establishments_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Nonclassifiable Establishments industry (count)",
+        "long_name": "Number of businesses leaving Nonclassifiable Establishments industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Nonclassifiable Establishments industry (count)",
+        "short_name": "Number of businesses leaving Nonclassifiable Establishments industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Nonclassifiable Establishments_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Nonclassifiable Establishments industry (count)",
+        "long_name": "Total number of businesses in Nonclassifiable Establishments",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Nonclassifiable Establishments industry (count)",
+        "short_name": "Total number of businesses in Nonclassifiable Establishments",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Other Services (except Public Administration)_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Other Services (except Public Administration) (in percent)",
+        "long_name": "Entry rate in Other Services (except Public Administration)",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Other Services (except Public Administration) (in percent)",
+        "short_name": "Entry rate in Other Services (except Public Administration)",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Other Services (except Public Administration)_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Other Services (except Public Administration) (count)",
+        "long_name": "Number of new businesses in Other Services (except Public Administration)",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Other Services (except Public Administration) (count)",
+        "short_name": "Number of new businesses in Other Services (except Public Administration)",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Other Services (except Public Administration)_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Other Services (except Public Administration) industry (in percent)",
+        "long_name": "Exit rate in Other Services (except Public Administration)",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Other Services (except Public Administration) industry (in percent)",
+        "short_name": "Exit rate in Other Services (except Public Administration)",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Other Services (except Public Administration)_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Other Services (except Public Administration) industry (count)",
+        "long_name": "Number of businesses leaving Other Services (except Public Administration) industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Other Services (except Public Administration) industry (count)",
+        "short_name": "Number of businesses leaving Other Services (except Public Administration) industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Other Services (except Public Administration)_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Other Services (except Public Administration) industry (count)",
+        "long_name": "Total number of businesses in Other Services (except Public Administration)",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Other Services (except Public Administration) industry (count)",
+        "short_name": "Total number of businesses in Other Services (except Public Administration)",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Professional, Scientific, and Technical Services_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Professional, Scientific, and Technical Services (in percent)",
+        "long_name": "Entry rate in Professional, Scientific, and Technical Services",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Professional, Scientific, and Technical Services (in percent)",
+        "short_name": "Entry rate in Professional, Scientific, and Technical Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Professional, Scientific, and Technical Services_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Professional, Scientific, and Technical Services (count)",
+        "long_name": "Number of new businesses in Professional, Scientific, and Technical Services",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Professional, Scientific, and Technical Services (count)",
+        "short_name": "Number of new businesses in Professional, Scientific, and Technical Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Professional, Scientific, and Technical Services_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Professional, Scientific, and Technical Services industry (in percent)",
+        "long_name": "Exit rate in Professional, Scientific, and Technical Services",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Professional, Scientific, and Technical Services industry (in percent)",
+        "short_name": "Exit rate in Professional, Scientific, and Technical Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Professional, Scientific, and Technical Services_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Professional, Scientific, and Technical Services industry (count)",
+        "long_name": "Number of businesses leaving Professional, Scientific, and Technical Services industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Professional, Scientific, and Technical Services industry (count)",
+        "short_name": "Number of businesses leaving Professional, Scientific, and Technical Services industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Professional, Scientific, and Technical Services_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Professional, Scientific, and Technical Services industry (count)",
+        "long_name": "Total number of businesses in Professional, Scientific, and Technical Services",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Professional, Scientific, and Technical Services industry (count)",
+        "short_name": "Total number of businesses in Professional, Scientific, and Technical Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Public Administration_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Public Administration (in percent)",
+        "long_name": "Entry rate in Public Administration",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Public Administration (in percent)",
+        "short_name": "Entry rate in Public Administration",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Public Administration_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Public Administration (count)",
+        "long_name": "Number of new businesses in Public Administration",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Public Administration (count)",
+        "short_name": "Number of new businesses in Public Administration",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Public Administration_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Public Administration industry (in percent)",
+        "long_name": "Exit rate in Public Administration",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Public Administration industry (in percent)",
+        "short_name": "Exit rate in Public Administration",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Public Administration_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Public Administration industry (count)",
+        "long_name": "Number of businesses leaving Public Administration industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Public Administration industry (count)",
+        "short_name": "Number of businesses leaving Public Administration industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Public Administration_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Public Administration industry (count)",
+        "long_name": "Total number of businesses in Public Administration",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Public Administration industry (count)",
+        "short_name": "Total number of businesses in Public Administration",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Real Estate and Rental and Leasing_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Real Estate and Rental and Leasing (in percent)",
+        "long_name": "Entry rate in Real Estate and Rental and Leasing",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Real Estate and Rental and Leasing (in percent)",
+        "short_name": "Entry rate in Real Estate and Rental and Leasing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Real Estate and Rental and Leasing_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Real Estate and Rental and Leasing (count)",
+        "long_name": "Number of new businesses in Real Estate and Rental and Leasing",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Real Estate and Rental and Leasing (count)",
+        "short_name": "Number of new businesses in Real Estate and Rental and Leasing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Real Estate and Rental and Leasing_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Real Estate and Rental and Leasing industry (in percent)",
+        "long_name": "Exit rate in Real Estate and Rental and Leasing",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Real Estate and Rental and Leasing industry (in percent)",
+        "short_name": "Exit rate in Real Estate and Rental and Leasing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Real Estate and Rental and Leasing_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Real Estate and Rental and Leasing industry (count)",
+        "long_name": "Number of businesses leaving Real Estate and Rental and Leasing industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Real Estate and Rental and Leasing industry (count)",
+        "short_name": "Number of businesses leaving Real Estate and Rental and Leasing industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Real Estate and Rental and Leasing_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Real Estate and Rental and Leasing industry (count)",
+        "long_name": "Total number of businesses in Real Estate and Rental and Leasing",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Real Estate and Rental and Leasing industry (count)",
+        "short_name": "Total number of businesses in Real Estate and Rental and Leasing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Retail Trade_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Retail Trade (in percent)",
+        "long_name": "Entry rate in Retail Trade",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Retail Trade (in percent)",
+        "short_name": "Entry rate in Retail Trade",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Retail Trade_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Retail Trade (count)",
+        "long_name": "Number of new businesses in Retail Trade",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Retail Trade (count)",
+        "short_name": "Number of new businesses in Retail Trade",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Retail Trade_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Retail Trade industry (in percent)",
+        "long_name": "Exit rate in Retail Trade",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Retail Trade industry (in percent)",
+        "short_name": "Exit rate in Retail Trade",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Retail Trade_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Retail Trade industry (count)",
+        "long_name": "Number of businesses leaving Retail Trade industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Retail Trade industry (count)",
+        "short_name": "Number of businesses leaving Retail Trade industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Retail Trade_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Retail Trade industry (count)",
+        "long_name": "Total number of businesses in Retail Trade",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Retail Trade industry (count)",
+        "short_name": "Total number of businesses in Retail Trade",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Transportation and Warehousing_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Transportation and Warehousing (in percent)",
+        "long_name": "Entry rate in Transportation and Warehousing",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Transportation and Warehousing (in percent)",
+        "short_name": "Entry rate in Transportation and Warehousing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Transportation and Warehousing_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Transportation and Warehousing (count)",
+        "long_name": "Number of new businesses in Transportation and Warehousing",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Transportation and Warehousing (count)",
+        "short_name": "Number of new businesses in Transportation and Warehousing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Transportation and Warehousing_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Transportation and Warehousing industry (in percent)",
+        "long_name": "Exit rate in Transportation and Warehousing",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Transportation and Warehousing industry (in percent)",
+        "short_name": "Exit rate in Transportation and Warehousing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Transportation and Warehousing_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Transportation and Warehousing industry (count)",
+        "long_name": "Number of businesses leaving Transportation and Warehousing industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Transportation and Warehousing industry (count)",
+        "short_name": "Number of businesses leaving Transportation and Warehousing industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Transportation and Warehousing_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Transportation and Warehousing industry (count)",
+        "long_name": "Total number of businesses in Transportation and Warehousing",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Transportation and Warehousing industry (count)",
+        "short_name": "Total number of businesses in Transportation and Warehousing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Utilities_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Utilities (in percent)",
+        "long_name": "Entry rate in Utilities",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Utilities (in percent)",
+        "short_name": "Entry rate in Utilities",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Utilities_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Utilities (count)",
+        "long_name": "Number of new businesses in Utilities",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Utilities (count)",
+        "short_name": "Number of new businesses in Utilities",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Utilities_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Utilities industry (in percent)",
+        "long_name": "Exit rate in Utilities",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Utilities industry (in percent)",
+        "short_name": "Exit rate in Utilities",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Utilities_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Utilities industry (count)",
+        "long_name": "Number of businesses leaving Utilities industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Utilities industry (count)",
+        "short_name": "Number of businesses leaving Utilities industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Utilities_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Utilities industry (count)",
+        "long_name": "Total number of businesses in Utilities",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Utilities industry (count)",
+        "short_name": "Total number of businesses in Utilities",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Wholesale Trade_entry_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Wholesale Trade (in percent)",
+        "long_name": "Entry rate in Wholesale Trade",
+        "measure_type": "percentage",
+        "short_description": "Number of new businesses in Wholesale Trade (in percent)",
+        "short_name": "Entry rate in Wholesale Trade",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Wholesale Trade_new_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of new businesses in Wholesale Trade (count)",
+        "long_name": "Number of new businesses in Wholesale Trade",
+        "measure_type": "count",
+        "short_description": "Number of new businesses in Wholesale Trade (count)",
+        "short_name": "Number of new businesses in Wholesale Trade",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Wholesale Trade_exit_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving the Wholesale Trade industry (in percent)",
+        "long_name": "Exit rate in Wholesale Trade",
+        "measure_type": "count",
+        "short_description": "Number of businesses leaving the Wholesale Trade industry (in percent)",
+        "short_name": "Exit rate in Wholesale Trade",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "percent",
+        "unit": ""
+    },
+    "Wholesale Trade_exit_rate": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of businesses leaving Wholesale Trade industry (count)",
+        "long_name": "Number of businesses leaving Wholesale Trade industry",
+        "measure_type": "percentage",
+        "short_description": "Number of businesses leaving Wholesale Trade industry (count)",
+        "short_name": "Number of businesses leaving Wholesale Trade industry",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Wholesale Trade_number_business": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total number of businesses in Wholesale Trade industry (count)",
+        "long_name": "Total number of businesses in Wholesale Trade",
+        "measure_type": "count",
+        "short_description": "Total number of businesses in Wholesale Trade industry (count)",
+        "short_name": "Total number of businesses in Wholesale Trade",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
     }
 }

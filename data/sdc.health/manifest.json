@@ -3,7 +3,6 @@
   "measure_not_found": [
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_community_environmental_profile.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_food_accessibility_index.csv.xz",
-    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_economic_opportunity_profile.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_pop_churning_index.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_wellness_diparity_profile.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_material_deprivation_index.csv.xz",
@@ -20,6 +19,7 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_2022_health_opportunity_profile.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_air_quality_index.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_segregation_index.csv.xz",
+    "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_2022_economic_opportunity_profile.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Reproductive Health/Prenatal Care Adequacy/data/distribution/va_ct_nchs_2014_2020_kotelchuck.csv",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Mental Health/Mental and Physical Healthy Days/data/distribution/ncr_trct_sdad_2015_2019_brfss_sae.csv.xz",
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Population Health/Mental Health/Mental and Physical Healthy Days/data/distribution/va_trcthd_sdad_2015_2019_brfss_sae.csv.xz",
@@ -64,7 +64,7 @@
     "/home/runner/work/sdc.health_dev/sdc.health_dev/Health Care Services/PCNA Measures/Check-up and Dental Visits/data/distribution/va_tr_brfss_2019_percent_annual_checkup.csv"
   ],
   "count": 194,
-  "utc_audited": "2023-04-06 18:19:31",
+  "utc_audited": "2023-04-10 20:11:07",
   "data": [
     {
       "name": "prepare_population_density.R",
@@ -111,8 +111,8 @@
     {
       "name": "prepare_economic_opportunity.R",
       "path": "Population Health/Health Opportunity Index/code/distribution/prepare_economic_opportunity.R",
-      "md5": "101ef2edead58f8ab50c08f38a26dfae",
-      "size": 2577
+      "md5": "d3ca0d38e285097de1eeae283864bb5c",
+      "size": 2497
     },
     {
       "name": "prepare_job_participation.R",
@@ -203,12 +203,6 @@
       "path": "Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_food_accessibility_index.csv.xz",
       "md5": "cc180f4ad8856f804a4a38e3ea297917",
       "size": 11440
-    },
-    {
-      "name": "va_cttr_vdh_2017_economic_opportunity_profile.csv.xz",
-      "path": "Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_economic_opportunity_profile.csv.xz",
-      "md5": "dd2c8fa9d1333b564aa313d9318f64ea",
-      "size": 11456
     },
     {
       "name": "va_cttr_vdh_2017_pop_churning_index.csv.xz",
@@ -311,6 +305,12 @@
       "path": "Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_segregation_index.csv.xz",
       "md5": "c18d83d2ed069881f617b95bfbcc835a",
       "size": 11852
+    },
+    {
+      "name": "va_cttr_vdh_2017_2022_economic_opportunity_profile.csv",
+      "path": "Population Health/Health Opportunity Index/data/distribution/va_cttr_vdh_2017_2022_economic_opportunity_profile.csv",
+      "md5": "fa09bc861c58e9eb1a386057b553355e",
+      "size": 458204
     },
     {
       "name": "temp",

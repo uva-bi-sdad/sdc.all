@@ -1,138 +1,134 @@
 {
-    "health_literacy_estimate":{
-        "category":"Education",
-        "measure_table":"dc_education_training.va_hdcttr_sdad_2019_health_literacy_estimates",
-        "full_name":"health_literacy_estimates:health_literacy_estimate",
-        "measure":"health_literacy_estimate",
-        "type":"index",
-        "short_name":"Health literacy composite",
-        "long_name":"Health literacy composite",
-        "short_description":"Health literacy composite captures the adult population's ability to obtain, process, and understand basic health services to make appropriate health decisions",
-        "long_description":"The health literacy composite captures the adult population's ability to obtain, process, and understand basic health services to make appropriate health decisions. Health literacy composite is based on variables of demographic characteristics, health status, and health care use.",
-        "statement":"The health literacy composite for {features.name} is {value}.",
-        "equity_category":"Status",
-        "citations":[
-"savitz20",
-"liang17"
+    "health_literacy_estimate": {
+        "category": "Education",
+        "citations": [
+            "savitz20",
+            "liang17"
         ],
-        "sources":[
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "The health literacy composite captures the adult population's ability to obtain, process, and understand basic health services to make appropriate health decisions. Health literacy composite is based on variables of demographic characteristics, health status, and health care use.",
+        "long_name": "Health literacy composite",
+        "measure_type": "index",
+        "short_description": "Health literacy composite captures the adult population's ability to obtain, process, and understand basic health services to make appropriate health decisions",
+        "short_name": "Health literacy composite",
+        "sources": [
             {
-                "name":"Medical Expenditure Panel Survey",
-                "date_accessed":                2021,
-                "url":"https://www.meps.ahrq.gov/mepsweb/"
+                "name": "Medical Expenditure Panel Survey",
+                "date_accessed": 2021,
+                "url": "https://www.meps.ahrq.gov/mepsweb/"
             },
             {
-                "name":"American Community Survey",
-                "date_accessed":                2021,
-                "url":"https://www.census.gov/programs-surveys/acs.html"
+                "name": "American Community Survey",
+                "date_accessed": 2021,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The health literacy composite for {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "perc_post_hs_edu":{
-        "category":"Education",
-        "measure_table":"dc_education_training.va_hdcttr_acs_2015_2019_post_hs_education",
-        "full_name":"post_hs_education:perc_post_hs_edu",
-        "measure":"perc_post_hs_edu",
-        "type":"percent",
-        "short_name":"Post-secondary education (percent)",
-        "long_name":"Percentage with post-secondary education",
-        "short_description":"Percentage of the population self-reported to have post-secondary education",
-        "long_description":"Percentage of the population self-reported to have post-secondary education. Based on American Community Survey Table B15003 in ACS 2015/2019 5-year estimates.",
-        "statement":"{value} of the population in {features.name} has a post-secondary education.",
-        "equity_category":"Status",
-        "sources":[
+    "perc_post_hs_edu": {
+        "category": "Education",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Percentage of the population self-reported to have post-secondary education. Based on American Community Survey Table B15003 in ACS 2015/2019 5-year estimates.",
+        "long_name": "Percentage with post-secondary education",
+        "measure_type": "percentage",
+        "short_description": "Percentage of the population self-reported to have post-secondary education",
+        "short_name": "Post-secondary education (percent)",
+        "sources": [
             {
-                "name":"American Community Survey Table B15003",
-                "date_accessed":                2021,
-                "url":"https://www.census.gov/data/developers/data-sets/acs-5year.html"
+                "name": "American Community Survey Table B15003",
+                "date_accessed": 2021,
+                "url": "https://www.census.gov/data/developers/data-sets/acs-5year.html"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percentage"
+        "statement": "{value} of the population in {features.name} has a post-secondary education.",
+        "type": "percent",
+        "unit": ""
     },
-    "num_post_hs_edu":{
-        "category":"Education",
-        "measure_table":"dc_education_training.va_hdcttr_acs_2015_2019_post_hs_education",
-        "full_name":"post_hs_education:num_post_hs_edu",
-        "measure":"num_post_hs_edu",
-        "type":"integer",
-        "short_name":"Post-secondary education (count)",
-        "long_name":"Number of people with post-secondary education",
-        "short_description":"Number of people who self-reported to have post-secondary education",
-        "long_description":"Number of people who self-reported to have post-secondary education. Based on American Community Survey Table B15003 in ACS 2015/2019 5-year estimates.",
-        "statement":"{value} people in {features.name} have a post-secondary education.",
-        "equity_category":"Status",
-        "sources":[
+    "num_post_hs_edu": {
+        "category": "Education",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of people who self-reported to have post-secondary education. Based on American Community Survey Table B15003 in ACS 2015/2019 5-year estimates.",
+        "long_name": "Number of people with post-secondary education",
+        "measure_type": "count",
+        "short_description": "Number of people who self-reported to have post-secondary education",
+        "short_name": "Post-secondary education (count)",
+        "sources": [
             {
-                "name":"American Community Survey Table B15003",
-                "date_accessed":                2021,
-                "url":"https://www.census.gov/data/developers/data-sets/acs-5year.html"
+                "name": "American Community Survey Table B15003",
+                "date_accessed": 2021,
+                "url": "https://www.census.gov/data/developers/data-sets/acs-5year.html"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
+        "statement": "{value} people in {features.name} have a post-secondary education.",
+        "type": "integer",
+        "unit": ""
     },
-    "_references":{
-        "liang17":{
-            "id":"liang17",
-            "author":[
+    "_references": {
+        "liang17": {
+            "id": "liang17",
+            "author": [
                 {
-                    "given":"Lan",
-                    "family":"Liang"
+                    "given": "Lan",
+                    "family": "Liang"
                 },
                 {
-                    "given":"Cindy",
-                    "family":"Branch"
+                    "given": "Cindy",
+                    "family": "Branch"
                 }
             ],
-            "year":            2017,
-            "title":"Health Literacy Universal Precautions Are Still a Distant Dream: Analysis of U.S. Data on Health Literate Practices",
-            "journal":"Health Literacy Research and Practice",
-            "volume":"1",
-            "number":            4,
-            "page":"e216-e230",
-            "doi":"10.3928/24748307-20170929-01"
+            "year": 2017,
+            "title": "Health Literacy Universal Precautions Are Still a Distant Dream: Analysis of U.S. Data on Health Literate Practices",
+            "journal": "Health Literacy Research and Practice",
+            "volume": "1",
+            "number": 4,
+            "page": "e216-e230",
+            "doi": "10.3928/24748307-20170929-01"
         },
-        "savitz20":{
-            "id":"savitz20",
-            "author":[
+        "savitz20": {
+            "id": "savitz20",
+            "author": [
                 {
-                    "given":"Samuel",
-                    "family":"Savitz"
+                    "given": "Samuel",
+                    "family": "Savitz"
                 },
                 {
-                    "given":"Stacy",
-                    "family":"Bailey"
+                    "given": "Stacy",
+                    "family": "Bailey"
                 },
                 {
-                    "given":"Stacie",
-                    "family":"Dusetzina"
+                    "given": "Stacie",
+                    "family": "Dusetzina"
                 },
                 {
-                    "given":"W.",
-                    "family":"Schuyler Jones"
+                    "given": "W.",
+                    "family": "Schuyler Jones"
                 },
                 {
-                    "given":"Justin",
-                    "family":"Trogdon"
+                    "given": "Justin",
+                    "family": "Trogdon"
                 },
                 {
-                    "given":"Sally",
-                    "family":"Stearns"
+                    "given": "Sally",
+                    "family": "Stearns"
                 }
             ],
-            "year":            2020,
-            "title":"Treatment selection and medication adherence for stable angina: The role of area-based health literacy",
-            "journal":"Journal of Evaluation in Clinical Practice",
-            "volume":"26",
-            "number":            6,
-            "page":"1711-1721",
-            "doi":"10.1111/jep.13341"
+            "year": 2020,
+            "title": "Treatment selection and medication adherence for stable angina: The role of area-based health literacy",
+            "journal": "Journal of Evaluation in Clinical Practice",
+            "volume": "26",
+            "number": 6,
+            "page": "1711-1721",
+            "doi": "10.1111/jep.13341"
         }
     }
 }

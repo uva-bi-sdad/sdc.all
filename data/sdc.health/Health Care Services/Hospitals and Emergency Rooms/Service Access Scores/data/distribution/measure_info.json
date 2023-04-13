@@ -1,114 +1,110 @@
 {
-    "hosp_near_10_median":{
-        "category":"Health",
-        "measure_table":"dc_health_behavior_diet.va_hdcttr_sdad_2021_access_scores_hospitals",
-        "full_name":"access_scores_hospitals:hosp_near_10_median",
-        "measure":"hospital_near_10_median",
-        "type":"drive time",
-        "short_name":"Hospital drive time",
-        "long_name":"Hospital availability by median drive time to the ten closest facilities in minutes",
-        "short_description":"Median drive time (minutes) to the ten closest hospitals",
-        "long_description":"Median drive time in minutes to the ten closest hospitals. Facility location data were collected from the Center for Medicare and Medicaid Services. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
-        "statement":"The median drive time to the ten closest hospitals to {features.name} is {value}.",
-        "equity_category":"Availability",
-        "sources":[
+    "hosp_near_10_median": {
+        "category": "Health",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Availability",
+        "layer": "",
+        "long_description": "Median drive time in minutes to the ten closest hospitals. Facility location data were collected from the Center for Medicare and Medicaid Services. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
+        "long_name": "Hospital availability by median drive time to the ten closest facilities in minutes",
+        "measure_type": "count",
+        "short_description": "Median drive time (minutes) to the ten closest hospitals",
+        "short_name": "Hospital drive time",
+        "sources": [
             {
-                "name":"Center for Medicare and Medicaid Services",
-                "date_accessed":                2022,
-                "url":"https://data.cms.gov/provider-data/topics/hospitals"
+                "name": "Center for Medicare and Medicaid Services",
+                "date_accessed": 2022,
+                "url": "https://data.cms.gov/provider-data/topics/hospitals"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
+        "statement": "The median drive time to the ten closest hospitals to {features.name} is {value}.",
+        "type": "drive time",
+        "unit": ""
     },
-    "hosp_3sfca":{
-        "category":"Health",
-        "measure_table":"dc_health_behavior_diet.va_hdcttr_sdad_2021_access_scores_hospitals",
-        "full_name":"access_scores_hospitals:hosp_3sfca",
-        "measure":"hospital_3sfca",
-        "type":"index",
-        "short_name":"Hospital geographic availability",
-        "long_name":"Hospital geographic availability (3-step floating catchment areas)",
-        "short_description":"Index of hospital availability based on supply and demand of facilities",
-        "long_description":"Hospital access score based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
-        "statement":"The hospital geographic availability score for {features.name} is {value}.",
-        "equity_category":"Availability",
-        "citations":[
-"lou04",
-"lou09",
-"lou03",
-"saxon20"
+    "hosp_3sfca": {
+        "category": "Health",
+        "citations": [
+            "lou04",
+            "lou09",
+            "lou03",
+            "saxon20"
         ],
-        "sources":[
+        "data_type": "numeric",
+        "equity_category": "Availability",
+        "layer": "",
+        "long_description": "Hospital access score based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
+        "long_name": "Hospital geographic availability (3-step floating catchment areas)",
+        "measure_type": "index",
+        "short_description": "Index of hospital availability based on supply and demand of facilities",
+        "short_name": "Hospital geographic availability",
+        "sources": [
             {
-                "name":"Center for Medicare and Medicaid Services",
-                "date_accessed":                2022,
-                "url":"https://data.cms.gov/provider-data/topics/hospitals"
+                "name": "Center for Medicare and Medicaid Services",
+                "date_accessed": 2022,
+                "url": "https://data.cms.gov/provider-data/topics/hospitals"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The hospital geographic availability score for {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "hosp_cnt":{
-        "category":"Health",
-        "measure_table":"dc_health_behavior_diet.va_hdcttr_sdad_2021_access_scores_hospitals",
-        "full_name":"access_scores_hospitals:hosp_beds_cnt",
-        "measure":"hospital_cnt",
-        "type":"count",
-        "short_name":"Hospital availability (count)",
-        "long_name":"Availability of hospitals by count",
-        "short_description":"Count of hospitals based on facility locations",
-        "long_description":"Count of hospitals based on facility locations. Location data were collected from the Center for Medicare and Medicaid Services.",
-        "statement":"There are {value} hospitals in {features.name}.",
-        "equity_category":"Availability",
-        "sources":[
+    "hosp_cnt": {
+        "category": "Health",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Availability",
+        "layer": "",
+        "long_description": "Count of hospitals based on facility locations. Location data were collected from the Center for Medicare and Medicaid Services.",
+        "long_name": "Availability of hospitals by count",
+        "measure_type": "count",
+        "short_description": "Count of hospitals based on facility locations",
+        "short_name": "Hospital availability (count)",
+        "sources": [
             {
-                "name":"Center for Medicare and Medicaid Services",
-                "date_accessed":                2022,
-                "url":"https://data.cms.gov/provider-data/topics/hospitals"
+                "name": "Center for Medicare and Medicaid Services",
+                "date_accessed": 2022,
+                "url": "https://data.cms.gov/provider-data/topics/hospitals"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
+        "statement": "There are {value} hospitals in {features.name}.",
+        "type": "count",
+        "unit": ""
     },
-    "_references":{
-        "wan12":{
-            "id":"wan12",
-            "author":[
+    "_references": {
+        "wan12": {
+            "id": "wan12",
+            "author": [
                 {
-                    "given":"Neng",
-                    "family":"Wan"
+                    "given": "Neng",
+                    "family": "Wan"
                 },
                 {
-                    "given":"Bin",
-                    "family":"Zou"
+                    "given": "Bin",
+                    "family": "Zou"
                 },
                 {
-                    "given":"Troy",
-                    "family":"Sternberg"
+                    "given": "Troy",
+                    "family": "Sternberg"
                 }
             ],
-            "year":            2012,
-            "title":"A three-step floating catchment area method for analyzing spatial access to health services",
-            "journal":"International Journal of Geographical Information Science",
-            "volume":"26",
-            "page":"1073\u20131089",
-            "doi":"10.1080/13658816.2011.624987"
+            "year": 2012,
+            "title": "A three-step floating catchment area method for analyzing spatial access to health services",
+            "journal": "International Journal of Geographical Information Science",
+            "volume": "26",
+            "page": "1073\u20131089",
+            "doi": "10.1080/13658816.2011.624987"
         },
-        "bii21":{
-            "id":"bii21",
-            "author":[
+        "bii21": {
+            "id": "bii21",
+            "author": [
                 {
-                    "family":"Biocomplexity Institute and Initiative"
+                    "family": "Biocomplexity Institute and Initiative"
                 }
             ],
-            "year":            2021,
-            "title":"catchment: Calculate spatial access and availability metrics",
-            "version":"0.0.1",
-            "url":"https://github.com/uva-bi-sdad/catchment"
+            "year": 2021,
+            "title": "catchment: Calculate spatial access and availability metrics",
+            "version": "0.0.1",
+            "url": "https://github.com/uva-bi-sdad/catchment"
         }
     }
 }

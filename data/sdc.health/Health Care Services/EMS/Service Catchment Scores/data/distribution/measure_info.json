@@ -1,169 +1,165 @@
 {
-    "ems_near_10_median":{
-        "category":"Health",
-        "measure_table":"dc_health_behavior_diet.va_hdcttr_sdad_2021_access_scores_ems",
-        "full_name":"access_scores_ems:ems_near_10_median",
-        "measure":"ems_near_10_median",
-        "type":"drive time",
-        "short_name":"Emergency medical services availability (drive time)",
-        "long_name":"Emergency medical services availability by median drive time to the ten closest facilities in minutes",
-        "short_description":"Median drive time (minutes) to the ten closest emergency medical services facilities",
-        "long_description":"Median drive time in minutes to the ten closest emergency medical services facilities. Facility location data were collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
-        "statement":"The median drive time to the ten closest emergency medical service facilities to {features.name} is {value}.",
-        "equity_category":"Availability",
-        "sources":[
+    "ems_near_10_median": {
+        "category": "Health",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Availability",
+        "layer": "",
+        "long_description": "Median drive time in minutes to the ten closest emergency medical services facilities. Facility location data were collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
+        "long_name": "Emergency medical services availability by median drive time to the ten closest facilities in minutes",
+        "measure_type": "count",
+        "short_description": "Median drive time (minutes) to the ten closest emergency medical services facilities",
+        "short_name": "Emergency medical services availability (drive time)",
+        "sources": [
             {
-                "name":"Homeland Infrastructure Foundation-Level Data (HIFLD)",
-                "date_accessed":                2021,
-                "url":"https://hifld-geoplatform.opendata.arcgis.com/"
+                "name": "Homeland Infrastructure Foundation-Level Data (HIFLD)",
+                "date_accessed": 2021,
+                "url": "https://hifld-geoplatform.opendata.arcgis.com/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
+        "statement": "The median drive time to the ten closest emergency medical service facilities to {features.name} is {value}.",
+        "type": "drive time",
+        "unit": ""
     },
-    "ems_cnt":{
-        "category":"Health",
-        "measure_table":"dc_health_behavior_diet.va_hdcttr_sdad_2021_ems_access_scores",
-        "full_name":"access_scores_ems:ems_cnt",
-        "measure":"ems_cnt",
-        "type":"count",
-        "short_name":"Emergency medical services availability (count)",
-        "long_name":"Availability of emergency medical services by count",
-        "short_description":"Count of emergency medical services facilities based on facility locations",
-        "long_description":"Count of emergency medical services facilities based on facility locations. Location data was collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository.",
-        "statement":"There are {value} emergency medical services facilities in {features.name}.",
-        "equity_category":"Availability",
-        "sources":[
+    "ems_cnt": {
+        "category": "Health",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Availability",
+        "layer": "",
+        "long_description": "Count of emergency medical services facilities based on facility locations. Location data was collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository.",
+        "long_name": "Availability of emergency medical services by count",
+        "measure_type": "count",
+        "short_description": "Count of emergency medical services facilities based on facility locations",
+        "short_name": "Emergency medical services availability (count)",
+        "sources": [
             {
-                "name":"Homeland Infrastructure Foundation-Level Data (HIFLD)",
-                "date_accessed":                2021,
-                "url":"https://hifld-geoplatform.opendata.arcgis.com/"
+                "name": "Homeland Infrastructure Foundation-Level Data (HIFLD)",
+                "date_accessed": 2021,
+                "url": "https://hifld-geoplatform.opendata.arcgis.com/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
+        "statement": "There are {value} emergency medical services facilities in {features.name}.",
+        "type": "count",
+        "unit": ""
     },
-    "ems_3sfca":{
-        "category":"Health",
-        "measure_table":"dc_health_behavior_diet.va_hdcttr_sdad_2021_ems_access_scores",
-        "full_name":"access_scores_ems:ems_3sfca",
-        "measure":"ems_3sfca",
-        "type":"index",
-        "short_name":"Emergency medical services geographic availability",
-        "long_name":"Emergency medical services geographic availability (3-step floating catchment areas)",
-        "short_description":"Index of emergency medical services availability based on supply and demand of facilities",
-        "long_description":"Emergency medical services availability based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
-        "statement":"The emergency medical services availability for {features.name} is {value}.",
-        "equity_category":"Availability",
-        "citations":[
-"lou04",
-"lou09",
-"lou03",
-"saxon20"
+    "ems_3sfca": {
+        "category": "Health",
+        "citations": [
+            "lou04",
+            "lou09",
+            "lou03",
+            "saxon20"
         ],
-        "sources":[
+        "data_type": "numeric",
+        "equity_category": "Availability",
+        "layer": "",
+        "long_description": "Emergency medical services availability based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
+        "long_name": "Emergency medical services geographic availability (3-step floating catchment areas)",
+        "measure_type": "index",
+        "short_description": "Index of emergency medical services availability based on supply and demand of facilities",
+        "short_name": "Emergency medical services geographic availability",
+        "sources": [
             {
-                "name":"Homeland Infrastructure Foundation-Level Data (HIFLD)",
-                "date_accessed":                2021,
-                "url":"https://hifld-geoplatform.opendata.arcgis.com/"
+                "name": "Homeland Infrastructure Foundation-Level Data (HIFLD)",
+                "date_accessed": 2021,
+                "url": "https://hifld-geoplatform.opendata.arcgis.com/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The emergency medical services availability for {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "_references":{
-        "lou04":{
-            "id":"lou04",
-            "author":[
+    "_references": {
+        "lou04": {
+            "id": "lou04",
+            "author": [
                 {
-                    "given":"Wei",
-                    "family":"Lou"
+                    "given": "Wei",
+                    "family": "Lou"
                 }
             ],
-            "year":            2004,
-            "title":"Using a gis-based floating catchment method to assess areas with shortage of physicians",
-            "journal":"Health & Place",
-            "volume":"10",
-            "number":            1,
-            "page":"1-11",
-            "doi":"10.1016/S1353-8292(02)00067-9"
+            "year": 2004,
+            "title": "Using a gis-based floating catchment method to assess areas with shortage of physicians",
+            "journal": "Health & Place",
+            "volume": "10",
+            "number": 1,
+            "page": "1-11",
+            "doi": "10.1016/S1353-8292(02)00067-9"
         },
-        "lou09":{
-            "id":"lou09",
-            "author":[
+        "lou09": {
+            "id": "lou09",
+            "author": [
                 {
-                    "given":"Wei",
-                    "family":"Lou"
+                    "given": "Wei",
+                    "family": "Lou"
                 },
                 {
-                    "given":"Yi",
-                    "family":"Qi"
+                    "given": "Yi",
+                    "family": "Qi"
                 }
             ],
-            "year":            2009,
-            "title":"An enhanced two-step floating catchment area (e2sfca) method for measuring spatial accessibility to primary care physicians",
-            "journal":"Health & Place",
-            "volume":"15",
-            "number":            4,
-            "page":"1100-1107",
-            "doi":"10.1016/j.healthplace.2009.06.002"
+            "year": 2009,
+            "title": "An enhanced two-step floating catchment area (e2sfca) method for measuring spatial accessibility to primary care physicians",
+            "journal": "Health & Place",
+            "volume": "15",
+            "number": 4,
+            "page": "1100-1107",
+            "doi": "10.1016/j.healthplace.2009.06.002"
         },
-        "lou03":{
-            "id":"lou03",
-            "author":[
+        "lou03": {
+            "id": "lou03",
+            "author": [
                 {
-                    "given":"Wei",
-                    "family":"Lou"
+                    "given": "Wei",
+                    "family": "Lou"
                 },
                 {
-                    "given":"Fahui",
-                    "family":"Wang"
+                    "given": "Fahui",
+                    "family": "Wang"
                 }
             ],
-            "year":            2003,
-            "title":"Measures of spatial accessibility to health care in a gis environment: synthesis and a case study in the Chicago region",
-            "journal":"Environment and Planning B: Planning and Design",
-            "volume":"30",
-            "number":            6,
-            "page":"865-884",
-            "doi":"10.1068/b29120"
+            "year": 2003,
+            "title": "Measures of spatial accessibility to health care in a gis environment: synthesis and a case study in the Chicago region",
+            "journal": "Environment and Planning B: Planning and Design",
+            "volume": "30",
+            "number": 6,
+            "page": "865-884",
+            "doi": "10.1068/b29120"
         },
-        "saxon20":{
-            "id":"saxon20",
-            "author":[
+        "saxon20": {
+            "id": "saxon20",
+            "author": [
                 {
-                    "given":"James",
-                    "family":"Saxon"
+                    "given": "James",
+                    "family": "Saxon"
                 },
                 {
-                    "given":"Julia",
-                    "family":"Koschinsky"
+                    "given": "Julia",
+                    "family": "Koschinsky"
                 },
                 {
-                    "given":"Karina",
-                    "family":"Acosta"
+                    "given": "Karina",
+                    "family": "Acosta"
                 },
                 {
-                    "given":"Vidal",
-                    "family":"Anguiano"
+                    "given": "Vidal",
+                    "family": "Anguiano"
                 },
                 {
-                    "given":"Luc",
-                    "family":"Anselin"
+                    "given": "Luc",
+                    "family": "Anselin"
                 },
                 {
-                    "given":"Sergio",
-                    "family":"Rey"
+                    "given": "Sergio",
+                    "family": "Rey"
                 }
             ],
-            "year":            2020,
-            "title":"An Open Software Environment to Make Spatial Access Metrics More Accessible",
-            "journal":"University of Chicago: Center for Spatial Data Science",
-            "volume":"Preprint",
-            "doi":"10.13140/RG.2.2.12396.28807"
+            "year": 2020,
+            "title": "An Open Software Environment to Make Spatial Access Metrics More Accessible",
+            "journal": "University of Chicago: Center for Spatial Data Science",
+            "volume": "Preprint",
+            "doi": "10.13140/RG.2.2.12396.28807"
         }
     }
 }

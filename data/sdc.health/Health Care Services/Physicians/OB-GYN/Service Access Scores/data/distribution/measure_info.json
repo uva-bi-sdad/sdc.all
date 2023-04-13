@@ -1,112 +1,105 @@
 {
-    "obgyn_cnt":{
-        "category":"Health",
-        "measure_table":"dc_health_behavior_diet.va_hdcttr_sdad_2021_obgyn_access_scores",
-        "full_name":"access_scores_obgyn:obgyn_cnt",
-        "measure":"obgyn_cnt",
-        "type":"count",
-        "short_name":"OBGYN care availability (count)",
-        "long_name":"OBGYN care availability by count",
-        "short_description":"Count of OBGYNs based on provider locations",
-        "long_description":"Count of OBGYN care providers based on provider locations. Address data were collected from WebMD's online Physician Directory.",
-        "statement":"There are {value} OBGYNs in {features.name}.",
-        "equity_category":"Availability",
-        "sources":[
+    "obgyn_cnt": {
+        "category": "Health",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Availability",
+        "layer": "",
+        "long_description": "Count of OBGYN care providers based on provider locations. Address data were collected from WebMD's online Physician Directory.",
+        "long_name": "OBGYN care availability by count",
+        "measure_type": "count",
+        "short_description": "Count of OBGYNs based on provider locations",
+        "short_name": "OBGYN care availability (count)",
+        "sources": [
             {
-                "name":"WebMD Physician Directory",
-                "date_accessed":                2021,
-                "url":"https://doctor.webmd.com/"
+                "name": "WebMD Physician Directory",
+                "date_accessed": 2021,
+                "url": "https://doctor.webmd.com/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
+        "statement": "There are {value} OBGYNs in {features.name}.",
+        "type": "count",
+        "unit": ""
     },
-    "obgyn_2sfca":{
-        "category":"Health",
-        "measure_table":"dc_health_behavior_diet.dmv_bg_sdad_2021_obgyns_access_scores",
-        "full_name":"access_scores_obgyn:obgyn_2sfca",
-        "measure":"obgyn_2sfca",
-        "type":"index",
-        "short_name":"OBGYN care geographic availability",
-        "long_name":"OBGYN care geographic availability (2-step enhanced floating catchment areas)",
-        "short_description":"Index of OBGYN care availability based on supply and demand of providers",
-        "long_description":"OBGYN care availability based on 2-step enhanced floating catchment areas. This method is an aggregation of OBGYNs per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined for the demand for OBGYNs (population served by OBGYNs). Provider address data were collected from WebMD's online physician directory.",
-        "statement":"The OBGYN availability for {features.name} is {value}.",
-        "equity_category":"Availability",
-        "citations":[
-"lou04",
-"lou09",
-"lou03",
-"saxon20"
+    "obgyn_2sfca": {
+        "category": "Health",
+        "citations": [
+            "lou04",
+            "lou09",
+            "lou03",
+            "saxon20"
         ],
-        "sources":[
+        "data_type": "numeric",
+        "equity_category": "Availability",
+        "layer": "",
+        "long_description": "OBGYN care availability based on 2-step enhanced floating catchment areas. This method is an aggregation of OBGYNs per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined for the demand for OBGYNs (population served by OBGYNs). Provider address data were collected from WebMD's online physician directory.",
+        "long_name": "OBGYN care geographic availability (2-step enhanced floating catchment areas)",
+        "measure_type": "index",
+        "short_description": "Index of OBGYN care availability based on supply and demand of providers",
+        "short_name": "OBGYN care geographic availability",
+        "sources": [
             {
-                "name":"WebMD Physician Directory",
-                "date_accessed":                2021,
-                "url":"https://doctor.webmd.com/"
+                "name": "WebMD Physician Directory",
+                "date_accessed": 2021,
+                "url": "https://doctor.webmd.com/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The OBGYN availability for {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "obgyn_e2sfca":{
-        "category":"Health",
-        "measure_table":"dc_health_behavior_diet.dmv_bg_sdad_2021_obgyns_access_scores",
-        "full_name":"access_scores_obgyn:obgyn_e2sfca",
-        "measure":"obgyn_e2sfca",
-        "type":"index",
-        "short_name":"OBGYN care geographic availability",
-        "long_name":"OBGYN care geographic availability (2-step enhanced floating catchment areas)",
-        "short_description":"Index of OBGYN care availability based on supply and demand of providers",
-        "long_description":"OBGYN care availability based on 2-step enhanced floating catchment areas. This method is an aggregation of OBGYNs per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined for the demand for OBGYNs (population served by OBGYNs). Provider address data were collected from WebMD's online physician directory.",
-        "statement":"The OBGYN availability for {features.name} is {value}.",
-        "equity_category":"Availability",
-        "citations":[
-"lou04",
-"lou09",
-"lou03",
-"saxon20"
+    "obgyn_e2sfca": {
+        "category": "Health",
+        "citations": [
+            "lou04",
+            "lou09",
+            "lou03",
+            "saxon20"
         ],
-        "sources":[
+        "data_type": "numeric",
+        "equity_category": "Availability",
+        "layer": "",
+        "long_description": "OBGYN care availability based on 2-step enhanced floating catchment areas. This method is an aggregation of OBGYNs per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined for the demand for OBGYNs (population served by OBGYNs). Provider address data were collected from WebMD's online physician directory.",
+        "long_name": "OBGYN care geographic availability (2-step enhanced floating catchment areas)",
+        "measure_type": "index",
+        "short_description": "Index of OBGYN care availability based on supply and demand of providers",
+        "short_name": "OBGYN care geographic availability",
+        "sources": [
             {
-                "name":"WebMD Physician Directory",
-                "date_accessed":                2021,
-                "url":"https://doctor.webmd.com/"
+                "name": "WebMD Physician Directory",
+                "date_accessed": 2021,
+                "url": "https://doctor.webmd.com/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The OBGYN availability for {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "obgyn_3sfca":{
-        "category":"Health",
-        "measure_table":"dc_health_behavior_diet.dmv_bg_sdad_2021_obgyns_access_scores",
-        "full_name":"access_scores_obgyn:obgyn_3sfca",
-        "measure":"obgyn_3sfca",
-        "type":"index",
-        "short_name":"OBGYN care geographic availability",
-        "long_name":"OBGYN care geographic availability (3-step floating catchment areas)",
-        "short_description":"Index of OBGYN care availability based on supply and demand of providers",
-        "long_description":"OBGYN care availability based on 3-step floating catchment areas. This method is an aggregation of OBGYNs per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined for the demand for OBGYNs (population served by OBGYNs). Provider address data were collected from WebMD's online physician directory.",
-        "statement":"The OBGYN availability for {features.name} is {value}.",
-        "equity_category":"Availability",
-        "citations":[
-"lou04",
-"lou09",
-"lou03",
-"saxon20"
+    "obgyn_3sfca": {
+        "category": "Health",
+        "citations": [
+            "lou04",
+            "lou09",
+            "lou03",
+            "saxon20"
         ],
-        "sources":[
+        "data_type": "numeric",
+        "equity_category": "Availability",
+        "layer": "",
+        "long_description": "OBGYN care availability based on 3-step floating catchment areas. This method is an aggregation of OBGYNs per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined for the demand for OBGYNs (population served by OBGYNs). Provider address data were collected from WebMD's online physician directory.",
+        "long_name": "OBGYN care geographic availability (3-step floating catchment areas)",
+        "measure_type": "index",
+        "short_description": "Index of OBGYN care availability based on supply and demand of providers",
+        "short_name": "OBGYN care geographic availability",
+        "sources": [
             {
-                "name":"WebMD Physician Directory",
-                "date_accessed":                2021,
-                "url":"https://doctor.webmd.com/"
+                "name": "WebMD Physician Directory",
+                "date_accessed": 2021,
+                "url": "https://doctor.webmd.com/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The OBGYN availability for {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     }
 }

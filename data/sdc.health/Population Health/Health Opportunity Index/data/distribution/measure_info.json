@@ -1,344 +1,398 @@
 {
-    "economic_opportunity_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Economic opportunity profile",
-        "long_name":"Economic opportunity profile",
-        "short_description":"A measure of the economic opportunities available within a community.",
-        "long_description":"A measure of the economic opportunities available within a community. Includes the employment accessibility indicator, the income inequality indicator, and the job participation indicator.",
-        "statement":"The economic opportunity profile in {features.name} is {value}.",
-        "sources":[
+    "economic_opportunity_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "A measure of the economic opportunities available within a community. Includes the employment accessibility indicator, the income inequality indicator, and the job participation indicator.",
+        "long_name": "Economic opportunity profile",
+        "measure_type": "index",
+        "short_description": "A measure of the economic opportunities available within a community.",
+        "short_name": "Economic opportunity profile",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The economic opportunity profile in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "education_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Education indicator",
-        "long_name":"Education indicator",
-        "short_description":"The average number of years of schooling among adults in the community. ",
-        "long_description":"The average number of years of schooling among adults in the community. It can range from zero (those with no formal schooling) to 20 (those with a doctorate/professional degree).",
-        "statement":"The education indicator in {features.name} is {value}.",
-        "sources":[
+    "education_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "The average number of years of schooling among adults in the community. It can range from zero (those with no formal schooling) to 20 (those with a doctorate/professional degree).",
+        "long_name": "Education indicator",
+        "measure_type": "index",
+        "short_description": "The average number of years of schooling among adults in the community. ",
+        "short_name": "Education indicator",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The education indicator in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "employment_access_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Employment accessibility indicator",
-        "long_name":"Employment accessibility indicator",
-        "short_description":" A measure of the number of jobs accessible to members of the community.",
-        "long_description":" A measure of the number of jobs accessible to members of the community. Accessibility is determined by distance: close jobs are more accessible than jobs farther away.",
-        "statement":"The employment accessibility indicator in {features.name} is {value}.",
-        "sources":[
+    "employment_access_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": " A measure of the number of jobs accessible to members of the community. Accessibility is determined by distance: close jobs are more accessible than jobs farther away.",
+        "long_name": "Employment accessibility indicator",
+        "measure_type": "index",
+        "short_description": " A measure of the number of jobs accessible to members of the community.",
+        "short_name": "Employment accessibility indicator",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The employment accessibility indicator in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "food_accessibility_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Food accessibility indicator",
-        "long_name":"Food accessibility indicator",
-        "short_description":"A measure of access to food by low income people within a community.",
-        "long_description":"A measure of access to food by low income people within a community. It measures the proportion of the low income community that has a large grocery store within 1 mile in urban areas or 10 miles in rural areas.",
-        "statement":"The food accessibility indicator in {features.name} is {value}.",
-        "sources":[
+    "food_accessibility_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "A measure of access to food by low income people within a community. It measures the proportion of the low income community that has a large grocery store within 1 mile in urban areas or 10 miles in rural areas.",
+        "long_name": "Food accessibility indicator",
+        "measure_type": "index",
+        "short_description": "A measure of access to food by low income people within a community.",
+        "short_name": "Food accessibility indicator",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The food accessibility indicator in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "health_opportunity_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Health opportunity index",
-        "long_name":"Health opportunity index",
-        "short_description":"A group of indicators that provide broad insight into the overall opportunity Virginians have to live long and healthy lives.",
-        "long_description":"A group of indicators that provide broad insight into the overall opportunity Virginians have to live long and healthy lives based on the Social Determinants of Health. It is a hierarchical index that allows users to examine social determinants of health at multiple levels of detail in Virginia. It is made up of over 30 variables, combined into 13 indicators, grouped into four profiles, which are aggregated into a single Health Opportunity Index. The HOI is reported at both the census tract and county/independent city level.",
-        "statement":"The health opportunity index in {features.name} is {value}.",
-        "sources":[
+    "health_opportunity_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "A group of indicators that provide broad insight into the overall opportunity Virginians have to live long and healthy lives based on the Social Determinants of Health. It is a hierarchical index that allows users to examine social determinants of health at multiple levels of detail in Virginia. It is made up of over 30 variables, combined into 13 indicators, grouped into four profiles, which are aggregated into a single Health Opportunity Index. The HOI is reported at both the census tract and county/independent city level.",
+        "long_name": "Health opportunity index",
+        "measure_type": "index",
+        "short_description": "A group of indicators that provide broad insight into the overall opportunity Virginians have to live long and healthy lives.",
+        "short_name": "Health opportunity index",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The health opportunity index in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "income_inequality_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Income inequality indicator",
-        "long_name":"Income inequality indicator",
-        "short_description":"The Gini Index, a common measure of income inequality.",
-        "long_description":"The Gini Index, a common measure of income inequality, measures whether the income earned within a community is distributed broadly or concentrated within the hands of small number of households.",
-        "statement":"The income inequality index in {features.name} is {value}.",
-        "sources":[
+    "income_inequality_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "The Gini Index, a common measure of income inequality, measures whether the income earned within a community is distributed broadly or concentrated within the hands of small number of households.",
+        "long_name": "Income inequality indicator",
+        "measure_type": "index",
+        "short_description": "The Gini Index, a common measure of income inequality.",
+        "short_name": "Income inequality indicator",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The income inequality index in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "job_participation_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Job participation indicator",
-        "long_name":"Job participation indicator",
-        "short_description":"The percentage of individuals 16-64 years of age active in the civilian labor force.",
-        "long_description":"The percentage of individuals 16-64 years of age active in the civilian labor force. It includes both those currently working and those seeking work.",
-        "statement":"The job participation indicator in {features.name} is {value}.",
-        "sources":[
+    "job_participation_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "The percentage of individuals 16-64 years of age active in the civilian labor force. It includes both those currently working and those seeking work.",
+        "long_name": "Job participation indicator",
+        "measure_type": "index",
+        "short_description": "The percentage of individuals 16-64 years of age active in the civilian labor force.",
+        "short_name": "Job participation indicator",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The job participation indicator in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "material_deprivation_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Material deprivation indicator",
-        "long_name":"Material deprivation indicator",
-        "short_description":"Based on the Towsend Material Deprivation Index, it examines the private material resources available to households in a community.",
-        "long_description":"Based on the Towsend Material Deprivation Index, it examines the private material resources available to households in a community. 4 indicators make up Towsend: overcrowding (>2 persons per room), unemployment, % of persons no vehicle or car, and % of person who rent.",
-        "statement":"The material deprivation indicator in {features.name} is {value}.",
-        "sources":[
+    "material_deprivation_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "Based on the Towsend Material Deprivation Index, it examines the private material resources available to households in a community. 4 indicators make up Towsend: overcrowding (>2 persons per room), unemployment, % of persons no vehicle or car, and % of person who rent.",
+        "long_name": "Material deprivation indicator",
+        "measure_type": "index",
+        "short_description": "Based on the Towsend Material Deprivation Index, it examines the private material resources available to households in a community.",
+        "short_name": "Material deprivation indicator",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The material deprivation indicator in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "pop_churning_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Population churning index",
-        "long_name":"Population churning index",
-        "short_description":"The amount of population turnover within a community.",
-        "long_description":"The amount of population turnover within a community. It measure the rate at which people both move into a community and move out of a community.",
-        "statement":"The population churning index in {features.name} is {value}.",
-        "sources":[
+    "pop_churning_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "The amount of population turnover within a community. It measure the rate at which people both move into a community and move out of a community.",
+        "long_name": "Population churning index",
+        "measure_type": "index",
+        "short_description": "The amount of population turnover within a community.",
+        "short_name": "Population churning index",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The population churning index in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "pop_density_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Population density indicator",
-        "long_name":"Population density indicator",
-        "short_description":"A measure of population density that takes into account the density levels most people in the community experience.",
-        "long_description":"A measure of population density that takes into account the density levels most people in the community experience.",
-        "statement":"The population density indicator in {features.name} is {value}.",
-        "sources":[
+    "pop_density_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "A measure of population density that takes into account the density levels most people in the community experience.",
+        "long_name": "Population density indicator",
+        "measure_type": "index",
+        "short_description": "A measure of population density that takes into account the density levels most people in the community experience.",
+        "short_name": "Population density indicator",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The population density indicator in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "segregation_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Segregation indicator",
-        "long_name":"Segregation indicator",
-        "short_description":"A measure of whether and how much people of different racial and ethnic backgrounds live together in diverse communities.",
-        "long_description":"A measure of whether and how much people of different racial and ethnic backgrounds live together in diverse communities. It includes measures of both community diversity and the distance between communities with different racial or ethnic profiles.",
-        "statement":"The segregation indicator in {features.name} is {value}.",
-        "sources":[
+    "segregation_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "A measure of whether and how much people of different racial and ethnic backgrounds live together in diverse communities. It includes measures of both community diversity and the distance between communities with different racial or ethnic profiles.",
+        "long_name": "Segregation indicator",
+        "measure_type": "index",
+        "short_description": "A measure of whether and how much people of different racial and ethnic backgrounds live together in diverse communities.",
+        "short_name": "Segregation indicator",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The segregation indicator in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "walkability_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Walkability indicator",
-        "long_name":"Walkability indicator",
-        "short_description":"A measure of how walkable a community is.",
-        "long_description":"A measure of how walkable a community is based on residential and employment density, land use (destination) diversity, street connectivity and public transit accessibility.",
-        "statement":"The walkability indicator in {features.name} is {value}.",
-        "sources":[
+    "walkability_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "A measure of how walkable a community is based on residential and employment density, land use (destination) diversity, street connectivity and public transit accessibility.",
+        "long_name": "Walkability indicator",
+        "measure_type": "index",
+        "short_description": "A measure of how walkable a community is.",
+        "short_name": "Walkability indicator",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The walkability indicator in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "wellness_disparity_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Wellness disparity profile",
-        "long_name":"Wellness disparity profile",
-        "short_description":"A measure of the disparate access to health services within a community.",
-        "long_description":"A measure of the disparate access to health services within a community. It includes the access to care indicator and the segregation indicator.",
-        "statement":"The wellness disparity profile in {features.name} is {value}.",
-        "sources":[
+    "wellness_disparity_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "A measure of the disparate access to health services within a community. It includes the access to care indicator and the segregation indicator.",
+        "long_name": "Wellness disparity profile",
+        "measure_type": "index",
+        "short_description": "A measure of the disparate access to health services within a community.",
+        "short_name": "Wellness disparity profile",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The wellness disparity profile in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "consumer_opportunity_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Consumer opportunity profile",
-        "long_name":"Consumer opportunity profile",
-        "short_description":"A measure of the consumer resources available within a community.",
-        "long_description":"A measure of the consumer resources available within a community. It includes the affordability indicator, the education indicator, the food accessbility indicator, and the material deprevation indicator.",
-        "statement":"The consumer opportunity profile in {features.name} is {value}.",
-        "sources":[
+    "consumer_opportunity_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "A measure of the consumer resources available within a community. It includes the affordability indicator, the education indicator, the food accessbility indicator, and the material deprevation indicator.",
+        "long_name": "Consumer opportunity profile",
+        "measure_type": "index",
+        "short_description": "A measure of the consumer resources available within a community.",
+        "short_name": "Consumer opportunity profile",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The consumer opportunity profile in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "affordability_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Affordability indicator",
-        "long_name":"Affordability indicator",
-        "short_description":"The proportion of a community\u2019s income spent on housing and transportation.",
-        "long_description":"The proportion of a community\u2019s income spent on housing and transportation. This indicates how much income remains for other priorities, including food, health care and social activities.",
-        "statement":"The affordability indicator in {features.name} is {value}.",
-        "sources":[
+    "affordability_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "The proportion of a community\u2019s income spent on housing and transportation. This indicates how much income remains for other priorities, including food, health care and social activities.",
+        "long_name": "Affordability indicator",
+        "measure_type": "index",
+        "short_description": "The proportion of a community\u2019s income spent on housing and transportation.",
+        "short_name": "Affordability indicator",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The affordability indicator in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "air_quality_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Air quality indicator",
-        "long_name":"Air quality indicator",
-        "short_description":"Includes EPA measures of pollution, including on-road, non-road and non-point pollution, and EPA measures of neurological, cancer and respiration risk..",
-        "long_description":"Includes EPA measures of pollution, including on-road, non-road and non-point pollution, and EPA measures of neurological, cancer and respiration risk.",
-        "statement":"The air quality indicator in {features.name} is {value}.",
-        "sources":[
+    "air_quality_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "Includes EPA measures of pollution, including on-road, non-road and non-point pollution, and EPA measures of neurological, cancer and respiration risk.",
+        "long_name": "Air quality indicator",
+        "measure_type": "index",
+        "short_description": "Includes EPA measures of pollution, including on-road, non-road and non-point pollution, and EPA measures of neurological, cancer and respiration risk..",
+        "short_name": "Air quality indicator",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The air quality indicator in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "community_environment_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Community environmental profile",
-        "long_name":"Community environmental profile",
-        "short_description":"A measure of the natural, built and social environment of a community.",
-        "long_description":"A measure of the natural, built and social environment of a community. It includes the air quality indicator, the population churning indicator, the population density indicator, and the walkability indicator.",
-        "statement":"The community environmental profile in {features.name} is {value}.",
-        "sources":[
+    "community_environment_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "A measure of the natural, built and social environment of a community. It includes the air quality indicator, the population churning indicator, the population density indicator, and the walkability indicator.",
+        "long_name": "Community environmental profile",
+        "measure_type": "index",
+        "short_description": "A measure of the natural, built and social environment of a community.",
+        "short_name": "Community environmental profile",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The community environmental profile in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "access_care_indicator":{
-        "category":"Health Opportunity Index",
-        "type":"index",
-        "short_name":"Access to care indicator",
-        "long_name":"Access to care indicator",
-        "short_description":"Whether community members have access to a primary care physician and the means to pay for care..",
-        "long_description":"Whether community members have access to a primary care physician and the means to pay for care. It includes the proportion of uninsured residents and the number of physicians within 30 miles of the community.",
-        "statement":"The access to care indicator in {features.name} is {value}.",
-        "sources":[
+    "access_care_indicator": {
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "Whether community members have access to a primary care physician and the means to pay for care. It includes the proportion of uninsured residents and the number of physicians within 30 miles of the community.",
+        "long_name": "Access to care indicator",
+        "measure_type": "index",
+        "short_description": "Whether community members have access to a primary care physician and the means to pay for care..",
+        "short_name": "Access to care indicator",
+        "sources": [
             {
-                "name":"Virginia Department of Health",
-                "date_accessed":                2023,
-                "url":"https://apps.vdh.virginia.gov/omhhe/hoi/"
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The access to care indicator in {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     }
 }

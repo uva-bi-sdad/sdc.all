@@ -1,25 +1,24 @@
 {
-    "earnings_per_job":{
-        "category":"Employment/Workforce Development",
-        "measure_table":"earnings_per_job",
-        "full_name":"earnings_per_job:earnings_per_job",
-        "measure":"earnings_per_job",
-        "type":"dollar",
-        "short_name":"Earnings per job",
-        "long_name":"Earnings per job",
-        "short_description":"Average of earnings per job.",
-        "long_description":"Earnings per job is calculated based on the GDP and Personal Income table from the Bureau of Economic Analysis.",
-        "statement":"Earnings per job in {features.name} is {value}.",
-        "equity_category":"Status",
-        "sources":[
+    "earnings_per_job": {
+        "category": "Employment/Workforce Development",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Earnings per job is calculated based on the GDP and Personal Income table from the Bureau of Economic Analysis.",
+        "long_name": "Earnings per job",
+        "measure_type": "dollars",
+        "short_description": "Average of earnings per job.",
+        "short_name": "Earnings per job",
+        "sources": [
             {
-                "name":"Bureau of Economic Analysis",
-                "date_accessed":"2021",
-                "url":"https://apps.bea.gov/iTable/iTable.cfm?reqid=70&step=1&acrdn=6"
+                "name": "Bureau of Economic Analysis",
+                "date_accessed": "2021",
+                "url": "https://apps.bea.gov/iTable/iTable.cfm?reqid=70&step=1&acrdn=6"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"dollars"
+        "statement": "Earnings per job in {features.name} is {value}.",
+        "type": "dollar",
+        "unit": ""
     }
 }

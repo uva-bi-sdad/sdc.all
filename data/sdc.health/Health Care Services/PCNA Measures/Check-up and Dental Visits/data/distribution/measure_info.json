@@ -1,42 +1,46 @@
 {
-    "perc_dental_visit":{
-        "category":"",
-        "equity_category":"",
-        "long_description":"",
-        "long_name":"",
-        "short_description":"",
-        "short_name":"",
-        "sources":[
+    "perc_dental_visit": {
+        "category": "",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "",
+        "long_name": "",
+        "measure_type": "percent",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
             {
-                "date_accessed":                2022,
-                "name":"",
-                "url":""
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
             }
         ],
-        "statement":"",
-        "type":"percent",
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percent"
+        "statement": "",
+        "type": "percent",
+        "unit": ""
     },
-    "perc_annual_checkup":{
-        "category":"",
-        "equity_category":"",
-        "long_description":"",
-        "long_name":"",
-        "short_description":"",
-        "short_name":"",
-        "sources":[
+    "perc_annual_checkup": {
+        "category": "",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "",
+        "long_name": "",
+        "measure_type": "percent",
+        "short_description": "",
+        "short_name": "",
+        "sources": [
             {
-                "date_accessed":                2022,
-                "name":"",
-                "url":""
+                "date_accessed": 2022,
+                "name": "",
+                "url": ""
             }
         ],
-        "statement":"",
-        "type":"percent",
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percent"
+        "statement": "",
+        "type": "percent",
+        "unit": ""
     }
 }

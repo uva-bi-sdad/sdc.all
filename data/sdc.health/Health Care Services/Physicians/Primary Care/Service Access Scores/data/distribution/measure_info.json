@@ -1,204 +1,197 @@
 {
-    "primcare_cnt":{
-        "category":"Health",
-        "measure_table":"dc_health_behavior_diet.va_hdcttr_sdad_2021_access_scores_primcare",
-        "full_name":"access_scores_primcare:primcare_cnt",
-        "measure":"prim_cnt",
-        "type":"count",
-        "short_name":"Primary care availability (count)",
-        "long_name":"Primary care availability by count",
-        "short_description":"Count of primary care physicians based on provider locations",
-        "long_description":"Count of primary care physicians based on provider locations. Address data were collected from WebMD's online Physician Directory.",
-        "statement":"There are {value} primary care physicians in {features.name}.",
-        "equity_category":"Availability",
-        "sources":[
+    "primcare_cnt": {
+        "category": "Health",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Availability",
+        "layer": "",
+        "long_description": "Count of primary care physicians based on provider locations. Address data were collected from WebMD's online Physician Directory.",
+        "long_name": "Primary care availability by count",
+        "measure_type": "count",
+        "short_description": "Count of primary care physicians based on provider locations",
+        "short_name": "Primary care availability (count)",
+        "sources": [
             {
-                "name":"WebMD Physician Directory",
-                "date_accessed":                2021,
-                "url":"https://doctor.webmd.com/"
+                "name": "WebMD Physician Directory",
+                "date_accessed": 2021,
+                "url": "https://doctor.webmd.com/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
+        "statement": "There are {value} primary care physicians in {features.name}.",
+        "type": "count",
+        "unit": ""
     },
-    "primcare_2sfca":{
-        "category":"Health",
-        "measure_table":"dc_health_behavior_diet.dmv_bg_sdad_2021_primcare_access_scores",
-        "full_name":"access_scores_primcare:primcare_2sfca",
-        "measure":"primcare_2sfca",
-        "type":"index",
-        "short_name":"Primary care geographic availability",
-        "long_name":"Primary care geographic availability (2-step enhanced floating catchment areas)",
-        "short_description":"Index of primary care physician availability based on supply and demand of providers",
-        "long_description":"Primary care availability based on 2-step enhanced floating catchment areas. This method is an aggregation of physicians per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined for the demand for physicians (population served by physicians). Provider address data were collected from WebMD's online Physician Directory.",
-        "statement":"The primary care availability for {features.name} is {value}.",
-        "equity_category":"Availability",
-        "citations":[
-"lou04",
-"lou09",
-"lou03",
-"saxon20"
+    "primcare_2sfca": {
+        "category": "Health",
+        "citations": [
+            "lou04",
+            "lou09",
+            "lou03",
+            "saxon20"
         ],
-        "sources":[
+        "data_type": "numeric",
+        "equity_category": "Availability",
+        "layer": "",
+        "long_description": "Primary care availability based on 2-step enhanced floating catchment areas. This method is an aggregation of physicians per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined for the demand for physicians (population served by physicians). Provider address data were collected from WebMD's online Physician Directory.",
+        "long_name": "Primary care geographic availability (2-step enhanced floating catchment areas)",
+        "measure_type": "index",
+        "short_description": "Index of primary care physician availability based on supply and demand of providers",
+        "short_name": "Primary care geographic availability",
+        "sources": [
             {
-                "name":"WebMD Physician Directory",
-                "date_accessed":                2021,
-                "url":"https://doctor.webmd.com/"
+                "name": "WebMD Physician Directory",
+                "date_accessed": 2021,
+                "url": "https://doctor.webmd.com/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The primary care availability for {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "primcare_e2sfca":{
-        "category":"Health",
-        "measure_table":"dc_health_behavior_diet.dmv_bg_sdad_2021_primcare_access_scores",
-        "full_name":"access_scores_primcare:primcare_e2sfca",
-        "measure":"primcare_e2sfca",
-        "type":"index",
-        "short_name":"Primary care geographic availability",
-        "long_name":"Primary care geographic availability (2-step enhanced floating catchment areas)",
-        "short_description":"Index of primary care physician availability based on supply and demand of providers",
-        "long_description":"Primary care availability based on 2-step enhanced floating catchment areas. This method is an aggregation of physicians per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined for the demand for physicians (population served by physicians). Provider address data were collected from WebMD's online Physician Directory.",
-        "statement":"The primary care availability for {features.name} is {value}.",
-        "equity_category":"Availability",
-        "citations":[
-"lou04",
-"lou09",
-"lou03",
-"saxon20"
+    "primcare_e2sfca": {
+        "category": "Health",
+        "citations": [
+            "lou04",
+            "lou09",
+            "lou03",
+            "saxon20"
         ],
-        "sources":[
+        "data_type": "numeric",
+        "equity_category": "Availability",
+        "layer": "",
+        "long_description": "Primary care availability based on 2-step enhanced floating catchment areas. This method is an aggregation of physicians per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined for the demand for physicians (population served by physicians). Provider address data were collected from WebMD's online Physician Directory.",
+        "long_name": "Primary care geographic availability (2-step enhanced floating catchment areas)",
+        "measure_type": "index",
+        "short_description": "Index of primary care physician availability based on supply and demand of providers",
+        "short_name": "Primary care geographic availability",
+        "sources": [
             {
-                "name":"WebMD Physician Directory",
-                "date_accessed":                2021,
-                "url":"https://doctor.webmd.com/"
+                "name": "WebMD Physician Directory",
+                "date_accessed": 2021,
+                "url": "https://doctor.webmd.com/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The primary care availability for {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "primcare_3sfca":{
-        "category":"Health",
-        "measure_table":"dc_health_behavior_diet.dmv_bg_sdad_2021_primcare_access_scores",
-        "full_name":"access_scores_primcare:primcare_3sfca",
-        "measure":"primcare_3sfca",
-        "type":"index",
-        "short_name":"Primary care geographic availability",
-        "long_name":"Primary care geographic availability (3-step floating catchment areas)",
-        "short_description":"Index of primary care physician availability based on supply and demand of providers",
-        "long_description":"Primary care availability based on 3-step floating catchment areas. This method is an aggregation of physicians per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined for the demand for physicians (population served by physicians). Provider address data were collected from WebMD's online Physician Directory.",
-        "statement":"The primary care availability for {features.name} is {value}.",
-        "equity_category":"Availability",
-        "citations":[
-"lou04",
-"lou09",
-"lou03",
-"saxon20"
+    "primcare_3sfca": {
+        "category": "Health",
+        "citations": [
+            "lou04",
+            "lou09",
+            "lou03",
+            "saxon20"
         ],
-        "sources":[
+        "data_type": "numeric",
+        "equity_category": "Availability",
+        "layer": "",
+        "long_description": "Primary care availability based on 3-step floating catchment areas. This method is an aggregation of physicians per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined for the demand for physicians (population served by physicians). Provider address data were collected from WebMD's online Physician Directory.",
+        "long_name": "Primary care geographic availability (3-step floating catchment areas)",
+        "measure_type": "index",
+        "short_description": "Index of primary care physician availability based on supply and demand of providers",
+        "short_name": "Primary care geographic availability",
+        "sources": [
             {
-                "name":"WebMD Physician Directory",
-                "date_accessed":                2021,
-                "url":"https://doctor.webmd.com/"
+                "name": "WebMD Physician Directory",
+                "date_accessed": 2021,
+                "url": "https://doctor.webmd.com/"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"index"
+        "statement": "The primary care availability for {features.name} is {value}.",
+        "type": "index",
+        "unit": ""
     },
-    "_references":{
-        "lou04":{
-            "id":"lou04",
-            "author":[
+    "_references": {
+        "lou04": {
+            "id": "lou04",
+            "author": [
                 {
-                    "given":"Wei",
-                    "family":"Lou"
+                    "given": "Wei",
+                    "family": "Lou"
                 }
             ],
-            "year":            2004,
-            "title":"Using a gis-based floating catchment method to assess areas with shortage of physicians",
-            "journal":"Health & Place",
-            "volume":"10",
-            "number":            1,
-            "page":"1-11",
-            "doi":"10.1016/S1353-8292(02)00067-9"
+            "year": 2004,
+            "title": "Using a gis-based floating catchment method to assess areas with shortage of physicians",
+            "journal": "Health & Place",
+            "volume": "10",
+            "number": 1,
+            "page": "1-11",
+            "doi": "10.1016/S1353-8292(02)00067-9"
         },
-        "lou09":{
-            "id":"lou09",
-            "author":[
+        "lou09": {
+            "id": "lou09",
+            "author": [
                 {
-                    "given":"Wei",
-                    "family":"Lou"
+                    "given": "Wei",
+                    "family": "Lou"
                 },
                 {
-                    "given":"Yi",
-                    "family":"Qi"
+                    "given": "Yi",
+                    "family": "Qi"
                 }
             ],
-            "year":            2009,
-            "title":"An enhanced two-step floating catchment area (e2sfca) method for measuring spatial accessibility to primary care physicians",
-            "journal":"Health & Place",
-            "volume":"15",
-            "number":            4,
-            "page":"1100-1107",
-            "doi":"10.1016/j.healthplace.2009.06.002"
+            "year": 2009,
+            "title": "An enhanced two-step floating catchment area (e2sfca) method for measuring spatial accessibility to primary care physicians",
+            "journal": "Health & Place",
+            "volume": "15",
+            "number": 4,
+            "page": "1100-1107",
+            "doi": "10.1016/j.healthplace.2009.06.002"
         },
-        "lou03":{
-            "id":"lou03",
-            "author":[
+        "lou03": {
+            "id": "lou03",
+            "author": [
                 {
-                    "given":"Wei",
-                    "family":"Lou"
+                    "given": "Wei",
+                    "family": "Lou"
                 },
                 {
-                    "given":"Fahui",
-                    "family":"Wang"
+                    "given": "Fahui",
+                    "family": "Wang"
                 }
             ],
-            "year":            2003,
-            "title":"Measures of spatial accessibility to health care in a gis environment: synthesis and a case study in the Chicago region",
-            "journal":"Environment and Planning B: Planning and Design",
-            "volume":"30",
-            "number":            6,
-            "page":"865-884",
-            "doi":"10.1068/b29120"
+            "year": 2003,
+            "title": "Measures of spatial accessibility to health care in a gis environment: synthesis and a case study in the Chicago region",
+            "journal": "Environment and Planning B: Planning and Design",
+            "volume": "30",
+            "number": 6,
+            "page": "865-884",
+            "doi": "10.1068/b29120"
         },
-        "saxon20":{
-            "id":"saxon20",
-            "author":[
+        "saxon20": {
+            "id": "saxon20",
+            "author": [
                 {
-                    "given":"James",
-                    "family":"Saxon"
+                    "given": "James",
+                    "family": "Saxon"
                 },
                 {
-                    "given":"Julia",
-                    "family":"Koschinsky"
+                    "given": "Julia",
+                    "family": "Koschinsky"
                 },
                 {
-                    "given":"Karina",
-                    "family":"Acosta"
+                    "given": "Karina",
+                    "family": "Acosta"
                 },
                 {
-                    "given":"Vidal",
-                    "family":"Anguiano"
+                    "given": "Vidal",
+                    "family": "Anguiano"
                 },
                 {
-                    "given":"Luc",
-                    "family":"Anselin"
+                    "given": "Luc",
+                    "family": "Anselin"
                 },
                 {
-                    "given":"Sergio",
-                    "family":"Rey"
+                    "given": "Sergio",
+                    "family": "Rey"
                 }
             ],
-            "year":            2020,
-            "title":"An Open Software Environment to Make Spatial Access Metrics More Accessible",
-            "journal":"University of Chicago: Center for Spatial Data Science",
-            "volume":"Preprint",
-            "doi":"10.13140/RG.2.2.12396.28807"
+            "year": 2020,
+            "title": "An Open Software Environment to Make Spatial Access Metrics More Accessible",
+            "journal": "University of Chicago: Center for Spatial Data Science",
+            "volume": "Preprint",
+            "doi": "10.13140/RG.2.2.12396.28807"
         }
     }
 }

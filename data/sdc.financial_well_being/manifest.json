@@ -1,38 +1,82 @@
 {
   "name": "sdc.financial_well_being_dev",
   "measure_not_found": [
+    "/home/runner/work/sdc.financial_well_being_dev/sdc.financial_well_being_dev/Employment/data/distribution/ncr_cttr_2015_2021_job_participate_rate.csv",
     "/home/runner/work/sdc.financial_well_being_dev/sdc.financial_well_being_dev/Employment/data/distribution/ncr_cttr_2015_2021_employment_rate.csv",
     "/home/runner/work/sdc.financial_well_being_dev/sdc.financial_well_being_dev/Employment/data/distribution/va_cttr_2015_2021_employment_rate.csv",
-    "/home/runner/work/sdc.financial_well_being_dev/sdc.financial_well_being_dev/Pay and Benefits/Income Inequality/data/distribution/va_cttr_2015_2021_income_inequality_gini_index.csv",
-    "/home/runner/work/sdc.financial_well_being_dev/sdc.financial_well_being_dev/Pay and Benefits/Income Inequality/data/distribution/ncr_cttr_2015_2021_income_inequality_gini_index.csv",
+    "/home/runner/work/sdc.financial_well_being_dev/sdc.financial_well_being_dev/Employment/data/distribution/va_cttr_2015_2021_job_participate_rate.csv",
     "/home/runner/work/sdc.financial_well_being_dev/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/distribution/va_ct_bea_2015_2020_earnings_per_job.csv.xz",
+    "/home/runner/work/sdc.financial_well_being_dev/sdc.financial_well_being_dev/Pay and Benefits/Household Income/data/distribution/va_cttrbg_2015_2019_median_household_income.csv.xz",
     "/home/runner/work/sdc.financial_well_being_dev/sdc.financial_well_being_dev/Pay and Benefits/Household Income/data/distribution/ncr_cttrbg_2015_2019_median_household_income.csv.xz",
-    "/home/runner/work/sdc.financial_well_being_dev/sdc.financial_well_being_dev/Pay and Benefits/Household Income/data/distribution/va_cttrbg_2015_2019_median_household_income.csv.xz"
+    "/home/runner/work/sdc.financial_well_being_dev/sdc.financial_well_being_dev/Pay and Benefits/Income Inequality/data/distribution/ncr_cttr_2015_2021_income_inequality_gini_index.csv",
+    "/home/runner/work/sdc.financial_well_being_dev/sdc.financial_well_being_dev/Pay and Benefits/Income Inequality/data/distribution/va_cttr_2015_2021_income_inequality_gini_index.csv"
   ],
-  "count": 31,
-  "utc_audited": "2023-04-04 20:33:40",
+  "count": 35,
+  "utc_audited": "2023-04-04 21:05:36",
   "data": [
     {
+      "name": "ncr_cttr_2015_2021_job_participate_rate.csv",
+      "path": "Employment/data/distribution/ncr_cttr_2015_2021_job_participate_rate.csv",
+      "md5": "c31ba7b47f36bcf6a55dfc3e9e9f6d22",
+      "size": 1010994
+    },
+    {
+      "name": "ncr_cttr_2015_2021_employment_rate.csv",
+      "path": "Employment/data/distribution/ncr_cttr_2015_2021_employment_rate.csv",
+      "md5": "4c73989c04a9d04fc4560ff1ee92005d",
+      "size": 904333
+    },
+    {
+      "name": "va_cttr_2015_2021_employment_rate.csv",
+      "path": "Employment/data/distribution/va_cttr_2015_2021_employment_rate.csv",
+      "md5": "f974505300276d33d819924334abd6e9",
+      "size": 1419990
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Employment/data/distribution/measure_info.json",
+      "md5": "c70dd8115b599deef7f592cf3a8cb90d",
+      "size": 2188
+    },
+    {
+      "name": "va_cttr_2015_2021_job_participate_rate.csv",
+      "path": "Employment/data/distribution/va_cttr_2015_2021_job_participate_rate.csv",
+      "md5": "da62f5b748881edc90e5fec9651b98fc",
+      "size": 1598711
+    },
+    {
       "name": "temp",
-      "path": "Taxes/code/distribution/temp",
+      "path": "Employment/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "Taxes/docs/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "prepare_va_job_participate_rate.R",
+      "path": "Employment/code/distribution/prepare_va_job_participate_rate.R",
+      "md5": "5c7d97199cbdf1e813713658036c39cd",
+      "size": 2980
+    },
+    {
+      "name": "prepare_ncr_job_participate_rate.R",
+      "path": "Employment/code/distribution/prepare_ncr_job_participate_rate.R",
+      "md5": "1986a2cf08aece91d66ccc6d71f26ca9",
+      "size": 3730
+    },
+    {
+      "name": "prepare_va_emp_rate.R",
+      "path": "Employment/code/distribution/prepare_va_emp_rate.R",
+      "md5": "53ee3f41700ff3f163bb3308e491d6c2",
+      "size": 2715
+    },
+    {
+      "name": "prepare_ncr_emp_rate.R",
+      "path": "Employment/code/distribution/prepare_ncr_emp_rate.R",
+      "md5": "7479e26fa688753a573fcf64f0874496",
+      "size": 3976
     },
     {
       "name": "temp",
-      "path": "Taxes/data/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "temp",
-      "path": "Other cost/code/distribution/temp",
+      "path": "Other cost/data/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     },
@@ -44,103 +88,25 @@
     },
     {
       "name": "temp",
-      "path": "Other cost/data/distribution/temp",
+      "path": "Other cost/code/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     },
     {
-      "name": "prepare_ncr.R",
-      "path": "Employment/code/distribution/prepare_ncr.R",
-      "md5": "1339a9e343c33c877c94a21e01cc266c",
-      "size": 3965
-    },
-    {
-      "name": "prepare_va.R",
-      "path": "Employment/code/distribution/prepare_va.R",
-      "md5": "dc26aa8aff74b6b12d208bf265252b60",
-      "size": 2703
-    },
-    {
       "name": "temp",
-      "path": "Employment/docs/distribution/temp",
+      "path": "Taxes/data/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     },
     {
-      "name": "ncr_cttr_2015_2021_employment_rate.csv",
-      "path": "Employment/data/distribution/ncr_cttr_2015_2021_employment_rate.csv",
-      "md5": "4c73989c04a9d04fc4560ff1ee92005d",
-      "size": 904333
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Employment/data/distribution/measure_info.json",
-      "md5": "6b94f2c95f923eae22c5756b3328262c",
-      "size": 1151
-    },
-    {
-      "name": "va_cttr_2015_2021_employment_rate.csv",
-      "path": "Employment/data/distribution/va_cttr_2015_2021_employment_rate.csv",
-      "md5": "f974505300276d33d819924334abd6e9",
-      "size": 1419990
-    },
-    {
-      "name": "prepare_ncr.R",
-      "path": "Pay and Benefits/Income Inequality/code/distribution/prepare_ncr.R",
-      "md5": "8ebf319465c2e72c0ee1461ff771a7a6",
-      "size": 3358
-    },
-    {
-      "name": "prepare_va.R",
-      "path": "Pay and Benefits/Income Inequality/code/distribution/prepare_va.R",
-      "md5": "9244864edb0c3a4d9db61e45312c0fb3",
-      "size": 2757
-    },
-    {
       "name": "temp",
-      "path": "Pay and Benefits/Income Inequality/docs/distribution/temp",
+      "path": "Taxes/docs/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     },
     {
-      "name": "va_cttr_2015_2021_income_inequality_gini_index.csv",
-      "path": "Pay and Benefits/Income Inequality/data/distribution/va_cttr_2015_2021_income_inequality_gini_index.csv",
-      "md5": "c503b34602a02fa40bf9778cee6985b5",
-      "size": 1491384
-    },
-    {
-      "name": "measure_info.json",
-      "path": "Pay and Benefits/Income Inequality/data/distribution/measure_info.json",
-      "md5": "af517de827a5d71ec339c5d7187750f1",
-      "size": 1164
-    },
-    {
-      "name": "ncr_cttr_2015_2021_income_inequality_gini_index.csv",
-      "path": "Pay and Benefits/Income Inequality/data/distribution/ncr_cttr_2015_2021_income_inequality_gini_index.csv",
-      "md5": "bc115b7128b0269479e326d07fd75c14",
-      "size": 947366
-    },
-    {
-      "name": "ingest.R",
-      "path": "Pay and Benefits/Personal Income/code/distribution/ingest.R",
-      "md5": "8532c22b4d282962954f234ef0629725",
-      "size": 3168
-    },
-    {
       "name": "temp",
-      "path": "Pay and Benefits/Personal Income/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
-    },
-    {
-      "name": "prepare.R",
-      "path": "Pay and Benefits/Personal Income/code/distribution/prepare.R",
-      "md5": "d7cb68df89e48b64b01c8e6017411076",
-      "size": 4658
-    },
-    {
-      "name": "temp",
-      "path": "Pay and Benefits/Personal Income/docs/distribution/temp",
+      "path": "Taxes/code/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
     },
@@ -157,28 +123,34 @@
       "size": 967
     },
     {
-      "name": "prepare_ncr.R",
-      "path": "Pay and Benefits/Household Income/code/distribution/prepare_ncr.R",
-      "md5": "3476fe4822d932786c8803167a1874a7",
-      "size": 813
-    },
-    {
-      "name": "prepare_va.R",
-      "path": "Pay and Benefits/Household Income/code/distribution/prepare_va.R",
-      "md5": "d423f2624f4ab80856dc3cb829031fe7",
-      "size": 667
-    },
-    {
-      "name": "ingest.R",
-      "path": "Pay and Benefits/Household Income/code/distribution/ingest.R",
-      "md5": "2d29f6e903f5b856f65a401c1ceffe03",
-      "size": 1174
+      "name": "temp",
+      "path": "Pay and Benefits/Personal Income/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
     },
     {
       "name": "temp",
-      "path": "Pay and Benefits/Household Income/docs/distribution/temp",
+      "path": "Pay and Benefits/Personal Income/code/distribution/temp",
       "md5": "d41d8cd98f00b204e9800998ecf8427e",
       "size": 0
+    },
+    {
+      "name": "ingest.R",
+      "path": "Pay and Benefits/Personal Income/code/distribution/ingest.R",
+      "md5": "8532c22b4d282962954f234ef0629725",
+      "size": 3168
+    },
+    {
+      "name": "prepare.R",
+      "path": "Pay and Benefits/Personal Income/code/distribution/prepare.R",
+      "md5": "d7cb68df89e48b64b01c8e6017411076",
+      "size": 4658
+    },
+    {
+      "name": "va_cttrbg_2015_2019_median_household_income.csv.xz",
+      "path": "Pay and Benefits/Household Income/data/distribution/va_cttrbg_2015_2019_median_household_income.csv.xz",
+      "md5": "04d23c85f06cf8c3361bd535b9e3712f",
+      "size": 274360
     },
     {
       "name": "measure_info.json",
@@ -193,10 +165,64 @@
       "size": 169324
     },
     {
-      "name": "va_cttrbg_2015_2019_median_household_income.csv.xz",
-      "path": "Pay and Benefits/Household Income/data/distribution/va_cttrbg_2015_2019_median_household_income.csv.xz",
-      "md5": "04d23c85f06cf8c3361bd535b9e3712f",
-      "size": 274360
+      "name": "temp",
+      "path": "Pay and Benefits/Household Income/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "prepare_va.R",
+      "path": "Pay and Benefits/Household Income/code/distribution/prepare_va.R",
+      "md5": "d423f2624f4ab80856dc3cb829031fe7",
+      "size": 667
+    },
+    {
+      "name": "ingest.R",
+      "path": "Pay and Benefits/Household Income/code/distribution/ingest.R",
+      "md5": "2d29f6e903f5b856f65a401c1ceffe03",
+      "size": 1174
+    },
+    {
+      "name": "prepare_ncr.R",
+      "path": "Pay and Benefits/Household Income/code/distribution/prepare_ncr.R",
+      "md5": "3476fe4822d932786c8803167a1874a7",
+      "size": 813
+    },
+    {
+      "name": "ncr_cttr_2015_2021_income_inequality_gini_index.csv",
+      "path": "Pay and Benefits/Income Inequality/data/distribution/ncr_cttr_2015_2021_income_inequality_gini_index.csv",
+      "md5": "bc115b7128b0269479e326d07fd75c14",
+      "size": 947366
+    },
+    {
+      "name": "va_cttr_2015_2021_income_inequality_gini_index.csv",
+      "path": "Pay and Benefits/Income Inequality/data/distribution/va_cttr_2015_2021_income_inequality_gini_index.csv",
+      "md5": "c503b34602a02fa40bf9778cee6985b5",
+      "size": 1491384
+    },
+    {
+      "name": "measure_info.json",
+      "path": "Pay and Benefits/Income Inequality/data/distribution/measure_info.json",
+      "md5": "af517de827a5d71ec339c5d7187750f1",
+      "size": 1164
+    },
+    {
+      "name": "temp",
+      "path": "Pay and Benefits/Income Inequality/docs/distribution/temp",
+      "md5": "d41d8cd98f00b204e9800998ecf8427e",
+      "size": 0
+    },
+    {
+      "name": "prepare_va.R",
+      "path": "Pay and Benefits/Income Inequality/code/distribution/prepare_va.R",
+      "md5": "9244864edb0c3a4d9db61e45312c0fb3",
+      "size": 2757
+    },
+    {
+      "name": "prepare_ncr.R",
+      "path": "Pay and Benefits/Income Inequality/code/distribution/prepare_ncr.R",
+      "md5": "8ebf319465c2e72c0ee1461ff771a7a6",
+      "size": 3358
     }
   ],
   "_references": {}

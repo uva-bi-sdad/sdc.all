@@ -1,47 +1,48 @@
 {
-    "emp_rate":{
-        "category":"Employment/Workforce Development",
-        "measure_table":"civilian_employment_rate",
-        "full_name":"civilian_employment_rate:employment_rate",
-        "measure":"employment_rate",
-        "type":"percent",
-        "short_name":"Percentage employed",
-        "long_name":"Percentage civilian employed",
-        "short_description":"Population self-reported as employed as a percentage of total civilian workforce population.",
-        "long_description":"Population self-reported as employed as a percentage of total civilian workforce population. Based on American Community Survey Table B23025 ACS 2015/2019 5-year estimates.",
-        "statement":"{value} of the population in {features.name} is employed.",
-        "equity_category":"Status",
-        "sources":[
+    "emp_rate": {
+        "category": "Employment/Workforce Development",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Population self-reported as employed as a percentage of total civilian workforce population. Based on American Community Survey Table B23025 ACS 2015/2019 5-year estimates.",
+        "long_name": "Percentage civilian employed",
+        "measure_type": "percent",
+        "short_description": "Population self-reported as employed as a percentage of total civilian workforce population.",
+        "short_name": "Percentage employed",
+        "sources": [
             {
-                "name":"American Community Survey",
-                "location":"Table B23025",
-                "date_accessed":"2021",
-                "url":"https://www.census.gov/programs-surveys/acs.html"
+                "name": "American Community Survey",
+                "location": "Table B23025",
+                "date_accessed": "2021",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percent"
+        "statement": "{value} of the population in {features.name} is employed.",
+        "type": "percent",
+        "unit": ""
     },
-    "job_participate_rate":{
-        "category":"Employment/Workforce Development",
-        "type":"percent",
-        "short_name":"Job Participation Pecentage",
-        "long_name":"Job Participation Pecentage",
-        "short_description":"The percentage of individuals 16-64 years of age in the active labor force.",
-        "long_description":"The percentage of individuals 16-64 years of age in the active labor force. The job particpation rate is often used by economists as an indicator of economic development and growth.",
-        "statement":"{value} of the population in {features.name} is participating in the civilian job force.",
-        "equity_category":"Status",
-        "sources":[
+    "job_participate_rate": {
+        "category": "Employment/Workforce Development",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "The percentage of individuals 16-64 years of age in the active labor force. The job particpation rate is often used by economists as an indicator of economic development and growth.",
+        "long_name": "Job Participation Pecentage",
+        "measure_type": "percent",
+        "short_description": "The percentage of individuals 16-64 years of age in the active labor force.",
+        "short_name": "Job Participation Pecentage",
+        "sources": [
             {
-                "name":"American Community Survey",
-                "location":"Table B23025",
-                "date_accessed":"2023",
-                "url":"https://www.census.gov/programs-surveys/acs.html"
+                "name": "American Community Survey",
+                "location": "Table B23025",
+                "date_accessed": "2023",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"percent"
+        "statement": "{value} of the population in {features.name} is participating in the civilian job force.",
+        "type": "percent",
+        "unit": ""
     }
 }

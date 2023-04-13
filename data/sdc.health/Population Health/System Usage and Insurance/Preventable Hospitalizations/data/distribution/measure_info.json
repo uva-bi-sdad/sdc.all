@@ -1,22 +1,24 @@
 {
-    "prevent_hosp_rate":{
-        "category":"Health",
-        "measure_table":"dc_health_behavior_diet.va_hdct_chr_2015_2021_preventable_hospitalizations",
-        "type":"rate",
-        "short_name":"Preventable hospitalizations per 100,000",
-        "long_name":"Preventable hospital stays per 100,000 Medicare enrollees",
-        "short_description":"Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees",
-        "long_description":"Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees. Ambulatory care refers to diagnoses that are usually treatable in outpatient settings. This data is based on Medicare claims and comes from County Health Rankings.",
-        "statement":"{value} of the hospitalizations in {features.name} were preventable (due to conditions usually treated in outpatient settings).",
-        "sources":[
+    "prevent_hosp_rate": {
+        "category": "Health",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees. Ambulatory care refers to diagnoses that are usually treatable in outpatient settings. This data is based on Medicare claims and comes from County Health Rankings.",
+        "long_name": "Preventable hospital stays per 100,000 Medicare enrollees",
+        "measure_type": "rate per 100K",
+        "short_description": "Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees",
+        "short_name": "Preventable hospitalizations per 100,000",
+        "sources": [
             {
-                "name":"County Health Rankings",
-                "date_accessed":                2021,
-                "url":"https://www.countyhealthrankings.org/app/virginia/2021/measure/factors/5/description"
+                "name": "County Health Rankings",
+                "date_accessed": 2021,
+                "url": "https://www.countyhealthrankings.org/app/virginia/2021/measure/factors/5/description"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"rate per 100K"
+        "statement": "{value} of the hospitalizations in {features.name} were preventable (due to conditions usually treated in outpatient settings).",
+        "type": "rate",
+        "unit": ""
     }
 }

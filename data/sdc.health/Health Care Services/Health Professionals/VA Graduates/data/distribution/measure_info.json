@@ -1,90 +1,90 @@
 {
-    "degrees_awarded_undergraduate":{
-        "category":"Health",
-        "full_name":"health_professionals:degrees_awarded_undergraduate",
-        "measure":"degrees_awarded_undergraduate",
-        "type":"count",
-        "short_name":"Undergraduate Health Degrees Awarded",
-        "long_name":"Undergraduate degrees awarded in health professions",
-        "short_description":"Number of undergraduate degrees awarded in health professions by Virginian institutions from 2016 to 2019 academic year",
-        "long_description":"Number of undergraduate degrees awarded in health professions by Virginian 4-year public and private institutions of higher education from 2016 to 2019 academic year by county of student origin. The full list of health professions CIP codes is available at https://research.schev.edu//policytools/stemhlist.asp.",
-        "statement":"The number of undergraduate degrees awarded is {value}.",
-        "equity_category":"Status",
-        "sources":[
+    "degrees_awarded_undergraduate": {
+        "category": "Health",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of undergraduate degrees awarded in health professions by Virginian 4-year public and private institutions of higher education from 2016 to 2019 academic year by county of student origin. The full list of health professions CIP codes is available at https://research.schev.edu//policytools/stemhlist.asp.",
+        "long_name": "Undergraduate degrees awarded in health professions",
+        "measure_type": "count",
+        "short_description": "Number of undergraduate degrees awarded in health professions by Virginian institutions from 2016 to 2019 academic year",
+        "short_name": "Undergraduate Health Degrees Awarded",
+        "sources": [
             {
-                "name":"State Council of Higher Education for Virginia (SCHEV)",
-                "date_accessed":                2022,
-                "url":"https://research.schev.edu//localities/LD11_HLDegreesAwarded.asp"
+                "name": "State Council of Higher Education for Virginia (SCHEV)",
+                "date_accessed": 2022,
+                "url": "https://research.schev.edu//localities/LD11_HLDegreesAwarded.asp"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
+        "statement": "The number of undergraduate degrees awarded is {value}.",
+        "type": "count",
+        "unit": ""
     },
-    "degrees_awarded_graduate":{
-        "category":"Health",
-        "full_name":"health_professionals:degrees_awarded_graduate",
-        "measure":"degrees_awarded_graduate",
-        "type":"count",
-        "short_name":"Graduate Health Degrees Awarded",
-        "long_name":"Graduate degrees awarded in health professions",
-        "short_description":"Number of graduate degrees awarded in health professions by Virginian institutions from 2016 to 2019 academic year",
-        "long_description":"Number of graduate degrees awarded in health professions by Virginian 4-year public and private institutions of higher education from 2016 to 2019 academic year by county of student origin. The full list of health professions CIP codes is available at https://research.schev.edu//policytools/stemhlist.asp.",
-        "statement":"The number of graduate degrees awarded is {value}.",
-        "equity_category":"Status",
-        "sources":[
+    "degrees_awarded_graduate": {
+        "category": "Health",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of graduate degrees awarded in health professions by Virginian 4-year public and private institutions of higher education from 2016 to 2019 academic year by county of student origin. The full list of health professions CIP codes is available at https://research.schev.edu//policytools/stemhlist.asp.",
+        "long_name": "Graduate degrees awarded in health professions",
+        "measure_type": "count",
+        "short_description": "Number of graduate degrees awarded in health professions by Virginian institutions from 2016 to 2019 academic year",
+        "short_name": "Graduate Health Degrees Awarded",
+        "sources": [
             {
-                "name":"State Council of Higher Education for Virginia (SCHEV)",
-                "date_accessed":                2022,
-                "url":"https://research.schev.edu//localities/LD11_HLDegreesAwarded.asp"
+                "name": "State Council of Higher Education for Virginia (SCHEV)",
+                "date_accessed": 2022,
+                "url": "https://research.schev.edu//localities/LD11_HLDegreesAwarded.asp"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
+        "statement": "The number of graduate degrees awarded is {value}.",
+        "type": "count",
+        "unit": ""
     },
-    "degrees_awarded_first_professional":{
-        "category":"Health",
-        "full_name":"health_professionals:degrees_awarded_first_professional",
-        "measure":"degrees_awarded_first_professional",
-        "type":"count",
-        "short_name":"First Professinal Health Degrees Awarded",
-        "long_name":"First professional degrees awarded in health professions",
-        "short_description":"Number of first professional degrees awarded in health professions by Virginian institutions from 2016 to 2019 academic year",
-        "long_description":"Number of first professional degrees awarded in health professions by Virginian 4-year public and private institutions of higher education from 2016 to 2019 academic year by county of student origin. The full list of health professions CIP codes is available at https://research.schev.edu//policytools/stemhlist.asp.",
-        "statement":"The number of first professional degrees awarded is {value}.",
-        "equity_category":"Status",
-        "sources":[
+    "degrees_awarded_first_professional": {
+        "category": "Health",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of first professional degrees awarded in health professions by Virginian 4-year public and private institutions of higher education from 2016 to 2019 academic year by county of student origin. The full list of health professions CIP codes is available at https://research.schev.edu//policytools/stemhlist.asp.",
+        "long_name": "First professional degrees awarded in health professions",
+        "measure_type": "count",
+        "short_description": "Number of first professional degrees awarded in health professions by Virginian institutions from 2016 to 2019 academic year",
+        "short_name": "First Professinal Health Degrees Awarded",
+        "sources": [
             {
-                "name":"State Council of Higher Education for Virginia (SCHEV)",
-                "date_accessed":                2022,
-                "url":"https://research.schev.edu//localities/LD11_HLDegreesAwarded.asp"
+                "name": "State Council of Higher Education for Virginia (SCHEV)",
+                "date_accessed": 2022,
+                "url": "https://research.schev.edu//localities/LD11_HLDegreesAwarded.asp"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
+        "statement": "The number of first professional degrees awarded is {value}.",
+        "type": "count",
+        "unit": ""
     },
-    "degrees_awarded_two_year":{
-        "category":"Health",
-        "full_name":"health_professionals:degrees_awarded_two_year",
-        "measure":"degrees_awarded_two_year",
-        "type":"count",
-        "short_name":"2-year Health Degrees Awarded",
-        "long_name":"2-year degrees awarded in health professions",
-        "short_description":"Number of 2-year degrees awarded in health professions by Virginian institutions from 2016 to 2019 academic year",
-        "long_description":"Number of 2-year undergraduate degrees awarded in health professions by Virginian 2-year public institutions of higher education from 2016 to 2019 academic year by county of student origin. The full list of health professions CIP codes is available at https://research.schev.edu//policytools/stemhlist.asp.",
-        "statement":"The number of 2-year degrees awarded is {value}.",
-        "equity_category":"Status",
-        "sources":[
+    "degrees_awarded_two_year": {
+        "category": "Health",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of 2-year undergraduate degrees awarded in health professions by Virginian 2-year public institutions of higher education from 2016 to 2019 academic year by county of student origin. The full list of health professions CIP codes is available at https://research.schev.edu//policytools/stemhlist.asp.",
+        "long_name": "2-year degrees awarded in health professions",
+        "measure_type": "count",
+        "short_description": "Number of 2-year degrees awarded in health professions by Virginian institutions from 2016 to 2019 academic year",
+        "short_name": "2-year Health Degrees Awarded",
+        "sources": [
             {
-                "name":"State Council of Higher Education for Virginia (SCHEV)",
-                "date_accessed":                2022,
-                "url":"https://research.schev.edu//localities/LD11_HLDegreesAwarded.asp"
+                "name": "State Council of Higher Education for Virginia (SCHEV)",
+                "date_accessed": 2022,
+                "url": "https://research.schev.edu//localities/LD11_HLDegreesAwarded.asp"
             }
         ],
-        "unit":"",
-        "data_type":"numeric",
-        "measure_type":"count"
+        "statement": "The number of 2-year degrees awarded is {value}.",
+        "type": "count",
+        "unit": ""
     }
 }
