@@ -10994,52 +10994,6 @@
         "type": "percent",
         "unit": ""
     },
-    "eviction-filings": {
-        "category": "",
-        "data_type": "numeric",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "eviction-filings",
-        "measure_table": "ncr_bg_evictionlab_2000_2016_evictions",
-        "measure_type": "count",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count",
-        "unit": ""
-    },
-    "evictions": {
-        "category": "",
-        "data_type": "numeric",
-        "equity_category": "",
-        "full_name": "",
-        "long_description": "",
-        "long_name": "",
-        "measure": "evictions",
-        "measure_table": "ncr_bg_evictionlab_2000_2016_evictions",
-        "measure_type": "count",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count",
-        "unit": ""
-    },
     "exit_business": {
         "category": "Business climate",
         "data_type": "numeric",
@@ -11392,44 +11346,6 @@
         "statement": "The median drive time to the ten closest hospitals to {features.name} is {value}.",
         "type": "drive time",
         "unit": ""
-    },
-    "hosuing_access:median_home_value": {
-        "category": "Housing",
-        "equity_category": "Status",
-        "full_name": "hosuing_access:median_home_value",
-        "long_description": "Median home value in dollars. Based on American Community Survey (ACS) 5-year estimates. Table B25077.",
-        "long_name": "Median home value in dollars",
-        "measure": "home_value",
-        "short_description": "Median home value in dollars. Based on ACS 5-year estimates.",
-        "short_name": "Median Home Value",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The median home value is {value} in {features.name}.",
-        "type": "dollars"
-    },
-    "housing_access:median_gross_rent": {
-        "category": "Housing",
-        "equity_category": "Status",
-        "full_name": "housing_access:median_gross_rent",
-        "long_description": "Median gross rent in dollars. Based on American Community Survey (ACS) 5-year estimates. Table B25064.",
-        "long_name": "Median gross rent in dollars",
-        "measure": "gross_rent",
-        "short_description": "Median gross rent in dollars. Based on ACS 5-year estimates.",
-        "short_name": "Median Gross Rent",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The median gross rent is {value} in {features.name}.",
-        "type": "dollars"
     },
     "inadequate": {
         "category": "Health",
