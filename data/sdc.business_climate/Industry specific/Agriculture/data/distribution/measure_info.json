@@ -1,0 +1,178 @@
+{
+    "total_cropland_acres": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total acreage used in agriculture for cropland",
+        "measure_type": "count",
+        "short_description": "Total acreage for cropland",
+        "short_name": "Total acreage for cropland",
+        "sources": [
+            {
+                "name": "USDA NASS",
+                "date_accessed": 2023,
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "The total acreage for cropland to {features.name} is {value}.",
+        "type": "count",
+        "unit": ""
+    },
+    "total_irrigatedCropland_acre": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total acreage used in agriculture for irrigated cropland",
+        "measure_type": "count",
+        "short_description": "Total afread for irrigated cropland",
+        "short_name": "Total afread for irrigated cropland",
+        "sources": [
+            {
+                "name": "USDA NASS",
+                "date_accessed": 2023,
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "The total acreage for irrigated cropland to {features.name} is {value}.",
+        "type": "count",
+        "unit": ""
+    },
+    "total_cropland_operations": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Number of operations with land devoted to cropland growing",
+        "measure_type": "count",
+        "short_description": "Number of operations with cropland",
+        "short_name": "Number of operations with cropland",
+        "sources": [
+            {
+                "name": "USDA NASS",
+                "date_accessed": 2023,
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "The total number of operations with cropland to {features.name} is {value}.",
+        "type": "count",
+        "unit": ""
+    },
+    "total_animal_expense": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "County's total expenses towards animal industry",
+        "measure_type": "count",
+        "short_description": "Total expenses towards animal industry",
+        "short_name": "Total expenses towards animal industry",
+        "sources": [
+            {
+                "name": "USDA NASS",
+                "date_accessed": 2023,
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "The overall expenses towards animals to {features.name} is {value}.",
+        "type": "count",
+        "unit": ""
+    },
+    "fruit_treeNut_total_sales": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total sales of fruits and treenuts within a given county",
+        "measure_type": "count",
+        "short_description": "Total sales of fruits and treenuts",
+        "short_name": "Total sales of fruits and treenuts",
+        "sources": [
+            {
+                "name": "USDA NASS",
+                "date_accessed": 2023,
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": "Total sales of fruit and tree nuts to {features.name} is {value}."
+    },
+    "total_animalProducts_sales": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total sales of animal products within a given county",
+        "measure_type": "count",
+        "short_description": "Total sales of animal products",
+        "short_name": "Total sales of animal products",
+        "sources": [
+            {
+                "name": "USDA NASS",
+                "date_accessed": 2023,
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "Total sales of animal products to {features.name} is {value}.",
+        "type": "count",
+        "unit": ""
+    },
+    "total_commodity_sale": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total sales of commodities within a given county",
+        "measure_type": "count",
+        "short_description": "Total sales of commodities",
+        "short_name": "Total sales of commodities",
+        "sources": [
+            {
+                "name": "USDA NASS",
+                "date_accessed": 2023,
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "Total sales of commodities to {feature.name} is {value}",
+        "type": "count",
+        "unit": ""
+    },
+    "total_calves_sales": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total sales of calves within a given county",
+        "measure_type": "count",
+        "short_description": "Total sales of calves",
+        "short_name": "Total sales of calves",
+        "sources": [
+            {
+                "name": "USDA NASS",
+                "date_accessed": 2023,
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "Total sales of calves to {feature.name} is {value}.",
+        "type": "count",
+        "unit": ""
+    }
+}
