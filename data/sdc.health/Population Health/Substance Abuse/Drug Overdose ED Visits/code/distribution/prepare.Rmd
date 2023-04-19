@@ -1,0 +1,116 @@
+---
+title: "Drug Visits + Preventable Hospitalizations"
+output: html_document
+---
+
+# import
+
+```{r}
+library(sf)
+library(DBI)
+library(data.table)
+library(tidycensus)
+library(dplyr)
+library(readr)
+library(tidyr)
+library(httr)
+library(readxl)
+library(stringr)
+```
+
+# Drug Visits
+
+```{r}
+my_data <- read_excel(here::here("Population Health/Substance Abuse/Drug Overdose ED Visits/data/original/Drug-Overdose-ED-Visits_Virginia-September-2021.xlsx"), 3)
+
+# gte 2015-2020 avg_monthly rates per 100k
+county_names <- my_data$`ALL DRUG`[2:134]
+avg_monthly_rate_per_100k <- my_data[, as.vector(my_data[1, ] == "Avg Monthly Rate per 100k Pop")][2:134, ]
+colnames(avg_monthly_rate_per_100k) <- paste0(c(2015:2020), "_avg_monthly_rate")
+
+# get 2021 average monthly rates
+f <- my_data[,which(grepl("2021$", colnames(my_data))) + 3]
+f <- lapply(f, function(x) {as.numeric(x)})
+rates_2021 <- rowMeans(cbind(f[[1]], f[[2]], f[[3]], f[[4]], f[[5]], f[[6]], f[[7]], f[[8]], f[[9]]), na.rm = T)[2:134]
+rates_2021[is.na(rates_2021)] <- 0
+avg_monthly_rate_per_100k$`2021_avg_monthly_rate` <- rates_2021
+
+# format county data
+ct.od <- avg_monthly_rate_per_100k %>%
+  gather(measure, value, c(`2015_avg_monthly_rate`, `2016_avg_monthly_rate`,
+                           `2017_avg_monthly_rate`, `2018_avg_monthly_rate`,
+                           `2019_avg_monthly_rate`, `2020_avg_monthly_rate`,
+                           `2021_avg_monthly_rate`)) %>%
+  mutate(region_type = "county",
+         year = as.character(rep(2015:2021, each = 133)),
+         measure_type = "rate per 100k", # assuming they use mean for this average
+         measure_units = as.character(NA),
+         region_name = rep(county_names, times = 7),
+         value = as.numeric(value)) %>%
+  relocate("region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units")
+ct.od$region_name<- str_remove(ct.od$region_name, "‡")
+ct.od$region_name <- paste0(ct.od$region_name, ", Virginia")
+
+# read in county names from ACS
+va.co <- get_acs(geography = "county",
+                 year = 2019,
+                 variables = c(tpop = "B01003_001"),
+                 state = "VA",
+                 survey = "acs5",
+                 output = "wide",
+                 geometry = TRUE)
+
+# update region name
+vec <- vector(length = length(ct.od$region_name))
+for (i in 1:length(ct.od$region_name))
+{
+  vec[i] <- grep(ct.od$region_name[i], va.co$NAME, ignore.case = TRUE, value = TRUE)
+}
+ct.od$region_name <- vec
+
+# finish formatting for county overdose data
+county_overdose <- left_join(ct.od, st_drop_geometry(va.co), by = c("region_name" = "NAME")) %>%
+  relocate("GEOID", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units") %>%
+  select(-c(tpopE, tpopM)) %>%
+  rename(geoid = GEOID) %>%
+  mutate(measure = "avg_monthly_rate")
+
+# county_overdose contains county data
+
+```
+
+# work on health district aggregation
+
+```{r}
+# get health district info
+health_district <- read.csv("/project/biocomplexity/sdad/projects_data/vdh/va_county_to_hd.csv")
+health_district$county_id <- as.character(health_district$county_id)
+
+con <- get_db_conn(db_pass = Sys.getenv("db_pw"))
+health_district_geoids <- st_read(con, query = "SELECT * FROM dc_geographies.va_hd_vdh_2021_health_district_geo_names")
+dbDisconnect(con)
+
+health_district_2 <- left_join(health_district, health_district_geoids, by = c("health_district" = "region_name"))
+
+# combine and format hd level measurements
+hd.od <- county_overdose %>% merge(st_drop_geometry(va.co), by.x = "geoid", by.y = "GEOID") %>%
+  merge(health_district_2, by.x = "geoid", by.y = "county_id") %>%
+  group_by(year, geoid.y, health_district) %>%
+  summarise(value = sum(value * tpopE, na.rm = T) / sum(tpopE, na.rm = T)) %>%
+  mutate(region_type = "health district",
+         measure = "avg_monthly_rate",
+         measure_type = "rate per 100k", # assuming they use mean for this average
+         measure_units = as.character(NA),
+         value = as.numeric(value)) %>%
+  rename(region_name = health_district, geoid = geoid.y) %>%
+  relocate("geoid", "region_type", "region_name", "year", "measure", "value", "measure_type", "measure_units")
+
+
+# hd.od contains health district data
+
+# write out data
+cthd_data <- rbind(county_overdose, hd.od)
+write_csv(cthd_data, xzfile(here::here("Population Health/Substance Abuse/Drug Overdose ED Visits/data/distribution/va_hdct_vdh_2015_2021_drug_overdose_ed_visits.csv.xz"), compression=9))
+
+
+```

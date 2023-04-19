@@ -1,0 +1,5 @@
+PNCA Indicators: Total number of graduates from Virginia Institutions completing degrees in health professions
+
+Data is downloaded from SCHEV: https://research.schev.edu//localities/LD11_HLDegreesAwarded.asp
+
+SCHEV Higher Ed Data LD11: Healthcare Professions Degrees Awarded, by Student Origin

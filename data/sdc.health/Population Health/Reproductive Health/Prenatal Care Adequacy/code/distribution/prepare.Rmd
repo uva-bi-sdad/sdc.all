@@ -1,0 +1,1535 @@
+---
+title: "Untitled"
+author: "--"
+date: "7/20/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+rm(list=ls())
+```
+
+
+# Kotelchuck 2020 ######
+```{r}
+# 1) geoid from state
+#which fips are from virginia
+census_api_key(Sys.getenv("CENSUS_API_KEY"))
+
+state <- get_acs(geography = "state", 
+                     year = 2020,
+                     variables = c(hhf1 = 'B11016_002'
+                                   ), 
+                     survey = "acs5",
+                     geometry = FALSE)
+
+
+#state and geoid only
+state_info <- data.frame(state=c(state.name, 'District of Columbia', 'Puerto Rico'), abb= c(state.abb, 'DC', 'PR') )
+
+#join name and abbreviation
+state <- state %>% select("GEOID", "NAME" )
+state <- state %>% left_join(state_info, by=c("NAME"="state"))
+#create the factor state 000
+state$factor_state <- as.numeric(state$GEOID)*1000
+
+
+# 2) Load Natality Data
+#df 2020
+nat_2020 <- read.csv("~/test_symlink/natality_tables/natal_2020.csv")
+#df for va 2020
+nat_va_2020 <- nat_2020 %>% filter(OSTATE=="VA")
+
+#load county data for VA
+county_va <- get_acs(geography = "county", 
+                     year = 2020,
+                     variables = c(hhf1 = 'B11016_002'
+                                   ), 
+                     state = "VA",
+                     survey = "acs5",
+                     geometry = FALSE)
+
+# FIPS #############
+
+#join factor by abbr by = c( 'MRSTATEPSTL' ='abb')
+nat_va_2020 <- nat_va_2020 %>% left_join(state %>% select(abb, factor_state), by=c( 'MRSTATEPSTL' ='abb') )
+#create fips
+nat_va_2020$fips <- nat_va_2020$factor_state + nat_va_2020$MRCNTYFIPS
+
+#nat_va_2020$fips <-  51000 + nat_va_2020$OCNTYFIPS
+datafr <- nat_va_2020 %>% select(OCNTYFIPS, fips)
+fips <- data.frame(table(nat_va_2020$fips))
+
+
+# Kotechuck
+#COMBGEST 	Combined Gestation – Detail in Weeks 
+#PREVIS		Number of Prenatal Visits (Revised)
+#PRECARE	Month Prenatal Care
+
+#data
+nat_va_2020 <- nat_va_2020 %>% filter(COMBGEST.!= 99)
+nat_va_2020 <- nat_va_2020 %>% filter(PRECARE != 99)
+nat_va_2020 <- nat_va_2020 %>% filter(PREVIS != 99)
+
+fips <- data.frame(table(nat_va_2020$fips))
+
+#list of fips without 99 (unknown)
+fips_list <- c(fips$Var1)
+
+finalvec_2020 <- list()
+
+for (i in fips_list) {
+   
+nat_va_2020_county <- nat_va_2020 %>% filter(fips == as.numeric( i ) )
+
+#df for kotelchuck
+apncu_va_2020_dat <- nat_va_2020_county %>% select( PRECARE , COMBGEST. , PREVIS)
+
+#three components 1) up to 28 weeks - 7 visits: 1 visit per 4 weeks
+# 2) up to 36 week - 4 visits: 1 visit per 2 weeks
+# 3) 1 per additional week
+
+ideal_visit_1 <- 7
+ideal_visit_2 <- 4
+ideal_visit_3 <- 1
+
+#v1
+apncu_va_2020_dat$v1 <- ifelse(apncu_va_2020_dat$COMBGEST. >= 28 , 
+                               ideal_visit_1 - (apncu_va_2020_dat$PRECARE -1),
+                               round(apncu_va_2020_dat$COMBGEST./4,0) - (apncu_va_2020_dat$PRECARE -1)  )
+
+
+#v2
+apncu_va_2020_dat$v2 <- ifelse(apncu_va_2020_dat$COMBGEST. >= 36 ,
+                               ideal_visit_2, 
+                               ifelse( (apncu_va_2020_dat$COMBGEST. - 28)>0 , round( (apncu_va_2020_dat$COMBGEST.- 28)/2 , 0 ), 0 )
+                               )
+
+
+#v3
+apncu_va_2020_dat$v3 <- ifelse(apncu_va_2020_dat$COMBGEST. > 36 ,
+                               apncu_va_2020_dat$COMBGEST.-36,
+                               0)
+
+
+#Index
+
+apncu_va_2020_dat$ideal_vis <- (apncu_va_2020_dat$v1+apncu_va_2020_dat$v2+apncu_va_2020_dat$v3)
+
+apncu_va_2020_dat$apncu <-  apncu_va_2020_dat$PREVIS / apncu_va_2020_dat$ideal_vis
+
+apncu_va_2020_dat <- apncu_va_2020_dat %>% filter(PRECARE != 99, apncu != Inf ) 
+
+#Recode
+apncu_va_2020_dat$adeq <- apncu_va_2020_dat$apncu
+
+# Adequate Plus: 110% or more
+# Adequate: 80-109%
+# Intermediate: 50-79%
+# Inadequate: less than 50%
+
+
+apncu_va_2020_dat <- apncu_va_2020_dat %>% mutate(adeq, adequacy = case_when(
+      adeq < 0.5 ~ "1_<0.5", 
+      0.5 <= adeq &  adeq < 0.8  ~ "2_0.5-0.8",
+      0.8 <= adeq &  adeq < 1.1 ~ "3_0.8-1.1",
+      adeq >= 1.1 ~ "4_>=1.1" ))
+
+#table APNCU
+i
+
+apncu_table <- data.frame( table(apncu_va_2020_dat$PRECARE, apncu_va_2020_dat$adequacy) )
+names(apncu_table) <- c('init','ratio', 'freq')
+
+#ncol(apncu_table)==3, 
+
+#summation
+adequateplus <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "4_>=1.1" ) %>% select(freq) )
+adequate <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "3_0.8-1.1" ) %>% select(freq) )
+interm <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "2_0.5-0.8" ) %>% select(freq) )
+
+inadeq1 <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4,5,6,7,8,9,10), ratio == "1_<0.5" ) %>%  select(freq) )
+inadeq2 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "2_0.5-0.8" ) %>%  select(freq) )
+inadeq3 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "3_0.8-1.1" ) %>%  select(freq) )
+inadeq4 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "4_>=1.1" ) %>%  select(freq) )
+
+inadeq <- inadeq1+inadeq2+inadeq3+inadeq4
+
+total <- inadeq+interm+adequate+adequateplus
+
+#vector
+apncu_vector <- c( i , inadeq, interm, adequate, adequateplus,  total)
+
+#cummulative vector
+finalvec_2020 <- rbind( finalvec_2020, apncu_vector)
+}
+
+
+#matrix numeric
+matrix_kotelchuck_2020 <- data.frame( finalvec_2020 )
+matrix_kotelchuck_2020 <- as.data.frame(sapply(matrix_kotelchuck_2020,as.numeric))
+
+#names matrix
+names(matrix_kotelchuck_2020) <- c('fips', 'inadequate', 'intermediate', 'adequate', 'adequateplus',  'total')
+
+library(janitor)
+#row percentages
+matrix_kotelchuck_2020_pc <- matrix_kotelchuck_2020 %>% select( -total)  %>% adorn_percentages()
+#final matrix percentages plus fips
+matrix_kotelchuck_2020_pc <- round(matrix_kotelchuck_2020_pc,3) 
+names(matrix_kotelchuck_2020_pc) <- c("fips", "inadequate_pc", "intermediate_pc", "adequate_pc", "adequateplus_pc")
+
+#final
+kotelchuck_va_2020 <- matrix_kotelchuck_2020 %>% left_join(matrix_kotelchuck_2020_pc, by="fips")
+kotelchuck_va_2020$fips <-as.character(kotelchuck_va_2020$fips)
+kotelchuck_va_2020 <- kotelchuck_va_2020 %>% left_join(county_va %>% select(GEOID, NAME), by=c( "fips"="GEOID") )
+
+
+
+
+# 4) long format
+kotelchuck_va_2020_county <- tidyr::gather(kotelchuck_va_2020, measure, value, 
+                                            inadequate,
+                                            intermediate,
+                                            adequate,
+                                            adequateplus,
+                                            total, 
+                                            inadequate_pc, 
+                                            intermediate_pc,
+                                           adequate_pc,
+                                           adequateplus_pc
+                                           )
+#define year
+kotelchuck_va_2020_county$year <- 2020
+#define measure type
+kotelchuck_va_2020_county$measure_type <- as.factor(ifelse(kotelchuck_va_2020_county$measure=="inadequate" |
+                                                            kotelchuck_va_2020_county$measure=="intermediate" |
+                                                              kotelchuck_va_2020_county$measure=="adequate" | 
+                                                              kotelchuck_va_2020_county$measure=="adequateplus" |
+                                                              kotelchuck_va_2020_county$measure=="total", 'count','proportion') )
+
+#define region type
+kotelchuck_va_2020_county$region_type <- 'county'
+#define names
+names(kotelchuck_va_2020_county)[names(kotelchuck_va_2020_county)=='fips'] <- 'geoid'
+names(kotelchuck_va_2020_county)[names(kotelchuck_va_2020_county)=='NAME'] <- 'region_name'
+
+kotelchuck_va_2020_county <- kotelchuck_va_2020_county %>% filter(geoid>51000 & geoid<52000) %>% filter(!is.na(region_name))
+
+```
+
+# Kotelchuck 2019 ######
+```{r}
+# 1) geoid from state
+#which fips are from virginia
+census_api_key(Sys.getenv("CENSUS_API_KEY"))
+
+state <- get_acs(geography = "state", 
+                     year = 2020,
+                     variables = c(hhf1 = 'B11016_002'
+                                   ), 
+                     survey = "acs5",
+                     geometry = FALSE)
+
+
+#state and geoid only
+state_info <- data.frame(state=c(state.name, 'District of Columbia', 'Puerto Rico'), abb= c(state.abb, 'DC', 'PR') )
+
+#join name and abbreviation
+state <- state %>% select("GEOID", "NAME" )
+state <- state %>% left_join(state_info, by=c("NAME"="state"))
+#create the factor state 000
+state$factor_state <- as.numeric(state$GEOID)*1000
+
+
+# 2) Load Natality Data
+#df 2019
+nat_2019 <- read.csv("~/test_symlink/natality_tables/natal_2019.csv")
+#df for va 2019
+nat_va_2019 <- nat_2019 %>% filter(OSTATE=="VA")
+
+#load county data for VA
+county_va <- get_acs(geography = "county", 
+                     year = 2019,
+                     variables = c(hhf1 = 'B11016_002'
+                                   ), 
+                     state = "VA",
+                     survey = "acs5",
+                     geometry = FALSE)
+
+# FIPS #############
+
+#join factor by abbr by = c( 'MRSTATEPSTL' ='abb')
+nat_va_2019 <- nat_va_2019 %>% left_join(state %>% select(abb, factor_state), by=c( 'MRSTATEPSTL' ='abb') )
+#create fips
+nat_va_2019$fips <- nat_va_2019$factor_state + nat_va_2019$MRCNTYFIPS
+
+#nat_va_2019$fips <-  51000 + nat_va_2019$OCNTYFIPS
+datafr <- nat_va_2019 %>% select(OCNTYFIPS, fips)
+fips <- data.frame(table(nat_va_2019$fips))
+
+
+# Kotechuck
+#COMBGEST 	Combined Gestation – Detail in Weeks 
+#PREVIS		Number of Prenatal Visits (Revised)
+#PRECARE	Month Prenatal Care
+
+#data
+nat_va_2019 <- nat_va_2019 %>% filter(COMBGEST.!= 99)
+nat_va_2019 <- nat_va_2019 %>% filter(PRECARE != 99)
+nat_va_2019 <- nat_va_2019 %>% filter(PREVIS != 99)
+
+fips <- data.frame(table(nat_va_2019$fips))
+
+#list of fips without 99 (unknown)
+fips_list <- c(fips$Var1)
+
+finalvec_2019 <- list()
+
+for (i in fips_list) {
+   
+nat_va_2019_county <- nat_va_2019 %>% filter(fips == as.numeric( i ) )
+
+#df for kotelchuck
+apncu_va_2019_dat <- nat_va_2019_county %>% select( PRECARE , COMBGEST. , PREVIS)
+
+#three components 1) up to 28 weeks - 7 visits: 1 visit per 4 weeks
+# 2) up to 36 week - 4 visits: 1 visit per 2 weeks
+# 3) 1 per additional week
+
+ideal_visit_1 <- 7
+ideal_visit_2 <- 4
+ideal_visit_3 <- 1
+
+#v1
+apncu_va_2019_dat$v1 <- ifelse(apncu_va_2019_dat$COMBGEST. >= 28 , 
+                               ideal_visit_1 - (apncu_va_2019_dat$PRECARE -1),
+                               round(apncu_va_2019_dat$COMBGEST./4,0) - (apncu_va_2019_dat$PRECARE -1)  )
+
+
+#v2
+apncu_va_2019_dat$v2 <- ifelse(apncu_va_2019_dat$COMBGEST. >= 36 ,
+                               ideal_visit_2, 
+                               ifelse( (apncu_va_2019_dat$COMBGEST. - 28)>0 , round( (apncu_va_2019_dat$COMBGEST.- 28)/2 , 0 ), 0 )
+                               )
+
+
+#v3
+apncu_va_2019_dat$v3 <- ifelse(apncu_va_2019_dat$COMBGEST. > 36 ,
+                               apncu_va_2019_dat$COMBGEST.-36,
+                               0)
+
+
+#Index
+
+apncu_va_2019_dat$ideal_vis <- (apncu_va_2019_dat$v1+apncu_va_2019_dat$v2+apncu_va_2019_dat$v3)
+
+apncu_va_2019_dat$apncu <-  apncu_va_2019_dat$PREVIS / apncu_va_2019_dat$ideal_vis
+
+apncu_va_2019_dat <- apncu_va_2019_dat %>% filter(PRECARE != 99, apncu != Inf ) 
+
+#Recode
+apncu_va_2019_dat$adeq <- apncu_va_2019_dat$apncu
+
+# Adequate Plus: 110% or more
+# Adequate: 80-109%
+# Intermediate: 50-79%
+# Inadequate: less than 50%
+
+
+apncu_va_2019_dat <- apncu_va_2019_dat %>% mutate(adeq, adequacy = case_when(
+      adeq < 0.5 ~ "1_<0.5", 
+      0.5 <= adeq &  adeq < 0.8  ~ "2_0.5-0.8",
+      0.8 <= adeq &  adeq < 1.1 ~ "3_0.8-1.1",
+      adeq >= 1.1 ~ "4_>=1.1" ))
+
+#table APNCU
+i
+
+apncu_table <- data.frame( table(apncu_va_2019_dat$PRECARE, apncu_va_2019_dat$adequacy) )
+names(apncu_table) <- c('init','ratio', 'freq')
+
+#ncol(apncu_table)==3, 
+
+#summation
+adequateplus <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "4_>=1.1" ) %>% select(freq) )
+adequate <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "3_0.8-1.1" ) %>% select(freq) )
+interm <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "2_0.5-0.8" ) %>% select(freq) )
+
+inadeq1 <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4,5,6,7,8,9,10), ratio == "1_<0.5" ) %>%  select(freq) )
+inadeq2 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "2_0.5-0.8" ) %>%  select(freq) )
+inadeq3 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "3_0.8-1.1" ) %>%  select(freq) )
+inadeq4 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "4_>=1.1" ) %>%  select(freq) )
+
+inadeq <- inadeq1+inadeq2+inadeq3+inadeq4
+
+total <- inadeq+interm+adequate+adequateplus
+
+#vector
+apncu_vector <- c( i , inadeq, interm, adequate, adequateplus,  total)
+
+#cummulative vector
+finalvec_2019 <- rbind( finalvec_2019, apncu_vector)
+}
+
+
+#matrix numeric
+matrix_kotelchuck_2019 <- data.frame( finalvec_2019 )
+matrix_kotelchuck_2019 <- as.data.frame(sapply(matrix_kotelchuck_2019,as.numeric))
+
+#names matrix
+names(matrix_kotelchuck_2019) <- c('fips', 'inadequate', 'intermediate', 'adequate', 'adequateplus',  'total')
+
+library(janitor)
+#row percentages
+matrix_kotelchuck_2019_pc <- matrix_kotelchuck_2019 %>% select( -total)  %>% adorn_percentages()
+#final matrix percentages plus fips
+matrix_kotelchuck_2019_pc <- round(matrix_kotelchuck_2019_pc,3) 
+names(matrix_kotelchuck_2019_pc) <- c("fips", "inadequate_pc", "intermediate_pc", "adequate_pc", "adequateplus_pc")
+
+#final
+kotelchuck_va_2019 <- matrix_kotelchuck_2019 %>% left_join(matrix_kotelchuck_2019_pc, by="fips")
+kotelchuck_va_2019$fips <-as.character(kotelchuck_va_2019$fips)
+kotelchuck_va_2019 <- kotelchuck_va_2019 %>% left_join(county_va %>% select(GEOID, NAME), by=c( "fips"="GEOID") )
+
+
+
+
+# 4) long format
+kotelchuck_va_2019_county <- tidyr::gather(kotelchuck_va_2019, measure, value, 
+                                            inadequate,
+                                            intermediate,
+                                            adequate,
+                                            adequateplus,
+                                            total, 
+                                            inadequate_pc, 
+                                            intermediate_pc,
+                                           adequate_pc,
+                                           adequateplus_pc
+                                           )
+#define year
+kotelchuck_va_2019_county$year <- 2019
+#define measure type
+kotelchuck_va_2019_county$measure_type <- as.factor(ifelse(kotelchuck_va_2019_county$measure=="inadequate" |
+                                                            kotelchuck_va_2019_county$measure=="intermediate" |
+                                                              kotelchuck_va_2019_county$measure=="adequate" | 
+                                                              kotelchuck_va_2019_county$measure=="adequateplus" |
+                                                              kotelchuck_va_2019_county$measure=="total", 'count','proportion') )
+
+#define region type
+kotelchuck_va_2019_county$region_type <- 'county'
+#define names
+names(kotelchuck_va_2019_county)[names(kotelchuck_va_2019_county)=='fips'] <- 'geoid'
+names(kotelchuck_va_2019_county)[names(kotelchuck_va_2019_county)=='NAME'] <- 'region_name'
+
+kotelchuck_va_2019_county <- kotelchuck_va_2019_county %>% filter(geoid>51000 & geoid<52000) %>% filter(!is.na(region_name))
+
+
+```
+
+# Kotelchuck 2018 ######
+```{r}
+# 1) geoid from state
+#which fips are from virginia
+census_api_key(Sys.getenv("CENSUS_API_KEY"))
+
+state <- get_acs(geography = "state", 
+                     year = 2020,
+                     variables = c(hhf1 = 'B11016_002'
+                                   ), 
+                     survey = "acs5",
+                     geometry = FALSE)
+
+
+#state and geoid only
+state_info <- data.frame(state=c(state.name, 'District of Columbia', 'Puerto Rico'), abb= c(state.abb, 'DC', 'PR') )
+
+#join name and abbreviation
+state <- state %>% select("GEOID", "NAME" )
+state <- state %>% left_join(state_info, by=c("NAME"="state"))
+#create the factor state 000
+state$factor_state <- as.numeric(state$GEOID)*1000
+
+
+# 2) Load Natality Data
+#df 2018
+nat_2018 <- read.csv("~/test_symlink/natality_tables/natal_2018.csv")
+#df for va 2018
+nat_va_2018 <- nat_2018 %>% filter(OSTATE=="VA")
+
+#load county data for VA
+county_va <- get_acs(geography = "county", 
+                     year = 2018,
+                     variables = c(hhf1 = 'B11016_002'
+                                   ), 
+                     state = "VA",
+                     survey = "acs5",
+                     geometry = FALSE)
+
+# FIPS #############
+
+#join factor by abbr by = c( 'MRSTATEPSTL' ='abb')
+nat_va_2018 <- nat_va_2018 %>% left_join(state %>% select(abb, factor_state), by=c( 'MRSTATEPSTL' ='abb') )
+#create fips
+nat_va_2018$fips <- nat_va_2018$factor_state + nat_va_2018$MRCNTYFIPS
+
+#nat_va_2018$fips <-  51000 + nat_va_2018$OCNTYFIPS
+datafr <- nat_va_2018 %>% select(OCNTYFIPS, fips)
+fips <- data.frame(table(nat_va_2018$fips))
+
+
+# Kotechuck
+#COMBGEST 	Combined Gestation – Detail in Weeks 
+#PREVIS		Number of Prenatal Visits (Revised)
+#PRECARE	Month Prenatal Care
+
+#data
+nat_va_2018 <- nat_va_2018 %>% filter(COMBGEST.!= 99)
+nat_va_2018 <- nat_va_2018 %>% filter(PRECARE != 99)
+nat_va_2018 <- nat_va_2018 %>% filter(PREVIS != 99)
+
+fips <- data.frame(table(nat_va_2018$fips))
+
+#list of fips without 99 (unknown)
+fips_list <- c(fips$Var1)
+
+finalvec_2018 <- list()
+
+for (i in fips_list) {
+   
+nat_va_2018_county <- nat_va_2018 %>% filter(fips == as.numeric( i ) )
+
+#df for kotelchuck
+apncu_va_2018_dat <- nat_va_2018_county %>% select( PRECARE , COMBGEST. , PREVIS)
+
+#three components 1) up to 28 weeks - 7 visits: 1 visit per 4 weeks
+# 2) up to 36 week - 4 visits: 1 visit per 2 weeks
+# 3) 1 per additional week
+
+ideal_visit_1 <- 7
+ideal_visit_2 <- 4
+ideal_visit_3 <- 1
+
+#v1
+apncu_va_2018_dat$v1 <- ifelse(apncu_va_2018_dat$COMBGEST. >= 28 , 
+                               ideal_visit_1 - (apncu_va_2018_dat$PRECARE -1),
+                               round(apncu_va_2018_dat$COMBGEST./4,0) - (apncu_va_2018_dat$PRECARE -1)  )
+
+
+#v2
+apncu_va_2018_dat$v2 <- ifelse(apncu_va_2018_dat$COMBGEST. >= 36 ,
+                               ideal_visit_2, 
+                               ifelse( (apncu_va_2018_dat$COMBGEST. - 28)>0 , round( (apncu_va_2018_dat$COMBGEST.- 28)/2 , 0 ), 0 )
+                               )
+
+
+#v3
+apncu_va_2018_dat$v3 <- ifelse(apncu_va_2018_dat$COMBGEST. > 36 ,
+                               apncu_va_2018_dat$COMBGEST.-36,
+                               0)
+
+
+#Index
+
+apncu_va_2018_dat$ideal_vis <- (apncu_va_2018_dat$v1+apncu_va_2018_dat$v2+apncu_va_2018_dat$v3)
+
+apncu_va_2018_dat$apncu <-  apncu_va_2018_dat$PREVIS / apncu_va_2018_dat$ideal_vis
+
+apncu_va_2018_dat <- apncu_va_2018_dat %>% filter(PRECARE != 99, apncu != Inf ) 
+
+#Recode
+apncu_va_2018_dat$adeq <- apncu_va_2018_dat$apncu
+
+# Adequate Plus: 110% or more
+# Adequate: 80-109%
+# Intermediate: 50-79%
+# Inadequate: less than 50%
+
+
+apncu_va_2018_dat <- apncu_va_2018_dat %>% mutate(adeq, adequacy = case_when(
+      adeq < 0.5 ~ "1_<0.5", 
+      0.5 <= adeq &  adeq < 0.8  ~ "2_0.5-0.8",
+      0.8 <= adeq &  adeq < 1.1 ~ "3_0.8-1.1",
+      adeq >= 1.1 ~ "4_>=1.1" ))
+
+#table APNCU
+i
+
+apncu_table <- data.frame( table(apncu_va_2018_dat$PRECARE, apncu_va_2018_dat$adequacy) )
+names(apncu_table) <- c('init','ratio', 'freq')
+
+#ncol(apncu_table)==3, 
+
+#summation
+adequateplus <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "4_>=1.1" ) %>% select(freq) )
+adequate <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "3_0.8-1.1" ) %>% select(freq) )
+interm <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "2_0.5-0.8" ) %>% select(freq) )
+
+inadeq1 <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4,5,6,7,8,9,10), ratio == "1_<0.5" ) %>%  select(freq) )
+inadeq2 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "2_0.5-0.8" ) %>%  select(freq) )
+inadeq3 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "3_0.8-1.1" ) %>%  select(freq) )
+inadeq4 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "4_>=1.1" ) %>%  select(freq) )
+
+inadeq <- inadeq1+inadeq2+inadeq3+inadeq4
+
+total <- inadeq+interm+adequate+adequateplus
+
+#vector
+apncu_vector <- c( i , inadeq, interm, adequate, adequateplus,  total)
+
+#cummulative vector
+finalvec_2018 <- rbind( finalvec_2018, apncu_vector)
+}
+
+
+#matrix numeric
+matrix_kotelchuck_2018 <- data.frame( finalvec_2018 )
+matrix_kotelchuck_2018 <- as.data.frame(sapply(matrix_kotelchuck_2018,as.numeric))
+
+#names matrix
+names(matrix_kotelchuck_2018) <- c('fips', 'inadequate', 'intermediate', 'adequate', 'adequateplus',  'total')
+
+library(janitor)
+#row percentages
+matrix_kotelchuck_2018_pc <- matrix_kotelchuck_2018 %>% select( -total)  %>% adorn_percentages()
+#final matrix percentages plus fips
+matrix_kotelchuck_2018_pc <- round(matrix_kotelchuck_2018_pc,3) 
+names(matrix_kotelchuck_2018_pc) <- c("fips", "inadequate_pc", "intermediate_pc", "adequate_pc", "adequateplus_pc")
+
+#final
+kotelchuck_va_2018 <- matrix_kotelchuck_2018 %>% left_join(matrix_kotelchuck_2018_pc, by="fips")
+kotelchuck_va_2018$fips <-as.character(kotelchuck_va_2018$fips)
+kotelchuck_va_2018 <- kotelchuck_va_2018 %>% left_join(county_va %>% select(GEOID, NAME), by=c( "fips"="GEOID") )
+
+
+
+
+# 4) long format
+kotelchuck_va_2018_county <- tidyr::gather(kotelchuck_va_2018, measure, value, 
+                                            inadequate,
+                                            intermediate,
+                                            adequate,
+                                            adequateplus,
+                                            total, 
+                                            inadequate_pc, 
+                                            intermediate_pc,
+                                           adequate_pc,
+                                           adequateplus_pc
+                                           )
+#define year
+kotelchuck_va_2018_county$year <- 2018
+#define measure type
+kotelchuck_va_2018_county$measure_type <- as.factor(ifelse(kotelchuck_va_2018_county$measure=="inadequate" |
+                                                            kotelchuck_va_2018_county$measure=="intermediate" |
+                                                              kotelchuck_va_2018_county$measure=="adequate" | 
+                                                              kotelchuck_va_2018_county$measure=="adequateplus" |
+                                                              kotelchuck_va_2018_county$measure=="total", 'count','proportion') )
+
+#define region type
+kotelchuck_va_2018_county$region_type <- 'county'
+#define names
+names(kotelchuck_va_2018_county)[names(kotelchuck_va_2018_county)=='fips'] <- 'geoid'
+names(kotelchuck_va_2018_county)[names(kotelchuck_va_2018_county)=='NAME'] <- 'region_name'
+
+kotelchuck_va_2018_county <- kotelchuck_va_2018_county %>% filter(geoid>51000 & geoid<52000) %>% filter(!is.na(region_name))
+
+length(unique(kotelchuck_va_2018_county$region_name))
+```
+
+# Kotelchuck 2017 ######
+```{r}
+# 1) geoid from state
+#which fips are from virginia
+census_api_key(Sys.getenv("CENSUS_API_KEY"))
+
+state <- get_acs(geography = "state", 
+                     year = 2020,
+                     variables = c(hhf1 = 'B11016_002'
+                                   ), 
+                     survey = "acs5",
+                     geometry = FALSE)
+
+
+#state and geoid only
+state_info <- data.frame(state=c(state.name, 'District of Columbia', 'Puerto Rico'), abb= c(state.abb, 'DC', 'PR') )
+
+#join name and abbreviation
+state <- state %>% select("GEOID", "NAME" )
+state <- state %>% left_join(state_info, by=c("NAME"="state"))
+#create the factor state 000
+state$factor_state <- as.numeric(state$GEOID)*1000
+
+
+# 2) Load Natality Data
+#df 2017
+nat_2017 <- read.csv("~/test_symlink/natality_tables/natal_2017.csv")
+#df for va 2017
+nat_va_2017 <- nat_2017 %>% filter(OSTATE=="VA")
+
+#load county data for VA
+county_va <- get_acs(geography = "county", 
+                     year = 2017,
+                     variables = c(hhf1 = 'B11016_002'
+                                   ), 
+                     state = "VA",
+                     survey = "acs5",
+                     geometry = FALSE)
+
+# FIPS #############
+
+#join factor by abbr by = c( 'MRSTATEPSTL' ='abb')
+nat_va_2017 <- nat_va_2017 %>% left_join(state %>% select(abb, factor_state), by=c( 'MRSTATEPSTL' ='abb') )
+#create fips
+nat_va_2017$fips <- nat_va_2017$factor_state + nat_va_2017$MRCNTYFIPS
+
+#nat_va_2017$fips <-  51000 + nat_va_2017$OCNTYFIPS
+datafr <- nat_va_2017 %>% select(OCNTYFIPS, fips)
+fips <- data.frame(table(nat_va_2017$fips))
+
+
+# Kotechuck
+#COMBGEST 	Combined Gestation – Detail in Weeks 
+#PREVIS		Number of Prenatal Visits (Revised)
+#PRECARE	Month Prenatal Care
+
+#data
+nat_va_2017 <- nat_va_2017 %>% filter(COMBGEST.!= 99)
+nat_va_2017 <- nat_va_2017 %>% filter(PRECARE != 99)
+nat_va_2017 <- nat_va_2017 %>% filter(PREVIS != 99)
+
+fips <- data.frame(table(nat_va_2017$fips))
+
+#list of fips without 99 (unknown)
+fips_list <- c(fips$Var1)
+
+finalvec_2017 <- list()
+
+for (i in fips_list) {
+   
+nat_va_2017_county <- nat_va_2017 %>% filter(fips == as.numeric( i ) )
+
+#df for kotelchuck
+apncu_va_2017_dat <- nat_va_2017_county %>% select( PRECARE , COMBGEST. , PREVIS)
+
+#three components 1) up to 28 weeks - 7 visits: 1 visit per 4 weeks
+# 2) up to 36 week - 4 visits: 1 visit per 2 weeks
+# 3) 1 per additional week
+
+ideal_visit_1 <- 7
+ideal_visit_2 <- 4
+ideal_visit_3 <- 1
+
+#v1
+apncu_va_2017_dat$v1 <- ifelse(apncu_va_2017_dat$COMBGEST. >= 28 , 
+                               ideal_visit_1 - (apncu_va_2017_dat$PRECARE -1),
+                               round(apncu_va_2017_dat$COMBGEST./4,0) - (apncu_va_2017_dat$PRECARE -1)  )
+
+
+#v2
+apncu_va_2017_dat$v2 <- ifelse(apncu_va_2017_dat$COMBGEST. >= 36 ,
+                               ideal_visit_2, 
+                               ifelse( (apncu_va_2017_dat$COMBGEST. - 28)>0 , round( (apncu_va_2017_dat$COMBGEST.- 28)/2 , 0 ), 0 )
+                               )
+
+
+#v3
+apncu_va_2017_dat$v3 <- ifelse(apncu_va_2017_dat$COMBGEST. > 36 ,
+                               apncu_va_2017_dat$COMBGEST.-36,
+                               0)
+
+
+#Index
+
+apncu_va_2017_dat$ideal_vis <- (apncu_va_2017_dat$v1+apncu_va_2017_dat$v2+apncu_va_2017_dat$v3)
+
+apncu_va_2017_dat$apncu <-  apncu_va_2017_dat$PREVIS / apncu_va_2017_dat$ideal_vis
+
+apncu_va_2017_dat <- apncu_va_2017_dat %>% filter(PRECARE != 99, apncu != Inf ) 
+
+#Recode
+apncu_va_2017_dat$adeq <- apncu_va_2017_dat$apncu
+
+# Adequate Plus: 110% or more
+# Adequate: 80-109%
+# Intermediate: 50-79%
+# Inadequate: less than 50%
+
+
+apncu_va_2017_dat <- apncu_va_2017_dat %>% mutate(adeq, adequacy = case_when(
+      adeq < 0.5 ~ "1_<0.5", 
+      0.5 <= adeq &  adeq < 0.8  ~ "2_0.5-0.8",
+      0.8 <= adeq &  adeq < 1.1 ~ "3_0.8-1.1",
+      adeq >= 1.1 ~ "4_>=1.1" ))
+
+#table APNCU
+i
+
+apncu_table <- data.frame( table(apncu_va_2017_dat$PRECARE, apncu_va_2017_dat$adequacy) )
+names(apncu_table) <- c('init','ratio', 'freq')
+
+#ncol(apncu_table)==3, 
+
+#summation
+adequateplus <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "4_>=1.1" ) %>% select(freq) )
+adequate <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "3_0.8-1.1" ) %>% select(freq) )
+interm <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "2_0.5-0.8" ) %>% select(freq) )
+
+inadeq1 <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4,5,6,7,8,9,10), ratio == "1_<0.5" ) %>%  select(freq) )
+inadeq2 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "2_0.5-0.8" ) %>%  select(freq) )
+inadeq3 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "3_0.8-1.1" ) %>%  select(freq) )
+inadeq4 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "4_>=1.1" ) %>%  select(freq) )
+
+inadeq <- inadeq1+inadeq2+inadeq3+inadeq4
+
+total <- inadeq+interm+adequate+adequateplus
+
+#vector
+apncu_vector <- c( i , inadeq, interm, adequate, adequateplus,  total)
+
+#cummulative vector
+finalvec_2017 <- rbind( finalvec_2017, apncu_vector)
+}
+
+
+#matrix numeric
+matrix_kotelchuck_2017 <- data.frame( finalvec_2017 )
+matrix_kotelchuck_2017 <- as.data.frame(sapply(matrix_kotelchuck_2017,as.numeric))
+
+#names matrix
+names(matrix_kotelchuck_2017) <- c('fips', 'inadequate', 'intermediate', 'adequate', 'adequateplus',  'total')
+
+library(janitor)
+#row percentages
+matrix_kotelchuck_2017_pc <- matrix_kotelchuck_2017 %>% select( -total)  %>% adorn_percentages()
+#final matrix percentages plus fips
+matrix_kotelchuck_2017_pc <- round(matrix_kotelchuck_2017_pc,3) 
+names(matrix_kotelchuck_2017_pc) <- c("fips", "inadequate_pc", "intermediate_pc", "adequate_pc", "adequateplus_pc")
+
+#final
+kotelchuck_va_2017 <- matrix_kotelchuck_2017 %>% left_join(matrix_kotelchuck_2017_pc, by="fips")
+kotelchuck_va_2017$fips <-as.character(kotelchuck_va_2017$fips)
+kotelchuck_va_2017 <- kotelchuck_va_2017 %>% left_join(county_va %>% select(GEOID, NAME), by=c( "fips"="GEOID") )
+
+
+
+
+# 4) long format
+kotelchuck_va_2017_county <- tidyr::gather(kotelchuck_va_2017, measure, value, 
+                                            inadequate,
+                                            intermediate,
+                                            adequate,
+                                            adequateplus,
+                                            total, 
+                                            inadequate_pc, 
+                                            intermediate_pc,
+                                           adequate_pc,
+                                           adequateplus_pc
+                                           )
+#define year
+kotelchuck_va_2017_county$year <- 2017
+#define measure type
+kotelchuck_va_2017_county$measure_type <- as.factor(ifelse(kotelchuck_va_2017_county$measure=="inadequate" |
+                                                            kotelchuck_va_2017_county$measure=="intermediate" |
+                                                              kotelchuck_va_2017_county$measure=="adequate" | 
+                                                              kotelchuck_va_2017_county$measure=="adequateplus" |
+                                                              kotelchuck_va_2017_county$measure=="total", 'count','proportion') )
+
+#define region type
+kotelchuck_va_2017_county$region_type <- 'county'
+#define names
+names(kotelchuck_va_2017_county)[names(kotelchuck_va_2017_county)=='fips'] <- 'geoid'
+names(kotelchuck_va_2017_county)[names(kotelchuck_va_2017_county)=='NAME'] <- 'region_name'
+
+kotelchuck_va_2017_county <- kotelchuck_va_2017_county %>% filter(geoid>51000 & geoid<52000) %>% filter(!is.na(region_name))
+
+length(unique(kotelchuck_va_2017_county$region_name))
+```
+
+# Kotelchuck 2016 ######
+```{r}
+# 1) geoid from state
+#which fips are from virginia
+census_api_key(Sys.getenv("CENSUS_API_KEY"))
+
+state <- get_acs(geography = "state", 
+                     year = 2020,
+                     variables = c(hhf1 = 'B11016_002'
+                                   ), 
+                     survey = "acs5",
+                     geometry = FALSE)
+
+
+#state and geoid only
+state_info <- data.frame(state=c(state.name, 'District of Columbia', 'Puerto Rico'), abb= c(state.abb, 'DC', 'PR') )
+
+#join name and abbreviation
+state <- state %>% select("GEOID", "NAME" )
+state <- state %>% left_join(state_info, by=c("NAME"="state"))
+#create the factor state 000
+state$factor_state <- as.numeric(state$GEOID)*1000
+
+
+# 2) Load Natality Data
+#df 2016
+nat_2016 <- read.csv("~/test_symlink/natality_tables/natal_2016.csv")
+#df for va 2016
+nat_va_2016 <- nat_2016 %>% filter(OSTATE=="VA")
+
+#load county data for VA
+county_va <- get_acs(geography = "county", 
+                     year = 2016,
+                     variables = c(hhf1 = 'B11016_002'
+                                   ), 
+                     state = "VA",
+                     survey = "acs5",
+                     geometry = FALSE)
+
+# FIPS #############
+
+#join factor by abbr by = c( 'MRSTATEPSTL' ='abb')
+nat_va_2016 <- nat_va_2016 %>% left_join(state %>% select(abb, factor_state), by=c( 'MRSTATEPSTL' ='abb') )
+#create fips
+nat_va_2016$fips <- nat_va_2016$factor_state + nat_va_2016$MRCNTYFIPS
+
+#nat_va_2016$fips <-  51000 + nat_va_2016$OCNTYFIPS
+datafr <- nat_va_2016 %>% select(OCNTYFIPS, fips)
+fips <- data.frame(table(nat_va_2016$fips))
+
+
+# Kotechuck
+#COMBGEST 	Combined Gestation – Detail in Weeks 
+#PREVIS		Number of Prenatal Visits (Revised)
+#PRECARE	Month Prenatal Care
+
+#data
+nat_va_2016 <- nat_va_2016 %>% filter(COMBGEST.!= 99)
+nat_va_2016 <- nat_va_2016 %>% filter(PRECARE != 99)
+nat_va_2016 <- nat_va_2016 %>% filter(PREVIS != 99)
+
+fips <- data.frame(table(nat_va_2016$fips))
+
+#list of fips without 99 (unknown)
+fips_list <- c(fips$Var1)
+
+finalvec_2016 <- list()
+
+for (i in fips_list) {
+   
+nat_va_2016_county <- nat_va_2016 %>% filter(fips == as.numeric( i ) )
+
+#df for kotelchuck
+apncu_va_2016_dat <- nat_va_2016_county %>% select( PRECARE , COMBGEST. , PREVIS)
+
+#three components 1) up to 28 weeks - 7 visits: 1 visit per 4 weeks
+# 2) up to 36 week - 4 visits: 1 visit per 2 weeks
+# 3) 1 per additional week
+
+ideal_visit_1 <- 7
+ideal_visit_2 <- 4
+ideal_visit_3 <- 1
+
+#v1
+apncu_va_2016_dat$v1 <- ifelse(apncu_va_2016_dat$COMBGEST. >= 28 , 
+                               ideal_visit_1 - (apncu_va_2016_dat$PRECARE -1),
+                               round(apncu_va_2016_dat$COMBGEST./4,0) - (apncu_va_2016_dat$PRECARE -1)  )
+
+
+#v2
+apncu_va_2016_dat$v2 <- ifelse(apncu_va_2016_dat$COMBGEST. >= 36 ,
+                               ideal_visit_2, 
+                               ifelse( (apncu_va_2016_dat$COMBGEST. - 28)>0 , round( (apncu_va_2016_dat$COMBGEST.- 28)/2 , 0 ), 0 )
+                               )
+
+
+#v3
+apncu_va_2016_dat$v3 <- ifelse(apncu_va_2016_dat$COMBGEST. > 36 ,
+                               apncu_va_2016_dat$COMBGEST.-36,
+                               0)
+
+
+#Index
+
+apncu_va_2016_dat$ideal_vis <- (apncu_va_2016_dat$v1+apncu_va_2016_dat$v2+apncu_va_2016_dat$v3)
+
+apncu_va_2016_dat$apncu <-  apncu_va_2016_dat$PREVIS / apncu_va_2016_dat$ideal_vis
+
+apncu_va_2016_dat <- apncu_va_2016_dat %>% filter(PRECARE != 99, apncu != Inf ) 
+
+#Recode
+apncu_va_2016_dat$adeq <- apncu_va_2016_dat$apncu
+
+# Adequate Plus: 110% or more
+# Adequate: 80-109%
+# Intermediate: 50-79%
+# Inadequate: less than 50%
+
+
+apncu_va_2016_dat <- apncu_va_2016_dat %>% mutate(adeq, adequacy = case_when(
+      adeq < 0.5 ~ "1_<0.5", 
+      0.5 <= adeq &  adeq < 0.8  ~ "2_0.5-0.8",
+      0.8 <= adeq &  adeq < 1.1 ~ "3_0.8-1.1",
+      adeq >= 1.1 ~ "4_>=1.1" ))
+
+#table APNCU
+i
+
+apncu_table <- data.frame( table(apncu_va_2016_dat$PRECARE, apncu_va_2016_dat$adequacy) )
+names(apncu_table) <- c('init','ratio', 'freq')
+
+#ncol(apncu_table)==3, 
+
+#summation
+adequateplus <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "4_>=1.1" ) %>% select(freq) )
+adequate <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "3_0.8-1.1" ) %>% select(freq) )
+interm <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "2_0.5-0.8" ) %>% select(freq) )
+
+inadeq1 <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4,5,6,7,8,9,10), ratio == "1_<0.5" ) %>%  select(freq) )
+inadeq2 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "2_0.5-0.8" ) %>%  select(freq) )
+inadeq3 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "3_0.8-1.1" ) %>%  select(freq) )
+inadeq4 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "4_>=1.1" ) %>%  select(freq) )
+
+inadeq <- inadeq1+inadeq2+inadeq3+inadeq4
+
+total <- inadeq+interm+adequate+adequateplus
+
+#vector
+apncu_vector <- c( i , inadeq, interm, adequate, adequateplus,  total)
+
+#cummulative vector
+finalvec_2016 <- rbind( finalvec_2016, apncu_vector)
+}
+
+
+#matrix numeric
+matrix_kotelchuck_2016 <- data.frame( finalvec_2016 )
+matrix_kotelchuck_2016 <- as.data.frame(sapply(matrix_kotelchuck_2016,as.numeric))
+
+#names matrix
+names(matrix_kotelchuck_2016) <- c('fips', 'inadequate', 'intermediate', 'adequate', 'adequateplus',  'total')
+
+library(janitor)
+#row percentages
+matrix_kotelchuck_2016_pc <- matrix_kotelchuck_2016 %>% select( -total)  %>% adorn_percentages()
+#final matrix percentages plus fips
+matrix_kotelchuck_2016_pc <- round(matrix_kotelchuck_2016_pc,3) 
+names(matrix_kotelchuck_2016_pc) <- c("fips", "inadequate_pc", "intermediate_pc", "adequate_pc", "adequateplus_pc")
+
+#final
+kotelchuck_va_2016 <- matrix_kotelchuck_2016 %>% left_join(matrix_kotelchuck_2016_pc, by="fips")
+kotelchuck_va_2016$fips <-as.character(kotelchuck_va_2016$fips)
+kotelchuck_va_2016 <- kotelchuck_va_2016 %>% left_join(county_va %>% select(GEOID, NAME), by=c( "fips"="GEOID") )
+
+
+
+
+# 4) long format
+kotelchuck_va_2016_county <- tidyr::gather(kotelchuck_va_2016, measure, value, 
+                                            inadequate,
+                                            intermediate,
+                                            adequate,
+                                            adequateplus,
+                                            total, 
+                                            inadequate_pc, 
+                                            intermediate_pc,
+                                           adequate_pc,
+                                           adequateplus_pc
+                                           )
+#define year
+kotelchuck_va_2016_county$year <- 2016
+#define measure type
+kotelchuck_va_2016_county$measure_type <- as.factor(ifelse(kotelchuck_va_2016_county$measure=="inadequate" |
+                                                            kotelchuck_va_2016_county$measure=="intermediate" |
+                                                              kotelchuck_va_2016_county$measure=="adequate" | 
+                                                              kotelchuck_va_2016_county$measure=="adequateplus" |
+                                                              kotelchuck_va_2016_county$measure=="total", 'count','proportion') )
+
+#define region type
+kotelchuck_va_2016_county$region_type <- 'county'
+#define names
+names(kotelchuck_va_2016_county)[names(kotelchuck_va_2016_county)=='fips'] <- 'geoid'
+names(kotelchuck_va_2016_county)[names(kotelchuck_va_2016_county)=='NAME'] <- 'region_name'
+
+kotelchuck_va_2016_county <- kotelchuck_va_2016_county %>% filter(geoid>51000 & geoid<52000) %>% filter(!is.na(region_name))
+
+length(unique(kotelchuck_va_2016_county$region_name))
+```
+
+
+# Kotelchuck 2015 ######
+# IMPORTANT: variable COMBGEST. for COMBGEST
+```{r}
+# 1) geoid from state
+#which fips are from virginia
+census_api_key(Sys.getenv("CENSUS_API_KEY"))
+
+state <- get_acs(geography = "state", 
+                     year = 2020,
+                     variables = c(hhf1 = 'B11016_002'
+                                   ), 
+                     survey = "acs5",
+                     geometry = FALSE)
+
+
+#state and geoid only
+state_info <- data.frame(state=c(state.name, 'District of Columbia', 'Puerto Rico'), abb= c(state.abb, 'DC', 'PR') )
+
+#join name and abbreviation
+state <- state %>% select("GEOID", "NAME" )
+state <- state %>% left_join(state_info, by=c("NAME"="state"))
+#create the factor state 000
+state$factor_state <- as.numeric(state$GEOID)*1000
+
+
+# 2) Load Natality Data
+#df 2015
+nat_2015 <- read.csv("~/test_symlink/natality_tables/natal_2015.csv")
+#df for va 2015
+nat_va_2015 <- nat_2015 %>% filter(OSTATE=="VA")
+
+#load county data for VA
+county_va <- get_acs(geography = "county", 
+                     year = 2015,
+                     variables = c(hhf1 = 'B11016_002'
+                                   ), 
+                     state = "VA",
+                     survey = "acs5",
+                     geometry = FALSE)
+
+# FIPS #############
+
+#join factor by abbr by = c( 'MRSTATEPSTL' ='abb')
+nat_va_2015 <- nat_va_2015 %>% left_join(state %>% select(abb, factor_state), by=c( 'MRSTATEPSTL' ='abb') )
+#create fips
+nat_va_2015$fips <- nat_va_2015$factor_state + nat_va_2015$MRCNTYFIPS
+
+#nat_va_2015$fips <-  51000 + nat_va_2015$OCNTYFIPS
+datafr <- nat_va_2015 %>% select(OCNTYFIPS, fips)
+fips <- data.frame(table(nat_va_2015$fips))
+
+
+# Kotechuck
+#COMBGEST 	Combined Gestation – Detail in Weeks 
+#PREVIS		Number of Prenatal Visits (Revised)
+#PRECARE	Month Prenatal Care
+
+#data
+nat_va_2015 <- nat_va_2015 %>% filter(COMBGEST!= 99)
+nat_va_2015 <- nat_va_2015 %>% filter(PRECARE != 99)
+nat_va_2015 <- nat_va_2015 %>% filter(PREVIS != 99)
+
+fips <- data.frame(table(nat_va_2015$fips))
+
+#list of fips without 99 (unknown)
+fips_list <- c(fips$Var1)
+
+finalvec_2015 <- list()
+
+for (i in fips_list) {
+   
+nat_va_2015_county <- nat_va_2015 %>% filter(fips == as.numeric( i ) )
+
+#df for kotelchuck
+apncu_va_2015_dat <- nat_va_2015_county %>% select( PRECARE , COMBGEST , PREVIS)
+
+#three components 1) up to 28 weeks - 7 visits: 1 visit per 4 weeks
+# 2) up to 36 week - 4 visits: 1 visit per 2 weeks
+# 3) 1 per additional week
+
+ideal_visit_1 <- 7
+ideal_visit_2 <- 4
+ideal_visit_3 <- 1
+
+#v1
+apncu_va_2015_dat$v1 <- ifelse(apncu_va_2015_dat$COMBGEST >= 28 , 
+                               ideal_visit_1 - (apncu_va_2015_dat$PRECARE -1),
+                               round(apncu_va_2015_dat$COMBGEST/4,0) - (apncu_va_2015_dat$PRECARE -1)  )
+
+
+#v2
+apncu_va_2015_dat$v2 <- ifelse(apncu_va_2015_dat$COMBGEST >= 36 ,
+                               ideal_visit_2, 
+                               ifelse( (apncu_va_2015_dat$COMBGEST - 28)>0 , round( (apncu_va_2015_dat$COMBGEST- 28)/2 , 0 ), 0 )
+                               )
+
+
+#v3
+apncu_va_2015_dat$v3 <- ifelse(apncu_va_2015_dat$COMBGEST > 36 ,
+                               apncu_va_2015_dat$COMBGEST-36,
+                               0)
+
+
+#Index
+
+apncu_va_2015_dat$ideal_vis <- (apncu_va_2015_dat$v1+apncu_va_2015_dat$v2+apncu_va_2015_dat$v3)
+
+apncu_va_2015_dat$apncu <-  apncu_va_2015_dat$PREVIS / apncu_va_2015_dat$ideal_vis
+
+apncu_va_2015_dat <- apncu_va_2015_dat %>% filter(PRECARE != 99, apncu != Inf ) 
+
+#Recode
+apncu_va_2015_dat$adeq <- apncu_va_2015_dat$apncu
+
+# Adequate Plus: 110% or more
+# Adequate: 80-109%
+# Intermediate: 50-79%
+# Inadequate: less than 50%
+
+
+apncu_va_2015_dat <- apncu_va_2015_dat %>% mutate(adeq, adequacy = case_when(
+      adeq < 0.5 ~ "1_<0.5", 
+      0.5 <= adeq &  adeq < 0.8  ~ "2_0.5-0.8",
+      0.8 <= adeq &  adeq < 1.1 ~ "3_0.8-1.1",
+      adeq >= 1.1 ~ "4_>=1.1" ))
+
+#table APNCU
+i
+
+apncu_table <- data.frame( table(apncu_va_2015_dat$PRECARE, apncu_va_2015_dat$adequacy) )
+names(apncu_table) <- c('init','ratio', 'freq')
+
+#ncol(apncu_table)==3, 
+
+#summation
+adequateplus <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "4_>=1.1" ) %>% select(freq) )
+adequate <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "3_0.8-1.1" ) %>% select(freq) )
+interm <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "2_0.5-0.8" ) %>% select(freq) )
+
+inadeq1 <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4,5,6,7,8,9,10), ratio == "1_<0.5" ) %>%  select(freq) )
+inadeq2 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "2_0.5-0.8" ) %>%  select(freq) )
+inadeq3 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "3_0.8-1.1" ) %>%  select(freq) )
+inadeq4 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "4_>=1.1" ) %>%  select(freq) )
+
+inadeq <- inadeq1+inadeq2+inadeq3+inadeq4
+
+total <- inadeq+interm+adequate+adequateplus
+
+#vector
+apncu_vector <- c( i , inadeq, interm, adequate, adequateplus,  total)
+
+#cummulative vector
+finalvec_2015 <- rbind( finalvec_2015, apncu_vector)
+}
+
+
+#matrix numeric
+matrix_kotelchuck_2015 <- data.frame( finalvec_2015 )
+matrix_kotelchuck_2015 <- as.data.frame(sapply(matrix_kotelchuck_2015,as.numeric))
+
+#names matrix
+names(matrix_kotelchuck_2015) <- c('fips', 'inadequate', 'intermediate', 'adequate', 'adequateplus',  'total')
+
+library(janitor)
+#row percentages
+matrix_kotelchuck_2015_pc <- matrix_kotelchuck_2015 %>% select( -total)  %>% adorn_percentages()
+#final matrix percentages plus fips
+matrix_kotelchuck_2015_pc <- round(matrix_kotelchuck_2015_pc,3) 
+names(matrix_kotelchuck_2015_pc) <- c("fips", "inadequate_pc", "intermediate_pc", "adequate_pc", "adequateplus_pc")
+
+#final
+kotelchuck_va_2015 <- matrix_kotelchuck_2015 %>% left_join(matrix_kotelchuck_2015_pc, by="fips")
+kotelchuck_va_2015$fips <-as.character(kotelchuck_va_2015$fips)
+kotelchuck_va_2015 <- kotelchuck_va_2015 %>% left_join(county_va %>% select(GEOID, NAME), by=c( "fips"="GEOID") )
+
+
+
+
+# 4) long format
+kotelchuck_va_2015_county <- tidyr::gather(kotelchuck_va_2015, measure, value, 
+                                            inadequate,
+                                            intermediate,
+                                            adequate,
+                                            adequateplus,
+                                            total, 
+                                            inadequate_pc, 
+                                            intermediate_pc,
+                                           adequate_pc,
+                                           adequateplus_pc
+                                           )
+#define year
+kotelchuck_va_2015_county$year <- 2015
+#define measure type
+kotelchuck_va_2015_county$measure_type <- as.factor(ifelse(kotelchuck_va_2015_county$measure=="inadequate" |
+                                                            kotelchuck_va_2015_county$measure=="intermediate" |
+                                                              kotelchuck_va_2015_county$measure=="adequate" | 
+                                                              kotelchuck_va_2015_county$measure=="adequateplus" |
+                                                              kotelchuck_va_2015_county$measure=="total", 'count','proportion') )
+
+#define region type
+kotelchuck_va_2015_county$region_type <- 'county'
+#define names
+names(kotelchuck_va_2015_county)[names(kotelchuck_va_2015_county)=='fips'] <- 'geoid'
+names(kotelchuck_va_2015_county)[names(kotelchuck_va_2015_county)=='NAME'] <- 'region_name'
+
+kotelchuck_va_2015_county <- kotelchuck_va_2015_county %>% filter(geoid>51000 & geoid<52000) %>% filter(!is.na(region_name))
+
+length(unique(kotelchuck_va_2015_county$region_name))
+```
+
+
+# Kotelchuck 2014 ######
+# IMPORTANT: variable COMBGEST. for COMBGEST
+```{r}
+# 1) geoid from state
+#which fips are from virginia
+census_api_key(Sys.getenv("CENSUS_API_KEY"))
+
+state <- get_acs(geography = "state", 
+                     year = 2020,
+                     variables = c(hhf1 = 'B11016_002'
+                                   ), 
+                     survey = "acs5",
+                     geometry = FALSE)
+
+
+#state and geoid only
+state_info <- data.frame(state=c(state.name, 'District of Columbia', 'Puerto Rico'), abb= c(state.abb, 'DC', 'PR') )
+
+#join name and abbreviation
+state <- state %>% select("GEOID", "NAME" )
+state <- state %>% left_join(state_info, by=c("NAME"="state"))
+#create the factor state 000
+state$factor_state <- as.numeric(state$GEOID)*1000
+
+
+# 2) Load Natality Data
+#df 2014
+nat_2014 <- read.csv("~/test_symlink/natality_tables/natal_2014.csv")
+#df for va 2014
+nat_va_2014 <- nat_2014 %>% filter(OSTATE=="VA")
+
+#load county data for VA
+county_va <- get_acs(geography = "county", 
+                     year = 2014,
+                     variables = c(hhf1 = 'B11016_002'
+                                   ), 
+                     state = "VA",
+                     survey = "acs5",
+                     geometry = FALSE)
+
+# FIPS #############
+
+#join factor by abbr by = c( 'MRSTATEPSTL' ='abb')
+nat_va_2014 <- nat_va_2014 %>% left_join(state %>% select(abb, factor_state), by=c( 'MRSTATEPSTL' ='abb') )
+#create fips
+nat_va_2014$fips <- nat_va_2014$factor_state + nat_va_2014$MRCNTYFIPS
+
+#nat_va_2014$fips <-  51000 + nat_va_2014$OCNTYFIPS
+datafr <- nat_va_2014 %>% select(OCNTYFIPS, fips)
+fips <- data.frame(table(nat_va_2014$fips))
+
+
+# Kotechuck
+#COMBGEST 	Combined Gestation – Detail in Weeks 
+#PREVIS		Number of Prenatal Visits (Revised)
+#PRECARE	Month Prenatal Care
+
+#data
+nat_va_2014 <- nat_va_2014 %>% filter(COMBGEST!= 99)
+nat_va_2014 <- nat_va_2014 %>% filter(PRECARE != 99)
+nat_va_2014 <- nat_va_2014 %>% filter(PREVIS != 99)
+
+fips <- data.frame(table(nat_va_2014$fips))
+
+#list of fips without 99 (unknown)
+fips_list <- c(fips$Var1)
+
+finalvec_2014 <- list()
+
+for (i in fips_list) {
+   
+nat_va_2014_county <- nat_va_2014 %>% filter(fips == as.numeric( i ) )
+
+#df for kotelchuck
+apncu_va_2014_dat <- nat_va_2014_county %>% select( PRECARE , COMBGEST , PREVIS)
+
+#three components 1) up to 28 weeks - 7 visits: 1 visit per 4 weeks
+# 2) up to 36 week - 4 visits: 1 visit per 2 weeks
+# 3) 1 per additional week
+
+ideal_visit_1 <- 7
+ideal_visit_2 <- 4
+ideal_visit_3 <- 1
+
+#v1
+apncu_va_2014_dat$v1 <- ifelse(apncu_va_2014_dat$COMBGEST >= 28 , 
+                               ideal_visit_1 - (apncu_va_2014_dat$PRECARE -1),
+                               round(apncu_va_2014_dat$COMBGEST/4,0) - (apncu_va_2014_dat$PRECARE -1)  )
+
+
+#v2
+apncu_va_2014_dat$v2 <- ifelse(apncu_va_2014_dat$COMBGEST >= 36 ,
+                               ideal_visit_2, 
+                               ifelse( (apncu_va_2014_dat$COMBGEST - 28)>0 , round( (apncu_va_2014_dat$COMBGEST- 28)/2 , 0 ), 0 )
+                               )
+
+
+#v3
+apncu_va_2014_dat$v3 <- ifelse(apncu_va_2014_dat$COMBGEST > 36 ,
+                               apncu_va_2014_dat$COMBGEST-36,
+                               0)
+
+
+#Index
+
+apncu_va_2014_dat$ideal_vis <- (apncu_va_2014_dat$v1+apncu_va_2014_dat$v2+apncu_va_2014_dat$v3)
+
+apncu_va_2014_dat$apncu <-  apncu_va_2014_dat$PREVIS / apncu_va_2014_dat$ideal_vis
+
+apncu_va_2014_dat <- apncu_va_2014_dat %>% filter(PRECARE != 99, apncu != Inf ) 
+
+#Recode
+apncu_va_2014_dat$adeq <- apncu_va_2014_dat$apncu
+
+# Adequate Plus: 110% or more
+# Adequate: 80-109%
+# Intermediate: 50-79%
+# Inadequate: less than 50%
+
+
+apncu_va_2014_dat <- apncu_va_2014_dat %>% mutate(adeq, adequacy = case_when(
+      adeq < 0.5 ~ "1_<0.5", 
+      0.5 <= adeq &  adeq < 0.8  ~ "2_0.5-0.8",
+      0.8 <= adeq &  adeq < 1.1 ~ "3_0.8-1.1",
+      adeq >= 1.1 ~ "4_>=1.1" ))
+
+#table APNCU
+i
+
+apncu_table <- data.frame( table(apncu_va_2014_dat$PRECARE, apncu_va_2014_dat$adequacy) )
+names(apncu_table) <- c('init','ratio', 'freq')
+
+#ncol(apncu_table)==3, 
+
+#summation
+adequateplus <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "4_>=1.1" ) %>% select(freq) )
+adequate <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "3_0.8-1.1" ) %>% select(freq) )
+interm <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4), ratio == "2_0.5-0.8" ) %>% select(freq) )
+
+inadeq1 <- sum( apncu_table %>% filter(init %in% c(0,1,2,3,4,5,6,7,8,9,10), ratio == "1_<0.5" ) %>%  select(freq) )
+inadeq2 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "2_0.5-0.8" ) %>%  select(freq) )
+inadeq3 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "3_0.8-1.1" ) %>%  select(freq) )
+inadeq4 <- sum( apncu_table %>% filter(init %in% c(5,6,7,8,9,10), ratio == "4_>=1.1" ) %>%  select(freq) )
+
+inadeq <- inadeq1+inadeq2+inadeq3+inadeq4
+
+total <- inadeq+interm+adequate+adequateplus
+
+#vector
+apncu_vector <- c( i , inadeq, interm, adequate, adequateplus,  total)
+
+#cummulative vector
+finalvec_2014 <- rbind( finalvec_2014, apncu_vector)
+}
+
+
+#matrix numeric
+matrix_kotelchuck_2014 <- data.frame( finalvec_2014 )
+matrix_kotelchuck_2014 <- as.data.frame(sapply(matrix_kotelchuck_2014,as.numeric))
+
+#names matrix
+names(matrix_kotelchuck_2014) <- c('fips', 'inadequate', 'intermediate', 'adequate', 'adequateplus',  'total')
+
+library(janitor)
+#row percentages
+matrix_kotelchuck_2014_pc <- matrix_kotelchuck_2014 %>% select( -total)  %>% adorn_percentages()
+#final matrix percentages plus fips
+matrix_kotelchuck_2014_pc <- round(matrix_kotelchuck_2014_pc,3) 
+names(matrix_kotelchuck_2014_pc) <- c("fips", "inadequate_pc", "intermediate_pc", "adequate_pc", "adequateplus_pc")
+
+#final
+kotelchuck_va_2014 <- matrix_kotelchuck_2014 %>% left_join(matrix_kotelchuck_2014_pc, by="fips")
+kotelchuck_va_2014$fips <-as.character(kotelchuck_va_2014$fips)
+kotelchuck_va_2014 <- kotelchuck_va_2014 %>% left_join(county_va %>% select(GEOID, NAME), by=c( "fips"="GEOID") )
+
+
+
+
+# 4) long format
+kotelchuck_va_2014_county <- tidyr::gather(kotelchuck_va_2014, measure, value, 
+                                            inadequate,
+                                            intermediate,
+                                            adequate,
+                                            adequateplus,
+                                            total, 
+                                            inadequate_pc, 
+                                            intermediate_pc,
+                                           adequate_pc,
+                                           adequateplus_pc
+                                           )
+#define year
+kotelchuck_va_2014_county$year <- 2014
+#define measure type
+kotelchuck_va_2014_county$measure_type <- as.factor(ifelse(kotelchuck_va_2014_county$measure=="inadequate" |
+                                                            kotelchuck_va_2014_county$measure=="intermediate" |
+                                                              kotelchuck_va_2014_county$measure=="adequate" | 
+                                                              kotelchuck_va_2014_county$measure=="adequateplus" |
+                                                              kotelchuck_va_2014_county$measure=="total", 'count','proportion') )
+
+#define region type
+kotelchuck_va_2014_county$region_type <- 'county'
+#define names
+names(kotelchuck_va_2014_county)[names(kotelchuck_va_2014_county)=='fips'] <- 'geoid'
+names(kotelchuck_va_2014_county)[names(kotelchuck_va_2014_county)=='NAME'] <- 'region_name'
+
+kotelchuck_va_2014_county <- kotelchuck_va_2014_county %>% filter(geoid>51000 & geoid<52000) %>% filter(!is.na(region_name))
+
+length(unique(kotelchuck_va_2014_county$region_name))
+```
+
+
+Join 2014-2020
+
+```{r}
+kotelchuck_14_20 <- rbind( kotelchuck_va_2014_county, kotelchuck_va_2015_county, kotelchuck_va_2016_county, kotelchuck_va_2017_county,
+                           kotelchuck_va_2018_county, kotelchuck_va_2019_county, kotelchuck_va_2020_county)
+```
+
+Save
+```{r}
+write.csv(kotelchuck_14_20, "~/test_symlink/natality_tables/kotelchuck_14_20.csv", row.names = FALSE )
+kotelchuck_14_20 <- read.csv("~/test_symlink/natality_tables/kotelchuck_14_20.csv")
+
+
+# kotelchuck_14_20$measure_type <- ifelse(kotelchuck_14_20$measure_type=="proportion", "percent", "count")
+# kotelchuck_14_20$value <- ifelse(kotelchuck_14_20$measure_type=="percent", kotelchuck_14_20$value*100, kotelchuck_14_20$value)
+
+#a) connect
+con <- RPostgreSQL::dbConnect(drv = RPostgreSQL::PostgreSQL(),
+                               dbname = "sdad",
+                               host = "postgis1",
+                               port = 5432,
+                               user = Sys.getenv(x = "DB_USR"),
+                               password = Sys.getenv(x = "DB_PWD"))
+
+#b) save the file in scheme dc_working in pgadmin: CHANGE name
+sf::st_write(
+  kotelchuck_14_20, con,
+  c("dc_health_behavior_diet", "va_co_cdc_2020_2014_kotelchuck_apncu_index"),
+  table_owner = "data_commons",
+  row.names = FALSE)
+
+#d) Disconnect
+RPostgreSQL::dbDisconnect(con)
+
+
+```
+
+# LAB
+Some tables
+
+```{r}
+tab1 <- kotelchuck_14_20 %>% group_by(year, measure) %>% summarise(avg=mean(value), max=max(value), min= min(value))
+
+tab_fairfax <- kotelchuck_14_20 %>% filter(region_name== "Fairfax County, Virginia")  %>%  group_by(year, measure) %>% summarise(avg=mean(value), max=max(value), min= min(value), tot=sum(value))
+
+
+tab_fairfax_2 <- kotelchuck_14_20 %>% filter(region_name== "Fairfax County, Virginia", measure=="inadequate_pc")  %>%  group_by(year, measure) %>% summarise(avg=mean(value), max=max(value), min= min(value), tot=sum(value))
+
+tab_arl_2 <- kotelchuck_14_20 %>% filter(region_name== "Arlington County, Virginia", measure=="inadequate_pc")  %>%  group_by(year, measure) %>% summarise(avg=mean(value), max=max(value), min= min(value), tot=sum(value))
+```
+
+
