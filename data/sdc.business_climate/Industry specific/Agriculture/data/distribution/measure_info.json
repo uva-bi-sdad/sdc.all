@@ -131,7 +131,7 @@
         "type": "count",
         "unit": ""
     },
-    "total_commodity_sale": {
+    "total_commodity_sales": {
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
