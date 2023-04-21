@@ -3,8 +3,8 @@
   "measure_not_found": [
     "/home/runner/work/sdc.geographies_dev/sdc.geographies_dev/VA/State Geographies/Health Districts/2020/data/distribution/va_ct_to_hd_crosswalk.csv"
   ],
-  "count": 141,
-  "utc_audited": "2023-03-17 19:14:52",
+  "count": 182,
+  "utc_audited": "2023-03-22 17:58:56",
   "data": [
     {
       "name": "us_geo_census_cb_2010_counties.geojson",
@@ -25,10 +25,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "US/Census Geographies/County/2010/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "US/Census Geographies/County/2010/code/distribution/01_ingest_file_1.R",
+      "md5": "6f1bf87b3b27adb8dd28199734128add",
+      "size": 389
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "US/Census Geographies/County/2010/code/distribution/02_prepare.R",
+      "md5": "34d34643c64880f4de9b4b53bc499499",
+      "size": 1503
     },
     {
       "name": "us_geo_census_cb_2020_counties.geojson",
@@ -49,10 +55,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "US/Census Geographies/County/2020/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "US/Census Geographies/County/2020/code/distribution/01_ingest_file_1.R",
+      "md5": "18b22ef02075ec072e3cc1028d0b6366",
+      "size": 401
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "US/Census Geographies/County/2020/code/distribution/02_prepare.R",
+      "md5": "9bc2a184d618572a07245e08cd40b021",
+      "size": 1258
     },
     {
       "name": "us_geo_census_cb_2010_census_tracts.geojson",
@@ -73,10 +85,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "US/Census Geographies/Tract/2010/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "US/Census Geographies/Tract/2010/code/distribution/01_ingest_file_1.R",
+      "md5": "e5a12cba8bc3d369151b26f758c7c7e3",
+      "size": 54
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "US/Census Geographies/Tract/2010/code/distribution/02_prepare.R",
+      "md5": "d018677318e3dc0867b20eadbf8c2fdc",
+      "size": 2705
     },
     {
       "name": "us_geo_census_cb_2020_census_tracts.geojson",
@@ -97,10 +115,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "US/Census Geographies/Tract/2020/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "US/Census Geographies/Tract/2020/code/distribution/01_ingest_file_1.R",
+      "md5": "a6fa8679d67eb3471bd4703fe5d45944",
+      "size": 406
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "US/Census Geographies/Tract/2020/code/distribution/02_prepare.R",
+      "md5": "35d27141daf9d729409b91374175017f",
+      "size": 1916
     },
     {
       "name": "dc_geo_census_cb_2010_census_block_groups.geojson",
@@ -121,10 +145,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "DC/Census Geographies/Block Group/2010/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "DC/Census Geographies/Block Group/2010/code/distribution/01_ingest_file_1.R",
+      "md5": "bc6ba1a02711887f92065468e543f956",
+      "size": 312
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "DC/Census Geographies/Block Group/2010/code/distribution/02_prepare.R",
+      "md5": "54919f3ac391639daa9b539fd440a263",
+      "size": 1897
     },
     {
       "name": "dc_geo_census_cb_2020_census_block_groups.geojson",
@@ -145,10 +175,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "DC/Census Geographies/Block Group/2020/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "DC/Census Geographies/Block Group/2020/code/distribution/01_ingest_file_1.R",
+      "md5": "deb485c5477eb3b58f05c398c70392bf",
+      "size": 409
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "DC/Census Geographies/Block Group/2020/code/distribution/02_prepare.R",
+      "md5": "5e5b8b02644c22c471cdb6b551719a9a",
+      "size": 2408
     },
     {
       "name": "dc_geo_census_cb_2010_counties.geojson",
@@ -169,10 +205,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "DC/Census Geographies/County/2010/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "DC/Census Geographies/County/2010/code/distribution/01_ingest_file_1.R",
+      "md5": "e64ced1edc7f17758d5b176c4d42daf8",
+      "size": 439
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "DC/Census Geographies/County/2010/code/distribution/02_prepare.R",
+      "md5": "008104e9badd8d0c0962c4f0baf94aac",
+      "size": 1199
     },
     {
       "name": "dc_geo_census_cb_2020_counties.geojson",
@@ -193,10 +235,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "DC/Census Geographies/County/2020/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "DC/Census Geographies/County/2020/code/distribution/01_ingest_file_1.R",
+      "md5": "20649c865d200b4ec841437b271e00ef",
+      "size": 426
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "DC/Census Geographies/County/2020/code/distribution/02_prepare.R",
+      "md5": "2fe7a0227a8d7ea92e4c6d7a3f297d83",
+      "size": 587
     },
     {
       "name": "dc_geo_census_cb_2010_census_tracts.geojson",
@@ -217,10 +265,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "DC/Census Geographies/Tract/2010/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "DC/Census Geographies/Tract/2010/code/distribution/01_ingest_file_1.R",
+      "md5": "45b04354f9fc3ad050faf91a41151cf5",
+      "size": 456
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "DC/Census Geographies/Tract/2010/code/distribution/02_prepare.R",
+      "md5": "87728587a4c184f0c0c59f187576989b",
+      "size": 1260
     },
     {
       "name": "dc_geo_census_cb_2020_census_tracts.geojson",
@@ -241,10 +295,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "DC/Census Geographies/Tract/2020/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "DC/Census Geographies/Tract/2020/code/distribution/01_ingest_file_1.R",
+      "md5": "b984912dcbe2fe1ea9e3bb7bd1425a1b",
+      "size": 406
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "DC/Census Geographies/Tract/2020/code/distribution/02_prepare.R",
+      "md5": "6d47aad76166fee729411cec37b245c8",
+      "size": 1724
     },
     {
       "name": "va_geo_census_cb_2010_census_block_groups.geojson",
@@ -265,10 +325,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "VA/Census Geographies/Block Group/2010/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "VA/Census Geographies/Block Group/2010/code/distribution/01_ingest_file_1.R",
+      "md5": "3e41b01f49ceaa9ba732b7f585c59dd5",
+      "size": 312
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "VA/Census Geographies/Block Group/2010/code/distribution/02_prepare.R",
+      "md5": "1f0c13813482700d7d78460ff5ca2f06",
+      "size": 1897
     },
     {
       "name": "va_geo_census_cb_2020_census_block_groups.geojson",
@@ -289,10 +355,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "VA/Census Geographies/Block Group/2020/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "VA/Census Geographies/Block Group/2020/code/distribution/01_ingest_file_1.R",
+      "md5": "09750c167f4ceef42b54f0ef1acc26e4",
+      "size": 409
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "VA/Census Geographies/Block Group/2020/code/distribution/02_prepare.R",
+      "md5": "55b8dbbd1f7b8b8754f1a65a6fbd0024",
+      "size": 2450
     },
     {
       "name": "va_geo_census_cb_2010_counties.geojson",
@@ -313,10 +385,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "VA/Census Geographies/County/2010/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "VA/Census Geographies/County/2010/code/distribution/01_ingest_file_1.R",
+      "md5": "8b8bc052e5576b23d3feea6143322754",
+      "size": 541
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "VA/Census Geographies/County/2010/code/distribution/02_prepare.R",
+      "md5": "518343ad6a60a712f480090b51db0223",
+      "size": 1193
     },
     {
       "name": "va_geo_census_cb_2020_counties.geojson",
@@ -337,10 +415,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "VA/Census Geographies/County/2020/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "VA/Census Geographies/County/2020/code/distribution/01_ingest_file_1.R",
+      "md5": "8a6fbe2e14b6f485a3bbd553a978eb63",
+      "size": 426
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "VA/Census Geographies/County/2020/code/distribution/02_prepare.R",
+      "md5": "0bc7948cfff5b3d506cf255a45beb0cb",
+      "size": 586
     },
     {
       "name": "va_geo_census_cb_2010_census_tracts.geojson",
@@ -361,10 +445,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "VA/Census Geographies/Tract/2010/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "VA/Census Geographies/Tract/2010/code/distribution/01_ingest_file_1.R",
+      "md5": "bc6f1c5d9f8e08d5f0847d711962c7ff",
+      "size": 428
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "VA/Census Geographies/Tract/2010/code/distribution/02_prepare.R",
+      "md5": "e740df9281f1fbe21bad839ecb97ba4b",
+      "size": 1260
     },
     {
       "name": "va_geo_census_cb_2020_census_tracts.geojson",
@@ -385,10 +475,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "VA/Census Geographies/Tract/2020/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "VA/Census Geographies/Tract/2020/code/distribution/01_ingest_file_1.R",
+      "md5": "f5bb5ed59f39e2e197e67ce71e548399",
+      "size": 403
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "VA/Census Geographies/Tract/2020/code/distribution/02_prepare.R",
+      "md5": "578bd16f6cadff3dac59c1533d6cf77e",
+      "size": 1728
     },
     {
       "name": "va_geo_vhd_2020_health_districts.geojson",
@@ -421,10 +517,28 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "VA/State Geographies/Health Districts/2020/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "ingest_02.R",
+      "path": "VA/State Geographies/Health Districts/2020/code/distribution/ingest_02.R",
+      "md5": "920ff72bfd1ecd5b78c5a16f77d4a495",
+      "size": 250
+    },
+    {
+      "name": "prepare_02.R",
+      "path": "VA/State Geographies/Health Districts/2020/code/distribution/prepare_02.R",
+      "md5": "00d17b33729872cf391ad8e58cf77f2d",
+      "size": 2445
+    },
+    {
+      "name": "01_ingest_file_1.R",
+      "path": "VA/State Geographies/Health Districts/2020/code/distribution/01_ingest_file_1.R",
+      "md5": "e5a12cba8bc3d369151b26f758c7c7e3",
+      "size": 54
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "VA/State Geographies/Health Districts/2020/code/distribution/02_prepare.R",
+      "md5": "45f991a8ab2c47148a84a0520cfdef89",
+      "size": 1637
     },
     {
       "name": "va_geo_vhd_2021_ahec_regions.geojson",
@@ -439,10 +553,10 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "VA/State Geographies/AHEC Regions/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "prepare_ahec_geographies.R",
+      "path": "VA/State Geographies/AHEC Regions/code/distribution/prepare_ahec_geographies.R",
+      "md5": "243a8d9bdd51bcffcd2abf939ac9a708",
+      "size": 1605
     },
     {
       "name": "va013_geo_arl_2021_civic_associations.geojson",
@@ -463,10 +577,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "VA/Local Geographies/Arlington County/Civic Associations/2021/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "VA/Local Geographies/Arlington County/Civic Associations/2021/code/distribution/01_ingest_file_1.R",
+      "md5": "2196acf9b73031dac6b19a51c1c9b51b",
+      "size": 558
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "VA/Local Geographies/Arlington County/Civic Associations/2021/code/distribution/02_prepare.R",
+      "md5": "dca04bb1e8d77391a837816a018e1219",
+      "size": 1262
     },
     {
       "name": "va059_geo_ffxct_gis_2022_supervisor_districts.geojson",
@@ -487,10 +607,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "VA/Local Geographies/Fairfax County/Supervisor Districts/2022/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "VA/Local Geographies/Fairfax County/Supervisor Districts/2022/code/distribution/01_ingest_file_1.R",
+      "md5": "09a9806bd0b55d22ddb5a87916646f2b",
+      "size": 556
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "VA/Local Geographies/Fairfax County/Supervisor Districts/2022/code/distribution/02_prepare.R",
+      "md5": "7bfc51b8439e4935e031f88aa61a4bc6",
+      "size": 1324
     },
     {
       "name": "va059_geo_ffxct_gis_2022_human_services_regions.geojson",
@@ -511,10 +637,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "VA/Local Geographies/Fairfax County/Human Services Regions/2022/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "VA/Local Geographies/Fairfax County/Human Services Regions/2022/code/distribution/01_ingest_file_1.R",
+      "md5": "24574f028264fc4c96eacf83caf7a75a",
+      "size": 560
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "VA/Local Geographies/Fairfax County/Human Services Regions/2022/code/distribution/02_prepare.R",
+      "md5": "4e8d8411e04ee63536004ce636f54995",
+      "size": 1518
     },
     {
       "name": "va059_geo_ffxct_gis_2022_zip_codes.geojson",
@@ -535,10 +667,22 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "VA/Local Geographies/Fairfax County/Zip Codes/2022/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "VA/Local Geographies/Fairfax County/Zip Codes/2022/code/distribution/01_ingest_file_1.R",
+      "md5": "a81e5ec441b81bc06f8af5d06b0fdce7",
+      "size": 534
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "VA/Local Geographies/Fairfax County/Zip Codes/2022/code/distribution/02_prepare.R",
+      "md5": "ec62b3f6515ae91c344020a8027cf6ee",
+      "size": 1330
+    },
+    {
+      "name": "01_ingest_file_2.R",
+      "path": "VA/Local Geographies/Fairfax County/Zip Codes/2022/code/distribution/01_ingest_file_2.R",
+      "md5": "8a9e4dcb2f6f66754b844896b903795a",
+      "size": 467
     },
     {
       "name": "va059_geo_ffxct_gis_2022_planning_districts.geojson",
@@ -559,10 +703,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "VA/Local Geographies/Fairfax County/Planning Districts/2022/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "VA/Local Geographies/Fairfax County/Planning Districts/2022/code/distribution/01_ingest_file_1.R",
+      "md5": "642b722d686b8a7a2f25ea8afa2a9d3f",
+      "size": 550
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "VA/Local Geographies/Fairfax County/Planning Districts/2022/code/distribution/02_prepare.R",
+      "md5": "995294b62792831e37eb4bd5556c3141",
+      "size": 1463
     },
     {
       "name": "md_geo_census_cb_2010_census_block_groups.geojson",
@@ -583,10 +733,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "MD/Census Geographies/Block Group/2010/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "MD/Census Geographies/Block Group/2010/code/distribution/01_ingest_file_1.R",
+      "md5": "cede8164817b59ec474d49d6a5d66c05",
+      "size": 312
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "MD/Census Geographies/Block Group/2010/code/distribution/02_prepare.R",
+      "md5": "3ed5e434abc9cca8a78adec22a2358cb",
+      "size": 1897
     },
     {
       "name": "README",
@@ -607,10 +763,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "MD/Census Geographies/Block Group/2020/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "MD/Census Geographies/Block Group/2020/code/distribution/01_ingest_file_1.R",
+      "md5": "9ad5afce4b987cc02632476fa08045fa",
+      "size": 409
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "MD/Census Geographies/Block Group/2020/code/distribution/02_prepare.R",
+      "md5": "712d262a4598829663d3c3f6c603d6b7",
+      "size": 2484
     },
     {
       "name": "md_geo_census_cb_2010_counties.geojson",
@@ -631,10 +793,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "MD/Census Geographies/County/2010/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "MD/Census Geographies/County/2010/code/distribution/01_ingest_file_1.R",
+      "md5": "c73847d21a574c17630428f92f2b7c91",
+      "size": 426
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "MD/Census Geographies/County/2010/code/distribution/02_prepare.R",
+      "md5": "b1038c00c9bd74c95f93ea79256cee9f",
+      "size": 1191
     },
     {
       "name": "md_geo_census_cb_2020_counties.geojson",
@@ -655,10 +823,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "MD/Census Geographies/County/2020/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "MD/Census Geographies/County/2020/code/distribution/01_ingest_file_1.R",
+      "md5": "989cd073d9744778f4f176b0ba795b53",
+      "size": 426
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "MD/Census Geographies/County/2020/code/distribution/02_prepare.R",
+      "md5": "2a573d38174fc6396e970eed4b42beee",
+      "size": 587
     },
     {
       "name": "md_geo_census_cb_2010_census_tracts.geojson",
@@ -679,10 +853,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "MD/Census Geographies/Tract/2010/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "MD/Census Geographies/Tract/2010/code/distribution/01_ingest_file_1.R",
+      "md5": "916924cf036c8a2b4b2e216d260aab3f",
+      "size": 456
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "MD/Census Geographies/Tract/2010/code/distribution/02_prepare.R",
+      "md5": "c8c07b2f257c0e21816cf745d73ddeb7",
+      "size": 1260
     },
     {
       "name": "md_geo_census_cb_2020_census_tracts.geojson",
@@ -703,10 +883,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "MD/Census Geographies/Tract/2020/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "MD/Census Geographies/Tract/2020/code/distribution/01_ingest_file_1.R",
+      "md5": "d3ce1436e7a526c51fa116f94af75edc",
+      "size": 403
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "MD/Census Geographies/Tract/2020/code/distribution/02_prepare.R",
+      "md5": "4af015bf350dee6bc690570d1a33cd79",
+      "size": 1732
     },
     {
       "name": "ncr_geo_census_cb_2010_census_block_groups.geojson",
@@ -727,10 +913,28 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "NCR/Census Geographies/Block Group/2010/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "NCR/Census Geographies/Block Group/2010/code/distribution/01_ingest_file_1.R",
+      "md5": "929f9e7f94667009f9e4da714cae5f09",
+      "size": 490
+    },
+    {
+      "name": "01_ingest_file_3.R",
+      "path": "NCR/Census Geographies/Block Group/2010/code/distribution/01_ingest_file_3.R",
+      "md5": "7e15e78b7e6ddc607047e58e28e5187c",
+      "size": 490
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "NCR/Census Geographies/Block Group/2010/code/distribution/02_prepare.R",
+      "md5": "fd6cb98141b793a9bec9f446565fbafe",
+      "size": 2447
+    },
+    {
+      "name": "01_ingest_file_2.R",
+      "path": "NCR/Census Geographies/Block Group/2010/code/distribution/01_ingest_file_2.R",
+      "md5": "46132566c2fe31095ee66c41a14c2aad",
+      "size": 490
     },
     {
       "name": "ncr_geo_census_cb_2020_census_block_groups.geojson",
@@ -751,10 +955,28 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "NCR/Census Geographies/Block Group/2020/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "NCR/Census Geographies/Block Group/2020/code/distribution/01_ingest_file_1.R",
+      "md5": "acd24bc2fca28a066cbac9703b564fa0",
+      "size": 497
+    },
+    {
+      "name": "01_ingest_file_3.R",
+      "path": "NCR/Census Geographies/Block Group/2020/code/distribution/01_ingest_file_3.R",
+      "md5": "676aa3b7acca7c8aea21520fe4528d44",
+      "size": 497
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "NCR/Census Geographies/Block Group/2020/code/distribution/02_prepare.R",
+      "md5": "e7be876bd2842fb8ebf75e9452924388",
+      "size": 2262
+    },
+    {
+      "name": "01_ingest_file_2.R",
+      "path": "NCR/Census Geographies/Block Group/2020/code/distribution/01_ingest_file_2.R",
+      "md5": "568c45b80fdeaa0e17492c2c5861cf81",
+      "size": 497
     },
     {
       "name": "ncr_geo_census_cb_2010_counties.geojson",
@@ -775,10 +997,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "NCR/Census Geographies/County/2010/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "NCR/Census Geographies/County/2010/code/distribution/01_ingest_file_1.R",
+      "md5": "986f507729febc8ec377bf696239d3f3",
+      "size": 427
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "NCR/Census Geographies/County/2010/code/distribution/02_prepare.R",
+      "md5": "ba32ff0e2584f7f6632d935e0dd88b20",
+      "size": 1417
     },
     {
       "name": "ncr_geo_census_cb_2020_counties.geojson",
@@ -799,10 +1027,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "NCR/Census Geographies/County/2020/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "NCR/Census Geographies/County/2020/code/distribution/01_ingest_file_1.R",
+      "md5": "6f31eb1bfa2dc10f66f6e3ffae3e4f02",
+      "size": 427
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "NCR/Census Geographies/County/2020/code/distribution/02_prepare.R",
+      "md5": "2557ee573b815e8422f5e64c1863b7be",
+      "size": 1432
     },
     {
       "name": "ncr_geo_census_cb_2010_census_tracts.geojson",
@@ -823,10 +1057,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "NCR/Census Geographies/Tract/2010/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "NCR/Census Geographies/Tract/2010/code/distribution/01_ingest_file_1.R",
+      "md5": "44d7db91fccf830e75aa7c8bbab74ebe",
+      "size": 454
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "NCR/Census Geographies/Tract/2010/code/distribution/02_prepare.R",
+      "md5": "46f2d382ac03c065bec52c9b5e665648",
+      "size": 1501
     },
     {
       "name": "ncr_geo_census_cb_2020_census_tracts.geojson",
@@ -847,10 +1087,16 @@
       "size": 0
     },
     {
-      "name": "temp",
-      "path": "NCR/Census Geographies/Tract/2020/code/distribution/temp",
-      "md5": "d41d8cd98f00b204e9800998ecf8427e",
-      "size": 0
+      "name": "01_ingest_file_1.R",
+      "path": "NCR/Census Geographies/Tract/2020/code/distribution/01_ingest_file_1.R",
+      "md5": "448e87a19cd784a3225b3eec8441826b",
+      "size": 461
+    },
+    {
+      "name": "02_prepare.R",
+      "path": "NCR/Census Geographies/Tract/2020/code/distribution/02_prepare.R",
+      "md5": "245ddaa8f94aa27227b99be96447ebe8",
+      "size": 2195
     }
   ],
   "_references": {}
