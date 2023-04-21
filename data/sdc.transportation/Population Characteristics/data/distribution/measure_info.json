@@ -66,6 +66,7 @@
         ],
         "statement": "{value} of households in {features.name} do not have a vehicle available at home.",
         "type": "percent",
-        "unit": ""
+        "unit": "percent"
     }
 }
+
