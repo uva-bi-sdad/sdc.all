@@ -13,6 +13,7 @@ import logging
 import pathlib
 import shutil
 from glob import glob
+import time
 
 # import traceback
 
@@ -50,11 +51,16 @@ def main(input_file, output_dir, force):
             save_name
         ):  # skip if already downloaded, and force flag is False
             continue
-
+        time.sleep(15)  # Wait after you check the file does not exist in the directory
         files = {
             "addressFile": open(chunk, "r"),
             "benchmark": (None, "2020"),
         }
+
+        if not force and os.path.isfile(
+            save_name
+        ):  # if not force and the file is already read
+            continue
 
         response = requests.post(
             "https://geocoding.geo.census.gov/geocoder/locations/addressbatch",
@@ -120,14 +126,7 @@ if __name__ == "__main__":
 
     logging.basicConfig(format="%(levelname)s: %(message)s", level=log_level)
 
-    assert os.path.isfile(args.input_file)
-    if not args.force:
-        assert not os.path.isdir(args.output_dir)
-    else:  # if it is forced, remove the directory if it exists
-        if os.path.isdir(args.output_dir):
-            shutil.rmtree(args.output_dir)
-
-    # Make an output directory. You either error out prior if not forced if it doesn't exist, or it is removed if it is forced
-    os.mkdir(args.output_dir)
+    if not os.path.isdir(args.output_dir):
+        os.mkdir(args.output_dir)
 
     main(args.input_file, args.output_dir, args.force)

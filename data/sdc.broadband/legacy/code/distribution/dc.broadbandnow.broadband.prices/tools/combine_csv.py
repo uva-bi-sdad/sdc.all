@@ -9,7 +9,7 @@ import pathlib
 # import traceback
 
 
-def main(input_dir, output_filepath):
+def combine_csv(input_dir):
     dfs = []
     for file in tqdm(os.listdir(input_dir)):
         suffix = pathlib.Path(file).suffix
@@ -19,6 +19,11 @@ def main(input_dir, output_filepath):
             dfs.append(df)
 
     tdf = pd.concat(dfs)
+    return tdf
+
+
+def main(input_dir, output_filepath):
+    tdf = combine_csv(input_dir)
     tdf.to_csv(output_filepath, index=False)
     print(tdf)
     print("[%s] Saved to: %s" % (os.path.isfile(output_filepath), output_filepath))
