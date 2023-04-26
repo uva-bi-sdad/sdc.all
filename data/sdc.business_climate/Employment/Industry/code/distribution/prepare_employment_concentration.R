@@ -32,7 +32,7 @@ industry_employment <- mi_fairfax_features %>%
   ungroup() %>%
   mutate(measure = paste0(naics_name,'_',measure),
          geoid = 51059,
-         region_type = 'County',
+         region_type = 'county',
          region_name = 'Fairfax county',
          measure_type = case_when(
            grepl('emp_industry',measure)==T ~ "count",
