@@ -1,5 +1,6 @@
 CATEGORY,MEASURE,START_YEAR,END_YEAR,DC_block group,DC_county,DC_health district,DC_tract,MD_block group,MD_county,MD_health district,MD_tract,VA_ahec region,VA_block group,VA_civic association,VA_county,VA_health district,VA_human services region,VA_planning district,VA_school district,VA_supervisor district,VA_tract,VA_zip code
 transportation,perc_carpool,2016,2020,,X,,X,,X,,X,,,,X,,,,,,X,
+transportation,perc_no_vehicle,2010,2021,,,,,,,,,,,,X,,,,,,X,
 transportation,commute_time,2016,2020,,X,,X,,X,,X,,,,X,,,,,,X,
 transportation,perc_no_vehicle,2016,2020,,X,,X,,X,,X,,,,X,,,,,,X,
 demographics,perc_children_raised_by_GPs,2010,2021,,,,,,,,,,,,X,,,,,,X,

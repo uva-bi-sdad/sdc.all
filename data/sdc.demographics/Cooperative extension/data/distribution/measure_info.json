@@ -34,8 +34,9 @@
         "short_name": "Children Raised by Grandparents",
         "sources": [
             {
-                "name": "American Community Survey Table B01003",
-                "date_accessed": 2022,
+                "name": "American Community Survey",
+                "location": " Table B01003",
+                "date_accessed": 2023,
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],

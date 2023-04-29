@@ -11939,7 +11939,7 @@
         "unit": ""
     },
     "fruit_treeNut_total_sales": {
-        "category": "Business climate",
+        "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
         "equity_category": "Status",
@@ -11952,13 +11952,13 @@
         "sources": [
             {
                 "date_accessed": 2023,
-                "name": "USDA NASS",
+                "name": "Department of Agriculture National Agriculture Statistics Service",
                 "url": "https://www.nass.usda.gov/"
             }
         ],
-        "statement": "",
-        "type": "count",
-        "unit": "Total sales of fruit and tree nuts to {features.name} is {value}."
+        "statement": "Total sales of fruit and tree nuts to {features.name} is {value}.",
+        "type": "dollar",
+        "unit": "dollar"
     },
     "garbanzo_ecdf_idx": {
         "category": "Nutrition and Food Security",
@@ -14220,8 +14220,9 @@
         "short_name": "Children Raised by Grandparents",
         "sources": [
             {
-                "date_accessed": 2022,
-                "name": "American Community Survey Table B01003",
+                "date_accessed": 2023,
+                "location": " Table B01003",
+                "name": "American Community Survey",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
@@ -14631,7 +14632,7 @@
         "short_name": "Without vehicle",
         "sources": [
             {
-                "date_accessed": "2022",
+                "date_accessed": "2023",
                 "location": "Table S2504",
                 "name": "American Community Survey",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
@@ -16250,7 +16251,7 @@
         "unit": ""
     },
     "total_animalProducts_sales": {
-        "category": "Business climate",
+        "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
         "equity_category": "Status",
@@ -16263,16 +16264,16 @@
         "sources": [
             {
                 "date_accessed": 2023,
-                "name": "USDA NASS",
+                "name": "Department of Agriculture National Agriculture Statistics Service",
                 "url": "https://www.nass.usda.gov/"
             }
         ],
         "statement": "Total sales of animal products to {features.name} is {value}.",
-        "type": "count",
-        "unit": ""
+        "type": "dollar",
+        "unit": "dollar"
     },
     "total_animal_expense": {
-        "category": "Business climate",
+        "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
         "equity_category": "Status",
@@ -16285,16 +16286,16 @@
         "sources": [
             {
                 "date_accessed": 2023,
-                "name": "USDA NASS",
+                "name": "Department of Agriculture National Agriculture Statistics Service",
                 "url": "https://www.nass.usda.gov/"
             }
         ],
         "statement": "The overall expenses towards animals to {features.name} is {value}.",
-        "type": "count",
-        "unit": ""
+        "type": "dollar",
+        "unit": "dollar"
     },
     "total_calves_sales": {
-        "category": "Business climate",
+        "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
         "equity_category": "Status",
@@ -16307,7 +16308,7 @@
         "sources": [
             {
                 "date_accessed": 2023,
-                "name": "USDA NASS",
+                "name": "Department of Agriculture National Agriculture Statistics Service",
                 "url": "https://www.nass.usda.gov/"
             }
         ],
@@ -16316,7 +16317,7 @@
         "unit": ""
     },
     "total_commodity_sales": {
-        "category": "Business climate",
+        "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
         "equity_category": "Status",
@@ -16329,29 +16330,29 @@
         "sources": [
             {
                 "date_accessed": 2023,
-                "name": "USDA NASS",
+                "name": "Department of Agriculture National Agriculture Statistics Service",
                 "url": "https://www.nass.usda.gov/"
             }
         ],
         "statement": "Total sales of commodities to {feature.name} is {value}",
-        "type": "count",
-        "unit": ""
+        "type": "dollar",
+        "unit": "dollar"
     },
     "total_cropland_acres": {
-        "category": "Business climate",
+        "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
         "long_description": "",
-        "long_name": "Total acreage used in agriculture for cropland",
+        "long_name": "Total acerage used in agriculture for cropland",
         "measure_type": "count",
         "short_description": "Total acreage for cropland",
         "short_name": "Total acreage for cropland",
         "sources": [
             {
                 "date_accessed": 2023,
-                "name": "USDA NASS",
+                "name": "Department of Agriculture National Agriculture Statistics Service",
                 "url": "https://www.nass.usda.gov/"
             }
         ],
@@ -16360,7 +16361,7 @@
         "unit": ""
     },
     "total_cropland_operations": {
-        "category": "Business climate",
+        "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
         "equity_category": "Status",
@@ -16373,7 +16374,7 @@
         "sources": [
             {
                 "date_accessed": 2023,
-                "name": "USDA NASS",
+                "name": "Department of Agriculture National Agriculture Statistics Service",
                 "url": "https://www.nass.usda.gov/"
             }
         ],
@@ -16426,7 +16427,7 @@
         "unit": ""
     },
     "total_irrigatedCropland_acre": {
-        "category": "Business climate",
+        "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
         "equity_category": "Status",
@@ -16434,12 +16435,12 @@
         "long_description": "",
         "long_name": "Total acreage used in agriculture for irrigated cropland",
         "measure_type": "count",
-        "short_description": "Total afread for irrigated cropland",
-        "short_name": "Total afread for irrigated cropland",
+        "short_description": "Total acerage for irrigated cropland",
+        "short_name": "Total acerage for irrigated cropland",
         "sources": [
             {
                 "date_accessed": 2023,
-                "name": "USDA NASS",
+                "name": "Department of Agriculture National Agriculture Statistics Service",
                 "url": "https://www.nass.usda.gov/"
             }
         ],
