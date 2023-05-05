@@ -1,10 +1,10 @@
 # dataset creation code - dataset preparation (transformation, new variables, linkage, etc)
 
 # Import file from original
-va_geo_census_cb_2010_census_block_groups <- sf::st_read("data/va_geo_census_cb_2010_census_block_groups/original/va_geo_census_cb_2010_census_block_groups.geojson")
+va_geo_census_cb_2010_census_block_groups <- sf::st_read("VA/Census Geographies/Block Group/2010/data/original/va_geo_census_cb_2010_census_block_groups.geojson")
 va_geo_census_cb_2010_census_block_groups <- sf::st_transform(va_geo_census_cb_2010_census_block_groups, 4326)
 
-us_geo_census_cb_2010_census_tracts <- sf::st_drop_geometry(sf::st_read("data/us_geo_census_cb_2010_census_tracts/distribution/us_geo_census_cb_2010_census_tracts.geojson"))
+us_geo_census_cb_2010_census_tracts <- sf::st_drop_geometry(sf::st_read("US/Census Geographies/Tract/2010/data/distribution/us_geo_census_cb_2010_census_tracts.geojson"))
 
 va_geo_census_cb_2010_census_block_groups$geoid_tract <- substr(va_geo_census_cb_2010_census_block_groups$GEOID10, 1, 11)
 va_geo_census_cb_2010_census_block_groups <- merge(va_geo_census_cb_2010_census_block_groups, us_geo_census_cb_2010_census_tracts, by.x = "geoid_tract", by.y = "geoid", all.x = T)
@@ -27,10 +27,11 @@ va_geo_census_cb_2010_census_block_groups$year <- "2010"
 final_dataset <- va_geo_census_cb_2010_census_block_groups[, c("geoid", "region_name", "region_type", "year", "geometry")]
 
 # Simplify the geography
-final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset)
+final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset, keep_shapes=TRUE)
 
 # Export final dataset
-sf::st_write(final_dataset_simplified, "data/va_geo_census_cb_2010_census_block_groups/distribution/va_geo_census_cb_2010_census_block_groups.geojson")
+sf::st_write(final_dataset_simplified, "VA/Census Geographies/Block Group/2010/data/distribution/va_geo_census_cb_2010_census_block_groups.geojson",
+             delete_dsn=TRUE)
 
 # Update file manifest
-data_file_checksums()
+#data_file_checksums()

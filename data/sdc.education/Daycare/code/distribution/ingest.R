@@ -279,12 +279,12 @@ population$daycare_per_1k <- catchment_ratio(
   consumers_value = "population_under_15", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat"), verbose = TRUE
 )
-population$daycare_per_1k_error <- catchment_ratio(
+population$daycare_per_1k_error <- abs(catchment_ratio(
   population, locations[locations$age_min < 5 & locations$age_max > 9, ], traveltimes,
   weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e3,
   consumers_value = "population_under_15_error", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat")
-) - population$daycare_per_1k
+) - population$daycare_per_1k)
 
 ## over 4
 population$daycare_over_4_per_1k <- catchment_ratio(
@@ -293,12 +293,12 @@ population$daycare_over_4_per_1k <- catchment_ratio(
   consumers_value = "population_over_4", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat")
 )
-population$daycare_over_4_per_1k_error <- catchment_ratio(
+population$daycare_over_4_per_1k_error <- abs(catchment_ratio(
   population, locations[locations$age_min > 4, ], traveltimes,
   weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e3,
   consumers_value = "population_over_4_error", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat")
-) - population$daycare_over_4_per_1k
+) - population$daycare_over_4_per_1k)
 
 ## under 10
 population$daycare_under_10_per_1k <- catchment_ratio(
@@ -307,12 +307,12 @@ population$daycare_under_10_per_1k <- catchment_ratio(
   consumers_value = "population_under_10", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat")
 )
-population$daycare_under_10_per_1k_error <- catchment_ratio(
+population$daycare_under_10_per_1k_error <- abs(catchment_ratio(
   population, locations[locations$age_max < 10, ], traveltimes,
   weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e3,
   consumers_value = "population_under_10_error", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat")
-) - population$daycare_under_10_per_1k
+) - population$daycare_under_10_per_1k)
 
 block_groups <- population[
   substring(population$GEOID, 1, 5) %in% names(county_districts),
@@ -338,7 +338,7 @@ agger <- function(d, part = NULL) {
         totals[totals == 0] <- 1
         ragg <- sum(d[[vs[1]]] * d[[pop]], na.rm = TRUE) / totals[1]
         structure(c(
-          ragg, sum((d[[vs[2]]] + d[[vs[1]]]) * d[[paste0(pop, "_error")]], na.rm = TRUE) / totals[2] - ragg
+          ragg, abs(sum((d[[vs[2]]] + d[[vs[1]]]) * d[[paste0(pop, "_error")]], na.rm = TRUE) / totals[2] - ragg)
         ), names = vs)
       }))
     ))

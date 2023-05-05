@@ -1,7 +1,7 @@
 # dataset creation code - dataset preparation (transformation, new variables, linkage, etc)
 
 # Import file from original
-us_geo_census_cb_2010_counties <- sf::st_read("DC/Census\ Geographies/2010/County/data/original/us_geo_census_cb_2010_counties.geojson")
+us_geo_census_cb_2010_counties <- sf::st_read("DC/Census Geographies/County/2010/data/original/us_geo_census_cb_2010_counties.geojson")
 dc_geo_census_cb_2010_counties <- us_geo_census_cb_2010_counties[substr(us_geo_census_cb_2010_counties$geoid, 1, 2) == "11",]
 
 # # Assign geoid
@@ -22,10 +22,11 @@ dc_geo_census_cb_2010_counties <- us_geo_census_cb_2010_counties[substr(us_geo_c
 # final_dataset <- dc_geo_census_cb_2010_counties[, c("geoid", "region_name", "region_type", "year", "geometry")]
 #
 # # Simplify the geography
-# final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset)
+# final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset, keep_shapes=TRUE)
 
 # Export final dataset
-sf::st_write(dc_geo_census_cb_2010_counties, "DC/Census\ Geographies/2010/County/data/distribution/dc_geo_census_cb_2010_counties.geojson")
+sf::st_write(dc_geo_census_cb_2010_counties, "DC/Census Geographies/County/2010/data/distribution/dc_geo_census_cb_2010_counties.geojson",
+             delete_dsn = TRUE)
 
 # Update file manifest
-data_file_checksums()
+#data_file_checksums()

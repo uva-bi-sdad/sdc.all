@@ -36,7 +36,7 @@ ncr_geo_census_cb_2020_census_block_groups <- sf::st_as_sf(ncr_geo_census_cb_202
 # final_dataset <- ncr_geo_census_cb_2020_census_block_groups[, c("geoid", "region_name", "region_type", "year", "geometry")]
 #
 # # Simplify the geography
-# final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset)
+# final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset, keep_shapes=TRUE)
 
 # Export final dataset
 sf::st_write(ncr_geo_census_cb_2020_census_block_groups, "NCR/Census Geographies/Block Group/2020/data/distribution/ncr_geo_census_cb_2020_census_block_groups.geojson")

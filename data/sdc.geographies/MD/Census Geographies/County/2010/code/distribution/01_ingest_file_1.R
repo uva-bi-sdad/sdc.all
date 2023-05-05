@@ -1,6 +1,6 @@
 # dataset creation code - data source ingest - file 1
-# source file: data/us_geo_census_cb_2010_counties/distribution/us_geo_census_cb_2010_counties.geojson
+# source file: US/Census Geographies/County/2010/data/distribution/us_geo_census_cb_2010_counties.geojson
 
 # Import source file and save to original for backup
-source_file <- "data/us_geo_census_cb_2010_counties/distribution/us_geo_census_cb_2010_counties.geojson"
-file.copy(source_file, "data/md_geo_census_cb_2010_counties/original/us_geo_census_cb_2010_counties.geojson")
+source_file <- "US/Census Geographies/County/2010/data/distribution/us_geo_census_cb_2010_counties.geojson"
+file.copy(source_file, "MD/Census Geographies/County/2010/data/original/us_geo_census_cb_2010_counties.geojson")

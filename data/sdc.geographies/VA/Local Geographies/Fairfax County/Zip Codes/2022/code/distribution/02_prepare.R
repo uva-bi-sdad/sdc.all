@@ -1,7 +1,7 @@
 # dataset creation code - dataset preparation (transformation, new variables, linkage, etc)
 
 # Import file from original
-va059_geo_ffxct_gis_2022_zip_codes <- sf::st_read("data/va059_geo_ffxct_gis_2022_zip_codes/original/va059_geo_ffxct_gis_2022_zip_codes.geojson")
+va059_geo_ffxct_gis_2022_zip_codes <- sf::st_read("VA/Local Geographies/Fairfax County/Zip Codes/2022/data/original/va059_geo_ffxct_gis_2022_zip_codes.geojson")
 
 # Assign geoid
 va059_geo_ffxct_gis_2022_zip_codes$geoid <- va059_geo_ffxct_gis_2022_zip_codes$ZIPCODE
@@ -21,13 +21,14 @@ va059_geo_ffxct_gis_2022_zip_codes$year <- "2022"
 final_dataset <- va059_geo_ffxct_gis_2022_zip_codes[, c("geoid", "region_name", "region_type", "year", "geometry")]
 
 # Simplify the geography
-final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset)
+final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset, keep_shapes=TRUE)
 
 # Export final dataset
-sf::st_write(final_dataset_simplified, "data/va059_geo_ffxct_gis_2022_zip_codes/distribution/va059_geo_ffxct_gis_2022_zip_codes.geojson")
+sf::st_write(final_dataset_simplified, "VA/Local Geographies/Fairfax County/Zip Codes/2022/data/distribution/va059_geo_ffxct_gis_2022_zip_codes.geojson",
+             delete_dsn=TRUE)
 
 # Update file manifest
-data_file_checksums()
+#data_file_checksums()
 
 # COPY Info Files to docs
-file.copy("data/va059_geo_ffxct_gis_2022_zip_codes/original/va059_geo_ffxct_gis_2022_zip_codes.json", "docs/01_data/va059_geo_ffxct_gis_2022_zip_codes/")
+file.copy("VA/Local Geographies/Fairfax County/Zip Codes/2022/data/original/va059_geo_ffxct_gis_2022_zip_codes.json", "VA/Local Geographies/Fairfax County/Zip Codes/2022/docs/")

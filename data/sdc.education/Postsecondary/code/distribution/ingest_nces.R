@@ -167,24 +167,24 @@ process_year <- function(year, dir = base_dir, districts = county_districts,
         consumers_value = "population_over_14"
       )
     }
-    population$schools_2year_per_100k_error <- catchment_ratio(
+    population$schools_2year_per_100k_error <- abs(catchment_ratio(
       population, providers[providers$type == 2, ], traveltimes,
       weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e5,
       consumers_value = "population_over_14_error"
-    ) - population$schools_2year_per_100k
-    population$schools_under2year_per_100k_error <- catchment_ratio(
+    ) - population$schools_2year_per_100k)
+    population$schools_under2year_per_100k_error <- abs(catchment_ratio(
       population, providers[providers$type == 3, ], traveltimes,
       weight = "gaussian", scale = 18,
       normalize_weight = TRUE, return_type = 1e5,
       consumers_value = "population_over_14_error"
-    ) - population$schools_under2year_per_100k
+    ) - population$schools_under2year_per_100k)
     for (p in names(data$by_program)) {
-      population[[paste0("schools_2year_with_", p, "_program_per_100k_error")]] <- catchment_ratio(
+      population[[paste0("schools_2year_with_", p, "_program_per_100k_error")]] <- abs(catchment_ratio(
         population, providers[providers[[p]] == 1, ],
         traveltimes,
         weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e5,
         consumers_value = "population_over_14_error"
-      ) - population[[paste0("schools_2year_with_", p, "_program_per_100k")]]
+      ) - population[[paste0("schools_2year_with_", p, "_program_per_100k")]])
     }
     population$year <- year
     ## save each year for reruns
@@ -207,7 +207,7 @@ process_year <- function(year, dir = base_dir, districts = county_districts,
       GEOID = if (missing(part)) districts[[substring(d[1, "GEOID"], 1, 5)]] else substring(d[1, "GEOID"], 1, part),
       as.list(c(
         colMeans(d[, drivetimes], na.rm = TRUE), ragg,
-        colSums((d[, ratio_errors] + d[, ratios]) * d$population_over_14_error, na.rm = TRUE) / totalM - ragg
+        abs(colSums((d[, ratio_errors] + d[, ratios]) * d$population_over_14_error, na.rm = TRUE) / totalM - ragg)
       ))
     ))
     res
@@ -256,6 +256,7 @@ for (location in c("dc", "md", "va")) {
 }
 entity_names <- unlist(lapply(entity_info, "[[", "region_name"))
 entity_names <- entity_names[!grepl(", NA", entity_names, fixed = TRUE)]
+entity_year <- vapply(entity_info, function(e) if (length(e$year)) e$year else "both", "")
 
 # reformat and save
 final <- do.call(rbind, lapply(data, function(d) {
@@ -270,6 +271,7 @@ final <- do.call(rbind, lapply(data, function(d) {
     "5" = "county", "8" = "health district", "11" = "tract", "12" = "block group"
   )[as.character(nchar(d$GEOID))]
   d <- d[d$GEOID %in% names(entity_names), ]
+  d <- d[entity_names[d$GEOID] != (if (year > 2019) 2010 else 2020), ]
   d$region_name <- entity_names[d$GEOID]
   do.call(rbind, lapply(split(d, seq_len(nrow(d))), function(r) {
     data.frame(
@@ -279,8 +281,7 @@ final <- do.call(rbind, lapply(data, function(d) {
       year = year,
       measure = varnames,
       value = as.numeric(r[varnames]),
-      moe = as.numeric(r[varerrors]),
-      measure_type = ifelse(grepl("drivetime", varnames, fixed = TRUE), "minutes", "per 100k")
+      moe = as.numeric(r[varerrors])
     )
   }))
 }))

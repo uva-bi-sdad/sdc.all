@@ -58,11 +58,11 @@ final_dataset <- sf::st_as_sf(us_geo_census_cb_2010_census_tracts[, c("geoid", "
 final_dataset <- sf::st_transform(final_dataset, 4326)
 
 # Simplify the geography
-final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset)
+final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset, keep_shapes=TRUE)
 
 # Export final dataset
-#sf::st_write(final_dataset_simplified, "data/us_geo_census_cb_2010_census_tracts/distribution/us_geo_census_cb_2010_census_tracts.geojson")
-sf::st_write(final_dataset_simplified, "./US/Census Geographies/Tract/2010/data/distribution/us_geo_census_cb_2010_census_tracts.geojson")
+sf::st_write(final_dataset_simplified, "./US/Census Geographies/Tract/2010/data/distribution/us_geo_census_cb_2010_census_tracts.geojson",
+             delete_dsn = TRUE)
 
 # Update file manifest
-data_file_checksums()
+#data_file_checksums()

@@ -43,6 +43,7 @@ for (location in tolower(states)) {
 }
 entity_names <- unlist(lapply(entity_info, "[[", "region_name"))
 entity_names <- entity_names[!grepl(", NA", entity_names, fixed = TRUE)]
+entity_year <- vapply(entity_info, function(e) if (length(e$year)) e$year else "both", "")
 
 # download and aggregate ACS data
 ## for margin or error:
@@ -78,6 +79,7 @@ data <- do.call(rbind, lapply(states, function(state) {
       )^.5 * 100 * 1.645
       d$acs_postsecondary_percent_error[!is.finite(d$acs_postsecondary_percent_error)] <- 0
       d <- d[d$GEOID %in% names(entity_names), ]
+      d <- d[entity_names[d$GEOID] != (if (year > 2019) 2010 else 2020), ]
       d$region_type <- layer
       d$region_name <- entity_names[d$GEOID]
       d$year <- year
@@ -86,15 +88,13 @@ data <- do.call(rbind, lapply(states, function(state) {
           d[, c("GEOID", "region_type", "region_name", "year")],
           measure = "acs_postsecondary_count",
           value = d$acs_postsecondary_count,
-          moe = d$acs_postsecondary_count_error,
-          measure_type = "count"
+          moe = d$acs_postsecondary_count_error
         ),
         cbind(
           d[, c("GEOID", "region_type", "region_name", "year")],
           measure = "acs_postsecondary_percent",
           value = d$acs_postsecondary_percent,
-          moe = d$acs_postsecondary_percent_error,
-          measure_type = "percent"
+          moe = d$acs_postsecondary_percent_error
         )
       )))
     }
@@ -109,18 +109,21 @@ data <- do.call(rbind, lapply(states, function(state) {
           do.call(rbind, lapply(split(counties$wide, counties$wide$GEOID), function(e) {
             id <- e$GEOID[[1]]
             total <- sum(e$acs_postsecondary_count)
-            type <- c("5" = "county", "8" = "health district")[[as.character(nchar(id))]]
             data.frame(
               GEOID = id,
-              region_type = type,
+              region_type = "health district",
               region_name = entity_names[[id]],
               measure = c("acs_postsecondary_count", "acs_postsecondary_percent"),
               year = year,
               value = c(total, total / sum(e$totalE) * 100),
               moe = c(
-                mean(e$acs_postsecondary_count_error), mean(e$acs_postsecondary_percent_error)
-              ),
-              measure_type = c("count", "percent")
+                tidycensus::moe_sum(
+                  e$acs_postsecondary_count_error, e$acs_postsecondary_count, TRUE
+                ),
+                tidycensus::moe_sum(
+                  e$acs_postsecondary_percent_error, e$acs_postsecondary_percent, TRUE
+                )
+              )
             )
           }))
         }

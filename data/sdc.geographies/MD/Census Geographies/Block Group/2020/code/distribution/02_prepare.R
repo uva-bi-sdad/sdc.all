@@ -37,7 +37,8 @@ final_dataset <- md_geo_census_cb_2020_census_block_groups[, c("geoid", "region_
 final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset, keep_shapes = TRUE)
 
 # Export final dataset
-sf::st_write(final_dataset_simplified, "MD/Census Geographies/Block Group/2020/data/distribution/md_geo_census_cb_2020_census_block_groups.geojson")
+sf::st_write(final_dataset_simplified, "MD/Census Geographies/Block Group/2020/data/distribution/md_geo_census_cb_2020_census_block_groups.geojson",
+             delete_dsn=TRUE)
 
 # Update file manifest
-data_file_checksums()
+#data_file_checksums()

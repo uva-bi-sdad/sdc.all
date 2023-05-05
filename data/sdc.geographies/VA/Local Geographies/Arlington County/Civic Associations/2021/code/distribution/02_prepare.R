@@ -1,7 +1,7 @@
 # dataset creation code - dataset preparation (transformation, new variables, linkage, etc)
 
 # Import file from original
-va013_geo_arl_2021_civic_associations <- sf::st_read("data/va013_geo_arl_2021_civic_associations/original/va013_geo_arl_2021_civic_associations.geojson")
+va013_geo_arl_2021_civic_associations <- sf::st_read("VA/Local Geographies/Arlington County/Civic Associations/2021/data/original/va013_geo_arl_2021_civic_associations.geojson")
 
 # Assign geoid
 va013_geo_arl_2021_civic_associations$geoid <- paste0("51013_ca_", stringr::str_pad(rownames(va013_geo_arl_2021_civic_associations), 2, side = "left", pad = "0"))
@@ -21,10 +21,11 @@ va013_geo_arl_2021_civic_associations$year <- "2021"
 final_dataset <- va013_geo_arl_2021_civic_associations[, c("geoid", "region_name", "region_type", "year", "geometry")]
 
 # Simplify the geography
-final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset)
+final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset, keep_shapes=TRUE)
 
 # Export final dataset
-sf::st_write(final_dataset_simplified, "data/va013_geo_arl_2021_civic_associations/distribution/va013_geo_arl_2021_civic_associations.geojson")
+sf::st_write(final_dataset_simplified, "VA/Local Geographies/Arlington County/Civic Associations/2021/data/distribution/va013_geo_arl_2021_civic_associations.geojson",
+             delete_dsn=TRUE)
 
 # Update file manifest
-data_file_checksums()
+#data_file_checksums()

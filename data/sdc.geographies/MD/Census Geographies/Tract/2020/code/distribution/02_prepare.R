@@ -5,7 +5,7 @@ unzip("MD/Census Geographies/Tract/2020/data/original/md_geo_census_cb_2020_cens
 md_geo_census_cb_2020_census_tracts <- sf::st_read("MD/Census Geographies/Tract/2020/data/original/md_geo_census_cb_2020_census_tracts/cb_2020_24_tract_500k.shp")
 md_geo_census_cb_2020_census_tracts <- sf::st_transform(md_geo_census_cb_2020_census_tracts, 4326)
 
-unlink("data/md_geo_census_cb_2020_census_tracts/original/md_geo_census_cb_2020_census_tracts", recursive = T)
+unlink("MD/Census Geographies/Tract/2020/data/original/md_geo_census_cb_2020_census_tracts", recursive = T)
 
 # Assign geoid
 md_geo_census_cb_2020_census_tracts$geoid <- md_geo_census_cb_2020_census_tracts$GEOID
@@ -35,7 +35,8 @@ final_dataset <- md_geo_census_cb_2020_census_tracts[, c("geoid", "region_name",
 final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset, keep_shapes = TRUE)
 
 # Export final dataset
-sf::st_write(final_dataset_simplified, "MD/Census Geographies/Tract/2020/data/distribution/md_geo_census_cb_2020_census_tracts.geojson")
+sf::st_write(final_dataset_simplified, "MD/Census Geographies/Tract/2020/data/distribution/md_geo_census_cb_2020_census_tracts.geojson",
+             delete_dsn=TRUE)
 
 # Update file manifest
-data_file_checksums()
+#data_file_checksums()

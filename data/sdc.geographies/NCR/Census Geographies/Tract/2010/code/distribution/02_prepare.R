@@ -1,9 +1,9 @@
 # dataset creation code - dataset preparation (transformation, new variables, linkage, etc)
 
 # Import file from original
-us_geo_census_cb_2010_census_tracts <- sf::st_read("data/ncr_geo_census_cb_2010_census_tracts/original/us_geo_census_cb_2010_census_tracts.geojson")
+us_geo_census_cb_2010_census_tracts <- sf::st_read("NCR/Census Geographies/Tract/2010/data/original/us_geo_census_cb_2010_census_tracts.geojson")
 
-ncr_counties <- yaml::read_yaml("src/01_data/00_dataset_yaml_files/ncr_counties.yml")
+ncr_counties <- yaml::read_yaml("NCR/ncr_counties.yml")
 ncr_geoids <- character()
 for (i in 1:length(ncr_counties$ncr_localities)) {
   ncr_geoids <- c(ncr_geoids, ncr_counties$ncr_localities[[i]]$geoid)
@@ -29,10 +29,11 @@ ncr_geo_census_cb_2010_census_tracts <- us_geo_census_cb_2010_census_tracts[subs
 # final_dataset <- ncr_geo_census_2010_census_tracts[, c("geoid", "region_name", "region_type", "year", "geometry")]
 #
 # # Simplify the geography
-# final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset)
+# final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset, keep_shapes=TRUE)
 
 # Export final dataset
-sf::st_write(ncr_geo_census_cb_2010_census_tracts, "data/ncr_geo_census_cb_2010_census_tracts/distribution/ncr_geo_census_cb_2010_census_tracts.geojson")
+sf::st_write(ncr_geo_census_cb_2010_census_tracts, "NCR/Census Geographies/Tract/2010/data/distribution/ncr_geo_census_cb_2010_census_tracts.geojson",
+             delete_dsn=TRUE)
 
 # Update file manifest
-data_file_checksums()
+#data_file_checksums()

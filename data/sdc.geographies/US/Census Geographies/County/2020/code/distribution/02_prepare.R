@@ -1,7 +1,7 @@
 # dataset creation code - dataset preparation (transformation, new variables, linkage, etc)
 
 # Import file from original
-us_geo_census_cb_2020_counties <- sf::st_read("data/us_geo_census_cb_2020_counties/original/us_geo_census_cb_2020_counties.geojson")
+us_geo_census_cb_2020_counties <- sf::st_read("US/Census Geographies/County/2020/data/original/us_geo_census_cb_2020_counties.geojson")
 us_geo_census_cb_2020_counties <- sf::st_transform(us_geo_census_cb_2020_counties, 4326)
 
 
@@ -23,10 +23,11 @@ us_geo_census_cb_2020_counties$year <- "2020"
 final_dataset <- us_geo_census_cb_2020_counties[, c("geoid", "region_name", "region_type", "year", "geometry")]
 
 # Simplify the geography
-#final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset)
+final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset, keep_shapes=TRUE)
 
 # Export final dataset
-sf::st_write(final_dataset, "data/us_geo_census_cb_2020_counties/distribution/us_geo_census_cb_2020_counties.geojson")
+sf::st_write(final_dataset_simplified, "US/Census Geographies/County/2020/data/distribution/us_geo_census_cb_2020_counties.geojson",
+             delete_dsn = TRUE)
 
 # Update file manifest
-data_file_checksums()
+#data_file_checksums()

@@ -1,9 +1,9 @@
 # dataset creation code - dataset preparation (transformation, new variables, linkage, etc)
 
 # Import file from original
-md_geo_census_cb_2010_census_block_groups <- sf::st_read("data/ncr_geo_census_2010_census_block_groups/original/md_geo_census_cb_2010_census_block_groups.geojson")
-dc_geo_census_cb_2010_census_block_groups <- sf::st_read("data/ncr_geo_census_2010_census_block_groups/original/dc_geo_census_cb_2010_census_block_groups.geojson")
-va_geo_census_cb_2010_census_block_groups <- sf::st_read("data/ncr_geo_census_2010_census_block_groups/original/va_geo_census_cb_2010_census_block_groups.geojson")
+md_geo_census_cb_2010_census_block_groups <- sf::st_read("NCR/Census Geographies/Block Group/2010/data/original/md_geo_census_cb_2010_census_block_groups.geojson")
+dc_geo_census_cb_2010_census_block_groups <- sf::st_read("NCR/Census Geographies/Block Group/2010/data/original/dc_geo_census_cb_2010_census_block_groups.geojson")
+va_geo_census_cb_2010_census_block_groups <- sf::st_read("NCR/Census Geographies/Block Group/2010/data/original/va_geo_census_cb_2010_census_block_groups.geojson")
 
 md_geo_census_cb_2010_census_block_groups$geometry <- sf::st_cast(md_geo_census_cb_2010_census_block_groups$geometry, "MULTIPOLYGON")
 dc_geo_census_cb_2010_census_block_groups$geometry <- sf::st_cast(dc_geo_census_cb_2010_census_block_groups$geometry, "MULTIPOLYGON")
@@ -11,7 +11,7 @@ dc_geo_census_cb_2010_census_block_groups$geometry <- sf::st_cast(dc_geo_census_
 ncr_geo_census_cb_2010_census_block_groups <- data.table::rbindlist(list(md_geo_census_cb_2010_census_block_groups, dc_geo_census_cb_2010_census_block_groups, va_geo_census_cb_2010_census_block_groups))
 
 
-ncr_counties <- yaml::read_yaml("src/01_data/00_dataset_yaml_files/ncr_counties.yml")
+ncr_counties <- yaml::read_yaml("NCR/ncr_counties.yml")
 ncr_geoids <- character()
 for (i in 1:length(ncr_counties$ncr_localities)) {
   ncr_geoids <- c(ncr_geoids, ncr_counties$ncr_localities[[i]]$geoid)
@@ -38,10 +38,11 @@ ncr_geo_census_cb_2010_census_block_groups <- sf::st_as_sf(ncr_geo_census_cb_201
 # final_dataset <- ncr_geo_census_2010_census_block_groups[, c("geoid", "region_name", "region_type", "year", "geometry")]
 #
 # # Simplify the geography
-# final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset)
+# final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset, keep_shapes=TRUE)
 
 # Export final dataset
-sf::st_write(ncr_geo_census_cb_2010_census_block_groups, "data/ncr_geo_census_2010_census_block_groups/distribution/ncr_geo_census_cb_2010_census_block_groups.geojson")
+sf::st_write(ncr_geo_census_cb_2010_census_block_groups, "NCR/Census Geographies/Block Group/2010/data/distribution/ncr_geo_census_cb_2010_census_block_groups.geojson",
+             delete_dsn=TRUE)
 
 # Update file manifest
-data_file_checksums()
+#data_file_checksums()

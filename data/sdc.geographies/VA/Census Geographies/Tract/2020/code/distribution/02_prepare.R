@@ -40,4 +40,4 @@ final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset, keep_shapes =
 sf::st_write(final_dataset_simplified, "VA/Census Geographies/Tract/2020/data/distribution/va_geo_census_cb_2020_census_tracts.geojson")
 
 # Update file manifest
-data_file_checksums()
+#data_file_checksums()
