@@ -56,3 +56,35 @@ temp <- merge(location_quotient, fairfax_bg, by.x=c('geoid','census_year'), by.y
 savepath = "Employment/Industry/data/distribution/"
 readr::write_csv(location_quotient, xzfile(paste0(savepath,"va059_bg_mi_",min(location_quotient$year),max(location_quotient$year),"_location_quotient_by_industry.csv.xz"), compression = 9))
 
+
+
+
+
+
+####  upload data for ncr ####  ------------------------------------------------------------------------------------------------------------------
+
+# load the data
+uploadpath = "Microdata/Mergent_intellect/data/working/"
+mi_ncr_features <-  read_csv(paste0(uploadpath,"mi_ncr_features_bg.csv.xz"))
+
+# count the total number of business per block groups and year
+temp <- mi_ncr_features %>%
+  select(duns,year,geoid,region_name,region_type,naics_name,employment) %>%
+  group_by(year) %>%
+  mutate(emp_year=sum(employment, na.rm=T)) %>%
+  group_by(year,naics_name) %>%
+  mutate(emp_ind_year=sum(employment, na.rm=T)) %>%
+  group_by(year,geoid,region_name,region_type) %>%
+  mutate(emp_bg_year=sum(employment, na.rm=T)) %>%
+  group_by(year,geoid,region_name,region_type,naics_name) %>%
+  mutate(emp_bg_ind_year=sum(employment, na.rm=T),
+         value=round((emp_bg_ind_year/emp_bg_year)/(emp_ind_year/emp_year),2),
+         measure=paste0(naics_name,'_Location_quotient'),
+         measure_type = 'index',
+         MOE='') %>% ungroup() %>%
+  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
+
+
+# save the data
+savepath = "Employment/Industry/data/distribution/"
+readr::write_csv(temp, xzfile(paste0(savepath,"ncr_bg_mi_",min(temp$year),max(temp$year),"_location_quotient_by_industry.csv.xz"), compression = 9))

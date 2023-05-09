@@ -80,7 +80,7 @@ def evaluate_folder(req_keys, dirpath):
 if __name__ == "__main__":
     
     with urllib.request.urlopen(
-        "https://raw.githubusercontent.com/uva-bi-sdad/sdc.metadata/master/src/data_repo_structure/measure_structure.json"
+        "https://raw.githubusercontent.com/uva-bi-sdad/sdc.metadata/master/data/measure_structure.json"
     ) as url:
         req_keys = json.load(url)
     

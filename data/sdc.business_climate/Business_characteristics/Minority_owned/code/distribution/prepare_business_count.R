@@ -14,34 +14,50 @@ library(tidyr)
 library(scales)
 
 
-# upload the data --------------------------------------------------------------------
 uploadpath = "Microdata/Mergent_intellect/data/working/"
-mi_fairfax_features <-  read_csv(paste0(uploadpath,"mi_fairfax_features_updated.csv.xz"))
+savepath = "Business_characteristics/Minority_owned/data/distribution/"
 
+# upload the data --------------------------------------------------------------------
+mi_fairfax_features <-  read_csv(paste0(uploadpath,"mi_fairfax_features_bg.csv.xz"))
 
-# count the total number of business by block groups 
-minority_business <- mi_fairfax_features %>%
+# count the total number of business per block groups and year
+temp <- mi_fairfax_features %>%
   mutate(type=if_else(minority==1,'minority_owned','non_minority_owned')) %>%
-  group_by(geoid,year,type) %>%
+  group_by(geoid,region_name,region_type,year,type) %>%
   summarize(measure='number_business',
             value=length(duns)) %>%
-  mutate(region_type='block group',
-         measure=paste0(type,'_',measure),
-         census_year=if_else(year<2020,2010,2020),
+  mutate(measure=paste0(type,'_',measure),
          measure_type='count',
-         MOE='')
-
-# add geometry 
-fairfax_bg2010 <- block_groups("VA", "059", 2010) %>% select(geoid=GEOID,region_name=NAMELSAD) %>% st_drop_geometry() %>% mutate(census_year=2010)
-fairfax_bg2020 <- block_groups("VA", "059", 2020) %>% select(geoid=GEOID,region_name=NAMELSAD) %>% st_drop_geometry() %>% mutate(census_year=2020)
-fairfax_bg <- rbind(fairfax_bg2010,fairfax_bg2020)
-
-# merge the data
-minority_business <- merge(minority_business, fairfax_bg, by.x=c('geoid','census_year'), by.y=c('geoid','census_year')) %>%
+         MOE='') %>%
+  ungroup() %>%
   select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
 
 
 # save the data ---------------------------------------------------------------------------------------
-savepath = "Business_characteristics/Minority_owned/data/distribution/"
-readr::write_csv(minority_business, xzfile(paste0(savepath,"va059_bg_mi_",min(minority_business$year),max(minority_business$year),"_number_business_by_minority.csv.xz"), compression = 9))
+readr::write_csv(temp, xzfile(paste0(savepath,"va059_bg_mi_",min(temp$year),max(temp$year),"_number_business_by_minority.csv.xz"), compression = 9))
 
+
+
+
+####  upload data for ncr ####  ------------------------------------------------------------------------------------------------------------------
+
+# load the data
+uploadpath = "Microdata/Mergent_intellect/data/working/"
+mi_ncr_features <-  read_csv(paste0(uploadpath,"mi_ncr_features_bg.csv.xz"))
+
+# count the total number of business per block groups and year
+temp <- mi_ncr_features %>%
+  mutate(type=if_else(minority==1,'minority_owned','non_minority_owned')) %>%
+  group_by(geoid,region_name,region_type,year,type) %>%
+  summarize(measure='number_business',
+            value=length(duns)) %>%
+  mutate(measure=paste0(type,'_',measure),
+         measure_type='count',
+         MOE='') %>%
+  ungroup() %>%
+  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
+
+
+# save the data
+savepath = "Business_characteristics/Minority_owned/data/distribution/"
+readr::write_csv(temp, xzfile(paste0(savepath,"ncr_bg_mi_",min(temp$year),max(temp$year),"_number_business_by_minority.csv.xz"), compression = 9))

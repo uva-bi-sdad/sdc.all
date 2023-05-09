@@ -17,46 +17,69 @@ library(plm)
 
 # upload the data --------------------------------------------------------------------
 uploadpath = "Microdata/Mergent_intellect/data/working/"
-mi_fairfax_features <-  read_csv(paste0(uploadpath,"mi_fairfax_features_updated.csv.xz"))
+mi_fairfax_features <-  read_csv(paste0(uploadpath,"mi_fairfax_features_bg.csv.xz"))
 
-
-# Identify incumbent and new businesses. Count the number of new employees from new business, incumbent.
-job_destruction <- mi_fairfax_features %>%
-  select(duns,year,geoid,naics_name,exit,employment) %>%
+# count the total number of business per block groups and year
+temp <- mi_fairfax_features %>%
+  select(duns,year,geoid,region_name,region_type,naics_name,exit,employment) %>%
   group_by(duns) %>%
   arrange(desc(year), .by_group=TRUE) %>%
   mutate(employment_diff = -c(NA, diff(employment)))%>%
   ungroup() %>%
   filter((exit==1)|(employment_diff<0)) %>%
-  group_by(geoid,year,naics_name) %>%
-  summarise(job_destruction_exit=-sum(exit*employment, na.rm=T),
-            job_destruction_active=sum((1-exit)*employment_diff, na.rm=T),
+  group_by(geoid,region_name,region_type,year,naics_name) %>%
+  summarise(job_destruction_exit=sum(exit*employment, na.rm=T),
+            job_destruction_active=-sum((1-exit)*employment_diff, na.rm=T),
             business_destruction_job=length(duns),
             total_job_destruction=job_destruction_exit+job_destruction_active,
             perc_job_destruction_exit=100*job_destruction_exit/total_job_destruction,
             perc_job_destruction_active=100*job_destruction_active/total_job_destruction) %>%
-  pivot_longer(!c('geoid','year','naics_name'), names_to='measure', values_to='value') %>%
+  pivot_longer(!c('geoid','region_name','region_type','year','naics_name'), names_to='measure', values_to='value') %>%
   mutate(measure=paste0(naics_name,'_',measure),
-         region_type='block group',
          measure_type = case_when(
            grepl('perc',measure)==T ~ "percentage",
            grepl('job',measure)==T ~ "count"),
-         MOE='',
-         census_year=if_else(year<2020,2010,2020))
-
-
-# add geometry 
-fairfax_bg2010 <- block_groups("VA", "059", 2010) %>% select(geoid=GEOID,region_name=NAMELSAD) %>% st_drop_geometry() %>% mutate(census_year=2010)
-fairfax_bg2020 <- block_groups("VA", "059", 2020) %>% select(geoid=GEOID,region_name=NAMELSAD) %>% st_drop_geometry() %>% mutate(census_year=2020)
-fairfax_bg <- rbind(fairfax_bg2010,fairfax_bg2020)
-
-# merge the data
-job_destruction <- merge(job_destruction, fairfax_bg, by.x=c('geoid','census_year'), by.y=c('geoid','census_year')) %>%
+         MOE='') %>%
+  ungroup() %>%
   select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
-
-
 
 # save the data ---------------------------------------------------------------------------------------
 savepath = "Employment/Industry/data/distribution/"
-readr::write_csv(job_destruction, xzfile(paste0(savepath,"va059_bg_mi_",min(job_destruction$year),max(job_destruction$year),"_jobs_destruction_by_industry.csv.xz"), compression = 9))
+readr::write_csv(temp, xzfile(paste0(savepath,"va059_bg_mi_",min(temp$year),max(temp$year),"_jobs_destruction_by_industry.csv.xz"), compression = 9))
 
+
+
+
+####  upload data for ncr ####  ------------------------------------------------------------------------------------------------------------------
+
+# load the data
+uploadpath = "Microdata/Mergent_intellect/data/working/"
+mi_ncr_features <-  read_csv(paste0(uploadpath,"mi_ncr_features_bg.csv.xz"))
+
+# count the total number of business per block groups and year
+temp <- mi_ncr_features %>%
+  select(duns,year,geoid,region_name,region_type,naics_name,exit,employment) %>%
+  group_by(duns) %>%
+  arrange(desc(year), .by_group=TRUE) %>%
+  mutate(employment_diff = -c(NA, diff(employment)))%>%
+  ungroup() %>%
+  filter((exit==1)|(employment_diff<0)) %>%
+  group_by(geoid,region_name,region_type,year,naics_name) %>%
+  summarise(job_destruction_exit=sum(exit*employment, na.rm=T),
+            job_destruction_active=-sum((1-exit)*employment_diff, na.rm=T),
+            business_destruction_job=length(duns),
+            total_job_destruction=job_destruction_exit+job_destruction_active,
+            perc_job_destruction_exit=100*job_destruction_exit/total_job_destruction,
+            perc_job_destruction_active=100*job_destruction_active/total_job_destruction) %>%
+  pivot_longer(!c('geoid','region_name','region_type','year','naics_name'), names_to='measure', values_to='value') %>%
+  mutate(measure=paste0(naics_name,'_',measure),
+         measure_type = case_when(
+           grepl('perc',measure)==T ~ "percentage",
+           grepl('job',measure)==T ~ "count"),
+         MOE='') %>%
+  ungroup() %>%
+  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
+
+# save the data
+savepath = "Employment/Industry/data/distribution/"
+readr::write_csv(temp, xzfile(paste0(savepath,"ncr_bg_mi_",min(temp$year),max(temp$year),"_jobs_destruction_by_industry.csv.xz"), compression = 9))

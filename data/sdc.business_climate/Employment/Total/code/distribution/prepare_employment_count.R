@@ -16,30 +16,42 @@ library(scales)
 
 # upload the data --------------------------------------------------------------------
 uploadpath = "Microdata/Mergent_intellect/data/working/"
-mi_fairfax_features <-  read_csv(paste0(uploadpath,"mi_fairfax_features_updated.csv.xz"))
+mi_fairfax_features <-  read_csv(paste0(uploadpath,"mi_fairfax_features_bg.csv.xz"))
 
-
-# count the total employment by block groups 
-fairfax_employment <- mi_fairfax_features %>%
-  group_by(geoid,year) %>%
+# count the total number of business per block groups and year
+temp <- mi_fairfax_features %>%
+  group_by(geoid,region_name,region_type,year) %>%
   summarize(measure='total_employment',
             value=sum(employment, na.rm=T)) %>%
-  mutate(region_type='block group',
-         census_year=if_else(year<2020,2010,2020),
-         measure_type='count',
-         MOE='')
-
-# add geometry 
-fairfax_bg2010 <- block_groups("VA", "059", 2010) %>% select(geoid=GEOID,region_name=NAMELSAD) %>% st_drop_geometry() %>% mutate(census_year=2010)
-fairfax_bg2020 <- block_groups("VA", "059", 2020) %>% select(geoid=GEOID,region_name=NAMELSAD) %>% st_drop_geometry() %>% mutate(census_year=2020)
-fairfax_bg <- rbind(fairfax_bg2010,fairfax_bg2020)
-
-# merge the data
-fairfax_employment <- merge(fairfax_employment, fairfax_bg, by.x=c('geoid','census_year'), by.y=c('geoid','census_year')) %>%
+  mutate(measure_type='count',
+         MOE='') %>%
+  ungroup() %>%
   select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
 
 
 # save the data ---------------------------------------------------------------------------------------
 savepath = "Employment/Total/data/distribution/"
-readr::write_csv(fairfax_employment, xzfile(paste0(savepath,"va059_bg_mi_",min(fairfax_employment$year),max(fairfax_employment$year),"_total_employment.csv.xz"), compression = 9))
+readr::write_csv(temp, xzfile(paste0(savepath,"va059_bg_mi_",min(temp$year),max(temp$year),"_total_employment.csv.xz"), compression = 9))
 
+
+
+
+####  upload data for ncr ####  ------------------------------------------------------------------------------------------------------------------
+
+# load the data
+uploadpath = "Microdata/Mergent_intellect/data/working/"
+mi_ncr_features <-  read_csv(paste0(uploadpath,"mi_ncr_features_bg.csv.xz"))
+
+# count the total number of business per block groups and year
+temp <- mi_ncr_features %>%
+  group_by(geoid,region_name,region_type,year) %>%
+  summarize(measure='total_employment',
+            value=sum(employment, na.rm=T)) %>%
+  mutate(measure_type='count',
+         MOE='') %>%
+  ungroup() %>%
+  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
+
+# save the data
+savepath = "Employment/Total/data/distribution/"
+readr::write_csv(temp, xzfile(paste0(savepath,"ncr_bg_mi_",min(temp$year),max(temp$year),"_total_employment.csv.xz"), compression = 9))

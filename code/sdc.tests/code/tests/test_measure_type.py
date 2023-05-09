@@ -75,7 +75,7 @@ def evaluate_folder(dirpath, valid_types):
 if __name__ == "__main__":
     
     with urllib.request.urlopen(
-        "https://raw.githubusercontent.com/uva-bi-sdad/sdc.metadata/master/src/data_repo_structure/measure_types.json"
+        "https://raw.githubusercontent.com/uva-bi-sdad/sdc.metadata/master/data/measure_types.json"
     ) as url:
         valid_types = json.load(url)
 

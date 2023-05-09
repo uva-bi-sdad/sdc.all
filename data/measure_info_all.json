@@ -10809,10 +10809,8 @@
     },
     "average_years_schooling": {
         "category": "Education",
-        "citations": "",
         "data_type": "numeric",
         "equity_category": "Status",
-        "layer": "",
         "long_description": "The Education Index measures the average education level achieved by the adult population in an area. This is based on the average years of schooling in an area. The calculation used to calculate the index can be found in (Bennett, D.L. Educational Inequailty in the United States: Methodology and Historical Estimates of Education Gini Coefficients. Econ. Modeling Microeconom. Stud. Health 2001). Higher educational attainment has been shown to have positive impacts on economic earning and positive health outcomes.",
         "long_name": "Education Index (Average Years of Schooling)",
         "measure_type": "average",
@@ -10896,132 +10894,6 @@
         "type": "internet speed",
         "unit": ""
     },
-    "avocado_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Avocado item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Avocado is defined as a Latino staple food by The Food Group",
-        "long_name": "Avocado availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Avocado item availability using an empirical cumulative density function",
-        "short_name": "Avocado availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The avocado availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
-    "barley_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Barley item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Barley is defined as an East African staple food by The Food Group",
-        "long_name": "Barley availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Barley item availability using an empirical cumulative density function",
-        "short_name": "Barley availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The barley availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
-    "basmati_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Basmati rice item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Basmati rice is defined as an East African staple food by The Food Group",
-        "long_name": "Basmati rice availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Basmati rice item availability using an empirical cumulative density function",
-        "short_name": "Basmati rice availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The basmati rice availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
-    "beets_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Beet item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Beet is defined as a Latino staple food by The Food Group",
-        "long_name": "Beet availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Beet item availability using an empirical cumulative density function",
-        "short_name": "Beet availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The beet availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
-    "blackbeans_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Black bean item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Black bean is defined as a Latino staple food by The Food Group",
-        "long_name": "Black bean availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Black bean item availability using an empirical cumulative density function",
-        "short_name": "Black bean availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The black bean availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
-    "blackeyepeas_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Black eyed pea item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Black eyed pea is defined as an East African staple food by The Food Group",
-        "long_name": "Blacked eyed pea availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Black eyed pea item availability using an empirical cumulative density function",
-        "short_name": "Black eyed pea availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The black eyed pea availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
     "business_create_job": {
         "category": "Business climate",
         "citations": "",
@@ -11064,27 +10936,6 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
-    },
-    "cheese_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Cheese item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Cheese is defined as a Latino staple food by The Food Group",
-        "long_name": "Cheese availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Cheese item availability using an empirical cumulative density function",
-        "short_name": "Cheese availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The cheese availability in {features.name} is {value}.",
-        "type": "float",
         "unit": ""
     },
     "community_environment_indicator": {
@@ -11152,69 +11003,6 @@
         ],
         "statement": "The consumer opportunity profile in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
-    },
-    "corntortillas_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Corn tortilla item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Corn tortilla is defined as a Latino staple food by The Food Group",
-        "long_name": "Corn tortilla availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Corn tortilla item availability using an empirical cumulative density function",
-        "short_name": "Corn tortilla availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The corn tortilla availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
-    "crackers_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Cracker item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Cracker is defined as a Latino staple food by The Food Group",
-        "long_name": "Cracker availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Cracker item availability using an empirical cumulative density function",
-        "short_name": "Cracker availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The cracker availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
-    "currypowder_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Curry powder item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Curry powder is defined as an East African staple food by The Food Group",
-        "long_name": "Curry powder availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Curry powder item availability using an empirical cumulative density function",
-        "short_name": "Curry powder availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The curry powder availability in {features.name} is {value}.",
-        "type": "float",
         "unit": ""
     },
     "daycare_capacity": {
@@ -11605,48 +11393,6 @@
         "type": "count",
         "unit": ""
     },
-    "driedbeans_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Dried bean item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Dried bean is defined as an East African staple food by The Food Group",
-        "long_name": "Dried bean availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Dried bean item availability using an empirical cumulative density function",
-        "short_name": "Dried bean availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The dried bean availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
-    "drieddates_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Dried date item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Dried date is defined as an East African staple food by The Food Group",
-        "long_name": "Dried date availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Dried date item availability using an empirical cumulative density function",
-        "short_name": "Dried date availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The tomatillo availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
     "earnings_per_job": {
         "category": "Employment/Workforce Development",
         "citations": "",
@@ -11895,27 +11641,6 @@
         "type": "percent",
         "unit": ""
     },
-    "favabeans_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Fava bean item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Fava beans is defined as an East African staple food by The Food Group",
-        "long_name": "Fava bean availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Fava bean item availability using an empirical cumulative density function",
-        "short_name": "Fava bean availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The fava bean availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
     "food_accessibility_indicator": {
         "category": "Health Opportunity Index",
         "citations": "",
@@ -11960,27 +11685,6 @@
         "type": "dollar",
         "unit": "dollar"
     },
-    "garbanzo_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Garbanzo bean item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Garbanzo bean is defined as an East African staple food by The Food Group",
-        "long_name": "Garbanzo bean availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Garbanzo bean item availability using an empirical cumulative density function",
-        "short_name": "Garbanzo bean availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The garbanzo bean availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
     "gini_index": {
         "category": "Financial Well Being",
         "citations": "",
@@ -12001,27 +11705,6 @@
         ],
         "statement": "Income Inequality (Gini Index) in {features.name} is {value}.",
         "type": "",
-        "unit": ""
-    },
-    "greenchiles_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Green chile item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Green chile is defined as a Latino staple food by The Food Group",
-        "long_name": "Green chile availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Green chile item availability using an empirical cumulative density function",
-        "short_name": "Green chile availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The green chile availability in {features.name} is {value}.",
-        "type": "float",
         "unit": ""
     },
     "health_literacy_estimate": {
@@ -12348,27 +12031,6 @@
         "type": "percent",
         "unit": ""
     },
-    "jalapenos_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Jalapeno item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Jalapeno is defined as a Latino staple food by The Food Group",
-        "long_name": "Jalapeno availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Jalapeno item availability using an empirical cumulative density function",
-        "short_name": "Jalapeno availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The jalapeno availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
     "job_creation_active": {
         "category": "Business climate",
         "citations": "",
@@ -12500,69 +12162,6 @@
         ],
         "statement": "The job participation indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
-    },
-    "legumes_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Legume item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Legume is defined as a Latino staple food by The Food Group",
-        "long_name": "Legume availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Legume item availability using an empirical cumulative density function",
-        "short_name": "Legume availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The legume availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
-    "lentils_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Lentil item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Lentil is defined as an East African staple food by The Food Group",
-        "long_name": "Lentil availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Lentil item availability using an empirical cumulative density function",
-        "short_name": "Lentil availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The lentil availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
-    "masa_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Masa item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Masa is defined as a Latino staple food by The Food Group",
-        "long_name": "Masa availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Masa item availability using an empirical cumulative density function",
-        "short_name": "Masa availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The masa availability in {features.name} is {value}.",
-        "type": "float",
         "unit": ""
     },
     "material_deprivation_indicator": {
@@ -13123,27 +12722,6 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
-    },
-    "mixedfruit_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Mixed fruit item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Mixed fruit is defined as a Latino staple food by The Food Group",
-        "long_name": "Mixed fruit availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Mixed fruit item availability using an empirical cumulative density function",
-        "short_name": "Mixed fruit availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The mixed fruit availability in {features.name} is {value}.",
-        "type": "float",
         "unit": ""
     },
     "monthly_rent_0br": {
@@ -13744,27 +13322,6 @@
         "type": "count",
         "unit": ""
     },
-    "nopalitos_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Nopalito item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Nopalito is defined as a Latino staple food by The Food Group",
-        "long_name": "Nopalito availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Nopalito item availability using an empirical cumulative density function.",
-        "short_name": "Nopalito availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The nopalito availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
     "num_post_hs_edu": {
         "category": "Education",
         "citations": "",
@@ -13978,27 +13535,6 @@
         "type": "count",
         "unit": ""
     },
-    "pasta_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Pasta item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Pasta is defined as an East African staple food by The Food Group",
-        "long_name": "Pasta availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Pasta item availability using an empirical cumulative density function",
-        "short_name": "Pasta availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The pasta availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
     "ped_3sfca": {
         "category": "Health",
         "citations": [
@@ -14073,27 +13609,6 @@
         ],
         "statement": "The pediatric care availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
-    },
-    "peppers_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Pepper item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Pepper is defined as a Latino staple food by The Food Group",
-        "long_name": "Pepper availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Pepper item availability using an empirical cumulative density function",
-        "short_name": "Pepper availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The pepper availability in {features.name} is {value}.",
-        "type": "float",
         "unit": ""
     },
     "per_above30": {
@@ -14343,18 +13858,18 @@
     "perc_hh_without_compdev": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Accessibility",
         "layer": "",
-        "long_description": "Percentage of the households self-reported to not have a computer or device at home. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
+        "long_description": "Percentage of the households self-reported to not have a computer or device at home. Based on American Community Survey Table B28001 in ACS 2015/2019 5-year estimates.",
         "long_name": "Percentage of households without a computer",
         "measure_type": "percent",
         "short_description": "Percentage of households self-reported to not have a computer or device at home",
         "short_name": "Households without a computer",
         "sources": [
             {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B28002",
+                "date_accessed": 2023,
+                "name": "American Community Survey Table B28001",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
@@ -14972,27 +14487,6 @@
         "type": "percent",
         "unit": ""
     },
-    "pintobeans_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Pinto bean item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Pinto bean is defined as a Latino staple food by The Food Group",
-        "long_name": "Pinto bean availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Pinto bean item availability using an empirical cumulative density function",
-        "short_name": "Pinto bean availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The pinto bean availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
     "pop_20_64": {
         "category": "Demographics",
         "citations": "",
@@ -15537,48 +15031,6 @@
         "type": "count",
         "unit": ""
     },
-    "rice_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Rice item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Rice is defined as a Latino staple food by The Food Group",
-        "long_name": "Rice availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Rice item availability using an empirical cumulative density function",
-        "short_name": "Rice availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The rice availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
-    "salsa_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Salsa item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Salsa is defined as a Latino staple food by The Food Group",
-        "long_name": "Salsa availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Salsa item availability using an empirical cumulative density function",
-        "short_name": "Salsa availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The salsa availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
     "schools_2year_min_drivetime": {
         "category": "Education",
         "citations": "",
@@ -16030,27 +15482,6 @@
         "type": "index",
         "unit": ""
     },
-    "squash_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Squash item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Squash is defined as a Latino staple food by The Food Group",
-        "long_name": "Squash availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Squash item availability using an empirical cumulative density function",
-        "short_name": "Squash availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The squash availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
     "subs_3sfca": {
         "category": "Health",
         "citations": [
@@ -16120,90 +15551,6 @@
         ],
         "statement": "The median drive time to the ten closest substance use/behavioral health service facilities to {features.name} is {value}.",
         "type": "drive time",
-        "unit": ""
-    },
-    "teff_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Teff item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Teff is defined as an East African staple food by The Food Group.",
-        "long_name": "Teff availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Teff item availability using an empirical cumulative density function",
-        "short_name": "Teff availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The teff availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
-    "tomatillos_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Tomatillo item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Tomatillo is defined as a Latino staple food by The Food Group",
-        "long_name": "Tomatillo availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Tomatillo item availability using an empirical cumulative density function",
-        "short_name": "Tomatillo availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The tomatillo availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
-    "tomatoes_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Tomato item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Tomato is defined as a Latino staple food by The Food Group",
-        "long_name": "Tomato availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Tomato item availability using an empirical cumulative density function",
-        "short_name": "Tomato availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The tomato availability in {features.name} is {value}.",
-        "type": "float",
-        "unit": ""
-    },
-    "tomatosauce_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Tomato sauce item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Tomato sauce is defined as an East African staple food by The Food Group",
-        "long_name": "Tomato sauce availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Tomato sauce item availability using an empirical cumulative density function",
-        "short_name": "Tomato sauce availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The tomato sauce availability in {features.name} is {value}.",
-        "type": "float",
         "unit": ""
     },
     "tot_above30": {
@@ -16534,27 +15881,6 @@
         ],
         "statement": "Total population is {value} in {features.name}.",
         "type": "count",
-        "unit": ""
-    },
-    "tuna_ecdf_idx": {
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Availability",
-        "layer": "",
-        "long_description": "Tuna item availability using an empirical cumulative density function. Item availbility determined by webscraping grocery retailer with an online presence. Tuna is defined as an East African staple food by The Food Group",
-        "long_name": "Tuna availability (Empirical cumulative density function)",
-        "measure_type": "index",
-        "short_description": "Tuna item availability using an empirical cumulative density function",
-        "short_name": "Tuna availability",
-        "sources": [
-            {
-                "date_accessed": "2021",
-                "name": "Grocery Retailers with Online Presence"
-            }
-        ],
-        "statement": "The tuna availability in {features.name} is {value}.",
-        "type": "float",
         "unit": ""
     },
     "urgent_3sfca": {

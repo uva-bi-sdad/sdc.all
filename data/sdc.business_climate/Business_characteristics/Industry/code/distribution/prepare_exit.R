@@ -14,38 +14,58 @@ library(tidyr)
 library(scales)
 
 
-# upload the data --------------------------------------------------------------------
 uploadpath = "Microdata/Mergent_intellect/data/working/"
-mi_fairfax_features <-  read_csv(paste0(uploadpath,"mi_fairfax_features_updated.csv.xz"))
+savepath = "Business_characteristics/Industry/data/distribution/"
 
+# upload the data --------------------------------------------------------------------
+mi_fairfax_features <-  read_csv(paste0(uploadpath,"mi_fairfax_features_bg.csv.xz"))
 
 # count the total number of business by block groups 
-exit_business <- mi_fairfax_features %>%
-  group_by(geoid,year,naics_name) %>%
+temp <- mi_fairfax_features %>%
+  group_by(geoid,region_name,region_type,year,naics_name) %>%
   summarize(total_business=length(duns),
             exit_business=sum(exit),
             exit_rate=100*exit_business/total_business) %>%
-  select(geoid,year,naics_name,exit_business,exit_rate) %>%
-  pivot_longer(!c('geoid','year','naics_name'), names_to='measure', values_to='value') %>%
-  mutate(region_type='block group',
-         measure=paste0(naics_name,'_',measure),
-         census_year=if_else(year<2020,2010,2020),
+  select(geoid,region_name,region_type,year,naics_name,exit_business,exit_rate) %>%
+  pivot_longer(!c('geoid','region_name','region_type','year','naics_name'), names_to='measure', values_to='value') %>%
+  mutate(measure=paste0(naics_name,'_',measure),
          measure_type = case_when(
            grepl('exit_rate',measure)==T ~ "percentage",
            grepl('exit_business',measure)==T ~ "count"),
-         MOE='')
-
-# add geometry 
-fairfax_bg2010 <- block_groups("VA", "059", 2010) %>% select(geoid=GEOID,region_name=NAMELSAD) %>% st_drop_geometry() %>% mutate(census_year=2010)
-fairfax_bg2020 <- block_groups("VA", "059", 2020) %>% select(geoid=GEOID,region_name=NAMELSAD) %>% st_drop_geometry() %>% mutate(census_year=2020)
-fairfax_bg <- rbind(fairfax_bg2010,fairfax_bg2020)
-
-# merge the data
-exit_business <- merge(exit_business, fairfax_bg, by.x=c('geoid','census_year'), by.y=c('geoid','census_year')) %>%
+         MOE='') %>%
+  ungroup() %>%
   select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
 
 
 # save the data ---------------------------------------------------------------------------------------
-savepath = "Business_characteristics/Industry/data/distribution/"
-readr::write_csv(exit_business, xzfile(paste0(savepath,"va059_bg_mi_",min(exit_business$year),max(exit_business$year),"_exit_by_industry.csv.xz"), compression = 9))
+readr::write_csv(temp, xzfile(paste0(savepath,"va059_bg_mi_",min(temp$year),max(temp$year),"_exit_by_industry.csv.xz"), compression = 9))
+
+
+
+
+####  upload data for ncr ####  ------------------------------------------------------------------------------------------------------------------
+
+# load the data
+uploadpath = "Microdata/Mergent_intellect/data/working/"
+mi_ncr_features <-  read_csv(paste0(uploadpath,"mi_ncr_features_bg.csv.xz"))
+
+# count the total number of business per block groups and year
+temp <- mi_ncr_features %>%
+  group_by(geoid,region_name,region_type,year,naics_name) %>%
+  summarize(total_business=length(duns),
+            exit_business=sum(exit),
+            exit_rate=100*exit_business/total_business) %>%
+  select(geoid,region_name,region_type,year,naics_name,exit_business,exit_rate) %>%
+  pivot_longer(!c('geoid','region_name','region_type','year','naics_name'), names_to='measure', values_to='value') %>%
+  mutate(measure=paste0(naics_name,'_',measure),
+         measure_type = case_when(
+           grepl('exit_rate',measure)==T ~ "percentage",
+           grepl('exit_business',measure)==T ~ "count"),
+         MOE='') %>%
+  ungroup() %>%
+  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
+
+
+# save the data
+readr::write_csv(temp, xzfile(paste0(savepath,"ncr_bg_mi_",min(temp$year),max(temp$year),"_exit_by_industry.csv.xz"), compression = 9))
 

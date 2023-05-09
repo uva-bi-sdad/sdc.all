@@ -45,3 +45,5 @@ profile <- mi_fairfax_features %>%
 savepath = "Business_characteristics/Minority_owned/data/distribution/"
 readr::write_csv(profile, xzfile(paste0(savepath,"va059_ct_mi_",min(profile$year),max(profile$year),"_minority_industry_profile.csv.xz"), compression = 9))
 
+
+
