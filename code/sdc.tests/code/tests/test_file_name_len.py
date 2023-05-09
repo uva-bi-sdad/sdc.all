@@ -33,9 +33,9 @@ def evaluate_folder(max_file_length, dirpath):
                 full_path = path.name
                 is_valid = (max_file_length - len(full_path)) >= 0
                 if is_valid:
-                    report += "\t<p>[VALID] %s</p>\n" % (full_path)
+                    report += "\t<p><font color='#009E73'> [VALID] </font> %s</p>\n" % (full_path)
                 else:
-                    report += "\t<p>[TOO LONG] %s</p>\n" % (full_path)
+                    report += "\t<p><font color='#D55E00'> [TOO LONG] </font> %s</p>\n" % (full_path)
     return report
 
 

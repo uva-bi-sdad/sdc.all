@@ -58,10 +58,10 @@ def evaluate_folder(measure_keys, source_keys, dirpath):
                     sources_valid = len(invalid_sources) <= 0
 
                     if measure_valid and sources_valid:
-                        report += "\t<p>[VALID] %s</p>\n" % (full_path)
+                        report += "\t<p><font color='#009E73'> [VALID] </font> %s</p>\n" % (full_path)
                     else:
                         report += (
-                            "\t<p>[INVALID] Invalid measures: %s, Invalid sources: %s, Path: %s </p>\n"
+                            "\t<p><font color='#D55E00'> [INVALID] </font> Invalid measures: %s, Invalid sources: %s, Path: %s </p>\n"
                             % (
                                 invalid_measures,
                                 invalid_sources,
@@ -70,7 +70,7 @@ def evaluate_folder(measure_keys, source_keys, dirpath):
                         )
                 except:
                     print(traceback.format_exc())
-                    report += "\t<p>[ERROR] %s</p>\n" % (full_path)
+                    report += "\t<p><font color='#D55E00'> [ERROR] </font> %s</p>\n" % (full_path)
     return report
 
 

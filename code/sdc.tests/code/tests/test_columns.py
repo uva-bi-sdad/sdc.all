@@ -40,9 +40,9 @@ def evaluate_folder(req_cols, dirpath):
                     is_valid = len(req_cols - cols) == 0
 
                     if is_valid:
-                        report += "\t<p>[VALID] %s</p>\n" % (full_path)
+                        report += "\t<p><font color='#009E73'> [VALID] </font> %s</p>\n" % (full_path)
                     elif len(cols.intersection(req_cols)) > 1:
-                        report += "\t<p>[MISSING %s] Needs: %s, Has: %s, %s </p>\n" % (
+                        report += "\t<p><font color='#D55E00'> [MISSING %s] </font> Needs: %s, Has: %s, %s </p>\n" % (
                             len(req_cols - cols),
                             req_cols - cols,
                             cols,
@@ -52,7 +52,7 @@ def evaluate_folder(req_cols, dirpath):
                         report += "\t<p>[NO OVERLAP] %s</p>\n" % (full_path)
                 except:
                     print(traceback.format_exc())
-                    report += "\t<p>[ERROR] %s</p>\n" % (full_path)
+                    report += "\t<p><font color='#D55E00'> [ERROR] </font> %s</p>\n" % (full_path)
     return report
 
 

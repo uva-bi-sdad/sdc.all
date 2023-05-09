@@ -33,10 +33,10 @@ def evaluate_folder(dirpath):
                 full_path = path.resolve()
                 try:
                     j = json.load(open(path.resolve()))
-                    report += "\t<p>[VALID] %s</p>\n" % (full_path)
+                    report += "\t<p><font color='#009E73'> [VALID] </font> %s</p>\n" % (full_path)
                 except:
                     print(traceback.format_exc())
-                    report += "\t<p>[FAIL] %s</p>\n" % (full_path)
+                    report += "\t<p><font color='#D55E00'> [FAIL] </font> %s</p>\n" % (full_path)
     return report
 
 
