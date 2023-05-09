@@ -2,18 +2,18 @@
     "perc_hh_without_compdev": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Accessibility",
         "layer": "",
-        "long_description": "Percentage of the households self-reported to not have a computer or device at home. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
+        "long_description": "Percentage of the households self-reported to not have a computer or device at home. Based on American Community Survey Table B28001 in ACS 2015/2019 5-year estimates.",
         "long_name": "Percentage of households without a computer",
         "measure_type": "percent",
         "short_description": "Percentage of households self-reported to not have a computer or device at home",
         "short_name": "Households without a computer",
         "sources": [
             {
-                "name": "American Community Survey Table B28002",
-                "date_accessed": 2021,
+                "name": "American Community Survey Table B28001",
+                "date_accessed": 2023,
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
