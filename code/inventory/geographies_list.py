@@ -53,11 +53,11 @@ def evaluate_folder(dirpath):
                     # update geographies df --------------------
                     geographies_df = pd.concat([geographies_df, df], ignore_index = True) 
                     
-                    report += "\t<p><font color='green'> [ADDED TO CSV] </font> %s%s</p>\n" % (dirpath, full_path)
+                    report += "\t<p><font color='#009E73'> [ADDED TO CSV] </font> %s%s</p>\n" % (dirpath, full_path)
                     
                 except:
                     print(traceback.format_exc())
-                    report += "\t<p><font color='red'> [ERROR] </font> %s/%s</p>\n" % (dirpath, full_path)
+                    report += "\t<p><font color='#D55E00'> [ERROR] </font> %s/%s</p>\n" % (dirpath, full_path)
            
     # change formatting of "And" to "and", "Of" to "of" and "city" to "City" 
     geographies_df['region_name'] = geographies_df['region_name'].str.replace(' Of ',' of ')
