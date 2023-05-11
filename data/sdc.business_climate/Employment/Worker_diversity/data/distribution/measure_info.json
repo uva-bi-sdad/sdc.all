@@ -1,0 +1,46 @@
+{
+    "Minority_employment": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total employment by minority workers",
+        "long_name": "Total employment by minority workers (count)",
+        "measure_type": "count",
+        "short_description": "Total employment by minority workers (count)",
+        "short_name": "Total employment by minority workers (count)",
+        "sources": [
+            {
+                "name": "Lodes",
+                "date_accessed": 2023,
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "Nonminority_employment": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total employment by non-minority workers",
+        "long_name": "Total employment by minority workers (count)",
+        "measure_type": "count",
+        "short_description": "Total employment by minority workers (count)",
+        "short_name": "Total employment by minority workers (count)",
+        "sources": [
+            {
+                "name": "Lodes",
+                "date_accessed": 2023,
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "",
+        "type": "count",
+        "unit": ""
+    }
+}

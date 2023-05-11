@@ -114,13 +114,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Accommodation and Food Services (in percent)",
-        "long_name": "Entry rate in Accommodation and Food Services",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Accommodation and Food Services (in percent)",
-        "short_name": "Entry rate in Accommodation and Food Services",
+        "long_description": "Number of new businesses in Accommodation and Food Services in percent. The Accommodation and Food Services Industry is defined by NAICS two-digit sector classification code 72.",
+        "long_name": "Accommodation and Food Services - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Accommodation and Food Services.",
+        "short_name": "Accommodation and Food Services - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -128,7 +128,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate in Accommodation and Food Services in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -158,13 +158,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Accommodation and Food Services industry (count)",
-        "long_name": "Number of businesses leaving Accommodation and Food Services industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Accommodation and Food Services industry (count)",
-        "short_name": "Number of businesses leaving Accommodation and Food Services industry",
+        "long_description": "Number of businesses leaving Accommodation and Food Services industry in percent. The Accommodation and Food Services Industry is defined by NAICS two-digit sector classification code 72.",
+        "long_name": "Accommodation and Food Services - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Accommodation and Food Services industry (percent)",
+        "short_name": "Accommodation and Food Services - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -172,8 +172,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate in Accommodation and Food Services in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Accommodation and Food Services_job_creation_active": {
@@ -400,13 +400,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Accommodation and Food Services (count)",
-        "long_name": " Total employment in Accommodation and Food Services (count)",
+        "long_description": "Count of total employment in Accommodation and Food Services. The Accommodation and Food Services Industry is defined by NAICS two-digit sector classification code 72.",
+        "long_name": "Accommodation and Food Services - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Accommodation and Food Services (count)",
-        "short_name": " Total employment in Accommodation and Food Services (count)",
+        "short_name": "Accommodation and Food Services - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -414,7 +414,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Accommodation and Food services employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -422,13 +422,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Accommodation and Food Services (count)",
-        "long_name": " Total Job creation in Accommodation and Food Services (count)",
+        "long_description": "Count of total jobs created in Accommodation and Food Services. The Accommodation and Food Services Industry is defined by NAICS two-digit sector classification code 72.",
+        "long_name": "Accommodation and Food Services - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Accommodation and Food Services (count)",
-        "short_name": " Total Job creation in Accommodation and Food Services (count)",
+        "short_name": "Accommodation and Food Services - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -436,7 +436,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Accommodation and Food services created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -444,13 +444,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Accommodation and Food Services (count)",
-        "long_name": " Total Job destruction in Accommodation and Food Services (count)",
+        "long_description": "Count of total jobs destroyed in Accommodation and Food Services (count). The Accommodation and Food Services Industry is defined by NAICS two-digit sector classification code 72.",
+        "long_name": "Accommodation and Food Services - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Accommodation and Food Services (count)",
-        "short_name": " Total Job destruction in Accommodation and Food Services (count)",
+        "short_name": "Accommodation and Food Services - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -458,7 +458,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Accommodation and Food services destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -554,13 +554,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Administrative and Support and Waste Management and Remediation Services (in percent)",
-        "long_name": "Entry rate in Administrative and Support and Waste Management and Remediation Services",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Administrative and Support and Waste Management and Remediation Services (in percent)",
-        "short_name": "Entry rate in Administrative and Support and Waste Management and Remediation Services",
+        "long_description": "Number of new businesses in Administrative and Support and Waste Management and Remediation Services in percent. The Administrative and Support and Waste Management and Remediation Services Industry is defined by NAICS two-digit sector classification code 56.",
+        "long_name": "Administrative and Support and Waste Management and Remediation Services - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Administrative and Support and Waste Management and Remediation Services (percent)",
+        "short_name": "Administrative and Support and Waste Management and Remediation Services - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -568,7 +568,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Administrative and Support and Waste Management and Remediation Services in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -598,13 +598,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Administrative and Support and Waste Management and Remediation Services industry (count)",
-        "long_name": "Number of businesses leaving Administrative and Support and Waste Management and Remediation Services industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Administrative and Support and Waste Management and Remediation Services industry (count)",
-        "short_name": "Number of businesses leaving Administrative and Support and Waste Management and Remediation Services industry",
+        "long_description": "Number of businesses leaving Administrative and Support and Waste Management and Remediation Services industry in percent. The Administrative and Support and Waste Management and Remediation Services Industry is defined by NAICS two-digit sector classification code 56.",
+        "long_name": "Administrative and Support and Waste Management and Remediation Services - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Administrative and Support and Waste Management and Remediation Services industry (percent)",
+        "short_name": "Administrative and Support and Waste Management and Remediation Services industry - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -612,8 +612,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Administrative and Support and Waste Management and Remediation Services in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_job_creation_active": {
@@ -840,13 +840,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Administrative and Support and Waste Management and Remediation Services (count)",
-        "long_name": " Total employment in Administrative and Support and Waste Management and Remediation Services (count)",
+        "long_description": "Count of total employment in Administrative and Support and Waste Management and Remediation Services. The Administrative and Support and Waste Management and Remediation Services Industry is defined by NAICS two-digit sector classification code 56.",
+        "long_name": "Administrative and Support and Waste Management and Remediation Services - Total employment",
         "measure_type": "count",
-        "short_description": "Total employment in Administrative and Support and Waste Management and Remediation Services (count)",
-        "short_name": " Total employment in Administrative and Support and Waste Management and Remediation Services (count)",
+        "short_description": "Total job created in Administrative and Support and Waste Management and Remediation Services (count)",
+        "short_name": "Administrative and Support and Waste Management and Remediation Services - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -854,7 +854,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Administrative and Support and Waste Management and Remediation Services employed {value} in {features.name}",
         "type": "count",
         "unit": ""
     },
@@ -862,13 +862,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Administrative and Support and Waste Management and Remediation Services (count)",
-        "long_name": " Total Job creation in Administrative and Support and Waste Management and Remediation Services (count)",
+        "long_description": "Count of total jobs created in Administrative and Support and Waste Management and Remediation Services. The Administrative and Support and Waste Management and Remediation Services Industry is defined by NAICS two-digit sector classification code 56.",
+        "long_name": "Administrative and Support and Waste Management and Remediation Services -  Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Administrative and Support and Waste Management and Remediation Services (count)",
-        "short_name": " Total Job creation in Administrative and Support and Waste Management and Remediation Services (count)",
+        "short_name": "Administrative and Support and Waste Management and Remediation Services - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -876,7 +876,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Administrative and Support and Waste Management and Remediation Services created {value} jobs in {features.name}",
         "type": "count",
         "unit": ""
     },
@@ -884,13 +884,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Administrative and Support and Waste Management and Remediation Services (count)",
-        "long_name": " Total Job destruction in Administrative and Support and Waste Management and Remediation Services (count)",
+        "long_description": "Count of total jobs destroyed in Administrative and Support and Waste Management and Remediation Services. The Administrative and Support and Waste Management and Remediation Services Industry is defined by NAICS two-digit sector classification code 56.",
+        "long_name": " Administrative and Support and Waste Management and Remediation Services - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Administrative and Support and Waste Management and Remediation Services (count)",
-        "short_name": " Total Job destruction in Administrative and Support and Waste Management and Remediation Services (count)",
+        "short_name": "Administrative and Support and Waste Management and Remediation Services - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -898,7 +898,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Administrative and Support and Waste Management and Remediation Services destroyed {value} jobs in {features.name}",
         "type": "count",
         "unit": ""
     },
@@ -994,13 +994,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Agriculture, Forestry, Fishing and Hunting (in percent)",
-        "long_name": "Entry rate in Agriculture, Forestry, Fishing and Hunting",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Agriculture, Forestry, Fishing and Hunting (in percent)",
-        "short_name": "Entry rate in Agriculture, Forestry, Fishing and Hunting",
+        "long_description": "Number of new businesses in Agriculture, Forestry, Fishing and Hunting in percent. The Agriculture, Forestry, Fishing and Hunting Industry is defined by NAICS two-digit sector classification code 11.",
+        "long_name": "Agriculture, Forestry, Fishing and Hunting - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Agriculture, Forestry, Fishing and Hunting (percent)",
+        "short_name": "Agriculture, Forestry, Fishing and Hunting - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -1008,7 +1008,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Agriculture, Forestry, Fishing and Hunting in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -1038,13 +1038,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Agriculture, Forestry, Fishing and Hunting industry (count)",
-        "long_name": "Number of businesses leaving Agriculture, Forestry, Fishing and Hunting industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Agriculture, Forestry, Fishing and Hunting industry (count)",
-        "short_name": "Number of businesses leaving Agriculture, Forestry, Fishing and Hunting industry",
+        "long_description": "Number of businesses leaving Agriculture, Forestry, Fishing and Hunting industry in percent. The Agriculture, Forestry, Fishing and Hunting Industry is defined by NAICS two-digit sector classification code 11.",
+        "long_name": "Agriculture, Forestry, Fishing and Hunting - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Agriculture, Forestry, Fishing and Hunting industry (percent)",
+        "short_name": "Agriculture, Forestry, Fishing and Hunting - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -1052,8 +1052,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Agriculture, Forestry, Fishing and Hunting in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_job_creation_active": {
@@ -1280,13 +1280,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Agriculture, Forestry, Fishing and Hunting (count)",
-        "long_name": " Total employment in Agriculture, Forestry, Fishing and Hunting (count)",
+        "long_description": "Count of total employment in Agriculture, Forestry, Fishing and Hunting. The Agriculture, Forestry, Fishing and Hunting Industry is defined by NAICS two-digit sector classification code 11.",
+        "long_name": "Agriculture, Forestry, Fishing and Hunting - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Agriculture, Forestry, Fishing and Hunting (count)",
-        "short_name": " Total employment in Agriculture, Forestry, Fishing and Hunting (count)",
+        "short_name": "Agriculture, Forestry, Fishing and Hunting - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -1294,7 +1294,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Agriculture, Forestry, Fishing and Hunting (count) employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -1302,13 +1302,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Agriculture, Forestry, Fishing and Hunting (count)",
-        "long_name": " Total Job creation in Agriculture, Forestry, Fishing and Hunting (count)",
+        "long_description": "Count of total jobs created in Agriculture, Forestry, Fishing and Hunting. The Agriculture, Forestry, Fishing and Hunting Industry is defined by NAICS two-digit sector classification code 11.",
+        "long_name": "Agriculture, Forestry, Fishing and Hunting - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Agriculture, Forestry, Fishing and Hunting (count)",
-        "short_name": " Total Job creation in Agriculture, Forestry, Fishing and Hunting (count)",
+        "short_name": "Agriculture, Forestry, Fishing and Hunting - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -1316,7 +1316,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Agriculture, Forestry, Fishing and Hunting created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -1324,13 +1324,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Agriculture, Forestry, Fishing and Hunting (count)",
-        "long_name": " Total Job destruction in Agriculture, Forestry, Fishing and Hunting (count)",
+        "long_description": "Count of total jobs destroyed in Agriculture, Forestry, Fishing and Hunting. The Agriculture, Forestry, Fishing and Hunting Industry is defined by NAICS two-digit sector classification code 11.",
+        "long_name": "Agriculture, Forestry, Fishing and Hunting - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Agriculture, Forestry, Fishing and Hunting (count)",
-        "short_name": " Total Job destruction in Agriculture, Forestry, Fishing and Hunting (count)",
+        "short_name": "Agriculture, Forestry, Fishing and Hunting - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -1338,7 +1338,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Agriculture, Forestry, Fishing and Hunting destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -1434,13 +1434,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Arts, Entertainment, and Recreation (in percent)",
-        "long_name": "Entry rate in Arts, Entertainment, and Recreation",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Arts, Entertainment, and Recreation (in percent)",
-        "short_name": "Entry rate in Arts, Entertainment, and Recreation",
+        "long_description": "Number of new businesses in Arts, Entertainment, and Recreation in percent. The Arts, Entertainment, and Recreation Industry is defined by NAICS two-digit sector classification code 71.",
+        "long_name": "Arts, Entertainment, and Recreation - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Arts, Entertainment, and Recreation (percent)",
+        "short_name": "Arts, Entertainment, and Recreation - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -1448,7 +1448,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Arts, Entertainment, and Recreation in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -1478,13 +1478,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Arts, Entertainment, and Recreation industry (count)",
-        "long_name": "Number of businesses leaving Arts, Entertainment, and Recreation industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Arts, Entertainment, and Recreation industry (count)",
-        "short_name": "Number of businesses leaving Arts, Entertainment, and Recreation industry",
+        "long_description": "Number of businesses leaving Arts, Entertainment, and Recreation industry in percent. The Arts, Entertainment, and Recreation Industry is defined by NAICS two-digit sector classification code 71.",
+        "long_name": "Arts, Entertainment, and Recreation - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Arts, Entertainment, and Recreation industry (percent)",
+        "short_name": "Arts, Entertainment, and Recreation - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -1492,8 +1492,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Arts, Entertainment, and Recreation in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_job_creation_active": {
@@ -1720,13 +1720,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Arts, Entertainment, and Recreation (count)",
-        "long_name": " Total employment in Arts, Entertainment, and Recreation (count)",
+        "long_description": "Count of total employment in Arts, Entertainment, and Recreation. The Arts, Entertainment, and Recreation Industry is defined by NAICS two-digit sector classification code 71.",
+        "long_name": "Arts, Entertainment, and Recreation - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Arts, Entertainment, and Recreation (count)",
-        "short_name": " Total employment in Arts, Entertainment, and Recreation (count)",
+        "short_name": "Arts, Entertainment, and Recreation - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -1734,7 +1734,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Arts, Entertainment, and Recreation employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -1742,13 +1742,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Arts, Entertainment, and Recreation (count)",
-        "long_name": " Total Job creation in Arts, Entertainment, and Recreation (count)",
+        "long_description": "Count of total jobs created in Arts, Entertainment, and Recreation. The Arts, Entertainment, and Recreation Industry is defined by NAICS two-digit sector classification code 71.",
+        "long_name": "Arts, Entertainment, and Recreation - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Arts, Entertainment, and Recreation (count)",
-        "short_name": " Total Job creation in Arts, Entertainment, and Recreation (count)",
+        "short_name": "Arts, Entertainment, and Recreation - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -1756,7 +1756,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Arts, Entertainment, and Recreation created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -1764,13 +1764,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Arts, Entertainment, and Recreation (count)",
-        "long_name": " Total Job destruction in Arts, Entertainment, and Recreation (count)",
+        "long_description": "Count of total jobs destroyed in Arts, Entertainment, and Recreation. The Arts, Entertainment, and Recreation Industry is defined by NAICS two-digit sector classification code 71.",
+        "long_name": "Arts, Entertainment, and Recreation - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Arts, Entertainment, and Recreation (count)",
-        "short_name": " Total Job destruction in Arts, Entertainment, and Recreation (count)",
+        "short_name": "Arts, Entertainment, and Recreation - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -1778,7 +1778,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Arts, Entertainment, and Recreation destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -1965,13 +1965,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Construction (in percent)",
-        "long_name": "Entry rate in Construction",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Construction (in percent)",
-        "short_name": "Entry rate in Construction",
+        "long_description": "Number of new businesses in Construction in percent. The Construction Industry is defined by NAICS two-digit sector classification code 23.",
+        "long_name": "Construction - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Construction (percent)",
+        "short_name": "Construction - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -1979,7 +1979,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Construction in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -2009,13 +2009,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Construction industry (count)",
-        "long_name": "Number of businesses leaving Construction industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Construction industry (count)",
-        "short_name": "Number of businesses leaving Construction industry",
+        "long_description": "Number of businesses leaving Construction industry in percent. The Construction Industry is defined by NAICS two-digit sector classification code 23.",
+        "long_name": "Construction - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Construction industry (percent)",
+        "short_name": "Construction - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -2023,8 +2023,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Construction in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Construction_job_creation_active": {
@@ -2251,13 +2251,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Construction (count)",
-        "long_name": " Total employment in Construction (count)",
+        "long_description": "Count of total employment in Construction. The Construction Industry is defined by NAICS two-digit sector classification code 23.",
+        "long_name": "Construction - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Construction (count)",
-        "short_name": " Total employment in Construction (count)",
+        "short_name": "Construction - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -2265,7 +2265,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Construction employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -2273,13 +2273,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Construction (count)",
-        "long_name": " Total Job creation in Construction (count)",
+        "long_description": "Count of total jobs created in Construction. The Construction Industry is defined by NAICS two-digit sector classification code 23.",
+        "long_name": "Construction - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Construction (count)",
-        "short_name": " Total Job creation in Construction (count)",
+        "short_name": "Construction - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -2287,7 +2287,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Construction created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -2295,13 +2295,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Construction (count)",
-        "long_name": " Total Job destruction in Construction (count)",
+        "long_description": "Count of total jobs destroyed in Construction. The Construction Industry is defined by NAICS two-digit sector classification code 23.",
+        "long_name": "Construction - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Construction (count)",
-        "short_name": " Total Job destruction in Construction (count)",
+        "short_name": "Construction - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -2309,7 +2309,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Construction destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -2795,13 +2795,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Educational Services (in percent)",
-        "long_name": "Entry rate in Educational Services",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Educational Services (in percent)",
-        "short_name": "Entry rate in Educational Services",
+        "long_description": "Number of new businesses in Educational Services in percent. The Educational Services Industry is defined by NAICS two-digit sector classification code 61.",
+        "long_name": "Educational Services - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Educational Services (percent)",
+        "short_name": "Educational Services - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -2809,7 +2809,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Educational Services in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -2839,13 +2839,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Educational Services industry (count)",
-        "long_name": "Number of businesses leaving Educational Services industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Educational Services industry (count)",
-        "short_name": "Number of businesses leaving Educational Services industry",
+        "long_description": "Number of businesses leaving Educational Services industry in percent. The Educational Services Industry is defined by NAICS two-digit sector classification code 61.",
+        "long_name": "Educational Services - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Educational Services industry (percent)",
+        "short_name": "Educational Services - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -2853,8 +2853,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Educational Services in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Educational Services_job_creation_active": {
@@ -3081,13 +3081,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Educational Services (count)",
-        "long_name": " Total employment in Educational Services (count)",
+        "long_description": "Count of total employment in Educational Services. The Educational Services Industry is defined by NAICS two-digit sector classification code 61.",
+        "long_name": "Educational Services - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Educational Services (count)",
-        "short_name": " Total employment in Educational Services (count)",
+        "short_name": "Educational Services - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -3095,7 +3095,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Educational Services employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -3103,13 +3103,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Educational Services (count)",
-        "long_name": " Total Job creation in Educational Services (count)",
+        "long_description": "Count of total jobs created in Educational Services. The Educational Services Industry is defined by NAICS two-digit sector classification code 61.",
+        "long_name": "Educational Services - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Educational Services (count)",
-        "short_name": " Total Job creation in Educational Services (count)",
+        "short_name": "Educational Services - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -3117,7 +3117,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Educational Services created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -3125,13 +3125,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Educational Services (count)",
-        "long_name": " Total Job destruction in Educational Services (count)",
+        "long_description": "Count of total jobs destroyed in Educational Services. The Educational Services Industry is defined by NAICS two-digit sector classification code 61.",
+        "long_name": "Educational Services - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Educational Services (count)",
-        "short_name": " Total Job destruction in Educational Services (count)",
+        "short_name": "Educational Services - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -3139,7 +3139,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Educational Services destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -3235,13 +3235,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Finance and Insurance (in percent)",
-        "long_name": "Entry rate in Finance and Insurance",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Finance and Insurance (in percent)",
-        "short_name": "Entry rate in Finance and Insurance",
+        "long_description": "Number of new businesses in Finance and Insurance in percent. The Finance and Insurance Industry is defined by NAICS two-digit sector classification code 52.",
+        "long_name": "Finance and Insurance - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Finance and Insurance (percent)",
+        "short_name": "Finance and Insurance - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -3249,7 +3249,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Finance and Insurance in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -3279,13 +3279,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Finance and Insurance industry (count)",
-        "long_name": "Number of businesses leaving Finance and Insurance industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Finance and Insurance industry (count)",
-        "short_name": "Number of businesses leaving Finance and Insurance industry",
+        "long_description": "Number of businesses leaving Finance and Insurance industry in percent. The Finance and Insurance Industry is defined by NAICS two-digit sector classification code 52.",
+        "long_name": "Finance and Insurance - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Finance and Insurance industry (percent)",
+        "short_name": "Finance and Insurance - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -3293,8 +3293,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Finance and Insurance in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Finance and Insurance_job_creation_active": {
@@ -3521,13 +3521,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Finance and Insurance (count)",
-        "long_name": " Total employment in Finance and Insurance (count)",
+        "long_description": "Count of total employment in Finance and Insurance. The Finance and Insurance Industry is defined by NAICS two-digit sector classification code 52.",
+        "long_name": "Finance and Insurance - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Finance and Insurance (count)",
-        "short_name": " Total employment in Finance and Insurance (count)",
+        "short_name": "Finance and Insurance - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -3535,7 +3535,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Finance and Insurance employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -3543,13 +3543,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Finance and Insurance (count)",
-        "long_name": " Total Job creation in Finance and Insurance (count)",
+        "long_description": "Count of total jobs created in Finance and Insurance. The Finance and Insurance Industry is defined by NAICS two-digit sector classification code 52.",
+        "long_name": "Finance and Insurance - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Finance and Insurance (count)",
-        "short_name": " Total Job creation in Finance and Insurance (count)",
+        "short_name": "Finance and Insurance - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -3557,7 +3557,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Finance and Insurance created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -3565,13 +3565,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Finance and Insurance (count)",
-        "long_name": " Total Job destruction in Finance and Insurance (count)",
+        "long_description": "Count of total jobs destroyed in Finance and Insurance. The Finance and Insurance Industry is defined by NAICS two-digit sector classification code 52.",
+        "long_name": "Finance and Insurance - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Finance and Insurance (count)",
-        "short_name": " Total Job destruction in Finance and Insurance (count)",
+        "short_name": "Finance and Insurance - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -3579,7 +3579,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Finance and Insurance destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -3744,13 +3744,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Health Care and Social Assistance (in percent)",
-        "long_name": "Entry rate in Health Care and Social Assistance",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Health Care and Social Assistance (in percent)",
-        "short_name": "Entry rate in Health Care and Social Assistance",
+        "long_description": "Number of new businesses in Health Care and Social Assistance in percent. The Health Care and Social Assistance Industry is defined by NAICS two-digit sector classification code 62.",
+        "long_name": "Health Care and Social Assistance - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Health Care and Social Assistance (percent)",
+        "short_name": "Health Care and Social Assistance - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -3758,7 +3758,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Health Care and Social Assistance in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -3788,13 +3788,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Health Care and Social Assistance industry (count)",
-        "long_name": "Number of businesses leaving Health Care and Social Assistance industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Health Care and Social Assistance industry (count)",
-        "short_name": "Number of businesses leaving Health Care and Social Assistance industry",
+        "long_description": "Number of businesses leaving Health Care and Social Assistance industry in percent. The Health Care and Social Assistance Industry is defined by NAICS two-digit sector classification code 62.",
+        "long_name": "Health Care and Social Assistance - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Health Care and Social Assistance industry (percent)",
+        "short_name": "Health Care and Social Assistance - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -3802,8 +3802,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Health Care and Social Assistance in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Health Care and Social Assistance_job_creation_active": {
@@ -4030,13 +4030,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Health Care and Social Assistance (count)",
-        "long_name": " Total employment in Health Care and Social Assistance (count)",
+        "long_description": "Count of total employment in Health Care and Social Assistance. The Health Care and Social Assistance Industry is defined by NAICS two-digit sector classification code 62.",
+        "long_name": "Health Care and Social Assistance - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Health Care and Social Assistance (count)",
-        "short_name": " Total employment in Health Care and Social Assistance (count)",
+        "short_name": "Health Care and Social Assistance - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -4044,7 +4044,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Health Care and Social Assistance employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -4052,13 +4052,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Health Care and Social Assistance (count)",
-        "long_name": " Total Job creation in Health Care and Social Assistance (count)",
+        "long_description": "Count of total jobs created in Health Care and Social Assistance. The Health Care and Social Assistance Industry is defined by NAICS two-digit sector classification code 62.",
+        "long_name": "Health Care and Social Assistance - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Health Care and Social Assistance (count)",
-        "short_name": " Total Job creation in Health Care and Social Assistance (count)",
+        "short_name": "Health Care and Social Assistance - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -4066,7 +4066,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Health Care and Social Assistance created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -4074,13 +4074,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Health Care and Social Assistance (count)",
-        "long_name": " Total Job destruction in Health Care and Social Assistance (count)",
+        "long_description": "Count of total jobs destroyed in Health Care and Social Assistance. The Health Care and Social Assistance Industry is defined by NAICS two-digit sector classification code 62.",
+        "long_name": "Health Care and Social Assistance - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Health Care and Social Assistance (count)",
-        "short_name": " Total Job destruction in Health Care and Social Assistance (count)",
+        "short_name": "Health Care and Social Assistance - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -4088,7 +4088,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Health Care and Social Assistance destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -4207,13 +4207,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Information (in percent)",
-        "long_name": "Entry rate in Information",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Information (in percent)",
-        "short_name": "Entry rate in Information",
+        "long_description": "Number of new businesses in Information in percent. The Information Industry is defined by NAICS two-digit sector classification code 51.",
+        "long_name": "Information - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Information (percent)",
+        "short_name": "Information - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -4221,7 +4221,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Information in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -4251,13 +4251,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Information industry (count)",
-        "long_name": "Number of businesses leaving Information industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Information industry (count)",
-        "short_name": "Number of businesses leaving Information industry",
+        "long_description": "Number of businesses leaving Information industry in percent. The Information Industry is defined by NAICS two-digit sector classification code 51.",
+        "long_name": "Information - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Information industry (percent)",
+        "short_name": "Information - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -4265,8 +4265,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Information in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Information_job_creation_active": {
@@ -4493,13 +4493,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Information (count)",
-        "long_name": " Total employment in Information (count)",
+        "long_description": "Count of total employment in Information. The Information Industry is defined by NAICS two-digit sector classification code 51.",
+        "long_name": "Information - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Information (count)",
-        "short_name": " Total employment in Information (count)",
+        "short_name": "Information - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -4507,7 +4507,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Information employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -4515,13 +4515,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Information (count)",
-        "long_name": " Total Job creation in Information (count)",
+        "long_description": "Count of total jobs created in Information. The Information Industry is defined by NAICS two-digit sector classification code 51.",
+        "long_name": "Information - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Information (count)",
-        "short_name": " Total Job creation in Information (count)",
+        "short_name": "Information - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -4529,7 +4529,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Information created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -4537,13 +4537,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Information (count)",
-        "long_name": " Total Job destruction in Information (count)",
+        "long_description": "Count of total jobs destroyed in Information. The Information Industry is defined by NAICS two-digit sector classification code 51.",
+        "long_name": "Information - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Information (count)",
-        "short_name": " Total Job destruction in Information (count)",
+        "short_name": "Information - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -4551,7 +4551,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Information destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -4693,13 +4693,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Management of Companies and Enterprises (in percent)",
-        "long_name": "Entry rate in Management of Companies and Enterprises",
-        "measure_type": "percentage",
+        "long_description": "Number of new businesses in Management of Companies and Enterprises in percent. The Management of Companies and Enterprises Industry is defined by NAICS two-digit sector classification code 55.",
+        "long_name": "Management of Companies and Enterprises - Entry rate",
+        "measure_type": "percent",
         "short_description": "Number of new businesses in Management of Companies and Enterprises (in percent)",
-        "short_name": "Entry rate in Management of Companies and Enterprises",
+        "short_name": "Management of Companies and Enterprises - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -4707,7 +4707,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Management of Companies and Enterprises in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -4737,13 +4737,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Management of Companies and Enterprises industry (count)",
-        "long_name": "Number of businesses leaving Management of Companies and Enterprises industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Management of Companies and Enterprises industry (count)",
-        "short_name": "Number of businesses leaving Management of Companies and Enterprises industry",
+        "long_description": "Number of businesses leaving Management of Companies and Enterprises industry in percent. The Management of Companies and Enterprises Industry is defined by NAICS two-digit sector classification code 55.",
+        "long_name": "Management of Companies and Enterprises - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Management of Companies and Enterprises industry (percent)",
+        "short_name": "Management of Companies and Enterprises - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -4751,8 +4751,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Management of Companies and Enterprises in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Management of Companies and Enterprises_job_creation_active": {
@@ -4979,13 +4979,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Management of Companies and Enterprises (count)",
-        "long_name": " Total employment in Management of Companies and Enterprises (count)",
+        "long_description": "Count of total employment in Management of Companies and Enterprises. The Management of Companies and Enterprises Industry is defined by NAICS two-digit sector classification code 55.",
+        "long_name": "Management of Companies and Enterprises - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Management of Companies and Enterprises (count)",
-        "short_name": " Total employment in Management of Companies and Enterprises (count)",
+        "short_name": "Management of Companies and Enterprises - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -4993,7 +4993,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Management of Companies and Enterprises employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -5001,13 +5001,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Management of Companies and Enterprises (count)",
-        "long_name": " Total Job creation in Management of Companies and Enterprises (count)",
+        "long_description": "Count of total jobs created in Management of Companies and Enterprises. The Management of Companies and Enterprises Industry is defined by NAICS two-digit sector classification code 55.",
+        "long_name": "Management of Companies and Enterprises - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Management of Companies and Enterprises (count)",
-        "short_name": " Total Job creation in Management of Companies and Enterprises (count)",
+        "short_name": "Management of Companies and Enterprises - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -5015,7 +5015,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Management of Companies and Enterprises created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -5023,13 +5023,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Management of Companies and Enterprises (count)",
-        "long_name": " Total Job destruction in Management of Companies and Enterprises (count)",
+        "long_description": "Count of total jobs destroyed in Management of Companies and Enterprises. The Management of Companies and Enterprises Industry is defined by NAICS two-digit sector classification code 55.",
+        "long_name": "Management of Companies and Enterprises - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Management of Companies and Enterprises (count)",
-        "short_name": " Total Job destruction in Management of Companies and Enterprises (count)",
+        "short_name": "Management of Companies and Enterprises - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -5037,7 +5037,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Management of Companies and Enterprises destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -5133,13 +5133,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Manufacturing (in percent)",
-        "long_name": "Entry rate in Manufacturing",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Manufacturing (in percent)",
-        "short_name": "Entry rate in Manufacturing",
+        "long_description": "Number of new businesses in Manufacturing in percent. The Manufacturing Industry is defined by NAICS two-digit sector classification code 31-33.",
+        "long_name": "Manufacturing - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Manufacturing (percent)",
+        "short_name": "Manufacturing - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -5147,7 +5147,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Manufacturing in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -5177,13 +5177,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Manufacturing industry (count)",
-        "long_name": "Number of businesses leaving Manufacturing industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Manufacturing industry (count)",
-        "short_name": "Number of businesses leaving Manufacturing industry",
+        "long_description": "Number of businesses leaving Manufacturing industry in percent. The Manufacturing Industry is defined by NAICS two-digit sector classification code 31-33.",
+        "long_name": "Manufacturing - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Manufacturing industry (percent)",
+        "short_name": "Manufacturing - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -5191,8 +5191,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Manufacturing in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Manufacturing_job_creation_active": {
@@ -5419,13 +5419,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Manufacturing (count)",
-        "long_name": " Total employment in Manufacturing (count)",
+        "long_description": "Count of total employment in Manufacturing. The Manufacturing Industry is defined by NAICS two-digit sector classification code 31-33.",
+        "long_name": "Manufacturing - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Manufacturing (count)",
-        "short_name": " Total employment in Manufacturing (count)",
+        "short_name": "Manufacturing - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -5433,7 +5433,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Manufacturing employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -5441,13 +5441,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Manufacturing (count)",
-        "long_name": " Total Job creation in Manufacturing (count)",
+        "long_description": "Count of total jobs created in Manufacturing. The Manufacturing Industry is defined by NAICS two-digit sector classification code 31-33.",
+        "long_name": "Manufacturing - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Manufacturing (count)",
-        "short_name": " Total Job creation in Manufacturing (count)",
+        "short_name": "Manufacturing - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -5455,7 +5455,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Manufacturing created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -5463,13 +5463,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Manufacturing (count)",
-        "long_name": " Total Job destruction in Manufacturing (count)",
+        "long_description": "Count of total jobs destroyed in Manufacturing. The Manufacturing Industry is defined by NAICS two-digit sector classification code 31-33.",
+        "long_name": "Manufacturing - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Manufacturing (count)",
-        "short_name": " Total Job destruction in Manufacturing (count)",
+        "short_name": "Manufacturing  - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -5477,7 +5477,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Manufacturing destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -5573,13 +5573,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Mining, Quarrying, and Oil and Gas Extraction (in percent)",
-        "long_name": "Entry rate in Mining, Quarrying, and Oil and Gas Extraction",
-        "measure_type": "percentage",
+        "long_description": "Number of new businesses in Mining, Quarrying, and Oil and Gas Extraction in percent. The Mining, Quarrying, and Oil and Gas Extraction Industry is defined by NAICS two-digit sector classification code 21.",
+        "long_name": "Mining, Quarrying, and Oil and Gas Extraction - Entry rate",
+        "measure_type": "percent",
         "short_description": "Number of new businesses in Mining, Quarrying, and Oil and Gas Extraction (in percent)",
-        "short_name": "Entry rate in Mining, Quarrying, and Oil and Gas Extraction",
+        "short_name": "Mining, Quarrying, and Oil and Gas Extraction - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -5587,7 +5587,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Mining, Quarrying, and Oil and Gas Extraction in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -5617,13 +5617,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Mining, Quarrying, and Oil and Gas Extraction industry (count)",
-        "long_name": "Number of businesses leaving Mining, Quarrying, and Oil and Gas Extraction industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Mining, Quarrying, and Oil and Gas Extraction industry (count)",
-        "short_name": "Number of businesses leaving Mining, Quarrying, and Oil and Gas Extraction industry",
+        "long_description": "Number of businesses leaving Mining, Quarrying, and Oil and Gas Extraction industry in percent. The Mining, Quarrying, and Oil and Gas Extraction Industry is defined by NAICS two-digit sector classification code 21.",
+        "long_name": "Mining, Quarrying, and Oil and Gas Extraction - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Mining, Quarrying, and Oil and Gas Extraction industry (percent)",
+        "short_name": "Mining, Quarrying, and Oil and Gas Extraction - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -5631,8 +5631,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Mining, Quarrying, and Oil and Gas Extraction in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_job_creation_active": {
@@ -5859,13 +5859,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Mining, Quarrying, and Oil and Gas Extraction (count)",
-        "long_name": " Total employment in Mining, Quarrying, and Oil and Gas Extraction (count)",
+        "long_description": "Count of total employment in Mining, Quarrying, and Oil and Gas Extraction. The Mining, Quarrying, and Oil and Gas Extraction Industry is defined by NAICS two-digit sector classification code 21.",
+        "long_name": "Mining, Quarrying, and Oil and Gas Extraction - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Mining, Quarrying, and Oil and Gas Extraction (count)",
-        "short_name": " Total employment in Mining, Quarrying, and Oil and Gas Extraction (count)",
+        "short_name": "Mining, Quarrying, and Oil and Gas Extraction - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -5873,7 +5873,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Mining, Quarrying, and Oil and Gas Extraction employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -5881,13 +5881,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Mining, Quarrying, and Oil and Gas Extraction (count)",
-        "long_name": " Total Job creation in Mining, Quarrying, and Oil and Gas Extraction (count)",
+        "long_description": "Count of total jobs created in Mining, Quarrying, and Oil and Gas Extraction. The Mining, Quarrying, and Oil and Gas Extraction Industry is defined by NAICS two-digit sector classification code 21.",
+        "long_name": "Mining, Quarrying, and Oil and Gas Extraction - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Mining, Quarrying, and Oil and Gas Extraction (count)",
-        "short_name": " Total Job creation in Mining, Quarrying, and Oil and Gas Extraction (count)",
+        "short_name": "Mining, Quarrying, and Oil and Gas Extraction - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -5895,7 +5895,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Mining, Quarrying, and Oil and Gas Extraction created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -5903,18 +5903,40 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Mining, Quarrying, and Oil and Gas Extraction (count)",
-        "long_name": " Total Job destruction in Mining, Quarrying, and Oil and Gas Extraction (count)",
+        "long_description": "Count of total jobs destroyed in Mining, Quarrying, and Oil and Gas Extraction. The Mining, Quarrying, and Oil and Gas Extraction Industry is defined by NAICS two-digit sector classification code 21.",
+        "long_name": "Mining, Quarrying, and Oil and Gas Extraction - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Mining, Quarrying, and Oil and Gas Extraction (count)",
-        "short_name": " Total Job destruction in Mining, Quarrying, and Oil and Gas Extraction (count)",
+        "short_name": "Mining, Quarrying, and Oil and Gas Extraction - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
                 "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "Mining, Quarrying, and Oil and Gas Extraction destroyed {value} jobs in {features.name}.",
+        "type": "count",
+        "unit": ""
+    },
+    "Minority_employment": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total employment by minority workers",
+        "long_name": "Total employment by minority workers (count)",
+        "measure_type": "count",
+        "short_description": "Total employment by minority workers (count)",
+        "short_name": "Total employment by minority workers (count)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Lodes",
+                "url": "https://lehd.ces.census.gov/data/"
             }
         ],
         "statement": "",
@@ -6013,13 +6035,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Nonclassifiable Establishments (in percent)",
-        "long_name": "Entry rate in Nonclassifiable Establishments",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Nonclassifiable Establishments (in percent)",
-        "short_name": "Entry rate in Nonclassifiable Establishments",
+        "long_description": "Number of new businesses in Nonclassifiable Establishments in percent. Nonclassifiable Establishments are undefined by a NAICS two-digit sector code.",
+        "long_name": "Nonclassifiable Establishments - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Nonclassifiable Establishments (percent)",
+        "short_name": "Nonclassifiable Establishments - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -6027,7 +6049,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Nonclassifiable Establishments in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -6057,13 +6079,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Nonclassifiable Establishments industry (count)",
-        "long_name": "Number of businesses leaving Nonclassifiable Establishments industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Nonclassifiable Establishments industry (count)",
-        "short_name": "Number of businesses leaving Nonclassifiable Establishments industry",
+        "long_description": "Number of businesses leaving Nonclassifiable Establishments industry in percent. Nonclassifiable Establishments are undefined by a NAICS two-digit sector code.",
+        "long_name": "Nonclassifiable Establishments - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Nonclassifiable Establishments industry (percent)",
+        "short_name": "Nonclassifiable Establishments - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -6071,8 +6093,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Nonclassifiable Establishments in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Nonclassifiable Establishments_job_creation_active": {
@@ -6299,13 +6321,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Nonclassifiable Establishments (count)",
-        "long_name": " Total employment in Nonclassifiable Establishments (count)",
+        "long_description": "Count of total employment in Nonclassifiable Establishments. Nonclassifiable Establishments are undefined by a NAICS two-digit sector code.",
+        "long_name": "Nonclassifiable Establishments - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Nonclassifiable Establishments (count)",
-        "short_name": " Total employment in Nonclassifiable Establishments (count)",
+        "short_name": "Nonclassifiable Establishments - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -6313,7 +6335,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Nonclassifiable Establishments employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -6321,13 +6343,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Nonclassifiable Establishments (count)",
-        "long_name": " Total Job creation in Nonclassifiable Establishments (count)",
+        "long_description": "Count of total jobs created in Nonclassifiable Establishments. Nonclassifiable Establishments are undefined by a NAICS two-digit sector code.",
+        "long_name": "Nonclassifiable Establishments - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Nonclassifiable Establishments (count)",
-        "short_name": " Total Job creation in Nonclassifiable Establishments (count)",
+        "short_name": "Nonclassifiable Establishments - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -6335,7 +6357,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Nonclassifiable Establishments created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -6343,18 +6365,40 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Nonclassifiable Establishments (count)",
-        "long_name": " Total Job destruction in Nonclassifiable Establishments (count)",
+        "long_description": "Count of total jobs destroyed in Nonclassifiable Establishments. Nonclassifiable Establishments are undefined by a NAICS two-digit sector code.",
+        "long_name": "Nonclassifiable Establishments - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Nonclassifiable Establishments (count)",
-        "short_name": " Total Job destruction in Nonclassifiable Establishments (count)",
+        "short_name": "Nonclassifiable Establishments - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
                 "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
+            }
+        ],
+        "statement": "Nonclassifiable Establishments destroyed {value} jobs in {features.name}.",
+        "type": "count",
+        "unit": ""
+    },
+    "Nonminority_employment": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Total employment by non-minority workers",
+        "long_name": "Total employment by minority workers (count)",
+        "measure_type": "count",
+        "short_description": "Total employment by minority workers (count)",
+        "short_name": "Total employment by minority workers (count)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Lodes",
+                "url": "https://lehd.ces.census.gov/data/"
             }
         ],
         "statement": "",
@@ -6521,13 +6565,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Other Services (except Public Administration) (in percent)",
-        "long_name": "Entry rate in Other Services (except Public Administration)",
-        "measure_type": "percentage",
+        "long_description": "Number of new businesses in Other Services (except Public Administration) in percent. The Other Services (except Public Administration) Industry is defined by NAICS two-digit sector classification code 81.",
+        "long_name": "Other Services (except Public Administration) - Entry rate",
+        "measure_type": "percent",
         "short_description": "Number of new businesses in Other Services (except Public Administration) (in percent)",
-        "short_name": "Entry rate in Other Services (except Public Administration)",
+        "short_name": "Other Services (except Public Administration) - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -6535,7 +6579,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Other Services (except Public Administration) in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -6565,13 +6609,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Other Services (except Public Administration) industry (count)",
-        "long_name": "Number of businesses leaving Other Services (except Public Administration) industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Other Services (except Public Administration) industry (count)",
-        "short_name": "Number of businesses leaving Other Services (except Public Administration) industry",
+        "long_description": "Number of businesses leaving Other Services (except Public Administration) industry in percent. The Other Services (except Public Administration) Industry is defined by NAICS two-digit sector classification code 81.",
+        "long_name": "Other Services (except Public Administration) - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Other Services (except Public Administration) industry (percent)",
+        "short_name": "Other Services (except Public Administration) - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -6579,8 +6623,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Other Services (except Public Administration) in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Other Services (except Public Administration)_job_creation_active": {
@@ -6807,13 +6851,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Other Services (except Public Administration) (count)",
-        "long_name": " Total employment in Other Services (except Public Administration) (count)",
+        "long_description": "Count of tount of total employment in Other Services (except Public Administration). The Other Services (except Public Administration) Industry is defined by NAICS two-digit sector classification code 81.",
+        "long_name": "Other Services (except Public Administration) - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Other Services (except Public Administration) (count)",
-        "short_name": " Total employment in Other Services (except Public Administration) (count)",
+        "short_name": "Other Services (except Public Administration) - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -6821,7 +6865,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Other Services (except Public Administration) employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -6829,13 +6873,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Other Services (except Public Administration) (count)",
-        "long_name": " Total Job creation in Other Services (except Public Administration) (count)",
+        "long_description": "Count of total jobs created in Other Services (except Public Administration). The Other Services (except Public Administration) Industry is defined by NAICS two-digit sector classification code 81.",
+        "long_name": "Other Services (except Public Administration) - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Other Services (except Public Administration) (count)",
-        "short_name": " Total Job creation in Other Services (except Public Administration) (count)",
+        "short_name": "Other Services (except Public Administration) - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -6843,7 +6887,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Other Services (except Public Administration) created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -6851,13 +6895,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Other Services (except Public Administration) (count)",
-        "long_name": " Total Job destruction in Other Services (except Public Administration) (count)",
+        "long_description": "Count of total jobs destroyed in Other Services (except Public Administration). The Other Services (except Public Administration) Industry is defined by NAICS two-digit sector classification code 81.",
+        "long_name": "Other Services (except Public Administration) - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Other Services (except Public Administration) (count)",
-        "short_name": " Total Job destruction in Other Services (except Public Administration) (count)",
+        "short_name": "Other Services (except Public Administration) - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -6865,7 +6909,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Other Services (except Public Administration) destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -7306,13 +7350,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Professional, Scientific, and Technical Services (in percent)",
-        "long_name": "Entry rate in Professional, Scientific, and Technical Services",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Professional, Scientific, and Technical Services (in percent)",
-        "short_name": "Entry rate in Professional, Scientific, and Technical Services",
+        "long_description": "Number of new businesses in Professional, Scientific, and Technical Services in percent. The Professional, Scientific, and Technical Services Industry is defined by NAICS two-digit sector classification code 54.",
+        "long_name": "Professional, Scientific, and Technical Services - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Professional, Scientific, and Technical Services (percent)",
+        "short_name": "Professional, Scientific, and Technical Services - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -7320,7 +7364,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Professional, Scientific, and Technical Services in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -7350,13 +7394,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Professional, Scientific, and Technical Services industry (count)",
-        "long_name": "Number of businesses leaving Professional, Scientific, and Technical Services industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Professional, Scientific, and Technical Services industry (count)",
-        "short_name": "Number of businesses leaving Professional, Scientific, and Technical Services industry",
+        "long_description": "Number of businesses leaving Professional, Scientific, and Technical Services industry in percent. The Professional, Scientific, and Technical Services Industry is defined by NAICS two-digit sector classification code 54.",
+        "long_name": "Professional, Scientific, and Technical Services - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Professional, Scientific, and Technical Services industry (percent)",
+        "short_name": "Professional, Scientific, and Technical Services - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -7364,8 +7408,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Professional, Scientific, and Technical Services in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_job_creation_active": {
@@ -7592,13 +7636,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Professional, Scientific, and Technical Services (count)",
-        "long_name": " Total employment in Professional, Scientific, and Technical Services (count)",
+        "long_description": "Count of total employment in Professional, Scientific, and Technical Services. The Professional, Scientific, and Technical Services Industry is defined by NAICS two-digit sector classification code 54.",
+        "long_name": "Professional, Scientific, and Technical Services - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Professional, Scientific, and Technical Services (count)",
-        "short_name": " Total employment in Professional, Scientific, and Technical Services (count)",
+        "short_name": "Professional, Scientific, and Technical Services - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -7606,7 +7650,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Professional, Scientific, and Technical Services employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -7614,13 +7658,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Professional, Scientific, and Technical Services (count)",
-        "long_name": " Total Job creation in Professional, Scientific, and Technical Services (count)",
+        "long_description": "Count of total jobs created in Professional, Scientific, and Technical Services. The Professional, Scientific, and Technical Services Industry is defined by NAICS two-digit sector classification code 54.",
+        "long_name": "Professional, Scientific, and Technical Services - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Professional, Scientific, and Technical Services (count)",
-        "short_name": " Total Job creation in Professional, Scientific, and Technical Services (count)",
+        "short_name": "Professional, Scientific, and Technical Services - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -7628,7 +7672,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Professional, Scientific, and Technical Services created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -7636,13 +7680,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Professional, Scientific, and Technical Services (count)",
-        "long_name": " Total Job destruction in Professional, Scientific, and Technical Services (count)",
+        "long_description": "Count of total jobs destroyed in Professional, Scientific, and Technical Services. The Professional, Scientific, and Technical Services Industry is defined by NAICS two-digit sector classification code 54.",
+        "long_name": "Professional, Scientific, and Technical Services - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Professional, Scientific, and Technical Services (count)",
-        "short_name": " Total Job destruction in Professional, Scientific, and Technical Services (count)",
+        "short_name": "Professional, Scientific, and Technical Services - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -7650,7 +7694,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Professional, Scientific, and Technical Services destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -7746,13 +7790,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Public Administration (in percent)",
-        "long_name": "Entry rate in Public Administration",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Public Administration (in percent)",
-        "short_name": "Entry rate in Public Administration",
+        "long_description": "Number of new businesses in Public Administration in percent. The Public Administration Industry is defined by NAICS two-digit sector classification code 92.",
+        "long_name": "Public Administration - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Public Administration (percent)",
+        "short_name": "Public Administration - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -7760,7 +7804,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Public Administration in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -7790,13 +7834,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Public Administration industry (count)",
-        "long_name": "Number of businesses leaving Public Administration industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Public Administration industry (count)",
-        "short_name": "Number of businesses leaving Public Administration industry",
+        "long_description": "Number of businesses leaving Public Administration industry in percent. The Public Administration Industry is defined by NAICS two-digit sector classification code 92.",
+        "long_name": "Public Administration - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Public Administration industry (percent)",
+        "short_name": "Public Administration - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -7804,8 +7848,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Public Administration in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Public Administration_job_creation_active": {
@@ -8032,13 +8076,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Public Administration (count)",
-        "long_name": " Total employment in Public Administration (count)",
+        "long_description": "Count of total employment in Public Administration. The Public Administration Industry is defined by NAICS two-digit sector classification code 92.",
+        "long_name": "Public Administration - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Public Administration (count)",
-        "short_name": " Total employment in Public Administration (count)",
+        "short_name": "Public Administration - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -8046,7 +8090,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Public Administration employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -8054,13 +8098,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Public Administration (count)",
-        "long_name": " Total Job creation in Public Administration (count)",
+        "long_description": "Count of total jobs created in Public Administration. The Public Administration Industry is defined by NAICS two-digit sector classification code 92.",
+        "long_name": "Public Administration - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Public Administration (count)",
-        "short_name": " Total Job creation in Public Administration (count)",
+        "short_name": "Public Administration - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -8068,7 +8112,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Public Administration created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -8076,13 +8120,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Public Administration (count)",
-        "long_name": " Total Job destruction in Public Administration (count)",
+        "long_description": "Count of total jobs destroyed in Public Administration. The Public Administration Industry is defined by NAICS two-digit sector classification code 92.",
+        "long_name": "Public Administration - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Public Administration (count)",
-        "short_name": " Total Job destruction in Public Administration (count)",
+        "short_name": "Public Administration - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -8090,7 +8134,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Public Administration destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -8255,13 +8299,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Real Estate and Rental and Leasing (in percent)",
-        "long_name": "Entry rate in Real Estate and Rental and Leasing",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Real Estate and Rental and Leasing (in percent)",
-        "short_name": "Entry rate in Real Estate and Rental and Leasing",
+        "long_description": "Number of new businesses in Real Estate and Rental and Leasing in percent. The Real Estate and Rental and Leasing Industry is defined by NAICS two-digit sector classification code 53.",
+        "long_name": "Real Estate and Rental and Leasing - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Real Estate and Rental and Leasing (percent)",
+        "short_name": "Real Estate and Rental and Leasing - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -8269,7 +8313,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Real Estate and Rental and Leasing in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -8299,13 +8343,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Real Estate and Rental and Leasing industry (count)",
-        "long_name": "Number of businesses leaving Real Estate and Rental and Leasing industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Real Estate and Rental and Leasing industry (count)",
-        "short_name": "Number of businesses leaving Real Estate and Rental and Leasing industry",
+        "long_description": "Number of businesses leaving Real Estate and Rental and Leasing industry in percent. The Real Estate and Rental and Leasing Industry is defined by NAICS two-digit sector classification code 53.",
+        "long_name": "Real Estate and Rental and Leasing - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Real Estate and Rental and Leasing industry (percent)",
+        "short_name": "Real Estate and Rental and Leasing - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -8313,8 +8357,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Real Estate and Rental and Leasing in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Real Estate and Rental and Leasing_job_creation_active": {
@@ -8541,13 +8585,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Real Estate and Rental and Leasing (count)",
-        "long_name": " Total employment in Real Estate and Rental and Leasing (count)",
+        "long_description": "Count of total employment in Real Estate and Rental and Leasing. The Real Estate and Rental and Leasing Industry is defined by NAICS two-digit sector classification code 53.",
+        "long_name": "Real Estate and Rental and Leasing - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Real Estate and Rental and Leasing (count)",
-        "short_name": " Total employment in Real Estate and Rental and Leasing (count)",
+        "short_name": "Real Estate and Rental and Leasing - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -8555,7 +8599,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Real Estate and Rental and Leasing employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -8563,13 +8607,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Real Estate and Rental and Leasing (count)",
-        "long_name": " Total Job creation in Real Estate and Rental and Leasing (count)",
+        "long_description": "Count of total jobs created in Real Estate and Rental and Leasing. The Real Estate and Rental and Leasing Industry is defined by NAICS two-digit sector classification code 53.",
+        "long_name": "Real Estate and Rental and Leasing - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Real Estate and Rental and Leasing (count)",
-        "short_name": " Total Job creation in Real Estate and Rental and Leasing (count)",
+        "short_name": "Real Estate and Rental and Leasing - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -8577,7 +8621,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Real Estate and Rental and Leasing created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -8585,13 +8629,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Real Estate and Rental and Leasing (count)",
-        "long_name": " Total Job destruction in Real Estate and Rental and Leasing (count)",
+        "long_description": "Count of total jobs destroyed in Real Estate and Rental and Leasing. The Real Estate and Rental and Leasing Industry is defined by NAICS two-digit sector classification code 53.",
+        "long_name": "Real Estate and Rental and Leasing - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Real Estate and Rental and Leasing (count)",
-        "short_name": " Total Job destruction in Real Estate and Rental and Leasing (count)",
+        "short_name": "Real Estate and Rental and Leasing - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -8599,7 +8643,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Real Estate and Rental and Leasing destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -8695,13 +8739,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Retail Trade (in percent)",
-        "long_name": "Entry rate in Retail Trade",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Retail Trade (in percent)",
-        "short_name": "Entry rate in Retail Trade",
+        "long_description": "Number of new businesses in Retail Trade in percent. The Retail Trade Industry is defined by NAICS two-digit sector classification code 44-45.",
+        "long_name": "Retail Trade - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Retail Trade (percent)",
+        "short_name": "Retail Trade - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -8709,7 +8753,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Retail Trade in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -8739,13 +8783,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Retail Trade industry (count)",
-        "long_name": "Number of businesses leaving Retail Trade industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Retail Trade industry (count)",
-        "short_name": "Number of businesses leaving Retail Trade industry",
+        "long_description": "Number of businesses leaving Retail Trade industry in percent. The Retail Trade Industry is defined by NAICS two-digit sector classification code 44-45.",
+        "long_name": "Retail Trade - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Retail Trade industry (percent)",
+        "short_name": "Retail Trade - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -8753,8 +8797,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Retail Trade in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Retail Trade_job_creation_active": {
@@ -8981,13 +9025,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Retail Trade (count)",
-        "long_name": " Total employment in Retail Trade (count)",
+        "long_description": "Count of total employment in Retail Trade.The Retail Trade Industry is defined by NAICS two-digit sector classification code 44-45.",
+        "long_name": "Retail Trade - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Retail Trade (count)",
-        "short_name": " Total employment in Retail Trade (count)",
+        "short_name": "Retail Trade - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -8995,7 +9039,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Retail Trade employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -9003,13 +9047,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Retail Trade (count)",
-        "long_name": " Total Job creation in Retail Trade (count)",
+        "long_description": "Count of total jobs created in Retail Trade. The Retail Trade Industry is defined by NAICS two-digit sector classification code 44-45.",
+        "long_name": "Retail Trade - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Retail Trade (count)",
-        "short_name": " Total Job creation in Retail Trade (count)",
+        "short_name": "Retail Trade - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -9017,7 +9061,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Retail Trade created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -9025,13 +9069,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Retail Trade (count)",
-        "long_name": " Total Job destruction in Retail Trade (count)",
+        "long_description": "Count of total jobs destroyed in Retail Trade. The Retail Trade Industry is defined by NAICS two-digit sector classification code 44-45.",
+        "long_name": "Retail Trade - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Retail Trade (count)",
-        "short_name": " Total Job destruction in Retail Trade (count)",
+        "short_name": "Retail Trade - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -9039,7 +9083,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Retail Trade destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -9204,13 +9248,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Transportation and Warehousing (in percent)",
-        "long_name": "Entry rate in Transportation and Warehousing",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Transportation and Warehousing (in percent)",
-        "short_name": "Entry rate in Transportation and Warehousing",
+        "long_description": "Number of new businesses in Transportation and Warehousing in percent. The Transportation and Warehousing Industry is defined by NAICS two-digit sector classification code 48-49.",
+        "long_name": "Transportation and Warehousing - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Transportation and Warehousing (percent)",
+        "short_name": "Transportation and Warehousing - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -9218,7 +9262,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Transportation and Warehousing in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -9248,13 +9292,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Transportation and Warehousing industry (count)",
-        "long_name": "Number of businesses leaving Transportation and Warehousing industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Transportation and Warehousing industry (count)",
-        "short_name": "Number of businesses leaving Transportation and Warehousing industry",
+        "long_description": "Number of businesses leaving Transportation and Warehousing industry in percent. The Transportation and Warehousing Industry is defined by NAICS two-digit sector classification code 48-49.",
+        "long_name": "Transportation and Warehousing - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Transportation and Warehousing - Exit rate",
+        "short_name": "Number of businesses leaving Transportation and Warehousing industry (percent)",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -9262,8 +9306,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Transportation and Warehousing in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Transportation and Warehousing_job_creation_active": {
@@ -9490,13 +9534,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Transportation and Warehousing (count)",
-        "long_name": " Total employment in Transportation and Warehousing (count)",
+        "long_description": "Count of total employment in Transportation and Warehousing. The Transportation and Warehousing Industry is defined by NAICS two-digit sector classification code 48-49.",
+        "long_name": "Transportation and Warehousing - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Transportation and Warehousing (count)",
-        "short_name": " Total employment in Transportation and Warehousing (count)",
+        "short_name": "Transportation and Warehousing - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -9504,7 +9548,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Transportation and Warehousing employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -9512,13 +9556,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Transportation and Warehousing (count)",
-        "long_name": " Total Job creation in Transportation and Warehousing (count)",
+        "long_description": "Count of total jobs created in Transportation and Warehousing. The Transportation and Warehousing Industry is defined by NAICS two-digit sector classification code 48-49.",
+        "long_name": "Transportation and Warehousing - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Transportation and Warehousing (count)",
-        "short_name": " Total Job creation in Transportation and Warehousing (count)",
+        "short_name": "Transportation and Warehousing - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -9526,7 +9570,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Transportation and Warehousing created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -9534,13 +9578,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Transportation and Warehousing (count)",
-        "long_name": " Total Job destruction in Transportation and Warehousing (count)",
+        "long_description": "Count of total jobs destroyed in Transportation and Warehousing. The Transportation and Warehousing Industry is defined by NAICS two-digit sector classification code 48-49.",
+        "long_name": "Transportation and Warehousing - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Transportation and Warehousing (count)",
-        "short_name": " Total Job destruction in Transportation and Warehousing (count)",
+        "short_name": "Transportation and Warehousing - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -9548,7 +9592,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Transportation and Warehousing destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -9690,13 +9734,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Utilities (in percent)",
-        "long_name": "Entry rate in Utilities",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Utilities (in percent)",
-        "short_name": "Entry rate in Utilities",
+        "long_description": "Number of new businesses in Utilities in percent. The Utilities Industry is defined by NAICS two-digit sector classification code 22. ",
+        "long_name": "Utilities - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Utilities (percent)",
+        "short_name": "Utilities - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -9704,7 +9748,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Utilities in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -9734,13 +9778,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Utilities industry (count)",
-        "long_name": "Number of businesses leaving Utilities industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Utilities industry (count)",
-        "short_name": "Number of businesses leaving Utilities industry",
+        "long_description": "Number of businesses leaving Utilities industry in percent. The Utilities Industry is defined by NAICS two-digit sector classification code 22. ",
+        "long_name": "Utilities - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Utilities industry (percent)",
+        "short_name": "Utilities - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -9748,8 +9792,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Utilities in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Utilities_job_creation_active": {
@@ -9976,13 +10020,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Utilities (count)",
-        "long_name": " Total employment in Utilities (count)",
+        "long_description": "Count of total employment in Utilities. The Utilities Industry is defined by NAICS two-digit sector classification code 22. ",
+        "long_name": "Utilities - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Utilities (count)",
-        "short_name": " Total employment in Utilities (count)",
+        "short_name": "Utilities - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -9990,7 +10034,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Utilities employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -9998,13 +10042,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Utilities (count)",
-        "long_name": " Total Job creation in Utilities (count)",
+        "long_description": "Count of total jobs created in Utilities. The Utilities Industry is defined by NAICS two-digit sector classification code 22. ",
+        "long_name": "Utilities - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Utilities (count)",
-        "short_name": " Total Job creation in Utilities (count)",
+        "short_name": "Utilities - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -10012,7 +10056,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Utilities created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -10020,13 +10064,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Utilities (count)",
-        "long_name": " Total Job destruction in Utilities (count)",
+        "long_description": "Count of total jobs destroyed in Utilities. The Utilities Industry is defined by NAICS two-digit sector classification code 22. ",
+        "long_name": "Utilities - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Utilities (count)",
-        "short_name": " Total Job destruction in Utilities (count)",
+        "short_name": "Utilities - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -10034,7 +10078,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Utilities destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -10199,13 +10243,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of new businesses in Wholesale Trade (in percent)",
-        "long_name": "Entry rate in Wholesale Trade",
-        "measure_type": "percentage",
-        "short_description": "Number of new businesses in Wholesale Trade (in percent)",
-        "short_name": "Entry rate in Wholesale Trade",
+        "long_description": "Number of new businesses in Wholesale Trade in percent. The Wholesale Trade Industry is defined by NAICS two-digit sector classification code 42.",
+        "long_name": "Wholesale Trade - Entry rate",
+        "measure_type": "percent",
+        "short_description": "Number of new businesses in Wholesale Trade (percent)",
+        "short_name": "Wholesale Trade - Entry rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -10213,7 +10257,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "The entry rate for Wholesale Trade in {features.name} is {value}.",
         "type": "percent",
         "unit": ""
     },
@@ -10243,13 +10287,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Number of businesses leaving Wholesale Trade industry (count)",
-        "long_name": "Number of businesses leaving Wholesale Trade industry",
-        "measure_type": "percentage",
-        "short_description": "Number of businesses leaving Wholesale Trade industry (count)",
-        "short_name": "Number of businesses leaving Wholesale Trade industry",
+        "long_description": "Number of businesses leaving Wholesale Trade industry in percent. The Wholesale Trade Industry is defined by NAICS two-digit sector classification code 42.",
+        "long_name": "Wholesale Trade - Exit rate",
+        "measure_type": "percent",
+        "short_description": "Number of businesses leaving Wholesale Trade industry (percent)",
+        "short_name": "Wholesale Trade - Exit rate",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -10257,8 +10301,8 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
+        "statement": "The exit rate for Wholesale Trade in {features.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "Wholesale Trade_job_creation_active": {
@@ -10485,13 +10529,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total employment in Wholesale Trade (count)",
-        "long_name": " Total employment in Wholesale Trade (count)",
+        "long_description": "Count of total employment in Wholesale Trade. The Wholesale Trade Industry is defined by NAICS two-digit sector classification code 42.",
+        "long_name": "Wholesale Trade - Total employment",
         "measure_type": "count",
         "short_description": "Total employment in Wholesale Trade (count)",
-        "short_name": " Total employment in Wholesale Trade (count)",
+        "short_name": "Wholesale Trade - Total employment",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -10499,7 +10543,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Wholesale Trade created {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -10507,13 +10551,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs created in Wholesale Trade (count)",
-        "long_name": " Total Job creation in Wholesale Trade (count)",
+        "long_description": "Count of total jobs created in Wholesale Trade. The Wholesale Trade Industry is defined by NAICS two-digit sector classification code 42.",
+        "long_name": "Wholesale Trade - Jobs created",
         "measure_type": "count",
         "short_description": "Total jobs created in Wholesale Trade (count)",
-        "short_name": " Total Job creation in Wholesale Trade (count)",
+        "short_name": "Wholesale Trade - Jobs created",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -10521,7 +10565,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Wholesale Trade employed {value} in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -10529,13 +10573,13 @@
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "Status",
+        "equity_category": "",
         "layer": "",
-        "long_description": "Total jobs destroyed in Wholesale Trade (count)",
-        "long_name": " Total Job destruction in Wholesale Trade (count)",
+        "long_description": "Count of total jobs destroyed in Wholesale Trade. The Wholesale Trade Industry is defined by NAICS two-digit sector classification code 42.",
+        "long_name": "Wholesale Trade - Jobs destroyed",
         "measure_type": "count",
         "short_description": "Total jobs destroyed in Wholesale Trade (count)",
-        "short_name": " Total Job destruction in Wholesale Trade (count)",
+        "short_name": "Wholesale Trade - Jobs destroyed",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -10543,7 +10587,7 @@
                 "url": "https://www.ftserussell.com/data/mergent-intellect"
             }
         ],
-        "statement": "",
+        "statement": "Wholesale Trade destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": ""
     },
@@ -11583,7 +11627,7 @@
         "layer": "",
         "long_description": "Percentage of new businesses",
         "long_name": "Entry rate (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Percentage of new businesses",
         "short_name": "Entry rate",
         "sources": [
@@ -11627,7 +11671,7 @@
         "layer": "",
         "long_description": "Percentage of businesses exiting ",
         "long_name": "Exit rate (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Percentage of businesses exiting ",
         "short_name": "Exit rate",
         "sources": [
@@ -12380,7 +12424,7 @@
         "layer": "",
         "long_description": "Percentage of new businesses owned by minority",
         "long_name": "Entry rate among minority owned businesses",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Percentage of new businesses owned by minority",
         "short_name": "Entry rate among minority owned businesses",
         "sources": [
@@ -12424,7 +12468,7 @@
         "layer": "",
         "long_description": "Percentage of minority owned businesses exiting ",
         "long_name": "Exit rate among minority owned businesses",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Percentage of minority owned businesses exiting ",
         "short_name": "Exit rate among minority owned businesses",
         "sources": [
@@ -12978,7 +13022,7 @@
         "layer": "",
         "long_description": "Percentage of new businesses not owned by minority",
         "long_name": "Entry rate among non minority owned businesses",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Percentage of new businesses not owned by minority",
         "short_name": "Entry rate among non minority owned businesses",
         "sources": [
@@ -13022,7 +13066,7 @@
         "layer": "",
         "long_description": "Percentage of businesses owned by minority exiting",
         "long_name": "Exit rate among non minority owned businesses",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Percentage of businesses owned by minority exiting",
         "short_name": "Exit rate among non minority owned businesses",
         "sources": [

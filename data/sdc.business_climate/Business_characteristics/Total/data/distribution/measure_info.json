@@ -7,7 +7,7 @@
         "layer": "",
         "long_description": "Percentage of new businesses",
         "long_name": "Entry rate (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Percentage of new businesses",
         "short_name": "Entry rate",
         "sources": [
@@ -51,7 +51,7 @@
         "layer": "",
         "long_description": "Percentage of businesses exiting ",
         "long_name": "Exit rate (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Percentage of businesses exiting ",
         "short_name": "Exit rate",
         "sources": [

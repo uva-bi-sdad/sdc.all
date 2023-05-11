@@ -7,7 +7,7 @@
         "layer": "",
         "long_description": "Percentage of new businesses owned by minority",
         "long_name": "Entry rate among minority owned businesses",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Percentage of new businesses owned by minority",
         "short_name": "Entry rate among minority owned businesses",
         "sources": [
@@ -51,7 +51,7 @@
         "layer": "",
         "long_description": "Percentage of minority owned businesses exiting ",
         "long_name": "Exit rate among minority owned businesses",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Percentage of minority owned businesses exiting ",
         "short_name": "Exit rate among minority owned businesses",
         "sources": [
@@ -117,7 +117,7 @@
         "layer": "",
         "long_description": "Percentage of new businesses not owned by minority",
         "long_name": "Entry rate among non minority owned businesses",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Percentage of new businesses not owned by minority",
         "short_name": "Entry rate among non minority owned businesses",
         "sources": [
@@ -161,7 +161,7 @@
         "layer": "",
         "long_description": "Percentage of businesses owned by minority exiting",
         "long_name": "Exit rate among non minority owned businesses",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Percentage of businesses owned by minority exiting",
         "short_name": "Exit rate among non minority owned businesses",
         "sources": [
