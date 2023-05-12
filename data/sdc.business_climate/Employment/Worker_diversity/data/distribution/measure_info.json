@@ -5,19 +5,20 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Total employment by minority workers",
-        "long_name": "Total employment by minority workers (count)",
+        "long_description": "Count of total employment for racial minority workers. Racial minority in this case is defined as Black alone, American Indian or Alaska Native alone, Asian alone, Hawaii and Pacific Islander alone, or Two or More Races.",
+        "long_name": "Racial minority employment",
         "measure_type": "count",
-        "short_description": "Total employment by minority workers (count)",
-        "short_name": "Total employment by minority workers (count)",
+        "short_description": "Total employment for racial minority workers (count)",
+        "short_name": "Racial minority employment",
         "sources": [
             {
-                "name": "Lodes",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
-        "statement": "",
+        "statement": "The number of jobs for racial minority workers in {features.name} is {value}.",
         "type": "count",
         "unit": ""
     },
@@ -27,19 +28,20 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Total employment by non-minority workers",
-        "long_name": "Total employment by minority workers (count)",
+        "long_description": "Count of total employment for racial non-minority workers. Non-minority in this case is defined as White alone.",
+        "long_name": "Racial non-minority employment",
         "measure_type": "count",
-        "short_description": "Total employment by minority workers (count)",
-        "short_name": "Total employment by minority workers (count)",
+        "short_description": "Total employment by racial non-minority workers (count)",
+        "short_name": "Racial non-minority employment",
         "sources": [
             {
-                "name": "Lodes",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
-        "statement": "",
+        "statement": "The number of jobs for racial non-minority workers in {features.name} is {value}.",
         "type": "count",
         "unit": ""
     }
