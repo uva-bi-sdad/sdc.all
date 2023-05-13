@@ -43,7 +43,7 @@
         "type": "percent",
         "unit": ""
     },
-        "insecure_pc": {
+        "insecure_pc_original": {
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -229,7 +229,7 @@
         "type": "count",
         "unit": ""
     },
-        "at_risk_pc": {
+        "at_risk_pc_original": {
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -415,7 +415,7 @@
         "type": "count",
         "unit": ""
     },
-        "secure_pc": {
+        "secure_pc_original": {
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -601,3 +601,4 @@
         "type": "count",
         "unit": ""
     }
+}
