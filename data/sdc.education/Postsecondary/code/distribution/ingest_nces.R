@@ -3,7 +3,6 @@ library(jsonlite)
 library(sf)
 
 base_dir <- "Postsecondary/data"
-
 dir.create("docs", FALSE)
 
 # define health districts and focal counties
@@ -229,35 +228,6 @@ clusterExport(cl, c("base_dir", "county_districts"))
 data <- parLapply(cl, 2013:2021, process_year)
 stopCluster(cl)
 
-# download and load maps
-dir.create(paste0(base_dir, "/original/reference_shapes"), FALSE)
-entity_info <- lapply(va_id_map$district, function(e) list(region_name = e$name))
-for (location in c("dc", "md", "va")) {
-  for (year in c(2020, 2010)) {
-    for (level in list(c("Block%20Group", "census_block_groups"), c("Tract", "census_tracts"), c("County", "counties"))) {
-      name <- paste0(location, "_geo_census_cb_", year, "_", level[[2]])
-      file <- paste0(
-        base_dir, "/original/reference_shapes/", location, "_",
-        sub("census_", "", level[[2]], fixed = TRUE), "_", year, ".geojson"
-      )
-      if (!file.exists(file)) {
-        tryCatch(download.file(paste0(
-          "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/",
-          toupper(location), "/Census%20Geographies/", level[[1]], "/", year,
-          "/data/distribution/", name, ".geojson"
-        ), file), error = function(e) NULL)
-      }
-      if (file.exists(file)) {
-        d <- read_json(file)
-        for (e in d$features) entity_info[[e$properties$geoid]] <- e$properties
-      }
-    }
-  }
-}
-entity_names <- unlist(lapply(entity_info, "[[", "region_name"))
-entity_names <- entity_names[!grepl(", NA", entity_names, fixed = TRUE)]
-entity_year <- vapply(entity_info, function(e) if (length(e$year)) e$year else "both", "")
-
 # reformat and save
 final <- do.call(rbind, lapply(data, function(d) {
   year <- d$block_groups[1, "year"]
@@ -267,17 +237,9 @@ final <- do.call(rbind, lapply(data, function(d) {
   varnames <- varnames[!grepl("_error", varnames, fixed = TRUE)]
   varerrors <- paste0(varnames, "_error")
   d$year <- year
-  d$region_type <- c(
-    "5" = "county", "8" = "health district", "11" = "tract", "12" = "block group"
-  )[as.character(nchar(d$GEOID))]
-  d <- d[d$GEOID %in% names(entity_names), ]
-  d <- d[entity_names[d$GEOID] != (if (year > 2019) 2010 else 2020), ]
-  d$region_name <- entity_names[d$GEOID]
   do.call(rbind, lapply(split(d, seq_len(nrow(d))), function(r) {
     data.frame(
       geoid = r$GEOID,
-      region_type = r$region_type,
-      region_name = r$region_name,
       year = year,
       measure = varnames,
       value = as.numeric(r[varnames]),

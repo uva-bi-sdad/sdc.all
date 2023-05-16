@@ -44,7 +44,7 @@ us_geo_census_cb_2010_counties$year <- "2010"
 final_dataset <- us_geo_census_cb_2010_counties[, c("geoid", "region_name", "region_type", "year", "geometry")]
 
 # Simplify the geography
-final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset, keep_shapes=TRUE)
+final_dataset_simplified <- rmapshaper::ms_simplify(final_dataset, keep_shapes=TRUE, keep = 0.15)
 
 # Export final dataset
 sf::st_write(final_dataset_simplified, "US/Census Geographies/County/2010/data/distribution/us_geo_census_cb_2010_counties.geojson",

@@ -2,7 +2,8 @@ input_variable("shapes", list(
   "selected_variable == mean_read_pass_rate" = "county",
   "selected_variable == median_read_pass_rate" = "county",
   "selected_variable == acs_postsecondary_count" = "tract",
-  "selected_variable == acs_postsecondary_percent" = "tract"
+  "selected_variable == acs_postsecondary_percent" = "tract",
+  "selected_variable == average_years_schooling" = "tract"
 ), "block_group")
 
 input_dataview(
@@ -18,11 +19,7 @@ page_section(
     output_info(body = "variables.sources"),
     page_section(
       wraps = "col", sizes = c(NA, 1),
-      input_select(
-        "Variable",
-        options = "variables", default = 5,
-        id = "selected_variable"
-      ),
+      input_select("Variable", options = "variables", id = "selected_variable"),
       input_number("Time", min = "filter.time_min", max = "filter.time_max", default = "max", id = "selected_time")
     ),
     output_legend(id = "main_legend", subto = c("main_map", "main_plot")),
@@ -54,13 +51,13 @@ page_section(
           list(
             name = "block_group",
             time = 2010,
-            url = "docs/map_2010.geojson",
+            url = "map_2010.geojson",
             id_property = "geoid"
           ),
           list(
             name = "block_group",
             time = 2020,
-            url = "docs/map_2020.geojson",
+            url = "map_2020.geojson",
             id_property = "geoid"
           ),
           list(

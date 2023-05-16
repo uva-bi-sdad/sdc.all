@@ -14,37 +14,6 @@ names(missing_districts) <- missing_districts
 states <- c("DC", "MD", "VA")
 years <- 2010:2021
 
-# download and load maps
-entity_info <- c(
-  lapply(va_id_map$district, function(e) list(region_name = e$name)),
-  lapply(missing_districts, function(e) list(region_name = e))
-)
-for (location in tolower(states)) {
-  for (year in c(2020, 2010)) {
-    for (level in list(c("Block%20Group", "census_block_groups"), c("Tract", "census_tracts"), c("County", "counties"))) {
-      name <- paste0(location, "_geo_census_cb_", year, "_", level[[2]])
-      file <- paste0(
-        base_dir, "/original/reference_shapes/", location, "_",
-        sub("census_", "", level[[2]], fixed = TRUE), "_", year, ".geojson"
-      )
-      if (!file.exists(file)) {
-        tryCatch(download.file(paste0(
-          "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/",
-          toupper(location), "/Census%20Geographies/", level[[1]], "/", year,
-          "/data/distribution/", name, ".geojson"
-        ), file), error = function(e) NULL)
-      }
-      if (file.exists(file)) {
-        d <- jsonlite::read_json(file)
-        for (e in d$features) entity_info[[e$properties$geoid]] <- e$properties
-      }
-    }
-  }
-}
-entity_names <- unlist(lapply(entity_info, "[[", "region_name"))
-entity_names <- entity_names[!grepl(", NA", entity_names, fixed = TRUE)]
-entity_year <- vapply(entity_info, function(e) if (length(e$year)) e$year else "both", "")
-
 # download and aggregate ACS data
 ## for margin or error:
 ## https://www2.census.gov/programs-surveys/acs/tech_docs/accuracy/2021_ACS_Accuracy_Document_Worked_Examples.pdf
@@ -61,7 +30,8 @@ data <- do.call(rbind, lapply(states, function(state) {
         ),
         year = year,
         state = state,
-        output = "wide"
+        output = "wide",
+        save = TRUE
       )
       d$acs_postsecondary_count <- rowSums(
         d[, c("in_collegeE", "college_completeE", "post_collegeE")],
@@ -78,20 +48,16 @@ data <- do.call(rbind, lapply(states, function(state) {
           (d$acs_postsecondary_percent / 100)^2 * (d$totalM / 1.645)^2
       )^.5 * 100 * 1.645
       d$acs_postsecondary_percent_error[!is.finite(d$acs_postsecondary_percent_error)] <- 0
-      d <- d[d$GEOID %in% names(entity_names), ]
-      d <- d[entity_names[d$GEOID] != (if (year > 2019) 2010 else 2020), ]
-      d$region_type <- layer
-      d$region_name <- entity_names[d$GEOID]
       d$year <- year
       list(wide = d, tall = list(rbind(
         cbind(
-          d[, c("GEOID", "region_type", "region_name", "year")],
+          d[, c("GEOID", "year")],
           measure = "acs_postsecondary_count",
           value = d$acs_postsecondary_count,
           moe = d$acs_postsecondary_count_error
         ),
         cbind(
-          d[, c("GEOID", "region_type", "region_name", "year")],
+          d[, c("GEOID", "year")],
           measure = "acs_postsecondary_percent",
           value = d$acs_postsecondary_percent,
           moe = d$acs_postsecondary_percent_error
@@ -111,8 +77,6 @@ data <- do.call(rbind, lapply(states, function(state) {
             total <- sum(e$acs_postsecondary_count)
             data.frame(
               GEOID = id,
-              region_type = "health district",
-              region_name = entity_names[[id]],
               measure = c("acs_postsecondary_count", "acs_postsecondary_percent"),
               year = year,
               value = c(total, total / sum(e$totalE) * 100),
