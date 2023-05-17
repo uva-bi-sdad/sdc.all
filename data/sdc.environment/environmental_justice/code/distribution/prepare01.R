@@ -5,6 +5,7 @@ library(tidyr)
 #census tract
 #transpose the census tract into the long form
 ejscreen_wide_ct <- read_csv("~/RCode/Data Commons/Environment/EPA_EJScreen/data/original/EJSCREEN_Table_CensusTracts_NCR.csv")
+
 dim(ejscreen_wide_ct); View(ejscreen_wide_ct)
 
 #keep only the variables ID, STATE_NAME, CNTY_NAME, PM25, OZONE, DSLPM, CANCER, RESP, PTRAF, PRE1960, 
@@ -14,18 +15,18 @@ dim(ejscreen_wide_ct); View(ejscreen_wide_ct)
 ejscreen_wide_ct <- data.frame(ejscreen_wide_ct[, c("ID", "STATE_NAME", "CNTY_NAME", "PM25", "OZONE", "DSLPM", "CANCER", "RESP", 
                                                     "PTRAF", "PRE1960", "PRE1960PCT", "PNPL", "PRMP", "PTSDF", "UST", "PWDIS", 
                                                     "D_PM25_2", "D_OZONE_2", "D_DSLPM_2", "D_CANCR_2", "D_RESP_2", "D_PTRAF_2", 
-                                                    "D_PTRAF_2", "D_LDPNT_2", "D_PNPL_2", "D_PRMP_2", "D_PTSDF_2", "D_UST_2", "D_PWDIS_2")])
+                                                    "D_LDPNT_2", "D_PNPL_2", "D_PRMP_2", "D_PTSDF_2", "D_UST_2", "D_PWDIS_2")])
 ejscreen_wide_ct$CNTY_NAME <- ifelse(ejscreen_wide_ct$CNTY_NAME=="District of Columbia", "Washington", ejscreen_wide_ct$CNTY_NAME)
 dim(ejscreen_wide_ct); View(ejscreen_wide_ct)
 
 ejscreen_wide_ct$region_name <- factor(paste(paste0(ejscreen_wide_ct$CNTY_NAME,","), ejscreen_wide_ct$STATE_NAME))
       ejscreen_wide_ct$geoid <- factor(ejscreen_wide_ct$ID)
-ejscreen_wide_ct$region_type <- as.factor(rep("tract", dim(ejscreen_wide_ct)[1]))  
+ejscreen_wide_ct$region_type <- as.factor(rep("census tract", dim(ejscreen_wide_ct)[1]))  
        ejscreen_wide_ct$year <- as.numeric(rep(2022, dim(ejscreen_wide_ct)[1]))  
 dim(ejscreen_wide_ct)       
             drop <- c("STATE_NAME", "CNTY_NAME", "ID") 
 ejscreen_wide_ct <- ejscreen_wide_ct[,!(names(ejscreen_wide_ct) %in% drop)]
-ejscreen_wide_ct <- ejscreen_wide_ct[, c(28, 29, 27, 30, 1:26)]
+ejscreen_wide_ct <- ejscreen_wide_ct[, c(27, 28, 26, 29, 1:25)]
 dim(ejscreen_wide_ct); View(ejscreen_wide_ct)
 
 #place the group the analytic variables into quartiles
@@ -69,7 +70,7 @@ write.csv(ejscreen_wide_ct, "~/RCode/Data Commons/Environment/EPA_EJScreen/data/
              ejscreen_long_ct <- gather(ejscreen_wide_ct, measure, value, PM25:PWDIS_QRT, factor_key=TRUE)
                        nrw_ct <- dim(ejscreen_long_ct)[1]
 ejscreen_long_ct$measure_type <- as.factor(rep(c("concentration","risk index","exposure index","proximity index","count","percent","proximity index","risk index","environmental justice index","quartile"), 
-                                               c(3993,1331,1331,1331,1331,1331,3993,2662,17303,13310))) 
+                                               c(3993,1331,1331,1331,1331,1331,3993,2662,15972,13310))) 
          ejscreen_long_ct$moe <- rep(NA, nrw_ct)
 
 ncr_tr_epa_2022_environmental_justice_screen <- data.frame(geoid = ejscreen_long_ct$geoid,

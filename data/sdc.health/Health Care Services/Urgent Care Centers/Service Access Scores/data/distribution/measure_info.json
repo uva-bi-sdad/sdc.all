@@ -5,7 +5,7 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": {
-            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.health_dev/Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/urgent_care_points_2022.geojson"
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.health/main/Health%20Care%20Services/Urgent%20Care%20Centers/Service%20Access%20Scores/data/distribution/urgent_care_points_2022.geojson"
         },
         "long_description": "Median drive time in minutes to the ten closest urgent care facilities. Facility location data were collected from Google Maps. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
         "long_name": "Urgent care availability by median drive time to the ten closest facilities in minutes",
@@ -29,7 +29,7 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": {
-            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.health_dev/Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/urgent_care_points_2022.geojson"
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.health/main/Health%20Care%20Services/Urgent%20Care%20Centers/Service%20Access%20Scores/data/distribution/urgent_care_points_2022.geojson"
         },
         "long_description": "Count of urgent care facilities based on facility locations. Location data was collected from Google Maps.",
         "long_name": "Availability of urgent care by count",
@@ -58,7 +58,7 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": {
-            "source": "https://raw.githubusercontent.com/uva-bi-sdad/dc.hifld.urgent/master/data/points_2022.geojson"
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.health/main/Health%20Care%20Services/Urgent%20Care%20Centers/Service%20Access%20Scores/data/distribution/urgent_care_points_2022.geojson"
         },
         "long_description": "Urgent care availability based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
         "long_name": "Urgent care geographic availability (3-step floating catchment areas)",

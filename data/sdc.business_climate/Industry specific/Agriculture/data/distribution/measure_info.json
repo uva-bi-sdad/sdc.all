@@ -30,8 +30,13 @@
         "long_description": "",
         "long_name": "Total acreage used in agriculture for irrigated cropland",
         "measure_type": "count",
+<<<<<<< HEAD
+        "short_description": "Total acreage for irrigated cropland",
+        "short_name": "Total acreage for irrigated cropland",
+=======
         "short_description": "Total acerage for irrigated cropland",
         "short_name": "Total acerage for irrigated cropland",
+>>>>>>> be35af5688ebb3c9fb579f435a4f09906d7397a0
         "sources": [
             {
                 "name": "Department of Agriculture National Agriculture Statistics Service",
@@ -174,5 +179,50 @@
         "statement": "Total sales of calves to {feature.name} is {value}.",
         "type": "count",
         "unit": ""
+    },
+    "total_acres": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total acres used for agriculture within a given county",
+        "measure_type": "count",
+        "short_description": "Total acres in agriculture",
+        "short_name": "Total acres in agriculture",
+        "sources": [
+            {
+                "name": "USDA NASS",
+                "date_accessed": 2023,
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "Total acres used for agriculture in {feature.name} is {value}",
+        "type": "count",
+        "unit": ""
+    },
+    "total_operations": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total operations used for agriculture within a given county",
+        "measure_type": "count",
+        "short_description": "Total operations in agriculture",
+        "short_name": "Total operations in agriculture",
+        "sources": [
+            {
+                "name": "USDA NASS",
+                "date_accessed": 2023,
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "Total operations used for agriculture in {feature.name} is {value}",
+        "type": "count",
+        "unit": ""
     }
+    
 }
