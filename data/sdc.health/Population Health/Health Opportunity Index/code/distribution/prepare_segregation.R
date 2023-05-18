@@ -37,29 +37,25 @@ out_df <- df_tracts_nodups %>%
           "segregation_indicator" = "quintiles")
 out_df <- out_df[,c("geoid", "segregation_indicator")]
 
-# geographies
-geos_data <- st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Census%20Geographies/Tract/2010/data/distribution/va_geo_census_cb_2010_census_tracts.geojson") %>%
-  select(geoid, region_name, region_type)
-
-geos_data$geometry <- NULL
-
-# add geographies
-out_df <- left_join(out_df, geos_data, by=c("geoid"))
-
 # long format
 out_long <- melt(out_df,
-                 id.vars=c("geoid", "region_type", "region_name"),
+                 id.vars=c("geoid"),
                  variable.name="measure",
                  value.name="value"
 )
 
 # add missing columns
 out_long["year"] <- "2017"
-out_long["measure_type"] <- "index"
 out_long["moe"] <- ""
 
 # Select final columns
-out_long <- out_long[, c("geoid", "region_name", "region_type", "year", "measure", "value", "measure_type", "moe")]
+out_long <- out_long[, c("geoid", "year", "measure", "value", "moe")]
+
+# bedford city tract stil in VDH data:
+# bedford city (51515050100) became Bedford County tract (51019050100)
+# updating tract id for bedford city  
+
+out_long[out_long$geoid == "51515050100", "geoid"] <- "51019050100"
 
 # save the dataset 
-write_csv(out_long, xzfile("Population Health/Health Opportunity Index/data/distribution/va_tr_vdh_2017_segregation_index.csv.xz", compression = 9))
+write_csv(out_long, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_segregation_index.csv.xz", compression = 9))
