@@ -1,5 +1,4 @@
 library(community)
-library(jsonlite)
 
 # check data and measure info
 check_repository()
@@ -12,21 +11,27 @@ if (file.exists(entities_file)) {
   entities <- vroom::vroom(
     "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/geographies_metadata.csv"
   )
-  entities <- entities[!duplicated(entities$geoid), c("geoid", "region_name", "region_type")]
+  entities <- entities[!duplicated(entities$geoid), c("geoid", "region_type")]
   saveRDS(entities, entities_file, compress = "xz")
 }
 entities <- rbind(entities, data.frame(
   geoid = c("11_hd_01", "24_hd_01"),
-  region_name = c("District of Columbia", "Maryland"),
   region_type = rep("health district", 2)
 ))
 
-datasets <- paste0(list.dirs("."), "/data/distribution")
+## unify original files
+datasets <- list.dirs(".", recursive = FALSE)
+datasets <- paste0(datasets, "/data/", rep(c("distribution", "other"), each = length(datasets)))
 datasets <- datasets[dir.exists(datasets)]
 data_reformat_sdad(
-  list.files(datasets, "\\.csv", full.names = TRUE), metadata = entities, "docs/data"
+  list.files(datasets, "\\.csv", full.names = TRUE), "docs/data",
+  metadata = entities, entity_info = NULL
 )
-info <- lapply(list.files(datasets, "measure_info\\.json", full.names = TRUE), read_json)
+info <- lapply(
+  list.files(datasets, "measure_info\\.json", full.names = TRUE),
+  jsonify::from_json,
+  simplify = FALSE
+)
 agg_info <- list()
 for (m in info) {
   for (e in names(m)) {
@@ -34,23 +39,53 @@ for (m in info) {
   }
 }
 if (length(agg_info)) {
-  write_json(
-    agg_info, "docs/data/measure_info.json",
-    auto_unbox = TRUE, pretty = TRUE
-  )
+  write(jsonify::pretty_json(agg_info, unbox = TRUE), "docs/data/measure_info.json")
 }
 
+## add unified files
 files <- paste0("docs/data/", list.files("docs/data/", "\\.csv\\.xz$"))
+
+### make complete maps
+dir.create("docs/maps", FALSE)
+map_files <- list.files("docs/maps")
+if (!length(map_files)) {
+  if (!require(catchment)) {
+    remotes::install_github("uva-bi-sdad/catchment")
+    library(catchment)
+  }
+  ids <- unique(unlist(lapply(files, function(f) {
+    unique(vroom::vroom(f, col_select = "ID", show_col_types = FALSE)[[1]])
+  })))
+  states <- unique(substring(ids[
+    ids %in% entities$geoid[entities$region_type %in% c("county", "tract", "block group")]
+  ], 1, 2))
+  years <- as.numeric(unique(unlist(lapply(files, function(f) {
+    unique(vroom::vroom(f, col_select = "time", show_col_types = FALSE)[[1]])
+  }))))
+  years <- years[years > 2012 & years < 2023]
+  for (y in years) {
+    for (l in c("county", "tract", "bg")) {
+      f <- paste0("docs/maps/", l, "_", y, ".geojson")
+      if (!file.exists(f)) {
+        ms <- do.call(rbind, lapply(states, function(s) {
+          download_census_shapes(
+            fips = s, entity = l, name = paste0(l, y, s), year = y
+          )[, "GEOID", drop = FALSE]
+        }))
+        sf::st_write(ms, f)
+      }
+    }
+  }
+}
+
 data_add(
   structure(files, names = gsub("^docs/data/|\\.csv\\.xz$", "", files)),
   meta = list(
-    ids = list(variable = "ID", map = "data/entity_info.json"),
+    ids = list(variable = "ID"),
     time = "time",
     variables = "docs/data/measure_info.json"
   ),
   dir = "docs/data"
 )
 
-site_build(".", serve = TRUE, options = list(
-  polygon_outline = .5, color_scale_center = "median"
-))
+site_build(".", serve = TRUE, aggregate = FALSE)

@@ -249,32 +249,3 @@ final <- do.call(rbind, lapply(data, function(d) {
 }))
 
 write.csv(final, xzfile(paste0(base_dir, "/distribution/nces.csv.xz")), row.names = FALSE)
-
-# make special maps
-if (!file.exists("docs/map_2010.geojson")) {
-  st_write(
-    rmapshaper::ms_simplify(st_read(toJSON(list(
-      type = "FeatureCollection",
-      crs = list(type = "name", properties = list(name = "urn:ogc:def:crs:OGC:1.3:CRS84")),
-      features = unlist(lapply(
-        list.files(paste0(base_dir, "/original/reference_shapes"), "block_groups_2010", full.names = TRUE),
-        function(f) Filter(function(e) e$properties$geoid %in% final$geoid, read_json(f)$features)
-      ), FALSE, FALSE)
-    ), auto_unbox = TRUE), quiet = TRUE), keep_shapes = TRUE),
-    "docs/map_2010.geojson"
-  )
-}
-
-if (!file.exists("docs/map_2020.geojson")) {
-  st_write(
-    rmapshaper::ms_simplify(st_read(toJSON(list(
-      type = "FeatureCollection",
-      crs = list(type = "name", properties = list(name = "urn:ogc:def:crs:OGC:1.3:CRS84")),
-      features = unlist(lapply(
-        list.files(paste0(base_dir, "/original/reference_shapes"), "block_groups_2020", full.names = TRUE),
-        function(f) Filter(function(e) e$properties$geoid %in% final$geoid, read_json(f)$features)
-      ), FALSE, FALSE)
-    ), auto_unbox = TRUE), quiet = TRUE), keep_shapes = TRUE),
-    "docs/map_2020.geojson"
-  )
-}

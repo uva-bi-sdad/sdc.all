@@ -51,7 +51,7 @@
         "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
         "long_name": "2-year schools per 100k people over 14",
         "measure_type": "ratio",
-        "short_description": "Number of 2-year schools per 100k people over 14.",
+        "short_description": "Number of 2-year schools per 100k people over 14, calculated within floating catchment areas.",
         "short_name": "2-year schools",
         "sources": [
             {
