@@ -16,7 +16,8 @@ ejscreen_wide_ct <- data.frame(ejscreen_wide_ct[, c("ID", "STATE_NAME", "CNTY_NA
                                                     "PTRAF", "PRE1960", "PRE1960PCT", "PNPL", "PRMP", "PTSDF", "UST", "PWDIS", 
                                                     "D_PM25_2", "D_OZONE_2", "D_DSLPM_2", "D_CANCR_2", "D_RESP_2", "D_PTRAF_2", 
                                                     "D_LDPNT_2", "D_PNPL_2", "D_PRMP_2", "D_PTSDF_2", "D_UST_2", "D_PWDIS_2")])
-ejscreen_wide_ct$CNTY_NAME <- ifelse(ejscreen_wide_ct$CNTY_NAME=="District of Columbia", "Washington", ejscreen_wide_ct$CNTY_NAME)
+ ejscreen_wide_ct$CNTY_NAME <- ifelse(ejscreen_wide_ct$CNTY_NAME=="District of Columbia", "Washington", ejscreen_wide_ct$CNTY_NAME)
+ejscreen_wide_ct$PRE1960PCT <- round(ejscreen_wide_ct$PRE1960PCT*100, 2)
 dim(ejscreen_wide_ct); View(ejscreen_wide_ct)
 
 ejscreen_wide_ct$region_name <- factor(paste(paste0(ejscreen_wide_ct$CNTY_NAME,","), ejscreen_wide_ct$STATE_NAME))
@@ -135,7 +136,9 @@ ejscreen_wide_bg$PRE1960_QRT <- as.numeric(cut(ejscreen_wide_bg$PRE1960, quartil
     ejscreen_wide_bg$UST_QRT <- as.numeric(cut(ejscreen_wide_bg$UST, quartiles, include.lowest = TRUE, labels = c(round(unname(quartiles)[-1], 4)))); rm(quartiles)
                    quartiles <- quantile(ejscreen_wide_bg$PWDIS, probs = c(0.00, 0.25, 0.50, 0.75, 1.00), na.rm = TRUE)
   ejscreen_wide_bg$PWDIS_QRT <- as.numeric(cut(ejscreen_wide_bg$PWDIS, quartiles, include.lowest = TRUE, labels = c(round(unname(quartiles)[-1], 4)))); rm(quartiles)
-dim(ejscreen_wide_bg); View(ejscreen_wide_bg)
+ ejscreen_wide_bg$PRE1960PCT <- round(ejscreen_wide_bg$PRE1960PCT*100, 2)
+  
+  dim(ejscreen_wide_bg); View(ejscreen_wide_bg)
 
 #save the wide form to the working folder
 write.csv(ejscreen_wide_bg, "~/RCode/Data Commons/Environment/EPA_EJScreen/data/working/ejscreen_wide_bg.csv", row.names=FALSE)
