@@ -67,12 +67,16 @@ def evaluate_folder(dirpath):
 
                 elif f.name in ["measure_info.json"]: 
                     # file is a measure_info file - get measure names
-                      
-                    with open(f.resolve(), "r") as mi_f:
-                        mi = json.load(mi_f)
+                    
+                    try:
+                        with open(f.resolve(), "r") as mi_f:
+                            mi = json.load(mi_f)
 
-                    # get measures 
-                    mi_measures.extend(mi.keys())
+                        # get measures 
+                        mi_measures.extend(mi.keys())
+                    except:
+                        print(traceback.format_exc())
+                        report += "\t<p><font color='#D55E00'> [ERROR - CANNOT READ JSON] </font> %s: %s</p>\n" % (parent_dir, f.name)
             
             # check for extra measures in measure_info
             if "_references" in mi_measures:

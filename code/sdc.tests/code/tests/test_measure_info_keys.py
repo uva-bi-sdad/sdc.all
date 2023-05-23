@@ -49,31 +49,36 @@ def evaluate_folder(req_keys, dirpath):
             except:
                 parent_dir = "PARENT_DIRECTORY"
             
-            f = open(path.resolve())
-            mi = json.load(f)
-            f.close()
-
-            # get measure info keys for each variable
-
-            for var in mi.keys():
+            try:
+                f = open(path.resolve())
+                mi = json.load(f)
+                f.close()
                 
-                # skip references entries
-                if var == "_references":
-                    continue
-                
-                key_list = list(mi[var].keys())
+                # get measure info keys for each variable
 
-                # check for missing and extra keys
-                missing_keys = list(set(req_keys).difference(set(key_list)))
-                extra_keys = list(set(key_list).difference(set(req_keys)))
+                for var in mi.keys():
                 
-                if len(missing_keys) > 0:
-                    report += "\t<p><font color='#D55E00'> [MISSING KEYS] </font> %s %s: %s </p>\n" % (missing_keys, parent_dir, var)
-                if len(extra_keys) > 0:
-                    report += "\t<p><font color='#D55E00'> [EXTRA KEYS] </font> %s %s: %s </p>\n" % (extra_keys, parent_dir, var)
-                if len(missing_keys) == 0 and len(extra_keys) == 0:
-                    report += "\t<p><font color='#009E73'> [VALID] </font> %s: %s </p>\n" % (parent_dir, var)            
+                    # skip references entries
+                    if var == "_references":
+                        continue
+                
+                    key_list = list(mi[var].keys())
+
+                    # check for missing and extra keys
+                    missing_keys = list(set(req_keys).difference(set(key_list)))
+                    extra_keys = list(set(key_list).difference(set(req_keys)))
+
+                    if len(missing_keys) > 0:
+                        report += "\t<p><font color='#D55E00'> [MISSING KEYS] </font> %s %s: %s </p>\n" % (missing_keys, parent_dir, var)
+                    if len(extra_keys) > 0:
+                        report += "\t<p><font color='#D55E00'> [EXTRA KEYS] </font> %s %s: %s </p>\n" % (extra_keys, parent_dir, var)
+                    if len(missing_keys) == 0 and len(extra_keys) == 0:
+                        report += "\t<p><font color='#009E73'> [VALID] </font> %s: %s </p>\n" % (parent_dir, var)            
             
+            except:
+                print(traceback.format_exc())
+                report += "\t<p><font color='#D55E00'> [ERROR - CANNOT READ JSON] </font> %s: %s</p>\n" % (parent_dir, full_path)
+                
     return report
 
 

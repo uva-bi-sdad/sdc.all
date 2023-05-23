@@ -11897,28 +11897,6 @@
         "type": "index",
         "unit": ""
     },
-    "fruit_treeNut_total_sales": {
-        "category": "Agriculture Industry",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Status",
-        "layer": "",
-        "long_description": "",
-        "long_name": "Total sales of fruits and treenuts within a given county",
-        "measure_type": "count",
-        "short_description": "Total sales of fruits and treenuts",
-        "short_name": "Total sales of fruits and treenuts",
-        "sources": [
-            {
-                "date_accessed": 2023,
-                "name": "Department of Agriculture National Agriculture Statistics Service",
-                "url": "https://www.nass.usda.gov/"
-            }
-        ],
-        "statement": "Total sales of fruit and tree nuts to {features.name} is {value}.",
-        "type": "dollar",
-        "unit": "dollar"
-    },
     "gini_index": {
         "category": "Financial Well Being",
         "citations": "",
@@ -12636,7 +12614,7 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Self-reported median household income in the past 12 months (in 2019 inflation adjusted-dollars. Based on the American Community Survey Table B19013 ACS 2015/2019 5-year estimates.",
+        "long_description": "Self-reported median household income in the past 12 months (in 2019 inflation adjusted-dollars. Based on the American Community Survey Table B19013 ACS 2015/2019 5-year estimates. The equation $a_{i} = b^\\frac{c}{d}$ was used.",
         "long_name": "Median household income",
         "measure_type": "count",
         "short_description": "Self-reported median household income in the past 12 months (in 2019 inflation adjusted-dollars.",
@@ -15506,7 +15484,7 @@
         "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
         "long_name": "2-year schools per 100k people over 14",
         "measure_type": "ratio",
-        "short_description": "Number of 2-year schools per 100k people over 14.",
+        "short_description": "Number of 2-year schools per 100k people over 14, calculated within floating catchment areas.",
         "short_name": "2-year schools",
         "sources": [
             {
@@ -16017,138 +15995,6 @@
         "type": "count",
         "unit": ""
     },
-    "total_animalProducts_sales": {
-        "category": "Agriculture Industry",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Status",
-        "layer": "",
-        "long_description": "",
-        "long_name": "Total sales of animal products within a given county",
-        "measure_type": "count",
-        "short_description": "Total sales of animal products",
-        "short_name": "Total sales of animal products",
-        "sources": [
-            {
-                "date_accessed": 2023,
-                "name": "Department of Agriculture National Agriculture Statistics Service",
-                "url": "https://www.nass.usda.gov/"
-            }
-        ],
-        "statement": "Total sales of animal products to {features.name} is {value}.",
-        "type": "dollar",
-        "unit": "dollar"
-    },
-    "total_animal_expense": {
-        "category": "Agriculture Industry",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Status",
-        "layer": "",
-        "long_description": "",
-        "long_name": "County's total expenses towards animal industry",
-        "measure_type": "count",
-        "short_description": "Total expenses towards animal industry",
-        "short_name": "Total expenses towards animal industry",
-        "sources": [
-            {
-                "date_accessed": 2023,
-                "name": "Department of Agriculture National Agriculture Statistics Service",
-                "url": "https://www.nass.usda.gov/"
-            }
-        ],
-        "statement": "The overall expenses towards animals to {features.name} is {value}.",
-        "type": "dollar",
-        "unit": "dollar"
-    },
-    "total_calves_sales": {
-        "category": "Agriculture Industry",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Status",
-        "layer": "",
-        "long_description": "",
-        "long_name": "Total sales of calves within a given county",
-        "measure_type": "count",
-        "short_description": "Total sales of calves",
-        "short_name": "Total sales of calves",
-        "sources": [
-            {
-                "date_accessed": 2023,
-                "name": "Department of Agriculture National Agriculture Statistics Service",
-                "url": "https://www.nass.usda.gov/"
-            }
-        ],
-        "statement": "Total sales of calves to {feature.name} is {value}.",
-        "type": "count",
-        "unit": ""
-    },
-    "total_commodity_sales": {
-        "category": "Agriculture Industry",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Status",
-        "layer": "",
-        "long_description": "",
-        "long_name": "Total sales of commodities within a given county",
-        "measure_type": "count",
-        "short_description": "Total sales of commodities",
-        "short_name": "Total sales of commodities",
-        "sources": [
-            {
-                "date_accessed": 2023,
-                "name": "Department of Agriculture National Agriculture Statistics Service",
-                "url": "https://www.nass.usda.gov/"
-            }
-        ],
-        "statement": "Total sales of commodities to {feature.name} is {value}",
-        "type": "dollar",
-        "unit": "dollar"
-    },
-    "total_cropland_acres": {
-        "category": "Agriculture Industry",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Status",
-        "layer": "",
-        "long_description": "",
-        "long_name": "Total acerage used in agriculture for cropland",
-        "measure_type": "count",
-        "short_description": "Total acreage for cropland",
-        "short_name": "Total acreage for cropland",
-        "sources": [
-            {
-                "date_accessed": 2023,
-                "name": "Department of Agriculture National Agriculture Statistics Service",
-                "url": "https://www.nass.usda.gov/"
-            }
-        ],
-        "statement": "The total acreage for cropland to {features.name} is {value}.",
-        "type": "count",
-        "unit": ""
-    },
-    "total_cropland_operations": {
-        "category": "Agriculture Industry",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Status",
-        "layer": "",
-        "long_description": "",
-        "long_name": "Number of operations with land devoted to cropland growing",
-        "measure_type": "count",
-        "short_description": "Number of operations with cropland",
-        "short_name": "Number of operations with cropland",
-        "sources": [
-            {
-                "date_accessed": 2023,
-                "name": "Department of Agriculture National Agriculture Statistics Service",
-                "url": "https://www.nass.usda.gov/"
-            }
-        ],
-        "statement": "The total number of operations with cropland to {features.name} is {value}.",
-        "type": "count",
-        "unit": ""
-    },
     "total_employment": {
         "category": "Business climate",
         "citations": "",
@@ -16190,28 +16036,6 @@
             }
         ],
         "statement": "The count of households is {value} in {features.name}.",
-        "type": "count",
-        "unit": ""
-    },
-    "total_irrigatedCropland_acre": {
-        "category": "Agriculture Industry",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Status",
-        "layer": "",
-        "long_description": "",
-        "long_name": "Total acreage used in agriculture for irrigated cropland",
-        "measure_type": "count",
-        "short_description": "Total acerage for irrigated cropland",
-        "short_name": "Total acerage for irrigated cropland",
-        "sources": [
-            {
-                "date_accessed": 2023,
-                "name": "Department of Agriculture National Agriculture Statistics Service",
-                "url": "https://www.nass.usda.gov/"
-            }
-        ],
-        "statement": "The total acreage for irrigated cropland to {features.name} is {value}.",
         "type": "count",
         "unit": ""
     },
@@ -16314,7 +16138,7 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": {
-            "source": "https://raw.githubusercontent.com/uva-bi-sdad/dc.hifld.urgent/master/data/points_2022.geojson"
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.health/main/Health%20Care%20Services/Urgent%20Care%20Centers/Service%20Access%20Scores/data/distribution/urgent_care_points_2022.geojson"
         },
         "long_description": "Urgent care availability based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
         "long_name": "Urgent care geographic availability (3-step floating catchment areas)",
@@ -16338,7 +16162,7 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": {
-            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.health_dev/Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/urgent_care_points_2022.geojson"
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.health/main/Health%20Care%20Services/Urgent%20Care%20Centers/Service%20Access%20Scores/data/distribution/urgent_care_points_2022.geojson"
         },
         "long_description": "Count of urgent care facilities based on facility locations. Location data was collected from Google Maps.",
         "long_name": "Availability of urgent care by count",
@@ -16362,7 +16186,7 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": {
-            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.health_dev/Health Care Services/Urgent Care Centers/Service Access Scores/data/distribution/urgent_care_points_2022.geojson"
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.health/main/Health%20Care%20Services/Urgent%20Care%20Centers/Service%20Access%20Scores/data/distribution/urgent_care_points_2022.geojson"
         },
         "long_description": "Median drive time in minutes to the ten closest urgent care facilities. Facility location data were collected from Google Maps. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
         "long_name": "Urgent care availability by median drive time to the ten closest facilities in minutes",
