@@ -316,7 +316,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Accommodation and Food Services in percent",
         "long_name": "Jobs creation by active business in Accommodation and Food Services (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Accommodation and Food Services (percent)",
         "short_name": "Jobs creation by active business in Accommodation and Food Services (percent)",
         "sources": [
@@ -338,7 +338,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Accommodation and Food Services in percent",
         "long_name": "Jobs creation by new business in Accommodation and Food Services (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Accommodation and Food Services (percent)",
         "short_name": "Jobs creation by new business in Accommodation and Food Services (percent)",
         "sources": [
@@ -360,7 +360,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Accommodation and Food Services in percent",
         "long_name": "Jobs destruction by active business in Accommodation and Food Services (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Accommodation and Food Services (percent)",
         "short_name": "Jobs destruction by active business in Accommodation and Food Services (percent)",
         "sources": [
@@ -382,7 +382,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Accommodation and Food Services in percent",
         "long_name": "Jobs destruction by new business in Accommodation and Food Services (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Accommodation and Food Services (percent)",
         "short_name": "Jobs destruction by new business in Accommodation and Food Services (percent)",
         "sources": [
@@ -756,7 +756,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Administrative and Support and Waste Management and Remediation Services in percent",
         "long_name": "Jobs creation by active business in Administrative and Support and Waste Management and Remediation Services (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Administrative and Support and Waste Management and Remediation Services (percent)",
         "short_name": "Jobs creation by active business in Administrative and Support and Waste Management and Remediation Services (percent)",
         "sources": [
@@ -778,7 +778,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Administrative and Support and Waste Management and Remediation Services in percent",
         "long_name": "Jobs creation by new business in Administrative and Support and Waste Management and Remediation Services (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Administrative and Support and Waste Management and Remediation Services (percent)",
         "short_name": "Jobs creation by new business in Administrative and Support and Waste Management and Remediation Services (percent)",
         "sources": [
@@ -800,7 +800,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Administrative and Support and Waste Management and Remediation Services in percent",
         "long_name": "Jobs destruction by active business in Administrative and Support and Waste Management and Remediation Services (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Administrative and Support and Waste Management and Remediation Services (percent)",
         "short_name": "Jobs destruction by active business in Administrative and Support and Waste Management and Remediation Services (percent)",
         "sources": [
@@ -822,7 +822,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Administrative and Support and Waste Management and Remediation Services in percent",
         "long_name": "Jobs destruction by new business in Administrative and Support and Waste Management and Remediation Services (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Administrative and Support and Waste Management and Remediation Services (percent)",
         "short_name": "Jobs destruction by new business in Administrative and Support and Waste Management and Remediation Services (percent)",
         "sources": [
@@ -1196,7 +1196,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Agriculture, Forestry, Fishing and Hunting in percent",
         "long_name": "Jobs creation by active business in Agriculture, Forestry, Fishing and Hunting (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Agriculture, Forestry, Fishing and Hunting (percent)",
         "short_name": "Jobs creation by active business in Agriculture, Forestry, Fishing and Hunting (percent)",
         "sources": [
@@ -1218,7 +1218,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Agriculture, Forestry, Fishing and Hunting in percent",
         "long_name": "Jobs creation by new business in Agriculture, Forestry, Fishing and Hunting (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Agriculture, Forestry, Fishing and Hunting (percent)",
         "short_name": "Jobs creation by new business in Agriculture, Forestry, Fishing and Hunting (percent)",
         "sources": [
@@ -1240,7 +1240,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Agriculture, Forestry, Fishing and Hunting in percent",
         "long_name": "Jobs destruction by active business in Agriculture, Forestry, Fishing and Hunting (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Agriculture, Forestry, Fishing and Hunting (percent)",
         "short_name": "Jobs destruction by active business in Agriculture, Forestry, Fishing and Hunting (percent)",
         "sources": [
@@ -1262,7 +1262,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Agriculture, Forestry, Fishing and Hunting in percent",
         "long_name": "Jobs destruction by new business in Agriculture, Forestry, Fishing and Hunting (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Agriculture, Forestry, Fishing and Hunting (percent)",
         "short_name": "Jobs destruction by new business in Agriculture, Forestry, Fishing and Hunting (percent)",
         "sources": [
@@ -1636,7 +1636,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Arts, Entertainment, and Recreation in percent",
         "long_name": "Jobs creation by active business in Arts, Entertainment, and Recreation (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Arts, Entertainment, and Recreation (percent)",
         "short_name": "Jobs creation by active business in Arts, Entertainment, and Recreation (percent)",
         "sources": [
@@ -1658,7 +1658,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Arts, Entertainment, and Recreation in percent",
         "long_name": "Jobs creation by new business in Arts, Entertainment, and Recreation (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Arts, Entertainment, and Recreation (percent)",
         "short_name": "Jobs creation by new business in Arts, Entertainment, and Recreation (percent)",
         "sources": [
@@ -1680,7 +1680,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Arts, Entertainment, and Recreation in percent",
         "long_name": "Jobs destruction by active business in Arts, Entertainment, and Recreation (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Arts, Entertainment, and Recreation (percent)",
         "short_name": "Jobs destruction by active business in Arts, Entertainment, and Recreation (percent)",
         "sources": [
@@ -1702,7 +1702,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Arts, Entertainment, and Recreation in percent",
         "long_name": "Jobs destruction by new business in Arts, Entertainment, and Recreation (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Arts, Entertainment, and Recreation (percent)",
         "short_name": "Jobs destruction by new business in Arts, Entertainment, and Recreation (percent)",
         "sources": [
@@ -2167,7 +2167,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Construction in percent",
         "long_name": "Jobs creation by active business in Construction (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Construction (percent)",
         "short_name": "Jobs creation by active business in Construction (percent)",
         "sources": [
@@ -2189,7 +2189,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Construction in percent",
         "long_name": "Jobs creation by new business in Construction (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Construction (percent)",
         "short_name": "Jobs creation by new business in Construction (percent)",
         "sources": [
@@ -2211,7 +2211,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Construction in percent",
         "long_name": "Jobs destruction by active business in Construction (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Construction (percent)",
         "short_name": "Jobs destruction by active business in Construction (percent)",
         "sources": [
@@ -2233,7 +2233,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Construction in percent",
         "long_name": "Jobs destruction by new business in Construction (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Construction (percent)",
         "short_name": "Jobs destruction by new business in Construction (percent)",
         "sources": [
@@ -2997,7 +2997,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Educational Services in percent",
         "long_name": "Jobs creation by active business in Educational Services (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Educational Services (percent)",
         "short_name": "Jobs creation by active business in Educational Services (percent)",
         "sources": [
@@ -3019,7 +3019,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Educational Services in percent",
         "long_name": "Jobs creation by new business in Educational Services (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Educational Services (percent)",
         "short_name": "Jobs creation by new business in Educational Services (percent)",
         "sources": [
@@ -3041,7 +3041,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Educational Services in percent",
         "long_name": "Jobs destruction by active business in Educational Services (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Educational Services (percent)",
         "short_name": "Jobs destruction by active business in Educational Services (percent)",
         "sources": [
@@ -3063,7 +3063,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Educational Services in percent",
         "long_name": "Jobs destruction by new business in Educational Services (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Educational Services (percent)",
         "short_name": "Jobs destruction by new business in Educational Services (percent)",
         "sources": [
@@ -3437,7 +3437,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Finance and Insurance in percent",
         "long_name": "Jobs creation by active business in Finance and Insurance (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Finance and Insurance (percent)",
         "short_name": "Jobs creation by active business in Finance and Insurance (percent)",
         "sources": [
@@ -3459,7 +3459,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Finance and Insurance in percent",
         "long_name": "Jobs creation by new business in Finance and Insurance (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Finance and Insurance (percent)",
         "short_name": "Jobs creation by new business in Finance and Insurance (percent)",
         "sources": [
@@ -3481,7 +3481,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Finance and Insurance in percent",
         "long_name": "Jobs destruction by active business in Finance and Insurance (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Finance and Insurance (percent)",
         "short_name": "Jobs destruction by active business in Finance and Insurance (percent)",
         "sources": [
@@ -3503,7 +3503,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Finance and Insurance in percent",
         "long_name": "Jobs destruction by new business in Finance and Insurance (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Finance and Insurance (percent)",
         "short_name": "Jobs destruction by new business in Finance and Insurance (percent)",
         "sources": [
@@ -3946,7 +3946,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Health Care and Social Assistance in percent",
         "long_name": "Jobs creation by active business in Health Care and Social Assistance (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Health Care and Social Assistance (percent)",
         "short_name": "Jobs creation by active business in Health Care and Social Assistance (percent)",
         "sources": [
@@ -3968,7 +3968,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Health Care and Social Assistance in percent",
         "long_name": "Jobs creation by new business in Health Care and Social Assistance (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Health Care and Social Assistance (percent)",
         "short_name": "Jobs creation by new business in Health Care and Social Assistance (percent)",
         "sources": [
@@ -3990,7 +3990,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Health Care and Social Assistance in percent",
         "long_name": "Jobs destruction by active business in Health Care and Social Assistance (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Health Care and Social Assistance (percent)",
         "short_name": "Jobs destruction by active business in Health Care and Social Assistance (percent)",
         "sources": [
@@ -4012,7 +4012,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Health Care and Social Assistance in percent",
         "long_name": "Jobs destruction by new business in Health Care and Social Assistance (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Health Care and Social Assistance (percent)",
         "short_name": "Jobs destruction by new business in Health Care and Social Assistance (percent)",
         "sources": [
@@ -4409,7 +4409,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Information in percent",
         "long_name": "Jobs creation by active business in Information (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Information (percent)",
         "short_name": "Jobs creation by active business in Information (percent)",
         "sources": [
@@ -4431,7 +4431,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Information in percent",
         "long_name": "Jobs creation by new business in Information (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Information (percent)",
         "short_name": "Jobs creation by new business in Information (percent)",
         "sources": [
@@ -4453,7 +4453,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Information in percent",
         "long_name": "Jobs destruction by active business in Information (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Information (percent)",
         "short_name": "Jobs destruction by active business in Information (percent)",
         "sources": [
@@ -4475,7 +4475,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Information in percent",
         "long_name": "Jobs destruction by new business in Information (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Information (percent)",
         "short_name": "Jobs destruction by new business in Information (percent)",
         "sources": [
@@ -4895,7 +4895,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Management of Companies and Enterprises in percent",
         "long_name": "Jobs creation by active business in Management of Companies and Enterprises (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Management of Companies and Enterprises (percent)",
         "short_name": "Jobs creation by active business in Management of Companies and Enterprises (percent)",
         "sources": [
@@ -4917,7 +4917,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Management of Companies and Enterprises in percent",
         "long_name": "Jobs creation by new business in Management of Companies and Enterprises (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Management of Companies and Enterprises (percent)",
         "short_name": "Jobs creation by new business in Management of Companies and Enterprises (percent)",
         "sources": [
@@ -4939,7 +4939,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Management of Companies and Enterprises in percent",
         "long_name": "Jobs destruction by active business in Management of Companies and Enterprises (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Management of Companies and Enterprises (percent)",
         "short_name": "Jobs destruction by active business in Management of Companies and Enterprises (percent)",
         "sources": [
@@ -4961,7 +4961,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Management of Companies and Enterprises in percent",
         "long_name": "Jobs destruction by new business in Management of Companies and Enterprises (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Management of Companies and Enterprises (percent)",
         "short_name": "Jobs destruction by new business in Management of Companies and Enterprises (percent)",
         "sources": [
@@ -5335,7 +5335,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Manufacturing in percent",
         "long_name": "Jobs creation by active business in Manufacturing (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Manufacturing (percent)",
         "short_name": "Jobs creation by active business in Manufacturing (percent)",
         "sources": [
@@ -5357,7 +5357,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Manufacturing in percent",
         "long_name": "Jobs creation by new business in Manufacturing (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Manufacturing (percent)",
         "short_name": "Jobs creation by new business in Manufacturing (percent)",
         "sources": [
@@ -5379,7 +5379,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Manufacturing in percent",
         "long_name": "Jobs destruction by active business in Manufacturing (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Manufacturing (percent)",
         "short_name": "Jobs destruction by active business in Manufacturing (percent)",
         "sources": [
@@ -5401,7 +5401,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Manufacturing in percent",
         "long_name": "Jobs destruction by new business in Manufacturing (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Manufacturing (percent)",
         "short_name": "Jobs destruction by new business in Manufacturing (percent)",
         "sources": [
@@ -5775,7 +5775,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Mining, Quarrying, and Oil and Gas Extraction in percent",
         "long_name": "Jobs creation by active business in Mining, Quarrying, and Oil and Gas Extraction (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Mining, Quarrying, and Oil and Gas Extraction (percent)",
         "short_name": "Jobs creation by active business in Mining, Quarrying, and Oil and Gas Extraction (percent)",
         "sources": [
@@ -5797,7 +5797,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Mining, Quarrying, and Oil and Gas Extraction in percent",
         "long_name": "Jobs creation by new business in Mining, Quarrying, and Oil and Gas Extraction (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Mining, Quarrying, and Oil and Gas Extraction (percent)",
         "short_name": "Jobs creation by new business in Mining, Quarrying, and Oil and Gas Extraction (percent)",
         "sources": [
@@ -5819,7 +5819,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Mining, Quarrying, and Oil and Gas Extraction in percent",
         "long_name": "Jobs destruction by active business in Mining, Quarrying, and Oil and Gas Extraction (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Mining, Quarrying, and Oil and Gas Extraction (percent)",
         "short_name": "Jobs destruction by active business in Mining, Quarrying, and Oil and Gas Extraction (percent)",
         "sources": [
@@ -5841,7 +5841,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Mining, Quarrying, and Oil and Gas Extraction in percent",
         "long_name": "Jobs destruction by new business in Mining, Quarrying, and Oil and Gas Extraction (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Mining, Quarrying, and Oil and Gas Extraction (percent)",
         "short_name": "Jobs destruction by new business in Mining, Quarrying, and Oil and Gas Extraction (percent)",
         "sources": [
@@ -6238,7 +6238,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Nonclassifiable Establishments in percent",
         "long_name": "Jobs creation by active business in Nonclassifiable Establishments (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Nonclassifiable Establishments (percent)",
         "short_name": "Jobs creation by active business in Nonclassifiable Establishments (percent)",
         "sources": [
@@ -6260,7 +6260,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Nonclassifiable Establishments in percent",
         "long_name": "Jobs creation by new business in Nonclassifiable Establishments (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Nonclassifiable Establishments (percent)",
         "short_name": "Jobs creation by new business in Nonclassifiable Establishments (percent)",
         "sources": [
@@ -6282,7 +6282,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Nonclassifiable Establishments in percent",
         "long_name": "Jobs destruction by active business in Nonclassifiable Establishments (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Nonclassifiable Establishments (percent)",
         "short_name": "Jobs destruction by active business in Nonclassifiable Establishments (percent)",
         "sources": [
@@ -6304,7 +6304,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Nonclassifiable Establishments in percent",
         "long_name": "Jobs destruction by new business in Nonclassifiable Establishments (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Nonclassifiable Establishments (percent)",
         "short_name": "Jobs destruction by new business in Nonclassifiable Establishments (percent)",
         "sources": [
@@ -6769,7 +6769,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Other Services (except Public Administration) in percent",
         "long_name": "Jobs creation by active business in Other Services (except Public Administration) (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Other Services (except Public Administration) (percent)",
         "short_name": "Jobs creation by active business in Other Services (except Public Administration) (percent)",
         "sources": [
@@ -6791,7 +6791,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Other Services (except Public Administration) in percent",
         "long_name": "Jobs creation by new business in Other Services (except Public Administration) (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Other Services (except Public Administration) (percent)",
         "short_name": "Jobs creation by new business in Other Services (except Public Administration) (percent)",
         "sources": [
@@ -6813,7 +6813,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Other Services (except Public Administration) in percent",
         "long_name": "Jobs destruction by active business in Other Services (except Public Administration) (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Other Services (except Public Administration) (percent)",
         "short_name": "Jobs destruction by active business in Other Services (except Public Administration) (percent)",
         "sources": [
@@ -6835,7 +6835,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Other Services (except Public Administration) in percent",
         "long_name": "Jobs destruction by new business in Other Services (except Public Administration) (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Other Services (except Public Administration) (percent)",
         "short_name": "Jobs destruction by new business in Other Services (except Public Administration) (percent)",
         "sources": [
@@ -7554,7 +7554,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Professional, Scientific, and Technical Services in percent",
         "long_name": "Jobs creation by active business in Professional, Scientific, and Technical Services (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Professional, Scientific, and Technical Services (percent)",
         "short_name": "Jobs creation by active business in Professional, Scientific, and Technical Services (percent)",
         "sources": [
@@ -7576,7 +7576,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Professional, Scientific, and Technical Services in percent",
         "long_name": "Jobs creation by new business in Professional, Scientific, and Technical Services (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Professional, Scientific, and Technical Services (percent)",
         "short_name": "Jobs creation by new business in Professional, Scientific, and Technical Services (percent)",
         "sources": [
@@ -7598,7 +7598,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Professional, Scientific, and Technical Services in percent",
         "long_name": "Jobs destruction by active business in Professional, Scientific, and Technical Services (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Professional, Scientific, and Technical Services (percent)",
         "short_name": "Jobs destruction by active business in Professional, Scientific, and Technical Services (percent)",
         "sources": [
@@ -7620,7 +7620,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Professional, Scientific, and Technical Services in percent",
         "long_name": "Jobs destruction by new business in Professional, Scientific, and Technical Services (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Professional, Scientific, and Technical Services (percent)",
         "short_name": "Jobs destruction by new business in Professional, Scientific, and Technical Services (percent)",
         "sources": [
@@ -7994,7 +7994,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Public Administration in percent",
         "long_name": "Jobs creation by active business in Public Administration (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Public Administration (percent)",
         "short_name": "Jobs creation by active business in Public Administration (percent)",
         "sources": [
@@ -8016,7 +8016,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Public Administration in percent",
         "long_name": "Jobs creation by new business in Public Administration (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Public Administration (percent)",
         "short_name": "Jobs creation by new business in Public Administration (percent)",
         "sources": [
@@ -8038,7 +8038,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Public Administration in percent",
         "long_name": "Jobs destruction by active business in Public Administration (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Public Administration (percent)",
         "short_name": "Jobs destruction by active business in Public Administration (percent)",
         "sources": [
@@ -8060,7 +8060,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Public Administration in percent",
         "long_name": "Jobs destruction by new business in Public Administration (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Public Administration (percent)",
         "short_name": "Jobs destruction by new business in Public Administration (percent)",
         "sources": [
@@ -8503,7 +8503,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Real Estate and Rental and Leasing in percent",
         "long_name": "Jobs creation by active business in Real Estate and Rental and Leasing (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Real Estate and Rental and Leasing (percent)",
         "short_name": "Jobs creation by active business in Real Estate and Rental and Leasing (percent)",
         "sources": [
@@ -8525,7 +8525,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Real Estate and Rental and Leasing in percent",
         "long_name": "Jobs creation by new business in Real Estate and Rental and Leasing (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Real Estate and Rental and Leasing (percent)",
         "short_name": "Jobs creation by new business in Real Estate and Rental and Leasing (percent)",
         "sources": [
@@ -8547,7 +8547,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Real Estate and Rental and Leasing in percent",
         "long_name": "Jobs destruction by active business in Real Estate and Rental and Leasing (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Real Estate and Rental and Leasing (percent)",
         "short_name": "Jobs destruction by active business in Real Estate and Rental and Leasing (percent)",
         "sources": [
@@ -8569,7 +8569,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Real Estate and Rental and Leasing in percent",
         "long_name": "Jobs destruction by new business in Real Estate and Rental and Leasing (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Real Estate and Rental and Leasing (percent)",
         "short_name": "Jobs destruction by new business in Real Estate and Rental and Leasing (percent)",
         "sources": [
@@ -8943,7 +8943,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Retail Trade in percent",
         "long_name": "Jobs creation by active business in Retail Trade (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Retail Trade (percent)",
         "short_name": "Jobs creation by active business in Retail Trade (percent)",
         "sources": [
@@ -8965,7 +8965,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Retail Trade in percent",
         "long_name": "Jobs creation by new business in Retail Trade (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Retail Trade (percent)",
         "short_name": "Jobs creation by new business in Retail Trade (percent)",
         "sources": [
@@ -8987,7 +8987,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Retail Trade in percent",
         "long_name": "Jobs destruction by active business in Retail Trade (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Retail Trade (percent)",
         "short_name": "Jobs destruction by active business in Retail Trade (percent)",
         "sources": [
@@ -9009,7 +9009,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Retail Trade in percent",
         "long_name": "Jobs destruction by new business in Retail Trade (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Retail Trade (percent)",
         "short_name": "Jobs destruction by new business in Retail Trade (percent)",
         "sources": [
@@ -9452,7 +9452,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Transportation and Warehousing in percent",
         "long_name": "Jobs creation by active business in Transportation and Warehousing (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Transportation and Warehousing (percent)",
         "short_name": "Jobs creation by active business in Transportation and Warehousing (percent)",
         "sources": [
@@ -9474,7 +9474,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Transportation and Warehousing in percent",
         "long_name": "Jobs creation by new business in Transportation and Warehousing (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Transportation and Warehousing (percent)",
         "short_name": "Jobs creation by new business in Transportation and Warehousing (percent)",
         "sources": [
@@ -9496,7 +9496,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Transportation and Warehousing in percent",
         "long_name": "Jobs destruction by active business in Transportation and Warehousing (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Transportation and Warehousing (percent)",
         "short_name": "Jobs destruction by active business in Transportation and Warehousing (percent)",
         "sources": [
@@ -9518,7 +9518,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Transportation and Warehousing in percent",
         "long_name": "Jobs destruction by new business in Transportation and Warehousing (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Transportation and Warehousing (percent)",
         "short_name": "Jobs destruction by new business in Transportation and Warehousing (percent)",
         "sources": [
@@ -9938,7 +9938,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Utilities in percent",
         "long_name": "Jobs creation by active business in Utilities (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Utilities (percent)",
         "short_name": "Jobs creation by active business in Utilities (percent)",
         "sources": [
@@ -9960,7 +9960,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Utilities in percent",
         "long_name": "Jobs creation by new business in Utilities (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Utilities (percent)",
         "short_name": "Jobs creation by new business in Utilities (percent)",
         "sources": [
@@ -9982,7 +9982,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Utilities in percent",
         "long_name": "Jobs destruction by active business in Utilities (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Utilities (percent)",
         "short_name": "Jobs destruction by active business in Utilities (percent)",
         "sources": [
@@ -10004,7 +10004,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Utilities in percent",
         "long_name": "Jobs destruction by new business in Utilities (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Utilities (percent)",
         "short_name": "Jobs destruction by new business in Utilities (percent)",
         "sources": [
@@ -10447,7 +10447,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses in Wholesale Trade in percent",
         "long_name": "Jobs creation by active business in Wholesale Trade (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses in Wholesale Trade (percent)",
         "short_name": "Jobs creation by active business in Wholesale Trade (percent)",
         "sources": [
@@ -10469,7 +10469,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses in Wholesale Trade in percent",
         "long_name": "Jobs creation by new business in Wholesale Trade (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses in Wholesale Trade (percent)",
         "short_name": "Jobs creation by new business in Wholesale Trade (percent)",
         "sources": [
@@ -10491,7 +10491,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active businesses in Wholesale Trade in percent",
         "long_name": "Jobs destruction by active business in Wholesale Trade (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active businesses in Wholesale Trade (percent)",
         "short_name": "Jobs destruction by active business in Wholesale Trade (percent)",
         "sources": [
@@ -10513,7 +10513,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by new businesses in Wholesale Trade in percent",
         "long_name": "Jobs destruction by new business in Wholesale Trade (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by new businesses in Wholesale Trade (percent)",
         "short_name": "Jobs destruction by new business in Wholesale Trade (percent)",
         "sources": [
@@ -11897,6 +11897,28 @@
         "type": "index",
         "unit": ""
     },
+    "fruit_treeNut_total_sales": {
+        "category": "Agriculture Industry",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total sales of fruits and treenuts within a given county",
+        "measure_type": "count",
+        "short_description": "Total sales of fruits and treenuts",
+        "short_name": "Total sales of fruits and treenuts",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Department of Agriculture National Agriculture Statistics Service",
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "Total sales of fruit and tree nuts to {features.name} is {value}.",
+        "type": "dollar",
+        "unit": "dollar"
+    },
     "gini_index": {
         "category": "Financial Well Being",
         "citations": "",
@@ -12976,7 +12998,7 @@
         "layer": "",
         "long_description": "Job created by active businesses owned by minority in percent",
         "long_name": "Job creation by active businesses owned by minority (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Job created by active businesses owned by minority (percent)",
         "short_name": "Job creation by active businesses owned by minority (percent)",
         "sources": [
@@ -12998,7 +13020,7 @@
         "layer": "",
         "long_description": "Job created by new businesses owned by minority in percent",
         "long_name": "Job creation by new businesses owned by minority (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Job created by new businesses owned by minority (percent)",
         "short_name": "Job creation by new businesses owned by minority (percent)",
         "sources": [
@@ -13020,7 +13042,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active minority owned businesses in percent",
         "long_name": "Job destruction by active minority owned businesses (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active minority owned businesses (percent)",
         "short_name": "Job destruction by active minority owned businesses (percent)",
         "sources": [
@@ -13042,7 +13064,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by exiting minority owned businesses in percent",
         "long_name": "Job destruction by exiting minority owned businesses (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by exiting minority owned businesses (percent)",
         "short_name": "Job destruction by exiting minority owned businesses (percent)",
         "sources": [
@@ -13574,7 +13596,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses not owned by minority in percent",
         "long_name": "Job creation by active businesses not owned by minority (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses not owned by minority (percent)",
         "short_name": "Job creation by active businesses not owned by minority (percent)",
         "sources": [
@@ -13596,7 +13618,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses not owned by minority in percent",
         "long_name": "Job creation by new businesses not owned by minority (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses not owned by minority (percent)",
         "short_name": "Job creation by new businesses not owned by minority (percent)",
         "sources": [
@@ -13618,7 +13640,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active non minority owned businesses in percent",
         "long_name": "Job destruction by active non minority owned businesses (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active non minority owned businesses (percent)",
         "short_name": "Job destruction by active non minority owned businesses (percent)",
         "sources": [
@@ -13640,7 +13662,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by exiting non minority owned businesses in percent",
         "long_name": "Job destruction by exiting non minority owned businesses (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by exiting non minority owned businesses (percent)",
         "short_name": "Job destruction by exiting non minority owned businesses (percent)",
         "sources": [
@@ -14408,7 +14430,7 @@
         "layer": "",
         "long_description": "Jobs created by active business (percent)",
         "long_name": "Job creation by active business (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active business (percent)",
         "short_name": "Job creation by active business (percent)",
         "sources": [
@@ -14430,7 +14452,7 @@
         "layer": "",
         "long_description": "Jobs created by new business (percent)",
         "long_name": "Job creation by new business (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new business (percent)",
         "short_name": "Job creation by new business (percent)",
         "sources": [
@@ -14452,7 +14474,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active business (percent)",
         "long_name": "Jobs destruction by active business (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active business (percent)",
         "short_name": "Jobs destruction by active business (percent)",
         "sources": [
@@ -14474,7 +14496,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by exiting business (percent)",
         "long_name": "Jobs destruction by exiting business (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by exiting business (percent)",
         "short_name": "Jobs destruction by exiting business (percent)",
         "sources": [
@@ -15995,6 +16017,160 @@
         "type": "count",
         "unit": ""
     },
+    "total_acres": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total acres used for agriculture within a given county",
+        "measure_type": "count",
+        "short_description": "Total acres in agriculture",
+        "short_name": "Total acres in agriculture",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "USDA NASS",
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "Total acres used for agriculture in {feature.name} is {value}",
+        "type": "count",
+        "unit": ""
+    },
+    "total_animalProducts_sales": {
+        "category": "Agriculture Industry",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total sales of animal products within a given county",
+        "measure_type": "count",
+        "short_description": "Total sales of animal products",
+        "short_name": "Total sales of animal products",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Department of Agriculture National Agriculture Statistics Service",
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "Total sales of animal products to {features.name} is {value}.",
+        "type": "dollar",
+        "unit": "dollar"
+    },
+    "total_animal_expense": {
+        "category": "Agriculture Industry",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "County's total expenses towards animal industry",
+        "measure_type": "count",
+        "short_description": "Total expenses towards animal industry",
+        "short_name": "Total expenses towards animal industry",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Department of Agriculture National Agriculture Statistics Service",
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "The overall expenses towards animals to {features.name} is {value}.",
+        "type": "dollar",
+        "unit": "dollar"
+    },
+    "total_calves_sales": {
+        "category": "Agriculture Industry",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total sales of calves within a given county",
+        "measure_type": "count",
+        "short_description": "Total sales of calves",
+        "short_name": "Total sales of calves",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Department of Agriculture National Agriculture Statistics Service",
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "Total sales of calves to {feature.name} is {value}.",
+        "type": "count",
+        "unit": ""
+    },
+    "total_commodity_sales": {
+        "category": "Agriculture Industry",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total sales of commodities within a given county",
+        "measure_type": "count",
+        "short_description": "Total sales of commodities",
+        "short_name": "Total sales of commodities",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Department of Agriculture National Agriculture Statistics Service",
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "Total sales of commodities to {feature.name} is {value}",
+        "type": "dollar",
+        "unit": "dollar"
+    },
+    "total_cropland_acres": {
+        "category": "Agriculture Industry",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total acerage used in agriculture for cropland",
+        "measure_type": "count",
+        "short_description": "Total acreage for cropland",
+        "short_name": "Total acreage for cropland",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Department of Agriculture National Agriculture Statistics Service",
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "The total acreage for cropland to {features.name} is {value}.",
+        "type": "count",
+        "unit": ""
+    },
+    "total_cropland_operations": {
+        "category": "Agriculture Industry",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Number of operations with land devoted to cropland growing",
+        "measure_type": "count",
+        "short_description": "Number of operations with cropland",
+        "short_name": "Number of operations with cropland",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Department of Agriculture National Agriculture Statistics Service",
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "The total number of operations with cropland to {features.name} is {value}.",
+        "type": "count",
+        "unit": ""
+    },
     "total_employment": {
         "category": "Business climate",
         "citations": "",
@@ -16039,6 +16215,28 @@
         "type": "count",
         "unit": ""
     },
+    "total_irrigatedCropland_acre": {
+        "category": "Agriculture Industry",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total acreage used in agriculture for irrigated cropland",
+        "measure_type": "count",
+        "short_description": "Total acreage for irrigated cropland",
+        "short_name": "Total acreage for irrigated cropland",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Department of Agriculture National Agriculture Statistics Service",
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "The total acreage for irrigated cropland to {features.name} is {value}.",
+        "type": "count",
+        "unit": ""
+    },
     "total_job_creation": {
         "category": "Business climate",
         "citations": "",
@@ -16080,6 +16278,28 @@
             }
         ],
         "statement": "",
+        "type": "count",
+        "unit": ""
+    },
+    "total_operations": {
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total operations used for agriculture within a given county",
+        "measure_type": "count",
+        "short_description": "Total operations in agriculture",
+        "short_name": "Total operations in agriculture",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "USDA NASS",
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "Total operations used for agriculture in {feature.name} is {value}",
         "type": "count",
         "unit": ""
     },

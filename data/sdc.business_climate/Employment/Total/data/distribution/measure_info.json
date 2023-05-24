@@ -117,7 +117,7 @@
         "layer": "",
         "long_description": "Jobs created by new business (percent)",
         "long_name": "Job creation by new business (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new business (percent)",
         "short_name": "Job creation by new business (percent)",
         "sources": [
@@ -139,7 +139,7 @@
         "layer": "",
         "long_description": "Jobs created by active business (percent)",
         "long_name": "Job creation by active business (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active business (percent)",
         "short_name": "Job creation by active business (percent)",
         "sources": [
@@ -249,7 +249,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by exiting business (percent)",
         "long_name": "Jobs destruction by exiting business (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by exiting business (percent)",
         "short_name": "Jobs destruction by exiting business (percent)",
         "sources": [
@@ -271,7 +271,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active business (percent)",
         "long_name": "Jobs destruction by active business (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active business (percent)",
         "short_name": "Jobs destruction by active business (percent)",
         "sources": [

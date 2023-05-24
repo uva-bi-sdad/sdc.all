@@ -117,7 +117,7 @@
         "layer": "",
         "long_description": "Job created by new businesses owned by minority in percent",
         "long_name": "Job creation by new businesses owned by minority (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Job created by new businesses owned by minority (percent)",
         "short_name": "Job creation by new businesses owned by minority (percent)",
         "sources": [
@@ -139,7 +139,7 @@
         "layer": "",
         "long_description": "Job created by active businesses owned by minority in percent",
         "long_name": "Job creation by active businesses owned by minority (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Job created by active businesses owned by minority (percent)",
         "short_name": "Job creation by active businesses owned by minority (percent)",
         "sources": [
@@ -249,7 +249,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by exiting minority owned businesses in percent",
         "long_name": "Job destruction by exiting minority owned businesses (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by exiting minority owned businesses (percent)",
         "short_name": "Job destruction by exiting minority owned businesses (percent)",
         "sources": [
@@ -271,7 +271,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active minority owned businesses in percent",
         "long_name": "Job destruction by active minority owned businesses (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active minority owned businesses (percent)",
         "short_name": "Job destruction by active minority owned businesses (percent)",
         "sources": [
@@ -403,7 +403,7 @@
         "layer": "",
         "long_description": "Jobs created by new businesses not owned by minority in percent",
         "long_name": "Job creation by new businesses not owned by minority (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by new businesses not owned by minority (percent)",
         "short_name": "Job creation by new businesses not owned by minority (percent)",
         "sources": [
@@ -425,7 +425,7 @@
         "layer": "",
         "long_description": "Jobs created by active businesses not owned by minority in percent",
         "long_name": "Job creation by active businesses not owned by minority (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs created by active businesses not owned by minority (percent)",
         "short_name": "Job creation by active businesses not owned by minority (percent)",
         "sources": [
@@ -535,7 +535,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by exiting non minority owned businesses in percent",
         "long_name": "Job destruction by exiting non minority owned businesses (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by exiting non minority owned businesses (percent)",
         "short_name": "Job destruction by exiting non minority owned businesses (percent)",
         "sources": [
@@ -557,7 +557,7 @@
         "layer": "",
         "long_description": "Jobs destroyed by active non minority owned businesses in percent",
         "long_name": "Job destruction by active non minority owned businesses (percent)",
-        "measure_type": "percentage",
+        "measure_type": "percent",
         "short_description": "Jobs destroyed by active non minority owned businesses (percent)",
         "short_name": "Job destruction by active non minority owned businesses (percent)",
         "sources": [
