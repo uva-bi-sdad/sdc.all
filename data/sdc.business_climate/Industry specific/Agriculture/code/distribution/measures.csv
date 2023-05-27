@@ -1,0 +1,13 @@
+search_term,measure
+"AG LAND, CROPLAND - ACRES",total_cropland_acres
+"AG LAND, IRRIGATED - ACRES",total_irrigatedCropland_acre
+"AG LAND, CROPLAND - NUMBER OF OPERATIONS",total_cropland_operations
+"ANIMAL TOTALS - EXPENSE, MEASURED IN $",total_animal_expense
+"FRUIT & TREE NUT TOTALS - SALES, MEASURED IN $",fruit_treeNut_total_sales
+"ANIMAL TOTALS, INCL PRODUCTS - SALES, MEASURED IN $",total_animalProducts_sales
+"CATTLE, INCL CALVES - SALES, MEASURED IN $",total_calves_sales
+"COMMODITY TOTALS - SALES, MEASURED IN $",total_commodity_sales
+"AG LAND, INCL BUILDINGS - ASSET VALUE, MEASURED IN $",total_farmValue
+"AG LAND, INCL BUILDINGS - ASSET VALUE, MEASURED IN $ / OPERATION",operation_farmValue
+AG LAND - ACRES,total_acres
+AG LAND - NUMBER OF OPERATIONS,total_operations

@@ -172,8 +172,52 @@
             }
         ],
         "statement": "Total sales of calves to {feature.name} is {value}.",
-        "type": "count",
-        "unit": ""
+        "type": "dollar",
+        "unit": "dollar"
+    },
+    "total_farmValue": {
+        "category": "Agriculture Industry",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total asset value of agriculture within a given county",
+        "measure_type": "count",
+        "short_description": "Asset value of agriculture",
+        "short_name": "Total sales of calves",
+        "sources": [
+            {
+                "name": "Department of Agriculture National Agriculture Statistics Service",
+                "date_accessed": 2023,
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "Total asset value of agriculture to {feature.name} is {value}.",
+        "type": "dollar",
+        "unit": "dollar"
+    },
+    "operation_farmValue": {
+        "category": "Agriculture Industry",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total asset value per operation within a given county",
+        "measure_type": "count",
+        "short_description": "Total asset value per operation",
+        "short_name": "Total sales of calves",
+        "sources": [
+            {
+                "name": "Department of Agriculture National Agriculture Statistics Service",
+                "date_accessed": 2023,
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "Total asset value per operation to {feature.name} is {value}.",
+        "type": "dollar",
+        "unit": "dollar"
     },
     "total_acres": {
         "category": "Business climate",
@@ -188,7 +232,7 @@
         "short_name": "Total acres in agriculture",
         "sources": [
             {
-                "name": "USDA NASS",
+                "name": "Department of Agriculture National Agriculture Statistics Service",
                 "date_accessed": 2023,
                 "url": "https://www.nass.usda.gov/"
             }
@@ -210,7 +254,7 @@
         "short_name": "Total operations in agriculture",
         "sources": [
             {
-                "name": "USDA NASS",
+                "name": "Department of Agriculture National Agriculture Statistics Service",
                 "date_accessed": 2023,
                 "url": "https://www.nass.usda.gov/"
             }

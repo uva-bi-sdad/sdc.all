@@ -13255,26 +13255,27 @@
         "unit": "dollar"
     },
     "morgage30": {
-        "category": "",
+        "category": "Housing",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "integer",
         "equity_category": "",
         "layer": "",
-        "long_description": "",
-        "long_name": "",
+        "long_description": "The number of owner-occupied households whose monthly housing costs from mortgage payments account for 30% or more of their household income in the past 12 months.",
+        "long_name": "Number of Owner-Occupied Households Whose Mortgage Payments are 30% or More of Their Household Income",
         "measure_type": "count",
-        "short_description": "",
-        "short_name": "",
+        "short_description": "The number of owner-occupied households whose mortgage payments are 30% or more of their household income.",
+        "short_name": "Cost-Burdened Households - Owner-Occupied & Mortgaged",
         "sources": [
             {
                 "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "location": "Table B25101",
+                "name": "American Community Survey (ACS)",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "",
+        "statement": "The number of owner-occupied households whose mortgage payments account for 30% or more of their household income in {features.name} is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "households"
     },
     "mrfei": {
         "category": "Nutrition and Food Security",
@@ -13911,49 +13912,50 @@
         "type": "index",
         "unit": ""
     },
-    "own_morgage": {
-        "category": "",
+    "operation_farmValue": {
+        "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "",
+        "equity_category": "Status",
         "layer": "",
         "long_description": "",
-        "long_name": "",
+        "long_name": "Total asset value per operation within a given county",
         "measure_type": "count",
-        "short_description": "",
-        "short_name": "",
+        "short_description": "Total asset value per operation",
+        "short_name": "Total sales of calves",
         "sources": [
             {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "date_accessed": 2023,
+                "name": "Department of Agriculture National Agriculture Statistics Service",
+                "url": "https://www.nass.usda.gov/"
             }
         ],
-        "statement": "",
-        "type": "count",
-        "unit": ""
+        "statement": "Total asset value per operation to {feature.name} is {value}.",
+        "type": "dollar",
+        "unit": "dollar"
     },
-    "owners": {
-        "category": "",
+    "own_morgage": {
+        "category": "Housing",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "integer",
         "equity_category": "",
         "layer": "",
-        "long_description": "",
-        "long_name": "",
+        "long_description": "The number of owner-occupied households with a mortgage in the past 12 months.",
+        "long_name": "Number of Owner-Occupied Households with a Mortgage",
         "measure_type": "count",
-        "short_description": "",
-        "short_name": "",
+        "short_description": "The number of owner-occupied households with a mortgage.",
+        "short_name": "Households - Owner-Occupied & Mortgaged",
         "sources": [
             {
                 "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "location": "Table B25101",
+                "name": "American Community Survey (ACS)",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "",
+        "statement": "The number of owner-occupied households with a mortgage in {features.name} is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "households"
     },
     "ped_3sfca": {
         "category": "Health",
@@ -14032,26 +14034,73 @@
         "unit": ""
     },
     "per_above30": {
-        "category": "",
+        "category": "Housing",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "",
         "layer": "",
-        "long_description": "",
-        "long_name": "",
+        "long_description": "The percentage of households whose monthly housing costs from mortgage payments or rent account for 30% or more of their household income in the past 12 months.",
+        "long_name": "Percentage of Households Whose Mortgage Payments or Rent Account for 30% or More of Their Household Income",
         "measure_type": "percent",
-        "short_description": "",
-        "short_name": "",
+        "short_description": "The percentage of households whose mortgage payments or rent account for 30% or more of their household income.",
+        "short_name": "Cost-Burdened Households - Owner-Occupied & Mortgaged, and Renter-Occupied",
         "sources": [
             {
                 "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "location": "Table B25074 and B25101",
+                "name": "American Community Survey (ACS)",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "",
+        "statement": "The percentage of households whose monthly housing costs from mortgage payments or rent account for 30% or more of their household income in {features.name} is {value}",
         "type": "percent",
-        "unit": ""
+        "unit": "households"
+    },
+    "per_mor_above30": {
+        "category": "Housing",
+        "citations": "",
+        "data_type": "decimal",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "The percentage of owner-occupied households whose monthly housing costs from mortgage payments account for 30% or more of their household income in the past 12 months.",
+        "long_name": "Percentage of Owner-Occupied Households Whose Mortgage Payments are 30% or More of Their Household Income",
+        "measure_type": "percent",
+        "short_description": "The percentage of owner-occupied households whose mortgage payments are 30% or more of their household income.",
+        "short_name": "Cost-Burdened Households - Owner-Occupied & Mortgaged",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "location": "Table B25101",
+                "name": "American Community Survey (ACS)",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The percentage of owner-occupied households whose monthly housing costs from mortgage payments account for 30% or more of their household income in {features.name} is {value}",
+        "type": "percent",
+        "unit": "households"
+    },
+    "per_rent_above30": {
+        "category": "Housing",
+        "citations": "",
+        "data_type": "decimal",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "The percentage of renter-occupied households whose monthly housing costs from rent account for 30% or more of their household income in the past 12 months.",
+        "long_name": "Percentage of Renter-Occupied Households Whose Rent Accounts for 30% or More of Their Household Income",
+        "measure_type": "percent",
+        "short_description": "The percentage of renter-occupied households whose rent accounts for 30% or more of their household income.",
+        "short_name": "Cost-Burdened Households - Renter-Occupied",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "location": "Table B25074",
+                "name": "American Community Survey (ACS)",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "The percentage of renter-occupied households whose monthly housing costs from rent account for 30% or more of their household income in {features.name} is {value}",
+        "type": "percent",
+        "unit": "households"
     },
     "perc_AAPI": {
         "category": "Demographics",
@@ -15408,48 +15457,50 @@
         "unit": ""
     },
     "rent30": {
-        "category": "",
+        "category": "Housing",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "integer",
         "equity_category": "",
         "layer": "",
-        "long_description": "",
-        "long_name": "",
+        "long_description": "The number of households whose gross rent accounts for 30% or more of their household income in the past 12 months.",
+        "long_name": "Number of Households Whose Gross Rent is 30% or More of Their Household Income",
         "measure_type": "count",
-        "short_description": "",
-        "short_name": "",
+        "short_description": "The number of households whose gross rent is 30% or more of their household income.",
+        "short_name": "Cost-Burdened Households - Renter-Occupied",
         "sources": [
             {
                 "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "location": "Table B25074",
+                "name": "American Community Survey (ACS)",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "",
+        "statement": "The number of households whose gross rent accounts for 30% or more of their household income in {features.name} is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "households"
     },
     "renters": {
-        "category": "",
+        "category": "Housing",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "integer",
         "equity_category": "",
         "layer": "",
-        "long_description": "",
-        "long_name": "",
+        "long_description": "The number of households that are occupied by a tenant who paid rent in the past 12 months.",
+        "long_name": "Number of Renter-Occupied Households",
         "measure_type": "count",
-        "short_description": "",
-        "short_name": "",
+        "short_description": "The number of renter-occupied households.",
+        "short_name": "Households - Renter-Occupied",
         "sources": [
             {
                 "date_accessed": 2022,
-                "name": "",
-                "url": ""
+                "location": "Table B25074",
+                "name": "American Community Survey (ACS)",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
-        "statement": "",
+        "statement": "The number of renter-occupied households in {features.name} is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "households"
     },
     "schools_2year_min_drivetime": {
         "category": "Education",
@@ -15973,50 +16024,6 @@
         "type": "drive time",
         "unit": ""
     },
-    "tot_above30": {
-        "category": "",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "",
-        "layer": "",
-        "long_description": "",
-        "long_name": "",
-        "measure_type": "count",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count",
-        "unit": ""
-    },
-    "tot_units": {
-        "category": "",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "",
-        "layer": "",
-        "long_description": "",
-        "long_name": "",
-        "measure_type": "count",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "count",
-        "unit": ""
-    },
     "total_acres": {
         "category": "Business climate",
         "citations": "",
@@ -16031,7 +16038,7 @@
         "sources": [
             {
                 "date_accessed": 2023,
-                "name": "USDA NASS",
+                "name": "Department of Agriculture National Agriculture Statistics Service",
                 "url": "https://www.nass.usda.gov/"
             }
         ],
@@ -16102,8 +16109,8 @@
             }
         ],
         "statement": "Total sales of calves to {feature.name} is {value}.",
-        "type": "count",
-        "unit": ""
+        "type": "dollar",
+        "unit": "dollar"
     },
     "total_commodity_sales": {
         "category": "Agriculture Industry",
@@ -16192,6 +16199,28 @@
         "statement": "",
         "type": "count",
         "unit": ""
+    },
+    "total_farmValue": {
+        "category": "Agriculture Industry",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "",
+        "long_name": "Total asset value of agriculture within a given county",
+        "measure_type": "count",
+        "short_description": "Asset value of agriculture",
+        "short_name": "Total sales of calves",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Department of Agriculture National Agriculture Statistics Service",
+                "url": "https://www.nass.usda.gov/"
+            }
+        ],
+        "statement": "Total asset value of agriculture to {feature.name} is {value}.",
+        "type": "dollar",
+        "unit": "dollar"
     },
     "total_hh": {
         "category": "Demographics",
@@ -16295,7 +16324,7 @@
         "sources": [
             {
                 "date_accessed": 2023,
-                "name": "USDA NASS",
+                "name": "Department of Agriculture National Agriculture Statistics Service",
                 "url": "https://www.nass.usda.gov/"
             }
         ],
