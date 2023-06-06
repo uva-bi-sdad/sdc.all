@@ -4,7 +4,7 @@
 va059_geo_ffxct_gis_2022_zip_codes <- sf::st_read("VA/Local Geographies/Fairfax County/Zip Codes/2022/data/original/va059_geo_ffxct_gis_2022_zip_codes.geojson")
 
 # Assign geoid
-va059_geo_ffxct_gis_2022_zip_codes$geoid <- va059_geo_ffxct_gis_2022_zip_codes$ZIPCODE
+va059_geo_ffxct_gis_2022_zip_codes$geoid <- paste0("51059_zc_", va059_geo_ffxct_gis_2022_zip_codes$ZIPCODE)
 
 # Assign region_type
 va059_geo_ffxct_gis_2022_zip_codes$region_type <- "zip code"

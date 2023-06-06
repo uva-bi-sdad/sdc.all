@@ -4,7 +4,7 @@
     "/home/runner/work/sdc.geographies_dev/sdc.geographies_dev/VA/State Geographies/Health Districts/2020/data/distribution/va_ct_to_hd_crosswalk.csv"
   ],
   "count": 182,
-  "utc_audited": "2023-05-12 19:27:28",
+  "utc_audited": "2023-05-15 12:56:41",
   "data": [
     {
       "name": "temp",
@@ -45,8 +45,8 @@
     {
       "name": "us_geo_census_cb_2010_counties.geojson",
       "path": "US/Census Geographies/County/2010/data/distribution/us_geo_census_cb_2010_counties.geojson",
-      "md5": "9fdb85e252e651e99532a8689d887996",
-      "size": 2871750
+      "md5": "34fd0379303289f042e587e8e8e8a1c7",
+      "size": 4956949
     },
     {
       "name": "README",
@@ -63,8 +63,8 @@
     {
       "name": "02_prepare.R",
       "path": "US/Census Geographies/County/2010/code/distribution/02_prepare.R",
-      "md5": "5be06e9f0d168ede31928adbf7e4d30d",
-      "size": 2159
+      "md5": "4c1d8fae2a95691409728dbfe4fee265",
+      "size": 2172
     },
     {
       "name": "temp",
@@ -345,8 +345,8 @@
     {
       "name": "ncr_geo_census_cb_2010_counties.geojson",
       "path": "NCR/Census Geographies/County/2010/data/distribution/ncr_geo_census_cb_2010_counties.geojson",
-      "md5": "60b3eef8517acf0f1b44a8e663f0f8d2",
-      "size": 16260
+      "md5": "24c29701713f9ca7245e2e7415175340",
+      "size": 23636
     },
     {
       "name": "README",
