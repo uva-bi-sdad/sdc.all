@@ -2,7 +2,7 @@
     "devices": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Accessibility",
         "layer": "",
         "long_description": "",
@@ -19,6 +19,6 @@
         ],
         "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
         "type": "count",
-        "unit": ""
+        "unit": "devices"
     }
 }

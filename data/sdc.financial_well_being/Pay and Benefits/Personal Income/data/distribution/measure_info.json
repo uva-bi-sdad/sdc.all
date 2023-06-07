@@ -2,12 +2,12 @@
     "earnings_per_job": {
         "category": "Employment/Workforce Development",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
         "long_description": "Earnings per job is calculated based on the GDP and Personal Income table from the Bureau of Economic Analysis.",
         "long_name": "Earnings per job",
-        "measure_type": "dollars",
+        "measure_type": "",
         "short_description": "Average of earnings per job.",
         "short_name": "Earnings per job",
         "sources": [
@@ -19,6 +19,6 @@
         ],
         "statement": "Earnings per job in {features.name} is {value}.",
         "type": "dollar",
-        "unit": ""
+        "unit": "dollars"
     }
 }

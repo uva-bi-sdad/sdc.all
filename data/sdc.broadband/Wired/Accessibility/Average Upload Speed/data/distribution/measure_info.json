@@ -2,12 +2,12 @@
     "avg_up_using_devices": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
         "long_description": "",
         "long_name": "Average Upload Speed",
-        "measure_type": "mean",
+        "measure_type": "speed",
         "short_description": "Average upload speed weighted by number of devices.",
         "short_name": "Average Upload Speed",
         "sources": [
@@ -19,6 +19,6 @@
         ],
         "statement": "The average upload speed is {value} in {features.name}.",
         "type": "internet speed",
-        "unit": ""
+        "unit": "MB/s"
     }
 }

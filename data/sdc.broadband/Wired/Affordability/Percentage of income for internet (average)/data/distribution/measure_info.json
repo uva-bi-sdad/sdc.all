@@ -2,7 +2,7 @@
     "perc_income_avg_nat_package": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Affordability",
         "layer": "",
         "long_description": "The national average price for internet ($64) as a percentage of median household income.",
@@ -24,6 +24,6 @@
         ],
         "statement": "The national average internet package costs {value} of the median household income in {features.name}.",
         "type": "percent",
-        "unit": ""
+        "unit": "dollars"
     }
 }

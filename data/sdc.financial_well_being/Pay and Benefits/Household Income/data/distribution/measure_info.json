@@ -2,7 +2,7 @@
     "median_household_income": {
         "category": "Financial Well Being",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
         "long_description": "Self-reported median household income in the past 12 months (in 2019 inflation adjusted-dollars. Based on the American Community Survey Table B19013 ACS 2015/2019 5-year estimates. The equation $a_{i} = b^\\frac{c}{d}$ was used.",
@@ -20,6 +20,6 @@
         ],
         "statement": "The median household income in {features.name} is {value} per year.",
         "type": "dollar",
-        "unit": ""
+        "unit": "dollars"
     }
 }

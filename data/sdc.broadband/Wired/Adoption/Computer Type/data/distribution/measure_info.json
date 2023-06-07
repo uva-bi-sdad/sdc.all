@@ -19,6 +19,6 @@
         ],
         "statement": "{value} of households in {features.name} do not have a computer or device.",
         "type": "percent",
-        "unit": ""
+        "unit": "households"
     }
 }

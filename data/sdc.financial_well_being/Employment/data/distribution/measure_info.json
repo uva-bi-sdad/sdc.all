@@ -2,7 +2,7 @@
     "emp_rate": {
         "category": "Employment/Workforce Development",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
         "long_description": "Population self-reported as employed as a percentage of total civilian workforce population. Based on American Community Survey Table B23025 ACS 2015/2019 5-year estimates.",
@@ -20,12 +20,12 @@
         ],
         "statement": "{value} of the population in {features.name} is employed.",
         "type": "percent",
-        "unit": ""
+        "unit": "people"
     },
     "job_participate_rate": {
         "category": "Employment/Workforce Development",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
         "long_description": "The percentage of individuals 16-64 years of age in the active labor force. The job particpation rate is often used by economists as an indicator of economic development and growth.",
@@ -43,6 +43,6 @@
         ],
         "statement": "{value} of the population in {features.name} is participating in the civilian job force.",
         "type": "percent",
-        "unit": ""
+        "unit": "people"
     }
 }

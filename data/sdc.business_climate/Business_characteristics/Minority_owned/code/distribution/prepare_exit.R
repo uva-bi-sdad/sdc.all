@@ -71,3 +71,33 @@ temp <- mi_ncr_features %>%
 savepath = "Business_characteristics/Minority_owned/data/distribution/"
 readr::write_csv(temp, xzfile(paste0(savepath,"ncr_bg_mi_",min(temp$year),max(temp$year),"_exit_by_minority.csv.xz"), compression = 9))
 
+
+
+####  upload data for Richmond city, Henrico county and Chesterfield county ####  ------------------------------------------------------------------------------------------------------------------
+
+# load the data
+uploadpath = "Microdata/Mergent_intellect/data/working/"
+mi_subva_features <-  read_csv(paste0(uploadpath,"mi_subva_features_bg.csv.xz"))
+
+# count the total number of business per block groups and year
+temp <- mi_subva_features %>%
+  mutate(type=if_else(minority==1,'minority_owned','non_minority_owned')) %>%
+  group_by(geoid,region_name,region_type,year,type) %>%
+  summarize(total_business=length(duns),
+            exit_business=sum(exit),
+            exit_rate=100*exit_business/total_business) %>%
+  select(geoid,region_name,region_type,year,type,exit_business,exit_rate) %>%
+  pivot_longer(!c('geoid','region_name','region_type','year','type'), names_to='measure', values_to='value') %>%
+  mutate(measure=paste0(type,'_',measure),
+         measure_type = case_when(
+           grepl('exit_rate',measure)==T ~ "percentage",
+           grepl('exit_business',measure)==T ~ "count"),
+         MOE='') %>%
+  ungroup() %>%
+  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
+
+
+# save the data
+savepath = "Business_characteristics/Minority_owned/data/distribution/"
+readr::write_csv(temp, xzfile(paste0(savepath,"va_bg_mi_",min(temp$year),max(temp$year),"_exit_by_minority.csv.xz"), compression = 9))
+

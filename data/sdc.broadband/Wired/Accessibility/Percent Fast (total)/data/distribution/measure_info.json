@@ -2,7 +2,7 @@
     "perc_total_100_20_using_devices": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
         "long_description": "",
@@ -19,6 +19,6 @@
         ],
         "statement": "{value} of the total population in {features.name} has a fast internet speed.",
         "type": "percent",
-        "unit": ""
+        "unit": "people"
     }
 }

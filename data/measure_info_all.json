@@ -11065,7 +11065,7 @@
     "avg_down_using_devices": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
         "long_description": "",
@@ -11082,7 +11082,7 @@
         ],
         "statement": "The average download speed is {value} in {features.name}.",
         "type": "internet speed",
-        "unit": ""
+        "unit": "MB/s"
     },
     "avg_monthly_rate": {
         "category": "Behavioral Health, Substance Use Disorder and Recovery",
@@ -11109,12 +11109,12 @@
     "avg_up_using_devices": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
         "long_description": "",
         "long_name": "Average Upload Speed",
-        "measure_type": "mean",
+        "measure_type": "speed",
         "short_description": "Average upload speed weighted by number of devices.",
         "short_name": "Average Upload Speed",
         "sources": [
@@ -11126,7 +11126,7 @@
         ],
         "statement": "The average upload speed is {value} in {features.name}.",
         "type": "internet speed",
-        "unit": ""
+        "unit": "MB/s"
     },
     "business_create_job": {
         "category": "Business climate",
@@ -11608,7 +11608,7 @@
     "devices": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Accessibility",
         "layer": "",
         "long_description": "",
@@ -11625,17 +11625,17 @@
         ],
         "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
         "type": "count",
-        "unit": ""
+        "unit": "devices"
     },
     "earnings_per_job": {
         "category": "Employment/Workforce Development",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
         "long_description": "Earnings per job is calculated based on the GDP and Personal Income table from the Bureau of Economic Analysis.",
         "long_name": "Earnings per job",
-        "measure_type": "dollars",
+        "measure_type": "",
         "short_description": "Average of earnings per job.",
         "short_name": "Earnings per job",
         "sources": [
@@ -11647,7 +11647,7 @@
         ],
         "statement": "Earnings per job in {features.name} is {value}.",
         "type": "dollar",
-        "unit": ""
+        "unit": "dollars"
     },
     "economic_opportunity_indicator": {
         "category": "Health Opportunity Index",
@@ -11696,7 +11696,7 @@
     "emp_rate": {
         "category": "Employment/Workforce Development",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
         "long_description": "Population self-reported as employed as a percentage of total civilian workforce population. Based on American Community Survey Table B23025 ACS 2015/2019 5-year estimates.",
@@ -11714,7 +11714,7 @@
         ],
         "statement": "{value} of the population in {features.name} is employed.",
         "type": "percent",
-        "unit": ""
+        "unit": "people"
     },
     "employment_access_indicator": {
         "category": "Health Opportunity Index",
@@ -11922,7 +11922,7 @@
     "gini_index": {
         "category": "Financial Well Being",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "",
         "layer": "",
         "long_description": "The Gini Index is a summary measure of income inequality. The Gini coefficient incorporates the detailed shares data into a single statistic, which summarizes the dispersion of income across the entire income distribution. The Gini coefficient ranges from 0, indicating perfect equality (where everyone receives an equal share), to 1, perfect inequality (where only one recipient or group of recipients receives all the income). The Gini is based on the difference between the Lorenz curve (the observed cumulative income distribution) and the notion of a perfectly equal income distribution.",
@@ -12542,7 +12542,7 @@
     "job_participate_rate": {
         "category": "Employment/Workforce Development",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
         "long_description": "The percentage of individuals 16-64 years of age in the active labor force. The job particpation rate is often used by economists as an indicator of economic development and growth.",
@@ -12560,7 +12560,7 @@
         ],
         "statement": "{value} of the population in {features.name} is participating in the civilian job force.",
         "type": "percent",
-        "unit": ""
+        "unit": "people"
     },
     "job_participation_indicator": {
         "category": "Health Opportunity Index",
@@ -12633,7 +12633,7 @@
     "median_household_income": {
         "category": "Financial Well Being",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
         "long_description": "Self-reported median household income in the past 12 months (in 2019 inflation adjusted-dollars. Based on the American Community Survey Table B19013 ACS 2015/2019 5-year estimates. The equation $a_{i} = b^\\frac{c}{d}$ was used.",
@@ -12651,7 +12651,7 @@
         ],
         "statement": "The median household income in {features.name} is {value} per year.",
         "type": "dollar",
-        "unit": ""
+        "unit": "dollars"
     },
     "median_read_pass_rate": {
         "category": "Education",
@@ -13147,12 +13147,12 @@
     "monthly_rent_0br": {
         "category": "Housing",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "",
         "layer": "",
         "long_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.  FMRs are estimated by HUD for metropolitan areas and nonmetropolitan counties.  We used HUD data at the ZIP Code and county levels to compute county and census tract level FMRs.",
         "long_name": "0 Bedroom Dwelling Fair Market Rent",
-        "measure_type": "count",
+        "measure_type": "cost",
         "short_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.",
         "short_name": "0 Bedroom Dwelling Fair Market Rent",
         "sources": [
@@ -13164,17 +13164,17 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a zero bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollar"
+        "unit": "dollars"
     },
     "monthly_rent_1br": {
         "category": "Housing",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "",
         "layer": "",
         "long_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.  FMRs are estimated by HUD for metropolitan areas and nonmetropolitan counties.  We used HUD data at the ZIP Code and county levels to compute county and census tract level FMRs.",
         "long_name": "1 Bedroom Dwelling Fair Market Rent",
-        "measure_type": "count",
+        "measure_type": "cost",
         "short_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.",
         "short_name": "1 Bedroom Dwelling Fair Market Rent",
         "sources": [
@@ -13186,17 +13186,17 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a one bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollar"
+        "unit": "dollars"
     },
     "monthly_rent_2br": {
         "category": "Housing",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "",
         "layer": "",
         "long_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.  FMRs are estimated by HUD for metropolitan areas and nonmetropolitan counties.  We used HUD data at the ZIP Code and county levels to compute county and census tract level FMRs.",
         "long_name": "2 Bedroom Dwelling Fair Market Rent",
-        "measure_type": "count",
+        "measure_type": "cost",
         "short_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.",
         "short_name": "2 Bedroom Dwelling Fair Market Rent",
         "sources": [
@@ -13208,17 +13208,17 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a two bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollar"
+        "unit": "dollars"
     },
     "monthly_rent_3br": {
         "category": "Housing",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "",
         "layer": "",
         "long_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.  FMRs are estimated by HUD for metropolitan areas and nonmetropolitan counties.  We used HUD data at the ZIP Code and county levels to compute county and census tract level FMRs.",
         "long_name": "3 Bedroom Dwelling Fair Market Rent",
-        "measure_type": "count",
+        "measure_type": "cost",
         "short_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.",
         "short_name": "3 Bedroom Dwelling Fair Market Rent",
         "sources": [
@@ -13230,17 +13230,17 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a three bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollar"
+        "unit": "dollars"
     },
     "monthly_rent_4br": {
         "category": "Housing",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "",
         "layer": "",
         "long_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.  FMRs are estimated by HUD for metropolitan areas and nonmetropolitan counties.  We used HUD data at the ZIP Code and county levels to compute county and census tract level FMRs.",
         "long_name": "4 Bedroom Dwelling Fair Market Rent",
-        "measure_type": "count",
+        "measure_type": "cost",
         "short_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.",
         "short_name": "4 Bedroom Dwelling Fair Market Rent",
         "sources": [
@@ -13252,7 +13252,7 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a four bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollar"
+        "unit": "dollars"
     },
     "morgage30": {
         "category": "Housing",
@@ -14283,7 +14283,7 @@
     "perc_hh_with_broadband": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
         "long_description": "Percentage of households self-reported to have a broadband internet connection. Broadband internet is defined as any type of internet other than a dial-up. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
@@ -14300,12 +14300,12 @@
         ],
         "statement": "{value} of households in {features.name} have a broadband connection.",
         "type": "percent",
-        "unit": ""
+        "unit": "households"
     },
     "perc_hh_with_cable_fiber_dsl": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
         "long_description": "Percentage of households self-reported to have a high speed internet service. A high speed internet service is defined as a cable, fiber optic, or DSL internet connection. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
@@ -14322,7 +14322,7 @@
         ],
         "statement": "{value} of households in {features.name} have a cable, fiber optic, or DSL internet connection.",
         "type": "percent",
-        "unit": ""
+        "unit": "households"
     },
     "perc_hh_without_compdev": {
         "category": "Broadband",
@@ -14344,12 +14344,12 @@
         ],
         "statement": "{value} of households in {features.name} do not have a computer or device.",
         "type": "percent",
-        "unit": ""
+        "unit": "households"
     },
     "perc_hh_without_internet": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
         "long_description": "Percentage of households self-reported to not have internet access at home. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
@@ -14366,7 +14366,7 @@
         ],
         "statement": "{value} of households in {features.name} do not have internet access.",
         "type": "percent",
-        "unit": ""
+        "unit": "households"
     },
     "perc_hispanic_or_latino": {
         "category": "Demographics",
@@ -14393,7 +14393,7 @@
     "perc_income_avg_nat_package": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Affordability",
         "layer": "",
         "long_description": "The national average price for internet ($64) as a percentage of median household income.",
@@ -14415,12 +14415,12 @@
         ],
         "statement": "The national average internet package costs {value} of the median household income in {features.name}.",
         "type": "percent",
-        "unit": ""
+        "unit": "dollars"
     },
     "perc_income_min_price_100": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Affordability",
         "layer": "",
         "long_description": "The minimum price for fast internet (100 MB/s upload) as a percentage of median household income.",
@@ -14442,7 +14442,7 @@
         ],
         "statement": "Fast internet costs {value} of the median household income in {features.name}.",
         "type": "percent",
-        "unit": ""
+        "unit": "dollars"
     },
     "perc_income_min_price_25": {
         "category": "Broadband",
@@ -14783,7 +14783,7 @@
     "perc_total_100_20_using_devices": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
         "long_description": "",
@@ -14800,12 +14800,12 @@
         ],
         "statement": "{value} of the total population in {features.name} has a fast internet speed.",
         "type": "percent",
-        "unit": ""
+        "unit": "people"
     },
     "perc_total_25_3_using_devices": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
         "long_description": "",
@@ -14822,7 +14822,7 @@
         ],
         "statement": "{value} of the total population in {features.name} has a good internet speed.",
         "type": "percent",
-        "unit": ""
+        "unit": "people"
     },
     "perc_two_or_more": {
         "category": "Demographics",
@@ -14871,7 +14871,7 @@
     "perc_w_int_100_20_using_devices": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
         "long_description": "",
@@ -14888,7 +14888,7 @@
         ],
         "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
         "type": "percent",
-        "unit": ""
+        "unit": "people"
     },
     "perc_w_int_25_3_using_devices": {
         "category": "Broadband",

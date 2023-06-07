@@ -2,12 +2,12 @@
     "monthly_rent_0br": {
         "category": "Housing",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "",
         "layer": "",
         "long_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.  FMRs are estimated by HUD for metropolitan areas and nonmetropolitan counties.  We used HUD data at the ZIP Code and county levels to compute county and census tract level FMRs.",
         "long_name": "0 Bedroom Dwelling Fair Market Rent",
-        "measure_type": "count",
+        "measure_type": "cost",
         "short_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.",
         "short_name": "0 Bedroom Dwelling Fair Market Rent",
         "sources": [
@@ -19,17 +19,17 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a zero bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollar"
+        "unit": "dollars"
     },
     "monthly_rent_1br": {
         "category": "Housing",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "",
         "layer": "",
         "long_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.  FMRs are estimated by HUD for metropolitan areas and nonmetropolitan counties.  We used HUD data at the ZIP Code and county levels to compute county and census tract level FMRs.",
         "long_name": "1 Bedroom Dwelling Fair Market Rent",
-        "measure_type": "count",
+        "measure_type": "cost",
         "short_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.",
         "short_name": "1 Bedroom Dwelling Fair Market Rent",
         "sources": [
@@ -41,17 +41,17 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a one bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollar"
+        "unit": "dollars"
     },
     "monthly_rent_2br": {
         "category": "Housing",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "",
         "layer": "",
         "long_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.  FMRs are estimated by HUD for metropolitan areas and nonmetropolitan counties.  We used HUD data at the ZIP Code and county levels to compute county and census tract level FMRs.",
         "long_name": "2 Bedroom Dwelling Fair Market Rent",
-        "measure_type": "count",
+        "measure_type": "cost",
         "short_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.",
         "short_name": "2 Bedroom Dwelling Fair Market Rent",
         "sources": [
@@ -63,17 +63,17 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a two bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollar"
+        "unit": "dollars"
     },
         "monthly_rent_3br": {
         "category": "Housing",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "",
         "layer": "",
         "long_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.  FMRs are estimated by HUD for metropolitan areas and nonmetropolitan counties.  We used HUD data at the ZIP Code and county levels to compute county and census tract level FMRs.",
         "long_name": "3 Bedroom Dwelling Fair Market Rent",
-        "measure_type": "count",
+        "measure_type": "cost",
         "short_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.",
         "short_name": "3 Bedroom Dwelling Fair Market Rent",
         "sources": [
@@ -85,17 +85,17 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a three bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollar"
+        "unit": "dollars"
     },
         "monthly_rent_4br": {
         "category": "Housing",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "",
         "layer": "",
         "long_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.  FMRs are estimated by HUD for metropolitan areas and nonmetropolitan counties.  We used HUD data at the ZIP Code and county levels to compute county and census tract level FMRs.",
         "long_name": "4 Bedroom Dwelling Fair Market Rent",
-        "measure_type": "count",
+        "measure_type": "cost",
         "short_description": "The Fair Market Rent (FMR) is the 40th percentile of rents.",
         "short_name": "4 Bedroom Dwelling Fair Market Rent",
         "sources": [
@@ -107,6 +107,6 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a four bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollar"
+        "unit": "dollars"
     }
 }

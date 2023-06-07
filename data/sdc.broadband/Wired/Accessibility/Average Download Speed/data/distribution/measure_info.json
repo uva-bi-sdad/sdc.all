@@ -2,7 +2,7 @@
     "avg_down_using_devices": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
         "long_description": "",
@@ -19,6 +19,6 @@
         ],
         "statement": "The average download speed is {value} in {features.name}.",
         "type": "internet speed",
-        "unit": ""
+        "unit": "MB/s"
     }
 }

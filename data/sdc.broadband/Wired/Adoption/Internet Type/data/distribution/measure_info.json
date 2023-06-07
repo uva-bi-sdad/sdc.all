@@ -2,7 +2,7 @@
     "perc_hh_with_broadband": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
         "long_description": "Percentage of households self-reported to have a broadband internet connection. Broadband internet is defined as any type of internet other than a dial-up. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
@@ -19,12 +19,12 @@
         ],
         "statement": "{value} of households in {features.name} have a broadband connection.",
         "type": "percent",
-        "unit": ""
+        "unit": "households"
     },
     "perc_hh_with_cable_fiber_dsl": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
         "long_description": "Percentage of households self-reported to have a high speed internet service. A high speed internet service is defined as a cable, fiber optic, or DSL internet connection. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
@@ -41,12 +41,12 @@
         ],
         "statement": "{value} of households in {features.name} have a cable, fiber optic, or DSL internet connection.",
         "type": "percent",
-        "unit": ""
+        "unit": "households"
     },
     "perc_hh_without_internet": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
         "long_description": "Percentage of households self-reported to not have internet access at home. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
@@ -63,6 +63,6 @@
         ],
         "statement": "{value} of households in {features.name} do not have internet access.",
         "type": "percent",
-        "unit": ""
+        "unit": "households"
     }
 }
