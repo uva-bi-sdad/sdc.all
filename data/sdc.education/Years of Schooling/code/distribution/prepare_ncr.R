@@ -1,11 +1,15 @@
 library(data.table)
+library(micropan)
 
 dat <- fread(input = "Years of Schooling/data/working/ncr_tr_acs5_2017_2021_years_of_schooling.csv")
 dat20172019 <- dat[year %in% c(2017, 2018, 2019), .(geoid = as.character(geoid), year, measure, measure_type = "index", value)]
 dat20202021 <- dat[year %in% c(2020, 2021), .(geoid = as.character(geoid), year, measure, measure_type = "index", value)]
 
 # geographies
-geo_names <- fread("https://raw.githubusercontent.com/uva-bi-sdad/sdc.metadata/master/geographies.csv")
+download.file("https://github.com/uva-bi-sdad/sdc.geographies/raw/main/docs/distribution/geographies_metadata.csv.xz", "Years of Schooling/data/working/geographies_metadata.csv.xz")
+xzuncompress("Years of Schooling/data/working/geographies_metadata.csv.xz")
+
+geo_names <- fread("Years of Schooling/data/working/geographies_metadata.csv")
 geo_names <- geo_names[!region_name %like% "District Of Columbia" & 
                          !region_name %like% "Manassas Park city" & 
                          !region_name %like% "Fairfax city" &

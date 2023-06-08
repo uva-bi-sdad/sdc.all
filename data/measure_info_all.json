@@ -14447,7 +14447,7 @@
     "perc_income_min_price_25": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Affordability",
         "layer": "",
         "long_description": "The minimum price for good internet (25 MB/s upload) as a percentage of median household income.",
@@ -14469,7 +14469,7 @@
         ],
         "statement": "Good internet costs {value} of the median household income in {features.name}.",
         "type": "percent",
-        "unit": ""
+        "unit": "dollars"
     },
     "perc_job_creation_active": {
         "category": "Business climate",
@@ -14893,7 +14893,7 @@
     "perc_w_int_25_3_using_devices": {
         "category": "Broadband",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
         "long_description": "",
@@ -14910,7 +14910,7 @@
         ],
         "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
         "type": "percent",
-        "unit": ""
+        "unit": "people"
     },
     "perc_wht_alone": {
         "category": "Demographics",

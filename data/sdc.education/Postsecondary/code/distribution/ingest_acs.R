@@ -2,13 +2,16 @@ base_dir <- "Postsecondary/data"
 dir.create(paste0(base_dir, "/original/reference_shapes"), FALSE, TRUE)
 
 # get health district associations
-va_id_map <- jsonlite::read_json("https://uva-bi-sdad.github.io/community/dist/shapes/VA/entity_info.json")
+districts <- read.csv(paste0(
+  "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/",
+  "VA/State%20Geographies/Health%20Districts/2020/data/distribution/va_ct_to_hd_crosswalk.csv"
+))
 county_districts <- c(
-  unlist(lapply(va_id_map$county, "[[", "district")),
+  structure(districts$hd_geoid, names = districts$ct_geoid),
   "11001" = "11_hd_01", "24017" = "24_hd_01", "24021" = "24_hd_01",
   "24031" = "24_hd_01", "24033" = "24_hd_01"
 )
-missing_districts <- county_districts[!county_districts %in% names(va_id_map$district)]
+missing_districts <- county_districts[!county_districts %in% districts$hd_geoid]
 names(missing_districts) <- missing_districts
 
 states <- c("DC", "MD", "VA")

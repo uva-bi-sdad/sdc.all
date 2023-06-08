@@ -9,8 +9,11 @@ year <- 2021
 states <- c("DC", "DE", "KY", "MD", "NC", "TN", "VA", "WV")
 
 # get health district associations
-va_id_map <- jsonlite::read_json("https://uva-bi-sdad.github.io/community/dist/shapes/VA/entity_info.json")
-county_districts <- unlist(lapply(va_id_map$county, "[[", "district"))
+districts <- read.csv(paste0(
+  "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/",
+  "VA/State%20Geographies/Health%20Districts/2020/data/distribution/va_ct_to_hd_crosswalk.csv"
+))
+county_districts <- structure(districts$hd_geoid, names = districts$ct_geoid)
 
 # download data
 locations_file <- paste0(dir, "/working/locations_", year, ".csv")

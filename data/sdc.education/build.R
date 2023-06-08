@@ -8,9 +8,12 @@ entities_file <- "../entities.rds"
 if (file.exists(entities_file)) {
   entities <- readRDS(entities_file)
 } else {
-  entities <- vroom::vroom(
-    "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/geographies_metadata.csv"
-  )
+  file <- tempfile(fileext = ".csv.xz")
+  download.file(paste0(
+    "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/",
+    "docs/distribution/geographies_metadata.csv.xz"
+  ), file)
+  entities <- vroom::vroom(file)
   entities <- entities[!duplicated(entities$geoid), c("geoid", "region_type")]
   saveRDS(entities, entities_file, compress = "xz")
 }
