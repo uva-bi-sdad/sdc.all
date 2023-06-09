@@ -37,6 +37,39 @@ readr::write_csv(temp, xzfile(paste0(savepath,"va059_bg_mi_",min(temp$year),max(
 
 
 
+# aggregate the data at the tract level and save -----------
+temp1 <-  mi_fairfax_features %>%
+  mutate(geoid=substr(geoid,1,11)) %>%
+  group_by(geoid,year,minority) %>%
+  summarize(type=if_else(minority==1,'minority_owned','non_minority_owned'),
+            measure=paste0(type,'_total_employment'),
+            value=sum(employment, na.rm=T)) %>%
+  mutate(measure_type='count',
+         MOE='') %>%
+  ungroup() %>%
+  select(geoid,year,measure,value,measure_type,MOE)
+
+# save
+readr::write_csv(temp1, xzfile(paste0(savepath,"va059_tr_mi_",min(temp1$year),max(temp1$year),"_total_employment_by_minority.csv.xz"), compression = 9))
+
+
+# aggregate the data at the county level and save ------------------
+temp2 <-  mi_fairfax_features %>%
+  mutate(geoid=substr(geoid,1,5)) %>%
+  group_by(geoid,year,minority) %>%
+  summarize(type=if_else(minority==1,'minority_owned','non_minority_owned'),
+            measure=paste0(type,'_total_employment'),
+            value=sum(employment, na.rm=T)) %>%
+  mutate(measure_type='count',
+         MOE='') %>%
+  ungroup() %>%
+  select(geoid,year,measure,value,measure_type,MOE)
+
+# save
+readr::write_csv(temp2, xzfile(paste0(savepath,"va059_ct_mi_",min(temp2$year),max(temp2$year),"_total_employment_by_minority.csv.xz"), compression = 9))
+
+
+
 
 ####  upload data for ncr ####  ------------------------------------------------------------------------------------------------------------------
 

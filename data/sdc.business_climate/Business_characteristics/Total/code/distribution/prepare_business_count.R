@@ -34,6 +34,35 @@ savepath = "Business_characteristics/Total/data/distribution/"
 readr::write_csv(temp, xzfile(paste0(savepath,"va059_bg_mi_",min(temp$year),max(temp$year),"_number_business.csv.xz"), compression = 9))
 
 
+# aggregate the data at the tract level and save -----------
+temp1 <-  mi_fairfax_features %>%
+  mutate(geoid=substr(geoid,1,11)) %>%
+  group_by(geoid,year) %>%
+  summarize(measure='number_business',
+            value=length(duns)) %>%
+  mutate(measure_type='count',
+         MOE='') %>%
+  ungroup() %>%
+  select(geoid,year,measure,value,measure_type,MOE)
+
+# save
+readr::write_csv(temp1, xzfile(paste0(savepath,"va059_tr_mi_",min(temp1$year),max(temp1$year),"_number_business.csv.xz"), compression = 9))
+
+
+# aggregate the data at the county level and save ------------------
+temp2 <-  mi_fairfax_features %>%
+  mutate(geoid=substr(geoid,1,5)) %>%
+  group_by(geoid,year) %>%
+  summarize(measure='number_business',
+            value=length(duns)) %>%
+  mutate(measure_type='count',
+         MOE='') %>%
+  ungroup() %>%
+  select(geoid,year,measure,value,measure_type,MOE)
+
+# save
+readr::write_csv(temp2, xzfile(paste0(savepath,"va059_ct_mi_",min(temp2$year),max(temp2$year),"_number_business.csv.xz"), compression = 9))
+
 
 
 
@@ -58,6 +87,38 @@ savepath = "Business_characteristics/Total/data/distribution/"
 readr::write_csv(temp, xzfile(paste0(savepath,"ncr_bg_mi_",min(temp$year),max(temp$year),"_number_business.csv.xz"), compression = 9))
 
 
+# aggregate the data at the tract level and save -----------
+temp1 <-  mi_ncr_features %>%
+  mutate(geoid=substr(geoid,1,11)) %>%
+  group_by(geoid,year) %>%
+  summarize(measure='number_business',
+            value=length(duns)) %>%
+  mutate(measure_type='count',
+         MOE='') %>%
+  ungroup() %>%
+  select(geoid,year,measure,value,measure_type,MOE)
+
+# save
+readr::write_csv(temp1, xzfile(paste0(savepath,"ncr_tr_mi_",min(temp1$year),max(temp1$year),"_number_business.csv.xz"), compression = 9))
+
+
+# aggregate the data at the county level and save ------------------
+temp2 <-  mi_ncr_features %>%
+  mutate(geoid=substr(geoid,1,5)) %>%
+  group_by(geoid,year) %>%
+  summarize(measure='number_business',
+            value=length(duns)) %>%
+  mutate(measure_type='count',
+         MOE='') %>%
+  ungroup() %>%
+  select(geoid,year,measure,value,measure_type,MOE)
+
+# save
+readr::write_csv(temp2, xzfile(paste0(savepath,"ncr_ct_mi_",min(temp2$year),max(temp2$year),"_number_business.csv.xz"), compression = 9))
+
+
+
+
 
 ####  upload data for Richmond city, Henrico county and Chesterfield county ####  ------------------------------------------------------------------------------------------------------------------
 
@@ -79,5 +140,36 @@ temp <- mi_subva_features %>%
 # save the data
 savepath = "Business_characteristics/Total/data/distribution/"
 readr::write_csv(temp, xzfile(paste0(savepath,"va_bg_mi_",min(temp$year),max(temp$year),"_number_business.csv.xz"), compression = 9))
+
+
+# aggregate the data at the tract level and save -----------
+temp1 <-  mi_subva_features %>%
+  mutate(geoid=substr(geoid,1,11)) %>%
+  group_by(geoid,year) %>%
+  summarize(measure='number_business',
+            value=length(duns)) %>%
+  mutate(measure_type='count',
+         MOE='') %>%
+  ungroup() %>%
+  select(geoid,year,measure,value,measure_type,MOE)
+
+# save
+readr::write_csv(temp1, xzfile(paste0(savepath,"va_tr_mi_",min(temp1$year),max(temp1$year),"_number_business.csv.xz"), compression = 9))
+
+
+# aggregate the data at the county level and save ------------------
+temp2 <-  mi_subva_features %>%
+  mutate(geoid=substr(geoid,1,5)) %>%
+  group_by(geoid,year) %>%
+  summarize(measure='number_business',
+            value=length(duns)) %>%
+  mutate(measure_type='count',
+         MOE='') %>%
+  ungroup() %>%
+  select(geoid,year,measure,value,measure_type,MOE)
+
+# save
+readr::write_csv(temp2, xzfile(paste0(savepath,"va_ct_mi_",min(temp2$year),max(temp2$year),"_number_business.csv.xz"), compression = 9))
+
 
 
