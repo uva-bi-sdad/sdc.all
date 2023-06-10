@@ -7,7 +7,7 @@
                 </p>
                 </head>
                 <body>
-                    Last updated: 2023-06-09 04:06:34
+                    Last updated: 2023-06-10 04:06:38
                     <h3> sdc.transportation </h3>
 	<p><font color='#009E73'> [VALID] </font> Population Characteristics: commute_time </p>
 	<p><font color='#009E73'> [VALID] </font> Population Characteristics: perc_carpool </p>
@@ -79,6 +79,11 @@
 	<p><font color='#009E73'> [VALID] </font> Population Health/Reproductive Health/Prenatal Care Adequacy: adequate </p>
 	<p><font color='#009E73'> [VALID] </font> Population Health/Reproductive Health/Prenatal Care Adequacy: intermediate </p>
 	<p><font color='#009E73'> [VALID] </font> Population Health/Reproductive Health/Prenatal Care Adequacy: inadequate </p>
+	<p><font color='#009E73'> [VALID] </font> Population Health/Social Vulnerability Index: vi_overall </p>
+	<p><font color='#009E73'> [VALID] </font> Population Health/Social Vulnerability Index: vi_socioeconomic </p>
+	<p><font color='#009E73'> [VALID] </font> Population Health/Social Vulnerability Index: vi_household </p>
+	<p><font color='#009E73'> [VALID] </font> Population Health/Social Vulnerability Index: vi_race_ethnicity </p>
+	<p><font color='#009E73'> [VALID] </font> Population Health/Social Vulnerability Index: vi_housing_transportation </p>
 	<p><font color='#009E73'> [VALID] </font> Population Health/Substance Abuse/Drug Overdose ED Visits: avg_monthly_rate </p>
 	<p><font color='#009E73'> [VALID] </font> Population Health/System Usage and Insurance/Preventable Hospitalizations: prevent_hosp_rate </p>
 	<p><font color='#009E73'> [VALID] </font> Population Health/System Usage and Insurance/Without Health Insurance: no_hlth_ins_pct </p>
@@ -647,6 +652,8 @@
 	<p><font color='#009E73'> [VALID] </font> Reading: mean_read_pass_rate </p>
 	<p><font color='#009E73'> [VALID] </font> Years of Schooling: average_years_schooling </p>
 <h3> sdc.financial_well_being </h3>
+	<p><font color='#009E73'> [VALID] </font> Asset Limited Income Constrained Employed (ALICE): alice_pct </p>
+	<p><font color='#009E73'> [VALID] </font> Asset Limited Income Constrained Employed (ALICE): poverty_pct </p>
 	<p><font color='#009E73'> [VALID] </font> Employment: emp_rate </p>
 	<p><font color='#009E73'> [VALID] </font> Employment: job_participate_rate </p>
 	<p><font color='#009E73'> [VALID] </font> Pay and Benefits/Household Income: median_household_income </p>
@@ -708,20 +715,20 @@
 	<p><font color='#009E73'> [VALID] </font> environmental_justice: UST_QRT </p>
 	<p><font color='#009E73'> [VALID] </font> environmental_justice: PWDIS_QRT </p>
 <h3> sdc.broadband </h3>
-	<p><font color='#009E73'> [VALID] </font> Wired/Accessibility/Average Download Speed: avg_down_using_devices </p>
-	<p><font color='#009E73'> [VALID] </font> Wired/Accessibility/Average Upload Speed: avg_up_using_devices </p>
-	<p><font color='#009E73'> [VALID] </font> Wired/Accessibility/Number of devices: devices </p>
-	<p><font color='#009E73'> [VALID] </font> Wired/Accessibility/Percent Fast (internet-connected): perc_w_int_100_20_using_devices </p>
-	<p><font color='#009E73'> [VALID] </font> Wired/Accessibility/Percent Fast (total): perc_total_100_20_using_devices </p>
-	<p><font color='#009E73'> [VALID] </font> Wired/Accessibility/Percent Good (internet-connected): perc_w_int_25_3_using_devices </p>
-	<p><font color='#009E73'> [VALID] </font> Wired/Accessibility/Percent Good (total): perc_total_25_3_using_devices </p>
-	<p><font color='#009E73'> [VALID] </font> Wired/Adoption/Computer Type: perc_hh_without_compdev </p>
-	<p><font color='#009E73'> [VALID] </font> Wired/Adoption/Internet Type: perc_hh_with_broadband </p>
-	<p><font color='#009E73'> [VALID] </font> Wired/Adoption/Internet Type: perc_hh_with_cable_fiber_dsl </p>
-	<p><font color='#009E73'> [VALID] </font> Wired/Adoption/Internet Type: perc_hh_without_internet </p>
-	<p><font color='#009E73'> [VALID] </font> Wired/Affordability/Percentage of income for fast internet: perc_income_min_price_100 </p>
-	<p><font color='#009E73'> [VALID] </font> Wired/Affordability/Percentage of income for good internet: perc_income_min_price_25 </p>
-	<p><font color='#009E73'> [VALID] </font> Wired/Affordability/Percentage of income for internet (average): perc_income_avg_nat_package </p>
+	<p><font color='#D55E00'> [EXTRA KEYS] </font> ['aggregation_method'] Wired/Accessibility/Average Download Speed: avg_down_using_devices </p>
+	<p><font color='#D55E00'> [EXTRA KEYS] </font> ['aggregation_method'] Wired/Accessibility/Average Upload Speed: avg_up_using_devices </p>
+	<p><font color='#D55E00'> [EXTRA KEYS] </font> ['aggregation_method'] Wired/Accessibility/Number of devices: devices </p>
+	<p><font color='#D55E00'> [EXTRA KEYS] </font> ['aggregation_method'] Wired/Accessibility/Percent Fast (internet-connected): perc_w_int_100_20_using_devices </p>
+	<p><font color='#D55E00'> [EXTRA KEYS] </font> ['aggregation_method'] Wired/Accessibility/Percent Fast (total): perc_total_100_20_using_devices </p>
+	<p><font color='#D55E00'> [EXTRA KEYS] </font> ['aggregation_method'] Wired/Accessibility/Percent Good (internet-connected): perc_w_int_25_3_using_devices </p>
+	<p><font color='#D55E00'> [EXTRA KEYS] </font> ['aggregation_method'] Wired/Accessibility/Percent Good (total): perc_total_25_3_using_devices </p>
+	<p><font color='#D55E00'> [EXTRA KEYS] </font> ['aggregation_method'] Wired/Adoption/Computer Type: perc_hh_without_compdev </p>
+	<p><font color='#D55E00'> [EXTRA KEYS] </font> ['aggregation_method'] Wired/Adoption/Internet Type: perc_hh_with_broadband </p>
+	<p><font color='#D55E00'> [EXTRA KEYS] </font> ['aggregation_method'] Wired/Adoption/Internet Type: perc_hh_with_cable_fiber_dsl </p>
+	<p><font color='#D55E00'> [EXTRA KEYS] </font> ['aggregation_method'] Wired/Adoption/Internet Type: perc_hh_without_internet </p>
+	<p><font color='#D55E00'> [EXTRA KEYS] </font> ['aggregation_method'] Wired/Affordability/Percentage of income for fast internet: perc_income_min_price_100 </p>
+	<p><font color='#D55E00'> [EXTRA KEYS] </font> ['aggregation_method'] Wired/Affordability/Percentage of income for good internet: perc_income_min_price_25 </p>
+	<p><font color='#D55E00'> [EXTRA KEYS] </font> ['aggregation_method'] Wired/Affordability/Percentage of income for internet (average): perc_income_avg_nat_package </p>
 <h3> sdc.housing </h3>
 	<p><font color='#009E73'> [VALID] </font> Cost/Rent: monthly_rent_0br </p>
 	<p><font color='#009E73'> [VALID] </font> Cost/Rent: monthly_rent_1br </p>

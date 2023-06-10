@@ -149,7 +149,7 @@
                 "url": "https://www.nass.usda.gov/"
             }
         ],
-        "statement": "Total sales of commodities to {feature.name} is {value}",
+        "statement": "Total sales of commodities to {features.name} is {value}",
         "type": "dollar",
         "unit": "dollar"
     },
@@ -171,7 +171,7 @@
                 "url": "https://www.nass.usda.gov/"
             }
         ],
-        "statement": "Total sales of calves to {feature.name} is {value}.",
+        "statement": "Total sales of calves to {features.name} is {value}.",
         "type": "dollar",
         "unit": "dollar"
     },
@@ -193,7 +193,7 @@
                 "url": "https://www.nass.usda.gov/"
             }
         ],
-        "statement": "Total asset value of agriculture to {feature.name} is {value}.",
+        "statement": "Total asset value of agriculture to {features.name} is {value}.",
         "type": "dollar",
         "unit": "dollar"
     },
@@ -215,7 +215,7 @@
                 "url": "https://www.nass.usda.gov/"
             }
         ],
-        "statement": "Total asset value per operation to {feature.name} is {value}.",
+        "statement": "Total asset value per operation to {features.name} is {value}.",
         "type": "dollar",
         "unit": "dollar"
     },
@@ -237,7 +237,7 @@
                 "url": "https://www.nass.usda.gov/"
             }
         ],
-        "statement": "Total acres used for agriculture in {feature.name} is {value}",
+        "statement": "Total acres used for agriculture in {features.name} is {value}",
         "type": "count",
         "unit": ""
     },
@@ -259,7 +259,7 @@
                 "url": "https://www.nass.usda.gov/"
             }
         ],
-        "statement": "Total operations used for agriculture in {feature.name} is {value}",
+        "statement": "Total operations used for agriculture in {features.name} is {value}",
         "type": "count",
         "unit": ""
     }

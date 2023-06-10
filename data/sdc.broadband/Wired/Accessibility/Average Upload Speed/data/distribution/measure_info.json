@@ -1,5 +1,6 @@
 {
     "avg_up_using_devices": {
+        "aggregation_method": "weighted arithmetic mean",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -19,6 +20,6 @@
         ],
         "statement": "The average upload speed is {value} in {features.name}.",
         "type": "internet speed",
-        "unit": "MB/s"
+        "unit": "Mb/s"
     }
 }

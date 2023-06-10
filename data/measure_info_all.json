@@ -10853,6 +10853,28 @@
         "type": "index",
         "unit": ""
     },
+    "alice_pct": {
+        "category": "Financial Well Being",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Percentage of households that are Asset Limited, Income Constrained, Employed. Households Earning more than the Federal Poverty Level, but not enough to afford the basics where they live.",
+        "long_name": "Percentage of households that are Asset Limited, Income Constrained, Employed (ALICE)",
+        "measure_type": "percentage",
+        "short_description": "The percent of households that are above the Federal Poverty Level but still cannot afford the basics where they live.",
+        "short_name": "Percentage of ALICE housholds",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "United for Alice",
+                "url": "https://www.unitedforalice.org/"
+            }
+        ],
+        "statement": "{value} percent of the households in {features.name} are ALICE.",
+        "type": "percent",
+        "unit": ""
+    },
     "at_risk_pc_original": {
         "category": "Nutrition and Food Security",
         "citations": "",
@@ -11063,6 +11085,7 @@
         "unit": ""
     },
     "avg_down_using_devices": {
+        "aggregation_method": "weighted arithmetic mean",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -11082,7 +11105,7 @@
         ],
         "statement": "The average download speed is {value} in {features.name}.",
         "type": "internet speed",
-        "unit": "MB/s"
+        "unit": "Mb/s"
     },
     "avg_monthly_rate": {
         "category": "Behavioral Health, Substance Use Disorder and Recovery",
@@ -11107,6 +11130,7 @@
         "unit": ""
     },
     "avg_up_using_devices": {
+        "aggregation_method": "weighted arithmetic mean",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -11126,7 +11150,7 @@
         ],
         "statement": "The average upload speed is {value} in {features.name}.",
         "type": "internet speed",
-        "unit": "MB/s"
+        "unit": "Mb/s"
     },
     "business_create_job": {
         "category": "Business climate",
@@ -11606,6 +11630,7 @@
         "unit": ""
     },
     "devices": {
+        "aggregation_method": "arithmetic mean",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -13930,7 +13955,7 @@
                 "url": "https://www.nass.usda.gov/"
             }
         ],
-        "statement": "Total asset value per operation to {feature.name} is {value}.",
+        "statement": "Total asset value per operation to {features.name} is {value}.",
         "type": "dollar",
         "unit": "dollar"
     },
@@ -14281,6 +14306,7 @@
         "unit": ""
     },
     "perc_hh_with_broadband": {
+        "aggregation_method": "percent",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -14300,9 +14326,10 @@
         ],
         "statement": "{value} of households in {features.name} have a broadband connection.",
         "type": "percent",
-        "unit": "households"
+        "unit": "household"
     },
     "perc_hh_with_cable_fiber_dsl": {
+        "aggregation_method": "percent",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -14322,9 +14349,10 @@
         ],
         "statement": "{value} of households in {features.name} have a cable, fiber optic, or DSL internet connection.",
         "type": "percent",
-        "unit": "households"
+        "unit": "household"
     },
     "perc_hh_without_compdev": {
+        "aggregation_method": "percent",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -14344,9 +14372,10 @@
         ],
         "statement": "{value} of households in {features.name} do not have a computer or device.",
         "type": "percent",
-        "unit": "households"
+        "unit": "household"
     },
     "perc_hh_without_internet": {
+        "aggregation_method": "percent",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -14366,7 +14395,7 @@
         ],
         "statement": "{value} of households in {features.name} do not have internet access.",
         "type": "percent",
-        "unit": "households"
+        "unit": "household"
     },
     "perc_hispanic_or_latino": {
         "category": "Demographics",
@@ -14391,6 +14420,7 @@
         "unit": ""
     },
     "perc_income_avg_nat_package": {
+        "aggregation_method": "percent",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -14415,9 +14445,10 @@
         ],
         "statement": "The national average internet package costs {value} of the median household income in {features.name}.",
         "type": "percent",
-        "unit": "dollars"
+        "unit": "dollar"
     },
     "perc_income_min_price_100": {
+        "aggregation_method": "percent",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -14442,9 +14473,10 @@
         ],
         "statement": "Fast internet costs {value} of the median household income in {features.name}.",
         "type": "percent",
-        "unit": "dollars"
+        "unit": "dollar"
     },
     "perc_income_min_price_25": {
+        "aggregation_method": "percent",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -14469,7 +14501,7 @@
         ],
         "statement": "Good internet costs {value} of the median household income in {features.name}.",
         "type": "percent",
-        "unit": "dollars"
+        "unit": "dollar"
     },
     "perc_job_creation_active": {
         "category": "Business climate",
@@ -14781,6 +14813,7 @@
         "unit": ""
     },
     "perc_total_100_20_using_devices": {
+        "aggregation_method": "percent",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -14800,9 +14833,10 @@
         ],
         "statement": "{value} of the total population in {features.name} has a fast internet speed.",
         "type": "percent",
-        "unit": "people"
+        "unit": "individual"
     },
     "perc_total_25_3_using_devices": {
+        "aggregation_method": "percent",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -14822,7 +14856,7 @@
         ],
         "statement": "{value} of the total population in {features.name} has a good internet speed.",
         "type": "percent",
-        "unit": "people"
+        "unit": "individual"
     },
     "perc_two_or_more": {
         "category": "Demographics",
@@ -14869,6 +14903,7 @@
         "unit": ""
     },
     "perc_w_int_100_20_using_devices": {
+        "aggregation_method": "percent",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -14888,9 +14923,10 @@
         ],
         "statement": "{value} of the internet-connected population in {features.name} has a fast internet speed.",
         "type": "percent",
-        "unit": "people"
+        "unit": "individual"
     },
     "perc_w_int_25_3_using_devices": {
+        "aggregation_method": "percent",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -14910,7 +14946,7 @@
         ],
         "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
         "type": "percent",
-        "unit": "people"
+        "unit": "individual"
     },
     "perc_wht_alone": {
         "category": "Demographics",
@@ -15329,6 +15365,28 @@
         ],
         "statement": "The number of households in {features.name} is {value}.",
         "type": "",
+        "unit": ""
+    },
+    "poverty_pct": {
+        "category": "Financial Well Being",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Percentage of households that are below the Federal Poverty Level. Not being able to afford the basics where they live.",
+        "long_name": "Percentage of households that are below the Federal Poverty Level.",
+        "measure_type": "percentage",
+        "short_description": "The percent of households that are below the Federal Poverty Level.",
+        "short_name": "Percentage of households in poverty",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "United for Alice",
+                "url": "https://www.unitedforalice.org/"
+            }
+        ],
+        "statement": "{value} percent of the households in {features.name} are in poverty.",
+        "type": "percent",
         "unit": ""
     },
     "prevent_hosp_rate": {
@@ -16042,7 +16100,7 @@
                 "url": "https://www.nass.usda.gov/"
             }
         ],
-        "statement": "Total acres used for agriculture in {feature.name} is {value}",
+        "statement": "Total acres used for agriculture in {features.name} is {value}",
         "type": "count",
         "unit": ""
     },
@@ -16108,7 +16166,7 @@
                 "url": "https://www.nass.usda.gov/"
             }
         ],
-        "statement": "Total sales of calves to {feature.name} is {value}.",
+        "statement": "Total sales of calves to {features.name} is {value}.",
         "type": "dollar",
         "unit": "dollar"
     },
@@ -16130,7 +16188,7 @@
                 "url": "https://www.nass.usda.gov/"
             }
         ],
-        "statement": "Total sales of commodities to {feature.name} is {value}",
+        "statement": "Total sales of commodities to {features.name} is {value}",
         "type": "dollar",
         "unit": "dollar"
     },
@@ -16218,7 +16276,7 @@
                 "url": "https://www.nass.usda.gov/"
             }
         ],
-        "statement": "Total asset value of agriculture to {feature.name} is {value}.",
+        "statement": "Total asset value of agriculture to {features.name} is {value}.",
         "type": "dollar",
         "unit": "dollar"
     },
@@ -16328,7 +16386,7 @@
                 "url": "https://www.nass.usda.gov/"
             }
         ],
-        "statement": "Total operations used for agriculture in {feature.name} is {value}",
+        "statement": "Total operations used for agriculture in {features.name} is {value}",
         "type": "count",
         "unit": ""
     },
@@ -16451,6 +16509,116 @@
         ],
         "statement": "The median drive time to the ten closest urgent care facilities to {features.name} is {value}.",
         "type": "drive time",
+        "unit": ""
+    },
+    "vi_household": {
+        "category": "Health",
+        "citations": "",
+        "data_type": "decimal",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "The second theme in calculating the Social Vulnerability Index, consists of different housing characteristics from the American Community Survey.",
+        "long_name": "Social Vulnerability Index (Housing characteristics)",
+        "measure_type": "percentage",
+        "short_description": "Housing characteristics index theme for calculating Social Vulnerability Index.",
+        "short_name": "Social Vulnerability Index (Housing characteristics)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Agency for Toxic Substances and Disease Registry (ATSDR)",
+                "url": "https://www.atsdr.cdc.gov/placeandhealth/svi/index.html"
+            }
+        ],
+        "statement": "The Housing characteristics index for {feature.name} is {value}.",
+        "type": "percent",
+        "unit": ""
+    },
+    "vi_housing_transportation": {
+        "category": "Health",
+        "citations": "",
+        "data_type": "decimal",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "The fourth theme in calculating the Social Vulnerability Index, consists of housing type & transportation components from the American Community Survey.",
+        "long_name": "Social Vulnerability Index (Housing type & transportation)",
+        "measure_type": "percentage",
+        "short_description": "Housing type & transportation theme for calculating Social Vulnerability Index.",
+        "short_name": "Social Vulnerability Index (Housing type & transportation)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Agency for Toxic Substances and Disease Registry (ATSDR)",
+                "url": "https://www.atsdr.cdc.gov/placeandhealth/svi/index.html"
+            }
+        ],
+        "statement": "The housing type & transportation index for {feature.name} is {value}.",
+        "type": "percent",
+        "unit": ""
+    },
+    "vi_overall": {
+        "category": "Health",
+        "citations": "",
+        "data_type": "decimal",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "The Social Vulnerability Index is a tool that uses U.S. Census data to determine the social vulnerability of every census tract. Four themes are used when calulating: Socioeconomic, household characteristics, racial & ethnic minority, and housing type & transportation.",
+        "long_name": "Social Vulnerability Index",
+        "measure_type": "percentage",
+        "short_description": "The Social Vulnerability Index comprised of four themes.",
+        "short_name": "Social Vulnerability Index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Agency for Toxic Substances and Disease Registry (ATSDR)",
+                "url": "https://www.atsdr.cdc.gov/placeandhealth/svi/index.html"
+            }
+        ],
+        "statement": "The overall Social Vulnerability Index for {feature.name} is {value}.",
+        "type": "percent",
+        "unit": ""
+    },
+    "vi_race_ethnicity": {
+        "category": "Health",
+        "citations": "",
+        "data_type": "decimal",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "The third theme in calculating the Social Vulnerability Index, consists of racial & ethnic minority status components from the American Community Survey.",
+        "long_name": "Social Vulnerability Index (Racial & ethnic minority status)",
+        "measure_type": "percentage",
+        "short_description": "Racial & ethnic minority status theme for calculating Social Vulnerability Index.",
+        "short_name": "Social Vulnerability Index (Racial & ethnic minority status)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Agency for Toxic Substances and Disease Registry (ATSDR)",
+                "url": "https://www.atsdr.cdc.gov/placeandhealth/svi/index.html"
+            }
+        ],
+        "statement": "The racial & ethnic minority status for {feature.name} is {value}.",
+        "type": "percent",
+        "unit": ""
+    },
+    "vi_socioeconomic": {
+        "category": "Health",
+        "citations": "",
+        "data_type": "decimal",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "The first theme in calculating the Social Vulnerability Index, consists of different socioeconomic components from the American Community Survey.",
+        "long_name": "Social Vulnerability Index (Socioeconomic Status)",
+        "measure_type": "percentage",
+        "short_description": "Socioeconomic status theme for calculating Social Vulnerability Index.",
+        "short_name": "Social Vulnerability Index (Socioeconomic Status)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Agency for Toxic Substances and Disease Registry (ATSDR)",
+                "url": "https://www.atsdr.cdc.gov/placeandhealth/svi/index.html"
+            }
+        ],
+        "statement": "The socioeconomic status for {feature.name} is {value}.",
+        "type": "percent",
         "unit": ""
     },
     "walkability_indicator": {

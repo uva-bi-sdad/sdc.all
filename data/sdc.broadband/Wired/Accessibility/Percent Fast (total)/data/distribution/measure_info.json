@@ -1,5 +1,6 @@
 {
     "perc_total_100_20_using_devices": {
+        "aggregation_method": "percent",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -19,6 +20,6 @@
         ],
         "statement": "{value} of the total population in {features.name} has a fast internet speed.",
         "type": "percent",
-        "unit": "people"
+        "unit": "individual"
     }
 }

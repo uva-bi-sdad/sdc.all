@@ -1,5 +1,6 @@
 {
     "devices": {
+        "aggregation_method": "arithmetic mean",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",

@@ -22,7 +22,6 @@ year <- 2017
 
 for(i in 1:nrow(search_terms)){
   Sys.sleep(3)
-  print(paste0("TESTING ===== ", search_terms[i, 1]))
   curr.df <- get_county_data(key=key, year = year, data_item=search_terms[i, 1], fips='51')
   
   if(is.null(curr.df)){
@@ -36,6 +35,8 @@ for(i in 1:nrow(search_terms)){
 }
 
 total <- total %>% select(geoid, year, measure, value) %>% mutate(measure_type = "count")
+total$value <- as.numeric(gsub(",", "", total$value))
+
 
 write_csv(total, xzfile("./Industry specific/Agriculture/data/distribution/va_ct_2017_industry_agriculture.csv.xz", compression = 9))
 
