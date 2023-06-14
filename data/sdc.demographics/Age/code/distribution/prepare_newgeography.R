@@ -24,7 +24,7 @@ library(rjson)
 # 1. Case of fairfax county:  --------------------------------------------------------------------
 years <- 2013:2019
 
-#upload data from fairfax (demography and geometry). filter on age
+#upload data from fairfax (demographies and geometry). filter on age
 fairfax_pc_dmg <- NULL
 for (year in years) {
   temp0 <- read_csv(xzfile(paste0("Synthetic_population/Housing_units_distribution/Fairfax/data/working/va059_pc_sdad_",year,"_demographics.csv.xz")))
@@ -33,16 +33,17 @@ for (year in years) {
 }
 
 #fairfax_pc_dmg <- read_csv(xzfile("Synthetic_population/Housing_units_distribution/Fairfax/data/working/va059_pc_sdad_20092020_demographics.csv.xz"))
+# get the parcel geometry
 fairfax_pc_geo <- sf::st_read(unzip("Synthetic_population/Housing_units_distribution/Fairfax/data/working/fairfax_parcel_geometry.geojson.zip", "Synthetic_population/Housing_units_distribution/Fairfax/data/working/fairfax_parcel_geometry.geojson"))
 file.remove("Synthetic_population/Housing_units_distribution/Fairfax/data/working/fairfax_parcel_geometry.geojson")
 fairfax_pc_geo <- fairfax_pc_geo %>% select(parid=geoid, geometry)
 
 # upload new geographies and mapping with parcels (comments: just add a new geography below and the intersects with parcels)
 sf::sf_use_s2(FALSE)
-hsr_geo <- sf::st_read("https://github.com/uva-bi-sdad/sdc.geographies/blob/7723c7ad25b92a7ae7edb88c17b3c561b521a82b/VA/Local%20Geographies/Fairfax%20County/Human%20Services%20Regions/2022/data/distribution/va059_geo_ffxct_gis_2022_human_services_regions.geojson?raw=T")
-pd_geo <- sf::st_read("https://github.com/uva-bi-sdad/sdc.geographies/blob/7723c7ad25b92a7ae7edb88c17b3c561b521a82b/VA/Local%20Geographies/Fairfax%20County/Planning%20Districts/2022/data/distribution/va059_geo_ffxct_gis_2022_planning_districts.geojson?raw=T")
-sd_geo <- sf::st_read("https://github.com/uva-bi-sdad/sdc.geographies/blob/7723c7ad25b92a7ae7edb88c17b3c561b521a82b/VA/Local%20Geographies/Fairfax%20County/Supervisor%20Districts/2022/data/distribution/va059_geo_ffxct_gis_2022_supervisor_districts.geojson?raw=T")
-zc_geo <- sf::st_read("https://github.com/uva-bi-sdad/sdc.geographies/blob/7723c7ad25b92a7ae7edb88c17b3c561b521a82b/VA/Local%20Geographies/Fairfax%20County/Zip%20Codes/2022/data/distribution/va059_geo_ffxct_gis_2022_zip_codes.geojson?raw=T")
+hsr_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Fairfax%20County/Human%20Services%20Regions/2022/data/distribution/va059_geo_ffxct_gis_2022_human_services_regions.geojson")
+pd_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Fairfax%20County/Planning%20Districts/2022/data/distribution/va059_geo_ffxct_gis_2022_planning_districts.geojson")
+sd_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Fairfax%20County/Supervisor%20Districts/2022/data/distribution/va059_geo_ffxct_gis_2022_supervisor_districts.geojson")
+zc_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Fairfax%20County/Zip%20Codes/2022/data/distribution/va059_geo_ffxct_gis_2022_zip_codes.geojson")
 
 # coments: for some cases the number of rows can be lower than the number of parcels meaning that the new geography doesn't cover all the parcels
 hsr_pc_map <- st_join(hsr_geo, fairfax_pc_geo, join = st_intersects) %>% st_drop_geometry() %>% select(-year)
@@ -105,7 +106,7 @@ arl_pc_geo <- arl_pc_geo %>% select(parid=geoid, geometry)
 
 # upload new geographies and mapping with parcels (comments: just add a new geography below and the intersects with parcels)
 sf::sf_use_s2(FALSE)
-civic_geo <- sf::st_read("https://github.com/uva-bi-sdad/sdc.geographies/blob/7723c7ad25b92a7ae7edb88c17b3c561b521a82b/VA/Local%20Geographies/Arlington%20County/Civic%20Associations/2021/data/distribution/va013_geo_arl_2021_civic_associations.geojson?raw=T")
+civic_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Arlington%20County/Civic%20Associations/2021/data/distribution/va013_geo_arl_2021_civic_associations.geojson")
 
 # coments: for some cases the number of rows can be lower than the number of parcels meaning that the new geography doesn't cover all the parcels
 civic_pc_map <- st_join(civic_geo, arl_pc_geo, join = st_intersects) %>% st_drop_geometry() %>% select(-year)
