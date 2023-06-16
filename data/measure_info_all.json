@@ -23,6 +23,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -45,6 +46,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -67,6 +69,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -89,6 +92,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -111,6 +115,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -133,6 +138,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -155,6 +161,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -177,6 +184,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -199,6 +207,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -221,6 +230,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -243,6 +253,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -265,6 +276,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -287,6 +299,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -309,6 +322,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -331,6 +345,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -353,6 +368,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -375,6 +391,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -397,6 +414,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -419,6 +437,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -441,6 +460,7 @@
         "unit": ""
     },
     "Accommodation and Food Services_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -463,6 +483,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -485,6 +506,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -507,6 +529,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -529,6 +552,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -551,6 +575,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -573,6 +598,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -595,6 +621,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -617,6 +644,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -639,6 +667,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -661,6 +690,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -683,6 +713,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -705,6 +736,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -727,6 +759,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -749,6 +782,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -771,6 +805,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -793,6 +828,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -815,6 +851,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -837,6 +874,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -859,6 +897,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -881,6 +920,7 @@
         "unit": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -903,6 +943,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -925,6 +966,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -947,6 +989,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -969,6 +1012,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -991,6 +1035,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1013,6 +1058,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1035,6 +1081,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1057,6 +1104,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1079,6 +1127,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1101,6 +1150,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1123,6 +1173,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1145,6 +1196,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1167,6 +1219,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1189,6 +1242,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1211,6 +1265,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1233,6 +1288,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1255,6 +1311,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1277,6 +1334,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1299,6 +1357,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1321,6 +1380,7 @@
         "unit": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1343,6 +1403,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1365,6 +1426,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1387,6 +1449,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1409,6 +1472,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1431,6 +1495,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1453,6 +1518,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1475,6 +1541,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1497,6 +1564,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1519,6 +1587,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1541,6 +1610,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1563,6 +1633,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1585,6 +1656,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1607,6 +1679,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1629,6 +1702,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1651,6 +1725,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1673,6 +1748,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1695,6 +1771,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1717,6 +1794,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1739,6 +1817,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1761,6 +1840,7 @@
         "unit": ""
     },
     "Arts, Entertainment, and Recreation_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1874,6 +1954,7 @@
         "unit": ""
     },
     "Construction_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1896,6 +1977,7 @@
         "unit": ""
     },
     "Construction_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1918,6 +2000,7 @@
         "unit": ""
     },
     "Construction_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1940,6 +2023,7 @@
         "unit": ""
     },
     "Construction_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1962,6 +2046,7 @@
         "unit": ""
     },
     "Construction_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1984,6 +2069,7 @@
         "unit": ""
     },
     "Construction_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2006,6 +2092,7 @@
         "unit": ""
     },
     "Construction_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2028,6 +2115,7 @@
         "unit": ""
     },
     "Construction_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2050,6 +2138,7 @@
         "unit": ""
     },
     "Construction_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2072,6 +2161,7 @@
         "unit": ""
     },
     "Construction_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2094,6 +2184,7 @@
         "unit": ""
     },
     "Construction_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2116,6 +2207,7 @@
         "unit": ""
     },
     "Construction_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2138,6 +2230,7 @@
         "unit": ""
     },
     "Construction_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2160,6 +2253,7 @@
         "unit": ""
     },
     "Construction_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2182,6 +2276,7 @@
         "unit": ""
     },
     "Construction_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2204,6 +2299,7 @@
         "unit": ""
     },
     "Construction_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2226,6 +2322,7 @@
         "unit": ""
     },
     "Construction_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2248,6 +2345,7 @@
         "unit": ""
     },
     "Construction_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2270,6 +2368,7 @@
         "unit": ""
     },
     "Construction_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2292,6 +2391,7 @@
         "unit": ""
     },
     "Construction_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2704,6 +2804,7 @@
         "unit": ""
     },
     "Educational Services_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2726,6 +2827,7 @@
         "unit": ""
     },
     "Educational Services_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2748,6 +2850,7 @@
         "unit": ""
     },
     "Educational Services_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2770,6 +2873,7 @@
         "unit": ""
     },
     "Educational Services_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2792,6 +2896,7 @@
         "unit": ""
     },
     "Educational Services_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2814,6 +2919,7 @@
         "unit": ""
     },
     "Educational Services_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2836,6 +2942,7 @@
         "unit": ""
     },
     "Educational Services_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2858,6 +2965,7 @@
         "unit": ""
     },
     "Educational Services_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2880,6 +2988,7 @@
         "unit": ""
     },
     "Educational Services_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2902,6 +3011,7 @@
         "unit": ""
     },
     "Educational Services_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2924,6 +3034,7 @@
         "unit": ""
     },
     "Educational Services_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2946,6 +3057,7 @@
         "unit": ""
     },
     "Educational Services_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2968,6 +3080,7 @@
         "unit": ""
     },
     "Educational Services_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2990,6 +3103,7 @@
         "unit": ""
     },
     "Educational Services_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3012,6 +3126,7 @@
         "unit": ""
     },
     "Educational Services_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3034,6 +3149,7 @@
         "unit": ""
     },
     "Educational Services_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3056,6 +3172,7 @@
         "unit": ""
     },
     "Educational Services_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3078,6 +3195,7 @@
         "unit": ""
     },
     "Educational Services_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3100,6 +3218,7 @@
         "unit": ""
     },
     "Educational Services_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3122,6 +3241,7 @@
         "unit": ""
     },
     "Educational Services_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3144,6 +3264,7 @@
         "unit": ""
     },
     "Finance and Insurance_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3166,6 +3287,7 @@
         "unit": ""
     },
     "Finance and Insurance_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3188,6 +3310,7 @@
         "unit": ""
     },
     "Finance and Insurance_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3210,6 +3333,7 @@
         "unit": ""
     },
     "Finance and Insurance_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3232,6 +3356,7 @@
         "unit": ""
     },
     "Finance and Insurance_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3254,6 +3379,7 @@
         "unit": ""
     },
     "Finance and Insurance_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3276,6 +3402,7 @@
         "unit": ""
     },
     "Finance and Insurance_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3298,6 +3425,7 @@
         "unit": ""
     },
     "Finance and Insurance_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3320,6 +3448,7 @@
         "unit": ""
     },
     "Finance and Insurance_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3342,6 +3471,7 @@
         "unit": ""
     },
     "Finance and Insurance_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3364,6 +3494,7 @@
         "unit": ""
     },
     "Finance and Insurance_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3386,6 +3517,7 @@
         "unit": ""
     },
     "Finance and Insurance_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3408,6 +3540,7 @@
         "unit": ""
     },
     "Finance and Insurance_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3430,6 +3563,7 @@
         "unit": ""
     },
     "Finance and Insurance_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3452,6 +3586,7 @@
         "unit": ""
     },
     "Finance and Insurance_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3474,6 +3609,7 @@
         "unit": ""
     },
     "Finance and Insurance_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3496,6 +3632,7 @@
         "unit": ""
     },
     "Finance and Insurance_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3518,6 +3655,7 @@
         "unit": ""
     },
     "Finance and Insurance_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3540,6 +3678,7 @@
         "unit": ""
     },
     "Finance and Insurance_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3562,6 +3701,7 @@
         "unit": ""
     },
     "Finance and Insurance_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3653,6 +3793,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3675,6 +3816,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3697,6 +3839,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3719,6 +3862,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3741,6 +3885,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3763,6 +3908,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3785,6 +3931,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3807,6 +3954,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3829,6 +3977,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3851,6 +4000,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3873,6 +4023,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3895,6 +4046,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3917,6 +4069,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3939,6 +4092,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3961,6 +4115,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -3983,6 +4138,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4005,6 +4161,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4027,6 +4184,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4049,6 +4207,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4071,6 +4230,7 @@
         "unit": ""
     },
     "Health Care and Social Assistance_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4116,6 +4276,7 @@
         "unit": ""
     },
     "Information_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4138,6 +4299,7 @@
         "unit": ""
     },
     "Information_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4160,6 +4322,7 @@
         "unit": ""
     },
     "Information_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4182,6 +4345,7 @@
         "unit": ""
     },
     "Information_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4204,6 +4368,7 @@
         "unit": ""
     },
     "Information_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4226,6 +4391,7 @@
         "unit": ""
     },
     "Information_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4248,6 +4414,7 @@
         "unit": ""
     },
     "Information_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4270,6 +4437,7 @@
         "unit": ""
     },
     "Information_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4292,6 +4460,7 @@
         "unit": ""
     },
     "Information_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4314,6 +4483,7 @@
         "unit": ""
     },
     "Information_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4336,6 +4506,7 @@
         "unit": ""
     },
     "Information_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4358,6 +4529,7 @@
         "unit": ""
     },
     "Information_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4380,6 +4552,7 @@
         "unit": ""
     },
     "Information_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4402,6 +4575,7 @@
         "unit": ""
     },
     "Information_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4424,6 +4598,7 @@
         "unit": ""
     },
     "Information_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4446,6 +4621,7 @@
         "unit": ""
     },
     "Information_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4468,6 +4644,7 @@
         "unit": ""
     },
     "Information_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4490,6 +4667,7 @@
         "unit": ""
     },
     "Information_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4512,6 +4690,7 @@
         "unit": ""
     },
     "Information_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4534,6 +4713,7 @@
         "unit": ""
     },
     "Information_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4602,6 +4782,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4624,6 +4805,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4646,6 +4828,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4668,6 +4851,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4690,6 +4874,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4712,6 +4897,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4734,6 +4920,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4756,6 +4943,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4778,6 +4966,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4800,6 +4989,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4822,6 +5012,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4844,6 +5035,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4866,6 +5058,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4888,6 +5081,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4910,6 +5104,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4932,6 +5127,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4954,6 +5150,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4976,6 +5173,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -4998,6 +5196,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5020,6 +5219,7 @@
         "unit": ""
     },
     "Management of Companies and Enterprises_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5042,6 +5242,7 @@
         "unit": ""
     },
     "Manufacturing_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5064,6 +5265,7 @@
         "unit": ""
     },
     "Manufacturing_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5086,6 +5288,7 @@
         "unit": ""
     },
     "Manufacturing_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5108,6 +5311,7 @@
         "unit": ""
     },
     "Manufacturing_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5130,6 +5334,7 @@
         "unit": ""
     },
     "Manufacturing_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5152,6 +5357,7 @@
         "unit": ""
     },
     "Manufacturing_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5174,6 +5380,7 @@
         "unit": ""
     },
     "Manufacturing_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5196,6 +5403,7 @@
         "unit": ""
     },
     "Manufacturing_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5218,6 +5426,7 @@
         "unit": ""
     },
     "Manufacturing_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5240,6 +5449,7 @@
         "unit": ""
     },
     "Manufacturing_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5262,6 +5472,7 @@
         "unit": ""
     },
     "Manufacturing_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5284,6 +5495,7 @@
         "unit": ""
     },
     "Manufacturing_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5306,6 +5518,7 @@
         "unit": ""
     },
     "Manufacturing_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5328,6 +5541,7 @@
         "unit": ""
     },
     "Manufacturing_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5350,6 +5564,7 @@
         "unit": ""
     },
     "Manufacturing_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5372,6 +5587,7 @@
         "unit": ""
     },
     "Manufacturing_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5394,6 +5610,7 @@
         "unit": ""
     },
     "Manufacturing_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5416,6 +5633,7 @@
         "unit": ""
     },
     "Manufacturing_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5438,6 +5656,7 @@
         "unit": ""
     },
     "Manufacturing_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5460,6 +5679,7 @@
         "unit": ""
     },
     "Manufacturing_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5482,6 +5702,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5504,6 +5725,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5526,6 +5748,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5548,6 +5771,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5570,6 +5794,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5592,6 +5817,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5614,6 +5840,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5636,6 +5863,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5658,6 +5886,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5680,6 +5909,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5702,6 +5932,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5724,6 +5955,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5746,6 +5978,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5768,6 +6001,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5790,6 +6024,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5812,6 +6047,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5834,6 +6070,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5856,6 +6093,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5878,6 +6116,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5900,6 +6139,7 @@
         "unit": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5922,6 +6162,7 @@
         "unit": ""
     },
     "Minority_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5945,6 +6186,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5967,6 +6209,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -5989,6 +6232,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6011,6 +6255,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6033,6 +6278,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6055,6 +6301,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6077,6 +6324,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6099,6 +6347,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6121,6 +6370,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6143,6 +6393,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6165,6 +6416,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6187,6 +6439,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6209,6 +6462,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6231,6 +6485,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6253,6 +6508,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6275,6 +6531,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6297,6 +6554,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6319,6 +6577,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6341,6 +6600,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6363,6 +6623,7 @@
         "unit": ""
     },
     "Nonclassifiable Establishments_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6385,6 +6646,7 @@
         "unit": ""
     },
     "Nonminority_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6476,6 +6738,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6498,6 +6761,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6520,6 +6784,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6542,6 +6807,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6564,6 +6830,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6586,6 +6853,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6608,6 +6876,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6630,6 +6899,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6652,6 +6922,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6674,6 +6945,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6696,6 +6968,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6718,6 +6991,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6740,6 +7014,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6762,6 +7037,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6784,6 +7060,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6806,6 +7083,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6828,6 +7106,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6850,6 +7129,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6872,6 +7152,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -6894,6 +7175,7 @@
         "unit": ""
     },
     "Other Services (except Public Administration)_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7261,6 +7543,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7283,6 +7566,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7305,6 +7589,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7327,6 +7612,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7349,6 +7635,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7371,6 +7658,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7393,6 +7681,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7415,6 +7704,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7437,6 +7727,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7459,6 +7750,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7481,6 +7773,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7503,6 +7796,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7525,6 +7819,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7547,6 +7842,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7569,6 +7865,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7591,6 +7888,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7613,6 +7911,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7635,6 +7934,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7657,6 +7957,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7679,6 +7980,7 @@
         "unit": ""
     },
     "Professional, Scientific, and Technical Services_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7701,6 +8003,7 @@
         "unit": ""
     },
     "Public Administration_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7723,6 +8026,7 @@
         "unit": ""
     },
     "Public Administration_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7745,6 +8049,7 @@
         "unit": ""
     },
     "Public Administration_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7767,6 +8072,7 @@
         "unit": ""
     },
     "Public Administration_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7789,6 +8095,7 @@
         "unit": ""
     },
     "Public Administration_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7811,6 +8118,7 @@
         "unit": ""
     },
     "Public Administration_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7833,6 +8141,7 @@
         "unit": ""
     },
     "Public Administration_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7855,6 +8164,7 @@
         "unit": ""
     },
     "Public Administration_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7877,6 +8187,7 @@
         "unit": ""
     },
     "Public Administration_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7899,6 +8210,7 @@
         "unit": ""
     },
     "Public Administration_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7921,6 +8233,7 @@
         "unit": ""
     },
     "Public Administration_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7943,6 +8256,7 @@
         "unit": ""
     },
     "Public Administration_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7965,6 +8279,7 @@
         "unit": ""
     },
     "Public Administration_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -7987,6 +8302,7 @@
         "unit": ""
     },
     "Public Administration_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8009,6 +8325,7 @@
         "unit": ""
     },
     "Public Administration_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8031,6 +8348,7 @@
         "unit": ""
     },
     "Public Administration_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8053,6 +8371,7 @@
         "unit": ""
     },
     "Public Administration_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8075,6 +8394,7 @@
         "unit": ""
     },
     "Public Administration_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8097,6 +8417,7 @@
         "unit": ""
     },
     "Public Administration_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8119,6 +8440,7 @@
         "unit": ""
     },
     "Public Administration_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8210,6 +8532,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8232,6 +8555,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8254,6 +8578,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8276,6 +8601,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8298,6 +8624,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8320,6 +8647,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8342,6 +8670,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8364,6 +8693,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8386,6 +8716,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8408,6 +8739,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8430,6 +8762,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8452,6 +8785,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8474,6 +8808,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8496,6 +8831,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8518,6 +8854,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8540,6 +8877,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8562,6 +8900,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8584,6 +8923,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8606,6 +8946,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8628,6 +8969,7 @@
         "unit": ""
     },
     "Real Estate and Rental and Leasing_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8650,6 +8992,7 @@
         "unit": ""
     },
     "Retail Trade_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8672,6 +9015,7 @@
         "unit": ""
     },
     "Retail Trade_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8694,6 +9038,7 @@
         "unit": ""
     },
     "Retail Trade_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8716,6 +9061,7 @@
         "unit": ""
     },
     "Retail Trade_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8738,6 +9084,7 @@
         "unit": ""
     },
     "Retail Trade_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8760,6 +9107,7 @@
         "unit": ""
     },
     "Retail Trade_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8782,6 +9130,7 @@
         "unit": ""
     },
     "Retail Trade_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8804,6 +9153,7 @@
         "unit": ""
     },
     "Retail Trade_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8826,6 +9176,7 @@
         "unit": ""
     },
     "Retail Trade_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8848,6 +9199,7 @@
         "unit": ""
     },
     "Retail Trade_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8870,6 +9222,7 @@
         "unit": ""
     },
     "Retail Trade_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8892,6 +9245,7 @@
         "unit": ""
     },
     "Retail Trade_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8914,6 +9268,7 @@
         "unit": ""
     },
     "Retail Trade_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8936,6 +9291,7 @@
         "unit": ""
     },
     "Retail Trade_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8958,6 +9314,7 @@
         "unit": ""
     },
     "Retail Trade_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -8980,6 +9337,7 @@
         "unit": ""
     },
     "Retail Trade_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9002,6 +9360,7 @@
         "unit": ""
     },
     "Retail Trade_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9024,6 +9383,7 @@
         "unit": ""
     },
     "Retail Trade_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9046,6 +9406,7 @@
         "unit": ""
     },
     "Retail Trade_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9068,6 +9429,7 @@
         "unit": ""
     },
     "Retail Trade_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9159,6 +9521,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9181,6 +9544,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9203,6 +9567,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9225,6 +9590,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9247,6 +9613,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9269,6 +9636,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9291,6 +9659,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9313,6 +9682,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9335,6 +9705,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9357,6 +9728,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9379,6 +9751,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9401,6 +9774,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9423,6 +9797,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9445,6 +9820,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9467,6 +9843,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9489,6 +9866,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9511,6 +9889,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9533,6 +9912,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9555,6 +9935,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9577,6 +9958,7 @@
         "unit": ""
     },
     "Transportation and Warehousing_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9645,6 +10027,7 @@
         "unit": ""
     },
     "Utilities_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9667,6 +10050,7 @@
         "unit": ""
     },
     "Utilities_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9689,6 +10073,7 @@
         "unit": ""
     },
     "Utilities_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9711,6 +10096,7 @@
         "unit": ""
     },
     "Utilities_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9733,6 +10119,7 @@
         "unit": ""
     },
     "Utilities_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9755,6 +10142,7 @@
         "unit": ""
     },
     "Utilities_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9777,6 +10165,7 @@
         "unit": ""
     },
     "Utilities_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9799,6 +10188,7 @@
         "unit": ""
     },
     "Utilities_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9821,6 +10211,7 @@
         "unit": ""
     },
     "Utilities_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9843,6 +10234,7 @@
         "unit": ""
     },
     "Utilities_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9865,6 +10257,7 @@
         "unit": ""
     },
     "Utilities_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9887,6 +10280,7 @@
         "unit": ""
     },
     "Utilities_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9909,6 +10303,7 @@
         "unit": ""
     },
     "Utilities_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9931,6 +10326,7 @@
         "unit": ""
     },
     "Utilities_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9953,6 +10349,7 @@
         "unit": ""
     },
     "Utilities_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9975,6 +10372,7 @@
         "unit": ""
     },
     "Utilities_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -9997,6 +10395,7 @@
         "unit": ""
     },
     "Utilities_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10019,6 +10418,7 @@
         "unit": ""
     },
     "Utilities_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10041,6 +10441,7 @@
         "unit": ""
     },
     "Utilities_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10063,6 +10464,7 @@
         "unit": ""
     },
     "Utilities_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10154,6 +10556,7 @@
         "unit": ""
     },
     "Wholesale Trade_Herfindalh_Hirschman_index": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10176,6 +10579,7 @@
         "unit": ""
     },
     "Wholesale Trade_Location_quotient": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10198,6 +10602,7 @@
         "unit": ""
     },
     "Wholesale Trade_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10220,6 +10625,7 @@
         "unit": ""
     },
     "Wholesale Trade_business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10242,6 +10648,7 @@
         "unit": ""
     },
     "Wholesale Trade_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10264,6 +10671,7 @@
         "unit": ""
     },
     "Wholesale Trade_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10286,6 +10694,7 @@
         "unit": ""
     },
     "Wholesale Trade_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10308,6 +10717,7 @@
         "unit": ""
     },
     "Wholesale Trade_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10330,6 +10740,7 @@
         "unit": ""
     },
     "Wholesale Trade_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10352,6 +10763,7 @@
         "unit": ""
     },
     "Wholesale Trade_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10374,6 +10786,7 @@
         "unit": ""
     },
     "Wholesale Trade_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10396,6 +10809,7 @@
         "unit": ""
     },
     "Wholesale Trade_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10418,6 +10832,7 @@
         "unit": ""
     },
     "Wholesale Trade_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10440,6 +10855,7 @@
         "unit": ""
     },
     "Wholesale Trade_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10462,6 +10878,7 @@
         "unit": ""
     },
     "Wholesale Trade_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10484,6 +10901,7 @@
         "unit": ""
     },
     "Wholesale Trade_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10506,6 +10924,7 @@
         "unit": ""
     },
     "Wholesale Trade_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10528,6 +10947,7 @@
         "unit": ""
     },
     "Wholesale Trade_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10550,6 +10970,7 @@
         "unit": ""
     },
     "Wholesale Trade_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10572,6 +10993,7 @@
         "unit": ""
     },
     "Wholesale Trade_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -10830,6 +11252,294 @@
         "statement": "The affordability indicator in {features.name} is {value}.",
         "type": "index",
         "unit": ""
+    },
+    "age_29_and_under_female_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the female workforce under 29. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce under 29 (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the female workforce under 29",
+        "short_name": "Female workforce under 29 (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} female workers under 29 in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "age_29_and_under_female_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the female workforce under 29. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce under 29 (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the female workforce under 29",
+        "short_name": "Female workforce under 29 (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the female workers are under 29 in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "age_29_and_under_male_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the male workforce under 29. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce under 29 (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the male workforce under 29",
+        "short_name": "Male workforce under 29 (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} male workers under 29 in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "age_29_and_under_male_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the male workforce under 29. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce under 29 (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the male workforce under 29",
+        "short_name": "Male workforce under 29 (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the male workers are under 29 in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "age_30_to_54_female_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the female workforce 30 to 54. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce 30 to 54 (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the female workforce 30 to 54",
+        "short_name": "Female workforce 30 to 54 (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} female workers 30 to 54 in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "age_30_to_54_female_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the female workforce 30 to 54. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce 30 to 54 (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the female workforce 30 to 54",
+        "short_name": "Female workforce 30 to 54 (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the female workers are 30 to 54 in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "age_30_to_54_male_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the male workforce 30 to 54. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce 30 to 64 (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the male workforce 30 to 54",
+        "short_name": "Male workforce 30 to 54 (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} male workers 30 to 54in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "age_30_to_54_male_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the male workforce 30 to 54. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce 30 to 54 (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the male workforce 30 to 54",
+        "short_name": "Male workforce 30 to 54 (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the male workers are 30 to 54 in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "age_55_and_over_female_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the female workforce over 55. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce over 55 (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the female workforce over 55",
+        "short_name": "Female workforce over 55 (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} female workers over 55 in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "age_55_and_over_female_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the female workforce over 55. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce over 55 (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the female workforce over 55",
+        "short_name": "Female workforce over 55 (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the female workers are over 55 in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "age_55_and_over_male_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the Male workforce over 55. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce over 55 (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the Male workforce over 55",
+        "short_name": "Male workforce over 55 (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} male workers over 55 in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "age_55_and_over_male_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the male workforce over 55. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce over 55 (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the male workforce over 55",
+        "short_name": "Male workforce over 55 (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the male workers are over 55 in {features.name}.",
+        "type": "",
+        "unit": "person"
     },
     "air_quality_indicator": {
         "category": "Health Opportunity Index",
@@ -11153,6 +11863,7 @@
         "unit": "Mb/s"
     },
     "business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -11175,6 +11886,7 @@
         "unit": ""
     },
     "business_destruction_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -11652,6 +12364,294 @@
         "type": "count",
         "unit": "devices"
     },
+    "earnings_1250_and_under_female_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the female workforce earning under $1,250 per month. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce earning under $1,250 per month (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the female workforce earning under $1,250 per month",
+        "short_name": "Female workforce earning under $1,250 per month (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} female workers earning under $1,250 per month in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "earnings_1250_and_under_female_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the female workforce earning under $1,250 per month. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce earning under $1,250 per month (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the female workforce earning under $1,250 per month",
+        "short_name": "Female workforce earning under $1,250 per month (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the female workers earn under $1,250 per month in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "earnings_1250_and_under_male_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the male workforce earning under $1,250 per month. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce earning under $1,250 per month (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the male workforce earning under $1,250 per month",
+        "short_name": "Male workforce earning under $1,250 per month (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} male workers earning under $1,250 per month in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "earnings_1250_and_under_male_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the male workforce earning under $1,250 per month. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce earning under $1,250 per month (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the male workforce earning under $1,250 per month",
+        "short_name": "Male workforce earning under $1,250 per month (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the male workers earn under $1,250 per month in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "earnings_1251_to_3333_female_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the female workforce earning $1,251-$3,333 per month. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce earning $1,251-$3,333 per month (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the female workforce earning $1,251-$3,333 per month",
+        "short_name": "Female workforce earning $1,251-$3,333 per month (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} female workers earn $1,251-$3,333 per month in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "earnings_1251_to_3333_female_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the female workforce earning $1,250-$3,333 per month. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce earning $1,250-$3,333 per month (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the female workforce earning $1,250-$3,3330 per month",
+        "short_name": "Female workforce earning $1,250-$3,333 per month (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the female workers earn $1,250-$3,333 per month in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "earnings_1251_to_3333_male_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the male workforce earning $1,251-$3,333 per month. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce earning $1,251-$3,333 per month (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the male workforce earning $1,251-$3,333 per month",
+        "short_name": "Male workforce earning $1,251-$3,333 per month (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} male workers earn $1,251-$3,333 per month in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "earnings_1251_to_3333_male_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the male workforce earning $1,250-$3,333 per month. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce earning $1,250-$3,333 per month (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the male workforce earning $1,250-$3,3330 per month",
+        "short_name": "Male workforce earning $1,250-$3,333 per month (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the male workers earn $1,250-$3,333 per month in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "earnings_3334_and_over_female_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the female workforce earning over $3,334 per month. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce earning over $3,334 per month (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the female workforce earning over $3,334 per month",
+        "short_name": "Female workforce earning over $3,334 per month (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} female workers earn over $3,334 per month in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "earnings_3334_and_over_female_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the female workforce earning over $3,334 per month. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce earning over $3,334 per month (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the female workforce earning over $3,334 per month",
+        "short_name": "Female workforce earning over $3,334 per month (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the female workers earn over $3,334 per month in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "earnings_3334_and_over_male_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the male workforce earning over $3,334 per month. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce earning over $3,334 per month (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the male workforce earning over $3,334 per month",
+        "short_name": "Male workforce earning over $3,334 per month (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} male workers earn over $3,334 per month in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "earnings_3334_and_over_male_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the male workforce earning over $3,334 per month. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce earning over $3,334 per month (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the male workforce earning over $3,334 per month",
+        "short_name": "Male workforce earning over $3,334 per month (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the male workers earn over $3,334 per month in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
     "earnings_per_job": {
         "category": "Employment/Workforce Development",
         "citations": "",
@@ -11835,6 +12835,7 @@
         "unit": ""
     },
     "entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -11857,6 +12858,7 @@
         "unit": ""
     },
     "exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -11879,6 +12881,7 @@
         "unit": ""
     },
     "exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -11923,6 +12926,7 @@
         "unit": ""
     },
     "fruit_treeNut_total_sales": {
+        "aggregation_method": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -12246,6 +13250,294 @@
         "type": "index",
         "unit": ""
     },
+    "industry_goods_female_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the female workforce in Goods Producing industry sectors. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce in Goods Producing industry sectors (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the female workforce in Goods Producing industry sectors",
+        "short_name": "Female workforce in Goods Producing industry sectors (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} female workers in Goods Producing industry sectors in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "industry_goods_female_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the female workforce in Goods Producing industry sectors. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce in Goods Producing industry sectors (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the female workforce in Goods Producing industry sectors",
+        "short_name": "Female workforce in Goods Producing industry sectors (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the female workers are in Goods Producing industry sectors in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "industry_goods_male_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the male workforce in Goods Producing industry sectors. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce in Goods Producing industry sectors (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the male workforce in Goods Producing industry sectors",
+        "short_name": "Male workforce in Goods Producing industry sectors (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} male workers in Goods Producing industry sectors in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "industry_goods_male_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the male workforce in Goods Producing industry sectors. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce in Goods Producing industry sectors (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the male workforce in Goods Producing industry sectors",
+        "short_name": "Male workforce in Goods Producing industry sectors (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the male workers are in Goods Producing industry sectors in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "industry_other_services_female_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the female workforce in other Service industry sectors. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce in other Service industry sectors (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the female workforce in other Service industry sectors",
+        "short_name": "Female workforce in other Service industry sectors (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} female workers in other Service industry sectors in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "industry_other_services_female_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the female workforce in other Service industry sectors. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce in other Service industry sectors (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the female workforce in other Service industry sectors",
+        "short_name": "Female workforce in other Service industry sectors (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the female workers are in other Service industry sectors in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "industry_other_services_male_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the male workforce in other Service industry sectors. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce in other Service industry sectors (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the male workforce in other Service industry sectors",
+        "short_name": "Male workforce in other Service industry sectors (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} male workers in other Service industry sectors in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "industry_other_services_male_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the male workforce in other Service industry sectors. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce in other Service industry sectors (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the male workforce in other Service industry sectors",
+        "short_name": "Male workforce in other Service industry sectors (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the male workers are in other Service industry sectors in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "industry_trade_transporation_utilities_female_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the female workforce in Trade, Transportation, and Utilities industry sectors. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce in Trade, Transportation, and Utilities industry sectors (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the female workforce in Trade, Transportation, and Utilities industry sectors",
+        "short_name": "Female workforce in Trade, Transportation, and Utilities industry sectors (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} female workers in Trade, Transportation, and Utilities industry sectors in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "industry_trade_transporation_utilities_female_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the female workforce in Trade, Transportation, and Utility industry sectors. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce in Trade, Transportation, and Utility industry sectors (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the female workforce in Trade, Transportation, and Utility industry sectors",
+        "short_name": "Female workforce in Trade, Transportation, and Utility industry sectors (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the female workers are in Trade, Transportation, and Utility industry sectors in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
+    "industry_trade_transporation_utilities_male_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the male workforce in Trade, Transportation, and Utilities industry sectors. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce in Trade, Transportation, and Utilities industry sectors (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the male workforce in Trade, Transportation, and Utilities industry sectors",
+        "short_name": "Male workforce in Trade, Transportation, and Utilities industry sectors (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} male workers in Trade, Transportation, and Utilities industry sectors in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "industry_trade_transporation_utilities_male_perc": {
+        "aggregation_method": "percent",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Percent of the male workforce in Trade, Transportation, and Utility industry sectors. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce in Trade, Transportation, and Utility industry sectors (workplace)",
+        "measure_type": "percent",
+        "short_description": "Percent of the male workforce in Trade, Transportation, and Utility industry sectors",
+        "short_name": "Male workforce in Trade, Transportation, and Utility industry sectors (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "{value} of the male workers are in Trade, Transportation, and Utility industry sectors in {features.name}.",
+        "type": "",
+        "unit": "person"
+    },
     "insecure_pc_original": {
         "category": "Nutrition and Food Security",
         "citations": "",
@@ -12477,6 +13769,7 @@
         "unit": ""
     },
     "job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -12499,6 +13792,7 @@
         "unit": ""
     },
     "job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -12521,6 +13815,7 @@
         "unit": ""
     },
     "job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -12543,6 +13838,7 @@
         "unit": ""
     },
     "job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -12774,6 +14070,7 @@
         "unit": ""
     },
     "minority_owned_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -12796,6 +14093,7 @@
         "unit": ""
     },
     "minority_owned_business_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -12818,6 +14116,7 @@
         "unit": ""
     },
     "minority_owned_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -12840,6 +14139,7 @@
         "unit": ""
     },
     "minority_owned_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -12862,6 +14162,7 @@
         "unit": ""
     },
     "minority_owned_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -12884,6 +14185,7 @@
         "unit": ""
     },
     "minority_owned_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -12906,6 +14208,7 @@
         "unit": ""
     },
     "minority_owned_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -12928,6 +14231,7 @@
         "unit": ""
     },
     "minority_owned_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -12950,6 +14254,7 @@
         "unit": ""
     },
     "minority_owned_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -12972,6 +14277,7 @@
         "unit": ""
     },
     "minority_owned_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -12994,6 +14300,7 @@
         "unit": ""
     },
     "minority_owned_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13016,6 +14323,7 @@
         "unit": ""
     },
     "minority_owned_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13038,6 +14346,7 @@
         "unit": ""
     },
     "minority_owned_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13060,6 +14369,7 @@
         "unit": ""
     },
     "minority_owned_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13082,6 +14392,7 @@
         "unit": ""
     },
     "minority_owned_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13104,6 +14415,7 @@
         "unit": ""
     },
     "minority_owned_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13126,6 +14438,7 @@
         "unit": ""
     },
     "minority_owned_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13148,6 +14461,7 @@
         "unit": ""
     },
     "minority_owned_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13328,6 +14642,7 @@
         "unit": ""
     },
     "new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13373,6 +14688,7 @@
         "unit": ""
     },
     "non_minority_owned_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13395,6 +14711,7 @@
         "unit": ""
     },
     "non_minority_owned_business_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13417,6 +14734,7 @@
         "unit": ""
     },
     "non_minority_owned_entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13439,6 +14757,7 @@
         "unit": ""
     },
     "non_minority_owned_exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13461,6 +14780,7 @@
         "unit": ""
     },
     "non_minority_owned_exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13483,6 +14803,7 @@
         "unit": ""
     },
     "non_minority_owned_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13505,6 +14826,7 @@
         "unit": ""
     },
     "non_minority_owned_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13527,6 +14849,7 @@
         "unit": ""
     },
     "non_minority_owned_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13549,6 +14872,7 @@
         "unit": ""
     },
     "non_minority_owned_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13571,6 +14895,7 @@
         "unit": ""
     },
     "non_minority_owned_new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13593,6 +14918,7 @@
         "unit": ""
     },
     "non_minority_owned_number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13615,6 +14941,7 @@
         "unit": ""
     },
     "non_minority_owned_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13637,6 +14964,7 @@
         "unit": ""
     },
     "non_minority_owned_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13659,6 +14987,7 @@
         "unit": ""
     },
     "non_minority_owned_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13681,6 +15010,7 @@
         "unit": ""
     },
     "non_minority_owned_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13703,6 +15033,7 @@
         "unit": ""
     },
     "non_minority_owned_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13725,6 +15056,7 @@
         "unit": ""
     },
     "non_minority_owned_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13747,6 +15079,7 @@
         "unit": ""
     },
     "non_minority_owned_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13791,6 +15124,7 @@
         "unit": ""
     },
     "number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -13938,6 +15272,7 @@
         "unit": ""
     },
     "operation_farmValue": {
+        "aggregation_method": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -13958,6 +15293,54 @@
         "statement": "Total asset value per operation to {features.name} is {value}.",
         "type": "dollar",
         "unit": "dollar"
+    },
+    "overall_female_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the female workforce. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Female workforce (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the female workforce",
+        "short_name": "Female workforce (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} female workers in {features.name}.",
+        "type": "",
+        "unit": "individual"
+    },
+    "overall_male_count": {
+        "aggregation_method": "count",
+        "category": "Employment/Workforce Development",
+        "citations": [],
+        "data_type": "",
+        "equity_category": "",
+        "layer": [],
+        "long_description": "Overall count of the male workforce. Based off the Workforce Area Characteristics (WAC) data from Longitudinal Employer-Household Dynamics (LEHD) Origin-Destination Employment Statistics (LODES). Jobs in this case are totaled by work Census Block.",
+        "long_name": "Male workforce (workplace)",
+        "measure_type": "count",
+        "short_description": "Overall count of the male workforce",
+        "short_name": "Male workforce (workplace)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
+                "url": "https://lehd.ces.census.gov/data/"
+            }
+        ],
+        "statement": "There are {value} male workers in {features.name}.",
+        "type": "",
+        "unit": "person"
     },
     "own_morgage": {
         "category": "Housing",
@@ -14504,6 +15887,7 @@
         "unit": "dollar"
     },
     "perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -14526,6 +15910,7 @@
         "unit": ""
     },
     "perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -14548,6 +15933,7 @@
         "unit": ""
     },
     "perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -14570,6 +15956,7 @@
         "unit": ""
     },
     "perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -16083,6 +17470,7 @@
         "unit": ""
     },
     "total_acres": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -16105,6 +17493,7 @@
         "unit": ""
     },
     "total_animalProducts_sales": {
+        "aggregation_method": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -16127,6 +17516,7 @@
         "unit": "dollar"
     },
     "total_animal_expense": {
+        "aggregation_method": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -16149,6 +17539,7 @@
         "unit": "dollar"
     },
     "total_calves_sales": {
+        "aggregation_method": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -16171,6 +17562,7 @@
         "unit": "dollar"
     },
     "total_commodity_sales": {
+        "aggregation_method": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -16193,6 +17585,7 @@
         "unit": "dollar"
     },
     "total_cropland_acres": {
+        "aggregation_method": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -16215,6 +17608,7 @@
         "unit": ""
     },
     "total_cropland_operations": {
+        "aggregation_method": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -16237,6 +17631,7 @@
         "unit": ""
     },
     "total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -16259,6 +17654,7 @@
         "unit": ""
     },
     "total_farmValue": {
+        "aggregation_method": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -16303,6 +17699,7 @@
         "unit": ""
     },
     "total_irrigatedCropland_acre": {
+        "aggregation_method": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -16325,6 +17722,7 @@
         "unit": ""
     },
     "total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -16347,6 +17745,7 @@
         "unit": ""
     },
     "total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -16369,6 +17768,7 @@
         "unit": ""
     },
     "total_operations": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",

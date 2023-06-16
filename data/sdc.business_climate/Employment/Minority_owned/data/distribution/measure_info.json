@@ -1,5 +1,6 @@
 {
     "minority_owned_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "minority_owned_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -44,6 +46,7 @@
         "unit": ""
     },
     "minority_owned_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -66,6 +69,7 @@
         "unit": ""
     },
     "minority_owned_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -88,6 +92,7 @@
         "unit": ""
     },
     "minority_owned_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -110,6 +115,7 @@
         "unit": ""
     },
     "minority_owned_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -132,6 +138,7 @@
         "unit": ""
     },
     "minority_owned_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -154,6 +161,7 @@
         "unit": ""
     },
     "minority_owned_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -176,6 +184,7 @@
         "unit": ""
     },
     "minority_owned_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -198,6 +207,7 @@
         "unit": ""
     },
     "minority_owned_business_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -220,6 +230,7 @@
         "unit": ""
     },
     "minority_owned_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -242,6 +253,7 @@
         "unit": ""
     },
     "minority_owned_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -264,6 +276,7 @@
         "unit": ""
     },
     "minority_owned_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -286,6 +299,7 @@
         "unit": ""
     },
     "non_minority_owned_total_employment": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -308,6 +322,7 @@
         "unit": ""
     },
     "non_minority_owned_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -330,6 +345,7 @@
         "unit": ""
     },
     "non_minority_owned_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -352,6 +368,7 @@
         "unit": ""
     },
     "non_minority_owned_business_create_job": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -374,6 +391,7 @@
         "unit": ""
     },
     "non_minority_owned_total_job_creation": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -396,6 +414,7 @@
         "unit": ""
     },
     "non_minority_owned_perc_job_creation_new": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -418,6 +437,7 @@
         "unit": ""
     },
     "non_minority_owned_perc_job_creation_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -440,6 +460,7 @@
         "unit": ""
     },
     "non_minority_owned_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -462,6 +483,7 @@
         "unit": ""
     },
     "non_minority_owned_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -484,6 +506,7 @@
         "unit": ""
     },
     "non_minority_owned_business_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -506,6 +529,7 @@
         "unit": ""
     },
     "non_minority_owned_total_job_destruction": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -528,6 +552,7 @@
         "unit": ""
     },
     "non_minority_owned_perc_job_destruction_exit": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -550,6 +575,7 @@
         "unit": ""
     },
     "non_minority_owned_perc_job_destruction_active": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",

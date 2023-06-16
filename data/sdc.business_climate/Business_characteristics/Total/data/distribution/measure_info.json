@@ -1,5 +1,6 @@
 {
     "entry_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "new_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -44,6 +46,7 @@
         "unit": ""
     },
     "exit_rate": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -66,6 +69,7 @@
         "unit": ""
     },
     "exit_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -88,6 +92,7 @@
         "unit": ""
     },
     "number_business": {
+        "aggregation_method": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
