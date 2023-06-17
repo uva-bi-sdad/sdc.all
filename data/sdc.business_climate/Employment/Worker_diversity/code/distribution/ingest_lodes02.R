@@ -12,15 +12,20 @@ selected_year <- 2010:2019
 segments <- c("SA01", "SA02", "SA03", "SE01", "SE02", "SE03", "SI01", "SI02", "SI03")
 table <- NULL
 tables <- NULL
+lodes_type <- c("wac", "rac")
+type_geos <-c("w_", "h_")
 
+for(e in 1:length(lodes_type)){
+table <- NULL
+tables <- NULL
 for (i in 1:length(segments)){
 table <- grab_lodes(state = 'va', 
                           year = selected_year, 
-                          lodes_type = "wac",       # only wac = Workplace Area Characteristic data 
+                          lodes_type = lodes_type[e],       # only wac = Workplace Area Characteristic data 
                           job_type = "JT00",        # all jobs 
                           segment = segments[i], 
                           state_part = "main",
-                          agg_geo = "bg") %>% select(year, state, geoid=w_bg, starts_with('CS'))
+                          agg_geo = "bg") %>% select(year, state, geoid=paste0(type_geos[e], "bg"), starts_with('CS'))
 
 # reshape the data
 table <- table %>% 
@@ -41,11 +46,11 @@ agg_geos <- c("bg", "tract", "county")
 for(i in 1:length(agg_geos)){
 overall_table <- grab_lodes(state = 'va', 
                     year = selected_year, 
-                    lodes_type = "wac",       # only wac = Workplace Area Characteristic data 
+                    lodes_type = lodes_type[e],       # only wac = Workplace Area Characteristic data 
                     job_type = "JT00",        # all jobs 
                     segment = "S000", 
                     state_part = "main",
-                    agg_geo = agg_geos[i]) %>% select(year, state, geoid=paste0("w_", agg_geos[i]), starts_with('CS'))
+                    agg_geo = agg_geos[i]) %>% select(year, state, geoid=paste0(type_geos[e], agg_geos[i]), starts_with('CS'))
 
 overall_table <- overall_table %>% 
   pivot_longer(cols = starts_with("CS"), names_to = "sex_id", values_to = "value") %>%
@@ -67,16 +72,16 @@ data <- combined_overall %>% rbind(combined_count) %>% rbind(combined_percent)
 
 data <- data %>% mutate(sex_id = ifelse(sex_id == "CS01", "male", "female"),
  segment = case_when(
-    segment == "SA01" ~ "age_29_and_under",
-    segment == "SA02" ~ "age_30_to_54",
-    segment == "SA03" ~ "age_55_and_over",
-    segment == "SE01" ~ "earnings_1250_and_under",
-    segment == "SE02" ~ "earnings_1251_to_3333",
-    segment == "SE03" ~ "earnings_3334_and_over",
-    segment == "SI01" ~ "industry_goods",
-    segment == "SI02" ~ "industry_trade_transporation_utilities",
-    segment == "SI03" ~ "industry_other_services",
-    segment == "overall" ~ "overall")) %>%
+    segment == "SA01" ~ paste0(lodes_type[e], "_age_29_and_under"),
+    segment == "SA02" ~ paste0(lodes_type[e], "_age_30_to_54"),
+    segment == "SA03" ~ paste0(lodes_type[e], "_age_55_and_over"),
+    segment == "SE01" ~ paste0(lodes_type[e], "_earnings_1250_and_under"),
+    segment == "SE02" ~ paste0(lodes_type[e], "_earnings_1251_to_3333"),
+    segment == "SE03" ~ paste0(lodes_type[e], "_earnings_3334_and_over"),
+    segment == "SI01" ~ paste0(lodes_type[e], "_industry_goods"),
+    segment == "SI02" ~ paste0(lodes_type[e], "_industry_trade_transporation_utilities"),
+    segment == "SI03" ~ paste0(lodes_type[e], "_industry_other_services"),
+    segment == "overall" ~ paste0(lodes_type[e], "_overall"))) %>%
   mutate(measure = paste0(segment, "_", sex_id, "_", aggregation)) %>% select(-sex_id, -segment, -aggregation) %>% distinct() %>%
   mutate(moe = NA)
 
@@ -85,5 +90,6 @@ data <- data %>% mutate(sex_id = ifelse(sex_id == "CS01", "male", "female"),
 #          row.names = FALSE)
 
 fx <- data %>% filter(stringr::str_detect(geoid, "^51059"))
-readr::write_csv(fx, xzfile("./Employment/Worker_diversity/data/distribution/va059_cttrbg_lodes_2010_2019_workplace_employment_segments_by_sex.csv.xz", compression = 9))
+readr::write_csv(fx, xzfile(paste0("./Employment/Worker_diversity/data/distribution/va059_cttrbg_lodes_2010_2019_", lodes_type[e], "_employment_segments_by_sex.csv.xz"), compression = 9))
+}
 
