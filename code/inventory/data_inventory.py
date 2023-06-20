@@ -10,6 +10,44 @@ from string import Template
 import traceback
 import re
 
+def geoid_to_region_type(geoid):   
+
+    id_len = len(geoid)
+    
+    if (id_len==2):
+        r_type = "state"
+    elif (id_len==5):
+        r_type = "county"
+    #elif (id_len==7):
+    #    r_type = "Place"
+    #elif (id_len==10):
+    #    r_type = "County Subdivision"
+    elif (id_len==11):
+        r_type = "census tract"
+    elif (id_len==12):
+        r_type = "block group"
+    elif (id_len==15):
+        r_type = "block"
+    elif "_ahec_" in geoid:
+        r_type = "AHEC region"
+    elif "_ca_" in geoid:
+        r_type = "civic association"
+    elif "_hd_" in geoid:
+        r_type = "health district"
+    elif "_hsr_" in geoid:
+        r_type = "human services region"
+    elif "_pd_" in geoid:
+        r_type = "planning district"
+    elif "_sd_" in geoid:
+        r_type = "supervisor district"
+    elif "_zc_" in geoid:
+        r_type = "zip code"
+    else:
+        r_type = "unidentified"
+        
+    return r_type
+
+
 
 def evaluate_folder(dirpath):
     report = ""
@@ -52,6 +90,9 @@ def evaluate_folder(dirpath):
                     
                     state = df["geoid"].str[0:2]
                     df["state"] = ["DC" if st == "11" else "MD" if st == "24" else "VA" for st in state]
+                    
+                    if "region_type" not in df.columns:
+                        df["region_type"] = [geoid_to_region_type(g) for g in df["geoid"]]
                         
                     counts = df.groupby(['measure', 'year', 'state', 'region_type']).agg(count=('geoid', 'count'))
                     counts = counts.reset_index()  # move multiindex to columns
