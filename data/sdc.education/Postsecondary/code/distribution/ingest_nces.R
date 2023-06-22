@@ -10,11 +10,8 @@ districts <- read.csv(paste0(
   "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/",
   "VA/State%20Geographies/Health%20Districts/2020/data/distribution/va_ct_to_hd_crosswalk.csv"
 ))
-county_districts <- c(
-  structure(districts$hd_geoid, names = districts$ct_geoid),
-  "11001" = "11_hd_01", "24017" = "24_hd_01", "24021" = "24_hd_01",
-  "24031" = "24_hd_01", "24033" = "24_hd_01"
-)
+county_districts <- structure(districts$hd_geoid, names = districts$ct_geoid)
+include_counties <- c(names(county_districts), "11001", "24017", "24021", "24031", "24033")
 
 # make a function to process each year
 process_year <- function(year, dir = base_dir, districts = county_districts,
@@ -193,7 +190,7 @@ process_year <- function(year, dir = base_dir, districts = county_districts,
     write.csv(population, xzfile(results_file), row.names = FALSE)
     population
   }
-  block_groups <- block_groups[substring(block_groups$GEOID, 1, 5) %in% names(districts), ]
+  block_groups <- block_groups[substring(block_groups$GEOID, 1, 5) %in% include_counties, ]
   # aggregate
   agger <- function(d, part = NULL) {
     drivetimes <- grep("drivetime", colnames(d), fixed = TRUE)
@@ -215,11 +212,14 @@ process_year <- function(year, dir = base_dir, districts = county_districts,
     res
   }
   message(year, " creating aggregates")
+  dists <- districts[substring(block_groups$GEOID, 1, 5)]
+  su <- !is.na(dists)
+  browser()
   list(
     block_groups = block_groups,
     tracts = do.call(rbind, lapply(split(block_groups, substring(block_groups$GEOID, 1, 11)), agger, 11)),
     counties = do.call(rbind, lapply(split(block_groups, substring(block_groups$GEOID, 1, 5)), agger, 5)),
-    districts = do.call(rbind, lapply(split(block_groups, districts[substring(block_groups$GEOID, 1, 5)]), agger))
+    districts = do.call(rbind, lapply(split(block_groups[su, ], dists[su]), agger))
   )
 }
 
@@ -227,7 +227,7 @@ process_year <- function(year, dir = base_dir, districts = county_districts,
 ## may need to run sequentially when first calculating travel times
 cl <- makeCluster(min(2021 - 2013, detectCores() - 1))
 on.exit(stopCluster(cl))
-clusterExport(cl, c("base_dir", "county_districts"))
+clusterExport(cl, c("base_dir", "county_districts", "include_counties"))
 data <- parLapply(cl, 2013:2021, process_year)
 stopCluster(cl)
 

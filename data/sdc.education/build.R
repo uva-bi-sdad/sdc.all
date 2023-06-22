@@ -17,10 +17,6 @@ if (file.exists(entities_file)) {
   entities <- entities[!duplicated(entities$geoid), c("geoid", "region_type")]
   saveRDS(entities, entities_file, compress = "xz")
 }
-entities <- rbind(entities, data.frame(
-  geoid = c("11_hd_01", "24_hd_01"),
-  region_type = rep("health district", 2)
-))
 
 ## unify original files
 datasets <- list.dirs(".", recursive = FALSE)
@@ -30,11 +26,7 @@ data_reformat_sdad(
   list.files(datasets, "\\.csv", full.names = TRUE), "docs/data",
   metadata = entities, entity_info = NULL
 )
-info <- lapply(
-  list.files(datasets, "measure_info\\.json", full.names = TRUE),
-  jsonify::from_json,
-  simplify = FALSE
-)
+info <- lapply(list.files(datasets, "measure_info\\.json", full.names = TRUE), jsonlite::read_json)
 agg_info <- list()
 for (m in info) {
   for (e in names(m)) {
@@ -42,7 +34,7 @@ for (m in info) {
   }
 }
 if (length(agg_info)) {
-  write(jsonify::pretty_json(agg_info, unbox = TRUE), "docs/data/measure_info.json")
+  jsonlite::write_json(agg_info, "docs/data/measure_info.json", auto_unbox = TRUE, pretty = TRUE)
 }
 
 ## add unified files

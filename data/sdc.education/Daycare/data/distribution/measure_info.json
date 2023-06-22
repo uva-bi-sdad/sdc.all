@@ -1,5 +1,6 @@
 {
     "daycare_capacity": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",
@@ -26,6 +27,7 @@
         "unit": ""
     },
     "daycare_min_drivetime": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",
@@ -57,6 +59,7 @@
         "unit": ""
     },
     "daycare_per_1k": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -110,6 +113,7 @@
         "unit": ""
     },
     "daycare_over_4_per_1k": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -156,6 +160,7 @@
         "unit": ""
     },
     "daycare_under_10_per_1k": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": [
             "wan12",

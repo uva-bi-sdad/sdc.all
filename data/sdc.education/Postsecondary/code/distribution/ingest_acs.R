@@ -6,13 +6,7 @@ districts <- read.csv(paste0(
   "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/",
   "VA/State%20Geographies/Health%20Districts/2020/data/distribution/va_ct_to_hd_crosswalk.csv"
 ))
-county_districts <- c(
-  structure(districts$hd_geoid, names = districts$ct_geoid),
-  "11001" = "11_hd_01", "24017" = "24_hd_01", "24021" = "24_hd_01",
-  "24031" = "24_hd_01", "24033" = "24_hd_01"
-)
-missing_districts <- county_districts[!county_districts %in% districts$hd_geoid]
-names(missing_districts) <- missing_districts
+county_districts <- structure(districts$hd_geoid, names = districts$ct_geoid)
 
 states <- c("DC", "MD", "VA")
 years <- 2010:2021
@@ -68,33 +62,38 @@ data <- do.call(rbind, lapply(states, function(state) {
       )))
     }
     counties <- retrieve("county")
+    districts <- county_districts[substring(counties$wide$GEOID, 1, 5)]
+    districts <- districts[!is.na(districts)]
     do.call(rbind, c(
       retrieve("tract")$tall,
       counties$tall,
-      lapply(
-        list(county_districts[substring(counties$wide$GEOID, 1, 5)]),
-        function(set) {
-          counties$wide$GEOID <- set
-          do.call(rbind, lapply(split(counties$wide, counties$wide$GEOID), function(e) {
-            id <- e$GEOID[[1]]
-            total <- sum(e$acs_postsecondary_count)
-            data.frame(
-              GEOID = id,
-              measure = c("acs_postsecondary_count", "acs_postsecondary_percent"),
-              year = year,
-              value = c(total, total / sum(e$totalE) * 100),
-              moe = c(
-                tidycensus::moe_sum(
-                  e$acs_postsecondary_count_error, e$acs_postsecondary_count, TRUE
-                ),
-                tidycensus::moe_sum(
-                  e$acs_postsecondary_percent_error, e$acs_postsecondary_percent, TRUE
+      if (length(districts)) {
+        lapply(
+          list(districts),
+          function(set) {
+            hd_counties <- counties$wide[counties$wide$GEOID %in% names(set), ]
+            hd_counties$GEOID <- set[hd_counties$GEOID]
+            do.call(rbind, lapply(split(hd_counties, hd_counties$GEOID), function(e) {
+              id <- e$GEOID[[1]]
+              total <- sum(e$acs_postsecondary_count)
+              data.frame(
+                GEOID = id,
+                measure = c("acs_postsecondary_count", "acs_postsecondary_percent"),
+                year = year,
+                value = c(total, total / sum(e$totalE) * 100),
+                moe = c(
+                  tidycensus::moe_sum(
+                    e$acs_postsecondary_count_error, e$acs_postsecondary_count, TRUE
+                  ),
+                  tidycensus::moe_sum(
+                    e$acs_postsecondary_percent_error, e$acs_postsecondary_percent, TRUE
+                  )
                 )
               )
-            )
-          }))
-        }
-      )
+            }))
+          }
+        )
+      }
     ))
   }))
 }))

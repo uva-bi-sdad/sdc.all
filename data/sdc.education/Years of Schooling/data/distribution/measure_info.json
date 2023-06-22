@@ -1,5 +1,6 @@
 {
     "average_years_schooling": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",

@@ -33,6 +33,7 @@
         }
     },
     "schools_2year_per_100k": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -79,6 +80,7 @@
         "unit": "per 100k"
     },
     "schools_2year_min_drivetime": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",
@@ -115,6 +117,7 @@
         "unit": "minutes"
     },
     "schools_under2year_per_100k": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -161,6 +164,7 @@
         "unit": "per 100k"
     },
     "schools_under2year_min_drivetime": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",
@@ -197,6 +201,7 @@
         "unit": "minutes"
     },
     "schools_2year_with_biomedical_program_per_100k": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -250,6 +255,7 @@
         "unit": "per 100k"
     },
     "schools_2year_with_computer_program_per_100k": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -303,6 +309,7 @@
         "unit": "per 100k"
     },
     "schools_2year_with_engineering_program_per_100k": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -356,6 +363,7 @@
         "unit": "per 100k"
     },
     "schools_2year_with_physical_program_per_100k": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -409,6 +417,7 @@
         "unit": "per 100k"
     },
     "schools_2year_with_science_program_per_100k": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -462,6 +471,7 @@
         "unit": "per 100k"
     },
     "acs_postsecondary_percent": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",
@@ -486,6 +496,7 @@
         "unit": "%"
     },
     "acs_postsecondary_count": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",

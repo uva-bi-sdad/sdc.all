@@ -1,5 +1,6 @@
 {
     "median_read_pass_rate": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",
@@ -24,6 +25,7 @@
         "unit": "%"
     },
     "mean_read_pass_rate": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",
