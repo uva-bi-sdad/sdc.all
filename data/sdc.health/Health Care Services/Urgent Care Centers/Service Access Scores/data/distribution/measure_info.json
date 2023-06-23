@@ -1,5 +1,6 @@
 {
     "urgent_near_10_median": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -24,6 +25,7 @@
         "unit": ""
     },
     "urgent_cnt": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -48,6 +50,7 @@
         "unit": ""
     },
     "urgent_3sfca": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": [
             "lou04",

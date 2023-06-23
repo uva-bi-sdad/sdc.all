@@ -1,5 +1,6 @@
 {
     "economic_opportunity_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "education_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -44,6 +46,7 @@
         "unit": ""
     },
     "employment_access_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -66,6 +69,7 @@
         "unit": ""
     },
     "food_accessibility_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -88,6 +92,7 @@
         "unit": ""
     },
     "health_opportunity_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -110,6 +115,7 @@
         "unit": ""
     },
     "income_inequality_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -132,6 +138,7 @@
         "unit": ""
     },
     "job_participation_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -154,6 +161,7 @@
         "unit": ""
     },
     "material_deprivation_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -176,6 +184,7 @@
         "unit": ""
     },
     "pop_churning_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -198,6 +207,7 @@
         "unit": ""
     },
     "pop_density_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -220,6 +230,7 @@
         "unit": ""
     },
     "segregation_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -242,6 +253,7 @@
         "unit": ""
     },
     "walkability_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -264,6 +276,7 @@
         "unit": ""
     },
     "wellness_disparity_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -286,6 +299,7 @@
         "unit": ""
     },
     "consumer_opportunity_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -308,6 +322,7 @@
         "unit": ""
     },
     "affordability_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -330,6 +345,7 @@
         "unit": ""
     },
     "air_quality_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -352,6 +368,7 @@
         "unit": ""
     },
     "community_environment_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -374,6 +391,7 @@
         "unit": ""
     },
     "access_care_indicator": {
+        "aggregation_method": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",

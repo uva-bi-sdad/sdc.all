@@ -1,5 +1,6 @@
 {
     "ems_near_10_median": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "ems_cnt": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -44,6 +46,7 @@
         "unit": ""
     },
     "ems_3sfca": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": [
             "lou04",

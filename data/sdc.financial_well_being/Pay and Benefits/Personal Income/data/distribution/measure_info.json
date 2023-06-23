@@ -1,11 +1,12 @@
 {
     "earnings_per_job": {
+        "aggregation_method": "",
         "category": "Employment/Workforce Development",
         "citations": "",
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Earnings per job is calculated based on the GDP and Personal Income table from the Bureau of Economic Analysis.",
+        "long_description": "Earnings per job is calculated based on the GDP and Personal Income table from the Bureau of Economic Analysis. For splitting the multi county observations in the df,we can perform splitting from 83 since thats when multi county occurs. So basically we have + and , which binds them so we need to split based on those signs, first we target all the + and we target only rows where there is , and splitting is done. Initially we are removing (,VA) from names and attaching them at the end of the process for our convenience. We are having the same values to be repeated for particular combination. The split entries are expanded into multiple rows using unnest function. In simple terms, first stage of splitting using + sign from row 83 then slitted rows are expanded. next splitting is for particular rows which contains , and then splitted entries are expanded.For example fairfax county, fairfax city, falls church city will have same values after splitting. For filling the Geofips, we are storing corresponding Geofips values in a vector and assigning it to the corresponding rows in correct order",
         "long_name": "Earnings per job",
         "measure_type": "",
         "short_description": "Average of earnings per job.",

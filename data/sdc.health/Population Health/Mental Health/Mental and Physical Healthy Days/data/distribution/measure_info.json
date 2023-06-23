@@ -1,5 +1,6 @@
 {
     "perc_poor_ment_hlth_days_14_and_over": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "perc_poor_phys_hlth_days_14_and_over": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",

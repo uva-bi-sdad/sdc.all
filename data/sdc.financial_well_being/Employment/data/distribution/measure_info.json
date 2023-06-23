@@ -1,5 +1,6 @@
 {
     "emp_rate": {
+        "aggregation_method": "",
         "category": "Employment/Workforce Development",
         "citations": "",
         "data_type": "decimal",
@@ -23,6 +24,7 @@
         "unit": "people"
     },
     "job_participate_rate": {
+        "aggregation_method": "",
         "category": "Employment/Workforce Development",
         "citations": "",
         "data_type": "decimal",

@@ -1,5 +1,6 @@
 {
     "primcare_cnt": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "primcare_2sfca": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -49,6 +51,7 @@
         "unit": ""
     },
     "primcare_e2sfca": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -76,6 +79,7 @@
         "unit": ""
     },
     "primcare_3sfca": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": [
             "lou04",

@@ -1,5 +1,6 @@
 {
     "perc_dental_visit": {
+        "aggregation_method": "",
         "category": "",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "perc_annual_checkup": {
+        "aggregation_method": "",
         "category": "",
         "citations": "",
         "data_type": "numeric",

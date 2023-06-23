@@ -1,5 +1,6 @@
 {
     "no_hlth_ins_pct": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -23,6 +24,7 @@
         "unit": ""
     },
     "hlth_ins_pct": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",

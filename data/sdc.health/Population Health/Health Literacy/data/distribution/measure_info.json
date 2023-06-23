@@ -1,5 +1,6 @@
 {
     "health_literacy_estimate": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": [
             "savitz20",
@@ -30,6 +31,7 @@
         "unit": ""
     },
     "perc_post_hs_edu": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",
@@ -52,6 +54,7 @@
         "unit": ""
     },
     "num_post_hs_edu": {
+        "aggregation_method": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",

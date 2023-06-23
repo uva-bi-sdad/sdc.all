@@ -1,5 +1,6 @@
 {
     "prevent_hosp_rate": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",

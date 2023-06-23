@@ -1,5 +1,6 @@
 {
     "dent_cnt": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "dent_2sfca": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -49,6 +51,7 @@
         "unit": ""
     },
     "dent_e2sfca": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": [
             "lou04",

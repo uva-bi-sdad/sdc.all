@@ -1,5 +1,6 @@
 {
     "median_household_income": {
+        "aggregation_method": "",
         "category": "Financial Well Being",
         "citations": "",
         "data_type": "integer",

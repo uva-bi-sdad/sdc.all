@@ -1,5 +1,6 @@
 {
     "adequateplus_pc": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "adequate_pc": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -44,6 +46,7 @@
         "unit": ""
     },
     "intermediate_pc": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -66,6 +69,7 @@
         "unit": ""
     },
     "inadequate_pc": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -88,6 +92,7 @@
         "unit": ""
     },
     "adequateplus": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -110,6 +115,7 @@
         "unit": ""
     },
     "adequate": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -132,6 +138,7 @@
         "unit": ""
     },
     "intermediate": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -154,6 +161,7 @@
         "unit": ""
     },
     "inadequate": {
+        "aggregation_method": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",

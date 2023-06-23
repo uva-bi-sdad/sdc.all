@@ -1,5 +1,6 @@
 {
     "alice_pct": {
+        "aggregation_method": "",
         "category": "Financial Well Being",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "poverty_pct": {
+        "aggregation_method": "",
         "category": "Financial Well Being",
         "citations": "",
         "data_type": "numeric",

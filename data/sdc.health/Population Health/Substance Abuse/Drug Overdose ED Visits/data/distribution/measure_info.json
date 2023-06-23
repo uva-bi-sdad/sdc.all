@@ -1,5 +1,6 @@
 {
     "avg_monthly_rate": {
+        "aggregation_method": "",
         "category": "Behavioral Health, Substance Use Disorder and Recovery",
         "citations": "",
         "data_type": "numeric",
