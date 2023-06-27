@@ -4,16 +4,16 @@ library(dplyr)
 library(readr)
 library(naniar)
 library(sf)
-
+library(jsonlite)
 
 # Prepare earnings
 
 # load csv from BEA
 # total employment selected
-tot_emp <- read_csv("./data/earnings/original/tot_emp.csv.xz")
-wage_sup <- read_csv("./data/earnings/original/wage_sup.csv.xz")
-wage_sal <- read_csv("./data/earnings/original/wage_sal.csv.xz")
-prop_inc <- read_csv("./data/earnings/original/prop_inc.csv.xz")
+# tot_emp <- read_csv("./data/earnings/original/tot_emp.csv.xz")
+# wage_sup <- read_csv("./data/earnings/original/wage_sup.csv.xz")
+# wage_sal <- read_csv("./data/earnings/original/wage_sal.csv.xz")
+# prop_inc <- read_csv("./data/earnings/original/prop_inc.csv.xz")
 
 #load data
 tot_emp <- read_csv("~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/original/tot_emp.csv.xz")
@@ -103,7 +103,15 @@ earn_job$GeoName <- paste0(gsub(",", "", earn_job$GeoName), ",VA")
 
 
 #get geonames from sdc.geographies
-geo_names <- st_read("~/git/sdc.geographies/VA/Census Geographies/County/2020/data/distribution/va_geo_census_cb_2020_counties.geojson")
+
+#geo_names <- st_read("~/git/sdc.geographies/VA/Census Geographies/County/2020/data/distribution/va_geo_census_cb_2020_counties.geojson")
+
+#we can have the url and specifically getting the properties which contains geonames
+
+url <- "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Census%20Geographies/County/2020/data/distribution/va_geo_census_cb_2020_counties.geojson"
+geo_names <- fromJSON(url)$features$properties
+
+
 
 
 counties <- geo_names %>% filter(region_type=="county")
@@ -188,8 +196,9 @@ earnings_per_job <- earn_job_ct_long
 
 
 #source("./code/earnings/ingest_earnings.R")
+
 readr::write_csv(earnings_per_job,
-                 xzfile("./data/earnings/original/va_ct_bea_2015_2020_earnings_per_job.csv.xz", compression = 9))
+                 xzfile("~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/working/va_ct_bea_2015_2020_earnings_per_job.csv.xz", compression = 9))
 
 #write.csv(earnings_per_job, "~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/distribution/va_ct_bea_2015_2020_earnings_per_job.csv.xz")
 
@@ -206,8 +215,8 @@ readr::write_csv(earnings_per_job,
 va_ct_data <- earnings_per_job
 
 
-va_ct_to_hd_crosswalk <- read_csv("~/git/sdc.geographies/VA/State Geographies/Health Districts/2020/data/distribution/va_ct_to_hd_crosswalk.csv")
-
+va_ct_to_hd_crosswalk <- read_csv("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/State%20Geographies/Health%20Districts/2020/data/distribution/va_ct_to_hd_crosswalk.csv",
+                                  col_types = "cccc")
 
 
 #merging them but making sure the order is preserved while merging so adding index column and sorting based on it and removing the index column
@@ -258,4 +267,10 @@ earnings_per_job_hd_year_long_df <- as.data.frame(earnings_per_job_hd_year_long)
 # Performing row bind
 row_binded_data <- rbind(earnings_per_job_df, earnings_per_job_hd_year_long_df)
 
-write.csv(row_binded_data, "~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/distribution/va_ct_bea_2015_2020_earnings_per_job.csv.xz")
+#write.csv(row_binded_data, "~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/distribution/va_ct_bea_2015_2020_earnings_per_job.csv.xz")
+
+
+readr::write_csv(row_binded_data,
+                 xzfile("~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/distribution/va_ct_bea_2015_2020_earnings_per_job.csv.xz", compression = 9))
+
+

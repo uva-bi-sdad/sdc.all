@@ -1,5 +1,6 @@
 {
     "RISK_SCORE": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -23,6 +24,7 @@
         "unit": ""
     },
     "AVLN_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -46,6 +48,7 @@
         "unit": ""
     },
     "CFLD_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -69,6 +72,7 @@
         "unit": ""
     },
     "CWAV_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -92,6 +96,7 @@
         "unit": ""
     },
     "DRGT_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -115,6 +120,7 @@
         "unit": ""
     },
     "ERQK_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -138,6 +144,7 @@
         "unit": ""
     },
     "HAIL_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -161,6 +168,7 @@
         "unit": ""
     },
     "HWAV_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -184,6 +192,7 @@
         "unit": ""
     },
     "HRCN_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -207,6 +216,7 @@
         "unit": ""
     },
     "ISTM_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -230,6 +240,7 @@
         "unit": ""
     },
     "LNDS_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -253,6 +264,7 @@
         "unit": ""
     },
     "LTNG_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -276,6 +288,7 @@
         "unit": ""
     },
     "RFLD_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -299,6 +312,7 @@
         "unit": ""
     },
     "SWND_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -322,6 +336,7 @@
         "unit": ""
     },
     "TRND_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -345,6 +360,7 @@
         "unit": ""
     },
     "TSUN_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -368,6 +384,7 @@
         "unit": ""
     },
     "VLCN_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -391,6 +408,7 @@
         "unit": ""
     },
     "WFIR_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -414,6 +432,7 @@
         "unit": ""
     },
     "WNTW_RISKS": {
+        "aggregation_method": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",

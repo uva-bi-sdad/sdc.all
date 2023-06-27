@@ -23,7 +23,7 @@ def geoid_to_region_type(geoid):
     #elif (id_len==10):
     #    r_type = "County Subdivision"
     elif (id_len==11):
-        r_type = "census tract"
+        r_type = "tract"
     elif (id_len==12):
         r_type = "block group"
     elif (id_len==15):
@@ -56,7 +56,7 @@ def evaluate_folder(dirpath):
     # CREATE INVENTORY DF -------------------------------------
     #
 
-    inventory_df = pd.DataFrame(columns = ['CATEGORY', 'MEASURE', 'START_YEAR', 'END_YEAR'])
+    inventory_df = pd.DataFrame(columns = ['CATEGORY', 'MEASURE', 'SHORT_NAME', 'START_YEAR', 'END_YEAR'])
     
     # LOOP THROUGH EACH REPO (SDC. ...) ---------------------
     
@@ -71,78 +71,108 @@ def evaluate_folder(dirpath):
         
         # CHECK EACH DATA/DISTRIBUTION FILE ------------------------
         
-        for path in Path(subdir).rglob("data/distribution/**/*"):
+        for path in Path(subdir).rglob("data/distribution"):
             logging.debug("\tEvaluating: %s" % path.name)
 
-            if not os.path.isfile(path):
-                # if path is not a file, skip to the next file to check
-                continue
-
-            parent_dir = str(path.parent).split('sdc.').pop()
-            parent_dir = re.search('/(.*?)/data/distribution', parent_dir).group(1)
+            # get path info
             
-            full_path = path.name
-
-            if full_path not in ["measure_info.json"]:                
-               
-                try:
-                    df = pd.read_csv(path.resolve(), dtype = str)  
-                    
-                    state = df["geoid"].str[0:2]
-                    df["state"] = ["DC" if st == "11" else "MD" if st == "24" else "VA" for st in state]
-                    
-                    if "region_type" not in df.columns:
-                        df["region_type"] = [geoid_to_region_type(g) for g in df["geoid"]]
-                        
-                    counts = df.groupby(['measure', 'year', 'state', 'region_type']).agg(count=('geoid', 'count'))
-                    counts = counts.reset_index()  # move multiindex to columns
-                    
-                    # loop through measures in each data file --------------------
-      
-                    measures = df["measure"].unique()
-        
-                    for m in measures:
-                        temp = counts[counts['measure'] == m] 
-                        temp["st_geo"] = temp['state'] + "_" + temp['region_type'].str.lower()
-                        temp["collected"] = (temp['count'] > 0)  # only checks if we have 1 measurement at geography level
-                        temp = temp.drop(columns=['state', 'region_type', 'count'])
-                        temp = temp.pivot(index=['measure', 'year'] , columns='st_geo', values='collected').reset_index()
-        
-                        # check if we have data for each geography and year listed
-        
-                        nr, nc = temp.shape
-                        csums = temp.iloc[:,2:11].sum()
-                        idx = (csums == nr)
-                    
-                        # check if years are contiguous - not done, just got start and end year
-
-                        start_yr = min(temp["year"])
-                        end_yr = max(temp["year"]) 
+            try:    
+                parent_dir = str(path).split('sdc.').pop()
+                parent_dir = re.search('/(.*?)/data/distribution', parent_dir).group(1)
+            except:
+                parent_dir = "PARENT_DIRECTORY"
+            
+            # get measure_info keys
+            
+            try:
+                mi_path = str(path) + "/measure_info.json"
+            
+                with open(mi_path, "r") as mi_f:
+                    mi = json.load(mi_f)
+ 
+                mi_measures = mi.keys()
+            except: 
+                print(traceback.format_exc())
+                report += "\t<p><font color='#D55E00'> [ERROR - NO MEASURE INFO FILE] </font> %s </p>\n" % (parent_dir)
                 
-                        # update inventory df --------------------
-        
-                        collected_geos = ["X" if idx[i] else None for i in range(len(idx))]
-
-                        temp_row = {'CATEGORY': data_cat, 'MEASURE': m, 'START_YEAR': start_yr, 'END_YEAR': end_yr} 
-                        for i in range(len(csums)):
-                            temp_row.update({csums.index[i]: collected_geos[i]})
+            
+            # LOOP THROUGH EACH DATA FILE IN FOLDER -----------------
+            
+            for f in path.iterdir(): #os.listdir(path):
+            
+                if not os.path.isfile(f):
+                    # if path is not a file, skip to the next file to check
+                    continue
+                    
+                #print(f.name) 
+            
+                if f.suffix in [".xz", ".csv"]:
+                    # file is a data file - extract measure names              
+               
+                    try:
+                        df = pd.read_csv(f.resolve(), dtype = str)  
+                    
+                        state = df["geoid"].str[0:2]
+                        df["state"] = ["DC" if st == "11" else "MD" if st == "24" else "VA" for st in state]
+                    
+                        if "region_type" not in df.columns:
+                            df["region_type"] = [geoid_to_region_type(g) for g in df["geoid"]]
                         
-                        temp_df = pd.DataFrame([temp_row])
-                        inventory_df = pd.concat([inventory_df, temp_df], ignore_index = True) 
+                        counts = df.groupby(['measure', 'year', 'state', 'region_type']).agg(count=('geoid', 'count'))
+                        counts = counts.reset_index()  # move multiindex to columns
                     
-                    report += "\t<p><font color='#009E73'> [INVENTORIED] </font> %s: %s</p>\n" % (parent_dir, full_path)
+                        # loop through measures in each data file --------------------
+      
+                        measures = df["measure"].unique()
+        
+                        for m in measures:
+                            temp = counts[counts['measure'] == m] 
+                            temp["st_geo"] = temp['state'] + "_" + temp['region_type'].str.lower()
+                            temp["collected"] = (temp['count'] > 0)  # only checks if we have 1 measurement at geo level
+                            temp = temp.drop(columns=['state', 'region_type', 'count'])
+                            temp = temp.pivot(index=['measure', 'year'] , columns='st_geo', values='collected').reset_index()
+        
+                            # check if we have data for each geography and year listed
+        
+                            nr, nc = temp.shape
+                            csums = temp.iloc[:,2:11].sum()
+                            idx = (csums == nr)
                     
-                except:
-                    print(traceback.format_exc())
-                    report += "\t<p><font color='#D55E00'> [ERROR] </font> %s: %s</p>\n" % (parent_dir, full_path)
+                            # check if years are contiguous - not done, just got start and end year
+
+                            start_yr = min(temp["year"])
+                            end_yr = max(temp["year"]) 
+                
+                            # update inventory df --------------------
+        
+                            collected_geos = ["X" if idx[i] else None for i in range(len(idx))]
+            
+                            try:
+                                short_n = mi[m]['short_name']
+                            except: 
+                                print(traceback.format_exc())
+                                short_n = ""
+
+                            temp_row = {'CATEGORY': data_cat, 'MEASURE': m, 'SHORT_NAME': short_n, 'START_YEAR': start_yr, 'END_YEAR': end_yr} 
+                            for i in range(len(csums)):
+                                temp_row.update({csums.index[i]: collected_geos[i]})
+                        
+                            temp_df = pd.DataFrame([temp_row])
+                            inventory_df = pd.concat([inventory_df, temp_df], ignore_index = True) 
+                    
+                        report += "\t<p><font color='#009E73'> [INVENTORIED] </font> %s: %s</p>\n" % (parent_dir, f.name)
+                    
+                    except:
+                        print(traceback.format_exc())
+                        report += "\t<p><font color='#D55E00'> [ERROR] </font> %s: %s</p>\n" % (parent_dir, f.name)
                        
     # combine inventory information for measures listed more than once (e.g. in an NCR and VA file) 
 
-    inv_final_df = inventory_df.groupby(["CATEGORY", "MEASURE", "START_YEAR", "END_YEAR"]).apply(lambda x: x.ffill().bfill())
+    inv_final_df = inventory_df.groupby(["CATEGORY", "MEASURE", "SHORT_NAME", "START_YEAR", "END_YEAR"]).apply(lambda x: x.ffill().bfill())
     inv_final_df.drop_duplicates(keep="first", inplace=True, ignore_index=True) 
     
     # list geography columns in abc-order
-    inv_final_df = inv_final_df[ ["CATEGORY", "MEASURE", "START_YEAR", "END_YEAR"] + sorted(inv_final_df.columns[4:]) ]
+    inv_final_df = inv_final_df[ ["CATEGORY", "MEASURE", "SHORT_NAME", "START_YEAR", "END_YEAR"] + sorted(inv_final_df.columns[5:]) ]
             
     return report, inv_final_df
 

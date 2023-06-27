@@ -22,7 +22,7 @@ dim(ejscreen_wide_ct); View(ejscreen_wide_ct)
 
 ejscreen_wide_ct$region_name <- factor(paste(paste0(ejscreen_wide_ct$CNTY_NAME,","), ejscreen_wide_ct$STATE_NAME))
       ejscreen_wide_ct$geoid <- factor(ejscreen_wide_ct$ID)
-ejscreen_wide_ct$region_type <- as.factor(rep("census tract", dim(ejscreen_wide_ct)[1]))  
+ejscreen_wide_ct$region_type <- as.factor(rep("tract", dim(ejscreen_wide_ct)[1]))  
        ejscreen_wide_ct$year <- as.numeric(rep(2022, dim(ejscreen_wide_ct)[1]))  
 dim(ejscreen_wide_ct)       
             drop <- c("STATE_NAME", "CNTY_NAME", "ID") 
