@@ -271,6 +271,6 @@ row_binded_data <- rbind(earnings_per_job_df, earnings_per_job_hd_year_long_df)
 
 
 readr::write_csv(row_binded_data,
-                 xzfile("~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/distribution/va_ct_bea_2015_2020_earnings_per_job.csv.xz", compression = 9))
+                 xzfile("~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/distribution/va_hdct_bea_2015_2020_earnings_per_job.csv.xz", compression = 9))
 
 

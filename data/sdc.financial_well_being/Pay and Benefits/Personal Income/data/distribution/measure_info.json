@@ -6,7 +6,7 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Earnings per job is calculated based on the GDP and Personal Income table from the Bureau of Economic Analysis. For splitting the multi county observations in the df,we can perform splitting from 83 since thats when multi county occurs. So basically we have + and , which binds them so we need to split based on those signs, first we target all the + and we target only rows where there is , and splitting is done. Initially we are removing (,VA) from names and attaching them at the end of the process for our convenience. We are having the same values to be repeated for particular combination. The split entries are expanded into multiple rows using unnest function. In simple terms, first stage of splitting using + sign from row 83 then slitted rows are expanded. next splitting is for particular rows which contains , and then splitted entries are expanded.For example fairfax county, fairfax city, falls church city will have same values after splitting. For filling the Geofips, we are storing corresponding Geofips values in a vector and assigning it to the corresponding rows in correct order",
+        "long_description": "Earnings per job is calculated based on the GDP and Personal Income table from the Bureau of Economic Analysis. Raw data observations are generally per county/city; however, some observations involve multiple counties/cities. For example, Fairfax County, Fairfax City and Falls Church City are grouped into one observation in the raw data.  We split the multi-county/city raw data observations into multiple observations so that one observation corresponds to only one county/city.  We set the value of each split individual observation to be that of the corresponding raw multi-county/city observation.  These are the multi-county/city groupings in the raw data: Albemarle County, Charlottesville; Alleghany County, Covington; Augusta County, Staunton, Waynesboro; Campbell County,  Lynchburg; Carroll County, Galax; Dinwiddie County, Colonial Heights, Petersburg; Fairfax County, Fairfax City, Falls Church; Frederick County, Winchester; Greensville County, Emporia; Henry County,  Martinsville; James City County, Williamsburg; Montgomery County, Radford; Pittsylvania County, Danville; Prince George County, Hopewell; Prince William County, Manassas, Manassas Park; Roanoke County, Salem; Rockbridge County, Buena Vista, Lexington; Rockingham County, Harrisonburg; Southampton County, Franklin; Spotsylvania County, Fredericksburg; Washington County, Bristol; Wise County, Norton; York County, Poquoson.",
         "long_name": "Earnings per job",
         "measure_type": "",
         "short_description": "Average of earnings per job.",
@@ -20,6 +20,6 @@
         ],
         "statement": "Earnings per job in {features.name} is {value}.",
         "type": "dollar",
-        "unit": "dollars"
+        "unit": "dollar"
     }
 }
