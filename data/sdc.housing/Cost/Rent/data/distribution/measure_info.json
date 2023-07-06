@@ -1,5 +1,6 @@
 {
     "monthly_rent_0br": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -22,6 +23,7 @@
         "unit": "dollars"
     },
     "monthly_rent_1br": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -44,6 +46,7 @@
         "unit": "dollars"
     },
     "monthly_rent_2br": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -65,7 +68,8 @@
         "type": "count",
         "unit": "dollars"
     },
-        "monthly_rent_3br": {
+    "monthly_rent_3br": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -87,7 +91,8 @@
         "type": "count",
         "unit": "dollars"
     },
-        "monthly_rent_4br": {
+    "monthly_rent_4br": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",

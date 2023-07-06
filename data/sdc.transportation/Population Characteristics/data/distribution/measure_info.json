@@ -1,5 +1,6 @@
 {
     "commute_time": {
+        "aggregation_method": "",
         "category": "Transportation",
         "citations": "",
         "data_type": "numeric",
@@ -23,6 +24,7 @@
         "unit": ""
     },
     "perc_carpool": {
+        "aggregation_method": "",
         "category": "Transportation",
         "citations": "",
         "data_type": "numeric",
@@ -46,6 +48,7 @@
         "unit": ""
     },
     "perc_no_vehicle": {
+        "aggregation_method": "",
         "category": "Transportation",
         "citations": "",
         "data_type": "numeric",
@@ -69,4 +72,3 @@
         "unit": "percent"
     }
 }
-

@@ -1,5 +1,6 @@
 {
     "perc_male": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "perc_children_raised_by_GPs": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",

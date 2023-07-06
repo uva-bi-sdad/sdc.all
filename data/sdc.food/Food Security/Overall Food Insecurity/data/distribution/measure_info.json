@@ -1,5 +1,6 @@
 {
     "number_food_insecure": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "percent_food_insecure": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -43,7 +45,8 @@
         "type": "percent",
         "unit": ""
     },
-        "insecure_pc_original": {
+    "insecure_pc_original": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -82,7 +85,7 @@
             },
             {
                 "date_accessed": 2022,
-                "name": "Department   of Labor Women’s Bureau National",
+                "name": "Department   of Labor Women\u2019s Bureau National",
                 "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
             },
             {
@@ -97,7 +100,7 @@
             },
             {
                 "date_accessed": 2022,
-                "name": "National   Bureau of Economic Research’s program TAXSIM Version 35",
+                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
@@ -106,6 +109,7 @@
         "unit": ""
     },
     "insecure_pc_snap": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -144,7 +148,7 @@
             },
             {
                 "date_accessed": 2022,
-                "name": "Department   of Labor Women’s Bureau National",
+                "name": "Department   of Labor Women\u2019s Bureau National",
                 "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
             },
             {
@@ -159,7 +163,7 @@
             },
             {
                 "date_accessed": 2022,
-                "name": "National   Bureau of Economic Research’s program TAXSIM Version 35",
+                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
@@ -168,6 +172,7 @@
         "unit": ""
     },
     "insecure_pc_snap_covid": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -206,7 +211,7 @@
             },
             {
                 "date_accessed": 2022,
-                "name": "Department   of Labor Women’s Bureau National",
+                "name": "Department   of Labor Women\u2019s Bureau National",
                 "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
             },
             {
@@ -221,7 +226,7 @@
             },
             {
                 "date_accessed": 2022,
-                "name": "National   Bureau of Economic Research’s program TAXSIM Version 35",
+                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
@@ -229,7 +234,8 @@
         "type": "count",
         "unit": ""
     },
-        "at_risk_pc_original": {
+    "at_risk_pc_original": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -268,7 +274,7 @@
             },
             {
                 "date_accessed": 2022,
-                "name": "Department   of Labor Women’s Bureau National",
+                "name": "Department   of Labor Women\u2019s Bureau National",
                 "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
             },
             {
@@ -283,7 +289,7 @@
             },
             {
                 "date_accessed": 2022,
-                "name": "National   Bureau of Economic Research’s program TAXSIM Version 35",
+                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
@@ -292,6 +298,7 @@
         "unit": ""
     },
     "at_risk_pc_snap": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -330,7 +337,7 @@
             },
             {
                 "date_accessed": 2022,
-                "name": "Department   of Labor Women’s Bureau National",
+                "name": "Department   of Labor Women\u2019s Bureau National",
                 "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
             },
             {
@@ -345,7 +352,7 @@
             },
             {
                 "date_accessed": 2022,
-                "name": "National   Bureau of Economic Research’s program TAXSIM Version 35",
+                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
@@ -354,6 +361,7 @@
         "unit": ""
     },
     "at_risk_pc_snap_covid": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -392,7 +400,7 @@
             },
             {
                 "date_accessed": 2022,
-                "name": "Department   of Labor Women’s Bureau National",
+                "name": "Department   of Labor Women\u2019s Bureau National",
                 "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
             },
             {
@@ -407,7 +415,7 @@
             },
             {
                 "date_accessed": 2022,
-                "name": "National   Bureau of Economic Research’s program TAXSIM Version 35",
+                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],

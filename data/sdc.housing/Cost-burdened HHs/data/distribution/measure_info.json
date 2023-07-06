@@ -1,5 +1,6 @@
 {
     "morgage30": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "integer",
@@ -23,6 +24,7 @@
         "unit": "households"
     },
     "own_morgage": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "integer",
@@ -46,6 +48,7 @@
         "unit": "households"
     },
     "per_above30": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -68,7 +71,8 @@
         "type": "percent",
         "unit": "households"
     },
-        "per_mor_above30": {
+    "per_mor_above30": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -91,7 +95,8 @@
         "type": "percent",
         "unit": "households"
     },
-        "per_rent_above30": {
+    "per_rent_above30": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -115,6 +120,7 @@
         "unit": "households"
     },
     "rent30": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "integer",
@@ -138,6 +144,7 @@
         "unit": "households"
     },
     "renters": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "integer",

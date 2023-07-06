@@ -1,5 +1,6 @@
 {
     "Child_Food_Insecurity_Rate": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "Num_Child_Food_Insecure": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",

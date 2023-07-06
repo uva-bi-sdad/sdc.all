@@ -1,5 +1,6 @@
 {
     "pop_afr_amer_alone": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "pop_native_alone": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -44,6 +46,7 @@
         "unit": ""
     },
     "pop_AAPI": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -66,6 +69,7 @@
         "unit": ""
     },
     "pop_wht_alone": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -88,6 +92,7 @@
         "unit": ""
     },
     "pop_hispanic_or_latino": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -110,6 +115,7 @@
         "unit": ""
     },
     "pop_other": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -132,6 +138,7 @@
         "unit": ""
     },
     "pop_two_or_more": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -154,6 +161,7 @@
         "unit": ""
     },
     "perc_afr_amer_alone": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -176,6 +184,7 @@
         "unit": ""
     },
     "perc_native_alone": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -198,6 +207,7 @@
         "unit": ""
     },
     "perc_AAPI": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -220,6 +230,7 @@
         "unit": ""
     },
     "perc_wht_alone": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -242,6 +253,7 @@
         "unit": ""
     },
     "perc_hispanic_or_latino": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -264,6 +276,7 @@
         "unit": ""
     },
     "perc_other": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -286,6 +299,7 @@
         "unit": ""
     },
     "perc_two_or_more": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -308,6 +322,7 @@
         "unit": ""
     },
     "total_race": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -330,6 +345,7 @@
         "unit": ""
     },
     "pop_eth_tot": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",

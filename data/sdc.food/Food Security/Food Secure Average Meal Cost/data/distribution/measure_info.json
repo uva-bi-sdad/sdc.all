@@ -1,5 +1,6 @@
 {
     "Cost_Per_Meal": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",

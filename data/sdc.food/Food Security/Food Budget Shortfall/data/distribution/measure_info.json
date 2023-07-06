@@ -1,5 +1,6 @@
 {
     "weighted_budget_shortfall": {
+        "aggregation_method": "",
         "category": "",
         "citations": "",
         "data_type": "numeric",

@@ -1,5 +1,6 @@
 {
     "total_hh": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "hh_limited_english": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -44,6 +46,7 @@
         "unit": ""
     },
     "perc_hh_limited_english": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",

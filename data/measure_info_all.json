@@ -1936,6 +1936,7 @@
         "unit": ""
     },
     "Child_Food_Insecurity_Rate": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -2418,6 +2419,7 @@
         "unit": ""
     },
     "Cost_Per_Meal": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -6696,6 +6698,7 @@
         "unit": ""
     },
     "Num_Child_Food_Insecure": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -11362,6 +11365,7 @@
         "unit": ""
     },
     "at_risk_pc_original": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -11424,6 +11428,7 @@
         "unit": ""
     },
     "at_risk_pc_snap": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -11486,6 +11491,7 @@
         "unit": ""
     },
     "at_risk_pc_snap_covid": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -11710,6 +11716,7 @@
         "unit": ""
     },
     "commute_time": {
+        "aggregation_method": "",
         "category": "Transportation",
         "citations": "",
         "data_type": "numeric",
@@ -12539,6 +12546,7 @@
         "unit": ""
     },
     "hh_limited_english": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -12561,6 +12569,7 @@
         "unit": ""
     },
     "hh_received_snap_cnt": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -12584,6 +12593,7 @@
         "unit": ""
     },
     "hh_received_snap_pct": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -12774,6 +12784,7 @@
         "unit": ""
     },
     "insecure_pc_original": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -12836,6 +12847,7 @@
         "unit": ""
     },
     "insecure_pc_snap": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -12898,6 +12910,7 @@
         "unit": ""
     },
     "insecure_pc_snap_covid": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -13730,6 +13743,7 @@
         "unit": ""
     },
     "monthly_rent_0br": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -13752,6 +13766,7 @@
         "unit": "dollars"
     },
     "monthly_rent_1br": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -13774,6 +13789,7 @@
         "unit": "dollars"
     },
     "monthly_rent_2br": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -13796,6 +13812,7 @@
         "unit": "dollars"
     },
     "monthly_rent_3br": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -13818,6 +13835,7 @@
         "unit": "dollars"
     },
     "monthly_rent_4br": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -13840,6 +13858,7 @@
         "unit": "dollars"
     },
     "morgage30": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "integer",
@@ -13863,6 +13882,7 @@
         "unit": "households"
     },
     "mrfei": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": [
             "cdc11a",
@@ -14395,6 +14415,7 @@
         "unit": ""
     },
     "number_food_insecure": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -14547,6 +14568,7 @@
         "unit": "dollar"
     },
     "own_morgage": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "integer",
@@ -14649,6 +14671,7 @@
         "unit": ""
     },
     "per_above30": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -14672,6 +14695,7 @@
         "unit": "households"
     },
     "per_mor_above30": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -14695,6 +14719,7 @@
         "unit": "households"
     },
     "per_rent_above30": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -14718,6 +14743,7 @@
         "unit": "households"
     },
     "perc_AAPI": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -14740,6 +14766,7 @@
         "unit": ""
     },
     "perc_afr_amer_alone": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -14785,6 +14812,7 @@
         "unit": ""
     },
     "perc_carpool": {
+        "aggregation_method": "",
         "category": "Transportation",
         "citations": "",
         "data_type": "numeric",
@@ -14808,6 +14836,7 @@
         "unit": ""
     },
     "perc_children_raised_by_GPs": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -14854,6 +14883,7 @@
         "unit": ""
     },
     "perc_female": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -14876,6 +14906,7 @@
         "unit": ""
     },
     "perc_hh_limited_english": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -14990,6 +15021,7 @@
         "unit": "household"
     },
     "perc_hispanic_or_latino": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15188,6 +15220,7 @@
         "unit": ""
     },
     "perc_male": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15210,6 +15243,7 @@
         "unit": ""
     },
     "perc_native_alone": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15232,6 +15266,7 @@
         "unit": ""
     },
     "perc_no_vehicle": {
+        "aggregation_method": "",
         "category": "Transportation",
         "citations": "",
         "data_type": "numeric",
@@ -15255,6 +15290,7 @@
         "unit": "percent"
     },
     "perc_other": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15323,6 +15359,7 @@
         "unit": ""
     },
     "perc_pop_20_64": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15345,6 +15382,7 @@
         "unit": ""
     },
     "perc_pop_65_plus": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15367,6 +15405,7 @@
         "unit": ""
     },
     "perc_pop_under_20": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15458,6 +15497,7 @@
         "unit": "individual"
     },
     "perc_two_or_more": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15480,6 +15520,7 @@
         "unit": ""
     },
     "perc_veteran": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15548,6 +15589,7 @@
         "unit": "individual"
     },
     "perc_wht_alone": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15570,6 +15612,7 @@
         "unit": ""
     },
     "percent_food_insecure": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -15592,6 +15635,7 @@
         "unit": ""
     },
     "pop_20_64": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15614,6 +15658,7 @@
         "unit": ""
     },
     "pop_65_plus": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15636,6 +15681,7 @@
         "unit": ""
     },
     "pop_AAPI": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15658,6 +15704,7 @@
         "unit": ""
     },
     "pop_afr_amer_alone": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15726,6 +15773,7 @@
         "unit": ""
     },
     "pop_eth_tot": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15748,6 +15796,7 @@
         "unit": ""
     },
     "pop_female": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15770,6 +15819,7 @@
         "unit": ""
     },
     "pop_hispanic_or_latino": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15792,6 +15842,7 @@
         "unit": ""
     },
     "pop_male": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15814,6 +15865,7 @@
         "unit": ""
     },
     "pop_native_alone": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15836,6 +15888,7 @@
         "unit": ""
     },
     "pop_other": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15858,6 +15911,7 @@
         "unit": ""
     },
     "pop_two_or_more": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15880,6 +15934,7 @@
         "unit": ""
     },
     "pop_under_20": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15902,6 +15957,7 @@
         "unit": ""
     },
     "pop_veteran": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15924,6 +15980,7 @@
         "unit": ""
     },
     "pop_wht_alone": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -15946,6 +16003,7 @@
         "unit": ""
     },
     "population": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -17034,6 +17092,7 @@
         "unit": "person"
     },
     "rent30": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "integer",
@@ -17057,6 +17116,7 @@
         "unit": "households"
     },
     "renters": {
+        "aggregation_method": "",
         "category": "Housing",
         "citations": "",
         "data_type": "integer",
@@ -17822,6 +17882,7 @@
         "unit": "dollar"
     },
     "total_hh": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -17936,6 +17997,7 @@
         "unit": ""
     },
     "total_pop": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -17958,6 +18020,7 @@
         "unit": ""
     },
     "total_race": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -19110,6 +19173,7 @@
         "unit": ""
     },
     "weighted_budget_shortfall": {
+        "aggregation_method": "",
         "category": "",
         "citations": "",
         "data_type": "numeric",

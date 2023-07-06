@@ -1,5 +1,6 @@
 {
     "perc_veteran": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "pop_veteran": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",

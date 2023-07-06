@@ -1,5 +1,6 @@
 {
     "perc_pop_20_64": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -22,6 +23,7 @@
         "unit": ""
     },
     "perc_pop_65_plus": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -44,6 +46,7 @@
         "unit": ""
     },
     "perc_pop_under_20": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -66,6 +69,7 @@
         "unit": ""
     },
     "pop_20_64": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -88,6 +92,7 @@
         "unit": ""
     },
     "pop_65_plus": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -110,6 +115,7 @@
         "unit": ""
     },
     "pop_under_20": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -132,6 +138,7 @@
         "unit": ""
     },
     "total_pop": {
+        "aggregation_method": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",

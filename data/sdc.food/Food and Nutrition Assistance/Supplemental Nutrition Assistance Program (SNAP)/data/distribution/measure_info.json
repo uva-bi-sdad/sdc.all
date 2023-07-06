@@ -1,5 +1,6 @@
 {
     "hh_received_snap_cnt": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -23,6 +24,7 @@
         "unit": ""
     },
     "hh_received_snap_pct": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -46,6 +48,7 @@
         "unit": ""
     },
     "population": {
+        "aggregation_method": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
