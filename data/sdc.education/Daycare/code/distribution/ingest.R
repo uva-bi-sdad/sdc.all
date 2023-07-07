@@ -253,46 +253,46 @@ population$daycare_capacity <- vapply(st_intersects(
 population$daycare_capacity_error <- 0
 
 # calculate catchment ratios
-population$daycare_per_1k <- catchment_ratio(
+population$daycare_ratio <- catchment_ratio(
   population, locations[locations$age_min < 5 & locations$age_max > 9, ], traveltimes,
   weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e3,
   consumers_value = "population_under_15", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat"), verbose = TRUE
 )
-population$daycare_per_1k_error <- abs(catchment_ratio(
+population$daycare_ratio_error <- abs(catchment_ratio(
   population, locations[locations$age_min < 5 & locations$age_max > 9, ], traveltimes,
   weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e3,
   consumers_value = "population_under_15_error", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat")
-) - population$daycare_per_1k)
+) - population$daycare_ratio)
 
 ## over 4
-population$daycare_over_4_per_1k <- catchment_ratio(
+population$daycare_ratio_over_4 <- catchment_ratio(
   population, locations[locations$age_min > 4, ], traveltimes,
   weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e3,
   consumers_value = "population_over_4", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat")
 )
-population$daycare_over_4_per_1k_error <- abs(catchment_ratio(
+population$daycare_ratio_over_4_error <- abs(catchment_ratio(
   population, locations[locations$age_min > 4, ], traveltimes,
   weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e3,
   consumers_value = "population_over_4_error", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat")
-) - population$daycare_over_4_per_1k)
+) - population$daycare_ratio_over_4)
 
 ## under 10
-population$daycare_under_10_per_1k <- catchment_ratio(
+population$daycare_ratio_under_10 <- catchment_ratio(
   population, locations[locations$age_max < 10, ], traveltimes,
   weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e3,
   consumers_value = "population_under_10", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat")
 )
-population$daycare_under_10_per_1k_error <- abs(catchment_ratio(
+population$daycare_ratio_under_10_error <- abs(catchment_ratio(
   population, locations[locations$age_max < 10, ], traveltimes,
   weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e3,
   consumers_value = "population_under_10_error", providers_id = "lid",
   providers_value = "capacity", providers_location = c("long", "lat")
-) - population$daycare_under_10_per_1k)
+) - population$daycare_ratio_under_10)
 
 block_groups <- population[
   substring(population$GEOID, 1, 5) %in% names(county_districts),
@@ -313,7 +313,7 @@ agger <- function(d, part = NULL) {
       daycare_capacity_error = sum(d$daycare_capacity_error, na.rm = TRUE),
       unlist(lapply(c("", "over_4", "under_10"), function(s) {
         pop <- paste0("population_", if (s == "") "under_15" else s)
-        vs <- paste0("daycare_", if (s != "") paste0(s, "_"), "per_1k", c("", "_error"))
+        vs <- paste0("daycare_ratio", if (s != "") paste0("_", s), c("", "_error"))
         totals <- c(sum(d[[pop]], na.rm = TRUE), sum(d[[paste0(pop, "_error")]], na.rm = TRUE))
         totals[totals == 0] <- 1
         ragg <- sum(d[[vs[1]]] * d[[pop]], na.rm = TRUE) / totals[1]

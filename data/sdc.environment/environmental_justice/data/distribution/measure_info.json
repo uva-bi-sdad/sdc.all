@@ -1,6 +1,7 @@
 {
     "PM25": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -21,10 +22,12 @@
         ],
         "statement": "The annual average concentration of Particulate Matter 2.5 in air in {features.name} is {value}.",
         "type": "concentration",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "OZONE": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -45,10 +48,12 @@
         ],
         "statement": "The summer daily average concentration of Ozone in an 8-hour period in {features.name} is {value}.",
         "type": "concentration",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "DSLPM": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -69,10 +74,12 @@
         ],
         "statement": "The Diesel Particulate Matter level in air in {features.name} is {value}.",
         "type": "concentration",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "CANCER": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -93,10 +100,12 @@
         ],
         "statement": "The Air Toxics Cancer Risk in {features.name} is {value}-in-1 million over 70 years.",
         "type": "risk index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "RESP": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -117,10 +126,12 @@
         ],
         "statement": "The Air Toxics Respiratory Hazard Index in {features.name} is {value}, where values less or equal to 1 are not likely to result in noncancer adverse effects.",
         "type": "exposure index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "PTRAF": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -141,10 +152,12 @@
         ],
         "statement": "The Traffic Proximity Index in {features.name} is {value}.",
         "type": "proximity index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "PRE1960": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -165,10 +178,12 @@
         ],
         "statement": "The number of pre-1960 occupied housing units in {features.name} is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "PRE1960PCT": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -189,10 +204,12 @@
         ],
         "statement": "The percentage of pre-1960 occupied housing units in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "PNPL": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -213,10 +230,12 @@
         ],
         "statement": "The Superfund Proximity Index in {features.name} is {value}.",
         "type": "proximity index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "PRMP": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -237,10 +256,12 @@
         ],
         "statement": "The Risk Management Plan Facility Proximity Index in {features.name} is {value}.",
         "type": "proximity index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "PTSDF": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -261,10 +282,12 @@
         ],
         "statement": "The Hazardous Waste Proximity Index in {features.name} is {value}.",
         "type": "proximity index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "UST": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -285,10 +308,12 @@
         ],
         "statement": "The relative risk from Underground Storage Tanks in {features.name} is {value}.",
         "type": "risk index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "PWDIS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -309,10 +334,12 @@
         ],
         "statement": "The relative risk from Wastewater Discharge in {features.name} is {value}.",
         "type": "risk index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "D_PM25_2": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -333,10 +360,12 @@
         ],
         "statement": "In {features.name} the EJ Index for Particulate Matter 2.5 is {value} (national percentiles).",
         "type": "environmental justice index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "D_OZONE_2": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -357,10 +386,12 @@
         ],
         "statement": "In {features.name} the EJ Index for Ozone is {value} (national percentiles).",
         "type": "environmental justice index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "D_DSLPM_2": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -381,10 +412,12 @@
         ],
         "statement": "In {features.name} the EJ Index for Diesel Particulate Matter is {value} (national percentiles).",
         "type": "environmental justice index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "D_CANCR_2": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -405,10 +438,12 @@
         ],
         "statement": "In {features.name} the EJ Index for Air Toxics Cancer Risk is {value} (national percentiles).",
         "type": "environmental justice index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "D_RESP_2": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -429,10 +464,12 @@
         ],
         "statement": "In {features.name} the EJ Index for Air Toxics Respiratory Hazard is {value} (national percentiles).",
         "type": "environmental justice index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "D_PTRAF_2": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -453,10 +490,12 @@
         ],
         "statement": "In {features.name} the EJ Index for Traffic Proximity is {value} (national percentiles).",
         "type": "environmental justice index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "D_LDPNT_2": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -477,10 +516,12 @@
         ],
         "statement": "In {features.name} the EJ Index for Lead Paint is {value} (national percentiles).",
         "type": "environmental justice index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "D_PNPL_2": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -501,10 +542,12 @@
         ],
         "statement": "In {features.name} the EJ Index for Superfund Proximity is {value} (national percentiles).",
         "type": "environmental justice index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "D_PRMP_2": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -525,10 +568,12 @@
         ],
         "statement": "In {features.name} the EJ Index for Proximity to Risk Management Plan facilities is {value} (national percentiles).",
         "type": "environmental justice index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "D_PTSDF_2": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -549,10 +594,12 @@
         ],
         "statement": "In {features.name} the EJ Index for Proximity to Treatment Storage and Disposal (TSDF) facilities is {value} (national percentiles).",
         "type": "environmental justice index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "D_UST_2": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -573,10 +620,12 @@
         ],
         "statement": "In {features.name} the EJ Index for Risk from Underground Storage Tanks is {value} (national percentiles).",
         "type": "environmental justice index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "D_PWDIS_2": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -597,10 +646,12 @@
         ],
         "statement": "In {features.name} the EJ Index for Risk from Wastewater Discharge is {value} (national percentiles).",
         "type": "environmental justice index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "PM25_QRT": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -621,10 +672,12 @@
         ],
         "statement": "In {features.name} the Particulate Matter 2.5 concentration is in the {value} quartile (National Capital Region quartiles).",
         "type": "concentration",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "OZONE_QRT": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -645,10 +698,12 @@
         ],
         "statement": "In {features.name} the Ozone concentration is in the {value} quartile (National Capital Region quartiles).",
         "type": "concentration",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "DSLPM_QRT": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -669,10 +724,12 @@
         ],
         "statement": "In {features.name} the Diesel Particulate Matter concentration is in the {value} quartile (National Capital Region quartiles).",
         "type": "concentration",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "PTRAF_QRT": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -693,10 +750,12 @@
         ],
         "statement": "In {features.name} the Traffic Proximity Index is in the {value} quartile (National Capital Region quartiles).",
         "type": "proximity index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "PRE1960_QRT": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -717,10 +776,12 @@
         ],
         "statement": "In {features.name} the number of occupied pre-1960 housing units is in the {value} quartile (National Capital Region quartiles).",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "PRMP_QRT": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -741,10 +802,12 @@
         ],
         "statement": "In {features.name} the Risk Management Plan (RMP) Facilities Index is in the {value} quartile (National Capital Region quartiles).",
         "type": "proximity index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "PNPL_QRT": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -765,10 +828,12 @@
         ],
         "statement": "In {features.name} the Superfund Proximity Index is in the {value} quartile (National Capital Region quartiles).",
         "type": "proximity index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "PTSDF_QRT": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -789,10 +854,12 @@
         ],
         "statement": "In {features.name} the Hazardous Waste Proximity Index is in the {value} quartile (National Capital Region quartiles).",
         "type": "proximity index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "UST_QRT": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -813,10 +880,12 @@
         ],
         "statement": "In {features.name} the Underground Storage Tanks Risk Index is in the {value} quartile (National Capital Region quartiles).",
         "type": "risk index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "PWDIS_QRT": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -837,6 +906,7 @@
         ],
         "statement": "In {features.name} the Wastewater Discharge Proximity Risk Index is in the {value} quartile (National Capital Region quartiles).",
         "type": "risk index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

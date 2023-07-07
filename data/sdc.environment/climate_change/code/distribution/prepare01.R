@@ -63,6 +63,7 @@ ncr_tr_fema_2019_natural_hazards_risk_scores <- data.frame(geoid = fema_long$geo
                                                            moe = fema_long$moe)
 dim(ncr_tr_fema_2019_natural_hazards_risk_scores)
 View(ncr_tr_fema_2019_natural_hazards_risk_scores)
-write.csv(ncr_tr_fema_2019_natural_hazards_risk_scores, 
-          "~/RCode/Data Commons/Environment/FEMA_NRI/data/distribution/ncr_tr_fema_2019_natural_hazards_risk_scores.csv",
-         row.names=FALSE)
+# write.csv(ncr_tr_fema_2019_natural_hazards_risk_scores, 
+#          "~/RCode/Data Commons/Environment/FEMA_NRI/data/distribution/ncr_tr_fema_2019_natural_hazards_risk_scores.csv",
+#         row.names=FALSE)
+readr::write_csv(ncr_tr_fema_2019_natural_hazards_risk_scores, xzfile("climate_change/data/distribution/ncr_tr_fema_2019_natural_hazards_risk_scores.csv.xz", compression = 9))

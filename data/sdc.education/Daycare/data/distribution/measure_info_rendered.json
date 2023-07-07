@@ -1,0 +1,230 @@
+{
+  "daycare_capacity": {
+    "data_type": "integer",
+    "aggregation_method": "count",
+    "unit": "day care seat",
+    "category": "Education",
+    "equity_category": "Availability",
+    "short_name": "Day Care Capacity",
+    "long_name": "Day Care Capacity (seats)",
+    "short_description": "Number of day care seats.",
+    "long_description": "Summed capacity (seats) of all day care providers within the region, according to the Virginia Department of Social Services.",
+    "statement": "There are {value} day care seats in {region_name}.",
+    "sources": [
+      {
+        "name": "Virginia Department of Social Services",
+        "location": "Child Day Care Search",
+        "location_url": "https://www.dss.virginia.gov/facility/search/cc2.cgi",
+        "date_accessed": 2023,
+        "url": "https://www.dss.virginia.gov"
+      }
+    ],
+    "layer": {
+      "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Daycare/data/distribution/points_{time}.geojson"
+    }
+  },
+  "daycare_min_drivetime": {
+    "data_type": "decimal",
+    "aggregation_method": "minimum",
+    "unit": "minute",
+    "category": "Education",
+    "equity_category": "Availability",
+    "short_name": "Day Care Drive Time",
+    "long_name": "Minutes to Nearest Day Care",
+    "short_description": "Minutes to the nearest day care provider.",
+    "long_description": "Time (minutes) to drive to the nearest day care provider of any type. Times are calculated using the Open Source Routing Machine, from block group centroids to each provider. Times for higher geolayers are averaged across block groups.",
+    "statement": "It takes {value} to drive to the nearest day care provider in {region_name}.",
+    "sources": [
+      {
+        "name": "Virginia Department of Social Services",
+        "location": "Child Day Care Search",
+        "location_url": "https://www.dss.virginia.gov/facility/search/cc2.cgi",
+        "date_accessed": 2023,
+        "url": "https://www.dss.virginia.gov"
+      },
+      {
+        "name": "Open Source Routing Machine",
+        "date_accessed": 2022,
+        "url": "http://project-osrm.org"
+      }
+    ],
+    "layer": {
+      "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Daycare/data/distribution/points_{time}.geojson"
+    }
+  },
+  "daycare_ratio": {
+    "data_type": "decimal",
+    "aggregation_method": "ratio",
+    "unit": "day care seat",
+    "category": "Education",
+    "equity_category": "Availability",
+    "short_name": "Day Care Seats Per 1k Children Under 15",
+    "long_name": "Day Care Seats Per 1k Children Under 15, Accepting at Least Ages 4-10",
+    "short_description": "Number of day care seats per 1,000 children under 15 years of age, which accept at least ages 4 to 10.",
+    "long_description": "Number of day care seats per 1,000 children under 15 years of age, which accept at least ages 4 to 10, as calculated within floating catchment areas. Catchment area ratios are based on the population of children under 15 within block groups (as estimated in the American Community Survey), capacity of eligible day care providers (as reported by the Virginia Department of Social Services), and travel times between block group centroids and day care locations (as calculated with the Open Source Routing Machine). Catchment areas are weighted by travel time with a Gaussian function with scale of 18, which are normalized for each consumer (for a 3-step floating catchment area), as calculated by the catchment R package.",
+    "statement": "There are {value} day care seats per 1,000 children under 15 in {region_name}.",
+    "sources": [
+      {
+        "name": "Virginia Department of Social Services",
+        "location": "Child Day Care Search",
+        "location_url": "https://www.dss.virginia.gov/facility/search/cc2.cgi",
+        "date_accessed": 2023,
+        "url": "https://www.dss.virginia.gov"
+      },
+      {
+        "name": "American Community Survey",
+        "location": "data/5_year_seq_by_state",
+        "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      },
+      {
+        "name": "Open Source Routing Machine",
+        "date_accessed": 2022,
+        "url": "http://project-osrm.org"
+      }
+    ],
+    "citations": [
+      "wan12",
+      "bii21"
+    ],
+    "layer": {
+      "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Daycare/data/distribution/points_{time}.geojson",
+      "filter": [
+        {
+          "feature": "age_min",
+          "operator": "<",
+          "value": 5
+        },
+        {
+          "feature": "age_max",
+          "operator": ">",
+          "value": 9
+        }
+      ]
+    }
+  },
+  "daycare_ratio_over_4": {
+    "data_type": "decimal",
+    "aggregation_method": "ratio",
+    "unit": "day care seat",
+    "category": "Education",
+    "equity_category": "Availability",
+    "short_name": "Day Care Seats Per 1k Children Over 4",
+    "long_name": "Day Care Seats Per 1k Children Between 5 and 14, With Minimal Accepted Age Over 4",
+    "short_description": "Number of day care seats per 1,000 children between 5 and 14 years of age, which accept at least some ages over 4.",
+    "long_description": "Number of day care seats per 1,000 children between 5 and 14 years of age, which accept at least some ages over 4, as calculated within floating catchment areas. Catchment area ratios are based on the population of children over 4 within block groups (as estimated in the American Community Survey), capacity of eligible day care providers (as reported by the Virginia Department of Social Services), and travel times between block group centroids and day care locations (as calculated with the Open Source Routing Machine). Catchment areas are weighted by travel time with a Gaussian function with scale of 18, which are normalized for each consumer (for a 3-step floating catchment area), as calculated by the catchment R package.",
+    "statement": "There are {value} day care seats per 1,000 children over 4 in {region_name}.",
+    "sources": [
+      {
+        "name": "Virginia Department of Social Services",
+        "location": "Child Day Care Search",
+        "location_url": "https://www.dss.virginia.gov/facility/search/cc2.cgi",
+        "date_accessed": 2023,
+        "url": "https://www.dss.virginia.gov"
+      },
+      {
+        "name": "American Community Survey",
+        "location": "data/5_year_seq_by_state",
+        "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      },
+      {
+        "name": "Open Source Routing Machine",
+        "date_accessed": 2022,
+        "url": "http://project-osrm.org"
+      }
+    ],
+    "citations": [
+      "wan12",
+      "bii21"
+    ],
+    "layer": {
+      "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Daycare/data/distribution/points_{time}.geojson",
+      "filter": {
+        "feature": "age_min",
+        "operator": ">",
+        "value": 4
+      }
+    }
+  },
+  "daycare_ratio_under_10": {
+    "data_type": "decimal",
+    "aggregation_method": "ratio",
+    "unit": "day care seat",
+    "category": "Education",
+    "equity_category": "Availability",
+    "short_name": "Day Care Seats Per 1k Children Under 10",
+    "long_name": "Day Care Seats Per 1k Children Under 10, With Maximal Accepted Age Under 10",
+    "short_description": "Number of day care seats per 1,000 children under 10 years of age, which accept at least some ages under 10.",
+    "long_description": "Number of day care seats per 1,000 children under 10 years of age, which accept at least some ages under 10, as calculated within floating catchment areas. Catchment area ratios are based on the population of children under 10 within block groups (as estimated in the American Community Survey), capacity of eligible day care providers (as reported by the Virginia Department of Social Services), and travel times between block group centroids and day care locations (as calculated with the Open Source Routing Machine). Catchment areas are weighted by travel time with a Gaussian function with scale of 18, which are normalized for each consumer (for a 3-step floating catchment area), as calculated by the catchment R package.",
+    "statement": "There are {value} day care seats per 1,000 children under 10 in {region_name}.",
+    "sources": [
+      {
+        "name": "Virginia Department of Social Services",
+        "location": "Child Day Care Search",
+        "location_url": "https://www.dss.virginia.gov/facility/search/cc2.cgi",
+        "date_accessed": 2023,
+        "url": "https://www.dss.virginia.gov"
+      },
+      {
+        "name": "American Community Survey",
+        "location": "data/5_year_seq_by_state",
+        "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      },
+      {
+        "name": "Open Source Routing Machine",
+        "date_accessed": 2022,
+        "url": "http://project-osrm.org"
+      }
+    ],
+    "citations": [
+      "wan12",
+      "bii21"
+    ],
+    "layer": {
+      "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Daycare/data/distribution/points_{time}.geojson",
+      "filter": {
+        "feature": "age_max",
+        "operator": "<",
+        "value": 10
+      }
+    }
+  },
+  "_references": {
+    "wan12": {
+      "id": "wan12",
+      "author": [
+        {
+          "given": "Neng",
+          "family": "Wan"
+        },
+        {
+          "given": "Bin",
+          "family": "Zou"
+        },
+        {
+          "given": "Troy",
+          "family": "Sternberg"
+        }
+      ],
+      "year": 2012,
+      "title": "A three-step floating catchment area method for analyzing spatial access to health services",
+      "journal": "International Journal of Geographical Information Science",
+      "volume": "26",
+      "page": "1073–1089",
+      "doi": "10.1080/13658816.2011.624987"
+    },
+    "bii21": {
+      "id": "bii21",
+      "author": "Biocomplexity Institute and Initiative",
+      "year": 2021,
+      "title": "catchment: Calculate spatial access and availability metrics",
+      "version": "0.0.1",
+      "url": "https://github.com/uva-bi-sdad/catchment"
+    }
+  }
+}

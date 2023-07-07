@@ -161,8 +161,9 @@ ncr_bg_epa_2022_environmental_justice_screen <- data.frame(geoid = ejscreen_long
 dim(ncr_bg_epa_2022_environmental_justice_screen)
 
 #save the wide long to the distribution folder
-write.csv(ncr_bg_epa_2022_environmental_justice_screen, "~/RCode/Data Commons/Environment/EPA_EJScreen/data/distribution/ncr_bg_epa_2022_environmental_justice_screen.csv",
-          row.names=FALSE)
+# write.csv(ncr_bg_epa_2022_environmental_justice_screen, "~/RCode/Data Commons/Environment/EPA_EJScreen/data/distribution/ncr_bg_epa_2022_environmental_justice_screen.csv",
+#          row.names=FALSE)
+readr::write_csv(ncr_bg_epa_2022_environmental_justice_screen, xzfile("environmental_justice/data/distribution/ncr_bg_epa_2022_environmental_justice_screen.csv.xz", compression = 9))
 
 
 

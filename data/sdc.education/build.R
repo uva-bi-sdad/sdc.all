@@ -1,9 +1,5 @@
 library(community)
 
-# check data and measure info
-check_repository()
-
-# rebuild site
 entities_file <- "../entities.rds"
 if (file.exists(entities_file)) {
   entities <- readRDS(entities_file)
@@ -18,13 +14,17 @@ if (file.exists(entities_file)) {
   saveRDS(entities, entities_file, compress = "xz")
 }
 
+# check data and measure info
+check_repository(dataset = structure(entities$region_type, names = entities$geoid))
+
+# rebuild site
 ## unify original files
 datasets <- list.dirs(".", recursive = FALSE)
 datasets <- paste0(datasets, "/data/", rep(c("distribution", "other"), each = length(datasets)))
 datasets <- datasets[dir.exists(datasets)]
 data_reformat_sdad(
   list.files(datasets, "\\.csv", full.names = TRUE), "docs/data",
-  metadata = entities, entity_info = NULL
+  metadata = entities, entity_info = NULL, overwrite = TRUE
 )
 info <- lapply(list.files(datasets, "measure_info\\.json", full.names = TRUE), jsonlite::read_json)
 agg_info <- list()

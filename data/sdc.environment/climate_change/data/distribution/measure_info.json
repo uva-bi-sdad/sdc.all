@@ -1,6 +1,7 @@
 {
     "RISK_SCORE": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -21,10 +22,12 @@
         ],
         "statement": "{features.name} has a risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "AVLN_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -45,10 +48,12 @@
         ],
         "statement": "{features.name} has a avalanche risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "CFLD_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -69,10 +74,12 @@
         ],
         "statement": "{features.name} has a coastal flooding risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "CWAV_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -93,10 +100,12 @@
         ],
         "statement": "{features.name} has a cold wave risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "DRGT_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -117,10 +126,12 @@
         ],
         "statement": "{features.name} has a drought risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "ERQK_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -141,10 +152,12 @@
         ],
         "statement": "{features.name} has an earthquake risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "HAIL_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -165,10 +178,12 @@
         ],
         "statement": "{features.name} has a hail risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "HWAV_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -189,10 +204,12 @@
         ],
         "statement": "{features.name} has a heatwave risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "HRCN_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -213,10 +230,12 @@
         ],
         "statement": "{features.name} has a hurricane risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "ISTM_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -237,10 +256,12 @@
         ],
         "statement": "{features.name} has a ice storm risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "LNDS_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -261,10 +282,12 @@
         ],
         "statement": "{features.name} has a landslide risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "LTNG_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -285,10 +308,12 @@
         ],
         "statement": "{features.name} has a lightning risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "RFLD_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -309,10 +334,12 @@
         ],
         "statement": "{features.name} has a riverine flood risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "SWND_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -333,10 +360,12 @@
         ],
         "statement": "{features.name} has a strong wind risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "TRND_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -357,10 +386,12 @@
         ],
         "statement": "{features.name} has a tornado risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "TSUN_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -381,10 +412,12 @@
         ],
         "statement": "{features.name} has a tsunami risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "VLCN_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -405,10 +438,12 @@
         ],
         "statement": "{features.name} has a volcanic activity risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "WFIR_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -429,10 +464,12 @@
         ],
         "statement": "{features.name} has a wildfire risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "WNTW_RISKS": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Environment",
         "citations": "",
         "data_type": "numeric",
@@ -453,6 +490,7 @@
         ],
         "statement": "{features.name} has a winter weather risk index value of {value} where 0 is the minimum and 100 is the maximum.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

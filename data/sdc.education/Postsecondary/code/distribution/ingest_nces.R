@@ -147,43 +147,43 @@ process_year <- function(year, dir = base_dir, districts = county_districts,
     )
     population$schools_under2year_min_drivetime_error <- 0
     # calculate catchment ratios
-    population$schools_2year_per_100k <- catchment_ratio(
+    population$schools_2year_all <- catchment_ratio(
       population, providers[providers$type == 2, ], traveltimes,
       weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e5,
       consumers_value = "population_over_14"
     )
-    population$schools_under2year_per_100k <- catchment_ratio(
+    population$schools_under2year <- catchment_ratio(
       population, providers[providers$type == 3, ], traveltimes,
       weight = "gaussian", scale = 18,
       normalize_weight = TRUE, return_type = 1e5,
       consumers_value = "population_over_14"
     )
     for (p in names(data$by_program)) {
-      population[[paste0("schools_2year_with_", p, "_program_per_100k")]] <- catchment_ratio(
+      population[[paste0("schools_2year_with_", p, "_program")]] <- catchment_ratio(
         population, providers[providers[[p]] == 1, ],
         traveltimes,
         weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e5,
         consumers_value = "population_over_14"
       )
     }
-    population$schools_2year_per_100k_error <- abs(catchment_ratio(
+    population$schools_2year_all_error <- abs(catchment_ratio(
       population, providers[providers$type == 2, ], traveltimes,
       weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e5,
       consumers_value = "population_over_14_error"
-    ) - population$schools_2year_per_100k)
-    population$schools_under2year_per_100k_error <- abs(catchment_ratio(
+    ) - population$schools_2year_all)
+    population$schools_under2year_error <- abs(catchment_ratio(
       population, providers[providers$type == 3, ], traveltimes,
       weight = "gaussian", scale = 18,
       normalize_weight = TRUE, return_type = 1e5,
       consumers_value = "population_over_14_error"
-    ) - population$schools_under2year_per_100k)
+    ) - population$schools_under2year)
     for (p in names(data$by_program)) {
-      population[[paste0("schools_2year_with_", p, "_program_per_100k_error")]] <- abs(catchment_ratio(
+      population[[paste0("schools_2year_with_", p, "_program_error")]] <- abs(catchment_ratio(
         population, providers[providers[[p]] == 1, ],
         traveltimes,
         weight = "gaussian", scale = 18, normalize_weight = TRUE, return_type = 1e5,
         consumers_value = "population_over_14_error"
-      ) - population[[paste0("schools_2year_with_", p, "_program_per_100k")]])
+      ) - population[[paste0("schools_2year_with_", p, "_program")]])
     }
     population$year <- year
     ## save each year for reruns
@@ -194,13 +194,15 @@ process_year <- function(year, dir = base_dir, districts = county_districts,
   # aggregate
   agger <- function(d, part = NULL) {
     drivetimes <- grep("drivetime", colnames(d), fixed = TRUE)
-    ratios <- grep("_per_", colnames(d), fixed = TRUE, value = TRUE)
-    ratios <- ratios[!grepl("_error", ratios, fixed = TRUE)]
+    ratios <- colnames(d)[
+      grepl("schools", colnames(d), fixed = TRUE) & !grepl("drivetime|error", colnames(d))
+    ]
     ratio_errors <- paste0(ratios, "_error")
     total <- sum(d$population_over_14, na.rm = TRUE)
     total[total == 0] <- 1
     totalM <- sum(d$population_over_14_error, na.rm = TRUE)
     totalM[totalM == 0] <- 1
+    browser()
     ragg <- colSums(d[, ratios] * d$population_over_14, na.rm = TRUE) / total
     res <- as.data.frame(c(
       GEOID = if (missing(part)) districts[[substring(d[1, "GEOID"], 1, 5)]] else substring(d[1, "GEOID"], 1, part),
@@ -214,7 +216,6 @@ process_year <- function(year, dir = base_dir, districts = county_districts,
   message(year, " creating aggregates")
   dists <- districts[substring(block_groups$GEOID, 1, 5)]
   su <- !is.na(dists)
-  browser()
   list(
     block_groups = block_groups,
     tracts = do.call(rbind, lapply(split(block_groups, substring(block_groups$GEOID, 1, 11)), agger, 11)),

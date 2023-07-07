@@ -23,4 +23,5 @@ dat_mrg <- rbindlist(list(dat20172019_mrg, dat20202021_mrg))
 
 dat_fin <- dat_mrg[,.(geoid, measure, measure_type, region_name, region_type, value, year, moe = "")]
 
-fwrite(dat_fin, "Years of Schooling/data/distribution/va_tr_acs5_2017_2021_years_of_schooling.csv")
+# fwrite(dat_fin, "Years of Schooling/data/distribution/va_tr_acs5_2017_2021_years_of_schooling.csv")
+readr::write_csv(dat_fin, xzfile("Years of Schooling/data/distribution/va_tr_acs5_2017_2021_years_of_schooling.csv.xz", compression = 9))
