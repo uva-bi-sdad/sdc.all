@@ -1,6 +1,7 @@
 {
     "no_hlth_ins_pct": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -21,10 +22,12 @@
         ],
         "statement": "{value} of the population does not have health insurance in {features.name}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "hlth_ins_pct": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -45,6 +48,7 @@
         ],
         "statement": "{value} of the population has health insurance in {features.name}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

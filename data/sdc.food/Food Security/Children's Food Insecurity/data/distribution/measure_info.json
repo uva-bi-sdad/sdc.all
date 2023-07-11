@@ -1,6 +1,7 @@
 {
     "Child_Food_Insecurity_Rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "{value} of the population of children in {features.name} are food insecure.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Num_Child_Food_Insecure": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -43,6 +46,7 @@
         ],
         "statement": "The population of food insecure children in {features.name} is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

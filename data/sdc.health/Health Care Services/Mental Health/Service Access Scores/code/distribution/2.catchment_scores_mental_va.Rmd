@@ -440,6 +440,7 @@ va_bg_2021_access_scores_mental$measure <- ifelse(va_bg_2021_access_scores_menta
 # Save information in Working directory and PgAdmin
 ```{r}
 
-write.csv(va_bg_2021_access_scores_mental, "va_hdcttrbg_samhsa_2021_access_scores_mental.csv", row.names = FALSE )
+# write.csv(va_bg_2021_access_scores_mental, "va_hdcttrbg_samhsa_2021_access_scores_mental.csv", row.names = FALSE )
+readr::write_csv(va_bg_2021_access_scores_mental, xzfile("va_hdcttrbgca_samhsa_2021_access_scores_mental.csv.xz", compression = 9))
 
 ```

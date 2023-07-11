@@ -1,6 +1,7 @@
 {
     "alice_pct": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Financial Well Being",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "{value} percent of the households in {features.name} are ALICE.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "poverty_pct": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Financial Well Being",
         "citations": "",
         "data_type": "numeric",
@@ -43,6 +46,7 @@
         ],
         "statement": "{value} percent of the households in {features.name} are in poverty.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

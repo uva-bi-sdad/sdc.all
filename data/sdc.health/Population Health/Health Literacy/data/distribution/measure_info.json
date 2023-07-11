@@ -1,6 +1,7 @@
 {
     "health_literacy_estimate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Education",
         "citations": [
             "savitz20",
@@ -28,10 +29,12 @@
         ],
         "statement": "The health literacy composite for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_post_hs_edu": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",
@@ -51,10 +54,12 @@
         ],
         "statement": "{value} of the population in {features.name} has a post-secondary education.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "num_post_hs_edu": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",
@@ -74,7 +79,8 @@
         ],
         "statement": "{value} people in {features.name} have a post-secondary education.",
         "type": "integer",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "_references": {
         "liang17": {

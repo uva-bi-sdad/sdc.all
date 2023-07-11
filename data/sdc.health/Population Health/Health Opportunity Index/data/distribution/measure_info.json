@@ -1,6 +1,7 @@
 {
     "economic_opportunity_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "The economic opportunity profile in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "education_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -43,10 +46,12 @@
         ],
         "statement": "The education indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "employment_access_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -66,10 +71,12 @@
         ],
         "statement": "The employment accessibility indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "food_accessibility_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -89,10 +96,12 @@
         ],
         "statement": "The food accessibility indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "health_opportunity_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -112,10 +121,12 @@
         ],
         "statement": "The health opportunity index in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "income_inequality_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -135,10 +146,12 @@
         ],
         "statement": "The income inequality index in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "job_participation_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -158,10 +171,12 @@
         ],
         "statement": "The job participation indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "material_deprivation_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -181,10 +196,12 @@
         ],
         "statement": "The material deprivation indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "pop_churning_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -204,10 +221,12 @@
         ],
         "statement": "The population churning index in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "pop_density_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -227,10 +246,12 @@
         ],
         "statement": "The population density indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "segregation_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -250,10 +271,12 @@
         ],
         "statement": "The segregation indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "walkability_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -273,10 +296,12 @@
         ],
         "statement": "The walkability indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "wellness_disparity_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -296,10 +321,12 @@
         ],
         "statement": "The wellness disparity profile in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "consumer_opportunity_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -319,10 +346,12 @@
         ],
         "statement": "The consumer opportunity profile in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "affordability_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -342,10 +371,12 @@
         ],
         "statement": "The affordability indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "air_quality_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -365,10 +396,12 @@
         ],
         "statement": "The air quality indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "community_environment_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -388,10 +421,12 @@
         ],
         "statement": "The community environmental profile in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "access_care_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -411,6 +446,7 @@
         ],
         "statement": "The access to care indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

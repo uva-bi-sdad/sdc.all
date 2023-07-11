@@ -1,6 +1,7 @@
 {
     "earnings_per_job": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Employment/Workforce Development",
         "citations": "",
         "data_type": "decimal",
@@ -20,6 +21,7 @@
         ],
         "statement": "Earnings per job in {features.name} is {value}.",
         "type": "dollar",
-        "unit": "dollar"
+        "unit": "dollar",
+        "variants": ""
     }
 }

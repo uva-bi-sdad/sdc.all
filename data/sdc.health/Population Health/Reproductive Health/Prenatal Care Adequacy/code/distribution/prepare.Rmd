@@ -1490,7 +1490,9 @@ kotelchuck_14_20 <- rbind( kotelchuck_va_2014_county, kotelchuck_va_2015_county,
 
 Save
 ```{r}
-write.csv(kotelchuck_14_20, "~/test_symlink/natality_tables/kotelchuck_14_20.csv", row.names = FALSE )
+# write.csv(kotelchuck_14_20, "~/test_symlink/natality_tables/kotelchuck_14_20.csv", row.names = FALSE )
+readr::write_csv(kotelchuck_14_20, xzfile("./data/distribution/va_ct_nchs_2014_2020_kotelcheck.csv.xz", compression = 9))
+
 kotelchuck_14_20 <- read.csv("~/test_symlink/natality_tables/kotelchuck_14_20.csv")
 
 

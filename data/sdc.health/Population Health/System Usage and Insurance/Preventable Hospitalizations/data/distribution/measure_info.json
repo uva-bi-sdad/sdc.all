@@ -1,6 +1,7 @@
 {
     "prevent_hosp_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -20,6 +21,7 @@
         ],
         "statement": "{value} of the hospitalizations in {features.name} were preventable (due to conditions usually treated in outpatient settings).",
         "type": "rate",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

@@ -441,7 +441,8 @@ va_bg_2021_access_scores_obgyn$measure <- ifelse(va_bg_2021_access_scores_obgyn$
 # Save information in Working directory and PgAdmin
 ```{r}
 
-write.csv(va_bg_2021_access_scores_obgyn, "va_hdcttrbg_webmd_2021_access_scores_obgyn.csv", row.names = FALSE )
+# write.csv(va_bg_2021_access_scores_obgyn, "va_hdcttrbg_webmd_2021_access_scores_obgyn.csv", row.names = FALSE )
+readr::write_csv(va_bg_2021_access_scores_obgyn, xzfile("va_hdcttrbg_webmd_2021_access_scores_obgyn.csv.xz", compression = 9))
 
 
 ```

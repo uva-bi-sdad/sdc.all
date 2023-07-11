@@ -1,6 +1,7 @@
 {
     "adequateplus_pc": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "{value} of the cases in {features.name} rated as adequate plus.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "adequate_pc": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -43,10 +46,12 @@
         ],
         "statement": "{value} of the cases in {features.name} rated as adequate.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "intermediate_pc": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -66,10 +71,12 @@
         ],
         "statement": "{value} of the cases in {features.name} rated as intermediate.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "inadequate_pc": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -89,10 +96,12 @@
         ],
         "statement": "{value} of the cases in {features.name} rated as inadequate.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "adequateplus": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -112,10 +121,12 @@
         ],
         "statement": "There are {value} cases rated as adequate plus in {features.name}.",
         "type": "integer",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "adequate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -135,10 +146,12 @@
         ],
         "statement": "There are {value} cases rated as adequate in {features.name}.",
         "type": "integer",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "intermediate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -158,10 +171,12 @@
         ],
         "statement": "There are {value} cases rated as intermediate in {features.name}.",
         "type": "integer",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "inadequate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -181,6 +196,7 @@
         ],
         "statement": "There are {value} cases rated as inadequate in {features.name}.",
         "type": "integer",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

@@ -1,6 +1,7 @@
 {
     "mrfei": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": [
             "cdc11a",
@@ -23,7 +24,8 @@
         ],
         "statement": "The Retail food environment index is {value} in {features.name}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "_references": {
         "cdc11a": {

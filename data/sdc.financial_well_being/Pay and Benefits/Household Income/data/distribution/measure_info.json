@@ -1,6 +1,7 @@
 {
     "median_household_income": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Financial Well Being",
         "citations": "",
         "data_type": "integer",
@@ -21,6 +22,7 @@
         ],
         "statement": "The median household income in {features.name} is {value} per year.",
         "type": "dollar",
-        "unit": "dollars"
+        "unit": "dollars",
+        "variants": ""
     }
 }

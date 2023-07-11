@@ -1,6 +1,7 @@
 {
     "degrees_awarded_undergraduate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "The number of undergraduate degrees awarded is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "degrees_awarded_graduate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -43,10 +46,12 @@
         ],
         "statement": "The number of graduate degrees awarded is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "degrees_awarded_first_professional": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -66,10 +71,12 @@
         ],
         "statement": "The number of first professional degrees awarded is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "degrees_awarded_two_year": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -89,6 +96,7 @@
         ],
         "statement": "The number of 2-year degrees awarded is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

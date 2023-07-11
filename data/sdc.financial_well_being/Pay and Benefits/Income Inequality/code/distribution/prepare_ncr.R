@@ -84,5 +84,5 @@ ncr_cttr_2015_2021_income_inequality_gini_index <-
   rbindlist(list(ncr_tract_ginis_all, ncr_county_ginis_all))
 
 # Write file
-fwrite(ncr_cttr_2015_2021_income_inequality_gini_index, "Pay and Benefits/Income Inequality/data/distribution/ncr_cttr_2015_2021_income_inequality_gini_index.csv")
-
+# fwrite(ncr_cttr_2015_2021_income_inequality_gini_index, "Pay and Benefits/Income Inequality/data/distribution/ncr_cttr_2015_2021_income_inequality_gini_index.csv")
+readr::write_csv(ncr_cttr_2015_2021_income_inequality_gini_index, xzfile("Pay and Benefits/Income Inequality/data/distribution/ncr_cttr_2015_2021_income_inequality_gini_index.csv.xz", compression = 9))

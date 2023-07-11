@@ -1,6 +1,7 @@
 {
     "number_food_insecure": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "{value} people in {features.name} are food insecure.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "percent_food_insecure": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -43,10 +46,12 @@
         ],
         "statement": "{value} percent of the population in {features.name} are food insecure.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "insecure_pc_original": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -106,10 +111,12 @@
         ],
         "statement": "{value} households in {features.name} are food insecure.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "insecure_pc_snap": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -169,10 +176,12 @@
         ],
         "statement": "{value} households in {features.name} are food insecure.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "insecure_pc_snap_covid": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -232,10 +241,12 @@
         ],
         "statement": "{value} households in {features.name} are food insecure.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "at_risk_pc_original": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -295,10 +306,12 @@
         ],
         "statement": "{value} households in {features.name} are at-risk of food insecurity.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "at_risk_pc_snap": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -358,10 +371,12 @@
         ],
         "statement": "{value} households in {features.name} are at-risk of food insecurity.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "at_risk_pc_snap_covid": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -421,6 +436,7 @@
         ],
         "statement": "{value} households in {features.name} are at-risk of food insecurity.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

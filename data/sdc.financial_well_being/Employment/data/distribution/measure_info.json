@@ -1,6 +1,7 @@
 {
     "emp_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Employment/Workforce Development",
         "citations": "",
         "data_type": "decimal",
@@ -21,10 +22,12 @@
         ],
         "statement": "{value} of the population in {features.name} is employed.",
         "type": "percent",
-        "unit": "people"
+        "unit": "people",
+        "variants": ""
     },
     "job_participate_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Employment/Workforce Development",
         "citations": "",
         "data_type": "decimal",
@@ -45,6 +48,7 @@
         ],
         "statement": "{value} of the population in {features.name} is participating in the civilian job force.",
         "type": "percent",
-        "unit": "people"
+        "unit": "people",
+        "variants": ""
     }
 }

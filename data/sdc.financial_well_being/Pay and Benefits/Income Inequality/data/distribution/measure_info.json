@@ -1,6 +1,7 @@
 {
     "gini_index": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Financial Well Being",
         "citations": "",
         "data_type": "decimal",
@@ -20,6 +21,7 @@
         ],
         "statement": "Income Inequality (Gini Index) in {features.name} is {value}.",
         "type": "",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

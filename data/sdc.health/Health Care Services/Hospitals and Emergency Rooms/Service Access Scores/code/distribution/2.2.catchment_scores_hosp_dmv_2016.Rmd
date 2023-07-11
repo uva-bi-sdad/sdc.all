@@ -359,7 +359,8 @@ dmv_bg_2021_acccess_scores_hospitals$measure <- ifelse(dmv_bg_2021_acccess_score
 
 #dmv_bg_2021_acccess_scores_hospitals$year <- year_spec
 
-write.csv(dmv_bg_2021_acccess_scores_hospitals, "ncr_bgtrct_2016_acccess_scores_hospitals.csv", row.names = FALSE )
+# write.csv(dmv_bg_2021_acccess_scores_hospitals, "ncr_bgtrct_2016_acccess_scores_hospitals.csv", row.names = FALSE )
+readr::write_csv(dmv_bg_2021_acccess_scores_hospitals, xzfile("ncr_bgtrct_2016_access_scores_hospitals.csv.xz", compression = 9))
 
 ```
 

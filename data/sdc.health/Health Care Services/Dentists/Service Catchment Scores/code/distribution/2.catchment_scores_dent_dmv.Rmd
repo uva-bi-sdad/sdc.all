@@ -309,7 +309,8 @@ dmv_bg_2021_acccess_scores_dentists <- rbind(dmv_bg_2021_acccess_scores_bg,
 
 ```{r}
 #SAVE with specific name
-write.csv(dmv_bg_2021_acccess_scores_dentists, "dmv_cttrbg_webmd_2021_access_scores_dentists.csv", row.names = FALSE )
+# write.csv(dmv_bg_2021_acccess_scores_dentists, "dmv_cttrbg_webmd_2021_access_scores_dentists.csv", row.names = FALSE )
+readr::write_csv(dmv_bg_2021_acccess_scores_dentists, xzfile("ncr_cttrbg_webmd_2021_access_scores_dentists.csv.xz", compression = 9))
 
 #dmv_bg_2021_acccess_scores_dentists <- read.csv("dmv_cttrbg_webmd_2021_acccess_scores_dentists")
 

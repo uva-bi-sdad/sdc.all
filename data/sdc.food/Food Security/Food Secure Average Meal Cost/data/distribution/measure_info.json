@@ -1,6 +1,7 @@
 {
     "Cost_Per_Meal": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -20,6 +21,7 @@
         ],
         "statement": "The average meal cost in {features.name} is {value}.",
         "type": "dollar",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

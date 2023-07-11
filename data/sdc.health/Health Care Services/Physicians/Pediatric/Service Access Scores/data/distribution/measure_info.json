@@ -1,6 +1,7 @@
 {
     "ped_cnt": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "There are {value} pediatricians in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "ped_3sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -48,10 +51,12 @@
         ],
         "statement": "The pediatric care availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "ped_e2sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -76,7 +81,8 @@
         ],
         "statement": "The pediatric care availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "_references": {
         "lou04": {

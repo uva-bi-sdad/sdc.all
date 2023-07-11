@@ -358,7 +358,8 @@ dmv_bg_2021_acccess_scores_hospitals$measure <- ifelse(dmv_bg_2021_acccess_score
 #The naming convention for data tables within a schema is as follows: 
 #<location>_<resolution>_<data source>_<time period>_<title> 
 
-write.csv(dmv_bg_2021_acccess_scores_hospitals, "ncr_bgtrct_2019_acccess_scores_hospitals.csv", row.names = FALSE )
+# write.csv(dmv_bg_2021_acccess_scores_hospitals, "ncr_bgtrct_2019_acccess_scores_hospitals.csv", row.names = FALSE )
+readr::write_csv(dmv_bg_2021_acccess_scores_hospitals, xzfile("ncr_bgtrct_2019_access_scores_hospitals.csv.xz", compression = 9))
 
 ```
 

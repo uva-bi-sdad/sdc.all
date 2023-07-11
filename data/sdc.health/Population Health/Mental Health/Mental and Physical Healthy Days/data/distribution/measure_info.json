@@ -1,6 +1,7 @@
 {
     "perc_poor_ment_hlth_days_14_and_over": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "{value} of the population in {features.name} reports poor mental health.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_poor_phys_hlth_days_14_and_over": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -43,6 +46,7 @@
         ],
         "statement": "{value} of the population in {features.name} reports poor physical health.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

@@ -305,7 +305,8 @@ dmv_bg_2021_acccess_scores_obgyn <- rbind(dmv_bg_2021_acccess_scores_bg,
 
 ```{r}
 #SAVE with specific name
-write.csv(dmv_bg_2021_acccess_scores_obgyn, "~/VDH/Floating_Catchment_Areas/dmv/1. obgyn_dmv_model/dmv_cttrbg_webmd_2021_access_scores_obgyn.csv", row.names = FALSE )
+# write.csv(dmv_bg_2021_acccess_scores_obgyn, "~/VDH/Floating_Catchment_Areas/dmv/1. obgyn_dmv_model/dmv_cttrbg_webmd_2021_access_scores_obgyn.csv", row.names = FALSE )
+readr::write_csv(dmv_bg_2021_acccess_scores_obgyn, xzfile("ncr_cttrbg_webmd_2021_access_scores_obgyn.csv.xz", compression = 9))
 
 # #a) connect
 # con <- RPostgreSQL::dbConnect(drv = RPostgreSQL::PostgreSQL(),

@@ -101,6 +101,6 @@ ncr_cttr_2015_2021_employment_rate <-
   rbindlist(list(ncr_tract_emprt_all, ncr_county_emprt_all))
 
 # Write file
-fwrite(ncr_cttr_2015_2021_employment_rate, "Employment/data/distribution/ncr_cttr_2015_2021_employment_rate.csv")
-
+# fwrite(ncr_cttr_2015_2021_employment_rate, "Employment/data/distribution/ncr_cttr_2015_2021_employment_rate.csv")
+readr::write_csv(ncr_cttr_2015_2021_employment_rate, xzfile("Employment/data/distribution/ncr_cttr_2015_2021_employment_rate.csv.xz", compression = 9))
 

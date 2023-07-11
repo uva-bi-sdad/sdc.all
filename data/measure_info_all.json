@@ -1945,6 +1945,7 @@
     },
     "Child_Food_Insecurity_Rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -1964,7 +1965,8 @@
         ],
         "statement": "{value} of the population of children in {features.name} are food insecure.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Construction_Herfindalh_Hirschman_index": {
         "aggregation_method": "",
@@ -2428,6 +2430,7 @@
     },
     "Cost_Per_Meal": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -2447,7 +2450,8 @@
         ],
         "statement": "The average meal cost in {features.name} is {value}.",
         "type": "dollar",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "DRGT_RISKS": {
         "aggregation_method": "",
@@ -6751,6 +6755,7 @@
     },
     "Num_Child_Food_Insecure": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -6770,7 +6775,8 @@
         ],
         "statement": "The population of food insecure children in {features.name} is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "OZONE": {
         "aggregation_method": "",
@@ -11240,6 +11246,7 @@
     },
     "access_care_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -11259,7 +11266,8 @@
         ],
         "statement": "The access to care indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "acs_postsecondary_{variant}": {
         "aggregation_method": "{variant}",
@@ -11297,6 +11305,7 @@
     },
     "adequate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -11316,10 +11325,12 @@
         ],
         "statement": "There are {value} cases rated as adequate in {features.name}.",
         "type": "integer",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "adequate_pc": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -11339,10 +11350,12 @@
         ],
         "statement": "{value} of the cases in {features.name} rated as adequate.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "adequateplus": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -11362,10 +11375,12 @@
         ],
         "statement": "There are {value} cases rated as adequate plus in {features.name}.",
         "type": "integer",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "adequateplus_pc": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -11385,10 +11400,12 @@
         ],
         "statement": "{value} of the cases in {features.name} rated as adequate plus.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "affordability_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -11408,10 +11425,12 @@
         ],
         "statement": "The affordability indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "air_quality_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -11431,10 +11450,12 @@
         ],
         "statement": "The air quality indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "alice_pct": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Financial Well Being",
         "citations": "",
         "data_type": "numeric",
@@ -11454,10 +11475,12 @@
         ],
         "statement": "{value} percent of the households in {features.name} are ALICE.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "at_risk_pc_original": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -11517,10 +11540,12 @@
         ],
         "statement": "{value} households in {features.name} are at-risk of food insecurity.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "at_risk_pc_snap": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -11580,10 +11605,12 @@
         ],
         "statement": "{value} households in {features.name} are at-risk of food insecurity.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "at_risk_pc_snap_covid": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -11643,7 +11670,8 @@
         ],
         "statement": "{value} households in {features.name} are at-risk of food insecurity.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "average_years_schooling": {
         "aggregation_method": "",
@@ -11694,6 +11722,7 @@
     },
     "avg_monthly_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Behavioral Health, Substance Use Disorder and Recovery",
         "citations": "",
         "data_type": "numeric",
@@ -11713,7 +11742,8 @@
         ],
         "statement": "The average emergency department visits for drug overdose rate in {features.name} is {value}.",
         "type": "rate",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "avg_up_using_devices": {
         "aggregation_method": "weighted arithmetic mean",
@@ -11786,6 +11816,7 @@
     },
     "community_environment_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -11805,7 +11836,8 @@
         ],
         "statement": "The community environmental profile in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "commute_time": {
         "aggregation_method": "",
@@ -11833,6 +11865,7 @@
     },
     "consumer_opportunity_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -11852,7 +11885,8 @@
         ],
         "statement": "The consumer opportunity profile in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "daycare_capacity": {
         "aggregation_method": "count",
@@ -11998,6 +12032,7 @@
     },
     "degrees_awarded_first_professional": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -12017,10 +12052,12 @@
         ],
         "statement": "The number of first professional degrees awarded is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "degrees_awarded_graduate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -12040,10 +12077,12 @@
         ],
         "statement": "The number of graduate degrees awarded is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "degrees_awarded_two_year": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -12063,10 +12102,12 @@
         ],
         "statement": "The number of 2-year degrees awarded is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "degrees_awarded_undergraduate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -12086,10 +12127,12 @@
         ],
         "statement": "The number of undergraduate degrees awarded is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "dent_2sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -12114,10 +12157,12 @@
         ],
         "statement": "The dental care availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "dent_cnt": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -12137,10 +12182,12 @@
         ],
         "statement": "There are {value} dentists in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "dent_e2sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -12165,7 +12212,8 @@
         ],
         "statement": "The dental care availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "devices": {
         "aggregation_method": "arithmetic mean",
@@ -12192,6 +12240,7 @@
     },
     "earnings_per_job": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Employment/Workforce Development",
         "citations": "",
         "data_type": "decimal",
@@ -12211,10 +12260,12 @@
         ],
         "statement": "Earnings per job in {features.name} is {value}.",
         "type": "dollar",
-        "unit": "dollar"
+        "unit": "dollar",
+        "variants": ""
     },
     "economic_opportunity_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -12234,10 +12285,12 @@
         ],
         "statement": "The economic opportunity profile in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "education_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -12257,10 +12310,12 @@
         ],
         "statement": "The education indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "emp_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Employment/Workforce Development",
         "citations": "",
         "data_type": "decimal",
@@ -12281,10 +12336,12 @@
         ],
         "statement": "{value} of the population in {features.name} is employed.",
         "type": "percent",
-        "unit": "people"
+        "unit": "people",
+        "variants": ""
     },
     "employment_access_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -12304,10 +12361,12 @@
         ],
         "statement": "The employment accessibility indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "ems_3sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -12332,10 +12391,12 @@
         ],
         "statement": "The emergency medical services availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "ems_cnt": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -12355,10 +12416,12 @@
         ],
         "statement": "There are {value} emergency medical services facilities in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "ems_near_10_median": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -12378,7 +12441,8 @@
         ],
         "statement": "The median drive time to the ten closest emergency medical service facilities to {features.name} is {value}.",
         "type": "drive time",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "entry_rate": {
         "aggregation_method": "",
@@ -12451,6 +12515,7 @@
     },
     "food_accessibility_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -12470,7 +12535,8 @@
         ],
         "statement": "The food accessibility indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "fruit_treeNut_total_sales": {
         "aggregation_method": "",
@@ -12497,6 +12563,7 @@
     },
     "gini_index": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Financial Well Being",
         "citations": "",
         "data_type": "decimal",
@@ -12516,10 +12583,12 @@
         ],
         "statement": "Income Inequality (Gini Index) in {features.name} is {value}.",
         "type": "",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "health_literacy_estimate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Education",
         "citations": [
             "savitz20",
@@ -12547,10 +12616,12 @@
         ],
         "statement": "The health literacy composite for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "health_opportunity_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -12570,7 +12641,8 @@
         ],
         "statement": "The health opportunity index in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "hh_limited_english": {
         "aggregation_method": "",
@@ -12597,6 +12669,7 @@
     },
     "hh_received_snap_cnt": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -12617,10 +12690,12 @@
         ],
         "statement": "The count of households that received SNAP in {features.name} is {value}.",
         "type": "",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "hh_received_snap_pct": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -12641,10 +12716,12 @@
         ],
         "statement": "The percentage of households that received SNAP in {features.name} is {value}.",
         "type": "",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "hlth_ins_pct": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -12665,10 +12742,12 @@
         ],
         "statement": "{value} of the population has health insurance in {features.name}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "hosp_3sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -12693,10 +12772,12 @@
         ],
         "statement": "The hospital geographic availability score for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "hosp_cnt": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -12716,10 +12797,12 @@
         ],
         "statement": "There are {value} hospitals in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "hosp_near_10_median": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -12739,10 +12822,12 @@
         ],
         "statement": "The median drive time to the ten closest hospitals to {features.name} is {value}.",
         "type": "drive time",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "inadequate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -12762,10 +12847,12 @@
         ],
         "statement": "There are {value} cases rated as inadequate in {features.name}.",
         "type": "integer",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "inadequate_pc": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -12785,10 +12872,12 @@
         ],
         "statement": "{value} of the cases in {features.name} rated as inadequate.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "income_inequality_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -12808,10 +12897,12 @@
         ],
         "statement": "The income inequality index in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "insecure_pc_original": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -12871,10 +12962,12 @@
         ],
         "statement": "{value} households in {features.name} are food insecure.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "insecure_pc_snap": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -12934,10 +13027,12 @@
         ],
         "statement": "{value} households in {features.name} are food insecure.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "insecure_pc_snap_covid": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -12997,10 +13092,12 @@
         ],
         "statement": "{value} households in {features.name} are food insecure.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "intermediate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -13020,10 +13117,12 @@
         ],
         "statement": "There are {value} cases rated as intermediate in {features.name}.",
         "type": "integer",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "intermediate_pc": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -13043,7 +13142,8 @@
         ],
         "statement": "{value} of the cases in {features.name} rated as intermediate.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "job_creation_active": {
         "aggregation_method": "",
@@ -13139,6 +13239,7 @@
     },
     "job_participate_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Employment/Workforce Development",
         "citations": "",
         "data_type": "decimal",
@@ -13159,10 +13260,12 @@
         ],
         "statement": "{value} of the population in {features.name} is participating in the civilian job force.",
         "type": "percent",
-        "unit": "people"
+        "unit": "people",
+        "variants": ""
     },
     "job_participation_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -13182,10 +13285,12 @@
         ],
         "statement": "The job participation indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "material_deprivation_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -13205,10 +13310,12 @@
         ],
         "statement": "The material deprivation indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "median_household_income": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Financial Well Being",
         "citations": "",
         "data_type": "integer",
@@ -13229,10 +13336,12 @@
         ],
         "statement": "The median household income in {features.name} is {value} per year.",
         "type": "dollar",
-        "unit": "dollars"
+        "unit": "dollars",
+        "variants": ""
     },
     "mental_3sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -13257,10 +13366,12 @@
         ],
         "statement": "The mental health services availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "mental_cnt": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -13280,10 +13391,12 @@
         ],
         "statement": "There are {value} mental health facilities in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "mental_near_10_median": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -13303,7 +13416,8 @@
         ],
         "statement": "The median drive time to the ten closest mental health facilities to {features.name} is {value}.",
         "type": "drive time",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "minority_owned_business_create_job": {
         "aggregation_method": "",
@@ -13862,6 +13976,7 @@
     },
     "mrfei": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": [
             "cdc11a",
@@ -13884,7 +13999,8 @@
         ],
         "statement": "The Retail food environment index is {value} in {features.name}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "new_business": {
         "aggregation_method": "",
@@ -13911,6 +14027,7 @@
     },
     "no_hlth_ins_pct": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -13931,7 +14048,8 @@
         ],
         "statement": "{value} of the population does not have health insurance in {features.name}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "non_minority_owned_business_create_job": {
         "aggregation_method": "",
@@ -14351,6 +14469,7 @@
     },
     "num_post_hs_edu": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",
@@ -14370,7 +14489,8 @@
         ],
         "statement": "{value} people in {features.name} have a post-secondary education.",
         "type": "integer",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "number_business": {
         "aggregation_method": "",
@@ -14397,6 +14517,7 @@
     },
     "number_food_insecure": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -14416,10 +14537,12 @@
         ],
         "statement": "{value} people in {features.name} are food insecure.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "obgyn_2sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -14444,10 +14567,12 @@
         ],
         "statement": "The OBGYN availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "obgyn_3sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -14472,10 +14597,12 @@
         ],
         "statement": "The OBGYN availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "obgyn_cnt": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -14495,10 +14622,12 @@
         ],
         "statement": "There are {value} OBGYNs in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "obgyn_e2sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -14523,7 +14652,8 @@
         ],
         "statement": "The OBGYN availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "operation_farmValue": {
         "aggregation_method": "",
@@ -14574,6 +14704,7 @@
     },
     "ped_3sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -14598,10 +14729,12 @@
         ],
         "statement": "The pediatric care availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "ped_cnt": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -14621,10 +14754,12 @@
         ],
         "statement": "There are {value} pediatricians in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "ped_e2sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -14649,7 +14784,8 @@
         ],
         "statement": "The pediatric care availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "per_above30": {
         "aggregation_method": "",
@@ -14771,6 +14907,7 @@
     },
     "perc_annual_checkup": {
         "aggregation_method": "",
+        "categories": "",
         "category": "",
         "citations": "",
         "data_type": "numeric",
@@ -14790,7 +14927,8 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_carpool": {
         "aggregation_method": "",
@@ -14842,6 +14980,7 @@
     },
     "perc_dental_visit": {
         "aggregation_method": "",
+        "categories": "",
         "category": "",
         "citations": "",
         "data_type": "numeric",
@@ -14861,7 +15000,8 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_female": {
         "aggregation_method": "",
@@ -15295,6 +15435,7 @@
     },
     "perc_poor_ment_hlth_days_14_and_over": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -15314,10 +15455,12 @@
         ],
         "statement": "{value} of the population in {features.name} reports poor mental health.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_poor_phys_hlth_days_14_and_over": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -15337,7 +15480,8 @@
         ],
         "statement": "{value} of the population in {features.name} reports poor physical health.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_pop_20_64": {
         "aggregation_method": "",
@@ -15410,6 +15554,7 @@
     },
     "perc_post_hs_edu": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",
@@ -15429,7 +15574,8 @@
         ],
         "statement": "{value} of the population in {features.name} has a post-secondary education.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_total_100_20_using_devices": {
         "aggregation_method": "percent",
@@ -15594,6 +15740,7 @@
     },
     "percent_food_insecure": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -15613,7 +15760,8 @@
         ],
         "statement": "{value} percent of the population in {features.name} are food insecure.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "pop_20_64": {
         "aggregation_method": "",
@@ -15709,6 +15857,7 @@
     },
     "pop_churning_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -15728,10 +15877,12 @@
         ],
         "statement": "The population churning index in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "pop_density_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -15751,7 +15902,8 @@
         ],
         "statement": "The population density indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "pop_eth_tot": {
         "aggregation_method": "",
@@ -15985,6 +16137,7 @@
     },
     "population": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
@@ -16005,10 +16158,12 @@
         ],
         "statement": "The number of households in {features.name} is {value}.",
         "type": "",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "poverty_pct": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Financial Well Being",
         "citations": "",
         "data_type": "numeric",
@@ -16028,10 +16183,12 @@
         ],
         "statement": "{value} percent of the households in {features.name} are in poverty.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "prevent_hosp_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -16051,10 +16208,12 @@
         ],
         "statement": "{value} of the hospitalizations in {features.name} were preventable (due to conditions usually treated in outpatient settings).",
         "type": "rate",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "primcare_2sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -16079,10 +16238,12 @@
         ],
         "statement": "The primary care availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "primcare_3sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -16107,10 +16268,12 @@
         ],
         "statement": "The primary care availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "primcare_cnt": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -16130,10 +16293,12 @@
         ],
         "statement": "There are {value} primary care physicians in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "primcare_e2sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -16158,7 +16323,8 @@
         ],
         "statement": "The primary care availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "rac_age_29_and_under_female_count": {
         "aggregation_method": "count",
@@ -17365,6 +17531,7 @@
     },
     "segregation_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -17384,10 +17551,12 @@
         ],
         "statement": "The segregation indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "subs_3sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -17412,10 +17581,12 @@
         ],
         "statement": "The substance use/behavioral health services availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "subs_cnt": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -17435,10 +17606,12 @@
         ],
         "statement": "There are {value} substance use facilities in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "subs_near_10_median": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -17458,7 +17631,8 @@
         ],
         "statement": "The median drive time to the ten closest substance use/behavioral health service facilities to {features.name} is {value}.",
         "type": "drive time",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "total_acres": {
         "aggregation_method": "",
@@ -17830,6 +18004,7 @@
     },
     "urgent_3sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -17856,10 +18031,12 @@
         ],
         "statement": "The urgent care availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "urgent_cnt": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -17881,10 +18058,12 @@
         ],
         "statement": "There are {value} urgent care facilities in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "urgent_near_10_median": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -17906,10 +18085,12 @@
         ],
         "statement": "The median drive time to the ten closest urgent care facilities to {features.name} is {value}.",
         "type": "drive time",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "vi_household": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "decimal",
@@ -17929,10 +18110,12 @@
         ],
         "statement": "The Housing characteristics index for {feature.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "vi_housing_transportation": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "decimal",
@@ -17952,10 +18135,12 @@
         ],
         "statement": "The housing type & transportation index for {feature.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "vi_overall": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "decimal",
@@ -17975,10 +18160,12 @@
         ],
         "statement": "The overall Social Vulnerability Index for {feature.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "vi_race_ethnicity": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "decimal",
@@ -17998,10 +18185,12 @@
         ],
         "statement": "The racial & ethnic minority status for {feature.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "vi_socioeconomic": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "decimal",
@@ -18021,7 +18210,8 @@
         ],
         "statement": "The socioeconomic status for {feature.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "wac_age_29_and_under_female_count": {
         "aggregation_method": "count",
@@ -18937,6 +19127,7 @@
     },
     "walkability_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -18956,10 +19147,12 @@
         ],
         "statement": "The walkability indicator in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "weighted_budget_shortfall": {
         "aggregation_method": "",
+        "categories": "",
         "category": "",
         "citations": "",
         "data_type": "numeric",
@@ -18979,10 +19172,12 @@
         ],
         "statement": "",
         "type": "cost",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "wellness_disparity_indicator": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "numeric",
@@ -19002,7 +19197,8 @@
         ],
         "statement": "The wellness disparity profile in {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "{category}_{variant}": {
         "aggregation_method": "{variant}",

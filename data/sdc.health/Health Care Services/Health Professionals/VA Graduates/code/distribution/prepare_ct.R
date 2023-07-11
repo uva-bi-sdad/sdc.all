@@ -107,4 +107,5 @@ out_two_long <- out_two_long[, c(1, 2, 3, 4, 6, 5, 7)]
 out_df <- rbind(out_under_long, out_grad_long, out_prof_long, out_two_long)
 
 # save to distribution folder
-write_csv(out_df, "data/distribution/va_ct_schev_2016_2019_health_degrees_awarded.csv")
+# write_csv(out_df, "data/distribution/va_ct_schev_2016_2019_health_degrees_awarded.csv")
+readr::write_csv(out_df, xzfile("data/distribution/va_ct_schev_2016_2019_health_degrees_awarded.csv.xz", compression = 9))

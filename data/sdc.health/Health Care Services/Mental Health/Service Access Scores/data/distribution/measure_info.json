@@ -1,6 +1,7 @@
 {
     "mental_near_10_median": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "The median drive time to the ten closest mental health facilities to {features.name} is {value}.",
         "type": "drive time",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "mental_cnt": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -43,10 +46,12 @@
         ],
         "statement": "There are {value} mental health facilities in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "mental_3sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -71,7 +76,8 @@
         ],
         "statement": "The mental health services availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "_references": {
         "lou04": {

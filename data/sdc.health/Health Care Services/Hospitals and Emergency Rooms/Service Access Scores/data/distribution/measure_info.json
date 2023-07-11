@@ -1,6 +1,7 @@
 {
     "hosp_near_10_median": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "The median drive time to the ten closest hospitals to {features.name} is {value}.",
         "type": "drive time",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "hosp_3sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -48,10 +51,12 @@
         ],
         "statement": "The hospital geographic availability score for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "hosp_cnt": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -71,7 +76,8 @@
         ],
         "statement": "There are {value} hospitals in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "_references": {
         "wan12": {

@@ -70,6 +70,6 @@ va_cttr_2015_2021_employment_rate <-
   rbindlist(list(va_tract_emprt_all, va_county_emprt_all))
 
 # Write file
-fwrite(va_cttr_2015_2021_employment_rate, "Employment/data/distribution/va_cttr_2015_2021_employment_rate.csv")
-
+# fwrite(va_cttr_2015_2021_employment_rate, "Employment/data/distribution/va_cttr_2015_2021_employment_rate.csv")
+readr::write_csv(va_cttr_2015_2021_employment_rate, xzfile("Employment/data/distribution/va_cttr_2015_2021_employment_rate.csv.xz", compression = 9))
 

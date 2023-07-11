@@ -1,6 +1,7 @@
 {
     "perc_dental_visit": {
         "aggregation_method": "",
+        "categories": "",
         "category": "",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_annual_checkup": {
         "aggregation_method": "",
+        "categories": "",
         "category": "",
         "citations": "",
         "data_type": "numeric",
@@ -43,6 +46,7 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

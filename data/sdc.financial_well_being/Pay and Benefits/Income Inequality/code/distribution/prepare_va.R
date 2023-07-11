@@ -71,6 +71,6 @@ va_cttr_2015_2021_income_inequality_gini_index <-
   rbindlist(list(va_tract_ginis_all, va_county_ginis_all))
 
 # Write file
-fwrite(va_cttr_2015_2021_income_inequality_gini_index, "Pay and Benefits/Income Inequality/data/distribution/va_cttr_2015_2021_income_inequality_gini_index.csv")
-
+# fwrite(va_cttr_2015_2021_income_inequality_gini_index, "Pay and Benefits/Income Inequality/data/distribution/va_cttr_2015_2021_income_inequality_gini_index.csv")
+readr::write_csv(va_cttr_2015_2021_income_inequality_gini_index, xzfile("Pay and Benefits/Income Inequality/data/distribution/va_cttr_2015_2021_income_inequality_gini_index.csv.xz", compression = 9))
 

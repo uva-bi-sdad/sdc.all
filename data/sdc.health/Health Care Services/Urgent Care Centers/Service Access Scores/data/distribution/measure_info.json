@@ -1,6 +1,7 @@
 {
     "urgent_near_10_median": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -22,10 +23,12 @@
         ],
         "statement": "The median drive time to the ten closest urgent care facilities to {features.name} is {value}.",
         "type": "drive time",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "urgent_cnt": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": "",
         "data_type": "numeric",
@@ -47,10 +50,12 @@
         ],
         "statement": "There are {value} urgent care facilities in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "urgent_3sfca": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Health",
         "citations": [
             "lou04",
@@ -77,7 +82,8 @@
         ],
         "statement": "The urgent care availability for {features.name} is {value}.",
         "type": "index",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "_references": {
         "lou04": {

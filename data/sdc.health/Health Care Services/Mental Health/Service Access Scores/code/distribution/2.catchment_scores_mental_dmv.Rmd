@@ -312,7 +312,8 @@ dmv_bg_2021_acccess_scores_mental$measure <- ifelse(dmv_bg_2021_acccess_scores_m
 
 ```{r}
 #SAVE with specific name
-write.csv(dmv_bg_2021_acccess_scores_mental, "dmv_cttrbg_samhsa_2021_access_scores_mental.csv", row.names = FALSE )
+# write.csv(dmv_bg_2021_acccess_scores_mental, "dmv_cttrbg_samhsa_2021_access_scores_mental.csv", row.names = FALSE )
+readr::write_csv(dmv_bg_2021_acccess_scores_mental, xzfile("ncr_cttrbg_samhsa_2021_access_scores_mental.csv.xz", compression = 9))
 
 ```
 

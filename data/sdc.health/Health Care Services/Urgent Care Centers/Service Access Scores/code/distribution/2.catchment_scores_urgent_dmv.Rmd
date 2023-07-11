@@ -377,7 +377,8 @@ dmv_bg_2021_acccess_scores_hospitals <- dmv_bg_2021_acccess_scores_hospitals %>%
 #The naming convention for data tables within a schema is as follows: 
 #<location>_<resolution>_<data source>_<time period>_<title> 
 
-write.csv(dmv_bg_2021_acccess_scores_hospitals, "ncr_bgtrct_gmap_2022_access_scores_urgent_care_centers.csv", row.names = FALSE )
+# write.csv(dmv_bg_2021_acccess_scores_hospitals, "ncr_bgtrct_gmap_2022_access_scores_urgent_care_centers.csv", row.names = FALSE )
+readr::write_csv(dmv_bg_2021_acccess_scores_hospitals, xzfile("ncr_bgtrct_gmap_2022_access_scores_hospitals.cxv.xz", compression = 9))
 
 ```
 

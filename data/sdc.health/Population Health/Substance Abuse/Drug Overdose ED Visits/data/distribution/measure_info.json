@@ -1,6 +1,7 @@
 {
     "avg_monthly_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Behavioral Health, Substance Use Disorder and Recovery",
         "citations": "",
         "data_type": "numeric",
@@ -20,6 +21,7 @@
         ],
         "statement": "The average emergency department visits for drug overdose rate in {features.name} is {value}.",
         "type": "rate",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }
