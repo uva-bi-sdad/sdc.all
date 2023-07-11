@@ -11187,60 +11187,94 @@
         "unit": ""
     },
     "_references": {
-        "liang17": {
+        "lou03": {
             "author": [
                 {
-                    "family": "Liang",
-                    "given": "Lan"
+                    "family": "Lou",
+                    "given": "Wei"
                 },
                 {
-                    "family": "Branch",
-                    "given": "Cindy"
+                    "family": "Wang",
+                    "given": "Fahui"
                 }
             ],
-            "doi": "10.3928/24748307-20170929-01",
-            "id": "liang17",
-            "journal": "Health Literacy Research and Practice",
-            "number": 4,
-            "page": "e216-e230",
-            "title": "Health Literacy Universal Precautions Are Still a Distant Dream: Analysis of U.S. Data on Health Literate Practices",
-            "volume": "1",
-            "year": 2017
-        },
-        "savitz20": {
-            "author": [
-                {
-                    "family": "Savitz",
-                    "given": "Samuel"
-                },
-                {
-                    "family": "Bailey",
-                    "given": "Stacy"
-                },
-                {
-                    "family": "Dusetzina",
-                    "given": "Stacie"
-                },
-                {
-                    "family": "Schuyler Jones",
-                    "given": "W."
-                },
-                {
-                    "family": "Trogdon",
-                    "given": "Justin"
-                },
-                {
-                    "family": "Stearns",
-                    "given": "Sally"
-                }
-            ],
-            "doi": "10.1111/jep.13341",
-            "id": "savitz20",
-            "journal": "Journal of Evaluation in Clinical Practice",
+            "doi": "10.1068/b29120",
+            "id": "lou03",
+            "journal": "Environment and Planning B: Planning and Design",
             "number": 6,
-            "page": "1711-1721",
-            "title": "Treatment selection and medication adherence for stable angina: The role of area-based health literacy",
-            "volume": "26",
+            "page": "865-884",
+            "title": "Measures of spatial accessibility to health care in a gis environment: synthesis and a case study in the Chicago region",
+            "volume": "30",
+            "year": 2003
+        },
+        "lou04": {
+            "author": [
+                {
+                    "family": "Lou",
+                    "given": "Wei"
+                }
+            ],
+            "doi": "10.1016/S1353-8292(02)00067-9",
+            "id": "lou04",
+            "journal": "Health & Place",
+            "number": 1,
+            "page": "1-11",
+            "title": "Using a gis-based floating catchment method to assess areas with shortage of physicians",
+            "volume": "10",
+            "year": 2004
+        },
+        "lou09": {
+            "author": [
+                {
+                    "family": "Lou",
+                    "given": "Wei"
+                },
+                {
+                    "family": "Qi",
+                    "given": "Yi"
+                }
+            ],
+            "doi": "10.1016/j.healthplace.2009.06.002",
+            "id": "lou09",
+            "journal": "Health & Place",
+            "number": 4,
+            "page": "1100-1107",
+            "title": "An enhanced two-step floating catchment area (e2sfca) method for measuring spatial accessibility to primary care physicians",
+            "volume": "15",
+            "year": 2009
+        },
+        "saxon20": {
+            "author": [
+                {
+                    "family": "Saxon",
+                    "given": "James"
+                },
+                {
+                    "family": "Koschinsky",
+                    "given": "Julia"
+                },
+                {
+                    "family": "Acosta",
+                    "given": "Karina"
+                },
+                {
+                    "family": "Anguiano",
+                    "given": "Vidal"
+                },
+                {
+                    "family": "Anselin",
+                    "given": "Luc"
+                },
+                {
+                    "family": "Rey",
+                    "given": "Sergio"
+                }
+            ],
+            "doi": "10.13140/RG.2.2.12396.28807",
+            "id": "saxon20",
+            "journal": "University of Chicago: Center for Spatial Data Science",
+            "title": "An Open Software Environment to Make Spatial Access Metrics More Accessible",
+            "volume": "Preprint",
             "year": 2020
         }
     },
@@ -12583,39 +12617,6 @@
         ],
         "statement": "Income Inequality (Gini Index) in {features.name} is {value}.",
         "type": "",
-        "unit": "",
-        "variants": ""
-    },
-    "health_literacy_estimate": {
-        "aggregation_method": "",
-        "categories": "",
-        "category": "Education",
-        "citations": [
-            "savitz20",
-            "liang17"
-        ],
-        "data_type": "numeric",
-        "equity_category": "Status",
-        "layer": "",
-        "long_description": "The health literacy composite captures the adult population's ability to obtain, process, and understand basic health services to make appropriate health decisions. Health literacy composite is based on variables of demographic characteristics, health status, and health care use.",
-        "long_name": "Health literacy composite",
-        "measure_type": "index",
-        "short_description": "Health literacy composite captures the adult population's ability to obtain, process, and understand basic health services to make appropriate health decisions",
-        "short_name": "Health literacy composite",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "Medical Expenditure Panel Survey",
-                "url": "https://www.meps.ahrq.gov/mepsweb/"
-            },
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The health literacy composite for {features.name} is {value}.",
-        "type": "index",
         "unit": "",
         "variants": ""
     },
@@ -14467,31 +14468,6 @@
         "type": "count",
         "unit": ""
     },
-    "num_post_hs_edu": {
-        "aggregation_method": "",
-        "categories": "",
-        "category": "Education",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Status",
-        "layer": "",
-        "long_description": "Number of people who self-reported to have post-secondary education. Based on American Community Survey Table B15003 in ACS 2015/2019 5-year estimates.",
-        "long_name": "Number of people with post-secondary education",
-        "measure_type": "count",
-        "short_description": "Number of people who self-reported to have post-secondary education",
-        "short_name": "Post-secondary education (count)",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B15003",
-                "url": "https://www.census.gov/data/developers/data-sets/acs-5year.html"
-            }
-        ],
-        "statement": "{value} people in {features.name} have a post-secondary education.",
-        "type": "integer",
-        "unit": "",
-        "variants": ""
-    },
     "number_business": {
         "aggregation_method": "",
         "category": "Business climate",
@@ -14905,31 +14881,6 @@
         "type": "percent",
         "unit": ""
     },
-    "perc_annual_checkup": {
-        "aggregation_method": "",
-        "categories": "",
-        "category": "",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "",
-        "layer": "",
-        "long_description": "",
-        "long_name": "",
-        "measure_type": "percent",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "percent",
-        "unit": "",
-        "variants": ""
-    },
     "perc_carpool": {
         "aggregation_method": "",
         "category": "Transportation",
@@ -14977,31 +14928,6 @@
         "statement": "The population of children raised by grandparents is {value} in {features.name}.",
         "type": "percent",
         "unit": ""
-    },
-    "perc_dental_visit": {
-        "aggregation_method": "",
-        "categories": "",
-        "category": "",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "",
-        "layer": "",
-        "long_description": "",
-        "long_name": "",
-        "measure_type": "percent",
-        "short_description": "",
-        "short_name": "",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "",
-                "url": ""
-            }
-        ],
-        "statement": "",
-        "type": "percent",
-        "unit": "",
-        "variants": ""
     },
     "perc_female": {
         "aggregation_method": "",
@@ -15551,31 +15477,6 @@
         "statement": "The percent of the population under age 20 is {value} in {features.name}.",
         "type": "percent",
         "unit": ""
-    },
-    "perc_post_hs_edu": {
-        "aggregation_method": "",
-        "categories": "",
-        "category": "Education",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Status",
-        "layer": "",
-        "long_description": "Percentage of the population self-reported to have post-secondary education. Based on American Community Survey Table B15003 in ACS 2015/2019 5-year estimates.",
-        "long_name": "Percentage with post-secondary education",
-        "measure_type": "percentage",
-        "short_description": "Percentage of the population self-reported to have post-secondary education",
-        "short_name": "Post-secondary education (percent)",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "name": "American Community Survey Table B15003",
-                "url": "https://www.census.gov/data/developers/data-sets/acs-5year.html"
-            }
-        ],
-        "statement": "{value} of the population in {features.name} has a post-secondary education.",
-        "type": "percent",
-        "unit": "",
-        "variants": ""
     },
     "perc_total_100_20_using_devices": {
         "aggregation_method": "percent",
