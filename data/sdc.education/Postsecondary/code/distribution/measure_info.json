@@ -1,0 +1,312 @@
+{
+  "schools_2year_{category.name}": {
+    "data_type": "decimal",
+    "aggregation_method": "ratio",
+    "unit": "school per 100k people over 14",
+    "category": "Education",
+    "equity_category": "Accessibility",
+    "short_name": "2-year schools{category}",
+    "long_name": "2-year schools{category} per 100k people over 14",
+    "short_description": "Number of 2-year schools{category} per 100k people over 14, calculated within floating catchment areas.",
+    "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates{category} per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+    "statement": "There are {value} 2-year schools{category} per 100k people over 14 in {region_name}.",
+    "sources": [
+      {
+        "name": "National Center for Education Statistics",
+        "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
+        "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+        "date_accessed": 2023,
+        "url": "https://nces.ed.gov"
+      },
+      {
+        "name": "American Community Survey",
+        "location": "data/5_year_seq_by_state",
+        "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      },
+      {
+        "name": "Open Source Routing Machine",
+        "date_accessed": 2022,
+        "url": "http://project-osrm.org"
+      }
+    ],
+    "citations": [
+      "wan12",
+      "bii21"
+    ],
+    "categories": {
+      "all": {
+        "default": "",
+        "long_description": "",
+        "layer": {
+          "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+          "filter": {
+            "feature": "ICLEVEL",
+            "operator": "=",
+            "value": 2
+          }
+        }
+      },
+      "with_biomedical_program": {
+        "default": " with biomedical programs",
+        "long_description": " with biomedical programs (any with Classification of Institutional Programs [CIP] codes starting with 26)",
+        "layer": {
+          "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+          "filter": [
+            {
+              "feature": "ICLEVEL",
+              "operator": "=",
+              "value": 2
+            },
+            {
+              "feature": "biomedical",
+              "operator": "=",
+              "value": 1
+            }
+          ]
+        }
+      },
+      "with_science_program": {
+        "default": " with science programs",
+        "long_description": " with science programs (any with Classification of Institutional Programs [CIP] codes starting with 41)",
+        "layer": {
+          "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+          "filter": [
+            {
+              "feature": "ICLEVEL",
+              "operator": "=",
+              "value": 2
+            },
+            {
+              "feature": "science",
+              "operator": "=",
+              "value": 1
+            }
+          ]
+        }
+      },
+      "with_physical_program": {
+        "default": "with physical programs",
+        "long_description": " with science programs (any with Classification of Institutional Programs [CIP] codes starting with 40)",
+        "layer": {
+          "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+          "filter": [
+            {
+              "feature": "ICLEVEL",
+              "operator": "=",
+              "value": 2
+            },
+            {
+              "feature": "physical",
+              "operator": "=",
+              "value": 1
+            }
+          ]
+        }
+      },
+      "with_computer_program": {
+        "default": " with computer programs",
+        "long_description": " with science programs (any with Classification of Institutional Programs [CIP] codes starting with 11)",
+        "layer": {
+          "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+          "filter": [
+            {
+              "feature": "ICLEVEL",
+              "operator": "=",
+              "value": 2
+            },
+            {
+              "feature": "computer",
+              "operator": "=",
+              "value": 1
+            }
+          ]
+        }
+      },
+      "with_engineering_program": {
+        "default": " with engineering programs",
+        "long_description": " with science programs (any with Classification of Institutional Programs [CIP] codes starting with 14 or 15)",
+        "layer": {
+          "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+          "filter": [
+            {
+              "feature": "ICLEVEL",
+              "operator": "=",
+              "value": 2
+            },
+            {
+              "feature": "engineering",
+              "operator": "=",
+              "value": 1
+            }
+          ]
+        }
+      }
+    }
+  },
+  "schools_under2year": {
+    "data_type": "decimal",
+    "aggregation_method": "ratio",
+    "unit": "school per 100k people over 14",
+    "category": "Education",
+    "equity_category": "Accessibility",
+    "short_name": "<2-year schools",
+    "long_name": "<2-year schools per 100k people over 14",
+    "short_description": "Number of <2-year schools per 100k people over 14, calculated within floating catchment areas.",
+    "long_description": "Number of schools authorized to award certificates that are typically obtained in less than 2 years per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) <2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+    "statement": "There are {value} <2-year schools per 100k people over 14 in {region_name}.",
+    "sources": [
+      {
+        "name": "National Center for Education Statistics",
+        "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
+        "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+        "date_accessed": 2023,
+        "url": "https://nces.ed.gov"
+      },
+      {
+        "name": "American Community Survey",
+        "location": "data/5_year_seq_by_state",
+        "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      },
+      {
+        "name": "Open Source Routing Machine",
+        "date_accessed": 2022,
+        "url": "http://project-osrm.org"
+      }
+    ],
+    "citations": [
+      "wan12",
+      "bii21"
+    ],
+    "layer": {
+      "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+      "filter": {
+        "feature": "ICLEVEL",
+        "operator": "=",
+        "value": 3
+      }
+    }
+  },
+  "schools_{variant.name}_min_drivetime": {
+    "data_type": "decimal",
+    "aggregation_method": "minimum",
+    "unit": "minute",
+    "category": "Education",
+    "equity_category": "Accessibility",
+    "short_name": "{variant} school drive time",
+    "long_name": "drive time to nearest {variant} school",
+    "short_description": "Drive time to the nearest {variant} schools.",
+    "long_description": "Minimal drive time to a schools authorized to award {variant} from the Census block group centroid, as calculated by the Open Source Routing Machine. School locations are from the National Center for Education Statistics. All distances are calculated at the block group level, then averaged up to higher-level geographies.",
+    "statement": "It takes {value} to drive to the nearest {variant} school from {region_name}'s block group centroids on average.",
+    "sources": [
+      {
+        "name": "National Center for Education Statistics",
+        "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
+        "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+        "date_accessed": 2023,
+        "url": "https://nces.ed.gov"
+      },
+      {
+        "name": "Open Source Routing Machine",
+        "date_accessed": 2022,
+        "url": "http://project-osrm.org"
+      }
+    ],
+    "variants": {
+      "2year": {
+        "default": "2-year",
+        "long_description": "Associates degrees or 2-year or longer certificates",
+        "layer": {
+          "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+          "filter": {
+            "feature": "ICLEVEL",
+            "operator": "=",
+            "value": 2
+          }
+        }
+      },
+      "under2year": {
+        "default": "<2-year",
+        "long_description": "certificates that are typically obtained in less than 2 years",
+        "layer": {
+          "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+          "filter": {
+            "feature": "ICLEVEL",
+            "operator": "=",
+            "value": 3
+          }
+        }
+      }
+    }
+  },
+  "acs_postsecondary_{variant}": {
+    "aggregation_method": "{variant}",
+    "unit": "individual",
+    "category": "Education",
+    "equity_category": "Status",
+    "long_description": "{variant} who reported any postsecondary education, according to the U.S. Census American Community Survey 5-year estimates.",
+    "long_name": "Estimated {variant} With Any Postsecondary Education",
+    "short_description": "{variant} who reported any postsecondary education.",
+    "short_name": "Postsecondary Education ({variant})",
+    "sources": [
+      {
+        "name": "U.S. Census, American Community Survey",
+        "location": "5-Year estimates, table B06009, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ],
+    "statement": "{variant} report any postsecondary education.",
+    "variants": {
+      "percent": {
+        "data_type": "decimal",
+        "statement": "{value} of those in {region_name}",
+        "description": "Percentage of the population",
+        "long_name": "Percentage of the Population"
+      },
+      "count": {
+        "data_type": "integer",
+        "statement": "In {region_name}, {value}",
+        "description": "Number of people",
+        "long_name": "Number of People"
+      }
+    }
+  },
+  "_references": {
+    "wan12": {
+      "id": "wan12",
+      "author": [
+        {
+          "given": "Neng",
+          "family": "Wan"
+        },
+        {
+          "given": "Bin",
+          "family": "Zou"
+        },
+        {
+          "given": "Troy",
+          "family": "Sternberg"
+        }
+      ],
+      "year": 2012,
+      "title": "A three-step floating catchment area method for analyzing spatial access to health services",
+      "journal": "International Journal of Geographical Information Science",
+      "volume": "26",
+      "page": "1073–1089",
+      "doi": "10.1080/13658816.2011.624987"
+    },
+    "bii21": {
+      "id": "bii21",
+      "author": "Biocomplexity Institute and Initiative",
+      "year": 2021,
+      "title": "catchment: Calculate spatial access and availability metrics",
+      "version": "0.0.1",
+      "url": "https://github.com/uva-bi-sdad/catchment"
+    }
+  }
+}

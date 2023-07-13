@@ -17,6 +17,16 @@ if (file.exists(entities_file)) {
 # check data and measure info
 check_repository(dataset = structure(entities$region_type, names = entities$geoid))
 
+# render measure info
+info_files <- list.files(".", "measure_info\\.json", recursive = TRUE, full.names = TRUE)
+info_files <- info_files[!grepl("/docs/", info_files, fixed = TRUE)]
+dynamic_info_files <- grep("code/(?:other|distribution)/", list.files(
+  ".", "measure_info\\.json", recursive = TRUE, full.names = TRUE
+), value = TRUE)
+for (f in dynamic_info_files) data_measure_info(
+  f, render = sub("/code/", "/data/", f, fixed = TRUE), open_after = FALSE
+)
+
 # rebuild site
 ## unify original files
 datasets <- list.dirs(".", recursive = FALSE)
@@ -26,7 +36,7 @@ data_reformat_sdad(
   list.files(datasets, "\\.csv", full.names = TRUE), "docs/data",
   metadata = entities, entity_info = NULL, overwrite = TRUE
 )
-info <- lapply(list.files(datasets, "measure_info\\.json", full.names = TRUE), jsonlite::read_json)
+info <- lapply(info_files[!duplicated(sub("/code/", "/data/", info_files, fixed = TRUE))], jsonlite::read_json)
 agg_info <- list()
 for (m in info) {
   for (e in names(m)) {

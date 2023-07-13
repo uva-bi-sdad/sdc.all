@@ -99,4 +99,5 @@ DBI::dbSendQuery(con, "drop table if exists dc_health_behavior_diet.va_ct_chr_20
 dc_dbWriteTable(con, schema_name = "dc_health_behavior_diet", table_name = "va_ct_chr_2015_2021_preventable_hospitalizations", mrg)
 DBI::dbDisconnect(con)
 
-write.csv(mrg, "data/va_ct_chr_2015_2021_preventable_hospitalizations.csv", row.names = FALSE)
+# write.csv(mrg, "data/va_ct_chr_2015_2021_preventable_hospitalizations.csv", row.names = FALSE)
+readr::write_csv(mrg, xzfile("data/va_ct_chr_2015_2021_preventable_hospitalizations.csv.xz", compression = 9))

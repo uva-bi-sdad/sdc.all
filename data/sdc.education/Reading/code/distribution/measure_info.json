@@ -1,0 +1,33 @@
+{
+  "{variant.name}_read_pass_rate": {
+    "data_type": "decimal",
+    "aggregation_method": "percent",
+    "unit": "person",
+    "category": "Education",
+    "equity_category": "Status",
+    "short_name": "{variant} 3rd graders passing reading",
+    "long_name": "{variant} percentage of 3rd graders passing reading test",
+    "short_description": "{variant} percentage of 3rd grade population passing reading test for schools in the region",
+    "long_description": "{variant} percentage of 3rd grade population passing reading test. The {variant.name} is calculated across schools in the region.",
+    "statement": "{variant}, {value} of 3rd graders pass reading in {region_name}.",
+    "sources": [
+      {
+        "name": "Virginia Department of Education",
+        "location": "Data & Reports > Statistics & Reports > SOL Test Pass Rates & Other Results",
+        "location_url": "https://www.doe.virginia.gov/data-policy-funding/data-reports/statistics-reports/sol-test-pass-rates-other-results",
+        "date_accessed": 2021,
+        "url": "https://www.doe.virginia.gov"
+      }
+    ],
+    "variants": {
+      "median": {
+        "default": "Median",
+        "statement": "Most often"
+      },
+      "mean": {
+        "default": "Mean",
+        "statement": "On average"
+      }
+    }
+  }
+}

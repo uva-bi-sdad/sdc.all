@@ -1,6 +1,6 @@
 {
     "earnings_per_job": {
-        "aggregation_method": "",
+        "aggregation_method": "arithmetic mean",
         "categories": "",
         "category": "Employment/Workforce Development",
         "citations": "",
@@ -19,8 +19,8 @@
                 "url": "https://apps.bea.gov/iTable/iTable.cfm?reqid=70&step=1&acrdn=6"
             }
         ],
-        "statement": "Earnings per job in {features.name} is {value}.",
-        "type": "dollar",
+        "statement": "Earnings per job in {region_name} is {value}.",
+        "type": "",
         "unit": "dollar",
         "variants": ""
     }
