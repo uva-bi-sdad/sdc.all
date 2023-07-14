@@ -204,3 +204,4 @@ cython_debug/
 **/tl_2020_*
 
 *.env
+.Rproj.user

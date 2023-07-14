@@ -1,6 +1,7 @@
 {
     "perc_male": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "The male population is {value} in {features.name}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_female": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -43,10 +46,12 @@
         ],
         "statement": "The female population is {value} in {features.name}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "pop_male": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -66,10 +71,12 @@
         ],
         "statement": "The male population is {value} in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "pop_female": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -89,10 +96,12 @@
         ],
         "statement": "The female population is {value} in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "total_pop": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -112,6 +121,7 @@
         ],
         "statement": "Total count of the population is {value} in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

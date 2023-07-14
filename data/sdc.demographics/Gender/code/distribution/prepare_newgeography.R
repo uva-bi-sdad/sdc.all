@@ -82,7 +82,7 @@ fairfax_newgeo_dmg <- rbind(hsr_dmg,pd_dmg,sd_dmg,zc_dmg) %>%
 
 # save the data ----------------------------------------------------------------------------------
 savepath = "Gender/data/distribution/"
-readr::write_csv(fairfax_newgeo_dmg, xzfile(paste0(savepath,"va059_hsrpdsdzc_sdad_",min(years),max(years),"_gender_demographics.csv.xz"), compression = 9))
+readr::write_csv(fairfax_newgeo_dmg, xzfile(paste0(savepath,"va059_hsrpdsdzc_sdad_",min(years),"_",max(years),"_gender_demographics.csv.xz"), compression = 9))
 
 
 # 2. Case of arlington county --------------------------------------------------------------------
@@ -126,7 +126,7 @@ arl_newgeo_dmg <- civic_dmg %>%
 
 # save the data ----------------------------------------------------------------------------------
 savepath = "Gender/data/distribution/"
-readr::write_csv(arl_newgeo_dmg, xzfile(paste0(savepath,"va013_civic_sdad_",min(years),max(years),"_gender_demographics.csv.xz"), compression = 9))
+readr::write_csv(arl_newgeo_dmg, xzfile(paste0(savepath,"va013_civic_sdad_",min(years),"_",max(years),"_gender_demographics.csv.xz"), compression = 9))
 
 
 

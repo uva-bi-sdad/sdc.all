@@ -1,6 +1,7 @@
 {
     "perc_hh_with_broadband": {
         "aggregation_method": "percent",
+        "categories": "",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -20,10 +21,12 @@
         ],
         "statement": "{value} of households in {features.name} have a broadband connection.",
         "type": "percent",
-        "unit": "household"
+        "unit": "household",
+        "variants": ""
     },
     "perc_hh_with_cable_fiber_dsl": {
         "aggregation_method": "percent",
+        "categories": "",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -43,10 +46,12 @@
         ],
         "statement": "{value} of households in {features.name} have a cable, fiber optic, or DSL internet connection.",
         "type": "percent",
-        "unit": "household"
+        "unit": "household",
+        "variants": ""
     },
     "perc_hh_without_internet": {
         "aggregation_method": "percent",
+        "categories": "",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -66,6 +71,7 @@
         ],
         "statement": "{value} of households in {features.name} do not have internet access.",
         "type": "percent",
-        "unit": "household"
+        "unit": "household",
+        "variants": ""
     }
 }

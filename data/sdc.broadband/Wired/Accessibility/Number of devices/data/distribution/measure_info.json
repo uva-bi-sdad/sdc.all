@@ -1,6 +1,7 @@
 {
     "devices": {
         "aggregation_method": "arithmetic mean",
+        "categories": "",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -20,6 +21,7 @@
         ],
         "statement": "There are {value} unique devices in {features.name} accessing Ookla Internet speed tests.",
         "type": "count",
-        "unit": "devices"
+        "unit": "devices",
+        "variants": ""
     }
 }

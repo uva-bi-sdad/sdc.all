@@ -1,6 +1,7 @@
 {
     "perc_pop_20_64": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "The percent of the population between age 20 and 64 is {value} in {features.name}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_pop_65_plus": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -43,10 +46,12 @@
         ],
         "statement": "The percent of the population over age 64 is {value} in {features.name}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_pop_under_20": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -66,10 +71,12 @@
         ],
         "statement": "The percent of the population under age 20 is {value} in {features.name}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "pop_20_64": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -89,10 +96,12 @@
         ],
         "statement": "The population between age 20 and 64 is {value} in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "pop_65_plus": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -112,10 +121,12 @@
         ],
         "statement": "The population over age 64 is {value} in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "pop_under_20": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -135,10 +146,12 @@
         ],
         "statement": "The population under age 20 is {value} in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "total_pop": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -158,6 +171,7 @@
         ],
         "statement": "Total count of the population is {value} in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

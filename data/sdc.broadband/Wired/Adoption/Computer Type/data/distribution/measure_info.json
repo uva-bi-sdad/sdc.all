@@ -1,6 +1,7 @@
 {
     "perc_hh_without_compdev": {
         "aggregation_method": "percent",
+        "categories": "",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -20,6 +21,7 @@
         ],
         "statement": "{value} of households in {features.name} do not have a computer or device.",
         "type": "percent",
-        "unit": "household"
+        "unit": "household",
+        "variants": ""
     }
 }

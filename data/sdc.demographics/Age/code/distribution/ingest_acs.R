@@ -52,7 +52,7 @@ geographies <- c('tract','county','block group')
 states <- c('VA','MD','DC')
 
 # list of years
-years <- 2009:2020
+years <- 2009:2021
 
 
 # Download the data from ACS for VA and NCR
@@ -181,8 +181,8 @@ acs_data_ncr <- merge(acs_data_ncr, ncr_geo, by.x=c('geoid','region_type','censu
 
 # Save the data ----------------------------------------------------------------------------------
 savepath = "Age/data/distribution/"
-readr::write_csv(acs_data_va, xzfile(paste0(savepath,"va_trctbg_acs_20092020_age_demographics.csv.xz"), compression = 9))
-readr::write_csv(acs_data_ncr, xzfile(paste0(savepath,"ncr_trctbg_acs_20092020_age_demographics.csv.xz"), compression = 9))
+readr::write_csv(acs_data_va, xzfile(paste0(savepath,"va_trctbg_acs_2009_2021_age_demographics.csv.xz"), compression = 9))
+readr::write_csv(acs_data_ncr, xzfile(paste0(savepath,"ncr_trctbg_acs_2009_2021_age_demographics.csv.xz"), compression = 9))
 
 
 

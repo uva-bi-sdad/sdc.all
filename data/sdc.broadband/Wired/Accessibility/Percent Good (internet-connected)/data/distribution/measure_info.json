@@ -1,6 +1,7 @@
 {
     "perc_w_int_25_3_using_devices": {
         "aggregation_method": "percent",
+        "categories": "",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -20,6 +21,7 @@
         ],
         "statement": "{value} of the internet-connected population in {features.name} has a good internet speed.",
         "type": "percent",
-        "unit": "individual"
+        "unit": "individual",
+        "variants": ""
     }
 }

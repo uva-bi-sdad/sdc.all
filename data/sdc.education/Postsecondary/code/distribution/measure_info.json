@@ -87,7 +87,7 @@
         }
       },
       "with_physical_program": {
-        "default": "with physical programs",
+        "default": " with physical programs",
         "long_description": " with science programs (any with Classification of Institutional Programs [CIP] codes starting with 40)",
         "layer": {
           "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",

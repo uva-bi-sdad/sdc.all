@@ -1,6 +1,7 @@
 {
     "perc_income_min_price_25": {
         "aggregation_method": "percent",
+        "categories": "",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -25,6 +26,7 @@
         ],
         "statement": "Good internet costs {value} of the median household income in {features.name}.",
         "type": "percent",
-        "unit": "dollar"
+        "unit": "dollar",
+        "variants": ""
     }
 }

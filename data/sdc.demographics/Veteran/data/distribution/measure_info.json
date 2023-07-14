@@ -1,6 +1,7 @@
 {
     "perc_veteran": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "The Veteran population is {value} in {features.name}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "pop_veteran": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -43,6 +46,7 @@
         ],
         "statement": "The Veteran population is {value} in {features.name}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

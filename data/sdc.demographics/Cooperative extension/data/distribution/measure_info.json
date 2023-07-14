@@ -1,6 +1,7 @@
 {
     "perc_male": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "The male population is {value} in {features.name}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_children_raised_by_GPs": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "numeric",
@@ -44,6 +47,7 @@
         ],
         "statement": "The population of children raised by grandparents is {value} in {features.name}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

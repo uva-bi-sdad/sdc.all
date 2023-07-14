@@ -1,6 +1,7 @@
 {
     "avg_down_using_devices": {
         "aggregation_method": "weighted arithmetic mean",
+        "categories": "",
         "category": "Broadband",
         "citations": "",
         "data_type": "decimal",
@@ -20,6 +21,7 @@
         ],
         "statement": "The average download speed is {value} in {features.name}.",
         "type": "internet speed",
-        "unit": "Mb/s"
+        "unit": "Mb/s",
+        "variants": ""
     }
 }

@@ -154,11 +154,11 @@
     "unit": "school per 100k people over 14",
     "category": "Education",
     "equity_category": "Accessibility",
-    "short_name": "2-year schoolswith physical programs",
-    "long_name": "2-year schoolswith physical programs per 100k people over 14",
-    "short_description": "Number of 2-year schoolswith physical programs per 100k people over 14, calculated within floating catchment areas.",
+    "short_name": "2-year schools with physical programs",
+    "long_name": "2-year schools with physical programs per 100k people over 14",
+    "short_description": "Number of 2-year schools with physical programs per 100k people over 14, calculated within floating catchment areas.",
     "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 40) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
-    "statement": "There are {value} 2-year schoolswith physical programs per 100k people over 14 in {region_name}.",
+    "statement": "There are {value} 2-year schools with physical programs per 100k people over 14 in {region_name}.",
     "sources": [
       {
         "name": "National Center for Education Statistics",
