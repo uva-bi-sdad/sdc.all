@@ -1,0 +1,162 @@
+{
+  "{variant.name}_{category.name}": {
+    "category": "Demographics",
+    "data_type": "{variant}",
+    "unit": "individual",
+    "equity_category": "Status",
+    "aggregation_method": "{variant}",
+    "short_name": "{variant} using {category.name}-method",
+    "long_name": "{variant.short_description}",
+    "short_description": "{variant}",
+    "long_description": "{variant}. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups {category}. Redistribution to non-census geolevels was performed using the redistribute R package.",
+    "statement": "{variant}",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B01001, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2021,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ],
+    "categories": {
+      "blank": {},
+      "parcels": {
+        "long_description": "and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap."
+      },
+      "direct": {
+        "long_description": "and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap."
+      }
+    },
+    "variants": {
+      "pop_afr_amer_alone": {
+        "default": "The Black population",
+        "data_type": "decimal",
+        "aggregation_method": "arithmetic mean",
+        "short_description": "The Black population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "The Black population.",
+        "statement": "The Black population is {value} in {region_name}."
+      },
+      "pop_native_alone": {
+        "default": "The Native population",
+        "data_type": "decimal",
+        "aggregation_method": "arithmetic mean",
+        "short_description": "The Native population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "The Native population.",
+        "statement": "The Native population is {value} in {region_name}."
+      },
+      "pop_AAPI": {
+        "default": "The Asian American/Pacific Islander population",
+        "data_type": "decimal",
+        "aggregation_method": "arithmetic mean",
+        "short_description": "The Asian American/Pacific Islander population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "The Asian American/Pacific Islander population.",
+        "statement": "The Asian American/Pacific Islander population is {value} in {region_name}."
+      },
+      "pop_wht_alone": {
+        "default": "The White population",
+        "data_type": "decimal",
+        "aggregation_method": "arithmetic mean",
+        "short_description": "The White population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "The White population.",
+        "statement": "The White population is {value} in {region_name}."
+      },
+      "pop_hispanic_or_latino": {
+        "default": "The Hispanic/Latino population",
+        "data_type": "decimal",
+        "aggregation_method": "arithmetic mean",
+        "short_description": "The Hispanic/Latino population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "The Hispanic/Latino population.",
+        "statement": "The Hispanic/Latino population is {value} in {region_name}."
+      },
+      "pop_other": {
+        "default": "The Other racial population",
+        "data_type": "decimal",
+        "aggregation_method": "arithmetic mean",
+        "short_description": "The Other racial population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "The Other racial population.",
+        "statement": "The Other racial population is {value} in {region_name}."
+      },
+      "pop_two_or_more": {
+        "default": "The two or more races population",
+        "data_type": "decimal",
+        "aggregation_method": "arithmetic mean",
+        "short_description": "The two or more races population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "The two or more races population.",
+        "statement": "The two or more races population is {value} in {region_name}."
+      },
+      "total_race": {
+        "default": "Total count of the population",
+        "data_type": "decimal",
+        "aggregation_method": "arithmetic mean",
+        "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "Total count of the population.",
+        "statement": "Total count of the population is {value} in {region_name}."
+      },
+      "pop_eth_tot": {
+        "default": "Total population ethnique",
+        "data_type": "decimal",
+        "aggregation_method": "arithmetic mean",
+        "short_description": "Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "Total population ethnique.",
+        "statement": "Total population ethnique is {value} in {region_name}."
+      },
+      "perc_afr_amer_alone": {
+        "default": "Black population percentage",
+        "data_type": "decimal",
+        "aggregation_method": "percent",
+        "short_description": "The Black population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "The Black population percent.",
+        "statement": "The Black population percent is {value} in {region_name}."
+      },
+      "perc_native_alone": {
+        "default": "The Native population percentage",
+        "data_type": "decimal",
+        "aggregation_method": "percent",
+        "short_description": "The Native population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "The Native population percent.",
+        "statement": "The Native population percent is {value} in {region_name}."
+      },
+      "perc_AAPI": {
+        "default": "The Asian American/Pacific Islander population percentage",
+        "data_type": "decimal",
+        "aggregation_method": "percent",
+        "short_description": "The Asian American/Pacific Islander population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "The Asian American/Pacific Islander population percent.",
+        "statement": "The Asian American/Pacific Islander population percent is {value} in {region_name}."
+      },
+      "perc_wht_alone": {
+        "default": "The White population percentage",
+        "data_type": "decimal",
+        "aggregation_method": "percent",
+        "short_description": "The White population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "The White population percent.",
+        "statement": "The White population percent is {value} in {region_name}."
+      },
+      "perc_hispanic_or_latino": {
+        "default": "The Hispanic/Latino population percentage",
+        "data_type": "decimal",
+        "aggregation_method": "percent",
+        "short_description": "The Hispanic/Latino population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "The Hispanic/Latino population percent.",
+        "statement": "The Hispanic/Latino population percent is {value} in {region_name}."
+      },
+      "perc_other": {
+        "default": "The Other racial population percentage",
+        "data_type": "decimal",
+        "aggregation_method": "percent",
+        "short_description": "The Other racial population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "The Other racial population percent.",
+        "statement": "The Other racial population percent is {value} in {region_name}."
+      },
+      "perc_two_or_more": {
+        "default": "The two or more races population percentage",
+        "data_type": "decimal",
+        "aggregation_method": "percent",
+        "short_description": "The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "The two or more races population percent.",
+        "statement": "The two or more races population percent is {value} in {region_name}."
+      }
+    }
+  }
+}

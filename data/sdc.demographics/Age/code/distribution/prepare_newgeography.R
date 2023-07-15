@@ -87,6 +87,13 @@ savepath = "Age/data/distribution/"
 readr::write_csv(fairfax_newgeo_dmg, xzfile(paste0(savepath,"va059_hsrpdsdzc_sdad_",min(years),"_",max(years),"_age_demographics.csv.xz"), compression = 9))
 
 
+
+
+
+
+
+
+
 # 2. Case of arlington county --------------------------------------------------------------------
 arl_pc_dmg <- NULL
 years <- 2013:2020

@@ -1,0 +1,74 @@
+{
+  "{variant.name}_{category.name}": {
+    "category": "Demographics",
+    "data_type": "{variant}",
+    "unit": "individual",
+    "equity_category": "Status",
+    "aggregation_method": "{variant}",
+    "short_name": "{variant} using {category.name}-method",
+    "long_name": "{variant.short_description}",
+    "short_description": "{variant}",
+    "long_description": "{variant}. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups {category}. Redistribution to non-census geolevels was performed using the redistribute R package.",
+    "statement": "{variant}",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table S0101, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2021,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ],
+    "categories": {
+      "blank": {},
+      "parcels": {
+        "long_description": "and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap."
+      },
+      "direct": {
+        "long_description": "and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap."
+      }
+    },
+    "variants": {
+      "pop_male": {
+        "default": "Male population",
+        "data_type": "decimal",
+        "aggregation_method": "arithmetic mean",
+        "short_description": "The count of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
+        "long_description": "The count of males in the total population.",
+        "statement": "The male population is {value} in {region_name}."
+      },
+      "pop_female": {
+        "default": "Female population",
+        "data_type": "decimal",
+        "aggregation_method": "arithmetic mean",
+        "short_description": "The count of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
+        "long_description": "The count of females in the total population.",
+        "statement": "The female population is {value} in {region_name}."
+      },
+      "perc_male": {
+        "default": "Percentage of males",
+        "data_type": "decimal",
+        "aggregation_method": "percent",
+        "short_description": "The percent of males in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "The percent of males in the total population.",
+        "statement": "The percent of males is {value} in {region_name}."
+      },
+      "perc_female": {
+        "default": "Percentage of females",
+        "data_type": "decimal",
+        "aggregation_method": "percent",
+        "short_description": "The percent of females in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "The percent of females in the total population.",
+        "statement": "The percent of females is {value} in {region_name}."
+      },
+      "total_pop": {
+        "default": "Total count of the population",
+        "data_type": "decimal",
+        "aggregation_method": "arithmetic mean",
+        "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "long_description": "Total count of the population.",
+        "statement": "Total count of the population is {value} in {region_name}."
+      }
+    }
+  }
+}
