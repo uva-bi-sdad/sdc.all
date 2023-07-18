@@ -59,8 +59,8 @@ for (vyear in yearlist){
     parcel_geo <- st_read("Synthetic_population/Housing_units_distribution/Fairfax/data/working/parcels_infos/2022/fairfax_parcel_geometry.geojson")
     fairfax_pc_geo <- parcel_geo %>% select(parid=geoid, geometry)
   }else{
-    parcel_geo <- st_read(paste0("Synthetic_population/Housing_units_distribution/Fairfax/data/working/parcels_infos/",vyear,"/fairfax_parcel_geometry.geojson"))
-    fairfax_pc_geo <- parcel_geo %>% select(parid=geoid, geometry)
+    #parcel_geo <- st_read(paste0("Synthetic_population/Housing_units_distribution/Fairfax/data/working/parcels_infos/",vyear,"/fairfax_parcel_geometry.geojson"))
+    #fairfax_pc_geo <- parcel_geo %>% select(parid=geoid, geometry)
   }
   
   # add geometry to the acs
@@ -104,7 +104,7 @@ model_parcels <- rbind(hsr_dmg,pd_dmg,sd_dmg,zc_dmg) %>%
          perc_pop_20_64 = 100*pop_20_64/total_pop,
          perc_pop_65_plus = 100*pop_65_plus/total_pop) %>%
   pivot_longer(!c('geoid','year'), names_to='measure', values_to='value') %>%
-  mutate(measure=paste0(measure,'_parcels'),
+  mutate(measure=paste0('age_',measure,'_parcels'),
     moe='')
 
 
@@ -196,7 +196,7 @@ arl_newgeo_dmg <- civic_dmg %>%
 
 # save the data ----------------------------------------------------------------------------------
 savepath = "Age/data/distribution/"
-readr::write_csv(arl_newgeo_dmg, xzfile(paste0(savepath,"va013_civic_sdad_",min(yearlist),max(yearlist),"_age_demographics.csv.xz"), compression = 9))
+readr::write_csv(arl_newgeo_dmg, xzfile(paste0(savepath,"va013_civic_sdad_",min(years),"_",max(years),"_age_demographics.csv.xz"), compression = 9))
 
 
 

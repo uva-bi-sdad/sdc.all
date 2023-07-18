@@ -1,14 +1,14 @@
 {
-  "{variant.name}_{category.name}": {
+  "race_{variant.name}_{category.name}": {
     "category": "Demographics",
     "data_type": "{variant}",
     "unit": "individual",
     "equity_category": "Status",
     "aggregation_method": "{variant}",
-    "short_name": "{variant} using {category.name}-method",
+    "short_name": "{variant} {category.name}",
     "long_name": "{variant.short_description}",
     "short_description": "{variant}",
-    "long_description": "{variant}. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups {category}. Redistribution to non-census geolevels was performed using the redistribute R package.",
+    "long_description": "{variant}. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups {category} Redistribution to non-census geolevels was performed using the redistribute R package.",
     "statement": "{variant}",
     "sources": [
       {

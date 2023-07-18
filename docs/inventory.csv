@@ -1253,95 +1253,91 @@ housing,monthly_rent_1br,1 Bedroom Dwelling Fair Market Rent,2022,2022,,X,X,,X,X
 housing,monthly_rent_2br,2 Bedroom Dwelling Fair Market Rent,2022,2022,,X,X,,X,X,,,,X,,,,,X,
 housing,monthly_rent_3br,3 Bedroom Dwelling Fair Market Rent,2022,2022,,X,X,,X,X,,,,X,,,,,X,
 housing,monthly_rent_4br,4 Bedroom Dwelling Fair Market Rent,2022,2022,,X,X,,X,X,,,,X,,,,,X,
-demographics,pop_veteran,The Veteran population,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,perc_veteran,The Veteran population percentage,2009,2021,,X,X,,X,X,,,,X,,,,,X,
 demographics,pop_veteran,The Veteran population,2013,2020,,,,,,,,,X,,,,,,,
 demographics,perc_veteran,The Veteran population percentage,2013,2020,,,,,,,,,X,,,,,,,
-demographics,pop_veteran_direct,The Veteran population using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,perc_veteran_direct,The Veteran population percentage using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,pop_veteran_parcels,The Veteran population using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,pop_vet_denom_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,perc_veteran_parcels,The Veteran population percentage using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,veteran_pop_veteran_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,veteran_perc_veteran_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,veteran_pop_veteran_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,veteran_perc_veteran_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,veteran_pop_veteran_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,veteran_perc_veteran_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
 demographics,perc_children_raised_by_GPs,Children Raised by Grandparents,2010,2021,,,,,,,,,,X,,,,,X,
-demographics,total_hh,,2016,2021,X,X,X,X,X,X,,X,,X,,,,,X,
-demographics,perc_hh_limited_english,Percentage of households with limited English,2016,2021,X,X,X,X,X,X,,X,,X,,,,,X,
-demographics,hh_limited_english,Households with limited English,2016,2021,X,X,X,X,X,X,,X,,X,,,,,X,
-demographics,total_hh_direct,,2016,2021,,,,,,,,X,,,,,,X,X,X
-demographics,hh_limited_english_direct,Households with limited English using direct-method,2016,2021,,,,,,,,X,,,,,,X,X,X
-demographics,perc_hh_limited_english_direct,Percentage of households with limited English using direct-method,2016,2021,,,,,,,,X,,,,,,X,X,X
-demographics,total_hh_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,hh_limited_english_parcels,Households with limited English using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,perc_hh_limited_english_parcels,Percentage of households with limited English using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,language_hh_limited_english_direct,,2016,2021,,,,,,,,X,,,,,,X,X,X
+demographics,language_perc_hh_limited_english_direct,,2016,2021,,,,,,,,X,,,,,,X,X,X
+demographics,language_hh_limited_english_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,language_perc_hh_limited_english_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,language_hh_limited_english_,,2016,2021,X,X,X,X,X,X,,X,,X,,,,,X,
+demographics,language_perc_hh_limited_english_,,2016,2021,X,X,X,X,X,X,,X,,X,,,,,X,
 demographics,hh_limited_english,Households with limited English,2013,2020,,,,,,,,,X,,,,,,,
 demographics,total_hh,,2013,2020,,,,,,,,,X,,,,,,,
 demographics,perc_hh_limited_english,Percentage of households with limited English,2013,2020,,,,,,,,,X,,,,,,,
+demographics,gender_total_pop_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,gender_pop_male_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,gender_pop_female_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,gender_perc_male_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,gender_perc_female_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
 demographics,pop_female,Female population,2013,2020,,,,,,,,,X,,,,,,,
 demographics,pop_male,Male population,2013,2020,,,,,,,,,X,,,,,,,
 demographics,total_pop,Total count of the population,2013,2020,,,,,,,,,X,,,,,,,
 demographics,perc_male,Percentage of males,2013,2020,,,,,,,,,X,,,,,,,
 demographics,perc_female,Percentage of females,2013,2020,,,,,,,,,X,,,,,,,
-demographics,total_pop_direct,Total count of the population using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,pop_male_direct,Male population using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,pop_female_direct,Female population using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,perc_male_direct,Percentage of males using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,perc_female_direct,Percentage of females using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,total_pop_parcels,Total count of the population using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,pop_male_parcels,Male population using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,pop_female_parcels,Female population using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,perc_male_parcels,Percentage of males using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,perc_female_parcels,Percentage of females using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,total_pop,Total count of the population,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,perc_female,Percentage of females,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,pop_female,Female population,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,pop_male,Male population,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,perc_male,Percentage of males,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,pop_native_alone,The Native population,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,pop_afr_amer_alone,The Black population,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,perc_afr_amer_alone,Black population percentage,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,pop_other,The Other racial population,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,total_race,Total count of the population,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,perc_native_alone,The Native population percentage,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,pop_wht_alone,The White population,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,perc_wht_alone,The White population percentage,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,pop_AAPI,The Asian American/Pacific Islander population,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,pop_hispanic_or_latino,The Hispanic/Latino population,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,perc_hispanic_or_latino,The Hispanic/Latino population percentage,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,pop_two_or_more,The two or more races population,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,perc_AAPI,The Asian American/Pacific Islander population percentage,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,perc_other,The Other racial population percentage,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,perc_two_or_more,The two or more races population percentage,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,total_race_direct,Total count of the population using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,pop_wht_alone_direct,The White population using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,pop_afr_amer_alone_direct,The Black population using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,pop_native_alone_direct,The Native population using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,pop_AAPI_direct,The Asian American/Pacific Islander population using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,pop_other_direct,The Other racial population using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,pop_two_or_more_direct,The two or more races population using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,pop_hispanic_or_latino_direct,The Hispanic/Latino population using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,perc_wht_alone_direct,The White population percentage using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,perc_afr_amer_alone_direct,Black population percentage using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,perc_native_alone_direct,The Native population percentage using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,perc_AAPI_direct,The Asian American/Pacific Islander population percentage using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,perc_two_or_more_direct,The two or more races population percentage using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,perc_other_direct,The Other racial population percentage using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,perc_hispanic_or_latino_direct,The Hispanic/Latino population percentage using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,pop_eth_tot_direct,Total population ethnique using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,total_race_parcels,Total count of the population using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,pop_wht_alone_parcels,The White population using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,pop_afr_amer_alone_parcels,The Black population using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,pop_native_alone_parcels,The Native population using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,pop_AAPI_parcels,The Asian American/Pacific Islander population using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,pop_other_parcels,The Other racial population using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,pop_two_or_more_parcels,The two or more races population using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,pop_hispanic_or_latino_parcels,The Hispanic/Latino population using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,pop_eth_tot_parcels,Total population ethnique using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,perc_wht_alone_parcels,The White population percentage using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,perc_afr_amer_alone_parcels,Black population percentage using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,perc_native_alone_parcels,The Native population percentage using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,perc_AAPI_parcels,The Asian American/Pacific Islander population percentage using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,perc_two_or_more_parcels,The two or more races population percentage using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,perc_other_parcels,The Other racial population percentage using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,perc_hispanic_or_latino_parcels,The Hispanic/Latino population percentage using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,gender_total_pop_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,gender_pop_male_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,gender_pop_female_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,gender_perc_male_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,gender_perc_female_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,gender_total_pop_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,gender_pop_male_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,gender_pop_female_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,gender_perc_male_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,gender_perc_female_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_total_race_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,race_pop_wht_alone_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,race_pop_afr_amer_alone_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,race_pop_native_alone_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,race_pop_AAPI_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,race_pop_other_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,race_pop_two_or_more_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,race_pop_hispanic_or_latino_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,race_perc_wht_alone_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,race_perc_afr_amer_alone_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,race_perc_native_alone_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,race_perc_AAPI_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,race_perc_two_or_more_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,race_perc_other_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,race_perc_hispanic_or_latino_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,race_pop_eth_tot_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,race_total_race_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_pop_wht_alone_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_pop_afr_amer_alone_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_pop_native_alone_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_pop_AAPI_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_pop_other_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_pop_two_or_more_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_pop_hispanic_or_latino_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_pop_eth_tot_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_perc_wht_alone_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_perc_afr_amer_alone_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_perc_native_alone_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_perc_AAPI_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_perc_two_or_more_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_perc_other_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_perc_hispanic_or_latino_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,race_total_race_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,race_pop_wht_alone_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,race_pop_afr_amer_alone_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,race_pop_native_alone_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,race_pop_AAPI_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,race_pop_other_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,race_pop_two_or_more_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,race_pop_hispanic_or_latino_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,race_perc_wht_alone_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,race_perc_afr_amer_alone_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,race_perc_native_alone_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,race_perc_AAPI_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,race_perc_two_or_more_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,race_perc_other_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,race_perc_hispanic_or_latino_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
 demographics,pop_AAPI,The Asian American/Pacific Islander population,2013,2020,,,,,,,,,X,,,,,,,
 demographics,pop_afr_amer_alone,The Black population,2013,2020,,,,,,,,,X,,,,,,,
 demographics,pop_eth_tot,Total population ethnique,2013,2020,,,,,,,,,X,,,,,,,
@@ -1358,24 +1354,27 @@ demographics,perc_AAPI,The Asian American/Pacific Islander population percentage
 demographics,perc_two_or_more,The two or more races population percentage,2013,2020,,,,,,,,,X,,,,,,,
 demographics,perc_other,The Other racial population percentage,2013,2020,,,,,,,,,X,,,,,,,
 demographics,perc_hispanic_or_latino,The Hispanic/Latino population percentage,2013,2020,,,,,,,,,X,,,,,,,
-demographics,pop_under_20_direct,Population under age 20 using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,pop_20_64_direct,Population between age 20 and 64 using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,pop_65_plus_direct,Population over age 64 using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,perc_pop_under_20_direct,Percent of the population under age 20 using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,perc_pop_20_64_direct,Percent of the population between age 20 and 64 using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,perc_pop_65_plus_direct,Percent of the population over age 64 using direct-method,2013,2021,,,,,,,,X,,,,,,X,X,X
-demographics,pop_under_20_parcels,Population under age 20 using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,pop_20_64_parcels,Population between age 20 and 64 using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,pop_65_plus_parcels,Population over age 64 using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,perc_pop_under_20_parcels,Percent of the population under age 20 using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,perc_pop_20_64_parcels,Percent of the population between age 20 and 64 using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,perc_pop_65_plus_parcels,Percent of the population over age 64 using parcels-method,2013,2021,,,,,,,,X,,,,X,,X,X,X
-demographics,pop_under_20,Population under age 20,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,pop_20_64,Population between age 20 and 64 using 1-method,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,pop_65_plus,Population over age 64,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,perc_pop_20_64,Percent of the population between age 20 and 64,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,perc_pop_65_plus,Percent of the population over age 64,2009,2021,,X,X,,X,X,,,,X,,,,,X,
-demographics,perc_pop_under_20,Percent of the population under age 20,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,age_total_pop_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,age_pop_under_20_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,age_pop_20_64_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,age_pop_65_plus_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,age_perc_pop_under_20_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,age_perc_pop_20_64_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,age_perc_pop_65_plus_direct,,2013,2021,,,,,,,,X,,,,,,X,X,X
+demographics,age_total_pop_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,age_pop_under_20_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,age_pop_20_64_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,age_pop_65_plus_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,age_perc_pop_under_20_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,age_perc_pop_20_64_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,age_perc_pop_65_plus_parcels,,2013,2021,,,,,,,,X,,,,X,,X,X,X
+demographics,age_total_pop_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,age_pop_under_20_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,age_pop_20_64_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,age_pop_65_plus_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,age_perc_pop_20_64_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,age_perc_pop_65_plus_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
+demographics,age_perc_pop_under_20_,,2009,2021,,X,X,,X,X,,,,X,,,,,X,
 demographics,pop_20_64,Population between age 20 and 64 using 1-method,2013,2020,,,,,,,,,X,,,,,,,
 demographics,pop_65_plus,Population over age 64,2013,2020,,,,,,,,,X,,,,,,,
 demographics,pop_under_20,Population under age 20,2013,2020,,,,,,,,,X,,,,,,,

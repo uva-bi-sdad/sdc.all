@@ -97,13 +97,14 @@ acs_data_va <- acs_data_va_wd %>%
          hh_limited_english = limited_english_spanishE + limited_english_indo_europeE + limited_english_asian_pacificE + limited_english_other_languageE,
          perc_hh_limited_english = 100*(hh_limited_english)/total_hhE,
          hh_limited_english_MOE = sqrt(sum(limited_english_spanishM^2, limited_english_indo_europeM^2, limited_english_asian_pacificM^2, limited_english_other_languageM^2, na.rm=T)) )%>%
-  dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,total_hh,hh_limited_english,perc_hh_limited_english) %>%
+  dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,hh_limited_english,perc_hh_limited_english) %>%
   gather(measure, value, -c(geoid, region_name, region_type, year)) %>%
   select(geoid,region_name,region_type,year,measure,value) %>%
-  mutate(measure_type=case_when(
-    grepl('perc',measure)==T ~ "percentage",
-    grepl('hh',measure)==T ~ "count"),
-    MOE='')
+  mutate(measure=paste0('language_',measure,'_'),
+         measure_type=case_when(
+           grepl('perc',measure)==T ~ "percentage",
+           grepl('hh',measure)==T ~ "count"),
+         moe='')
 
 
 #2. Language distribution afor NCR
@@ -112,14 +113,15 @@ acs_data_ncr <- acs_data_ncr_wd %>%
          hh_limited_english = limited_english_spanishE + limited_english_indo_europeE + limited_english_asian_pacificE + limited_english_other_languageE,
          perc_hh_limited_english = 100*(hh_limited_english)/total_hhE,
          hh_limited_english_MOE = sqrt(sum(limited_english_spanishM^2, limited_english_indo_europeM^2, limited_english_asian_pacificM^2, limited_english_other_languageM^2, na.rm=T)) )%>%
-  dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,total_hh,hh_limited_english,perc_hh_limited_english) %>%
+  dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,hh_limited_english,perc_hh_limited_english) %>%
   gather(measure, value, -c(geoid, region_name, region_type, year)) %>%
   select(geoid,region_name,region_type,year,measure,value) %>%
-  mutate(measure_type=case_when(
-    grepl('perc',measure)==T ~ "percentage",
-    grepl('hh',measure)==T ~ "count"),
-    MOE='',
-    census_year=if_else(year<2020,2010,2020))
+  mutate(measure=paste0('language_',measure,'_'),
+         measure_type=case_when(
+           grepl('perc',measure)==T ~ "percentage",
+           grepl('hh',measure)==T ~ "count"),
+         moe='',
+         census_year=if_else(year<2020,2010,2020))
 
 
 
@@ -140,14 +142,14 @@ ncr_geo <- rbind(temp_bg2010,temp_bg2020,temp_ct2010,temp_ct2020,temp_tr2010,tem
   rename(census_year=year)
 
 acs_data_ncr <- merge(acs_data_ncr, ncr_geo, by.x=c('geoid','region_type','census_year'), by.y=c('geoid','region_type','census_year'), all.y=T) %>%
-  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
+  select(geoid,region_name,region_type,year,measure,value,measure_type,moe)
 
 
 
 # Save the data ----------------------------------------------------------------------------------
 savepath = "Language/data/distribution/"
-readr::write_csv(acs_data_va, xzfile(paste0(savepath,"va_trctbg_acs_2009_2021_language_demographics.csv.xz"), compression = 9))
-readr::write_csv(acs_data_ncr, xzfile(paste0(savepath,"ncr_trctbg_acs_2009_2021_language_demographics.csv.xz"), compression = 9))
+readr::write_csv(acs_data_va, xzfile(paste0(savepath,"va_cttrbg_acs_",min(years),'_',max(years),"_language_demographics.csv.xz"), compression = 9))
+readr::write_csv(acs_data_ncr, xzfile(paste0(savepath,"ncr_cttrbg_acs_",min(years),'_',max(years),"_language_demographics.csv.xz"), compression = 9))
 
 
 

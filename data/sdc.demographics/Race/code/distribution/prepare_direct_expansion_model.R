@@ -22,7 +22,7 @@ library(redistribute)
 # get the age demographics acs data for virginia
 uploadpath = "Race/data/distribution/"
 files = list.files(uploadpath)
-filename = files[str_detect(files,"va_trctbg_acs")]
+filename = files[str_detect(files,"va_cttrbg_acs")]
 acs <- read.csv(paste0(uploadpath,filename))
 
 # prepare the data for modeling -------------------------------------------
@@ -31,6 +31,7 @@ acs_bg <- acs %>%
   filter(region_type=='block group') %>%
 #  filter(!str_detect(measure, "perc")) %>%
   select(geoid,year,measure,value) %>%
+  mutate(measure=str_replace(substr(measure, 1, nchar(measure)-1),'race_','')) %>%
   pivot_wider(names_from = measure, values_from = value) %>%
   mutate(pop_eth_tot= 100*pop_hispanic_or_latino/perc_hispanic_or_latino,
          census_year=if_else(year<2020,2010,2020))
@@ -92,7 +93,7 @@ model_direct <- model %>%
          perc_other = 100*pop_other/total_race,
          perc_hispanic_or_latino = 100*pop_hispanic_or_latino/pop_eth_tot) %>%
   pivot_longer(!c('id','year'), names_to = "measure", values_to = "value") %>%
-  mutate(measure=paste0(measure,'_direct'),
+  mutate(measure=paste0('race_',measure,'_direct'),
          moe='') %>%
   select(geoid=id,year,measure,value,moe)
   

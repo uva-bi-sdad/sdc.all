@@ -22,17 +22,19 @@ library(redistribute)
 # get the age demographics acs data for virginia
 uploadpath = "Language/data/distribution/"
 files = list.files(uploadpath)
-filename = files[str_detect(files,"va_trctbg_acs")]
+filename = files[str_detect(files,"va_cttrbg_acs")]
 acs <- read.csv(paste0(uploadpath,filename))
 
 # prepare the data for modeling -------------------------------------------
 # select the census block group for aggregation, select only population count as measure
 acs_bg <- acs %>%
   filter(region_type=='block group') %>%
-  filter(!str_detect(measure, "perc")) %>%
   select(geoid,year,measure,value) %>%
+  mutate(measure=str_replace(substr(measure, 1, nchar(measure)-1),'language_','')) %>%
   pivot_wider(names_from = measure, values_from = value) %>%
-  mutate(census_year=if_else(year<2020,2010,2020))
+  mutate(total_hh =100*hh_limited_english/perc_hh_limited_english, 
+         census_year=if_else(year<2020,2010,2020)) 
+
 
 # get census 2010 and 2020
 bg_geo_2010 <- sf::read_sf('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Census%20Geographies/Block%20Group/2010/data/distribution/va_geo_census_cb_2010_census_block_groups.geojson')
@@ -85,7 +87,8 @@ for (vyear in yearlist){
 model_direct <- model %>%
   mutate(perc_hh_limited_english = 100*(hh_limited_english)/total_hh) %>%
   pivot_longer(!c('id','year'), names_to = "measure", values_to = "value") %>%
-  mutate(measure=paste0(measure,'_direct'),
+  filter(!(measure=='total_hh')) %>%
+  mutate(measure=paste0('language_',measure,'_direct'),
          moe='') %>%
   select(geoid=id,year,measure,value,moe)
   

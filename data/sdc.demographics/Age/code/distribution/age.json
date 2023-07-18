@@ -1,11 +1,11 @@
 {
-  "{variant.name}_{category.name}": {
+  "age_{variant.name}_{category.name}": {
     "category": "Demographics",
     "data_type": "{variant}",
     "unit": "individual",
     "equity_category": "Status",
     "aggregation_method": "{variant}",
-    "short_name": "{variant} using {category.name}-method",
+    "short_name": "{variant} {category.name}",
     "long_name": "{variant.short_description}",
     "short_description": "{variant}",
     "long_description": "{variant} 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups {category} Redistribution to non-census geolevels was performed using the redistribute R package.",
@@ -79,7 +79,7 @@
       },
       "total_pop": {
         "default": "Total count of the population",
-        "data_type": "integer",
+        "data_type": "decimal",
         "aggregation_method": "arithmetic mean",
         "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "long_description": "Total count of the population.",
