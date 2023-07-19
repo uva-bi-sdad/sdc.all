@@ -224,7 +224,7 @@
         "unit": "",
         "variants": ""
     },
-    "pop_density_indicator": {
+    "pop_density_indicator_old": {
         "aggregation_method": "",
         "categories": "",
         "category": "Health Opportunity Index",

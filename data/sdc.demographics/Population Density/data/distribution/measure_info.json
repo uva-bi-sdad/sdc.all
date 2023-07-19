@@ -1,0 +1,23 @@
+{
+  "Population_weighted_density_index": {
+    "category": "Demographics",
+    "data_type": "ratio",
+    "unit": "individuals per mile",
+    "equity_category": "Status",
+    "aggregation_method": "other",
+    "short_name": "Weighted Population Density Per Sq Mile",
+    "long_name": "Weighted Population Density Per Sq Mile",
+    "short_description": "Weighted density to capture the number of people per square mile",
+    "long_description": "Weighted density to capture the number of people per square mile. The index is calculated by  dividing the sum of product of population estimate and the land area of each census tract by sum of total land area of all census tracts.Land area is obtained by getting the tracts using tidycensus package. ALAND column is the land area and it will be in square meters  can be converted  to square miles. Population estimate is obtained using ACS for multiple years from 2015 to 2021.",
+    "statement": "The population weighted density per square mile is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B01003, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  }
+}
