@@ -1,11 +1,11 @@
 {
-  "age_{variant.name}_{category.name}": {
+  "{variant.name}{category.name}": {
     "category": "Demographics",
     "data_type": "{variant}",
     "unit": "individual",
     "equity_category": "Status",
     "aggregation_method": "{variant}",
-    "short_name": "{variant} {category.name}",
+    "short_name": "{variant} {category}",
     "long_name": "{variant.short_description}",
     "short_description": "{variant}",
     "long_description": "{variant} 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups {category} Redistribution to non-census geolevels was performed using the redistribute R package.",
@@ -20,12 +20,12 @@
       }
     ],
     "categories": {
-      "blank": {},
-      "parcels": {
-        "long_description": "and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap."
-      },
-      "direct": {
+      "blank": {
         "long_description": "and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap."
+      },
+      "_parcels": {
+        "default": "parcels",
+        "long_description": "and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap."
       }
     },
     "variants": {

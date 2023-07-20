@@ -12,7 +12,7 @@ library(httr)
 library(sp)
 library(data.table)
 library(stringr)
-library("rgdal", lib.loc="/usr/local/lib/R/site-library")
+#library("rgdal", lib.loc="/usr/local/lib/R/site-library")
 library(tidyr)
 library(readr)
 library(tidyverse)
@@ -56,7 +56,7 @@ for (vyear in yearlist){
   
   # we use the parcel distribution of 2022 for all acs demographics from 2013-2022.
   if (vyear<=2022){
-    parcel_geo <- st_read("Synthetic_population/Housing_units_distribution/Fairfax/data/working/parcels_infos/2022/fairfax_parcel_geometry.geojson")
+    parcel_geo <- readRDS("Synthetic_population/Housing_units_distribution/Fairfax/data/working/parcels_infos/2022/fairfax_parcel_geometry.rds")
     fairfax_pc_geo <- parcel_geo %>% select(parid=geoid, geometry)
   }else{
     parcel_geo <- st_read(paste0("Synthetic_population/Housing_units_distribution/Fairfax/data/working/parcels_infos/",vyear,"/fairfax_parcel_geometry.geojson"))
@@ -103,45 +103,62 @@ model_parcels <- rbind(hsr_dmg,pd_dmg,sd_dmg,zc_dmg) %>%
   mutate(perc_male = 100*pop_male/total_pop,
          perc_female = 100*pop_female/total_pop) %>%
   pivot_longer(!c('geoid','year'), names_to='measure', values_to='value') %>%
-  mutate(measure=paste0('gender_',measure,'_parcels'),
+  mutate(
+    #measure=paste0('gender_',measure,'_parcels'),
     moe='')
+
+
+# get the acs data ----------------------------------------------
+uploadpath = "Gender/data/distribution/"
+files = list.files(uploadpath)
+filename = files[str_detect(files,"va_cttrbg_acs")]
+temp_acs_dmg <- read.csv(paste0(uploadpath,filename)) %>% 
+  select(geoid,year,measure,value,moe) 
+temp_parcels_dmg <- model_parcels 
+baseline_data <- rbind(temp_acs_dmg,temp_parcels_dmg) %>%
+  mutate(measure=paste0(measure,'_parcels'))
+
+
 
 
 # save the data 
 savepath = "Gender/data/distribution/"
-files = list.files(savepath)
-filename = files[str_detect(files,"va059_hsrsdpdzc_sdad")]
+readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_gender_demographics2.csv.xz"), compression = 9))
 
-if (length(filename)==0){
-  # create the file
-  readr::write_csv(model_parcels, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_gender_demographics.csv.xz"), compression = 9))
-  
-}else{
-  # there is only one file perform check to whether replace the file or update the content
-  file_maxyear = as.numeric(substr(filename,27,30))
-  if(max(yearlist)!=file_maxyear){
-    # update filename
-    file.remove(filename)
-    readr::write_csv(model_parcels, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_gender_demographics.csv.xz"), compression = 9))
-    
-  }else{
-    #read the file, identify the model in those file 
-    lastfile <- read.csv(paste0(savepath,filename))
-    lastfile$model <- sapply(strsplit(lastfile$measure, split= "_", fixed = TRUE), tail, 1L)
-    modellist <- unique(lastfile$model)
-    if ('parcels' %in% modellist){
-      # get the set of the other models listed in the data. keep other models and update the current model data
-      set <- lastfile %>% filter(model!='parcels') %>% select(geoid,year,measure,value,moe)
-      lastfile <- rbind(set, model_parcels)
-      readr::write_csv(lastfile, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_gender_demographics.csv.xz"), compression = 9))
-    }else{
-      # just add the current model data
-      set <- lastfile %>% select(geoid,year,measure,value,moe)
-      lastfile <- rbind(set, model_parcels)
-      readr::write_csv(lastfile, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_gender_demographics.csv.xz"), compression = 9))
-    }
-  }
-}
+
+# files = list.files(savepath)
+# filename = files[str_detect(files,"va059_hsrsdpdzc_sdad")]
+# 
+# if (length(filename)==0){
+#   # create the file
+#   readr::write_csv(model_parcels, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_gender_demographics.csv.xz"), compression = 9))
+#   
+# }else{
+#   # there is only one file perform check to whether replace the file or update the content
+#   file_maxyear = as.numeric(substr(filename,27,30))
+#   if(max(yearlist)!=file_maxyear){
+#     # update filename
+#     file.remove(filename)
+#     readr::write_csv(model_parcels, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_gender_demographics.csv.xz"), compression = 9))
+#     
+#   }else{
+#     #read the file, identify the model in those file 
+#     lastfile <- read.csv(paste0(savepath,filename))
+#     lastfile$model <- sapply(strsplit(lastfile$measure, split= "_", fixed = TRUE), tail, 1L)
+#     modellist <- unique(lastfile$model)
+#     if ('parcels' %in% modellist){
+#       # get the set of the other models listed in the data. keep other models and update the current model data
+#       set <- lastfile %>% filter(model!='parcels') %>% select(geoid,year,measure,value,moe)
+#       lastfile <- rbind(set, model_parcels)
+#       readr::write_csv(lastfile, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_gender_demographics.csv.xz"), compression = 9))
+#     }else{
+#       # just add the current model data
+#       set <- lastfile %>% select(geoid,year,measure,value,moe)
+#       lastfile <- rbind(set, model_parcels)
+#       readr::write_csv(lastfile, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_gender_demographics.csv.xz"), compression = 9))
+#     }
+#   }
+# }
 
 
 
@@ -162,8 +179,7 @@ for (year in years) {
   arl_pc_dmg <- rbind(arl_pc_dmg,temp)
 }
 
-arl_pc_geo <- sf::st_read(unzip("Synthetic_population/Housing_units_distribution/Arlington/data/working/arl_parcel_geometry.geojson.zip", "Synthetic_population/Housing_units_distribution/Arlington/data/working/arl_parcel_geometry.geojson"))
-file.remove("Synthetic_population/Housing_units_distribution/Arlington/data/working/arl_parcel_geometry.geojson")
+arl_pc_geo <- sf::st_read("Synthetic_population/Housing_units_distribution/Arlington/data/working/va_arl_parcel_geometry.geojson")
 arl_pc_geo <- arl_pc_geo %>% select(parid=geoid, geometry)
 arl_pc_dmg <- arl_pc_dmg %>% select(geoid,year,measure,value) %>% filter(measure %in% c('pop_male','pop_female','total_pop'))
 
@@ -171,7 +187,7 @@ arl_pc_dmg <- arl_pc_dmg %>% select(geoid,year,measure,value) %>% filter(measure
 sf::sf_use_s2(FALSE)
 civic_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Arlington%20County/Civic%20Associations/2021/data/distribution/va013_geo_arl_2021_civic_associations.geojson")
 
-# coments: for some cases the number of rows can be lower than the number of parcels meaning that the new geography doesn't cover all the parcels
+# comments: for some cases the number of rows can be lower than the number of parcels meaning that the new geography doesn't cover all the parcels
 civic_pc_map <- st_join(civic_geo, arl_pc_geo, join = st_intersects) %>% st_drop_geometry() %>% select(-year)
 
 # estimate the demographics for the new geography. all the 
@@ -185,10 +201,11 @@ arl_newgeo_dmg <- civic_dmg %>%
   mutate(perc_male = 100*pop_male/total_pop,
          perc_female = 100*pop_female/total_pop) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
-  mutate(measure_type=case_when(
-    grepl('pop',measure)==T ~ "count",
-    grepl('perc',measure)==T ~ "percentage"),
-    MOE='')
+  mutate(measure=paste0(measure,'_parcels'),
+         measure_type=case_when(
+          grepl('pop',measure)==T ~ "count",
+          grepl('perc',measure)==T ~ "percentage"),
+        moe='')
 
 # save the data ----------------------------------------------------------------------------------
 savepath = "Gender/data/distribution/"

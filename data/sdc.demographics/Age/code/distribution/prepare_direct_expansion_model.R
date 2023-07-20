@@ -8,7 +8,7 @@ library(httr)
 library(sp)
 library(data.table)
 library(stringr)
-library("rgdal", lib.loc="/usr/local/lib/R/site-library")
+#library("rgdal", lib.loc="/usr/local/lib/R/site-library")
 library(tidyr)
 library(readr)
 library(tidyverse)
@@ -31,7 +31,7 @@ acs_bg <- acs %>%
   filter(region_type=='block group') %>%
   filter(!str_detect(measure, "perc")) %>%
   select(geoid,year,measure,value) %>%
-  mutate(measure=str_remove(substr(measure, 1, nchar(measure)-1),'age_')) %>%
+#  mutate(measure=str_remove(measure,'age_')) %>%
   pivot_wider(names_from = measure, values_from = value) %>%
   mutate(census_year=if_else(year<2020,2010,2020))
 
@@ -88,45 +88,89 @@ model_direct <- model %>%
          perc_pop_20_64=100*pop_20_64/total_pop,
          perc_pop_65_plus=100*pop_65_plus/total_pop) %>%
   pivot_longer(!c('id','year'), names_to = "measure", values_to = "value") %>%
-  mutate(measure=paste0('age_',measure,'_direct'),
+  mutate(
+#    measure=paste0('age_',measure,'_direct'),
          moe='') %>%
   select(geoid=id,year,measure,value,moe)
   
 
+# combine the data
+temp_acs_dmg <- acs %>% 
+  select(geoid,year,measure,value,moe) 
+temp_direct_dmg <- model_direct 
+baseline_data <- rbind(temp_acs_dmg,temp_direct_dmg)
 
 
 # save the data 
 savepath = "Age/data/distribution/"
-files = list.files(savepath)
-filename = files[str_detect(files,"va059_hsrsdpdzc_sdad")]
+readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_age_demographics1.csv.xz"), compression = 9))
 
-if (length(filename)==0){
-  # create the file
-  readr::write_csv(model_direct, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_age_demographics.csv.xz"), compression = 9))
-  
-}else{
-  # there is only one file perform check to whether replace the file or update the content
-  file_maxyear = as.numeric(substr(filename,27,30))
-  if(max(yearlist)!=file_maxyear){
-    # update filename
-    file.remove(filename)
-    readr::write_csv(model_direct, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_age_demographics.csv.xz"), compression = 9))
+
+
+
+
+
+# files = list.files(savepath)
+# filename = files[str_detect(files,"va059_hsrsdpdzc_sdad")]
+# 
+# if (length(filename)==0){
+#   # create the file
+#   readr::write_csv(model_direct, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_age_demographics.csv.xz"), compression = 9))
+#   
+# }else{
+#   # there is only one file perform check to whether replace the file or update the content
+#   file_maxyear = as.numeric(substr(filename,27,30))
+#   if(max(yearlist)!=file_maxyear){
+#     # update filename
+#     file.remove(filename)
+#     readr::write_csv(model_direct, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_age_demographics.csv.xz"), compression = 9))
+#     
+#   }else{
+#     #read the file, identify the model in those file 
+#     lastfile <- read.csv(paste0(savepath,filename))
+#     lastfile$model <- sapply(strsplit(lastfile$measure, split= "_", fixed = TRUE), tail, 1L)
+#     modellist <- unique(lastfile$model)
+#     if ('parcels' %in% modellist){
+#       # get the set of the other models listed in the data. keep other models and update the current model data
+#       set <- lastfile %>% filter(model!='parcels') %>% select(geoid,year,measure,value,moe)
+#       lastfile <- rbind(set, model_direct)
+#       readr::write_csv(lastfile, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_age_demographics.csv.xz"), compression = 9))
+#     }else{
+#       # just add the current model data
+#       set <- lastfile %>% select(geoid,year,measure,value,moe)
+#       lastfile <- rbind(set, model_direct)
+#       readr::write_csv(lastfile, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_age_demographics.csv.xz"), compression = 9))
+#     }
+#   }
+# }
+
+
+
+# combine the data
+temp_acs_dmg <- acs %>% 
+  select(geoid,year,measure,value,moe) %>%
+  mutate(new_measure=case_when(
+    measure=="age_total_pop" ~ "total_pop",
+    measure=="age_pop_under_20" ~ "pop_under_20",
+    measure=="age_pop_20_64" ~ "pop_20_64",
+    measure=="age_pop_65_plus" ~ "pop_65_plus",
+    measure=="age_perc_pop_under_20" ~ "perc_pop_under_20",
+    measure=="age_perc_pop_20_64" ~ "perc_pop_20_64",
+    measure=="age_perc_pop_65_plus" ~ "perc_pop_65_plus"))
+
+temp_direct_dmg <- model_direct %>%
+  mutate(new_measure=case_when(
+    measure=="age_total_pop_direct" ~ "total_pop",
+    measure=="age_pop_under_20_direct" ~ "pop_under_20",
+    measure=="age_pop_20_64_direct" ~ "pop_20_64",
+    measure=="age_pop_65_plus_direct" ~ "pop_65_plus",
+    measure=="age_perc_pop_under_20_direct" ~ "perc_pop_under_20",
+    measure=="age_perc_pop_20_64_direct" ~ "perc_pop_20_64",
+    measure=="age_perc_pop_65_plus_direct" ~ "perc_pop_65_plus"))
     
-  }else{
-    #read the file, identify the model in those file 
-    lastfile <- read.csv(paste0(savepath,filename))
-    lastfile$model <- sapply(strsplit(lastfile$measure, split= "_", fixed = TRUE), tail, 1L)
-    modellist <- unique(lastfile$model)
-    if ('parcels' %in% modellist){
-      # get the set of the other models listed in the data. keep other models and update the current model data
-      set <- lastfile %>% filter(model!='parcels') %>% select(geoid,year,measure,value,moe)
-      lastfile <- rbind(set, model_direct)
-      readr::write_csv(lastfile, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_age_demographics.csv.xz"), compression = 9))
-    }else{
-      # just add the current model data
-      set <- lastfile %>% select(geoid,year,measure,value,moe)
-      lastfile <- rbind(set, model_direct)
-      readr::write_csv(lastfile, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_age_demographics.csv.xz"), compression = 9))
-    }
-  }
-}
+baseline_data <- rbind(temp_acs_dmg,temp_direct_dmg)
+readr::write_csv(baseline_data, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad1_",min(yearlist),'_',max(yearlist),"_age_demographics.csv.xz"), compression = 9))
+
+
+
+

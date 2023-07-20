@@ -8,7 +8,7 @@ library(httr)
 library(sp)
 library(data.table)
 library(stringr)
-library("rgdal", lib.loc="/usr/local/lib/R/site-library")
+#library("rgdal", lib.loc="/usr/local/lib/R/site-library")
 library(tidyr)
 library(readr)
 library(tidyverse)
@@ -31,7 +31,7 @@ acs_bg <- acs %>%
   filter(region_type=='block group') %>%
 #  filter(!str_detect(measure, "perc")) %>%
   select(geoid,year,measure,value) %>%
-  mutate(measure=str_replace(substr(measure, 1, nchar(measure)-1),'race_','')) %>%
+#  mutate(measure=str_replace(measure,'race_','')) %>%
   pivot_wider(names_from = measure, values_from = value) %>%
   mutate(pop_eth_tot= 100*pop_hispanic_or_latino/perc_hispanic_or_latino,
          census_year=if_else(year<2020,2010,2020))
@@ -93,32 +93,45 @@ model_direct <- model %>%
          perc_other = 100*pop_other/total_race,
          perc_hispanic_or_latino = 100*pop_hispanic_or_latino/pop_eth_tot) %>%
   pivot_longer(!c('id','year'), names_to = "measure", values_to = "value") %>%
-  mutate(measure=paste0('race_',measure,'_direct'),
+  mutate(
+    #measure=paste0('race_',measure,'_direct'),
          moe='') %>%
   select(geoid=id,year,measure,value,moe)
   
 
+# combine the data
+temp_acs_dmg <- acs %>% 
+  select(geoid,year,measure,value,moe) 
+temp_direct_dmg <- model_direct 
+baseline_data <- rbind(temp_acs_dmg,temp_direct_dmg)
+
+
 # save the living units distribution ----------------------------------------------------------------------------
 savepath = "Race/data/distribution/"
-files = list.files(savepath)
-filename = files[str_detect(files,"va059_hsrsdpdzc_sdad")]
+readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_race_demographics1.csv.xz"), compression = 9))
 
-if (length(filename)==0){
-  # create the file
-  readr::write_csv(model_direct, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_race_demographics.csv.xz"), compression = 9))
-  
-}else{
-  # there is only one file perform check to whether replace the file or update the content
-  file_maxyear = as.numeric(substr(filename,27,30))
-  if(max(yearlist)!=file_maxyear){
-    # update filename
-    file.remove(filename)
-    readr::write_csv(model_direct, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_race_demographics.csv.xz"), compression = 9))
-    
-  }else{
-    #read the file and check if the measure content the model name
-    lastfile <- read.csv(paste0(savepath,filename))
-    lastfile <- rbind(lastfile, model_direct)
-    readr::write_csv(lastfile, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_race_demographics.csv.xz"), compression = 9))
-  }
-}
+
+
+
+# files = list.files(savepath)
+# filename = files[str_detect(files,"va059_hsrsdpdzc_sdad")]
+# 
+# if (length(filename)==0){
+#   # create the file
+#   readr::write_csv(model_direct, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_race_demographics.csv.xz"), compression = 9))
+#   
+# }else{
+#   # there is only one file perform check to whether replace the file or update the content
+#   file_maxyear = as.numeric(substr(filename,27,30))
+#   if(max(yearlist)!=file_maxyear){
+#     # update filename
+#     file.remove(filename)
+#     readr::write_csv(model_direct, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_race_demographics.csv.xz"), compression = 9))
+#     
+#   }else{
+#     #read the file and check if the measure content the model name
+#     lastfile <- read.csv(paste0(savepath,filename))
+#     lastfile <- rbind(lastfile, model_direct)
+#     readr::write_csv(lastfile, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad_",min(yearlist),'_',max(yearlist),"_race_demographics.csv.xz"), compression = 9))
+#   }
+# }

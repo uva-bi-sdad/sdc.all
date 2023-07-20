@@ -12862,31 +12862,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The count of households with limited English.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The count of households with limited English. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Households with limited English",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table C16002, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The count of households with limited English is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "hh_limited_english_direct": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The count of households with limited English.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Households with limited English using direct-method",
+        "short_name": "Households with limited English ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -12904,10 +12883,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The count of households with limited English.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The count of households with limited English. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Households with limited English using parcels-method",
+        "short_name": "Households with limited English parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -15135,31 +15114,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Asian American/Pacific Islander population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Asian American/Pacific Islander population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Asian American/Pacific Islander population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Asian American/Pacific Islander population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Asian American/Pacific Islander population percentage",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Asian American/Pacific Islander population percent is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "perc_AAPI_direct": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Asian American/Pacific Islander population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Asian American/Pacific Islander population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Asian American/Pacific Islander population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Asian American/Pacific Islander population percentage using direct-method",
+        "short_name": "The Asian American/Pacific Islander population percentage ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -15177,10 +15135,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Asian American/Pacific Islander population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Asian American/Pacific Islander population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Asian American/Pacific Islander population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Asian American/Pacific Islander population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Asian American/Pacific Islander population percentage using parcels-method",
+        "short_name": "The Asian American/Pacific Islander population percentage parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -15198,31 +15156,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Black population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Black population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Black population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Black population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Black population percentage",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Black population percent is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "perc_afr_amer_alone_direct": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Black population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Black population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Black population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Black population percentage using direct-method",
+        "short_name": "Black population percentage ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -15240,10 +15177,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Black population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Black population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Black population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Black population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Black population percentage using parcels-method",
+        "short_name": "Black population percentage parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -15311,31 +15248,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The percent of females in the total population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The percent of females in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The percent of females in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The percent of females in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percentage of females",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table S0101, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The percent of females is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "perc_female_direct": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The percent of females in the total population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The percent of females in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The percent of females in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percentage of females using direct-method",
+        "short_name": "Percentage of females ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -15353,10 +15269,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The percent of females in the total population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The percent of females in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The percent of females in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The percent of females in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percentage of females using parcels-method",
+        "short_name": "Percentage of females parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -15374,31 +15290,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The percent of households with limited English.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The percent of households with limited English. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percentage of households with limited English",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table C16002, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The percent of households with limited English is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "perc_hh_limited_english_direct": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The percent of households with limited English.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percentage of households with limited English using direct-method",
+        "short_name": "Percentage of households with limited English ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -15416,10 +15311,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The percent of households with limited English.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The percent of households with limited English. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percentage of households with limited English using parcels-method",
+        "short_name": "Percentage of households with limited English parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -15537,31 +15432,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Hispanic/Latino population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Hispanic/Latino population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Hispanic/Latino population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Hispanic/Latino population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Hispanic/Latino population percentage",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Hispanic/Latino population percent is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "perc_hispanic_or_latino_direct": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Hispanic/Latino population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Hispanic/Latino population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Hispanic/Latino population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Hispanic/Latino population percentage using direct-method",
+        "short_name": "The Hispanic/Latino population percentage ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -15579,10 +15453,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Hispanic/Latino population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Hispanic/Latino population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Hispanic/Latino population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Hispanic/Latino population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Hispanic/Latino population percentage using parcels-method",
+        "short_name": "The Hispanic/Latino population percentage parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -15782,31 +15656,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The percent of males in the total population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The percent of males in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The percent of males in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The percent of males in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percentage of males",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table S0101, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The percent of males is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "perc_male_direct": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The percent of males in the total population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The percent of males in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The percent of males in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percentage of males using direct-method",
+        "short_name": "Percentage of males ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -15824,10 +15677,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The percent of males in the total population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The percent of males in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The percent of males in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The percent of males in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percentage of males using parcels-method",
+        "short_name": "Percentage of males parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -15845,31 +15698,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Native population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Native population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Native population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Native population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Native population percentage",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Native population percent is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "perc_native_alone_direct": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Native population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Native population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Native population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Native population percentage using direct-method",
+        "short_name": "The Native population percentage ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -15887,10 +15719,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Native population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Native population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Native population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Native population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Native population percentage using parcels-method",
+        "short_name": "The Native population percentage parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -15932,31 +15764,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Other racial population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Other racial population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Other racial population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Other racial population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Other racial population percentage",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Other racial population percent is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "perc_other_direct": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Other racial population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Other racial population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Other racial population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Other racial population percentage using direct-method",
+        "short_name": "The Other racial population percentage ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -15974,10 +15785,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Other racial population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Other racial population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Other racial population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Other racial population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Other racial population percentage using parcels-method",
+        "short_name": "The Other racial population percentage parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16045,31 +15856,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The percent of the population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percent of the population between age 20 and 64",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The percent of the population over age 64 is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "perc_pop_20_64_direct": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
         "long_description": "The percent of the population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percent of the population between age 20 and 64 using direct-method",
+        "short_name": "Percent of the population between age 20 and 64 ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16090,7 +15880,7 @@
         "long_description": "The percent of the population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percent of the population between age 20 and 64 using parcels-method",
+        "short_name": "Percent of the population between age 20 and 64 parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16108,31 +15898,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The percent of the population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percent of the population over age 64",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The percent of the population over age 64 is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "perc_pop_65_plus_direct": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
         "long_description": "The percent of the population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percent of the population over age 64 using direct-method",
+        "short_name": "Percent of the population over age 64 ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16153,7 +15922,7 @@
         "long_description": "The percent of the population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percent of the population over age 64 using parcels-method",
+        "short_name": "Percent of the population over age 64 parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16171,31 +15940,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The percent of the population under age 20. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percent of the population under age 20",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The percent of the population under age 20 is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "perc_pop_under_20_direct": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
         "long_description": "The percent of the population under age 20. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percent of the population under age 20 using direct-method",
+        "short_name": "Percent of the population under age 20 ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16216,7 +15964,7 @@
         "long_description": "The percent of the population under age 20. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percent of the population under age 20 using parcels-method",
+        "short_name": "Percent of the population under age 20 parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16284,31 +16032,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The two or more races population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The two or more races population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The two or more races population percentage",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The two or more races population percent is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "perc_two_or_more_direct": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The two or more races population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The two or more races population percentage using direct-method",
+        "short_name": "The two or more races population percentage ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16326,10 +16053,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The two or more races population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The two or more races population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The two or more races population percentage using parcels-method",
+        "short_name": "The two or more races population percentage parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16347,31 +16074,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Veteran population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Veteran population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Veteran population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Veteran population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Veteran population percentage",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B21001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Veteran population percent is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "perc_veteran_direct": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Veteran population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Veteran population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Veteran population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Veteran population percentage using direct-method",
+        "short_name": "The Veteran population percentage ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16389,10 +16095,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Veteran population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Veteran population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Veteran population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Veteran population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Veteran population percentage using parcels-method",
+        "short_name": "The Veteran population percentage parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16460,31 +16166,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The White population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The White population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The White population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The White population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The White population percentage",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The White population percent is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "perc_wht_alone_direct": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The White population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The White population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The White population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The White population percentage using direct-method",
+        "short_name": "The White population percentage ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16502,10 +16187,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The White population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The White population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The White population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The White population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The White population percentage using parcels-method",
+        "short_name": "The White population percentage parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16548,31 +16233,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The population estimates between age 20 and 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The population estimates between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The population estimates between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Population between age 20 and 64 using 1-method",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The population between age 20 and 64 is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "pop_20_64_direct": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
         "long_description": "The population estimates between age 20 and 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The population estimates between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The population estimates between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Population between age 20 and 64 using direct-method",
+        "short_name": "Population between age 20 and 64 ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16593,7 +16257,7 @@
         "long_description": "The population estimates between age 20 and 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The population estimates between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The population estimates between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Population between age 20 and 64 using parcels-method",
+        "short_name": "Population between age 20 and 64 parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16611,31 +16275,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Population over age 64",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The population over age 64 is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "pop_65_plus_direct": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
         "long_description": "The population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Population over age 64 using direct-method",
+        "short_name": "Population over age 64 ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16656,7 +16299,7 @@
         "long_description": "The population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Population over age 64 using parcels-method",
+        "short_name": "Population over age 64 parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16674,31 +16317,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Asian American/Pacific Islander population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Asian American/Pacific Islander population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Asian American/Pacific Islander population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Asian American/Pacific Islander population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Asian American/Pacific Islander population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Asian American/Pacific Islander population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "pop_AAPI_direct": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Asian American/Pacific Islander population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Asian American/Pacific Islander population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Asian American/Pacific Islander population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Asian American/Pacific Islander population using direct-method",
+        "short_name": "The Asian American/Pacific Islander population ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16716,10 +16338,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Asian American/Pacific Islander population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Asian American/Pacific Islander population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Asian American/Pacific Islander population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Asian American/Pacific Islander population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Asian American/Pacific Islander population using parcels-method",
+        "short_name": "The Asian American/Pacific Islander population parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16737,31 +16359,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Black population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Black population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Black population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Black population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Black population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Black population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "pop_afr_amer_alone_direct": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Black population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Black population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Black population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Black population using direct-method",
+        "short_name": "The Black population ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16779,10 +16380,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Black population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Black population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Black population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Black population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Black population using parcels-method",
+        "short_name": "The Black population parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16850,31 +16451,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "Total population ethnique.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "Total population ethnique.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Total population ethnique",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "Total population ethnique is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "pop_eth_tot_direct": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "Total population ethnique.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Total population ethnique using direct-method",
+        "short_name": "Total population ethnique ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16892,10 +16472,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "Total population ethnique.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "Total population ethnique.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Total population ethnique using parcels-method",
+        "short_name": "Total population ethnique parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16913,31 +16493,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The count of females in the total population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The count of females in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The count of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
         "short_description": "The count of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-        "short_name": "Female population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table S0101, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The female population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "pop_female_direct": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The count of females in the total population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The count of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-        "short_description": "The count of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-        "short_name": "Female population using direct-method",
+        "short_name": "Female population ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16955,10 +16514,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The count of females in the total population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The count of females in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The count of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
         "short_description": "The count of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-        "short_name": "Female population using parcels-method",
+        "short_name": "Female population parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -16976,31 +16535,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Hispanic/Latino population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Hispanic/Latino population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Hispanic/Latino population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Hispanic/Latino population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Hispanic/Latino population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Hispanic/Latino population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "pop_hispanic_or_latino_direct": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Hispanic/Latino population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Hispanic/Latino population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Hispanic/Latino population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Hispanic/Latino population using direct-method",
+        "short_name": "The Hispanic/Latino population ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -17018,10 +16556,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Hispanic/Latino population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Hispanic/Latino population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Hispanic/Latino population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Hispanic/Latino population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Hispanic/Latino population using parcels-method",
+        "short_name": "The Hispanic/Latino population parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -17039,31 +16577,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The count of males in the total population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The count of males in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The count of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
         "short_description": "The count of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-        "short_name": "Male population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table S0101, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The male population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "pop_male_direct": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The count of males in the total population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The count of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-        "short_description": "The count of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-        "short_name": "Male population using direct-method",
+        "short_name": "Male population ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -17081,10 +16598,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The count of males in the total population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The count of males in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The count of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
         "short_description": "The count of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-        "short_name": "Male population using parcels-method",
+        "short_name": "Male population parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -17102,31 +16619,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Native population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Native population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Native population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Native population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Native population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Native population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "pop_native_alone_direct": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Native population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Native population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Native population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Native population using direct-method",
+        "short_name": "The Native population ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -17144,10 +16640,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Native population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Native population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Native population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Native population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Native population using parcels-method",
+        "short_name": "The Native population parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -17165,31 +16661,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Other racial population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Other racial population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Other racial population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Other racial population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Other racial population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Other racial population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "pop_other_direct": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Other racial population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Other racial population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Other racial population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Other racial population using direct-method",
+        "short_name": "The Other racial population ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -17207,10 +16682,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Other racial population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Other racial population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Other racial population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Other racial population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Other racial population using parcels-method",
+        "short_name": "The Other racial population parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -17228,31 +16703,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The two or more races population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The two or more races population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The two or more races population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The two or more races population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The two or more races population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The two or more races population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "pop_two_or_more_direct": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The two or more races population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The two or more races population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The two or more races population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The two or more races population using direct-method",
+        "short_name": "The two or more races population ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -17270,10 +16724,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The two or more races population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The two or more races population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The two or more races population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The two or more races population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The two or more races population using parcels-method",
+        "short_name": "The two or more races population parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -17291,31 +16745,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The population estimates under age 20. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The population estimates under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The population estimates under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Population under age 20",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The population under age 20 is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "pop_under_20_direct": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
         "long_description": "The population estimates under age 20. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The population estimates under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The population estimates under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Population under age 20 using direct-method",
+        "short_name": "Population under age 20 ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -17336,7 +16769,7 @@
         "long_description": "The population estimates under age 20. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The population estimates under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The population estimates under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Population under age 20 using parcels-method",
+        "short_name": "Population under age 20 parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -17354,31 +16787,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Veteran population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Veteran population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Veteran population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Veteran population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Veteran population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B21001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Veteran population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "pop_veteran_direct": {
-        "aggregation_method": "count",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Veteran population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Veteran population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Veteran population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Veteran population using direct-method",
+        "short_name": "The Veteran population ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -17396,10 +16808,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The Veteran population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Veteran population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Veteran population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The Veteran population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Veteran population using parcels-method",
+        "short_name": "The Veteran population parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -17417,31 +16829,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The White population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The White population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The White population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The White population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The White population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The White population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "pop_wht_alone_direct": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The White population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The White population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The White population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The White population using direct-method",
+        "short_name": "The White population ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -17459,10 +16850,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "The White population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The White population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The White population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "The White population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The White population using parcels-method",
+        "short_name": "The White population parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -19651,31 +19042,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "Total count of the population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "Total count of the population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Total count of the population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table S0101, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "Total count of the population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "total_pop_direct": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "Total count of the population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Total count of the population using direct-method",
+        "short_name": "Total count of the population ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -19693,10 +19063,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "Total count of the population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "Total count of the population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Total count of the population using parcels-method",
+        "short_name": "Total count of the population parcels",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -19714,31 +19084,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "Total count of the population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  . Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "Total count of the population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Total count of the population",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "Total count of the population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "total_race_direct": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "Total count of the population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Total count of the population using direct-method",
+        "short_name": "Total count of the population ",
         "sources": [
             {
                 "date_accessed": 2021,
@@ -19756,10 +19105,10 @@
         "category": "Demographics",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "Total count of the population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap.. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "Total count of the population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
         "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Total count of the population using parcels-method",
+        "short_name": "Total count of the population parcels",
         "sources": [
             {
                 "date_accessed": 2021,

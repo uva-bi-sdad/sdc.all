@@ -99,7 +99,8 @@ acs_data_va <- acs_data_va_wd %>%
   dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,total_pop,pop_male,pop_female,perc_male,perc_female) %>%
   gather(measure, value, -c(geoid, region_name, region_type, year)) %>%
   select(geoid,region_name,region_type,year,measure,value) %>%
-  mutate(measure=paste0('gender_',measure,'_'),
+  mutate(
+    #measure=paste0('gender_',measure),
          measure_type=case_when(
            grepl('perc',measure)==T ~ "percentage",
            grepl('pop',measure)==T ~ "count"),
@@ -116,7 +117,8 @@ acs_data_ncr <- acs_data_ncr_wd %>%
   dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,total_pop,pop_male,pop_female,perc_male,perc_female) %>%
   gather(measure, value, -c(geoid, region_name, region_type, year)) %>%
   select(geoid,region_name,region_type,year,measure,value) %>%
-  mutate(measure=paste0('gender_',measure,'_'),
+  mutate(
+    #measure=paste0('gender_',measure),
          measure_type=case_when(
            grepl('perc',measure)==T ~ "percentage",
            grepl('pop',measure)==T ~ "count"),
