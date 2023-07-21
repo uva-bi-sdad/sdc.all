@@ -1253,7 +1253,7 @@ housing,monthly_rent_1br,1 Bedroom Dwelling Fair Market Rent,2022,2022,,X,X,,X,X
 housing,monthly_rent_2br,2 Bedroom Dwelling Fair Market Rent,2022,2022,,X,X,,X,X,,,,X,,,,,X,,
 housing,monthly_rent_3br,3 Bedroom Dwelling Fair Market Rent,2022,2022,,X,X,,X,X,,,,X,,,,,X,,
 housing,monthly_rent_4br,4 Bedroom Dwelling Fair Market Rent,2022,2022,,X,X,,X,X,,,,X,,,,,X,,
-demographics,Population_weighted_density_index,Weighted Population Density Per Sq Mile,2015,2021,,,,,,,,,,,,,,,X,,
+demographics,population_density,Population Density,2015,2021,,,,,,,,,,X,X,,,,X,,
 demographics,pop_veteran_parcels,The Veteran population parcels,2009,2021,,,,,,,,,,X,,,,,X,,
 demographics,perc_veteran_parcels,The Veteran population percentage parcels,2009,2021,,,,,,,,,,X,,,,,X,,
 demographics,pop_veteran,The Veteran population ,2009,2021,,X,X,,X,X,,,,X,,,,,X,,

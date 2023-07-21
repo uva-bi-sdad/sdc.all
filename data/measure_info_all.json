@@ -7680,27 +7680,6 @@
         "unit": "",
         "variants": ""
     },
-    "Population_weighted_density_index": {
-        "aggregation_method": "other",
-        "category": "Demographics",
-        "data_type": "ratio",
-        "equity_category": "Status",
-        "long_description": "Weighted density to capture the number of people per square mile. The index is calculated by  dividing the sum of product of population estimate and the land area of each census tract by sum of total land area of all census tracts.Land area is obtained by getting the tracts using tidycensus package. ALAND column is the land area and it will be in square meters  can be converted  to square miles. Population estimate is obtained using ACS for multiple years from 2015 to 2021.",
-        "long_name": "Weighted Population Density Per Sq Mile",
-        "short_description": "Weighted density to capture the number of people per square mile",
-        "short_name": "Weighted Population Density Per Sq Mile",
-        "sources": [
-            {
-                "date_accessed": 2023,
-                "location": "5-Year estimates, table B01003, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The population weighted density per square mile is {value} in {region_name}.",
-        "unit": "individuals per mile"
-    },
     "Professional, Scientific, and Technical Services_Herfindalh_Hirschman_index": {
         "aggregation_method": "",
         "category": "Business climate",
@@ -16891,6 +16870,34 @@
         "type": "",
         "unit": "",
         "variants": ""
+    },
+    "population_density": {
+        "aggregation_method": "ratio",
+        "category": "Demographics",
+        "data_type": "decimal",
+        "equity_category": "Status",
+        "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas: \\[\\frac{population_{r}}{meters^{2}_{r}}1609.344^{2}\\] Where r is each region (e.g., census tract or county).",
+        "long_name": "Population Density: People Per Square Mile",
+        "short_description": "People per square mile.",
+        "short_name": "Population Density",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "5-Year estimates, table B01003, via the API",
+                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+                "name": "American Community Survey",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            },
+            {
+                "date_accessed": 2023,
+                "location": "FTP Archive: TIGER{year} > TRACT > tl_{year}_{fips}_tract.zip",
+                "location_url": "https://www2.census.gov/geo/tiger",
+                "name": "TIGER/Line Shapefiles",
+                "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+            }
+        ],
+        "statement": "There are {value} people per square mile in {region_name}.",
+        "unit": "individual per square mile"
     },
     "poverty_pct": {
         "aggregation_method": "",

@@ -35,10 +35,9 @@ data_reformat_sdad(
   list.files(datasets, "\\.csv", full.names = TRUE), "docs/data",
   metadata = entities, entity_info = NULL
 )
-info <- lapply(
-  list.files(".", "measure_info\\.json", recursive = TRUE, full.names = TRUE),
-  jsonlite::read_json
-)
+info_files <- list.files(".", "measure_info\\.json", recursive = TRUE, full.names = TRUE)
+info_files <- info_files[!grepl("/docs/", info_files, fixed = TRUE)]
+info <- lapply(info_files, jsonlite::read_json)
 agg_info <- list()
 for (m in info) {
   for (e in names(m)) {

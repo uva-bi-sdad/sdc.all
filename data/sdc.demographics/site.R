@@ -127,7 +127,7 @@ page_navbar(
 # use `input_` functions to add input elements that affect outputs
 page_menu(
   input_select("Starting Layer", c(
-    "county", "tract", "block_group", "civic_association", "supervisor_district",
+    "health_district", "county", "tract", "block_group", "civic_association", "supervisor_district",
     "planning_district", "human_services_region", "zip_code"
   ), 0, id = "shape_type"),
   page_section(
@@ -168,6 +168,7 @@ input_variable("shapes", list(
   "selected_county && shape_type == county" = "tract",
   "selected_tract" = "block_group"
 ), "shape_type", list(
+  health_district = "Health Districts",
   county = "Counties",
   tract = "Census Tracts",
   block_group = "Block Groups",
@@ -229,6 +230,13 @@ page_section(
     sizes = c(NA, 5),
     output_map(
       c(
+        list(list(
+          name = "health_district",
+          url = paste0(
+            "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/State%20Geographies/Health%20Districts/",
+            "2020/data/distribution/va_geo_vhd_2020_health_districts.geojson"
+          )
+        )),
         unlist(lapply(list(
           c("human_services_region", "human_services_regions", "VA/Local%20Geographies/Fairfax%20County/Human%20Services%20Regions/2022"),
           c("planning_district", "planning_districts", "VA/Local%20Geographies/Fairfax%20County/Planning%20Districts/2022"),

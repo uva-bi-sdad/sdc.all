@@ -1,70 +1,69 @@
+library(parallel)
 
-library(tigris)
-library(tidycensus)
-library(dplyr)
+# get health district associations
+districts <- read.csv(paste0(
+  "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/",
+  "VA/State%20Geographies/Health%20Districts/2020/data/distribution/va_ct_to_hd_crosswalk.csv"
+))
+county_districts <- structure(districts$hd_geoid, names = districts$ct_geoid)
 
-# initializing the years for which we need data
-years <- c(2015,2016,2017, 2018, 2019, 2020, 2021)
+# repeat the same process for each year
+cl <- makeCluster(detectCores() - 2)
+clusterExport(cl, "county_districts")
+data <- do.call(rbind, parLapply(cl, 2015:2021, function(year) {
+  retrieve <- function(geography, map) {
+    # get region information
+    map <- map(state = "VA", cb = FALSE, year = year)
+    map$ALAND[map$ALAND == 0] <- 1
 
-# store the results in the empty list
-results_list <- list()
-
-# we can just loop over years to get the particular year data and perform teh calculation
-for (i in 1:length(years)) {
-  year <- years[i]
-  
-  # get census tracts for VA in the given year, we will get the ALAND here which is in square meters
-  tracts_va <- tracts(state = "VA", cb = FALSE, year = year)
-  
-  # get population data for VA tracts in the given year, estimate contains the population
-  va_acs <- get_acs(geography = "tract", 
-                    variables = "B01003_001",
-                    year = year,
-                    survey = "acs5",
-                    state = "VA")
-  
-  # merge population data with VA tracts
-  merged_data <- left_join(va_acs, tracts_va, by = "GEOID")
-  merged_data <- left_join(merged_data, select(tracts_va, GEOID, ALAND), by = "GEOID")
-  # rename columns with .x (just for accessing and joining them for calculation)
-  merged_data <- rename(merged_data,
-                        NAME = NAME.x,
-                        ALAND = ALAND.x
-  )
-  # calculating population density 
-  merged_data_index <- merged_data %>%
-    group_by(GEOID) %>%
-    summarise(
-      weighted_population_total = sum(estimate * ALAND),
-      total_land_area = sum(ALAND),
-      sqme_sqmi = sum(ALAND) / 2589988.1103 # convert ALAND from square meters to square miles 
-    ) %>%
-    mutate(
-      population_density = weighted_population_total / (total_land_area * sqme_sqmi)
+    # get population
+    pop <- tidycensus::get_acs(
+      geography = geography,
+      variables = "B01003_001",
+      year = year,
+      survey = "acs5",
+      state = "VA"
     )
-  
-  # creating a new data frame according to  our format
-  newdf <- merged_data %>% 
-    select(GEOID, NAME) %>% 
-    left_join(merged_data_index %>% 
-                select(GEOID, population_density), 
-              by = "GEOID") %>%
-    mutate(year = year,
-           measure = "Population_weighted_density_index",
-           measure_type = "index",
-           region_type = "tract",
-           value = population_density,
-           region_name = NAME,
-           geoid = GEOID) %>%
-    select(geoid, measure,measure_type, region_name, region_type, value, year)
-  
-  # adding the new data frame to the results list
-  results_list[[i]] <- newdf
-}
+    pop$moe[is.na(pop$moe)] <- 0
+    pop$sqmiles <- structure(map$ALAND / 1609.344^2, names = map$GEOID)[pop$GEOID]
 
-# combining the results into a single data frame
-final_df <- do.call(rbind, results_list)
+    # calculating population density
+    computed <- with(pop, data.frame(
+      geoid = GEOID,
+      year = year,
+      measure = "population_density",
+      value = estimate / sqmiles
+    ))
+    computed$moe <- with(pop, (estimate + moe) / sqmiles) - computed$value
+    list(pop = pop, final = computed)
+  }
+  tracts <- retrieve("tract", tigris::tracts)
 
+  # retrieve / aggregate to other layers
+  do.call(rbind, list(
+    tracts$final,
+    retrieve("county", tigris::counties)$final,
+    {
+      districts <- tracts$pop
+      districts$geoid <- substring(districts$GEOID, 1, 5)
+      districts <- districts[districts$geoid %in% names(county_districts), ]
+      districts$geoid <- county_districts[districts$geoid]
+      do.call(rbind, lapply(unname(split(districts, districts$geoid)), function(e) {
+        id <- e$geoid[[1]]
+        value <- sum(e$estimate) / sum(e$sqmiles)
+        data.frame(
+          geoid = id,
+          year = year,
+          measure = "population_density",
+          value = value,
+          moe = sum(e$estimate + e$moe) / sum(e$sqmiles) - value
+        )
+      }))
+    }
+  ))
+}))
+stopCluster(cl)
 
-
-#write.csv(final_df, "~/PWD/va_cttr_2015_2021_population_density_index.csv", row.names = FALSE)
+vroom::vroom_write(
+  data, "Population Density/data/distribution/va_hdcttr_acs_2015_2021.csv.xz", ","
+)
