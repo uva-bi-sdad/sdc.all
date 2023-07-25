@@ -1,6 +1,7 @@
 {
     "{category}_{variant}": {
         "aggregation_method": "{variant}",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "{variant}",
@@ -20,7 +21,8 @@
         ],
         "statement": "{variant}",
         "type": "",
-        "unit": "business"
+        "unit": "business",
+        "variants": ""
     },
     "_references": {
         "bls": {
@@ -33,6 +35,7 @@
     },
     "minority_owned_entry_rate": {
         "aggregation_method": "percent",
+        "categories": "",
         "category": "Business climate",
         "citations": [
             "bls"
@@ -54,10 +57,12 @@
         ],
         "statement": "{value} of businesses in {region_name} are new.",
         "type": "",
-        "unit": "business"
+        "unit": "business",
+        "variants": ""
     },
     "non_minority_owned_entry_rate": {
         "aggregation_method": "percent",
+        "categories": "",
         "category": "Business climate",
         "citations": [
             "bls"
@@ -79,10 +84,12 @@
         ],
         "statement": "{value} of businesses in {region_name} are new.",
         "type": "",
-        "unit": "business"
+        "unit": "business",
+        "variants": ""
     },
     "minority_owned_exit_rate": {
         "aggregation_method": "percent",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "decimal",
@@ -102,10 +109,12 @@
         ],
         "statement": "{value} of businesses have left {region_name}.",
         "type": "",
-        "unit": "business"
+        "unit": "business",
+        "variants": ""
     },
     "non_minority_owned_exit_rate": {
         "aggregation_method": "percent",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "decimal",
@@ -125,10 +134,12 @@
         ],
         "statement": "{value} of businesses have left {region_name}.",
         "type": "",
-        "unit": "business"
+        "unit": "business",
+        "variants": ""
     },
     "minority_owned_number_businesses": {
         "aggregation_method": "count",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "integer",
@@ -148,10 +159,12 @@
         ],
         "statement": "There are {value} businesses in {region_name}.",
         "type": "",
-        "unit": "business"
+        "unit": "business",
+        "variants": ""
     },
     "non_minority_owned_number_businesses": {
         "aggregation_method": "count",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "integer",
@@ -171,10 +184,12 @@
         ],
         "statement": "There are {value} businesses in {region_name}.",
         "type": "",
-        "unit": "business"
+        "unit": "business",
+        "variants": ""
     },
     "minority_owned_new_businesses": {
         "aggregation_method": "count",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "integer",
@@ -194,10 +209,12 @@
         ],
         "statement": "There are {value} new businesses in {region_name}.",
         "type": "",
-        "unit": "business"
+        "unit": "business",
+        "variants": ""
     },
     "non_minority_owned_new_businesses": {
         "aggregation_method": "count",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "integer",
@@ -217,10 +234,12 @@
         ],
         "statement": "There are {value} new businesses in {region_name}.",
         "type": "",
-        "unit": "business"
+        "unit": "business",
+        "variants": ""
     },
     "minority_owned_exit_businesses": {
         "aggregation_method": "count",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "integer",
@@ -240,10 +259,12 @@
         ],
         "statement": "There are {value} new businesses in {region_name}.",
         "type": "",
-        "unit": "business"
+        "unit": "business",
+        "variants": ""
     },
     "non_minority_owned_exit_businesses": {
         "aggregation_method": "count",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "integer",
@@ -263,6 +284,7 @@
         ],
         "statement": "There are {value} new businesses in {region_name}.",
         "type": "",
-        "unit": "business"
+        "unit": "business",
+        "variants": ""
     }
 }

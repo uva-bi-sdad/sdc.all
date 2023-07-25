@@ -1,6 +1,7 @@
 {
     "Accommodation and Food Services_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Accommodation and Food Services_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -43,10 +46,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Accommodation and Food Services_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -66,10 +71,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -89,10 +96,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -112,10 +121,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -135,10 +146,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -158,10 +171,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -181,10 +196,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -204,10 +221,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Arts, Entertainment, and Recreation_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -227,10 +246,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Arts, Entertainment, and Recreation_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -250,10 +271,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Arts, Entertainment, and Recreation_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -273,10 +296,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Construction_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -296,10 +321,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Construction_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -319,10 +346,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Construction_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -342,10 +371,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Educational Services_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -365,10 +396,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Educational Services_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -388,10 +421,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Educational Services_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -411,10 +446,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Finance and Insurance_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -434,10 +471,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Finance and Insurance_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -457,10 +496,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Finance and Insurance_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -480,10 +521,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Health Care and Social Assistance_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -503,10 +546,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Health Care and Social Assistance_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -526,10 +571,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Health Care and Social Assistance_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -549,10 +596,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Information_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -572,10 +621,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Information_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -595,10 +646,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Information_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -618,10 +671,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Management of Companies and Enterprises_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -641,10 +696,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Management of Companies and Enterprises_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -664,10 +721,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Management of Companies and Enterprises_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -687,10 +746,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Manufacturing_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -710,10 +771,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Manufacturing_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -733,10 +796,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Manufacturing_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -756,10 +821,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -779,10 +846,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -802,10 +871,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -825,10 +896,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Nonclassifiable Establishments_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -848,10 +921,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Nonclassifiable Establishments_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -871,10 +946,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Nonclassifiable Establishments_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -894,10 +971,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Other Services (except Public Administration)_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -917,10 +996,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Other Services (except Public Administration)_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -940,10 +1021,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Other Services (except Public Administration)_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -963,10 +1046,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Professional, Scientific, and Technical Services_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -986,10 +1071,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Professional, Scientific, and Technical Services_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1009,10 +1096,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Professional, Scientific, and Technical Services_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1032,10 +1121,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Public Administration_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1055,10 +1146,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Public Administration_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1078,10 +1171,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Public Administration_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1101,10 +1196,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Real Estate and Rental and Leasing_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1124,10 +1221,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Real Estate and Rental and Leasing_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1147,10 +1246,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Real Estate and Rental and Leasing_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1170,10 +1271,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Retail Trade_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1193,10 +1296,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Retail Trade_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1216,10 +1321,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Retail Trade_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1239,10 +1346,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Transportation and Warehousing_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1262,10 +1371,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Transportation and Warehousing_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1285,10 +1396,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Transportation and Warehousing_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1308,10 +1421,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Utilities_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1331,10 +1446,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Utilities_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1354,10 +1471,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Utilities_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1377,10 +1496,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Wholesale Trade_new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1400,10 +1521,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Wholesale Trade_exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1423,10 +1546,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Wholesale Trade_number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1446,10 +1571,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Accommodation and Food Services_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1469,10 +1596,12 @@
         ],
         "statement": "The entry rate in Accommodation and Food Services in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Accommodation and Food Services_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1492,10 +1621,12 @@
         ],
         "statement": "The exit rate in Accommodation and Food Services in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1515,10 +1646,12 @@
         ],
         "statement": "The entry rate for Administrative and Support and Waste Management and Remediation Services in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Administrative and Support and Waste Management and Remediation Services_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1538,10 +1671,12 @@
         ],
         "statement": "The exit rate for Administrative and Support and Waste Management and Remediation Services in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1561,10 +1696,12 @@
         ],
         "statement": "The entry rate for Agriculture, Forestry, Fishing and Hunting in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Agriculture, Forestry, Fishing and Hunting_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1584,10 +1721,12 @@
         ],
         "statement": "The exit rate for Agriculture, Forestry, Fishing and Hunting in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Arts, Entertainment, and Recreation_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1607,10 +1746,12 @@
         ],
         "statement": "The entry rate for Arts, Entertainment, and Recreation in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Arts, Entertainment, and Recreation_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1630,10 +1771,12 @@
         ],
         "statement": "The exit rate for Arts, Entertainment, and Recreation in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Construction_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1653,10 +1796,12 @@
         ],
         "statement": "The entry rate for Construction in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Construction_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1676,10 +1821,12 @@
         ],
         "statement": "The exit rate for Construction in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Educational Services_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1699,10 +1846,12 @@
         ],
         "statement": "The entry rate for Educational Services in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Educational Services_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1722,10 +1871,12 @@
         ],
         "statement": "The exit rate for Educational Services in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Finance and Insurance_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1745,10 +1896,12 @@
         ],
         "statement": "The entry rate for Finance and Insurance in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Finance and Insurance_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1768,10 +1921,12 @@
         ],
         "statement": "The exit rate for Finance and Insurance in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Health Care and Social Assistance_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1791,10 +1946,12 @@
         ],
         "statement": "The entry rate for Health Care and Social Assistance in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Health Care and Social Assistance_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1814,10 +1971,12 @@
         ],
         "statement": "The exit rate for Health Care and Social Assistance in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Information_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1837,10 +1996,12 @@
         ],
         "statement": "The entry rate for Information in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Information_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1860,10 +2021,12 @@
         ],
         "statement": "The exit rate for Information in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Management of Companies and Enterprises_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1883,10 +2046,12 @@
         ],
         "statement": "The entry rate for Management of Companies and Enterprises in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Management of Companies and Enterprises_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1906,10 +2071,12 @@
         ],
         "statement": "The exit rate for Management of Companies and Enterprises in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Manufacturing_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1929,10 +2096,12 @@
         ],
         "statement": "The entry rate for Manufacturing in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Manufacturing_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1952,10 +2121,12 @@
         ],
         "statement": "The exit rate for Manufacturing in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1975,10 +2146,12 @@
         ],
         "statement": "The entry rate for Mining, Quarrying, and Oil and Gas Extraction in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Mining, Quarrying, and Oil and Gas Extraction_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -1998,10 +2171,12 @@
         ],
         "statement": "The exit rate for Mining, Quarrying, and Oil and Gas Extraction in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Nonclassifiable Establishments_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2021,10 +2196,12 @@
         ],
         "statement": "The entry rate for Nonclassifiable Establishments in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Nonclassifiable Establishments_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2044,10 +2221,12 @@
         ],
         "statement": "The exit rate for Nonclassifiable Establishments in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Other Services (except Public Administration)_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2067,10 +2246,12 @@
         ],
         "statement": "The entry rate for Other Services (except Public Administration) in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Other Services (except Public Administration)_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2090,10 +2271,12 @@
         ],
         "statement": "The exit rate for Other Services (except Public Administration) in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Professional, Scientific, and Technical Services_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2113,10 +2296,12 @@
         ],
         "statement": "The entry rate for Professional, Scientific, and Technical Services in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Professional, Scientific, and Technical Services_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2136,10 +2321,12 @@
         ],
         "statement": "The exit rate for Professional, Scientific, and Technical Services in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Public Administration_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2159,10 +2346,12 @@
         ],
         "statement": "The entry rate for Public Administration in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Public Administration_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2182,10 +2371,12 @@
         ],
         "statement": "The exit rate for Public Administration in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Real Estate and Rental and Leasing_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2205,10 +2396,12 @@
         ],
         "statement": "The entry rate for Real Estate and Rental and Leasing in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Real Estate and Rental and Leasing_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2228,10 +2421,12 @@
         ],
         "statement": "The exit rate for Real Estate and Rental and Leasing in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Retail Trade_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2251,10 +2446,12 @@
         ],
         "statement": "The entry rate for Retail Trade in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Retail Trade_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2274,10 +2471,12 @@
         ],
         "statement": "The exit rate for Retail Trade in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Transportation and Warehousing_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2297,10 +2496,12 @@
         ],
         "statement": "The entry rate for Transportation and Warehousing in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Transportation and Warehousing_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2320,10 +2521,12 @@
         ],
         "statement": "The exit rate for Transportation and Warehousing in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Utilities_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2343,10 +2546,12 @@
         ],
         "statement": "The entry rate for Utilities in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Utilities_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2366,10 +2571,12 @@
         ],
         "statement": "The exit rate for Utilities in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Wholesale Trade_entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2389,10 +2596,12 @@
         ],
         "statement": "The entry rate for Wholesale Trade in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "Wholesale Trade_exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -2412,6 +2621,7 @@
         ],
         "statement": "The exit rate for Wholesale Trade in {features.name} is {value}.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

@@ -1,0 +1,66 @@
+{
+  "{category.name}{variant.name}": {
+    "category": "Business climate",
+    "data_type": "{variant}",
+    "unit": "business",
+    "equity_category": "Status",
+    "aggregation_method": "{variant}",
+    "short_name": "{variant}",
+    "long_name": "{variant}",
+    "short_description": "{variant}",
+    "long_description": "{variant} Available for US businesses.",
+    "statement": "{variant}",
+    "sources": [
+      {
+        "name": "Mergent Intellect",
+        "date_accessed": 2023,
+        "url": "https://www.ftserussell.com/mergent-intellect"
+      }
+    ],
+    "categories": {
+      "blank": {}
+    },
+    "variants": {
+      "entry_rate": {
+        "default": "entry rate",
+        "data_type": "decimal",
+        "aggregation_method": "percent",
+        "short_description": "Businesses entry rate",
+        "long_description": "Percent of new businesses (a new business is a company newly created or has moved to the region): \\[entry_rate=\\frac{new_businesses}{all_businesses}\\]",
+        "statement": "{value} percent of businesses are new in {region_name}."
+      },
+      "exit_rate": {
+        "default": "exit rate",
+        "data_type": "decimal",
+        "aggregation_method": "percent",
+        "short_description": "Businesses exit rate",
+        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit_rate=\\frac{exited_businesses}{all_businesses}\\]",
+        "statement": "{value} percent of businesses closed in {region_name}."
+      },
+      "new_business": {
+        "default": "new businesses",
+        "data_type": "integer",
+        "aggregation_method": "count",
+        "short_description": "New businesses",
+        "long_description": "Count of all new businesses (a new business is a company newly created or has moved to the region).",
+        "statement": "{value} new businesses in {region_name}."
+      },
+      "exit_business": {
+        "default": "closed businesses",
+        "data_type": "integer",
+        "aggregation_method": "count",
+        "short_description": "Closed businesses",
+        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region).",
+        "statement": "{value} closed businesses in {region_name}."
+      },
+      "number_business": {
+        "default": "Total businesses",
+        "data_type": "integer",
+        "aggregation_method": "count",
+        "short_description": "Total businesses",
+        "long_description": "Count of all businesses.",
+        "statement": "{value} businesses in {region_name}."
+      }
+    }
+  }
+}

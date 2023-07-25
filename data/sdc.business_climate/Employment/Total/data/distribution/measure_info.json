@@ -1,6 +1,7 @@
 {
     "total_employment": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "job_creation_new": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -43,10 +46,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "job_creation_active": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -66,10 +71,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "business_create_job": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -89,10 +96,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "total_job_creation": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -112,10 +121,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_job_creation_new": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -135,10 +146,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_job_creation_active": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -158,10 +171,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "job_destruction_exit": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -181,10 +196,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "job_destruction_active": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -204,10 +221,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "business_destruction_job": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -227,10 +246,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "total_job_destruction": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -250,10 +271,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_job_destruction_exit": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -273,10 +296,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_job_destruction_active": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -296,6 +321,7 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

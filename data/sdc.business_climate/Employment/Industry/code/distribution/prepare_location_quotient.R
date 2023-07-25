@@ -36,9 +36,9 @@ location_quotient <- mi_fairfax_features %>%
          measure=paste0(naics_name,'_Location_quotient'),
          region_type = 'block group',
          measure_type = 'index',
-         MOE='',
+         moe='',
          census_year=if_else(year<2020,2010,2020)) %>%
-  select(geoid,region_type,year,measure,value,measure_type,MOE,census_year)
+  select(geoid,region_type,year,measure,value,measure_type,moe,census_year)
 
 
 # add geometry 
@@ -48,13 +48,13 @@ fairfax_bg <- rbind(fairfax_bg2010,fairfax_bg2020)
 
 # merge the data
 temp <- merge(location_quotient, fairfax_bg, by.x=c('geoid','census_year'), by.y=c('geoid','census_year')) %>%
-  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
+  select(geoid,region_name,region_type,year,measure,value,measure_type,moe)
 
 
 
 # save the data ---------------------------------------------------------------------------------------
 savepath = "Employment/Industry/data/distribution/"
-readr::write_csv(location_quotient, xzfile(paste0(savepath,"va059_bg_mi_",min(location_quotient$year),max(location_quotient$year),"_location_quotient_by_industry.csv.xz"), compression = 9))
+readr::write_csv(location_quotient, xzfile(paste0(savepath,"va059_bg_mi_",min(location_quotient$year),'_',max(location_quotient$year),"_location_quotient_by_industry.csv.xz"), compression = 9))
 
 
 
@@ -81,13 +81,13 @@ temp <- mi_ncr_features %>%
          value=round((emp_bg_ind_year/emp_bg_year)/(emp_ind_year/emp_year),2),
          measure=paste0(naics_name,'_Location_quotient'),
          measure_type = 'index',
-         MOE='') %>% ungroup() %>%
-  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
+         moe='') %>% ungroup() %>%
+  select(geoid,region_name,region_type,year,measure,value,measure_type,moe)
 
 
 # save the data
 savepath = "Employment/Industry/data/distribution/"
-readr::write_csv(temp, xzfile(paste0(savepath,"ncr_bg_mi_",min(temp$year),max(temp$year),"_location_quotient_by_industry.csv.xz"), compression = 9))
+readr::write_csv(temp, xzfile(paste0(savepath,"ncr_bg_mi_",min(temp$year),'_',max(temp$year),"_location_quotient_by_industry.csv.xz"), compression = 9))
 
 
 
@@ -114,10 +114,10 @@ temp <- mi_subva_features %>%
          value=round((emp_bg_ind_year/emp_bg_year)/(emp_ind_year/emp_year),2),
          measure=paste0(naics_name,'_Location_quotient'),
          measure_type = 'index',
-         MOE='') %>% ungroup() %>%
-  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
+         moe='') %>% ungroup() %>%
+  select(geoid,region_name,region_type,year,measure,value,measure_type,moe)
 
 
 # save the data
 savepath = "Employment/Industry/data/distribution/"
-readr::write_csv(temp, xzfile(paste0(savepath,"va_bg_mi_",min(temp$year),max(temp$year),"_location_quotient_by_industry.csv.xz"), compression = 9))
+readr::write_csv(temp, xzfile(paste0(savepath,"rva_bg_mi_",min(temp$year),'_',max(temp$year),"_location_quotient_by_industry.csv.xz"), compression = 9))

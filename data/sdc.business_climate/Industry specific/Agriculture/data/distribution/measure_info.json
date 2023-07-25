@@ -1,6 +1,7 @@
 {
     "total_cropland_acres": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "The total acreage for cropland to {features.name} is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "total_irrigatedCropland_acre": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -43,10 +46,12 @@
         ],
         "statement": "The total acreage for irrigated cropland to {features.name} is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "total_cropland_operations": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -66,10 +71,12 @@
         ],
         "statement": "The total number of operations with cropland to {features.name} is {value}.",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "total_animal_expense": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -89,10 +96,12 @@
         ],
         "statement": "The overall expenses towards animals to {features.name} is {value}.",
         "type": "dollar",
-        "unit": "dollar"
+        "unit": "dollar",
+        "variants": ""
     },
     "fruit_treeNut_total_sales": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -112,10 +121,12 @@
         ],
         "statement": "Total sales of fruit and tree nuts to {features.name} is {value}.",
         "type": "dollar",
-        "unit": "dollar"
+        "unit": "dollar",
+        "variants": ""
     },
     "total_animalProducts_sales": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -135,10 +146,12 @@
         ],
         "statement": "Total sales of animal products to {features.name} is {value}.",
         "type": "dollar",
-        "unit": "dollar"
+        "unit": "dollar",
+        "variants": ""
     },
     "total_commodity_sales": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -158,10 +171,12 @@
         ],
         "statement": "Total sales of commodities to {features.name} is {value}",
         "type": "dollar",
-        "unit": "dollar"
+        "unit": "dollar",
+        "variants": ""
     },
     "total_calves_sales": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -181,10 +196,12 @@
         ],
         "statement": "Total sales of calves to {features.name} is {value}.",
         "type": "dollar",
-        "unit": "dollar"
+        "unit": "dollar",
+        "variants": ""
     },
     "total_farmValue": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -204,10 +221,12 @@
         ],
         "statement": "Total asset value of agriculture to {features.name} is {value}.",
         "type": "dollar",
-        "unit": "dollar"
+        "unit": "dollar",
+        "variants": ""
     },
     "operation_farmValue": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
@@ -227,10 +246,12 @@
         ],
         "statement": "Total asset value per operation to {features.name} is {value}.",
         "type": "dollar",
-        "unit": "dollar"
+        "unit": "dollar",
+        "variants": ""
     },
     "total_acres": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -250,10 +271,12 @@
         ],
         "statement": "Total acres used for agriculture in {features.name} is {value}",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "total_operations": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -273,6 +296,7 @@
         ],
         "statement": "Total operations used for agriculture in {features.name} is {value}",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

@@ -37,8 +37,8 @@ profile <- mi_fairfax_features %>%
          measure_type = case_when(
            grepl('rate',measure)==T ~ "percentage",
            grepl('business',measure)==T ~ "count"),
-         MOE='') %>%
-  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
+         moe='') %>%
+  select(geoid,year,measure,value,measure_type,moe)
 
 
 # save the data ---------------------------------------------------------------------------------------

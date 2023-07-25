@@ -21,52 +21,53 @@ mi_fairfax_features <-  read_csv(paste0(uploadpath,"mi_fairfax_features_bg.csv.x
 
 
 # count the total number of business per block groups and year
-temp <- mi_fairfax_features %>%
+temp_bg <- mi_fairfax_features %>%
   group_by(geoid,region_name,region_type,year,naics_name) %>%
   summarize(measure='number_business',
             value=length(duns)) %>%
   mutate(measure=paste0(naics_name,'_',measure),
          measure_type='count',
-         MOE='') %>%
+         moe='') %>%
   ungroup() %>%
-  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
+  select(geoid,year,measure,value,measure_type,moe)
 
 
 # save the data ---------------------------------------------------------------------------------------
-readr::write_csv(temp, xzfile(paste0(savepath,"va059_bg_mi_",min(temp$year),max(temp$year),"_number_business_by_industry.csv.xz"), compression = 9))
+#readr::write_csv(temp, xzfile(paste0(savepath,"va059_bg_mi_",min(temp$year),max(temp$year),"_number_business_by_industry.csv.xz"), compression = 9))
 
 
 
 # aggregate the data at the tract level and save -----------
-temp1 <-  mi_fairfax_features %>%
+temp_tr <-  mi_fairfax_features %>%
   mutate(geoid=substr(geoid,1,11)) %>%
   group_by(geoid,year,naics_name) %>%
   summarize(measure='number_business',
             value=length(duns)) %>%
   mutate(measure=paste0(naics_name,'_',measure),
          measure_type='count',
-         MOE='') %>%
+         moe='') %>%
   ungroup() %>%
-  select(geoid,year,measure,value,measure_type,MOE)
+  select(geoid,year,measure,value,measure_type,moe)
 
 # save
-readr::write_csv(temp1, xzfile(paste0(savepath,"va059_tr_mi_",min(temp1$year),max(temp1$year),"_number_business_by_industry.csv.xz"), compression = 9))
+#readr::write_csv(temp1, xzfile(paste0(savepath,"va059_tr_mi_",min(temp1$year),max(temp1$year),"_number_business_by_industry.csv.xz"), compression = 9))
 
 
 # aggregate the data at the county level and save ------------------
-temp2 <-  mi_fairfax_features %>%
+temp_ct <-  mi_fairfax_features %>%
   mutate(geoid=substr(geoid,1,5)) %>%
   group_by(geoid,year,naics_name) %>%
   summarize(measure='number_business',
             value=length(duns)) %>%
   mutate(measure=paste0(naics_name,'_',measure),
          measure_type='count',
-         MOE='') %>%
+         moe='') %>%
   ungroup() %>%
-  select(geoid,year,measure,value,measure_type,MOE)
+  select(geoid,year,measure,value,measure_type,moe)
 
-# save
-readr::write_csv(temp2, xzfile(paste0(savepath,"va059_ct_mi_",min(temp2$year),max(temp2$year),"_number_business_by_industry.csv.xz"), compression = 9))
+# save all geo-levels
+temp <- rbind(temp_bg, temp_tr, temp_ct)
+readr::write_csv(temp, xzfile(paste0(savepath,"va059_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_number_business_by_industry.csv.xz"), compression = 9))
 
 
 
@@ -77,50 +78,51 @@ uploadpath = "Microdata/Mergent_intellect/data/working/"
 mi_ncr_features <-  read_csv(paste0(uploadpath,"mi_ncr_features_bg.csv.xz"))
 
 # count the total number of business per block groups and year
-temp <- mi_ncr_features %>%
+temp_bg <- mi_ncr_features %>%
   group_by(geoid,region_name,region_type,year,naics_name) %>%
   summarize(measure='number_business',
             value=length(duns)) %>%
   mutate(measure=paste0(naics_name,'_',measure),
          measure_type='count',
-         MOE='') %>%
+         moe='') %>%
   ungroup() %>%
-  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
+  select(geoid,year,measure,value,measure_type,moe)
 
 # save the data
-readr::write_csv(temp, xzfile(paste0(savepath,"ncr_bg_mi_",min(temp$year),max(temp$year),"_number_business_by_industry.csv.xz"), compression = 9))
+#readr::write_csv(temp, xzfile(paste0(savepath,"ncr_bg_mi_",min(temp$year),max(temp$year),"_number_business_by_industry.csv.xz"), compression = 9))
 
 
 # aggregate the data at the tract level and save -----------
-temp1 <-  mi_ncr_features %>%
+temp_tr <-  mi_ncr_features %>%
   mutate(geoid=substr(geoid,1,11)) %>%
   group_by(geoid,year,naics_name) %>%
   summarize(measure='number_business',
             value=length(duns)) %>%
   mutate(measure=paste0(naics_name,'_',measure),
          measure_type='count',
-         MOE='') %>%
+         moe='') %>%
   ungroup() %>%
-  select(geoid,year,measure,value,measure_type,MOE)
+  select(geoid,year,measure,value,measure_type,moe)
 
 # save
-readr::write_csv(temp1, xzfile(paste0(savepath,"ncr_tr_mi_",min(temp1$year),max(temp1$year),"_number_business_by_industry.csv.xz"), compression = 9))
+#readr::write_csv(temp1, xzfile(paste0(savepath,"ncr_tr_mi_",min(temp1$year),max(temp1$year),"_number_business_by_industry.csv.xz"), compression = 9))
 
 
 # aggregate the data at the county level and save ------------------
-temp2 <-  mi_ncr_features %>%
+temp_ct <-  mi_ncr_features %>%
   mutate(geoid=substr(geoid,1,5)) %>%
   group_by(geoid,year,naics_name) %>%
   summarize(measure='number_business',
             value=length(duns)) %>%
   mutate(measure=paste0(naics_name,'_',measure),
          measure_type='count',
-         MOE='') %>%
+         moe='') %>%
   ungroup() %>%
-  select(geoid,year,measure,value,measure_type,MOE)
+  select(geoid,year,measure,value,measure_type,moe)
 
-# save
-readr::write_csv(temp2, xzfile(paste0(savepath,"ncr_ct_mi_",min(temp2$year),max(temp2$year),"_number_business_by_industry.csv.xz"), compression = 9))
+# save all geo-levels
+temp <- rbind(temp_bg, temp_tr, temp_ct)
+readr::write_csv(temp, xzfile(paste0(savepath,"ncr_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_number_business_by_industry.csv.xz"), compression = 9))
 
 
 
@@ -133,49 +135,50 @@ uploadpath = "Microdata/Mergent_intellect/data/working/"
 mi_subva_features <-  read_csv(paste0(uploadpath,"mi_subva_features_bg.csv.xz"))
 
 # count the total number of business per block groups and year
-temp <- mi_subva_features %>%
+temp_bg <- mi_subva_features %>%
   group_by(geoid,region_name,region_type,year,naics_name) %>%
   summarize(measure='number_business',
             value=length(duns)) %>%
   mutate(measure=paste0(naics_name,'_',measure),
          measure_type='count',
-         MOE='') %>%
+         moe='') %>%
   ungroup() %>%
-  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
+  select(geoid,year,measure,value,measure_type,moe)
 
 # save the data
-readr::write_csv(temp, xzfile(paste0(savepath,"va_bg_mi_",min(temp$year),max(temp$year),"_number_business_by_industry.csv.xz"), compression = 9))
+#readr::write_csv(temp, xzfile(paste0(savepath,"va_bg_mi_",min(temp$year),max(temp$year),"_number_business_by_industry.csv.xz"), compression = 9))
 
 
 # aggregate the data at the tract level and save -----------
-temp1 <-  mi_subva_features %>%
+temp_tr <-  mi_subva_features %>%
   mutate(geoid=substr(geoid,1,11)) %>%
   group_by(geoid,year,naics_name) %>%
   summarize(measure='number_business',
             value=length(duns)) %>%
   mutate(measure=paste0(naics_name,'_',measure),
          measure_type='count',
-         MOE='') %>%
+         moe='') %>%
   ungroup() %>%
-  select(geoid,year,measure,value,measure_type,MOE)
+  select(geoid,year,measure,value,measure_type,moe)
 
 # save
-readr::write_csv(temp1, xzfile(paste0(savepath,"va_tr_mi_",min(temp1$year),max(temp1$year),"_number_business_by_industry.csv.xz"), compression = 9))
+#readr::write_csv(temp1, xzfile(paste0(savepath,"va_tr_mi_",min(temp1$year),max(temp1$year),"_number_business_by_industry.csv.xz"), compression = 9))
 
 
 # aggregate the data at the county level and save ------------------
-temp2 <-  mi_subva_features %>%
+temp_ct <-  mi_subva_features %>%
   mutate(geoid=substr(geoid,1,5)) %>%
   group_by(geoid,year,naics_name) %>%
   summarize(measure='number_business',
             value=length(duns)) %>%
   mutate(measure=paste0(naics_name,'_',measure),
          measure_type='count',
-         MOE='') %>%
+         moe='') %>%
   ungroup() %>%
-  select(geoid,year,measure,value,measure_type,MOE)
+  select(geoid,year,measure,value,measure_type,moe)
 
 # save
-readr::write_csv(temp2, xzfile(paste0(savepath,"va_ct_mi_",min(temp2$year),max(temp2$year),"_number_business_by_industry.csv.xz"), compression = 9))
+temp <- rbind(temp_bg, temp_tr, temp_ct)
+readr::write_csv(temp, xzfile(paste0(savepath,"rva_ct_mi_",min(temp$year),'_',max(temp$year),"_number_business_by_industry.csv.xz"), compression = 9))
 
 

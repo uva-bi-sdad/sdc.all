@@ -1,6 +1,7 @@
 {
     "entry_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -20,10 +21,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "new_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -43,10 +46,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "exit_rate": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -66,10 +71,12 @@
         ],
         "statement": "",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "exit_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -89,10 +96,12 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "number_business": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Business climate",
         "citations": "",
         "data_type": "numeric",
@@ -112,6 +121,7 @@
         ],
         "statement": "",
         "type": "count",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     }
 }

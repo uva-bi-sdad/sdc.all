@@ -43,7 +43,7 @@ industry_employment <- mi_fairfax_features %>%
 
 # save the data ---------------------------------------------------------------------------------------
 savepath = "Employment/Industry/data/distribution/"
-readr::write_csv(industry_employment, xzfile(paste0(savepath,"va059_ct_mi_",min(industry_employment$year),max(industry_employment$year),"_Herfindalh_Hirschman_index_by_industry.csv.xz"), compression = 9))
+readr::write_csv(industry_employment, xzfile(paste0(savepath,"va059_ct_mi_",min(industry_employment$year),'_',max(industry_employment$year),"_Herfindalh_Hirschman_index_by_industry.csv.xz"), compression = 9))
 
 
 
