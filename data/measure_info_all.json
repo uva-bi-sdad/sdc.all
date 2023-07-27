@@ -12323,6 +12323,33 @@
         "unit": "",
         "variants": ""
     },
+    "affordability_index": {
+        "aggregation_method": "",
+        "categories": "",
+        "category": "Housing",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Affordability",
+        "layer": "",
+        "long_description": "The Affordability index is developed to measure the proportion of income spent on housing and transportation.The index of affordability is calculated by combining housing and transportation costs in a neighborhood and dividing that number by income.We extracted the affordability index by using H+T index.H+T index have three different affordability index to account for different households like Regional Typical Household, Regional Moderate Household and National Typical Household",
+        "long_name": "Affordability index",
+        "measure_type": "",
+        "short_description": "Affordability index is developed to measure the proportion of income spent on housing and transportation",
+        "short_name": "Affordability index",
+        "sources": [
+            {
+                "date_accessed": "2023",
+                "location": "2015, 2019, and 2020 Datasets",
+                "location_url": "https://htaindex.cnt.org/download/",
+                "name": "Housing + Transportation Affordability Index, Center for Neighborhood Technology",
+                "url": "https://htaindex.cnt.org/"
+            }
+        ],
+        "statement": "The Affordability index in {region_name} is {value}.",
+        "type": "",
+        "unit": "percent",
+        "variants": ""
+    },
     "affordability_indicator": {
         "aggregation_method": "",
         "categories": "",
@@ -13410,6 +13437,33 @@
         "statement": "{value} of the population in {region_name} is employed.",
         "type": "percent",
         "unit": "individual",
+        "variants": ""
+    },
+    "employment_access_index": {
+        "aggregation_method": "weighted sum",
+        "categories": "",
+        "category": "Employment/Workforce Development",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Accessibility",
+        "layer": "",
+        "long_description": "The Employment access index measures the accessibility of jobs in a particular area. Poor job access can include barriers such as distance from residents and transportation availability. The index is obtained from the Housing + Transportation (H+T) Affordability Index provided by Center for Neighborhood technology. We downloaded and cleaned the dataset from their website for years 2015, 2020, and 2021. H+T calculated the index using a gravity model. The index is calculated by summing the total number of jobs divided by the square of the distance to those jobs. The index is based on jobs and distance decay function. We directly downloaded the data from their website",
+        "long_name": "Employment access index",
+        "measure_type": "",
+        "short_description": "Employment access index is the job accessibility at a location",
+        "short_name": "Employment access index",
+        "sources": [
+            {
+                "date_accessed": "2023",
+                "location": "2015, 2019, and 2020 Datasets",
+                "location_url": "https://htaindex.cnt.org/download/",
+                "name": "Housing + Transportation Affordability Index, Center for Neighborhood Technology",
+                "url": "https://htaindex.cnt.org/"
+            }
+        ],
+        "statement": "The Employment access index in {region_name} is {value}.",
+        "type": "",
+        "unit": "job",
         "variants": ""
     },
     "employment_access_indicator": {
@@ -14991,6 +15045,7 @@
     },
     "monthly_rent_0br": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -15010,10 +15065,12 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a zero bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollars"
+        "unit": "dollars",
+        "variants": ""
     },
     "monthly_rent_1br": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -15033,10 +15090,12 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a one bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollars"
+        "unit": "dollars",
+        "variants": ""
     },
     "monthly_rent_2br": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -15056,10 +15115,12 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a two bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollars"
+        "unit": "dollars",
+        "variants": ""
     },
     "monthly_rent_3br": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -15079,10 +15140,12 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a three bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollars"
+        "unit": "dollars",
+        "variants": ""
     },
     "monthly_rent_4br": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -15102,10 +15165,12 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a four bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollars"
+        "unit": "dollars",
+        "variants": ""
     },
     "morgage30": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "integer",
@@ -15126,7 +15191,8 @@
         ],
         "statement": "The number of owner-occupied households whose mortgage payments account for 30% or more of their household income in {features.name} is {value}.",
         "type": "count",
-        "unit": "households"
+        "unit": "households",
+        "variants": ""
     },
     "mrfei": {
         "aggregation_method": "",
@@ -15851,6 +15917,7 @@
     },
     "own_morgage": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "integer",
@@ -15871,7 +15938,8 @@
         ],
         "statement": "The number of owner-occupied households with a mortgage in {features.name} is {value}.",
         "type": "count",
-        "unit": "households"
+        "unit": "households",
+        "variants": ""
     },
     "ped_3sfca": {
         "aggregation_method": "",
@@ -15960,6 +16028,7 @@
     },
     "per_above30": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -15980,10 +16049,12 @@
         ],
         "statement": "The percentage of households whose monthly housing costs from mortgage payments or rent account for 30% or more of their household income in {features.name} is {value}",
         "type": "percent",
-        "unit": "households"
+        "unit": "households",
+        "variants": ""
     },
     "per_mor_above30": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -16004,10 +16075,12 @@
         ],
         "statement": "The percentage of owner-occupied households whose monthly housing costs from mortgage payments account for 30% or more of their household income in {features.name} is {value}",
         "type": "percent",
-        "unit": "households"
+        "unit": "households",
+        "variants": ""
     },
     "per_rent_above30": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -16028,7 +16101,8 @@
         ],
         "statement": "The percentage of renter-occupied households whose monthly housing costs from rent account for 30% or more of their household income in {features.name} is {value}",
         "type": "percent",
-        "unit": "households"
+        "unit": "households",
+        "variants": ""
     },
     "perc_AAPI": {
         "aggregation_method": "percent",
@@ -19004,6 +19078,7 @@
     },
     "rent30": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "integer",
@@ -19024,10 +19099,12 @@
         ],
         "statement": "The number of households whose gross rent accounts for 30% or more of their household income in {features.name} is {value}.",
         "type": "count",
-        "unit": "households"
+        "unit": "households",
+        "variants": ""
     },
     "renters": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "integer",
@@ -19048,7 +19125,8 @@
         ],
         "statement": "The number of renter-occupied households in {features.name} is {value}.",
         "type": "count",
-        "unit": "households"
+        "unit": "households",
+        "variants": ""
     },
     "schools_2year_all": {
         "aggregation_method": "ratio",

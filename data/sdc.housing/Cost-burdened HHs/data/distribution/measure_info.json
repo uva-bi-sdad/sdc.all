@@ -1,6 +1,7 @@
 {
     "morgage30": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "integer",
@@ -21,10 +22,12 @@
         ],
         "statement": "The number of owner-occupied households whose mortgage payments account for 30% or more of their household income in {features.name} is {value}.",
         "type": "count",
-        "unit": "households"
+        "unit": "households",
+        "variants": ""
     },
     "own_morgage": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "integer",
@@ -45,10 +48,12 @@
         ],
         "statement": "The number of owner-occupied households with a mortgage in {features.name} is {value}.",
         "type": "count",
-        "unit": "households"
+        "unit": "households",
+        "variants": ""
     },
     "per_above30": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -69,10 +74,12 @@
         ],
         "statement": "The percentage of households whose monthly housing costs from mortgage payments or rent account for 30% or more of their household income in {features.name} is {value}",
         "type": "percent",
-        "unit": "households"
+        "unit": "households",
+        "variants": ""
     },
     "per_mor_above30": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -93,10 +100,12 @@
         ],
         "statement": "The percentage of owner-occupied households whose monthly housing costs from mortgage payments account for 30% or more of their household income in {features.name} is {value}",
         "type": "percent",
-        "unit": "households"
+        "unit": "households",
+        "variants": ""
     },
     "per_rent_above30": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -117,10 +126,12 @@
         ],
         "statement": "The percentage of renter-occupied households whose monthly housing costs from rent account for 30% or more of their household income in {features.name} is {value}",
         "type": "percent",
-        "unit": "households"
+        "unit": "households",
+        "variants": ""
     },
     "rent30": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "integer",
@@ -141,10 +152,12 @@
         ],
         "statement": "The number of households whose gross rent accounts for 30% or more of their household income in {features.name} is {value}.",
         "type": "count",
-        "unit": "households"
+        "unit": "households",
+        "variants": ""
     },
     "renters": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "integer",
@@ -165,6 +178,7 @@
         ],
         "statement": "The number of renter-occupied households in {features.name} is {value}.",
         "type": "count",
-        "unit": "households"
+        "unit": "households",
+        "variants": ""
     }
 }

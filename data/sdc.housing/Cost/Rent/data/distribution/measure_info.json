@@ -1,6 +1,7 @@
 {
     "monthly_rent_0br": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -20,10 +21,12 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a zero bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollars"
+        "unit": "dollars",
+        "variants": ""
     },
     "monthly_rent_1br": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -43,10 +46,12 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a one bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollars"
+        "unit": "dollars",
+        "variants": ""
     },
     "monthly_rent_2br": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -66,10 +71,12 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a two bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollars"
+        "unit": "dollars",
+        "variants": ""
     },
     "monthly_rent_3br": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -89,10 +96,12 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a three bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollars"
+        "unit": "dollars",
+        "variants": ""
     },
     "monthly_rent_4br": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Housing",
         "citations": "",
         "data_type": "decimal",
@@ -112,6 +121,7 @@
         ],
         "statement": "The Fair Market Rent (FMR) for a four bedroom dwelling in {features.name} is {value}.",
         "type": "count",
-        "unit": "dollars"
+        "unit": "dollars",
+        "variants": ""
     }
 }

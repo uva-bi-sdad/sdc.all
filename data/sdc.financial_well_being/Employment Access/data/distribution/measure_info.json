@@ -1,0 +1,29 @@
+{
+    "employment_access_index": {
+        "aggregation_method": "weighted sum",
+        "categories": "",
+        "category": "Employment/Workforce Development",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Accessibility",
+        "layer": "",
+        "long_description": "The Employment access index measures the accessibility of jobs in a particular area. Poor job access can include barriers such as distance from residents and transportation availability. The index is obtained from the Housing + Transportation (H+T) Affordability Index provided by Center for Neighborhood technology. We downloaded and cleaned the dataset from their website for years 2015, 2020, and 2021. H+T calculated the index using a gravity model. The index is calculated by summing the total number of jobs divided by the square of the distance to those jobs. The index is based on jobs and distance decay function. We directly downloaded the data from their website",
+        "long_name": "Employment access index",
+        "measure_type": "",
+        "short_description": "Employment access index is the job accessibility at a location",
+        "short_name": "Employment access index",
+        "sources": [
+            {
+                "name": "Housing + Transportation Affordability Index, Center for Neighborhood Technology",
+                "url": "https://htaindex.cnt.org/",
+                "location": "2015, 2019, and 2020 Datasets",
+                "location_url": "https://htaindex.cnt.org/download/",
+                "date_accessed": "2023"
+            }
+        ],
+        "statement": "The Employment access index in {region_name} is {value}.",
+        "type": "",
+        "unit": "job",
+        "variants": ""
+    }
+}
