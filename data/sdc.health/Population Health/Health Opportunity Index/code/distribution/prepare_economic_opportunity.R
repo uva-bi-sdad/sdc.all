@@ -55,3 +55,5 @@ econ_sel  <- rbindlist(list(econ_2017_sel, econ_2022_sel))
 
 readr::write_csv(econ_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_2022_economic_opportunity_profile.csv.xz", compression = 9))
 
+# 2022 only
+readr::write_csv(econ_2022_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2022_economic_opportunity_profile.csv.xz", compression = 9))

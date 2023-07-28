@@ -308,10 +308,10 @@
         "equity_category": "",
         "layer": "",
         "long_description": "A measure of the disparate access to health services within a community. It includes the access to care indicator and the segregation indicator.",
-        "long_name": "Wellness disparity profile",
+        "long_name": "Social Impact Profile",
         "measure_type": "index",
         "short_description": "A measure of the disparate access to health services within a community.",
-        "short_name": "Wellness disparity profile",
+        "short_name": "Social Impact Profile",
         "sources": [
             {
                 "name": "Virginia Department of Health",
@@ -319,7 +319,7 @@
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "statement": "The wellness disparity profile in {features.name} is {value}.",
+        "statement": "The Social Impact Profile in {features.name} is {value}.",
         "type": "index",
         "unit": "",
         "variants": ""

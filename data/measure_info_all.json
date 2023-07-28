@@ -13439,33 +13439,6 @@
         "unit": "individual",
         "variants": ""
     },
-    "employment_access_index": {
-        "aggregation_method": "weighted sum",
-        "categories": "",
-        "category": "Employment/Workforce Development",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Accessibility",
-        "layer": "",
-        "long_description": "The Employment access index measures the accessibility of jobs in a particular area. Poor job access can include barriers such as distance from residents and transportation availability. The index is obtained from the Housing + Transportation (H+T) Affordability Index provided by Center for Neighborhood technology. We downloaded and cleaned the dataset from their website for years 2015, 2020, and 2021. H+T calculated the index using a gravity model. The index is calculated by summing the total number of jobs divided by the square of the distance to those jobs. The index is based on jobs and distance decay function. We directly downloaded the data from their website",
-        "long_name": "Employment access index",
-        "measure_type": "",
-        "short_description": "Employment access index is the job accessibility at a location",
-        "short_name": "Employment access index",
-        "sources": [
-            {
-                "date_accessed": "2023",
-                "location": "2015, 2019, and 2020 Datasets",
-                "location_url": "https://htaindex.cnt.org/download/",
-                "name": "Housing + Transportation Affordability Index, Center for Neighborhood Technology",
-                "url": "https://htaindex.cnt.org/"
-            }
-        ],
-        "statement": "The Employment access index in {region_name} is {value}.",
-        "type": "",
-        "unit": "job",
-        "variants": ""
-    },
     "employment_access_indicator": {
         "aggregation_method": "",
         "categories": "",
@@ -13489,6 +13462,33 @@
         "statement": "The employment accessibility indicator in {features.name} is {value}.",
         "type": "index",
         "unit": "",
+        "variants": ""
+    },
+    "employment_access_sqmi": {
+        "aggregation_method": "weighted sum",
+        "categories": "",
+        "category": "Employment/Workforce Development",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Accessibility",
+        "layer": "",
+        "long_description": "Employment access measures the accessibility of jobs in a particular area. Poor job access can include barriers such as distance from residents and transportation availability. The index is obtained from the Housing + Transportation (H+T) Affordability Index provided by Center for Neighborhood technology. We downloaded and cleaned the dataset from their website for years 2015, 2020, and 2021. H+T calculated the index using a gravity model. The index is calculated by summing the total number of jobs divided by the square of the distance to those jobs. The index is based on jobs and distance decay function. We directly downloaded the data from their website",
+        "long_name": "Employment Access - Jobs per Sq Mi",
+        "measure_type": "",
+        "short_description": "Employment access is the job accessibility at a location",
+        "short_name": "Employment Access - Jobs per Sq Mi",
+        "sources": [
+            {
+                "date_accessed": "2023",
+                "location": "2015, 2019, and 2020 Datasets",
+                "location_url": "https://htaindex.cnt.org/download/",
+                "name": "Housing + Transportation Affordability Index, Center for Neighborhood Technology",
+                "url": "https://htaindex.cnt.org/"
+            }
+        ],
+        "statement": "There are {value} jobs per square mile in {region_name}.",
+        "type": "",
+        "unit": "job",
         "variants": ""
     },
     "ems_3sfca": {
@@ -21516,10 +21516,10 @@
         "equity_category": "",
         "layer": "",
         "long_description": "A measure of the disparate access to health services within a community. It includes the access to care indicator and the segregation indicator.",
-        "long_name": "Wellness disparity profile",
+        "long_name": "Social Impact Profile",
         "measure_type": "index",
         "short_description": "A measure of the disparate access to health services within a community.",
-        "short_name": "Wellness disparity profile",
+        "short_name": "Social Impact Profile",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -21527,7 +21527,7 @@
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
-        "statement": "The wellness disparity profile in {features.name} is {value}.",
+        "statement": "The Social Impact Profile in {features.name} is {value}.",
         "type": "index",
         "unit": "",
         "variants": ""

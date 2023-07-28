@@ -1,5 +1,6 @@
 library(readxl)
 library(data.table)
+library(fabricatr)
 
 hoi_2017 <- setDT(read_excel("Population Health/Health Opportunity Index/data/original/hoi.xlsx", sheet = 1))
 hoi_2022 <- setDT(read_excel("Population Health/Health Opportunity Index/data/original/hoi_indexes_quintile_2022.xlsx", sheet = 1))
@@ -128,7 +129,10 @@ hoi_2022_sel <- unique(hoi_2022_sel)
 hoi <- rbind(hoi_2017_sel, hoi_2022_sel)
 
 # write to working
-write_csv(hoi, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_2022_health_opportunity_profile.csv.xz", compression = 9))
+readr::write_csv(hoi, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_2022_health_opportunity_profile.csv.xz", compression = 9))
+
+# 2022 only
+readr::write_csv(hoi_2022_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2022_health_opportunity_profile.csv.xz", compression = 9))
 
 
 
