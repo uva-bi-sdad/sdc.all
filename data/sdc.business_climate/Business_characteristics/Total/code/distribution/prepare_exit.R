@@ -26,10 +26,11 @@ temp_bg <- mi_fairfax_features %>%
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,region_name,region_type,year,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
-  mutate(measure_type = case_when(
-    grepl('exit_rate',measure)==T ~ "percentage",
-    grepl('exit_business',measure)==T ~ "count"),
-    moe='') %>%
+  mutate(geoid=as.character(geoid),
+         measure_type = case_when(
+          grepl('exit_rate',measure)==T ~ "percentage",
+          grepl('exit_business',measure)==T ~ "count"),
+        moe='') %>%
   ungroup() %>%
   select(geoid,year,measure,value,measure_type,moe)
 
@@ -96,7 +97,8 @@ temp_bg <- mi_ncr_features %>%
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,region_name,region_type,year,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
-  mutate(measure_type = case_when(
+  mutate(geoid=as.character(geoid),
+         measure_type = case_when(
            grepl('exit_rate',measure)==T ~ "percentage",
            grepl('exit_business',measure)==T ~ "count"),
          moe='') %>%
@@ -168,7 +170,8 @@ temp_bg <- mi_subva_features %>%
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,region_name,region_type,year,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
-  mutate(measure_type = case_when(
+  mutate(geoid=as.character(geoid),
+         measure_type = case_when(
     grepl('exit_rate',measure)==T ~ "percentage",
     grepl('exit_business',measure)==T ~ "count"),
     moe='') %>%

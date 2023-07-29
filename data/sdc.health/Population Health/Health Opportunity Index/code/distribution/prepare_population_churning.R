@@ -3,6 +3,7 @@
 # It measure the rate at which people both move into a community and move out of a community.
 # https://apps.vdh.virginia.gov/omhhe/hoi/community-environmental-profile
 
+
 # packages
 library(readxl)
 library(dplyr)
@@ -12,13 +13,13 @@ library(reshape2)
 
 # data from HOI website
 orig_df <- read_excel("Population Health/Health Opportunity Index/data/original/pop_churn.xlsx")
-df_tracts <- orig_df[,c("County Name", "LHD Name", "STFIPS (CountyHOI)", 
-                        "Ctfips", "Indicator Selector")] 
+df_tracts <- orig_df[,c("County Name", "LHD Name", "STFIPS (CountyHOI)",
+                        "Ctfips", "Indicator Selector")]
 df_tracts <- df_tracts %>% filter(is.na(`Indicator Selector`) == FALSE)
 # assign quintiles
 df_tracts <- df_tracts %>% mutate(
   quintiles = case_when(
-    `Indicator Selector` == "Very Low" ~ 1, 
+    `Indicator Selector` == "Very Low" ~ 1,
     `Indicator Selector` == "Low" ~ 2,
     `Indicator Selector` == "Average" ~ 3,
     `Indicator Selector` == "High" ~ 4,
@@ -32,7 +33,7 @@ df_tracts_nodups <- df_tracts %>% distinct()
 #df_tracts_unq <- df_tracts_nodups %>% distinct(Ctfips, .keep_all = TRUE) # it is unique
 
 # rename measures
-out_df <- df_tracts_nodups %>% 
+out_df <- df_tracts_nodups %>%
   rename("geoid"= "Ctfips",
         "pop_churning_indicator" = "quintiles")
 out_df <- out_df[,c("geoid", "pop_churning_indicator")]
@@ -53,9 +54,9 @@ out_long <- out_long[, c("geoid", "year", "measure", "value", "moe")]
 
 # bedford city tract stil in VDH data:
 # bedford city (51515050100) became Bedford County tract (51019050100)
-# updating tract id for bedford city  
+# updating tract id for bedford city
 
 out_long[out_long$geoid == "51515050100", "geoid"] <- "51019050100"
 
-# save the dataset 
+# save the dataset
 write_csv(out_long, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_pop_churning_index.csv.xz", compression = 9))

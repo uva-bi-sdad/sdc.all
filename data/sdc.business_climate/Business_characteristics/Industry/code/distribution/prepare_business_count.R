@@ -25,7 +25,8 @@ temp_bg <- mi_fairfax_features %>%
   group_by(geoid,region_name,region_type,year,naics_name) %>%
   summarize(measure='number_business',
             value=length(duns)) %>%
-  mutate(measure=paste0(naics_name,'_',measure),
+  mutate(geoid=as.character(geoid),
+         measure=paste0(naics_name,'_',measure),
          measure_type='count',
          moe='') %>%
   ungroup() %>%
@@ -66,7 +67,8 @@ temp_ct <-  mi_fairfax_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save all geo-levels
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"va059_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_number_business_by_industry.csv.xz"), compression = 9))
 
 
@@ -82,7 +84,8 @@ temp_bg <- mi_ncr_features %>%
   group_by(geoid,region_name,region_type,year,naics_name) %>%
   summarize(measure='number_business',
             value=length(duns)) %>%
-  mutate(measure=paste0(naics_name,'_',measure),
+  mutate(geoid=as.character(geoid),
+         measure=paste0(naics_name,'_',measure),
          measure_type='count',
          moe='') %>%
   ungroup() %>%
@@ -121,7 +124,8 @@ temp_ct <-  mi_ncr_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save all geo-levels
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"ncr_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_number_business_by_industry.csv.xz"), compression = 9))
 
 
@@ -139,7 +143,8 @@ temp_bg <- mi_subva_features %>%
   group_by(geoid,region_name,region_type,year,naics_name) %>%
   summarize(measure='number_business',
             value=length(duns)) %>%
-  mutate(measure=paste0(naics_name,'_',measure),
+  mutate(geoid=as.character(geoid),
+         measure=paste0(naics_name,'_',measure),
          measure_type='count',
          moe='') %>%
   ungroup() %>%
@@ -178,7 +183,8 @@ temp_ct <-  mi_subva_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"rva_ct_mi_",min(temp$year),'_',max(temp$year),"_number_business_by_industry.csv.xz"), compression = 9))
 
 

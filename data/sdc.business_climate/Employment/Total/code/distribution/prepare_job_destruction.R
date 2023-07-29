@@ -36,7 +36,8 @@ temp_bg <- mi_fairfax_features %>%
             perc_job_destruction_new=100*job_destruction_exit/total_job_destruction,
             perc_job_destruction_active=100*job_destruction_active/total_job_destruction) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
-  mutate(measure_type = case_when(
+  mutate(geoid=as.character(geoid),
+         measure_type = case_when(
     grepl('perc',measure)==T ~ "percentage",
     grepl('job',measure)==T ~ "count"),
     moe='') %>%
@@ -102,7 +103,8 @@ temp_ct <-  mi_fairfax_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"va059_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_jobs_destruction.csv.xz"), compression = 9))
 
 
@@ -131,7 +133,8 @@ temp_bg <- mi_ncr_features %>%
             perc_job_destruction_new=100*job_destruction_exit/total_job_destruction,
             perc_job_destruction_active=100*job_destruction_active/total_job_destruction) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
-  mutate(measure_type = case_when(
+  mutate(geoid=as.character(geoid),
+         measure_type = case_when(
            grepl('perc',measure)==T ~ "percentage",
            grepl('job',measure)==T ~ "count"),
          moe='') %>%
@@ -197,7 +200,8 @@ temp_ct <-  mi_ncr_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"ncr_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_jobs_destruction.csv.xz"), compression = 9))
 
 
@@ -227,7 +231,8 @@ temp_bg <- mi_subva_features %>%
             perc_job_destruction_new=100*job_destruction_exit/total_job_destruction,
             perc_job_destruction_active=100*job_destruction_active/total_job_destruction) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
-  mutate(measure_type = case_when(
+  mutate(geoid=as.character(geoid),
+         measure_type = case_when(
     grepl('perc',measure)==T ~ "percentage",
     grepl('job',measure)==T ~ "count"),
     moe='') %>%
@@ -293,6 +298,7 @@ temp_ct <-  mi_subva_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"rva_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_jobs_destruction.csv.xz"), compression = 9))
 

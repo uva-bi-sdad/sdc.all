@@ -38,17 +38,18 @@ location_quotient <- mi_fairfax_features %>%
          measure_type = 'index',
          moe='',
          census_year=if_else(year<2020,2010,2020)) %>%
-  select(geoid,region_type,year,measure,value,measure_type,moe,census_year)
+  select(geoid,region_type,year,measure,value,measure_type,moe,census_year) %>%
+  filter(!is.na(value))
 
 
 # add geometry 
-fairfax_bg2010 <- block_groups("VA", "059", 2010) %>% select(geoid=GEOID,region_name=NAMELSAD) %>% st_drop_geometry() %>% mutate(census_year=2010)
-fairfax_bg2020 <- block_groups("VA", "059", 2020) %>% select(geoid=GEOID,region_name=NAMELSAD) %>% st_drop_geometry() %>% mutate(census_year=2020)
-fairfax_bg <- rbind(fairfax_bg2010,fairfax_bg2020)
+#fairfax_bg2010 <- block_groups("VA", "059", 2010) %>% select(geoid=GEOID,region_name=NAMELSAD) %>% st_drop_geometry() %>% mutate(census_year=2010)
+#fairfax_bg2020 <- block_groups("VA", "059", 2020) %>% select(geoid=GEOID,region_name=NAMELSAD) %>% st_drop_geometry() %>% mutate(census_year=2020)
+#fairfax_bg <- rbind(fairfax_bg2010,fairfax_bg2020)
 
 # merge the data
-temp <- merge(location_quotient, fairfax_bg, by.x=c('geoid','census_year'), by.y=c('geoid','census_year')) %>%
-  select(geoid,region_name,region_type,year,measure,value,measure_type,moe)
+#temp <- merge(location_quotient, fairfax_bg, by.x=c('geoid','census_year'), by.y=c('geoid','census_year')) %>%
+#  select(geoid,region_name,region_type,year,measure,value,measure_type,moe)
 
 
 
@@ -82,7 +83,8 @@ temp <- mi_ncr_features %>%
          measure=paste0(naics_name,'_Location_quotient'),
          measure_type = 'index',
          moe='') %>% ungroup() %>%
-  select(geoid,region_name,region_type,year,measure,value,measure_type,moe)
+  select(geoid,region_name,region_type,year,measure,value,measure_type,moe) %>%
+  filter(!is.na(value))
 
 
 # save the data
@@ -115,7 +117,8 @@ temp <- mi_subva_features %>%
          measure=paste0(naics_name,'_Location_quotient'),
          measure_type = 'index',
          moe='') %>% ungroup() %>%
-  select(geoid,region_name,region_type,year,measure,value,measure_type,moe)
+  select(geoid,region_name,region_type,year,measure,value,measure_type,moe) %>%
+  filter(!is.na(value))
 
 
 # save the data

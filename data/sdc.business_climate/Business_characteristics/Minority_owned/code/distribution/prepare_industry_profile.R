@@ -32,18 +32,19 @@ profile <- mi_fairfax_features %>%
   pivot_longer(!c('year','naics_name','type'), names_to='measure', values_to='value') %>%
   mutate(region_type='county',
          region_name = 'Fairfax county',
-         geoid=51059,
+         geoid='51059',
          measure=paste0(type,'_',naics_name,'_',measure),
          measure_type = case_when(
            grepl('rate',measure)==T ~ "percentage",
            grepl('business',measure)==T ~ "count"),
          moe='') %>%
-  select(geoid,year,measure,value,measure_type,moe)
+  select(geoid,year,measure,value,measure_type,moe) %>%
+  filter(!is.na(value))
 
 
 # save the data ---------------------------------------------------------------------------------------
 savepath = "Business_characteristics/Minority_owned/data/distribution/"
-readr::write_csv(profile, xzfile(paste0(savepath,"va059_ct_mi_",min(profile$year),max(profile$year),"_minority_industry_profile.csv.xz"), compression = 9))
+readr::write_csv(profile, xzfile(paste0(savepath,"va059_ct_mi_",min(profile$year),'_',max(profile$year),"_minority_industry_profile.csv.xz"), compression = 9))
 
 
 

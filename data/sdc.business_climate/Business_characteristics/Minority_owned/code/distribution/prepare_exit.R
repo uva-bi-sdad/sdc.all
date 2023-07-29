@@ -29,7 +29,8 @@ temp_bg <- mi_fairfax_features %>%
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,region_name,region_type,year,type,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','region_name','region_type','year','type'), names_to='measure', values_to='value') %>%
-  mutate(measure=paste0(type,'_',measure),
+  mutate(geoid=as.character(geoid),
+         measure=paste0(type,'_',measure),
          measure_type = case_when(
            grepl('exit_rate',measure)==T ~ "percentage",
            grepl('exit_business',measure)==T ~ "count"),
@@ -83,7 +84,8 @@ temp_ct <-  mi_fairfax_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"va059_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_exit_by_minority.csv.xz"), compression = 9))
 
 
@@ -105,7 +107,8 @@ temp_bg <- mi_ncr_features %>%
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,region_name,region_type,year,type,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','region_name','region_type','year','type'), names_to='measure', values_to='value') %>%
-  mutate(measure=paste0(type,'_',measure),
+  mutate(geoid=as.character(geoid),
+         measure=paste0(type,'_',measure),
          measure_type = case_when(
            grepl('exit_rate',measure)==T ~ "percentage",
            grepl('exit_business',measure)==T ~ "count"),
@@ -159,7 +162,8 @@ temp_ct <-  mi_ncr_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"ncr_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_exit_by_minority.csv.xz"), compression = 9))
 
 
@@ -183,7 +187,8 @@ temp_bg <- mi_subva_features %>%
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,region_name,region_type,year,type,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','region_name','region_type','year','type'), names_to='measure', values_to='value') %>%
-  mutate(measure=paste0(type,'_',measure),
+  mutate(geoid=as.character(geoid),
+         measure=paste0(type,'_',measure),
          measure_type = case_when(
            grepl('exit_rate',measure)==T ~ "percentage",
            grepl('exit_business',measure)==T ~ "count"),
@@ -238,6 +243,7 @@ temp_ct <-  mi_subva_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"rva_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_exit_by_minority.csv.xz"), compression = 9))
 

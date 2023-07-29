@@ -28,7 +28,8 @@ temp_bg <- mi_fairfax_features %>%
             entry_rate=100*new_business/total_business) %>%
   select(geoid,region_name,region_type,year,new_business,entry_rate) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
-  mutate(measure_type = case_when(
+  mutate(geoid=as.character(geoid),
+         measure_type = case_when(
     grepl('entry_rate',measure)==T ~ "percentage",
     grepl('new_business',measure)==T ~ "count"),
     moe='') %>%
@@ -77,7 +78,8 @@ temp_ct <-  mi_fairfax_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"va059_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_entry.csv.xz"), compression = 9))
 
 
@@ -99,7 +101,8 @@ temp_bg <- mi_ncr_features %>%
             entry_rate=100*new_business/total_business) %>%
   select(geoid,region_name,region_type,year,new_business,entry_rate) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
-  mutate(measure_type = case_when(
+  mutate(geoid=as.character(geoid),
+         measure_type = case_when(
            grepl('entry_rate',measure)==T ~ "percentage",
            grepl('new_business',measure)==T ~ "count"),
          moe='') %>%
@@ -149,7 +152,8 @@ temp_ct <-  mi_ncr_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"ncr_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_entry.csv.xz"), compression = 9))
 
 
@@ -171,10 +175,11 @@ temp <- mi_subva_features %>%
             entry_rate=100*new_business/total_business) %>%
   select(geoid,region_name,region_type,year,new_business,entry_rate) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
-  mutate(measure_type = case_when(
-    grepl('entry_rate',measure)==T ~ "percentage",
-    grepl('new_business',measure)==T ~ "count"),
-    moe='') %>%
+  mutate(geoid=as.character(geoid),
+         measure_type = case_when(
+          grepl('entry_rate',measure)==T ~ "percentage",
+          grepl('new_business',measure)==T ~ "count"),
+        moe='') %>%
   ungroup() %>%
   select(geoid,year,measure,value,measure_type,moe)
 
@@ -221,5 +226,6 @@ temp_ct <-  mi_subva_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"rva_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_entry.csv.xz"), compression = 9))

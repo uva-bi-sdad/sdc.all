@@ -25,7 +25,8 @@ temp_bg <- mi_fairfax_features %>%
   summarize(type=if_else(minority==1,'minority_owned','non_minority_owned'),
             measure=paste0(type,'_total_employment'),
             value=sum(employment, na.rm=T)) %>%
-  mutate(measure_type='count',
+  mutate(geoid=as.character(geoid),
+         measure_type='count',
          moe='') %>%
   ungroup() %>%
   select(geoid,year,measure,value,measure_type,moe)
@@ -66,7 +67,8 @@ temp_ct <-  mi_fairfax_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"va059_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_total_employment_by_minority.csv.xz"), compression = 9))
 
 
@@ -84,7 +86,8 @@ temp_bg <- mi_ncr_features %>%
   summarize(type=if_else(minority==1,'minority_owned','non_minority_owned'),
             measure=paste0(type,'_total_employment'),
             value=sum(employment, na.rm=T)) %>%
-  mutate(measure_type='count',
+  mutate(geoid=as.character(geoid),
+         measure_type='count',
          moe='') %>%
   ungroup() %>%
   select(geoid,year,measure,value,measure_type,moe)
@@ -124,7 +127,8 @@ temp_ct <-  mi_ncr_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"ncr_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_total_employment_by_minority.csv.xz"), compression = 9))
 
 
@@ -143,7 +147,8 @@ temp_bg <- mi_subva_features %>%
   summarize(type=if_else(minority==1,'minority_owned','non_minority_owned'),
             measure=paste0(type,'_total_employment'),
             value=sum(employment, na.rm=T)) %>%
-  mutate(measure_type='count',
+  mutate(geoid=as.character(geoid),
+         measure_type='count',
          moe='') %>%
   ungroup() %>%
   select(geoid,year,measure,value,measure_type,moe)
@@ -183,5 +188,6 @@ temp_ct <-  mi_subva_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"rva_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_total_employment_by_minority.csv.xz"), compression = 9))

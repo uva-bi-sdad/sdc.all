@@ -31,14 +31,15 @@ industry_employment <- mi_fairfax_features %>%
   select(year,naics_name,measure,value) %>%
   ungroup() %>%
   mutate(measure = paste0(naics_name,'_',measure),
-         geoid = 51059,
+         geoid = '51059',
          region_type = 'county',
          region_name = 'Fairfax county',
          measure_type = case_when(
            grepl('emp_industry',measure)==T ~ "count",
            grepl('Herfindalh_Hirschman_index',measure)==T ~ "index"),
          MOE='') %>%
-  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE)
+  select(geoid,region_name,region_type,year,measure,value,measure_type,MOE) %>%
+  filter(!is.na(value))
 
 
 # save the data ---------------------------------------------------------------------------------------

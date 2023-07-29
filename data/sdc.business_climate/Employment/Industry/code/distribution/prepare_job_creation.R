@@ -36,7 +36,8 @@ temp_bg <- mi_fairfax_features %>%
             perc_job_creation_new=100*job_creation_new/total_job_creation,
             perc_job_creation_active=100*job_creation_active/total_job_creation) %>%
   pivot_longer(!c('geoid','region_name','region_type','year','naics_name'), names_to='measure', values_to='value') %>%
-  mutate(measure=paste0(naics_name,'_',measure),
+  mutate(geoid=as.character(geoid),
+         measure=paste0(naics_name,'_',measure),
          measure_type = case_when(
            grepl('perc',measure)==T ~ "percentage",
            grepl('job',measure)==T ~ "count"),
@@ -106,7 +107,8 @@ temp_ct <-  mi_fairfax_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"va059_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_jobs_creation_by_industry.csv.xz"), compression = 9))
 
 
@@ -135,7 +137,8 @@ temp_bg <- mi_ncr_features %>%
             perc_job_creation_new=100*job_creation_new/total_job_creation,
             perc_job_creation_active=100*job_creation_active/total_job_creation) %>%
   pivot_longer(!c('geoid','region_name','region_type','year','naics_name'), names_to='measure', values_to='value') %>%
-  mutate(measure=paste0(naics_name,'_',measure),
+  mutate(geoid=as.character(geoid),
+         measure=paste0(naics_name,'_',measure),
          measure_type = case_when(
            grepl('perc',measure)==T ~ "percentage",
            grepl('job',measure)==T ~ "count"),
@@ -205,7 +208,8 @@ temp_ct <-  mi_ncr_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"ncr_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_jobs_creation_by_industry.csv.xz"), compression = 9))
 
 
@@ -235,7 +239,8 @@ temp_bg <- mi_subva_features %>%
             perc_job_creation_new=100*job_creation_new/total_job_creation,
             perc_job_creation_active=100*job_creation_active/total_job_creation) %>%
   pivot_longer(!c('geoid','region_name','region_type','year','naics_name'), names_to='measure', values_to='value') %>%
-  mutate(measure=paste0(naics_name,'_',measure),
+  mutate(geoid=as.character(geoid),
+         measure=paste0(naics_name,'_',measure),
          measure_type = case_when(
            grepl('perc',measure)==T ~ "percentage",
            grepl('job',measure)==T ~ "count"),
@@ -305,5 +310,6 @@ temp_ct <-  mi_subva_features %>%
   select(geoid,year,measure,value,measure_type,moe)
 
 # save
-temp <- rbind(temp_bg, temp_tr, temp_ct)
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"rva_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_jobs_creation_by_industry.csv.xz"), compression = 9))
