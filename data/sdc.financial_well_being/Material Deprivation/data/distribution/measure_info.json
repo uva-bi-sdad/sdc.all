@@ -1,0 +1,27 @@
+{
+    "material_deprivation_indicator": {
+        "aggregation_method": "",
+        "categories": "",
+        "category": "Health Opportunity Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "Based on the Towsend Material Deprivation Index, it examines the private material resources available to households in a community. 4 indicators make up Towsend: overcrowding (>2 persons per room), unemployment, % of persons no vehicle or car, and % of person who rent.",
+        "long_name": "Material deprivation indicator",
+        "measure_type": "index",
+        "short_description": "Based on the Towsend Material Deprivation Index, it examines the private material resources available to households in a community.",
+        "short_name": "Material deprivation indicator",
+        "sources": [
+            {
+                "name": "Virginia Department of Health",
+                "date_accessed": 2023,
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
+            }
+        ],
+        "statement": "The material deprivation indicator in {features.name} is {value}.",
+        "type": "index",
+        "unit": "",
+        "variants": ""
+    }
+}

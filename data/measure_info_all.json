@@ -2025,6 +2025,201 @@
         "unit": "",
         "variants": ""
     },
+    "At-Risk High": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Nutrition and Food Security",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of households with income that is sufficient to pay for Food Costs using the Food budget, and in addition, the food budget is less than one third of  the dollar amount of Food Costs. ",
+        "long_name": "Estimated number of households who are at high risk of food insecurity",
+        "measure_type": "count",
+        "short_description": "High risk food insecurity households",
+        "short_name": "at risk high households",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "USDA",
+                "url": "https://www.fns.usda.gov/cnpp/usda-food-plans-cost-food-reports-monthly-reports"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Feeding America",
+                "url": "https://map.feedingamerica.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "U.S. Department of Housing and Urban Development",
+                "url": "https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Center for Neighborhood Technology",
+                "url": "https://cnt.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Health Insurance Market Place",
+                "url": "https://www.healthcare.gov/apply-and-enroll/how-to-apply/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Department   of Labor Women\u2019s Bureau National",
+                "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "BroadbandNow",
+                "url": "https://broadbandnow.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National Academy of Sciences",
+                "url": "https://www.nasonline.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
+                "url": "http://taxsim.nber.org/taxsim35/"
+            }
+        ],
+        "statement": "{values} households are  {features.name}, high risk of food insecurity.  ",
+        "type": "count",
+        "unit": "households",
+        "variants": ""
+    },
+    "At-Risk Low": {
+        "aggregation_method": " count",
+        "categories": "",
+        "category": "Nutrition and Food Security",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of households with income that is sufficient to pay for Food Costs using the Food budget, and in addition, the food budget is larger than two-thirds of  the dollar amount of Food Costs. ",
+        "long_name": "Estimated number of households who are at low risk of food insecurity",
+        "measure_type": "count",
+        "short_description": "low risk food insecurity households",
+        "short_name": "low risk  households",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "USDA",
+                "url": "https://www.fns.usda.gov/cnpp/usda-food-plans-cost-food-reports-monthly-reports"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Feeding America",
+                "url": "https://map.feedingamerica.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "U.S. Department of Housing and Urban Development",
+                "url": "https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Center for Neighborhood Technology",
+                "url": "https://cnt.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Health Insurance Market Place",
+                "url": "https://www.healthcare.gov/apply-and-enroll/how-to-apply/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Department   of Labor Women\u2019s Bureau National",
+                "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "BroadbandNow",
+                "url": "https://broadbandnow.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National Academy of Sciences",
+                "url": "https://www.nasonline.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
+                "url": "http://taxsim.nber.org/taxsim35/"
+            }
+        ],
+        "statement": "{values} households are  {features.name}, low risk of food insecurity.",
+        "type": "count",
+        "unit": "households",
+        "variants": ""
+    },
+    "At-Risk Medium": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Nutrition and Food Security",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of households with income that is sufficient to pay for Food Costs using the Food budget and, in addition, the food budget is larger than one third and less than two-thirds of the dollar amount of Food Costs. ",
+        "long_name": "Estimated number of households who are at medium risk of food insecurity",
+        "measure_type": "count",
+        "short_description": "medium risk food insecurity households",
+        "short_name": "medium risk  households",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "USDA",
+                "url": "https://www.fns.usda.gov/cnpp/usda-food-plans-cost-food-reports-monthly-reports"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Feeding America",
+                "url": "https://map.feedingamerica.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "U.S. Department of Housing and Urban Development",
+                "url": "https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Center for Neighborhood Technology",
+                "url": "https://cnt.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Health Insurance Market Place",
+                "url": "https://www.healthcare.gov/apply-and-enroll/how-to-apply/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Department   of Labor Women\u2019s Bureau National",
+                "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "BroadbandNow",
+                "url": "https://broadbandnow.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National Academy of Sciences",
+                "url": "https://www.nasonline.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
+                "url": "http://taxsim.nber.org/taxsim35/"
+            }
+        ],
+        "statement": "{values} households are  {features.name}, medium risk of food insecurity.",
+        "type": "count",
+        "unit": "households",
+        "variants": ""
+    },
     "CANCER": {
         "aggregation_method": "",
         "categories": "",
@@ -4067,6 +4262,136 @@
         "statement": "Finance and Insurance destroyed {value} jobs in {features.name}.",
         "type": "count",
         "unit": "",
+        "variants": ""
+    },
+    "Food Insecure": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Nutrition and Food Security",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the number of people in food insecure households.  The brief providing the methodology of calculating these estimates is available at Feeding America's Map the Meal Gap website (linked below). Food insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
+        "long_name": "Estimated number of food insecure people",
+        "measure_type": "count",
+        "short_description": "Food insecure persons are people living in households experiencing food insecurity (a lack of access to enough food for an active, healthy life).",
+        "short_name": "Food Insecure people Count",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "USDA",
+                "url": "https://www.fns.usda.gov/cnpp/usda-food-plans-cost-food-reports-monthly-reports"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Feeding America",
+                "url": "https://map.feedingamerica.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "U.S. Department of Housing and Urban Development",
+                "url": "https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Center for Neighborhood Technology",
+                "url": "https://cnt.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Health Insurance Market Place",
+                "url": "https://www.healthcare.gov/apply-and-enroll/how-to-apply/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Department   of Labor Women\u2019s Bureau National",
+                "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "BroadbandNow",
+                "url": "https://broadbandnow.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National Academy of Sciences",
+                "url": "https://www.nasonline.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
+                "url": "http://taxsim.nber.org/taxsim35/"
+            }
+        ],
+        "statement": "{value} people in the region are {features.name}.",
+        "type": "count",
+        "unit": "people",
+        "variants": ""
+    },
+    "Food Secure": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Nutrition and Food Security",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of persons with income that is sufficient to pay for Food Costs using the Food budget, and in addition, the food budget is larger than the dollar amount of Food Costs.",
+        "long_name": "Estimated number of food secure people",
+        "measure_type": "count",
+        "short_description": "Food secure persons are people in household who have proper access to food and leading a health life.",
+        "short_name": "Food secure people Count",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "USDA",
+                "url": "https://www.fns.usda.gov/cnpp/usda-food-plans-cost-food-reports-monthly-reports"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Feeding America",
+                "url": "https://map.feedingamerica.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "U.S. Department of Housing and Urban Development",
+                "url": "https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Center for Neighborhood Technology",
+                "url": "https://cnt.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Health Insurance Market Place",
+                "url": "https://www.healthcare.gov/apply-and-enroll/how-to-apply/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Department   of Labor Women\u2019s Bureau National",
+                "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "BroadbandNow",
+                "url": "https://broadbandnow.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National Academy of Sciences",
+                "url": "https://www.nasonline.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
+                "url": "http://taxsim.nber.org/taxsim35/"
+            }
+        ],
+        "statement": "{value} people in the region are {features.name}.",
+        "type": "count",
+        "unit": "persons",
         "variants": ""
     },
     "HAIL_RISKS": {
@@ -12425,19 +12750,19 @@
         "unit": "",
         "variants": ""
     },
-    "at_risk_pc_original": {
-        "aggregation_method": "",
+    "at_risk_high_pc": {
+        "aggregation_method": "percent",
         "categories": "",
-        "category": "Nutrition and Food Security",
+        "category": "Nutrition and Food Security'",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "",
+        "equity_category": "Status",
         "layer": "",
-        "long_description": "Proportion of households at-risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
-        "long_name": "Estimated proportion of total households at-risk of facing food insecurity",
+        "long_description": "Proportion of households at high risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
+        "long_name": "Estimated proportion of total households at high risk of facing food insecurity",
         "measure_type": "percent",
-        "short_description": "Proportion of households at-risk of facing food insecurity, based on a financial model considering income category and household size.",
-        "short_name": "Food Insecure 'At Risk' Households Percent (Unsubsidized, UVA alpha ver.)",
+        "short_description": "Proportion of households at high risk of facing food insecurity",
+        "short_name": "high risk food insecurity proportion",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -12485,24 +12810,24 @@
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
-        "statement": "{value} households in {features.name} are at-risk of food insecurity.",
-        "type": "count",
-        "unit": "",
+        "statement": "{value} percent households in {features.name} are at high risk of food insecurity.",
+        "type": "percent",
+        "unit": "percent",
         "variants": ""
     },
-    "at_risk_pc_snap": {
-        "aggregation_method": "",
+    "at_risk_low_pc": {
+        "aggregation_method": "percent",
         "categories": "",
-        "category": "Nutrition and Food Security",
+        "category": "Nutrition and Food Security'",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "",
+        "equity_category": "Status",
         "layer": "",
-        "long_description": "Proportion of households at-risk of facing food insecurity after receiving an estimated amount of SNAP benefits, considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
-        "long_name": "Estimated proportion of total households at-risk of facing food insecurity",
+        "long_description": "Proportion of households at low risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
+        "long_name": "Estimated proportion of total households at low risk of facing food insecurity",
         "measure_type": "percent",
-        "short_description": "Proportion of households at-risk of facing food insecurity after receiving an estimated amount of SNAP benefits considering income category and household size.",
-        "short_name": "Food Insecure 'At Risk' Households Percent including SNAP (UVA alpha ver.)",
+        "short_description": "Proportion of households at low risk of facing food insecurity",
+        "short_name": "low risk food insecurity proportion",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -12550,24 +12875,24 @@
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
-        "statement": "{value} households in {features.name} are at-risk of food insecurity.",
-        "type": "count",
-        "unit": "",
+        "statement": "{value}  percent households are {features.name} , low risk of food insecurity.",
+        "type": "percent",
+        "unit": "percent",
         "variants": ""
     },
-    "at_risk_pc_snap_covid": {
-        "aggregation_method": "",
+    "at_risk_medium_pc": {
+        "aggregation_method": "percent ",
         "categories": "",
-        "category": "Nutrition and Food Security",
+        "category": "Nutrition and Food Security'",
         "citations": "",
         "data_type": "numeric",
-        "equity_category": "",
+        "equity_category": "Status",
         "layer": "",
-        "long_description": "Proportion of households at-risk of facing food insecurity after receiving an estimated amount of extended SNAP benefits that activated during the Covid-19 emergency, considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
-        "long_name": "Estimated proportion of total households at-risk of facing food insecurity with extended SNAP benefits",
+        "long_description": "Proportion of households at medium risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
+        "long_name": "Estimated proportion of total households at medium risk of facing food insecurity",
         "measure_type": "percent",
-        "short_description": "Proportion of households at-risk of facing food insecurity after receiving an estimated amount of extended SNAP benefits that activated during the Covid-19 emergency considering income category and household size.",
-        "short_name": "Food Insecure 'At Risk' Households Percent including SNAP max benefits (UVA alpha ver.)",
+        "short_description": "Proportion of households at medium risk of facing food insecurity",
+        "short_name": "medium risk food insecurity proportion",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -12615,9 +12940,9 @@
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
-        "statement": "{value} households in {features.name} are at-risk of food insecurity.",
-        "type": "count",
-        "unit": "",
+        "statement": "{value} percent households  are  {features.name} ,medium risk of food insecurity.",
+        "type": "percent",
+        "unit": "percent",
         "variants": ""
     },
     "average_years_schooling": {
@@ -13345,7 +13670,7 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Earnings per job is calculated based on the GDP and Personal Income table from the Bureau of Economic Analysis. Raw data observations are generally per county/city; however, some observations involve multiple counties/cities. For example, Fairfax County, Fairfax City and Falls Church City are grouped into one observation in the raw data.  We split the multi-county/city raw data observations into multiple observations so that one observation corresponds to only one county/city.  We set the value of each split individual observation to be that of the corresponding raw multi-county/city observation.\n\nThese are the multi-county/city groupings in the raw data: Albemarle County, Charlottesville; Alleghany County, Covington; Augusta County, Staunton, Waynesboro; Campbell County,  Lynchburg; Carroll County, Galax; Dinwiddie County, Colonial Heights, Petersburg; Fairfax County, Fairfax City, Falls Church; Frederick County, Winchester; Greensville County, Emporia; Henry County,  Martinsville; James City County, Williamsburg; Montgomery County, Radford; Pittsylvania County, Danville; Prince George County, Hopewell; Prince William County, Manassas, Manassas Park; Roanoke County, Salem; Rockbridge County, Buena Vista, Lexington; Rockingham County, Harrisonburg; Southampton County, Franklin; Spotsylvania County, Fredericksburg; Washington County, Bristol; Wise County, Norton; York County, Poquoson.",
+        "long_description": "Earnings per job is calculated based on the GDP and Personal Income table from the Bureau of Economic Analysis(BEA).  Earnings per job is total earnings divided by total number of jobs. Total earnings is the sum of wages and salaries, supplements to wages and salaries, and proprietor\u2019s income. Wages and salaries refer to the monetary remuneration of employees; it includes compensation of corporate officers; commissions, tips, and bonuses, compensation plans, such as 401(k) plans; and receipts in kind, or pay-in-kind, that represent income to the recipient. Supplements to wages and salaries consists of employer contributions for employee pension and insurance funds and employer contributions for government social insurance. Proprietor\u2019s income is the current-production income (including the income in kind) of sole proprietorships and partnerships and of tax-exempt cooperatives.\n\nRaw data observations are generally per county/city; however, some observations involve multiple counties/cities. For example, Fairfax County, Fairfax City and Falls Church City are grouped into one observation in the raw data.  We split the multi-county/city raw data observations into multiple observations so that one observation corresponds to only one county/city.  We set the value of each split individual observation to be that of the corresponding raw multi-county/city observation.\n\nThese are the multi-county/city groupings in the raw data: Albemarle County, Charlottesville; Alleghany County, Covington; Augusta County, Staunton, Waynesboro; Campbell County,  Lynchburg; Carroll County, Galax; Dinwiddie County, Colonial Heights, Petersburg; Fairfax County, Fairfax City, Falls Church; Frederick County, Winchester; Greensville County, Emporia; Henry County,  Martinsville; James City County, Williamsburg; Montgomery County, Radford; Pittsylvania County, Danville; Prince George County, Hopewell; Prince William County, Manassas, Manassas Park; Roanoke County, Salem; Rockbridge County, Buena Vista, Lexington; Rockingham County, Harrisonburg; Southampton County, Franklin; Spotsylvania County, Fredericksburg; Washington County, Bristol; Wise County, Norton; York County, Poquoson.",
         "long_name": "Earnings per job",
         "measure_type": "",
         "short_description": "Average of earnings per job.",
@@ -13669,6 +13994,136 @@
         "statement": "The food accessibility indicator in {features.name} is {value}.",
         "type": "index",
         "unit": "",
+        "variants": ""
+    },
+    "food_insecure_pc": {
+        "aggregation_method": "percent",
+        "categories": "",
+        "category": "Nutrition and Food Security",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the percent of people in food insecure households.  The brief providing the methodology of calculating these estimates is available at Feeding America's Map the Meal Gap website (linked below). Food insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
+        "long_name": "Estimated percentage of total food insecure households",
+        "measure_type": "percent",
+        "short_description": "Food insecure households are households experiencing food insecurity (a lack of access to enough food for an active, healthy life).",
+        "short_name": "Food Insecure Population Percentage",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "USDA",
+                "url": "https://www.fns.usda.gov/cnpp/usda-food-plans-cost-food-reports-monthly-reports"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Feeding America",
+                "url": "https://map.feedingamerica.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "U.S. Department of Housing and Urban Development",
+                "url": "https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Center for Neighborhood Technology",
+                "url": "https://cnt.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Health Insurance Market Place",
+                "url": "https://www.healthcare.gov/apply-and-enroll/how-to-apply/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Department   of Labor Women\u2019s Bureau National",
+                "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "BroadbandNow",
+                "url": "https://broadbandnow.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National Academy of Sciences",
+                "url": "https://www.nasonline.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
+                "url": "http://taxsim.nber.org/taxsim35/"
+            }
+        ],
+        "statement": "{value} percent of the population  are food insecure {features.name}.",
+        "type": "percent",
+        "unit": "household",
+        "variants": ""
+    },
+    "food_secure_pc": {
+        "aggregation_method": "percent",
+        "categories": "",
+        "category": "Nutrition and Food Security",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Food security for a household means access by all members at all times to enough food for an active, healthy life. Food security includes at a minimum: The ready availability of nutritionally adequate and safe foods.",
+        "long_name": "Estimated percentage of food secure households",
+        "measure_type": "percent",
+        "short_description": "Food secure households are household who have proper access to food and leading a health life.",
+        "short_name": "Food secure households Percentage",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "USDA",
+                "url": "https://www.fns.usda.gov/cnpp/usda-food-plans-cost-food-reports-monthly-reports"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Feeding America",
+                "url": "https://map.feedingamerica.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "U.S. Department of Housing and Urban Development",
+                "url": "https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Center for Neighborhood Technology",
+                "url": "https://cnt.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Health Insurance Market Place",
+                "url": "https://www.healthcare.gov/apply-and-enroll/how-to-apply/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Department   of Labor Women\u2019s Bureau National",
+                "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "BroadbandNow",
+                "url": "https://broadbandnow.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National Academy of Sciences",
+                "url": "https://www.nasonline.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
+                "url": "http://taxsim.nber.org/taxsim35/"
+            }
+        ],
+        "statement": "{value} percent of the population  are food secure {features.name}.",
+        "type": "percent",
+        "unit": "percent",
         "variants": ""
     },
     "fruit_treeNut_total_sales": {
@@ -14018,201 +14473,6 @@
         ],
         "statement": "The income inequality index in {features.name} is {value}.",
         "type": "index",
-        "unit": "",
-        "variants": ""
-    },
-    "insecure_pc_original": {
-        "aggregation_method": "",
-        "categories": "",
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "",
-        "layer": "",
-        "long_description": "Proportion of households facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
-        "long_name": "Estimated percentage of total households facing food insecurity",
-        "measure_type": "percent",
-        "short_description": "Proportion of households facing food insecurity, based on a financial model considering income category and household size.",
-        "short_name": "Food Insecure Households Percent (Unsubsidized, UVA alpha ver.)",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "USDA",
-                "url": "https://www.fns.usda.gov/cnpp/usda-food-plans-cost-food-reports-monthly-reports"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "Feeding America",
-                "url": "https://map.feedingamerica.org/"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "U.S. Department of Housing and Urban Development",
-                "url": "https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "Center for Neighborhood Technology",
-                "url": "https://cnt.org/"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "Health Insurance Market Place",
-                "url": "https://www.healthcare.gov/apply-and-enroll/how-to-apply/"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "Department   of Labor Women\u2019s Bureau National",
-                "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "BroadbandNow",
-                "url": "https://broadbandnow.com/"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "National Academy of Sciences",
-                "url": "https://www.nasonline.org/"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
-                "url": "http://taxsim.nber.org/taxsim35/"
-            }
-        ],
-        "statement": "{value} households in {features.name} are food insecure.",
-        "type": "count",
-        "unit": "",
-        "variants": ""
-    },
-    "insecure_pc_snap": {
-        "aggregation_method": "",
-        "categories": "",
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "",
-        "layer": "",
-        "long_description": "Proportion of households facing food insecurity after receiving an estimated amount of SNAP benefits, considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
-        "long_name": "Estimated proportion of total households facing food insecurity",
-        "measure_type": "percent",
-        "short_description": "Proportion of households facing food insecurity after receiving an estimated amount of SNAP benefits considering income category and household size.",
-        "short_name": "Food Insecure Households Percent including SNAP (UVA alpha ver.)",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "USDA",
-                "url": "https://www.fns.usda.gov/cnpp/usda-food-plans-cost-food-reports-monthly-reports"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "Feeding America",
-                "url": "https://map.feedingamerica.org/"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "U.S. Department of Housing and Urban Development",
-                "url": "https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "Center for Neighborhood Technology",
-                "url": "https://cnt.org/"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "Health Insurance Market Place",
-                "url": "https://www.healthcare.gov/apply-and-enroll/how-to-apply/"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "Department   of Labor Women\u2019s Bureau National",
-                "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "BroadbandNow",
-                "url": "https://broadbandnow.com/"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "National Academy of Sciences",
-                "url": "https://www.nasonline.org/"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
-                "url": "http://taxsim.nber.org/taxsim35/"
-            }
-        ],
-        "statement": "{value} households in {features.name} are food insecure.",
-        "type": "count",
-        "unit": "",
-        "variants": ""
-    },
-    "insecure_pc_snap_covid": {
-        "aggregation_method": "",
-        "categories": "",
-        "category": "Nutrition and Food Security",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "",
-        "layer": "",
-        "long_description": "Proportion of households facing food insecurity after receiving an estimated amount of extended SNAP benefits that activated during the Covid-19 emergency, considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
-        "long_name": "Estimated proportion of total households facing food insecurity with extended SNAP benefits",
-        "measure_type": "percent",
-        "short_description": "Proportion of households facing food insecurity after receiving an estimated amount of extended SNAP benefits that activated during the Covid-19 emergency considering income category and household size.",
-        "short_name": "Food Insecure Households Percent including SNAP max benefits (UVA alpha ver.)",
-        "sources": [
-            {
-                "date_accessed": 2022,
-                "name": "USDA",
-                "url": "https://www.fns.usda.gov/cnpp/usda-food-plans-cost-food-reports-monthly-reports"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "Feeding America",
-                "url": "https://map.feedingamerica.org/"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "U.S. Department of Housing and Urban Development",
-                "url": "https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "Center for Neighborhood Technology",
-                "url": "https://cnt.org/"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "Health Insurance Market Place",
-                "url": "https://www.healthcare.gov/apply-and-enroll/how-to-apply/"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "Department   of Labor Women\u2019s Bureau National",
-                "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "BroadbandNow",
-                "url": "https://broadbandnow.com/"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "National Academy of Sciences",
-                "url": "https://www.nasonline.org/"
-            },
-            {
-                "date_accessed": 2022,
-                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
-                "url": "http://taxsim.nber.org/taxsim35/"
-            }
-        ],
-        "statement": "{value} households in {features.name} are food insecure.",
-        "type": "count",
         "unit": "",
         "variants": ""
     },
@@ -19769,6 +20029,156 @@
         "unit": "",
         "variants": ""
     },
+    "snap_shortfall_weighted_mean": {
+        "aggregation_method": "arithmetic mean",
+        "categories": "",
+        "category": "Nutrition and Food Security",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "The food shortfall money is the estimated amount of dollars that a household lacks to pay for the food costs. SNAP benefit is the dollar amount of dollars that a household may receive for supplemental food assistance after eligibility.  The SNAP shortfall is the ratio between the SNAP benefit divided by the food shortfall money.  The weighted average uses the number of households in different income categories, household combination and geography, and average is estimated for every census tract.",
+        "long_name": "Snap shortfall weighted mean",
+        "measure_type": "ratio",
+        "short_description": "The food shortfall money is the estimated amount of dollars that a household lacks to pay for the food costs",
+        "short_name": "Snap shortfall weighted mean",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "USDA",
+                "url": "https://www.fns.usda.gov/cnpp/usda-food-plans-cost-food-reports-monthly-reports"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Feeding America",
+                "url": "https://map.feedingamerica.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "U.S. Department of Housing and Urban Development",
+                "url": "https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Center for Neighborhood Technology",
+                "url": "https://cnt.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Health Insurance Market Place",
+                "url": "https://www.healthcare.gov/apply-and-enroll/how-to-apply/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Department   of Labor Women\u2019s Bureau National",
+                "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "BroadbandNow",
+                "url": "https://broadbandnow.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National Academy of Sciences",
+                "url": "https://www.nasonline.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
+                "url": "http://taxsim.nber.org/taxsim35/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "American Community Survey",
+                "url": "https://www.census.gov/newsroom/press-kits/2020/acs-5-year.html"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Virginia Department of Social Services",
+                "url": "https://www.dss.virginia.gov/files/division/bp/fs/intro_page/income_limits/Income_Chart_eff_102022.pdf"
+            }
+        ],
+        "statement": "{value} is the {features.name} of the households",
+        "type": "ratio",
+        "unit": "ratio",
+        "variants": ""
+    },
+    "snap_weighted_mean": {
+        "aggregation_method": "arithmetic mean",
+        "categories": "",
+        "category": "Nutrition and Food Security",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Weighted average of the dollar amount of Supplemental Nutrition Assistance Program (SNAP) benefit.  The financial benefit is estimated following the guidelines and procedures from the Virginia Department of Social Services. The weighting component corresponds to the number of households in different income categories, household combination and geography.  The weighted average is obtained for every census tract.",
+        "long_name": "Snap weigted mean",
+        "measure_type": "dollars",
+        "short_description": "Weighted average of the dollar amount of SNAP benefits",
+        "short_name": "Snap weigted mean",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "USDA",
+                "url": "https://www.fns.usda.gov/cnpp/usda-food-plans-cost-food-reports-monthly-reports"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Feeding America",
+                "url": "https://map.feedingamerica.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "U.S. Department of Housing and Urban Development",
+                "url": "https://www.huduser.gov/portal/datasets/fmr/smallarea/index.html"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Center for Neighborhood Technology",
+                "url": "https://cnt.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Health Insurance Market Place",
+                "url": "https://www.healthcare.gov/apply-and-enroll/how-to-apply/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Department   of Labor Women\u2019s Bureau National",
+                "url": "https://www.dol.gov/agencies/wb/topics/featured-childcare"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "BroadbandNow",
+                "url": "https://broadbandnow.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National Academy of Sciences",
+                "url": "https://www.nasonline.org/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "National   Bureau of Economic Research\u2019s program TAXSIM Version 35",
+                "url": "http://taxsim.nber.org/taxsim35/"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "American Community Survey",
+                "url": "https://www.census.gov/newsroom/press-kits/2020/acs-5-year.html"
+            },
+            {
+                "date_accessed": 2022,
+                "name": "Virginia Department of Social Services",
+                "url": "https://www.dss.virginia.gov/files/division/bp/fs/intro_page/income_limits/Income_Chart_eff_102022.pdf"
+            }
+        ],
+        "statement": "{value} is the weighted average of the SNAP benefits, {features.name} for the households",
+        "type": "dollars",
+        "unit": "dollars",
+        "variants": ""
+    },
     "subs_3sfca": {
         "aggregation_method": "",
         "categories": "",
@@ -20072,6 +20482,31 @@
         "statement": "Total asset value of agriculture to {features.name} is {value}.",
         "type": "dollar",
         "unit": "dollar",
+        "variants": ""
+    },
+    "total_hh": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Demographics",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "The count of households. Based on American Community Survey ACS 2015/2019 5-year estimates Table C16002.",
+        "long_name": "Total count of households",
+        "measure_type": "count",
+        "short_description": "Total count of households based on ACS",
+        "short_name": "Total count of households",
+        "sources": [
+            {
+                "date_accessed": 2022,
+                "name": "American Community Survey",
+                "url": "https://www.census.gov/newsroom/press-kits/2020/acs-5-year.html"
+            }
+        ],
+        "statement": "Total number of households {features.name} in the region is {value}.",
+        "type": "count",
+        "unit": "household",
         "variants": ""
     },
     "total_irrigatedCropland_acre": {
