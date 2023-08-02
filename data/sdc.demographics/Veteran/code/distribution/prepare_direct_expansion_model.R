@@ -4,19 +4,18 @@
 # libraries -------------------------------------------------------------
 library(dplyr)
 library(sf)
-library(httr)
+# library(httr)
 library(sp)
 library(data.table)
 library(stringr)
 #library("rgdal", lib.loc="/usr/local/lib/R/site-library")
 library(tidyr)
 library(readr)
-library(tidyverse)
+# library(tidyverse)
 library(tidycensus)
 library(tigris)
 library(rjson)
 library(redistribute)
-
 
 # load the data -------------------------------------------------------------------
 # get the age demographics acs data for virginia
@@ -29,7 +28,7 @@ acs <- read.csv(paste0(uploadpath,filename))
 # select the census block group for aggregation, select only population count as measure
 acs_bg <- acs %>%
   filter(region_type=='block group') %>%
-#  filter(!str_detect(measure, "perc")) %>%
+# filter(!str_detect(measure, "perc")) %>%
   select(geoid,year,measure,value) %>%
   #mutate(measure=str_replace(measure,'veteran_','')) %>%
   pivot_wider(names_from = measure, values_from = value) %>%
@@ -100,9 +99,20 @@ temp_acs_dmg <- acs %>%
 temp_direct_dmg <- model_direct 
 baseline_data <- rbind(temp_acs_dmg,temp_direct_dmg)
 
+# baseline_data <- read_csv('Veteran/data/working/model/va_hsrsdpdzccttrbg_sdad_2013_2021_veteran_demographics1.csv.xz')
+# unique(baseline_data$measure)
+# yearlist <- unique(baseline_data$year)
+
+baseline_data <- baseline_data %>% 
+  mutate(measure=case_when(
+    measure=="pop_veteran" ~ "pop_veteran_direct",
+    measure=="perc_veteran" ~ "perc_veteran_direct"))
+
+
+
 # save the living units distribution ----------------------------------------------------------------------------
-savepath = "Veteran/data/distribution/"
-readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_veteran_demographics1.csv.xz"), compression = 9))
+savepath = "Veteran/data/working/model/"
+readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_veteran_demographics_direct.csv.xz"), compression = 9))
 
 
 

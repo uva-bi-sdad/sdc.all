@@ -4,14 +4,14 @@
 # libraries -------------------------------------------------------------
 library(dplyr)
 library(sf)
-library(httr)
+#library(httr)
 library(sp)
 library(data.table)
 library(stringr)
 #library("rgdal", lib.loc="/usr/local/lib/R/site-library")
 library(tidyr)
 library(readr)
-library(tidyverse)
+#library(tidyverse)
 library(tidycensus)
 library(tigris)
 library(rjson)
@@ -20,7 +20,7 @@ library(redistribute)
 
 # load the data -------------------------------------------------------------------
 # get the age demographics acs data for virginia
-uploadpath = "Gender/data/distribution/"
+uploadpath = "Gender/data/working/"
 files = list.files(uploadpath)
 filename = files[str_detect(files,"va_cttrbg_acs")]
 acs <- read.csv(paste0(uploadpath,filename))
@@ -99,10 +99,20 @@ temp_acs_dmg <- acs %>%
 temp_direct_dmg <- model_direct 
 baseline_data <- rbind(temp_acs_dmg,temp_direct_dmg)
 
+# baseline_data <- read_csv('Gender/data/working/model/va_hsrsdpdzccttrbg_sdad_2013_2021_gender_demographics1.csv.xz')
+#unique(baseline_data$measure)
+baseline_data <- baseline_data %>% 
+  mutate(measure=case_when(
+    measure=="total_pop" ~ "total_pop_direct",
+    measure=="pop_male" ~ "pop_male_direct",
+    measure=="pop_female" ~ "pop_female_direct",
+    measure=="perc_male" ~ "perc_male_direct",
+    measure=="perc_female" ~ "perc_female_direct"))
+
 
 # save the data 
-savepath = "Gender/data/distribution/"
-readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_gender_demographics1.csv.xz"), compression = 9))
+savepath = "Gender/data/working/model/"
+readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_gender_demographics_direct.csv.xz"), compression = 9))
 
 
 # files = list.files(savepath)

@@ -1,0 +1,111 @@
+{
+  "population{variant}{category.name}": {
+    "data_type": "decimal",
+    "category": "Demographics",
+    "equity_category": "Status",
+    "short_name": "Population{variant}",
+    "long_name": "Population{variant}",
+    "long_description": "{variant} For non-census geographies, values are redistributed {category}, using the redistribute R package.",
+    "statement": "There are {value} people{variant} in {region_name}.",
+    "citations": "bii-redist",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B01003, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      },
+      {
+        "name": "TIGER/Line Shapefiles",
+        "location": "FTP Archive: TIGER{year} > BG > tl_{year}_{fips}_bg.zip",
+        "location_url": "https://www2.census.gov/geo/tiger",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Demography > Current Housing Units",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::current-housing-units/about",
+        "date_accessed": 2023,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Boundaries > Zip Codes",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::zip-codes/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Boundaries > Supervisor Districts",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::supervisor-districts-5/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Health & Human Service > Human Services Regions",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::human-services-regions/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Arlington County GIS Open Data",
+        "location": "MHUD Polygons",
+        "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::mhud-polygons/about",
+        "date_accessed": 2023,
+        "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Arlington County GIS Open Data",
+        "location": "Civic Association Polygons",
+        "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::civic-association-polygons-1/about",
+        "date_accessed": 2021,
+        "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+      }
+    ],
+    "variants": {
+      "blank": {
+        "unit": "individual",
+        "aggregation_method": "count",
+        "short_name": " {category}",
+        "long_name": ": Total Number of People {category}",
+        "short_description": "Total number of people ({category}).",
+        "long_description": "Total number of people, as reported in census ACS population data."
+      },
+      "_density": {
+        "unit": "individual per square mile",
+        "aggregation_method": "ratio",
+        "short_name": " Density {category}",
+        "long_name": " Density: People Per Square Mile {category}",
+        "short_description": "People per square mile.",
+        "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas: \\[\\frac{population_{r}}{meters^{2}_{r}}1609.344^{2}\\] Where r is each region (e.g., census tract or county).",
+        "statement": " per square mile"
+      }
+    },
+    "categories": {
+      "_direct": {
+        "default": "(direct method)",
+        "short_description": "estimated by proportional overlap for non-census geographies",
+        "long_description": "based on proportional overlap between census block groups and the local regions"
+      },
+      "_parcels": {
+        "default": "(parcels method)",
+        "short_description": "estimated by proportional overlap with parcels for non-census geographies",
+        "long_description": "from census block groups to parcels, based on proportional geometric overlap and weighted by number of living units per parcel, then from parcels to the local regions based on proportional geometric overlap"
+      }
+    }
+  },
+  "_references": {
+    "bii-redist": {
+      "id": "bii-redist",
+      "author": "Biocomplexity Institute and Initiative",
+      "year": 2022,
+      "title": "redistribute: An R package to redistribute data",
+      "version": "0.0.1",
+      "url": "https://github.com/uva-bi-sdad/redistribute"
+    }
+  }
+}

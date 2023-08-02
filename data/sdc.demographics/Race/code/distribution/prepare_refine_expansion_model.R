@@ -8,14 +8,14 @@
 # libraries ---------------------------------------------------------------------------------------
 library(dplyr)
 library(sf)
-library(httr)
+# library(httr)
 library(sp)
 library(data.table)
 library(stringr)
 #library("rgdal", lib.loc="/usr/local/lib/R/site-library")
 library(tidyr)
 library(readr)
-library(tidyverse)
+# library(tidyverse)
 library(tidycensus)
 library(tigris)
 library(rjson)
@@ -62,6 +62,9 @@ for (vyear in yearlist){
     #parcel_geo <- st_read(paste0("Synthetic_population/Housing_units_distribution/Fairfax/data/working/parcels_infos/",vyear,"/fairfax_parcel_geometry.geojson"))
     #fairfax_pc_geo <- parcel_geo %>% select(parid=geoid, geometry)
   }
+  
+  fairfax_pc_geo <- st_as_sf(fairfax_pc_geo)
+  st_crs(fairfax_pc_geo) <- 4326
   
   # add geometry to the acs
   #subset <- merge(subset_dmg, fairfax_pc_geo, by='parid')
@@ -114,7 +117,7 @@ model_parcels <- rbind(hsr_dmg,pd_dmg,sd_dmg,zc_dmg) %>%
 
 
 # get the acs data ----------------------------------------------
-uploadpath = "Race/data/distribution/"
+uploadpath = "Race/data/working/"
 files = list.files(uploadpath)
 filename = files[str_detect(files,"va_cttrbg_acs")]
 temp_acs_dmg <- read.csv(paste0(uploadpath,filename)) %>% 
@@ -126,8 +129,8 @@ baseline_data <- rbind(temp_acs_dmg,temp_parcels_dmg) %>%
 
 
 # save the data 
-savepath = "Race/data/distribution/"
-readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_race_demographics2.csv.xz"), compression = 9))
+savepath = "Race/data/working/model/"
+readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_race_demographics_parcels.csv.xz"), compression = 9))
 
 
 # files = list.files(savepath)

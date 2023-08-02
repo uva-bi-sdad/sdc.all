@@ -18155,15 +18155,16 @@
         "unit": "",
         "variants": ""
     },
-    "population_density": {
+    "population_density_direct": {
         "aggregation_method": "ratio",
         "category": "Demographics",
+        "citations": "bii-redist",
         "data_type": "decimal",
         "equity_category": "Status",
-        "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas: \\[\\frac{population_{r}}{meters^{2}_{r}}1609.344^{2}\\] Where r is each region (e.g., census tract or county).",
-        "long_name": "Population Density: People Per Square Mile",
-        "short_description": "People per square mile.",
-        "short_name": "Population Density",
+        "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas: \\[\\frac{population_{r}}{meters^{2}_{r}}1609.344^{2}\\] Where r is each region (e.g., census tract or county). For non-census geographies, values are redistributed based on proportional overlap between census block groups and the local regions, using the redistribute R package.",
+        "long_name": "Population Density: People Per Square Mile (direct method)",
+        "short_description": "estimated by proportional overlap for non-census geographies",
+        "short_name": "Population Density (direct method)",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -18174,14 +18175,368 @@
             },
             {
                 "date_accessed": 2023,
-                "location": "FTP Archive: TIGER{year} > TRACT > tl_{year}_{fips}_tract.zip",
+                "location": "FTP Archive: TIGER{year} > BG > tl_{year}_{fips}_bg.zip",
                 "location_url": "https://www2.census.gov/geo/tiger",
                 "name": "TIGER/Line Shapefiles",
                 "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+            },
+            {
+                "date_accessed": 2023,
+                "location": "Demography > Current Housing Units",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::current-housing-units/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "Boundaries > Zip Codes",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::zip-codes/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "Boundaries > Supervisor Districts",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::supervisor-districts-5/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "Health & Human Service > Human Services Regions",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::human-services-regions/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2023,
+                "location": "MHUD Polygons",
+                "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::mhud-polygons/about",
+                "name": "Arlington County GIS Open Data",
+                "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2021,
+                "location": "Civic Association Polygons",
+                "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::civic-association-polygons-1/about",
+                "name": "Arlington County GIS Open Data",
+                "url": "https://gisdata-arlgis.opendata.arcgis.com/"
             }
         ],
         "statement": "There are {value} people per square mile in {region_name}.",
         "unit": "individual per square mile"
+    },
+    "population_density_parcels": {
+        "aggregation_method": "ratio",
+        "category": "Demographics",
+        "citations": "bii-redist",
+        "data_type": "decimal",
+        "equity_category": "Status",
+        "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas: \\[\\frac{population_{r}}{meters^{2}_{r}}1609.344^{2}\\] Where r is each region (e.g., census tract or county). For non-census geographies, values are redistributed from census block groups to parcels, based on proportional geometric overlap and weighted by number of living units per parcel, then from parcels to the local regions based on proportional geometric overlap, using the redistribute R package.",
+        "long_name": "Population Density: People Per Square Mile (parcels method)",
+        "short_description": "estimated by proportional overlap with parcels for non-census geographies",
+        "short_name": "Population Density (parcels method)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "5-Year estimates, table B01003, via the API",
+                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+                "name": "American Community Survey",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            },
+            {
+                "date_accessed": 2023,
+                "location": "FTP Archive: TIGER{year} > BG > tl_{year}_{fips}_bg.zip",
+                "location_url": "https://www2.census.gov/geo/tiger",
+                "name": "TIGER/Line Shapefiles",
+                "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+            },
+            {
+                "date_accessed": 2023,
+                "location": "Demography > Current Housing Units",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::current-housing-units/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "Boundaries > Zip Codes",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::zip-codes/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "Boundaries > Supervisor Districts",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::supervisor-districts-5/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "Health & Human Service > Human Services Regions",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::human-services-regions/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2023,
+                "location": "MHUD Polygons",
+                "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::mhud-polygons/about",
+                "name": "Arlington County GIS Open Data",
+                "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2021,
+                "location": "Civic Association Polygons",
+                "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::civic-association-polygons-1/about",
+                "name": "Arlington County GIS Open Data",
+                "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+            }
+        ],
+        "statement": "There are {value} people per square mile in {region_name}.",
+        "unit": "individual per square mile"
+    },
+    "population_direct": {
+        "aggregation_method": "count",
+        "category": "Demographics",
+        "citations": "bii-redist",
+        "data_type": "decimal",
+        "equity_category": "Status",
+        "long_description": "Total number of people, as reported in census ACS population data. For non-census geographies, values are redistributed based on proportional overlap between census block groups and the local regions, using the redistribute R package.",
+        "long_name": "Population: Total Number of People (direct method)",
+        "short_description": "estimated by proportional overlap for non-census geographies",
+        "short_name": "Population (direct method)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "5-Year estimates, table B01003, via the API",
+                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+                "name": "American Community Survey",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            },
+            {
+                "date_accessed": 2023,
+                "location": "FTP Archive: TIGER{year} > BG > tl_{year}_{fips}_bg.zip",
+                "location_url": "https://www2.census.gov/geo/tiger",
+                "name": "TIGER/Line Shapefiles",
+                "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+            },
+            {
+                "date_accessed": 2023,
+                "location": "Demography > Current Housing Units",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::current-housing-units/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "Boundaries > Zip Codes",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::zip-codes/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "Boundaries > Supervisor Districts",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::supervisor-districts-5/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "Health & Human Service > Human Services Regions",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::human-services-regions/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2023,
+                "location": "MHUD Polygons",
+                "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::mhud-polygons/about",
+                "name": "Arlington County GIS Open Data",
+                "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2021,
+                "location": "Civic Association Polygons",
+                "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::civic-association-polygons-1/about",
+                "name": "Arlington County GIS Open Data",
+                "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+            }
+        ],
+        "statement": "There are {value} people in {region_name}.",
+        "unit": "individual"
+    },
+    "population_parcels": {
+        "aggregation_method": "count",
+        "category": "Demographics",
+        "citations": "bii-redist",
+        "data_type": "decimal",
+        "equity_category": "Status",
+        "long_description": "Total number of people, as reported in census ACS population data. For non-census geographies, values are redistributed from census block groups to parcels, based on proportional geometric overlap and weighted by number of living units per parcel, then from parcels to the local regions based on proportional geometric overlap, using the redistribute R package.",
+        "long_name": "Population: Total Number of People (parcels method)",
+        "short_description": "estimated by proportional overlap with parcels for non-census geographies",
+        "short_name": "Population (parcels method)",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "5-Year estimates, table B01003, via the API",
+                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+                "name": "American Community Survey",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            },
+            {
+                "date_accessed": 2023,
+                "location": "FTP Archive: TIGER{year} > BG > tl_{year}_{fips}_bg.zip",
+                "location_url": "https://www2.census.gov/geo/tiger",
+                "name": "TIGER/Line Shapefiles",
+                "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+            },
+            {
+                "date_accessed": 2023,
+                "location": "Demography > Current Housing Units",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::current-housing-units/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "Boundaries > Zip Codes",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::zip-codes/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "Boundaries > Supervisor Districts",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::supervisor-districts-5/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "Health & Human Service > Human Services Regions",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::human-services-regions/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2023,
+                "location": "MHUD Polygons",
+                "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::mhud-polygons/about",
+                "name": "Arlington County GIS Open Data",
+                "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2021,
+                "location": "Civic Association Polygons",
+                "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::civic-association-polygons-1/about",
+                "name": "Arlington County GIS Open Data",
+                "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+            }
+        ],
+        "statement": "There are {value} people in {region_name}.",
+        "unit": "individual"
+    },
+    "population{variant}{category.name}": {
+        "categories": {
+            "_direct": {
+                "default": "(direct method)",
+                "long_description": "based on proportional overlap between census block groups and the local regions",
+                "short_description": "estimated by proportional overlap for non-census geographies"
+            },
+            "_parcels": {
+                "default": "(parcels method)",
+                "long_description": "from census block groups to parcels, based on proportional geometric overlap and weighted by number of living units per parcel, then from parcels to the local regions based on proportional geometric overlap",
+                "short_description": "estimated by proportional overlap with parcels for non-census geographies"
+            }
+        },
+        "category": "Demographics",
+        "citations": "bii-redist",
+        "data_type": "decimal",
+        "equity_category": "Status",
+        "long_description": "{variant} For non-census geographies, values are redistributed {category}, using the redistribute R package.",
+        "long_name": "Population{variant}",
+        "short_name": "Population{variant}",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "5-Year estimates, table B01003, via the API",
+                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+                "name": "American Community Survey",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            },
+            {
+                "date_accessed": 2023,
+                "location": "FTP Archive: TIGER{year} > BG > tl_{year}_{fips}_bg.zip",
+                "location_url": "https://www2.census.gov/geo/tiger",
+                "name": "TIGER/Line Shapefiles",
+                "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+            },
+            {
+                "date_accessed": 2023,
+                "location": "Demography > Current Housing Units",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::current-housing-units/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "Boundaries > Zip Codes",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::zip-codes/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "Boundaries > Supervisor Districts",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::supervisor-districts-5/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "Health & Human Service > Human Services Regions",
+                "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::human-services-regions/about",
+                "name": "Fairfax County Geospatial Data",
+                "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2023,
+                "location": "MHUD Polygons",
+                "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::mhud-polygons/about",
+                "name": "Arlington County GIS Open Data",
+                "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+            },
+            {
+                "date_accessed": 2021,
+                "location": "Civic Association Polygons",
+                "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::civic-association-polygons-1/about",
+                "name": "Arlington County GIS Open Data",
+                "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+            }
+        ],
+        "statement": "There are {value} people{variant} in {region_name}.",
+        "variants": {
+            "_density": {
+                "aggregation_method": "ratio",
+                "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas: \\[\\frac{population_{r}}{meters^{2}_{r}}1609.344^{2}\\] Where r is each region (e.g., census tract or county).",
+                "long_name": " Density: People Per Square Mile {category}",
+                "short_description": "People per square mile.",
+                "short_name": " Density {category}",
+                "statement": " per square mile",
+                "unit": "individual per square mile"
+            },
+            "blank": {
+                "aggregation_method": "count",
+                "long_description": "Total number of people, as reported in census ACS population data.",
+                "long_name": ": Total Number of People {category}",
+                "short_description": "Total number of people ({category}).",
+                "short_name": " {category}",
+                "unit": "individual"
+            }
+        }
     },
     "poverty_pct": {
         "aggregation_method": "",

@@ -8,14 +8,14 @@
 # libraries ---------------------------------------------------------------------------------------
 library(dplyr)
 library(sf)
-library(httr)
+# library(httr)
 library(sp)
 library(data.table)
 library(stringr)
 #library("rgdal", lib.loc="/usr/local/lib/R/site-library")
 library(tidyr)
 library(readr)
-library(tidyverse)
+# library(tidyverse)
 library(tidycensus)
 library(tigris)
 library(rjson)
@@ -63,6 +63,10 @@ for (vyear in yearlist){
     fairfax_pc_geo <- parcel_geo %>% select(parid=geoid, geometry)
   }
   
+  fairfax_pc_geo <- st_as_sf(fairfax_pc_geo)
+  st_crs(fairfax_pc_geo) <- 4326
+  #fairfax_pc_geo <- st_transform(fairfax_pc_geo,4326) 
+  
   # add geometry to the acs
   #subset <- merge(subset_dmg, fairfax_pc_geo, by='parid')
   
@@ -74,7 +78,7 @@ for (vyear in yearlist){
   zc_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Fairfax%20County/Zip%20Codes/2022/data/distribution/va059_geo_ffxct_gis_2022_zip_codes.geojson")
   
   # build the map between the parcel and new geoid
-  hsr_pc_map <- st_join(hsr_geo, fairfax_pc_geo, join = st_intersects) %>% st_drop_geometry() %>% select(parid,geoid)
+  hsr_pc_map <- st_join(hsr_geo , fairfax_pc_geo, join = st_intersects) %>% st_drop_geometry() %>% select(parid,geoid)
   pd_pc_map <- st_join(pd_geo, fairfax_pc_geo, join = st_intersects) %>% st_drop_geometry() %>% select(parid,geoid)
   sd_pc_map <- st_join(sd_geo, fairfax_pc_geo, join = st_intersects) %>% st_drop_geometry() %>% select(parid,geoid)
   zc_pc_map <- st_join(zc_geo, fairfax_pc_geo, join = st_intersects) %>% st_drop_geometry() %>% select(parid,geoid)
@@ -109,7 +113,7 @@ model_parcels <- rbind(hsr_dmg,pd_dmg,sd_dmg,zc_dmg) %>%
 
 
 # get the acs data ----------------------------------------------
-uploadpath = "Gender/data/distribution/"
+uploadpath = "Gender/data/working/"
 files = list.files(uploadpath)
 filename = files[str_detect(files,"va_cttrbg_acs")]
 temp_acs_dmg <- read.csv(paste0(uploadpath,filename)) %>% 
@@ -122,8 +126,8 @@ baseline_data <- rbind(temp_acs_dmg,temp_parcels_dmg) %>%
 
 
 # save the data 
-savepath = "Gender/data/distribution/"
-readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_gender_demographics2.csv.xz"), compression = 9))
+savepath = "Gender/data/working/model/"
+readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_gender_demographics_parcels.csv.xz"), compression = 9))
 
 
 # files = list.files(savepath)
@@ -217,5 +221,5 @@ readr::write_csv(arl_newgeo_dmg, xzfile(paste0(savepath,"va013_civic_sdad_",min(
 
 
 # 2. Case of DC area -----------------------------------------------------------------------------
-
+ 
 

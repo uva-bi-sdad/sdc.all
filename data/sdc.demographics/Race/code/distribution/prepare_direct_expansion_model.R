@@ -4,14 +4,14 @@
 # libraries -------------------------------------------------------------
 library(dplyr)
 library(sf)
-library(httr)
+# library(httr)
 library(sp)
 library(data.table)
 library(stringr)
 #library("rgdal", lib.loc="/usr/local/lib/R/site-library")
 library(tidyr)
 library(readr)
-library(tidyverse)
+# library(tidyverse)
 library(tidycensus)
 library(tigris)
 library(rjson)
@@ -20,7 +20,7 @@ library(redistribute)
 
 # load the data -------------------------------------------------------------------
 # get the age demographics acs data for virginia
-uploadpath = "Race/data/distribution/"
+uploadpath = "Race/data/working/"
 files = list.files(uploadpath)
 filename = files[str_detect(files,"va_cttrbg_acs")]
 acs <- read.csv(paste0(uploadpath,filename))
@@ -105,10 +105,35 @@ temp_acs_dmg <- acs %>%
 temp_direct_dmg <- model_direct 
 baseline_data <- rbind(temp_acs_dmg,temp_direct_dmg)
 
+# baseline_data <- read_csv('Race/data/working/model/va_hsrsdpdzccttrbg_sdad_2013_2021_race_demographics1.csv.xz')
+# unique(baseline_data$measure)
+# yearlist <- unique(baseline_data$year)
+
+baseline_data <- baseline_data %>% 
+  mutate(measure=case_when(
+    measure=="total_race" ~ "total_race_direct",
+    measure=="pop_wht_alone" ~ "pop_wht_alone_direct",
+    measure=="pop_afr_amer_alone" ~ "pop_afr_amer_alone_direct",
+    measure=="pop_native_alone" ~ "pop_native_alone_direct",
+    measure=="pop_AAPI" ~ "pop_AAPI_direct",
+    measure=="pop_other" ~ "pop_other_direct", 
+    measure=="pop_two_or_more" ~ "pop_two_or_more_direct",
+    measure=="pop_hispanic_or_latino" ~ "pop_hispanic_or_latino_direct",
+    measure=="perc_wht_alone" ~ "perc_wht_alone_direct",
+    measure=="perc_afr_amer_alone" ~ "perc_afr_amer_alone_direct",
+    measure=="perc_native_alone" ~ "perc_native_alone_direct",
+    measure=="perc_AAPI" ~ "perc_AAPI_direct",
+    measure=="perc_two_or_more" ~ "perc_two_or_more_direct",
+    measure=="perc_other" ~ "perc_other_direct",
+    measure=="perc_hispanic_or_latino" ~ "perc_hispanic_or_latino_direct",
+    measure=="pop_eth_tot" ~ "pop_eth_tot_direct"))
+
+
+
 
 # save the living units distribution ----------------------------------------------------------------------------
-savepath = "Race/data/distribution/"
-readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_race_demographics1.csv.xz"), compression = 9))
+savepath = "Race/data/working/model/"
+readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_race_demographics_direct.csv.xz"), compression = 9))
 
 
 

@@ -6,7 +6,7 @@
 # Libraries -------------------------------------------------------------------------------------
 library(dplyr)
 library(sf)
-library(httr)
+# library(httr)
 library(rjson)
 library(tidyr)
 library(readr)
@@ -133,7 +133,9 @@ acs_data_va <- acs_data_va_wd %>%
   mutate(measure_type=case_when(
            grepl('perc',measure)==T ~ "percentage",
            grepl('pop',measure)==T ~ "count"),
-         moe='')
+         moe='') %>%
+  filter(!is.na(value)) %>%
+  mutate(geoid=as.character(geoid))
 
 
 #2. Age distribution afor NCR
@@ -157,7 +159,9 @@ acs_data_ncr <- acs_data_ncr_wd %>%
            grepl('perc',measure)==T ~ "percentage",
            grepl('pop',measure)==T ~ "count"),
          moe='',
-        census_year=if_else(year<2020,2010,2020))
+        census_year=if_else(year<2020,2010,2020))  %>%
+  filter(!is.na(value)) %>%
+  mutate(geoid=as.character(geoid))
 
 
 # get the list of tracts, counties and block groups from NCR
@@ -180,8 +184,10 @@ acs_data_ncr <- merge(acs_data_ncr, ncr_geo, by.x=c('geoid','region_type','censu
   select(geoid,region_name,region_type,year,measure,value,measure_type,moe)
 
 # Save the data ----------------------------------------------------------------------------------
-savepath = "Age/data/distribution/"
+savepath = "Age/data/working/"
 readr::write_csv(acs_data_va, xzfile(paste0(savepath,"va_cttrbg_acs_",min(years),"_",max(years),"_age_demographics.csv.xz"), compression = 9))
+
+savepath = "Age/data/distribution/"
 readr::write_csv(acs_data_ncr, xzfile(paste0(savepath,"ncr_cttrbg_acs_",min(years),"_",max(years),"_age_demographics.csv.xz"), compression = 9))
 
 

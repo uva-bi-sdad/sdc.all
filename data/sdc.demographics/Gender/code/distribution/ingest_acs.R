@@ -6,7 +6,7 @@
 # Libraries -------------------------------------------------------------------------------------
 library(dplyr)
 library(sf)
-library(httr)
+# library(httr)
 library(rjson)
 library(tidyr)
 library(readr)
@@ -149,8 +149,10 @@ acs_data_ncr <- merge(acs_data_ncr, ncr_geo, by.x=c('geoid','region_type','censu
 
 
 # Save the data ----------------------------------------------------------------------------------
-savepath = "Gender/data/distribution/"
+savepath = "Gender/data/working/"
 readr::write_csv(acs_data_va, xzfile(paste0(savepath,"va_cttrbg_acs_",min(years),'_',max(years),"_gender_demographics.csv.xz"), compression = 9))
+
+savepath <- "Gender/data/distribution/"
 readr::write_csv(acs_data_ncr, xzfile(paste0(savepath,"ncr_cttrbg_acs_",min(years),'_',max(years),"_gender_demographics.csv.xz"), compression = 9))
 
 

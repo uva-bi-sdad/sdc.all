@@ -4,14 +4,14 @@
 # libraries -------------------------------------------------------------
 library(dplyr)
 library(sf)
-library(httr)
+# library(httr)
 library(sp)
 library(data.table)
 library(stringr)
 #library("rgdal", lib.loc="/usr/local/lib/R/site-library")
 library(tidyr)
 library(readr)
-library(tidyverse)
+# library(tidyverse)
 library(tidycensus)
 library(tigris)
 library(rjson)
@@ -20,7 +20,7 @@ library(redistribute)
 
 # load the data -------------------------------------------------------------------
 # get the age demographics acs data for virginia
-uploadpath = "Language/data/distribution/"
+uploadpath = "Language/data/working/"
 files = list.files(uploadpath)
 filename = files[str_detect(files,"va_cttrbg_acs")]
 acs <- read.csv(paste0(uploadpath,filename))
@@ -100,10 +100,19 @@ temp_acs_dmg <- acs %>%
 temp_direct_dmg <- model_direct 
 baseline_data <- rbind(temp_acs_dmg,temp_direct_dmg)
 
+# baseline_data <- read_csv('Language/data/working/model/va_hsrsdpdzccttrbg_sdad_2016_2021_language_demographics1.csv.xz')
+# unique(baseline_data$measure)
+# yearlist <- unique(baseline_data$year)
+
+baseline_data <- baseline_data %>% 
+  mutate(measure=case_when(
+    measure=="hh_limited_english" ~ "hh_limited_english_direct",
+    measure=="perc_hh_limited_english" ~ "perc_hh_limited_english_direct"))
+
 
 # save the living units distribution ----------------------------------------------------------------------------
-savepath = "Language/data/distribution/"
-readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_language_demographics1.csv.xz"), compression = 9))
+savepath = "Language/data/working/model/"
+readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_language_demographics_direct.csv.xz"), compression = 9))
 
 
 # files = list.files(savepath)

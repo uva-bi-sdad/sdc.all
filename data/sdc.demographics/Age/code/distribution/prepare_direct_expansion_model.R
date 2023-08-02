@@ -4,14 +4,14 @@
 # libraries -------------------------------------------------------------
 library(dplyr)
 library(sf)
-library(httr)
+# library(httr)
 library(sp)
 library(data.table)
 library(stringr)
 #library("rgdal", lib.loc="/usr/local/lib/R/site-library")
 library(tidyr)
 library(readr)
-library(tidyverse)
+# library(tidyverse)
 library(tidycensus)
 library(tigris)
 library(rjson)
@@ -20,7 +20,7 @@ library(redistribute)
 
 # load the data -------------------------------------------------------------------
 # get the age demographics acs data for virginia
-uploadpath = "Age/data/distribution/"
+uploadpath = "Age/data/working/"
 files = list.files(uploadpath)
 filename = files[str_detect(files,"va_cttrbg_acs")]
 acs <- read.csv(paste0(uploadpath,filename))
@@ -100,10 +100,25 @@ temp_acs_dmg <- acs %>%
 temp_direct_dmg <- model_direct 
 baseline_data <- rbind(temp_acs_dmg,temp_direct_dmg)
 
+# load data
+#baseline_data <- read_csv('Age/data/working/model/va_hsrsdpdzccttrbg_sdad_2013_2021_age_demographics1.csv.xz')
+#unique(baseline_data$measure)
+baseline_data <- baseline_data %>% 
+  mutate(measure=case_when(
+    measure=="total_pop" ~ "total_pop_direct",
+    measure=="pop_under_20" ~ "pop_under_20_direct",
+    measure=="pop_20_64" ~ "pop_20_64_direct",
+    measure=="pop_65_plus" ~ "pop_65_plus_direct",
+    measure=="perc_pop_under_20" ~ "perc_pop_under_20_direct",
+    measure=="perc_pop_20_64" ~ "perc_pop_20_64_direct",
+    measure=="perc_pop_65_plus" ~ "perc_pop_65_plus_direct")) %>%
+  filter(!is.na(value)) %>%
+  mutate(geoid=as.character(geoid))
+
 
 # save the data 
-savepath = "Age/data/distribution/"
-readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_age_demographics1.csv.xz"), compression = 9))
+savepath = "Age/data/working/model/"
+readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_age_demographics_direct.csv.xz"), compression = 9))
 
 
 
@@ -143,34 +158,3 @@ readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_
 #     }
 #   }
 # }
-
-
-
-# combine the data
-temp_acs_dmg <- acs %>% 
-  select(geoid,year,measure,value,moe) %>%
-  mutate(new_measure=case_when(
-    measure=="age_total_pop" ~ "total_pop",
-    measure=="age_pop_under_20" ~ "pop_under_20",
-    measure=="age_pop_20_64" ~ "pop_20_64",
-    measure=="age_pop_65_plus" ~ "pop_65_plus",
-    measure=="age_perc_pop_under_20" ~ "perc_pop_under_20",
-    measure=="age_perc_pop_20_64" ~ "perc_pop_20_64",
-    measure=="age_perc_pop_65_plus" ~ "perc_pop_65_plus"))
-
-temp_direct_dmg <- model_direct %>%
-  mutate(new_measure=case_when(
-    measure=="age_total_pop_direct" ~ "total_pop",
-    measure=="age_pop_under_20_direct" ~ "pop_under_20",
-    measure=="age_pop_20_64_direct" ~ "pop_20_64",
-    measure=="age_pop_65_plus_direct" ~ "pop_65_plus",
-    measure=="age_perc_pop_under_20_direct" ~ "perc_pop_under_20",
-    measure=="age_perc_pop_20_64_direct" ~ "perc_pop_20_64",
-    measure=="age_perc_pop_65_plus_direct" ~ "perc_pop_65_plus"))
-    
-baseline_data <- rbind(temp_acs_dmg,temp_direct_dmg)
-readr::write_csv(baseline_data, xzfile(paste0(savepath,"va059_hsrsdpdzc_sdad1_",min(yearlist),'_',max(yearlist),"_age_demographics.csv.xz"), compression = 9))
-
-
-
-
