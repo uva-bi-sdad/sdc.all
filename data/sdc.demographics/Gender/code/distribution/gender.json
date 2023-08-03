@@ -1,5 +1,5 @@
 {
-  "{variant.name}{category.name}": {
+  "gender_{variant.name}{category.name}": {
     "category": "Demographics",
     "data_type": "{variant}",
     "unit": "individual",
@@ -20,16 +20,18 @@
       }
     ],
     "categories": {
-      "blank": {
-        "long_description": "and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap."
-      },
+      "blank": {},
       "_parcels": {
         "default": "parcels",
         "long_description": "and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap."
+      },
+      "_direct": {
+        "default": "direct",
+        "long_description": "and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap."
       }
     },
     "variants": {
-      "pop_male": {
+      "male_count": {
         "default": "Male population",
         "data_type": "decimal",
         "aggregation_method": "arithmetic mean",
@@ -37,7 +39,7 @@
         "long_description": "The count of males in the total population.",
         "statement": "The male population is {value} in {region_name}."
       },
-      "pop_female": {
+      "female_count": {
         "default": "Female population",
         "data_type": "decimal",
         "aggregation_method": "arithmetic mean",
@@ -45,7 +47,7 @@
         "long_description": "The count of females in the total population.",
         "statement": "The female population is {value} in {region_name}."
       },
-      "perc_male": {
+      "male_percent": {
         "default": "Percentage of males",
         "data_type": "decimal",
         "aggregation_method": "percent",
@@ -53,7 +55,7 @@
         "long_description": "The percent of males in the total population.",
         "statement": "The percent of males is {value} in {region_name}."
       },
-      "perc_female": {
+      "female_percent": {
         "default": "Percentage of females",
         "data_type": "decimal",
         "aggregation_method": "percent",
@@ -61,7 +63,7 @@
         "long_description": "The percent of females in the total population.",
         "statement": "The percent of females is {value} in {region_name}."
       },
-      "total_pop": {
+      "total_count": {
         "default": "Total count of the population",
         "data_type": "decimal",
         "aggregation_method": "arithmetic mean",

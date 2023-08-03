@@ -83,6 +83,14 @@
       }
     },
     "variants": {
+      "total_employment": {
+        "default": "total employment",
+        "data_type": "integer",
+        "aggregation_method": "count",
+        "short_description": "Total jobs by businesses",
+        "long_description": "Total jobs by businesses",
+        "statement": "{value} jobs in {region_name}."
+      },
       "business_create_job": {
         "default": "business creating jobs",
         "data_type": "integer",

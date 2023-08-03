@@ -5,6 +5,7 @@
     "equity_category": "Status",
     "short_name": "Population{variant}",
     "long_name": "Population{variant}",
+    "short_description": "{variant}",
     "long_description": "{variant} For non-census geographies, values are redistributed {category}, using the redistribute R package.",
     "statement": "There are {value} people{variant} in {region_name}.",
     "citations": "bii-redist",
@@ -72,7 +73,7 @@
         "aggregation_method": "count",
         "short_name": " {category}",
         "long_name": ": Total Number of People {category}",
-        "short_description": "Total number of people ({category}).",
+        "short_description": "Total number of people {category}.",
         "long_description": "Total number of people, as reported in census ACS population data."
       },
       "_density": {
@@ -80,7 +81,7 @@
         "aggregation_method": "ratio",
         "short_name": " Density {category}",
         "long_name": " Density: People Per Square Mile {category}",
-        "short_description": "People per square mile.",
+        "short_description": "People per square mile {category}.",
         "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas: \\[\\frac{population_{r}}{meters^{2}_{r}}1609.344^{2}\\] Where r is each region (e.g., census tract or county).",
         "statement": " per square mile"
       }

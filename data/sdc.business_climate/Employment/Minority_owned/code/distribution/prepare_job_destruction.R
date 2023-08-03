@@ -319,3 +319,5 @@ temp_ct <-  mi_subva_features %>%
 temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
   filter(!is.na(value))
 readr::write_csv(temp, xzfile(paste0(savepath,"rva_cttrbg_mi_",min(temp$year),'_',max(temp$year),"_jobs_destruction_by_minority.csv.xz"), compression = 9))
+
+

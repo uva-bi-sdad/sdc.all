@@ -19,7 +19,7 @@ library(redistribute)
 
 # load the data -------------------------------------------------------------------
 # get the age demographics acs data for virginia
-uploadpath = "Veteran/data/distribution/"
+uploadpath = "Veteran/data/working/"
 files = list.files(uploadpath)
 filename = files[str_detect(files,"va_cttrbg_acs")]
 acs <- read.csv(paste0(uploadpath,filename))
@@ -105,8 +105,8 @@ baseline_data <- rbind(temp_acs_dmg,temp_direct_dmg)
 
 baseline_data <- baseline_data %>% 
   mutate(measure=case_when(
-    measure=="pop_veteran" ~ "pop_veteran_direct",
-    measure=="perc_veteran" ~ "perc_veteran_direct"))
+    measure=="pop_veteran" ~ "veteran_count_direct",
+    measure=="perc_veteran" ~ "veteran_percent_direct"))
 
 
 

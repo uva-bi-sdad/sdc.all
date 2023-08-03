@@ -25,7 +25,7 @@ temp_bg <- mi_fairfax_features %>%
   mutate(type=if_else(minority==1,'minority_owned','non_minority_owned')) %>%
   group_by(geoid,region_name,region_type,year,type) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,region_name,region_type,year,type,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','region_name','region_type','year','type'), names_to='measure', values_to='value') %>%
@@ -49,7 +49,7 @@ temp_tr <-  mi_fairfax_features %>%
   mutate(type=if_else(minority==1,'minority_owned','non_minority_owned')) %>%
   group_by(geoid,year,type) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,year,type,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','year','type'), names_to='measure', values_to='value') %>%
@@ -71,7 +71,7 @@ temp_ct <-  mi_fairfax_features %>%
   mutate(type=if_else(minority==1,'minority_owned','non_minority_owned')) %>%
   group_by(geoid,year,type) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,year,type,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','year','type'), names_to='measure', values_to='value') %>%
@@ -103,7 +103,7 @@ temp_bg <- mi_ncr_features %>%
   mutate(type=if_else(minority==1,'minority_owned','non_minority_owned')) %>%
   group_by(geoid,region_name,region_type,year,type) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,region_name,region_type,year,type,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','region_name','region_type','year','type'), names_to='measure', values_to='value') %>%
@@ -127,7 +127,7 @@ temp_tr <-  mi_ncr_features %>%
   mutate(type=if_else(minority==1,'minority_owned','non_minority_owned')) %>%
   group_by(geoid,year,type) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,year,type,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','year','type'), names_to='measure', values_to='value') %>%
@@ -149,7 +149,7 @@ temp_ct <-  mi_ncr_features %>%
   mutate(type=if_else(minority==1,'minority_owned','non_minority_owned')) %>%
   group_by(geoid,year,type) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,year,type,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','year','type'), names_to='measure', values_to='value') %>%
@@ -183,7 +183,7 @@ temp_bg <- mi_subva_features %>%
   mutate(type=if_else(minority==1,'minority_owned','non_minority_owned')) %>%
   group_by(geoid,region_name,region_type,year,type) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,region_name,region_type,year,type,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','region_name','region_type','year','type'), names_to='measure', values_to='value') %>%
@@ -208,7 +208,7 @@ temp_tr <-  mi_subva_features %>%
   mutate(type=if_else(minority==1,'minority_owned','non_minority_owned')) %>%
   group_by(geoid,year,type) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,year,type,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','year','type'), names_to='measure', values_to='value') %>%
@@ -230,7 +230,7 @@ temp_ct <-  mi_subva_features %>%
   mutate(type=if_else(minority==1,'minority_owned','non_minority_owned')) %>%
   group_by(geoid,year,type) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,year,type,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','year','type'), names_to='measure', values_to='value') %>%

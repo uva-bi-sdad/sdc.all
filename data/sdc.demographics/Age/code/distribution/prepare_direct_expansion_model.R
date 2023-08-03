@@ -105,13 +105,13 @@ baseline_data <- rbind(temp_acs_dmg,temp_direct_dmg)
 #unique(baseline_data$measure)
 baseline_data <- baseline_data %>% 
   mutate(measure=case_when(
-    measure=="total_pop" ~ "total_pop_direct",
-    measure=="pop_under_20" ~ "pop_under_20_direct",
-    measure=="pop_20_64" ~ "pop_20_64_direct",
-    measure=="pop_65_plus" ~ "pop_65_plus_direct",
-    measure=="perc_pop_under_20" ~ "perc_pop_under_20_direct",
-    measure=="perc_pop_20_64" ~ "perc_pop_20_64_direct",
-    measure=="perc_pop_65_plus" ~ "perc_pop_65_plus_direct")) %>%
+    measure=="total_pop" ~ "age_total_count_direct",
+    measure=="pop_under_20" ~ "age_under_20_count_direct",
+    measure=="pop_20_64" ~ "age_20_64_count_direct",
+    measure=="pop_65_plus" ~ "age_65_plus_count_direct",
+    measure=="perc_pop_under_20" ~ "age_under_20_percent_direct",
+    measure=="perc_pop_20_64" ~ "age_20_64_percent_direct",
+    measure=="perc_pop_65_plus" ~ "age_65_plus_percent_direct")) %>%
   filter(!is.na(value)) %>%
   mutate(geoid=as.character(geoid))
 

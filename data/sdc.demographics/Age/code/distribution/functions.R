@@ -24,7 +24,7 @@ prepare_combine <- function(topic) {
                                     compression = 9))
 }
 
-run_data_prep <- function(topic) {
+run_data_prep <- function(topic, ingest=TRUE, direct=TRUE, refine=TRUE) {
   #' runs files that get and clean data
   #' param: topic(character); topic to combine data under
   #' return: none - gathers, cleans, and saves data
@@ -33,18 +33,26 @@ run_data_prep <- function(topic) {
   
   # files are dependent on each others outputs --> 
   #    must be run in this order to update properly
-  source(paste0(runpath, 'ingest_acs.R'))
-  print('ingest done')
+  if (ingest) {
+    source(paste0(runpath, 'ingest_acs.R'))
+    print('ingest done')
+  }
   
-  source(paste0(runpath, 'prepare_direct_expansion_model.R'))
-  print('direct done')
+  if (direct) {
+    source(paste0(runpath, 'prepare_direct_expansion_model.R'))
+    print('direct done')
+  }
   
-  source(paste0(runpath, 'prepare_refine_expansion_model.R'))
-  print('parcels done')
+  if(refine) {
+    source(paste0(runpath, 'prepare_refine_expansion_model.R'))
+    print('parcels done')
+  }
   
   # combine data from models
   prepare_combine(topic)
   print('combine done')
+  
+  rm(list = ls())
 }
 
 update_measure_names <- function(path, filename, changes, save_new = NULL) {

@@ -1,53 +1,17 @@
 {
-    "{category}_{variant}": {
-        "aggregation_method": "{variant}",
-        "categories": "",
-        "category": "Business climate",
-        "citations": "",
-        "data_type": "{variant}",
-        "equity_category": "Status",
-        "layer": "",
-        "long_description": "{variant} {category} Available for US businesses.",
-        "long_name": "{variant.short_description}",
-        "measure_type": "",
-        "short_description": "{variant}",
-        "short_name": "{variant} ({category}-owned)",
-        "sources": [
-            {
-                "name": "Mergent Intellect",
-                "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/mergent-intellect"
-            }
-        ],
-        "statement": "{variant}",
-        "type": "",
-        "unit": "business",
-        "variants": ""
-    },
-    "_references": {
-        "bls": {
-            "id": "bls",
-            "author": "Bureau of Labor Statistics",
-            "year": 2022,
-            "title": "Business Dynamics Statistics (BDS) Frequently Asked Questions (FAQ)",
-            "url": "https://www.census.gov/programs-surveys/bds/documentation/faq.html"
-        }
-    },
     "minority_owned_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
-        "citations": [
-            "bls"
-        ],
+        "citations": "",
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of minority_owned-owned businesses that are new: \\[entry_rate=\\frac{new_businesses}{all_businesses}\\] A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans. Available for US businesses.",
-        "long_name": "Entry rate of minority_owned-owned businesses.",
+        "long_description": "Percent of new businesses (a new business is a company newly created or has moved to the region): \\[entry_rate=\\frac{new_businesses}{all_businesses}\\] owned by minority A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
+        "long_name": "minority-owned entry rate",
         "measure_type": "",
-        "short_description": "Entry rate of minority_owned-owned businesses.",
-        "short_name": "Entry rate (minority_owned-owned)",
+        "short_description": "Entry rate as minority-owned",
+        "short_name": "minority-owned entry rate",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -55,7 +19,7 @@
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
-        "statement": "{value} of businesses in {region_name} are new.",
+        "statement": "{value} percent of businesses are new in {region_name}.",
         "type": "",
         "unit": "business",
         "variants": ""
@@ -64,17 +28,15 @@
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
-        "citations": [
-            "bls"
-        ],
+        "citations": "",
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of non_minority_owned-owned businesses that are new: \\[entry_rate=\\frac{new_businesses}{all_businesses}\\] A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans. Available for US businesses.",
-        "long_name": "Entry rate of non_minority_owned-owned businesses.",
+        "long_description": "Percent of new businesses (a new business is a company newly created or has moved to the region): \\[entry_rate=\\frac{new_businesses}{all_businesses}\\] owned by non-minority A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
+        "long_name": "non-minority-owned entry rate",
         "measure_type": "",
-        "short_description": "Entry rate of non_minority_owned-owned businesses.",
-        "short_name": "Entry rate (non_minority_owned-owned)",
+        "short_description": "Entry rate as non-minority-owned",
+        "short_name": "non-minority-owned entry rate",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -82,7 +44,7 @@
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
-        "statement": "{value} of businesses in {region_name} are new.",
+        "statement": "{value} percent of businesses are new in {region_name}.",
         "type": "",
         "unit": "business",
         "variants": ""
@@ -95,11 +57,11 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of minority_owned-owned businesses that have left: \\[exit_rate=\\frac{exited_businesses}{all_businesses}\\] A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans. Available for US businesses.",
-        "long_name": "Exit rate of minority_owned-owned businesses.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit_rate=\\frac{exited_businesses}{all_businesses}\\] owned by minority A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
+        "long_name": "minority-owned exit rate",
         "measure_type": "",
-        "short_description": "Exit rate of minority_owned-owned businesses.",
-        "short_name": "Exit rate (minority_owned-owned)",
+        "short_description": "Exit rate as minority-owned",
+        "short_name": "minority-owned exit rate",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -107,7 +69,7 @@
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
-        "statement": "{value} of businesses have left {region_name}.",
+        "statement": "{value} percent of businesses closed in {region_name}.",
         "type": "",
         "unit": "business",
         "variants": ""
@@ -120,11 +82,11 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of non_minority_owned-owned businesses that have left: \\[exit_rate=\\frac{exited_businesses}{all_businesses}\\] A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans. Available for US businesses.",
-        "long_name": "Exit rate of non_minority_owned-owned businesses.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit_rate=\\frac{exited_businesses}{all_businesses}\\] owned by non-minority A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
+        "long_name": "non-minority-owned exit rate",
         "measure_type": "",
-        "short_description": "Exit rate of non_minority_owned-owned businesses.",
-        "short_name": "Exit rate (non_minority_owned-owned)",
+        "short_description": "Exit rate as non-minority-owned",
+        "short_name": "non-minority-owned exit rate",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -132,12 +94,12 @@
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
-        "statement": "{value} of businesses have left {region_name}.",
+        "statement": "{value} percent of businesses closed in {region_name}.",
         "type": "",
         "unit": "business",
         "variants": ""
     },
-    "minority_owned_number_businesses": {
+    "minority_owned_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -145,11 +107,11 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all minority_owned-owned businesses. A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans. Available for US businesses.",
-        "long_name": "Count of all minority_owned-owned businesses.",
+        "long_description": "Count of all new businesses (a new business is a company newly created or has moved to the region) owned by minority A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
+        "long_name": "minority-owned new businesses",
         "measure_type": "",
-        "short_description": "Count of all minority_owned-owned businesses.",
-        "short_name": "All businesses (minority_owned-owned)",
+        "short_description": "New businesses as minority-owned",
+        "short_name": "minority-owned new businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -157,12 +119,12 @@
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
-        "statement": "There are {value} businesses in {region_name}.",
+        "statement": "{value} new businesses in {region_name}.",
         "type": "",
         "unit": "business",
         "variants": ""
     },
-    "non_minority_owned_number_businesses": {
+    "non_minority_owned_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -170,11 +132,11 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all non_minority_owned-owned businesses. A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans. Available for US businesses.",
-        "long_name": "Count of all non_minority_owned-owned businesses.",
+        "long_description": "Count of all new businesses (a new business is a company newly created or has moved to the region) owned by non-minority A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
+        "long_name": "non-minority-owned new businesses",
         "measure_type": "",
-        "short_description": "Count of all non_minority_owned-owned businesses.",
-        "short_name": "All businesses (non_minority_owned-owned)",
+        "short_description": "New businesses as non-minority-owned",
+        "short_name": "non-minority-owned new businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -182,12 +144,12 @@
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
-        "statement": "There are {value} businesses in {region_name}.",
+        "statement": "{value} new businesses in {region_name}.",
         "type": "",
         "unit": "business",
         "variants": ""
     },
-    "minority_owned_new_businesses": {
+    "minority_owned_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -195,11 +157,11 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of new minority_owned-owned businesses. A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans. Available for US businesses.",
-        "long_name": "Count of new minority_owned-owned businesses.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) owned by minority A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
+        "long_name": "minority-owned closed businesses",
         "measure_type": "",
-        "short_description": "Count of new minority_owned-owned businesses.",
-        "short_name": "New businesses (minority_owned-owned)",
+        "short_description": "Closed businesses as minority-owned",
+        "short_name": "minority-owned closed businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -207,12 +169,12 @@
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
-        "statement": "There are {value} new businesses in {region_name}.",
+        "statement": "{value} closed businesses in {region_name}.",
         "type": "",
         "unit": "business",
         "variants": ""
     },
-    "non_minority_owned_new_businesses": {
+    "non_minority_owned_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -220,11 +182,11 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of new non_minority_owned-owned businesses. A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans. Available for US businesses.",
-        "long_name": "Count of new non_minority_owned-owned businesses.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) owned by non-minority A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
+        "long_name": "non-minority-owned closed businesses",
         "measure_type": "",
-        "short_description": "Count of new non_minority_owned-owned businesses.",
-        "short_name": "New businesses (non_minority_owned-owned)",
+        "short_description": "Closed businesses as non-minority-owned",
+        "short_name": "non-minority-owned closed businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -232,12 +194,12 @@
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
-        "statement": "There are {value} new businesses in {region_name}.",
+        "statement": "{value} closed businesses in {region_name}.",
         "type": "",
         "unit": "business",
         "variants": ""
     },
-    "minority_owned_exit_businesses": {
+    "minority_owned_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -245,11 +207,11 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of new minority_owned-owned businesses. A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans. Available for US businesses.",
-        "long_name": "Count of new minority_owned-owned businesses.",
+        "long_description": "Count of all businesses owned by minority A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
+        "long_name": "minority-owned Total businesses",
         "measure_type": "",
-        "short_description": "Count of new minority_owned-owned businesses.",
-        "short_name": "New businesses (minority_owned-owned)",
+        "short_description": "Total businesses as minority-owned",
+        "short_name": "minority-owned Total businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -257,12 +219,12 @@
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
-        "statement": "There are {value} new businesses in {region_name}.",
+        "statement": "{value} businesses in {region_name}.",
         "type": "",
         "unit": "business",
         "variants": ""
     },
-    "non_minority_owned_exit_businesses": {
+    "non_minority_owned_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -270,11 +232,11 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of new non_minority_owned-owned businesses. A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans. Available for US businesses.",
-        "long_name": "Count of new non_minority_owned-owned businesses.",
+        "long_description": "Count of all businesses owned by non-minority A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
+        "long_name": "non-minority-owned Total businesses",
         "measure_type": "",
-        "short_description": "Count of new non_minority_owned-owned businesses.",
-        "short_name": "New businesses (non_minority_owned-owned)",
+        "short_description": "Total businesses as non-minority-owned",
+        "short_name": "non-minority-owned Total businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -282,7 +244,7 @@
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
-        "statement": "There are {value} new businesses in {region_name}.",
+        "statement": "{value} businesses in {region_name}.",
         "type": "",
         "unit": "business",
         "variants": ""

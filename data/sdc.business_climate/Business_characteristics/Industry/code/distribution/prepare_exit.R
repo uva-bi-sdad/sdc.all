@@ -24,7 +24,7 @@ mi_fairfax_features <-  read_csv(paste0(uploadpath,"mi_fairfax_features_bg.csv.x
 temp_bg <- mi_fairfax_features %>%
   group_by(geoid,region_name,region_type,year,naics_name) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,region_name,region_type,year,naics_name,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','region_name','region_type','year','naics_name'), names_to='measure', values_to='value') %>%
@@ -47,7 +47,7 @@ temp_tr <-  mi_fairfax_features %>%
   mutate(geoid=substr(geoid,1,11)) %>%
   group_by(geoid,year,naics_name) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,year,naics_name,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','year','naics_name'), names_to='measure', values_to='value') %>%
@@ -68,7 +68,7 @@ temp_ct <-  mi_fairfax_features %>%
   mutate(geoid=substr(geoid,1,5)) %>%
   group_by(geoid,year,naics_name) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,year,naics_name,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','year','naics_name'), names_to='measure', values_to='value') %>%
@@ -98,7 +98,7 @@ mi_ncr_features <-  read_csv(paste0(uploadpath,"mi_ncr_features_bg.csv.xz"))
 temp_bg <- mi_ncr_features %>%
   group_by(geoid,region_name,region_type,year,naics_name) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,region_name,region_type,year,naics_name,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','region_name','region_type','year','naics_name'), names_to='measure', values_to='value') %>%
@@ -121,7 +121,7 @@ temp_tr <-  mi_ncr_features %>%
   mutate(geoid=substr(geoid,1,11)) %>%
   group_by(geoid,year,naics_name) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,year,naics_name,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','year','naics_name'), names_to='measure', values_to='value') %>%
@@ -142,7 +142,7 @@ temp_ct <-  mi_ncr_features %>%
   mutate(geoid=substr(geoid,1,5)) %>%
   group_by(geoid,year,naics_name) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,year,naics_name,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','year','naics_name'), names_to='measure', values_to='value') %>%
@@ -172,7 +172,7 @@ mi_subva_features <-  read_csv(paste0(uploadpath,"mi_subva_features_bg.csv.xz"))
 temp_bg <- mi_subva_features %>%
   group_by(geoid,region_name,region_type,year,naics_name) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,region_name,region_type,year,naics_name,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','region_name','region_type','year','naics_name'), names_to='measure', values_to='value') %>%
@@ -195,7 +195,7 @@ temp_tr <-  mi_subva_features %>%
   mutate(geoid=substr(geoid,1,11)) %>%
   group_by(geoid,year,naics_name) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,year,naics_name,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','year','naics_name'), names_to='measure', values_to='value') %>%
@@ -216,7 +216,7 @@ temp_ct <-  mi_subva_features %>%
   mutate(geoid=substr(geoid,1,5)) %>%
   group_by(geoid,year,naics_name) %>%
   summarize(total_business=length(duns),
-            exit_business=sum(exit),
+            exit_business=sum(exit, na.rm=T),
             exit_rate=100*exit_business/total_business) %>%
   select(geoid,year,naics_name,exit_business,exit_rate) %>%
   pivot_longer(!c('geoid','year','naics_name'), names_to='measure', values_to='value') %>%

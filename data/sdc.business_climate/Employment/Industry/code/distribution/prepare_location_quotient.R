@@ -22,7 +22,8 @@ mi_fairfax_features <-  read_csv(paste0(uploadpath,"mi_fairfax_features_updated.
 
 
 # Identify incumbent and new businesses. Count the number of new employees from new business, incumbent.
-location_quotient <- mi_fairfax_features %>%
+temp_bg <- mi_fairfax_features %>%
+  mutate(geoid=as.character(geoid)) %>%
   select(duns,year,geoid,naics_name,employment) %>%
   group_by(year) %>%
   mutate(emp_year=sum(employment, na.rm=T)) %>%
@@ -31,31 +32,70 @@ location_quotient <- mi_fairfax_features %>%
   group_by(year,geoid) %>%
   mutate(emp_bg_year=sum(employment, na.rm=T)) %>%
   group_by(year,geoid,naics_name) %>%
-  mutate(emp_bg_ind_year=sum(employment, na.rm=T),
-         value=round((emp_bg_ind_year/emp_bg_year)/(emp_ind_year/emp_year),2),
-         measure=paste0(naics_name,'_Location_quotient'),
-         region_type = 'block group',
+  summarise(emp_bg_year=mean(emp_bg_year),
+            emp_ind_year=mean(emp_ind_year),
+            emp_year=mean(emp_year),
+            emp_bg_ind_year=sum(employment, na.rm=T),
+            value=round((emp_bg_ind_year/emp_bg_year)/(emp_ind_year/emp_year),2)) %>%
+  mutate(measure=paste0(naics_name,'_Location_quotient'),
          measure_type = 'index',
-         moe='',
-         census_year=if_else(year<2020,2010,2020)) %>%
-  select(geoid,region_type,year,measure,value,measure_type,moe,census_year) %>%
+         moe='')%>%
+  select(geoid,year,measure,value,measure_type,moe) %>%
+  ungroup() %>%
   filter(!is.na(value))
 
 
-# add geometry 
-#fairfax_bg2010 <- block_groups("VA", "059", 2010) %>% select(geoid=GEOID,region_name=NAMELSAD) %>% st_drop_geometry() %>% mutate(census_year=2010)
-#fairfax_bg2020 <- block_groups("VA", "059", 2020) %>% select(geoid=GEOID,region_name=NAMELSAD) %>% st_drop_geometry() %>% mutate(census_year=2020)
-#fairfax_bg <- rbind(fairfax_bg2010,fairfax_bg2020)
+temp_tr <- mi_fairfax_features %>%
+  mutate(geoid=substr(geoid,1,11)) %>%
+  select(duns,year,geoid,naics_name,employment) %>%
+  group_by(year) %>%
+  mutate(emp_year=sum(employment, na.rm=T)) %>%
+  group_by(year,naics_name) %>%
+  mutate(emp_ind_year=sum(employment, na.rm=T)) %>%
+  group_by(year,geoid) %>%
+  mutate(emp_bg_year=sum(employment, na.rm=T)) %>%
+  group_by(year,geoid,naics_name) %>%
+  summarise(emp_bg_year=mean(emp_bg_year),
+            emp_ind_year=mean(emp_ind_year),
+            emp_year=mean(emp_year),
+            emp_bg_ind_year=sum(employment, na.rm=T),
+            value=round((emp_bg_ind_year/emp_bg_year)/(emp_ind_year/emp_year),2)) %>%
+  mutate(measure=paste0(naics_name,'_Location_quotient'),
+         measure_type = 'index',
+         moe='')%>%
+  select(geoid,year,measure,value,measure_type,moe) %>%
+  ungroup() %>%
+  filter(!is.na(value))
 
-# merge the data
-#temp <- merge(location_quotient, fairfax_bg, by.x=c('geoid','census_year'), by.y=c('geoid','census_year')) %>%
-#  select(geoid,region_name,region_type,year,measure,value,measure_type,moe)
 
+temp_ct <- mi_fairfax_features %>%
+  mutate(geoid=substr(geoid,1,5)) %>%
+  select(duns,year,geoid,naics_name,employment) %>%
+  group_by(year) %>%
+  mutate(emp_year=sum(employment, na.rm=T)) %>%
+  group_by(year,naics_name) %>%
+  mutate(emp_ind_year=sum(employment, na.rm=T)) %>%
+  group_by(year,geoid) %>%
+  mutate(emp_bg_year=sum(employment, na.rm=T)) %>%
+  group_by(year,geoid,naics_name) %>%
+  summarise(emp_bg_year=mean(emp_bg_year),
+            emp_ind_year=mean(emp_ind_year),
+            emp_year=mean(emp_year),
+            emp_bg_ind_year=sum(employment, na.rm=T),
+            value=round((emp_bg_ind_year/emp_bg_year)/(emp_ind_year/emp_year),2)) %>%
+  mutate(measure=paste0(naics_name,'_Location_quotient'),
+         measure_type = 'index',
+         moe='')%>%
+  select(geoid,year,measure,value,measure_type,moe) %>%
+  ungroup() %>%
+  filter(!is.na(value))
 
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 
 # save the data ---------------------------------------------------------------------------------------
 savepath = "Employment/Industry/data/distribution/"
-readr::write_csv(location_quotient, xzfile(paste0(savepath,"va059_bg_mi_",min(location_quotient$year),'_',max(location_quotient$year),"_location_quotient_by_industry.csv.xz"), compression = 9))
+readr::write_csv(temp, xzfile(paste0(savepath,"va059_bg_mi_",min(temp$year),'_',max(temp$year),"_location_quotient_by_industry.csv.xz"), compression = 9))
 
 
 
@@ -69,23 +109,76 @@ uploadpath = "Microdata/Mergent_intellect/data/working/"
 mi_ncr_features <-  read_csv(paste0(uploadpath,"mi_ncr_features_bg.csv.xz"))
 
 # count the total number of business per block groups and year
-temp <- mi_ncr_features %>%
-  select(duns,year,geoid,region_name,region_type,naics_name,employment) %>%
+temp_bg <- mi_ncr_features %>%
+  mutate(geoid=as.character(geoid)) %>%
+  select(duns,year,geoid,naics_name,employment) %>%
   group_by(year) %>%
   mutate(emp_year=sum(employment, na.rm=T)) %>%
   group_by(year,naics_name) %>%
   mutate(emp_ind_year=sum(employment, na.rm=T)) %>%
-  group_by(year,geoid,region_name,region_type) %>%
+  group_by(year,geoid) %>%
   mutate(emp_bg_year=sum(employment, na.rm=T)) %>%
-  group_by(year,geoid,region_name,region_type,naics_name) %>%
-  mutate(emp_bg_ind_year=sum(employment, na.rm=T),
-         value=round((emp_bg_ind_year/emp_bg_year)/(emp_ind_year/emp_year),2),
-         measure=paste0(naics_name,'_Location_quotient'),
+  group_by(year,geoid,naics_name) %>%
+  summarise(emp_bg_year=mean(emp_bg_year),
+            emp_ind_year=mean(emp_ind_year),
+            emp_year=mean(emp_year),
+            emp_bg_ind_year=sum(employment, na.rm=T),
+            value=round((emp_bg_ind_year/emp_bg_year)/(emp_ind_year/emp_year),2)) %>%
+  mutate(measure=paste0(naics_name,'_Location_quotient'),
          measure_type = 'index',
-         moe='') %>% ungroup() %>%
-  select(geoid,region_name,region_type,year,measure,value,measure_type,moe) %>%
+         moe='')%>%
+  select(geoid,year,measure,value,measure_type,moe) %>%
+  ungroup() %>%
   filter(!is.na(value))
 
+
+temp_tr <- mi_ncr_features %>%
+  mutate(geoid=substr(geoid,1,11)) %>%
+  select(duns,year,geoid,naics_name,employment) %>%
+  group_by(year) %>%
+  mutate(emp_year=sum(employment, na.rm=T)) %>%
+  group_by(year,naics_name) %>%
+  mutate(emp_ind_year=sum(employment, na.rm=T)) %>%
+  group_by(year,geoid) %>%
+  mutate(emp_bg_year=sum(employment, na.rm=T)) %>%
+  group_by(year,geoid,naics_name) %>%
+  summarise(emp_bg_year=mean(emp_bg_year),
+            emp_ind_year=mean(emp_ind_year),
+            emp_year=mean(emp_year),
+            emp_bg_ind_year=sum(employment, na.rm=T),
+            value=round((emp_bg_ind_year/emp_bg_year)/(emp_ind_year/emp_year),2)) %>%
+  mutate(measure=paste0(naics_name,'_Location_quotient'),
+         measure_type = 'index',
+         moe='')%>%
+  select(geoid,year,measure,value,measure_type,moe) %>%
+  ungroup() %>%
+  filter(!is.na(value))
+
+
+temp_ct <- mi_ncr_features %>%
+  mutate(geoid=substr(geoid,1,5)) %>%
+  select(duns,year,geoid,naics_name,employment) %>%
+  group_by(year) %>%
+  mutate(emp_year=sum(employment, na.rm=T)) %>%
+  group_by(year,naics_name) %>%
+  mutate(emp_ind_year=sum(employment, na.rm=T)) %>%
+  group_by(year,geoid) %>%
+  mutate(emp_bg_year=sum(employment, na.rm=T)) %>%
+  group_by(year,geoid,naics_name) %>%
+  summarise(emp_bg_year=mean(emp_bg_year),
+            emp_ind_year=mean(emp_ind_year),
+            emp_year=mean(emp_year),
+            emp_bg_ind_year=sum(employment, na.rm=T),
+            value=round((emp_bg_ind_year/emp_bg_year)/(emp_ind_year/emp_year),2)) %>%
+  mutate(measure=paste0(naics_name,'_Location_quotient'),
+         measure_type = 'index',
+         moe='')%>%
+  select(geoid,year,measure,value,measure_type,moe) %>%
+  ungroup() %>%
+  filter(!is.na(value))
+
+temp <- rbind(temp_bg, temp_tr, temp_ct) %>%
+  filter(!is.na(value))
 
 # save the data
 savepath = "Employment/Industry/data/distribution/"
@@ -103,23 +196,73 @@ uploadpath = "Microdata/Mergent_intellect/data/working/"
 mi_subva_features <-  read_csv(paste0(uploadpath,"mi_subva_features_bg.csv.xz"))
 
 # count the total number of business per block groups and year
-temp <- mi_subva_features %>%
-  select(duns,year,geoid,region_name,region_type,naics_name,employment) %>%
+temp_bg <- mi_subva_features %>%
+  mutate(geoid=as.character(geoid)) %>%
+  select(duns,year,geoid,naics_name,employment) %>%
   group_by(year) %>%
   mutate(emp_year=sum(employment, na.rm=T)) %>%
   group_by(year,naics_name) %>%
   mutate(emp_ind_year=sum(employment, na.rm=T)) %>%
-  group_by(year,geoid,region_name,region_type) %>%
+  group_by(year,geoid) %>%
   mutate(emp_bg_year=sum(employment, na.rm=T)) %>%
-  group_by(year,geoid,region_name,region_type,naics_name) %>%
-  mutate(emp_bg_ind_year=sum(employment, na.rm=T),
-         value=round((emp_bg_ind_year/emp_bg_year)/(emp_ind_year/emp_year),2),
-         measure=paste0(naics_name,'_Location_quotient'),
+  group_by(year,geoid,naics_name) %>%
+  summarise(emp_bg_year=mean(emp_bg_year),
+            emp_ind_year=mean(emp_ind_year),
+            emp_year=mean(emp_year),
+            emp_bg_ind_year=sum(employment, na.rm=T),
+            value=round((emp_bg_ind_year/emp_bg_year)/(emp_ind_year/emp_year),2)) %>%
+  mutate(measure=paste0(naics_name,'_Location_quotient'),
          measure_type = 'index',
-         moe='') %>% ungroup() %>%
-  select(geoid,region_name,region_type,year,measure,value,measure_type,moe) %>%
+         moe='')%>%
+  select(geoid,year,measure,value,measure_type,moe) %>%
+  ungroup() %>%
   filter(!is.na(value))
 
+
+temp_tr <- mi_subva_features %>%
+  mutate(geoid=substr(geoid,1,11)) %>%
+  select(duns,year,geoid,naics_name,employment) %>%
+  group_by(year) %>%
+  mutate(emp_year=sum(employment, na.rm=T)) %>%
+  group_by(year,naics_name) %>%
+  mutate(emp_ind_year=sum(employment, na.rm=T)) %>%
+  group_by(year,geoid) %>%
+  mutate(emp_bg_year=sum(employment, na.rm=T)) %>%
+  group_by(year,geoid,naics_name) %>%
+  summarise(emp_bg_year=mean(emp_bg_year),
+            emp_ind_year=mean(emp_ind_year),
+            emp_year=mean(emp_year),
+            emp_bg_ind_year=sum(employment, na.rm=T),
+            value=round((emp_bg_ind_year/emp_bg_year)/(emp_ind_year/emp_year),2)) %>%
+  mutate(measure=paste0(naics_name,'_Location_quotient'),
+         measure_type = 'index',
+         moe='')%>%
+  select(geoid,year,measure,value,measure_type,moe) %>%
+  ungroup() %>%
+  filter(!is.na(value))
+
+
+temp_ct <- mi_subva_features %>%
+  mutate(geoid=substr(geoid,1,5)) %>%
+  select(duns,year,geoid,naics_name,employment) %>%
+  group_by(year) %>%
+  mutate(emp_year=sum(employment, na.rm=T)) %>%
+  group_by(year,naics_name) %>%
+  mutate(emp_ind_year=sum(employment, na.rm=T)) %>%
+  group_by(year,geoid) %>%
+  mutate(emp_bg_year=sum(employment, na.rm=T)) %>%
+  group_by(year,geoid,naics_name) %>%
+  summarise(emp_bg_year=mean(emp_bg_year),
+            emp_ind_year=mean(emp_ind_year),
+            emp_year=mean(emp_year),
+            emp_bg_ind_year=sum(employment, na.rm=T),
+            value=round((emp_bg_ind_year/emp_bg_year)/(emp_ind_year/emp_year),2)) %>%
+  mutate(measure=paste0(naics_name,'_Location_quotient'),
+         measure_type = 'index',
+         moe='')%>%
+  select(geoid,year,measure,value,measure_type,moe) %>%
+  ungroup() %>%
+  filter(!is.na(value))
 
 # save the data
 savepath = "Employment/Industry/data/distribution/"

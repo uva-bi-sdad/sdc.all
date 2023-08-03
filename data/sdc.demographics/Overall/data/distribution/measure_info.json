@@ -5,6 +5,7 @@
     "equity_category": "Status",
     "short_name": "Population (direct method)",
     "long_name": "Population: Total Number of People (direct method)",
+    "short_description": "Total number of people (direct method).",
     "long_description": "Total number of people, as reported in census ACS population data. For non-census geographies, values are redistributed based on proportional overlap between census block groups and the local regions, using the redistribute R package.",
     "statement": "There are {value} people in {region_name}.",
     "citations": "bii-redist",
@@ -66,7 +67,6 @@
         "url": "https://gisdata-arlgis.opendata.arcgis.com/"
       }
     ],
-    "short_description": "estimated by proportional overlap for non-census geographies",
     "unit": "individual",
     "aggregation_method": "count"
   },
@@ -76,6 +76,7 @@
     "equity_category": "Status",
     "short_name": "Population (parcels method)",
     "long_name": "Population: Total Number of People (parcels method)",
+    "short_description": "Total number of people (parcels method).",
     "long_description": "Total number of people, as reported in census ACS population data. For non-census geographies, values are redistributed from census block groups to parcels, based on proportional geometric overlap and weighted by number of living units per parcel, then from parcels to the local regions based on proportional geometric overlap, using the redistribute R package.",
     "statement": "There are {value} people in {region_name}.",
     "citations": "bii-redist",
@@ -137,7 +138,6 @@
         "url": "https://gisdata-arlgis.opendata.arcgis.com/"
       }
     ],
-    "short_description": "estimated by proportional overlap with parcels for non-census geographies",
     "unit": "individual",
     "aggregation_method": "count"
   },
@@ -147,6 +147,7 @@
     "equity_category": "Status",
     "short_name": "Population Density (direct method)",
     "long_name": "Population Density: People Per Square Mile (direct method)",
+    "short_description": "People per square mile (direct method).",
     "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas: \\[\\frac{population_{r}}{meters^{2}_{r}}1609.344^{2}\\] Where r is each region (e.g., census tract or county). For non-census geographies, values are redistributed based on proportional overlap between census block groups and the local regions, using the redistribute R package.",
     "statement": "There are {value} people per square mile in {region_name}.",
     "citations": "bii-redist",
@@ -208,7 +209,6 @@
         "url": "https://gisdata-arlgis.opendata.arcgis.com/"
       }
     ],
-    "short_description": "estimated by proportional overlap for non-census geographies",
     "unit": "individual per square mile",
     "aggregation_method": "ratio"
   },
@@ -218,6 +218,7 @@
     "equity_category": "Status",
     "short_name": "Population Density (parcels method)",
     "long_name": "Population Density: People Per Square Mile (parcels method)",
+    "short_description": "People per square mile (parcels method).",
     "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas: \\[\\frac{population_{r}}{meters^{2}_{r}}1609.344^{2}\\] Where r is each region (e.g., census tract or county). For non-census geographies, values are redistributed from census block groups to parcels, based on proportional geometric overlap and weighted by number of living units per parcel, then from parcels to the local regions based on proportional geometric overlap, using the redistribute R package.",
     "statement": "There are {value} people per square mile in {region_name}.",
     "citations": "bii-redist",
@@ -279,7 +280,6 @@
         "url": "https://gisdata-arlgis.opendata.arcgis.com/"
       }
     ],
-    "short_description": "estimated by proportional overlap with parcels for non-census geographies",
     "unit": "individual per square mile",
     "aggregation_method": "ratio"
   },

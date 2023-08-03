@@ -103,12 +103,11 @@ baseline_data <- rbind(temp_acs_dmg,temp_direct_dmg)
 #unique(baseline_data$measure)
 baseline_data <- baseline_data %>% 
   mutate(measure=case_when(
-    measure=="total_pop" ~ "total_pop_direct",
-    measure=="pop_male" ~ "pop_male_direct",
-    measure=="pop_female" ~ "pop_female_direct",
-    measure=="perc_male" ~ "perc_male_direct",
-    measure=="perc_female" ~ "perc_female_direct"))
-
+    measure=="total_pop" ~ "gender_total_count_direct",
+    measure=="pop_male" ~ "gender_male_count_direct",
+    measure=="pop_female" ~ "gender_female_count_direct",
+    measure=="perc_male" ~ "gender_male_percent_direct",
+    measure=="perc_female" ~ "gender_female_percent_direct"))
 
 # save the data 
 savepath = "Gender/data/working/model/"

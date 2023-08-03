@@ -5,7 +5,7 @@
     "unit": "business",
     "equity_category": "Status",
     "aggregation_method": "{variant}",
-    "short_name": "{variant} ({category}-owned)",
+    "short_name": "{variant} ({category.default}-owned)",
     "long_name": "{variant.short_description} as {category.default}-owned",
     "short_description": "{variant} as {category.default}-owned",
     "long_description": "{variant} as {category.default}-owned. {category} Available for US businesses.",
@@ -18,10 +18,11 @@
       }
     ],
     "categories": {
-      "minority": {
+      "minority_owned": {
+        "default": "minority",
         "long_description": "A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans."
       },
-      "non_minority": {
+      "non_minority_owned": {
         "default": "non-minority",
         "long_description": "A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans."
       }
@@ -36,7 +37,7 @@
         "statement": "{value} businesses created new jobs in {region_name}."
       },
       "job_creation_active": {
-        "default": "jobs creation by active businesses",
+        "default": "active businesses jobs creation",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Count of new jobs created by active businesses",
@@ -44,7 +45,7 @@
         "statement": "{value} new jobs have been created by active businesses in {region_name}."
       },
       "job_creation_new": {
-        "default": "jobs creation by new businesses",
+        "default": "new businesses jobs creation",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Count of new jobs created by new businesses",
@@ -75,7 +76,7 @@
         "long_description": "Total new jobs created by all businesses",
         "statement": "{value} new jobs have been created by businesses in {region_name}."
       },
-      "business_destruction_job": {
+      "business_job_destruction": {
         "default": "businesses cutting jobs",
         "data_type": "integer",
         "aggregation_method": "count",
@@ -84,7 +85,7 @@
         "statement": "{value} businesses have cutted jobs in {region_name}."
       },
       "job_destruction_active": {
-        "default": "jobs cutted by active businesses",
+        "default": "active businesses job's cutted",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Count of jobs cutted by active businesses",
@@ -92,7 +93,7 @@
         "statement": "{value} jobs have been cutted by active businesses in {region_name}."
       },
       "job_destruction_exit": {
-        "default": "jobs cutted by closed businesses",
+        "default": "closed businesses job's cutted",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Count of jobs cutted by closed businesses",

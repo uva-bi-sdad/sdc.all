@@ -111,22 +111,22 @@ baseline_data <- rbind(temp_acs_dmg,temp_direct_dmg)
 
 baseline_data <- baseline_data %>% 
   mutate(measure=case_when(
-    measure=="total_race" ~ "total_race_direct",
-    measure=="pop_wht_alone" ~ "pop_wht_alone_direct",
-    measure=="pop_afr_amer_alone" ~ "pop_afr_amer_alone_direct",
-    measure=="pop_native_alone" ~ "pop_native_alone_direct",
-    measure=="pop_AAPI" ~ "pop_AAPI_direct",
-    measure=="pop_other" ~ "pop_other_direct", 
-    measure=="pop_two_or_more" ~ "pop_two_or_more_direct",
-    measure=="pop_hispanic_or_latino" ~ "pop_hispanic_or_latino_direct",
-    measure=="perc_wht_alone" ~ "perc_wht_alone_direct",
-    measure=="perc_afr_amer_alone" ~ "perc_afr_amer_alone_direct",
-    measure=="perc_native_alone" ~ "perc_native_alone_direct",
-    measure=="perc_AAPI" ~ "perc_AAPI_direct",
-    measure=="perc_two_or_more" ~ "perc_two_or_more_direct",
-    measure=="perc_other" ~ "perc_other_direct",
-    measure=="perc_hispanic_or_latino" ~ "perc_hispanic_or_latino_direct",
-    measure=="pop_eth_tot" ~ "pop_eth_tot_direct"))
+    measure=="total_race" ~ "race_total_count_direct",
+    measure=="pop_wht_alone" ~ "race_wht_alone_count_direct",
+    measure=="pop_afr_amer_alone" ~ "race_afr_amer_alone_count_direct",
+    measure=="pop_native_alone" ~ "race_native_alone_count_direct",
+    measure=="pop_AAPI" ~ "race_AAPI_count_direct",
+    measure=="pop_other" ~ "race_other_count_direct", 
+    measure=="pop_two_or_more" ~ "race_two_or_more_count_direct",
+    measure=="pop_hispanic_or_latino" ~ "race_hispanic_or_latino_count_direct",
+    measure=="perc_wht_alone" ~ "race_wht_alone_percent_direct",
+    measure=="perc_afr_amer_alone" ~ "race_afr_amer_alone_percent_direct",
+    measure=="perc_native_alone" ~ "race_native_alone_percent_direct",
+    measure=="perc_AAPI" ~ "race_AAPI_percent_direct",
+    measure=="perc_two_or_more" ~ "race_two_or_more_percent_direct",
+    measure=="perc_other" ~ "race_other_percent_direct",
+    measure=="perc_hispanic_or_latino" ~ "race_hispanic_or_latino_percent_direct",
+    measure=="pop_eth_tot" ~ "race_eth_tot_count_direct"))
 
 
 

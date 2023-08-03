@@ -120,16 +120,76 @@ filename = files[str_detect(files,"va_cttrbg_acs")]
 temp_acs_dmg <- read.csv(paste0(uploadpath,filename)) %>% 
   select(geoid,year,measure,value,moe) 
 temp_parcels_dmg <- model_parcels 
-baseline_data <- rbind(temp_acs_dmg,temp_parcels_dmg) %>%
-  mutate(measure=paste0(measure,'_parcels')) %>%
+fx_newgeo_dmg <- rbind(temp_acs_dmg,temp_parcels_dmg) %>%
   filter(!is.na(value)) %>%
   mutate(geoid=as.character(geoid))
 
 
 
+
+# 2. Case of arlington county --------------------------------------------------------------------
+path = "Synthetic_population/Housing_units_distribution/Arlington/data/working/parcels_demographics/"
+
+#upload data for arlington (demographies and geometry). filter on age
+arl_pc_dmg <- NULL
+for (file in list.files(path)) {
+  temp0 <- read_csv(xzfile(paste0(path,file)))
+  temp0 <- temp0 %>% filter(str_detect(measure,'pop_under_20|pop_20_64|pop_65_plus|total_pop'))
+  arl_pc_dmg <- rbind(arl_pc_dmg,temp0)
+}
+
+# upload data from arlington (demography and geometry). filter on age
+arl_pc_geo <- sf::st_read("Synthetic_population/Housing_units_distribution/Arlington/data/working/va_arl_parcel_geometry.geojson")
+arl_pc_geo <- arl_pc_geo %>% select(parid=geoid, geometry)
+
+# upload new geographies and mapping with parcels (comments: just add a new geography below and the intersects with parcels)
+sf::sf_use_s2(FALSE)
+civic_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Arlington%20County/Civic%20Associations/2021/data/distribution/va013_geo_arl_2021_civic_associations.geojson")
+
+# coments: for some cases the number of rows can be lower than the number of parcels meaning that the new geography doesn't cover all the parcels
+civic_pc_map <- st_join(civic_geo, arl_pc_geo, join = st_intersects) %>% st_drop_geometry() %>% select(-year)
+
+# estimate the demographics for the new geography. all the
+civic_dmg <- merge(civic_pc_map, arl_pc_dmg, by.x='parid', by.y='geoid', all.y=T) %>%
+  group_by(geoid,region_name,region_type,year,measure) %>%
+  summarise(value=sum(value, na.rm=T))
+
+arl_newgeo_dmg <- civic_dmg %>%
+  pivot_wider(names_from='measure', values_from='value') %>%
+  filter(!is.na(geoid)) %>%
+  mutate(perc_pop_under_20 = 100*pop_under_20/total_pop,
+         perc_pop_20_64 = 100*pop_20_64/total_pop,
+         perc_pop_65_plus = 100*pop_65_plus/total_pop) %>%
+  pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
+  mutate(measure_type=case_when(
+          grepl('perc',measure)==T ~ "percentage",
+          grepl('pop',measure)==T ~ "count"),
+        moe='') %>%
+  ungroup() %>%
+  select(geoid,year,measure,value,moe)
+
+
+# combine the data ------------------------------------
+baseline_data <- rbind(fx_newgeo_dmg,arl_newgeo_dmg)
+
+baseline_data <- baseline_data %>% 
+  mutate(measure=case_when(
+    measure=="total_pop" ~ "age_total_count_parcels",
+    measure=="pop_under_20" ~ "age_under_20_count_parcels",
+    measure=="pop_20_64" ~ "age_20_64_count_parcels",
+    measure=="pop_65_plus" ~ "age_65_plus_count_parcels",
+    measure=="perc_pop_under_20" ~ "age_under_20_percent_parcels",
+    measure=="perc_pop_20_64" ~ "age_20_64_percent_parcels",
+    measure=="perc_pop_65_plus" ~ "age_65_plus_percent_parcels")) %>%
+  filter(!is.na(value)) %>%
+  mutate(geoid=as.character(geoid))
+
+
+
+
 # save the data 
 savepath = "Age/data/working/model/"
-readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_age_demographics_parcels.csv.xz"), compression = 9))
+readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_civichsrsdpdzccttrbg_sdad_",min(yearlist),'_',max(yearlist),"_age_demographics_parcels.csv.xz"), compression = 9))
 
 
 # files = list.files(savepath)
@@ -169,61 +229,8 @@ readr::write_csv(baseline_data, xzfile(paste0(savepath,"va_hsrsdpdzccttrbg_sdad_
 
 
 
+# save the data ----------------------------------------------------------------------------------
+#readr::write_csv(arl_newgeo_dmg, xzfile(paste0(savepath,"va013_civic_sdad_",min(years),"_",max(years),"_age_demographics.csv.xz"), compression = 9))
 
-
-
-
-
-# 2. Case of arlington county --------------------------------------------------------------------
-# arl_pc_dmg <- NULL
-# years <- 2013:2020
-# 
-# # upload data from arlington (demography and geometry). filter on age
-# for (year in years) {
-#   temp0 <- read_csv(paste0("Synthetic_population/Housing_units_distribution/Arlington/data/working/va013_pc_sdad_",year,"_demographics.csv.xz"))
-#   temp <- temp0 %>% select(geoid,year,measure,value) %>% filter(measure %in% c('pop_under_20','pop_20_64','pop_65_plus','total_pop'))
-#   arl_pc_dmg <- rbind(arl_pc_dmg,temp)
-# }
-# 
-# 
-# #arl_pc_dmg <- read_csv(xzfile("Synthetic_population/Housing_units_distribution/Arlington/data/working/va013_pc_sdad_20092019_demographics.csv.xz"))
-# arl_pc_geo <- sf::st_read("Synthetic_population/Housing_units_distribution/Arlington/data/working/va_arl_parcel_geometry.geojson")
-# arl_pc_geo <- arl_pc_geo %>% select(parid=geoid, geometry)
-# 
-# # upload new geographies and mapping with parcels (comments: just add a new geography below and the intersects with parcels)
-# sf::sf_use_s2(FALSE)
-# civic_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Arlington%20County/Civic%20Associations/2021/data/distribution/va013_geo_arl_2021_civic_associations.geojson")
-# 
-# # coments: for some cases the number of rows can be lower than the number of parcels meaning that the new geography doesn't cover all the parcels
-# civic_pc_map <- st_join(civic_geo, arl_pc_geo, join = st_intersects) %>% st_drop_geometry() %>% select(-year)
-# 
-# # estimate the demographics for the new geography. all the 
-# civic_dmg <- merge(civic_pc_map, arl_pc_dmg, by.x='parid', by.y='geoid', all.y=T) %>%
-#   group_by(geoid,region_name,region_type,year,measure) %>%
-#   summarise(value=sum(value, na.rm=T))
-# 
-# arl_newgeo_dmg <- civic_dmg %>%
-#   pivot_wider(names_from='measure', values_from='value') %>%
-#   filter(!is.na(geoid)) %>%
-#   mutate(perc_pop_under_20 = 100*pop_under_20/total_pop,
-#          perc_pop_20_64 = 100*pop_20_64/total_pop,
-#          perc_pop_65_plus = 100*pop_65_plus/total_pop) %>%
-#   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
-#   mutate(measure=paste0(measure,'_parcels'),
-#          measure_type=case_when(
-#           grepl('perc',measure)==T ~ "percentage",
-#           grepl('pop',measure)==T ~ "count"),
-#         moe='')
-# 
-# 
-# # save the data ----------------------------------------------------------------------------------
-# savepath = "Age/data/distribution/"
-# readr::write_csv(arl_newgeo_dmg, xzfile(paste0(savepath,"va013_civic_sdad_",min(years),"_",max(years),"_age_demographics.csv.xz"), compression = 9))
-# 
-
-
-
-
-# 2. Case of DC area -----------------------------------------------------------------------------
 
 

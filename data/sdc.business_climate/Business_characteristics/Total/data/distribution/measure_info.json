@@ -1,127 +1,127 @@
 {
     "entry_rate": {
-        "aggregation_method": "",
+        "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percentage of new businesses",
-        "long_name": "Entry rate (percent)",
-        "measure_type": "percent",
-        "short_description": "Percentage of new businesses",
-        "short_name": "Entry rate",
+        "long_description": "Percent of new businesses (a new business is a company newly created or has moved to the region): \\[entry_rate=\\frac{new_businesses}{all_businesses}\\] Available for US businesses.",
+        "long_name": "entry rate",
+        "measure_type": "",
+        "short_description": "Businesses entry rate",
+        "short_name": "entry rate",
         "sources": [
             {
                 "name": "Mergent Intellect",
                 "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "percent",
-        "unit": "",
-        "variants": ""
-    },
-    "new_business": {
-        "aggregation_method": "",
-        "categories": "",
-        "category": "Business climate",
-        "citations": "",
-        "data_type": "numeric",
-        "equity_category": "Status",
-        "layer": "",
-        "long_description": "Number of new businesses (count)",
-        "long_name": "Number of new businesses (count)",
-        "measure_type": "count",
-        "short_description": "Number of new businesses (count)",
-        "short_name": "Number of new businesses (count)",
-        "sources": [
-            {
-                "name": "Mergent Intellect",
-                "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
-            }
-        ],
-        "statement": "",
-        "type": "count",
-        "unit": "",
+        "statement": "{value} percent of businesses are new in {region_name}.",
+        "type": "",
+        "unit": "business",
         "variants": ""
     },
     "exit_rate": {
-        "aggregation_method": "",
+        "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percentage of businesses exiting ",
-        "long_name": "Exit rate (percent)",
-        "measure_type": "percent",
-        "short_description": "Percentage of businesses exiting ",
-        "short_name": "Exit rate",
+        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit_rate=\\frac{exited_businesses}{all_businesses}\\] Available for US businesses.",
+        "long_name": "exit rate",
+        "measure_type": "",
+        "short_description": "Businesses exit rate",
+        "short_name": "exit rate",
         "sources": [
             {
                 "name": "Mergent Intellect",
                 "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "percent",
-        "unit": "",
+        "statement": "{value} percent of businesses closed in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "new_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of all new businesses (a new business is a company newly created or has moved to the region). Available for US businesses.",
+        "long_name": "new businesses",
+        "measure_type": "",
+        "short_description": "New businesses",
+        "short_name": "new businesses",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} new businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
         "variants": ""
     },
     "exit_business": {
-        "aggregation_method": "",
+        "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Number of exiting businesses (count)",
-        "long_name": "Number of exiting businesses (count)",
-        "measure_type": "count",
-        "short_description": "Number of exiting businesses (count)",
-        "short_name": "Number of exiting businesses (count)",
+        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region). Available for US businesses.",
+        "long_name": "closed businesses",
+        "measure_type": "",
+        "short_description": "Closed businesses",
+        "short_name": "closed businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
                 "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
-        "unit": "",
+        "statement": "{value} closed businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
         "variants": ""
     },
     "number_business": {
-        "aggregation_method": "",
+        "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
         "citations": "",
-        "data_type": "numeric",
+        "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Number of exiting businesses (count)",
-        "long_name": "Number of exiting businesses (count)",
-        "measure_type": "count",
-        "short_description": "Number of exiting businesses (count)",
-        "short_name": "Total number of businesses",
+        "long_description": "Count of all businesses. Available for US businesses.",
+        "long_name": "Total businesses",
+        "measure_type": "",
+        "short_description": "Total businesses",
+        "short_name": "Total businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
                 "date_accessed": 2023,
-                "url": "https://www.ftserussell.com/data/mergent-intellect"
+                "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
-        "statement": "",
-        "type": "count",
-        "unit": "",
+        "statement": "{value} businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
         "variants": ""
     }
 }

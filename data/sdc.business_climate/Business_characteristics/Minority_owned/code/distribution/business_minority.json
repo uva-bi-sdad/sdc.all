@@ -5,8 +5,8 @@
     "unit": "business",
     "equity_category": "Status",
     "aggregation_method": "{variant}",
-    "short_name": "{variant} as {category}-owned",
-    "long_name": "{variant} as {category}-owned",
+    "short_name": "{category.default}-owned {variant}",
+    "long_name": "{category}-owned {variant}",
     "short_description": "{variant} as {category}-owned",
     "long_description": "{variant} owned by {category.default} {category}",
     "statement": "{variant}",
@@ -18,10 +18,11 @@
       }
     ],
     "categories": {
-      "minority": {
+      "minority_owned": {
+        "default": "minority",
         "long_description": "A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans."
       },
-      "non_minority": {
+      "non_minority_owned": {
         "default": "non-minority",
         "long_description": "A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans."
       }

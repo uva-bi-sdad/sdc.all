@@ -33,7 +33,7 @@ temp_bg <- mi_fairfax_features %>%
             job_destruction_active=-sum((1-exit)*employment_diff, na.rm=T),
             business_destruction_job=length(duns),
             total_job_destruction=job_destruction_exit+job_destruction_active,
-            perc_job_destruction_new=100*job_destruction_exit/total_job_destruction,
+            perc_job_destruction_exit=100*job_destruction_exit/total_job_destruction,
             perc_job_destruction_active=100*job_destruction_active/total_job_destruction) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
   mutate(geoid=as.character(geoid),
@@ -64,7 +64,7 @@ temp_tr <-  mi_fairfax_features %>%
             job_destruction_active=-sum((1-exit)*employment_diff, na.rm=T),
             business_destruction_job=length(duns),
             total_job_destruction=job_destruction_exit+job_destruction_active,
-            perc_job_destruction_new=100*job_destruction_exit/total_job_destruction,
+            perc_job_destruction_exit=100*job_destruction_exit/total_job_destruction,
             perc_job_destruction_active=100*job_destruction_active/total_job_destruction) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
   mutate(measure_type = case_when(
@@ -92,7 +92,7 @@ temp_ct <-  mi_fairfax_features %>%
             job_destruction_active=-sum((1-exit)*employment_diff, na.rm=T),
             business_destruction_job=length(duns),
             total_job_destruction=job_destruction_exit+job_destruction_active,
-            perc_job_destruction_new=100*job_destruction_exit/total_job_destruction,
+            perc_job_destruction_exit=100*job_destruction_exit/total_job_destruction,
             perc_job_destruction_active=100*job_destruction_active/total_job_destruction) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
   mutate(measure_type = case_when(
@@ -130,7 +130,7 @@ temp_bg <- mi_ncr_features %>%
             job_destruction_active=-sum((1-exit)*employment_diff, na.rm=T),
             business_destruction_job=length(duns),
             total_job_destruction=job_destruction_exit+job_destruction_active,
-            perc_job_destruction_new=100*job_destruction_exit/total_job_destruction,
+            perc_job_destruction_exit=100*job_destruction_exit/total_job_destruction,
             perc_job_destruction_active=100*job_destruction_active/total_job_destruction) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
   mutate(geoid=as.character(geoid),
@@ -161,7 +161,7 @@ temp_tr <-  mi_ncr_features %>%
             job_destruction_active=-sum((1-exit)*employment_diff, na.rm=T),
             business_destruction_job=length(duns),
             total_job_destruction=job_destruction_exit+job_destruction_active,
-            perc_job_destruction_new=100*job_destruction_exit/total_job_destruction,
+            perc_job_destruction_exit=100*job_destruction_exit/total_job_destruction,
             perc_job_destruction_active=100*job_destruction_active/total_job_destruction) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
   mutate(measure_type = case_when(
@@ -189,7 +189,7 @@ temp_ct <-  mi_ncr_features %>%
             job_destruction_active=-sum((1-exit)*employment_diff, na.rm=T),
             business_destruction_job=length(duns),
             total_job_destruction=job_destruction_exit+job_destruction_active,
-            perc_job_destruction_new=100*job_destruction_exit/total_job_destruction,
+            perc_job_destruction_exit=100*job_destruction_exit/total_job_destruction,
             perc_job_destruction_active=100*job_destruction_active/total_job_destruction) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
   mutate(measure_type = case_when(
@@ -228,7 +228,7 @@ temp_bg <- mi_subva_features %>%
             job_destruction_active=-sum((1-exit)*employment_diff, na.rm=T),
             business_destruction_job=length(duns),
             total_job_destruction=job_destruction_exit+job_destruction_active,
-            perc_job_destruction_new=100*job_destruction_exit/total_job_destruction,
+            perc_job_destruction_exit=100*job_destruction_exit/total_job_destruction,
             perc_job_destruction_active=100*job_destruction_active/total_job_destruction) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
   mutate(geoid=as.character(geoid),
@@ -259,7 +259,7 @@ temp_tr <-  mi_subva_features %>%
             job_destruction_active=-sum((1-exit)*employment_diff, na.rm=T),
             business_destruction_job=length(duns),
             total_job_destruction=job_destruction_exit+job_destruction_active,
-            perc_job_destruction_new=100*job_destruction_exit/total_job_destruction,
+            perc_job_destruction_exit=100*job_destruction_exit/total_job_destruction,
             perc_job_destruction_active=100*job_destruction_active/total_job_destruction) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
   mutate(measure_type = case_when(
@@ -287,7 +287,7 @@ temp_ct <-  mi_subva_features %>%
             job_destruction_active=-sum((1-exit)*employment_diff, na.rm=T),
             business_destruction_job=length(duns),
             total_job_destruction=job_destruction_exit+job_destruction_active,
-            perc_job_destruction_new=100*job_destruction_exit/total_job_destruction,
+            perc_job_destruction_exit=100*job_destruction_exit/total_job_destruction,
             perc_job_destruction_active=100*job_destruction_active/total_job_destruction) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
   mutate(measure_type = case_when(
