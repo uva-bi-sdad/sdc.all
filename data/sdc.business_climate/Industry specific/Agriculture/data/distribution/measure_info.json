@@ -252,7 +252,7 @@
     "total_acres": {
         "aggregation_method": "",
         "categories": "",
-        "category": "Business climate",
+        "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
         "equity_category": "Status",
@@ -277,7 +277,7 @@
     "total_operations": {
         "aggregation_method": "",
         "categories": "",
-        "category": "Business climate",
+        "category": "Agriculture Industry",
         "citations": "",
         "data_type": "numeric",
         "equity_category": "Status",
@@ -285,7 +285,7 @@
         "long_description": "",
         "long_name": "Total operations used for agriculture within a given county",
         "measure_type": "count",
-        "short_description": "Total operations in agriculture",
+        "short_description": "Total acres in agriculture",
         "short_name": "Total operations in agriculture",
         "sources": [
             {
