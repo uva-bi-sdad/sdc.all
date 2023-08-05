@@ -1,25 +1,4 @@
 {
-  "age_under_20_count": {
-    "category": "Demographics",
-    "data_type": "decimal",
-    "unit": "individual",
-    "equity_category": "Status",
-    "aggregation_method": "arithmetic mean",
-    "short_name": "Population under age 20 ",
-    "long_name": "The population estimates under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "short_description": "The population estimates under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The population estimates under age 20. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-    "statement": "The population under age 20 is {value} in {region_name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "location": "5-Year estimates, table B01001, via the API",
-        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
   "age_under_20_count_parcels": {
     "category": "Demographics",
     "data_type": "decimal",
@@ -52,27 +31,6 @@
     "short_description": "The population estimates under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
     "long_description": "The population estimates under age 20. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
     "statement": "The population under age 20 is {value} in {region_name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "location": "5-Year estimates, table B01001, via the API",
-        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "age_20_64_count": {
-    "category": "Demographics",
-    "data_type": "decimal",
-    "unit": "individual",
-    "equity_category": "Status",
-    "aggregation_method": "arithmetic mean",
-    "short_name": "Population between age 20 and 64 ",
-    "long_name": "The population estimates between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "short_description": "The population estimates between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The population estimates between age 20 and 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-    "statement": "The population between age 20 and 64 is {value} in {region_name}.",
     "sources": [
       {
         "name": "American Community Survey",
@@ -125,27 +83,6 @@
       }
     ]
   },
-  "age_65_plus_count": {
-    "category": "Demographics",
-    "data_type": "decimal",
-    "unit": "individual",
-    "equity_category": "Status",
-    "aggregation_method": "arithmetic mean",
-    "short_name": "Population over age 64 ",
-    "long_name": "The population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "short_description": "The population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-    "statement": "The population over age 64 is {value} in {region_name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "location": "5-Year estimates, table B01001, via the API",
-        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
   "age_65_plus_count_parcels": {
     "category": "Demographics",
     "data_type": "decimal",
@@ -178,27 +115,6 @@
     "short_description": "The population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
     "long_description": "The population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
     "statement": "The population over age 64 is {value} in {region_name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "location": "5-Year estimates, table B01001, via the API",
-        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "age_under_20_percent": {
-    "category": "Demographics",
-    "data_type": "decimal",
-    "unit": "individual",
-    "equity_category": "Status",
-    "aggregation_method": "percent",
-    "short_name": "Percent of the population under age 20 ",
-    "long_name": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "short_description": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The percent of the population under age 20. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-    "statement": "The percent of the population under age 20 is {value} in {region_name}.",
     "sources": [
       {
         "name": "American Community Survey",
@@ -251,27 +167,6 @@
       }
     ]
   },
-  "age_20_64_percent": {
-    "category": "Demographics",
-    "data_type": "decimal",
-    "unit": "individual",
-    "equity_category": "Status",
-    "aggregation_method": "percent",
-    "short_name": "Percent of the population between age 20 and 64 ",
-    "long_name": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "short_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The percent of the population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-    "statement": "The percent of the population over age 64 is {value} in {region_name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "location": "5-Year estimates, table B01001, via the API",
-        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
   "age_20_64_percent_parcels": {
     "category": "Demographics",
     "data_type": "decimal",
@@ -303,27 +198,6 @@
     "long_name": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
     "short_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
     "long_description": "The percent of the population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
-    "statement": "The percent of the population over age 64 is {value} in {region_name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "location": "5-Year estimates, table B01001, via the API",
-        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "age_65_plus_percent": {
-    "category": "Demographics",
-    "data_type": "decimal",
-    "unit": "individual",
-    "equity_category": "Status",
-    "aggregation_method": "percent",
-    "short_name": "Percent of the population over age 64 ",
-    "long_name": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "short_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The percent of the population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
     "statement": "The percent of the population over age 64 is {value} in {region_name}.",
     "sources": [
       {
@@ -367,27 +241,6 @@
     "short_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
     "long_description": "The percent of the population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
     "statement": "The percent of the population over age 64 is {value} in {region_name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "location": "5-Year estimates, table B01001, via the API",
-        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "age_total_count": {
-    "category": "Demographics",
-    "data_type": "decimal",
-    "unit": "individual",
-    "equity_category": "Status",
-    "aggregation_method": "arithmetic mean",
-    "short_name": "Total count of the population ",
-    "long_name": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "Total count of the population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-    "statement": "Total count of the population is {value} in {region_name}.",
     "sources": [
       {
         "name": "American Community Survey",

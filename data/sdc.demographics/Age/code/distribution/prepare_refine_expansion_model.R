@@ -1,21 +1,14 @@
-# This file use the refine demographics data at the parcel level to estimate demographics in new geographies
-# New geography : - Zip code
-#                 - Human services
-#                 - Civic association
-#                 - Supervisor districts
+# Run the parcels model
 
 
 # libraries ---------------------------------------------------------------------------------------
 library(dplyr)
 library(sf)
-# library(httr)
 library(sp)
 library(data.table)
 library(stringr)
-#library("rgdal", lib.loc="/usr/local/lib/R/site-library")
 library(tidyr)
 library(readr)
-# library(tidyverse)
 library(tidycensus)
 library(tigris)
 library(rjson)
@@ -38,6 +31,7 @@ for (file in list.files(path)) {
 fairfax_pc_dmg_lg <- fairfax_pc_dmg %>%
   mutate(measure=str_remove_all(measure, paste('_refined_by_housing_units', collapse = "|"))) %>%
   select(parid=geoid,year,measure,value) %>%
+  filter(!is.na(value)) %>%
   pivot_wider(names_from = measure, values_from=value) 
 
 
@@ -66,9 +60,6 @@ for (vyear in yearlist){
   fairfax_pc_geo <- st_as_sf(fairfax_pc_geo)
   st_crs(fairfax_pc_geo) <- 4326
   
-  # add geometry to the acs
-  #subset <- merge(subset_dmg, fairfax_pc_geo, by='parid')
-  
   # upload new geographies geometry
   sf::sf_use_s2(FALSE)
   hsr_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Fairfax%20County/Human%20Services%20Regions/2022/data/distribution/va059_geo_ffxct_gis_2022_human_services_regions.geojson")
@@ -96,10 +87,6 @@ for (vyear in yearlist){
 }
 
 
-#fairfax_pc_geo <- sf::st_read(unzip("Synthetic_population/Housing_units_distribution/Fairfax/data/working/fairfax_parcel_geometry.geojson.zip", "Synthetic_population/Housing_units_distribution/Fairfax/data/working/fairfax_parcel_geometry.geojson"))
-#file.remove("Synthetic_population/Housing_units_distribution/Fairfax/data/working/fairfax_parcel_geometry.geojson")
-#fairfax_pc_sf <- st_as_sf(merge(fairfax_pc_dmg_lg,fairfax_pc_geo, by='geoid'))
-
 # combine data from different geographies into one
 model_parcels <- rbind(hsr_dmg,pd_dmg,sd_dmg,zc_dmg) %>%
   filter(!is.na(geoid)) %>%
@@ -107,22 +94,18 @@ model_parcels <- rbind(hsr_dmg,pd_dmg,sd_dmg,zc_dmg) %>%
          perc_pop_20_64 = 100*pop_20_64/total_pop,
          perc_pop_65_plus = 100*pop_65_plus/total_pop) %>%
   pivot_longer(!c('geoid','year'), names_to='measure', values_to='value') %>%
-  mutate(
-    #measure=paste0('age_',measure,'_parcels'),
-    moe='')
-
+  mutate(moe='')
+temp_parcels_dmg <- model_parcels 
 
 
 # get the acs data ----------------------------------------------
 uploadpath = "Age/data/working/"
 files = list.files(uploadpath)
 filename = files[str_detect(files,"va_cttrbg_acs")]
-temp_acs_dmg <- read.csv(paste0(uploadpath,filename)) %>% 
-  select(geoid,year,measure,value,moe) 
-temp_parcels_dmg <- model_parcels 
-fx_newgeo_dmg <- rbind(temp_acs_dmg,temp_parcels_dmg) %>%
-  filter(!is.na(value)) %>%
-  mutate(geoid=as.character(geoid))
+temp_acs_dmg <- readRDS(paste0(uploadpath,filename)) %>% select(geoid,year,measure,value,moe) 
+
+# combine acs with model
+fx_newgeo_dmg <- rbind(temp_acs_dmg,temp_parcels_dmg) %>% filter(!is.na(value)) %>% mutate(geoid=as.character(geoid))
 
 
 

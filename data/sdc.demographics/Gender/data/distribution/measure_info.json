@@ -1,25 +1,4 @@
 {
-  "gender_male_count": {
-    "category": "Demographics",
-    "data_type": "decimal",
-    "unit": "individual",
-    "equity_category": "Status",
-    "aggregation_method": "arithmetic mean",
-    "short_name": "Male population ",
-    "long_name": "The count of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-    "short_description": "The count of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-    "long_description": "The count of males in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-    "statement": "The male population is {value} in {region_name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "location": "5-Year estimates, table S0101, via the API",
-        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
   "gender_male_count_parcels": {
     "category": "Demographics",
     "data_type": "decimal",
@@ -52,27 +31,6 @@
     "short_description": "The count of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
     "long_description": "The count of males in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
     "statement": "The male population is {value} in {region_name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "location": "5-Year estimates, table S0101, via the API",
-        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "gender_female_count": {
-    "category": "Demographics",
-    "data_type": "decimal",
-    "unit": "individual",
-    "equity_category": "Status",
-    "aggregation_method": "arithmetic mean",
-    "short_name": "Female population ",
-    "long_name": "The count of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-    "short_description": "The count of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-    "long_description": "The count of females in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-    "statement": "The female population is {value} in {region_name}.",
     "sources": [
       {
         "name": "American Community Survey",
@@ -125,27 +83,6 @@
       }
     ]
   },
-  "gender_male_percent": {
-    "category": "Demographics",
-    "data_type": "decimal",
-    "unit": "individual",
-    "equity_category": "Status",
-    "aggregation_method": "percent",
-    "short_name": "Percentage of males ",
-    "long_name": "The percent of males in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "short_description": "The percent of males in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The percent of males in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-    "statement": "The percent of males is {value} in {region_name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "location": "5-Year estimates, table S0101, via the API",
-        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
   "gender_male_percent_parcels": {
     "category": "Demographics",
     "data_type": "decimal",
@@ -188,27 +125,6 @@
       }
     ]
   },
-  "gender_female_percent": {
-    "category": "Demographics",
-    "data_type": "decimal",
-    "unit": "individual",
-    "equity_category": "Status",
-    "aggregation_method": "percent",
-    "short_name": "Percentage of females ",
-    "long_name": "The percent of females in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "short_description": "The percent of females in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The percent of females in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-    "statement": "The percent of females is {value} in {region_name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "location": "5-Year estimates, table S0101, via the API",
-        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
   "gender_female_percent_parcels": {
     "category": "Demographics",
     "data_type": "decimal",
@@ -241,27 +157,6 @@
     "short_description": "The percent of females in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
     "long_description": "The percent of females in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
     "statement": "The percent of females is {value} in {region_name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "location": "5-Year estimates, table S0101, via the API",
-        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "gender_total_count": {
-    "category": "Demographics",
-    "data_type": "decimal",
-    "unit": "individual",
-    "equity_category": "Status",
-    "aggregation_method": "arithmetic mean",
-    "short_name": "Total count of the population ",
-    "long_name": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "Total count of the population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-    "statement": "Total count of the population is {value} in {region_name}.",
     "sources": [
       {
         "name": "American Community Survey",

@@ -12700,27 +12700,6 @@
         "unit": "",
         "variants": ""
     },
-    "age_20_64_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The population estimates between age 20 and 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The population estimates between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The population estimates between age 20 and 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Population between age 20 and 64 ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The population between age 20 and 64 is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "age_20_64_count_direct": {
         "aggregation_method": "arithmetic mean",
         "category": "Demographics",
@@ -12761,27 +12740,6 @@
             }
         ],
         "statement": "The population between age 20 and 64 is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "age_20_64_percent": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The percent of the population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percent of the population between age 20 and 64 ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The percent of the population over age 64 is {value} in {region_name}.",
         "unit": "individual"
     },
     "age_20_64_percent_direct": {
@@ -12826,27 +12784,6 @@
         "statement": "The percent of the population over age 64 is {value} in {region_name}.",
         "unit": "individual"
     },
-    "age_65_plus_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Population over age 64 ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The population over age 64 is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "age_65_plus_count_direct": {
         "aggregation_method": "arithmetic mean",
         "category": "Demographics",
@@ -12887,27 +12824,6 @@
             }
         ],
         "statement": "The population over age 64 is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "age_65_plus_percent": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The percent of the population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The percent of the population over age 64. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percent of the population over age 64 ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The percent of the population over age 64 is {value} in {region_name}.",
         "unit": "individual"
     },
     "age_65_plus_percent_direct": {
@@ -12952,27 +12868,6 @@
         "statement": "The percent of the population over age 64 is {value} in {region_name}.",
         "unit": "individual"
     },
-    "age_total_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "Total count of the population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Total count of the population ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "Total count of the population is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "age_total_count_direct": {
         "aggregation_method": "arithmetic mean",
         "category": "Demographics",
@@ -13015,27 +12910,6 @@
         "statement": "Total count of the population is {value} in {region_name}.",
         "unit": "individual"
     },
-    "age_under_20_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The population estimates under age 20. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The population estimates under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The population estimates under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Population under age 20 ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The population under age 20 is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "age_under_20_count_direct": {
         "aggregation_method": "arithmetic mean",
         "category": "Demographics",
@@ -13076,27 +12950,6 @@
             }
         ],
         "statement": "The population under age 20 is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "age_under_20_percent": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The percent of the population under age 20. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The percent of the population under age 20. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percent of the population under age 20 ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The percent of the population under age 20 is {value} in {region_name}.",
         "unit": "individual"
     },
     "age_under_20_percent_direct": {
@@ -14614,27 +14467,6 @@
         "unit": "dollar",
         "variants": ""
     },
-    "gender_female_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The count of females in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The count of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-        "short_description": "The count of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-        "short_name": "Female population ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table S0101, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The female population is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "gender_female_count_direct": {
         "aggregation_method": "arithmetic mean",
         "category": "Demographics",
@@ -14675,27 +14507,6 @@
             }
         ],
         "statement": "The female population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "gender_female_percent": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The percent of females in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The percent of females in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The percent of females in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percentage of females ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table S0101, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The percent of females is {value} in {region_name}.",
         "unit": "individual"
     },
     "gender_female_percent_direct": {
@@ -14740,27 +14551,6 @@
         "statement": "The percent of females is {value} in {region_name}.",
         "unit": "individual"
     },
-    "gender_male_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The count of males in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The count of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-        "short_description": "The count of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
-        "short_name": "Male population ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table S0101, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The male population is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "gender_male_count_direct": {
         "aggregation_method": "arithmetic mean",
         "category": "Demographics",
@@ -14803,27 +14593,6 @@
         "statement": "The male population is {value} in {region_name}.",
         "unit": "individual"
     },
-    "gender_male_percent": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The percent of males in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The percent of males in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The percent of males in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percentage of males ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table S0101, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The percent of males is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "gender_male_percent_direct": {
         "aggregation_method": "percent",
         "category": "Demographics",
@@ -14864,27 +14633,6 @@
             }
         ],
         "statement": "The percent of males is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "gender_total_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "Total count of the population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Total count of the population ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table S0101, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "Total count of the population is {value} in {region_name}.",
         "unit": "individual"
     },
     "gender_total_count_direct": {
@@ -15414,27 +15162,6 @@
         "unit": "",
         "variants": ""
     },
-    "language_hh_limited_english_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The count of households with limited English. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Households with limited English ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table C16002, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The count of households with limited English is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "language_hh_limited_english_count_direct": {
         "aggregation_method": "arithmetic mean",
         "category": "Demographics",
@@ -15475,27 +15202,6 @@
             }
         ],
         "statement": "The count of households with limited English is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "language_hh_limited_english_percent": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The percent of households with limited English. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Percentage of households with limited English ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table C16002, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The percent of households with limited English is {value} in {region_name}.",
         "unit": "individual"
     },
     "language_hh_limited_english_percent_direct": {
@@ -19399,27 +19105,6 @@
         "unit": "person",
         "variants": ""
     },
-    "race_AAPI_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Asian American/Pacific Islander population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Asian American/Pacific Islander population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Asian American/Pacific Islander population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Asian American/Pacific Islander population ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Asian American/Pacific Islander population is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "race_AAPI_count_direct": {
         "aggregation_method": "arithmetic mean",
         "category": "Demographics",
@@ -19460,27 +19145,6 @@
             }
         ],
         "statement": "The Asian American/Pacific Islander population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "race_AAPI_percent": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Asian American/Pacific Islander population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Asian American/Pacific Islander population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Asian American/Pacific Islander population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Asian American/Pacific Islander population percentage ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Asian American/Pacific Islander population percent is {value} in {region_name}.",
         "unit": "individual"
     },
     "race_AAPI_percent_direct": {
@@ -19525,27 +19189,6 @@
         "statement": "The Asian American/Pacific Islander population percent is {value} in {region_name}.",
         "unit": "individual"
     },
-    "race_afr_amer_alone_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Black population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Black population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Black population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Black population ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Black population is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "race_afr_amer_alone_count_direct": {
         "aggregation_method": "arithmetic mean",
         "category": "Demographics",
@@ -19586,27 +19229,6 @@
             }
         ],
         "statement": "The Black population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "race_afr_amer_alone_percent": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Black population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Black population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Black population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Black population percentage ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Black population percent is {value} in {region_name}.",
         "unit": "individual"
     },
     "race_afr_amer_alone_percent_direct": {
@@ -19651,27 +19273,6 @@
         "statement": "The Black population percent is {value} in {region_name}.",
         "unit": "individual"
     },
-    "race_eth_tot_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "Total population ethnique.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Total population ethnique ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "Total population ethnique is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "race_eth_tot_count_direct": {
         "aggregation_method": "arithmetic mean",
         "category": "Demographics",
@@ -19712,27 +19313,6 @@
             }
         ],
         "statement": "Total population ethnique is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "race_hispanic_or_latino_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Hispanic/Latino population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Hispanic/Latino population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Hispanic/Latino population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Hispanic/Latino population ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Hispanic/Latino population is {value} in {region_name}.",
         "unit": "individual"
     },
     "race_hispanic_or_latino_count_direct": {
@@ -19777,27 +19357,6 @@
         "statement": "The Hispanic/Latino population is {value} in {region_name}.",
         "unit": "individual"
     },
-    "race_hispanic_or_latino_percent": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Hispanic/Latino population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Hispanic/Latino population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Hispanic/Latino population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Hispanic/Latino population percentage ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Hispanic/Latino population percent is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "race_hispanic_or_latino_percent_direct": {
         "aggregation_method": "percent",
         "category": "Demographics",
@@ -19838,27 +19397,6 @@
             }
         ],
         "statement": "The Hispanic/Latino population percent is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "race_native_alone_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Native population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Native population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Native population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Native population ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Native population is {value} in {region_name}.",
         "unit": "individual"
     },
     "race_native_alone_count_direct": {
@@ -19903,27 +19441,6 @@
         "statement": "The Native population is {value} in {region_name}.",
         "unit": "individual"
     },
-    "race_native_alone_percent": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Native population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Native population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Native population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Native population percentage ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Native population percent is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "race_native_alone_percent_direct": {
         "aggregation_method": "percent",
         "category": "Demographics",
@@ -19964,27 +19481,6 @@
             }
         ],
         "statement": "The Native population percent is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "race_other_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Other racial population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Other racial population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Other racial population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Other racial population ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Other racial population is {value} in {region_name}.",
         "unit": "individual"
     },
     "race_other_count_direct": {
@@ -20029,27 +19525,6 @@
         "statement": "The Other racial population is {value} in {region_name}.",
         "unit": "individual"
     },
-    "race_other_percent": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Other racial population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Other racial population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Other racial population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Other racial population percentage ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Other racial population percent is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "race_other_percent_direct": {
         "aggregation_method": "percent",
         "category": "Demographics",
@@ -20090,27 +19565,6 @@
             }
         ],
         "statement": "The Other racial population percent is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "race_total_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "Total count of the population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "Total count of the population ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "Total count of the population is {value} in {region_name}.",
         "unit": "individual"
     },
     "race_total_count_direct": {
@@ -20155,27 +19609,6 @@
         "statement": "Total count of the population is {value} in {region_name}.",
         "unit": "individual"
     },
-    "race_two_or_more_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The two or more races population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The two or more races population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The two or more races population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The two or more races population ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The two or more races population is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "race_two_or_more_count_direct": {
         "aggregation_method": "arithmetic mean",
         "category": "Demographics",
@@ -20216,27 +19649,6 @@
             }
         ],
         "statement": "The two or more races population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "race_two_or_more_percent": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The two or more races population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The two or more races population percentage ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The two or more races population percent is {value} in {region_name}.",
         "unit": "individual"
     },
     "race_two_or_more_percent_direct": {
@@ -20281,27 +19693,6 @@
         "statement": "The two or more races population percent is {value} in {region_name}.",
         "unit": "individual"
     },
-    "race_wht_alone_count": {
-        "aggregation_method": "arithmetic mean",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The White population.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The White population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The White population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The White population ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The White population is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "race_wht_alone_count_direct": {
         "aggregation_method": "arithmetic mean",
         "category": "Demographics",
@@ -20342,27 +19733,6 @@
             }
         ],
         "statement": "The White population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "race_wht_alone_percent": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The White population percent.. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The White population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The White population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The White population percentage ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B01001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The White population percent is {value} in {region_name}.",
         "unit": "individual"
     },
     "race_wht_alone_percent_direct": {
@@ -21788,27 +21158,6 @@
         "unit": "",
         "variants": ""
     },
-    "veteran_count": {
-        "aggregation_method": "count",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Veteran population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Veteran population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Veteran population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Veteran population ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B21001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Veteran population is {value} in {region_name}.",
-        "unit": "individual"
-    },
     "veteran_count_direct": {
         "aggregation_method": "count",
         "category": "Demographics",
@@ -21849,27 +21198,6 @@
             }
         ],
         "statement": "The Veteran population is {value} in {region_name}.",
-        "unit": "individual"
-    },
-    "veteran_percent": {
-        "aggregation_method": "percent",
-        "category": "Demographics",
-        "data_type": "decimal",
-        "equity_category": "Status",
-        "long_description": "The Veteran population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-        "long_name": "The Veteran population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_description": "The Veteran population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-        "short_name": "The Veteran population percent ",
-        "sources": [
-            {
-                "date_accessed": 2021,
-                "location": "5-Year estimates, table B21001, via the API",
-                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-                "name": "American Community Survey",
-                "url": "https://www.census.gov/programs-surveys/acs.html"
-            }
-        ],
-        "statement": "The Veteran population percent is {value} in {region_name}.",
         "unit": "individual"
     },
     "veteran_percent_direct": {

@@ -20,7 +20,6 @@
       }
     ],
     "categories": {
-      "blank": {},
       "_parcels": {
         "default": "parcels",
         "long_description": "and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap."

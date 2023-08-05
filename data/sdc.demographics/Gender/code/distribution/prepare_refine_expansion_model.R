@@ -38,6 +38,7 @@ for (file in list.files(path)) {
 fairfax_pc_dmg_lg <- fairfax_pc_dmg %>%
   mutate(measure=str_remove_all(measure, paste('_refined_by_housing_units', collapse = "|"))) %>%
   select(parid=geoid,year,measure,value) %>%
+  filter(!is.na(value)) %>%
   pivot_wider(names_from = measure, values_from=value) 
 
 
@@ -116,8 +117,8 @@ model_parcels <- rbind(hsr_dmg,pd_dmg,sd_dmg,zc_dmg) %>%
 uploadpath = "Gender/data/working/"
 files = list.files(uploadpath)
 filename = files[str_detect(files,"va_cttrbg_acs")]
-temp_acs_dmg <- read.csv(paste0(uploadpath,filename)) %>% 
-  select(geoid,year,measure,value,moe) 
+temp_acs_dmg <- readRDS(paste0(uploadpath,filename)) %>% select(geoid,year,measure,value,moe) 
+
 temp_parcels_dmg <- model_parcels 
 fx_newgeo_dmg <- rbind(temp_acs_dmg,temp_parcels_dmg) %>%
   filter(!is.na(value)) %>%

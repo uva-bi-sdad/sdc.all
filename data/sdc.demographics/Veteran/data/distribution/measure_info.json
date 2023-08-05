@@ -1,25 +1,4 @@
 {
-  "veteran_count": {
-    "category": "Demographics",
-    "data_type": "decimal",
-    "unit": "individual",
-    "equity_category": "Status",
-    "aggregation_method": "count",
-    "short_name": "The Veteran population ",
-    "long_name": "The Veteran population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "short_description": "The Veteran population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The Veteran population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-    "statement": "The Veteran population is {value} in {region_name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "location": "5-Year estimates, table B21001, via the API",
-        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
   "veteran_count_parcels": {
     "category": "Demographics",
     "data_type": "decimal",
@@ -52,27 +31,6 @@
     "short_description": "The Veteran population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
     "long_description": "The Veteran population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
     "statement": "The Veteran population is {value} in {region_name}.",
-    "sources": [
-      {
-        "name": "American Community Survey",
-        "location": "5-Year estimates, table B21001, via the API",
-        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ]
-  },
-  "veteran_percent": {
-    "category": "Demographics",
-    "data_type": "decimal",
-    "unit": "individual",
-    "equity_category": "Status",
-    "aggregation_method": "percent",
-    "short_name": "The Veteran population percent ",
-    "long_name": "The Veteran population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "short_description": "The Veteran population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "long_description": "The Veteran population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups  Redistribution to non-census geolevels was performed using the redistribute R package.",
-    "statement": "The Veteran population percent is {value} in {region_name}.",
     "sources": [
       {
         "name": "American Community Survey",

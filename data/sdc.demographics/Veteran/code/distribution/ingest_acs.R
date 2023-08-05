@@ -132,18 +132,30 @@ temp_tr2010 <- read_sf('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geogra
 temp_tr2020 <- read_sf('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/NCR/Census%20Geographies/Tract/2020/data/distribution/ncr_geo_census_cb_2020_census_tracts.geojson') %>%
   select(geoid,region_type,year) %>% st_drop_geometry()
 ncr_geo <- rbind(temp_bg2010,temp_bg2020,temp_ct2010,temp_ct2020,temp_tr2010,temp_tr2020) %>%
-  rename(census_year=year)
+  rename(census_year=year) %>%
+  mutate(geoid=as.character(format(geoid, scientific = FALSE, trim = TRUE)))
 
 acs_data_ncr <- merge(acs_data_ncr, ncr_geo, by.x=c('geoid','region_type','census_year'), by.y=c('geoid','region_type','census_year'), all.y=T) %>%
   select(geoid,region_name,region_type,year,measure,value,measure_type,moe)
 
+acs_data_ncr <- acs_data_ncr %>%
+  mutate(measure=case_when(
+    measure=="pop_veteran" ~ "veteran_count_direct",
+    measure=="perc_veteran" ~ "veteran_percent_direct")) %>%
+  filter(!is.na(value)) %>%
+  mutate(geoid=as.character(geoid))
+
+acs_data_ncr_parcels <- acs_data_ncr %>%
+  mutate(measure=str_replace(measure,'direct','parcels'))
+
+acs_data_ncr <- rbind(acs_data_ncr,acs_data_ncr_parcels)
 
 
 # Save the data ----------------------------------------------------------------------------------
 savepath = "Veteran/data/working/"
-readr::write_csv(acs_data_va, xzfile(paste0(savepath,"va_cttrbg_acs_",min(years),'_',max(years),"_veteran_demographics.csv.xz"), compression = 9))
+saveRDS(acs_data_va, paste0(savepath,"va_cttrbg_acs_",min(years),'_',max(years),"_veteran_demographics.csv.xz"), compress = 'xz')
 
-savepath<-"Veteran/data/distribution"
+savepath<-"Veteran/data/distribution/"
 readr::write_csv(acs_data_ncr, xzfile(paste0(savepath,"ncr_cttrbg_acs_",min(years),'_',max(years),"_veteran_demographics.csv.xz"), compression = 9))
 
 

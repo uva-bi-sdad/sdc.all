@@ -100,12 +100,11 @@ acs_data_va <- acs_data_va_wd %>%
   dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,hh_limited_english,perc_hh_limited_english) %>%
   gather(measure, value, -c(geoid, region_name, region_type, year)) %>%
   select(geoid,region_name,region_type,year,measure,value) %>%
-  mutate(
-    #measure=paste0('language_',measure),
-         measure_type=case_when(
+  mutate(measure_type=case_when(
            grepl('perc',measure)==T ~ "percentage",
            grepl('hh',measure)==T ~ "count"),
-         moe='')
+         moe='') %>%
+  mutate(geoid=as.character(format(geoid, scientific = FALSE, trim = TRUE)))
 
 
 #2. Language distribution afor NCR
@@ -117,13 +116,12 @@ acs_data_ncr <- acs_data_ncr_wd %>%
   dplyr::select(geoid=GEOID,region_name=NAME,region_type,year,hh_limited_english,perc_hh_limited_english) %>%
   gather(measure, value, -c(geoid, region_name, region_type, year)) %>%
   select(geoid,region_name,region_type,year,measure,value) %>%
-  mutate(
-    #measure=paste0('language_',measure),
-         measure_type=case_when(
+  mutate(measure_type=case_when(
            grepl('perc',measure)==T ~ "percentage",
            grepl('hh',measure)==T ~ "count"),
          moe='',
-         census_year=if_else(year<2020,2010,2020))
+         census_year=if_else(year<2020,2010,2020)) %>%
+  mutate(geoid=as.character(format(geoid, scientific = FALSE, trim = TRUE)))
 
 
 
@@ -141,16 +139,27 @@ temp_tr2010 <- read_sf('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geogra
 temp_tr2020 <- read_sf('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/NCR/Census%20Geographies/Tract/2020/data/distribution/ncr_geo_census_cb_2020_census_tracts.geojson') %>%
   select(geoid,region_type,year) %>% st_drop_geometry()
 ncr_geo <- rbind(temp_bg2010,temp_bg2020,temp_ct2010,temp_ct2020,temp_tr2010,temp_tr2020) %>%
-  rename(census_year=year)
+  rename(census_year=year) %>%
+  mutate(geoid=as.character(format(geoid, scientific = FALSE, trim = TRUE)))
 
 acs_data_ncr <- merge(acs_data_ncr, ncr_geo, by.x=c('geoid','region_type','census_year'), by.y=c('geoid','region_type','census_year'), all.y=T) %>%
   select(geoid,region_name,region_type,year,measure,value,measure_type,moe)
 
+acs_data_ncr <- acs_data_ncr %>%
+  mutate(measure=case_when(
+    measure=="hh_limited_english" ~ "language_hh_limited_english_count_direct",
+    measure=="perc_hh_limited_english" ~ "language_hh_limited_english_percent_direct")) %>%
+  filter(!is.na(value)) %>%
+  mutate(geoid=as.character(geoid))
 
+acs_data_ncr_parcels <- acs_data_ncr %>%
+  mutate(measure=str_replace(measure,'direct','parcels'))
+
+acs_data_ncr <- rbind(acs_data_ncr,acs_data_ncr_parcels)
 
 # Save the data ----------------------------------------------------------------------------------
 savepath = "Language/data/working/"
-readr::write_csv(acs_data_va, xzfile(paste0(savepath,"va_cttrbg_acs_",min(years),'_',max(years),"_language_demographics.csv.xz"), compression = 9))
+saveRDS(acs_data_va, paste0(savepath,"va_cttrbg_acs_",min(years),'_',max(years),"_language_demographics.csv.xz"), compress = 'xz')
 
 savepath = "Language/data/distribution/"
 readr::write_csv(acs_data_ncr, xzfile(paste0(savepath,"ncr_cttrbg_acs_",min(years),'_',max(years),"_language_demographics.csv.xz"), compression = 9))

@@ -135,7 +135,7 @@ acs_data_va <- acs_data_va_wd %>%
            grepl('pop',measure)==T ~ "count"),
          moe='') %>%
   filter(!is.na(value)) %>%
-  mutate(geoid=as.character(geoid))
+  mutate(geoid=as.character(format(geoid, scientific = FALSE, trim = TRUE)))
 
 
 #2. Age distribution afor NCR
@@ -161,7 +161,7 @@ acs_data_ncr <- acs_data_ncr_wd %>%
          moe='',
         census_year=if_else(year<2020,2010,2020))  %>%
   filter(!is.na(value)) %>%
-  mutate(geoid=as.character(geoid))
+  mutate(geoid=as.character(format(geoid, scientific = FALSE, trim = TRUE)))
 
 
 # get the list of tracts, counties and block groups from NCR
@@ -178,14 +178,32 @@ temp_tr2010 <- read_sf('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geogra
 temp_tr2020 <- read_sf('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/NCR/Census%20Geographies/Tract/2020/data/distribution/ncr_geo_census_cb_2020_census_tracts.geojson') %>%
   select(geoid,region_type,year) %>% st_drop_geometry()
 ncr_geo <- rbind(temp_bg2010,temp_bg2020,temp_ct2010,temp_ct2020,temp_tr2010,temp_tr2020) %>%
-  rename(census_year=year)
+  rename(census_year=year) %>%
+  mutate(geoid=as.character(format(geoid, scientific = FALSE, trim = TRUE)))
+  
 
 acs_data_ncr <- merge(acs_data_ncr, ncr_geo, by.x=c('geoid','region_type','census_year'), by.y=c('geoid','region_type','census_year'), all.y=T) %>%
   select(geoid,region_name,region_type,year,measure,value,measure_type,moe)
 
+acs_data_ncr <- acs_data_ncr %>%
+  mutate(measure=case_when(
+    measure=="total_pop" ~ "age_total_count_direct",
+    measure=="pop_under_20" ~ "age_under_20_count_direct",
+    measure=="pop_20_64" ~ "age_20_64_count_direct",
+    measure=="pop_65_plus" ~ "age_65_plus_count_direct",
+    measure=="perc_pop_under_20" ~ "age_under_20_percent_direct",
+    measure=="perc_pop_20_64" ~ "age_20_64_percent_direct",
+    measure=="perc_pop_65_plus" ~ "age_65_plus_percent_direct")) %>%
+  filter(!is.na(value))
+
+acs_data_ncr_parcels <- acs_data_ncr %>%
+  mutate(measure=str_replace(measure,'direct','parcels'))
+
+acs_data_ncr <- rbind(acs_data_ncr,acs_data_ncr_parcels)
+
 # Save the data ----------------------------------------------------------------------------------
 savepath = "Age/data/working/"
-readr::write_csv(acs_data_va, xzfile(paste0(savepath,"va_cttrbg_acs_",min(years),"_",max(years),"_age_demographics.csv.xz"), compression = 9))
+saveRDS(acs_data_va, paste0(savepath,"va_cttrbg_acs_",min(years),"_",max(years),"_age_demographics.rds.xz"), compress = 'xz')
 
 savepath = "Age/data/distribution/"
 readr::write_csv(acs_data_ncr, xzfile(paste0(savepath,"ncr_cttrbg_acs_",min(years),"_",max(years),"_age_demographics.csv.xz"), compression = 9))
