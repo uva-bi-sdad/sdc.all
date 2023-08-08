@@ -1,0 +1,24 @@
+{
+    "schoolFundAdequacy": {
+        "category": "Education",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "The average gap in dollars between the actual and required spending per pupil among public school districts. Required spending is an estimate of dollars needed to achieve U.S. average test scores in each district.",
+        "long_name": "School funding adequacy",
+        "measure_type": "cost",
+        "short_description": "Average gap in dollars between actual and required spending per pupil in school districts.",
+        "short_name": "School funding adequacy",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "School Finance Indicators Database",
+                "url": "https://www.schoolfinancedata.org/download-data/"
+            }
+        ],
+        "statement": "The average gap between actual and required spending per pupil is {value} in {features.name}.",
+        "type": "dollar",
+        "unit": "dollars"
+    }
+}

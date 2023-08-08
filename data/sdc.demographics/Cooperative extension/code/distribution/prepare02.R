@@ -60,9 +60,16 @@ year2017.wide <- year2017 %>% select(FIPS, disconnectedYouth = `% Disconnected Y
 year2017.long <- pivot_longer(year2017.wide, cols = c("disconnectedYouth"), names_to = "measure")
 
 fin <- rbind(fin, year2023.long, year2022.long, year2021.long, year2020.long, year2019.long, year2018.long, year2017.long)
-va_ct_20162023_county_health_rankings <- fin %>% rename(geoid = FIPS)
 
-write_csv(va_ct_20162023_county_health_rankings, xzfile("va_ct_20162023_county_health_rankings.csv.xz", compression = 9))
+
+
+va_ct_20172023_vote_youth <- fin %>% rename(geoid = FIPS) %>% filter(measure != "schoolFundAdequacy")
+va_ct_20222023_fundingAdequacy <- fin %>% rename(geoid = FIPS) %>% filter(measure == "schoolFundAdequacy")
+
+
+
+write_csv(va_ct_20172023_vote_youth, xzfile("va_ct_20172023_vote_youth.csv.xz", compression = 9))
+write_csv(va_ct_20222023_fundingAdequacy, xzfile("va_ct_20222023_fundingAdequacy.csv.xz", compression = 9))
 
 
 

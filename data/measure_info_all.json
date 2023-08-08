@@ -13962,7 +13962,7 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Disconnected youth, also referred to as opportunity youth, are teenagers and young adults between the ages of 16 and 24 who are neither in school nor working. Youth who are actively looking for work are considered disconnected.",
+        "long_description": "Disconnected youth, also referred to as opportunity youth, are teenagers and young adults between the ages of 16 and 24 who are neither in school nor working. Youth who are actively looking for work are considered disconnected. (NOTE: Counties that are missing data do not collected reliable data on subject)",
         "long_name": "Disconnected youth (percent)",
         "measure_type": "percentage",
         "short_description": "Percent of youth or young adults who are neither working nor in school.",
@@ -19849,7 +19849,7 @@
         ],
         "statement": "The average gap between actual and required spending per pupil is {value} in {features.name}.",
         "type": "dollar",
-        "unit": "dollar"
+        "unit": "dollars"
     },
     "schools_2year_all": {
         "aggregation_method": "ratio",
