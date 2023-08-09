@@ -24,7 +24,7 @@ prepare_combine <- function(topic) {
                                     compression = 9))
 }
 
-run_data_prep <- function(topic, ingest=TRUE, direct=TRUE, refine=TRUE) {
+run_data_prep <- function(topic, ingest=FALSE, direct=TRUE, refine=TRUE) {
   #' runs files that get and clean data
   #' param: topic(character); topic to combine data under
   #' return: none - gathers, cleans, and saves data

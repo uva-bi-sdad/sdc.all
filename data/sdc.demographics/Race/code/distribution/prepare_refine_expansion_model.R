@@ -167,6 +167,7 @@ arl_newgeo_dmg <- civic_dmg %>%
          perc_other = 100*pop_other/total_race,
          perc_hispanic_or_latino = 100*pop_hispanic_or_latino/pop_eth_tot) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
+  filter(!(measure=='pop_eth_tot')) %>%
   mutate(measure_type=case_when(
            grepl('perc',measure)==T ~ "percentage",
            grepl('pop',measure)==T ~ "count",
@@ -194,8 +195,7 @@ baseline_data <- baseline_data %>%
     measure=="perc_AAPI" ~ "race_AAPI_percent_parcels",
     measure=="perc_two_or_more" ~ "race_two_or_more_percent_parcels",
     measure=="perc_other" ~ "race_other_percent_parcels",
-    measure=="perc_hispanic_or_latino" ~ "race_hispanic_or_latino_percent_parcels",
-    measure=="pop_eth_tot" ~ "race_eth_tot_count_parcels")) %>%
+    measure=="perc_hispanic_or_latino" ~ "race_hispanic_or_latino_percent_parcels")) %>%
   filter(!is.na(value)) %>%
   mutate(geoid=as.character(geoid))
 

@@ -159,6 +159,7 @@ arl_newgeo_dmg <- civic_dmg %>%
   mutate(perc_veteran = 100*pop_veteran/vetdenom) %>%
   select(geoid,region_name,region_type,year,pop_veteran,perc_veteran) %>%
   pivot_longer(!c('geoid','region_name','region_type','year'), names_to='measure', values_to='value') %>%
+  filter(!(measure=='vetdenom')) %>%
   mutate(measure_type=case_when(
            grepl('perc',measure)==T ~ "percentage",
            grepl('pop',measure)==T ~ "count"),

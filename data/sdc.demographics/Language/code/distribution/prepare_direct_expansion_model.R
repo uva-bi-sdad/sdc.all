@@ -28,22 +28,29 @@ acs <- readRDS(paste0(uploadpath,filename))
 # prepare the data for modeling -------------------------------------------
 # select the census block group for aggregation, select only population count as measure
 acs_bg <- acs %>%
-  filter(region_type=='block group') %>%
+  filter(region_type=='tract') %>%
   select(geoid,year,measure,value) %>%
   #mutate(measure=str_replace(measure,'language_','')) %>%
   pivot_wider(names_from = measure, values_from = value) %>%
   mutate(total_hh =100*hh_limited_english/perc_hh_limited_english, 
-         census_year=if_else(year<2020,2010,2020)) 
+         census_year=if_else(year<2020,2010,2020), geoid=as.numeric(geoid)) 
 
 
 # get census 2010 and 2020
-bg_geo_2010 <- sf::read_sf('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Census%20Geographies/Block%20Group/2010/data/distribution/va_geo_census_cb_2010_census_block_groups.geojson')
-bg_geo_2020 <- sf::read_sf('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Census%20Geographies/Block%20Group/2020/data/distribution/va_geo_census_cb_2020_census_block_groups.geojson')
-bg_geo <- rbind(bg_geo_2010,bg_geo_2020) %>%
-  select(geoid,year,geometry) %>%
-  mutate(census_year=as.numeric(year))
+# bg_geo_2010 <- sf::read_sf('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Census%20Geographies/Block%20Group/2010/data/distribution/va_geo_census_cb_2010_census_block_groups.geojson')
+# bg_geo_2020 <- sf::read_sf('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Census%20Geographies/Block%20Group/2020/data/distribution/va_geo_census_cb_2020_census_block_groups.geojson')
+# bg_geo <- rbind(bg_geo_2010,bg_geo_2020) %>%
+#   select(geoid,year,geometry) %>%
+#   mutate(census_year=as.numeric(year))
 
-temp_acs <- merge(acs_bg,bg_geo[,c('geoid','census_year','geometry')], by=c('geoid','census_year')) 
+bg_geo_2010 <- sf::read_sf('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Census%20Geographies/Tract/2010/data/distribution/va_geo_census_cb_2010_census_tracts.geojson')
+bg_geo_2020 <- sf::read_sf('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Census%20Geographies/Tract/2020/data/distribution/va_geo_census_cb_2020_census_tracts.geojson')
+bg_geo <- rbind(bg_geo_2010,bg_geo_2020) %>% select(geoid,year,geometry) %>% 
+  mutate(census_year=as.numeric(year),
+         geoid=as.numeric(geoid)) %>%
+  select(-year)
+
+temp_acs <- merge(acs_bg,bg_geo, by=c('geoid','census_year')) 
 temp_acs_sf <- st_as_sf(temp_acs)
 
 # load new geographies geometries
@@ -52,6 +59,7 @@ pd_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geograp
 sd_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Fairfax%20County/Supervisor%20Districts/2022/data/distribution/va059_geo_ffxct_gis_2022_supervisor_districts.geojson")
 zc_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Fairfax%20County/Zip%20Codes/2022/data/distribution/va059_geo_ffxct_gis_2022_zip_codes.geojson")
 civic_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Arlington%20County/Civic%20Associations/2021/data/distribution/va013_geo_arl_2021_civic_associations.geojson")
+hd_geo <- sf::st_read('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/State%20Geographies/Health%20Districts/2020/data/distribution/va_geo_vhd_2020_health_districts.geojson')
 pd_geo <- sf::st_make_valid(pd_geo)
 
 # get label and geometry separetly
@@ -59,7 +67,8 @@ temp_hsr <- hsr_geo %>% select(geoid_hsr=geoid,geometry)
 temp_pd <- pd_geo %>% select(geoid_pd=geoid,geometry)
 temp_sd <- sd_geo %>% select(geoid_sd=geoid,geometry)
 temp_zc <- zc_geo %>% select(geoid_zc=geoid,geometry)
-temp_civic <- civic_geo %>% select(geoid_zc=geoid,geometry)
+temp_civic <- civic_geo %>% select(geoid_ca=geoid,geometry)
+temp_hd <- hd_geo %>% select(geoid_hd=geoid,geometry)
 
 
 # redistribute the population ---------------------------------------------------
@@ -71,7 +80,8 @@ for (vyear in yearlist){
   predict_pd <- redistribute(subtemp_acs_sf, temp_pd, source_id = "geoid", target_id = 'geoid_pd')
   predict_sd <- redistribute(subtemp_acs_sf, temp_sd, source_id = "geoid", target_id = 'geoid_sd')
   predict_zc <- redistribute(subtemp_acs_sf, temp_zc, source_id = "geoid", target_id = 'geoid_zc')
-  predict_civic <- redistribute(subtemp_acs_sf, temp_zc, source_id = "geoid", target_id = 'geoid_zc')
+  predict_civic <- redistribute(subtemp_acs_sf, temp_civic, source_id = "geoid", target_id = 'geoid_ca')
+  predict_hd <- redistribute(subtemp_acs_sf, temp_hd, source_id = "geoid", target_id = 'geoid_hd')
   
   # add the year as variable
   predict_hsr <- predict_hsr %>% mutate(year=vyear) %>% st_drop_geometry()
@@ -79,13 +89,15 @@ for (vyear in yearlist){
   predict_sd <- predict_sd %>% mutate(year=vyear) %>% st_drop_geometry()
   predict_zc <- predict_zc %>% mutate(year=vyear) %>% st_drop_geometry()
   predict_civic <- predict_civic %>% mutate(year=vyear) %>% st_drop_geometry()
+  predict_hd <- predict_hd %>% mutate(year=vyear) %>% st_drop_geometry()
   
   # combine aggregation over year
   predict <- rbind(predict_hsr,
                    predict_pd,
                    predict_sd,
                    predict_zc,
-                   predict_civic)
+                   predict_civic,
+                   predict_hd)
   model <- rbind(model,predict)
 }
 
@@ -111,7 +123,9 @@ baseline_data <- rbind(temp_acs_dmg,temp_direct_dmg)
 baseline_data <- baseline_data %>% 
   mutate(measure=case_when(
     measure=="hh_limited_english" ~ "language_hh_limited_english_count_direct",
-    measure=="perc_hh_limited_english" ~ "language_hh_limited_english_percent_direct"))
+    measure=="perc_hh_limited_english" ~ "language_hh_limited_english_percent_direct")) %>%
+  filter(!is.na(value)) %>%
+  mutate(geoid=as.character(geoid))
 
 
 # save the living units distribution ----------------------------------------------------------------------------

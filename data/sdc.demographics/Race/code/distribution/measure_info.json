@@ -8,15 +8,51 @@
     "short_name": "{variant} {category}",
     "long_name": "{variant.short_description}",
     "short_description": "{variant}",
-    "long_description": "{variant}. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups {category} Redistribution to non-census geolevels was performed using the redistribute R package.",
+    "long_description": "{variant} 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups {category} Redistribution to non-census geolevels was performed using the redistribute R package.",
     "statement": "{variant}",
+    "citations": "bii-redist",
     "sources": [
       {
         "name": "American Community Survey",
         "location": "5-Year estimates, table B01001, via the API",
         "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
+        "date_accessed": 2023,
         "url": "https://www.census.gov/programs-surveys/acs.html"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Boundaries > Zip Codes",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::zip-codes/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Boundaries > Supervisor Districts",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::supervisor-districts-5/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Health & Human Service > Human Services Regions",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::human-services-regions/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Arlington County GIS Open Data",
+        "location": "MHUD Polygons",
+        "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::mhud-polygons/about",
+        "date_accessed": 2023,
+        "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Arlington County GIS Open Data",
+        "location": "Civic Association Polygons",
+        "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::civic-association-polygons-1/about",
+        "date_accessed": 2021,
+        "url": "https://gisdata-arlgis.opendata.arcgis.com/"
       }
     ],
     "categories": {
@@ -34,7 +70,7 @@
         "default": "The Black population",
         "data_type": "decimal",
         "aggregation_method": "arithmetic mean",
-        "short_description": "The Black population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "The Black population.",
         "long_description": "The Black population.",
         "statement": "The Black population is {value} in {region_name}."
       },
@@ -42,7 +78,7 @@
         "default": "The Native population",
         "data_type": "decimal",
         "aggregation_method": "arithmetic mean",
-        "short_description": "The Native population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "The Native population.",
         "long_description": "The Native population.",
         "statement": "The Native population is {value} in {region_name}."
       },
@@ -50,7 +86,7 @@
         "default": "The Asian American/Pacific Islander population",
         "data_type": "decimal",
         "aggregation_method": "arithmetic mean",
-        "short_description": "The Asian American/Pacific Islander population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "The Asian American/Pacific Islander population.",
         "long_description": "The Asian American/Pacific Islander population.",
         "statement": "The Asian American/Pacific Islander population is {value} in {region_name}."
       },
@@ -58,7 +94,7 @@
         "default": "The White population",
         "data_type": "decimal",
         "aggregation_method": "arithmetic mean",
-        "short_description": "The White population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "The White population.",
         "long_description": "The White population.",
         "statement": "The White population is {value} in {region_name}."
       },
@@ -66,7 +102,7 @@
         "default": "The Hispanic/Latino population",
         "data_type": "decimal",
         "aggregation_method": "arithmetic mean",
-        "short_description": "The Hispanic/Latino population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "The Hispanic/Latino population.",
         "long_description": "The Hispanic/Latino population.",
         "statement": "The Hispanic/Latino population is {value} in {region_name}."
       },
@@ -74,7 +110,7 @@
         "default": "The Other racial population",
         "data_type": "decimal",
         "aggregation_method": "arithmetic mean",
-        "short_description": "The Other racial population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "The Other racial population.",
         "long_description": "The Other racial population.",
         "statement": "The Other racial population is {value} in {region_name}."
       },
@@ -82,7 +118,7 @@
         "default": "The two or more races population",
         "data_type": "decimal",
         "aggregation_method": "arithmetic mean",
-        "short_description": "The two or more races population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "The two or more races population.",
         "long_description": "The two or more races population.",
         "statement": "The two or more races population is {value} in {region_name}."
       },
@@ -90,7 +126,7 @@
         "default": "Total count of the population",
         "data_type": "decimal",
         "aggregation_method": "arithmetic mean",
-        "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "Total count of the population.",
         "long_description": "Total count of the population.",
         "statement": "Total count of the population is {value} in {region_name}."
       },
@@ -98,7 +134,7 @@
         "default": "Total population ethnique",
         "data_type": "decimal",
         "aggregation_method": "arithmetic mean",
-        "short_description": "Total population ethnique. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "Total population ethnique.",
         "long_description": "Total population ethnique.",
         "statement": "Total population ethnique is {value} in {region_name}."
       },
@@ -106,7 +142,7 @@
         "default": "Black population percentage",
         "data_type": "decimal",
         "aggregation_method": "percent",
-        "short_description": "The Black population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "The Black population percent.",
         "long_description": "The Black population percent.",
         "statement": "The Black population percent is {value} in {region_name}."
       },
@@ -114,7 +150,7 @@
         "default": "The Native population percentage",
         "data_type": "decimal",
         "aggregation_method": "percent",
-        "short_description": "The Native population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "The Native population percent.",
         "long_description": "The Native population percent.",
         "statement": "The Native population percent is {value} in {region_name}."
       },
@@ -122,7 +158,7 @@
         "default": "The Asian American/Pacific Islander population percentage",
         "data_type": "decimal",
         "aggregation_method": "percent",
-        "short_description": "The Asian American/Pacific Islander population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "The Asian American/Pacific Islander population percent.",
         "long_description": "The Asian American/Pacific Islander population percent.",
         "statement": "The Asian American/Pacific Islander population percent is {value} in {region_name}."
       },
@@ -130,7 +166,7 @@
         "default": "The White population percentage",
         "data_type": "decimal",
         "aggregation_method": "percent",
-        "short_description": "The White population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "The White population percent.",
         "long_description": "The White population percent.",
         "statement": "The White population percent is {value} in {region_name}."
       },
@@ -138,7 +174,7 @@
         "default": "The Hispanic/Latino population percentage",
         "data_type": "decimal",
         "aggregation_method": "percent",
-        "short_description": "The Hispanic/Latino population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "The Hispanic/Latino population percent.",
         "long_description": "The Hispanic/Latino population percent.",
         "statement": "The Hispanic/Latino population percent is {value} in {region_name}."
       },
@@ -146,7 +182,7 @@
         "default": "The Other racial population percentage",
         "data_type": "decimal",
         "aggregation_method": "percent",
-        "short_description": "The Other racial population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "The Other racial population percent.",
         "long_description": "The Other racial population percent.",
         "statement": "The Other racial population percent is {value} in {region_name}."
       },
@@ -154,10 +190,20 @@
         "default": "The two or more races population percentage",
         "data_type": "decimal",
         "aggregation_method": "percent",
-        "short_description": "The two or more races population percent. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "The two or more races population percent.",
         "long_description": "The two or more races population percent.",
         "statement": "The two or more races population percent is {value} in {region_name}."
       }
+    }
+  },
+  "_references": {
+    "bii-redist": {
+      "id": "bii-redist",
+      "author": "Biocomplexity Institute and Initiative",
+      "year": 2022,
+      "title": "redistribute: An R package to redistribute data",
+      "version": "0.0.1",
+      "url": "https://github.com/uva-bi-sdad/redistribute"
     }
   }
 }

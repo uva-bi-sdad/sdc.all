@@ -10,13 +10,49 @@
     "short_description": "{variant}",
     "long_description": "{variant} 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups {category} Redistribution to non-census geolevels was performed using the redistribute R package.",
     "statement": "{variant}",
+    "citations": "bii-redist",
     "sources": [
       {
         "name": "American Community Survey",
         "location": "5-Year estimates, table S0101, via the API",
         "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
+        "date_accessed": 2023,
         "url": "https://www.census.gov/programs-surveys/acs.html"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Boundaries > Zip Codes",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::zip-codes/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Boundaries > Supervisor Districts",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::supervisor-districts-5/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Health & Human Service > Human Services Regions",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::human-services-regions/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Arlington County GIS Open Data",
+        "location": "MHUD Polygons",
+        "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::mhud-polygons/about",
+        "date_accessed": 2023,
+        "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Arlington County GIS Open Data",
+        "location": "Civic Association Polygons",
+        "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::civic-association-polygons-1/about",
+        "date_accessed": 2021,
+        "url": "https://gisdata-arlgis.opendata.arcgis.com/"
       }
     ],
     "categories": {
@@ -34,7 +70,7 @@
         "default": "Male population",
         "data_type": "decimal",
         "aggregation_method": "arithmetic mean",
-        "short_description": "The count of males in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
+        "short_description": "The count of males in population.",
         "long_description": "The count of males in the total population.",
         "statement": "The male population is {value} in {region_name}."
       },
@@ -42,7 +78,7 @@
         "default": "Female population",
         "data_type": "decimal",
         "aggregation_method": "arithmetic mean",
-        "short_description": "The count of females in population. Based on American Community Survey ACS 2010/2021 5-year estimates.",
+        "short_description": "The count of females in population.",
         "long_description": "The count of females in the total population.",
         "statement": "The female population is {value} in {region_name}."
       },
@@ -50,7 +86,7 @@
         "default": "Percentage of males",
         "data_type": "decimal",
         "aggregation_method": "percent",
-        "short_description": "The percent of males in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "The percent of males in the total population.",
         "long_description": "The percent of males in the total population.",
         "statement": "The percent of males is {value} in {region_name}."
       },
@@ -58,7 +94,7 @@
         "default": "Percentage of females",
         "data_type": "decimal",
         "aggregation_method": "percent",
-        "short_description": "The percent of females in the total population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "The percent of females in the total population.",
         "long_description": "The percent of females in the total population.",
         "statement": "The percent of females is {value} in {region_name}."
       },
@@ -66,10 +102,20 @@
         "default": "Total count of the population",
         "data_type": "decimal",
         "aggregation_method": "arithmetic mean",
-        "short_description": "Total count of the population. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+        "short_description": "Total count of the population.",
         "long_description": "Total count of the population.",
         "statement": "Total count of the population is {value} in {region_name}."
       }
+    }
+  },
+  "_references": {
+    "bii-redist": {
+      "id": "bii-redist",
+      "author": "Biocomplexity Institute and Initiative",
+      "year": 2022,
+      "title": "redistribute: An R package to redistribute data",
+      "version": "0.0.1",
+      "url": "https://github.com/uva-bi-sdad/redistribute"
     }
   }
 }

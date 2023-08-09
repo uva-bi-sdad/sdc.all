@@ -95,4 +95,4 @@ data_add(
   dir = "docs/data"
 )
 
-site_build(".", serve = TRUE, aggregate = FALSE)
+site_build(".", serve = TRUE, aggregate = FALSE, open_after = TRUE)
