@@ -122,6 +122,38 @@
         "short_description": "Total businesses",
         "long_description": "Count of all businesses.",
         "statement": "{value} businesses in {region_name}."
+      },
+      "small_business": {
+        "default": "small businesses",
+        "data_type": "integer",
+        "aggregation_method": "count",
+        "short_description": "Small businesses",
+        "long_description": "Count of small businesses.",
+        "statement": "{value} small businesses in {region_name}."
+      },
+      "soloproprio_business": {
+        "default": "sole proprietor businesses",
+        "data_type": "integer",
+        "aggregation_method": "count",
+        "short_description": "Sole proprietor businesses",
+        "long_description": "Count of sole proprietor businesses.",
+        "statement": "{value} sole proprietor businesses in {region_name}."
+      },
+      "perc_small": {
+        "default": "percentage of small businesses",
+        "data_type": "integer",
+        "aggregation_method": "count",
+        "short_description": "percent of small businesses",
+        "long_description": "percent of small businesses.",
+        "statement": "{value} percent of small businesses in {region_name}."
+      },
+      "perc_soloproprio": {
+        "default": "percentage of sole proprietor businesses",
+        "data_type": "integer",
+        "aggregation_method": "count",
+        "short_description": "percent of sole proprietor businesses",
+        "long_description": "percent of sole proprietor businesses.",
+        "statement": "{value} percent of sole proprietor businesses in {region_name}."
       }
     }
   }

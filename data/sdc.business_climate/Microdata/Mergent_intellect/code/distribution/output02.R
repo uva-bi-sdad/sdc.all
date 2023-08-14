@@ -179,6 +179,18 @@ plt2f <-  mibg_sf %>%
                        high = "blue",
                        aesthetics ="fill") +
   labs(fill = "rate", title = "Growth rate in LQ")
+
+
+
+
+
+
+
+
+
+
+
+}
 plt2f
 
 ggarrange(plt2d, 
