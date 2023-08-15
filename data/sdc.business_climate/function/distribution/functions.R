@@ -141,7 +141,7 @@ entry <- function(data,geolevels,topics){
            geoid_tract=substr(geoid,1,11),
            geoid_county=substr(geoid,1,5),
            industry=paste0(naics_name,'_'),
-           status=if_else(minority==1,'minority_owned_','non_minority_owned_'),
+           minority=if_else(minority==1,'minority_owned_','non_minority_owned_'),
            aggregate='') %>%
     tidyr::unite("topic", topics, sep = "", remove = FALSE)
   

@@ -2623,5 +2623,2105 @@
         "type": "",
         "unit": "business",
         "variants": ""
+    },
+    "Accommodation and Food Services_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Accommodation and Food Services. The Accommodation and Food Services sector comprises establishments providing customers with lodging and/or preparing meals, snacks, and beverages for immediate consumption. The sector includes both accommodation and food services establishments because the two activities are often combined at the same establishment.",
+        "long_name": "small businesses in Accommodation and Food Services",
+        "measure_type": "",
+        "short_description": "Small businesses in Accommodation and Food Services",
+        "short_name": "small businesses in Accommodation and Food Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Administrative and Support and Waste Management and Remediation Services_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Administrative and Support and Waste Management and Remediation Services. The Administrative and Support and Waste Management and Remediation Services sector comprises establishments performing routine support activities for the day-to-day operations of other organizations. These essential activities are often undertaken in-house by establishments in many sectors of the economy.",
+        "long_name": "small businesses in Administrative and Support and Waste Management and Remediation Services",
+        "measure_type": "",
+        "short_description": "Small businesses in Administrative and Support and Waste Management and Remediation Services",
+        "short_name": "small businesses in Administrative and Support and Waste Management and Remediation Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Agriculture, Forestry, Fishing and Hunting_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Agriculture, Forestry, Fishing and Hunting. The Agriculture, Forestry, Fishing and Hunting sector comprises establishments primarily engaged in growing crops, raising animals, harvesting timber, and harvesting fish and other animals from a farm, ranch, or their natural habitats.",
+        "long_name": "small businesses in Agriculture, Forestry, Fishing and Hunting",
+        "measure_type": "",
+        "short_description": "Small businesses in Agriculture, Forestry, Fishing and Hunting",
+        "short_name": "small businesses in Agriculture, Forestry, Fishing and Hunting",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Arts, Entertainment, and Recreation_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Arts, Entertainment, and Recreation. The Arts, Entertainment, and Recreation sector includes a wide range of establishments that operate facilities or provide services to meet varied cultural, entertainment, and recreational interests of their patrons.",
+        "long_name": "small businesses in Arts, Entertainment, and Recreation",
+        "measure_type": "",
+        "short_description": "Small businesses in Arts, Entertainment, and Recreation",
+        "short_name": "small businesses in Arts, Entertainment, and Recreation",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Construction_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Construction. The Construction sector comprises establishments primarily engaged in the construction of buildings or engineering projects (e.g., highways and utility systems). Establishments primarily engaged in the preparation of sites for new construction and establishments primarily engaged in subdividing land for sale as building sites also are included in this sector.",
+        "long_name": "small businesses in Construction",
+        "measure_type": "",
+        "short_description": "Small businesses in Construction",
+        "short_name": "small businesses in Construction",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Educational Services_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Educational Services. The Educational Services sector comprises establishments that provide instruction and training in a wide variety of subjects. This instruction and training is provided by specialized establishments, such as schools, colleges, universities, and training centers. These establishments may be privately owned and operated for profit or not for profit, or they may be publicly owned and operated. They may also offer food and/or accommodation services to their students.",
+        "long_name": "small businesses in Educational Services",
+        "measure_type": "",
+        "short_description": "Small businesses in Educational Services",
+        "short_name": "small businesses in Educational Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Finance and Insurance_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Finance and Insurance. The Finance and Insurance sector comprises establishments primarily engaged in financial transactions (transactions involving the creation, liquidation, or change in ownership of financial assets) and/or in facilitating financial transactions.",
+        "long_name": "small businesses in Finance and Insurance",
+        "measure_type": "",
+        "short_description": "Small businesses in Finance and Insurance",
+        "short_name": "small businesses in Finance and Insurance",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Health Care and Social Assistance_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Health Care and Social Assistance. The Health Care and Social Assistance sector comprises establishments providing health care and social assistance for individuals. The sector includes both health care and social assistance because it is sometimes difficult to distinguish between the boundaries of these two activities.",
+        "long_name": "small businesses in Health Care and Social Assistance",
+        "measure_type": "",
+        "short_description": "Small businesses in Health Care and Social Assistance",
+        "short_name": "small businesses in Health Care and Social Assistance",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Information_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Information. The Information sector comprises establishments engaged in the following processes: (a) producing and distributing information and cultural products, (b) providing the means to transmit or distribute these products as well as data or communications, and (c) processing data.",
+        "long_name": "small businesses in Information",
+        "measure_type": "",
+        "short_description": "Small businesses in Information",
+        "short_name": "small businesses in Information",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Management of Companies and Enterprises_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Management of Companies and Enterprises. The Management of Companies and Enterprises sector comprises (1) establishments that hold the securities of (or other equity interests in) companies and enterprises for the purpose of owning a controlling interest or influencing management decisions or (2) establishments (except government establishments) that administer, oversee, and manage establishments of the company or enterprise and that normally undertake the strategic or organizational planning and decision-making role of the company or enterprise. Establishments that administer, oversee, and manage may hold the securities of the company or enterprise.",
+        "long_name": "small businesses in Management of Companies and Enterprises",
+        "measure_type": "",
+        "short_description": "Small businesses in Management of Companies and Enterprises",
+        "short_name": "small businesses in Management of Companies and Enterprises",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Manufacturing_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Manufacturing. The Manufacturing sector comprises establishments engaged in the mechanical, physical, or chemical transformation of materials, substances, or components into new products. The assembling of component parts of manufactured products is considered manufacturing, except in cases where the activity is appropriately classified in Sector 23, Construction.",
+        "long_name": "small businesses in Manufacturing",
+        "measure_type": "",
+        "short_description": "Small businesses in Manufacturing",
+        "short_name": "small businesses in Manufacturing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Mining, Quarrying, and Oil and Gas Extraction_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Mining, Quarrying, and Oil and Gas Extraction. The Mining, Quarrying, and Oil and Gas Extraction sector comprises establishments that extract naturally occurring mineral solids, such as coal and ores; liquid minerals, such as crude petroleum; and gases, such as natural gas. The term mining is used in the broad sense to include quarrying, well operations, beneficiating (e.g., crushing, screening, washing, and flotation), and other preparation customarily performed at the mine site, or as a part of mining activity.",
+        "long_name": "small businesses in Mining, Quarrying, and Oil and Gas Extraction",
+        "measure_type": "",
+        "short_description": "Small businesses in Mining, Quarrying, and Oil and Gas Extraction",
+        "short_name": "small businesses in Mining, Quarrying, and Oil and Gas Extraction",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Nonclassifiable Establishments_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Nonclassifiable Establishments.  ",
+        "long_name": "small businesses in Nonclassifiable Establishments",
+        "measure_type": "",
+        "short_description": "Small businesses in Nonclassifiable Establishments",
+        "short_name": "small businesses in Nonclassifiable Establishments",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Other Services (except Public Administration)_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Other Services (except Public Administration). The Other Services (except Public Administration) sector comprises establishments engaged in providing services not specifically provided for elsewhere in the classification system.",
+        "long_name": "small businesses in Other Services (except Public Administration)",
+        "measure_type": "",
+        "short_description": "Small businesses in Other Services (except Public Administration)",
+        "short_name": "small businesses in Other Services (except Public Administration)",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Professional, Scientific, and Technical Services_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Professional, Scientific, and Technical Services. The Professional, Scientific, and Technical Services sector comprises establishments that specialize in performing professional, scientific, and technical activities for others. These activities require a high degree of expertise and training.",
+        "long_name": "small businesses in Professional, Scientific, and Technical Services",
+        "measure_type": "",
+        "short_description": "Small businesses in Professional, Scientific, and Technical Services",
+        "short_name": "small businesses in Professional, Scientific, and Technical Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Public Administration_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Public Administration. The Public Administration sector consists of establishments of federal, state, and local government agencies that administer, oversee, and manage public programs and have executive, legislative, or judicial authority over other institutions within a given area.",
+        "long_name": "small businesses in Public Administration",
+        "measure_type": "",
+        "short_description": "Small businesses in Public Administration",
+        "short_name": "small businesses in Public Administration",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Real Estate and Rental and Leasing_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Real Estate and Rental and Leasing. The Real Estate and Rental and Leasing sector comprises establishments primarily engaged in renting, leasing, or otherwise allowing the use of tangible or intangible assets, and establishments providing related services. The major portion of this sector comprises establishments that rent, lease, or otherwise allow the use of their own assets by others.",
+        "long_name": "small businesses in Real Estate and Rental and Leasing",
+        "measure_type": "",
+        "short_description": "Small businesses in Real Estate and Rental and Leasing",
+        "short_name": "small businesses in Real Estate and Rental and Leasing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Retail Trade_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Retail Trade. The Retail Trade sector comprises establishments engaged in retailing merchandise, generally without transformation, and rendering services incidental to the sale of merchandise.",
+        "long_name": "small businesses in Retail Trade",
+        "measure_type": "",
+        "short_description": "Small businesses in Retail Trade",
+        "short_name": "small businesses in Retail Trade",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Transportation and Warehousing_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Transportation and Warehousing. The Transportation and Warehousing sector includes industries providing transportation of passengers and cargo, warehousing and storage for goods, scenic and sightseeing transportation, and support activities related to modes of transportation. Establishments in these industries use transportation equipment or transportation related facilities as a productive asset. The type of equipment depends on the mode of transportation. The modes of transportation are air, rail, water, road, and pipeline.",
+        "long_name": "small businesses in Transportation and Warehousing",
+        "measure_type": "",
+        "short_description": "Small businesses in Transportation and Warehousing",
+        "short_name": "small businesses in Transportation and Warehousing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Utilities_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Utilities. The Utilities sector comprises establishments engaged in the provision of the following utility services: electric power, natural gas, steam supply, water supply, and sewage removal. Within this sector, the specific activities associated with the utility services provided vary by utility: electric power includes generation, transmission, and distribution; natural gas includes distribution; steam supply includes provision and/or distribution; water supply includes treatment and distribution; and sewage removal includes collection, treatment, and disposal of waste through sewer systems and sewage treatment facilities.",
+        "long_name": "small businesses in Utilities",
+        "measure_type": "",
+        "short_description": "Small businesses in Utilities",
+        "short_name": "small businesses in Utilities",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Wholesale Trade_small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. in Wholesale Trade. The Wholesale Trade sector comprises establishments engaged in wholesaling merchandise, generally without transformation, and rendering services incidental to the sale of merchandise. The merchandise described in this sector includes the outputs of agriculture, mining, manufacturing, and certain information industries, such as publishing.",
+        "long_name": "small businesses in Wholesale Trade",
+        "measure_type": "",
+        "short_description": "Small businesses in Wholesale Trade",
+        "short_name": "small businesses in Wholesale Trade",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Accommodation and Food Services_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Accommodation and Food Services. The Accommodation and Food Services sector comprises establishments providing customers with lodging and/or preparing meals, snacks, and beverages for immediate consumption. The sector includes both accommodation and food services establishments because the two activities are often combined at the same establishment.",
+        "long_name": "sole proprietor businesses in Accommodation and Food Services",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Accommodation and Food Services",
+        "short_name": "sole proprietor businesses in Accommodation and Food Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Administrative and Support and Waste Management and Remediation Services_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Administrative and Support and Waste Management and Remediation Services. The Administrative and Support and Waste Management and Remediation Services sector comprises establishments performing routine support activities for the day-to-day operations of other organizations. These essential activities are often undertaken in-house by establishments in many sectors of the economy.",
+        "long_name": "sole proprietor businesses in Administrative and Support and Waste Management and Remediation Services",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Administrative and Support and Waste Management and Remediation Services",
+        "short_name": "sole proprietor businesses in Administrative and Support and Waste Management and Remediation Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Agriculture, Forestry, Fishing and Hunting_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Agriculture, Forestry, Fishing and Hunting. The Agriculture, Forestry, Fishing and Hunting sector comprises establishments primarily engaged in growing crops, raising animals, harvesting timber, and harvesting fish and other animals from a farm, ranch, or their natural habitats.",
+        "long_name": "sole proprietor businesses in Agriculture, Forestry, Fishing and Hunting",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Agriculture, Forestry, Fishing and Hunting",
+        "short_name": "sole proprietor businesses in Agriculture, Forestry, Fishing and Hunting",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Arts, Entertainment, and Recreation_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Arts, Entertainment, and Recreation. The Arts, Entertainment, and Recreation sector includes a wide range of establishments that operate facilities or provide services to meet varied cultural, entertainment, and recreational interests of their patrons.",
+        "long_name": "sole proprietor businesses in Arts, Entertainment, and Recreation",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Arts, Entertainment, and Recreation",
+        "short_name": "sole proprietor businesses in Arts, Entertainment, and Recreation",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Construction_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Construction. The Construction sector comprises establishments primarily engaged in the construction of buildings or engineering projects (e.g., highways and utility systems). Establishments primarily engaged in the preparation of sites for new construction and establishments primarily engaged in subdividing land for sale as building sites also are included in this sector.",
+        "long_name": "sole proprietor businesses in Construction",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Construction",
+        "short_name": "sole proprietor businesses in Construction",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Educational Services_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Educational Services. The Educational Services sector comprises establishments that provide instruction and training in a wide variety of subjects. This instruction and training is provided by specialized establishments, such as schools, colleges, universities, and training centers. These establishments may be privately owned and operated for profit or not for profit, or they may be publicly owned and operated. They may also offer food and/or accommodation services to their students.",
+        "long_name": "sole proprietor businesses in Educational Services",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Educational Services",
+        "short_name": "sole proprietor businesses in Educational Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Finance and Insurance_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Finance and Insurance. The Finance and Insurance sector comprises establishments primarily engaged in financial transactions (transactions involving the creation, liquidation, or change in ownership of financial assets) and/or in facilitating financial transactions.",
+        "long_name": "sole proprietor businesses in Finance and Insurance",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Finance and Insurance",
+        "short_name": "sole proprietor businesses in Finance and Insurance",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Health Care and Social Assistance_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Health Care and Social Assistance. The Health Care and Social Assistance sector comprises establishments providing health care and social assistance for individuals. The sector includes both health care and social assistance because it is sometimes difficult to distinguish between the boundaries of these two activities.",
+        "long_name": "sole proprietor businesses in Health Care and Social Assistance",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Health Care and Social Assistance",
+        "short_name": "sole proprietor businesses in Health Care and Social Assistance",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Information_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Information. The Information sector comprises establishments engaged in the following processes: (a) producing and distributing information and cultural products, (b) providing the means to transmit or distribute these products as well as data or communications, and (c) processing data.",
+        "long_name": "sole proprietor businesses in Information",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Information",
+        "short_name": "sole proprietor businesses in Information",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Management of Companies and Enterprises_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Management of Companies and Enterprises. The Management of Companies and Enterprises sector comprises (1) establishments that hold the securities of (or other equity interests in) companies and enterprises for the purpose of owning a controlling interest or influencing management decisions or (2) establishments (except government establishments) that administer, oversee, and manage establishments of the company or enterprise and that normally undertake the strategic or organizational planning and decision-making role of the company or enterprise. Establishments that administer, oversee, and manage may hold the securities of the company or enterprise.",
+        "long_name": "sole proprietor businesses in Management of Companies and Enterprises",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Management of Companies and Enterprises",
+        "short_name": "sole proprietor businesses in Management of Companies and Enterprises",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Manufacturing_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Manufacturing. The Manufacturing sector comprises establishments engaged in the mechanical, physical, or chemical transformation of materials, substances, or components into new products. The assembling of component parts of manufactured products is considered manufacturing, except in cases where the activity is appropriately classified in Sector 23, Construction.",
+        "long_name": "sole proprietor businesses in Manufacturing",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Manufacturing",
+        "short_name": "sole proprietor businesses in Manufacturing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Mining, Quarrying, and Oil and Gas Extraction_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Mining, Quarrying, and Oil and Gas Extraction. The Mining, Quarrying, and Oil and Gas Extraction sector comprises establishments that extract naturally occurring mineral solids, such as coal and ores; liquid minerals, such as crude petroleum; and gases, such as natural gas. The term mining is used in the broad sense to include quarrying, well operations, beneficiating (e.g., crushing, screening, washing, and flotation), and other preparation customarily performed at the mine site, or as a part of mining activity.",
+        "long_name": "sole proprietor businesses in Mining, Quarrying, and Oil and Gas Extraction",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Mining, Quarrying, and Oil and Gas Extraction",
+        "short_name": "sole proprietor businesses in Mining, Quarrying, and Oil and Gas Extraction",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Nonclassifiable Establishments_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Nonclassifiable Establishments.  ",
+        "long_name": "sole proprietor businesses in Nonclassifiable Establishments",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Nonclassifiable Establishments",
+        "short_name": "sole proprietor businesses in Nonclassifiable Establishments",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Other Services (except Public Administration)_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Other Services (except Public Administration). The Other Services (except Public Administration) sector comprises establishments engaged in providing services not specifically provided for elsewhere in the classification system.",
+        "long_name": "sole proprietor businesses in Other Services (except Public Administration)",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Other Services (except Public Administration)",
+        "short_name": "sole proprietor businesses in Other Services (except Public Administration)",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Professional, Scientific, and Technical Services_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Professional, Scientific, and Technical Services. The Professional, Scientific, and Technical Services sector comprises establishments that specialize in performing professional, scientific, and technical activities for others. These activities require a high degree of expertise and training.",
+        "long_name": "sole proprietor businesses in Professional, Scientific, and Technical Services",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Professional, Scientific, and Technical Services",
+        "short_name": "sole proprietor businesses in Professional, Scientific, and Technical Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Public Administration_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Public Administration. The Public Administration sector consists of establishments of federal, state, and local government agencies that administer, oversee, and manage public programs and have executive, legislative, or judicial authority over other institutions within a given area.",
+        "long_name": "sole proprietor businesses in Public Administration",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Public Administration",
+        "short_name": "sole proprietor businesses in Public Administration",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Real Estate and Rental and Leasing_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Real Estate and Rental and Leasing. The Real Estate and Rental and Leasing sector comprises establishments primarily engaged in renting, leasing, or otherwise allowing the use of tangible or intangible assets, and establishments providing related services. The major portion of this sector comprises establishments that rent, lease, or otherwise allow the use of their own assets by others.",
+        "long_name": "sole proprietor businesses in Real Estate and Rental and Leasing",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Real Estate and Rental and Leasing",
+        "short_name": "sole proprietor businesses in Real Estate and Rental and Leasing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Retail Trade_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Retail Trade. The Retail Trade sector comprises establishments engaged in retailing merchandise, generally without transformation, and rendering services incidental to the sale of merchandise.",
+        "long_name": "sole proprietor businesses in Retail Trade",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Retail Trade",
+        "short_name": "sole proprietor businesses in Retail Trade",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Transportation and Warehousing_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Transportation and Warehousing. The Transportation and Warehousing sector includes industries providing transportation of passengers and cargo, warehousing and storage for goods, scenic and sightseeing transportation, and support activities related to modes of transportation. Establishments in these industries use transportation equipment or transportation related facilities as a productive asset. The type of equipment depends on the mode of transportation. The modes of transportation are air, rail, water, road, and pipeline.",
+        "long_name": "sole proprietor businesses in Transportation and Warehousing",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Transportation and Warehousing",
+        "short_name": "sole proprietor businesses in Transportation and Warehousing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Utilities_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Utilities. The Utilities sector comprises establishments engaged in the provision of the following utility services: electric power, natural gas, steam supply, water supply, and sewage removal. Within this sector, the specific activities associated with the utility services provided vary by utility: electric power includes generation, transmission, and distribution; natural gas includes distribution; steam supply includes provision and/or distribution; water supply includes treatment and distribution; and sewage removal includes collection, treatment, and disposal of waste through sewer systems and sewage treatment facilities.",
+        "long_name": "sole proprietor businesses in Utilities",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Utilities",
+        "short_name": "sole proprietor businesses in Utilities",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Wholesale Trade_soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. in Wholesale Trade. The Wholesale Trade sector comprises establishments engaged in wholesaling merchandise, generally without transformation, and rendering services incidental to the sale of merchandise. The merchandise described in this sector includes the outputs of agriculture, mining, manufacturing, and certain information industries, such as publishing.",
+        "long_name": "sole proprietor businesses in Wholesale Trade",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses in Wholesale Trade",
+        "short_name": "sole proprietor businesses in Wholesale Trade",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Accommodation and Food Services_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Accommodation and Food Services. The Accommodation and Food Services sector comprises establishments providing customers with lodging and/or preparing meals, snacks, and beverages for immediate consumption. The sector includes both accommodation and food services establishments because the two activities are often combined at the same establishment.",
+        "long_name": "percentage of small businesses in Accommodation and Food Services",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Accommodation and Food Services",
+        "short_name": "percentage of small businesses in Accommodation and Food Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Administrative and Support and Waste Management and Remediation Services_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Administrative and Support and Waste Management and Remediation Services. The Administrative and Support and Waste Management and Remediation Services sector comprises establishments performing routine support activities for the day-to-day operations of other organizations. These essential activities are often undertaken in-house by establishments in many sectors of the economy.",
+        "long_name": "percentage of small businesses in Administrative and Support and Waste Management and Remediation Services",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Administrative and Support and Waste Management and Remediation Services",
+        "short_name": "percentage of small businesses in Administrative and Support and Waste Management and Remediation Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Agriculture, Forestry, Fishing and Hunting_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Agriculture, Forestry, Fishing and Hunting. The Agriculture, Forestry, Fishing and Hunting sector comprises establishments primarily engaged in growing crops, raising animals, harvesting timber, and harvesting fish and other animals from a farm, ranch, or their natural habitats.",
+        "long_name": "percentage of small businesses in Agriculture, Forestry, Fishing and Hunting",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Agriculture, Forestry, Fishing and Hunting",
+        "short_name": "percentage of small businesses in Agriculture, Forestry, Fishing and Hunting",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Arts, Entertainment, and Recreation_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Arts, Entertainment, and Recreation. The Arts, Entertainment, and Recreation sector includes a wide range of establishments that operate facilities or provide services to meet varied cultural, entertainment, and recreational interests of their patrons.",
+        "long_name": "percentage of small businesses in Arts, Entertainment, and Recreation",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Arts, Entertainment, and Recreation",
+        "short_name": "percentage of small businesses in Arts, Entertainment, and Recreation",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Construction_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Construction. The Construction sector comprises establishments primarily engaged in the construction of buildings or engineering projects (e.g., highways and utility systems). Establishments primarily engaged in the preparation of sites for new construction and establishments primarily engaged in subdividing land for sale as building sites also are included in this sector.",
+        "long_name": "percentage of small businesses in Construction",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Construction",
+        "short_name": "percentage of small businesses in Construction",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Educational Services_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Educational Services. The Educational Services sector comprises establishments that provide instruction and training in a wide variety of subjects. This instruction and training is provided by specialized establishments, such as schools, colleges, universities, and training centers. These establishments may be privately owned and operated for profit or not for profit, or they may be publicly owned and operated. They may also offer food and/or accommodation services to their students.",
+        "long_name": "percentage of small businesses in Educational Services",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Educational Services",
+        "short_name": "percentage of small businesses in Educational Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Finance and Insurance_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Finance and Insurance. The Finance and Insurance sector comprises establishments primarily engaged in financial transactions (transactions involving the creation, liquidation, or change in ownership of financial assets) and/or in facilitating financial transactions.",
+        "long_name": "percentage of small businesses in Finance and Insurance",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Finance and Insurance",
+        "short_name": "percentage of small businesses in Finance and Insurance",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Health Care and Social Assistance_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Health Care and Social Assistance. The Health Care and Social Assistance sector comprises establishments providing health care and social assistance for individuals. The sector includes both health care and social assistance because it is sometimes difficult to distinguish between the boundaries of these two activities.",
+        "long_name": "percentage of small businesses in Health Care and Social Assistance",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Health Care and Social Assistance",
+        "short_name": "percentage of small businesses in Health Care and Social Assistance",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Information_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Information. The Information sector comprises establishments engaged in the following processes: (a) producing and distributing information and cultural products, (b) providing the means to transmit or distribute these products as well as data or communications, and (c) processing data.",
+        "long_name": "percentage of small businesses in Information",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Information",
+        "short_name": "percentage of small businesses in Information",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Management of Companies and Enterprises_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Management of Companies and Enterprises. The Management of Companies and Enterprises sector comprises (1) establishments that hold the securities of (or other equity interests in) companies and enterprises for the purpose of owning a controlling interest or influencing management decisions or (2) establishments (except government establishments) that administer, oversee, and manage establishments of the company or enterprise and that normally undertake the strategic or organizational planning and decision-making role of the company or enterprise. Establishments that administer, oversee, and manage may hold the securities of the company or enterprise.",
+        "long_name": "percentage of small businesses in Management of Companies and Enterprises",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Management of Companies and Enterprises",
+        "short_name": "percentage of small businesses in Management of Companies and Enterprises",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Manufacturing_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Manufacturing. The Manufacturing sector comprises establishments engaged in the mechanical, physical, or chemical transformation of materials, substances, or components into new products. The assembling of component parts of manufactured products is considered manufacturing, except in cases where the activity is appropriately classified in Sector 23, Construction.",
+        "long_name": "percentage of small businesses in Manufacturing",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Manufacturing",
+        "short_name": "percentage of small businesses in Manufacturing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Mining, Quarrying, and Oil and Gas Extraction_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Mining, Quarrying, and Oil and Gas Extraction. The Mining, Quarrying, and Oil and Gas Extraction sector comprises establishments that extract naturally occurring mineral solids, such as coal and ores; liquid minerals, such as crude petroleum; and gases, such as natural gas. The term mining is used in the broad sense to include quarrying, well operations, beneficiating (e.g., crushing, screening, washing, and flotation), and other preparation customarily performed at the mine site, or as a part of mining activity.",
+        "long_name": "percentage of small businesses in Mining, Quarrying, and Oil and Gas Extraction",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Mining, Quarrying, and Oil and Gas Extraction",
+        "short_name": "percentage of small businesses in Mining, Quarrying, and Oil and Gas Extraction",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Nonclassifiable Establishments_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Nonclassifiable Establishments.  ",
+        "long_name": "percentage of small businesses in Nonclassifiable Establishments",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Nonclassifiable Establishments",
+        "short_name": "percentage of small businesses in Nonclassifiable Establishments",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Other Services (except Public Administration)_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Other Services (except Public Administration). The Other Services (except Public Administration) sector comprises establishments engaged in providing services not specifically provided for elsewhere in the classification system.",
+        "long_name": "percentage of small businesses in Other Services (except Public Administration)",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Other Services (except Public Administration)",
+        "short_name": "percentage of small businesses in Other Services (except Public Administration)",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Professional, Scientific, and Technical Services_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Professional, Scientific, and Technical Services. The Professional, Scientific, and Technical Services sector comprises establishments that specialize in performing professional, scientific, and technical activities for others. These activities require a high degree of expertise and training.",
+        "long_name": "percentage of small businesses in Professional, Scientific, and Technical Services",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Professional, Scientific, and Technical Services",
+        "short_name": "percentage of small businesses in Professional, Scientific, and Technical Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Public Administration_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Public Administration. The Public Administration sector consists of establishments of federal, state, and local government agencies that administer, oversee, and manage public programs and have executive, legislative, or judicial authority over other institutions within a given area.",
+        "long_name": "percentage of small businesses in Public Administration",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Public Administration",
+        "short_name": "percentage of small businesses in Public Administration",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Real Estate and Rental and Leasing_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Real Estate and Rental and Leasing. The Real Estate and Rental and Leasing sector comprises establishments primarily engaged in renting, leasing, or otherwise allowing the use of tangible or intangible assets, and establishments providing related services. The major portion of this sector comprises establishments that rent, lease, or otherwise allow the use of their own assets by others.",
+        "long_name": "percentage of small businesses in Real Estate and Rental and Leasing",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Real Estate and Rental and Leasing",
+        "short_name": "percentage of small businesses in Real Estate and Rental and Leasing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Retail Trade_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Retail Trade. The Retail Trade sector comprises establishments engaged in retailing merchandise, generally without transformation, and rendering services incidental to the sale of merchandise.",
+        "long_name": "percentage of small businesses in Retail Trade",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Retail Trade",
+        "short_name": "percentage of small businesses in Retail Trade",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Transportation and Warehousing_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Transportation and Warehousing. The Transportation and Warehousing sector includes industries providing transportation of passengers and cargo, warehousing and storage for goods, scenic and sightseeing transportation, and support activities related to modes of transportation. Establishments in these industries use transportation equipment or transportation related facilities as a productive asset. The type of equipment depends on the mode of transportation. The modes of transportation are air, rail, water, road, and pipeline.",
+        "long_name": "percentage of small businesses in Transportation and Warehousing",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Transportation and Warehousing",
+        "short_name": "percentage of small businesses in Transportation and Warehousing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Utilities_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Utilities. The Utilities sector comprises establishments engaged in the provision of the following utility services: electric power, natural gas, steam supply, water supply, and sewage removal. Within this sector, the specific activities associated with the utility services provided vary by utility: electric power includes generation, transmission, and distribution; natural gas includes distribution; steam supply includes provision and/or distribution; water supply includes treatment and distribution; and sewage removal includes collection, treatment, and disposal of waste through sewer systems and sewage treatment facilities.",
+        "long_name": "percentage of small businesses in Utilities",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Utilities",
+        "short_name": "percentage of small businesses in Utilities",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Wholesale Trade_perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. in Wholesale Trade. The Wholesale Trade sector comprises establishments engaged in wholesaling merchandise, generally without transformation, and rendering services incidental to the sale of merchandise. The merchandise described in this sector includes the outputs of agriculture, mining, manufacturing, and certain information industries, such as publishing.",
+        "long_name": "percentage of small businesses in Wholesale Trade",
+        "measure_type": "",
+        "short_description": "percent of small businesses in Wholesale Trade",
+        "short_name": "percentage of small businesses in Wholesale Trade",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Accommodation and Food Services_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Accommodation and Food Services. The Accommodation and Food Services sector comprises establishments providing customers with lodging and/or preparing meals, snacks, and beverages for immediate consumption. The sector includes both accommodation and food services establishments because the two activities are often combined at the same establishment.",
+        "long_name": "percentage of sole proprietor businesses in Accommodation and Food Services",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Accommodation and Food Services",
+        "short_name": "percentage of sole proprietor businesses in Accommodation and Food Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Administrative and Support and Waste Management and Remediation Services_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Administrative and Support and Waste Management and Remediation Services. The Administrative and Support and Waste Management and Remediation Services sector comprises establishments performing routine support activities for the day-to-day operations of other organizations. These essential activities are often undertaken in-house by establishments in many sectors of the economy.",
+        "long_name": "percentage of sole proprietor businesses in Administrative and Support and Waste Management and Remediation Services",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Administrative and Support and Waste Management and Remediation Services",
+        "short_name": "percentage of sole proprietor businesses in Administrative and Support and Waste Management and Remediation Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Agriculture, Forestry, Fishing and Hunting_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Agriculture, Forestry, Fishing and Hunting. The Agriculture, Forestry, Fishing and Hunting sector comprises establishments primarily engaged in growing crops, raising animals, harvesting timber, and harvesting fish and other animals from a farm, ranch, or their natural habitats.",
+        "long_name": "percentage of sole proprietor businesses in Agriculture, Forestry, Fishing and Hunting",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Agriculture, Forestry, Fishing and Hunting",
+        "short_name": "percentage of sole proprietor businesses in Agriculture, Forestry, Fishing and Hunting",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Arts, Entertainment, and Recreation_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Arts, Entertainment, and Recreation. The Arts, Entertainment, and Recreation sector includes a wide range of establishments that operate facilities or provide services to meet varied cultural, entertainment, and recreational interests of their patrons.",
+        "long_name": "percentage of sole proprietor businesses in Arts, Entertainment, and Recreation",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Arts, Entertainment, and Recreation",
+        "short_name": "percentage of sole proprietor businesses in Arts, Entertainment, and Recreation",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Construction_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Construction. The Construction sector comprises establishments primarily engaged in the construction of buildings or engineering projects (e.g., highways and utility systems). Establishments primarily engaged in the preparation of sites for new construction and establishments primarily engaged in subdividing land for sale as building sites also are included in this sector.",
+        "long_name": "percentage of sole proprietor businesses in Construction",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Construction",
+        "short_name": "percentage of sole proprietor businesses in Construction",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Educational Services_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Educational Services. The Educational Services sector comprises establishments that provide instruction and training in a wide variety of subjects. This instruction and training is provided by specialized establishments, such as schools, colleges, universities, and training centers. These establishments may be privately owned and operated for profit or not for profit, or they may be publicly owned and operated. They may also offer food and/or accommodation services to their students.",
+        "long_name": "percentage of sole proprietor businesses in Educational Services",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Educational Services",
+        "short_name": "percentage of sole proprietor businesses in Educational Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Finance and Insurance_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Finance and Insurance. The Finance and Insurance sector comprises establishments primarily engaged in financial transactions (transactions involving the creation, liquidation, or change in ownership of financial assets) and/or in facilitating financial transactions.",
+        "long_name": "percentage of sole proprietor businesses in Finance and Insurance",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Finance and Insurance",
+        "short_name": "percentage of sole proprietor businesses in Finance and Insurance",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Health Care and Social Assistance_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Health Care and Social Assistance. The Health Care and Social Assistance sector comprises establishments providing health care and social assistance for individuals. The sector includes both health care and social assistance because it is sometimes difficult to distinguish between the boundaries of these two activities.",
+        "long_name": "percentage of sole proprietor businesses in Health Care and Social Assistance",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Health Care and Social Assistance",
+        "short_name": "percentage of sole proprietor businesses in Health Care and Social Assistance",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Information_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Information. The Information sector comprises establishments engaged in the following processes: (a) producing and distributing information and cultural products, (b) providing the means to transmit or distribute these products as well as data or communications, and (c) processing data.",
+        "long_name": "percentage of sole proprietor businesses in Information",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Information",
+        "short_name": "percentage of sole proprietor businesses in Information",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Management of Companies and Enterprises_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Management of Companies and Enterprises. The Management of Companies and Enterprises sector comprises (1) establishments that hold the securities of (or other equity interests in) companies and enterprises for the purpose of owning a controlling interest or influencing management decisions or (2) establishments (except government establishments) that administer, oversee, and manage establishments of the company or enterprise and that normally undertake the strategic or organizational planning and decision-making role of the company or enterprise. Establishments that administer, oversee, and manage may hold the securities of the company or enterprise.",
+        "long_name": "percentage of sole proprietor businesses in Management of Companies and Enterprises",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Management of Companies and Enterprises",
+        "short_name": "percentage of sole proprietor businesses in Management of Companies and Enterprises",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Manufacturing_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Manufacturing. The Manufacturing sector comprises establishments engaged in the mechanical, physical, or chemical transformation of materials, substances, or components into new products. The assembling of component parts of manufactured products is considered manufacturing, except in cases where the activity is appropriately classified in Sector 23, Construction.",
+        "long_name": "percentage of sole proprietor businesses in Manufacturing",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Manufacturing",
+        "short_name": "percentage of sole proprietor businesses in Manufacturing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Mining, Quarrying, and Oil and Gas Extraction_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Mining, Quarrying, and Oil and Gas Extraction. The Mining, Quarrying, and Oil and Gas Extraction sector comprises establishments that extract naturally occurring mineral solids, such as coal and ores; liquid minerals, such as crude petroleum; and gases, such as natural gas. The term mining is used in the broad sense to include quarrying, well operations, beneficiating (e.g., crushing, screening, washing, and flotation), and other preparation customarily performed at the mine site, or as a part of mining activity.",
+        "long_name": "percentage of sole proprietor businesses in Mining, Quarrying, and Oil and Gas Extraction",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Mining, Quarrying, and Oil and Gas Extraction",
+        "short_name": "percentage of sole proprietor businesses in Mining, Quarrying, and Oil and Gas Extraction",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Nonclassifiable Establishments_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Nonclassifiable Establishments.  ",
+        "long_name": "percentage of sole proprietor businesses in Nonclassifiable Establishments",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Nonclassifiable Establishments",
+        "short_name": "percentage of sole proprietor businesses in Nonclassifiable Establishments",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Other Services (except Public Administration)_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Other Services (except Public Administration). The Other Services (except Public Administration) sector comprises establishments engaged in providing services not specifically provided for elsewhere in the classification system.",
+        "long_name": "percentage of sole proprietor businesses in Other Services (except Public Administration)",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Other Services (except Public Administration)",
+        "short_name": "percentage of sole proprietor businesses in Other Services (except Public Administration)",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Professional, Scientific, and Technical Services_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Professional, Scientific, and Technical Services. The Professional, Scientific, and Technical Services sector comprises establishments that specialize in performing professional, scientific, and technical activities for others. These activities require a high degree of expertise and training.",
+        "long_name": "percentage of sole proprietor businesses in Professional, Scientific, and Technical Services",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Professional, Scientific, and Technical Services",
+        "short_name": "percentage of sole proprietor businesses in Professional, Scientific, and Technical Services",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Public Administration_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Public Administration. The Public Administration sector consists of establishments of federal, state, and local government agencies that administer, oversee, and manage public programs and have executive, legislative, or judicial authority over other institutions within a given area.",
+        "long_name": "percentage of sole proprietor businesses in Public Administration",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Public Administration",
+        "short_name": "percentage of sole proprietor businesses in Public Administration",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Real Estate and Rental and Leasing_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Real Estate and Rental and Leasing. The Real Estate and Rental and Leasing sector comprises establishments primarily engaged in renting, leasing, or otherwise allowing the use of tangible or intangible assets, and establishments providing related services. The major portion of this sector comprises establishments that rent, lease, or otherwise allow the use of their own assets by others.",
+        "long_name": "percentage of sole proprietor businesses in Real Estate and Rental and Leasing",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Real Estate and Rental and Leasing",
+        "short_name": "percentage of sole proprietor businesses in Real Estate and Rental and Leasing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Retail Trade_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Retail Trade. The Retail Trade sector comprises establishments engaged in retailing merchandise, generally without transformation, and rendering services incidental to the sale of merchandise.",
+        "long_name": "percentage of sole proprietor businesses in Retail Trade",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Retail Trade",
+        "short_name": "percentage of sole proprietor businesses in Retail Trade",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Transportation and Warehousing_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Transportation and Warehousing. The Transportation and Warehousing sector includes industries providing transportation of passengers and cargo, warehousing and storage for goods, scenic and sightseeing transportation, and support activities related to modes of transportation. Establishments in these industries use transportation equipment or transportation related facilities as a productive asset. The type of equipment depends on the mode of transportation. The modes of transportation are air, rail, water, road, and pipeline.",
+        "long_name": "percentage of sole proprietor businesses in Transportation and Warehousing",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Transportation and Warehousing",
+        "short_name": "percentage of sole proprietor businesses in Transportation and Warehousing",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Utilities_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Utilities. The Utilities sector comprises establishments engaged in the provision of the following utility services: electric power, natural gas, steam supply, water supply, and sewage removal. Within this sector, the specific activities associated with the utility services provided vary by utility: electric power includes generation, transmission, and distribution; natural gas includes distribution; steam supply includes provision and/or distribution; water supply includes treatment and distribution; and sewage removal includes collection, treatment, and disposal of waste through sewer systems and sewage treatment facilities.",
+        "long_name": "percentage of sole proprietor businesses in Utilities",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Utilities",
+        "short_name": "percentage of sole proprietor businesses in Utilities",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "Wholesale Trade_perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. in Wholesale Trade. The Wholesale Trade sector comprises establishments engaged in wholesaling merchandise, generally without transformation, and rendering services incidental to the sale of merchandise. The merchandise described in this sector includes the outputs of agriculture, mining, manufacturing, and certain information industries, such as publishing.",
+        "long_name": "percentage of sole proprietor businesses in Wholesale Trade",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses in Wholesale Trade",
+        "short_name": "percentage of sole proprietor businesses in Wholesale Trade",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
     }
 }

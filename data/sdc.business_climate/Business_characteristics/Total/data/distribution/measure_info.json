@@ -123,5 +123,105 @@
         "type": "",
         "unit": "business",
         "variants": ""
+    },
+    "small_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of small businesses. Available for US businesses.",
+        "long_name": "small businesses",
+        "measure_type": "",
+        "short_description": "Small businesses",
+        "short_name": "small businesses",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "soloproprio_business": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Count of sole proprietor businesses. Available for US businesses.",
+        "long_name": "sole proprietor businesses",
+        "measure_type": "",
+        "short_description": "Sole proprietor businesses",
+        "short_name": "sole proprietor businesses",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "perc_small": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of small businesses. Available for US businesses.",
+        "long_name": "percentage of small businesses",
+        "measure_type": "",
+        "short_description": "percent of small businesses",
+        "short_name": "percentage of small businesses",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of small businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
+    },
+    "perc_soloproprio": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Business climate",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "percent of sole proprietor businesses. Available for US businesses.",
+        "long_name": "percentage of sole proprietor businesses",
+        "measure_type": "",
+        "short_description": "percent of sole proprietor businesses",
+        "short_name": "percentage of sole proprietor businesses",
+        "sources": [
+            {
+                "name": "Mergent Intellect",
+                "date_accessed": 2023,
+                "url": "https://www.ftserussell.com/mergent-intellect"
+            }
+        ],
+        "statement": "{value} percent of sole proprietor businesses in {region_name}.",
+        "type": "",
+        "unit": "business",
+        "variants": ""
     }
 }

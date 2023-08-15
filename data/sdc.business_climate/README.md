@@ -1,28 +1,30 @@
 # Business Climate
 Business climate data and measures for the Social Impact Data Commons
 
+## Overview
+
+We provide key metrics on businesses activities at the census geo levels (block group, tract, county), both by industry and minority-ownership status.
+ 
+
 ## Structure
 
 Employment
-- Total /distribution
-  - Gains.csv
-  - Loss.csv
+- Total
 - By Industry type
-  - Gains
-  - Loss 
 - By minority type
-  - Gains
-  - Loss 
+  
+    "metrics": Number of businesses, Entry rate, Exit rate, Number of small businesses, Percentage of small businesses, Number of sole proprietor businesses, Percentage of sole proprietor businesses.
 
-Business characteristic
+
+Business characteristics
 - Total 
-  - Characteristics
 - By Industry type 
-  - Characteristics
 - By minority type
-  - Characteristics
  
- Industry specific
+    "metrics": Number of businesses creating jobs, Jobs creation (active/new), Jobs creation rate (active/new), Number of businesses destroying jobs, Jobs destruction (exit/active), Jobs destruction rate (exit/active).
+
+
+Industry specific
    - Agriculture
      - Land in farms
      - Farm size
@@ -31,7 +33,7 @@ Business characteristic
      - Livestock and poultry (sales?)
      - Crops harvested (primary crop harvested?)
 
-"Characteristics": Entry rate, exit rate, private/public, small/non-small, domestic/international
+
 
 / distribution
 measure_info.json

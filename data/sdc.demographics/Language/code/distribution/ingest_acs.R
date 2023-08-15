@@ -104,7 +104,7 @@ acs_data_va <- acs_data_va_wd %>%
            grepl('perc',measure)==T ~ "percentage",
            grepl('hh',measure)==T ~ "count"),
          moe='') %>%
-  mutate(geoid=as.character(format(geoid, scientific = FALSE, trim = TRUE)))
+  mutate(geoid=format(geoid, scientific = FALSE, justify='none'))
 
 
 #2. Language distribution afor NCR
@@ -121,7 +121,7 @@ acs_data_ncr <- acs_data_ncr_wd %>%
            grepl('hh',measure)==T ~ "count"),
          moe='',
          census_year=if_else(year<2020,2010,2020)) %>%
-  mutate(geoid=as.character(format(geoid, scientific = FALSE, trim = TRUE)))
+  mutate(geoid=format(geoid, scientific = FALSE, justify='none'))
 
 
 
@@ -140,7 +140,7 @@ temp_tr2020 <- read_sf('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geogra
   select(geoid,region_type,year) %>% st_drop_geometry()
 ncr_geo <- rbind(temp_bg2010,temp_bg2020,temp_ct2010,temp_ct2020,temp_tr2010,temp_tr2020) %>%
   rename(census_year=year) %>%
-  mutate(geoid=as.character(format(geoid, scientific = FALSE, trim = TRUE)))
+  mutate(geoid=format(geoid, scientific = FALSE, justify='none'))
 
 acs_data_ncr <- merge(acs_data_ncr, ncr_geo, by.x=c('geoid','region_type','census_year'), by.y=c('geoid','region_type','census_year'), all.y=T) %>%
   select(geoid,region_name,region_type,year,measure,value,measure_type,moe)

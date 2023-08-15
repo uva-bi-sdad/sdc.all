@@ -24,12 +24,25 @@ prepare_combine <- function(topic) {
                                     compression = 9))
 }
 
-run_data_prep <- function(topic, ingest=FALSE, direct=TRUE, refine=TRUE) {
+run_data_prep <- function(topic, ingest=FALSE, direct=TRUE, refine=TRUE, 
+                          clear_models=FALSE) {
   #' runs files that get and clean data
   #' param: topic(character); topic to combine data under
+  #' param: ingest(boolean); default F; run ingest script
+  #' param: direct(boolean); default T; run direct script
+  #' param: refine(boolean); default T; run refine script
+  #' param: clear_models(boolean); default F; clear models before running prep,
+  #'           ensures no outdated data is kept if rerunning full code
   #' return: none - gathers, cleans, and saves data
+  start <- Sys.time()
   
   runpath <- paste0(topic, "/code/distribution/")
+  
+  # removes all current models
+  if(clear_models) {
+    do.call(file.remove, list(list.files(paste0(topic, '/data/working/model/'), 
+                                         full.names = TRUE)))
+  }
   
   # files are dependent on each others outputs --> 
   #    must be run in this order to update properly
@@ -53,6 +66,8 @@ run_data_prep <- function(topic, ingest=FALSE, direct=TRUE, refine=TRUE) {
   print('combine done')
   
   rm(list = ls())
+  
+  print(Sys.time() - start)
 }
 
 update_measure_names <- function(path, filename, changes, save_new = NULL) {
