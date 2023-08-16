@@ -299,7 +299,7 @@
         "unit": "business",
         "variants": ""
     },
-    "minority_owned_business_job_destruction": {
+    "minority_owned_business_destruction_job": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -324,7 +324,7 @@
         "unit": "business",
         "variants": ""
     },
-    "non_minority_owned_business_job_destruction": {
+    "non_minority_owned_business_destruction_job": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",

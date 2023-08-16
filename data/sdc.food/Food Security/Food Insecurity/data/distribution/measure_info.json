@@ -1,5 +1,5 @@
 {
-    "Food Insecure": {
+    "food_insecure_cnt": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Nutrition and Food Security",
@@ -64,7 +64,7 @@
         "unit": "people",
         "variants": ""
     },
-    "food_insecure_pc": {
+    "food_insecure_pct": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Nutrition and Food Security",
@@ -129,7 +129,7 @@
         "unit": "household",
         "variants": ""
     },
-    "Food Secure": {
+    "food_secure_cnt": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Nutrition and Food Security",
@@ -194,7 +194,7 @@
         "unit": "persons",
         "variants": ""
     },
-    "food_secure_pc": {
+    "food_secure_pct": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Nutrition and Food Security",
@@ -259,7 +259,7 @@
         "unit": "percent",
         "variants": ""
     },
-    "total_hh": {
+    "total_household_cnt": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Demographics",
@@ -434,7 +434,7 @@
         "unit": "ratio",
         "variants": ""
     },
-    "at_risk_high_pc": {
+    "at_risk_high_pct": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Nutrition and Food Security'",
@@ -499,7 +499,7 @@
         "unit": "percent",
         "variants": ""
     },
-    "at_risk_medium_pc": {
+    "at_risk_medium_pct": {
         "aggregation_method": "percent ",
         "categories": "",
         "category": "Nutrition and Food Security'",
@@ -564,7 +564,7 @@
         "unit": "percent",
         "variants": ""
     },
-    "at_risk_low_pc": {
+    "at_risk_low_pct": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Nutrition and Food Security'",
@@ -629,7 +629,7 @@
         "unit": "percent",
         "variants": ""
     },
-    "At-Risk High": {
+    "at_risk_high_cnt": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Nutrition and Food Security",
@@ -694,8 +694,8 @@
         "unit": "households",
         "variants": ""
     },
-    "At-Risk Low": {
-        "aggregation_method": " count",
+    "at_risk_low_cnt": {
+        "aggregation_method": "count",
         "categories": "",
         "category": "Nutrition and Food Security",
         "citations": "",
@@ -759,7 +759,7 @@
         "unit": "households",
         "variants": ""
     },
-    "At-Risk Medium": {
+    "at_risk_medium_cnt": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Nutrition and Food Security",

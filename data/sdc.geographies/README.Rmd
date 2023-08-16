@@ -11,7 +11,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# dc.geographies
+# sdc.geographies
 
 This repository serves as the authoritative source for all geography files used by the Social Impact Data Commons.
 

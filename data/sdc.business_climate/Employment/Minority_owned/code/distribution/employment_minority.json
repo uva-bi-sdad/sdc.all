@@ -76,7 +76,7 @@
         "long_description": "Total new jobs created by all businesses",
         "statement": "{value} new jobs have been created by businesses in {region_name}."
       },
-      "business_job_destruction": {
+      "business_destruction_job": {
         "default": "businesses cutting jobs",
         "data_type": "integer",
         "aggregation_method": "count",

@@ -95,7 +95,7 @@ employment_dynamics <- function(data,geolevels,topic,prefix,savepath='default',j
   }
   
   if(job_destruction){ 
-    temp_jd <- exit(data,geolevels,topic_name) 
+    temp_jd <- job_destruction(data,geolevels,topic_name) 
     print('jobs destruction metrics completed')
   }
   

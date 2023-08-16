@@ -13,7 +13,7 @@ library(tidyr)
 library(scales)
 
 uploadpath = "Microdata/Mergent_intellect/data/working/"
-savepath = "Employment/Industry_Minority_owned/data/distribution/"
+savepath = "Employment/Industry_Minority_owned/data/working/"
 
 # load function and parameters ---------------------------------------------------------------------
 source('function/distribution/functions.R')
