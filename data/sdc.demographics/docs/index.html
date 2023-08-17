@@ -1,0 +1,381 @@
+<!doctype html>
+<!-- page generated from site.R by community::site_build() -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<script type="application/javascript">
+const site = {"settings":{"digits":2,"summary_selection":"all","color_by_order":false,"boxplots":true,"theme_dark":false,"partial_init":true,"palette":"vik","hide_url_parameters":false,"background_shapes":true,"background_top":false,"background_polygon_outline":2,"polygon_outline":1.5,"iqr_box":true,"color_scale_center":"none","table_autoscroll":true,"table_scroll_behavior":"smooth","table_autosort":true,"hide_tooltips":false,"map_animations":"all","trace_limit":20,"map_overlay":true,"circle_radius":7,"tracking":false,"show_empty_times":false},"metadata":{"url":"","package":"data/datapackage.json","datasets":["block_group","tract","civic_association","zip_code","county","health_district","planning_district","supervisor_district","human_services_region"],"files":["block_group.csv.xz","tract.csv.xz","civic_association.csv.xz","zip_code.csv.xz","county.csv.xz","health_district.csv.xz","planning_district.csv.xz","supervisor_district.csv.xz","human_services_region.csv.xz"]},"rules":[{"condition":[{"id":"selected_tract","type":"!","value":""}],"effects":{"lock":"sec31"}},{"condition":[{"id":"shapes","type":"=","value":"tract","any":true},{"id":"shapes","type":"=","value":"block_group","any":true}],"effects":{"display":"sec32"}}],"variables":[{"id":"shapes","states":[{"condition":[{"id":"selected_county","type":"","value":""},{"id":"shape_type","type":"=","value":"county"}],"value":"tract"},{"condition":[{"id":"selected_tract","type":"","value":""}],"value":"block_group"}],"default":"shape_type","display":{"health_district":"Health Districts","county":"Counties","tract":"Census Tracts","block_group":"Block Groups","civic_association":"Civic Associations","supervisor_district":"Supervisor Districts","planning_district":"Planning Districts","human_services_region":"Human Services Regions","zip_code":"Zip Codes"}},{"id":"region_select","states":[{"condition":[{"id":"shapes","type":"=","value":"county"}],"value":"selected_county"}],"default":"selected_tract"},{"id":"selected_region","states":[{"condition":[{"id":"selected_tract","type":"","value":""}],"value":"selected_tract"}],"default":"selected_county"},{"id":"tract_subset","states":[{"condition":[{"id":"selected_county","type":"","value":""}],"value":"siblings"}],"default":"full_filter"}],"dataviews":{"primary_view":{"palette":"","y":"selected_variable","x":"selected_year","time_agg":"selected_year","time_filters":[],"dataset":"shapes","ids":"selected_region"}},"info":{"variable_info_pane":{"title":"variables.short_name","dataview":"primary_view","variable_info":true},"info12":{"body":[{"name":"","value":"summary","style":"table"}],"dataview":"primary_view","variable_info":true},"info13":{"title":"Filters","body":[{"name":"","value":"filter","style":"table"}],"dataview":"primary_view","variable_info":true},"info14":{"title":"features.name","default":{"title":"Entire Region","body":"Hover over or select a region for more information."},"dataview":"primary_view","subto":["main_map","main_plot","rank_table","main_legend"],"variable_info":true},"info15":{"body":[{"name":"variables.long_name","value":"selected_variable","style":"stack"},{"name":"","value":"variables.statement","style":"table"}],"dataview":"primary_view","subto":["main_map","main_plot","rank_table","main_legend"]}},"text":{"text5":{"text":[{"button":{"b1":{"text":["Entire Region"],"type":"reset","target":["selected_county","selected_tract"]}},"text":"b1"},{"condition":[{"id":"selected_county","type":"","value":""}],"button":{"b1":{"text":["","selected_county"],"type":"reset","target":"selected_tract"}},"text":[" > ","b1"]},{"condition":[{"id":"selected_tract","type":"","value":""}],"text":[" > ","selected_tract"]}]},"text6":{"text":[[{"text":"shapes","condition":[{"id":"default","type":"","value":""}]},{"text":["selected_region"," ","shapes"],"condition":[{"id":"selected_region","type":"","value":""}]}]]}},"combobox":{"selected_county":{"strict":true,"search":true},"selected_tract":{"strict":true,"search":true},"selected_variable":{"strict":true,"search":true}},"button":{"DownloadAllData":{"effects":"export","query":{"features":{"geoid":"id","name":"name"}}},"Download":{"effects":"export","dataview":"primary_view","query":{"include":"selected_variable","features":{"geoid":"id","name":"name"},"table_format":"export_table_format","file_format":"export_file_format"}}},"datatable":{"rank_table":{"info":false,"searching":false,"scrollY":300,"dom":"<'row't>","paging":true,"scrollX":500,"scrollCollapse":true,"scroller":true,"deferRender":true,"variables":"selected_variable","subto":["main_map","main_plot","main_legend"],"single_variable":true,"wide":true}},"plotly":{"main_plot":{"layout":{"xaxis":{"title":false,"fixedrange":true},"yaxis":{"fixedrange":true,"zeroline":false},"hovermode":"closest","margin":{"t":25,"r":10,"b":40,"l":60}},"config":{"modeBarButtonsToRemove":["select2d","lasso2d","sendDataToCloud"],"showSendToCloud":false,"responsive":true,"showTips":false,"displaylogo":false,"modeBarButtonsToAdd":["hoverclosest","hovercompare"]},"data":[{"type":"plot_type","hoverinfo":"text","mode":"lines+markers","showlegend":false,"marker.line.color":"#767676","marker.line.width":1},{"type":"box","fillcolor":"transparent","mode":"lines+markers","showlegend":false,"name":"Summary","marker.line.color":"#767676","marker.line.width":1}],"subto":["main_map","rank_table","main_legend"]}},"map":{"main_map":{"shapes":[{"name":"health_district","url":"https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/State%20Geographies/Health%20Districts/2020/data/distribution/va_geo_vhd_2020_health_districts.geojson","id_property":"geoid"},{"name":"human_services_region","url":"https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Fairfax%20County/Human%20Services%20Regions/2022/data/distribution/va059_geo_ffxct_gis_2022_human_services_regions.geojson","id_property":"geoid"},{"name":"planning_district","url":"https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Fairfax%20County/Planning%20Districts/2022/data/distribution/va059_geo_ffxct_gis_2022_planning_districts.geojson","id_property":"geoid"},{"name":"supervisor_district","url":"https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Fairfax%20County/Supervisor%20Districts/2022/data/distribution/va059_geo_ffxct_gis_2022_supervisor_districts.geojson","id_property":"geoid"},{"name":"zip_code","url":"https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Fairfax%20County/Zip%20Codes/2022/data/distribution/va059_geo_ffxct_gis_2022_zip_codes.geojson","id_property":"geoid"},{"name":"civic_association","url":"https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Arlington%20County/Civic%20Associations/2021/data/distribution/va013_geo_arl_2021_civic_associations.geojson","id_property":"geoid"},{"name":"block_group","time":"2013","url":"maps/bg_2013.geojson","id_property":"GEOID"},{"name":"block_group","time":"2014","url":"maps/bg_2014.geojson","id_property":"GEOID"},{"name":"block_group","time":"2015","url":"maps/bg_2015.geojson","id_property":"GEOID"},{"name":"block_group","time":"2016","url":"maps/bg_2016.geojson","id_property":"GEOID"},{"name":"block_group","time":"2017","url":"maps/bg_2017.geojson","id_property":"GEOID"},{"name":"block_group","time":"2018","url":"maps/bg_2018.geojson","id_property":"GEOID"},{"name":"block_group","time":"2019","url":"maps/bg_2019.geojson","id_property":"GEOID"},{"name":"block_group","time":"2020","url":"maps/bg_2020.geojson","id_property":"GEOID"},{"name":"block_group","time":"2021","url":"maps/bg_2021.geojson","id_property":"GEOID"},{"name":"county","time":"2013","url":"maps/county_2013.geojson","id_property":"GEOID"},{"name":"county","time":"2014","url":"maps/county_2014.geojson","id_property":"GEOID"},{"name":"county","time":"2015","url":"maps/county_2015.geojson","id_property":"GEOID"},{"name":"county","time":"2016","url":"maps/county_2016.geojson","id_property":"GEOID"},{"name":"county","time":"2017","url":"maps/county_2017.geojson","id_property":"GEOID"},{"name":"county","time":"2018","url":"maps/county_2018.geojson","id_property":"GEOID"},{"name":"county","time":"2019","url":"maps/county_2019.geojson","id_property":"GEOID"},{"name":"county","time":"2020","url":"maps/county_2020.geojson","id_property":"GEOID"},{"name":"county","time":"2021","url":"maps/county_2021.geojson","id_property":"GEOID"},{"name":"tract","time":"2013","url":"maps/tract_2013.geojson","id_property":"GEOID"},{"name":"tract","time":"2014","url":"maps/tract_2014.geojson","id_property":"GEOID"},{"name":"tract","time":"2015","url":"maps/tract_2015.geojson","id_property":"GEOID"},{"name":"tract","time":"2016","url":"maps/tract_2016.geojson","id_property":"GEOID"},{"name":"tract","time":"2017","url":"maps/tract_2017.geojson","id_property":"GEOID"},{"name":"tract","time":"2018","url":"maps/tract_2018.geojson","id_property":"GEOID"},{"name":"tract","time":"2019","url":"maps/tract_2019.geojson","id_property":"GEOID"},{"name":"tract","time":"2020","url":"maps/tract_2020.geojson","id_property":"GEOID"},{"name":"tract","time":"2021","url":"maps/tract_2021.geojson","id_property":"GEOID"}],"options":{"attributionControl":false,"scrollWheelZoom":false,"center":[38,-79.5],"zoom":7,"height":"430px","zoomAnimation":"settings.map_zoom_animation","overlays_from_measures":true,"subto":["main_plot","rank_table","main_legend"],"background_shapes":"county"},"tiles":{"light":{"url":"https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.png"},"dark":{"url":"https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"}}}},"legend":{"main_legend":{"palette":"settings.palette","subto":["main_map","main_plot","rank_table"]}},"credits":{"bootstrap":{"name":"Bootstrap","url":"https://getbootstrap.com","version":"5.3.1"},"colorbrewer":{"name":"ColorBrewer","url":"https://colorbrewer2.org","description":"Discrete color palettes"},"scico":{"name":"Scico","url":"https://github.com/thomasp85/scico","description":"Implementation of color palettes by Fabio Crameri"},"leaflet":{"name":"Leaflet","url":"https://leafletjs.com","version":"1.9.4","description":"A JS library for interactive maps"},"Stamen toner-light":{"name":"Stamen toner-light","url":"https://stamen.com","description":"Light-theme map tiles by Stamen Design"},"CARTO Dark Matter":{"name":"CARTO Dark Matter","url":"https://carto.com/attributions","description":"Dark-theme map tiles by CARTO"},"OpenStreetMap":{"name":"OpenStreetMap","url":"https://www.openstreetmap.org/copyright"},"datatables":{"name":"DataTables","url":"https://datatables.net","version":"1.13.6"},"plotly":{"name":"Plotly","url":"https://plotly.com/javascript/getting-started","version":"2.25.2"}},"aggregated":false}
+</script>
+<script type="application/javascript" src="data_handler.v1.min.js" async></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" rel="preload" as="style" media="all" onload="this.onload=null;this.rel='stylesheet'">
+<script type="application/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" async></script>
+<link href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.css" integrity="sha384-EdLG5Q0/L1OytQXhWSU1bWVqvLMxlmdSRaA09iy8FGYjlpP7vnB3MueQ6ZloG9oF" crossorigin="anonymous" rel="preload" as="style" media="all" onload="this.onload=null;this.rel='stylesheet'">
+<script type="application/javascript" src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.min.js" integrity="sha384-u5N8qJeJOO2iqNjIKTdl6KeKsEikMAmCUBPc6sC6uGpgL34aPJ4VgNhuhumedpEk" crossorigin="anonymous" async></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.7.0/dist/jquery.min.js" integrity="sha384-NXgwF8Kv9SSAr+jemKKcbvQsz+teULH/a5UNJvZc6kP47hZgl62M1vGnw6gHQhb1" crossorigin="anonymous" defer></script>
+<link href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" integrity="sha384-w9ufcIOKS67vY4KePhJtmWDp4+Ai5DMaHvqqF85VvjaGYSW2AhIbqorgKYqIJopv" crossorigin="anonymous" rel="preload" as="style" media="all" onload="this.onload=null;this.rel='stylesheet'">
+<script type="application/javascript" src="https://cdn.datatables.net/v/dt/dt-1.13.6/b-2.4.1/b-html5-2.4.1/sc-2.2.0/datatables.min.js" integrity="sha384-MKeoYlNiH9UNKbs4gwc9iEx9XxG7iq11nnfJSxm0keXixzRSsRiFR4qVdvHnmts1" crossorigin="anonymous" defer></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/npm/plotly.js@2.25.2/dist/plotly.min.js" integrity="sha384-kIW8v2UtFMvKjRSuXvClzSkXUW9Yw38cOFK6iSkOgBbm425jZL8Fp2X15blqjcTI" crossorigin="anonymous" async></script>
+<link href="https://uva-bi-sdad.github.io/community/dist/css/community.v1.min.css" rel="preload" as="style" media="all" onload="this.onload=null;this.rel='stylesheet'">
+<script type="application/javascript" src="https://uva-bi-sdad.github.io/community/dist/js/community.v1.min.js" async></script>
+<meta name="generator" content="community v0.0.1.203" />
+<title>Data Commons: Demographics</title>
+<meta name="title" content="Data Commons: Demographics">
+</head>
+<body>
+<div id="site_wrap" style="visibility: hidden; position: absolute; height: 100%; left: 0; right: 0">
+<nav class="navbar navbar-dark navbar-expand-md">
+<div class="container-fluid">
+<span>Data Commons: Demographics</span>
+<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar_menu" aria-controls="narbar_menu" aria-expanded="false" aria-label="toggle navbar menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbar_menu">
+<ul class="navbar-nav">
+<li class="nav-item"><div class="wrapper button-wrapper"><button type="button" data-autoType="button" class="auto-input btn btn-link" id="reset.selection" data-target="reset_selection" aria-description="Reset the menu inputs to their defaults.">Reset</button></div></li>
+<li class="nav-item"><div class="wrapper button-wrapper"><button type="button" data-autoType="button" class="auto-input btn btn-link" id="open.filter" data-target="filter">Filter</button></div></li>
+<li class="nav-item"><button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#submenu03" aria-controls="submenu03">Settings</button></li>
+<li class="nav-item"><button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#submenu04" aria-controls="submenu04">About</button></li>
+</ul></div></div></nav>
+<div tabindex="-1" id="submenu03" aria-labelledby="submenu03_label" class="offcanvas offcanvas-end menu-compact" data-bs-backdrop="false">
+<div class="offcanvas-header">
+<h5 class="offcanvas-title" id="submenu03_label">Settings</h5>
+<button class="btn-close text-reset" type="button" data-bs-dismiss="offcanvas" title="Close"></button>
+</div>
+<div class="offcanvas-body" style="bottom: 46px">
+<div class="wrapper switch-wrapper">
+<div class="form-check form-switch">
+<label class="form-check-label" for="settings.theme_dark">Dark Theme</label>
+<input data-autoType="switch" type="checkbox" autocomplete="off" class="auto-input form-check-input" role="switch" id="settings.theme_dark">
+</div>
+</div>
+<div class="wrapper select-wrapper">
+<label for="settings.palette">Color Palette</label>
+<div class="">
+<select class="auto-input form-select" data-autoType="select" id="settings.palette" data-optionSource="palettes" data-default="-1" data-subset="filtered" data-selectionSubset="full_filter">
+</select>
+</div>
+</div>
+<div class="wrapper switch-wrapper">
+<div class="form-check form-switch">
+<label class="form-check-label" for="settings.color_by_order">Color by Rank</label>
+<input data-autoType="switch" type="checkbox" autocomplete="off" class="auto-input form-check-input" role="switch" id="settings.color_by_order" aria-description="Switch from coloring by value to coloring by sorted index. This may help differentiate regions with similar values.">
+</div>
+</div>
+<div class="wrapper switch-wrapper">
+<div class="form-check form-switch">
+<label class="form-check-label" for="settings.hide_url_parameters">Hide URL Settings</label>
+<input data-autoType="switch" type="checkbox" autocomplete="off" class="auto-input form-check-input" role="switch" id="settings.hide_url_parameters">
+</div>
+</div>
+<div class="wrapper switch-wrapper">
+<div class="form-check form-switch">
+<label class="form-check-label" for="settings.hide_tooltips">Hide Tooltips</label>
+<input data-autoType="switch" type="checkbox" autocomplete="off" class="auto-input form-check-input" role="switch" id="settings.hide_tooltips">
+</div>
+</div>
+<div class="wrapper switch-wrapper">
+<div class="form-check form-switch">
+<label class="form-check-label" for="settings.show_empty_times">Show Missing Years</label>
+<input data-autoType="switch" type="checkbox" autocomplete="off" class="auto-input form-check-input" role="switch" id="settings.show_empty_times">
+</div>
+</div>
+<div class="wrapper text-wrapper">
+<label for="settings.digits">Digits</label>
+<input type="number" id="settings.digits" data-default="2" min="0" max="6" class="form-control auto-input" data-autoType="number">
+</div>
+<div class="wrapper select-wrapper">
+<label for="settings.color_scale_center">Color Scale Center</label>
+<div class="">
+<select class="auto-input form-select" data-autoType="select" id="settings.color_scale_center"  data-default="none" aria-description="Determines whether and on what the color scale should be centered." data-subset="filtered" data-selectionSubset="full_filter">
+<option value="none">None</option>
+<option value="median">Median</option>
+<option value="mean">Mean</option>
+</select>
+</div>
+</div>
+<div class="wrapper select-wrapper">
+<label for="settings.summary_selection">Summary Level</label>
+<div class="">
+<select class="auto-input form-select" data-autoType="select" id="settings.summary_selection"  data-default="dataset" aria-description="Determines which regions are included in summaries for box-plots and color scaling; All-Regions are state-wide, Selected Region Types are filtered by the Region Types input, and Selected Region are filtered by region selection." data-subset="filtered" data-selectionSubset="full_filter">
+<option value="dataset">All Regions</option>
+<option value="children">Selected Super-Region</option>
+<option value="all">Showing Regions</option>
+</select>
+</div>
+</div>
+<p class="section-heading">Map Options</p>
+<div class="wrapper switch-wrapper">
+<div class="form-check form-switch">
+<label class="form-check-label" for="settings.map_overlay">Show Point Overlay</label>
+<input data-autoType="switch" type="checkbox" autocomplete="off" class="auto-input form-check-input" role="switch" id="settings.map_overlay" checked>
+</div>
+</div>
+<div class="wrapper switch-wrapper">
+<div class="form-check form-switch">
+<label class="form-check-label" for="settings.background_shapes">Show Background Shapes</label>
+<input data-autoType="switch" type="checkbox" autocomplete="off" class="auto-input form-check-input" role="switch" id="settings.background_shapes" checked>
+</div>
+</div>
+<div class="wrapper switch-wrapper">
+<div class="form-check form-switch">
+<label class="form-check-label" for="settings.background_top">Background Shapes On Top</label>
+<input data-autoType="switch" type="checkbox" autocomplete="off" class="auto-input form-check-input" role="switch" id="settings.background_top" checked>
+</div>
+</div>
+<div class="wrapper select-wrapper">
+<label for="settings.map_animations">Animations</label>
+<div class="">
+<select class="auto-input form-select" data-autoType="select" id="settings.map_animations"  data-default="fly" aria-description="Fly animates the whole move to different regions; Zoom only animates changes in zoom level." data-subset="filtered" data-selectionSubset="full_filter">
+<option value="fly">fly</option>
+<option value="zoom">zoom</option>
+<option value="none">none</option>
+</select>
+</div>
+</div>
+<div class="wrapper text-wrapper">
+<label for="settings.polygon_outline">Outline Weight</label>
+<input type="number" id="settings.polygon_outline" data-default="1.5" aria-description="Thickness of the outline around region shapes." step="0.5" class="form-control auto-input" data-autoType="number">
+</div>
+<div class="wrapper text-wrapper">
+<label for="settings.background_polygon_outline">Background Outline Weight</label>
+<input type="number" id="settings.background_polygon_outline" data-default="2" step="0.5" class="form-control auto-input" data-autoType="number">
+</div>
+<div class="wrapper text-wrapper">
+<label for="settings.circle_radius">Overlay Circle Size</label>
+<input type="number" id="settings.circle_radius" data-default="5" aria-description="Radius of the circles that are parts of overlays." step="1" class="form-control auto-input" data-autoType="number">
+</div>
+<div class="wrapper select-wrapper">
+<label for="settings.circle_property">Overlay Circle Property</label>
+<div class="">
+<select class="auto-input form-select" data-autoType="select" id="settings.circle_property" data-optionSource="overlay_properties" data-default="-1" aria-description="Property to adjust circle size by." data-subset="filtered" data-selectionSubset="full_filter">
+</select>
+</div>
+</div>
+<p class="section-heading">Plot Options</p>
+<div class="wrapper select-wrapper">
+<label for="plot_type">Plot Type</label>
+<div class="">
+<select class="auto-input form-select" data-autoType="select" id="plot_type"  data-default="scatter" data-subset="filtered" data-selectionSubset="full_filter">
+<option value="scatter">scatter</option>
+<option value="scattergl">scattergl</option>
+<option value="bar">bar</option>
+</select>
+</div>
+</div>
+<div class="wrapper switch-wrapper">
+<div class="form-check form-switch">
+<label class="form-check-label" for="settings.boxplots">Box Plots</label>
+<input data-autoType="switch" type="checkbox" autocomplete="off" class="auto-input form-check-input" role="switch" id="settings.boxplots" checked>
+</div>
+</div>
+<div class="wrapper switch-wrapper">
+<div class="form-check form-switch">
+<label class="form-check-label" for="settings.iqr_box">Use IQR Whiskers</label>
+<input data-autoType="switch" type="checkbox" autocomplete="off" class="auto-input form-check-input" role="switch" id="settings.iqr_box" aria-description="Define the extreme fences of the box plots by 1.5 * interquartile range (true) or min and max (false)." checked>
+</div>
+</div>
+<div class="wrapper text-wrapper">
+<label for="settings.trace_limit">Trace Limit</label>
+<input type="number" id="settings.trace_limit" data-default="20" aria-description="Limit the number of plot traces that can be drawn, split between extremes of the variable." class="form-control auto-input" data-autoType="number">
+</div>
+<p class="section-heading">Table Options</p>
+<div class="wrapper switch-wrapper">
+<div class="form-check form-switch">
+<label class="form-check-label" for="settings.table_autosort">Auto-Sort</label>
+<input data-autoType="switch" type="checkbox" autocomplete="off" class="auto-input form-check-input" role="switch" id="settings.table_autosort" checked>
+</div>
+</div>
+<div class="wrapper switch-wrapper">
+<div class="form-check form-switch">
+<label class="form-check-label" for="settings.table_autoscroll">Auto-Scroll</label>
+<input data-autoType="switch" type="checkbox" autocomplete="off" class="auto-input form-check-input" role="switch" id="settings.table_autoscroll" checked>
+</div>
+</div>
+<div class="wrapper select-wrapper">
+<label for="settings.table_scroll_behavior">Scroll Behavior</label>
+<div class="">
+<select class="auto-input form-select" data-autoType="select" id="settings.table_scroll_behavior"  data-default="auto" data-subset="filtered" data-selectionSubset="full_filter">
+<option value="instant">instant</option>
+<option value="smooth">smooth</option>
+<option value="auto">auto</option>
+</select>
+</div>
+</div>
+</div>
+<div class="offcanvas-footer">
+<div class="wrapper button-wrapper">
+<button type="button" data-autoType="button" class="auto-input btn btn-danger" id="clear_storage" data-target="reset_storage">Clear Settings</button>
+</div>
+</div>
+</div>
+<div tabindex="-1" id="submenu04" aria-labelledby="submenu04_label" class="offcanvas offcanvas-end">
+<div class="offcanvas-header">
+<h5 class="offcanvas-title" id="submenu04_label">About</h5>
+<button class="btn-close text-reset" type="button" data-bs-dismiss="offcanvas" title="Close"></button>
+</div>
+<div class="offcanvas-body">
+<p class="">This site was made by the <a target="_blank" rel="noreferrer" href="https://biocomplexity.virginia.edu/institute/divisions/social-and-decision-analytics">Social and Decision Analytics Division</a> of the <a target="_blank" rel="noreferrer" href="https://biocomplexity.virginia.edu">Biocomplexity Institute</a>.</p>
+<p class=""><div class="wrapper button-wrapper"></p>
+<p class=""><button type="button" data-autoType="button" class="auto-input btn btn-full" id="DownloadAllData" data-target="export">Download All Data</button></p>
+<p class=""></div></p>
+<p class="h5">Credits</p>
+<p class="">Built in <a target="_blank" rel="noreferrer" href="https://www.r-project.org">R</a> with the <a target="_blank" rel="noreferrer" href="https://uva-bi-sdad.github.io/community">community</a> package, using these resources:</p>
+<div id="credits0" class="auto-output credits" data-autoType="credits"></div>
+</div>
+</div>
+<div data-state="open" class="menu-wrapper menu-top" style="top: 0; ">
+<div class="menu row menu-top">
+<div class="col-1">
+<div class="wrapper select-wrapper">
+<div class="form-floating">
+<select class="auto-input form-select" data-autoType="select" id="shape_type"  data-default="0" data-subset="filtered" data-selectionSubset="full_filter">
+<option value="health_district">health_district</option>
+<option value="county">county</option>
+<option value="tract">tract</option>
+<option value="block_group">block_group</option>
+<option value="civic_association">civic_association</option>
+<option value="supervisor_district">supervisor_district</option>
+<option value="planning_district">planning_district</option>
+<option value="human_services_region">human_services_region</option>
+<option value="zip_code">zip_code</option>
+</select>
+<label for="shape_type">Starting Layer</label>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="row form-row">
+<div class="row" id="sec31">
+<div class="wrapper combobox-wrapper">
+<div class="form-floating">
+<div class="auto-input form-select combobox combobox-component" data-autoType="combobox" id="selected_county" data-optionSource="ids" data-default="-1" data-view="primary_view" data-subset="filtered" data-selectionsubset="full_filter" data-dataset="county"><div class="combobox-selection combobox-component"><span aria-live="assertive" aria-atomic="true" aria-role="log" class="combobox-component"></span><input class="combobox-input combobox-component" role="combobox" type="text" aria-expanded="false" aria-autocomplete="list" aria-controls="selected_county-listbox" aria-controls="selected_county-listbox" id="selected_county-input" autocomplete="off"></div><button type="button" class="btn-close" title="clear selection"></button></div>
+<div class="combobox-options combobox-component" role="listbox" id="selected_county-listbox" aria-labelledby="selected_county-label">
+</div>
+<label id="selected_county-label" for="selected_county-input">Counties</label>
+</div>
+</div>
+</div>
+<div class="row" id="sec32">
+<div class="wrapper combobox-wrapper">
+<div class="form-floating">
+<div class="auto-input form-select combobox combobox-component" data-autoType="combobox" id="selected_tract" data-optionSource="ids" data-default="-1" data-view="primary_view" data-subset="filtered" data-selectionsubset="tract_subset" data-dataset="tract"><div class="combobox-selection combobox-component"><span aria-live="assertive" aria-atomic="true" aria-role="log" class="combobox-component"></span><input class="combobox-input combobox-component" role="combobox" type="text" aria-expanded="false" aria-autocomplete="list" aria-controls="selected_tract-listbox" aria-controls="selected_tract-listbox" id="selected_tract-input" autocomplete="off"></div><button type="button" class="btn-close" title="clear selection"></button></div>
+<div class="combobox-options combobox-component" role="listbox" id="selected_tract-listbox" aria-labelledby="selected_tract-label">
+</div>
+<label id="selected_tract-label" for="selected_tract-input">Census Tracts</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="col">
+<div class="row form-row">
+<div class="wrapper combobox-wrapper">
+<div class="form-floating">
+<div class="auto-input form-select combobox combobox-component" data-autoType="combobox" id="selected_variable" data-optionSource="variables" data-default="0" aria-description="Determines which variable is shown on the plot's y-axis, in the rank table, and info fields, and used to color map polygons and plot elements." data-subset="filtered" data-selectionsubset="full_filter" data-depends="shapes"><div class="combobox-selection combobox-component"><span aria-live="assertive" aria-atomic="true" aria-role="log" class="combobox-component"></span><input class="combobox-input combobox-component" role="combobox" type="text" aria-expanded="false" aria-autocomplete="list" aria-controls="selected_variable-listbox" aria-controls="selected_variable-listbox" id="selected_variable-input" autocomplete="off"></div></div>
+<div class="combobox-options combobox-component" role="listbox" id="selected_variable-listbox" aria-labelledby="selected_variable-label">
+</div>
+<label id="selected_variable-label" for="selected_variable-input">Variable</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<button type="button" class="menu-toggle" title="top menu"></button>
+</div>
+<div class="modal" tabindex="-1" id="dialog10"><div class="modal-dialog"><div class="modal-content">
+<div class="modal-header"><div class="modal-title">Export</div><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+<div class="modal-body">
+<div class="row">
+<div class="col">
+<div class="wrapper select-wrapper">
+<div class="form-floating">
+<select class="auto-input form-select" data-autoType="select" id="export_table_format"  data-default="mixed" data-subset="filtered" data-selectionSubset="full_filter">
+<option value="tall">tall</option>
+<option value="mixed">mixed</option>
+<option value="wide">wide</option>
+</select>
+<label for="export_table_format">Table Format</label>
+</div>
+</div>
+</div>
+<div class="col">
+<div class="wrapper select-wrapper">
+<div class="form-floating">
+<select class="auto-input form-select" data-autoType="select" id="export_file_format"  data-default="csv" data-subset="filtered" data-selectionSubset="full_filter">
+<option value="csv">CSV</option>
+<option value="tsv">TSV</option>
+</select>
+<label for="export_file_format">File Format</label>
+</div>
+</div>
+</div>
+</div>
+<div class="wrapper button-wrapper">
+<button type="button" data-autoType="button" class="auto-input btn btn-full" id="Download" data-target="export">Download</button>
+</div>
+</div>
+</div></div></div>
+<div class="content container-fluid">
+<div class="col">
+<p data-autoType="text" id="text5" class="auto-output output-text compact"></p>
+<h1 data-autoType="text" id="text6" class="auto-output output-text text-center"></h1>
+<div class="container-xsm">
+<div class="wrapper number-input-row">
+<div><button role="button" label="set value to min" class="text-muted indicator-min"><span>filter.time_min</span></button></div>
+<button role="button" label="decrease value" class="btn number-down">&lt;</button>
+<div class="wrapper text-wrapper form-floating">
+<input type="number" id="selected_year" data-default="max" aria-description="Year of the selected variable to color the map shapes and plot elements by, and to show on hover." min="filter.time_min" max="filter.time_max" class="form-control auto-input" data-autoType="number"><label for="selected_year">Selected Year</label>
+</div>
+<button role="button" label="increase value" class="btn number-up">&gt;</button>
+<div><button role="button" label="set value to max" class="text-muted indicator-max"><span>filter.time_max</span></button></div>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<div class="auto-output leaflet" data-view="primary_view" data-click="region_select" id="main_map" data-autoType="map"></div>
+</div>
+<div class="col-5">
+<div class="flex-column col">
+<div class="auto-output text-display" data-view="primary_view" data-autoType="info" id="variable_info_pane"></div>
+<button type="button" class="btn popup-button" data-bs-toggle="modal" data-bs-target="#dialog10">Export</button>
+<div class="auto-output text-display" data-view="primary_view" data-autoType="info" id="info12"></div>
+<div class="auto-output text-display" data-view="primary_view" data-autoType="info" id="info13"></div>
+<div class="row">
+<div class="auto-output text-display" data-view="primary_view" data-autoType="info" id="info14"></div>
+<div class="auto-output text-display" data-view="primary_view" data-autoType="info" id="info15"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-5">
+<div class="row">
+<div class="legend-wrap">
+<div class="legend-na">
+<div class="legend-ticks"></div>
+<div class="legend-scale"><span class="na"></span></div>
+<div class="legend-summary"><p>NA</p></div>
+</div>
+<div id="main_legend" data-autoType="legend" class="auto-output legend" data-view="primary_view" data-click="region_select">
+<div class="legend-ticks"></div>
+<div class="legend-scale"></div>
+<div class="legend-summary"></div>
+</div>
+</div>
+<table class="auto-output tables compact" data-view="primary_view" data-click="region_select" id="rank_table" data-autoType="datatable"></table>
+</div>
+</div>
+<div class="col-7">
+<div class="plotly-wrap"><div class="auto-output plotly" data-view="primary_view" data-click="region_select" data-x="time" data-y="selected_variable" id="main_plot" data-autoType="plotly"></table></div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="load_screen" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-color: inherit"><div class="d-flex justify-content-center align-items-center" style="height: 50%"><div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div></div><noscript style="width: 100%; text-align: center; padding: 5em">Please enable JavaScript to view this site.</noscript></div>
+</body>
+</html>

@@ -155,7 +155,7 @@ acs_data_ncr <- rbind(acs_data_ncr,acs_data_ncr_parcels)
 
 # Save the data ----------------------------------------------------------------------------------
 savepath = "Veteran/data/working/"
-saveRDS(acs_data_va, paste0(savepath,"va_cttrbg_acs_",min(years),'_',max(years),"_veteran_demographics.csv.xz"), compress = 'xz')
+saveRDS(acs_data_va, paste0(savepath,"va_cttrbg_acs_",min(years),'_',max(years),"_veteran_demographics.rds.xz"), compress = 'xz')
 
 savepath<-"Veteran/data/distribution/"
 readr::write_csv(acs_data_ncr, xzfile(paste0(savepath,"ncr_cttrbg_acs_",min(years),'_',max(years),"_veteran_demographics.csv.xz"), compression = 9))

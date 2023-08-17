@@ -72,6 +72,7 @@ temp_hd <- hd_geo %>% select(geoid_hd=geoid,geometry)
 # redistribute the population ---------------------------------------------------
 yearlist <- unique(temp_acs_sf$year)
 model <- NULL
+
 for (vyear in yearlist){
   subtemp_acs_sf <- temp_acs_sf %>% filter(year==vyear) %>% select(-c('census_year','year'))
   predict_hsr <- redistribute(subtemp_acs_sf, temp_hsr, source_id = "geoid", target_id = 'geoid_hsr')

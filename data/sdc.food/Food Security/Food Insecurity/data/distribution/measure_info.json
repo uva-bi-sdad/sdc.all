@@ -437,7 +437,7 @@
     "at_risk_high_pct": {
         "aggregation_method": "percent",
         "categories": "",
-        "category": "Nutrition and Food Security'",
+        "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
         "equity_category": "Status",
@@ -502,7 +502,7 @@
     "at_risk_medium_pct": {
         "aggregation_method": "percent ",
         "categories": "",
-        "category": "Nutrition and Food Security'",
+        "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
         "equity_category": "Status",
@@ -567,7 +567,7 @@
     "at_risk_low_pct": {
         "aggregation_method": "percent",
         "categories": "",
-        "category": "Nutrition and Food Security'",
+        "category": "Nutrition and Food Security",
         "citations": "",
         "data_type": "numeric",
         "equity_category": "Status",

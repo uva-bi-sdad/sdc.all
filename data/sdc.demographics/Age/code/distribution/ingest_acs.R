@@ -54,7 +54,6 @@ states <- c('VA','MD','DC')
 # list of years
 years <- 2009:2021
 
-
 # Download the data from ACS for VA and NCR
 # 1. Virginia (all census geographies) . (comments: block groups information are available after 2012)
 acs_data_va_wd <- NULL

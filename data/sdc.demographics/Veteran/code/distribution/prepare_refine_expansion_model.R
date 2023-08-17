@@ -50,6 +50,7 @@ hsr_dmg <- NULL
 pd_dmg <- NULL
 sd_dmg <- NULL
 zc_dmg <- NULL
+hd_dmg <- NULL
 
 for (vyear in yearlist){
   # subset the acs data
@@ -76,24 +77,28 @@ for (vyear in yearlist){
   pd_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Fairfax%20County/Planning%20Districts/2022/data/distribution/va059_geo_ffxct_gis_2022_planning_districts.geojson")
   sd_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Fairfax%20County/Supervisor%20Districts/2022/data/distribution/va059_geo_ffxct_gis_2022_supervisor_districts.geojson")
   zc_geo <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/Local%20Geographies/Fairfax%20County/Zip%20Codes/2022/data/distribution/va059_geo_ffxct_gis_2022_zip_codes.geojson")
+  hd_geo <- sf::st_read('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/State%20Geographies/Health%20Districts/2020/data/distribution/va_geo_vhd_2020_health_districts.geojson')
   
   # build the map between the parcel and new geoid
   hsr_pc_map <- st_join(hsr_geo, fairfax_pc_geo, join = st_intersects) %>% st_drop_geometry() %>% select(parid,geoid)
   pd_pc_map <- st_join(pd_geo, fairfax_pc_geo, join = st_intersects) %>% st_drop_geometry() %>% select(parid,geoid)
   sd_pc_map <- st_join(sd_geo, fairfax_pc_geo, join = st_intersects) %>% st_drop_geometry() %>% select(parid,geoid)
   zc_pc_map <- st_join(zc_geo, fairfax_pc_geo, join = st_intersects) %>% st_drop_geometry() %>% select(parid,geoid)
+  hd_pc_map <- st_join(hd_geo, fairfax_pc_geo, join = st_intersects) %>% st_drop_geometry() %>% select(parid,geoid)
   
   # aggregate demographics using redistribute ---------------------------------------------------
   temp_hsr_dmg <- merge(subset_dmg, hsr_pc_map, by='parid') %>% select(-parid) %>% group_by(geoid) %>% summarise(across(everything(), sum)) %>% mutate(year=vyear)
   temp_pd_dmg <- merge(subset_dmg, pd_pc_map, by='parid') %>% select(-parid) %>% group_by(geoid) %>% summarise(across(everything(), sum)) %>% mutate(year=vyear)
   temp_sd_dmg <- merge(subset_dmg, sd_pc_map, by='parid') %>% select(-parid) %>% group_by(geoid) %>% summarise(across(everything(), sum)) %>% mutate(year=vyear)
   temp_zc_dmg <- merge(subset_dmg, zc_pc_map, by='parid') %>% select(-parid) %>% group_by(geoid) %>% summarise(across(everything(), sum)) %>% mutate(year=vyear)
+  temp_hd_dmg <- merge(subset_dmg, hd_pc_map, by='parid') %>% select(-parid) %>% group_by(geoid) %>% summarise(across(everything(), sum)) %>% mutate(year=vyear)
   
   # combine data over year
   hsr_dmg <- rbind(hsr_dmg,temp_hsr_dmg)
   pd_dmg <- rbind(pd_dmg,temp_pd_dmg)
   sd_dmg <- rbind(sd_dmg,temp_sd_dmg)
   zc_dmg <- rbind(zc_dmg,temp_zc_dmg)
+  hd_dmg <- rbind(hd_dmg,temp_hd_dmg)
 }
 
 

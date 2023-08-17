@@ -150,8 +150,7 @@ page_menu(
     wraps = "row form-row",
     input_combobox(
       "Variable",
-      options = "variables", group_feature = "aggregation_method",
-      default = 0, depends = "shapes",
+      options = "variables", default = 0, depends = "shapes",
       id = "selected_variable", note = paste(
         "Determines which variable is shown on the plot's y-axis, in the rank table,",
         "and info fields, and used to color map polygons and plot elements."

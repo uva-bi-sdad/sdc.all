@@ -6,17 +6,53 @@
     "equity_category": "Status",
     "aggregation_method": "arithmetic mean",
     "short_name": "Households with limited English parcels",
-    "long_name": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "short_description": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+    "long_name": "The count of households with limited English.",
+    "short_description": "The count of households with limited English.",
     "long_description": "The count of households with limited English. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
     "statement": "The count of households with limited English is {value} in {region_name}.",
+    "citations": "bii-redist",
     "sources": [
       {
         "name": "American Community Survey",
         "location": "5-Year estimates, table C16002, via the API",
         "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
+        "date_accessed": 2023,
         "url": "https://www.census.gov/programs-surveys/acs.html"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Boundaries > Zip Codes",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::zip-codes/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Boundaries > Supervisor Districts",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::supervisor-districts-5/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Health & Human Service > Human Services Regions",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::human-services-regions/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Arlington County GIS Open Data",
+        "location": "MHUD Polygons",
+        "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::mhud-polygons/about",
+        "date_accessed": 2023,
+        "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Arlington County GIS Open Data",
+        "location": "Civic Association Polygons",
+        "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::civic-association-polygons-1/about",
+        "date_accessed": 2021,
+        "url": "https://gisdata-arlgis.opendata.arcgis.com/"
       }
     ]
   },
@@ -27,17 +63,53 @@
     "equity_category": "Status",
     "aggregation_method": "arithmetic mean",
     "short_name": "Households with limited English direct",
-    "long_name": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "short_description": "The count of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+    "long_name": "The count of households with limited English.",
+    "short_description": "The count of households with limited English.",
     "long_description": "The count of households with limited English. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
     "statement": "The count of households with limited English is {value} in {region_name}.",
+    "citations": "bii-redist",
     "sources": [
       {
         "name": "American Community Survey",
         "location": "5-Year estimates, table C16002, via the API",
         "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
+        "date_accessed": 2023,
         "url": "https://www.census.gov/programs-surveys/acs.html"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Boundaries > Zip Codes",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::zip-codes/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Boundaries > Supervisor Districts",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::supervisor-districts-5/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Health & Human Service > Human Services Regions",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::human-services-regions/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Arlington County GIS Open Data",
+        "location": "MHUD Polygons",
+        "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::mhud-polygons/about",
+        "date_accessed": 2023,
+        "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Arlington County GIS Open Data",
+        "location": "Civic Association Polygons",
+        "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::civic-association-polygons-1/about",
+        "date_accessed": 2021,
+        "url": "https://gisdata-arlgis.opendata.arcgis.com/"
       }
     ]
   },
@@ -48,17 +120,53 @@
     "equity_category": "Status",
     "aggregation_method": "percent",
     "short_name": "Percentage of households with limited English parcels",
-    "long_name": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "short_description": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+    "long_name": "The percent of households with limited English.",
+    "short_description": "The percent of households with limited English.",
     "long_description": "The percent of households with limited English. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
     "statement": "The percent of households with limited English is {value} in {region_name}.",
+    "citations": "bii-redist",
     "sources": [
       {
         "name": "American Community Survey",
         "location": "5-Year estimates, table C16002, via the API",
         "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
+        "date_accessed": 2023,
         "url": "https://www.census.gov/programs-surveys/acs.html"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Boundaries > Zip Codes",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::zip-codes/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Boundaries > Supervisor Districts",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::supervisor-districts-5/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Health & Human Service > Human Services Regions",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::human-services-regions/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Arlington County GIS Open Data",
+        "location": "MHUD Polygons",
+        "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::mhud-polygons/about",
+        "date_accessed": 2023,
+        "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Arlington County GIS Open Data",
+        "location": "Civic Association Polygons",
+        "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::civic-association-polygons-1/about",
+        "date_accessed": 2021,
+        "url": "https://gisdata-arlgis.opendata.arcgis.com/"
       }
     ]
   },
@@ -69,18 +177,64 @@
     "equity_category": "Status",
     "aggregation_method": "percent",
     "short_name": "Percentage of households with limited English direct",
-    "long_name": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
-    "short_description": "The percent of households with limited English. Based on American Community Survey ACS 2015/2019 5-year estimates.",
+    "long_name": "The percent of households with limited English.",
+    "short_description": "The percent of households with limited English.",
     "long_description": "The percent of households with limited English. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
     "statement": "The percent of households with limited English is {value} in {region_name}.",
+    "citations": "bii-redist",
     "sources": [
       {
         "name": "American Community Survey",
         "location": "5-Year estimates, table C16002, via the API",
         "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2021,
+        "date_accessed": 2023,
         "url": "https://www.census.gov/programs-surveys/acs.html"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Boundaries > Zip Codes",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::zip-codes/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Boundaries > Supervisor Districts",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::supervisor-districts-5/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Fairfax County Geospatial Data",
+        "location": "Health & Human Service > Human Services Regions",
+        "location_url": "https://data-fairfaxcountygis.opendata.arcgis.com/datasets/Fairfaxcountygis::human-services-regions/about",
+        "date_accessed": 2022,
+        "url": "https://data-fairfaxcountygis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Arlington County GIS Open Data",
+        "location": "MHUD Polygons",
+        "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::mhud-polygons/about",
+        "date_accessed": 2023,
+        "url": "https://gisdata-arlgis.opendata.arcgis.com/"
+      },
+      {
+        "name": "Arlington County GIS Open Data",
+        "location": "Civic Association Polygons",
+        "location_url": "https://gisdata-arlgis.opendata.arcgis.com/datasets/ArlGIS::civic-association-polygons-1/about",
+        "date_accessed": 2021,
+        "url": "https://gisdata-arlgis.opendata.arcgis.com/"
       }
     ]
+  },
+  "_references": {
+    "bii-redist": {
+      "id": "bii-redist",
+      "author": "Biocomplexity Institute and Initiative",
+      "year": 2022,
+      "title": "redistribute: An R package to redistribute data",
+      "version": "0.0.1",
+      "url": "https://github.com/uva-bi-sdad/redistribute"
+    }
   }
 }
