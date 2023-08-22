@@ -16,7 +16,7 @@ uploadpath = "Microdata/Mergent_intellect/data/working/"
 savepath = "Employment/Minority_owned/data/distribution/"
 
 # load function and parameters ---------------------------------------------------------------------
-source('function/distribution/functions.R')
+source('utils/distribution/functions.R')
 geolevels <- c('tract','block group','county')
 topic <- 'Minority_owned'
 
