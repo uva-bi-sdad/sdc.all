@@ -11,7 +11,7 @@
         "long_name": "Estimated number of food insecure people",
         "measure_type": "count",
         "short_description": "Food insecure persons are people living in households experiencing food insecurity (a lack of access to enough food for an active, healthy life).",
-        "short_name": "Food Insecure people Count",
+        "short_name": "Food Insecure People Count",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -141,7 +141,7 @@
         "long_name": "Estimated number of food secure people",
         "measure_type": "count",
         "short_description": "Food secure persons are people in household who have proper access to food and leading a health life.",
-        "short_name": "Food secure people Count",
+        "short_name": "Food Secure People Count",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -206,7 +206,7 @@
         "long_name": "Estimated percentage of food secure households",
         "measure_type": "percent",
         "short_description": "Food secure households are household who have proper access to food and leading a health life.",
-        "short_name": "Food secure households Percentage",
+        "short_name": "Food Secure Households Percentage",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -271,7 +271,7 @@
         "long_name": "Total count of households",
         "measure_type": "count",
         "short_description": "Total count of households based on ACS",
-        "short_name": "Total count of households",
+        "short_name": "Total Count Of Households",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -296,7 +296,7 @@
         "long_name": "Snap weigted mean",
         "measure_type": "dollars",
         "short_description": "Weighted average of the dollar amount of SNAP benefits",
-        "short_name": "Snap weigted mean",
+        "short_name": "Snap Weigted Mean",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -371,7 +371,7 @@
         "long_name": "Snap shortfall weighted mean",
         "measure_type": "ratio",
         "short_description": "The food shortfall money is the estimated amount of dollars that a household lacks to pay for the food costs",
-        "short_name": "Snap shortfall weighted mean",
+        "short_name": "Snap Shortfall Weighted Mean",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -442,11 +442,11 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Proportion of households at high risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
-        "long_name": "Estimated proportion of total households at high risk of facing food insecurity",
+        "long_description": "Percentage of households at high risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
+        "long_name": "Estimated percentage of total households at high risk of facing food insecurity",
         "measure_type": "percent",
-        "short_description": "Proportion of households at high risk of facing food insecurity",
-        "short_name": "high risk food insecurity proportion",
+        "short_description": "Percentage of households at high risk of facing food insecurity",
+        "short_name": "High Risk Food Insecurity Percentage",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -507,11 +507,11 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Proportion of households at medium risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
-        "long_name": "Estimated proportion of total households at medium risk of facing food insecurity",
+        "long_description": "Percentage of households at medium risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
+        "long_name": "Estimated percentage of total households at medium risk of facing food insecurity",
         "measure_type": "percent",
-        "short_description": "Proportion of households at medium risk of facing food insecurity",
-        "short_name": "medium risk food insecurity proportion",
+        "short_description": "Percentage of households at medium risk of facing food insecurity",
+        "short_name": "Medium Risk Food Insecurity Percentage",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -572,11 +572,11 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Proportion of households at low risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
-        "long_name": "Estimated proportion of total households at low risk of facing food insecurity",
+        "long_description": "Percentage of households at low risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
+        "long_name": "Estimated percentage of total households at low risk of facing food insecurity",
         "measure_type": "percent",
-        "short_description": "Proportion of households at low risk of facing food insecurity",
-        "short_name": "low risk food insecurity proportion",
+        "short_description": "Percentage of households at low risk of facing food insecurity",
+        "short_name": "Low Risk Food Insecurity Percentage",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -640,8 +640,8 @@
         "long_description": "Number of households with income that is sufficient to pay for Food Costs using the Food budget, and in addition, the food budget is less than one third of  the dollar amount of Food Costs. ",
         "long_name": "Estimated number of households who are at high risk of food insecurity",
         "measure_type": "count",
-        "short_description": "High risk food insecurity households",
-        "short_name": "at risk high households",
+        "short_description": "High risk food insecurity households count",
+        "short_name": "High Risk Food Insecurity Count",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -705,8 +705,8 @@
         "long_description": "Number of households with income that is sufficient to pay for Food Costs using the Food budget, and in addition, the food budget is larger than two-thirds of  the dollar amount of Food Costs. ",
         "long_name": "Estimated number of households who are at low risk of food insecurity",
         "measure_type": "count",
-        "short_description": "low risk food insecurity households",
-        "short_name": "low risk  households",
+        "short_description": "Low risk food insecurity households count",
+        "short_name": "Low Risk Food Insecurity Count",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -770,8 +770,8 @@
         "long_description": "Number of households with income that is sufficient to pay for Food Costs using the Food budget and, in addition, the food budget is larger than one third and less than two-thirds of the dollar amount of Food Costs. ",
         "long_name": "Estimated number of households who are at medium risk of food insecurity",
         "measure_type": "count",
-        "short_description": "medium risk food insecurity households",
-        "short_name": "medium risk  households",
+        "short_description": "Medium risk food insecurity households count",
+        "short_name": "Medium Risk Food Insecurity Count",
         "sources": [
             {
                 "date_accessed": 2022,

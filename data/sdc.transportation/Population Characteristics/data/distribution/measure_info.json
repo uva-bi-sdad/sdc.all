@@ -1,6 +1,7 @@
 {
     "commute_time": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Transportation",
         "citations": "",
         "data_type": "numeric",
@@ -21,10 +22,12 @@
         ],
         "statement": "The mean commute time in {features.name} is {value}.",
         "type": "drive time",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_carpool": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Transportation",
         "citations": "",
         "data_type": "numeric",
@@ -45,10 +48,12 @@
         ],
         "statement": "{value} of the population in {features.name} carpools to work.",
         "type": "percent",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "perc_no_vehicle": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Transportation",
         "citations": "",
         "data_type": "numeric",
@@ -69,6 +74,7 @@
         ],
         "statement": "{value} of households in {features.name} do not have a vehicle available at home.",
         "type": "percent",
-        "unit": "percent"
+        "unit": "percent",
+        "variants": ""
     }
 }
