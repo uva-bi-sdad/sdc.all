@@ -31,6 +31,7 @@ earn_job['tot_compensation_2017'] <- (wage_sup$`2017`+wage_sal$`2017`+prop_inc$`
 earn_job['tot_compensation_2018'] <- (wage_sup$`2018`+wage_sal$`2018`+prop_inc$`2018`) * 1000
 earn_job['tot_compensation_2019'] <- (wage_sup$`2019`+wage_sal$`2019`+prop_inc$`2019`) * 1000
 earn_job['tot_compensation_2020'] <- (wage_sup$`2020`+wage_sal$`2020`+prop_inc$`2020`) * 1000
+earn_job['tot_compensation_2021'] <- (wage_sup$`2021`+wage_sal$`2021`+prop_inc$`2021`) * 1000
 
 earn_job['tot_employment_2015'] <- tot_emp$`2015`
 earn_job['tot_employment_2016'] <- tot_emp$`2016`
@@ -38,6 +39,7 @@ earn_job['tot_employment_2017'] <- tot_emp$`2017`
 earn_job['tot_employment_2018'] <- tot_emp$`2018`
 earn_job['tot_employment_2019'] <- tot_emp$`2019`
 earn_job['tot_employment_2020'] <- tot_emp$`2020`
+earn_job['tot_employment_2021'] <- tot_emp$`2021`
 
 earn_job['earnings_per_job_2015'] <- (wage_sup$`2015`+wage_sal$`2015`+prop_inc$`2015`)/tot_emp$`2015` * 1000
 earn_job['earnings_per_job_2016'] <- (wage_sup$`2016`+wage_sal$`2016`+prop_inc$`2016`)/tot_emp$`2016` * 1000
@@ -45,6 +47,7 @@ earn_job['earnings_per_job_2017'] <- (wage_sup$`2017`+wage_sal$`2017`+prop_inc$`
 earn_job['earnings_per_job_2018'] <- (wage_sup$`2018`+wage_sal$`2018`+prop_inc$`2018`)/tot_emp$`2018` * 1000
 earn_job['earnings_per_job_2019'] <- (wage_sup$`2019`+wage_sal$`2019`+prop_inc$`2019`)/tot_emp$`2019` * 1000
 earn_job['earnings_per_job_2020'] <- (wage_sup$`2020`+wage_sal$`2020`+prop_inc$`2020`)/tot_emp$`2020` * 1000
+earn_job['earnings_per_job_2021'] <- (wage_sup$`2021`+wage_sal$`2021`+prop_inc$`2021`)/tot_emp$`2021` * 1000
 
 
 # splitting combined rows to individual rows
@@ -52,7 +55,7 @@ earn_job['earnings_per_job_2020'] <- (wage_sup$`2020`+wage_sal$`2020`+prop_inc$`
 earn_job$GeoName <- gsub("\\*|VA", "", earn_job$GeoName)
 
 #only from row 83, there are multiple entries so we are splitting after 83 and also few rows have
-#(, and +)  so we are first splitting for + and then splitting for , 
+#(, and +)  so we are first splitting for + and then splitting for ,
 #few rows have + and few have , so focusing on + first and , next for splitting
 
 earn_job <- earn_job %>%
@@ -96,7 +99,7 @@ earn_job$GeoName <- paste0(gsub(",", "", earn_job$GeoName), ",VA")
 #     )
 #   }
 # con <- get_db_conn()
-# 
+#
 # geo_names <- dbGetQuery(con, "SELECT * FROM dc_geographies.ncr_cttrbg_tiger_2010_2020_geo_names")
 # dbDisconnect(con)
 
@@ -143,7 +146,7 @@ earn_job_ct_long <- earn_job_ct %>%
   arrange(factor(measure, levels = measure_order), year)
 
 
-#renaming the column names 
+#renaming the column names
 earn_job_ct_long <- earn_job_ct_long %>%
   rename(geoid = GeoFips,
          measure_type = value_type)
@@ -157,16 +160,16 @@ earnings_per_job <- earn_job_ct_long
 #                                    variable.name="measure",
 #                                    value.name="value"
 # )
-# 
+#
 # earn_job_ct_long['year'] =  str_sub(earn_job_ct_long$measure,-4,-1)
 # earn_job_ct_long$measure = str_sub(earn_job_ct_long$measure,1,-6)
-# 
+#
 # earn_job_ct_long['measure_type'] = 'count'
 # earn_job_ct_long['measure_type'][earn_job_ct_long["measure"] == "earnings_per_job"] <- 'dollars'
 # earn_job_ct_long['measure_type'][earn_job_ct_long["measure"] == "tot_compensation"] <- 'dollars'
-# 
+#
 # names(earn_job_ct_long)[1] <- 'geoid'
-# 
+#
 # # re-arrange columns
 # earn_job_ct_long <- earn_job_ct_long[, c(1, 2, 3, 6, 4, 5, 7)]
 # earnings_per_job <- earn_job_ct_long
@@ -260,7 +263,7 @@ earnings_per_job_hd_year_long <- earnings_per_job_hd_year %>%
   select(geoid, region_type, region_name, year, measure, value, measure_type)
 
 
-#making sure they are of df class 
+#making sure they are of df class
 earnings_per_job_df <- as.data.frame(earnings_per_job)
 earnings_per_job_hd_year_long_df <- as.data.frame(earnings_per_job_hd_year_long)
 
@@ -271,6 +274,6 @@ row_binded_data <- rbind(earnings_per_job_df, earnings_per_job_hd_year_long_df)
 
 
 readr::write_csv(row_binded_data,
-                 xzfile("~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/distribution/va_hdct_bea_2015_2020_earnings_per_job.csv.xz", compression = 9))
+                 xzfile("~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/distribution/va_hdct_bea_2015_2021_earnings_per_job.csv.xz", compression = 9))
 
 

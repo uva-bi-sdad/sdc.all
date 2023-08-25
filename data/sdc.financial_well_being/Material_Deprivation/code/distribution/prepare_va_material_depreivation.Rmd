@@ -1,0 +1,105 @@
+---
+#title: "qm"
+
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+#library
+```{r}
+#install.packages("acs")
+#install.packages("tidycensus")
+#install.packages("tidyverse")
+#install.packages("dplyr")
+#install.packages("readxl")
+#install.packages("ggplot2")
+#install.packages("scales")
+#install.packages("readxl")
+library(XML)
+library(stringr)
+library(acs)
+library(tidycensus)
+library(tidyverse)
+library(dplyr)
+library(readxl)
+library(ggplot2)
+library(scales)
+library(readxl)
+```
+
+#Population data - VA state extracted from Census ACS 2015-2021
+```{r}
+data <- data.frame()
+years <- c(2015, 2016, 2017, 2018, 2019, 2020, 2021)
+for (i in years) {
+census_api_key(Sys.getenv("census_key"))
+data_census <- get_acs(geography = "tract",
+                     year = i,
+                     survey = "acs5",
+                     state = 'VA',
+                     variables = c( pop = 'DP03_0001E', 
+                                    unemployed='DP03_0005E',
+                                    occupant_all='DP04_0077E',
+                                    occupant_less_1='DP04_0077E',
+                                    occupant_1_to_1half='DP04_0078E',
+                                    occupant_greater_1half='DP04_0079E',
+                                    households_total_occupency='B08137_001E',
+                                    households_rented='B08137_003E',
+                                    households_total_vehicles='B08201_001E',
+                                    households_no_vehicles='B08201_002E'),
+                     geometry = FALSE,
+                     output = 'wide' ) 
+data_census$year = i
+data <- rbind(data, data_census)
+}
+```
+
+
+#Producing % unempolyment, non-car ownership, non-home ownership, and overcrowding 
+```{r}
+# unemployment rate 
+data$unemployment  <- data$unemployed / data$pop
+data$unemployment <- as.numeric(data$unemployment)
+#% households without a car 
+data$noncar_ownership  <- data$households_no_vehicles / data$households_total_vehicles
+data$noncar_ownership <- as.numeric(data$noncar_ownership)
+#% households renting
+data$nonhome_ownership  <- data$households_rented / data$households_total_occupency
+data$nonhome_ownership <- as.numeric(data$nonhome_ownership)
+# overcrowded households 
+data$household_overcrowding  <- (data$occupant_1_to_1half +  data$occupant_greater_1half) / data$occupant_all
+data$household_overcrowding <- as.numeric(data$household_overcrowding)
+townsend_data <- subset(data, select = c(NAME, GEOID, unemployment, noncar_ownership, nonhome_ownership, household_overcrowding, year))
+```
+
+
+
+#Scaling the variables for each year
+```{r}
+rescale_within_year <- function(x) {
+  rescale(x)
+}
+townsend_data$unemployment_z <- ave(townsend_data$unemployment, townsend_data$year, FUN = rescale_within_year)
+townsend_data$noncar_ownership_z <- ave(townsend_data$noncar_ownership, townsend_data$year, FUN = rescale_within_year)
+townsend_data$nonhome_ownership_z <- ave(townsend_data$nonhome_ownership, townsend_data$year, FUN = rescale_within_year)
+townsend_data$household_overcrowding_z <- ave(townsend_data$household_overcrowding, townsend_data$year, FUN = rescale_within_year)
+```
+
+
+#Producing the Townsend Dep Index and requested file
+```{r}
+townsend_data$Townsend_Index <- townsend_data$unemployment_z + townsend_data$noncar_ownership_z +          townsend_data$nonhome_ownership_z + townsend_data$household_overcrowding_z
+townsend_data$Townsend_Index_scaled <- ave(townsend_data$Townsend_Index, townsend_data$year, FUN = rescale_within_year)
+townsend_data$measure = 'material_deprivation_indicator'
+townsend_data <- rename(townsend_data, value = Townsend_Index_scaled, geoid = GEOID)
+townsend_bi <- subset(townsend_data, select = c(geoid, measure, year, value))
+```
+
+
+#Write CSV
+```{r}
+#write.csv(townsend_bi, "va_hdcttr_vdh_2015_2021_material_deprivation_index.csv", row.names = FALSE)
+readr::write_csv(townsend_bi, xzfile("Material Deprivation/data/distribution/va_hdcttr_vdh_2015_2021_material_deprivation_index.csv.xz", compression = 9))
+
+```
+
