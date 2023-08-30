@@ -29,23 +29,23 @@
     },
     "variants": {
       "entry_rate": {
-        "default": "entry rate",
+        "default": "Entry Rate",
         "data_type": "decimal",
         "aggregation_method": "percent",
         "short_description": "Entry rate",
-        "long_description": "Percent of new businesses (a new business is a company newly created or has moved to the region): \\[entry_rate=\\frac{new_businesses}{all_businesses}\\]",
+        "long_description": "Percent of new businesses (a new business is a company newly created or has moved to the region): \\[entry\\_rate=\\frac{new\\_businesses}{all\\_businesses}\\]",
         "statement": "{value} percent of businesses are new in {region_name}."
       },
       "exit_rate": {
-        "default": "exit rate",
+        "default": "Exit Rate",
         "data_type": "decimal",
         "aggregation_method": "percent",
         "short_description": "Exit rate",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit_rate=\\frac{exited_businesses}{all_businesses}\\]",
+        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\]",
         "statement": "{value} percent of businesses closed in {region_name}."
       },
       "new_business": {
-        "default": "new businesses",
+        "default": "New Businesses",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "New businesses",
@@ -53,7 +53,7 @@
         "statement": "{value} new businesses in {region_name}."
       },
       "exit_business": {
-        "default": "closed businesses",
+        "default": "Closed Businesses",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Closed businesses",
@@ -61,7 +61,7 @@
         "statement": "{value} closed businesses in {region_name}."
       },
       "number_business": {
-        "default": "Total businesses",
+        "default": "Total Businesses",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Total businesses",
@@ -69,7 +69,7 @@
         "statement": "{value} businesses in {region_name}."
       },
       "small_business": {
-        "default": "small businesses",
+        "default": "Small Businesses",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Small businesses",
@@ -77,7 +77,7 @@
         "statement": "{value} small businesses in {region_name}."
       },
       "soloproprio_business": {
-        "default": "sole proprietor businesses",
+        "default": "Sole Proprietor Businesses",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Sole proprietor businesses",
@@ -85,7 +85,7 @@
         "statement": "{value} sole proprietor businesses in {region_name}."
       },
       "perc_small": {
-        "default": "percentage of small businesses",
+        "default": "Percentage of Small Businesses",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "percent of small businesses",
@@ -93,7 +93,7 @@
         "statement": "{value} percent of small businesses in {region_name}."
       },
       "perc_soloproprio": {
-        "default": "percentage of sole proprietor businesses",
+        "default": "Percentage of Sole Proprietor Businesses",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "percent of sole proprietor businesses",

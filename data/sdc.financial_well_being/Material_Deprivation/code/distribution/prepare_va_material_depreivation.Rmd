@@ -27,38 +27,41 @@ library(scales)
 library(readxl)
 ```
 
-#Population data - VA state extracted from Census ACS 2015-2021
+#Population data - VA state extracted from Census ACS 2015-2021 - Tract and County
 ```{r}
 data <- data.frame()
 years <- c(2015, 2016, 2017, 2018, 2019, 2020, 2021)
+geo <- c("tract", "county")
 for (i in years) {
-census_api_key(Sys.getenv("census_key"))
-data_census <- get_acs(geography = "tract",
-                     year = i,
-                     survey = "acs5",
-                     state = 'VA',
-                     variables = c( pop = 'DP03_0001E', 
-                                    unemployed='DP03_0005E',
-                                    occupant_all='DP04_0077E',
-                                    occupant_less_1='DP04_0077E',
-                                    occupant_1_to_1half='DP04_0078E',
-                                    occupant_greater_1half='DP04_0079E',
-                                    households_total_occupency='B08137_001E',
-                                    households_rented='B08137_003E',
-                                    households_total_vehicles='B08201_001E',
-                                    households_no_vehicles='B08201_002E'),
-                     geometry = FALSE,
-                     output = 'wide' ) 
+  for (g in geo) {
+  census_api_key(Sys.getenv("census_key"))
+  data_census <- get_acs(geography = g,
+                       year = i,
+                       survey = "acs5",
+                       state = 'VA',
+                       variables = c( adult_pop = 'DP03_0001E', 
+                                      unemployed='DP03_0005E',
+                                      occupant_all='DP04_0077E',
+                                      occupant_less_1='DP04_0077E',
+                                      occupant_1_to_1half='DP04_0078E',
+                                      occupant_greater_1half='DP04_0079E',
+                                      households_total_occupency='B08137_001E',
+                                      households_rented='B08137_003E',
+                                      households_total_vehicles='B08201_001E',
+                                      households_no_vehicles='B08201_002E'),
+                       geometry = FALSE,
+                       output = 'wide' ) 
 data_census$year = i
+data_census$region_type = g
 data <- rbind(data, data_census)
-}
+}}
 ```
 
 
 #Producing % unempolyment, non-car ownership, non-home ownership, and overcrowding 
 ```{r}
 # unemployment rate 
-data$unemployment  <- data$unemployed / data$pop
+data$unemployment  <- data$unemployed / data$adult_pop
 data$unemployment <- as.numeric(data$unemployment)
 #% households without a car 
 data$noncar_ownership  <- data$households_no_vehicles / data$households_total_vehicles
@@ -69,37 +72,90 @@ data$nonhome_ownership <- as.numeric(data$nonhome_ownership)
 # overcrowded households 
 data$household_overcrowding  <- (data$occupant_1_to_1half +  data$occupant_greater_1half) / data$occupant_all
 data$household_overcrowding <- as.numeric(data$household_overcrowding)
-townsend_data <- subset(data, select = c(NAME, GEOID, unemployment, noncar_ownership, nonhome_ownership, household_overcrowding, year))
+townsend_data <- subset(data, select = c(NAME, GEOID, region_type, unemployment, noncar_ownership, nonhome_ownership, household_overcrowding, year))
 ```
 
 
 
-#Scaling the variables for each year
+#Scaling the variables for each year and region type 
 ```{r}
+
+
 rescale_within_year <- function(x) {
   rescale(x)
 }
-townsend_data$unemployment_z <- ave(townsend_data$unemployment, townsend_data$year, FUN = rescale_within_year)
-townsend_data$noncar_ownership_z <- ave(townsend_data$noncar_ownership, townsend_data$year, FUN = rescale_within_year)
-townsend_data$nonhome_ownership_z <- ave(townsend_data$nonhome_ownership, townsend_data$year, FUN = rescale_within_year)
-townsend_data$household_overcrowding_z <- ave(townsend_data$household_overcrowding, townsend_data$year, FUN = rescale_within_year)
+townsend_data$unemployment_z <- ave(townsend_data$unemployment, townsend_data$year, townsend_data$region_type, FUN = rescale_within_year)
+townsend_data$noncar_ownership_z <- ave(townsend_data$noncar_ownership, townsend_data$year, townsend_data$region_type, FUN = rescale_within_year)
+townsend_data$nonhome_ownership_z <- ave(townsend_data$nonhome_ownership, townsend_data$year, townsend_data$region_type, FUN = rescale_within_year)
+townsend_data$household_overcrowding_z <- ave(townsend_data$household_overcrowding, townsend_data$year, townsend_data$region_type, FUN = rescale_within_year)
 ```
 
 
-#Producing the Townsend Dep Index and requested file
+#Producing the Townsend Dep Index and requested file 
 ```{r}
 townsend_data$Townsend_Index <- townsend_data$unemployment_z + townsend_data$noncar_ownership_z +          townsend_data$nonhome_ownership_z + townsend_data$household_overcrowding_z
-townsend_data$Townsend_Index_scaled <- ave(townsend_data$Townsend_Index, townsend_data$year, FUN = rescale_within_year)
+townsend_data$Townsend_Index_scaled <- ave(townsend_data$Townsend_Index, townsend_data$year, townsend_data$region_type, FUN = rescale_within_year)
 townsend_data$measure = 'material_deprivation_indicator'
 townsend_data <- rename(townsend_data, value = Townsend_Index_scaled, geoid = GEOID)
-townsend_bi <- subset(townsend_data, select = c(geoid, measure, year, value))
+townsend_bi <- subset(townsend_data, select = c(geoid, measure, year, region_type, value))
 ```
+
+
+#Population weighting Health Districts
+```{r}
+townsend_data_county <- subset(data, select = c(NAME, GEOID, adult_pop, region_type, unemployment, noncar_ownership, nonhome_ownership, household_overcrowding, year))
+townsend_data_county <- townsend_data_county %>% filter(region_type == 'county')
+health_district <- read_csv("~/git/sdc.geographies_dev/VA/State Geographies/Health Districts/2020/data/distribution/va_ct_to_hd_crosswalk.csv")
+health_district <- merge(x = health_district, y = townsend_data_county, by.x = "ct_geoid", by.y = "GEOID")
+
+health_district$unemployment <- health_district$unemployment * health_district$adult_pop
+health_district$noncar_ownership <- health_district$noncar_ownership * health_district$adult_pop
+health_district$nonhome_ownership <- health_district$nonhome_ownership * health_district$adult_pop
+health_district$household_overcrowding <- health_district$household_overcrowding * health_district$adult_pop
+
+health_district <- health_district %>%
+  group_by(hd_geoid, year) %>%
+  summarise(
+    adult_pop = sum(adult_pop, na.rm = TRUE),
+    unemployment = sum(unemployment, na.rm = TRUE),
+    noncar_ownership = sum(noncar_ownership, na.rm = TRUE),
+    nonhome_ownership = sum(nonhome_ownership, na.rm = TRUE),
+    household_overcrowding = sum(household_overcrowding, na.rm = TRUE)
+  )
+
+health_district$unemployment <- health_district$unemployment / health_district$adult_pop
+health_district$noncar_ownership <- health_district$noncar_ownership / health_district$adult_pop
+health_district$nonhome_ownership <- health_district$nonhome_ownership / health_district$adult_pop
+health_district$household_overcrowding <- health_district$household_overcrowding / health_district$adult_pop
+
+
+rescale_within_year <- function(x) {
+  rescale(x)
+}
+health_district$unemployment_z <- ave(health_district$unemployment, health_district$year, FUN = rescale_within_year)
+health_district$noncar_ownership_z <- ave(health_district$noncar_ownership, health_district$year, FUN = rescale_within_year)
+health_district$nonhome_ownership_z <- ave(health_district$nonhome_ownership, health_district$year, FUN = rescale_within_year)
+health_district$household_overcrowding_z <- ave(health_district$household_overcrowding, health_district$year, FUN = rescale_within_year)
+
+
+
+health_district$Townsend_Index <- health_district$unemployment_z + health_district$noncar_ownership_z + health_district$nonhome_ownership_z + health_district$household_overcrowding_z
+health_district$Townsend_Index_scaled <- ave(health_district$Townsend_Index, health_district$year, FUN = rescale_within_year)
+health_district$measure = 'material_deprivation_indicator'
+health_district <- rename(health_district, value = Townsend_Index_scaled, geoid = hd_geoid)
+health_district$region_type = 'health district'
+townsend_bi_hd <- subset(health_district, select = c(geoid, measure, year, region_type, value))
+townsend_bi_all <- bind_rows(townsend_bi, townsend_bi_hd)
+
+
+```
+
 
 
 #Write CSV
 ```{r}
-#write.csv(townsend_bi, "va_hdcttr_vdh_2015_2021_material_deprivation_index.csv", row.names = FALSE)
-readr::write_csv(townsend_bi, xzfile("Material Deprivation/data/distribution/va_hdcttr_vdh_2015_2021_material_deprivation_index.csv.xz", compression = 9))
+
+readr::write_csv(townsend_bi_all, xzfile("../../data/distribution/va_hdcttr_vdh_2015_2021_material_deprivation_index.csv.xz", compression = 9))
 
 ```
 

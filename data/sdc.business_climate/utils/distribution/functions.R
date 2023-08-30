@@ -6,15 +6,6 @@ library(tidyr)
 
 
 
-
-# variables_checks <- function(data,topic){# The function check if variables required to estimate metrics are observed in the data}
-
-
-
-#update_all <- function(path){This function update all the repo or specific portion of the repo}
-
-
-
 business_dynamics <- function(data,geolevels,topic,prefix,savepath='default',entry=TRUE,exit=TRUE,count=TRUE,size=TRUE){
   # this function compute all the metrics for a specific topic and save the output
   # inputs: 

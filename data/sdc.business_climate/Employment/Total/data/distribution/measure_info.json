@@ -11,7 +11,7 @@
         "long_name": "Count of businesses creating new jobs",
         "measure_type": "",
         "short_description": "Count of businesses creating new jobs",
-        "short_name": "business creating jobs ",
+        "short_name": "Businesses Creating Jobs ",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -36,7 +36,7 @@
         "long_name": "Count of new jobs created by active businesses",
         "measure_type": "",
         "short_description": "Count of new jobs created by active businesses",
-        "short_name": "jobs creation by active businesses ",
+        "short_name": "Jobs Created by Active Businesses ",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -61,7 +61,7 @@
         "long_name": "Count of new jobs created by new businesses",
         "measure_type": "",
         "short_description": "Count of new jobs created by new businesses",
-        "short_name": "jobs creation by new businesses ",
+        "short_name": "Jobs Created by New Businesses ",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -82,11 +82,11 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of new jobs created by active businesses (an active business is a company that exist last year): \\[perc_job_creation_active=\\frac{job_creation_active}{all_job_creation}\\]. Available for US businesses.",
+        "long_description": "Percent of new jobs created by active businesses (an active business is a company that exist last year): \\[perc\\_job\\_creation\\_active=\\frac{jobs\\_created\\_by\\_active\\_businesses}{all\\_jobs\\_created}\\]. Available for US businesses.",
         "long_name": "Job creation rate by active businesses",
         "measure_type": "",
         "short_description": "Job creation rate by active businesses",
-        "short_name": "active businesses job creation rate ",
+        "short_name": "Active Businesses Job Creation Rate ",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -107,11 +107,11 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of new jobs created by new businesses (a new business is a company newly created or has moved to the region): \\[perc_job_creation_new=\\frac{job_creation_new}{all_job_creation}\\]. Available for US businesses.",
+        "long_description": "Percent of new jobs created by new businesses (a new business is a company newly created or has moved to the region): \\[perc\\_job\\_creation\\_new=\\frac{jobs\\_created\\_by\\_new\\_businesses}{all\\_jobs\\_created}\\]. Available for US businesses.",
         "long_name": "Job creation rate by new businesses",
         "measure_type": "",
         "short_description": "Job creation rate by new businesses",
-        "short_name": "new businesses job creation rate ",
+        "short_name": "New Businesses Job Creation Rate ",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -136,7 +136,7 @@
         "long_name": "Total new jobs created by all businesses",
         "measure_type": "",
         "short_description": "Total new jobs created by all businesses",
-        "short_name": "total jobs creation ",
+        "short_name": "Total Jobs Created ",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -161,7 +161,7 @@
         "long_name": "Total businesses industry cutting jobs",
         "measure_type": "",
         "short_description": "Total businesses industry cutting jobs",
-        "short_name": "businesses cutting jobs ",
+        "short_name": "Businesses Eliminating Jobs ",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -186,7 +186,7 @@
         "long_name": "Count of jobs cutted by active businesses",
         "measure_type": "",
         "short_description": "Count of jobs cutted by active businesses",
-        "short_name": "jobs cutted by active businesses ",
+        "short_name": "Jobs Eliminated by Active Businesses ",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -211,7 +211,7 @@
         "long_name": "Count of jobs cutted by closed businesses",
         "measure_type": "",
         "short_description": "Count of jobs cutted by closed businesses",
-        "short_name": "jobs cutted by closed businesses ",
+        "short_name": "Jobs Eliminated by Closed Businesses ",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -232,11 +232,11 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of jobs cutted by active businesses (an active business is a company that exist last year): \\[perc_job_destruction_active=\\frac{jobs_destroyed_active}{all_jobs_destroyed}\\]. Available for US businesses.",
+        "long_description": "Percent of jobs cutted by active businesses (an active business is a company that exist last year): \\[perc\\_job\\_destruction\\_active=\\frac{jobs\\_eliminated\\_by\\_active\\_businesses}{all\\_jobs\\_eliminated}\\]. Available for US businesses.",
         "long_name": "Job destruction rate by active businesses",
         "measure_type": "",
         "short_description": "Job destruction rate by active businesses",
-        "short_name": "active businesses job destruction rate ",
+        "short_name": "Active Businesses Job Destruction Rate ",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -257,11 +257,11 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of jobs cutted by closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[perc_job_destruction_exit=\\frac{jobs_destroyed_exit}{all_jobs_destroyed}\\]. Available for US businesses.",
+        "long_description": "Percent of jobs cutted by closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[perc\\_job\\_destruction\\_exit=\\frac{jobs\\_eliminated\\_by\\_closed\\_businesses}{all\\_jobs\\_eliminated}\\]. Available for US businesses.",
         "long_name": "Job destruction rate by closed businesses",
         "measure_type": "",
         "short_description": "Job destruction rate by closed businesses",
-        "short_name": "closed businesses job destruction rate ",
+        "short_name": "Closed Businesses Job Destruction Rate ",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -286,7 +286,7 @@
         "long_name": "Total jobs cutted by businesses",
         "measure_type": "",
         "short_description": "Total jobs cutted by businesses",
-        "short_name": "total jobs cutted ",
+        "short_name": "Total Jobs Eliminated ",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -311,7 +311,7 @@
         "long_name": "Count of all jobs",
         "measure_type": "",
         "short_description": "Count of all jobs",
-        "short_name": "total employment ",
+        "short_name": "Total Employment ",
         "sources": [
             {
                 "name": "Mergent Intellect",

@@ -29,7 +29,7 @@
     },
     "variants": {
       "business_create_job": {
-        "default": "business creating jobs",
+        "default": "Businesses Creating Jobs",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Count of businesses creating new jobs",
@@ -37,7 +37,7 @@
         "statement": "{value} businesses created new jobs in {region_name}."
       },
       "job_creation_active": {
-        "default": "active businesses jobs creation",
+        "default": "Jobs Created by Active Businesses",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Count of new jobs created by active businesses",
@@ -45,7 +45,7 @@
         "statement": "{value} new jobs have been created by active businesses in {region_name}."
       },
       "job_creation_new": {
-        "default": "new businesses jobs creation",
+        "default": "Jobs Created by New Businesses",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Count of new jobs created by new businesses",
@@ -53,23 +53,23 @@
         "statement": "{value} new jobs have been created by new businesses in {region_name}."
       },
       "perc_job_creation_active": {
-        "default": "active businesses job creation rate",
+        "default": "Active Businesses Job Creation Rate",
         "data_type": "decimal",
         "aggregation_method": "percent",
         "short_description": "Job creation rate by active businesses",
-        "long_description": "Percent of new jobs created by active businesses (an active business is a company that exist last year): \\[perc_job_creation_active=\\frac{job_creation_active}{all_job_creation}\\]",
+        "long_description": "Percent of new jobs created by active businesses (an active business is a company that exist last year): \\[perc\\_job\\_creation\\_active=\\frac{job\\_created\\_by\\_active\\_businesses}{all\\_jobs\\_created}\\]",
         "statement": "{value} of new jobs create by active businesses in {region_name}."
       },
       "perc_job_creation_new": {
-        "default": "new businesses job creation rate",
+        "default": "New Businesses Job Creation Rate",
         "data_type": "decimal",
         "aggregation_method": "percent",
         "short_description": "Job creation rate by new businesses",
-        "long_description": "Percent of new jobs created by new businesses (a new business is a company newly created or has moved to the region): \\[perc_job_creation_new=\\frac{job_creation_new}{all_job_creation}\\]",
+        "long_description": "Percent of new jobs created by new businesses (a new business is a company newly created or has moved to the region): \\[perc\\_job\\_creation\\_new=\\frac{job\\_created\\_by\\_new\\_businesses}{all\\_jobs\\_created}\\]",
         "statement": "{value} of new jobs create by new businesses in {region_name}."
       },
       "total_job_creation": {
-        "default": "total jobs creation",
+        "default": "Total Jobs Created",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Total new jobs created by all businesses",
@@ -77,7 +77,7 @@
         "statement": "{value} new jobs have been created by businesses in {region_name}."
       },
       "business_destruction_job": {
-        "default": "businesses cutting jobs",
+        "default": "Businesses Eliminating Jobs",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Count of businesses industry cutting jobs",
@@ -85,7 +85,7 @@
         "statement": "{value} businesses have cutted jobs in {region_name}."
       },
       "job_destruction_active": {
-        "default": "active businesses job's cutted",
+        "default": "Jobs Eliminated by Active Businesses",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Count of jobs cutted by active businesses",
@@ -93,7 +93,7 @@
         "statement": "{value} jobs have been cutted by active businesses in {region_name}."
       },
       "job_destruction_exit": {
-        "default": "closed businesses job's cutted",
+        "default": "Jobs Eliminated by Closed Businesses",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Count of jobs cutted by closed businesses",
@@ -101,23 +101,23 @@
         "statement": "{value} jobs have been cutted by closed businesses in {region_name}."
       },
       "perc_job_destruction_active": {
-        "default": "active businesses job destruction rate",
+        "default": "Active Businesses Job Destruction Rate",
         "data_type": "decimal",
         "aggregation_method": "percent",
         "short_description": "Job destruction rate by active businesses",
-        "long_description": "Percent of jobs cutted by active businesses (an active business is a company that exist last year): \\[perc_job_destruction_active=\\frac{jobs_destroyed_active}{all_jobs_destroyed}\\]",
+        "long_description": "Percent of jobs cutted by active businesses (an active business is a company that exist last year): \\[perc\\_job\\_destruction\\_active=\\frac{jobs\\_eliminated\\_by\\_active\\_businesses}{all\\_jobs\\_eliminated}\\]",
         "statement": "{value} of jobs cutted by active businesses in {region_name}."
       },
       "perc_job_destruction_exit": {
-        "default": "closed businesses job destruction rate",
+        "default": "Closed Businesses Job Destruction Rate",
         "data_type": "decimal",
         "aggregation_method": "percent",
         "short_description": "Job destruction rate by closed businesses",
-        "long_description": "Percent of jobs cutted by closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[perc_job_destruction_exit=\\frac{jobs_destroyed_exit}{all_jobs_destroyed}\\]",
+        "long_description": "Percent of jobs cutted by closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[perc\\_job\\_destruction\\_exit=\\frac{jobs\\_eliminated\\_by\\_closed\\_businesses}{all\\_jobs\\_eliminated}\\]",
         "statement": "{value} of jobs cutted by closed businesses in {region_name}."
       },
       "total_job_destruction": {
-        "default": "total jobs cutted",
+        "default": "Total Jobs Eliminated",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Total jobs cutted by businesses",
@@ -125,7 +125,7 @@
         "statement": "{value} jobs have been cutted by businesses in {region_name}."
       },
       "total_employment": {
-        "default": "total employment",
+        "default": "Total Employment",
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Count of all jobs",

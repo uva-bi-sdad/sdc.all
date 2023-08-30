@@ -7,11 +7,11 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of new businesses (a new business is a company newly created or has moved to the region): \\[entry_rate=\\frac{new_businesses}{all_businesses}\\] owned by minority A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "minority-owned entry rate",
+        "long_description": "Percent of new businesses (a new business is a company newly created or has moved to the region): \\[entry\\_rate=\\frac{new\\_businesses}{all\\_businesses}\\] owned by minority A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
+        "long_name": "minority-owned Entry Rate",
         "measure_type": "",
         "short_description": "Entry rate as minority-owned",
-        "short_name": "minority-owned entry rate",
+        "short_name": "minority-owned Entry Rate",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -32,11 +32,11 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of new businesses (a new business is a company newly created or has moved to the region): \\[entry_rate=\\frac{new_businesses}{all_businesses}\\] owned by non-minority A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "non-minority-owned entry rate",
+        "long_description": "Percent of new businesses (a new business is a company newly created or has moved to the region): \\[entry\\_rate=\\frac{new\\_businesses}{all\\_businesses}\\] owned by non-minority A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
+        "long_name": "non-minority-owned Entry Rate",
         "measure_type": "",
         "short_description": "Entry rate as non-minority-owned",
-        "short_name": "non-minority-owned entry rate",
+        "short_name": "non-minority-owned Entry Rate",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -57,11 +57,11 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit_rate=\\frac{exited_businesses}{all_businesses}\\] owned by minority A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "minority-owned exit rate",
+        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] owned by minority A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
+        "long_name": "minority-owned Exit Rate",
         "measure_type": "",
         "short_description": "Exit rate as minority-owned",
-        "short_name": "minority-owned exit rate",
+        "short_name": "minority-owned Exit Rate",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -82,11 +82,11 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit_rate=\\frac{exited_businesses}{all_businesses}\\] owned by non-minority A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "non-minority-owned exit rate",
+        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] owned by non-minority A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
+        "long_name": "non-minority-owned Exit Rate",
         "measure_type": "",
         "short_description": "Exit rate as non-minority-owned",
-        "short_name": "non-minority-owned exit rate",
+        "short_name": "non-minority-owned Exit Rate",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -108,10 +108,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Count of all new businesses (a new business is a company newly created or has moved to the region) owned by minority A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "minority-owned new businesses",
+        "long_name": "minority-owned New Businesses",
         "measure_type": "",
         "short_description": "New businesses as minority-owned",
-        "short_name": "minority-owned new businesses",
+        "short_name": "minority-owned New Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -133,10 +133,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Count of all new businesses (a new business is a company newly created or has moved to the region) owned by non-minority A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "non-minority-owned new businesses",
+        "long_name": "non-minority-owned New Businesses",
         "measure_type": "",
         "short_description": "New businesses as non-minority-owned",
-        "short_name": "non-minority-owned new businesses",
+        "short_name": "non-minority-owned New Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -158,10 +158,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) owned by minority A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "minority-owned closed businesses",
+        "long_name": "minority-owned Closed Businesses",
         "measure_type": "",
         "short_description": "Closed businesses as minority-owned",
-        "short_name": "minority-owned closed businesses",
+        "short_name": "minority-owned Closed Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -183,10 +183,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) owned by non-minority A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "non-minority-owned closed businesses",
+        "long_name": "non-minority-owned Closed Businesses",
         "measure_type": "",
         "short_description": "Closed businesses as non-minority-owned",
-        "short_name": "non-minority-owned closed businesses",
+        "short_name": "non-minority-owned Closed Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -208,10 +208,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Count of all businesses owned by minority A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "minority-owned Total businesses",
+        "long_name": "minority-owned Total Businesses",
         "measure_type": "",
         "short_description": "Total businesses as minority-owned",
-        "short_name": "minority-owned Total businesses",
+        "short_name": "minority-owned Total Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -233,10 +233,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Count of all businesses owned by non-minority A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "non-minority-owned Total businesses",
+        "long_name": "non-minority-owned Total Businesses",
         "measure_type": "",
         "short_description": "Total businesses as non-minority-owned",
-        "short_name": "non-minority-owned Total businesses",
+        "short_name": "non-minority-owned Total Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -258,10 +258,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Count of small businesses. owned by minority A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "minority-owned small businesses",
+        "long_name": "minority-owned Small Businesses",
         "measure_type": "",
         "short_description": "Small businesses as minority-owned",
-        "short_name": "minority-owned small businesses",
+        "short_name": "minority-owned Small Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -283,10 +283,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Count of small businesses. owned by non-minority A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "non-minority-owned small businesses",
+        "long_name": "non-minority-owned Small Businesses",
         "measure_type": "",
         "short_description": "Small businesses as non-minority-owned",
-        "short_name": "non-minority-owned small businesses",
+        "short_name": "non-minority-owned Small Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -308,10 +308,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Count of sole proprietor businesses. owned by minority A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "minority-owned sole proprietor businesses",
+        "long_name": "minority-owned Sole Proprietor Businesses",
         "measure_type": "",
         "short_description": "Sole proprietor businesses as minority-owned",
-        "short_name": "minority-owned sole proprietor businesses",
+        "short_name": "minority-owned Sole Proprietor Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -333,10 +333,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Count of sole proprietor businesses. owned by non-minority A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "non-minority-owned sole proprietor businesses",
+        "long_name": "non-minority-owned Sole Proprietor Businesses",
         "measure_type": "",
         "short_description": "Sole proprietor businesses as non-minority-owned",
-        "short_name": "non-minority-owned sole proprietor businesses",
+        "short_name": "non-minority-owned Sole Proprietor Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -358,10 +358,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "percent of small businesses. owned by minority A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "minority-owned percentage of small businesses",
+        "long_name": "minority-owned Percentage of Small Businesses",
         "measure_type": "",
         "short_description": "percent of small businesses as minority-owned",
-        "short_name": "minority-owned percentage of small businesses",
+        "short_name": "minority-owned Percentage of Small Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -383,10 +383,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "percent of small businesses. owned by non-minority A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "non-minority-owned percentage of small businesses",
+        "long_name": "non-minority-owned Percentage of Small Businesses",
         "measure_type": "",
         "short_description": "percent of small businesses as non-minority-owned",
-        "short_name": "non-minority-owned percentage of small businesses",
+        "short_name": "non-minority-owned Percentage of Small Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -408,10 +408,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "percent of sole proprietor businesses. owned by minority A minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "minority-owned percentage of sole proprietor businesses",
+        "long_name": "minority-owned Percentage of Sole Proprietor Businesses",
         "measure_type": "",
         "short_description": "percent of sole proprietor businesses as minority-owned",
-        "short_name": "minority-owned percentage of sole proprietor businesses",
+        "short_name": "minority-owned Percentage of Sole Proprietor Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -433,10 +433,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "percent of sole proprietor businesses. owned by non-minority A non-minority-owned business is a U.S. business that is at least 51% owned by, and whose management and daily business operations are controlled by, one or more members not of a socially and economically disadvantaged minority group, namely U.S. citizens who are African Americans (Black), Hispanic Americans, Native Americans, Asian-Pacific Americans and Sub-Continent Asian Americans.",
-        "long_name": "non-minority-owned percentage of sole proprietor businesses",
+        "long_name": "non-minority-owned Percentage of Sole Proprietor Businesses",
         "measure_type": "",
         "short_description": "percent of sole proprietor businesses as non-minority-owned",
-        "short_name": "non-minority-owned percentage of sole proprietor businesses",
+        "short_name": "non-minority-owned Percentage of Sole Proprietor Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",

@@ -7,11 +7,11 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of new businesses (a new business is a company newly created or has moved to the region): \\[entry_rate=\\frac{new_businesses}{all_businesses}\\] Available for US businesses.",
-        "long_name": "entry rate",
+        "long_description": "Percent of new businesses (a new business is a company newly created or has moved to the region): \\[entry\\_rate=\\frac{new\\_businesses}{all\\_businesses}\\] Available for US businesses.",
+        "long_name": "Entry Rate",
         "measure_type": "",
         "short_description": "Businesses entry rate",
-        "short_name": "entry rate",
+        "short_name": "Entry Rate",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -32,11 +32,11 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit_rate=\\frac{exited_businesses}{all_businesses}\\] Available for US businesses.",
-        "long_name": "exit rate",
+        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] Available for US businesses.",
+        "long_name": "Exit Rate",
         "measure_type": "",
         "short_description": "Businesses exit rate",
-        "short_name": "exit rate",
+        "short_name": "Exit Rate",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -58,10 +58,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Count of all new businesses (a new business is a company newly created or has moved to the region). Available for US businesses.",
-        "long_name": "new businesses",
+        "long_name": "New Businesses",
         "measure_type": "",
         "short_description": "New businesses",
-        "short_name": "new businesses",
+        "short_name": "New Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -83,10 +83,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region). Available for US businesses.",
-        "long_name": "closed businesses",
+        "long_name": "Closed Businesses",
         "measure_type": "",
         "short_description": "Closed businesses",
-        "short_name": "closed businesses",
+        "short_name": "Closed Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -108,10 +108,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Count of all businesses. Available for US businesses.",
-        "long_name": "Total businesses",
+        "long_name": "Total Businesses",
         "measure_type": "",
         "short_description": "Total businesses",
-        "short_name": "Total businesses",
+        "short_name": "Total Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -133,10 +133,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Count of small businesses. Available for US businesses.",
-        "long_name": "small businesses",
+        "long_name": "Small Businesses",
         "measure_type": "",
         "short_description": "Small businesses",
-        "short_name": "small businesses",
+        "short_name": "Small Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -158,10 +158,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Count of sole proprietor businesses. Available for US businesses.",
-        "long_name": "sole proprietor businesses",
+        "long_name": "Sole Proprietor Businesses",
         "measure_type": "",
         "short_description": "Sole proprietor businesses",
-        "short_name": "sole proprietor businesses",
+        "short_name": "Sole Proprietor Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -183,10 +183,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "percent of small businesses. Available for US businesses.",
-        "long_name": "percentage of small businesses",
+        "long_name": "Percentage of Small Businesses",
         "measure_type": "",
         "short_description": "percent of small businesses",
-        "short_name": "percentage of small businesses",
+        "short_name": "Percentage of Small Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
@@ -208,10 +208,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "percent of sole proprietor businesses. Available for US businesses.",
-        "long_name": "percentage of sole proprietor businesses",
+        "long_name": "Percentage of Sole Proprietor Businesses",
         "measure_type": "",
         "short_description": "percent of sole proprietor businesses",
-        "short_name": "percentage of sole proprietor businesses",
+        "short_name": "Percentage of Sole Proprietor Businesses",
         "sources": [
             {
                 "name": "Mergent Intellect",
