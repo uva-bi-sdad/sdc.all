@@ -96,7 +96,7 @@
         "data_type": "decimal",
         "aggregation_method": "percent",
         "short_description": "Businesses exit rate",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\]",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\]",
         "statement": "{value} percent of businesses closed in {region_name}."
       },
       "new_business": {
@@ -112,7 +112,7 @@
         "data_type": "integer",
         "aggregation_method": "count",
         "short_description": "Closed businesses",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region)",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region)",
         "statement": "{value} closed businesses in {region_name}."
       },
       "number_business": {

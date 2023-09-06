@@ -81,16 +81,16 @@
         "default": "Jobs Eliminated by Active Businesses",
         "data_type": "integer",
         "aggregation_method": "count",
-        "short_description": "Count of jobs cutted by active businesses",
-        "long_description": "Count of jobs cutted by active businesses (an active business is a company that exist last year)",
+        "short_description": "Count of jobs cut by active businesses",
+        "long_description": "Count of jobs cut by active businesses (an active business is a company that existed last year)",
         "statement": "{value} jobs have been cutted by active businesses in {region_name}."
       },
       "job_destruction_exit": {
         "default": "Jobs Eliminated by Closed Businesses",
         "data_type": "integer",
         "aggregation_method": "count",
-        "short_description": "Count of jobs cutted by closed businesses",
-        "long_description": "Count of jobs cutted by closed businesses (a closed business is a company that stoped its activities or leaving the region)",
+        "short_description": "Count of jobs cut by closed businesses",
+        "long_description": "Count of jobs cut by closed businesses (a closed business is a company that stopped its activities or left the region)",
         "statement": "{value} jobs have been cutted by closed businesses in {region_name}."
       },
       "perc_job_destruction_active": {
@@ -98,7 +98,7 @@
         "data_type": "decimal",
         "aggregation_method": "percent",
         "short_description": "Job destruction rate by active businesses",
-        "long_description": "Percent of jobs cutted by active businesses (an active business is a company that exist last year): \\[perc\\_job\\_destruction\\_active=\\frac{jobs\\_eliminated\\_by\\_active\\_businesses}{all\\_jobs\\_eliminated}\\]",
+        "long_description": "Percent of jobs cut by active businesses (an active business is a company that existed last year): \\[perc\\_job\\_destruction\\_active=\\frac{jobs\\_eliminated\\_by\\_active\\_businesses}{all\\_jobs\\_eliminated}\\]",
         "statement": "{value} percent of jobs cutted by active businesses in {region_name}."
       },
       "perc_job_destruction_exit": {
@@ -106,15 +106,15 @@
         "data_type": "decimal",
         "aggregation_method": "percent",
         "short_description": "Job destruction rate by closed businesses",
-        "long_description": "Percent of jobs cutted by closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[perc\\_job\\_destruction\\_exit=\\frac{jobs\\_eliminated\\_by\\_closed\\_businesses}{all\\_jobs\\_eliminated}\\]",
+        "long_description": "Percent of jobs cut by closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[perc\\_job\\_destruction\\_exit=\\frac{jobs\\_eliminated\\_by\\_closed\\_businesses}{all\\_jobs\\_eliminated}\\]",
         "statement": "{value} percent of jobs cutted by closed businesses in {region_name}."
       },
       "total_job_destruction": {
         "default": "Total Jobs Eliminated",
         "data_type": "integer",
         "aggregation_method": "count",
-        "short_description": "Total jobs cutted by businesses",
-        "long_description": "Total jobs cutted by businesses",
+        "short_description": "Total jobs cut by businesses",
+        "long_description": "Total jobs cut by businesses",
         "statement": "{value} jobs have been cutted by businesses in {region_name}."
       },
       "total_employment": {

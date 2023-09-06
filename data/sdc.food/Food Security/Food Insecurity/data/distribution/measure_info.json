@@ -7,11 +7,11 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the number of people in food insecure households.  The brief providing the methodology of calculating these estimates is available at Feeding America's Map the Meal Gap website (linked below). Food insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
+        "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the number of people in food insecure households. Food insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
         "long_name": "Estimated number of food insecure people",
         "measure_type": "count",
-        "short_description": "Food insecure persons are people living in households experiencing food insecurity (a lack of access to enough food for an active, healthy life).",
-        "short_name": "Food Insecure People Count",
+        "short_description": "Food insecure people live in households experiencing food insecurity (a lack of access to enough food for an active, healthy life).",
+        "short_name": "Food Insecure Population Count",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -59,7 +59,7 @@
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
-        "statement": "{value} people in the region are {features.name}.",
+        "statement": "{value} people in {features.name} are food insecure.",
         "type": "count",
         "unit": "people",
         "variants": ""
@@ -73,9 +73,9 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the percent of people in food insecure households.  The brief providing the methodology of calculating these estimates is available at Feeding America's Map the Meal Gap website (linked below). Food insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
-        "long_name": "Estimated percentage of total food insecure households",
+        "long_name": "Estimated percentage of food insecure households",
         "measure_type": "percent",
-        "short_description": "Food insecure households are households experiencing food insecurity (a lack of access to enough food for an active, healthy life).",
+        "short_description": "Food insecure households experience food insecurity (a lack of access to enough food for an active, healthy life).",
         "short_name": "Food Insecure Population Percentage",
         "sources": [
             {
@@ -124,7 +124,7 @@
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
-        "statement": "{value} percent of the population  are food insecure {features.name}.",
+        "statement": "{value} of the population in {features.name} are food insecure.",
         "type": "percent",
         "unit": "household",
         "variants": ""
@@ -140,8 +140,8 @@
         "long_description": "Number of persons with income that is sufficient to pay for Food Costs using the Food budget, and in addition, the food budget is larger than the dollar amount of Food Costs.",
         "long_name": "Estimated number of food secure people",
         "measure_type": "count",
-        "short_description": "Food secure persons are people in household who have proper access to food and leading a health life.",
-        "short_name": "Food Secure People Count",
+        "short_description": "Food secure people live in households that have proper access to food and lead a healthy life.",
+        "short_name": "Food Secure Population Count",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -189,7 +189,7 @@
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
-        "statement": "{value} people in the region are {features.name}.",
+        "statement": "{value} people in {features.name} are food secure.",
         "type": "count",
         "unit": "persons",
         "variants": ""
@@ -205,7 +205,7 @@
         "long_description": "Food security for a household means access by all members at all times to enough food for an active, healthy life. Food security includes at a minimum: The ready availability of nutritionally adequate and safe foods.",
         "long_name": "Estimated percentage of food secure households",
         "measure_type": "percent",
-        "short_description": "Food secure households are household who have proper access to food and leading a health life.",
+        "short_description": "Food secure households have proper access to food and lead a healthy life.",
         "short_name": "Food Secure Households Percentage",
         "sources": [
             {
@@ -254,7 +254,7 @@
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
-        "statement": "{value} percent of the population  are food secure {features.name}.",
+        "statement": "{value} of the population in {features.name} are food secure.",
         "type": "percent",
         "unit": "percent",
         "variants": ""
@@ -267,7 +267,7 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The count of households. Based on American Community Survey ACS 2015/2019 5-year estimates Table C16002.",
+        "long_description": "The count of households.",
         "long_name": "Total count of households",
         "measure_type": "count",
         "short_description": "Total count of households based on ACS",
@@ -275,11 +275,12 @@
         "sources": [
             {
                 "date_accessed": 2022,
-                "name": "American Community Survey",
+                "name": "American Community Survey ACS 2015/2019 5-year estimates",
+                "location": "Table C16002",
                 "url": "https://www.census.gov/newsroom/press-kits/2020/acs-5-year.html"
             }
         ],
-        "statement": "Total number of households {features.name} in the region is {value}.",
+        "statement": "Total number of households in {features.name} is {value}.",
         "type": "count",
         "unit": "household",
         "variants": ""
@@ -292,11 +293,11 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Weighted average of the dollar amount of Supplemental Nutrition Assistance Program (SNAP) benefit.  The financial benefit is estimated following the guidelines and procedures from the Virginia Department of Social Services. The weighting component corresponds to the number of households in different income categories, household combination and geography.  The weighted average is obtained for every census tract.",
-        "long_name": "Snap weigted mean",
+        "long_description": "Weighted mean average of the dollar amount of Supplemental Nutrition Assistance Program (SNAP) benefit. The financial benefit is estimated following the guidelines and procedures from the Virginia Department of Social Services. The weighting component corresponds to the number of households in different income categories, household combinations, and geographies. The weighted average is obtained for every census tract.",
+        "long_name": "Average SNAP Benefit",
         "measure_type": "dollars",
-        "short_description": "Weighted average of the dollar amount of SNAP benefits",
-        "short_name": "Snap Weigted Mean",
+        "short_description": "Weighted mean average dollar amount of SNAP benefits",
+        "short_name": "Average SNAP Benefit",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -354,7 +355,7 @@
                 "url": "https://www.dss.virginia.gov/files/division/bp/fs/intro_page/income_limits/Income_Chart_eff_102022.pdf"
             }
         ],
-        "statement": "{value} is the weighted average of the SNAP benefits, {features.name} for the households",
+        "statement": "The average of SNAP benefits for households in {features.name} is {value}.",
         "type": "dollars",
         "unit": "dollars",
         "variants": ""
@@ -367,11 +368,11 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The food shortfall money is the estimated amount of dollars that a household lacks to pay for the food costs. SNAP benefit is the dollar amount of dollars that a household may receive for supplemental food assistance after eligibility.  The SNAP shortfall is the ratio between the SNAP benefit divided by the food shortfall money.  The weighted average uses the number of households in different income categories, household combination and geography, and average is estimated for every census tract.",
-        "long_name": "Snap shortfall weighted mean",
+        "long_description": "The average SNAP shortfall is the estimated dollar amount that a household lacks to pay for their food costs. SNAP benefit is the dollar amount of dollars that a household may receive for supplemental food assistance after eligibility.  The SNAP shortfall is the ratio between the SNAP benefit divided by the food shortfall money.  The weighted average uses the number of households in different income categories, household combination and geography, and average is estimated for every census tract.",
+        "long_name": "Average SNAP Shortfall",
         "measure_type": "ratio",
-        "short_description": "The food shortfall money is the estimated amount of dollars that a household lacks to pay for the food costs",
-        "short_name": "Snap Shortfall Weighted Mean",
+        "short_description": "The average SNAP shortfall is the estimated dollar amount that a household lacks to pay for their food costs",
+        "short_name": "Average SNAP Shortfall",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -429,7 +430,7 @@
                 "url": "https://www.dss.virginia.gov/files/division/bp/fs/intro_page/income_limits/Income_Chart_eff_102022.pdf"
             }
         ],
-        "statement": "{value} is the {features.name} of the households",
+        "statement": "The average SNAP shortfall for households in {features.name} is {value}.",
         "type": "ratio",
         "unit": "ratio",
         "variants": ""
@@ -443,10 +444,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Percentage of households at high risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
-        "long_name": "Estimated percentage of total households at high risk of facing food insecurity",
+        "long_name": "Estimated percentage of total households classified at high risk of facing food insecurity",
         "measure_type": "percent",
-        "short_description": "Percentage of households at high risk of facing food insecurity",
-        "short_name": "High Risk Food Insecurity Percentage",
+        "short_description": "Percentage of households classified at high risk of facing food insecurity",
+        "short_name": "Food Insecure Population Percentage - High Risk",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -494,7 +495,7 @@
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
-        "statement": "{value} percent households in {features.name} are at high risk of food insecurity.",
+        "statement": "{value} of households in {features.name} are classified at high risk of food insecurity.",
         "type": "percent",
         "unit": "percent",
         "variants": ""
@@ -508,10 +509,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Percentage of households at medium risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
-        "long_name": "Estimated percentage of total households at medium risk of facing food insecurity",
+        "long_name": "Estimated percentage of total households classified at medium risk of facing food insecurity",
         "measure_type": "percent",
-        "short_description": "Percentage of households at medium risk of facing food insecurity",
-        "short_name": "Medium Risk Food Insecurity Percentage",
+        "short_description": "Percentage of households classified at medium risk of facing food insecurity",
+        "short_name": "Food Insecure Population Percentage - Medium Risk",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -559,7 +560,7 @@
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
-        "statement": "{value} percent households  are  {features.name} ,medium risk of food insecurity.",
+        "statement": "{value} of households in {features.name} are classified at medium risk of food insecurity.",
         "type": "percent",
         "unit": "percent",
         "variants": ""
@@ -573,10 +574,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Percentage of households at low risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
-        "long_name": "Estimated percentage of total households at low risk of facing food insecurity",
+        "long_name": "Estimated percentage of total households classified at low risk of facing food insecurity",
         "measure_type": "percent",
-        "short_description": "Percentage of households at low risk of facing food insecurity",
-        "short_name": "Low Risk Food Insecurity Percentage",
+        "short_description": "Percentage of households classified at low risk of facing food insecurity",
+        "short_name": "Food Insecure Population Percentage - Low Risk",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -624,7 +625,7 @@
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
-        "statement": "{value}  percent households are {features.name} , low risk of food insecurity.",
+        "statement": "{value} of households in {features.name} are classified at low risk of food insecurity.",
         "type": "percent",
         "unit": "percent",
         "variants": ""
@@ -638,10 +639,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Number of households with income that is sufficient to pay for Food Costs using the Food budget, and in addition, the food budget is less than one third of  the dollar amount of Food Costs. ",
-        "long_name": "Estimated number of households who are at high risk of food insecurity",
+        "long_name": "Estimated number of households classified at high risk of food insecurity",
         "measure_type": "count",
-        "short_description": "High risk food insecurity households count",
-        "short_name": "High Risk Food Insecurity Count",
+        "short_description": "Count of households classified at high risk of food insecurity",
+        "short_name": "Food Insecure Population Count - High Risk",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -689,7 +690,7 @@
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
-        "statement": "{values} households are  {features.name}, high risk of food insecurity.  ",
+        "statement": "{value} households in {features.name} are classified at high risk of food insecurity.",
         "type": "count",
         "unit": "households",
         "variants": ""
@@ -703,10 +704,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Number of households with income that is sufficient to pay for Food Costs using the Food budget, and in addition, the food budget is larger than two-thirds of  the dollar amount of Food Costs. ",
-        "long_name": "Estimated number of households who are at low risk of food insecurity",
+        "long_name": "Estimated number of households classified at low risk of food insecurity",
         "measure_type": "count",
-        "short_description": "Low risk food insecurity households count",
-        "short_name": "Low Risk Food Insecurity Count",
+        "short_description": "Count of households classified at low risk of food insecurity",
+        "short_name": "Food Insecure Population Count - Low Risk",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -754,7 +755,7 @@
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
-        "statement": "{values} households are  {features.name}, low risk of food insecurity.",
+        "statement": "{value} households in {features.name} are classified at low risk of food insecurity.",
         "type": "count",
         "unit": "households",
         "variants": ""
@@ -768,10 +769,10 @@
         "equity_category": "Status",
         "layer": "",
         "long_description": "Number of households with income that is sufficient to pay for Food Costs using the Food budget and, in addition, the food budget is larger than one third and less than two-thirds of the dollar amount of Food Costs. ",
-        "long_name": "Estimated number of households who are at medium risk of food insecurity",
+        "long_name": "Estimated number of households classified at medium risk of food insecurity",
         "measure_type": "count",
-        "short_description": "Medium risk food insecurity households count",
-        "short_name": "Medium Risk Food Insecurity Count",
+        "short_description": "Count of households classified at medium risk of food insecurity",
+        "short_name": "Food Insecure Population Count - Medium Risk",
         "sources": [
             {
                 "date_accessed": 2022,
@@ -819,7 +820,7 @@
                 "url": "http://taxsim.nber.org/taxsim35/"
             }
         ],
-        "statement": "{values} households are  {features.name}, medium risk of food insecurity.",
+        "statement": "{value} households in {features.name} are classified at a medium risk of food insecurity.",
         "type": "count",
         "unit": "households",
         "variants": ""
