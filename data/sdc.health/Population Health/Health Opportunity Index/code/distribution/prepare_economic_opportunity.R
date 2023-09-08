@@ -4,7 +4,7 @@ library(fabricatr)
 
 # Data
 econ_2017 <- setDT(read_excel("Population Health/Health Opportunity Index/data/original/econ_opp.xlsx", sheet = 1))
-hoi_2022 <- setDT(read_excel("Population Health/Health Opportunity Index/data/original/hoi_indexes_quintile_2022.xlsx", sheet = 1))
+hoi_2020 <- setDT(read_excel("Population Health/Health Opportunity Index/data/original/hoi_indexes_quintile_2022.xlsx", sheet = 1))
 
 
 # 2017
@@ -35,25 +35,25 @@ econ_2017_sel <- econ_2017_sel[, .(geoid, measure, value, year, moe)]
 econ_2017_sel[econ_2017_sel$geoid == "51515050100", "geoid"] <- "51019050100"
 
 
-# 2022
-econ_2022_sel <- hoi_2022[,.(geoid = CT, 
+# 2020
+econ_2020_sel <- hoi_2020[,.(geoid = CT, 
                              measure = "economic_opportunity_indicator",
-                             value = split_quantile(hoi_2022$`Economic Profile SI`, 5),
-                             year = "2022",
+                             value = split_quantile(hoi_2020$`Economic Profile SI`, 5),
+                             year = "2020",
                              moe = "")]
             
-econ_2022_sel[, value := as.integer(value)]
-econ_2022_sel <- unique(econ_2022_sel)
+econ_2020_sel[, value := as.integer(value)]
+econ_2020_sel <- unique(econ_2020_sel)
 
-econ_2022_sel <- econ_2022_sel[, .(geoid, measure, value, year, moe)]
+econ_2020_sel <- econ_2020_sel[, .(geoid, measure, value, year, moe)]
 
 
 # combine
-econ_sel  <- rbindlist(list(econ_2017_sel, econ_2022_sel))
+econ_sel  <- rbindlist(list(econ_2017_sel, econ_2020_sel))
 
 
 
-readr::write_csv(econ_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_2022_economic_opportunity_profile.csv.xz", compression = 9))
+readr::write_csv(econ_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_2020_economic_opportunity_profile.csv.xz", compression = 9))
 
-# 2022 only
-readr::write_csv(econ_2022_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2022_economic_opportunity_profile.csv.xz", compression = 9))
+# 2020 only
+readr::write_csv(econ_2020_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2020_economic_opportunity_profile.csv.xz", compression = 9))

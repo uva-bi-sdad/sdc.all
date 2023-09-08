@@ -383,10 +383,10 @@
         "equity_category": "",
         "layer": "",
         "long_description": "A measure of the natural, built and social environment of a community. It includes the air quality indicator, the population churning indicator, the population density indicator, and the walkability indicator.",
-        "long_name": "Community environmental profile",
+        "long_name": "Built Environment Profile",
         "measure_type": "index",
         "short_description": "A measure of the natural, built and social environment of a community.",
-        "short_name": "Community environmental profile",
+        "short_name": "Built Environment Profile",
         "sources": [
             {
                 "name": "Virginia Department of Health",

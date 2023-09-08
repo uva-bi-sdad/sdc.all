@@ -11,7 +11,7 @@ library(fabricatr)
 
 # Data
 si_2017 <- setDT(read_excel("Population Health/Health Opportunity Index/data/original/well_disparity.xlsx", sheet = 1))
-hoi_2022 <- setDT(read_excel("Population Health/Health Opportunity Index/data/original/hoi_indexes_quintile_2022.xlsx", sheet = 1))
+hoi_2020 <- setDT(read_excel("Population Health/Health Opportunity Index/data/original/hoi_indexes_quintile_2022.xlsx", sheet = 1))
 
 
 # 2017
@@ -42,28 +42,28 @@ si_2017_sel <- si_2017_sel[, .(geoid, measure, value, year, moe)]
 si_2017_sel[si_2017_sel$geoid == "51515050100", "geoid"] <- "51019050100"
 
 
-# 2022
-si_2022_sel <- hoi_2022[,.(geoid = CT, 
+# 2020
+si_2020_sel <- hoi_2020[,.(geoid = CT, 
                              measure = "wellness_disparity_indicator",
-                             value = split_quantile(hoi_2022$`Social Impact Profile SI`, 5),
-                             year = "2022",
+                             value = split_quantile(hoi_2020$`Social Impact Profile SI`, 5),
+                             year = "2020",
                              moe = "")]
 
-si_2022_sel[, value := as.integer(value)]
-si_2022_sel <- unique(si_2022_sel)
+si_2020_sel[, value := as.integer(value)]
+si_2020_sel <- unique(si_2020_sel)
 
-si_2022_sel <- si_2022_sel[, .(geoid, measure, value, year, moe)]
+si_2020_sel <- si_2020_sel[, .(geoid, measure, value, year, moe)]
 
 
 # combine
-si_sel  <- rbindlist(list(si_2017_sel, si_2022_sel))
+si_sel  <- rbindlist(list(si_2017_sel, si_2020_sel))
 
 
 
-readr::write_csv(si_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_2022_wellness_disparity_profile.csv.xz", compression = 9))
+readr::write_csv(si_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_2020_wellness_disparity_profile.csv.xz", compression = 9))
 
-# 2022 only
-readr::write_csv(si_2022_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2022_wellness_disparity_profile.csv.xz", compression = 9))
+# 2020 only
+readr::write_csv(si_2020_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2020_wellness_disparity_profile.csv.xz", compression = 9))
 
 
 
