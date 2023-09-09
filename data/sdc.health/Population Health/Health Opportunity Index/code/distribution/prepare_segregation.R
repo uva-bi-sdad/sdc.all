@@ -46,7 +46,7 @@ seg_2017_sel[seg_2017_sel$geoid == "51515050100", "geoid"] <- "51019050100"
 seg_2022_sel <- hoi_2022[,.(geoid = CT2, 
                              measure = "segregation_indicator",
                              value = split_quantile(hoi_2022$`**Spatial Segregation`, 5),
-                             year = "2022",
+                             year = "2020",
                              moe = "")]
 
 seg_2022_sel[, value := as.integer(value)]
@@ -62,7 +62,7 @@ seg_2022_sel$value <- abs(seg_2022_sel$value - 6)
 seg_sel  <- rbindlist(list(seg_2017_sel, seg_2022_sel))
 
 # save the dataset 
-readr::write_csv(seg_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_hdcttr_vdh_2017_2022_segregation_index.csv.xz", compression = 9))
+readr::write_csv(seg_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_hdcttr_vdh_2017_2020_segregation_index.csv.xz", compression = 9))
 
 
 

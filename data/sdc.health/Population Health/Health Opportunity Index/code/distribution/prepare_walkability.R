@@ -45,7 +45,7 @@ walk_2017_sel[walk_2017_sel$geoid == "51515050100", "geoid"] <- "51019050100"
 walk_2022_sel <- hoi_2022[,.(geoid = CT2, 
                             measure = "walkability_indicator",
                             value = split_quantile(hoi_2022$Walkability, 5),
-                            year = "2022",
+                            year = "2020",
                             moe = "")]
 
 walk_2022_sel[, value := as.integer(value)]
@@ -61,7 +61,7 @@ walk_2022_sel$value <- abs(walk_2022_sel$value - 6)
 walk_sel  <- rbindlist(list(walk_2017_sel, walk_2022_sel))
 
 # save the dataset 
-readr::write_csv(walk_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_hdcttr_vdh_2017_2022_walkability_index.csv.xz", compression = 9))
+readr::write_csv(walk_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_hdcttr_vdh_2017_2020_walkability_index.csv.xz", compression = 9))
 
 
 

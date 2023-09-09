@@ -45,7 +45,7 @@ airqual_2017_sel[airqual_2017_sel$geoid == "51515050100", "geoid"] <- "510190501
 airqual_2022_sel <- hoi_2022[,.(geoid = CT2, 
                              measure = "air_quality_indicator",
                              value = split_quantile(hoi_2022$`Environmental*`, 5),
-                             year = "2022",
+                             year = "2020",
                              moe = "")]
 
 airqual_2022_sel[, value := as.integer(value)]
@@ -61,7 +61,7 @@ airqual_2022_sel$value <- abs(airqual_2022_sel$value - 6)
 airqual_sel  <- rbindlist(list(airqual_2017_sel, airqual_2022_sel))
 
 # save the dataset 
-readr::write_csv(airqual_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_2022_air_quality_index.csv.xz", compression = 9))
+readr::write_csv(airqual_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_2020_air_quality_index.csv.xz", compression = 9))
 
 
 

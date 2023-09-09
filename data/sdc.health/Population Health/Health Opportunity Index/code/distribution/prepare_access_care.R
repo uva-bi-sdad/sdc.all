@@ -45,7 +45,7 @@ care_2017_sel[care_2017_sel$geoid == "51515050100", "geoid"] <- "51019050100"
 care_2022_sel <- hoi_2022[,.(geoid = CT2, 
                                 measure = "access_care_indicator",
                                 value = split_quantile(hoi_2022$`**Accees to Care`, 5),
-                                year = "2022",
+                                year = "2020",
                                 moe = "")]
 
 care_2022_sel[, value := as.integer(value)]
@@ -61,7 +61,7 @@ care_2022_sel$value <- abs(care_2022_sel$value - 6)
 care_sel  <- rbindlist(list(care_2017_sel, care_2022_sel))
 
 # save the dataset 
-readr::write_csv(care_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_2022_access_to_care_index.csv.xz", compression = 9))
+readr::write_csv(care_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_2020_access_to_care_index.csv.xz", compression = 9))
 
 
 

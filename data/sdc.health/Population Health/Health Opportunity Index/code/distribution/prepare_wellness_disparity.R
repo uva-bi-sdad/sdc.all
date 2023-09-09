@@ -10,36 +10,36 @@ library(data.table)
 library(fabricatr)
 
 # Data
-si_2017 <- setDT(read_excel("Population Health/Health Opportunity Index/data/original/well_disparity.xlsx", sheet = 1))
+# si_2017 <- setDT(read_excel("Population Health/Health Opportunity Index/data/original/well_disparity.xlsx", sheet = 1))
 hoi_2020 <- setDT(read_excel("Population Health/Health Opportunity Index/data/original/hoi_indexes_quintile_2022.xlsx", sheet = 1))
 
 
 # 2017
-si_2017_sel <-
-  si_2017[, .(
-    geoid = Ctfips,
-    measure = "wellness_disparity_indicator",
-    value = `Indicator Selector`,
-    year = "2017",
-    moe = ""
-  )]
-
-si_2017_sel[value == "Very Low", value := "1"]
-si_2017_sel[value == "Low", value := "2"]
-si_2017_sel[value == "Average", value := "3"]
-si_2017_sel[value == "High", value := "4"]
-si_2017_sel[value == "Very High", value := "5"]
-si_2017_sel[, value := as.integer(value)]
-
-si_2017_sel <- unique(si_2017_sel)
-
-si_2017_sel <- si_2017_sel[, .(geoid, measure, value, year, moe)]
-
-# bedford city tract stil in VDH data:
-# bedford city (51515050100) became Bedford County tract (51019050100)
-# updating tract id for bedford city  
-
-si_2017_sel[si_2017_sel$geoid == "51515050100", "geoid"] <- "51019050100"
+# si_2017_sel <-
+#   si_2017[, .(
+#     geoid = Ctfips,
+#     measure = "wellness_disparity_indicator",
+#     value = `Indicator Selector`,
+#     year = "2017",
+#     moe = ""
+#   )]
+# 
+# si_2017_sel[value == "Very Low", value := "1"]
+# si_2017_sel[value == "Low", value := "2"]
+# si_2017_sel[value == "Average", value := "3"]
+# si_2017_sel[value == "High", value := "4"]
+# si_2017_sel[value == "Very High", value := "5"]
+# si_2017_sel[, value := as.integer(value)]
+# 
+# si_2017_sel <- unique(si_2017_sel)
+# 
+# si_2017_sel <- si_2017_sel[, .(geoid, measure, value, year, moe)]
+# 
+# # bedford city tract stil in VDH data:
+# # bedford city (51515050100) became Bedford County tract (51019050100)
+# # updating tract id for bedford city  
+# 
+# si_2017_sel[si_2017_sel$geoid == "51515050100", "geoid"] <- "51019050100"
 
 
 # 2020
@@ -56,11 +56,11 @@ si_2020_sel <- si_2020_sel[, .(geoid, measure, value, year, moe)]
 
 
 # combine
-si_sel  <- rbindlist(list(si_2017_sel, si_2020_sel))
+# si_sel  <- rbindlist(list(si_2017_sel, si_2020_sel))
 
 
 
-readr::write_csv(si_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_2020_wellness_disparity_profile.csv.xz", compression = 9))
+# readr::write_csv(si_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_2020_wellness_disparity_profile.csv.xz", compression = 9))
 
 # 2020 only
 readr::write_csv(si_2020_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2020_wellness_disparity_profile.csv.xz", compression = 9))

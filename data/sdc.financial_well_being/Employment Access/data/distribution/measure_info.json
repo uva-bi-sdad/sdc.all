@@ -8,10 +8,10 @@
         "equity_category": "Accessibility",
         "layer": "",
         "long_description": "Employment access measures the accessibility of jobs in a particular area. Poor job access can include barriers such as distance from residents and transportation availability. The index is obtained from the Housing + Transportation (H+T) Affordability Index provided by Center for Neighborhood technology. We downloaded and cleaned the dataset from their website for years 2015, 2020, and 2021. H+T calculated the index using a gravity model. The index is calculated by summing the total number of jobs divided by the square of the distance to those jobs. The index is based on jobs and distance decay function. We directly downloaded the data from their website",
-        "long_name": "Employment Access - Jobs per Sq Mi",
+        "long_name": "Employment Access Index",
         "measure_type": "",
         "short_description": "Employment access is the job accessibility at a location",
-        "short_name": "Employment Access - Jobs per Sq Mi",
+        "short_name": "Employment Access Index",
         "sources": [
             {
                 "name": "Housing + Transportation Affordability Index, Center for Neighborhood Technology",

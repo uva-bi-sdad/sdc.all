@@ -2,34 +2,34 @@ library(readxl)
 library(data.table)
 library(fabricatr)
 
-hoi_2017 <- setDT(read_excel("Population Health/Health Opportunity Index/data/original/hoi.xlsx", sheet = 1))
+# hoi_2017 <- setDT(read_excel("Population Health/Health Opportunity Index/data/original/hoi.xlsx", sheet = 1))
 hoi_2022 <- setDT(read_excel("Population Health/Health Opportunity Index/data/original/hoi_indexes_quintile_2022.xlsx", sheet = 1))
 
 # 2017 --------------------
-
-hoi_2017_sel <-
-  hoi_2017[, .(
-    geoid = Ctfips,
-    measure = "health_opportunity_indicator",
-    value = `Profile Selector`,
-    year = "2017",
-    moe = ""
-  )]
-
-hoi_2017_sel[value == "Very Low", value := "1"]
-hoi_2017_sel[value == "Low", value := "2"]
-hoi_2017_sel[value == "Average", value := "3"]
-hoi_2017_sel[value == "High", value := "4"]
-hoi_2017_sel[value == "Very High", value := "5"]
-hoi_2017_sel[, value := as.integer(value)]
-
-hoi_2017_sel <- unique(hoi_2017_sel)
-
-# bedford city tract stil in VDH data:
-# bedford city (51515050100) became Bedford County tract (51019050100)
-# updating tract id for bedford city  
-
-hoi_2017_sel[hoi_2017_sel$geoid == "51515050100", "geoid"] <- "51019050100"
+# 
+# hoi_2017_sel <-
+#   hoi_2017[, .(
+#     geoid = Ctfips,
+#     measure = "health_opportunity_indicator",
+#     value = `Profile Selector`,
+#     year = "2017",
+#     moe = ""
+#   )]
+# 
+# hoi_2017_sel[value == "Very Low", value := "1"]
+# hoi_2017_sel[value == "Low", value := "2"]
+# hoi_2017_sel[value == "Average", value := "3"]
+# hoi_2017_sel[value == "High", value := "4"]
+# hoi_2017_sel[value == "Very High", value := "5"]
+# hoi_2017_sel[, value := as.integer(value)]
+# 
+# hoi_2017_sel <- unique(hoi_2017_sel)
+# 
+# # bedford city tract stil in VDH data:
+# # bedford city (51515050100) became Bedford County tract (51019050100)
+# # updating tract id for bedford city  
+# 
+# hoi_2017_sel[hoi_2017_sel$geoid == "51515050100", "geoid"] <- "51019050100"
 
 
 
@@ -113,7 +113,7 @@ hoi_2022_sel <-
     geoid = CT, 
     measure = "health_opportunity_indicator",
     value = `Composite in Quintiles`,
-    year = "2022",
+    year = "2020",
     moe = ""
   )]
 
@@ -126,13 +126,13 @@ hoi_2022_sel[, value := as.integer(value)]
 
 hoi_2022_sel <- unique(hoi_2022_sel)
 
-hoi <- rbind(hoi_2017_sel, hoi_2022_sel)
+# hoi <- rbind(hoi_2017_sel, hoi_2022_sel)
 
 # write to working
-readr::write_csv(hoi, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_2022_health_opportunity_profile.csv.xz", compression = 9))
+# readr::write_csv(hoi, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2017_2022_health_opportunity_profile.csv.xz", compression = 9))
 
 # 2022 only
-readr::write_csv(hoi_2022_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2022_health_opportunity_profile.csv.xz", compression = 9))
+readr::write_csv(hoi_2022_sel, xzfile("Population Health/Health Opportunity Index/data/working/tract_data/va_tr_vdh_2020_health_opportunity_profile.csv.xz", compression = 9))
 
 
 
