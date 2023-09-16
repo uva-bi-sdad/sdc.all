@@ -11,7 +11,7 @@
         "long_name": "Percentage of households that are Asset Limited, Income Constrained, Employed (ALICE)",
         "measure_type": "percentage",
         "short_description": "The percent of households that are above the Federal Poverty Level but still cannot afford the basics where they live.",
-        "short_name": "Percentage of ALICE housholds",
+        "short_name": "Percentage of ALICE households",
         "sources": [
             {
                 "date_accessed": 2023,
@@ -19,7 +19,7 @@
                 "url": "https://www.unitedforalice.org/"
             }
         ],
-        "statement": "{value} percent of the households in {features.name} are ALICE.",
+        "statement": "{value} of the households in {features.name} are ALICE.",
         "type": "percent",
         "unit": "",
         "variants": ""
@@ -44,7 +44,7 @@
                 "url": "https://www.unitedforalice.org/"
             }
         ],
-        "statement": "{value} percent of the households in {features.name} are in poverty.",
+        "statement": "{value} of the households in {features.name} are in poverty.",
         "type": "percent",
         "unit": "",
         "variants": ""
