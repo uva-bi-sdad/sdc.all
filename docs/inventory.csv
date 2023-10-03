@@ -1045,6 +1045,7 @@ environment,TSUN_RISKS,Tsunami Risk,2019,2019,,,X,,,X,,,,,,,,X,
 environment,VLCN_RISKS,Volcanic Activity Risk,2019,2019,,,X,,,X,,,,,,,,X,
 environment,WFIR_RISKS,Wildfire Risk,2019,2019,,,X,,,X,,,,,,,,X,
 environment,WNTW_RISKS,Winter Weather Risk,2019,2019,,,X,,,X,,,,,,,,X,
+public_safety,incarceration_rate_per_100000,"Incarceration Rate Per 100,000",2020,2020,,,,,,,,,,X,X,,,X,
 demographics,veteran_count_parcels,The Veteran population parcels,2009,2021,,X,X,,X,X,,,,X,,,,X,
 demographics,veteran_percent_parcels,The Veteran population percent parcels,2009,2021,,X,X,,X,X,,,,X,,,,X,
 demographics,veteran_count_direct,The Veteran population direct,2009,2021,,X,X,,X,X,,X,,X,X,X,X,X,X
