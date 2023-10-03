@@ -33,9 +33,13 @@ def evaluate_folder(dirpath):
             if not os.path.isfile(path):
                 # if path is not a file, skip to the next file to check
                 continue
-                
-            parent_dir = str(path.parent).split('sdc.').pop()
-            parent_dir = re.search('/(.*?)/data/distribution', parent_dir).group(1)
+
+            try:    
+                parent_dir = str(path.parent).split('sdc.').pop()
+                parent_dir = re.search('/(.*?)/data/distribution', parent_dir).group(1)
+            except:
+                parent_dir = "PARENT_DIRECTORY"
+                       
             full_path = path.name  
                 
             # check measure_info files
