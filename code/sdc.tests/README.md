@@ -1,3 +1,3 @@
 # sdc.tests
 
-This repository represents a set of tests that check for data quality and data accuracy
+This repository represents a set of code, data, file name, and measure info tests.

@@ -77,7 +77,7 @@ def evaluate_folder(dirpath, valid_types):
 
 if __name__ == "__main__":
     
-    master_geographies = "https://raw.githubusercontent.com/uva-bi-sdad/sdc.metadata/master/geographies.csv"
+    master_geographies = "https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/docs/distribution/geographies_metadata.csv.xz"
     df = pd.read_csv(master_geographies, dtype = str)  
     valid_geoid_years = df[["geoid", "year"]].drop_duplicates()
     valid_geoid_years["valid"] = "yes"
