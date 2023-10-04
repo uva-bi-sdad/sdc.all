@@ -208,8 +208,8 @@ if __name__ == "__main__":
     
     # write report
     print(t.substitute(time_checked=time_checked, report=report))
-    with open("./docs/inventory_report.html", "w") as f:
+    with open("./docs/data_inventory_report.html", "w") as f:
         f.write(t.substitute(time_checked=time_checked, report=report))
 
     # write inventory    
-    inv_final_df.to_csv("./docs/inventory.csv", index=False)
+    inv_final_df.to_csv("./docs/data_inventory.csv", index=False)
