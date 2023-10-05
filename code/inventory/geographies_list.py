@@ -102,7 +102,7 @@ if __name__ == "__main__":
     # write report
     print(t.substitute(time_checked=time_checked, report=report))
     
-    with open("./docs/geographies_report.html", "w") as f:
+    with open("./docs/geographies_inventory_report.html", "w") as f:
         f.write(t.substitute(time_checked=time_checked, report=report))
         
     # write inventory    
