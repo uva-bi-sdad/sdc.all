@@ -15,7 +15,7 @@ from test import Test
 import re
 
 
-def evaluate_folder(req_keys, dirpath):
+def evaluate_folder(req_keys, source_req_keys, dirpath):
     report = ""
 
     # LOOP THROUGH EACH REPO (SDC. ...) ---------------------
@@ -65,14 +65,28 @@ def evaluate_folder(req_keys, dirpath):
                     key_list = list(mi[var].keys())
 
                     # check for missing and extra keys
-                    missing_keys = list(set(req_keys).difference(set(key_list)))
-                    extra_keys = list(set(key_list).difference(set(req_keys)))
-
+                    missing_keys = list(req_keys.difference(set(key_list)))
+                    extra_keys = list(set(key_list).difference(req_keys))
+                    
+                    # check keys in "sources"                    
+                    missing_source_keys = []
+                    extra_source_keys = []
+                    if "sources" in key_list:
+                        for i in range(len(mi[var]['sources'])):
+                            source_key_list = list(mi[var]["sources"][i].keys())
+                        
+                            missing_source_keys = list(source_req_keys.difference(set(source_key_list)))
+                            extra_source_keys = list(set(source_key_list).difference(source_req_keys))
+                                            
                     if len(missing_keys) > 0:
                         report += "\t<p><font color='#D55E00'> [MISSING KEYS] </font> %s %s: %s </p>\n" % (missing_keys, parent_dir, var)
                     if len(extra_keys) > 0:
                         report += "\t<p><font color='#D55E00'> [EXTRA KEYS] </font> %s %s: %s </p>\n" % (extra_keys, parent_dir, var)
-                    if len(missing_keys) == 0 and len(extra_keys) == 0:
+                    if len(missing_source_keys) > 0:
+                        report += "\t<p><font color='#D55E00'> [MISSING SOURCE KEYS] </font> %s %s: %s </p>\n" % (missing_source_keys, parent_dir, var)
+                    if len(extra_source_keys) > 0:
+                        report += "\t<p><font color='#D55E00'> [EXTRA KEYS] </font> %s %s: %s </p>\n" % (extra_source_keys, parent_dir, var)
+                    if (len(missing_keys) + len(extra_keys) + len(missing_source_keys) + len(extra_source_keys) == 0):
                         report += "\t<p><font color='#009E73'> [VALID] </font> %s: %s </p>\n" % (parent_dir, var)            
             
             except:
@@ -87,7 +101,12 @@ if __name__ == "__main__":
     with urllib.request.urlopen(
         "https://raw.githubusercontent.com/uva-bi-sdad/sdc.metadata/master/data/measure_structure.json"
     ) as url:
-        req_keys = json.load(url)
+        req_keys = set(json.load(url))
+        
+    with urllib.request.urlopen(
+        "https://raw.githubusercontent.com/uva-bi-sdad/sdc.metadata/master/data/source_structure.json"
+    ) as url:
+        source_req_keys = set(json.load(url))
     
     test = Test(
         __file__,
@@ -95,5 +114,5 @@ if __name__ == "__main__":
         "Checks whether measure info files have valid keys for each variable",
     )
     
-    report = evaluate_folder(req_keys, "./data")
+    report = evaluate_folder(req_keys, source_req_keys, "./data")
     test.export_html(report)

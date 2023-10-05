@@ -1,0 +1,6 @@
+[submodule "data_source/sdc.broadband.broadbandnow"]
+	path = data_source/sdc.broadband.broadbandnow
+	url = git@github.com:uva-bi-sdad/sdc.broadband.broadbandnow.git
+[submodule "data_source/sdc.broadband.ookla"]
+	path = data_source/sdc.broadband.ookla
+	url = git@github.com:uva-bi-sdad/sdc.broadband.ookla.git
