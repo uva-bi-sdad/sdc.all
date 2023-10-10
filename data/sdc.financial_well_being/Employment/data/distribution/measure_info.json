@@ -26,7 +26,7 @@
         "unit": "individual",
         "variants": ""
     },
-    "job_participate_rate": {
+    "labor_participate_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Employment/Workforce Development",
@@ -34,15 +34,15 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The percentage of individuals 16-64 years of age in the active labor force. The job particpation rate is often used by economists as an indicator of economic development and growth.",
-        "long_name": "Job Participation Percentage",
+        "long_description": "The percentage of individuals aged 16 years and over in the labor force. In other words, the labor force participation rate is the number of people who are either working or actively looking for work. The labor force participation rate is often used by economists as an indicator of economic development and growth. /n Here the labor force includes all people classified in the civilian labor force and members of the members of the U.S. Armed Forces (people on active duty with the United States Army, Air Force, Navy, Marine Corps, or Coast Guard). The civilian labor force population consists of all people aged 16 and older who are classified as employed and unemployed. /n Based on American Community Survey Table 5-year estimates from 2015 to 2021. ",
+        "long_name": "Labor Force Participation Rate",
         "measure_type": "",
-        "short_description": "The percentage of individuals 16-64 years of age in the active labor force.",
-        "short_name": "Job Participation Percentage",
+        "short_description": "The percentage of individuals aged 16 years and over in the labor force.",
+        "short_name": "Labor Force Participation Rate",
         "sources": [
             {
                 "name": "American Community Survey",
-                "location": "5-Year estimates, table B23025, via the API",
+                "location": "5-Year estimates, table S2301_C02_001, via the API",
                 "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
                 "date_accessed": "2023",
                 "url": "https://www.census.gov/programs-surveys/acs.html"

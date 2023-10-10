@@ -911,4 +911,508 @@
         "unit": "",
         "variants": ""
     }
+  "tot_f_wht": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The white female population ",
+    "long_name": "The white female population. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The white female population. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The white female population. 5-year ACS estimates in provided census geolevels.",
+    "statement": "The white female population is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001A, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "tot_m_wht": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The white male population ",
+    "long_name": "The white male population. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The white male population. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The white male population. 5-year ACS estimates in provided census geolevels.",
+    "statement": "The white male population is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001A, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "tot_f_afr_amer": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The African American female population ",
+    "long_name": "The African American female population. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The African American female population. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The African American female population. 5-year ACS estimates in provided census geolevels.",
+    "statement": "The African American female population is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001B, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "tot_m_afr_amer": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The African American male population ",
+    "long_name": "The African American male population. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The African American male population. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The African American male population. 5-year ACS estimates in provided census geolevels.",
+    "statement": "The African American female population is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001B, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "tot_f_asian": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The Asian female population ",
+    "long_name": "The Asian female population. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The Asian female population. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The Asian female population. 5-year ACS estimates in provided census geolevels.",
+    "statement": "The Asian female population is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001D, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "tot_m_asian": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The Asian male population ",
+    "long_name": "The Asian male population. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The Asian male population. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The Asian male population. 5-year ACS estimates in provided census geolevels.",
+    "statement": "The Asian female population is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001D, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "tot_f_other": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The female population that is not white, African American, or Asian",
+    "long_name": "The female population that is not white, African American, or Asian. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The female population that is not white, African American, or Asian. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The female population that is not white, African American, or Asian. 5-year ACS estimates in provided census geolevels. This value is calculated by subtracting the white female, African American female, and Asian female population totals from the total female population.",
+    "statement": "The female population that is not white, African American, or Asian is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, tables B17001, B17001A, B17001B, and B17001D, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "tot_m_other": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The male population that is not white, African American, or Asian",
+    "long_name": "The male population that is not white, African American, or Asian. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The male population that is not white, African American, or Asian. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The male population that is not white, African American, or Asian. 5-year ACS estimates in provided census geolevels. This value is calculated by subtracting the white male, African American male, and Asian male population totals from the total male population.",
+    "statement": "The male population that is not white, African American, or Asian is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, tables B17001, B17001A, B17001B, and B17001D, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "below_pov_f_wht": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The white female population below the poverty line",
+    "long_name": "The white female population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The white female population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The white female population below the poverty line. 5-year ACS estimates in provided census geolevels.",
+    "statement": "The white female population below the poverty line is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001A, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "below_pov_m_wht": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The white male population below the poverty line",
+    "long_name": "The white male population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The white male population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The white male population below the poverty line. 5-year ACS estimates in provided census geolevels.",
+    "statement": "The white male population below the poverty line is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001A, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "below_pov_f_afr_amer": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The African American female population below the poverty line",
+    "long_name": "The African American female population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The African American female population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The African American female population below the poverty line. 5-year ACS estimates in provided census geolevels.",
+    "statement": "The African American female population below the poverty line is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001B, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "below_pov_m_afr_amer": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The African American male population below the poverty line",
+    "long_name": "The African American male population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The African American male population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The African American male population below the poverty line. 5-year ACS estimates in provided census geolevels.",
+    "statement": "The African American female population below the poverty line is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001B, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "below_pov_f_asian": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The Asian female population below the poverty line",
+    "long_name": "The Asian female population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The Asian female population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The Asian female population below the poverty line. 5-year ACS estimates in provided census geolevels.",
+    "statement": "The Asian female population below the poverty line is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001D, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "below_pov_m_asian": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The Asian male population below the poverty line",
+    "long_name": "The Asian male population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The Asian male population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The Asian male population below the poverty line. 5-year ACS estimates in provided census geolevels.",
+    "statement": "The Asian female population below the poverty line is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001D, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "below_pov_f_other": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The female population (that is not white, African American, or Asian) below the poverty line",
+    "long_name": "The female population (that is not white, African American, or Asian) below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The female population (that is not white, African American, or Asian) below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The female population (that is not white, African American, or Asian) below the poverty line. 5-year ACS estimates in provided census geolevels. This value is calculated by subtracting the totals of white female, African American female, and Asian female below the poverty line from the total female population below the poverty line.",
+    "statement": "The female population (that is not white, African American, or Asian) below the poverty line is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, tables B17001, B17001A, B17001B, and B17001D, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "below_pov_m_other": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The male population (that is not white, African American, or Asian) below the poverty line",
+    "long_name": "The male population (that is not white, African American, or Asian) below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The male population (that is not white, African American, or Asian) below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The male population (that is not white, African American, or Asian) below the poverty line. 5-year ACS estimates in provided census geolevels. This value is calculated by subtracting the totals of white male, African American male, and Asian male from the total female population below the poverty line.",
+    "statement": "The male population (that is not white, African American, or Asian) below the poverty line is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, tables B17001, B17001A, B17001B, and B17001D, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "pov_pct_f_wht": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The percent of the white female population below the poverty line",
+    "long_name": "The percent of the white female population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The percent of the white female population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The percent of the white female population below the poverty line. 5-year ACS estimates in provided census geolevels. This value is calculated as the population below the poverty line for the group divided by the total population for the group.",
+    "statement": "The percent of the white female population below the poverty line is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001A, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "pov_pct_m_wht": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The percent of the white male population below the poverty line",
+    "long_name": "The percent of the white male population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The percent of the white male population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The percent of the white male population below the poverty line. 5-year ACS estimates in provided census geolevels. This value is calculated as the population below the poverty line for the group divided by the total population for the group.",
+    "statement": "The percent of the white male population below the poverty line is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001A, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "pov_pct_f_afr_amer": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The percent of the African American female population below the poverty line",
+    "long_name": "The percent of the African American female population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The percent of the African American female population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The percent of the African American female population below the poverty line. 5-year ACS estimates in provided census geolevels. This value is calculated as the population below the poverty line for the group divided by the total population for the group.",
+    "statement": "The percent of the African American female population below the poverty line is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001B, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "pov_pct_m_afr_amer": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The percent of the African American male population below the poverty line",
+    "long_name": "The percent of the African American male population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The percent of the African American male population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The percent of the African American male population below the poverty line. 5-year ACS estimates in provided census geolevels. This value is calculated as the population below the poverty line for the group divided by the total population for the group.",
+    "statement": "The percent of the African American female population below the poverty line is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001B, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "pov_pct_f_asian": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The percent of the Asian female population below the poverty line",
+    "long_name": "The percent of the Asian female population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The percent of the Asian female population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The percent of the Asian female population below the poverty line. 5-year ACS estimates in provided census geolevels. This value is calculated as the population below the poverty line for the group divided by the total population for the group.",
+    "statement": "The percent of the Asian female population below the poverty line is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001D, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "pov_pct_m_asian": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The percent of the Asian male population below the poverty line",
+    "long_name": "The percent of the Asian male population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The percent of the Asian male population below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The percent of the Asian male population below the poverty line. 5-year ACS estimates in provided census geolevels. This value is calculated as the population below the poverty line for the group divided by the total population for the group.",
+    "statement": "The percent of the Asian female population below the poverty line is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B17001D, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "pov_pct_f_other": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The percent of the female population (that is not white, African American, or Asian) below the poverty line ",
+    "long_name": "The percent of the female female population (that is not white, African American, or Asian) below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The percent of the female population (that is not white, African American, or Asian) below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The percent of the female population (that is not white, African American, or Asian) below the poverty line. 5-year ACS estimates in provided census geolevels. This value is calculated as the population below the poverty line for the group divided by the total population for the group.",
+    "statement": "The percent of the female population below the poverty line that is not white, African American, or Asian is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, tables B17001, B17001A, B17001B, and B17001D, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  },
+  "pov_pct_m_other": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "",
+    "aggregation_method": "",
+    "short_name": "The percent of the male population (that is not white, African American, or Asian) below the poverty line",
+    "long_name": "The percent of the male population (that is not white, African American, or Asian) below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "short_description": "The percent of the male population (that is not white, African American, or Asian) below the poverty line. Based on American Community Survey ACS 2017-2021 5-year estimates.",
+    "long_description": "The percent of the male population (that is not white, African American, or Asian) below the poverty line. 5-year ACS estimates in provided census geolevels. This value is calculated as the population below the poverty line for the group divided by the total population for the group.",
+    "statement": "The percent of the male population (that is not white, African American, or Asian) below the poverty line is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, tables B17001, B17001A, B17001B, and B17001D, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  }
 }

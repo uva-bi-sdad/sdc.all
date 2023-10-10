@@ -180,3 +180,7 @@ rsconnect/
 
 # Ignore things in temporary folders
 **/*/temp/*
+
+# So you don't accidentally push this when you are testing
+variables/*
+code/sdc.tests
