@@ -24,7 +24,7 @@ named_acs_var_list <- c(
 geographies <- c('tract','county','block group')
 
 # list of years
-years <- 2017:2021
+years <- 2015:2021
 
 # Download ACS data for VA
 acs_data_va_wd <- NULL
@@ -47,6 +47,28 @@ for (geo in geographies){
   }
 }
 
+# bring the data at the health district
+hd_shp <- sf::st_read("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/State%20Geographies/Health%20Districts/2020/data/distribution/va_geo_vhd_2020_health_districts.geojson")
+crosswalk <- read_csv('https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/main/VA/State%20Geographies/Health%20Districts/2020/data/distribution/va_ct_to_hd_crosswalk.csv') %>%
+  select(ct_geoid,hd_geoid)
+
+counties <- unique(crosswalk$ct_geoid)
+acs_va_counties_wd <- acs_data_va_wd %>% filter(GEOID %in% counties) %>% mutate(geoid=as.numeric(GEOID))
+
+# each county belong to only one hd. Therefore we can perform the sum over hd_geoid 
+# run this for checking test <- crosswalk %>% group_by(ct_geoid) %>% mutate(count=length(hd_geoid))
+acs_va_hd <- merge(acs_va_counties_wd, crosswalk, by.x='geoid', by.y='ct_geoid') %>%
+  group_by(hd_geoid,year) %>%
+  mutate(pop_movingE=sum(pop_movingE),
+         total_popE=sum(total_popE),
+         value=100*pop_movingE/total_popE,
+         measure='perc_moving') %>%
+  dplyr::select(geoid=hd_geoid,year,measure,value) %>%
+  mutate(moe='') %>%
+  filter(!is.na(value)) %>%
+  mutate(geoid=format(geoid, scientific = FALSE, justify='none'))
+  
+
 # transform and store the data
 acs_data_va <- acs_data_va_wd %>%
   mutate(value=100*pop_movingE/total_popE,
@@ -56,9 +78,11 @@ acs_data_va <- acs_data_va_wd %>%
   filter(!is.na(value)) %>%
   mutate(geoid=format(geoid, scientific = FALSE, justify='none'))
 
+# combine data
+acs_data <- rbind(acs_data_va,acs_va_hd)
 
-
-savepath = "Geography_mobility/data/working/"
-readr::write_csv(acs_data_va, xzfile(paste0(savepath,"va_cttrbg_acs_",min(years),"_",max(years),"_moving_demographics.csv.xz"), compression = 9))
+# save the data
+savepath = "Geography_mobility/data/distribution/"
+readr::write_csv(acs_data, xzfile(paste0(savepath,"va_cttrbg_acs_",min(years),"_",max(years),"_moving_demographics.csv.xz"), compression = 9))
 
 

@@ -1,0 +1,23 @@
+{
+  "perc_moving": {
+    "category": "Demographics",
+    "data_type": "decimal",
+    "unit": "individual",
+    "equity_category": "Status",
+    "aggregation_method": "Population Weighted Average",
+    "short_name": "Population moving in the past year.",
+    "long_name": "Population moving in the past year.",
+    "short_description": "Population moving in the past year from the current residence.",
+    "long_description": "Population moving in the past year from the current residence. 5-year ACS estimates in provided census geolevels.",
+    "statement": "Population moving is {value} in {region_name}.",
+    "sources": [
+      {
+        "name": "American Community Survey",
+        "location": "5-Year estimates, table B01001, via the API",
+        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+        "date_accessed": 2023,
+        "url": "https://www.census.gov/programs-surveys/acs.html"
+      }
+    ]
+  }
+}
