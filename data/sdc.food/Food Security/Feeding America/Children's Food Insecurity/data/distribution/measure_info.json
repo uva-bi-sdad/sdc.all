@@ -14,8 +14,9 @@
         "short_name": "Percentage of food insecure children",
         "sources": [
             {
-                "name": "Feeding America",
                 "date_accessed": "2021",
+                "location": "",
+                "name": "Feeding America",
                 "url": "https://www.feedingamerica.org/"
             }
         ],
@@ -39,8 +40,9 @@
         "short_name": "Food insecure children (count)",
         "sources": [
             {
-                "name": "Feeding America",
                 "date_accessed": "2021",
+                "location": "",
+                "name": "Feeding America",
                 "url": "https://www.feedingamerica.org/"
             }
         ],

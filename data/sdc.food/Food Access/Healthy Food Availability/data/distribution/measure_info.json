@@ -17,8 +17,9 @@
         "short_name": "Retail food environment index",
         "sources": [
             {
-                "name": "OpenStreetMap",
                 "date_accessed": 2023,
+                "location": "",
+                "name": "OpenStreetMap",
                 "url": "https://www.openstreetmap.org/"
             }
         ],

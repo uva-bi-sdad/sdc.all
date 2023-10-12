@@ -14,8 +14,9 @@
         "short_name": "Average meal cost ($)",
         "sources": [
             {
-                "name": "Feeding America",
                 "date_accessed": "2021",
+                "location": "",
+                "name": "Feeding America",
                 "url": "https://www.feedingamerica.org/"
             }
         ],
