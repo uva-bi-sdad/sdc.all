@@ -26,6 +26,10 @@ def evaluate_folder(dirpath):
         if not os.path.isdir(subdir):
             continue
         report += "<h3> %s </h3>\n" % (dir)
+
+        if dir == "sdc.geographies":
+            report += "NA"
+            continue
         
         # CHECK EACH DATA/DISTRIBUTION FOLDER ------------------------
         

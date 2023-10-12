@@ -65,6 +65,10 @@ def evaluate_folder(dirpath):
         if not os.path.isdir(subdir):
             continue
         report += "<h3> %s </h3>\n" % (dir)
+
+        if dir == "sdc.geographies":
+            report += "NA"
+            continue
         
         # extract category from data folder name
         data_cat = dir.split('.').pop()

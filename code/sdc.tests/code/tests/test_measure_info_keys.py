@@ -85,7 +85,7 @@ def evaluate_folder(req_keys, source_req_keys, dirpath):
                     if len(missing_source_keys) > 0:
                         report += "\t<p><font color='#D55E00'> [MISSING SOURCE KEYS] </font> %s %s: %s </p>\n" % (missing_source_keys, parent_dir, var)
                     if len(extra_source_keys) > 0:
-                        report += "\t<p><font color='#D55E00'> [EXTRA KEYS] </font> %s %s: %s </p>\n" % (extra_source_keys, parent_dir, var)
+                        report += "\t<p><font color='#D55E00'> [EXTRA SOURCE KEYS] </font> %s %s: %s </p>\n" % (extra_source_keys, parent_dir, var)
                     if (len(missing_keys) + len(extra_keys) + len(missing_source_keys) + len(extra_source_keys) == 0):
                         report += "\t<p><font color='#009E73'> [VALID] </font> %s: %s </p>\n" % (parent_dir, var)            
             
