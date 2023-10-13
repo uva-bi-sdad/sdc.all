@@ -16,6 +16,7 @@
             {
                 "date_accessed": 2022,
                 "location": "",
+                "location_url": "",
                 "name": "Feeding America",
                 "url": "https://map.feedingamerica.org/"
             }
@@ -42,6 +43,7 @@
             {
                 "date_accessed": 2022,
                 "location": "",
+                "location_url": "",
                 "name": "Feeding America",
                 "url": "https://map.feedingamerica.org/"
             }

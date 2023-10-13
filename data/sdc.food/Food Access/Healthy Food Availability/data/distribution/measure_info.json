@@ -19,6 +19,7 @@
             {
                 "date_accessed": 2023,
                 "location": "",
+                "location_url": "",
                 "name": "OpenStreetMap",
                 "url": "https://www.openstreetmap.org/"
             }
