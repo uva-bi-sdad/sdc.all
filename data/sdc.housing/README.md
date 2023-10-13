@@ -17,4 +17,4 @@ These are data and measures that relate to federal and local programs which help
 ### 3. Housing Surveys
 These are data from surveys of housing stock. Examples:
 - American Housing Survey
-- Survey of Construction
+- Survey of Construction.

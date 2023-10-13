@@ -15,8 +15,9 @@
         "sources": [
             {
                 "date_accessed": 2022,
-                "name": "American Community Survey (ACS)",
                 "location": "Table B25101",
+                "location_url": "",
+                "name": "American Community Survey (ACS)",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
@@ -41,8 +42,9 @@
         "sources": [
             {
                 "date_accessed": 2022,
-                "name": "American Community Survey (ACS)",
                 "location": "Table B25101",
+                "location_url": "",
+                "name": "American Community Survey (ACS)",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
@@ -67,8 +69,9 @@
         "sources": [
             {
                 "date_accessed": 2022,
-                "name": "American Community Survey (ACS)",
                 "location": "Table B25074 and B25101",
+                "location_url": "",
+                "name": "American Community Survey (ACS)",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
@@ -93,8 +96,9 @@
         "sources": [
             {
                 "date_accessed": 2022,
-                "name": "American Community Survey (ACS)",
                 "location": "Table B25101",
+                "location_url": "",
+                "name": "American Community Survey (ACS)",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
@@ -119,8 +123,9 @@
         "sources": [
             {
                 "date_accessed": 2022,
-                "name": "American Community Survey (ACS)",
                 "location": "Table B25074",
+                "location_url": "",
+                "name": "American Community Survey (ACS)",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
@@ -145,8 +150,9 @@
         "sources": [
             {
                 "date_accessed": 2022,
-                "name": "American Community Survey (ACS)",
                 "location": "Table B25074",
+                "location_url": "",
+                "name": "American Community Survey (ACS)",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
@@ -171,8 +177,9 @@
         "sources": [
             {
                 "date_accessed": 2022,
-                "name": "American Community Survey (ACS)",
                 "location": "Table B25074",
+                "location_url": "",
+                "name": "American Community Survey (ACS)",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],

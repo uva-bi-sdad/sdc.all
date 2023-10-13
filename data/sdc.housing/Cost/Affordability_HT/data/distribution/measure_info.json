@@ -7,7 +7,7 @@
         "data_type": "numeric",
         "equity_category": "Affordability",
         "layer": "",
-        "long_description": "The Affordability index is developed to measure the proportion of income spent on housing and transportation.The index of affordability is calculated by combining housing and transportation costs in a neighborhood and dividing that number by income.We extracted the affordability index by using H+T index.H+T index have three different affordability index to account for different households like Regional Typical Household, Regional Moderate Household and National Typical Household",
+        "long_description": "The Affordability index is developed to measure the proportion of income spent on housing and transportation. The affordability index is obtained from the Housing + Transportation (H+T) Affordability Index data provided by Center for Neighborhood Technology (CNT). The index of affordability is calculated by combining housing and transportation costs in a neighborhood and dividing that number by income . H+T index provides three different affordability index to account for different households like Regional Typical Household, Regional Moderate Household and National Typical Household. In our analysis, we focused on the Regional Typical Household.",
         "long_name": "Affordability index",
         "measure_type": "",
         "short_description": "Affordability index is developed to measure the proportion of income spent on housing and transportation",

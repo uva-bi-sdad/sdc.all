@@ -1,0 +1,22 @@
+[
+    {
+        "path": "Cost/Affordability_HT/data/distribution/va_hdcttr_2015_2021_affordability_index.csv.xz",
+        "last_modified_utc": "2023-10-13_15:27:05"
+    },
+    {
+        "path": "Cost/Rent/data/distribution/ncr_cttr_hud_2022_housing_cost.csv.xz",
+        "last_modified_utc": "2023-10-13_15:27:05"
+    },
+    {
+        "path": "Cost/Rent/data/distribution/va_cttr_hud_2022_housing_cost.csv.xz",
+        "last_modified_utc": "2023-10-13_15:27:05"
+    },
+    {
+        "path": "Cost-burdened HHs/data/distribution/ncr_cttrbg_acs_2014_2021_cost_burdened_hhs.csv.xz",
+        "last_modified_utc": "2023-10-13_15:27:05"
+    },
+    {
+        "path": "Cost-burdened HHs/data/distribution/va_hdcttrbg_acs_2014_2021_cost_burdened_hhs.csv.xz",
+        "last_modified_utc": "2023-10-13_15:27:05"
+    }
+]
