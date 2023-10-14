@@ -14,8 +14,10 @@
         "short_name": "Businesses Creating Jobs (minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -39,8 +41,10 @@
         "short_name": "Businesses Creating Jobs (non-minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -64,8 +68,10 @@
         "short_name": "Jobs Created by Active Businesses (minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -89,8 +95,10 @@
         "short_name": "Jobs Created by Active Businesses (non-minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -114,8 +122,10 @@
         "short_name": "Jobs Created by New Businesses (minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -139,8 +149,10 @@
         "short_name": "Jobs Created by New Businesses (non-minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -164,8 +176,10 @@
         "short_name": "Active Businesses Job Creation Rate (minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -189,8 +203,10 @@
         "short_name": "Active Businesses Job Creation Rate (non-minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -214,8 +230,10 @@
         "short_name": "New Businesses Job Creation Rate (minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -239,8 +257,10 @@
         "short_name": "New Businesses Job Creation Rate (non-minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -264,8 +284,10 @@
         "short_name": "Total Jobs Created (minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -289,8 +311,10 @@
         "short_name": "Total Jobs Created (non-minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -314,8 +338,10 @@
         "short_name": "Businesses Eliminating Jobs (minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -339,8 +365,10 @@
         "short_name": "Businesses Eliminating Jobs (non-minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -364,8 +392,10 @@
         "short_name": "Jobs Eliminated by Active Businesses (minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -389,8 +419,10 @@
         "short_name": "Jobs Eliminated by Active Businesses (non-minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -414,8 +446,10 @@
         "short_name": "Jobs Eliminated by Closed Businesses (minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -439,8 +473,10 @@
         "short_name": "Jobs Eliminated by Closed Businesses (non-minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -464,8 +500,10 @@
         "short_name": "Active Businesses Job Destruction Rate (minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -489,8 +527,10 @@
         "short_name": "Active Businesses Job Destruction Rate (non-minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -514,8 +554,10 @@
         "short_name": "Closed Businesses Job Destruction Rate (minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -539,8 +581,10 @@
         "short_name": "Closed Businesses Job Destruction Rate (non-minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -564,8 +608,10 @@
         "short_name": "Total Jobs Eliminated (minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -589,8 +635,10 @@
         "short_name": "Total Jobs Eliminated (non-minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -614,8 +662,10 @@
         "short_name": "Total Employment (minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -639,8 +689,10 @@
         "short_name": "Total Employment (non-minority-owned)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],

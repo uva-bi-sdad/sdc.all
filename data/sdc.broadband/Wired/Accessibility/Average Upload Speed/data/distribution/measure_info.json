@@ -14,8 +14,10 @@
         "short_name": "Average Upload Speed",
         "sources": [
             {
-                "name": "Ookla",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "Ookla",
                 "url": "https://www.ookla.com/ookla-for-good/open-data"
             }
         ],

@@ -5,8 +5,8 @@
     "unit": "business",
     "equity_category": "Status",
     "aggregation_method": "{variant}",
-    "short_name": "{variant} in {category.name}",
-    "long_name": "{variant} in {category.name}",
+    "short_name": "{variant} in {category.default}",
+    "long_name": "{variant} in {category.default}",
     "short_description": "{variant} in {category}",
     "long_description": "{variant} in {category.default}. {category}",
     "statement": "{variant}",
@@ -18,67 +18,88 @@
       }
     ],
     "categories": {
-      "Accommodation and Food Services": {
+      "NAICS72": {
+        "default": "Accommodation and Food Services",
         "long_description": "The Accommodation and Food Services sector comprises establishments providing customers with lodging and/or preparing meals, snacks, and beverages for immediate consumption. The sector includes both accommodation and food services establishments because the two activities are often combined at the same establishment.\\href{https://www.census.gov/naics/?input=72&chart=2022}{NAICS code: 72}."
       },
-      "Administrative and Support and Waste Management and Remediation Services": {
+      "NAICS56": {
+        "default": "Administrative and Support and Waste Management and Remediation Services",
         "long_description": "The Administrative and Support and Waste Management and Remediation Services sector comprises establishments performing routine support activities for the day-to-day operations of other organizations. These essential activities are often undertaken in-house by establishments in many sectors of the economy.\\href{https://www.census.gov/naics/?input=56&chart=2022}{NAICS code: 56}."
       },
-      "Agriculture, Forestry, Fishing and Hunting": {
+      "NAICS11": {
+        "default": "Agriculture, Forestry, Fishing and Hunting",
         "long_description": "The Agriculture, Forestry, Fishing and Hunting sector comprises establishments primarily engaged in growing crops, raising animals, harvesting timber, and harvesting fish and other animals from a farm, ranch, or their natural habitats.\\href{https://www.census.gov/naics/?input=11&chart=2022}{NAICS code: 11}."
       },
-      "Arts, Entertainment, and Recreation": {
+      "NAICS71": {
+        "default": "Arts, Entertainment, and Recreation",
         "long_description": "The Arts, Entertainment, and Recreation sector includes a wide range of establishments that operate facilities or provide services to meet varied cultural, entertainment, and recreational interests of their patrons.\\href{https://www.census.gov/naics/?input=71&chart=2022}{NAICS code: 71}."
       },
-      "Construction": {
+      "NAICS23": {
+        "default": "Construction",
         "long_description": "The Construction sector comprises establishments primarily engaged in the construction of buildings or engineering projects (e.g., highways and utility systems). Establishments primarily engaged in the preparation of sites for new construction and establishments primarily engaged in subdividing land for sale as building sites also are included in this sector.\\href{https://www.census.gov/naics/?input=23&chart=2022}{NAICS code: 23}."
       },
-      "Educational Services": {
+      "NAICS61": {
+        "default": "Educational Services",
         "long_description": "The Educational Services sector comprises establishments that provide instruction and training in a wide variety of subjects. This instruction and training is provided by specialized establishments, such as schools, colleges, universities, and training centers. These establishments may be privately owned and operated for profit or not for profit, or they may be publicly owned and operated. They may also offer food and/or accommodation services to their students.\\href{https://www.census.gov/naics/?input=61&chart=2022}{NAICS code: 61}."
       },
-      "Finance and Insurance": {
+      "NAICS52": {
+        "default": "Finance and Insurance",
         "long_description": "The Finance and Insurance sector comprises establishments primarily engaged in financial transactions (transactions involving the creation, liquidation, or change in ownership of financial assets) and/or in facilitating financial transactions.\\href{https://www.census.gov/naics/?input=52&chart=2022}{NAICS code: 52}."
       },
-      "Health Care and Social Assistance": {
+      "NAICS62": {
+        "default": "Health Care and Social Assistance",
         "long_description": "The Health Care and Social Assistance sector comprises establishments providing health care and social assistance for individuals. The sector includes both health care and social assistance because it is sometimes difficult to distinguish between the boundaries of these two activities.\\href{https://www.census.gov/naics/?input=62&chart=2022}{NAICS code: 62}."
       },
-      "Information": {
+      "NAICS51": {
+        "default": "Information",
         "long_description": "The Information sector comprises establishments engaged in the following processes: (a) producing and distributing information and cultural products, (b) providing the means to transmit or distribute these products as well as data or communications, and (c) processing data.\\href{https://www.census.gov/naics/?input=51&chart=2022}{NAICS code: 51}."
       },
-      "Management of Companies and Enterprises": {
+      "NAICS55": {
+        "default": "Management of Companies and Enterprises",
         "long_description": "The Management of Companies and Enterprises sector comprises (1) establishments that hold the securities of (or other equity interests in) companies and enterprises for the purpose of owning a controlling interest or influencing management decisions or (2) establishments (except government establishments) that administer, oversee, and manage establishments of the company or enterprise and that normally undertake the strategic or organizational planning and decision-making role of the company or enterprise. Establishments that administer, oversee, and manage may hold the securities of the company or enterprise.\\href{https://www.census.gov/naics/?input=55&chart=2022}{NAICS code: 55}."
       },
-      "Manufacturing": {
+      "NAICS31_33": {
+        "default": "Manufacturing",
         "long_description": "The Manufacturing sector comprises establishments engaged in the mechanical, physical, or chemical transformation of materials, substances, or components into new products. The assembling of component parts of manufactured products is considered manufacturing, except in cases where the activity is appropriately classified in Sector 23, Construction.\\href{https://www.census.gov/naics/?input=31&chart=2022}{NAICS code: 31-33}."
       },
-      "Mining, Quarrying, and Oil and Gas Extraction": {
+      "NAICS21": {
+        "default": "Mining, Quarrying, and Oil and Gas Extraction",
         "long_description": "The Mining, Quarrying, and Oil and Gas Extraction sector comprises establishments that extract naturally occurring mineral solids, such as coal and ores; liquid minerals, such as crude petroleum; and gases, such as natural gas. The term mining is used in the broad sense to include quarrying, well operations, beneficiating (e.g., crushing, screening, washing, and flotation), and other preparation customarily performed at the mine site, or as a part of mining activity.\\href{https://www.census.gov/naics/?input=21&chart=2022}{NAICS code: 21}."
       },
-      "Nonclassifiable Establishments": {
+      "NAICS99": {
+        "default": "Nonclassifiable Establishments",
         "long_description": "\\href{https://www.census.gov/naics/?input=99&chart=2022}{NAICS code: 99}. "
       },
-      "Other Services (except Public Administration)": {
+      "NAICS81": {
+        "default": "Other Services (except Public Administration)",
         "long_description": "The Other Services (except Public Administration) sector comprises establishments engaged in providing services not specifically provided for elsewhere in the classification system.\\href{https://www.census.gov/naics/?input=81&chart=2022}{NAICS code: 81}."
       },
-      "Professional, Scientific, and Technical Services": {
+      "NAICS54": {
+        "default": "Professional, Scientific, and Technical Services",
         "long_description": "The Professional, Scientific, and Technical Services sector comprises establishments that specialize in performing professional, scientific, and technical activities for others. These activities require a high degree of expertise and training.\\href{https://www.census.gov/naics/?input=54&chart=2022}{NAICS code: 54}."
       },
-      "Public Administration": {
+      "NAICS92": {
+        "default": "Public Administration",
         "long_description": "The Public Administration sector consists of establishments of federal, state, and local government agencies that administer, oversee, and manage public programs and have executive, legislative, or judicial authority over other institutions within a given area.\\href{https://www.census.gov/naics/?input=92&chart=2022}{NAICS code: 92}."
       },
-      "Real Estate and Rental and Leasing": {
+      "NAICS53": {
+        "default": "Real Estate and Rental and Leasing",
         "long_description": "The Real Estate and Rental and Leasing sector comprises establishments primarily engaged in renting, leasing, or otherwise allowing the use of tangible or intangible assets, and establishments providing related services. The major portion of this sector comprises establishments that rent, lease, or otherwise allow the use of their own assets by others.\\href{https://www.census.gov/naics/?input=53&chart=2022}{NAICS code: 53}."
       },
-      "Retail Trade": {
+      "NAICS44_45": {
+        "default": "Retail Trade",
         "long_description": "The Retail Trade sector comprises establishments engaged in retailing merchandise, generally without transformation, and rendering services incidental to the sale of merchandise.\\href{https://www.census.gov/naics/?input=44&chart=2022}{NAICS code: 44-45}."
       },
-      "Transportation and Warehousing": {
+      "NAICS48_49": {
+        "default": "Transportation and Warehousing",
         "long_description": "The Transportation and Warehousing sector includes industries providing transportation of passengers and cargo, warehousing and storage for goods, scenic and sightseeing transportation, and support activities related to modes of transportation. Establishments in these industries use transportation equipment or transportation related facilities as a productive asset. The type of equipment depends on the mode of transportation. The modes of transportation are air, rail, water, road, and pipeline.\\href{https://www.census.gov/naics/?input=48&chart=2022}{NAICS code: 48-49}."
       },
-      "Utilities": {
+      "NAICS22": {
+        "default": "Utilities",
         "long_description": "The Utilities sector comprises establishments engaged in the provision of the following utility services: electric power, natural gas, steam supply, water supply, and sewage removal. Within this sector, the specific activities associated with the utility services provided vary by utility: electric power includes generation, transmission, and distribution; natural gas includes distribution; steam supply includes provision and/or distribution; water supply includes treatment and distribution; and sewage removal includes collection, treatment, and disposal of waste through sewer systems and sewage treatment facilities.\\href{https://www.census.gov/naics/?input=22&chart=2022}{NAICS code: 22}."
       },
-      "Wholesale Trade": {
+      "NAICS42": {
+        "default": "Wholesale Trade",
         "long_description": "The Wholesale Trade sector comprises establishments engaged in wholesaling merchandise, generally without transformation, and rendering services incidental to the sale of merchandise. The merchandise described in this sector includes the outputs of agriculture, mining, manufacturing, and certain information industries, such as publishing.\\href{https://www.census.gov/naics/?input=42&chart=2022}{NAICS code: 42}."
       }
     },

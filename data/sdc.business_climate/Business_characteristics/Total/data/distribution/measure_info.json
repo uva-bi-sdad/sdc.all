@@ -14,8 +14,10 @@
         "short_name": "Entry Rate",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -39,8 +41,10 @@
         "short_name": "Exit Rate",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -64,8 +68,10 @@
         "short_name": "New Businesses",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -89,8 +95,10 @@
         "short_name": "Closed Businesses",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -114,8 +122,10 @@
         "short_name": "Total Businesses",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -139,8 +149,10 @@
         "short_name": "Small Businesses",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -164,8 +176,10 @@
         "short_name": "Sole Proprietor Businesses",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -189,8 +203,10 @@
         "short_name": "Percentage of Small Businesses",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -214,8 +230,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],

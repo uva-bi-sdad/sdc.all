@@ -14,8 +14,10 @@
         "short_name": "Households without a computer",
         "sources": [
             {
-                "name": "American Community Survey Table B28001",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "American Community Survey Table B28001",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],

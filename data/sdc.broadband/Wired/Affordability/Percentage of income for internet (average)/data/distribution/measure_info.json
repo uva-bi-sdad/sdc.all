@@ -14,13 +14,17 @@
         "short_name": "Percentage of income for internet (average)",
         "sources": [
             {
-                "name": "American Community Survey",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "American Community Survey",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             },
             {
-                "name": "Broadband Now",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "Broadband Now",
                 "url": "https://broadbandnow.com/"
             }
         ],

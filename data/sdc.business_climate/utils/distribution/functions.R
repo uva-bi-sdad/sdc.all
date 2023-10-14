@@ -6,6 +6,22 @@ library(tidyr)
 
 
 
+recode_naics <- function(data){
+  # this function group the naics code 2 digits by industry. For example naics code 31-33 refers to manufacturing. 03 industry are grouped.
+  data <- data %>%
+    mutate(naics_indu=as.character(naics2),
+           naics_indu=recode(naics_indu,
+                             "31"="31_33",
+                             "32"="31_33",
+                             "33"="31_33",
+                             "44"="44_45",
+                             "45"="44_45",
+                             "48"="48_49",
+                             "49"="48_49"))
+  return(data)
+}
+
+
 business_dynamics <- function(data,geolevels,topic,prefix,savepath='default',entry=TRUE,exit=TRUE,count=TRUE,size=TRUE){
   # this function compute all the metrics for a specific topic and save the output
   # inputs: 
@@ -20,6 +36,9 @@ business_dynamics <- function(data,geolevels,topic,prefix,savepath='default',ent
   if ('Minority_owned' %in% topic){topic_name <- 'minority'}
   if ('Industry_Minority_owned' %in% topic){topic_name <- c('industry','minority')}
   if ('Total' %in% topic){topic_name <- 'aggregate'}
+  
+  # group naics by industry
+  data <- recode_naics(data)
   
   # run the function for each metrics
   if(entry){
@@ -79,6 +98,9 @@ employment_dynamics <- function(data,geolevels,topic,prefix,savepath='default',j
   if ('Industry_Minority_owned' %in% topic){topic_name <- c('industry','minority')}
   if ('Total' %in% topic){topic_name <- 'aggregate'}
   
+  # group naics by industry
+  data <- recode_naics(data)
+  
   # run the function for each metrics
   if(job_creation){
     temp_jc <- job_creation(data,geolevels,topic_name) 
@@ -131,7 +153,7 @@ entry <- function(data,geolevels,topics){
            geoid_blockgroup= geoid,
            geoid_tract=substr(geoid,1,11),
            geoid_county=substr(geoid,1,5),
-           industry=paste0(naics_name,'_'),
+           industry=paste0('NAICS',naics_indu,'_'),
            minority=if_else(minority==1,'minority_owned_','non_minority_owned_'),
            aggregate='') %>%
     tidyr::unite("topic", topics, sep = "", remove = FALSE)
@@ -181,7 +203,7 @@ exit <- function(data,geolevels,topics){
            geoid_blockgroup= geoid,
            geoid_tract=substr(geoid,1,11),
            geoid_county=substr(geoid,1,5),
-           industry=paste0(naics_name,'_'),
+           industry=paste0('NAICS',naics_indu,'_'),
            minority=if_else(minority==1,'minority_owned_','non_minority_owned_'),
            aggregate='') %>%
     tidyr::unite("topic", topics, sep = "", remove = FALSE)
@@ -231,7 +253,7 @@ count <- function(data,geolevels,topics){
            geoid_blockgroup= geoid,
            geoid_tract=substr(geoid,1,11),
            geoid_county=substr(geoid,1,5),
-           industry=paste0(naics_name,'_'),
+           industry=paste0('NAICS',naics_indu,'_'),
            minority=if_else(minority==1,'minority_owned_','non_minority_owned_'),
            aggregate='') %>%
     tidyr::unite("topic", topics, sep = "", remove = FALSE)
@@ -279,7 +301,7 @@ size <- function(data,geolevels,topics){
            geoid_blockgroup= geoid,
            geoid_tract=substr(geoid,1,11),
            geoid_county=substr(geoid,1,5),
-           industry=paste0(naics_name,'_'),
+           industry=paste0('NAICS',naics_indu,'_'),
            minority=if_else(minority==1,'minority_owned_','non_minority_owned_'),
            aggregate='') %>%
     tidyr::unite("topic", topics, sep = "", remove = FALSE)
@@ -331,7 +353,7 @@ job_creation <- function(data,geolevels,topics){
            geoid_blockgroup= geoid,
            geoid_tract=substr(geoid,1,11),
            geoid_county=substr(geoid,1,5),
-           industry=paste0(naics_name,'_'),
+           industry=paste0('NAICS',naics_indu,'_'),
            minority=if_else(minority==1,'minority_owned_','non_minority_owned_'),
            aggregate='') %>%
     tidyr::unite("topic", topics, sep = "", remove = FALSE)
@@ -389,7 +411,7 @@ job_destruction <- function(data,geolevels,topics){
            geoid_blockgroup= geoid,
            geoid_tract=substr(geoid,1,11),
            geoid_county=substr(geoid,1,5),
-           industry=paste0(naics_name,'_'),
+           industry=paste0('NAICS',naics_indu,'_'),
            minority=if_else(minority==1,'minority_owned_','non_minority_owned_'),
            aggregate='') %>%
     tidyr::unite("topic", topics, sep = "", remove = FALSE)
@@ -447,7 +469,7 @@ job_count <- function(data,geolevels,topics){
            geoid_blockgroup= geoid,
            geoid_tract=substr(geoid,1,11),
            geoid_county=substr(geoid,1,5),
-           industry=paste0(naics_name,'_'),
+           industry=paste0('NAICS',naics_indu,'_'),
            minority=if_else(minority==1,'minority_owned_','non_minority_owned_'),
            aggregate='') %>%
     tidyr::unite("topic", topics, sep = "", remove = FALSE)
@@ -489,10 +511,13 @@ industry_concentration <- function(data,prefix){
   # outputs: final dataset with all the metrics by industry
   # 
   
+  # group naics by industry
+  data <- recode_naics(data)
+  
   # data treatment. build all census geo, and also combine all topics (if there is multiple topics)
   data <- data %>% 
     mutate(geoid=as.character(geoid),
-           industry=paste0(naics_name,'_'),
+           industry=paste0('NAICS',naics_indu,'_'),
            geoid=substr(geoid,1,5))
   
   # compute metrics
@@ -534,13 +559,16 @@ location_quotient <- function(data,geolevels){
   # outputs: final dataset with all the metrics by topics and geolevels
   #       
   
+  # group naics by industry
+  data <- recode_naics(data)
+  
   # data treatment. build all census geo, and also combine all topics (if there is multiple topics)
   data <- data %>% 
     mutate(geoid=as.character(geoid),
            geoid_blockgroup= geoid,
            geoid_tract=substr(geoid,1,11),
            geoid_county=substr(geoid,1,5),
-           industry=paste0(naics_name,'_'),
+           industry=paste0('NAICS',naics_indu,'_'),
            minority=if_else(minority==1,'minority_owned','non_minority_owned'))
   
   # build the data for each census geolevels.

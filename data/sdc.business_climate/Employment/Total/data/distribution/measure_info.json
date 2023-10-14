@@ -14,8 +14,10 @@
         "short_name": "Businesses Creating Jobs ",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -39,8 +41,10 @@
         "short_name": "Jobs Created by Active Businesses ",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -64,8 +68,10 @@
         "short_name": "Jobs Created by New Businesses ",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -89,8 +95,10 @@
         "short_name": "Active Businesses Job Creation Rate ",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -114,8 +122,10 @@
         "short_name": "New Businesses Job Creation Rate ",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -139,8 +149,10 @@
         "short_name": "Total Jobs Created ",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -164,8 +176,10 @@
         "short_name": "Businesses Eliminating Jobs ",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -182,15 +196,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of jobs cutted by active businesses (an active business is a company that exist last year). Available for US businesses.",
-        "long_name": "Count of jobs cutted by active businesses",
+        "long_description": "Count of jobs cut by active businesses (an active business is a company that existed last year). Available for US businesses.",
+        "long_name": "Count of jobs cut by active businesses",
         "measure_type": "",
-        "short_description": "Count of jobs cutted by active businesses",
+        "short_description": "Count of jobs cut by active businesses",
         "short_name": "Jobs Eliminated by Active Businesses ",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -207,15 +223,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of jobs cutted by closed businesses (a closed business is a company that stoped its activities or leaving the region). Available for US businesses.",
-        "long_name": "Count of jobs cutted by closed businesses",
+        "long_description": "Count of jobs cut by closed businesses (a closed business is a company that stopped its activities or left the region). Available for US businesses.",
+        "long_name": "Count of jobs cut by closed businesses",
         "measure_type": "",
-        "short_description": "Count of jobs cutted by closed businesses",
+        "short_description": "Count of jobs cut by closed businesses",
         "short_name": "Jobs Eliminated by Closed Businesses ",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -232,15 +250,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of jobs cutted by active businesses (an active business is a company that exist last year): \\[perc\\_job\\_destruction\\_active=\\frac{jobs\\_eliminated\\_by\\_active\\_businesses}{all\\_jobs\\_eliminated}\\]. Available for US businesses.",
+        "long_description": "Percent of jobs cut by active businesses (an active business is a company that existed last year): \\[perc\\_job\\_destruction\\_active=\\frac{jobs\\_eliminated\\_by\\_active\\_businesses}{all\\_jobs\\_eliminated}\\]. Available for US businesses.",
         "long_name": "Job destruction rate by active businesses",
         "measure_type": "",
         "short_description": "Job destruction rate by active businesses",
         "short_name": "Active Businesses Job Destruction Rate ",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -257,15 +277,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of jobs cutted by closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[perc\\_job\\_destruction\\_exit=\\frac{jobs\\_eliminated\\_by\\_closed\\_businesses}{all\\_jobs\\_eliminated}\\]. Available for US businesses.",
+        "long_description": "Percent of jobs cut by closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[perc\\_job\\_destruction\\_exit=\\frac{jobs\\_eliminated\\_by\\_closed\\_businesses}{all\\_jobs\\_eliminated}\\]. Available for US businesses.",
         "long_name": "Job destruction rate by closed businesses",
         "measure_type": "",
         "short_description": "Job destruction rate by closed businesses",
         "short_name": "Closed Businesses Job Destruction Rate ",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -282,15 +304,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Total jobs cutted by businesses. Available for US businesses.",
-        "long_name": "Total jobs cutted by businesses",
+        "long_description": "Total jobs cut by businesses. Available for US businesses.",
+        "long_name": "Total jobs cut by businesses",
         "measure_type": "",
-        "short_description": "Total jobs cutted by businesses",
+        "short_description": "Total jobs cut by businesses",
         "short_name": "Total Jobs Eliminated ",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -314,8 +338,10 @@
         "short_name": "Total Employment ",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],

@@ -1,5 +1,5 @@
 {
-    "Accommodation and Food Services_entry_rate": {
+    "NAICS72_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -14,8 +14,10 @@
         "short_name": "Entry Rate in Accommodation and Food Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -24,7 +26,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Administrative and Support and Waste Management and Remediation Services_entry_rate": {
+    "NAICS56_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -39,8 +41,10 @@
         "short_name": "Entry Rate in Administrative and Support and Waste Management and Remediation Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -49,7 +53,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Agriculture, Forestry, Fishing and Hunting_entry_rate": {
+    "NAICS11_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -64,8 +68,10 @@
         "short_name": "Entry Rate in Agriculture, Forestry, Fishing and Hunting",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -74,7 +80,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Arts, Entertainment, and Recreation_entry_rate": {
+    "NAICS71_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -89,8 +95,10 @@
         "short_name": "Entry Rate in Arts, Entertainment, and Recreation",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -99,7 +107,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Construction_entry_rate": {
+    "NAICS23_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -114,8 +122,10 @@
         "short_name": "Entry Rate in Construction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -124,7 +134,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Educational Services_entry_rate": {
+    "NAICS61_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -139,8 +149,10 @@
         "short_name": "Entry Rate in Educational Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -149,7 +161,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Finance and Insurance_entry_rate": {
+    "NAICS52_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -164,8 +176,10 @@
         "short_name": "Entry Rate in Finance and Insurance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -174,7 +188,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Health Care and Social Assistance_entry_rate": {
+    "NAICS62_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -189,8 +203,10 @@
         "short_name": "Entry Rate in Health Care and Social Assistance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -199,7 +215,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Information_entry_rate": {
+    "NAICS51_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -214,8 +230,10 @@
         "short_name": "Entry Rate in Information",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -224,7 +242,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Management of Companies and Enterprises_entry_rate": {
+    "NAICS55_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -239,8 +257,10 @@
         "short_name": "Entry Rate in Management of Companies and Enterprises",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -249,7 +269,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Manufacturing_entry_rate": {
+    "NAICS31_33_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -264,8 +284,10 @@
         "short_name": "Entry Rate in Manufacturing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -274,7 +296,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Mining, Quarrying, and Oil and Gas Extraction_entry_rate": {
+    "NAICS21_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -289,8 +311,10 @@
         "short_name": "Entry Rate in Mining, Quarrying, and Oil and Gas Extraction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -299,7 +323,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Nonclassifiable Establishments_entry_rate": {
+    "NAICS99_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -314,8 +338,10 @@
         "short_name": "Entry Rate in Nonclassifiable Establishments",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -324,7 +350,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Other Services (except Public Administration)_entry_rate": {
+    "NAICS81_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -339,8 +365,10 @@
         "short_name": "Entry Rate in Other Services (except Public Administration)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -349,7 +377,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Professional, Scientific, and Technical Services_entry_rate": {
+    "NAICS54_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -364,8 +392,10 @@
         "short_name": "Entry Rate in Professional, Scientific, and Technical Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -374,7 +404,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Public Administration_entry_rate": {
+    "NAICS92_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -389,8 +419,10 @@
         "short_name": "Entry Rate in Public Administration",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -399,7 +431,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Real Estate and Rental and Leasing_entry_rate": {
+    "NAICS53_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -414,8 +446,10 @@
         "short_name": "Entry Rate in Real Estate and Rental and Leasing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -424,7 +458,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Retail Trade_entry_rate": {
+    "NAICS44_45_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -439,8 +473,10 @@
         "short_name": "Entry Rate in Retail Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -449,7 +485,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Transportation and Warehousing_entry_rate": {
+    "NAICS48_49_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -464,8 +500,10 @@
         "short_name": "Entry Rate in Transportation and Warehousing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -474,7 +512,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Utilities_entry_rate": {
+    "NAICS22_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -489,8 +527,10 @@
         "short_name": "Entry Rate in Utilities",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -499,7 +539,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Wholesale Trade_entry_rate": {
+    "NAICS42_entry_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -514,8 +554,10 @@
         "short_name": "Entry Rate in Wholesale Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -524,7 +566,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Accommodation and Food Services_exit_rate": {
+    "NAICS72_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -532,15 +574,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Accommodation and Food Services. The Accommodation and Food Services sector comprises establishments providing customers with lodging and/or preparing meals, snacks, and beverages for immediate consumption. The sector includes both accommodation and food services establishments because the two activities are often combined at the same establishment.\\href{https://www.census.gov/naics/?input=72&chart=2022}{NAICS code: 72}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Accommodation and Food Services. The Accommodation and Food Services sector comprises establishments providing customers with lodging and/or preparing meals, snacks, and beverages for immediate consumption. The sector includes both accommodation and food services establishments because the two activities are often combined at the same establishment.\\href{https://www.census.gov/naics/?input=72&chart=2022}{NAICS code: 72}.",
         "long_name": "Exit Rate in Accommodation and Food Services",
         "measure_type": "",
         "short_description": "Businesses exit rate in Accommodation and Food Services",
         "short_name": "Exit Rate in Accommodation and Food Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -549,7 +593,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Administrative and Support and Waste Management and Remediation Services_exit_rate": {
+    "NAICS56_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -557,15 +601,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Administrative and Support and Waste Management and Remediation Services. The Administrative and Support and Waste Management and Remediation Services sector comprises establishments performing routine support activities for the day-to-day operations of other organizations. These essential activities are often undertaken in-house by establishments in many sectors of the economy.\\href{https://www.census.gov/naics/?input=56&chart=2022}{NAICS code: 56}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Administrative and Support and Waste Management and Remediation Services. The Administrative and Support and Waste Management and Remediation Services sector comprises establishments performing routine support activities for the day-to-day operations of other organizations. These essential activities are often undertaken in-house by establishments in many sectors of the economy.\\href{https://www.census.gov/naics/?input=56&chart=2022}{NAICS code: 56}.",
         "long_name": "Exit Rate in Administrative and Support and Waste Management and Remediation Services",
         "measure_type": "",
         "short_description": "Businesses exit rate in Administrative and Support and Waste Management and Remediation Services",
         "short_name": "Exit Rate in Administrative and Support and Waste Management and Remediation Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -574,7 +620,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Agriculture, Forestry, Fishing and Hunting_exit_rate": {
+    "NAICS11_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -582,15 +628,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Agriculture, Forestry, Fishing and Hunting. The Agriculture, Forestry, Fishing and Hunting sector comprises establishments primarily engaged in growing crops, raising animals, harvesting timber, and harvesting fish and other animals from a farm, ranch, or their natural habitats.\\href{https://www.census.gov/naics/?input=11&chart=2022}{NAICS code: 11}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Agriculture, Forestry, Fishing and Hunting. The Agriculture, Forestry, Fishing and Hunting sector comprises establishments primarily engaged in growing crops, raising animals, harvesting timber, and harvesting fish and other animals from a farm, ranch, or their natural habitats.\\href{https://www.census.gov/naics/?input=11&chart=2022}{NAICS code: 11}.",
         "long_name": "Exit Rate in Agriculture, Forestry, Fishing and Hunting",
         "measure_type": "",
         "short_description": "Businesses exit rate in Agriculture, Forestry, Fishing and Hunting",
         "short_name": "Exit Rate in Agriculture, Forestry, Fishing and Hunting",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -599,7 +647,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Arts, Entertainment, and Recreation_exit_rate": {
+    "NAICS71_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -607,15 +655,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Arts, Entertainment, and Recreation. The Arts, Entertainment, and Recreation sector includes a wide range of establishments that operate facilities or provide services to meet varied cultural, entertainment, and recreational interests of their patrons.\\href{https://www.census.gov/naics/?input=71&chart=2022}{NAICS code: 71}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Arts, Entertainment, and Recreation. The Arts, Entertainment, and Recreation sector includes a wide range of establishments that operate facilities or provide services to meet varied cultural, entertainment, and recreational interests of their patrons.\\href{https://www.census.gov/naics/?input=71&chart=2022}{NAICS code: 71}.",
         "long_name": "Exit Rate in Arts, Entertainment, and Recreation",
         "measure_type": "",
         "short_description": "Businesses exit rate in Arts, Entertainment, and Recreation",
         "short_name": "Exit Rate in Arts, Entertainment, and Recreation",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -624,7 +674,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Construction_exit_rate": {
+    "NAICS23_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -632,15 +682,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Construction. The Construction sector comprises establishments primarily engaged in the construction of buildings or engineering projects (e.g., highways and utility systems). Establishments primarily engaged in the preparation of sites for new construction and establishments primarily engaged in subdividing land for sale as building sites also are included in this sector.\\href{https://www.census.gov/naics/?input=23&chart=2022}{NAICS code: 23}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Construction. The Construction sector comprises establishments primarily engaged in the construction of buildings or engineering projects (e.g., highways and utility systems). Establishments primarily engaged in the preparation of sites for new construction and establishments primarily engaged in subdividing land for sale as building sites also are included in this sector.\\href{https://www.census.gov/naics/?input=23&chart=2022}{NAICS code: 23}.",
         "long_name": "Exit Rate in Construction",
         "measure_type": "",
         "short_description": "Businesses exit rate in Construction",
         "short_name": "Exit Rate in Construction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -649,7 +701,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Educational Services_exit_rate": {
+    "NAICS61_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -657,15 +709,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Educational Services. The Educational Services sector comprises establishments that provide instruction and training in a wide variety of subjects. This instruction and training is provided by specialized establishments, such as schools, colleges, universities, and training centers. These establishments may be privately owned and operated for profit or not for profit, or they may be publicly owned and operated. They may also offer food and/or accommodation services to their students.\\href{https://www.census.gov/naics/?input=61&chart=2022}{NAICS code: 61}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Educational Services. The Educational Services sector comprises establishments that provide instruction and training in a wide variety of subjects. This instruction and training is provided by specialized establishments, such as schools, colleges, universities, and training centers. These establishments may be privately owned and operated for profit or not for profit, or they may be publicly owned and operated. They may also offer food and/or accommodation services to their students.\\href{https://www.census.gov/naics/?input=61&chart=2022}{NAICS code: 61}.",
         "long_name": "Exit Rate in Educational Services",
         "measure_type": "",
         "short_description": "Businesses exit rate in Educational Services",
         "short_name": "Exit Rate in Educational Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -674,7 +728,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Finance and Insurance_exit_rate": {
+    "NAICS52_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -682,15 +736,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Finance and Insurance. The Finance and Insurance sector comprises establishments primarily engaged in financial transactions (transactions involving the creation, liquidation, or change in ownership of financial assets) and/or in facilitating financial transactions.\\href{https://www.census.gov/naics/?input=52&chart=2022}{NAICS code: 52}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Finance and Insurance. The Finance and Insurance sector comprises establishments primarily engaged in financial transactions (transactions involving the creation, liquidation, or change in ownership of financial assets) and/or in facilitating financial transactions.\\href{https://www.census.gov/naics/?input=52&chart=2022}{NAICS code: 52}.",
         "long_name": "Exit Rate in Finance and Insurance",
         "measure_type": "",
         "short_description": "Businesses exit rate in Finance and Insurance",
         "short_name": "Exit Rate in Finance and Insurance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -699,7 +755,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Health Care and Social Assistance_exit_rate": {
+    "NAICS62_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -707,15 +763,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Health Care and Social Assistance. The Health Care and Social Assistance sector comprises establishments providing health care and social assistance for individuals. The sector includes both health care and social assistance because it is sometimes difficult to distinguish between the boundaries of these two activities.\\href{https://www.census.gov/naics/?input=62&chart=2022}{NAICS code: 62}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Health Care and Social Assistance. The Health Care and Social Assistance sector comprises establishments providing health care and social assistance for individuals. The sector includes both health care and social assistance because it is sometimes difficult to distinguish between the boundaries of these two activities.\\href{https://www.census.gov/naics/?input=62&chart=2022}{NAICS code: 62}.",
         "long_name": "Exit Rate in Health Care and Social Assistance",
         "measure_type": "",
         "short_description": "Businesses exit rate in Health Care and Social Assistance",
         "short_name": "Exit Rate in Health Care and Social Assistance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -724,7 +782,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Information_exit_rate": {
+    "NAICS51_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -732,15 +790,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Information. The Information sector comprises establishments engaged in the following processes: (a) producing and distributing information and cultural products, (b) providing the means to transmit or distribute these products as well as data or communications, and (c) processing data.\\href{https://www.census.gov/naics/?input=51&chart=2022}{NAICS code: 51}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Information. The Information sector comprises establishments engaged in the following processes: (a) producing and distributing information and cultural products, (b) providing the means to transmit or distribute these products as well as data or communications, and (c) processing data.\\href{https://www.census.gov/naics/?input=51&chart=2022}{NAICS code: 51}.",
         "long_name": "Exit Rate in Information",
         "measure_type": "",
         "short_description": "Businesses exit rate in Information",
         "short_name": "Exit Rate in Information",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -749,7 +809,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Management of Companies and Enterprises_exit_rate": {
+    "NAICS55_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -757,15 +817,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Management of Companies and Enterprises. The Management of Companies and Enterprises sector comprises (1) establishments that hold the securities of (or other equity interests in) companies and enterprises for the purpose of owning a controlling interest or influencing management decisions or (2) establishments (except government establishments) that administer, oversee, and manage establishments of the company or enterprise and that normally undertake the strategic or organizational planning and decision-making role of the company or enterprise. Establishments that administer, oversee, and manage may hold the securities of the company or enterprise.\\href{https://www.census.gov/naics/?input=55&chart=2022}{NAICS code: 55}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Management of Companies and Enterprises. The Management of Companies and Enterprises sector comprises (1) establishments that hold the securities of (or other equity interests in) companies and enterprises for the purpose of owning a controlling interest or influencing management decisions or (2) establishments (except government establishments) that administer, oversee, and manage establishments of the company or enterprise and that normally undertake the strategic or organizational planning and decision-making role of the company or enterprise. Establishments that administer, oversee, and manage may hold the securities of the company or enterprise.\\href{https://www.census.gov/naics/?input=55&chart=2022}{NAICS code: 55}.",
         "long_name": "Exit Rate in Management of Companies and Enterprises",
         "measure_type": "",
         "short_description": "Businesses exit rate in Management of Companies and Enterprises",
         "short_name": "Exit Rate in Management of Companies and Enterprises",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -774,7 +836,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Manufacturing_exit_rate": {
+    "NAICS31_33_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -782,15 +844,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Manufacturing. The Manufacturing sector comprises establishments engaged in the mechanical, physical, or chemical transformation of materials, substances, or components into new products. The assembling of component parts of manufactured products is considered manufacturing, except in cases where the activity is appropriately classified in Sector 23, Construction.\\href{https://www.census.gov/naics/?input=31&chart=2022}{NAICS code: 31-33}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Manufacturing. The Manufacturing sector comprises establishments engaged in the mechanical, physical, or chemical transformation of materials, substances, or components into new products. The assembling of component parts of manufactured products is considered manufacturing, except in cases where the activity is appropriately classified in Sector 23, Construction.\\href{https://www.census.gov/naics/?input=31&chart=2022}{NAICS code: 31-33}.",
         "long_name": "Exit Rate in Manufacturing",
         "measure_type": "",
         "short_description": "Businesses exit rate in Manufacturing",
         "short_name": "Exit Rate in Manufacturing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -799,7 +863,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Mining, Quarrying, and Oil and Gas Extraction_exit_rate": {
+    "NAICS21_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -807,15 +871,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Mining, Quarrying, and Oil and Gas Extraction. The Mining, Quarrying, and Oil and Gas Extraction sector comprises establishments that extract naturally occurring mineral solids, such as coal and ores; liquid minerals, such as crude petroleum; and gases, such as natural gas. The term mining is used in the broad sense to include quarrying, well operations, beneficiating (e.g., crushing, screening, washing, and flotation), and other preparation customarily performed at the mine site, or as a part of mining activity.\\href{https://www.census.gov/naics/?input=21&chart=2022}{NAICS code: 21}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Mining, Quarrying, and Oil and Gas Extraction. The Mining, Quarrying, and Oil and Gas Extraction sector comprises establishments that extract naturally occurring mineral solids, such as coal and ores; liquid minerals, such as crude petroleum; and gases, such as natural gas. The term mining is used in the broad sense to include quarrying, well operations, beneficiating (e.g., crushing, screening, washing, and flotation), and other preparation customarily performed at the mine site, or as a part of mining activity.\\href{https://www.census.gov/naics/?input=21&chart=2022}{NAICS code: 21}.",
         "long_name": "Exit Rate in Mining, Quarrying, and Oil and Gas Extraction",
         "measure_type": "",
         "short_description": "Businesses exit rate in Mining, Quarrying, and Oil and Gas Extraction",
         "short_name": "Exit Rate in Mining, Quarrying, and Oil and Gas Extraction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -824,7 +890,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Nonclassifiable Establishments_exit_rate": {
+    "NAICS99_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -832,15 +898,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Nonclassifiable Establishments. \\href{https://www.census.gov/naics/?input=99&chart=2022}{NAICS code: 99}. ",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Nonclassifiable Establishments. \\href{https://www.census.gov/naics/?input=99&chart=2022}{NAICS code: 99}. ",
         "long_name": "Exit Rate in Nonclassifiable Establishments",
         "measure_type": "",
         "short_description": "Businesses exit rate in Nonclassifiable Establishments",
         "short_name": "Exit Rate in Nonclassifiable Establishments",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -849,7 +917,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Other Services (except Public Administration)_exit_rate": {
+    "NAICS81_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -857,15 +925,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Other Services (except Public Administration). The Other Services (except Public Administration) sector comprises establishments engaged in providing services not specifically provided for elsewhere in the classification system.\\href{https://www.census.gov/naics/?input=81&chart=2022}{NAICS code: 81}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Other Services (except Public Administration). The Other Services (except Public Administration) sector comprises establishments engaged in providing services not specifically provided for elsewhere in the classification system.\\href{https://www.census.gov/naics/?input=81&chart=2022}{NAICS code: 81}.",
         "long_name": "Exit Rate in Other Services (except Public Administration)",
         "measure_type": "",
         "short_description": "Businesses exit rate in Other Services (except Public Administration)",
         "short_name": "Exit Rate in Other Services (except Public Administration)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -874,7 +944,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Professional, Scientific, and Technical Services_exit_rate": {
+    "NAICS54_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -882,15 +952,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Professional, Scientific, and Technical Services. The Professional, Scientific, and Technical Services sector comprises establishments that specialize in performing professional, scientific, and technical activities for others. These activities require a high degree of expertise and training.\\href{https://www.census.gov/naics/?input=54&chart=2022}{NAICS code: 54}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Professional, Scientific, and Technical Services. The Professional, Scientific, and Technical Services sector comprises establishments that specialize in performing professional, scientific, and technical activities for others. These activities require a high degree of expertise and training.\\href{https://www.census.gov/naics/?input=54&chart=2022}{NAICS code: 54}.",
         "long_name": "Exit Rate in Professional, Scientific, and Technical Services",
         "measure_type": "",
         "short_description": "Businesses exit rate in Professional, Scientific, and Technical Services",
         "short_name": "Exit Rate in Professional, Scientific, and Technical Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -899,7 +971,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Public Administration_exit_rate": {
+    "NAICS92_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -907,15 +979,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Public Administration. The Public Administration sector consists of establishments of federal, state, and local government agencies that administer, oversee, and manage public programs and have executive, legislative, or judicial authority over other institutions within a given area.\\href{https://www.census.gov/naics/?input=92&chart=2022}{NAICS code: 92}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Public Administration. The Public Administration sector consists of establishments of federal, state, and local government agencies that administer, oversee, and manage public programs and have executive, legislative, or judicial authority over other institutions within a given area.\\href{https://www.census.gov/naics/?input=92&chart=2022}{NAICS code: 92}.",
         "long_name": "Exit Rate in Public Administration",
         "measure_type": "",
         "short_description": "Businesses exit rate in Public Administration",
         "short_name": "Exit Rate in Public Administration",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -924,7 +998,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Real Estate and Rental and Leasing_exit_rate": {
+    "NAICS53_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -932,15 +1006,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Real Estate and Rental and Leasing. The Real Estate and Rental and Leasing sector comprises establishments primarily engaged in renting, leasing, or otherwise allowing the use of tangible or intangible assets, and establishments providing related services. The major portion of this sector comprises establishments that rent, lease, or otherwise allow the use of their own assets by others.\\href{https://www.census.gov/naics/?input=53&chart=2022}{NAICS code: 53}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Real Estate and Rental and Leasing. The Real Estate and Rental and Leasing sector comprises establishments primarily engaged in renting, leasing, or otherwise allowing the use of tangible or intangible assets, and establishments providing related services. The major portion of this sector comprises establishments that rent, lease, or otherwise allow the use of their own assets by others.\\href{https://www.census.gov/naics/?input=53&chart=2022}{NAICS code: 53}.",
         "long_name": "Exit Rate in Real Estate and Rental and Leasing",
         "measure_type": "",
         "short_description": "Businesses exit rate in Real Estate and Rental and Leasing",
         "short_name": "Exit Rate in Real Estate and Rental and Leasing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -949,7 +1025,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Retail Trade_exit_rate": {
+    "NAICS44_45_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -957,15 +1033,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Retail Trade. The Retail Trade sector comprises establishments engaged in retailing merchandise, generally without transformation, and rendering services incidental to the sale of merchandise.\\href{https://www.census.gov/naics/?input=44&chart=2022}{NAICS code: 44-45}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Retail Trade. The Retail Trade sector comprises establishments engaged in retailing merchandise, generally without transformation, and rendering services incidental to the sale of merchandise.\\href{https://www.census.gov/naics/?input=44&chart=2022}{NAICS code: 44-45}.",
         "long_name": "Exit Rate in Retail Trade",
         "measure_type": "",
         "short_description": "Businesses exit rate in Retail Trade",
         "short_name": "Exit Rate in Retail Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -974,7 +1052,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Transportation and Warehousing_exit_rate": {
+    "NAICS48_49_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -982,15 +1060,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Transportation and Warehousing. The Transportation and Warehousing sector includes industries providing transportation of passengers and cargo, warehousing and storage for goods, scenic and sightseeing transportation, and support activities related to modes of transportation. Establishments in these industries use transportation equipment or transportation related facilities as a productive asset. The type of equipment depends on the mode of transportation. The modes of transportation are air, rail, water, road, and pipeline.\\href{https://www.census.gov/naics/?input=48&chart=2022}{NAICS code: 48-49}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Transportation and Warehousing. The Transportation and Warehousing sector includes industries providing transportation of passengers and cargo, warehousing and storage for goods, scenic and sightseeing transportation, and support activities related to modes of transportation. Establishments in these industries use transportation equipment or transportation related facilities as a productive asset. The type of equipment depends on the mode of transportation. The modes of transportation are air, rail, water, road, and pipeline.\\href{https://www.census.gov/naics/?input=48&chart=2022}{NAICS code: 48-49}.",
         "long_name": "Exit Rate in Transportation and Warehousing",
         "measure_type": "",
         "short_description": "Businesses exit rate in Transportation and Warehousing",
         "short_name": "Exit Rate in Transportation and Warehousing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -999,7 +1079,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Utilities_exit_rate": {
+    "NAICS22_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -1007,15 +1087,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Utilities. The Utilities sector comprises establishments engaged in the provision of the following utility services: electric power, natural gas, steam supply, water supply, and sewage removal. Within this sector, the specific activities associated with the utility services provided vary by utility: electric power includes generation, transmission, and distribution; natural gas includes distribution; steam supply includes provision and/or distribution; water supply includes treatment and distribution; and sewage removal includes collection, treatment, and disposal of waste through sewer systems and sewage treatment facilities.\\href{https://www.census.gov/naics/?input=22&chart=2022}{NAICS code: 22}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Utilities. The Utilities sector comprises establishments engaged in the provision of the following utility services: electric power, natural gas, steam supply, water supply, and sewage removal. Within this sector, the specific activities associated with the utility services provided vary by utility: electric power includes generation, transmission, and distribution; natural gas includes distribution; steam supply includes provision and/or distribution; water supply includes treatment and distribution; and sewage removal includes collection, treatment, and disposal of waste through sewer systems and sewage treatment facilities.\\href{https://www.census.gov/naics/?input=22&chart=2022}{NAICS code: 22}.",
         "long_name": "Exit Rate in Utilities",
         "measure_type": "",
         "short_description": "Businesses exit rate in Utilities",
         "short_name": "Exit Rate in Utilities",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1024,7 +1106,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Wholesale Trade_exit_rate": {
+    "NAICS42_exit_rate": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Business climate",
@@ -1032,15 +1114,17 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of closed businesses (a closed business is a company that stoped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Wholesale Trade. The Wholesale Trade sector comprises establishments engaged in wholesaling merchandise, generally without transformation, and rendering services incidental to the sale of merchandise. The merchandise described in this sector includes the outputs of agriculture, mining, manufacturing, and certain information industries, such as publishing.\\href{https://www.census.gov/naics/?input=42&chart=2022}{NAICS code: 42}.",
+        "long_description": "Percent of closed businesses (a closed business is a company that stopped its activities or leaving the region): \\[exit\\_rate=\\frac{closed\\_businesses}{all\\_businesses}\\] in Wholesale Trade. The Wholesale Trade sector comprises establishments engaged in wholesaling merchandise, generally without transformation, and rendering services incidental to the sale of merchandise. The merchandise described in this sector includes the outputs of agriculture, mining, manufacturing, and certain information industries, such as publishing.\\href{https://www.census.gov/naics/?input=42&chart=2022}{NAICS code: 42}.",
         "long_name": "Exit Rate in Wholesale Trade",
         "measure_type": "",
         "short_description": "Businesses exit rate in Wholesale Trade",
         "short_name": "Exit Rate in Wholesale Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1049,7 +1133,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Accommodation and Food Services_new_business": {
+    "NAICS72_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1064,8 +1148,10 @@
         "short_name": "New Businesses in Accommodation and Food Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1074,7 +1160,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Administrative and Support and Waste Management and Remediation Services_new_business": {
+    "NAICS56_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1089,8 +1175,10 @@
         "short_name": "New Businesses in Administrative and Support and Waste Management and Remediation Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1099,7 +1187,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Agriculture, Forestry, Fishing and Hunting_new_business": {
+    "NAICS11_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1114,8 +1202,10 @@
         "short_name": "New Businesses in Agriculture, Forestry, Fishing and Hunting",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1124,7 +1214,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Arts, Entertainment, and Recreation_new_business": {
+    "NAICS71_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1139,8 +1229,10 @@
         "short_name": "New Businesses in Arts, Entertainment, and Recreation",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1149,7 +1241,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Construction_new_business": {
+    "NAICS23_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1164,8 +1256,10 @@
         "short_name": "New Businesses in Construction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1174,7 +1268,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Educational Services_new_business": {
+    "NAICS61_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1189,8 +1283,10 @@
         "short_name": "New Businesses in Educational Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1199,7 +1295,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Finance and Insurance_new_business": {
+    "NAICS52_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1214,8 +1310,10 @@
         "short_name": "New Businesses in Finance and Insurance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1224,7 +1322,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Health Care and Social Assistance_new_business": {
+    "NAICS62_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1239,8 +1337,10 @@
         "short_name": "New Businesses in Health Care and Social Assistance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1249,7 +1349,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Information_new_business": {
+    "NAICS51_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1264,8 +1364,10 @@
         "short_name": "New Businesses in Information",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1274,7 +1376,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Management of Companies and Enterprises_new_business": {
+    "NAICS55_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1289,8 +1391,10 @@
         "short_name": "New Businesses in Management of Companies and Enterprises",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1299,7 +1403,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Manufacturing_new_business": {
+    "NAICS31_33_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1314,8 +1418,10 @@
         "short_name": "New Businesses in Manufacturing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1324,7 +1430,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Mining, Quarrying, and Oil and Gas Extraction_new_business": {
+    "NAICS21_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1339,8 +1445,10 @@
         "short_name": "New Businesses in Mining, Quarrying, and Oil and Gas Extraction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1349,7 +1457,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Nonclassifiable Establishments_new_business": {
+    "NAICS99_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1364,8 +1472,10 @@
         "short_name": "New Businesses in Nonclassifiable Establishments",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1374,7 +1484,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Other Services (except Public Administration)_new_business": {
+    "NAICS81_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1389,8 +1499,10 @@
         "short_name": "New Businesses in Other Services (except Public Administration)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1399,7 +1511,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Professional, Scientific, and Technical Services_new_business": {
+    "NAICS54_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1414,8 +1526,10 @@
         "short_name": "New Businesses in Professional, Scientific, and Technical Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1424,7 +1538,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Public Administration_new_business": {
+    "NAICS92_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1439,8 +1553,10 @@
         "short_name": "New Businesses in Public Administration",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1449,7 +1565,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Real Estate and Rental and Leasing_new_business": {
+    "NAICS53_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1464,8 +1580,10 @@
         "short_name": "New Businesses in Real Estate and Rental and Leasing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1474,7 +1592,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Retail Trade_new_business": {
+    "NAICS44_45_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1489,8 +1607,10 @@
         "short_name": "New Businesses in Retail Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1499,7 +1619,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Transportation and Warehousing_new_business": {
+    "NAICS48_49_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1514,8 +1634,10 @@
         "short_name": "New Businesses in Transportation and Warehousing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1524,7 +1646,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Utilities_new_business": {
+    "NAICS22_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1539,8 +1661,10 @@
         "short_name": "New Businesses in Utilities",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1549,7 +1673,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Wholesale Trade_new_business": {
+    "NAICS42_new_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1564,8 +1688,10 @@
         "short_name": "New Businesses in Wholesale Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1574,7 +1700,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Accommodation and Food Services_exit_business": {
+    "NAICS72_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1582,15 +1708,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Accommodation and Food Services. The Accommodation and Food Services sector comprises establishments providing customers with lodging and/or preparing meals, snacks, and beverages for immediate consumption. The sector includes both accommodation and food services establishments because the two activities are often combined at the same establishment.\\href{https://www.census.gov/naics/?input=72&chart=2022}{NAICS code: 72}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Accommodation and Food Services. The Accommodation and Food Services sector comprises establishments providing customers with lodging and/or preparing meals, snacks, and beverages for immediate consumption. The sector includes both accommodation and food services establishments because the two activities are often combined at the same establishment.\\href{https://www.census.gov/naics/?input=72&chart=2022}{NAICS code: 72}.",
         "long_name": "Closed Businesses in Accommodation and Food Services",
         "measure_type": "",
         "short_description": "Closed businesses in Accommodation and Food Services",
         "short_name": "Closed Businesses in Accommodation and Food Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1599,7 +1727,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Administrative and Support and Waste Management and Remediation Services_exit_business": {
+    "NAICS56_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1607,15 +1735,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Administrative and Support and Waste Management and Remediation Services. The Administrative and Support and Waste Management and Remediation Services sector comprises establishments performing routine support activities for the day-to-day operations of other organizations. These essential activities are often undertaken in-house by establishments in many sectors of the economy.\\href{https://www.census.gov/naics/?input=56&chart=2022}{NAICS code: 56}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Administrative and Support and Waste Management and Remediation Services. The Administrative and Support and Waste Management and Remediation Services sector comprises establishments performing routine support activities for the day-to-day operations of other organizations. These essential activities are often undertaken in-house by establishments in many sectors of the economy.\\href{https://www.census.gov/naics/?input=56&chart=2022}{NAICS code: 56}.",
         "long_name": "Closed Businesses in Administrative and Support and Waste Management and Remediation Services",
         "measure_type": "",
         "short_description": "Closed businesses in Administrative and Support and Waste Management and Remediation Services",
         "short_name": "Closed Businesses in Administrative and Support and Waste Management and Remediation Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1624,7 +1754,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Agriculture, Forestry, Fishing and Hunting_exit_business": {
+    "NAICS11_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1632,15 +1762,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Agriculture, Forestry, Fishing and Hunting. The Agriculture, Forestry, Fishing and Hunting sector comprises establishments primarily engaged in growing crops, raising animals, harvesting timber, and harvesting fish and other animals from a farm, ranch, or their natural habitats.\\href{https://www.census.gov/naics/?input=11&chart=2022}{NAICS code: 11}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Agriculture, Forestry, Fishing and Hunting. The Agriculture, Forestry, Fishing and Hunting sector comprises establishments primarily engaged in growing crops, raising animals, harvesting timber, and harvesting fish and other animals from a farm, ranch, or their natural habitats.\\href{https://www.census.gov/naics/?input=11&chart=2022}{NAICS code: 11}.",
         "long_name": "Closed Businesses in Agriculture, Forestry, Fishing and Hunting",
         "measure_type": "",
         "short_description": "Closed businesses in Agriculture, Forestry, Fishing and Hunting",
         "short_name": "Closed Businesses in Agriculture, Forestry, Fishing and Hunting",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1649,7 +1781,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Arts, Entertainment, and Recreation_exit_business": {
+    "NAICS71_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1657,15 +1789,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Arts, Entertainment, and Recreation. The Arts, Entertainment, and Recreation sector includes a wide range of establishments that operate facilities or provide services to meet varied cultural, entertainment, and recreational interests of their patrons.\\href{https://www.census.gov/naics/?input=71&chart=2022}{NAICS code: 71}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Arts, Entertainment, and Recreation. The Arts, Entertainment, and Recreation sector includes a wide range of establishments that operate facilities or provide services to meet varied cultural, entertainment, and recreational interests of their patrons.\\href{https://www.census.gov/naics/?input=71&chart=2022}{NAICS code: 71}.",
         "long_name": "Closed Businesses in Arts, Entertainment, and Recreation",
         "measure_type": "",
         "short_description": "Closed businesses in Arts, Entertainment, and Recreation",
         "short_name": "Closed Businesses in Arts, Entertainment, and Recreation",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1674,7 +1808,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Construction_exit_business": {
+    "NAICS23_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1682,15 +1816,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Construction. The Construction sector comprises establishments primarily engaged in the construction of buildings or engineering projects (e.g., highways and utility systems). Establishments primarily engaged in the preparation of sites for new construction and establishments primarily engaged in subdividing land for sale as building sites also are included in this sector.\\href{https://www.census.gov/naics/?input=23&chart=2022}{NAICS code: 23}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Construction. The Construction sector comprises establishments primarily engaged in the construction of buildings or engineering projects (e.g., highways and utility systems). Establishments primarily engaged in the preparation of sites for new construction and establishments primarily engaged in subdividing land for sale as building sites also are included in this sector.\\href{https://www.census.gov/naics/?input=23&chart=2022}{NAICS code: 23}.",
         "long_name": "Closed Businesses in Construction",
         "measure_type": "",
         "short_description": "Closed businesses in Construction",
         "short_name": "Closed Businesses in Construction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1699,7 +1835,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Educational Services_exit_business": {
+    "NAICS61_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1707,15 +1843,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Educational Services. The Educational Services sector comprises establishments that provide instruction and training in a wide variety of subjects. This instruction and training is provided by specialized establishments, such as schools, colleges, universities, and training centers. These establishments may be privately owned and operated for profit or not for profit, or they may be publicly owned and operated. They may also offer food and/or accommodation services to their students.\\href{https://www.census.gov/naics/?input=61&chart=2022}{NAICS code: 61}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Educational Services. The Educational Services sector comprises establishments that provide instruction and training in a wide variety of subjects. This instruction and training is provided by specialized establishments, such as schools, colleges, universities, and training centers. These establishments may be privately owned and operated for profit or not for profit, or they may be publicly owned and operated. They may also offer food and/or accommodation services to their students.\\href{https://www.census.gov/naics/?input=61&chart=2022}{NAICS code: 61}.",
         "long_name": "Closed Businesses in Educational Services",
         "measure_type": "",
         "short_description": "Closed businesses in Educational Services",
         "short_name": "Closed Businesses in Educational Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1724,7 +1862,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Finance and Insurance_exit_business": {
+    "NAICS52_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1732,15 +1870,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Finance and Insurance. The Finance and Insurance sector comprises establishments primarily engaged in financial transactions (transactions involving the creation, liquidation, or change in ownership of financial assets) and/or in facilitating financial transactions.\\href{https://www.census.gov/naics/?input=52&chart=2022}{NAICS code: 52}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Finance and Insurance. The Finance and Insurance sector comprises establishments primarily engaged in financial transactions (transactions involving the creation, liquidation, or change in ownership of financial assets) and/or in facilitating financial transactions.\\href{https://www.census.gov/naics/?input=52&chart=2022}{NAICS code: 52}.",
         "long_name": "Closed Businesses in Finance and Insurance",
         "measure_type": "",
         "short_description": "Closed businesses in Finance and Insurance",
         "short_name": "Closed Businesses in Finance and Insurance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1749,7 +1889,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Health Care and Social Assistance_exit_business": {
+    "NAICS62_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1757,15 +1897,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Health Care and Social Assistance. The Health Care and Social Assistance sector comprises establishments providing health care and social assistance for individuals. The sector includes both health care and social assistance because it is sometimes difficult to distinguish between the boundaries of these two activities.\\href{https://www.census.gov/naics/?input=62&chart=2022}{NAICS code: 62}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Health Care and Social Assistance. The Health Care and Social Assistance sector comprises establishments providing health care and social assistance for individuals. The sector includes both health care and social assistance because it is sometimes difficult to distinguish between the boundaries of these two activities.\\href{https://www.census.gov/naics/?input=62&chart=2022}{NAICS code: 62}.",
         "long_name": "Closed Businesses in Health Care and Social Assistance",
         "measure_type": "",
         "short_description": "Closed businesses in Health Care and Social Assistance",
         "short_name": "Closed Businesses in Health Care and Social Assistance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1774,7 +1916,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Information_exit_business": {
+    "NAICS51_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1782,15 +1924,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Information. The Information sector comprises establishments engaged in the following processes: (a) producing and distributing information and cultural products, (b) providing the means to transmit or distribute these products as well as data or communications, and (c) processing data.\\href{https://www.census.gov/naics/?input=51&chart=2022}{NAICS code: 51}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Information. The Information sector comprises establishments engaged in the following processes: (a) producing and distributing information and cultural products, (b) providing the means to transmit or distribute these products as well as data or communications, and (c) processing data.\\href{https://www.census.gov/naics/?input=51&chart=2022}{NAICS code: 51}.",
         "long_name": "Closed Businesses in Information",
         "measure_type": "",
         "short_description": "Closed businesses in Information",
         "short_name": "Closed Businesses in Information",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1799,7 +1943,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Management of Companies and Enterprises_exit_business": {
+    "NAICS55_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1807,15 +1951,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Management of Companies and Enterprises. The Management of Companies and Enterprises sector comprises (1) establishments that hold the securities of (or other equity interests in) companies and enterprises for the purpose of owning a controlling interest or influencing management decisions or (2) establishments (except government establishments) that administer, oversee, and manage establishments of the company or enterprise and that normally undertake the strategic or organizational planning and decision-making role of the company or enterprise. Establishments that administer, oversee, and manage may hold the securities of the company or enterprise.\\href{https://www.census.gov/naics/?input=55&chart=2022}{NAICS code: 55}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Management of Companies and Enterprises. The Management of Companies and Enterprises sector comprises (1) establishments that hold the securities of (or other equity interests in) companies and enterprises for the purpose of owning a controlling interest or influencing management decisions or (2) establishments (except government establishments) that administer, oversee, and manage establishments of the company or enterprise and that normally undertake the strategic or organizational planning and decision-making role of the company or enterprise. Establishments that administer, oversee, and manage may hold the securities of the company or enterprise.\\href{https://www.census.gov/naics/?input=55&chart=2022}{NAICS code: 55}.",
         "long_name": "Closed Businesses in Management of Companies and Enterprises",
         "measure_type": "",
         "short_description": "Closed businesses in Management of Companies and Enterprises",
         "short_name": "Closed Businesses in Management of Companies and Enterprises",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1824,7 +1970,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Manufacturing_exit_business": {
+    "NAICS31_33_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1832,15 +1978,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Manufacturing. The Manufacturing sector comprises establishments engaged in the mechanical, physical, or chemical transformation of materials, substances, or components into new products. The assembling of component parts of manufactured products is considered manufacturing, except in cases where the activity is appropriately classified in Sector 23, Construction.\\href{https://www.census.gov/naics/?input=31&chart=2022}{NAICS code: 31-33}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Manufacturing. The Manufacturing sector comprises establishments engaged in the mechanical, physical, or chemical transformation of materials, substances, or components into new products. The assembling of component parts of manufactured products is considered manufacturing, except in cases where the activity is appropriately classified in Sector 23, Construction.\\href{https://www.census.gov/naics/?input=31&chart=2022}{NAICS code: 31-33}.",
         "long_name": "Closed Businesses in Manufacturing",
         "measure_type": "",
         "short_description": "Closed businesses in Manufacturing",
         "short_name": "Closed Businesses in Manufacturing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1849,7 +1997,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Mining, Quarrying, and Oil and Gas Extraction_exit_business": {
+    "NAICS21_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1857,15 +2005,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Mining, Quarrying, and Oil and Gas Extraction. The Mining, Quarrying, and Oil and Gas Extraction sector comprises establishments that extract naturally occurring mineral solids, such as coal and ores; liquid minerals, such as crude petroleum; and gases, such as natural gas. The term mining is used in the broad sense to include quarrying, well operations, beneficiating (e.g., crushing, screening, washing, and flotation), and other preparation customarily performed at the mine site, or as a part of mining activity.\\href{https://www.census.gov/naics/?input=21&chart=2022}{NAICS code: 21}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Mining, Quarrying, and Oil and Gas Extraction. The Mining, Quarrying, and Oil and Gas Extraction sector comprises establishments that extract naturally occurring mineral solids, such as coal and ores; liquid minerals, such as crude petroleum; and gases, such as natural gas. The term mining is used in the broad sense to include quarrying, well operations, beneficiating (e.g., crushing, screening, washing, and flotation), and other preparation customarily performed at the mine site, or as a part of mining activity.\\href{https://www.census.gov/naics/?input=21&chart=2022}{NAICS code: 21}.",
         "long_name": "Closed Businesses in Mining, Quarrying, and Oil and Gas Extraction",
         "measure_type": "",
         "short_description": "Closed businesses in Mining, Quarrying, and Oil and Gas Extraction",
         "short_name": "Closed Businesses in Mining, Quarrying, and Oil and Gas Extraction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1874,7 +2024,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Nonclassifiable Establishments_exit_business": {
+    "NAICS99_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1882,15 +2032,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Nonclassifiable Establishments. \\href{https://www.census.gov/naics/?input=99&chart=2022}{NAICS code: 99}. ",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Nonclassifiable Establishments. \\href{https://www.census.gov/naics/?input=99&chart=2022}{NAICS code: 99}. ",
         "long_name": "Closed Businesses in Nonclassifiable Establishments",
         "measure_type": "",
         "short_description": "Closed businesses in Nonclassifiable Establishments",
         "short_name": "Closed Businesses in Nonclassifiable Establishments",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1899,7 +2051,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Other Services (except Public Administration)_exit_business": {
+    "NAICS81_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1907,15 +2059,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Other Services (except Public Administration). The Other Services (except Public Administration) sector comprises establishments engaged in providing services not specifically provided for elsewhere in the classification system.\\href{https://www.census.gov/naics/?input=81&chart=2022}{NAICS code: 81}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Other Services (except Public Administration). The Other Services (except Public Administration) sector comprises establishments engaged in providing services not specifically provided for elsewhere in the classification system.\\href{https://www.census.gov/naics/?input=81&chart=2022}{NAICS code: 81}.",
         "long_name": "Closed Businesses in Other Services (except Public Administration)",
         "measure_type": "",
         "short_description": "Closed businesses in Other Services (except Public Administration)",
         "short_name": "Closed Businesses in Other Services (except Public Administration)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1924,7 +2078,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Professional, Scientific, and Technical Services_exit_business": {
+    "NAICS54_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1932,15 +2086,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Professional, Scientific, and Technical Services. The Professional, Scientific, and Technical Services sector comprises establishments that specialize in performing professional, scientific, and technical activities for others. These activities require a high degree of expertise and training.\\href{https://www.census.gov/naics/?input=54&chart=2022}{NAICS code: 54}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Professional, Scientific, and Technical Services. The Professional, Scientific, and Technical Services sector comprises establishments that specialize in performing professional, scientific, and technical activities for others. These activities require a high degree of expertise and training.\\href{https://www.census.gov/naics/?input=54&chart=2022}{NAICS code: 54}.",
         "long_name": "Closed Businesses in Professional, Scientific, and Technical Services",
         "measure_type": "",
         "short_description": "Closed businesses in Professional, Scientific, and Technical Services",
         "short_name": "Closed Businesses in Professional, Scientific, and Technical Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1949,7 +2105,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Public Administration_exit_business": {
+    "NAICS92_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1957,15 +2113,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Public Administration. The Public Administration sector consists of establishments of federal, state, and local government agencies that administer, oversee, and manage public programs and have executive, legislative, or judicial authority over other institutions within a given area.\\href{https://www.census.gov/naics/?input=92&chart=2022}{NAICS code: 92}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Public Administration. The Public Administration sector consists of establishments of federal, state, and local government agencies that administer, oversee, and manage public programs and have executive, legislative, or judicial authority over other institutions within a given area.\\href{https://www.census.gov/naics/?input=92&chart=2022}{NAICS code: 92}.",
         "long_name": "Closed Businesses in Public Administration",
         "measure_type": "",
         "short_description": "Closed businesses in Public Administration",
         "short_name": "Closed Businesses in Public Administration",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1974,7 +2132,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Real Estate and Rental and Leasing_exit_business": {
+    "NAICS53_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -1982,15 +2140,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Real Estate and Rental and Leasing. The Real Estate and Rental and Leasing sector comprises establishments primarily engaged in renting, leasing, or otherwise allowing the use of tangible or intangible assets, and establishments providing related services. The major portion of this sector comprises establishments that rent, lease, or otherwise allow the use of their own assets by others.\\href{https://www.census.gov/naics/?input=53&chart=2022}{NAICS code: 53}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Real Estate and Rental and Leasing. The Real Estate and Rental and Leasing sector comprises establishments primarily engaged in renting, leasing, or otherwise allowing the use of tangible or intangible assets, and establishments providing related services. The major portion of this sector comprises establishments that rent, lease, or otherwise allow the use of their own assets by others.\\href{https://www.census.gov/naics/?input=53&chart=2022}{NAICS code: 53}.",
         "long_name": "Closed Businesses in Real Estate and Rental and Leasing",
         "measure_type": "",
         "short_description": "Closed businesses in Real Estate and Rental and Leasing",
         "short_name": "Closed Businesses in Real Estate and Rental and Leasing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -1999,7 +2159,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Retail Trade_exit_business": {
+    "NAICS44_45_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2007,15 +2167,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Retail Trade. The Retail Trade sector comprises establishments engaged in retailing merchandise, generally without transformation, and rendering services incidental to the sale of merchandise.\\href{https://www.census.gov/naics/?input=44&chart=2022}{NAICS code: 44-45}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Retail Trade. The Retail Trade sector comprises establishments engaged in retailing merchandise, generally without transformation, and rendering services incidental to the sale of merchandise.\\href{https://www.census.gov/naics/?input=44&chart=2022}{NAICS code: 44-45}.",
         "long_name": "Closed Businesses in Retail Trade",
         "measure_type": "",
         "short_description": "Closed businesses in Retail Trade",
         "short_name": "Closed Businesses in Retail Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2024,7 +2186,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Transportation and Warehousing_exit_business": {
+    "NAICS48_49_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2032,15 +2194,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Transportation and Warehousing. The Transportation and Warehousing sector includes industries providing transportation of passengers and cargo, warehousing and storage for goods, scenic and sightseeing transportation, and support activities related to modes of transportation. Establishments in these industries use transportation equipment or transportation related facilities as a productive asset. The type of equipment depends on the mode of transportation. The modes of transportation are air, rail, water, road, and pipeline.\\href{https://www.census.gov/naics/?input=48&chart=2022}{NAICS code: 48-49}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Transportation and Warehousing. The Transportation and Warehousing sector includes industries providing transportation of passengers and cargo, warehousing and storage for goods, scenic and sightseeing transportation, and support activities related to modes of transportation. Establishments in these industries use transportation equipment or transportation related facilities as a productive asset. The type of equipment depends on the mode of transportation. The modes of transportation are air, rail, water, road, and pipeline.\\href{https://www.census.gov/naics/?input=48&chart=2022}{NAICS code: 48-49}.",
         "long_name": "Closed Businesses in Transportation and Warehousing",
         "measure_type": "",
         "short_description": "Closed businesses in Transportation and Warehousing",
         "short_name": "Closed Businesses in Transportation and Warehousing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2049,7 +2213,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Utilities_exit_business": {
+    "NAICS22_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2057,15 +2221,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Utilities. The Utilities sector comprises establishments engaged in the provision of the following utility services: electric power, natural gas, steam supply, water supply, and sewage removal. Within this sector, the specific activities associated with the utility services provided vary by utility: electric power includes generation, transmission, and distribution; natural gas includes distribution; steam supply includes provision and/or distribution; water supply includes treatment and distribution; and sewage removal includes collection, treatment, and disposal of waste through sewer systems and sewage treatment facilities.\\href{https://www.census.gov/naics/?input=22&chart=2022}{NAICS code: 22}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Utilities. The Utilities sector comprises establishments engaged in the provision of the following utility services: electric power, natural gas, steam supply, water supply, and sewage removal. Within this sector, the specific activities associated with the utility services provided vary by utility: electric power includes generation, transmission, and distribution; natural gas includes distribution; steam supply includes provision and/or distribution; water supply includes treatment and distribution; and sewage removal includes collection, treatment, and disposal of waste through sewer systems and sewage treatment facilities.\\href{https://www.census.gov/naics/?input=22&chart=2022}{NAICS code: 22}.",
         "long_name": "Closed Businesses in Utilities",
         "measure_type": "",
         "short_description": "Closed businesses in Utilities",
         "short_name": "Closed Businesses in Utilities",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2074,7 +2240,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Wholesale Trade_exit_business": {
+    "NAICS42_exit_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2082,15 +2248,17 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Count of all closed businesses (a closed business is a company that stoped its activities or leaving the region) in Wholesale Trade. The Wholesale Trade sector comprises establishments engaged in wholesaling merchandise, generally without transformation, and rendering services incidental to the sale of merchandise. The merchandise described in this sector includes the outputs of agriculture, mining, manufacturing, and certain information industries, such as publishing.\\href{https://www.census.gov/naics/?input=42&chart=2022}{NAICS code: 42}.",
+        "long_description": "Count of all closed businesses (a closed business is a company that stopped its activities or left the region) in Wholesale Trade. The Wholesale Trade sector comprises establishments engaged in wholesaling merchandise, generally without transformation, and rendering services incidental to the sale of merchandise. The merchandise described in this sector includes the outputs of agriculture, mining, manufacturing, and certain information industries, such as publishing.\\href{https://www.census.gov/naics/?input=42&chart=2022}{NAICS code: 42}.",
         "long_name": "Closed Businesses in Wholesale Trade",
         "measure_type": "",
         "short_description": "Closed businesses in Wholesale Trade",
         "short_name": "Closed Businesses in Wholesale Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2099,7 +2267,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Accommodation and Food Services_number_business": {
+    "NAICS72_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2114,8 +2282,10 @@
         "short_name": "Total Businesses in Accommodation and Food Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2124,7 +2294,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Administrative and Support and Waste Management and Remediation Services_number_business": {
+    "NAICS56_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2139,8 +2309,10 @@
         "short_name": "Total Businesses in Administrative and Support and Waste Management and Remediation Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2149,7 +2321,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Agriculture, Forestry, Fishing and Hunting_number_business": {
+    "NAICS11_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2164,8 +2336,10 @@
         "short_name": "Total Businesses in Agriculture, Forestry, Fishing and Hunting",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2174,7 +2348,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Arts, Entertainment, and Recreation_number_business": {
+    "NAICS71_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2189,8 +2363,10 @@
         "short_name": "Total Businesses in Arts, Entertainment, and Recreation",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2199,7 +2375,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Construction_number_business": {
+    "NAICS23_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2214,8 +2390,10 @@
         "short_name": "Total Businesses in Construction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2224,7 +2402,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Educational Services_number_business": {
+    "NAICS61_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2239,8 +2417,10 @@
         "short_name": "Total Businesses in Educational Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2249,7 +2429,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Finance and Insurance_number_business": {
+    "NAICS52_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2264,8 +2444,10 @@
         "short_name": "Total Businesses in Finance and Insurance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2274,7 +2456,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Health Care and Social Assistance_number_business": {
+    "NAICS62_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2289,8 +2471,10 @@
         "short_name": "Total Businesses in Health Care and Social Assistance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2299,7 +2483,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Information_number_business": {
+    "NAICS51_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2314,8 +2498,10 @@
         "short_name": "Total Businesses in Information",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2324,7 +2510,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Management of Companies and Enterprises_number_business": {
+    "NAICS55_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2339,8 +2525,10 @@
         "short_name": "Total Businesses in Management of Companies and Enterprises",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2349,7 +2537,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Manufacturing_number_business": {
+    "NAICS31_33_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2364,8 +2552,10 @@
         "short_name": "Total Businesses in Manufacturing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2374,7 +2564,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Mining, Quarrying, and Oil and Gas Extraction_number_business": {
+    "NAICS21_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2389,8 +2579,10 @@
         "short_name": "Total Businesses in Mining, Quarrying, and Oil and Gas Extraction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2399,7 +2591,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Nonclassifiable Establishments_number_business": {
+    "NAICS99_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2414,8 +2606,10 @@
         "short_name": "Total Businesses in Nonclassifiable Establishments",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2424,7 +2618,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Other Services (except Public Administration)_number_business": {
+    "NAICS81_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2439,8 +2633,10 @@
         "short_name": "Total Businesses in Other Services (except Public Administration)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2449,7 +2645,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Professional, Scientific, and Technical Services_number_business": {
+    "NAICS54_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2464,8 +2660,10 @@
         "short_name": "Total Businesses in Professional, Scientific, and Technical Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2474,7 +2672,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Public Administration_number_business": {
+    "NAICS92_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2489,8 +2687,10 @@
         "short_name": "Total Businesses in Public Administration",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2499,7 +2699,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Real Estate and Rental and Leasing_number_business": {
+    "NAICS53_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2514,8 +2714,10 @@
         "short_name": "Total Businesses in Real Estate and Rental and Leasing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2524,7 +2726,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Retail Trade_number_business": {
+    "NAICS44_45_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2539,8 +2741,10 @@
         "short_name": "Total Businesses in Retail Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2549,7 +2753,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Transportation and Warehousing_number_business": {
+    "NAICS48_49_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2564,8 +2768,10 @@
         "short_name": "Total Businesses in Transportation and Warehousing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2574,7 +2780,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Utilities_number_business": {
+    "NAICS22_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2589,8 +2795,10 @@
         "short_name": "Total Businesses in Utilities",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2599,7 +2807,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Wholesale Trade_number_business": {
+    "NAICS42_number_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2614,8 +2822,10 @@
         "short_name": "Total Businesses in Wholesale Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2624,7 +2834,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Accommodation and Food Services_small_business": {
+    "NAICS72_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2639,8 +2849,10 @@
         "short_name": "Small Businesses in Accommodation and Food Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2649,7 +2861,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Administrative and Support and Waste Management and Remediation Services_small_business": {
+    "NAICS56_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2664,8 +2876,10 @@
         "short_name": "Small Businesses in Administrative and Support and Waste Management and Remediation Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2674,7 +2888,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Agriculture, Forestry, Fishing and Hunting_small_business": {
+    "NAICS11_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2689,8 +2903,10 @@
         "short_name": "Small Businesses in Agriculture, Forestry, Fishing and Hunting",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2699,7 +2915,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Arts, Entertainment, and Recreation_small_business": {
+    "NAICS71_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2714,8 +2930,10 @@
         "short_name": "Small Businesses in Arts, Entertainment, and Recreation",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2724,7 +2942,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Construction_small_business": {
+    "NAICS23_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2739,8 +2957,10 @@
         "short_name": "Small Businesses in Construction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2749,7 +2969,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Educational Services_small_business": {
+    "NAICS61_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2764,8 +2984,10 @@
         "short_name": "Small Businesses in Educational Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2774,7 +2996,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Finance and Insurance_small_business": {
+    "NAICS52_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2789,8 +3011,10 @@
         "short_name": "Small Businesses in Finance and Insurance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2799,7 +3023,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Health Care and Social Assistance_small_business": {
+    "NAICS62_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2814,8 +3038,10 @@
         "short_name": "Small Businesses in Health Care and Social Assistance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2824,7 +3050,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Information_small_business": {
+    "NAICS51_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2839,8 +3065,10 @@
         "short_name": "Small Businesses in Information",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2849,7 +3077,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Management of Companies and Enterprises_small_business": {
+    "NAICS55_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2864,8 +3092,10 @@
         "short_name": "Small Businesses in Management of Companies and Enterprises",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2874,7 +3104,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Manufacturing_small_business": {
+    "NAICS31_33_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2889,8 +3119,10 @@
         "short_name": "Small Businesses in Manufacturing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2899,7 +3131,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Mining, Quarrying, and Oil and Gas Extraction_small_business": {
+    "NAICS21_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2914,8 +3146,10 @@
         "short_name": "Small Businesses in Mining, Quarrying, and Oil and Gas Extraction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2924,7 +3158,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Nonclassifiable Establishments_small_business": {
+    "NAICS99_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2939,8 +3173,10 @@
         "short_name": "Small Businesses in Nonclassifiable Establishments",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2949,7 +3185,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Other Services (except Public Administration)_small_business": {
+    "NAICS81_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2964,8 +3200,10 @@
         "short_name": "Small Businesses in Other Services (except Public Administration)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2974,7 +3212,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Professional, Scientific, and Technical Services_small_business": {
+    "NAICS54_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -2989,8 +3227,10 @@
         "short_name": "Small Businesses in Professional, Scientific, and Technical Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -2999,7 +3239,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Public Administration_small_business": {
+    "NAICS92_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3014,8 +3254,10 @@
         "short_name": "Small Businesses in Public Administration",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3024,7 +3266,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Real Estate and Rental and Leasing_small_business": {
+    "NAICS53_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3039,8 +3281,10 @@
         "short_name": "Small Businesses in Real Estate and Rental and Leasing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3049,7 +3293,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Retail Trade_small_business": {
+    "NAICS44_45_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3064,8 +3308,10 @@
         "short_name": "Small Businesses in Retail Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3074,7 +3320,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Transportation and Warehousing_small_business": {
+    "NAICS48_49_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3089,8 +3335,10 @@
         "short_name": "Small Businesses in Transportation and Warehousing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3099,7 +3347,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Utilities_small_business": {
+    "NAICS22_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3114,8 +3362,10 @@
         "short_name": "Small Businesses in Utilities",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3124,7 +3374,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Wholesale Trade_small_business": {
+    "NAICS42_small_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3139,8 +3389,10 @@
         "short_name": "Small Businesses in Wholesale Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3149,7 +3401,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Accommodation and Food Services_soloproprio_business": {
+    "NAICS72_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3164,8 +3416,10 @@
         "short_name": "Sole Proprietor Businesses in Accommodation and Food Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3174,7 +3428,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Administrative and Support and Waste Management and Remediation Services_soloproprio_business": {
+    "NAICS56_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3189,8 +3443,10 @@
         "short_name": "Sole Proprietor Businesses in Administrative and Support and Waste Management and Remediation Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3199,7 +3455,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Agriculture, Forestry, Fishing and Hunting_soloproprio_business": {
+    "NAICS11_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3214,8 +3470,10 @@
         "short_name": "Sole Proprietor Businesses in Agriculture, Forestry, Fishing and Hunting",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3224,7 +3482,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Arts, Entertainment, and Recreation_soloproprio_business": {
+    "NAICS71_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3239,8 +3497,10 @@
         "short_name": "Sole Proprietor Businesses in Arts, Entertainment, and Recreation",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3249,7 +3509,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Construction_soloproprio_business": {
+    "NAICS23_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3264,8 +3524,10 @@
         "short_name": "Sole Proprietor Businesses in Construction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3274,7 +3536,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Educational Services_soloproprio_business": {
+    "NAICS61_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3289,8 +3551,10 @@
         "short_name": "Sole Proprietor Businesses in Educational Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3299,7 +3563,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Finance and Insurance_soloproprio_business": {
+    "NAICS52_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3314,8 +3578,10 @@
         "short_name": "Sole Proprietor Businesses in Finance and Insurance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3324,7 +3590,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Health Care and Social Assistance_soloproprio_business": {
+    "NAICS62_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3339,8 +3605,10 @@
         "short_name": "Sole Proprietor Businesses in Health Care and Social Assistance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3349,7 +3617,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Information_soloproprio_business": {
+    "NAICS51_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3364,8 +3632,10 @@
         "short_name": "Sole Proprietor Businesses in Information",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3374,7 +3644,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Management of Companies and Enterprises_soloproprio_business": {
+    "NAICS55_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3389,8 +3659,10 @@
         "short_name": "Sole Proprietor Businesses in Management of Companies and Enterprises",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3399,7 +3671,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Manufacturing_soloproprio_business": {
+    "NAICS31_33_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3414,8 +3686,10 @@
         "short_name": "Sole Proprietor Businesses in Manufacturing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3424,7 +3698,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Mining, Quarrying, and Oil and Gas Extraction_soloproprio_business": {
+    "NAICS21_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3439,8 +3713,10 @@
         "short_name": "Sole Proprietor Businesses in Mining, Quarrying, and Oil and Gas Extraction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3449,7 +3725,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Nonclassifiable Establishments_soloproprio_business": {
+    "NAICS99_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3464,8 +3740,10 @@
         "short_name": "Sole Proprietor Businesses in Nonclassifiable Establishments",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3474,7 +3752,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Other Services (except Public Administration)_soloproprio_business": {
+    "NAICS81_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3489,8 +3767,10 @@
         "short_name": "Sole Proprietor Businesses in Other Services (except Public Administration)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3499,7 +3779,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Professional, Scientific, and Technical Services_soloproprio_business": {
+    "NAICS54_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3514,8 +3794,10 @@
         "short_name": "Sole Proprietor Businesses in Professional, Scientific, and Technical Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3524,7 +3806,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Public Administration_soloproprio_business": {
+    "NAICS92_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3539,8 +3821,10 @@
         "short_name": "Sole Proprietor Businesses in Public Administration",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3549,7 +3833,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Real Estate and Rental and Leasing_soloproprio_business": {
+    "NAICS53_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3564,8 +3848,10 @@
         "short_name": "Sole Proprietor Businesses in Real Estate and Rental and Leasing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3574,7 +3860,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Retail Trade_soloproprio_business": {
+    "NAICS44_45_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3589,8 +3875,10 @@
         "short_name": "Sole Proprietor Businesses in Retail Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3599,7 +3887,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Transportation and Warehousing_soloproprio_business": {
+    "NAICS48_49_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3614,8 +3902,10 @@
         "short_name": "Sole Proprietor Businesses in Transportation and Warehousing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3624,7 +3914,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Utilities_soloproprio_business": {
+    "NAICS22_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3639,8 +3929,10 @@
         "short_name": "Sole Proprietor Businesses in Utilities",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3649,7 +3941,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Wholesale Trade_soloproprio_business": {
+    "NAICS42_soloproprio_business": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3664,8 +3956,10 @@
         "short_name": "Sole Proprietor Businesses in Wholesale Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3674,7 +3968,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Accommodation and Food Services_perc_small": {
+    "NAICS72_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3689,8 +3983,10 @@
         "short_name": "Percentage of Small Businesses in Accommodation and Food Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3699,7 +3995,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Administrative and Support and Waste Management and Remediation Services_perc_small": {
+    "NAICS56_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3714,8 +4010,10 @@
         "short_name": "Percentage of Small Businesses in Administrative and Support and Waste Management and Remediation Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3724,7 +4022,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Agriculture, Forestry, Fishing and Hunting_perc_small": {
+    "NAICS11_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3739,8 +4037,10 @@
         "short_name": "Percentage of Small Businesses in Agriculture, Forestry, Fishing and Hunting",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3749,7 +4049,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Arts, Entertainment, and Recreation_perc_small": {
+    "NAICS71_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3764,8 +4064,10 @@
         "short_name": "Percentage of Small Businesses in Arts, Entertainment, and Recreation",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3774,7 +4076,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Construction_perc_small": {
+    "NAICS23_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3789,8 +4091,10 @@
         "short_name": "Percentage of Small Businesses in Construction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3799,7 +4103,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Educational Services_perc_small": {
+    "NAICS61_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3814,8 +4118,10 @@
         "short_name": "Percentage of Small Businesses in Educational Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3824,7 +4130,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Finance and Insurance_perc_small": {
+    "NAICS52_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3839,8 +4145,10 @@
         "short_name": "Percentage of Small Businesses in Finance and Insurance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3849,7 +4157,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Health Care and Social Assistance_perc_small": {
+    "NAICS62_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3864,8 +4172,10 @@
         "short_name": "Percentage of Small Businesses in Health Care and Social Assistance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3874,7 +4184,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Information_perc_small": {
+    "NAICS51_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3889,8 +4199,10 @@
         "short_name": "Percentage of Small Businesses in Information",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3899,7 +4211,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Management of Companies and Enterprises_perc_small": {
+    "NAICS55_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3914,8 +4226,10 @@
         "short_name": "Percentage of Small Businesses in Management of Companies and Enterprises",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3924,7 +4238,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Manufacturing_perc_small": {
+    "NAICS31_33_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3939,8 +4253,10 @@
         "short_name": "Percentage of Small Businesses in Manufacturing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3949,7 +4265,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Mining, Quarrying, and Oil and Gas Extraction_perc_small": {
+    "NAICS21_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3964,8 +4280,10 @@
         "short_name": "Percentage of Small Businesses in Mining, Quarrying, and Oil and Gas Extraction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3974,7 +4292,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Nonclassifiable Establishments_perc_small": {
+    "NAICS99_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -3989,8 +4307,10 @@
         "short_name": "Percentage of Small Businesses in Nonclassifiable Establishments",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -3999,7 +4319,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Other Services (except Public Administration)_perc_small": {
+    "NAICS81_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4014,8 +4334,10 @@
         "short_name": "Percentage of Small Businesses in Other Services (except Public Administration)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4024,7 +4346,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Professional, Scientific, and Technical Services_perc_small": {
+    "NAICS54_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4039,8 +4361,10 @@
         "short_name": "Percentage of Small Businesses in Professional, Scientific, and Technical Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4049,7 +4373,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Public Administration_perc_small": {
+    "NAICS92_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4064,8 +4388,10 @@
         "short_name": "Percentage of Small Businesses in Public Administration",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4074,7 +4400,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Real Estate and Rental and Leasing_perc_small": {
+    "NAICS53_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4089,8 +4415,10 @@
         "short_name": "Percentage of Small Businesses in Real Estate and Rental and Leasing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4099,7 +4427,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Retail Trade_perc_small": {
+    "NAICS44_45_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4114,8 +4442,10 @@
         "short_name": "Percentage of Small Businesses in Retail Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4124,7 +4454,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Transportation and Warehousing_perc_small": {
+    "NAICS48_49_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4139,8 +4469,10 @@
         "short_name": "Percentage of Small Businesses in Transportation and Warehousing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4149,7 +4481,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Utilities_perc_small": {
+    "NAICS22_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4164,8 +4496,10 @@
         "short_name": "Percentage of Small Businesses in Utilities",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4174,7 +4508,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Wholesale Trade_perc_small": {
+    "NAICS42_perc_small": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4189,8 +4523,10 @@
         "short_name": "Percentage of Small Businesses in Wholesale Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4199,7 +4535,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Accommodation and Food Services_perc_soloproprio": {
+    "NAICS72_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4214,8 +4550,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Accommodation and Food Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4224,7 +4562,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Administrative and Support and Waste Management and Remediation Services_perc_soloproprio": {
+    "NAICS56_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4239,8 +4577,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Administrative and Support and Waste Management and Remediation Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4249,7 +4589,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Agriculture, Forestry, Fishing and Hunting_perc_soloproprio": {
+    "NAICS11_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4264,8 +4604,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Agriculture, Forestry, Fishing and Hunting",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4274,7 +4616,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Arts, Entertainment, and Recreation_perc_soloproprio": {
+    "NAICS71_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4289,8 +4631,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Arts, Entertainment, and Recreation",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4299,7 +4643,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Construction_perc_soloproprio": {
+    "NAICS23_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4314,8 +4658,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Construction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4324,7 +4670,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Educational Services_perc_soloproprio": {
+    "NAICS61_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4339,8 +4685,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Educational Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4349,7 +4697,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Finance and Insurance_perc_soloproprio": {
+    "NAICS52_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4364,8 +4712,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Finance and Insurance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4374,7 +4724,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Health Care and Social Assistance_perc_soloproprio": {
+    "NAICS62_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4389,8 +4739,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Health Care and Social Assistance",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4399,7 +4751,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Information_perc_soloproprio": {
+    "NAICS51_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4414,8 +4766,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Information",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4424,7 +4778,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Management of Companies and Enterprises_perc_soloproprio": {
+    "NAICS55_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4439,8 +4793,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Management of Companies and Enterprises",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4449,7 +4805,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Manufacturing_perc_soloproprio": {
+    "NAICS31_33_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4464,8 +4820,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Manufacturing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4474,7 +4832,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Mining, Quarrying, and Oil and Gas Extraction_perc_soloproprio": {
+    "NAICS21_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4489,8 +4847,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Mining, Quarrying, and Oil and Gas Extraction",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4499,7 +4859,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Nonclassifiable Establishments_perc_soloproprio": {
+    "NAICS99_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4514,8 +4874,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Nonclassifiable Establishments",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4524,7 +4886,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Other Services (except Public Administration)_perc_soloproprio": {
+    "NAICS81_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4539,8 +4901,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Other Services (except Public Administration)",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4549,7 +4913,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Professional, Scientific, and Technical Services_perc_soloproprio": {
+    "NAICS54_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4564,8 +4928,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Professional, Scientific, and Technical Services",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4574,7 +4940,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Public Administration_perc_soloproprio": {
+    "NAICS92_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4589,8 +4955,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Public Administration",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4599,7 +4967,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Real Estate and Rental and Leasing_perc_soloproprio": {
+    "NAICS53_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4614,8 +4982,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Real Estate and Rental and Leasing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4624,7 +4994,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Retail Trade_perc_soloproprio": {
+    "NAICS44_45_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4639,8 +5009,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Retail Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4649,7 +5021,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Transportation and Warehousing_perc_soloproprio": {
+    "NAICS48_49_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4664,8 +5036,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Transportation and Warehousing",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4674,7 +5048,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Utilities_perc_soloproprio": {
+    "NAICS22_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4689,8 +5063,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Utilities",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],
@@ -4699,7 +5075,7 @@
         "unit": "business",
         "variants": ""
     },
-    "Wholesale Trade_perc_soloproprio": {
+    "NAICS42_perc_soloproprio": {
         "aggregation_method": "count",
         "categories": "",
         "category": "Business climate",
@@ -4714,8 +5090,10 @@
         "short_name": "Percentage of Sole Proprietor Businesses in Wholesale Trade",
         "sources": [
             {
-                "name": "Mergent Intellect",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Mergent Intellect",
                 "url": "https://www.ftserussell.com/mergent-intellect"
             }
         ],

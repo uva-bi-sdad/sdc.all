@@ -14,8 +14,10 @@
         "short_name": "Households with broadband",
         "sources": [
             {
-                "name": "American Community Survey Table B28002",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "American Community Survey Table B28002",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
@@ -39,8 +41,10 @@
         "short_name": "Households with cable, fiber optic, or DSL",
         "sources": [
             {
-                "name": "American Community Survey Table B28002",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "American Community Survey Table B28002",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
@@ -64,8 +68,10 @@
         "short_name": "Households without internet access",
         "sources": [
             {
-                "name": "American Community Survey Table B28002",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "American Community Survey Table B28002",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],

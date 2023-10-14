@@ -14,9 +14,10 @@
         "short_name": "Workplace - Male workforce",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -40,9 +41,10 @@
         "short_name": "Workplace - Female workforce",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -66,9 +68,10 @@
         "short_name": "Workplace - Male workforce under 29",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -92,9 +95,10 @@
         "short_name": "Workplace - Female workforce under 29",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -118,9 +122,10 @@
         "short_name": "Workplace - Male workforce 30 to 54",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -144,9 +149,10 @@
         "short_name": "Workplace - Female workforce 30 to 54",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -170,9 +176,10 @@
         "short_name": "Workplace - Male workforce over 55",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -196,9 +203,10 @@
         "short_name": "Workplace - Female workforce over 55",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -222,9 +230,10 @@
         "short_name": "Workplace - Male workforce earning under $1,250 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -248,9 +257,10 @@
         "short_name": "Workplace - Female workforce earning under $1,250 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -274,9 +284,10 @@
         "short_name": "Workplace - Male workforce earning $1,251 to $3,333 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -300,9 +311,10 @@
         "short_name": "Workplace - Female workforce earning $1,251 to $3,333",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -326,9 +338,10 @@
         "short_name": "Workplace - Male workforce earning over $3,334 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -352,9 +365,10 @@
         "short_name": "Female workforce earning over $3,334 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -378,9 +392,10 @@
         "short_name": "Male workforce in Goods Producing industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -404,9 +419,10 @@
         "short_name": "Workplace - Female workforce in Goods Producing industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -430,9 +446,10 @@
         "short_name": "Workplace - Male workforce in Trade, Transportation, and Utilities industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -456,9 +473,10 @@
         "short_name": "Workplace - Female workforce in Trade, Transportation, and Utilities industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -482,9 +500,10 @@
         "short_name": "Workplace - Male workforce in other Service industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -508,9 +527,10 @@
         "short_name": "Workplace - Female workforce in other Service industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -534,9 +554,10 @@
         "short_name": "Workplace - Male workforce under 29",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -560,9 +581,10 @@
         "short_name": "Workplace - Female workforce under 29",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -586,9 +608,10 @@
         "short_name": "Workplace - Male workforce 30 to 54",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -612,9 +635,10 @@
         "short_name": "Workplace - Female workforce 30 to 54",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -638,9 +662,10 @@
         "short_name": "Workplace - Male workforce over 55",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -664,9 +689,10 @@
         "short_name": "Workplace - Female workforce over 55",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -690,9 +716,10 @@
         "short_name": "Workplace - Male workforce earning under $1,250 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -716,9 +743,10 @@
         "short_name": "Workplace - Female workforce earning under $1,250 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -742,9 +770,10 @@
         "short_name": "Workplace - Male workforce earning $1,250 to $3,333 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -768,9 +797,10 @@
         "short_name": "Workplace - Female workforce earning $1,250 to $3,333 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -794,9 +824,10 @@
         "short_name": "Workplace - Male workforce earning over $3,334 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -820,9 +851,10 @@
         "short_name": "Workplace - Female workforce earning over $3,334 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -846,9 +878,10 @@
         "short_name": "Workplace - Male workforce in Goods Producing industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -872,9 +905,10 @@
         "short_name": "Workplace - Female workforce in Goods Producing industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -898,9 +932,10 @@
         "short_name": "Workplace - Male workforce in Trade, Transportation, and Utility industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -924,9 +959,10 @@
         "short_name": "Workplace - Female workforce in Trade, Transportation, and Utility industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -950,9 +986,10 @@
         "short_name": "Workplace - Male workforce in other Service industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -976,9 +1013,10 @@
         "short_name": "Workplace - Female workforce in other Service industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1002,9 +1040,10 @@
         "short_name": "Racial minority employment",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1028,9 +1067,10 @@
         "short_name": "Racial non-minority employment",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1054,9 +1094,10 @@
         "short_name": "Home - Male workforce",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1080,9 +1121,10 @@
         "short_name": "Home - Female workforce",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1106,9 +1148,10 @@
         "short_name": "Home - Male workforce under 29",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1132,9 +1175,10 @@
         "short_name": "Home - Female workforce under 29",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1158,9 +1202,10 @@
         "short_name": "Home - Male workforce 30 to 54",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1184,9 +1229,10 @@
         "short_name": "Home - Female workforce 30 to 54",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1210,9 +1256,10 @@
         "short_name": "Home - Male workforce over 55",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1236,9 +1283,10 @@
         "short_name": "Home - Female workforce over 55",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1262,9 +1310,10 @@
         "short_name": "Home - Male workforce earning under $1,250 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1288,9 +1337,10 @@
         "short_name": "Home - Female workforce earning under $1,250 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1314,9 +1364,10 @@
         "short_name": "Home - Male workforce earning $1,251 to $3,333 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1340,9 +1391,10 @@
         "short_name": "Home - Female workforce earning $1,251 to $3,333",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1366,9 +1418,10 @@
         "short_name": "Home - Male workforce earning over $3,334 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1392,9 +1445,10 @@
         "short_name": "Home - Female workforce earning over $3,334 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1418,9 +1472,10 @@
         "short_name": "Home - Male workforce in Goods Producing industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1444,9 +1499,10 @@
         "short_name": "Home - Female workforce in Goods Producing industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1470,9 +1526,10 @@
         "short_name": "Home - Male workforce in Trade, Transportation, and Utilities industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1496,9 +1553,10 @@
         "short_name": "Home - Female workforce in Trade, Transportation, and Utilities industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1522,9 +1580,10 @@
         "short_name": "Home - Male workforce in other Service industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1548,9 +1607,10 @@
         "short_name": "Home - Female workforce in other Service industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1574,9 +1634,10 @@
         "short_name": "Home - Male workforce under 29",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1600,9 +1661,10 @@
         "short_name": "Home - Female workforce under 29",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1626,9 +1688,10 @@
         "short_name": "Home - Male workforce 30 to 54",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1652,9 +1715,10 @@
         "short_name": "Home - Female workforce 30 to 54",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1678,9 +1742,10 @@
         "short_name": "Home - Male workforce over 55",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1704,9 +1769,10 @@
         "short_name": "Home - Female workforce over 55",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1730,9 +1796,10 @@
         "short_name": "Home - Male workforce earning under $1,250 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1756,9 +1823,10 @@
         "short_name": "Home - Female workforce earning under $1,250 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1782,9 +1850,10 @@
         "short_name": "Home - Male workforce earning $1,250 to $3,333 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1808,9 +1877,10 @@
         "short_name": "Home - Female workforce earning $1,250 to $3,333 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1834,9 +1904,10 @@
         "short_name": "Home - Male workforce earning over $3,334 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1860,9 +1931,10 @@
         "short_name": "Home - Female workforce earning over $3,334 per month",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1886,9 +1958,10 @@
         "short_name": "Home - Male workforce in Goods Producing industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1912,9 +1985,10 @@
         "short_name": "Home - Female workforce in Goods Producing industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1938,9 +2012,10 @@
         "short_name": "Home - Male workforce in Trade, Transportation, and Utility industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1964,9 +2039,10 @@
         "short_name": "Home - Female workforce in Trade, Transportation, and Utility industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -1990,9 +2066,10 @@
         "short_name": "Home - Male workforce in other Service industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
@@ -2016,9 +2093,10 @@
         "short_name": "Home - Female workforce in other Service industry sectors",
         "sources": [
             {
-                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
-                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
                 "date_accessed": 2023,
+                "location": "Origin-Destination Employment Statistics (LODES), Workplace Area Characteristics (WAC)",
+                "location_url": "",
+                "name": "Longitudinal Employer-Household Dynamics (LEHD)",
                 "url": "https://lehd.ces.census.gov/data/"
             }
         ],
