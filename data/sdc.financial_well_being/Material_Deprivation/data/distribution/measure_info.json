@@ -14,8 +14,10 @@
         "short_name": "Material deprivation indicator",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],

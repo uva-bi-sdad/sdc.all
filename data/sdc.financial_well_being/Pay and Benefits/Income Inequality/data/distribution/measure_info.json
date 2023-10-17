@@ -14,9 +14,11 @@
         "short_name": "Income Inequality (Gini Index)",
         "sources": [
             {
-                "name": "U.S. Census American Community Survey",
+                "date_accessed": "2023",
                 "location": "Table B19083",
-                "date_accessed": "2023"
+                "location_url": "",
+                "name": "U.S. Census American Community Survey",
+                "url": ""
             }
         ],
         "statement": "Income Inequality (Gini Index) in {features.name} is {value}.",

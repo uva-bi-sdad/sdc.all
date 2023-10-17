@@ -15,8 +15,9 @@
         "sources": [
             {
                 "date_accessed": 2022,
-                "name": "American Community Survey",
                 "location": "Table B19013",
+                "location_url": "",
+                "name": "American Community Survey",
                 "url": "https://www.census.gov/programs-surveys/acs"
             }
         ],
