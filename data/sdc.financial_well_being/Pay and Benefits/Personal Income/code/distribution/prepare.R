@@ -268,7 +268,8 @@ earnings_per_job_df <- as.data.frame(earnings_per_job)
 earnings_per_job_hd_year_long_df <- as.data.frame(earnings_per_job_hd_year_long)
 
 # Performing row bind
-row_binded_data <- rbind(earnings_per_job_df, earnings_per_job_hd_year_long_df)
+row_binded_data <- rbind(earnings_per_job_df, earnings_per_job_hd_year_long_df) %>%
+  mutate(moe="")
 
 #write.csv(row_binded_data, "~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/distribution/va_ct_bea_2015_2020_earnings_per_job.csv.xz")
 

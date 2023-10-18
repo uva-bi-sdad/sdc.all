@@ -187,7 +187,8 @@ townsend_data <- townsend_data %>%
 
 
 
-townsend_bi <- subset(townsend_data, select = c(geoid, measure, year, region_type, value))
+townsend_bi <- subset(townsend_data, select = c(geoid, measure, year, region_type, value)) %>% 
+  mutate(moe="")
 ```
 
 townsend_bi <- townsend_bi %>% filter(year==2020)

@@ -292,7 +292,8 @@ combined_data_2015_2021_hdct <- aggregate(combined_data_2015_2021_ct, "county", 
 
 
 # Combine hdct with tr level
-combined_data_2015_2021_hdcttr <- rbind(combined_data_2015_2021_hdct, combined_data_2015_2021_tr)
+combined_data_2015_2021_hdcttr <- rbind(combined_data_2015_2021_hdct, combined_data_2015_2021_tr) %>%
+  mutate(moe='')
 
 write.csv(combined_data_2015_2021_hdcttr, file = xzfile("~/Git/sdc.financial_well_being_dev/Employment Access/data/distribution/va_hdcttr_2015_2021_employment_access_index.csv.xz"), row.names = FALSE)
 

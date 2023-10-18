@@ -1,8 +1,10 @@
 # Calculate the GINI coefficient for census tracts in Virginia:
-library(tidyverse)
+# library(tidyverse)
 library(tidycensus)
 library(sf)
 library(data.table)
+
+source('utils/distribution/aggregate.R')
 
 yrs <- c(2015, 2016, 2017, 2018, 2019, 2020, 2021)
 
@@ -34,7 +36,7 @@ for (y in yrs) {
   }
 }
 
-va_tract_ginis_all <- va_tract_ginis_all[, c("geoid", "measure", "measure_type", "region_name", "region_type", "value", "year", "moe")]
+va_tract_ginis_all <- va_tract_ginis_all[, c("geoid", "measure", "value", "year", "moe")]
 
 # GET COUNTIES
 if(exists("va_county_ginis_all")) rm("va_county_ginis_all")
@@ -64,13 +66,13 @@ for (y in yrs) {
   }
 }
 
-va_county_ginis_all <- va_county_ginis_all[, c("geoid", "measure", "measure_type", "region_name", "region_type", "value", "year", "moe")]
+va_county_ginis_all <- va_county_ginis_all[, c("geoid", "measure", "value", "year", "moe")]
+county_healthdis <- aggregate(va_county_ginis_all, "county", weight_col = "B01003_001E")
 
-# Combine tract and counties
-va_cttr_2015_2021_income_inequality_gini_index <-
-  rbindlist(list(va_tract_ginis_all, va_county_ginis_all))
+# Combine
+combined <- rbind(va_tract_ginis_all, county_healthdis)
 
 # Write file
 # fwrite(va_cttr_2015_2021_income_inequality_gini_index, "Pay and Benefits/Income Inequality/data/distribution/va_cttr_2015_2021_income_inequality_gini_index.csv")
-readr::write_csv(va_cttr_2015_2021_income_inequality_gini_index, xzfile("Pay and Benefits/Income Inequality/data/distribution/va_cttr_2015_2021_income_inequality_gini_index.csv.xz", compression = 9))
+readr::write_csv(combined, xzfile("Pay and Benefits/Income Inequality/data/distribution/va_hdcttr_2015_2021_income_inequality_gini_index.csv.xz", compression = 9))
 

@@ -64,12 +64,13 @@ fin <- rbind(fin, year2023.long, year2022.long, year2021.long, year2020.long, ye
 
 
 va_ct_20172023_vote_youth <- fin %>% rename(geoid = FIPS) %>% filter(measure != "schoolFundAdequacy")
-va_ct_20222023_fundingAdequacy <- fin %>% rename(geoid = FIPS) %>% filter(measure == "schoolFundAdequacy")
+va_ct_20222023_fundingAdequacy <- fin %>% rename(geoid = FIPS) %>% 
+  filter(measure == "schoolFundAdequacy") %>% mutate(moe='')
 
 
 
 # write_csv(va_ct_20172023_vote_youth, xzfile("va_ct_20172023_vote_youth.csv.xz", compression = 9))
-write_csv(va_ct_20222023_fundingAdequacy, xzfile("va_ct_20222023_fundingAdequacy.csv.xz", compression = 9))
+write_csv(va_ct_20222023_fundingAdequacy, xzfile("va_ct_2022_2023_funding_adequacy.csv.xz", compression = 9))
 
 
 

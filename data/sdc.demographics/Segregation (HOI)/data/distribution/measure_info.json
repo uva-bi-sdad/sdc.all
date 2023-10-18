@@ -1,0 +1,24 @@
+{
+    "segregation_index": {
+        "aggregation_method": " ",
+        "category": "Demographics",
+        "citations": "",
+        "data_type": "decimal",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "The Segregation Index, or the spatial dissimilarity index, measures how the racial composition of a population in a census tract compares to that of the rest of the state",
+        "long_name": "Segregation index",
+        "measure_type": "index",
+        "short_description": "It measures how different the population composition of a subarea is from the population composition of the State as a whole",
+        "short_name": "Segregation index",
+        "sources": [
+            {
+                "name": "American Community Survey",
+                "location": "Table DP05",
+                "date_accessed": "2023"
+            }
+        ],
+        "statement": "The segregation index in {features.name} is {value}.",
+        "unit": "individual"
+    }
+}
