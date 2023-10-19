@@ -14,9 +14,10 @@
         "short_name": "Uninsured population",
         "sources": [
             {
-                "name": "American Community Survey",
-                "location": "Table B27010",
                 "date_accessed": 2022,
+                "location": "Table B27010",
+                "location_url": "",
+                "name": "American Community Survey",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
@@ -40,9 +41,10 @@
         "short_name": "Insured population",
         "sources": [
             {
-                "name": "American Community Survey",
-                "location": "Table B27010",
                 "date_accessed": 2022,
+                "location": "Table B27010",
+                "location_url": "",
+                "name": "American Community Survey",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],

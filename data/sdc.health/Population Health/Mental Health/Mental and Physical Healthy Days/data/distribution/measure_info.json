@@ -14,8 +14,10 @@
         "short_name": "Percentage reporting poor mental health",
         "sources": [
             {
-                "name": "Virginia Behavioral Risk Factor Surveillance System",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Behavioral Risk Factor Surveillance System",
                 "url": "https://www.vdh.virginia.gov/brfss/"
             }
         ],
@@ -39,8 +41,10 @@
         "short_name": "Percentage reporting poor physical health",
         "sources": [
             {
-                "name": "Virginia Behavioral Risk Factor Surveillance System",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Behavioral Risk Factor Surveillance System",
                 "url": "https://www.vdh.virginia.gov/brfss/"
             }
         ],

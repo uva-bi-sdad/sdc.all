@@ -14,8 +14,10 @@
         "short_name": "Monthly average ED visits for drug overdose",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": "2021",
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://www.vdh.virginia.gov/surveillance-and-investigation/syndromic-surveillance/drug-overdose-surveillance/"
             }
         ],

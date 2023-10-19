@@ -14,8 +14,10 @@
         "short_name": "Substance use/behavioral health services availability (drive time)",
         "sources": [
             {
-                "name": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
                 "url": "https://www.samhsa.gov/"
             }
         ],
@@ -39,8 +41,10 @@
         "short_name": "Substance use/behavioral health availability (count)",
         "sources": [
             {
-                "name": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
                 "url": "https://www.samhsa.gov/"
             }
         ],
@@ -69,8 +73,10 @@
         "short_name": "Substance use/behavioral health services geographic availability",
         "sources": [
             {
-                "name": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "Substance Abuse and Mental Health Services Administration (SAMHSA)",
                 "url": "https://www.samhsa.gov/"
             }
         ],

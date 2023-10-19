@@ -16,8 +16,10 @@
         "short_name": "Urgent care availability (drive time)",
         "sources": [
             {
-                "name": "Google Maps",
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "Google Maps",
                 "url": "https://www.google.com/maps"
             }
         ],
@@ -43,8 +45,10 @@
         "short_name": "Urgent care availability (count)",
         "sources": [
             {
-                "name": "Google Maps",
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "Google Maps",
                 "url": "https://hifld-geoplatform.opendata.arcgis.com/"
             }
         ],
@@ -75,8 +79,10 @@
         "short_name": "Urgent care geographic availability",
         "sources": [
             {
-                "name": "Google Maps",
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "Google Maps",
                 "url": "https://www.google.com/maps"
             }
         ],

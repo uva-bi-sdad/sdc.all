@@ -14,8 +14,10 @@
         "short_name": "Economic opportunity profile",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
@@ -39,8 +41,10 @@
         "short_name": "Education indicator",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
@@ -64,8 +68,10 @@
         "short_name": "Employment accessibility indicator",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
@@ -89,8 +95,10 @@
         "short_name": "Food accessibility indicator",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
@@ -114,8 +122,10 @@
         "short_name": "Health opportunity index",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
@@ -139,8 +149,10 @@
         "short_name": "Income inequality indicator",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
@@ -164,8 +176,10 @@
         "short_name": "Job participation indicator",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
@@ -189,8 +203,10 @@
         "short_name": "Population churning index",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
@@ -214,8 +230,10 @@
         "short_name": "Population density indicator",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
@@ -239,8 +257,10 @@
         "short_name": "Segregation indicator",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
@@ -264,8 +284,10 @@
         "short_name": "Walkability indicator",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
@@ -289,8 +311,10 @@
         "short_name": "Social Impact Profile",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
@@ -314,8 +338,10 @@
         "short_name": "Consumer opportunity profile",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
@@ -339,8 +365,10 @@
         "short_name": "Affordability indicator",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
@@ -364,8 +392,10 @@
         "short_name": "Air quality indicator",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
@@ -389,8 +419,10 @@
         "short_name": "Built Environment Profile",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],
@@ -414,8 +446,10 @@
         "short_name": "Access to care indicator",
         "sources": [
             {
-                "name": "Virginia Department of Health",
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Virginia Department of Health",
                 "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
             }
         ],

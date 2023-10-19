@@ -14,8 +14,10 @@
         "short_name": "Hospital drive time",
         "sources": [
             {
-                "name": "Center for Medicare and Medicaid Services",
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "Center for Medicare and Medicaid Services",
                 "url": "https://data.cms.gov/provider-data/topics/hospitals"
             }
         ],
@@ -44,8 +46,10 @@
         "short_name": "Hospital geographic availability",
         "sources": [
             {
-                "name": "Center for Medicare and Medicaid Services",
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "Center for Medicare and Medicaid Services",
                 "url": "https://data.cms.gov/provider-data/topics/hospitals"
             }
         ],
@@ -69,8 +73,10 @@
         "short_name": "Hospital availability (count)",
         "sources": [
             {
-                "name": "Center for Medicare and Medicaid Services",
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "Center for Medicare and Medicaid Services",
                 "url": "https://data.cms.gov/provider-data/topics/hospitals"
             }
         ],

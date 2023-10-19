@@ -14,8 +14,10 @@
         "short_name": "Preventable hospitalizations per 100,000",
         "sources": [
             {
-                "name": "County Health Rankings",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "County Health Rankings",
                 "url": "https://www.countyhealthrankings.org/app/virginia/2021/measure/factors/5/description"
             }
         ],

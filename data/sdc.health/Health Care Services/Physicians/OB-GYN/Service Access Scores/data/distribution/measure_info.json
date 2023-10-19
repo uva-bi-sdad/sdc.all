@@ -14,8 +14,10 @@
         "short_name": "OBGYN care availability (count)",
         "sources": [
             {
-                "name": "WebMD Physician Directory",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "WebMD Physician Directory",
                 "url": "https://doctor.webmd.com/"
             }
         ],
@@ -44,8 +46,10 @@
         "short_name": "OBGYN care geographic availability",
         "sources": [
             {
-                "name": "WebMD Physician Directory",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "WebMD Physician Directory",
                 "url": "https://doctor.webmd.com/"
             }
         ],
@@ -74,8 +78,10 @@
         "short_name": "OBGYN care geographic availability",
         "sources": [
             {
-                "name": "WebMD Physician Directory",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "WebMD Physician Directory",
                 "url": "https://doctor.webmd.com/"
             }
         ],
@@ -104,8 +110,10 @@
         "short_name": "OBGYN care geographic availability",
         "sources": [
             {
-                "name": "WebMD Physician Directory",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "WebMD Physician Directory",
                 "url": "https://doctor.webmd.com/"
             }
         ],

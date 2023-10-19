@@ -14,8 +14,10 @@
         "short_name": "Emergency medical services availability (drive time)",
         "sources": [
             {
-                "name": "Homeland Infrastructure Foundation-Level Data (HIFLD)",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "Homeland Infrastructure Foundation-Level Data (HIFLD)",
                 "url": "https://hifld-geoplatform.opendata.arcgis.com/"
             }
         ],
@@ -39,8 +41,10 @@
         "short_name": "Emergency medical services availability (count)",
         "sources": [
             {
-                "name": "Homeland Infrastructure Foundation-Level Data (HIFLD)",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "Homeland Infrastructure Foundation-Level Data (HIFLD)",
                 "url": "https://hifld-geoplatform.opendata.arcgis.com/"
             }
         ],
@@ -69,8 +73,10 @@
         "short_name": "Emergency medical services geographic availability",
         "sources": [
             {
-                "name": "Homeland Infrastructure Foundation-Level Data (HIFLD)",
                 "date_accessed": 2021,
+                "location": "",
+                "location_url": "",
+                "name": "Homeland Infrastructure Foundation-Level Data (HIFLD)",
                 "url": "https://hifld-geoplatform.opendata.arcgis.com/"
             }
         ],

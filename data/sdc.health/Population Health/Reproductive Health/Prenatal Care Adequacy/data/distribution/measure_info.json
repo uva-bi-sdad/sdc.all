@@ -14,8 +14,10 @@
         "short_name": "Kotelchuck (adequate plus percent)",
         "sources": [
             {
-                "name": "Centers for Disease Control and Prevention",
                 "date_accessed": "2022",
+                "location": "",
+                "location_url": "",
+                "name": "Centers for Disease Control and Prevention",
                 "url": "https://www.cdc.gov"
             }
         ],
@@ -39,8 +41,10 @@
         "short_name": "Kotelchuck (adequate percent)",
         "sources": [
             {
-                "name": "Centers for Disease Control and Prevention",
                 "date_accessed": "2022",
+                "location": "",
+                "location_url": "",
+                "name": "Centers for Disease Control and Prevention",
                 "url": "https://www.cdc.gov"
             }
         ],
@@ -64,8 +68,10 @@
         "short_name": "Kotelchuck (intermediate percent)",
         "sources": [
             {
-                "name": "Centers for Disease Control and Prevention",
                 "date_accessed": "2022",
+                "location": "",
+                "location_url": "",
+                "name": "Centers for Disease Control and Prevention",
                 "url": "https://www.cdc.gov"
             }
         ],
@@ -89,8 +95,10 @@
         "short_name": "Kotelchuck (inadequate percent)",
         "sources": [
             {
-                "name": "Centers for Disease Control and Prevention",
                 "date_accessed": "2022",
+                "location": "",
+                "location_url": "",
+                "name": "Centers for Disease Control and Prevention",
                 "url": "https://www.cdc.gov"
             }
         ],
@@ -114,8 +122,10 @@
         "short_name": "Kotelchuck (adequate plus count)",
         "sources": [
             {
-                "name": "Centers for Disease Control and Prevention",
                 "date_accessed": "2022",
+                "location": "",
+                "location_url": "",
+                "name": "Centers for Disease Control and Prevention",
                 "url": "https://www.cdc.gov"
             }
         ],
@@ -139,8 +149,10 @@
         "short_name": "Kotelchuck (adequate count)",
         "sources": [
             {
-                "name": "Centers for Disease Control and Prevention",
                 "date_accessed": "2022",
+                "location": "",
+                "location_url": "",
+                "name": "Centers for Disease Control and Prevention",
                 "url": "https://www.cdc.gov"
             }
         ],
@@ -164,8 +176,10 @@
         "short_name": "Kotelchuck (intermediate count)",
         "sources": [
             {
-                "name": "Centers for Disease Control and Prevention",
                 "date_accessed": "2022",
+                "location": "",
+                "location_url": "",
+                "name": "Centers for Disease Control and Prevention",
                 "url": "https://www.cdc.gov"
             }
         ],
@@ -189,8 +203,10 @@
         "short_name": "Kotelchuck (inadequate count)",
         "sources": [
             {
-                "name": "Centers for Disease Control and Prevention",
                 "date_accessed": "2022",
+                "location": "",
+                "location_url": "",
+                "name": "Centers for Disease Control and Prevention",
                 "url": "https://www.cdc.gov"
             }
         ],

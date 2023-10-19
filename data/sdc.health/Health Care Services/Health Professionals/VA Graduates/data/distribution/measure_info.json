@@ -14,8 +14,10 @@
         "short_name": "Undergraduate Health Degrees Awarded",
         "sources": [
             {
-                "name": "State Council of Higher Education for Virginia (SCHEV)",
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "State Council of Higher Education for Virginia (SCHEV)",
                 "url": "https://research.schev.edu//localities/LD11_HLDegreesAwarded.asp"
             }
         ],
@@ -39,8 +41,10 @@
         "short_name": "Graduate Health Degrees Awarded",
         "sources": [
             {
-                "name": "State Council of Higher Education for Virginia (SCHEV)",
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "State Council of Higher Education for Virginia (SCHEV)",
                 "url": "https://research.schev.edu//localities/LD11_HLDegreesAwarded.asp"
             }
         ],
@@ -64,8 +68,10 @@
         "short_name": "First Professinal Health Degrees Awarded",
         "sources": [
             {
-                "name": "State Council of Higher Education for Virginia (SCHEV)",
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "State Council of Higher Education for Virginia (SCHEV)",
                 "url": "https://research.schev.edu//localities/LD11_HLDegreesAwarded.asp"
             }
         ],
@@ -89,8 +95,10 @@
         "short_name": "2-year Health Degrees Awarded",
         "sources": [
             {
-                "name": "State Council of Higher Education for Virginia (SCHEV)",
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "State Council of Higher Education for Virginia (SCHEV)",
                 "url": "https://research.schev.edu//localities/LD11_HLDegreesAwarded.asp"
             }
         ],
