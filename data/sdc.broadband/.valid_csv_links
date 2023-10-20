@@ -1,54 +1,54 @@
 [
     {
         "path": "Wired/Accessibility/Average Download Speed/data/distribution/ncr_cttrbg_ookla_download_speeds.csv.xz",
-        "last_modified_utc": "2023-10-16_21:06:32"
+        "last_modified_utc": "2023-10-20_15:12:00"
     },
     {
         "path": "Wired/Accessibility/Average Upload Speed/data/distribution/ncr_cttrbg_ookla_upload_speeds.csv.xz",
-        "last_modified_utc": "2023-10-16_21:06:32"
+        "last_modified_utc": "2023-10-20_15:12:00"
     },
     {
         "path": "Wired/Accessibility/Percent Fast (internet-connected)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-        "last_modified_utc": "2023-10-16_21:06:32"
+        "last_modified_utc": "2023-10-20_15:12:00"
     },
     {
         "path": "Wired/Accessibility/Percent Fast (total)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-        "last_modified_utc": "2023-10-16_21:06:32"
+        "last_modified_utc": "2023-10-20_15:12:00"
     },
     {
         "path": "Wired/Accessibility/Percent Good (internet-connected)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-        "last_modified_utc": "2023-10-16_21:06:33"
+        "last_modified_utc": "2023-10-20_15:12:00"
     },
     {
         "path": "Wired/Accessibility/Percent Good (total)/data/distribution/ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz",
-        "last_modified_utc": "2023-10-16_21:06:33"
+        "last_modified_utc": "2023-10-20_15:12:00"
     },
     {
         "path": "Wired/Adoption/Computer Type/data/distribution/ncr_cttrbg_acs_2017_2021_hh_without_compdev.csv.xz",
-        "last_modified_utc": "2023-10-16_21:06:33"
+        "last_modified_utc": "2023-10-20_15:12:00"
     },
     {
         "path": "Wired/Adoption/Computer Type/data/distribution/va_hdcttrbg_acs_2017_2021_hh_without_compdev.csv.xz",
-        "last_modified_utc": "2023-10-16_21:06:33"
+        "last_modified_utc": "2023-10-20_15:12:00"
     },
     {
         "path": "Wired/Adoption/Internet Type/data/distribution/ncr_cttrbg_acs_2017_2021_hh_internet_type.csv.xz",
-        "last_modified_utc": "2023-10-16_21:06:33"
+        "last_modified_utc": "2023-10-20_15:12:00"
     },
     {
         "path": "Wired/Adoption/Internet Type/data/distribution/va_hdcttrbg_acs_2017_2021_hh_internet_type.csv.xz",
-        "last_modified_utc": "2023-10-16_21:06:33"
+        "last_modified_utc": "2023-10-20_15:12:00"
     },
     {
         "path": "Wired/Affordability/Percentage of income for fast internet/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-        "last_modified_utc": "2023-10-16_21:06:33"
+        "last_modified_utc": "2023-10-20_15:12:00"
     },
     {
         "path": "Wired/Affordability/Percentage of income for good internet/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-        "last_modified_utc": "2023-10-16_21:06:33"
+        "last_modified_utc": "2023-10-20_15:12:00"
     },
     {
         "path": "Wired/Affordability/Percentage of income for internet (average)/data/distribution/ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz",
-        "last_modified_utc": "2023-10-16_21:06:33"
+        "last_modified_utc": "2023-10-20_15:12:00"
     }
 ]

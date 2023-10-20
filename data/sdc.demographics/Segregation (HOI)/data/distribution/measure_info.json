@@ -1,6 +1,7 @@
 {
     "segregation_index": {
         "aggregation_method": " ",
+        "categories": "",
         "category": "Demographics",
         "citations": "",
         "data_type": "decimal",
@@ -13,12 +14,16 @@
         "short_name": "Segregation index",
         "sources": [
             {
-                "name": "American Community Survey",
+                "date_accessed": "2023",
                 "location": "Table DP05",
-                "date_accessed": "2023"
+                "location_url": "",
+                "name": "American Community Survey",
+                "url": ""
             }
         ],
         "statement": "The segregation index in {features.name} is {value}.",
-        "unit": "individual"
+        "type": "",
+        "unit": "individual",
+        "variants": ""
     }
 }
