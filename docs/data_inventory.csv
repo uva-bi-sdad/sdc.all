@@ -149,7 +149,7 @@ demographics,gender_female_count_direct,Female population direct,2009,2021,,X,X,
 demographics,gender_male_percent_direct,Percentage of males direct,2009,2021,,X,X,,X,X,,X,,X,X,,X,X,X
 demographics,gender_female_percent_direct,Percentage of females direct,2009,2021,,X,X,,X,X,,X,,X,X,,X,X,X
 demographics,segregation_index,Segregation index,2020,2020,,,,,,,,,,,,,,X,
-financial_well_being,employment_access_index,,2015,2021,,,,,,,,,,X,X,,,X,
+financial_well_being,employment_access_index,Employment Access Index,2015,2021,,,,,,,,,,X,X,,,X,
 financial_well_being,job_participate_rate,,2015,2021,,X,X,,X,X,,,,X,,,,X,
 financial_well_being,emp_rate,Percentage employed,2015,2021,,X,X,,X,X,,,,X,,,,X,
 financial_well_being,labor_participate_rate,Labor Force Participation Rate,2015,2021,,,,,,,,,,X,X,,,X,

@@ -1,14 +1,14 @@
 [
     {
         "path": "climate_change/data/distribution/ncr_tr_fema_2019_natural_hazards_risk_scores.csv.xz",
-        "last_modified_utc": "2023-10-10_22:02:31"
+        "last_modified_utc": "2023-10-13_17:00:07"
     },
     {
         "path": "environmental_justice/data/distribution/ncr_bg_epa_2022_environmental_justice_screen.csv.xz",
-        "last_modified_utc": "2023-10-10_22:02:31"
+        "last_modified_utc": "2023-10-13_17:00:07"
     },
     {
         "path": "environmental_justice/data/distribution/ncr_tr_epa_2022_environmental_justice_screen.csv.xz",
-        "last_modified_utc": "2023-10-10_22:02:31"
+        "last_modified_utc": "2023-10-13_17:00:07"
     }
 ]

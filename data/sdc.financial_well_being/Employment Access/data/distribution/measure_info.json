@@ -1,5 +1,5 @@
 {
-    "employment_access_sqmi": {
+    "employment_access_index": {
         "aggregation_method": "weighted sum",
         "categories": "",
         "category": "Employment/Workforce Development",
