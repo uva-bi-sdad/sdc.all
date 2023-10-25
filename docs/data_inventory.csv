@@ -148,7 +148,7 @@ demographics,gender_male_count_direct,Male population direct,2009,2021,,X,X,,X,X
 demographics,gender_female_count_direct,Female population direct,2009,2021,,X,X,,X,X,,X,,X,X,,X,X,X
 demographics,gender_male_percent_direct,Percentage of males direct,2009,2021,,X,X,,X,X,,X,,X,X,,X,X,X
 demographics,gender_female_percent_direct,Percentage of females direct,2009,2021,,X,X,,X,X,,X,,X,X,,X,X,X
-demographics,segregation_index,Segregation index,2020,2020,,,,,,,,,,,,,,X,
+demographics,segregation_indicator,,2020,2020,,,,,,,,,,,,,,X,
 financial_well_being,employment_access_index,Employment Access Index,2015,2021,,,,,,,,,,X,X,,,X,
 financial_well_being,job_participate_rate,,2015,2021,,X,X,,X,X,,,,X,,,,X,
 financial_well_being,emp_rate,Percentage employed,2015,2021,,X,X,,X,X,,,,X,,,,X,
@@ -259,7 +259,8 @@ financial_well_being,his_women_cnt,,2021,2021,,,X,,,X,,,,,,,,X,
 financial_well_being,his_women_pov_pct,his_women_pov_pct,2021,2021,,,X,,,X,,,,,,,,X,
 financial_well_being,alice_pct,Percentage of ALICE households,2010,2021,,,,,,,,,,X,,,,,
 financial_well_being,poverty_pct,Percentage of households in poverty,2010,2021,,,,,,,,,,X,,,,,
-financial_well_being,material_deprivation_indicator,Material deprivation indicator,2015,2021,,,,,,,,,,X,X,,,X,
+financial_well_being,material_deprivation_indicator,Material deprivation indicator,2017,2021,,,,,,,,,,X,,,,X,
+financial_well_being,material_deprivation_indication,,2020,2020,,,,,,,,,,X,X,,,X,
 health,dent_pop_cnt,,2021,2021,X,X,X,X,X,X,,X,X,X,X,,,X,
 health,dent_cnt,Dental care availability (count),2021,2021,X,X,X,X,X,X,,X,X,X,X,,,X,
 health,dent_near_10_mean,,2021,2021,X,X,X,X,X,X,,X,X,X,X,,,X,

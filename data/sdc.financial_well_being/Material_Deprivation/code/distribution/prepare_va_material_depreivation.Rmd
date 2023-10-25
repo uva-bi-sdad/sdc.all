@@ -26,7 +26,10 @@ library(ggplot2)
 library(scales)
 library(readxl)
 ```
-Sys.setenv(CENSUS_KEY = 'XX')
+census_api_key("XXXX", install = TRUE, overwrite = TRUE)
+readRenviron("~/.Renviron")
+Sys.getenv("CENSUS_API_KEY")
+
 #Population data - VA state extracted from Census ACS 2015-2021 - Tract and County
 ```{r}
 data <- data.frame()
@@ -38,8 +41,8 @@ for (i in years) {
                        year = i,
                        survey = "acs5",
                        state = 'VA',
-                       variables = c( adult_pop = 'S2301_C01_001E',
-                                      unemployed='S2301_C04_001E',
+                       variables = c( adult_pop = 'B23025_002E',
+                                      unemployed='B23025_005E',
                                       occupancy_all='B25014_001E',
                                       occupant_owner_1_to_1half='B25014_005E',
                                       occupant_owner_greater_1half='B25014_006E',
@@ -148,9 +151,14 @@ townsend_data <- subset(data, select = c(GEOID, region_type, unemployed, noncar_
 #Scaling the variables for each year and region type 
 ```{r}
 
+
+
+
 townsend_data <- townsend_data %>%
   group_by(region_type, year) %>%
   mutate(across(c(unemployed, noncar_ownership,nonhome_ownership,household_overcrowding ), ~scale(.), .names="z_{.col}")) %>% ungroup()
+
+
 
 ```
 
@@ -163,33 +171,47 @@ townsend_data <- townsend_data %>%   group_by(region_type, year) %>%
 
 townsend_data$Townsend_Index_z_sum_z <- (townsend_data$Townsend_Index_z_sum_z) * -1
 
-townsend_data <- townsend_data %>%
-  group_by(region_type, year) %>%
-  mutate(
-    Townsend_Index_z_standardized = (Townsend_Index_z_sum - min(Townsend_Index_z_sum)) /
-                                     (max(Townsend_Index_z_sum) - min(Townsend_Index_z_sum))
-  ) %>%
-  ungroup()
 
 
 
 townsend_data$measure = 'material_deprivation_indicator'
-townsend_data <- rename(townsend_data, value = Townsend_Index_z_standardized, geoid = GEOID)
+townsend_data <- rename(townsend_data, value = Townsend_Index_z_sum_z, geoid = GEOID)
 
 
 
 townsend_data <- townsend_data %>%
   group_by(year, region_type) %>%
   mutate(value = rescale(value)) %>%
-  ungroup()
-
-
+  ungroup %>% 
+  mutate(value = as.character(value))
 
 
 
 townsend_bi <- subset(townsend_data, select = c(geoid, measure, year, region_type, value)) %>% 
   mutate(moe="")
 ```
+
+#Write CSV
+```{r}
+
+readr::write_csv(townsend_bi, xzfile("../../data/distribution/va_hdcttr_vdh_2017_2021_material_deprivation_index.csv.xz", compression = 9))
+
+
+```
+
+
+
+townsend_data <- townsend_data %>%
+  group_by(region_type, year) %>%
+  mutate(
+    mean_Townsend = mean(Townsend_Index_z_sum, na.rm = TRUE),
+    sd_Townsend = sd(Townsend_Index_z_sum, na.rm = TRUE),
+    Townsend_Index_z_standardized = (Townsend_Index_z_sum - mean_Townsend) / sd_Townsend
+  ) %>%
+  ungroup() %>%
+  select(-mean_Townsend, -sd_Townsend)
+
+HOI_V3_14_Variables_For_UVA <- read_excel("~/data_commons/HOI V3 14 Variables_For UVA.xlsx")
 
 townsend_bi <- townsend_bi %>% filter(year==2020)
 
@@ -206,10 +228,58 @@ ggplot(merged_df, aes(x=value, y=Townsend)) +
 
 print(colnames(merged_df))
 
-#Write CSV
-```{r}
 
-readr::write_csv(townsend_bi_all, xzfile("../../data/distribution/va_hdcttr_vdh_2015_2021_material_deprivation_index.csv.xz", compression = 9))
+# Creating data for VDH using HOI_V3_14_Variables_For_UVA
 
-```
+df_selected <- HOI_V3_14_Variables_For_UVA %>%  select(FIPS, CT2, Townsend)
+df_selected <- df_selected %>%  rename(geoid = CT2)
+df_selected$region_type <- 'tract'
+
+
+#Aggregating County
+
+
+test_data <- get_acs(geography = "tract", variables = "B01001_001E", state = "VA", year = 2020)
+merged_df <- merge(df_selected, test_data, by.x = "geoid", by.y = "GEOID")
+merged_df$townsend_sum <-merged_df$Townsend * merged_df$estimate
+
+summed_df <- merged_df %>%
+  group_by(FIPS) %>%
+  summarise(across(where(is.numeric), sum, na.rm = TRUE))
+  
+summed_df$Townsend <-   summed_df$townsend_sum / summed_df$estimate
+summed_df$Townsend <- (summed_df$Townsend - min(summed_df$Townsend)) / (max(summed_df$Townsend) - min(summed_df$Townsend))
+summed_df <- summed_df %>%  rename(geoid = FIPS)
+county <- summed_df
+county$region_type <- 'county'
+
+#Aggregating Health District
+
+
+health_district <- read_csv("~/git/sdc.geographies_dev/VA/State Geographies/Health Districts/2020/data/distribution/va_ct_to_hd_crosswalk.csv")
+health_district <- merge(x = health_district, y = county, by.x = "ct_geoid", by.y = "geoid")
+health_district$townsend_sum <-health_district$Townsend * health_district$estimate
+
+health_district <- health_district %>%
+  group_by(hd_geoid) %>%
+  summarise(across(where(is.numeric), sum, na.rm = TRUE))
+
+health_district$Townsend <-   health_district$townsend_sum / health_district$estimate
+health_district$Townsend <- (health_district$Townsend - min(health_district$Townsend)) / (max(health_district$Townsend) - min(health_district$Townsend))
+health_district <- health_district %>%  rename(geoid = hd_geoid)
+health_district$region_type <- 'health district'
+
+#Combining the three dfs
+df_selected <- df_selected %>%  select(geoid, region_type, Townsend)
+county <- county %>%  select(geoid, region_type, Townsend)
+health_district <- health_district %>%  select(geoid, region_type, Townsend)
+
+
+combined_df <- rbind(df_selected, county, health_district)
+combined_df$measure <- 'material_deprivation_indication'
+combined_df$year <- 2020
+
+#Writing CSV
+
+readr::write_csv(combined_df, xzfile("Material_Deprivation/data/distribution/va_hdcttr_vdh_2020_material_deprivation_index.csv.xz", compression = 9))
 

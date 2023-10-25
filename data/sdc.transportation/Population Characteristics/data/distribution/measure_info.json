@@ -14,9 +14,10 @@
         "short_name": "Commute time",
         "sources": [
             {
-                "name": "American Community Survey",
-                "location": "Table S0801",
                 "date_accessed": "2022",
+                "location": "Table S0801",
+                "location_url": "",
+                "name": "American Community Survey",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
@@ -40,9 +41,10 @@
         "short_name": "Carpool to work",
         "sources": [
             {
-                "name": "American Community Survey",
-                "location": "Table S0801",
                 "date_accessed": "2022",
+                "location": "Table S0801",
+                "location_url": "",
+                "name": "American Community Survey",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
@@ -66,9 +68,10 @@
         "short_name": "Without vehicle",
         "sources": [
             {
-                "name": "American Community Survey",
-                "location": "Table S2504",
                 "date_accessed": "2023",
+                "location": "Table S2504",
+                "location_url": "",
+                "name": "American Community Survey",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
