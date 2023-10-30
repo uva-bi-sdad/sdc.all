@@ -394,7 +394,7 @@ health,ems_near_10_median,Emergency medical services availability (drive time),2
 health,ems_2sfca,,2021,2021,X,X,X,X,X,X,,X,X,X,X,,,X,
 health,ems_e2sfca,,2021,2021,X,X,X,X,X,X,,X,X,X,X,,,X,
 health,ems_3sfca,Emergency medical services geographic availability,2021,2021,X,X,X,X,X,X,,X,X,X,X,,,X,
-education,average_years_schooling,Average Years of Schooling,2017,2021,,,X,,,X,,,,X,X,,,X,
+education,average_years_schooling,Average Years of Schooling,2017,2021,,,X,,,X,,,,,,,,X,
 education,median_read_pass_rate,Median 3rd graders passing reading,2015,2021,,,,,,,,,,X,,,,,
 education,schoolFundAdequacy,School funding adequacy,2022,2023,,,,,,,,,,X,,,,,
 education,schools_2year_min_drivetime,2-year school drive time,2013,2021,X,X,X,X,X,X,,X,,X,X,,,,

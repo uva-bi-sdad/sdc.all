@@ -20604,6 +20604,7 @@
     },
     "incarceration_rate_per_100000": {
         "aggregation_method": "count",
+        "categories": "",
         "category": "Health Opportunity Index",
         "citations": "",
         "data_type": "integer",
@@ -20617,12 +20618,16 @@
         "sources": [
             {
                 "date_accessed": "2023",
+                "location": "",
+                "location_url": "",
                 "name": "Prison Policy Initiative",
                 "url": "https://www.prisonpolicy.org/origin/va/2020/tract.html"
             }
         ],
         "statement": "The incarceration rate per 100,000 in {features.name} is {value}.",
-        "unit": "individual"
+        "type": "",
+        "unit": "individual",
+        "variants": ""
     },
     "income_inequality_indicator": {
         "aggregation_method": "",
