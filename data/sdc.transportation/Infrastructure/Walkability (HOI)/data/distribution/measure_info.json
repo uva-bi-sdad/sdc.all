@@ -1,0 +1,29 @@
+{
+  "walkability_index_raw": {
+        "aggregation_method": "arithmetic mean",
+        "categories": "",
+        "category": "Transportation",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "The Walkability Index is derived from the Environmental Protection Agency's (EPA) National Walkability Index. The National Walkability Index is a nationwide geographic data resource that ranks block groups according to their relative walkability. The National Walkability Index was developed using selected variables on density, diversity of land uses, and proximity to transit from the EPA Smart Location Database. The block group dataset is aggregated using population-weighted mean to Census tracts, counties, and Health Districts.",
+        "long_name": "Walkability Index",
+        "measure_type": "index",
+        "short_description": "A measure of how walkable a community is.",
+        "short_name": "Walkability Index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Environmental Protection Agency",
+                "url": "https://www.epa.gov/smartgrowth/smart-location-mapping#walkability"
+            }
+        ],
+        "statement": "The Walkability Index in {region_name} is {value}.",
+        "type": "index",
+        "unit": "",
+        "variants": ""
+    }
+}

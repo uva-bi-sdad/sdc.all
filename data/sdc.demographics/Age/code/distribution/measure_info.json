@@ -102,8 +102,8 @@
         "default": "Percent of the population between age 20 and 64",
         "data_type": "decimal",
         "aggregation_method": "percent",
-        "short_description": "The percent of the population over age 64.",
-        "long_description": "The percent of the population over age 64.",
+        "short_description": "The percent of the population between age 20 and 64.",
+        "long_description": "The percent of the populationbetween age 20 and 64.",
         "statement": "The percent of the population over age 64 is {value} in {region_name}."
       },
       "65_plus_percent": {

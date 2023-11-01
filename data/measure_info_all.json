@@ -16504,8 +16504,8 @@
                 "aggregation_method": "percent",
                 "data_type": "decimal",
                 "default": "Percent of the population between age 20 and 64",
-                "long_description": "The percent of the population over age 64.",
-                "short_description": "The percent of the population over age 64.",
+                "long_description": "The percent of the populationbetween age 20 and 64.",
+                "short_description": "The percent of the population between age 20 and 64.",
                 "statement": "The percent of the population over age 64 is {value} in {region_name}."
             },
             "65_plus_count": {
@@ -28913,33 +28913,6 @@
             }
         }
     },
-    "segregation_index": {
-        "aggregation_method": " ",
-        "categories": "",
-        "category": "Demographics",
-        "citations": "",
-        "data_type": "decimal",
-        "equity_category": "",
-        "layer": "",
-        "long_description": "The Segregation Index, or the spatial dissimilarity index, measures how the racial composition of a population in a census tract compares to that of the rest of the state",
-        "long_name": "Segregation index",
-        "measure_type": "index",
-        "short_description": "It measures how different the population composition of a subarea is from the population composition of the State as a whole",
-        "short_name": "Segregation index",
-        "sources": [
-            {
-                "date_accessed": "2023",
-                "location": "Table DP05",
-                "location_url": "",
-                "name": "American Community Survey",
-                "url": ""
-            }
-        ],
-        "statement": "The segregation index in {features.name} is {value}.",
-        "type": "",
-        "unit": "individual",
-        "variants": ""
-    },
     "segregation_indicator": {
         "aggregation_method": "",
         "categories": "",
@@ -31449,6 +31422,33 @@
         "statement": "There are {value} male workers working in {features.name}.",
         "type": "",
         "unit": "person",
+        "variants": ""
+    },
+    "walkability_index_raw": {
+        "aggregation_method": "arithmetic mean",
+        "categories": "",
+        "category": "Transportation",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "The Walkability Index is derived from the Environmental Protection Agency's (EPA) National Walkability Index. The National Walkability Index is a nationwide geographic data resource that ranks block groups according to their relative walkability. The National Walkability Index was developed using selected variables on density, diversity of land uses, and proximity to transit from the EPA Smart Location Database. The block group dataset is aggregated using population-weighted mean to Census tracts, counties, and Health Districts.",
+        "long_name": "Walkability Index",
+        "measure_type": "index",
+        "short_description": "A measure of how walkable a community is.",
+        "short_name": "Walkability Index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "Environmental Protection Agency",
+                "url": "https://www.epa.gov/smartgrowth/smart-location-mapping#walkability"
+            }
+        ],
+        "statement": "The Walkability Index in {region_name} is {value}.",
+        "type": "index",
+        "unit": "",
         "variants": ""
     },
     "walkability_indicator": {

@@ -41,3 +41,7 @@ vignettes/*.pdf
 # Big files
 *.zip
 *.csv
+
+# Big file directories
+./Infrastructure/data/original/Walkability (HOI)/data/original/
+./Infrastructure/data/original/Walkability (HOI)/data/working/
