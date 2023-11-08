@@ -1,0 +1,186 @@
+---
+title: "Untitled"
+author: "cm"
+date: "10/17/2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+rm( list = ls())
+```
+
+
+#libraries
+```{r}
+library(dplyr)
+library(readr)
+library(readxl)
+library(reshape2)
+library(tidyr)
+```
+
+#data
+```{r}
+
+#USA 2019
+fara_2019 <- read_excel("~/git/sdc.food_dev/Food Access/Food Accessibility Indicator (HOI)/data/original/FoodAccessResearchAtlasData2019.xlsx", 
+sheet = "Food Access Research Atlas")
+
+#VA 2019
+fara_2019_va <- fara_2019 %>% filter(State == "Virginia") %>% select(CensusTract, State, County, Urban, Pop2010, lalowi1, lalowi1share, lalowi10share, lalowihalfshare, lalowi20share) 
+
+
+################################
+
+#USA 2015
+fara_2015 <- read_excel("~/git/sdc.food_dev/Food Access/Food Accessibility Indicator (HOI)/data/original/FoodAccessResearchAtlasData2015.xlsx", 
+    sheet = "Food Access Research Atlas")
+
+#VA 2015
+fara_2015_va <- fara_2015 %>% filter(State == "Virginia") 
+
+#variables fara
+# fara_2015_va <- fara_2015_va %>% select(CensusTract, State, County, Urban, Pop2010 = POP2010, LILATracts_1And10, LILATracts_halfAnd10, LILATracts_1And20, LILATracts_Vehicle) %>% mutate(year = 2015) %>% as.data.frame()
+
+fara_2015_va <- fara_2015 %>% filter(State == "Virginia") %>% select(CensusTract, State, County, Urban, Pop2010=POP2010, lalowi1, lalowi1share, lalowi10share, lalowihalfshare, lalowi20share) 
+
+#joined df for 2 years
+#fara_original_2015_2019_va <- rbind(fara_2019_va, fara_2015_va)
+
+```
+
+#variable food accessibility
+```{r}
+#select lalowi1share.  if null, select lalowihalfshare
+
+#2019
+fara_2019_va <- fara_2019_va %>% mutate(food_access_prop_init = case_when( !is.na(as.numeric(lalowi1share)) ~  as.numeric(lalowi1share), 
+                                                                      is.na(as.numeric(lalowi1share)) ~ as.numeric(lalowihalfshare)
+                                                                        ), 
+                                        food_access_prop = ifelse( is.na(food_access_prop_init), 0, food_access_prop_init )
+                                          )
+
+#2015
+fara_2015_va <- fara_2015_va %>% mutate(food_access_prop_init = case_when( !is.na(as.numeric(lalowi1share)) ~  as.numeric(lalowi1share), 
+                                                                      is.na(as.numeric(lalowi1share)) ~ as.numeric(lalowihalfshare)
+                                                                        ), 
+                                        food_access_prop = ifelse( is.na(food_access_prop_init), 0, food_access_prop_init )
+                                          )
+
+```
+
+# Crosswalk function
+```{r}
+#tract conversions: 2010 --> 2020
+source("~/git/sdc.food_dev/Food Access/Food Accessibility Indicator (HOI)/code/working/tract_conversions.R")
+
+```
+
+#data from vdh - validation 2019
+```{r}
+
+#conversion tracts 2010 --> 2020
+fara_2019_va$CensusTract <- as.character(fara_2019_va$CensusTract)
+
+fara_2019_va_updated <- convert_2010_to_2020_tracts(as.data.frame(fara_2019_va %>% select(CensusTract, food_access_prop) ), 
+                                                      geoid_col = 'CensusTract', 
+                                                      val_col = 'food_access_prop' ) %>% rename( food_access_prop = value) 
+
+
+##Validation
+#data
+HOI_V3_14_Variables_Raw_Scores <- read_excel("~/git/sdc.food_dev/Food Access/Food Accessibility Indicator (HOI)/data/original/HOI V3_14 Variables_Raw Scores.xlsx")
+
+
+
+#validation match
+validation_dat <- fara_2019_va_updated %>% left_join(HOI_V3_14_Variables_Raw_Scores %>% select(CT2, `Food Access*` ) , by = c( "geoid" = "CT2" ) )
+
+#corr plot
+plot(validation_dat$food_access_prop, validation_dat$`Food Access*`)
+
+#corr
+cor.test(validation_dat$food_access_prop, validation_dat$`Food Access*`)
+
+
+```
+
+#data from vdh - validation 2015
+```{r}
+
+#conversion tracts 2010 --> 2020
+fara_2015_va$CensusTract <- as.character(fara_2019_va$CensusTract)
+
+fara_2015_va_updated <- convert_2010_to_2020_tracts(as.data.frame(fara_2015_va %>% select(CensusTract, food_access_prop) ), 
+                                                      geoid_col = 'CensusTract', 
+                                                      val_col = 'food_access_prop' ) %>% rename( food_access_prop = value) 
+
+
+##Validation
+#data
+#HOI_V3_14_Variables_Raw_Scores <- read_excel("~/git/sdc.food_dev/Food Access/Food Accessibility Indicator (HOI)/data/original/HOI V3_14 Variables_Raw Scores.xlsx")
+
+
+
+#validation match
+validation_dat_2015 <- fara_2015_va_updated %>% left_join(HOI_V3_14_Variables_Raw_Scores %>% select(CT2, `Food Access*` ) , by = c( "geoid" = "CT2" ) )
+
+#corr plot
+plot(validation_dat_2015$food_access_prop, validation_dat_2015$`Food Access*`)
+
+#corr
+cor.test(validation_dat_2015$food_access_prop, validation_dat_2015$`Food Access*`)
+
+
+```
+
+#data frame - years
+```{r}
+
+df_fara <- fara_2019_va_updated %>% select(geoid, food_access_prop_2019=food_access_prop ) %>% left_join( fara_2015_va_updated %>% select(geoid, food_access_prop_2015=food_access_prop ), by = 'geoid') %>% mutate(food_access_prop_2015 = food_access_prop_2015*100)
+
+year1 <- 2015
+year2 <- 2019
+
+df_fara <- df_fara %>% mutate( change_lin = (food_access_prop_2019-food_access_prop_2015)/(year2 - year1))
+
+#linear estimation
+df_fara <- df_fara %>% mutate(food_access_prop_2016 = 1*change_lin +food_access_prop_2015,
+                              food_access_prop_2017 = 2*change_lin +food_access_prop_2015,
+                              food_access_prop_2018 = 3*change_lin +food_access_prop_2015)
+                              
+```
+
+#reshape long format and rename
+```{r}
+
+df_fara_long <- df_fara %>% select(-c(change_lin)) %>% pivot_longer(cols = c("food_access_prop_2015", 
+                                                                             "food_access_prop_2016",
+                                                                             "food_access_prop_2017", 
+                                                                             "food_access_prop_2018",
+                                                                             "food_access_prop_2019") 
+                                                                    ) %>% mutate(measure = "food_access_percentage", 
+                                                                                 moe = "", 
+                                                                                 year = case_when( name == 'food_access_prop_2015' ~ 2015,
+                                                                                                   name == 'food_access_prop_2016' ~ 2016,
+                                                                                                   name == 'food_access_prop_2017' ~ 2017,
+                                                                                                   name == 'food_access_prop_2018' ~ 2018,
+                                                                                                   name == 'food_access_prop_2019' ~ 2019
+                                                                                                   )) %>% select(-c(name)) %>% 
+  select("geoid", "year",  "measure", "value", "moe")
+
+```
+
+#Save
+
+```{r}
+write.csv(df_fara_long, "~/git/sdc.food_dev/Food Access/Food Accessibility Indicator (HOI)/data/distribution/va_tr_usda_2015_2019_food_access.csv", row.names = FALSE )
+```
+
+
+

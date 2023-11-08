@@ -1,0 +1,40 @@
+{
+    "food_access_percentage": {
+        "aggregation_method": "",
+        "categories": "",
+        "category": "Nutrition and Food Security",
+        "citations": [
+            "usdafara"
+        ],
+        "data_type": "numeric",
+        "equity_category": "Access",
+        "layer": "",
+        "long_description": "Share of tract population that are low income individuals beyond 1 mile from supermarket. The criteria for identifying a census tract as low income are from the Department of Treasury’s New Markets Tax Credit (NMTC) program. This program defines a low-income census tract as any tract where:The tract’s poverty rate is 20 percent or greater; or The tract’s median family income is less than or equal to 80 percent of the State-wide median family income; or The tract is in a metropolitan area and has a median family income less than or equal to 80 percent of the metropolitan area's median family income. low access to healthy food: being far from a supermarket, supercenter, or large grocery store. A census tract is considered to have low access if a significant number or share of individuals in the tract is far from a supermarket. Three measures of food access based on distance to a supermarket. If 1 mile from the supermarket information is not available, use half a mile information. NULL corresonds to zero values.",
+        "long_name": "Food Access",
+        "measure_type": "percent",
+        "short_description": "Low access, low-income population at 1 mile from supermarket.",
+        "short_name": "Food Access",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
+                "name": "OpenStreetMap",
+                "url": "https://www.openstreetmap.org/"
+            }
+        ],
+        "statement": "The {value} in {features.name} have food access.",
+        "type": "percent",
+        "unit": "",
+        "variants": ""
+    },
+    "_references": {
+        "usdafara": {
+            "id": "usdafara",
+            "author": "Economic Research Service, U.S. DEPARTMENT OF AGRICULTURE",
+            "year": 2021,
+            "title": "Food Access Research Atlas",
+            "url": "https://www.ers.usda.gov/data-products/food-access-research-atlas/download-the-data/"
+        }
+    }
+}
