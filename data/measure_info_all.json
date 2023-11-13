@@ -18886,6 +18886,31 @@
         "unit": "business",
         "variants": ""
     },
+    "environmental_hazard_index": {
+        "aggregation_method": "",
+        "categories": "",
+        "category": "Environmental Hazard Index",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "Based on the Environmental Hazard Index, It combines 12 variables from EPA EJScreen 'UST , DSLPM, CANCER, RESP, PTRAF, PWDIS, PNPL, PRMP, PTSDF, OZONE, PM25, PRE1960PCT.' PCA (oblimin rotation) is carried out on the Z scores of each of the variables. The PCA output is standardized.",
+        "long_name": "Environmental Hazard Index",
+        "measure_type": "index",
+        "short_description": "Based on the Environmental Hazard Index, it examines the risk of exposure to environmental pollution.",
+        "short_name": "Environmental Hazard Index",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "name": "Virginia Department of Health",
+                "url": "https://apps.vdh.virginia.gov/omhhe/hoi/"
+            }
+        ],
+        "statement": "The environmental hazard index in {features.name} is {value}.",
+        "type": "index",
+        "unit": "",
+        "variants": ""
+    },
     "exit_business": {
         "aggregation_method": "count",
         "categories": "",

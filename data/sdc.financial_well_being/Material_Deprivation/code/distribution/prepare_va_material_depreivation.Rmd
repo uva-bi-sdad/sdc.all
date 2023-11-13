@@ -150,9 +150,15 @@ townsend_data <- subset(data, select = c(GEOID, region_type, unemployed, noncar_
 
 #Scaling the variables for each year and region type 
 ```{r}
+min_max_scale <- function(x) {
+  (x - min(x, na.rm = TRUE)) / (max(x, na.rm = TRUE) - min(x, na.rm = TRUE))
+}
 
-
-
+townsend_data <- townsend_data %>%
+  group_by(region_type, year) %>%
+  mutate(across(c(unemployed, noncar_ownership, nonhome_ownership, household_overcrowding),
+                ~min_max_scale(.), .names = "z_{.col}")) %>%
+  ungroup()
 
 townsend_data <- townsend_data %>%
   group_by(region_type, year) %>%
@@ -169,7 +175,7 @@ townsend_data$Townsend_Index_z_sum <- townsend_data$z_unemployed + townsend_data
 townsend_data <- townsend_data %>%   group_by(region_type, year) %>%
   mutate(Townsend_Index_z_sum_z = scale(Townsend_Index_z_sum)) %>% ungroup()
 
-townsend_data$Townsend_Index_z_sum_z <- (townsend_data$Townsend_Index_z_sum_z) * -1
+townsend_data$Townsend_Index_z_sum_z <- (townsend_data$Townsend_Index_z_sum_z) 
 
 
 
@@ -201,23 +207,16 @@ readr::write_csv(townsend_bi, xzfile("../../data/distribution/va_hdcttr_vdh_2017
 
 
 
-townsend_data <- townsend_data %>%
-  group_by(region_type, year) %>%
-  mutate(
-    mean_Townsend = mean(Townsend_Index_z_sum, na.rm = TRUE),
-    sd_Townsend = sd(Townsend_Index_z_sum, na.rm = TRUE),
-    Townsend_Index_z_standardized = (Townsend_Index_z_sum - mean_Townsend) / sd_Townsend
-  ) %>%
-  ungroup() %>%
-  select(-mean_Townsend, -sd_Townsend)
+
 
 HOI_V3_14_Variables_For_UVA <- read_excel("~/data_commons/HOI V3 14 Variables_For UVA.xlsx")
 
-townsend_bi <- townsend_bi %>% filter(year==2020)
+townsend_bi <- townsend_bi %>% filter(year==2020) %>% filter(region_type=='tract')
 
-merged_df <- merge(townsend_bi, HOI_V3_14_Variables_For_UVA, by.x = "geoid", by.y = "FIPS")
+merged_df <- merge(townsend_bi, HOI_V3_14_Variables_For_UVA, by.x = "geoid", by.y = "CT2")
 
-
+merged_df$value <- as.numeric(as.character(merged_df$value))
+merged_df$Townsend <- as.numeric(as.character(merged_df$Townsend))
 
 ggplot(merged_df, aes(x=value, y=Townsend)) + 
   geom_point(alpha=0.7, color="blue") +
