@@ -43,3 +43,5 @@ vignettes/*.pdf
 # Mac dir files
 *.DS_Store
 .Rproj.user
+
+.ipynb_checkpoints
