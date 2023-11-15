@@ -1,0 +1,22 @@
+[
+    {
+        "path": "Daycare/data/distribution/vdss.csv.xz",
+        "last_modified_utc": "2023-10-30_15:53:00"
+    },
+    {
+        "path": "Postsecondary/data/distribution/acs.csv.xz",
+        "last_modified_utc": "2023-10-30_15:53:00"
+    },
+    {
+        "path": "Postsecondary/data/distribution/nces.csv.xz",
+        "last_modified_utc": "2023-10-30_15:53:00"
+    },
+    {
+        "path": "Years of Schooling/data/distribution/ncr_tr_acs5_2017_2021_years_of_schooling.csv.xz",
+        "last_modified_utc": "2023-10-30_15:53:01"
+    },
+    {
+        "path": "Years of Schooling/data/distribution/va_tr_acs5_2017_2021_years_of_schooling.csv.xz",
+        "last_modified_utc": "2023-10-30_15:53:01"
+    }
+]

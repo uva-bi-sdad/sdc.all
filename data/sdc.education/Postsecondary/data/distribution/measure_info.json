@@ -1,495 +1,563 @@
 {
-  "schools_2year_all": {
-    "data_type": "decimal",
-    "aggregation_method": "ratio",
-    "unit": "school per 100k people over 14",
-    "category": "Education",
-    "equity_category": "Accessibility",
-    "short_name": "2-year schools",
-    "long_name": "2-year schools per 100k people over 14",
-    "short_description": "Number of 2-year schools per 100k people over 14, calculated within floating catchment areas.",
-    "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
-    "statement": "There are {value} 2-year schools per 100k people over 14 in {region_name}.",
-    "sources": [
-      {
-        "name": "National Center for Education Statistics",
-        "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
-        "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
-        "date_accessed": 2023,
-        "url": "https://nces.ed.gov"
-      },
-      {
-        "name": "American Community Survey",
-        "location": "data/5_year_seq_by_state",
-        "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
-        "date_accessed": 2023,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      },
-      {
-        "name": "Open Source Routing Machine",
-        "date_accessed": 2022,
-        "url": "http://project-osrm.org"
-      }
-    ],
-    "citations": [
-      "wan12",
-      "bii21"
-    ],
-    "layer": {
-      "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
-      "filter": {
-        "feature": "ICLEVEL",
-        "operator": "=",
-        "value": 2
-      }
-    }
-  },
-  "schools_2year_with_biomedical_program": {
-    "data_type": "decimal",
-    "aggregation_method": "ratio",
-    "unit": "school per 100k people over 14",
-    "category": "Education",
-    "equity_category": "Accessibility",
-    "short_name": "2-year schools with biomedical programs",
-    "long_name": "2-year schools with biomedical programs per 100k people over 14",
-    "short_description": "Number of 2-year schools with biomedical programs per 100k people over 14, calculated within floating catchment areas.",
-    "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with biomedical programs (any with Classification of Institutional Programs [CIP] codes starting with 26) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
-    "statement": "There are {value} 2-year schools with biomedical programs per 100k people over 14 in {region_name}.",
-    "sources": [
-      {
-        "name": "National Center for Education Statistics",
-        "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
-        "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
-        "date_accessed": 2023,
-        "url": "https://nces.ed.gov"
-      },
-      {
-        "name": "American Community Survey",
-        "location": "data/5_year_seq_by_state",
-        "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
-        "date_accessed": 2023,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      },
-      {
-        "name": "Open Source Routing Machine",
-        "date_accessed": 2022,
-        "url": "http://project-osrm.org"
-      }
-    ],
-    "citations": [
-      "wan12",
-      "bii21"
-    ],
-    "layer": {
-      "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
-      "filter": [
-        {
-          "feature": "ICLEVEL",
-          "operator": "=",
-          "value": 2
+    "schools_2year_all": {
+        "aggregation_method": "ratio",
+        "categories": "",
+        "category": "Education",
+        "citations": [
+            "wan12",
+            "bii21"
+        ],
+        "data_type": "decimal",
+        "equity_category": "Accessibility",
+        "layer": {
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+            "filter": {
+                "feature": "ICLEVEL",
+                "operator": "=",
+                "value": 2
+            }
         },
-        {
-          "feature": "biomedical",
-          "operator": "=",
-          "value": 1
-        }
-      ]
-    }
-  },
-  "schools_2year_with_science_program": {
-    "data_type": "decimal",
-    "aggregation_method": "ratio",
-    "unit": "school per 100k people over 14",
-    "category": "Education",
-    "equity_category": "Accessibility",
-    "short_name": "2-year schools with science programs",
-    "long_name": "2-year schools with science programs per 100k people over 14",
-    "short_description": "Number of 2-year schools with science programs per 100k people over 14, calculated within floating catchment areas.",
-    "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 41) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
-    "statement": "There are {value} 2-year schools with science programs per 100k people over 14 in {region_name}.",
-    "sources": [
-      {
-        "name": "National Center for Education Statistics",
-        "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
-        "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
-        "date_accessed": 2023,
-        "url": "https://nces.ed.gov"
-      },
-      {
-        "name": "American Community Survey",
-        "location": "data/5_year_seq_by_state",
-        "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
-        "date_accessed": 2023,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      },
-      {
-        "name": "Open Source Routing Machine",
-        "date_accessed": 2022,
-        "url": "http://project-osrm.org"
-      }
-    ],
-    "citations": [
-      "wan12",
-      "bii21"
-    ],
-    "layer": {
-      "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
-      "filter": [
-        {
-          "feature": "ICLEVEL",
-          "operator": "=",
-          "value": 2
-        },
-        {
-          "feature": "science",
-          "operator": "=",
-          "value": 1
-        }
-      ]
-    }
-  },
-  "schools_2year_with_physical_program": {
-    "data_type": "decimal",
-    "aggregation_method": "ratio",
-    "unit": "school per 100k people over 14",
-    "category": "Education",
-    "equity_category": "Accessibility",
-    "short_name": "2-year schools with physical programs",
-    "long_name": "2-year schools with physical programs per 100k people over 14",
-    "short_description": "Number of 2-year schools with physical programs per 100k people over 14, calculated within floating catchment areas.",
-    "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 40) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
-    "statement": "There are {value} 2-year schools with physical programs per 100k people over 14 in {region_name}.",
-    "sources": [
-      {
-        "name": "National Center for Education Statistics",
-        "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
-        "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
-        "date_accessed": 2023,
-        "url": "https://nces.ed.gov"
-      },
-      {
-        "name": "American Community Survey",
-        "location": "data/5_year_seq_by_state",
-        "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
-        "date_accessed": 2023,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      },
-      {
-        "name": "Open Source Routing Machine",
-        "date_accessed": 2022,
-        "url": "http://project-osrm.org"
-      }
-    ],
-    "citations": [
-      "wan12",
-      "bii21"
-    ],
-    "layer": {
-      "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
-      "filter": [
-        {
-          "feature": "ICLEVEL",
-          "operator": "=",
-          "value": 2
-        },
-        {
-          "feature": "physical",
-          "operator": "=",
-          "value": 1
-        }
-      ]
-    }
-  },
-  "schools_2year_with_computer_program": {
-    "data_type": "decimal",
-    "aggregation_method": "ratio",
-    "unit": "school per 100k people over 14",
-    "category": "Education",
-    "equity_category": "Accessibility",
-    "short_name": "2-year schools with computer programs",
-    "long_name": "2-year schools with computer programs per 100k people over 14",
-    "short_description": "Number of 2-year schools with computer programs per 100k people over 14, calculated within floating catchment areas.",
-    "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 11) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
-    "statement": "There are {value} 2-year schools with computer programs per 100k people over 14 in {region_name}.",
-    "sources": [
-      {
-        "name": "National Center for Education Statistics",
-        "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
-        "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
-        "date_accessed": 2023,
-        "url": "https://nces.ed.gov"
-      },
-      {
-        "name": "American Community Survey",
-        "location": "data/5_year_seq_by_state",
-        "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
-        "date_accessed": 2023,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      },
-      {
-        "name": "Open Source Routing Machine",
-        "date_accessed": 2022,
-        "url": "http://project-osrm.org"
-      }
-    ],
-    "citations": [
-      "wan12",
-      "bii21"
-    ],
-    "layer": {
-      "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
-      "filter": [
-        {
-          "feature": "ICLEVEL",
-          "operator": "=",
-          "value": 2
-        },
-        {
-          "feature": "computer",
-          "operator": "=",
-          "value": 1
-        }
-      ]
-    }
-  },
-  "schools_2year_with_engineering_program": {
-    "data_type": "decimal",
-    "aggregation_method": "ratio",
-    "unit": "school per 100k people over 14",
-    "category": "Education",
-    "equity_category": "Accessibility",
-    "short_name": "2-year schools with engineering programs",
-    "long_name": "2-year schools with engineering programs per 100k people over 14",
-    "short_description": "Number of 2-year schools with engineering programs per 100k people over 14, calculated within floating catchment areas.",
-    "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 14 or 15) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
-    "statement": "There are {value} 2-year schools with engineering programs per 100k people over 14 in {region_name}.",
-    "sources": [
-      {
-        "name": "National Center for Education Statistics",
-        "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
-        "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
-        "date_accessed": 2023,
-        "url": "https://nces.ed.gov"
-      },
-      {
-        "name": "American Community Survey",
-        "location": "data/5_year_seq_by_state",
-        "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
-        "date_accessed": 2023,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      },
-      {
-        "name": "Open Source Routing Machine",
-        "date_accessed": 2022,
-        "url": "http://project-osrm.org"
-      }
-    ],
-    "citations": [
-      "wan12",
-      "bii21"
-    ],
-    "layer": {
-      "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
-      "filter": [
-        {
-          "feature": "ICLEVEL",
-          "operator": "=",
-          "value": 2
-        },
-        {
-          "feature": "engineering",
-          "operator": "=",
-          "value": 1
-        }
-      ]
-    }
-  },
-  "schools_under2year": {
-    "data_type": "decimal",
-    "aggregation_method": "ratio",
-    "unit": "school per 100k people over 14",
-    "category": "Education",
-    "equity_category": "Accessibility",
-    "short_name": "<2-year schools",
-    "long_name": "<2-year schools per 100k people over 14",
-    "short_description": "Number of <2-year schools per 100k people over 14, calculated within floating catchment areas.",
-    "long_description": "Number of schools authorized to award certificates that are typically obtained in less than 2 years per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) <2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
-    "statement": "There are {value} <2-year schools per 100k people over 14 in {region_name}.",
-    "sources": [
-      {
-        "name": "National Center for Education Statistics",
-        "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
-        "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
-        "date_accessed": 2023,
-        "url": "https://nces.ed.gov"
-      },
-      {
-        "name": "American Community Survey",
-        "location": "data/5_year_seq_by_state",
-        "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
-        "date_accessed": 2023,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      },
-      {
-        "name": "Open Source Routing Machine",
-        "date_accessed": 2022,
-        "url": "http://project-osrm.org"
-      }
-    ],
-    "citations": [
-      "wan12",
-      "bii21"
-    ],
-    "layer": {
-      "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
-      "filter": {
-        "feature": "ICLEVEL",
-        "operator": "=",
-        "value": 3
-      }
-    }
-  },
-  "schools_2year_min_drivetime": {
-    "data_type": "decimal",
-    "aggregation_method": "minimum",
-    "unit": "minute",
-    "category": "Education",
-    "equity_category": "Accessibility",
-    "short_name": "2-year school drive time",
-    "long_name": "drive time to nearest 2-year school",
-    "short_description": "Drive time to the nearest 2-year schools.",
-    "long_description": "Minimal drive time to a schools authorized to award Associates degrees or 2-year or longer certificates from the Census block group centroid, as calculated by the Open Source Routing Machine. School locations are from the National Center for Education Statistics. All distances are calculated at the block group level, then averaged up to higher-level geographies.",
-    "statement": "It takes {value} to drive to the nearest 2-year school from {region_name}'s block group centroids on average.",
-    "sources": [
-      {
-        "name": "National Center for Education Statistics",
-        "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
-        "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
-        "date_accessed": 2023,
-        "url": "https://nces.ed.gov"
-      },
-      {
-        "name": "Open Source Routing Machine",
-        "date_accessed": 2022,
-        "url": "http://project-osrm.org"
-      }
-    ],
-    "layer": {
-      "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
-      "filter": {
-        "feature": "ICLEVEL",
-        "operator": "=",
-        "value": 2
-      }
-    }
-  },
-  "schools_under2year_min_drivetime": {
-    "data_type": "decimal",
-    "aggregation_method": "minimum",
-    "unit": "minute",
-    "category": "Education",
-    "equity_category": "Accessibility",
-    "short_name": "<2-year school drive time",
-    "long_name": "drive time to nearest <2-year school",
-    "short_description": "Drive time to the nearest <2-year schools.",
-    "long_description": "Minimal drive time to a schools authorized to award certificates that are typically obtained in less than 2 years from the Census block group centroid, as calculated by the Open Source Routing Machine. School locations are from the National Center for Education Statistics. All distances are calculated at the block group level, then averaged up to higher-level geographies.",
-    "statement": "It takes {value} to drive to the nearest <2-year school from {region_name}'s block group centroids on average.",
-    "sources": [
-      {
-        "name": "National Center for Education Statistics",
-        "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
-        "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
-        "date_accessed": 2023,
-        "url": "https://nces.ed.gov"
-      },
-      {
-        "name": "Open Source Routing Machine",
-        "date_accessed": 2022,
-        "url": "http://project-osrm.org"
-      }
-    ],
-    "layer": {
-      "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
-      "filter": {
-        "feature": "ICLEVEL",
-        "operator": "=",
-        "value": 3
-      }
-    }
-  },
-  "acs_postsecondary_percent": {
-    "aggregation_method": "percent",
-    "unit": "individual",
-    "category": "Education",
-    "equity_category": "Status",
-    "long_description": "Percentage of the population who reported any postsecondary education, according to the U.S. Census American Community Survey 5-year estimates.",
-    "long_name": "Estimated Percentage of the Population With Any Postsecondary Education",
-    "short_description": "Percentage of the population who reported any postsecondary education.",
-    "short_name": "Postsecondary Education (percent)",
-    "sources": [
-      {
-        "name": "U.S. Census, American Community Survey",
-        "location": "5-Year estimates, table B06009, via the API",
-        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2023,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ],
-    "statement": "{value} of those in {region_name} report any postsecondary education.",
-    "data_type": "decimal"
-  },
-  "acs_postsecondary_count": {
-    "aggregation_method": "count",
-    "unit": "individual",
-    "category": "Education",
-    "equity_category": "Status",
-    "long_description": "Number of people who reported any postsecondary education, according to the U.S. Census American Community Survey 5-year estimates.",
-    "long_name": "Estimated Number of People With Any Postsecondary Education",
-    "short_description": "Number of people who reported any postsecondary education.",
-    "short_name": "Postsecondary Education (count)",
-    "sources": [
-      {
-        "name": "U.S. Census, American Community Survey",
-        "location": "5-Year estimates, table B06009, via the API",
-        "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
-        "date_accessed": 2023,
-        "url": "https://www.census.gov/programs-surveys/acs.html"
-      }
-    ],
-    "statement": "In {region_name}, {value} report any postsecondary education.",
-    "data_type": "integer"
-  },
-  "_references": {
-    "wan12": {
-      "id": "wan12",
-      "author": [
-        {
-          "given": "Neng",
-          "family": "Wan"
-        },
-        {
-          "given": "Bin",
-          "family": "Zou"
-        },
-        {
-          "given": "Troy",
-          "family": "Sternberg"
-        }
-      ],
-      "year": 2012,
-      "title": "A three-step floating catchment area method for analyzing spatial access to health services",
-      "journal": "International Journal of Geographical Information Science",
-      "volume": "26",
-      "page": "1073–1089",
-      "doi": "10.1080/13658816.2011.624987"
+        "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "long_name": "2-year schools per 100k people over 14",
+        "measure_type": "",
+        "short_description": "Number of 2-year schools per 100k people over 14, calculated within floating catchment areas.",
+        "short_name": "2-year schools",
+        "sources": [
+            {
+                "name": "National Center for Education Statistics",
+                "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
+                "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+                "date_accessed": 2023,
+                "url": "https://nces.ed.gov"
+            },
+            {
+                "name": "American Community Survey",
+                "location": "data/5_year_seq_by_state",
+                "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
+                "date_accessed": 2023,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "Open Source Routing Machine",
+                "url": "http://project-osrm.org"
+            }
+        ],
+        "statement": "There are {value} 2-year schools per 100k people over 14 in {region_name}.",
+        "type": "",
+        "unit": "school per 100k people over 14",
+        "variants": ""
     },
-    "bii21": {
-      "id": "bii21",
-      "author": "Biocomplexity Institute and Initiative",
-      "year": 2021,
-      "title": "catchment: Calculate spatial access and availability metrics",
-      "version": "0.0.1",
-      "url": "https://github.com/uva-bi-sdad/catchment"
+    "schools_2year_with_biomedical_program": {
+        "aggregation_method": "ratio",
+        "categories": "",
+        "category": "Education",
+        "citations": [
+            "wan12",
+            "bii21"
+        ],
+        "data_type": "decimal",
+        "equity_category": "Accessibility",
+        "layer": {
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+            "filter": [
+                {
+                    "feature": "ICLEVEL",
+                    "operator": "=",
+                    "value": 2
+                },
+                {
+                    "feature": "biomedical",
+                    "operator": "=",
+                    "value": 1
+                }
+            ]
+        },
+        "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with biomedical programs (any with Classification of Institutional Programs [CIP] codes starting with 26) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "long_name": "2-year schools with biomedical programs per 100k people over 14",
+        "measure_type": "",
+        "short_description": "Number of 2-year schools with biomedical programs per 100k people over 14, calculated within floating catchment areas.",
+        "short_name": "2-year schools with biomedical programs",
+        "sources": [
+            {
+                "name": "National Center for Education Statistics",
+                "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
+                "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+                "date_accessed": 2023,
+                "url": "https://nces.ed.gov"
+            },
+            {
+                "name": "American Community Survey",
+                "location": "data/5_year_seq_by_state",
+                "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
+                "date_accessed": 2023,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "Open Source Routing Machine",
+                "url": "http://project-osrm.org"
+            }
+        ],
+        "statement": "There are {value} 2-year schools with biomedical programs per 100k people over 14 in {region_name}.",
+        "type": "",
+        "unit": "school per 100k people over 14",
+        "variants": ""
+    },
+    "schools_2year_with_science_program": {
+        "aggregation_method": "ratio",
+        "categories": "",
+        "category": "Education",
+        "citations": [
+            "wan12",
+            "bii21"
+        ],
+        "data_type": "decimal",
+        "equity_category": "Accessibility",
+        "layer": {
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+            "filter": [
+                {
+                    "feature": "ICLEVEL",
+                    "operator": "=",
+                    "value": 2
+                },
+                {
+                    "feature": "science",
+                    "operator": "=",
+                    "value": 1
+                }
+            ]
+        },
+        "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 41) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "long_name": "2-year schools with science programs per 100k people over 14",
+        "measure_type": "",
+        "short_description": "Number of 2-year schools with science programs per 100k people over 14, calculated within floating catchment areas.",
+        "short_name": "2-year schools with science programs",
+        "sources": [
+            {
+                "name": "National Center for Education Statistics",
+                "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
+                "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+                "date_accessed": 2023,
+                "url": "https://nces.ed.gov"
+            },
+            {
+                "name": "American Community Survey",
+                "location": "data/5_year_seq_by_state",
+                "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
+                "date_accessed": 2023,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "Open Source Routing Machine",
+                "url": "http://project-osrm.org"
+            }
+        ],
+        "statement": "There are {value} 2-year schools with science programs per 100k people over 14 in {region_name}.",
+        "type": "",
+        "unit": "school per 100k people over 14",
+        "variants": ""
+    },
+    "schools_2year_with_physical_program": {
+        "aggregation_method": "ratio",
+        "categories": "",
+        "category": "Education",
+        "citations": [
+            "wan12",
+            "bii21"
+        ],
+        "data_type": "decimal",
+        "equity_category": "Accessibility",
+        "layer": {
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+            "filter": [
+                {
+                    "feature": "ICLEVEL",
+                    "operator": "=",
+                    "value": 2
+                },
+                {
+                    "feature": "physical",
+                    "operator": "=",
+                    "value": 1
+                }
+            ]
+        },
+        "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 40) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "long_name": "2-year schools with physical programs per 100k people over 14",
+        "measure_type": "",
+        "short_description": "Number of 2-year schools with physical programs per 100k people over 14, calculated within floating catchment areas.",
+        "short_name": "2-year schools with physical programs",
+        "sources": [
+            {
+                "name": "National Center for Education Statistics",
+                "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
+                "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+                "date_accessed": 2023,
+                "url": "https://nces.ed.gov"
+            },
+            {
+                "name": "American Community Survey",
+                "location": "data/5_year_seq_by_state",
+                "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
+                "date_accessed": 2023,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "Open Source Routing Machine",
+                "url": "http://project-osrm.org"
+            }
+        ],
+        "statement": "There are {value} 2-year schools with physical programs per 100k people over 14 in {region_name}.",
+        "type": "",
+        "unit": "school per 100k people over 14",
+        "variants": ""
+    },
+    "schools_2year_with_computer_program": {
+        "aggregation_method": "ratio",
+        "categories": "",
+        "category": "Education",
+        "citations": [
+            "wan12",
+            "bii21"
+        ],
+        "data_type": "decimal",
+        "equity_category": "Accessibility",
+        "layer": {
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+            "filter": [
+                {
+                    "feature": "ICLEVEL",
+                    "operator": "=",
+                    "value": 2
+                },
+                {
+                    "feature": "computer",
+                    "operator": "=",
+                    "value": 1
+                }
+            ]
+        },
+        "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 11) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "long_name": "2-year schools with computer programs per 100k people over 14",
+        "measure_type": "",
+        "short_description": "Number of 2-year schools with computer programs per 100k people over 14, calculated within floating catchment areas.",
+        "short_name": "2-year schools with computer programs",
+        "sources": [
+            {
+                "name": "National Center for Education Statistics",
+                "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
+                "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+                "date_accessed": 2023,
+                "url": "https://nces.ed.gov"
+            },
+            {
+                "name": "American Community Survey",
+                "location": "data/5_year_seq_by_state",
+                "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
+                "date_accessed": 2023,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "Open Source Routing Machine",
+                "url": "http://project-osrm.org"
+            }
+        ],
+        "statement": "There are {value} 2-year schools with computer programs per 100k people over 14 in {region_name}.",
+        "type": "",
+        "unit": "school per 100k people over 14",
+        "variants": ""
+    },
+    "schools_2year_with_engineering_program": {
+        "aggregation_method": "ratio",
+        "categories": "",
+        "category": "Education",
+        "citations": [
+            "wan12",
+            "bii21"
+        ],
+        "data_type": "decimal",
+        "equity_category": "Accessibility",
+        "layer": {
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+            "filter": [
+                {
+                    "feature": "ICLEVEL",
+                    "operator": "=",
+                    "value": 2
+                },
+                {
+                    "feature": "engineering",
+                    "operator": "=",
+                    "value": 1
+                }
+            ]
+        },
+        "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 14 or 15) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "long_name": "2-year schools with engineering programs per 100k people over 14",
+        "measure_type": "",
+        "short_description": "Number of 2-year schools with engineering programs per 100k people over 14, calculated within floating catchment areas.",
+        "short_name": "2-year schools with engineering programs",
+        "sources": [
+            {
+                "name": "National Center for Education Statistics",
+                "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
+                "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+                "date_accessed": 2023,
+                "url": "https://nces.ed.gov"
+            },
+            {
+                "name": "American Community Survey",
+                "location": "data/5_year_seq_by_state",
+                "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
+                "date_accessed": 2023,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "Open Source Routing Machine",
+                "url": "http://project-osrm.org"
+            }
+        ],
+        "statement": "There are {value} 2-year schools with engineering programs per 100k people over 14 in {region_name}.",
+        "type": "",
+        "unit": "school per 100k people over 14",
+        "variants": ""
+    },
+    "schools_under2year": {
+        "aggregation_method": "ratio",
+        "categories": "",
+        "category": "Education",
+        "citations": [
+            "wan12",
+            "bii21"
+        ],
+        "data_type": "decimal",
+        "equity_category": "Accessibility",
+        "layer": {
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+            "filter": {
+                "feature": "ICLEVEL",
+                "operator": "=",
+                "value": 3
+            }
+        },
+        "long_description": "Number of schools authorized to award certificates that are typically obtained in less than 2 years per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) <2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "long_name": "<2-year schools per 100k people over 14",
+        "measure_type": "",
+        "short_description": "Number of <2-year schools per 100k people over 14, calculated within floating catchment areas.",
+        "short_name": "<2-year schools",
+        "sources": [
+            {
+                "name": "National Center for Education Statistics",
+                "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
+                "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+                "date_accessed": 2023,
+                "url": "https://nces.ed.gov"
+            },
+            {
+                "name": "American Community Survey",
+                "location": "data/5_year_seq_by_state",
+                "location_url": "https://www2.census.gov/programs-surveys/acs/summary_file",
+                "date_accessed": 2023,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "Open Source Routing Machine",
+                "url": "http://project-osrm.org"
+            }
+        ],
+        "statement": "There are {value} <2-year schools per 100k people over 14 in {region_name}.",
+        "type": "",
+        "unit": "school per 100k people over 14",
+        "variants": ""
+    },
+    "schools_2year_min_drivetime": {
+        "aggregation_method": "minimum",
+        "categories": "",
+        "category": "Education",
+        "citations": "",
+        "data_type": "decimal",
+        "equity_category": "Accessibility",
+        "layer": {
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+            "filter": {
+                "feature": "ICLEVEL",
+                "operator": "=",
+                "value": 2
+            }
+        },
+        "long_description": "Minimal drive time to a schools authorized to award Associates degrees or 2-year or longer certificates from the Census block group centroid, as calculated by the Open Source Routing Machine. School locations are from the National Center for Education Statistics. All distances are calculated at the block group level, then averaged up to higher-level geographies.",
+        "long_name": "drive time to nearest 2-year school",
+        "measure_type": "",
+        "short_description": "Drive time to the nearest 2-year schools.",
+        "short_name": "2-year school drive time",
+        "sources": [
+            {
+                "name": "National Center for Education Statistics",
+                "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
+                "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+                "date_accessed": 2023,
+                "url": "https://nces.ed.gov"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "Open Source Routing Machine",
+                "url": "http://project-osrm.org"
+            }
+        ],
+        "statement": "It takes {value} to drive to the nearest 2-year school from {region_name}'s block group centroids on average.",
+        "type": "",
+        "unit": "minute",
+        "variants": ""
+    },
+    "schools_under2year_min_drivetime": {
+        "aggregation_method": "minimum",
+        "categories": "",
+        "category": "Education",
+        "citations": "",
+        "data_type": "decimal",
+        "equity_category": "Accessibility",
+        "layer": {
+            "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson",
+            "filter": {
+                "feature": "ICLEVEL",
+                "operator": "=",
+                "value": 3
+            }
+        },
+        "long_description": "Minimal drive time to a schools authorized to award certificates that are typically obtained in less than 2 years from the Census block group centroid, as calculated by the Open Source Routing Machine. School locations are from the National Center for Education Statistics. All distances are calculated at the block group level, then averaged up to higher-level geographies.",
+        "long_name": "drive time to nearest <2-year school",
+        "measure_type": "",
+        "short_description": "Drive time to the nearest <2-year schools.",
+        "short_name": "<2-year school drive time",
+        "sources": [
+            {
+                "name": "National Center for Education Statistics",
+                "location": "Integrated Postsecondary Education Data System, Institutional Characteristics",
+                "location_url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+                "date_accessed": 2023,
+                "url": "https://nces.ed.gov"
+            },
+            {
+                "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
+                "name": "Open Source Routing Machine",
+                "url": "http://project-osrm.org"
+            }
+        ],
+        "statement": "It takes {value} to drive to the nearest <2-year school from {region_name}'s block group centroids on average.",
+        "type": "",
+        "unit": "minute",
+        "variants": ""
+    },
+    "acs_postsecondary_percent": {
+        "aggregation_method": "percent",
+        "categories": "",
+        "category": "Education",
+        "citations": "",
+        "data_type": "decimal",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Percentage of the population who reported any postsecondary education, according to the U.S. Census American Community Survey 5-year estimates.",
+        "long_name": "Estimated Percentage of the Population With Any Postsecondary Education",
+        "measure_type": "",
+        "short_description": "Percentage of the population who reported any postsecondary education.",
+        "short_name": "Postsecondary Education (percent)",
+        "sources": [
+            {
+                "name": "U.S. Census, American Community Survey",
+                "location": "5-Year estimates, table B06009, via the API",
+                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+                "date_accessed": 2023,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "{value} of those in {region_name} report any postsecondary education.",
+        "type": "",
+        "unit": "individual",
+        "variants": ""
+    },
+    "acs_postsecondary_count": {
+        "aggregation_method": "count",
+        "categories": "",
+        "category": "Education",
+        "citations": "",
+        "data_type": "integer",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Number of people who reported any postsecondary education, according to the U.S. Census American Community Survey 5-year estimates.",
+        "long_name": "Estimated Number of People With Any Postsecondary Education",
+        "measure_type": "",
+        "short_description": "Number of people who reported any postsecondary education.",
+        "short_name": "Postsecondary Education (count)",
+        "sources": [
+            {
+                "name": "U.S. Census, American Community Survey",
+                "location": "5-Year estimates, table B06009, via the API",
+                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+                "date_accessed": 2023,
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            }
+        ],
+        "statement": "In {region_name}, {value} report any postsecondary education.",
+        "type": "",
+        "unit": "individual",
+        "variants": ""
+    },
+    "_references": {
+        "wan12": {
+            "id": "wan12",
+            "author": [
+                {
+                    "given": "Neng",
+                    "family": "Wan"
+                },
+                {
+                    "given": "Bin",
+                    "family": "Zou"
+                },
+                {
+                    "given": "Troy",
+                    "family": "Sternberg"
+                }
+            ],
+            "year": 2012,
+            "title": "A three-step floating catchment area method for analyzing spatial access to health services",
+            "journal": "International Journal of Geographical Information Science",
+            "volume": "26",
+            "page": "1073\u20131089",
+            "doi": "10.1080/13658816.2011.624987"
+        },
+        "bii21": {
+            "id": "bii21",
+            "author": "Biocomplexity Institute and Initiative",
+            "year": 2021,
+            "title": "catchment: Calculate spatial access and availability metrics",
+            "version": "0.0.1",
+            "url": "https://github.com/uva-bi-sdad/catchment"
+        }
     }
-  }
 }

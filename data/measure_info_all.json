@@ -15321,11 +15321,15 @@
     },
     "acs_postsecondary_count": {
         "aggregation_method": "count",
+        "categories": "",
         "category": "Education",
+        "citations": "",
         "data_type": "integer",
         "equity_category": "Status",
+        "layer": "",
         "long_description": "Number of people who reported any postsecondary education, according to the U.S. Census American Community Survey 5-year estimates.",
         "long_name": "Estimated Number of People With Any Postsecondary Education",
+        "measure_type": "",
         "short_description": "Number of people who reported any postsecondary education.",
         "short_name": "Postsecondary Education (count)",
         "sources": [
@@ -15338,15 +15342,21 @@
             }
         ],
         "statement": "In {region_name}, {value} report any postsecondary education.",
-        "unit": "individual"
+        "type": "",
+        "unit": "individual",
+        "variants": ""
     },
     "acs_postsecondary_percent": {
         "aggregation_method": "percent",
+        "categories": "",
         "category": "Education",
+        "citations": "",
         "data_type": "decimal",
         "equity_category": "Status",
+        "layer": "",
         "long_description": "Percentage of the population who reported any postsecondary education, according to the U.S. Census American Community Survey 5-year estimates.",
         "long_name": "Estimated Percentage of the Population With Any Postsecondary Education",
+        "measure_type": "",
         "short_description": "Percentage of the population who reported any postsecondary education.",
         "short_name": "Postsecondary Education (percent)",
         "sources": [
@@ -15359,7 +15369,9 @@
             }
         ],
         "statement": "{value} of those in {region_name} report any postsecondary education.",
-        "unit": "individual"
+        "type": "",
+        "unit": "individual",
+        "variants": ""
     },
     "acs_postsecondary_{variant}": {
         "aggregation_method": "{variant}",
@@ -17404,6 +17416,7 @@
     },
     "average_years_schooling": {
         "aggregation_method": "",
+        "categories": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",
@@ -17418,13 +17431,15 @@
             {
                 "date_accessed": "2023",
                 "location": "Table B15001",
+                "location_url": "",
                 "name": "American Community Survey",
                 "url": "https://www.census.gov/programs-surveys/acs.html"
             }
         ],
         "statement": "{value} is the avg yrs of schooling in {features.name}.",
         "type": "average",
-        "unit": ""
+        "unit": "",
+        "variants": ""
     },
     "avg_down_using_devices": {
         "aggregation_method": "weighted arithmetic mean",
@@ -18076,7 +18091,9 @@
     },
     "daycare_capacity": {
         "aggregation_method": "count",
+        "categories": "",
         "category": "Education",
+        "citations": "",
         "data_type": "integer",
         "equity_category": "Availability",
         "layer": {
@@ -18084,6 +18101,7 @@
         },
         "long_description": "Summed capacity (seats) of all day care providers within the region, according to the Virginia Department of Social Services.",
         "long_name": "Day Care Capacity (seats)",
+        "measure_type": "",
         "short_description": "Number of day care seats.",
         "short_name": "Day Care Capacity",
         "sources": [
@@ -18096,11 +18114,15 @@
             }
         ],
         "statement": "There are {value} day care seats in {region_name}.",
-        "unit": "day care seat"
+        "type": "",
+        "unit": "day care seat",
+        "variants": ""
     },
     "daycare_min_drivetime": {
         "aggregation_method": "minimum",
+        "categories": "",
         "category": "Education",
+        "citations": "",
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": {
@@ -18108,6 +18130,7 @@
         },
         "long_description": "Time (minutes) to drive to the nearest day care provider of any type. Times are calculated using the Open Source Routing Machine, from block group centroids to each provider. Times for higher geolayers are averaged across block groups.",
         "long_name": "Minutes to Nearest Day Care",
+        "measure_type": "",
         "short_description": "Minutes to the nearest day care provider.",
         "short_name": "Day Care Drive Time",
         "sources": [
@@ -18120,15 +18143,20 @@
             },
             {
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
                 "name": "Open Source Routing Machine",
                 "url": "http://project-osrm.org"
             }
         ],
         "statement": "It takes {value} to drive to the nearest day care provider in {region_name}.",
-        "unit": "minute"
+        "type": "",
+        "unit": "minute",
+        "variants": ""
     },
     "daycare_ratio": {
         "aggregation_method": "ratio",
+        "categories": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -18153,6 +18181,7 @@
         },
         "long_description": "Number of day care seats per 1,000 children under 15 years of age, which accept at least ages 4 to 10, as calculated within floating catchment areas. Catchment area ratios are based on the population of children under 15 within block groups (as estimated in the American Community Survey), capacity of eligible day care providers (as reported by the Virginia Department of Social Services), and travel times between block group centroids and day care locations (as calculated with the Open Source Routing Machine). Catchment areas are weighted by travel time with a Gaussian function with scale of 18, which are normalized for each consumer (for a 3-step floating catchment area), as calculated by the catchment R package.",
         "long_name": "Day Care Seats Per 1k Children Under 15, Accepting at Least Ages 4-10",
+        "measure_type": "",
         "short_description": "Number of day care seats per 1,000 children under 15 years of age, which accept at least ages 4 to 10.",
         "short_name": "Day Care Seats Per 1k Children Under 15",
         "sources": [
@@ -18172,15 +18201,20 @@
             },
             {
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
                 "name": "Open Source Routing Machine",
                 "url": "http://project-osrm.org"
             }
         ],
         "statement": "There are {value} day care seats per 1,000 children under 15 in {region_name}.",
-        "unit": "day care seat per 1k children"
+        "type": "",
+        "unit": "day care seat per 1k children",
+        "variants": ""
     },
     "daycare_ratio_over_4": {
         "aggregation_method": "ratio",
+        "categories": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -18198,6 +18232,7 @@
         },
         "long_description": "Number of day care seats per 1,000 children between 5 and 14 years of age, which accept at least some ages over 4, as calculated within floating catchment areas. Catchment area ratios are based on the population of children over 4 within block groups (as estimated in the American Community Survey), capacity of eligible day care providers (as reported by the Virginia Department of Social Services), and travel times between block group centroids and day care locations (as calculated with the Open Source Routing Machine). Catchment areas are weighted by travel time with a Gaussian function with scale of 18, which are normalized for each consumer (for a 3-step floating catchment area), as calculated by the catchment R package.",
         "long_name": "Day Care Seats Per 1k Children Between 5 and 14, With Minimal Accepted Age Over 4",
+        "measure_type": "",
         "short_description": "Number of day care seats per 1,000 children between 5 and 14 years of age, which accept at least some ages over 4.",
         "short_name": "Day Care Seats Per 1k Children Over 4",
         "sources": [
@@ -18217,15 +18252,20 @@
             },
             {
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
                 "name": "Open Source Routing Machine",
                 "url": "http://project-osrm.org"
             }
         ],
         "statement": "There are {value} day care seats per 1,000 children over 4 in {region_name}.",
-        "unit": "day care seat per 1k children"
+        "type": "",
+        "unit": "day care seat per 1k children",
+        "variants": ""
     },
     "daycare_ratio_under_10": {
         "aggregation_method": "ratio",
+        "categories": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -18243,6 +18283,7 @@
         },
         "long_description": "Number of day care seats per 1,000 children under 10 years of age, which accept at least some ages under 10, as calculated within floating catchment areas. Catchment area ratios are based on the population of children under 10 within block groups (as estimated in the American Community Survey), capacity of eligible day care providers (as reported by the Virginia Department of Social Services), and travel times between block group centroids and day care locations (as calculated with the Open Source Routing Machine). Catchment areas are weighted by travel time with a Gaussian function with scale of 18, which are normalized for each consumer (for a 3-step floating catchment area), as calculated by the catchment R package.",
         "long_name": "Day Care Seats Per 1k Children Under 10, With Maximal Accepted Age Under 10",
+        "measure_type": "",
         "short_description": "Number of day care seats per 1,000 children under 10 years of age, which accept at least some ages under 10.",
         "short_name": "Day Care Seats Per 1k Children Under 10",
         "sources": [
@@ -18262,12 +18303,16 @@
             },
             {
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
                 "name": "Open Source Routing Machine",
                 "url": "http://project-osrm.org"
             }
         ],
         "statement": "There are {value} day care seats per 1,000 children under 10 in {region_name}.",
-        "unit": "day care seat per 1k children"
+        "type": "",
+        "unit": "day care seat per 1k children",
+        "variants": ""
     },
     "daycare_ratio{category}": {
         "aggregation_method": "ratio",
@@ -21288,11 +21333,15 @@
     },
     "mean_read_pass_rate": {
         "aggregation_method": "percent",
+        "categories": "",
         "category": "Education",
+        "citations": "",
         "data_type": "decimal",
         "equity_category": "Status",
+        "layer": "",
         "long_description": "Mean percentage of 3rd grade population passing reading test. The mean is calculated across schools in the region.",
         "long_name": "Mean percentage of 3rd graders passing reading test",
+        "measure_type": "",
         "short_description": "Mean percentage of 3rd grade population passing reading test for schools in the region",
         "short_name": "Mean 3rd graders passing reading",
         "sources": [
@@ -21305,7 +21354,9 @@
             }
         ],
         "statement": "On average, {value} of 3rd graders pass reading in {region_name}.",
-        "unit": "person"
+        "type": "",
+        "unit": "person",
+        "variants": ""
     },
     "median_household_income": {
         "aggregation_method": "",
@@ -21336,11 +21387,15 @@
     },
     "median_read_pass_rate": {
         "aggregation_method": "percent",
+        "categories": "",
         "category": "Education",
+        "citations": "",
         "data_type": "decimal",
         "equity_category": "Status",
+        "layer": "",
         "long_description": "Median percentage of 3rd grade population passing reading test. The median is calculated across schools in the region.",
         "long_name": "Median percentage of 3rd graders passing reading test",
+        "measure_type": "",
         "short_description": "Median percentage of 3rd grade population passing reading test for schools in the region",
         "short_name": "Median 3rd graders passing reading",
         "sources": [
@@ -21353,7 +21408,9 @@
             }
         ],
         "statement": "Most often, {value} of 3rd graders pass reading in {region_name}.",
-        "unit": "person"
+        "type": "",
+        "unit": "person",
+        "variants": ""
     },
     "mental_3sfca": {
         "aggregation_method": "",
@@ -28330,6 +28387,8 @@
         "variants": ""
     },
     "schoolFundAdequacy": {
+        "aggregation_method": "",
+        "categories": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",
@@ -28343,16 +28402,20 @@
         "sources": [
             {
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
                 "name": "School Finance Indicators Database",
                 "url": "https://www.schoolfinancedata.org/download-data/"
             }
         ],
         "statement": "The average gap between actual and required spending per pupil is {value} in {features.name}.",
         "type": "dollar",
-        "unit": "dollars"
+        "unit": "dollars",
+        "variants": ""
     },
     "schools_2year_all": {
         "aggregation_method": "ratio",
+        "categories": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -28370,6 +28433,7 @@
         },
         "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
         "long_name": "2-year schools per 100k people over 14",
+        "measure_type": "",
         "short_description": "Number of 2-year schools per 100k people over 14, calculated within floating catchment areas.",
         "short_name": "2-year schools",
         "sources": [
@@ -28389,16 +28453,22 @@
             },
             {
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
                 "name": "Open Source Routing Machine",
                 "url": "http://project-osrm.org"
             }
         ],
         "statement": "There are {value} 2-year schools per 100k people over 14 in {region_name}.",
-        "unit": "school per 100k people over 14"
+        "type": "",
+        "unit": "school per 100k people over 14",
+        "variants": ""
     },
     "schools_2year_min_drivetime": {
         "aggregation_method": "minimum",
+        "categories": "",
         "category": "Education",
+        "citations": "",
         "data_type": "decimal",
         "equity_category": "Accessibility",
         "layer": {
@@ -28411,6 +28481,7 @@
         },
         "long_description": "Minimal drive time to a schools authorized to award Associates degrees or 2-year or longer certificates from the Census block group centroid, as calculated by the Open Source Routing Machine. School locations are from the National Center for Education Statistics. All distances are calculated at the block group level, then averaged up to higher-level geographies.",
         "long_name": "drive time to nearest 2-year school",
+        "measure_type": "",
         "short_description": "Drive time to the nearest 2-year schools.",
         "short_name": "2-year school drive time",
         "sources": [
@@ -28423,15 +28494,20 @@
             },
             {
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
                 "name": "Open Source Routing Machine",
                 "url": "http://project-osrm.org"
             }
         ],
         "statement": "It takes {value} to drive to the nearest 2-year school from {region_name}'s block group centroids on average.",
-        "unit": "minute"
+        "type": "",
+        "unit": "minute",
+        "variants": ""
     },
     "schools_2year_with_biomedical_program": {
         "aggregation_method": "ratio",
+        "categories": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -28456,6 +28532,7 @@
         },
         "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with biomedical programs (any with Classification of Institutional Programs [CIP] codes starting with 26) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
         "long_name": "2-year schools with biomedical programs per 100k people over 14",
+        "measure_type": "",
         "short_description": "Number of 2-year schools with biomedical programs per 100k people over 14, calculated within floating catchment areas.",
         "short_name": "2-year schools with biomedical programs",
         "sources": [
@@ -28475,15 +28552,20 @@
             },
             {
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
                 "name": "Open Source Routing Machine",
                 "url": "http://project-osrm.org"
             }
         ],
         "statement": "There are {value} 2-year schools with biomedical programs per 100k people over 14 in {region_name}.",
-        "unit": "school per 100k people over 14"
+        "type": "",
+        "unit": "school per 100k people over 14",
+        "variants": ""
     },
     "schools_2year_with_computer_program": {
         "aggregation_method": "ratio",
+        "categories": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -28508,6 +28590,7 @@
         },
         "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 11) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
         "long_name": "2-year schools with computer programs per 100k people over 14",
+        "measure_type": "",
         "short_description": "Number of 2-year schools with computer programs per 100k people over 14, calculated within floating catchment areas.",
         "short_name": "2-year schools with computer programs",
         "sources": [
@@ -28527,15 +28610,20 @@
             },
             {
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
                 "name": "Open Source Routing Machine",
                 "url": "http://project-osrm.org"
             }
         ],
         "statement": "There are {value} 2-year schools with computer programs per 100k people over 14 in {region_name}.",
-        "unit": "school per 100k people over 14"
+        "type": "",
+        "unit": "school per 100k people over 14",
+        "variants": ""
     },
     "schools_2year_with_engineering_program": {
         "aggregation_method": "ratio",
+        "categories": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -28560,6 +28648,7 @@
         },
         "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 14 or 15) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
         "long_name": "2-year schools with engineering programs per 100k people over 14",
+        "measure_type": "",
         "short_description": "Number of 2-year schools with engineering programs per 100k people over 14, calculated within floating catchment areas.",
         "short_name": "2-year schools with engineering programs",
         "sources": [
@@ -28579,15 +28668,20 @@
             },
             {
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
                 "name": "Open Source Routing Machine",
                 "url": "http://project-osrm.org"
             }
         ],
         "statement": "There are {value} 2-year schools with engineering programs per 100k people over 14 in {region_name}.",
-        "unit": "school per 100k people over 14"
+        "type": "",
+        "unit": "school per 100k people over 14",
+        "variants": ""
     },
     "schools_2year_with_physical_program": {
         "aggregation_method": "ratio",
+        "categories": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -28612,6 +28706,7 @@
         },
         "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 40) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
         "long_name": "2-year schools with physical programs per 100k people over 14",
+        "measure_type": "",
         "short_description": "Number of 2-year schools with physical programs per 100k people over 14, calculated within floating catchment areas.",
         "short_name": "2-year schools with physical programs",
         "sources": [
@@ -28631,15 +28726,20 @@
             },
             {
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
                 "name": "Open Source Routing Machine",
                 "url": "http://project-osrm.org"
             }
         ],
         "statement": "There are {value} 2-year schools with physical programs per 100k people over 14 in {region_name}.",
-        "unit": "school per 100k people over 14"
+        "type": "",
+        "unit": "school per 100k people over 14",
+        "variants": ""
     },
     "schools_2year_with_science_program": {
         "aggregation_method": "ratio",
+        "categories": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -28664,6 +28764,7 @@
         },
         "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 41) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
         "long_name": "2-year schools with science programs per 100k people over 14",
+        "measure_type": "",
         "short_description": "Number of 2-year schools with science programs per 100k people over 14, calculated within floating catchment areas.",
         "short_name": "2-year schools with science programs",
         "sources": [
@@ -28683,12 +28784,16 @@
             },
             {
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
                 "name": "Open Source Routing Machine",
                 "url": "http://project-osrm.org"
             }
         ],
         "statement": "There are {value} 2-year schools with science programs per 100k people over 14 in {region_name}.",
-        "unit": "school per 100k people over 14"
+        "type": "",
+        "unit": "school per 100k people over 14",
+        "variants": ""
     },
     "schools_2year_{category.name}": {
         "aggregation_method": "ratio",
@@ -28838,6 +28943,7 @@
     },
     "schools_under2year": {
         "aggregation_method": "ratio",
+        "categories": "",
         "category": "Education",
         "citations": [
             "wan12",
@@ -28855,6 +28961,7 @@
         },
         "long_description": "Number of schools authorized to award certificates that are typically obtained in less than 2 years per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) <2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
         "long_name": "<2-year schools per 100k people over 14",
+        "measure_type": "",
         "short_description": "Number of <2-year schools per 100k people over 14, calculated within floating catchment areas.",
         "short_name": "<2-year schools",
         "sources": [
@@ -28874,16 +28981,22 @@
             },
             {
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
                 "name": "Open Source Routing Machine",
                 "url": "http://project-osrm.org"
             }
         ],
         "statement": "There are {value} <2-year schools per 100k people over 14 in {region_name}.",
-        "unit": "school per 100k people over 14"
+        "type": "",
+        "unit": "school per 100k people over 14",
+        "variants": ""
     },
     "schools_under2year_min_drivetime": {
         "aggregation_method": "minimum",
+        "categories": "",
         "category": "Education",
+        "citations": "",
         "data_type": "decimal",
         "equity_category": "Accessibility",
         "layer": {
@@ -28896,6 +29009,7 @@
         },
         "long_description": "Minimal drive time to a schools authorized to award certificates that are typically obtained in less than 2 years from the Census block group centroid, as calculated by the Open Source Routing Machine. School locations are from the National Center for Education Statistics. All distances are calculated at the block group level, then averaged up to higher-level geographies.",
         "long_name": "drive time to nearest <2-year school",
+        "measure_type": "",
         "short_description": "Drive time to the nearest <2-year schools.",
         "short_name": "<2-year school drive time",
         "sources": [
@@ -28908,12 +29022,16 @@
             },
             {
                 "date_accessed": 2022,
+                "location": "",
+                "location_url": "",
                 "name": "Open Source Routing Machine",
                 "url": "http://project-osrm.org"
             }
         ],
         "statement": "It takes {value} to drive to the nearest <2-year school from {region_name}'s block group centroids on average.",
-        "unit": "minute"
+        "type": "",
+        "unit": "minute",
+        "variants": ""
     },
     "schools_{variant.name}_min_drivetime": {
         "aggregation_method": "minimum",

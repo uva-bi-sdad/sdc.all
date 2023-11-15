@@ -1,5 +1,7 @@
 {
     "schoolFundAdequacy": {
+        "aggregation_method": "",
+        "categories": "",
         "category": "Education",
         "citations": "",
         "data_type": "numeric",
@@ -13,12 +15,15 @@
         "sources": [
             {
                 "date_accessed": 2023,
+                "location": "",
+                "location_url": "",
                 "name": "School Finance Indicators Database",
                 "url": "https://www.schoolfinancedata.org/download-data/"
             }
         ],
         "statement": "The average gap between actual and required spending per pupil is {value} in {features.name}.",
         "type": "dollar",
-        "unit": "dollars"
+        "unit": "dollars",
+        "variants": ""
     }
 }
