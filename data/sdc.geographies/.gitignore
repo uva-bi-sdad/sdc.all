@@ -45,3 +45,5 @@ renv/library/
 renv/python/
 renv/staging/
 .Rproj.user
+
+*core.8040

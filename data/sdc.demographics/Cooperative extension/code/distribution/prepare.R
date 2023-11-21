@@ -65,6 +65,11 @@ for(state in states){
 } # there are 142 NaN's
 
 
+sexes <- sexes %>% 
+  rename(geoid = GEOID,
+         region_name = NAME)
+
+
 # Save tables to data/distribution folders, fill out measure_info for measures
 # Once you finish a piece of code you can move it to the code/distribution folder, you can keep scrap/archive code in the code/working folder (same with the data folders, for scrap/archive tables)
 

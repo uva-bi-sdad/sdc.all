@@ -156,6 +156,7 @@ demographics,race_AAPI_percent_direct,The Asian American/Pacific Islander popula
 demographics,race_other_percent_direct,The Other racial population percentage direct,2009,2021,,X,X,,X,X,,,,X,,,,X,
 demographics,race_two_or_more_percent_direct,The two or more races population percentage direct,2009,2021,,X,X,,X,X,,,,X,,,,X,
 demographics,perc_children_raised_by_GPs,Children Raised by Grandparents,2010,2021,,,,,,,,,,X,,,,X,
+demographics,perc_male,Male population,2010,2021,,,,,,,,,,X,,,,X,
 demographics,disconnectedYouth,Disconnected youth,2017,2023,,,,,,,,,,X,,,,,
 demographics,voterTurnout,Voter turnout,2023,2023,,,,,,,,,,X,,,,,
 demographics,veteran_count_direct,The Veteran population direct,2009,2021,,X,X,,X,X,,X,,X,X,X,X,X,X
