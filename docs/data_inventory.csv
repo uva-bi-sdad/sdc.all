@@ -14,7 +14,7 @@ housing,monthly_rent_3br,3 Bedroom Dwelling Fair Market Rent,2022,2022,,X,X,,X,X
 housing,monthly_rent_4br,4 Bedroom Dwelling Fair Market Rent,2022,2022,,X,X,,X,X,,,,X,,,,X,
 education,median_read_pass_rate,Median 3rd graders passing reading,2015,2021,,,,,,,,,,X,,,,,
 education,average_years_schooling,Average Years of Schooling,2017,2021,,,X,,,X,,,,,,,,X,
-education,average_years_of_schooling,,2017,2021,,,,,,,,,,X,X,,,X,
+education,average_years_of_schooling,,2017,2021,,,,,,,,,,X,X,,,,
 education,schools_2year_min_drivetime,2-year school drive time,2013,2021,X,X,X,X,X,X,,X,,X,X,,,,
 education,schools_under2year_min_drivetime,<2-year school drive time,2013,2021,X,X,X,X,X,X,,X,,X,X,,,,
 education,schools_2year_all,2-year schools,2013,2021,X,X,X,X,X,X,,X,,X,X,,,,

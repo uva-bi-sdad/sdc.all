@@ -36,3 +36,4 @@ all <- rbind(ct_hd, dat_fin_tr)
 
 # fwrite(dat_fin, "Years of Schooling/data/distribution/va_tr_acs5_2017_2021_years_of_schooling.csv")
 readr::write_csv(all, xzfile("Years of Schooling/data/distribution/va_hdcttr_acs5_2017_2021_years_of_schooling.csv.xz", compression = 9))
+
