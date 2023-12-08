@@ -1,0 +1,21 @@
+variable,weighted_mean,desc
+B01001A_021,0.8080175415219596,white female ages 15-17
+B01001A_0WM,0.826975730951184,white female ages 18+
+B01001B_021,0.7662226614025137,black female ages 15-17
+B01001B_0WM,0.825538883976825,black female ages 18+
+B01001C_021,0.9866745031384992,native female ages 15-17
+B01001C_0WM,0.9699599689249482,native female ages 18+
+B01001D_021,0.774419423863378,asian female ages 15-17
+B01001D_0WM,0.8248839785623874,asian female ages 18+
+B01001E_021,NA,native hawaiian or other pacific islander female ages 15-17
+B01001E_0WM,0.6123577669160867,native hawaiian or other pacific islander female ages 18+
+B01001F_021,0.9190164500257876,other races female ages 15-17
+B01001F_0WM,0.9079352574338561,other races female ages 18+
+B01001G_021,0.8002046236790921,two or more races female ages 15-17
+B01001G_0WM,0.8131130905007735,two or more races female ages 18+
+B01001H_021,0.7932014750829715,white non-hispanic female ages 15-17
+B01001H_0WM,0.8232440563352919,white non-hispanic female ages 18+
+B01001I_021,0.8664708331709103,hispanic or latino female ages 15-17
+B01001I_0WM,0.8609192788243575,hispanic or latino female ages 18+
+B01001_030,0.8045492089793319,total female ages 15-17
+B01001_0WM,0.8295215755155751,total female ages 18+
