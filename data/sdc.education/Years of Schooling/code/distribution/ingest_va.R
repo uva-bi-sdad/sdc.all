@@ -3,6 +3,21 @@ library(data.table)
 library(dplyr)
 library(tidyr)
 
+# YOS weights - from VDOH
+# 1-4 years (005-008) --> 2.5
+# 5-6 years (009-010) --> 5.5
+# 7-8 years (011-012) --> 7.5
+# 9th grade (013) --> 9
+# 10th grade (014) --> 10
+# 11th grade (015-016) --> 11
+# graduate (017-018) --> 12
+# some college, no degree (019-020) --> 13
+# associate's degree (021) --> 14
+# bachelor's degree (022) --> 16
+# master's degree (023) --> 18
+# professional degree (024) --> 19
+# doctorate (025) --> 20
+
 census_api_key(Sys.getenv('census_api_key'))
 source("~/git/sdc.education_dev/utils/distribution/aggregate.R")
 
