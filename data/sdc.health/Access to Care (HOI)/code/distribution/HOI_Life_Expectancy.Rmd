@@ -1,0 +1,113 @@
+---
+title: "HOI Life Expectancy Predictors"
+author: "Michael Vaden"
+date: "2023-12-14"
+output: html_document
+---
+
+```{r}
+#dir_data = 'https://mdporter.github.io/DS6030/data/' # data directory
+#file.choose()
+library(readxl)
+library(tidyverse)
+# problems installing tidymodels in Rivanna
+library(tidymodels)
+Raw_HOI_Indicators <- read_excel("~/git/sdc.health_dev/Access to Care (HOI)/data/distribution/HOI V3 14 Variables_For UVA.xlsx")
+```
+
+## Join Life Expectancy and Tracts
+
+```{r}
+HOI_Life_Expectancy <- read_excel("~/git/sdc.health_dev/Access to Care (HOI)/data/distribution/LE_Virginia.xlsx")
+
+HOI_combined = Raw_HOI_Indicators %>% left_join(HOI_Life_Expectancy %>% rename("CT2" = `Census tract`), by="CT2") %>% rename("LifeExpectancy" = "e(0)")
+
+sum(is.na(HOI_combined$LifeExpectancy))
+```
+
+## Impute Missing Life Expectancy Values with KNN
+
+Unfortunately the kNNImpute function from the 2017 approach is used in the imputation package, which is [no longer available in CRAN and with updated R-Studio](https://cran.r-project.org/web/packages/imputation/index.html)
+
+We use TidyModels instead for KNN imputation.
+
+Our k value for this approach is the square root of the sample size (N = 2168) rounded to the nearest integer
+
+```{r}
+knn_recipe <- recipe(LifeExpectancy ~ ., data = HOI_combined) %>%
+  step_string2factor(all_nominal_predictors()) %>%
+  step_impute_knn(LifeExpectancy, neighbors = round(sqrt(nrow(HOI_combined))))
+
+HOI_recipe <- prep(knn_recipe, training = HOI_combined)
+HOI_imputed <- bake(HOI_recipe, HOI_combined)
+
+HOI_imputed$LifeExpectancy <- round(HOI_imputed$LifeExpectancy, 2)
+```
+
+## Comparing Imputation Results
+
+
+```{r}
+combined <- HOI_combined %>% summarize(type = "raw", mean = mean(LifeExpectancy, na.rm=TRUE), median = median(LifeExpectancy, na.rm=TRUE), sd = sd(LifeExpectancy, na.rm=TRUE), n = sum(!is.na(LifeExpectancy)))
+
+imputed <- HOI_imputed %>% summarize(type = "imputed", mean = mean(LifeExpectancy, na.rm=TRUE), median = median(LifeExpectancy, na.rm=TRUE), sd = sd(LifeExpectancy, na.rm=TRUE), n = n())
+
+results = tibble()
+results = rbind(results, combined)
+results = rbind(results, imputed)
+results
+```
+
+The raw and imputed LEB measures are summarized and it was observed that imputation did not meaningfully change the mean, median or standard deviation.
+
+```{r}
+data.frame(cor(HOI_imputed[,c(5:18, 20)])) %>% select(LifeExpectancy)
+```
+
+We can see above that the indicators of education and incarceration are most highly correlated with LEB.
+
+## Scale Data
+
+From methodology: HOI indicator values were converted into z-scores by subtracting the indicator’s mean and dividing by that indicator’s standard deviation, while indicators negatively associated with LEB were also multiplied by -1.
+
+```{r}
+# Function to scale numeric columns between 0 and 1 with z-scores
+scale_numeric <- function(x) {
+  if (is.numeric(x)) {
+    x <- (x - min(x, na.rm = TRUE)) / (max(x, na.rm = TRUE) - min(x, na.rm = TRUE))
+  }
+  return(x)
+}
+
+# scale the indicators to be between 0 and 1 to match scaled HOI data
+normalized_df <- HOI_imputed %>%
+  mutate(across(where(is.numeric), scale_numeric)) %>% mutate_if(is.numeric, round, digits=3)
+# For HOI replication, we flipped the last 8 indicators
+# Does this need to happen for LEB? I do not know.
+
+# need to ask if instead of reversing (1-x), we multiply by -1
+data_matrix = normalized_df[,c(5:18, 20)]
+data_matrix[,7:14] = 1 - data_matrix[,7:14]
+
+#data.frame(cor(data_matrix)) %>% select(LifeExpectancy)
+```
+
+```{r}
+# take out tract info and total population
+geo_labels = HOI_imputed[,c(1:4, 19)]
+```
+
+## Weighted Quantile Sum
+
+```{r}
+library(wqs)
+data("WQSdata")
+WQSdata
+wqs.est(data_matrix[,'LifeExpectancy'], as.matrix(data_matrix[,-15]))
+```
+
+```{r}
+dim(data_matrix[,15])
+dim(as.matrix(data_matrix[,-15]))
+```
+

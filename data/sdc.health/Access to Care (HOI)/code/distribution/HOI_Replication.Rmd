@@ -1,0 +1,132 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r, echo=FALSE, include=FALSE}
+#file.choose()
+library(readxl)
+library(tidyverse)
+```
+
+```{r}
+Raw_HOI_Indicators <- read_excel("~/git/sdc.health_dev/Access to Care (HOI)/data/distribution/HOI V3 14 Variables_For UVA.xlsx")
+
+
+# Function to scale numeric columns between 0 and 1
+scale_numeric <- function(x) {
+  if (is.numeric(x)) {
+    x <- (x - min(x, na.rm = TRUE)) / (max(x, na.rm = TRUE) - min(x, na.rm = TRUE))
+  }
+  return(x)
+}
+
+# scale the indicators to be between 0 and 1 to match scaled HOI data
+normalized_df <- Raw_HOI_Indicators %>%
+  mutate(across(where(is.numeric), scale_numeric)) %>% mutate_if(is.numeric, round, digits=3)
+# invert the last 8 scaled indicators to match given HOI data
+normalized_df[,11:18] = 1- normalized_df[,11:18] 
+
+#View(normalized_df)
+```
+
+```{r}
+# take out tract info and total population
+geo_labels = normalized_df[,1:4]
+# create matrix of just numeric 14 indicators
+data_matrix = normalized_df[,5:18]
+```
+
+
+```{r}
+library(psych) # For Varimax rotation
+library(MASS) # For PCA
+
+# Step 1: Perform PCA with Pearson correlation without rotation
+pca_result <- princomp(data_matrix, cor=TRUE)
+
+# Step 2: Find Eigenvalues above 1 (there should be 4)
+eigenvalues <- pca_result$sdev^2
+num_factors_above_1 <- sum(eigenvalues > 1)
+print(num_factors_above_1)
+print(eigenvalues)
+
+# Step 3: Calculate weight of variance for the 1st four components
+cumulative_variability <- sum(eigenvalues)
+weights <- (eigenvalues[1:4] / cumulative_variability) * 100
+print(weights)
+
+# Step 4: Calculate adjusted weights that sum to 1
+sum_weights = sum(weights)
+adjusted_weights = weights/sum_weights
+print(adjusted_weights)
+
+# Step 5: Perform PCA with Varimax rotation
+### TODO: Need to fix parameters/method to match results data
+varimax_pca_result <- principal(data_matrix, nfactors = num_factors_above_1, rotate = "varimax", residuals=TRUE)
+#res <- fa(data_matrix, nfactors = num_factors_above_1, rotate = "varimax", scores="tenBerge")
+
+# Step 6: Multiply each Census Tract's value for the factor score from the 2nd PCA by the weighted variance from the previous step
+weighted_factor_scores <- varimax_pca_result$scores[,1:4] * adjusted_weights
+
+varimax_pca_result
+```
+
+```{r}
+# Does it work when it's scaled?
+weighted_factor_scores_scaled = data.frame(weighted_factor_scores) %>%
+  mutate(across(where(is.numeric), scale_numeric)) %>% mutate_if(is.numeric, round, digits=3)
+
+
+tracts_with_factor_weights = geo_labels %>% merge(data.frame(weighted_factor_scores_scaled), by=0) %>% dplyr::select(-c(Tpop, FIPS)) %>% mutate(Row.names = as.numeric(Row.names)) %>% arrange(Row.names)
+
+#View(tracts_with_factor_weights)
+
+tracts_with_factor_weights = tracts_with_factor_weights %>% mutate(HOI_sum = RC1 + RC2 + RC3 + RC4)
+tracts_with_factor_weights = tracts_with_factor_weights %>% mutate(HOI_standardized = scale_numeric(HOI_sum))
+
+tracts_with_factor_weights
+
+
+```
+
+```{r}
+#file.choose()
+four_C = read_excel("~/git/sdc.health_dev/Access to Care (HOI)/data/distribution/HOI V3_4 Components_PCA weights.xlsx")
+
+
+# this correlation should be 1 but is not- need to investigate previous varimax rotation
+cor(four_C$`Built Environment Profile SI`, tracts_with_factor_weights$RC1)
+```
+
+
+
+## HOI Results with Linear Regression
+
+```{r}
+# attempting to predict HOI indicators using linear regression
+HOI_results <- read_excel("~/git/sdc.health_dev/Access to Care (HOI)/data/distribution/HOI V3_4 Components_PCA weights.xlsx")
+#View(HOI_results)
+
+# joining the HOI composite index with the data frame of predictors
+t = HOI_results %>% dplyr::select(CT, `Composite Index Standardized`) %>% rename(CT2 = CT)
+combined = Raw_HOI_Indicators %>% full_join(t, by="CT2")
+
+# subsetting dataframe to only include numeric columns
+X = combined[,5:19]
+
+#building the model
+lin_model = lm(`Composite Index Standardized`~., data=X)
+summary(lin_model)
+
+# predicting HOI with the model- y predicted is identical to actual HOI index
+# would this work for other years of HOI?
+y = predict(lin_model, X)
+
+table(round(y, 3) == X[,15]) # almost all match, the ones that don't are off by 0.001
+```
+
