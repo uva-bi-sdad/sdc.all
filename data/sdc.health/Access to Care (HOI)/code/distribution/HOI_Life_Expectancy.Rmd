@@ -5,20 +5,27 @@ date: "2023-12-14"
 output: html_document
 ---
 
-```{r}
-#dir_data = 'https://mdporter.github.io/DS6030/data/' # data directory
+```{r, echo=FALSE, include=FALSE}
 #file.choose()
 library(readxl)
 library(tidyverse)
-# problems installing tidymodels in Rivanna
 library(tidymodels)
-Raw_HOI_Indicators <- read_excel("~/git/sdc.health_dev/Access to Care (HOI)/data/distribution/HOI V3 14 Variables_For UVA.xlsx")
+library(gt)
+library(gWQS)
+```
+
+```{r}
+Raw_HOI_Indicators <- read_excel("HOI V3 14 Variables_For UVA.xlsx")
+# use this path within repo:
+# read_excel("~/git/sdc.health_dev/Access to Care (HOI)/data/distribution/HOI V3 14 Variables_For UVA.xlsx")
 ```
 
 ## Join Life Expectancy and Tracts
 
 ```{r}
-HOI_Life_Expectancy <- read_excel("~/git/sdc.health_dev/Access to Care (HOI)/data/distribution/LE_Virginia.xlsx")
+HOI_Life_Expectancy <- read_excel("LE_Virginia.xlsx")
+# use this path within repo:
+# read_excel("~/git/sdc.health_dev/Access to Care (HOI)/data/distribution/LE_Virginia.xlsx")
 
 HOI_combined = Raw_HOI_Indicators %>% left_join(HOI_Life_Expectancy %>% rename("CT2" = `Census tract`), by="CT2") %>% rename("LifeExpectancy" = "e(0)")
 
@@ -34,6 +41,8 @@ We use TidyModels instead for KNN imputation.
 Our k value for this approach is the square root of the sample size (N = 2168) rounded to the nearest integer
 
 ```{r}
+set.seed(73)
+
 knn_recipe <- recipe(LifeExpectancy ~ ., data = HOI_combined) %>%
   step_string2factor(all_nominal_predictors()) %>%
   step_impute_knn(LifeExpectancy, neighbors = round(sqrt(nrow(HOI_combined))))
@@ -46,7 +55,6 @@ HOI_imputed$LifeExpectancy <- round(HOI_imputed$LifeExpectancy, 2)
 
 ## Comparing Imputation Results
 
-
 ```{r}
 combined <- HOI_combined %>% summarize(type = "raw", mean = mean(LifeExpectancy, na.rm=TRUE), median = median(LifeExpectancy, na.rm=TRUE), sd = sd(LifeExpectancy, na.rm=TRUE), n = sum(!is.na(LifeExpectancy)))
 
@@ -55,20 +63,26 @@ imputed <- HOI_imputed %>% summarize(type = "imputed", mean = mean(LifeExpectanc
 results = tibble()
 results = rbind(results, combined)
 results = rbind(results, imputed)
-results
+results %>% gt() %>% tab_header(
+    title = md("KNN Imputation Results"),
+    subtitle = md("**Raw vs Imputed**")
+  ) %>% fmt_number()
 ```
 
 The raw and imputed LEB measures are summarized and it was observed that imputation did not meaningfully change the mean, median or standard deviation.
 
 ```{r}
-data.frame(cor(HOI_imputed[,c(5:18, 20)])) %>% select(LifeExpectancy)
+cor_results = data.frame(cor(HOI_imputed[,c(5:18, 20)])) %>% select(LifeExpectancy)
+cor_results$Indicators = rownames(cor_results) 
+cor_results %>% select(Indicators, LifeExpectancy) %>% rename(LEB_Correlation = LifeExpectancy) %>% gt() %>% fmt_number(decimals=3)
+
 ```
 
 We can see above that the indicators of education and incarceration are most highly correlated with LEB.
 
 ## Scale Data
 
-From methodology: HOI indicator values were converted into z-scores by subtracting the indicator’s mean and dividing by that indicator’s standard deviation, while indicators negatively associated with LEB were also multiplied by -1.
+From methodology: HOI indicator values were converted into z-scores by subtracting the indicator's mean and dividing by that indicator's standard deviation, while indicators negatively associated with LEB were also multiplied by -1.
 
 ```{r}
 # Function to scale numeric columns between 0 and 1 with z-scores
@@ -99,15 +113,108 @@ geo_labels = HOI_imputed[,c(1:4, 19)]
 
 ## Weighted Quantile Sum
 
+*The R computational software was used, specifically the WQS package for determining indicator weights for calculating the HOI.*
+
+Current version of R is having trouble with this package, so using gWQS instead at the moment.
+
+[original wqs library documentation](https://cran.r-project.org/web/packages/wqs/wqs.pdf)
+
+gWQS [documentation](https://cran.r-project.org/web/packages/gWQS/gWQS.pdf) and [guide](https://cran.r-project.org/web/packages/gWQS/vignettes/gwqs-vignette.html)
+
 ```{r}
-library(wqs)
-data("WQSdata")
-WQSdata
-wqs.est(data_matrix[,'LifeExpectancy'], as.matrix(data_matrix[,-15]))
+mix = names(data_matrix)[1:14]
+wqs_results <- gwqs(LifeExpectancy ~ wqs, mix_name = mix, data = data_matrix, q=4, b=100) # matching the parameters from the original methodology - other wqs library guide referenced in files has 4 quantiles and 100 bootstrap samples by default
+
+# Maybe q should be 5? Unclear in the methodology report whether that is done in the WQS
+
+#summary(results)
+
+#sum(results$final_weights$mean_weight) # sums to 1
+
+wqs_results$final_weights %>% gt() %>% tab_header(
+    title = md("WQS Regression Results"),
+    subtitle = md("**Estimated Relationships between HOI Indicators and LEB**")
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "lightcyan"),
+      cell_text(weight = "bold")
+      ),
+    locations = cells_body(
+      columns = c(mix_name, mean_weight),
+      rows = mean_weight >= 0.05
+    )
+  ) %>% tab_footnote(
+    footnote = "Highlighted cells > 5% weight",
+    locations = cells_column_labels(
+      columns = mean_weight
+    )
+  ) %>% fmt_number(decimals=3)
 ```
 
 ```{r}
-dim(data_matrix[,15])
-dim(as.matrix(data_matrix[,-15]))
+gwqs_barplot(wqs_results)
 ```
 
+```{r}
+rownames(wqs_results$final_weights) <- NULL
+wqs_results$final_weights$mix_name <- as.character(wqs_results$final_weights$mix_name)
+
+
+wqs_results$final_weights %>%
+  gt(rowname_col = "mix_name") %>%
+  tab_header(
+    title = md("WQS Regression Results by Component Profile"),
+    subtitle = md("**Proportion of Weight for each Profile**")
+  ) %>%
+  tab_row_group(
+    label = md("*Built Environment Profile*"),
+    rows = c('Employment Access', 'Walkability', 'Environmental*', 'Food Access*'),
+    id = "bep"
+  ) %>%
+  tab_row_group(
+    label = md("*Economic Profile*"),
+    rows = c('Labor Force Participation', 'Income Inequality'),
+    id = "ep"
+  ) %>% 
+  tab_row_group(
+    label = md("*Social Impact Profile*"),
+    rows = c('**Accees to Care', 'Education', '**Spatial Segregation', 'Incarceration*'),
+    id = "sip"
+  ) %>%
+  tab_row_group(
+    label = md("*Consumer Profile*"),
+    rows = c('Population Density', 'Affordability*', 'Townsend*', 'Mobility*'),
+    id = "cp"
+  ) %>%
+  row_group_order(groups = c("bep", "ep", "sip", "cp")) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "lightcyan"),
+      cell_text(weight = "bold")
+      ),
+    locations = cells_body(
+      columns = c(mix_name, mean_weight),
+      rows = mean_weight >= 0.05
+    )
+  ) %>% tab_footnote(
+    footnote = "Highlighted cells > 5% weight",
+    locations = cells_column_labels(
+      columns = mean_weight
+    )
+  ) %>%
+  summary_rows(
+    groups = everything(),
+    columns = mean_weight,
+    fns = list(
+      list(label = md("**Total**"), id = "total") ~ sum(.)
+    )
+  ) %>%
+  tab_style(
+    style = list(
+      cell_fill(color = "steelblue"),
+      cell_text(color = "white")
+    ),
+    locations = cells_summary(rows = "total")
+  ) %>% fmt_number(decimals=3)
+```
