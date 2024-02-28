@@ -937,7 +937,6 @@ health,economic_opportunity_indicator,Economic opportunity profile,2020,2020,,,,
 health,employment_access_indicator,Employment accessibility indicator,2017,2017,,,,,,,,,,X,X,,,X,
 health,access_care_indicator,Access to care indicator,2017,2020,,,,,,,,,,,,,,X,
 health,health_opportunity_indicator,Health opportunity index,2020,2020,,,,,,,,,,,,,,X,
-health,segregation_indicator,Segregation indicator,2017,2020,,,,,,,,,,,,,,X,
 health,pop_density_indicator,,2017,2017,,,,,,,,,,X,X,,,X,
 health,air_quality_indicator,Air quality indicator,2017,2020,,,,,,,,,,,,,,X,
 health,walkability_indicator,Walkability indicator,2017,2020,,,,,,,,,,,,,,X,
@@ -1060,7 +1059,6 @@ demographics,gender_male_count_direct,Male population direct,2009,2021,,X,X,,X,X
 demographics,gender_female_count_direct,Female population direct,2009,2021,,X,X,,X,X,,X,,X,X,,X,X,X
 demographics,gender_male_percent_direct,Percentage of males direct,2009,2021,,X,X,,X,X,,X,,X,X,,X,X,X
 demographics,gender_female_percent_direct,Percentage of females direct,2009,2021,,X,X,,X,X,,X,,X,X,,X,X,X
-demographics,segregation_indicator,Segregation indicator,2020,2020,,,,,,,,,,X,X,,,X,
 demographics,segregation_indicator,Segregation indicator,2015,2020,,,,,,,,,,X,X,,,X,
 demographics,age_total_count_parcels,Total count of the population parcels,2009,2021,,X,X,,X,X,,,,X,,,,X,
 demographics,age_under_20_count_parcels,Population under age 20 parcels,2009,2021,,X,X,,X,X,,,,X,,,,X,
