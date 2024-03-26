@@ -3,8 +3,8 @@ library(dplyr)
 source("utils/distribution/aggregate.R")
 
 dat <- read.csv("Years of Schooling/data/working/va_trct_acs5_2017_2021_years_of_schooling.csv", colClasses=(c(geoid='character')))
-dat20172019 <- dat %>% filter(year %in% c(2017, 2018, 2019)) %>% mutate(measure='average_years_of_schooling', measure_type = "index") %>% select(geoid, year, measure, measure_type, value)
-dat20202021 <- dat %>% filter(year %in% c(2020, 2021)) %>% mutate(measure='average_years_of_schooling', measure_type = "index") %>% select(geoid, year, measure, measure_type, value)
+dat20172019 <- dat %>% filter(year %in% c(2017, 2018, 2019)) %>% mutate(measure='average_years_schooling', measure_type = "index") %>% select(geoid, year, measure, measure_type, value)
+dat20202021 <- dat %>% filter(year %in% c(2020, 2021)) %>% mutate(measure='average_years_schooling', measure_type = "index") %>% select(geoid, year, measure, measure_type, value)
 
 # geographies
 geo_names <- fread("https://raw.githubusercontent.com/uva-bi-sdad/sdc.metadata/master/geographies.csv")
@@ -36,4 +36,3 @@ all <- rbind(ct_hd, dat_fin_tr)
 
 # fwrite(dat_fin, "Years of Schooling/data/distribution/va_tr_acs5_2017_2021_years_of_schooling.csv")
 readr::write_csv(all, xzfile("Years of Schooling/data/distribution/va_hdcttr_acs5_2017_2021_years_of_schooling.csv.xz", compression = 9))
-

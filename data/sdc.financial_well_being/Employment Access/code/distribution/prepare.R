@@ -9,9 +9,9 @@ library(tidyr)
 library(zoo)
 
 #### Prepare tract level data for Affordability Index ####
-data_2015_tr <- read_csv("~/Git/sdc.financial_well_being_dev/Employment Access/data/original/htaindex2015_data_tracts_51.csv")
-data_2019_tr <- read_csv("~/Git/sdc.financial_well_being_dev/Employment Access/data/original/htaindex2019_data_tracts_51.csv")
-data_2020_tr <- read_csv("~/Git/sdc.financial_well_being_dev/Employment Access/data/original/htaindex2020_data_tracts_51.csv")
+data_2015_tr <- read_csv("Employment Access/data/original/htaindex2015_data_tracts_51.csv")
+data_2019_tr <- read_csv("Employment Access/data/original/htaindex2019_data_tracts_51.csv")
+data_2020_tr <- read_csv("Employment Access/data/original/htaindex2020_data_tracts_51.csv")
 
 
 data_2015_tr <- data_2015_tr[, c("tract", "cbsa", "emp_gravity")]
@@ -118,9 +118,15 @@ combined_data_1920_tr$value <- as.numeric(combined_data_1920_tr$value)
 
 
 # Calculate the rate of change for each tract, handling NA values
+# rate_of_change_tr <- combined_data_1920_tr %>%
+#   group_by(geoid) %>%
+#   summarise(rate_of_change_tr = (last(value, order_by = year) - first(value, order_by = year)) / (max(year) - min(year, na.rm = TRUE)))
+
+# handle 0 denominator
 rate_of_change_tr <- combined_data_1920_tr %>%
   group_by(geoid) %>%
-  summarise(rate_of_change_tr = (last(value, order_by = year) - first(value, order_by = year)) / (max(year) - min(year, na.rm = TRUE)))
+  summarise(rate_of_change_tr = (last(value, order_by = year) - first(value, order_by = year)) / if_else(max(year) != min(year), (max(year) - min(year, na.rm = TRUE)), max(year)))
+
 
 sum(is.na(rate_of_change_tr))
 # 853/2455 = 0.3474542
@@ -146,9 +152,9 @@ combined_data_2015_2021_tr <- rbind( combined_data_2015_2020_tr, data_2021_tr)
 #### Prepare county level data for Affordability Index ####
 
 
-data_2015_ct <- read_csv("~/Git/sdc.financial_well_being_dev/Employment Access/data/original/htaindex2015_data_counties_51.csv")
-data_2019_ct <- read_csv("~/Git/sdc.financial_well_being_dev/Employment Access/data/original/htaindex2019_data_counties_51.csv")
-data_2020_ct <- read_csv("~/Git/sdc.financial_well_being_dev/Employment Access/data/original/htaindex2020_data_counties_51.csv")
+data_2015_ct <- read_csv("Employment Access/data/original/htaindex2015_data_counties_51.csv")
+data_2019_ct <- read_csv("Employment Access/data/original/htaindex2019_data_counties_51.csv")
+data_2020_ct <- read_csv("Employment Access/data/original/htaindex2020_data_counties_51.csv")
 
 data_2015_ct <- data_2015_ct[, c("county", "cbsa", "emp_gravity")]
 data_2019_ct <- data_2019_ct[, c("county", "cbsa", "emp_gravity")]
@@ -256,7 +262,7 @@ combined_data_1920_ct$value <- as.numeric(combined_data_1920_ct$value)
 # Calculate the rate of change for each tract, handling NA values
 rate_of_change_ct <- combined_data_1920_ct %>%
   group_by(geoid) %>%
-  summarise(rate_of_change_ct = (last(value, order_by = year) - first(value, order_by = year)) / (max(year) - min(year, na.rm = TRUE)))
+  summarise(rate_of_change_ct = (last(value, order_by = year) - first(value, order_by = year)) / if_else(max(year) != min(year), (max(year) - min(year, na.rm = TRUE)), max(year)))
 
 sum(is.na(rate_of_change_ct))
 
@@ -280,7 +286,7 @@ combined_data_2015_2021_ct <- rbind( combined_data_2015_2020_ct, data_2021_ct)
 
 #### Aggregate to Health Districts for Affordability Index and combine datasets to get hdcttr levels in a single dataset ####
 
-source("~/Git/sdc.financial_well_being_dev/utils/distribution/aggregate.R")
+source("utils/distribution/aggregate.R")
 
 # Adding column in tract and county data so as to run the aggregate function (found in utils folder)
 combined_data_2015_2021_tr$moe <- ""
@@ -295,7 +301,7 @@ combined_data_2015_2021_hdct <- aggregate(combined_data_2015_2021_ct, "county", 
 combined_data_2015_2021_hdcttr <- rbind(combined_data_2015_2021_hdct, combined_data_2015_2021_tr) %>%
   mutate(moe='')
 
-write.csv(combined_data_2015_2021_hdcttr, file = xzfile("~/Git/sdc.financial_well_being_dev/Employment Access/data/distribution/va_hdcttr_2015_2021_employment_access_index.csv.xz"), row.names = FALSE)
+write.csv(combined_data_2015_2021_hdcttr, file = xzfile("Employment Access/data/distribution/va_hdcttr_2015_2021_employment_access_index.csv.xz"), row.names = FALSE)
 
 
 #### General forms of functions used in this prepare file ####
