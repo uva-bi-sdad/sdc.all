@@ -33,7 +33,7 @@ Sys.getenv("CENSUS_API_KEY")
 #Population data - VA state extracted from Census ACS 2015-2021 - Tract and County
 ```{r}
 data <- data.frame()
-years <- c(2017, 2018, 2019, 2020, 2021)
+years <- c(2015, 2016, 2017, 2018, 2019, 2020, 2021)
 geo <- c("tract", "county")
 for (i in years) {
   for (g in geo) {
@@ -51,7 +51,9 @@ for (i in years) {
                                       occupant_renter_greater_1half='B25014_012E',                                      
                                       occupant_renter_greater_2='B25014_013E',  
                                       all_units = 'S2502_C01_001E',
-                                      rent_units='S2502_C05_001E',
+                                      #rent_units='S2502_C05_001E',
+                                      rent_units= ifelse(i > 2016, 'S2502_C05_001E', 'S2502_C03_001E'),
+                                      rent_units_moe= ifelse(i > 2016, 'S2502_C05_001M', 'S2502_C03_001M'),
                                       households_total='B25044_001E',
                                       households_owner_no_vehicles='B25044_003E',
                                       households_renter_no_vehicles='B25044_010E'), 
@@ -60,6 +62,7 @@ for (i in years) {
 data_census$year = i
 data_census$region_type = g
 data <- rbind(data, data_census)
+data <- data[substr(data$GEOID, 1, 2) == "51",]
 
   }}
 
@@ -193,14 +196,14 @@ townsend_data <- townsend_data %>%
 
 
 
-townsend_bi <- subset(townsend_data, select = c(geoid, measure, year, region_type, value)) %>% 
+townsend_bi <- subset(townsend_data, select = c(geoid, year, measure, value)) %>% 
   mutate(moe="")
 ```
 
 #Write CSV
 ```{r}
 
-readr::write_csv(townsend_bi, xzfile("../../data/distribution/va_hdcttr_vdh_2017_2021_material_deprivation_index.csv.xz", compression = 9))
+readr::write_csv(townsend_bi, xzfile("../../data/distribution/va_hdcttr_vdh_2015_2021_material_deprivation_index.csv.xz", compression = 9))
 
 
 ```

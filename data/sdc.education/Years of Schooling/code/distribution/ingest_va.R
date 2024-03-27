@@ -53,17 +53,17 @@ get_acsdata <- function(geography, table, state, survey, start_year, end_year) {
   return(acsdata)
 }
 
-#get acs data for five years tracts
+#get acs data for seven years tracts
 acs_yos <- get_acsdata(geography = "tract",
                        table = "B15003",
                        state = "VA",
                        survey = "acs5",
-                       start_year = 2017,
+                       start_year = 2015,
                        end_year = 2021)
 
 all_tr <- NULL
 #different years calculation
-for (yr in c(2021, 2020, 2019, 2018, 2017)) {
+for (yr in c(2021, 2020, 2019, 2018, 2017, 2016, 2015)) {
   # Get the data for the current year
   acsdata_year <- acs_yos %>% filter(year==yr)
 
@@ -85,17 +85,17 @@ for (yr in c(2021, 2020, 2019, 2018, 2017)) {
 
 all_tr <- all_tr %>% filter(!is.nan(value)) %>% rename(geoid=GEOID)
 
-#get acs data for five years counties
+#get acs data for seven years counties
 acs_yos <- get_acsdata(geography = "county",
                        table = "B15003",
                        state = "VA",
                        survey = "acs5",
-                       start_year = 2017,
+                       start_year = 2015,
                        end_year = 2021)
 
 all_ct <- NULL
 #different years calculation
-for (yr in c(2021, 2020, 2019, 2018, 2017)) {
+for (yr in c(2021, 2020, 2019, 2018, 2017, 2016, 2015)) {
   # Get the data for the current year
   acsdata_year <- acs_yos %>% filter(year==yr)
 
@@ -120,7 +120,7 @@ all_ct <- all_ct %>% filter(!is.nan(value)) %>% rename(geoid=GEOID)
 # combine tract, county, health district data
 tr_ct <- rbind(all_tr, all_ct)
 
-readr::write_csv(tr_ct, xzfile('Years of Schooling/data/working/va_trct_acs5_2017_2021_years_of_schooling.csv', compression=9))
+readr::write_csv(tr_ct, xzfile('Years of Schooling/data/working/va_trct_acs5_2015_2021_years_of_schooling.csv', compression=9))
 
 # testing <- readxl::read_excel('~/git/HOI V3_14 Variables_Raw Scores (1).xlsx') %>%
 #   select('CT2', 'Education')
