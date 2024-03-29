@@ -2,7 +2,7 @@ library(data.table)
 library(dplyr)
 source("utils/distribution/aggregate.R")
 
-dat <- read.csv("Years of Schooling/data/working/va_trct_acs5_2015_2021_years_of_schooling.csv", colClasses=(c(geoid='character')))
+dat <- read.csv("Years of Schooling/data/working/va_trct_acs5_2015_2021_years_of_schooling_2.csv", colClasses=(c(geoid='character')))
 dat20172019 <- dat %>% filter(year %in% c(2015, 2016, 2017, 2018, 2019)) %>% mutate(measure='average_years_schooling', measure_type = "index") %>% select(geoid, year, measure, measure_type, value)
 dat20202021 <- dat %>% filter(year %in% c(2020, 2021)) %>% mutate(measure='average_years_schooling', measure_type = "index") %>% select(geoid, year, measure, measure_type, value)
 
