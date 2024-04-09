@@ -1,122 +1,122 @@
 [
     {
         "path": "Business_characteristics/Industry/data/distribution/ncr_cttrbg_mi_2010_2020_business_metrics_by_Industry.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Business_characteristics/Industry/data/distribution/rva_cttrbg_mi_2010_2020_business_metrics_by_Industry.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Business_characteristics/Industry/data/distribution/va059_cttrbg_mi_2010_2020_business_metrics_by_Industry.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Business_characteristics/Minority_owned/data/distribution/ncr_cttrbg_mi_2010_2020_business_metrics_by_Minority_owned.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Business_characteristics/Minority_owned/data/distribution/rva_cttrbg_mi_2010_2020_business_metrics_by_Minority_owned.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Business_characteristics/Minority_owned/data/distribution/va059_cttrbg_mi_2010_2020_business_metrics_by_Minority_owned.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Business_characteristics/Total/data/distribution/ncr_cttrbg_mi_2010_2020_business_metrics_by_Total.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Business_characteristics/Total/data/distribution/rva_cttrbg_mi_2010_2020_business_metrics_by_Total.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Business_characteristics/Total/data/distribution/va059_cttrbg_mi_2010_2020_business_metrics_by_Total.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Industry/data/distribution/ncr_ct_mi_2010_2020_herfindalh_index_by_industry.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Industry/data/distribution/ncr_cttrbg_mi_2010_2020_employment_metrics_by_Industry.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Industry/data/distribution/ncr_cttrbg_mi_2010_2020_location_quotient_by_industry.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Industry/data/distribution/rva_ct_mi_2010_2020_herfindalh_index_by_industry.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Industry/data/distribution/rva_cttrbg_mi_2010_2020_employment_metrics_by_Industry.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Industry/data/distribution/rva_cttrbg_mi_2010_2020_location_quotient_by_industry.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Industry/data/distribution/va059_ct_mi_2010_2020_herfindalh_index_by_industry.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Industry/data/distribution/va059_cttrbg_mi_2010_2020_employment_metrics_by_Industry.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Industry/data/distribution/va059_cttrbg_mi_2010_2020_location_quotient_by_industry.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Minority_owned/data/distribution/ncr_cttrbg_mi_2010_2020_employment_metrics_by_Minority_owned.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Minority_owned/data/distribution/rva_cttrbg_mi_2010_2020_employment_metrics_by_Minority_owned.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Minority_owned/data/distribution/va059_cttrbg_mi_2010_2020_employment_metrics_by_Minority_owned.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Total/data/distribution/ncr_cttrbg_mi_2010_2020_employment_metrics_by_Total.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Total/data/distribution/rva_cttrbg_mi_2010_2020_employment_metrics_by_Total.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Total/data/distribution/va059_cttrbg_mi_2010_2020_employment_metrics_by_Total.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Worker_diversity/data/distribution/ncr_cttrbg_lodes_2010_2019_employment_by_minority_workers.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Worker_diversity/data/distribution/rva_cttrbg_lodes_2010_2019_employment_by_minority_workers.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Worker_diversity/data/distribution/va059_cttrbg_lodes_2010_2019_employment_by_minority_workers.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Worker_diversity/data/distribution/va059_cttrbg_lodes_2010_2019_rac_employment_segments_by_sex.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Worker_diversity/data/distribution/va059_cttrbg_lodes_2010_2019_wac_employment_segments_by_sex.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     },
     {
         "path": "Employment/Worker_diversity/data/distribution/va059_cttrbg_lodes_2010_2019_workplace_employment_segments_by_sex.csv.xz",
-        "last_modified_utc": "2023-10-20_15:17:43"
+        "last_modified_utc": "2024-04-09_15:09:21"
     }
 ]

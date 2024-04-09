@@ -18,7 +18,7 @@ View(items)
 search_terms <- read.csv("Industry specific/Agriculture/code/distribution/measures.csv")
 
 total <- NULL
-year <- 2017
+year <- 2022
 
 for(i in 1:nrow(search_terms)){
   Sys.sleep(3)
@@ -38,6 +38,6 @@ total <- total %>% select(geoid, year, measure, value) %>% mutate(measure_type =
 total$value <- as.numeric(gsub(",", "", total$value))
 
 
-write_csv(total, xzfile("./Industry specific/Agriculture/data/distribution/va_ct_2017_industry_agriculture.csv.xz", compression = 9))
+write_csv(total, xzfile("./Industry specific/Agriculture/data/distribution/va_ct_2022_industry_agriculture.csv.xz", compression = 9))
 
 
