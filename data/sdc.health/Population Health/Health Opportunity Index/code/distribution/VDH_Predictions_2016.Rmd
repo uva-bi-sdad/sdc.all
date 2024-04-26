@@ -1,0 +1,336 @@
+---
+title: "VDH Predictions 2016"
+author: "Michael Vaden"
+date: "2024-04-15"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Libraries
+
+```{r, echo=FALSE, include=FALSE}
+#file.choose()
+library(readxl)
+library(tidyverse)
+library(tidymodels)
+library(gt)
+library(gWQS)
+library(car)
+```
+
+# Prep 2020 Data
+
+### Data Processing and Imputation
+
+```{r}
+Raw_HOI_Indicators <- read_excel("/Users/michaelvaden/Downloads/HOI V3 14 Variables_For UVA.xlsx")
+# use this path within repo:
+# read_excel("~/git/sdc.health_dev/Access to Care (HOI)/data/distribution/HOI V3 14 Variables_For UVA.xlsx")
+```
+
+
+### Join Life Expectancy and Tracts
+
+Add life expectancy and impute it
+
+```{r}
+HOI_Life_Expectancy <- read_excel("/Users/michaelvaden/Downloads/LE_Virginia.xlsx")
+# use this path within repo:
+# read_excel("~/git/sdc.health_dev/Access to Care (HOI)/data/distribution/LE_Virginia.xlsx")
+
+HOI_combined = Raw_HOI_Indicators %>% left_join(HOI_Life_Expectancy %>% rename("CT2" = `Census tract`), by="CT2") %>% rename("LifeExpectancy" = "e(0)")
+
+#sum(is.na(HOI_combined$LifeExpectancy))
+
+knn_recipe <- recipe(LifeExpectancy ~ ., data = HOI_combined) %>%
+  step_string2factor(all_nominal_predictors()) %>%
+  step_impute_knn(LifeExpectancy, neighbors = round(sqrt(nrow(HOI_combined))))
+
+HOI_recipe <- prep(knn_recipe, training = HOI_combined)
+HOI_imputed <- bake(HOI_recipe, HOI_combined)
+
+HOI_imputed$LifeExpectancy <- round(HOI_imputed$LifeExpectancy, 5)
+```
+
+```{r}
+sprintf("there were %d missing values in life expectancy, but there are now %d after using knn imputation", sum(is.na(HOI_combined$LifeExpectancy)),  sum(is.na(HOI_imputed$LifeExpectancy)))
+```
+
+Scale all of the values for predicting incarceration, HOI, LEB in 2020 data
+
+```{r}
+# Function to scale numeric columns between 0 and 1
+scale_numeric <- function(x) {
+  if (is.numeric(x)) {
+    x <- (x - min(x, na.rm = TRUE)) / (max(x, na.rm = TRUE) - min(x, na.rm = TRUE))
+  }
+  return(x)
+}
+
+# scale the indicators to be between 0 and 1 to match scaled HOI data
+normalized_df <- HOI_imputed %>%
+  mutate(across(where(is.numeric), scale_numeric)) %>% mutate_if(is.numeric, round, digits=3)
+# invert the last 8 scaled indicators to match given HOI data
+normalized_df[,11:18] = 1- normalized_df[,11:18] 
+
+names(normalized_df) = gsub("\\*", "", names(normalized_df))
+# take out tract info and total population
+geo_labels = normalized_df[,1:4]
+# create matrix of just numeric 14 indicators
+data_matrix = normalized_df[,c(5:18, 20)]
+```
+
+
+# Get 2016 Data
+
+### take function from tract_conversions.R
+
+```{r}
+source("/Users/michaelvaden/Downloads/tract_conversions.R")
+```
+
+### Function to Convert to 2020
+
+problems:
+- function does not work with 2021 data
+- function returns 2186 (most of the time) tracts. There are only ~1900 tracts in Virginia. The sharepoint data has 2168.
+- for now, we subset to the same tracts that are in the sharepoint data
+
+```{r}
+convert_tract_to_2020 <- function(data, specified_year) {
+  # filter to specified year
+  year_filtered = data %>% filter(year == specified_year)
+
+  # Filter to only include tract geographies
+  year_filtered = year_filtered %>% filter(nchar(geoid) == 11)
+  
+  # Specify region type for function to run
+  year_filtered = year_filtered %>% mutate(region_type = "tract")
+  
+  # Pass through the function that standardizes to 2020
+  standardized_data = standardize_all(year_filtered, filter_geo = 'state')
+  
+  # Subset to only the new standardized data
+  subset_standard = standardized_data[grepl("std$", standardized_data$measure), ]
+  
+  # Subset tracts to only be the ones in the original 2020 HOI data from sharepoint
+  subset_tracts  = subset_standard %>% inner_join(normalized_df, by = c("geoid" = "CT2")) # 14/18 of the lost tracts were NA
+  
+  # return only the tract and value
+  return (subset_tracts[, 1:2])
+}
+```
+
+
+```{r}
+labor_force_2016 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/labor_participate_rate.csv"), 2016)
+
+employment_access_2016 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/employment_access_index.csv"), 2016)
+
+income_inequality_2016 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/gini_index.csv") %>% distinct(), 2016)
+
+material_deprivation_indicator_2016 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/material_deprivation_indicator.csv"), 2016)
+
+education_raw_2016 = read_csv("/Users/michaelvaden/Downloads/average_years_schooling.csv") %>% mutate(geoid = as.character(geoid)) %>% filter(year == 2016)
+average_years_schooling_2016 = convert_tract_to_2020(education_raw_2016[!duplicated(education_raw_2016$geoid, fromLast = TRUE),], 2016)
+
+# for access to food we need to use 2017 data for access to food, does not exist for 2016
+access_to_food_new = read_csv("/Users/michaelvaden/Downloads/food_access_percentage.csv") %>% filter(year == 2017) %>% mutate(geoid = as.character(geoid))
+access_to_food_new_2017 = access_to_food_new %>% dplyr::select(geoid, value)
+
+mobility_2016 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/perc_moving.csv"), 2016)
+
+population_density_2016 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/population_density_direct.csv"), 2016)
+
+segregation_2016 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/segregation_indicator.csv"), 2016)
+
+affordability_2016 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/affordability_index.csv"), 2016)
+
+# environmental only comes from 2022 so we use that here
+environment_hazard_2022 <- read_csv("/Users/michaelvaden/Downloads/environmental_hazard_index.csv")
+
+incarceration = read_csv("/Users/michaelvaden/Downloads/incarceration_rate_per_100000.csv")
+
+# for access to care we need to use 2017 data, but are going to drop anyway
+access_care_2017 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/access_care_indicator.csv") %>% mutate(geoid = as.character(geoid)), 2017)
+```
+
+Get Walkability specifically
+
+```{r}
+# walkability requires reading in from gdb file from walkability index website
+library(sf)
+
+gdb_file <- "/Users/michaelvaden/Downloads/WalkabilityIndex/Natl_WI.gdb"
+gdb_data <- st_read(dsn = gdb_file)
+gdb_df = st_drop_geometry(gdb_data) %>% filter(STATEFP == 51)
+gdb_df <- gdb_df  %>% rename(geoid = GEOID10) %>%
+  mutate(tract = substr(geoid, 1, 11))
+
+walkability_index_weighted <- gdb_df %>%
+  group_by(tract) %>%
+  summarise(walkability_index = weighted.mean(NatWalkInd, TotPop))
+
+walkability_index_weighted_for_function = walkability_index_weighted %>% rename(geoid = tract) %>% rename(value = walkability_index) %>% mutate(year = 2019) %>% mutate(measure = "walkability_index_raw") %>% mutate(moe = NA)
+
+walkability_2021 = convert_tract_to_2020(walkability_index_weighted_for_function, 2019)
+```
+
+
+## Combine 2016 Predictors
+
+```{r}
+list_2016 = list(access_care_2017, average_years_schooling_2016, employment_access_2016, labor_force_2016, population_density_2016, walkability_2021, segregation_2016, income_inequality_2016, affordability_2016, environment_hazard_2022, access_to_food_new_2017, material_deprivation_indicator_2016, incarceration %>% filter(year == 2016), mobility_2016)
+
+hoi_recreated_indicators_2016 <- Reduce(function(x, y) left_join(x, y, by = "geoid"), list_2016)
+names(hoi_recreated_indicators_2016)
+
+hoi_recreated_indicators_2016 = hoi_recreated_indicators_2016 %>% dplyr::select(-c("year.x","measure.x", "moe.x", "year.y", "measure.y", "moe.y"))
+
+geoid_recreated = hoi_recreated_indicators_2016$geoid
+hoi_recreated_matrix_2016 = hoi_recreated_indicators_2016[,2:15]
+
+names(hoi_recreated_matrix_2016) = names(data_matrix)
+
+hoi_recreated_matrix_2016$geoid = geoid_recreated
+```
+
+
+### Reorder the indicators to order of given HOI data
+
+Reordering the indicators since the linear regression is trained on the HOI data and want to compare
+
+```{r}
+geoid_order <- match(normalized_df$CT2, hoi_recreated_matrix_2016$geoid)
+#view(hoi_recreated_matrix_2017)
+
+# Reorder the geoid column in df1 based on its order in df2
+hoi_recreated_reorders_2016 <- hoi_recreated_matrix_2016[geoid_order, ]
+```
+
+### Impute the missing values
+
+```{r}
+impute_mean <- function(x) {
+  if (is.numeric(x)) {
+    x[is.na(x)] <- mean(x, na.rm = TRUE)
+  }
+  return(x)
+}
+
+hoi_recreated_imputed_2016 <- mutate_all(hoi_recreated_reorders_2016, .funs = impute_mean)
+
+colSums(is.na(hoi_recreated_imputed_2016))
+```
+
+### Normalize predictors and reverse the last 6
+
+```{r}
+hoi_recreated_normalized_2016 <- hoi_recreated_imputed_2016 %>% dplyr::select(-c(Incarceration)) %>% mutate(across(where(is.numeric), scale_numeric)) %>% mutate_if(is.numeric, round, digits=3)
+
+hoi_recreated_normalized_2016[,8:13] = 1 - hoi_recreated_normalized_2016[,8:13]
+```
+
+
+## Predict Incarceration
+
+### Predict Incarceration Train Model
+
+Predict with 2020 data
+
+```{r}
+predict_incarceration = lm(Incarceration~., data=data_matrix %>% dplyr::select(-c(`Accees to Care`, `LifeExpectancy`)))
+
+#summary(predict_incarceration)
+```
+
+```{r}
+#inc_2017_predicted = predict(predict_incarceration, hoi_recreated_imputed_2017 %>% dplyr::select(-c(Incarceration, geoid)))
+inc_2016_predicted = predict(predict_incarceration, hoi_recreated_normalized_2016 %>% dplyr::select(-c(geoid, `Accees to Care`)))
+
+cor(inc_2016_predicted, data_matrix$Incarceration)
+```
+
+
+## Aggregate data to predict 2016 HOI
+
+```{r}
+indicators_2016 = hoi_recreated_normalized_2016 %>% mutate(Incarceration = inc_2016_predicted)
+```
+
+```{r}
+desired_order <- c(names(indicators_2016))
+
+HOI_results <- read_excel("/Users/michaelvaden/Downloads/HOI V3_4 Components_PCA weights.xlsx")
+
+# joining the HOI composite index with the data frame of predictors
+t = HOI_results %>% dplyr::select(CT, `Composite Index Standardized`) %>% rename(CT2 = CT)
+combined = Raw_HOI_Indicators %>% full_join(t, by="CT2")
+
+
+X1 = combined[,5:18]
+
+# reorder and rename
+reordered_X_columns <- c("**Accees to Care", "Education", "Employment Access", "Labor Force Participation", "Population Density", "Walkability", "**Spatial Segregation", "Income Inequality", "Affordability*", "Environmental*", "Food Access*", "Townsend*", "Mobility*", "Incarceration*")
+
+X1 <- X1[, reordered_X_columns]
+
+names(X1) = names(indicators_2016 %>% dplyr::select(-c(geoid)))
+
+# attach HOI values
+X1$HOI = combined$`Composite Index Standardized`
+#building the model
+predict_HOI_model = lm(HOI~., data=X1 %>% dplyr::select(-c(`Accees to Care`)))
+#summary(predict_HOI_model)
+```
+
+
+## Predict HOI with 2016 data
+
+```{r}
+HOI_predicted_2016 <- predict(predict_HOI_model, indicators_2016 %>% dplyr::select(-c(`Accees to Care`))) * -1
+
+cor(X1$HOI, HOI_predicted_2016)
+```
+
+
+## Predict Life Expectancy with 2016 data
+
+```{r}
+
+X1$LifeExpectancy = HOI_imputed$LifeExpectancy
+
+predict_LE_model = lm(LifeExpectancy~., data=X1 %>% dplyr::select(-c(`Accees to Care`, HOI)))
+#summary(predict_LE_model)
+```
+
+```{r}
+LE_predicted_2016 <- predict(predict_LE_model, indicators_2016 %>% dplyr::select(-c(`Accees to Care`))) * -1
+
+cor(X1$LifeExpectancy, LE_predicted_2016)
+```
+
+
+# Save The Data
+
+```{r}
+HOI_data_2016 = indicators_2016 %>% select(geoid) %>% mutate(year = 2016) %>% mutate(measure = "health_opportunity_indicator") %>% mutate(value = HOI_predicted_2016) %>% mutate(moe = NA)
+
+HOI_data_2016
+
+#write.csv(HOI_data_2016, "health_opportunity_indicator_2016.csv")
+```
+
+```{r}
+incarceration_data_2016 = indicators_2016 %>% select(geoid) %>% mutate(year = 2016) %>% mutate(measure = "incarceration_rate_per_100000") %>% mutate(value = inc_2016_predicted) %>% mutate(moe = NA)
+
+incarceration_data_2016
+
+#write.csv(incarceration_data_2016, "incarceration_rate_2016.csv")
+```
+
+
+
