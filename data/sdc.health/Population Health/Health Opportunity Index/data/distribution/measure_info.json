@@ -242,7 +242,7 @@
         "unit": "",
         "variants": ""
     },
-    "segregation_indicator": {
+    "segregation_indicator_old": {
         "aggregation_method": "",
         "categories": "",
         "category": "Health Opportunity Index",

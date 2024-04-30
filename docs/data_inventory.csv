@@ -984,7 +984,7 @@ broadband,perc_w_int_25_3_using_devices,Percent Good (internet-connected),2019.0
 broadband,devices,Number of devices,2019,2021,X,X,X,X,X,X,,X,,X,X,,,,
 broadband,perc_total_100_20_using_devices,Percent Fast (total),2019.0,2021.0,X,X,X,X,X,X,,X,,X,X,,,,
 broadband,perc_total_25_3_using_devices,Percent Good (total),2019.0,2021.0,X,X,X,X,X,X,,X,,X,X,,,,
-demographics,segregation_indicator,Segregation indicator,2015,2020,,,,,,,,,,X,X,,,X,
+demographics,segregation_indicator,Segregation indicator,2015,2021,,,,,,,,,,X,X,,,X,
 demographics,language_hh_limited_english_count_parcels,Households with limited English parcels,2009,2021,,,,,,,,,,,,,,X,
 demographics,language_hh_limited_english_percent_parcels,Percentage of households with limited English parcels,2016,2021,X,X,X,X,X,X,,X,,X,,X,X,X,X
 demographics,language_hh_limited_english_count_direct,Households with limited English direct,2016,2021,X,X,X,X,X,X,,X,,X,X,X,X,X,X

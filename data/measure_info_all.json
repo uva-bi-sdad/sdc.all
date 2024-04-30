@@ -29086,6 +29086,33 @@
         }
     },
     "segregation_indicator": {
+        "aggregation_method": " ",
+        "categories": "",
+        "category": "Demographics",
+        "citations": "",
+        "data_type": "numeric",
+        "equity_category": "",
+        "layer": "",
+        "long_description": "The Segregation indicator, or the spatial dissimilarity index, measures how the racial composition of a population in a census tract compares to that of the rest of the state.Since there are multiple categories of population, We are following Entropy index. An Entropy Index measures the spatial distribution of multiple groups simultaneously",
+        "long_name": "Segregation indicator",
+        "measure_type": "index",
+        "short_description": "It measures how different the population composition of a subarea is from the population composition of the State as a whole",
+        "short_name": "Segregation indicator",
+        "sources": [
+            {
+                "date_accessed": "2023",
+                "location": "Table DP05",
+                "location_url": "",
+                "name": "American Community Survey",
+                "url": ""
+            }
+        ],
+        "statement": "The segregation indicator in {features.name} is {value}.",
+        "type": "",
+        "unit": "individual",
+        "variants": ""
+    },
+    "segregation_indicator_old": {
         "aggregation_method": "",
         "categories": "",
         "category": "Health Opportunity Index",

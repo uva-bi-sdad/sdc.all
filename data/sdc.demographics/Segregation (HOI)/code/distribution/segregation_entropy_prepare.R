@@ -4,9 +4,9 @@ library(readxl)
 library(readr)
 
 
-years <- 2017:2020
+years <- 2017:2021
 
-df_2017_2020 <- data.frame()
+df_2017_2021 <- data.frame()
 
 for (year in years) {
   segregation_data <- get_acs(
@@ -33,7 +33,7 @@ for (year in years) {
     select(-ends_with("M")) %>%
     mutate(year = year)
   
-  df_2017_2020 <- bind_rows(df_2017_2020, segregation_data)
+  df_2017_2021 <- bind_rows(df_2017_2021, segregation_data)
 }
 
 ##########
@@ -74,7 +74,7 @@ for (year in two_year) {
   df_2015_2016 <- bind_rows(df_2015_2016, data)
 }
 
-combined_df <- rbind(df_2015_2016, df_2017_2020)
+combined_df <- rbind(df_2015_2016, df_2017_2021)
 
 df <- combined_df
 
@@ -154,7 +154,7 @@ segregation_df <- df %>%
 
 #census tract to county aggregation
 
-
+segregation_data_tract_2021 <- segregation_df[segregation_df$year == 2021, ]
 segregation_data_tract_2020 <- segregation_df[segregation_df$year == 2020, ]
 segregation_data_tract_2019 <- segregation_df[segregation_df$year == 2019, ]
 segregation_data_tract_2018 <- segregation_df[segregation_df$year == 2018, ]
@@ -174,7 +174,7 @@ library(dplyr)
 
 aggregated_dfs <- list()
 
-for (year in 2015:2020) {
+for (year in 2015:2021) {
   
   current_df <- get(paste0("segregation_data_tract_", year))
   
@@ -189,18 +189,18 @@ for (year in 2015:2020) {
   aggregated_dfs[[paste0("aggregated_df_", year)]] <- aggregated_df
 }
 
-segregation_df_county_2015_2020 <- bind_rows(aggregated_dfs)
+segregation_df_county_2015_2021 <- bind_rows(aggregated_dfs)
 
 
 
 #county to health district aggregation
-
-segregation_data_county_2020 <- segregation_df_county_2015_2020[segregation_df_county_2015_2020$year == 2020, ]
-segregation_data_county_2019 <- segregation_df_county_2015_2020[segregation_df_county_2015_2020$year == 2019, ]
-segregation_data_county_2018 <- segregation_df_county_2015_2020[segregation_df_county_2015_2020$year == 2018, ]
-segregation_data_county_2017 <- segregation_df_county_2015_2020[segregation_df_county_2015_2020$year == 2017, ]
-segregation_data_county_2016 <- segregation_df_county_2015_2020[segregation_df_county_2015_2020$year == 2016, ]
-segregation_data_county_2015 <- segregation_df_county_2015_2020[segregation_df_county_2015_2020$year == 2015, ]
+segregation_data_county_2021 <- segregation_df_county_2015_2021[segregation_df_county_2015_2021$year == 2021, ]
+segregation_data_county_2020 <- segregation_df_county_2015_2021[segregation_df_county_2015_2021$year == 2020, ]
+segregation_data_county_2019 <- segregation_df_county_2015_2021[segregation_df_county_2015_2021$year == 2019, ]
+segregation_data_county_2018 <- segregation_df_county_2015_2021[segregation_df_county_2015_2021$year == 2018, ]
+segregation_data_county_2017 <- segregation_df_county_2015_2021[segregation_df_county_2015_2021$year == 2017, ]
+segregation_data_county_2016 <- segregation_df_county_2015_2021[segregation_df_county_2015_2021$year == 2016, ]
+segregation_data_county_2015 <- segregation_df_county_2015_2021[segregation_df_county_2015_2021$year == 2015, ]
 
 
 health_district_data_2020 <- read_csv("~/git/sdc.geographies_dev/VA/State Geographies/Health Districts/2020/data/distribution/va_ct_to_hd_crosswalk.csv")
@@ -221,7 +221,7 @@ library(dplyr)
 
 aggregated_hd_dfs <- list()
 
-for (year in 2015:2020) {
+for (year in 2015:2021) {
   
   current_segregation_data <- get(paste0("segregation_data_county_", year))
   
@@ -237,21 +237,22 @@ for (year in 2015:2020) {
   aggregated_hd_dfs[[paste0("segregation_df_hd_aggregated_", year)]] <- aggregated_hd_df
 }
 
-segregation_df_hd_aggregated_2015_2020 <- bind_rows(aggregated_hd_dfs)
+segregation_df_hd_aggregated_2015_2021 <- bind_rows(aggregated_hd_dfs)
 
 
 segregation_df <- segregation_df %>% mutate(geoid = as.character(geoid))
-segregation_df_county_2015_2020 <- segregation_df_county_2015_2020 %>% mutate(geoid = as.character(geoid))
+segregation_df_county_2015_2021 <- segregation_df_county_2015_2021 %>% mutate(geoid = as.character(geoid))
 
 
-va_tr_ct_hd_vdh_2015_2020_segregation_index <- bind_rows(
+va_tr_ct_hd_vdh_2015_2021_segregation_index <- bind_rows(
   segregation_df,
-  segregation_df_county_2015_2020,
-  segregation_df_hd_aggregated_2015_2020
+  segregation_df_county_2015_2021,
+  segregation_df_hd_aggregated_2015_2021
 )
 
-readr::write_csv(va_tr_ct_hd_vdh_2015_2020_segregation_index,xzfile("~/segregation_rex/va_tr_ct_hd_vdh_2015_2020_segregation_index.csv.xz", compression = 9))
+readr::write_csv(va_tr_ct_hd_vdh_2015_2021_segregation_index, "Segregation (HOI)/data/working/va_tr_ct_hd_vdh_2015_2021_segregation_index.csv")
+readr::write_csv(va_tr_ct_hd_vdh_2015_2021_segregation_index, xzfile("Segregation (HOI)/data/distribution/va_tr_ct_hd_vdh_2015_2021_segregation_index.csv.xz", compression = 9))
 
 
-write.csv(va_tr_ct_hd_vdh_2015_2020_segregation_index,xzfile("~/segregation_rex/va_tr_ct_hd_vdh_2015_2020_segregation_index.csv.xz", compression = 9))
-write.csv(va_tr_ct_hd_vdh_2015_2020_segregation_index, "~/segregation_rex/va_tr_ct_hd_vdh_2015_2020_segregation_index.csv", row.names = FALSE)
+#write.csv(va_tr_ct_hd_vdh_2015_2021_segregation_index,xzfile("~/segregation_rex/va_tr_ct_hd_vdh_2015_2021_segregation_index.csv.xz", compression = 9))
+#write.csv(va_tr_ct_hd_vdh_2015_2021_segregation_index, "~/segregation_rex/va_tr_ct_hd_vdh_2015_2021_segregation_index.csv", row.names = FALSE)
