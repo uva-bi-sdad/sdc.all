@@ -9,9 +9,9 @@ library(tidyr)
 library(zoo)
 
 #### Prepare tract level data for Affordability Index ####
-data_2015_tr <- read_csv("~/Git/sdc.housing_dev/Cost/Affordability_HT/data/original/htaindex2015_data_tracts_51.csv")
-data_2019_tr <- read_csv("~/Git/sdc.housing_dev/Cost/Affordability_HT/data/original/htaindex2019_data_tracts_51.csv")
-data_2020_tr <- read_csv("~/Git/sdc.housing_dev/Cost/Affordability_HT/data/original/htaindex2020_data_tracts_51.csv")
+data_2015_tr <- read_csv("Cost/Affordability_HT/data/original/htaindex2015_data_tracts_51.csv")
+data_2019_tr <- read_csv("Cost/Affordability_HT/data/original/htaindex2019_data_tracts_51.csv")
+data_2020_tr <- read_csv("Cost/Affordability_HT/data/original/htaindex2020_data_tracts_51.csv")
 
 
 data_2015_tr <- data_2015_tr[, c("tract", "cbsa", "ht_ami")]
@@ -28,9 +28,11 @@ data_2019_tr[] <- lapply(data_2019_tr, remove_double_quotes)
 data_2020_tr[] <- lapply(data_2020_tr, remove_double_quotes)
 
 
-data_2015_tr <- data.frame(data_2015_tr)
-data_2019_tr <- data.frame(data_2019_tr)
-data_2020_tr <- data.frame(data_2020_tr)
+data_2015_tr <- data.frame(data_2015_tr[!is.na(data_2015_tr$ht_ami),])
+data_2019_tr <- data.frame(data_2019_tr[!is.na(data_2019_tr$ht_ami),])
+data_2020_tr <- data.frame(data_2020_tr[!is.na(data_2020_tr$ht_ami),])
+
+
 
 get_acs_subset_tr <- function(year, state) {
   acs_data_tr <- get_acs(geography = "tract",
@@ -51,6 +53,8 @@ va_acs_2020_tr <- get_acs_subset_tr(year = 2020, state = "VA")
 va_acs_2015_tr <- data.frame(va_acs_2015_tr)
 va_acs_2019_tr <- data_frame(va_acs_2019_tr)
 va_acs_2020_tr <- data_frame(va_acs_2020_tr)
+
+
 
 
 merge_and_rename_tr <- function(data, acs_data_tr, year) {
@@ -91,6 +95,12 @@ combined_data_1519_tr <- bind_rows(data_2015_tr %>% mutate(year = 2015),
 
 combined_data_1519_tr$value <- as.numeric(combined_data_1519_tr$value)
 
+# copy 2019 values to 2015 where 2015 doesn't exist (need for interpolation)
+df0 <- combined_data_1519_tr %>% group_by(geoid) %>%tally()
+df1 <- df0[df0$n==1,]
+df2 <- combined_data_1519_tr[combined_data_1519_tr$geoid %in% df1$geoid,]
+df3 <- data.frame(geoid=df1$geoid, measure="affordability_index", value=df2$value, year=2015)
+combined_data_1519_tr <- rbind(combined_data_1519_tr, df3)
 
 grouped_data_1519_tr <- combined_data_1519_tr %>%
   group_by(geoid,measure)
@@ -111,8 +121,11 @@ combined_data_2015_2020_tr <- rbind( data_2016_to_2018_tr,  data_2020_tr)
 # Define the year for which you want to estimate values (2021)
 year_2021 <- 2021
 
-combined_data_1920_tr <- bind_rows(data_2019_tr %>% mutate(year = 2019),
-                                   data_2020_tr %>% mutate(year = 2020))
+#combined_data_1920_tr <- bind_rows(data_2019_tr %>% mutate(year = 2019),
+#                                   data_2020_tr %>% mutate(year = 2020))
+
+combined_data_1920_tr <- bind_rows(combined_data_2015_2020_tr[combined_data_2015_2020_tr$year==2019,],
+                                   combined_data_2015_2020_tr[combined_data_2015_2020_tr$year==2020,])
 
 
 combined_data_1920_tr$value <- as.numeric(combined_data_1920_tr$value)
@@ -121,9 +134,12 @@ combined_data_1920_tr$value <- as.numeric(combined_data_1920_tr$value)
 # Calculate the rate of change for each tract, handling NA values
 rate_of_change_tr <- combined_data_1920_tr %>%
   group_by(geoid) %>%
-  summarise(rate_of_change_tr = (last(value, order_by = year) - first(value, order_by = year)) / (max(year) - min(year, na.rm = TRUE)))
+  summarise(rate_of_change_tr = (last(value, order_by = year) - first(value, order_by = year)) / if_else(max(year) != min(year), (max(year) - min(year, na.rm = TRUE)), max(year)))
+  #summarise(rate_of_change_tr = (last(value, order_by = year) - first(value, order_by = year)) / (max(year) - min(year, na.rm = TRUE)))
+
 
 sum(is.na(rate_of_change_tr))
+# now 0
 # 853/2455 = 0.3474542
 
 # data_2020_tr <- data %>% filter(Year == 2020)
@@ -131,11 +147,15 @@ sum(is.na(rate_of_change_tr))
 data_2020_tr <- data_2020_tr %>%
   left_join(rate_of_change_tr, by = "geoid")
 
-data_2020_tr$value <- as.numeric(data_2020_tr$value)
+data_2020_tr_comb <- combined_data_2015_2020_tr[combined_data_2015_2020_tr$year==2020,]
+
+data_2020_tr_comb$value <- as.numeric(data_2020_tr$value)
+data_2020_tr_comb <- merge(data_2020_tr_comb, rate_of_change_tr, by = "geoid", all.x = T)
 
 # Calculate the estimated values for 2021 for each tract, handling NA values
-data_2021_tr <- data_2020_tr %>%
-  mutate(year = year_2021, value = ifelse(is.na(value), NA, value + (rate_of_change_tr * (year_2021 - max(year, na.rm = TRUE))))) %>%
+data_2021_tr <- data_2020_tr_comb %>%
+  #mutate(year = year_2021, value = ifelse(is.na(value), NA, value + (rate_of_change_tr$rate_of_change_tr * (year_2021 - max(year, na.rm = TRUE))))) %>%
+  mutate(year = year_2021, value = value + rate_of_change_tr) %>%
   select(year,measure, geoid, value)
 
 
