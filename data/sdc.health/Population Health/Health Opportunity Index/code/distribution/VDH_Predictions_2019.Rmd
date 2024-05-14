@@ -91,6 +91,7 @@ data_matrix = normalized_df[,c(5:18, 20)]
 
 ```{r}
 source("/Users/michaelvaden/Downloads/tract_conversions.R")
+# add this to health_dev repo with code files
 ```
 
 ### Function to Convert to 2020
@@ -244,23 +245,26 @@ hoi_recreated_normalized_2019[,8:13] = 1 - hoi_recreated_normalized_2019[,8:13]
 Predict with 2020 data
 
 ```{r}
-predict_incarceration = lm(Incarceration~., data=data_matrix %>% dplyr::select(-c(`Accees to Care`, `LifeExpectancy`)))
+predict_incarceration = lm(Incarceration~., data=data_matrix %>% dplyr::select(-c(`Accees to Care`, `LifeExpectancy`, `Incarceration`)) %>% mutate(Incarceration = hoi_recreated_imputed_2019$Incarceration))
+
+predict_incarceration_normalized = lm(Incarceration~., data=data_matrix %>% dplyr::select(-c(`Accees to Care`, `LifeExpectancy`)))
 
 #summary(predict_incarceration)
 ```
 
 ```{r}
-#inc_2017_predicted = predict(predict_incarceration, hoi_recreated_imputed_2017 %>% dplyr::select(-c(Incarceration, geoid)))
 inc_2019_predicted = predict(predict_incarceration, hoi_recreated_normalized_2019 %>% dplyr::select(-c(geoid, `Accees to Care`)))
 
-cor(inc_2019_predicted, data_matrix$Incarceration)
+inc_2019_predicted_normalized = predict(predict_incarceration_normalized, hoi_recreated_normalized_2019 %>% dplyr::select(-c(geoid, `Accees to Care`)))
+
+cor(inc_2019_predicted_normalized, data_matrix$Incarceration)
 ```
 
 
 ## Aggregate data to predict 2019 HOI
 
 ```{r}
-indicators_2019 = hoi_recreated_normalized_2019 %>% mutate(Incarceration = inc_2019_predicted)
+indicators_2019 = hoi_recreated_normalized_2019 %>% mutate(Incarceration = inc_2019_predicted_normalized)
 ```
 
 
@@ -319,18 +323,67 @@ cor(X1$LifeExpectancy, LE_predicted_2019)
 # Save The Data
 
 ```{r}
-HOI_data_2019 = indicators_2019 %>% select(geoid) %>% mutate(year = 2019) %>% mutate(measure = "HOI") %>% mutate(value = HOI_predicted_2019) %>% mutate(moe = NA)
+HOI_data_2019 = indicators_2019 %>% select(geoid) %>% mutate(year = 2019) %>% mutate(measure = "health_opportunity_indicator") %>% mutate(value = HOI_predicted_2019) %>% mutate(moe = NA)
 
 HOI_data_2019
 
-#write.csv(HOI_data_2019, "health_opportunity_indicator_2019.csv")
+HOI_data_2019_quintile = HOI_data_2019 %>% mutate(value = as.numeric(cut(HOI_data_2019$value, breaks = 5, labels = FALSE)))
+
+#write.csv(HOI_data_2019_quintile, "health_opportunity_indicator_2019_quintiles.csv")
 ```
 
 ```{r}
-incarceration_data_2019 = indicators_2019 %>% select(geoid) %>% mutate(year = 2019) %>% mutate(measure = "incarceration_rate_per_100000") %>% mutate(value = inc_2019_predicted) %>% mutate(moe = NA)
+incarceration_data_2019 = indicators_2019 %>% select(geoid) %>% mutate(year = 2019) %>% mutate(measure = "incarceration_rate_per_100000") %>% mutate(value = round(pmax(inc_2019_predicted, 0),0)) %>% mutate(moe = NA) # add a relu type function to get rid of negative values and round
 
-incarceration_data_2019
-
+setwd("incarceration_raw_predicted")
 #write.csv(incarceration_data_2019, "incarceration_rate_per_100000_2019.csv")
+setwd("/Users/michaelvaden/Downloads")
+
 ```
 
+
+## Save all of the indicator files for each year
+
+### Save the Normalized Data
+
+```{r}
+library(glue)
+
+setwd("hoi_predictors/2019_normalized")
+
+measure_labels = c("access_care_indicator", "average_years_schooling", "employment_access_index", "labor_participate_rate", "population_density_direct", "walkability_index_raw", "segregation_indicator", "gini_index", "affordability_index", "environmental_hazard_index", "food_access_percentage", "material_deprivation_indicator", "perc_moving", "incarceration_rate_per_100000")
+
+i = 1
+ for (column in colnames(indicators_2019 %>% dplyr::select(-c(geoid)))) {
+   data_to_save_normalized = indicators_2019 %>% select(geoid, all_of(column)) %>% mutate(year = 2019) %>% mutate(measure = measure_labels[i]) %>% rename(value = column) %>% mutate(moe = NA) 
+   
+   print(data_to_save_normalized)
+   
+   #write.csv(data_to_save_normalized, glue('{measure_labels[i]}_normalized_2019.csv'))
+   
+   i = i+1
+ }
+
+setwd("/Users/michaelvaden/Downloads")
+```
+
+### Save the Raw Data
+
+```{r}
+setwd("hoi_predictors/2019")
+
+measure_labels_raw = c("access_care_indicator", "average_years_schooling", "employment_access_index", "labor_participate_rate", "population_density_direct", "walkability_index_raw", "segregation_indicator", "gini_index", "affordability_index", "environmental_hazard_index", "food_access_percentage", "material_deprivation_indicator", "perc_moving")
+
+i = 1
+for (column in colnames(hoi_recreated_imputed_2019 %>% dplyr::select(-c(geoid, Incarceration)))) {
+   data_to_save_raw = hoi_recreated_imputed_2019 %>% select(geoid, all_of(column)) %>% mutate(year = 2019) %>% mutate(measure = measure_labels_raw[i]) %>% rename(value = column) %>% mutate(moe = NA) 
+   
+   print(data_to_save_raw)
+   
+   #write.csv(data_to_save_raw, glue('{measure_labels[i]}_2019.csv'))
+   
+   i = i+1
+}
+
+setwd("/Users/michaelvaden/Downloads")
+```

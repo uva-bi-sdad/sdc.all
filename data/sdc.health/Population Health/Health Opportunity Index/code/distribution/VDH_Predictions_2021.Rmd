@@ -1,7 +1,7 @@
 ---
-title: "VDH Predictions 2016"
+title: "VDH Predictions 2021"
 author: "Michael Vaden"
-date: "2024-04-15"
+date: "2024-04-18"
 output: html_document
 ---
 
@@ -59,6 +59,7 @@ HOI_imputed$LifeExpectancy <- round(HOI_imputed$LifeExpectancy, 5)
 sprintf("there were %d missing values in life expectancy, but there are now %d after using knn imputation", sum(is.na(HOI_combined$LifeExpectancy)),  sum(is.na(HOI_imputed$LifeExpectancy)))
 ```
 
+
 Scale all of the values for predicting incarceration, HOI, LEB in 2020 data
 
 ```{r}
@@ -84,7 +85,7 @@ data_matrix = normalized_df[,c(5:18, 20)]
 ```
 
 
-# Get 2016 Data
+# Get 2021 Data
 
 ### take function from tract_conversions.R
 
@@ -126,28 +127,30 @@ convert_tract_to_2020 <- function(data, specified_year) {
 
 
 ```{r}
-labor_force_2016 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/labor_participate_rate.csv"), 2016)
+labor_force_2021 = read_csv("/Users/michaelvaden/Downloads/labor_participate_rate.csv") %>% filter(year == 2021)
 
-employment_access_2016 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/employment_access_index.csv"), 2016)
+employment_access_2021 = read_csv("/Users/michaelvaden/Downloads/employment_access_index_new.csv") %>% filter(year == 2021) # Lots of NAs here, may need to imput with 2020 values
+sum(is.na(employment_access_2021$value))
 
-income_inequality_2016 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/gini_index.csv") %>% distinct(), 2016)
+income_inequality_2021 = read_csv("/Users/michaelvaden/Downloads/gini_index.csv") %>% distinct() %>% filter(year == 2021)
 
-material_deprivation_indicator_2016 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/material_deprivation_indicator.csv"), 2016)
+material_deprivation_indicator_2021 = read_csv("/Users/michaelvaden/Downloads/material_deprivation_indicator.csv") %>% filter(year == 2021)
 
-education_raw_2016 = read_csv("/Users/michaelvaden/Downloads/average_years_schooling.csv") %>% mutate(geoid = as.character(geoid)) %>% filter(year == 2016)
-average_years_schooling_2016 = convert_tract_to_2020(education_raw_2016[!duplicated(education_raw_2016$geoid, fromLast = TRUE),], 2016)
+education_raw_2021 = read_csv("/Users/michaelvaden/Downloads/average_years_schooling.csv") %>% mutate(geoid = as.character(geoid)) %>% filter(year == 2021)
+average_years_schooling_2021 = education_raw_2021[!duplicated(education_raw_2021$geoid, fromLast = TRUE),]
 
-# for access to food we need to use 2017 data for access to food, does not exist for 2016
+# for access to food we need to use 2017 data for access to food, does not exist for 2018
 access_to_food_new = read_csv("/Users/michaelvaden/Downloads/food_access_percentage.csv") %>% filter(year == 2017) %>% mutate(geoid = as.character(geoid))
 access_to_food_new_2017 = access_to_food_new %>% dplyr::select(geoid, value)
 
-mobility_2016 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/perc_moving.csv"), 2016)
+mobility_2021 = read_csv("/Users/michaelvaden/Downloads/perc_moving.csv") %>% filter(year == 2021)
 
-population_density_2016 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/population_density_direct.csv"), 2016)
+population_density_2021 = read_csv("/Users/michaelvaden/Downloads/population_density_direct.csv") %>% filter(year == 2021) # tons of extra tracts
 
-segregation_2016 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/segregation_indicator.csv"), 2016)
+segregation_2021 = read_csv("/Users/michaelvaden/Downloads/segregation_indicator_new.csv") %>% filter(year == 2021) # New 2021 data
 
-affordability_2016 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/affordability_index.csv"), 2016)
+affordability_2021 = read_csv("/Users/michaelvaden/Downloads/affordability_index.csv")  %>% filter(year == 2021) # Lots of NAs here, may need to imput
+sum(is.na(affordability_2021$value))
 
 # environmental only comes from 2022 so we use that here
 environment_hazard_2022 <- read_csv("/Users/michaelvaden/Downloads/environmental_hazard_index.csv")
@@ -180,22 +183,22 @@ walkability_2021 = convert_tract_to_2020(walkability_index_weighted_for_function
 ```
 
 
-## Combine 2016 Predictors
+## Combine 2021 Predictors
 
 ```{r}
-list_2016 = list(access_care_2017, average_years_schooling_2016, employment_access_2016, labor_force_2016, population_density_2016, walkability_2021, segregation_2016, income_inequality_2016, affordability_2016, environment_hazard_2022, access_to_food_new_2017, material_deprivation_indicator_2016, incarceration %>% filter(year == 2016), mobility_2016)
+list_2021 = list(access_care_2017, average_years_schooling_2021, employment_access_2021, labor_force_2021, population_density_2021, walkability_2021, segregation_2021, income_inequality_2021, affordability_2021, environment_hazard_2022, access_to_food_new_2017, material_deprivation_indicator_2021, incarceration %>% filter(year == 2020), mobility_2021)
 
-hoi_recreated_indicators_2016 <- Reduce(function(x, y) left_join(x, y, by = "geoid"), list_2016)
-names(hoi_recreated_indicators_2016)
+hoi_recreated_indicators_2021 <- Reduce(function(x, y) left_join(x, y, by = "geoid"), list_2021)
+names(hoi_recreated_indicators_2021)
 
-hoi_recreated_indicators_2016 = hoi_recreated_indicators_2016 %>% dplyr::select(-c("year.x","measure.x", "moe.x", "year.y", "measure.y", "moe.y"))
+hoi_recreated_indicators_2021 = hoi_recreated_indicators_2021 %>% dplyr::select(-c("year.x","measure.x", "moe.x", "year.y", "measure.y", "moe.y", "measure.x.x", "measure.y.y", "year.x.x", "year.y.y", "year.x.x.x", "measure.x.x.x", "year.y.y.y", "measure.y.y.y", "year.x.x.x.x", "measure.x.x.x.x", "year.y.y.y.y", "measure.y.y.y.y", "year.x.x.x.x.x", "measure.x.x.x.x.x", "year.y.y.y.y.y", "measure.y.y.y.y.y", "year", "measure", "moe.x.x", "moe.y.y", "moe.x.x.x", "moe.y.y.y", "moe.x.x.x.x", "moe.y.y.y.y", "moe.x.x.x.x.x", "moe.y.y.y.y.y", "moe"))
 
-geoid_recreated = hoi_recreated_indicators_2016$geoid
-hoi_recreated_matrix_2016 = hoi_recreated_indicators_2016[,2:15]
+geoid_recreated = hoi_recreated_indicators_2021$geoid
+hoi_recreated_matrix_2021 = hoi_recreated_indicators_2021[,2:15]
 
-names(hoi_recreated_matrix_2016) = names(data_matrix)
+names(hoi_recreated_matrix_2021) = names(data_matrix)
 
-hoi_recreated_matrix_2016$geoid = geoid_recreated
+hoi_recreated_matrix_2021$geoid = geoid_recreated
 ```
 
 
@@ -204,12 +207,19 @@ hoi_recreated_matrix_2016$geoid = geoid_recreated
 Reordering the indicators since the linear regression is trained on the HOI data and want to compare
 
 ```{r}
-geoid_order <- match(normalized_df$CT2, hoi_recreated_matrix_2016$geoid)
+geoid_order <- match(normalized_df$CT2, hoi_recreated_matrix_2021$geoid)
 #view(hoi_recreated_matrix_2017)
 
 # Reorder the geoid column in df1 based on its order in df2
-hoi_recreated_reorders_2016 <- hoi_recreated_matrix_2016[geoid_order, ]
+hoi_recreated_reorders_2021 <- hoi_recreated_matrix_2021[geoid_order, ]
 ```
+
+Problem here with employment access and affordability: tons of missing values specifically for 2021. Also, no data for segregation in 2021
+
+```{r}
+colSums(is.na(hoi_recreated_reorders_2021))
+```
+
 
 ### Impute the missing values
 
@@ -221,28 +231,29 @@ impute_mean <- function(x) {
   return(x)
 }
 
-hoi_recreated_imputed_2016 <- mutate_all(hoi_recreated_reorders_2016, .funs = impute_mean)
+hoi_recreated_imputed_2021 <- mutate_all(hoi_recreated_reorders_2021, .funs = impute_mean)
 
-colSums(is.na(hoi_recreated_imputed_2016))
+colSums(is.na(hoi_recreated_imputed_2021))
 ```
+
 
 ### Normalize predictors and reverse the last 6
 
 ```{r}
-hoi_recreated_normalized_2016 <- hoi_recreated_imputed_2016 %>% dplyr::select(-c(Incarceration)) %>% mutate(across(where(is.numeric), scale_numeric)) %>% mutate_if(is.numeric, round, digits=3)
+hoi_recreated_normalized_2021 <- hoi_recreated_imputed_2021 %>% dplyr::select(-c(Incarceration)) %>% mutate(across(where(is.numeric), scale_numeric)) %>% mutate_if(is.numeric, round, digits=3)
 
-hoi_recreated_normalized_2016[,8:13] = 1 - hoi_recreated_normalized_2016[,8:13]
+hoi_recreated_normalized_2021[,8:13] = 1 - hoi_recreated_normalized_2021[,8:13]
 ```
 
 
-## Predict Incarceration
+## Predict Incarceration (Proof of concept 2021)
 
 ### Predict Incarceration Train Model
 
 Predict with 2020 data
 
 ```{r}
-predict_incarceration = lm(Incarceration~., data=data_matrix %>% dplyr::select(-c(`Accees to Care`, `LifeExpectancy`, `Incarceration`)) %>% mutate(Incarceration = hoi_recreated_imputed_2016$Incarceration))
+predict_incarceration = lm(Incarceration~., data=data_matrix %>% dplyr::select(-c(`Accees to Care`, `LifeExpectancy`, `Incarceration`)) %>% mutate(Incarceration = hoi_recreated_imputed_2021$Incarceration))
 
 predict_incarceration_normalized = lm(Incarceration~., data=data_matrix %>% dplyr::select(-c(`Accees to Care`, `LifeExpectancy`)))
 
@@ -250,22 +261,23 @@ predict_incarceration_normalized = lm(Incarceration~., data=data_matrix %>% dply
 ```
 
 ```{r}
-inc_2016_predicted = predict(predict_incarceration, hoi_recreated_normalized_2016 %>% dplyr::select(-c(geoid, `Accees to Care`)))
+inc_2021_predicted = predict(predict_incarceration, hoi_recreated_normalized_2021 %>% dplyr::select(-c(geoid, `Accees to Care`)))
 
-inc_2016_predicted_normalized = predict(predict_incarceration_normalized, hoi_recreated_normalized_2016 %>% dplyr::select(-c(geoid, `Accees to Care`)))
+inc_2021_predicted_normalized = predict(predict_incarceration_normalized, hoi_recreated_normalized_2021 %>% dplyr::select(-c(geoid, `Accees to Care`)))
 
-cor(inc_2016_predicted_normalized, data_matrix$Incarceration)
+cor(inc_2021_predicted_normalized, data_matrix$Incarceration)
 ```
 
 
-## Aggregate data to predict 2016 HOI
+## Aggregate data to predict 2021 HOI
 
 ```{r}
-indicators_2016 = hoi_recreated_normalized_2016 %>% mutate(Incarceration = inc_2016_predicted_normalized)
+indicators_2021 = hoi_recreated_normalized_2021 %>% mutate(Incarceration = inc_2021_predicted_normalized)
 ```
 
+
 ```{r}
-desired_order <- c(names(indicators_2016))
+desired_order <- c(names(indicators_2021))
 
 HOI_results <- read_excel("/Users/michaelvaden/Downloads/HOI V3_4 Components_PCA weights.xlsx")
 
@@ -281,7 +293,7 @@ reordered_X_columns <- c("**Accees to Care", "Education", "Employment Access", "
 
 X1 <- X1[, reordered_X_columns]
 
-names(X1) = names(indicators_2016 %>% dplyr::select(-c(geoid)))
+names(X1) = names(indicators_2021 %>% dplyr::select(-c(geoid)))
 
 # attach HOI values
 X1$HOI = combined$`Composite Index Standardized`
@@ -290,17 +302,20 @@ predict_HOI_model = lm(HOI~., data=X1 %>% dplyr::select(-c(`Accees to Care`)))
 #summary(predict_HOI_model)
 ```
 
+All of employment access, affordability, and segregation are important in predicting HOI so would be good to fix these in the long run, despite good correlation
 
-## Predict HOI with 2016 data
+## Predict HOI with 2021 data
 
 ```{r}
-HOI_predicted_2016 <- predict(predict_HOI_model, indicators_2016 %>% dplyr::select(-c(`Accees to Care`))) * -1
+HOI_predicted_2021 <- predict(predict_HOI_model, indicators_2021 %>% dplyr::select(-c(`Accees to Care`))) * -1
 
-cor(X1$HOI, HOI_predicted_2016)
+cor(X1$HOI, HOI_predicted_2021)
 ```
 
 
-## Predict Life Expectancy with 2016 data
+## Predict Life Expectancy with 2021 data
+
+Really rough life expectancy results for 2021
 
 ```{r}
 
@@ -311,31 +326,30 @@ predict_LE_model = lm(LifeExpectancy~., data=X1 %>% dplyr::select(-c(`Accees to 
 ```
 
 ```{r}
-LE_predicted_2016 <- predict(predict_LE_model, indicators_2016 %>% dplyr::select(-c(`Accees to Care`))) * -1
+LE_predicted_2021 <- predict(predict_LE_model, indicators_2021 %>% dplyr::select(-c(`Accees to Care`))) * -1
 
-cor(X1$LifeExpectancy, LE_predicted_2016)
+cor(X1$LifeExpectancy, LE_predicted_2021)
 ```
-
 
 # Save The Data
 
 ```{r}
-HOI_data_2016 = indicators_2016 %>% select(geoid) %>% mutate(year = 2016) %>% mutate(measure = "health_opportunity_indicator") %>% mutate(value = HOI_predicted_2016) %>% mutate(moe = NA)
+HOI_data_2021 = indicators_2021 %>% select(geoid) %>% mutate(year = 2021) %>% mutate(measure = "health_opportunity_indicator") %>% mutate(value = HOI_predicted_2021) %>% mutate(moe = NA)
 
-HOI_data_2016
+HOI_data_2021
 
-#write.csv(HOI_data_2016, "health_opportunity_indicator_2016.csv")
+#write.csv(HOI_data_2021, "health_opportunity_indicator_2021.csv")
 
-HOI_data_2016_quintile = HOI_data_2016 %>% mutate(value= as.numeric(cut(HOI_data_2016$value, breaks = 5, labels = FALSE)))
+HOI_data_2021_quintile = HOI_data_2021 %>% mutate(value= as.numeric(cut(HOI_data_2021$value, breaks = 5, labels = FALSE)))
 
-#write.csv(HOI_data_2016_quintile, "health_opportunity_indicator_2016_quintiles.csv")
+#write.csv(HOI_data_2021_quintile, "health_opportunity_indicator_2021_quintiles.csv")
 ```
 
 ```{r}
-incarceration_data_2016 = indicators_2016 %>% select(geoid) %>% mutate(year = 2016) %>% mutate(measure = "incarceration_rate_per_100000") %>% mutate(value = round(pmax(inc_2016_predicted, 0),0)) %>% mutate(moe = NA) # add a relu type function to get rid of negative values and round
+incarceration_data_2021 = indicators_2021 %>% select(geoid) %>% mutate(year = 2021) %>% mutate(measure = "incarceration_rate_per_100000") %>% mutate(value = round(pmax(inc_2021_predicted, 0),0)) %>% mutate(moe = NA) # add a relu type function to get rid of negative values and round
 
 setwd("incarceration_raw_predicted")
-#write.csv(incarceration_data_2016, "incarceration_rate_per_100000_2016.csv")
+write.csv(incarceration_data_2021, "incarceration_rate_per_100000_2021.csv")
 setwd("/Users/michaelvaden/Downloads")
 
 ```
@@ -347,17 +361,17 @@ setwd("/Users/michaelvaden/Downloads")
 ```{r}
 library(glue)
 
-setwd("hoi_predictors/2016_normalized")
+setwd("hoi_predictors/2021_normalized")
 
 measure_labels = c("access_care_indicator", "average_years_schooling", "employment_access_index", "labor_participate_rate", "population_density_direct", "walkability_index_raw", "segregation_indicator", "gini_index", "affordability_index", "environmental_hazard_index", "food_access_percentage", "material_deprivation_indicator", "perc_moving", "incarceration_rate_per_100000")
 
 i = 1
- for (column in colnames(indicators_2016 %>% dplyr::select(-c(geoid)))) {
-   data_to_save_normalized = indicators_2016 %>% select(geoid, all_of(column)) %>% mutate(year = 2016) %>% mutate(measure = measure_labels[i]) %>% rename(value = column) %>% mutate(moe = NA) 
+ for (column in colnames(indicators_2021 %>% dplyr::select(-c(geoid)))) {
+   data_to_save_normalized = indicators_2021 %>% select(geoid, all_of(column)) %>% mutate(year = 2021) %>% mutate(measure = measure_labels[i]) %>% rename(value = column) %>% mutate(moe = NA) 
    
    print(data_to_save_normalized)
    
-   #write.csv(data_to_save_normalized, glue('{measure_labels[i]}_normalized_2016.csv'))
+   #write.csv(data_to_save_normalized, glue('{measure_labels[i]}_normalized_2021.csv'))
    
    i = i+1
  }
@@ -368,21 +382,20 @@ setwd("/Users/michaelvaden/Downloads")
 ### Save the Raw Data
 
 ```{r}
-setwd("hoi_predictors/2016")
+setwd("hoi_predictors/2021")
 
 measure_labels_raw = c("access_care_indicator", "average_years_schooling", "employment_access_index", "labor_participate_rate", "population_density_direct", "walkability_index_raw", "segregation_indicator", "gini_index", "affordability_index", "environmental_hazard_index", "food_access_percentage", "material_deprivation_indicator", "perc_moving")
 
 i = 1
-for (column in colnames(hoi_recreated_imputed_2016 %>% dplyr::select(-c(geoid, Incarceration)))) {
-   data_to_save_raw = hoi_recreated_imputed_2016 %>% select(geoid, all_of(column)) %>% mutate(year = 2016) %>% mutate(measure = measure_labels_raw[i]) %>% rename(value = column) %>% mutate(moe = NA) 
+for (column in colnames(hoi_recreated_imputed_2021 %>% dplyr::select(-c(geoid, Incarceration)))) {
+   data_to_save_raw = hoi_recreated_imputed_2021 %>% select(geoid, all_of(column)) %>% mutate(year = 2021) %>% mutate(measure = measure_labels_raw[i]) %>% rename(value = column) %>% mutate(moe = NA) 
    
    print(data_to_save_raw)
    
-   #write.csv(data_to_save_raw, glue('{measure_labels[i]}_2016.csv'))
+   #write.csv(data_to_save_raw, glue('{measure_labels[i]}_2021.csv'))
    
    i = i+1
 }
 
 setwd("/Users/michaelvaden/Downloads")
 ```
-
