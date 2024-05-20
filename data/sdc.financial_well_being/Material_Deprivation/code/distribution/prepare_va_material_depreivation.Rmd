@@ -208,6 +208,18 @@ readr::write_csv(townsend_bi, xzfile("../../data/distribution/va_hdcttr_vdh_2015
 
 ```
 
+```{r}
+# standardize to 2020 geographies
+## get the tract conversion function
+source("https://github.com/uva-bi-sdad/sdc.geographies/raw/main/utils/distribution/tract_conversions.R")
+## convert
+rcsv <- read.csv(xzfile("../../data/distribution/va_hdcttr_vdh_2015_2021_material_deprivation_index.csv.xz", open = "r"))
+stnd <- standardize_all(rcsv)
+
+# save standardized file
+write.csv(stnd, file = xzfile("../../data/distribution/va_hdcttr_vdh_2015_2021_material_deprivation_index_std.csv.xz"), row.names = FALSE)
+
+```
 
 
 

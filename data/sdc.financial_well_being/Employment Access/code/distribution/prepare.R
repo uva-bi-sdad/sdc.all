@@ -303,6 +303,17 @@ combined_data_2015_2021_hdcttr <- rbind(combined_data_2015_2021_hdct, combined_d
 
 write.csv(combined_data_2015_2021_hdcttr, file = xzfile("Employment Access/data/distribution/va_hdcttr_2015_2021_employment_access_index.csv.xz"), row.names = FALSE)
 
+# standardize to 2020 geographies
+## get the tract conversion function
+source("https://github.com/uva-bi-sdad/sdc.geographies/raw/main/utils/distribution/tract_conversions.R")
+## convert
+rcsv <- read.csv(xzfile("Employment Access/data/distribution/va_hdcttr_2015_2021_employment_access_index.csv.xz", open = "r"))
+stnd <- standardize_all(rcsv)
+
+# save standardized file
+write.csv(stnd, file = xzfile("Employment Access/data/distribution/va_hdcttr_2015_2021_employment_access_index_std.csv.xz"), row.names = FALSE)
+
+
 
 #### General forms of functions used in this prepare file ####
 

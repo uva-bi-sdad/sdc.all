@@ -180,10 +180,17 @@ standardize_all <- function(data, filter_geo='state') {
   measures <- unique(data$measure)
   
   # add '_orig_{census year}' to delineate original data
-  original <- data %>% mutate(measure = paste0(measure, '_orig_', 
-                                           as.character(
-                                             (year%/%10)*10) # convert year to census year
-                                           )) 
+  original <- data %>% mutate(measure = paste0(measure, '_geo', 
+                                               case_when(year < 2020 & nchar(geoid) == 11 ~ "10",
+                                                         year < 2020 & nchar(geoid) != 11 ~ "20",
+                                                         year >= 2020 ~ "20")))
+  
+  # original <- data %>% mutate(measure = paste0(measure, '_geo', 
+  #                                          as.character(
+  #                                            #(year%/%10)*10) # convert year to census year
+  #                                          )))
+  # 
+  # 
   
   standardized <- NULL
   
@@ -197,11 +204,12 @@ standardize_all <- function(data, filter_geo='state') {
 
         # get standardized data '_std' delineates calculated data
         converted <- convert_2010_to_2020_bounds(temp) %>%
-          mutate(year = yr, measure = paste0(meas, '_std'), moe = '',
-                 region_type = case_when(
-                   nchar(geoid) == 11 ~ 'tract',
-                   nchar(geoid) == 12 ~ 'block group'
-                )) # reapply descriptive columns
+          mutate(year = yr, measure = paste0(meas, '_geo20'), moe = '')
+                # ,
+                #  region_type = case_when(
+                #    nchar(geoid) == 11 ~ 'tract',
+                #    nchar(geoid) == 12 ~ 'block group'
+                # )) # reapply descriptive columns
 
         # merge to final
         standardized <- rbind(standardized, converted)

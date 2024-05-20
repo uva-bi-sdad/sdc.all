@@ -76,3 +76,13 @@ combined <- rbind(va_tract_ginis_all, county_healthdis)
 # fwrite(va_cttr_2015_2021_income_inequality_gini_index, "Pay and Benefits/Income Inequality/data/distribution/va_cttr_2015_2021_income_inequality_gini_index.csv")
 readr::write_csv(combined, xzfile("Pay and Benefits/Income Inequality/data/distribution/va_hdcttr_2015_2021_income_inequality_gini_index.csv.xz", compression = 9))
 
+# standardize to 2020 geographies
+## get the tract conversion function
+source("https://github.com/uva-bi-sdad/sdc.geographies/raw/main/utils/distribution/tract_conversions.R")
+## convert
+rcsv <- read.csv(xzfile("Pay and Benefits/Income Inequality/data/distribution/va_hdcttr_2015_2021_income_inequality_gini_index.csv.xz", open = "r"))
+stnd <- standardize_all(rcsv)
+
+# save standardized file
+write.csv(stnd, file = xzfile("Pay and Benefits/Income Inequality/data/distribution/va_hdcttr_2015_2021_income_inequality_gini_index_std.csv.xz"), row.names = FALSE)
+

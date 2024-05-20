@@ -18764,7 +18764,7 @@
         "unit": "individual",
         "variants": ""
     },
-    "employment_access_index": {
+    "employment_access_index_geo20": {
         "aggregation_method": "weighted sum",
         "categories": "",
         "category": "Employment/Workforce Development",
@@ -20210,7 +20210,7 @@
             }
         }
     },
-    "gini_index": {
+    "gini_index_geo20": {
         "aggregation_method": "",
         "categories": "",
         "category": "Financial Well Being",
@@ -20944,7 +20944,7 @@
         "unit": "",
         "variants": ""
     },
-    "labor_participate_rate": {
+    "labor_participate_rate_geo20": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Employment/Workforce Development",
@@ -21304,7 +21304,7 @@
             }
         }
     },
-    "material_deprivation_indicator": {
+    "material_deprivation_indicator_geo20": {
         "aggregation_method": "",
         "categories": "",
         "category": "Health Opportunity Index",

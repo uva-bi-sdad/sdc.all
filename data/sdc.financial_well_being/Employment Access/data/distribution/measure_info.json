@@ -1,5 +1,5 @@
 {
-    "employment_access_index": {
+    "employment_access_index_geo20": {
         "aggregation_method": "weighted sum",
         "categories": "",
         "category": "Employment/Workforce Development",

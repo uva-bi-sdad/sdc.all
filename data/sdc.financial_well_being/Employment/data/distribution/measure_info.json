@@ -26,7 +26,7 @@
         "unit": "individual",
         "variants": ""
     },
-    "labor_participate_rate": {
+    "labor_participate_rate_geo20": {
         "aggregation_method": "percent",
         "categories": "",
         "category": "Employment/Workforce Development",
