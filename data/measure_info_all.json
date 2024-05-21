@@ -17414,7 +17414,7 @@
         "unit": "percent",
         "variants": ""
     },
-    "average_years_schooling": {
+    "average_years_schooling_geo20": {
         "aggregation_method": "",
         "categories": "",
         "category": "Education",
@@ -19010,7 +19010,7 @@
         "unit": "business",
         "variants": ""
     },
-    "food_access_percentage": {
+    "food_access_percentage_geo20": {
         "aggregation_method": "",
         "categories": "",
         "category": "Nutrition and Food Security",
@@ -23950,7 +23950,7 @@
         "unit": "",
         "variants": ""
     },
-    "perc_moving": {
+    "perc_moving_geo20": {
         "aggregation_method": "Population Weighted Average",
         "categories": "",
         "category": "Demographics",

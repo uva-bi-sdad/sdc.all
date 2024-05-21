@@ -1,5 +1,5 @@
 {
-    "perc_moving": {
+    "perc_moving_geo20": {
         "aggregation_method": "Population Weighted Average",
         "categories": "",
         "category": "Demographics",

@@ -24,7 +24,7 @@ named_acs_var_list <- c(
 geographies <- c('tract','county','block group')
 
 # list of years
-years <- 2015:2021
+years <- 2015:2022
 
 # Download ACS data for VA
 acs_data_va_wd <- NULL
@@ -82,7 +82,12 @@ acs_data_va <- acs_data_va_wd %>%
 acs_data <- rbind(acs_data_va,acs_va_hd)
 
 # save the data
-savepath = "Geography_mobility/data/distribution/"
-readr::write_csv(acs_data, xzfile(paste0(savepath,"va_cttrbg_acs_",min(years),"_",max(years),"_moving_demographics.csv.xz"), compression = 9))
+#savepath = "Geography_mobility/data/distribution/"
+#readr::write_csv(acs_data, xzfile(paste0(savepath,"va_cttrbg_acs_",min(years),"_",max(years),"_moving_demographics.csv.xz"), compression = 9))
 
-
+# standardize to 2020 geographies
+## get the tract conversion function
+source("https://github.com/uva-bi-sdad/sdc.geographies/raw/main/utils/distribution/tract_conversions.R")
+## convert
+stnd <- standardize_all(acs_data)
+write.csv(stnd, xzfile("Geographic Mobility (HOI)/data/distribution/va_hdcttrbg_2015_2022_moving_demographics.csv.xz"), row.names = F)

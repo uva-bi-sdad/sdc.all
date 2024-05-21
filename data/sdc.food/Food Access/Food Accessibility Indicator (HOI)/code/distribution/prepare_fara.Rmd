@@ -77,7 +77,7 @@ fara_2015_va <- fara_2015_va %>% mutate(food_access_prop_init = case_when( !is.n
 # Crosswalk function
 ```{r}
 #tract conversions: 2010 --> 2020
-source("~/git/sdc.food_dev/Food Access/Food Accessibility Indicator (HOI)/code/working/tract_conversions.R")
+#source("~/git/sdc.food_dev/Food Access/Food Accessibility Indicator (HOI)/code/working/tract_conversions.R")
 
 ```
 
@@ -87,10 +87,12 @@ source("~/git/sdc.food_dev/Food Access/Food Accessibility Indicator (HOI)/code/w
 #conversion tracts 2010 --> 2020
 fara_2019_va$CensusTract <- as.character(fara_2019_va$CensusTract)
 
-fara_2019_va_updated <- convert_2010_to_2020_tracts(as.data.frame(fara_2019_va %>% select(CensusTract, food_access_prop) ), 
-                                                      geoid_col = 'CensusTract', 
-                                                      val_col = 'food_access_prop' ) %>% rename( food_access_prop = value) 
+# fara_2019_va_updated <- convert_2010_to_2020_tracts(as.data.frame(fara_2019_va %>% select(CensusTract, food_access_prop) ), 
+#                                                       geoid_col = 'CensusTract', 
+#                                                       val_col = 'food_access_prop' ) %>% rename( food_access_prop = value) 
 
+fara_2019_va_updated <- fara_2019_va[, c("CensusTract", "food_access_prop")]
+colnames(fara_2019_va_updated) <- c("geoid", "food_access_prop")
 
 ##Validation
 #data
@@ -116,10 +118,13 @@ cor.test(validation_dat$food_access_prop, validation_dat$`Food Access*`)
 #conversion tracts 2010 --> 2020
 fara_2015_va$CensusTract <- as.character(fara_2019_va$CensusTract)
 
-fara_2015_va_updated <- convert_2010_to_2020_tracts(as.data.frame(fara_2015_va %>% select(CensusTract, food_access_prop) ), 
-                                                      geoid_col = 'CensusTract', 
-                                                      val_col = 'food_access_prop' ) %>% rename( food_access_prop = value) 
+#fara_2015_va_updated <- convert_2010_to_2020_tracts(as.data.frame(fara_2015_va %>% select(CensusTract, food_access_prop) ), 
+#                                                      geoid_col = 'CensusTract', 
+#                                                      val_col = 'food_access_prop' ) %>% rename( food_access_prop = value) 
 
+
+fara_2015_va_updated <- fara_2015_va[, c("CensusTract", "food_access_prop")]
+colnames(fara_2015_va_updated) <- c("geoid", "food_access_prop")
 
 ##Validation
 #data
@@ -142,6 +147,10 @@ cor.test(validation_dat_2015$food_access_prop, validation_dat_2015$`Food Access*
 #data frame - years
 ```{r}
 
+#df_fara <- fara_2019_va_updated %>% select(geoid, food_access_prop_2019=food_access_prop ) %>% left_join( fara_2015_va_updated %>% select(geoid, food_access_prop_2015=food_access_prop ), by = 'geoid') %>% mutate(food_access_prop_2015 = food_access_prop_2015*100)
+
+
+
 df_fara <- fara_2019_va_updated %>% select(geoid, food_access_prop_2019=food_access_prop ) %>% left_join( fara_2015_va_updated %>% select(geoid, food_access_prop_2015=food_access_prop ), by = 'geoid') %>% mutate(food_access_prop_2015 = food_access_prop_2015*100)
 
 year1 <- 2015
@@ -152,7 +161,9 @@ df_fara <- df_fara %>% mutate( change_lin = (food_access_prop_2019-food_access_p
 #linear estimation
 df_fara <- df_fara %>% mutate(food_access_prop_2016 = 1*change_lin +food_access_prop_2015,
                               food_access_prop_2017 = 2*change_lin +food_access_prop_2015,
-                              food_access_prop_2018 = 3*change_lin +food_access_prop_2015)
+                              food_access_prop_2018 = 3*change_lin +food_access_prop_2015,
+                              food_access_prop_2020 = 5*change_lin +food_access_prop_2015,
+                              food_access_prop_2021 = 6*change_lin +food_access_prop_2015)
                               
 ```
 
@@ -163,23 +174,37 @@ df_fara_long <- df_fara %>% select(-c(change_lin)) %>% pivot_longer(cols = c("fo
                                                                              "food_access_prop_2016",
                                                                              "food_access_prop_2017", 
                                                                              "food_access_prop_2018",
-                                                                             "food_access_prop_2019") 
+                                                                             "food_access_prop_2019",
+                                                                             "food_access_prop_2020",
+                                                                             "food_access_prop_2021") 
                                                                     ) %>% mutate(measure = "food_access_percentage", 
                                                                                  moe = "", 
                                                                                  year = case_when( name == 'food_access_prop_2015' ~ 2015,
                                                                                                    name == 'food_access_prop_2016' ~ 2016,
                                                                                                    name == 'food_access_prop_2017' ~ 2017,
                                                                                                    name == 'food_access_prop_2018' ~ 2018,
-                                                                                                   name == 'food_access_prop_2019' ~ 2019
+                                                                                                   name == 'food_access_prop_2019' ~ 2019,
+                                                                                                   name == 'food_access_prop_2020' ~ 2020,
+                                                                                                   name == 'food_access_prop_2021' ~ 2021
                                                                                                    )) %>% select(-c(name)) %>% 
   select("geoid", "year",  "measure", "value", "moe")
 
 ```
 
+#STandardize to 2020 Geogeraphies
+```{r}
+# standardize to 2020 geographies
+## get the tract conversion function
+source("https://github.com/uva-bi-sdad/sdc.geographies/raw/main/utils/distribution/tract_conversions.R")
+## convert
+stnd <- standardize_all(df_fara_long)
+```
+
+
 #Save
 
 ```{r}
-write.csv(df_fara_long, "~/git/sdc.food_dev/Food Access/Food Accessibility Indicator (HOI)/data/distribution/va_tr_usda_2015_2019_food_access.csv", row.names = FALSE )
+write.csv(stnd, xzfile("~/git/sdc.food_dev/Food Access/Food Accessibility Indicator (HOI)/data/distribution/va_tr_usda_2015_2019_food_access_std.csv.xz"), row.names = FALSE )
 ```
 
 
