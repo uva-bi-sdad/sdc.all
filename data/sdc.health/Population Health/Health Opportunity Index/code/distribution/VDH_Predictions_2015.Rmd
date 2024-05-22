@@ -19,6 +19,7 @@ library(tidymodels)
 library(gt)
 library(gWQS)
 library(car)
+library(micropan)
 ```
 
 # Prep 2020 Data
@@ -26,7 +27,8 @@ library(car)
 ### Data Processing and Imputation
 
 ```{r}
-Raw_HOI_Indicators <- read_excel("/Users/michaelvaden/Downloads/HOI V3 14 Variables_For UVA.xlsx")
+Raw_HOI_Indicators <- read_excel("../../../Health Opportunity Index/data/original/HOI V3 14 Variables_For UVA.xlsx")
+# Raw_HOI_Indicators <- read_excel("/Users/michaelvaden/Downloads/HOI V3 14 Variables_For UVA.xlsx")
 # use this path within repo:
 # read_excel("~/git/sdc.health_dev/Access to Care (HOI)/data/distribution/HOI V3 14 Variables_For UVA.xlsx")
 ```
@@ -37,9 +39,9 @@ Raw_HOI_Indicators <- read_excel("/Users/michaelvaden/Downloads/HOI V3 14 Variab
 Add life expectancy and impute it
 
 ```{r}
-HOI_Life_Expectancy <- read_excel("/Users/michaelvaden/Downloads/LE_Virginia.xlsx")
+# HOI_Life_Expectancy <- read_excel("/Users/michaelvaden/Downloads/LE_Virginia.xlsx")
 # use this path within repo:
-# read_excel("~/git/sdc.health_dev/Access to Care (HOI)/data/distribution/LE_Virginia.xlsx")
+HOI_Life_Expectancy <- read_excel("../../../../Access to Care (HOI)/data/distribution/LE_Virginia.xlsx")
 
 HOI_combined = Raw_HOI_Indicators %>% left_join(HOI_Life_Expectancy %>% rename("CT2" = `Census tract`), by="CT2") %>% rename("LifeExpectancy" = "e(0)")
 
@@ -89,7 +91,8 @@ data_matrix = normalized_df[,c(5:18, 20)]
 ### take function from tract_conversions.R
 
 ```{r}
-source("/Users/michaelvaden/Downloads/tract_conversions.R")
+#source("/Users/michaelvaden/Downloads/tract_conversions.R")
+source("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies_dev/main/utils/distribution/tract_conversions.R?token=GHSAT0AAAAAACQGQCM3RFHKPT7UNGBH3G7UZSLQ27A")
 ```
 
 ### Function to Convert to 2020
@@ -127,6 +130,19 @@ convert_tract_to_2020 <- function(data, specified_year) {
 
 ```{r}
 labor_force_2015 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/labor_participate_rate.csv"), 2015)
+
+t <- data.table::fread("https://github.com/uva-bi-sdad/sdc.financial_well_being_dev/blob/main/Employment/data/distribution/va_hdcttr_2015_2021_labor_participate_rate.csv.xz")
+
+op <- read_csv(gzfile("https://github.com/uva-bi-sdad/sdc.financial_well_being_dev/blob/main/Employment/data/distribution/va_hdcttr_2015_2021_labor_participate_rate.csv.xz"))
+
+ar <- read_csv(archive_read("https://github.com/uva-bi-sdad/sdc.financial_well_being/raw/main/Employment/data/distribution/va_hdcttr_2015_2021_labor_participate_rate.csv.xz", filter = "xz"))
+
+f <- download.file("https://github.com/uva-bi-sdad/sdc.financial_well_being/raw/main/Employment/data/distribution/va_hdcttr_2015_2021_labor_participate_rate.csv.xz", destfile = "../working/va_hdcttr_2015_2021_labor_participate_rate.csv.xz")
+
+
+rr <- read_csv(xzuncompress("../working/va_hdcttr_2015_2021_labor_participate_rate.csv.xz"))
+
+
 
 employment_access_2015 = convert_tract_to_2020(read_csv("/Users/michaelvaden/Downloads/employment_access_index.csv"), 2015)
 

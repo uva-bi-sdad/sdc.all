@@ -15515,7 +15515,7 @@
         "unit": "",
         "variants": ""
     },
-    "affordability_index": {
+    "affordability_index_geo20": {
         "aggregation_method": "",
         "categories": "",
         "category": "Housing",
@@ -24404,6 +24404,40 @@
         "unit": "individual per square mile",
         "variants": ""
     },
+    "population_density_geo20": {
+        "aggregation_method": "Population Weighted Average",
+        "categories": "",
+        "category": "Demographics",
+        "citations": "",
+        "data_type": "decimal",
+        "equity_category": "Status",
+        "layer": "",
+        "long_description": "Population density calculated as persons per square mile.",
+        "long_name": "Population density calculated as persons per square mile.",
+        "measure_type": "",
+        "short_description": "Population density calculated as persons per square mile.",
+        "short_name": "Population Density, Persons per Square Mile",
+        "sources": [
+            {
+                "date_accessed": 2023,
+                "location": "5-Year estimates, table B01001, via the API",
+                "location_url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+                "name": "American Community Survey",
+                "url": "https://www.census.gov/programs-surveys/acs.html"
+            },
+            {
+                "date_accessed": 2024,
+                "location": "tracts and counties, via the API",
+                "location_url": "https://www2.census.gov/geo/tiger/",
+                "name": "Census Tiger Files",
+                "url": "https://www.census.gov/geographies/mapping-files/time-series/geo/tiger-line-file.html"
+            }
+        ],
+        "statement": "Population density is {value} persons per sq mi in {region_name}.",
+        "type": "",
+        "unit": "individual",
+        "variants": ""
+    },
     "population_density_parcels": {
         "aggregation_method": "ratio",
         "categories": "",
@@ -29085,7 +29119,7 @@
             }
         }
     },
-    "segregation_indicator": {
+    "segregation_indicator_geo20": {
         "aggregation_method": " ",
         "categories": "",
         "category": "Demographics",

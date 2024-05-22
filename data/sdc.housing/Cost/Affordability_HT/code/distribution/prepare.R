@@ -321,23 +321,18 @@ combined_data_2015_2021_hdcttr <- rbind(combined_data_2015_2021_hdct, combined_d
 write.csv(combined_data_2015_2021_hdcttr, file = xzfile("~/Git/sdc.housing_dev/Cost/Affordability_HT/data/distribution/va_hdcttr_2015_2021_affordability_index.csv.xz"), row.names = FALSE)
 
 
-#### General forms of functions used in this prepare file ####
+# standardize to 2020 geographies
+## get the tract conversion function
+source("https://github.com/uva-bi-sdad/sdc.geographies/raw/main/utils/distribution/tract_conversions.R")
+## get aggrgegate function for health districts
+#source("https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/utils/distribution/aggregate.R")
 
+## convert
+stnd <- standardize_all(combined_data_2015_2021_hdcttr)
 
-# merge_and_rename <- function(data, acs_data, year) {
-#   merged_data <- merge(data, acs_data, by.x = "tract", by.y = "GEOID", all.x = TRUE)
-#   merged_data$cbsa <- NULL
-#   colnames(merged_data)[colnames(merged_data) == "tract"] <- "geoid"
-#   colnames(merged_data)[colnames(merged_data) == "year"] <- paste0("year_", year)
-#   
-#   merged_data$measure <- "affordability index"
-#   merged_data$measure_type <- "index"
-#   merged_data$year <- year
-#   colnames(merged_data)[colnames(merged_data) == "NAME"] <- "region_name"
-#   colnames(merged_data)[colnames(merged_data) == "ht_ami"] <- "value"
-#   merged_data$region_type <- "tract"
-#   
-#   merged_data <- merged_data[, c("geoid", "measure", "measure_type", "region_name", "region_type", "value", "year")]
-#   
-#   return(merged_data)
-# }
+# aggregate counties to health districts
+#hds <- aggregate(stnd[nchar(stnd$geoid)==5,], "county")
+#stnd <- rbindlist(list(stnd, hds[!nchar(hds$geoid)==5,]), use.names = T)
+
+# save standardized file
+write.csv(stnd, file = xzfile("Cost/Affordability_HT/data/distribution/va_hdcttr_2015_2021_affordability_index_std.csv.xz"), row.names = FALSE)

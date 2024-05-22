@@ -1,22 +1,46 @@
 [
     {
         "path": "Cost/Affordability_HT/data/distribution/va_hdcttr_2015_2021_affordability_index.csv.xz",
-        "last_modified_utc": "2024-05-08_19:02:37"
+        "last_modified_utc": "2024-05-16_19:30:27"
+    },
+    {
+        "path": "Cost/Affordability_HT/data/distribution/va_tr_2015_affordability_index_geo20.csv",
+        "last_modified_utc": "2024-05-16_19:30:27"
+    },
+    {
+        "path": "Cost/Affordability_HT/data/distribution/va_tr_2016_affordability_index_geo20.csv",
+        "last_modified_utc": "2024-05-16_19:30:27"
+    },
+    {
+        "path": "Cost/Affordability_HT/data/distribution/va_tr_2017_affordability_index_geo20.csv",
+        "last_modified_utc": "2024-05-16_19:30:27"
+    },
+    {
+        "path": "Cost/Affordability_HT/data/distribution/va_tr_2018_affordability_index_geo20.csv",
+        "last_modified_utc": "2024-05-16_19:30:27"
+    },
+    {
+        "path": "Cost/Affordability_HT/data/distribution/va_tr_2019_affordability_index_geo20.csv",
+        "last_modified_utc": "2024-05-16_19:30:27"
+    },
+    {
+        "path": "Cost/Affordability_HT/data/distribution/va_tr_2021_affordability_index_geo20.csv",
+        "last_modified_utc": "2024-05-16_19:30:27"
     },
     {
         "path": "Cost/Rent/data/distribution/ncr_cttr_hud_2022_housing_cost.csv.xz",
-        "last_modified_utc": "2024-05-08_19:02:37"
+        "last_modified_utc": "2024-05-16_19:30:27"
     },
     {
         "path": "Cost/Rent/data/distribution/va_cttr_hud_2022_housing_cost.csv.xz",
-        "last_modified_utc": "2024-05-08_19:02:37"
+        "last_modified_utc": "2024-05-16_19:30:27"
     },
     {
         "path": "Cost-burdened HHs/data/distribution/ncr_cttrbg_acs_2014_2021_cost_burdened_hhs.csv.xz",
-        "last_modified_utc": "2024-05-08_19:02:37"
+        "last_modified_utc": "2024-05-16_19:30:27"
     },
     {
         "path": "Cost-burdened HHs/data/distribution/va_hdcttrbg_acs_2014_2021_cost_burdened_hhs.csv.xz",
-        "last_modified_utc": "2024-05-08_19:02:37"
+        "last_modified_utc": "2024-05-16_19:30:27"
     }
 ]
