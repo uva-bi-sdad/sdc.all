@@ -20701,33 +20701,6 @@
         "unit": "",
         "variants": ""
     },
-    "incarceration_rate_per_100000": {
-        "aggregation_method": "count",
-        "categories": "",
-        "category": "Health Opportunity Index",
-        "citations": "",
-        "data_type": "integer",
-        "equity_category": "",
-        "layer": "",
-        "long_description": "The number of incarcerated people divided by the total population and then multiplied by 100,000. Allows ready comparison of the frequency of incarcerated between each census tract of different population sizes. Incarcerated people is number of people from each census tract in state prison or a local jail. Total population includes population of the census tract plus the imprisoned population.",
-        "long_name": "Incarceration Rate Per 100,000",
-        "measure_type": "count",
-        "short_description": "Rate of incarcerated population per 100,000",
-        "short_name": "Incarceration Rate Per 100,000",
-        "sources": [
-            {
-                "date_accessed": "2023",
-                "location": "",
-                "location_url": "",
-                "name": "Prison Policy Initiative",
-                "url": "https://www.prisonpolicy.org/origin/va/2020/tract.html"
-            }
-        ],
-        "statement": "The incarceration rate per 100,000 in {features.name} is {value}.",
-        "type": "",
-        "unit": "individual",
-        "variants": ""
-    },
     "income_inequality_indicator": {
         "aggregation_method": "",
         "categories": "",

@@ -189,24 +189,25 @@ health_district_inc_sum <- data.frame(health_district_inc_sum)
 #combining tract and county data
 combined_df <- rbind(data_2020_df_tract, data_2020_df_county,health_district_inc_sum)
 
+write.csv(combined_df, xzfile("Incarceration/data/distribution/va_hdcttr_2020_incarceration_rate.csv.xz"), row.names = FALSE)
 
-#Rex is fine with using 2020 data for previous years so we are using the same dataset for  multiple years 
-years_repeat <- c(2015, 2016, 2017, 2018, 2019, 2020)
-
-replicated_df <- data.frame()
-
-for (year in years_repeat) {
-
-    temp_df <- combined_df
-
-  temp_df$year <- year
-
-  replicated_df <- rbind(replicated_df, temp_df)
-}
-
-#readr::write_csv(replicated_df,xzfile("~/incarceration/va_hdcttr_2015_2020_incarceration_rate.csv.xz", compression = 9))
-
-#readr::write_csv(replicated_df,xzfile("~/git/sdc.public_safety_dev/Incarceration/data/distribution/va_hdcttr_2020_incarceration_rate.csv.xz",compression = 9))
-
-
-write.csv(replicated_df, "~/incarceration/va_incarceration_2015_2020.csv", row.names = FALSE)
+# #Rex is fine with using 2020 data for previous years so we are using the same dataset for  multiple years 
+# years_repeat <- c(2015, 2016, 2017, 2018, 2019, 2020)
+# 
+# replicated_df <- data.frame()
+# 
+# for (year in years_repeat) {
+# 
+#     temp_df <- combined_df
+# 
+#   temp_df$year <- year
+# 
+#   replicated_df <- rbind(replicated_df, temp_df)
+# }
+# 
+# #readr::write_csv(replicated_df,xzfile("~/incarceration/va_hdcttr_2015_2020_incarceration_rate.csv.xz", compression = 9))
+# 
+# #readr::write_csv(replicated_df,xzfile("~/git/sdc.public_safety_dev/Incarceration/data/distribution/va_hdcttr_2020_incarceration_rate.csv.xz",compression = 9))
+# 
+# 
+# write.csv(replicated_df, "~/incarceration/va_incarceration_2015_2020.csv", row.names = FALSE)
