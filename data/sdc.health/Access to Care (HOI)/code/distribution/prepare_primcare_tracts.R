@@ -86,6 +86,6 @@ va_prim_geo_tr <- va_prim_geo_tr[, .(Rndrng_NPI,
                                      Rndrng_Prvdr_RUCA, Tract_FIPS = fips)]
 
 # Write File
-fwrite(va_prim_geo_tr, "Access to Care (HOI)/data/working/va_2017_2019_primary_care_phys_by_tract.csv")
+fwrite(va_prim_geo_tr, "Access to Care (HOI)/data/working/va_2017_2021_primary_care_phys_by_tract.csv")
 
 

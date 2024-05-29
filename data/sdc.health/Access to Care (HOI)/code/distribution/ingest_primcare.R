@@ -44,4 +44,4 @@ rm(cms2021)
 
 cms20172021va_prim <- rbindlist(list(cms2017va_prim, cms2018va_prim, cms2019va_prim, cms2020va_prim, cms2021va_prim))
 
-write_csv(cms20172021va_prim, "Access to Care (HOI)/data/working/va_2017_2019_primary_care_phys.csv")
+write_csv(cms20172021va_prim, "Access to Care (HOI)/data/working/va_2017_2021_primary_care_phys.csv")
