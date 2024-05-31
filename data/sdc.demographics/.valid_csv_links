@@ -1,94 +1,74 @@
 [
     {
         "path": "Age/data/distribution/ncr_cttrbg_acs_2009_2021_age_demographics.csv.xz",
-        "last_modified_utc": "2024-05-21_22:53:25"
+        "last_modified_utc": "2024-05-21_23:22:30"
     },
     {
         "path": "Age/data/distribution/va_hsrsdpdzccttrbg_sdad_2009_2021_age_demographics.csv.xz",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "last_modified_utc": "2024-05-21_23:22:30"
     },
     {
         "path": "Cooperative extension/data/distribution/va_cttr_2010_2021_perc_children_raised_by_GPs.csv.xz",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "last_modified_utc": "2024-05-21_23:22:30"
     },
     {
         "path": "Cooperative extension/data/distribution/va_cttr_2010_2021_perc_male.csv.xz",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "last_modified_utc": "2024-05-21_23:22:30"
     },
     {
         "path": "Gender/data/distribution/ncr_cttrbg_acs_2009_2021_gender_demographics.csv.xz",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "last_modified_utc": "2024-05-21_23:22:30"
     },
     {
         "path": "Gender/data/distribution/va_hsrsdpdzccttrbg_sdad_2009_2021_gender_demographics.csv.xz",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "last_modified_utc": "2024-05-21_23:22:30"
     },
     {
         "path": "Geographic Mobility (HOI)/data/distribution/va_cttrbg_acs_2015_2021_moving_demographics.csv.xz",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "last_modified_utc": "2024-05-21_23:22:30"
     },
     {
         "path": "Geographic Mobility (HOI)/data/distribution/va_hdcttrbg_2015_2022_moving_demographics.csv.xz",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "last_modified_utc": "2024-05-21_23:22:30"
     },
     {
         "path": "Language/data/distribution/ncr_cttrbg_acs_2016_2021_language_demographics.csv.xz",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "last_modified_utc": "2024-05-21_23:22:30"
     },
     {
         "path": "Language/data/distribution/va_hsrsdpdzccttrbg_sdad_2009_2021_language_demographics.csv.xz",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "last_modified_utc": "2024-05-21_23:22:30"
     },
     {
         "path": "Overall/data/distribution/census.csv",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "last_modified_utc": "2024-05-21_23:22:31"
     },
     {
         "path": "Overall/data/distribution/census.csv.xz",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "last_modified_utc": "2024-05-21_23:22:31"
     },
     {
         "path": "Population Density/data/distribution/va_hdtrct_2015_2022_population_density.csv.xz",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "last_modified_utc": "2024-05-21_23:22:31"
     },
     {
         "path": "Race/data/distribution/ncr_cttrbg_acs_2009_2021_race_demographics.csv.xz",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "last_modified_utc": "2024-05-21_23:22:31"
     },
     {
         "path": "Race/data/distribution/va_hsrsdpdzccttrbg_sdad_2009_2021_race_demographics.csv.xz",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "last_modified_utc": "2024-05-21_23:22:31"
     },
     {
-        "path": "Segregation (HOI)/data/distribution/va_trcthd_vdh_2015_segregation_index_geo20.csv",
-        "last_modified_utc": "2024-05-21_22:53:26"
-    },
-    {
-        "path": "Segregation (HOI)/data/distribution/va_trcthd_vdh_2016_segregation_index_geo20.csv",
-        "last_modified_utc": "2024-05-21_22:53:26"
-    },
-    {
-        "path": "Segregation (HOI)/data/distribution/va_trcthd_vdh_2017_segregation_index_geo20.csv",
-        "last_modified_utc": "2024-05-21_22:53:26"
-    },
-    {
-        "path": "Segregation (HOI)/data/distribution/va_trcthd_vdh_2018_segregation_index_geo20.csv",
-        "last_modified_utc": "2024-05-21_22:53:26"
-    },
-    {
-        "path": "Segregation (HOI)/data/distribution/va_trcthd_vdh_2019_segregation_index_geo20.csv",
-        "last_modified_utc": "2024-05-21_22:53:26"
-    },
-    {
-        "path": "Segregation (HOI)/data/distribution/va_trcthd_vdh_2021_segregation_index_geo20.csv",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "path": "Segregation (HOI)/data/distribution/va_hdtrct_2015_2022_segregation_index_std.csv.xz",
+        "last_modified_utc": "2024-05-21_23:22:31"
     },
     {
         "path": "Veteran/data/distribution/ncr_cttrbg_acs_2009_2021_veteran_demographics.csv.xz",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "last_modified_utc": "2024-05-21_23:22:31"
     },
     {
         "path": "Veteran/data/distribution/va_hsrsdpdzccttrbg_sdad_2009_2021_veteran_demographics.csv.xz",
-        "last_modified_utc": "2024-05-21_22:53:26"
+        "last_modified_utc": "2024-05-21_23:22:31"
     }
 ]

@@ -1,33 +1,29 @@
 library(data.table)
 library(readr)
+library(stringr)
 
-# csv files must be initially downloaded from https://gaftp.epa.gov/EJSCREEN/
+get_file <- function(url) {
+  filename <- basename(url)
+  year <- str_extract(url, pattern = "\\d\\d\\d\\d")
+  new_filename <- paste0("EJSCREEN_", year,"_USPR_BG_VA.csv")
+  print(paste0("Downloading ", url))
+  download.file(url, 
+                paste0("environmental_justice/data/original/", filename), 
+                method = "wget", extra = "--no-check-certificate")
+  data <- setDT(read_csv(paste0("environmental_justice/data/original/", filename)))
+  data_tr <- data[substr(as.character(ID), 1, 2)=="51" & nchar(as.character(ID))==12,]
+  write_csv(data_tr, paste0("environmental_justice/data/original/", new_filename))
+  unlink(paste0("environmental_justice/data/original/", filename))
+}
 
-dt2021 <- fread("environmental_justice/data/original/EJSCREEN_2021_USPR.csv")
-dt2021tr <- dt2021[substr(as.character(ID), 1, 2)=="51",]
-write_csv(dt2021tr, "environmental_justice/data/original/EJSCREEN_2021_USPR_BG_VA.csv")
+urls <- c("https://gaftp.epa.gov/EJSCREEN/2021/EJSCREEN_2021_USPR.csv.zip",
+          "https://gaftp.epa.gov/EJSCREEN/2020/EJSCREEN_2020_USPR.csv.zip",
+          "https://gaftp.epa.gov/EJSCREEN/2019/EJSCREEN_2019_USPR.csv.zip",
+          "https://gaftp.epa.gov/EJSCREEN/2018/EJSCREEN_2018_USPR_csv.zip",
+          "https://gaftp.epa.gov/EJSCREEN/2017/EJSCREEN_2017_USPR_Public.csv",
+          "https://gaftp.epa.gov/EJSCREEN/2016/EJSCREEN_V3_USPR_090216_CSV.zip"
+          )
 
-dt2020 <- fread("environmental_justice/data/original/EJSCREEN_2020_USPR.csv")
-dt2020tr <- dt2020[substr(as.character(ID), 1, 2)=="51",]
-write_csv(dt2020tr, "environmental_justice/data/original/EJSCREEN_2020_USPR_BG_VA.csv")
-
-dt2019 <- fread("environmental_justice/data/original/EJSCREEN_2019_USPR.csv")
-dt2019tr <- dt2019[substr(as.character(ID), 1, 2)=="51",]
-write_csv(dt2019tr, "environmental_justice/data/original/EJSCREEN_2019_USPR_BG_VA.csv")
-
-dt2018 <- fread("environmental_justice/data/original/EJSCREEN_Full_USPR_2018.csv")
-dt2018tr <- dt2018[substr(as.character(ID), 1, 2)=="51",]
-write_csv(dt2018tr, "environmental_justice/data/original/EJSCREEN_2018_USPR_BG_VA.csv")
-
-dt2017 <- fread("environmental_justice/data/original/EJSCREEN_2017_USPR_Public.csv")
-dt2017tr <- dt2017[substr(as.character(ID), 1, 2)=="51",]
-write_csv(dt2017tr, "environmental_justice/data/original/EJSCREEN_2017_USPR_BG_VA.csv")
-
-dt2016 <- fread("environmental_justice/data/original/EJSCREEN_Full_V3_USPR_TSDFupdate.csv")
-dt2016tr <- dt2016[substr(as.character(ID), 1, 2)=="51",]
-write_csv(dt2016tr, "environmental_justice/data/original/EJSCREEN_2016_USPR_BG_VA.csv")
-
-dt2015 <- fread("environmental_justice/data/original/EJSCREEN_20150505.csv")
-dt2015tr <- dt2015[substr(as.character(FIPS), 1, 2)=="51",]
-write_csv(dt2015tr, "environmental_justice/data/original/EJSCREEN_2015_USPR_BG_VA.csv")
-
+for (i in 1:length(urls)) {
+  get_file(urls[i])
+}

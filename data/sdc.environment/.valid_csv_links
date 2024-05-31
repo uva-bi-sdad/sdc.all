@@ -1,14 +1,38 @@
 [
     {
         "path": "climate_change/data/distribution/ncr_tr_fema_2019_natural_hazards_risk_scores.csv.xz",
-        "last_modified_utc": "2024-05-30_20:29:43"
+        "last_modified_utc": "2024-05-31_00:06:57"
     },
     {
         "path": "environmental_justice/data/distribution/ncr_bg_epa_2022_environmental_justice_screen.csv.xz",
-        "last_modified_utc": "2024-05-30_20:29:43"
+        "last_modified_utc": "2024-05-31_00:06:57"
     },
     {
         "path": "environmental_justice/data/distribution/ncr_tr_epa_2022_environmental_justice_screen.csv.xz",
-        "last_modified_utc": "2024-05-30_20:29:43"
+        "last_modified_utc": "2024-05-31_00:06:57"
+    },
+    {
+        "path": "environmental_justice/data/distribution/va_tr_2016_env_haz_inx.csv.xz",
+        "last_modified_utc": "2024-05-31_00:06:57"
+    },
+    {
+        "path": "environmental_justice/data/distribution/va_tr_2017_env_haz_inx.csv.xz",
+        "last_modified_utc": "2024-05-31_00:06:57"
+    },
+    {
+        "path": "environmental_justice/data/distribution/va_tr_2018_env_haz_inx.csv.xz",
+        "last_modified_utc": "2024-05-31_00:06:57"
+    },
+    {
+        "path": "environmental_justice/data/distribution/va_tr_2019_env_haz_inx.csv.xz",
+        "last_modified_utc": "2024-05-31_00:06:57"
+    },
+    {
+        "path": "environmental_justice/data/distribution/va_tr_2020_env_haz_inx.csv.xz",
+        "last_modified_utc": "2024-05-31_00:06:57"
+    },
+    {
+        "path": "environmental_justice/data/distribution/va_tr_2021_env_haz_inx.csv.xz",
+        "last_modified_utc": "2024-05-31_00:06:57"
     }
 ]
