@@ -1,0 +1,247 @@
+---
+title: "Predict HOI"
+author: "Michael Vaden"
+date: "2024-06-02"
+output: html_document
+---
+
+```{r}
+library(tidyverse)
+library(tidymodels)
+```
+
+## Load in Data
+
+```{r}
+data_matrix <- read.csv("/Users/michaelvaden/Downloads/normalized_indicators_2020.csv") %>% dplyr::select(-c(X)) # there is an X saved in the data for some reason
+X1 <- read.csv("/Users/michaelvaden/Downloads/2020_Raw_Indicators_HOI_LE.csv") %>% dplyr::select(-c(X))
+indicators_2015 <- read.csv("/Users/michaelvaden/Downloads/indicators_used_for_LE/indicators_2015.csv")
+indicators_2016 <- read.csv("/Users/michaelvaden/Downloads/indicators_used_for_LE/indicators_2016.csv")
+indicators_2017 <- read.csv("/Users/michaelvaden/Downloads/indicators_used_for_LE/indicators_2017.csv")
+indicators_2018 <- read.csv("/Users/michaelvaden/Downloads/indicators_used_for_LE/indicators_2018.csv")
+indicators_2019 <- read.csv("/Users/michaelvaden/Downloads/indicators_used_for_LE/indicators_2019.csv")
+indicators_2021 <- read.csv("/Users/michaelvaden/Downloads/indicators_used_for_LE/indicators_2021.csv")
+```
+
+## Train Model with 2020 Data
+
+```{r}
+predict_HOI_model = lm(HOI~., data=data_matrix %>% dplyr::select(-c(`LifeExpectancy`)) %>% mutate(HOI = X1$`HOI`))
+summary(predict_HOI_model)
+```
+
+## Get Predictions and Correlation with 2020 Training Data
+
+```{r}
+HOI_predicted_2015 <- predict(predict_HOI_model, indicators_2015)
+
+range(HOI_predicted_2015)
+cor(X1$HOI, HOI_predicted_2015)
+```
+
+```{r}
+HOI_predicted_2016 <- predict(predict_HOI_model, indicators_2016)
+
+range(HOI_predicted_2016)
+cor(X1$HOI, HOI_predicted_2016)
+```
+
+```{r}
+HOI_predicted_2017 <- predict(predict_HOI_model, indicators_2017)
+
+range(HOI_predicted_2017)
+cor(X1$HOI, HOI_predicted_2017)
+```
+
+```{r}
+HOI_predicted_2018 <- predict(predict_HOI_model, indicators_2018)
+
+range(HOI_predicted_2018)
+cor(X1$HOI, HOI_predicted_2018)
+```
+
+```{r}
+HOI_predicted_2019 <- predict(predict_HOI_model, indicators_2019)
+
+range(HOI_predicted_2019)
+cor(X1$HOI, HOI_predicted_2019)
+```
+
+```{r}
+HOI_predicted_2021 <- predict(predict_HOI_model, indicators_2021)
+
+range(HOI_predicted_2021)
+cor(X1$HOI, HOI_predicted_2021)
+```
+
+## Quantize and Save Data
+
+```{r}
+HOI_data_2015 = indicators_2015 %>% select(geoid) %>% mutate(year = 2015) %>% mutate(measure = "health_opportunity_indicator") %>% mutate(value = HOI_predicted_2015) %>% mutate(moe = NA)
+
+#HOI_data_2015
+
+percentiles <- quantile(HOI_data_2015$value, probs = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
+HOI_data_2015_quintile = HOI_data_2015 %>% mutate(value= as.numeric(cut(HOI_data_2015$value, breaks = percentiles, labels = FALSE, include.lowest = TRUE)))
+
+setwd("hoi_data_2024_06_06")
+write.csv(HOI_data_2015, "health_opportunity_indicator_2015.csv")
+write.csv(HOI_data_2015_quintile, "health_opportunity_indicator_2015_quintiles.csv")
+setwd("/Users/michaelvaden/Downloads")
+
+# recreate HOI with 2020 incarceration to see if it is any better
+# 
+# HOI_predicted_2015_inc2020 <- predict(predict_HOI_model, indicators_2015 %>% mutate(Incarceration = data_matrix$Incarceration))
+# 
+# HOI_data_2015_inc2020 = indicators_2015 %>% select(geoid) %>% mutate(year = 2015) %>% mutate(measure = "health_opportunity_indicator") %>% mutate(value = HOI_predicted_2015_inc2020) %>% mutate(moe = NA)
+# 
+# percentiles2020 <- quantile(HOI_data_2015_inc2020$value, probs = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
+# HOI_data_2015_quintile_inc2020 = HOI_data_2015_inc2020 %>% mutate(value= as.numeric(cut(HOI_data_2015_inc2020$value, breaks = percentiles2020, labels = FALSE, include.lowest = TRUE)))
+# 
+# setwd("health_opportunity_indicators_new_inc2020")
+# #write.csv(HOI_data_2015_inc2020, "health_opportunity_indicator_2015_inc2020.csv")
+# #write.csv(HOI_data_2015_quintile_inc2020, "health_opportunity_indicator_2015_quintiles_inc2020.csv")
+# setwd("/Users/michaelvaden/Downloads")
+```
+
+
+```{r}
+HOI_data_2016 = indicators_2016 %>% select(geoid) %>% mutate(year = 2016) %>% mutate(measure = "health_opportunity_indicator") %>% mutate(value = HOI_predicted_2016) %>% mutate(moe = NA)
+
+#HOI_data_2016
+
+percentiles <- quantile(HOI_data_2016$value, probs = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
+HOI_data_2016_quintile = HOI_data_2016 %>% mutate(value= as.numeric(cut(HOI_data_2016$value, breaks = percentiles, labels = FALSE, include.lowest = TRUE)))
+
+setwd("hoi_data_2024_06_06")
+write.csv(HOI_data_2016, "health_opportunity_indicator_2016.csv")
+write.csv(HOI_data_2016_quintile, "health_opportunity_indicator_2016_quintiles.csv")
+setwd("/Users/michaelvaden/Downloads")
+
+# recreate HOI with 2020 incarceration to see if it is any better
+# 
+# HOI_predicted_2016_inc2020 <- predict(predict_HOI_model, indicators_2016 %>% mutate(Incarceration = data_matrix$Incarceration))
+# 
+# HOI_data_2016_inc2020 = indicators_2016 %>% select(geoid) %>% mutate(year = 2016) %>% mutate(measure = "health_opportunity_indicator") %>% mutate(value = HOI_predicted_2016_inc2020) %>% mutate(moe = NA)
+# 
+# percentiles2020 <- quantile(HOI_data_2016_inc2020$value, probs = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
+# HOI_data_2016_quintile_inc2020 = HOI_data_2016_inc2020 %>% mutate(value= as.numeric(cut(HOI_data_2016_inc2020$value, breaks = percentiles2020, labels = FALSE, include.lowest = TRUE)))
+# 
+# setwd("health_opportunity_indicators_new_inc2020")
+# #write.csv(HOI_data_2016_inc2020, "health_opportunity_indicator_2016_inc2020.csv")
+# #write.csv(HOI_data_2016_quintile_inc2020, "health_opportunity_indicator_2016_quintiles_inc2020.csv")
+# setwd("/Users/michaelvaden/Downloads")
+```
+
+
+```{r}
+HOI_data_2017 = indicators_2017 %>% select(geoid) %>% mutate(year = 2017) %>% mutate(measure = "health_opportunity_indicator") %>% mutate(value = HOI_predicted_2017) %>% mutate(moe = NA)
+
+#HOI_data_2017
+
+percentiles <- quantile(HOI_data_2017$value, probs = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
+HOI_data_2017_quintile = HOI_data_2017 %>% mutate(value= as.numeric(cut(HOI_data_2017$value, breaks = percentiles, labels = FALSE, include.lowest = TRUE)))
+
+setwd("hoi_data_2024_06_06")
+write.csv(HOI_data_2017, "health_opportunity_indicator_2017.csv")
+write.csv(HOI_data_2017_quintile, "health_opportunity_indicator_2017_quintiles.csv")
+setwd("/Users/michaelvaden/Downloads")
+
+# recreate HOI with 2020 incarceration to see if it is any better
+# 
+# HOI_predicted_2017_inc2020 <- predict(predict_HOI_model, indicators_2017 %>% mutate(Incarceration = data_matrix$Incarceration))
+# 
+# HOI_data_2017_inc2020 = indicators_2017 %>% select(geoid) %>% mutate(year = 2017) %>% mutate(measure = "health_opportunity_indicator") %>% mutate(value = HOI_predicted_2017_inc2020) %>% mutate(moe = NA)
+# 
+# percentiles2020 <- quantile(HOI_data_2017_inc2020$value, probs = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
+# HOI_data_2017_quintile_inc2020 = HOI_data_2017_inc2020 %>% mutate(value= as.numeric(cut(HOI_data_2017_inc2020$value, breaks = percentiles2020, labels = FALSE, include.lowest = TRUE)))
+# 
+# setwd("health_opportunity_indicators_new_inc2020")
+# #write.csv(HOI_data_2017_inc2020, "health_opportunity_indicator_2017_inc2020.csv")
+# #write.csv(HOI_data_2017_quintile_inc2020, "health_opportunity_indicator_2017_quintiles_inc2020.csv")
+# setwd("/Users/michaelvaden/Downloads")
+```
+
+```{r}
+HOI_data_2018 = indicators_2018 %>% select(geoid) %>% mutate(year = 2018) %>% mutate(measure = "health_opportunity_indicator") %>% mutate(value = HOI_predicted_2018) %>% mutate(moe = NA)
+
+#HOI_data_2018
+
+percentiles <- quantile(HOI_data_2018$value, probs = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
+HOI_data_2018_quintile = HOI_data_2018 %>% mutate(value= as.numeric(cut(HOI_data_2018$value, breaks = percentiles, labels = FALSE, include.lowest = TRUE)))
+
+setwd("hoi_data_2024_06_06")
+write.csv(HOI_data_2018, "health_opportunity_indicator_2018.csv")
+write.csv(HOI_data_2018_quintile, "health_opportunity_indicator_2018_quintiles.csv")
+setwd("/Users/michaelvaden/Downloads")
+
+# recreate HOI with 2020 incarceration to see if it is any better
+# 
+# HOI_predicted_2018_inc2020 <- predict(predict_HOI_model, indicators_2018 %>% mutate(Incarceration = data_matrix$Incarceration))
+# 
+# HOI_data_2018_inc2020 = indicators_2018 %>% select(geoid) %>% mutate(year = 2018) %>% mutate(measure = "health_opportunity_indicator") %>% mutate(value = HOI_predicted_2018_inc2020) %>% mutate(moe = NA)
+# 
+# percentiles2020 <- quantile(HOI_data_2018_inc2020$value, probs = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
+# HOI_data_2018_quintile_inc2020 = HOI_data_2018_inc2020 %>% mutate(value= as.numeric(cut(HOI_data_2018_inc2020$value, breaks = percentiles2020, labels = FALSE, include.lowest = TRUE)))
+# 
+# setwd("health_opportunity_indicators_new_inc2020")
+# #write.csv(HOI_data_2018_inc2020, "health_opportunity_indicator_2018_inc2020.csv")
+# #write.csv(HOI_data_2018_quintile_inc2020, "health_opportunity_indicator_2018_quintiles_inc2020.csv")
+# setwd("/Users/michaelvaden/Downloads")
+```
+
+```{r}
+HOI_data_2019 = indicators_2019 %>% select(geoid) %>% mutate(year = 2019) %>% mutate(measure = "health_opportunity_indicator") %>% mutate(value = HOI_predicted_2019) %>% mutate(moe = NA)
+
+#HOI_data_2019
+
+percentiles <- quantile(HOI_data_2019$value, probs = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
+HOI_data_2019_quintile = HOI_data_2019 %>% mutate(value= as.numeric(cut(HOI_data_2019$value, breaks = percentiles, labels = FALSE, include.lowest = TRUE)))
+
+setwd("hoi_data_2024_06_06")
+write.csv(HOI_data_2019, "health_opportunity_indicator_2019.csv")
+write.csv(HOI_data_2019_quintile, "health_opportunity_indicator_2019_quintiles.csv")
+setwd("/Users/michaelvaden/Downloads")
+
+# recreate HOI with 2020 incarceration to see if it is any better
+# 
+# HOI_predicted_2019_inc2020 <- predict(predict_HOI_model, indicators_2019 %>% mutate(Incarceration = data_matrix$Incarceration))
+# 
+# HOI_data_2019_inc2020 = indicators_2019 %>% select(geoid) %>% mutate(year = 2019) %>% mutate(measure = "health_opportunity_indicator") %>% mutate(value = HOI_predicted_2019_inc2020) %>% mutate(moe = NA)
+# 
+# percentiles2020 <- quantile(HOI_data_2019_inc2020$value, probs = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
+# HOI_data_2019_quintile_inc2020 = HOI_data_2019_inc2020 %>% mutate(value= as.numeric(cut(HOI_data_2019_inc2020$value, breaks = percentiles2020, labels = FALSE, include.lowest = TRUE)))
+# 
+# setwd("health_opportunity_indicators_new_inc2020")
+# #write.csv(HOI_data_2019_inc2020, "health_opportunity_indicator_2019_inc2020.csv")
+# #write.csv(HOI_data_2019_quintile_inc2020, "health_opportunity_indicator_2019_quintiles_inc2020.csv")
+# setwd("/Users/michaelvaden/Downloads")
+```
+
+```{r}
+HOI_data_2021 = indicators_2021 %>% select(geoid) %>% mutate(year = 2021) %>% mutate(measure = "health_opportunity_indicator") %>% mutate(value = HOI_predicted_2021) %>% mutate(moe = NA)
+
+#HOI_data_2021
+
+percentiles <- quantile(HOI_data_2021$value, probs = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
+HOI_data_2021_quintile = HOI_data_2021 %>% mutate(value= as.numeric(cut(HOI_data_2021$value, breaks = percentiles, labels = FALSE, include.lowest = TRUE)))
+
+setwd("hoi_data_2024_06_06")
+write.csv(HOI_data_2021, "health_opportunity_indicator_2021.csv")
+write.csv(HOI_data_2021_quintile, "health_opportunity_indicator_2021_quintiles.csv")
+setwd("/Users/michaelvaden/Downloads")
+
+# recreate HOI with 2020 incarceration to see if it is any better
+# 
+# HOI_predicted_2021_inc2020 <- predict(predict_HOI_model, indicators_2021 %>% mutate(Incarceration = data_matrix$Incarceration))
+# 
+# HOI_data_2021_inc2020 = indicators_2021 %>% select(geoid) %>% mutate(year = 2021) %>% mutate(measure = "health_opportunity_indicator") %>% mutate(value = HOI_predicted_2021_inc2020) %>% mutate(moe = NA)
+# 
+# percentiles2020 <- quantile(HOI_data_2021_inc2020$value, probs = c(0.0, 0.2, 0.4, 0.6, 0.8, 1.0))
+# HOI_data_2021_quintile_inc2020 = HOI_data_2021_inc2020 %>% mutate(value= as.numeric(cut(HOI_data_2021_inc2020$value, breaks = percentiles2020, labels = FALSE, include.lowest = TRUE)))
+# 
+# setwd("health_opportunity_indicators_new_inc2020")
+# #write.csv(HOI_data_2021_inc2020, "health_opportunity_indicator_2021_inc2020.csv")
+# #write.csv(HOI_data_2021_quintile_inc2020, "health_opportunity_indicator_2021_quintiles_inc2020.csv")
+# setwd("/Users/michaelvaden/Downloads")
+```
