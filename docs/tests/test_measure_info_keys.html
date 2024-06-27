@@ -7,7 +7,7 @@
                 </p>
                 </head>
                 <body>
-                    Last updated: 2024-06-27 16:04:48
+                    Last updated: 2024-06-26 16:04:59
                     <h3> sdc.transportation </h3>
 	<p><font color='#009E73'> [VALID] </font> Infrastructure/Walkability (HOI): walkability_index_raw </p>
 	<p><font color='#009E73'> [VALID] </font> Population Characteristics: commute_time </p>
@@ -33,7 +33,7 @@
 	<p><font color='#009E73'> [VALID] </font> climate_change: VLCN_RISKS </p>
 	<p><font color='#009E73'> [VALID] </font> climate_change: WFIR_RISKS </p>
 	<p><font color='#009E73'> [VALID] </font> climate_change: WNTW_RISKS </p>
-	<p><font color='#D55E00'> [MISSING SOURCE KEYS] </font> ['location_url', 'location'] PARENT_DIRECTORY: environmental_hazard_index </p>
+	<p><font color='#D55E00'> [MISSING SOURCE KEYS] </font> ['location', 'location_url'] PARENT_DIRECTORY: environmental_hazard_index </p>
 	<p><font color='#009E73'> [VALID] </font> environmental_justice: PM25 </p>
 	<p><font color='#009E73'> [VALID] </font> environmental_justice: OZONE </p>
 	<p><font color='#009E73'> [VALID] </font> environmental_justice: DSLPM </p>
@@ -316,7 +316,7 @@
 	<p><font color='#009E73'> [VALID] </font> Language: language_hh_limited_english_count_direct </p>
 	<p><font color='#009E73'> [VALID] </font> Language: language_hh_limited_english_percent_parcels </p>
 	<p><font color='#009E73'> [VALID] </font> Language: language_hh_limited_english_percent_direct </p>
-	<p><font color='#D55E00'> [MISSING KEYS] </font> ['unit', 'type', 'aggregation_method', 'measure_type', 'layer'] PARENT_DIRECTORY: population{variant}{category.name} </p>
+	<p><font color='#D55E00'> [MISSING KEYS] </font> ['unit', 'measure_type', 'aggregation_method', 'type', 'layer'] PARENT_DIRECTORY: population{variant}{category.name} </p>
 	<p><font color='#009E73'> [VALID] </font> Overall: population_direct </p>
 	<p><font color='#009E73'> [VALID] </font> Overall: population_parcels </p>
 	<p><font color='#009E73'> [VALID] </font> Overall: population_density_direct </p>
@@ -1037,24 +1037,24 @@
 	<p><font color='#009E73'> [VALID] </font> Cost-burdened HHs: rent30 </p>
 	<p><font color='#009E73'> [VALID] </font> Cost-burdened HHs: renters </p>
 <h3> sdc.education </h3>
-	<p><font color='#D55E00'> [MISSING KEYS] </font> ['type', 'variants', 'measure_type', 'citations', 'categories'] PARENT_DIRECTORY: daycare_capacity </p>
-	<p><font color='#D55E00'> [MISSING KEYS] </font> ['type', 'variants', 'measure_type', 'citations', 'categories'] PARENT_DIRECTORY: daycare_min_drivetime </p>
-	<p><font color='#D55E00'> [MISSING SOURCE KEYS] </font> ['location_url', 'location'] PARENT_DIRECTORY: daycare_min_drivetime </p>
-	<p><font color='#D55E00'> [MISSING KEYS] </font> ['type', 'layer', 'variants', 'measure_type'] PARENT_DIRECTORY: daycare_ratio{category} </p>
-	<p><font color='#D55E00'> [MISSING SOURCE KEYS] </font> ['location_url', 'location'] PARENT_DIRECTORY: daycare_ratio{category} </p>
+	<p><font color='#D55E00'> [MISSING KEYS] </font> ['categories', 'measure_type', 'type', 'variants', 'citations'] PARENT_DIRECTORY: daycare_capacity </p>
+	<p><font color='#D55E00'> [MISSING KEYS] </font> ['categories', 'measure_type', 'type', 'variants', 'citations'] PARENT_DIRECTORY: daycare_min_drivetime </p>
+	<p><font color='#D55E00'> [MISSING SOURCE KEYS] </font> ['location', 'location_url'] PARENT_DIRECTORY: daycare_min_drivetime </p>
+	<p><font color='#D55E00'> [MISSING KEYS] </font> ['type', 'variants', 'layer', 'measure_type'] PARENT_DIRECTORY: daycare_ratio{category} </p>
+	<p><font color='#D55E00'> [MISSING SOURCE KEYS] </font> ['location', 'location_url'] PARENT_DIRECTORY: daycare_ratio{category} </p>
 	<p><font color='#009E73'> [VALID] </font> Daycare: daycare_capacity </p>
 	<p><font color='#009E73'> [VALID] </font> Daycare: daycare_min_drivetime </p>
 	<p><font color='#009E73'> [VALID] </font> Daycare: daycare_ratio </p>
 	<p><font color='#009E73'> [VALID] </font> Daycare: daycare_ratio_over_4 </p>
 	<p><font color='#009E73'> [VALID] </font> Daycare: daycare_ratio_under_10 </p>
 	<p><font color='#009E73'> [VALID] </font> Funding: schoolFundAdequacy </p>
-	<p><font color='#D55E00'> [MISSING KEYS] </font> ['type', 'layer', 'variants', 'measure_type'] PARENT_DIRECTORY: schools_2year_{category.name} </p>
-	<p><font color='#D55E00'> [MISSING SOURCE KEYS] </font> ['location_url', 'location'] PARENT_DIRECTORY: schools_2year_{category.name} </p>
-	<p><font color='#D55E00'> [MISSING KEYS] </font> ['type', 'categories', 'variants', 'measure_type'] PARENT_DIRECTORY: schools_under2year </p>
-	<p><font color='#D55E00'> [MISSING SOURCE KEYS] </font> ['location_url', 'location'] PARENT_DIRECTORY: schools_under2year </p>
-	<p><font color='#D55E00'> [MISSING KEYS] </font> ['type', 'measure_type', 'citations', 'layer', 'categories'] PARENT_DIRECTORY: schools_{variant.name}_min_drivetime </p>
-	<p><font color='#D55E00'> [MISSING SOURCE KEYS] </font> ['location_url', 'location'] PARENT_DIRECTORY: schools_{variant.name}_min_drivetime </p>
-	<p><font color='#D55E00'> [MISSING KEYS] </font> ['data_type', 'type', 'measure_type', 'citations', 'layer', 'categories'] PARENT_DIRECTORY: acs_postsecondary_{variant} </p>
+	<p><font color='#D55E00'> [MISSING KEYS] </font> ['type', 'variants', 'layer', 'measure_type'] PARENT_DIRECTORY: schools_2year_{category.name} </p>
+	<p><font color='#D55E00'> [MISSING SOURCE KEYS] </font> ['location', 'location_url'] PARENT_DIRECTORY: schools_2year_{category.name} </p>
+	<p><font color='#D55E00'> [MISSING KEYS] </font> ['type', 'variants', 'categories', 'measure_type'] PARENT_DIRECTORY: schools_under2year </p>
+	<p><font color='#D55E00'> [MISSING SOURCE KEYS] </font> ['location', 'location_url'] PARENT_DIRECTORY: schools_under2year </p>
+	<p><font color='#D55E00'> [MISSING KEYS] </font> ['categories', 'measure_type', 'type', 'layer', 'citations'] PARENT_DIRECTORY: schools_{variant.name}_min_drivetime </p>
+	<p><font color='#D55E00'> [MISSING SOURCE KEYS] </font> ['location', 'location_url'] PARENT_DIRECTORY: schools_{variant.name}_min_drivetime </p>
+	<p><font color='#D55E00'> [MISSING KEYS] </font> ['categories', 'measure_type', 'data_type', 'type', 'layer', 'citations'] PARENT_DIRECTORY: acs_postsecondary_{variant} </p>
 	<p><font color='#009E73'> [VALID] </font> Postsecondary: schools_2year_all </p>
 	<p><font color='#009E73'> [VALID] </font> Postsecondary: schools_2year_with_biomedical_program </p>
 	<p><font color='#009E73'> [VALID] </font> Postsecondary: schools_2year_with_science_program </p>
@@ -1066,7 +1066,7 @@
 	<p><font color='#009E73'> [VALID] </font> Postsecondary: schools_under2year_min_drivetime </p>
 	<p><font color='#009E73'> [VALID] </font> Postsecondary: acs_postsecondary_percent </p>
 	<p><font color='#009E73'> [VALID] </font> Postsecondary: acs_postsecondary_count </p>
-	<p><font color='#D55E00'> [MISSING KEYS] </font> ['type', 'measure_type', 'citations', 'layer', 'categories'] PARENT_DIRECTORY: {variant.name}_read_pass_rate </p>
+	<p><font color='#D55E00'> [MISSING KEYS] </font> ['categories', 'measure_type', 'type', 'layer', 'citations'] PARENT_DIRECTORY: {variant.name}_read_pass_rate </p>
 	<p><font color='#009E73'> [VALID] </font> Reading: median_read_pass_rate </p>
 	<p><font color='#009E73'> [VALID] </font> Reading: mean_read_pass_rate </p>
 	<p><font color='#009E73'> [VALID] </font> Years of Schooling: average_years_schooling_geo20 </p>
