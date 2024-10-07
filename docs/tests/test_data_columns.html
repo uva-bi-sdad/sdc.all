@@ -7,7 +7,7 @@
                 </p>
                 </head>
                 <body>
-                    Last updated: 2024-10-07 16:03:32
+                    Last updated: 2024-10-04 16:03:33
                     <h3> sdc.public_safety </h3>
 	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['moe'] Incarceration: va_hdcttr_2020_incarceration_rate.csv.xz </p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['Unnamed: 0'] Incarceration: va_hdcttr_2019_incarceration_rate.csv.xz </p>
@@ -36,7 +36,7 @@
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'region_name', 'region_type'] Pay and Benefits/Income Inequality: ncr_cttr_2015_2021_income_inequality_gini_index.csv.xz </p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'region_name', 'region_type'] Pay and Benefits/Income Inequality: va_cttr_2015_2021_income_inequality_gini_index.csv.xz </p>
 	<p><font color='#009E73'> [VALID] </font> Pay and Benefits/Income Inequality: va_hdcttr_2015_2021_income_inequality_gini_index_std.csv.xz</p>
-	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['geoid', 'measure', 'moe', 'value', 'year'] Pay and Benefits/Income Inequality: occ_codes.csv </p>
+	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['value', 'year', 'geoid', 'moe', 'measure'] Pay and Benefits/Income Inequality: occ_codes.csv </p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['OCCP', 'OCCP_text'] Pay and Benefits/Income Inequality: occ_codes.csv </p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'region_name', 'region_type'] Pay and Benefits/Personal Income: va_hdct_bea_2015_2021_earnings_per_job.csv.xz </p>
 	<p><font color='#009E73'> [VALID] </font> Poverty: va059_tr_acs_2021_poverty_demographics.csv.xz</p>
@@ -63,8 +63,8 @@
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'region_name', 'region_type'] Age: ncr_cttrbg_acs_2009_2021_age_demographics.csv.xz </p>
 	<p><font color='#009E73'> [VALID] </font> Age: va_hsrsdpdzccttrbg_sdad_2009_2021_age_demographics.csv.xz</p>
 	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['moe'] Cooperative extension: va_ct_20172023_vote_youth.csv.xz </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['region_name', 'region_type', 'estimate', 'variable'] Cooperative extension: va_cttr_2010_2021_perc_children_raised_by_GPs.csv.xz </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'region_name', 'region_type', 'measure_units'] Cooperative extension: va_cttr_2010_2021_perc_male.csv.xz </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['variable', 'estimate', 'region_name', 'region_type'] Cooperative extension: va_cttr_2010_2021_perc_children_raised_by_GPs.csv.xz </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'measure_units', 'region_name', 'region_type'] Cooperative extension: va_cttr_2010_2021_perc_male.csv.xz </p>
 	<p><font color='#009E73'> [VALID] </font> Gender: va_hsrsdpdzccttrbg_sdad_2009_2021_gender_demographics.csv.xz</p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'region_name', 'region_type'] Gender: ncr_cttrbg_acs_2009_2021_gender_demographics.csv.xz </p>
 	<p><font color='#009E73'> [VALID] </font> Geographic Mobility (HOI): va_cttrbg_acs_2015_2021_moving_demographics.csv.xz</p>
@@ -81,7 +81,7 @@
 <h3> sdc.health </h3>
 	<p><font color='#009E73'> [VALID] </font> Access to Care (HOI): va_tr_2017_2021_care_access_indicator.csv.xz</p>
 	<p><font color='#009E73'> [VALID] </font> Access to Care (HOI): va_tr_2017_2021_care_access_indicator_std.csv.xz</p>
-	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['moe', 'measure', 'value'] Access to Care (HOI): va_cnt_physician_lt_30mi_from_tract.csv </p>
+	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['value', 'moe', 'measure'] Access to Care (HOI): va_cnt_physician_lt_30mi_from_tract.csv </p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['phys_30_cnt'] Access to Care (HOI): va_cnt_physician_lt_30mi_from_tract.csv </p>
 	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['moe'] Health Care Services/Dentists/Service Catchment Scores: va_hdcttrbgca_webmd_2021_access_scores_dentists.csv.xz </p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'region_name', 'region_type'] Health Care Services/Dentists/Service Catchment Scores: va_hdcttrbgca_webmd_2021_access_scores_dentists.csv.xz </p>
@@ -126,15 +126,15 @@
 	<p><font color='#009E73'> [VALID] </font> Health Care Services/Physicians/OB-GYN/Service Access Scores: va059_cms_2022_obgyn_access_scores.csv.xz</p>
 	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['moe'] Health Care Services/Physicians/OB-GYN/Service Access Scores: va_hdcttrbgca_webmd_2021_access_scores_obgyn.csv.xz </p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'region_name', 'region_type'] Health Care Services/Physicians/OB-GYN/Service Access Scores: va_hdcttrbgca_webmd_2021_access_scores_obgyn.csv.xz </p>
-	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['geoid', 'measure', 'moe', 'value', 'year'] Health Care Services/Physicians/OB-GYN/Service Access Scores: va059_weighted_access_scores_obgyn.csv.xz </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['variable', 'weighted_mean', 'desc'] Health Care Services/Physicians/OB-GYN/Service Access Scores: va059_weighted_access_scores_obgyn.csv.xz </p>
+	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['value', 'year', 'geoid', 'moe', 'measure'] Health Care Services/Physicians/OB-GYN/Service Access Scores: va059_weighted_access_scores_obgyn.csv.xz </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['variable', 'desc', 'weighted_mean'] Health Care Services/Physicians/OB-GYN/Service Access Scores: va059_weighted_access_scores_obgyn.csv.xz </p>
 	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['moe'] Health Care Services/Physicians/OB-GYN/Service Access Scores: ncr_cttrbg_webmd_2021_access_scores_obgyn.csv.xz </p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'region_name', 'region_type'] Health Care Services/Physicians/OB-GYN/Service Access Scores: ncr_cttrbg_webmd_2021_access_scores_obgyn.csv.xz </p>
-	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['geoid', 'measure', 'moe', 'value', 'year'] Health Care Services/Physicians/OB-GYN/Service Access Scores: va059_weighted_access_scores_obgyn.csv </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['variable', 'weighted_mean', 'desc'] Health Care Services/Physicians/OB-GYN/Service Access Scores: va059_weighted_access_scores_obgyn.csv </p>
+	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['value', 'year', 'geoid', 'moe', 'measure'] Health Care Services/Physicians/OB-GYN/Service Access Scores: va059_weighted_access_scores_obgyn.csv </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['variable', 'desc', 'weighted_mean'] Health Care Services/Physicians/OB-GYN/Service Access Scores: va059_weighted_access_scores_obgyn.csv </p>
 	<p><font color='#009E73'> [VALID] </font> Health Care Services/Physicians/Pediatric/Service Access Scores: va059_webmd_2022_pediatricians_access_scores.csv.xz</p>
-	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['geoid', 'measure', 'moe', 'value', 'year'] Health Care Services/Physicians/Pediatric/Service Access Scores: va059_weighted_access_scores_pediatrician.csv </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['desc', 'weighted_mean'] Health Care Services/Physicians/Pediatric/Service Access Scores: va059_weighted_access_scores_pediatrician.csv </p>
+	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['value', 'year', 'geoid', 'moe', 'measure'] Health Care Services/Physicians/Pediatric/Service Access Scores: va059_weighted_access_scores_pediatrician.csv </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['weighted_mean', 'desc'] Health Care Services/Physicians/Pediatric/Service Access Scores: va059_weighted_access_scores_pediatrician.csv </p>
 	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['moe'] Health Care Services/Physicians/Pediatric/Service Access Scores: ncr_cttrbg_webmd_2021_access_scores_pediatrics.csv.xz </p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'region_name', 'region_type'] Health Care Services/Physicians/Pediatric/Service Access Scores: ncr_cttrbg_webmd_2021_access_scores_pediatrics.csv.xz </p>
 	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['moe'] Health Care Services/Physicians/Pediatric/Service Access Scores: va_hdcttrbgca_webmd_2021_access_scores_pediatrics.csv.xz </p>
@@ -181,7 +181,7 @@
 	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['moe'] Population Health/Social Vulnerability Index: va_cttr_2014_2020_social_vulnerability_index.csv.xz </p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type'] Population Health/Social Vulnerability Index: va_cttr_2014_2020_social_vulnerability_index.csv.xz </p>
 	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['moe'] Population Health/Substance Abuse/Drug Overdose ED Visits: va_hdct_vdh_2015_2021_drug_overdose_ed_visits.csv.xz </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'region_name', 'region_type', 'measure_units'] Population Health/Substance Abuse/Drug Overdose ED Visits: va_hdct_vdh_2015_2021_drug_overdose_ed_visits.csv.xz </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'measure_units', 'region_name', 'region_type'] Population Health/Substance Abuse/Drug Overdose ED Visits: va_hdct_vdh_2015_2021_drug_overdose_ed_visits.csv.xz </p>
 	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['moe'] Population Health/System Usage and Insurance/Preventable Hospitalizations: va_hdct_2015_2021_preventable_hospitalizations.csv.xz </p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type'] Population Health/System Usage and Insurance/Preventable Hospitalizations: va_hdct_2015_2021_preventable_hospitalizations.csv.xz </p>
 	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['moe'] Population Health/System Usage and Insurance/Without Health Insurance: ncr_cttrbg_acs5_2015_2019_no_health_insurance_19_to_64.csv.xz </p>
@@ -202,12 +202,12 @@ NA<h3> sdc.environment </h3>
 <h3> sdc.transportation </h3>
 	<p><font color='#009E73'> [VALID] </font> Infrastructure/Walkability (HOI): va_hdcttr_2021_walkability_index.csv.xz</p>
 	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['moe'] Population Characteristics: ncr_cttr_acs_2016_2020_vehicles.csv.xz </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'region_name', 'region_type', 'measure_units'] Population Characteristics: ncr_cttr_acs_2016_2020_vehicles.csv.xz </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'measure_units', 'region_name', 'region_type'] Population Characteristics: ncr_cttr_acs_2016_2020_vehicles.csv.xz </p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'region_name', 'region_type'] Population Characteristics: va_cttr_2010_2021_perc_no_car_households.csv.xz </p>
 	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['moe'] Population Characteristics: ncr_cttr_acs_2016_2020_commutes.csv.xz </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'region_name', 'region_type', 'measure_units'] Population Characteristics: ncr_cttr_acs_2016_2020_commutes.csv.xz </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'measure_units', 'region_name', 'region_type'] Population Characteristics: ncr_cttr_acs_2016_2020_commutes.csv.xz </p>
 	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['moe'] Population Characteristics: ncr_cttr_acs_2016_2020_carpools.csv.xz </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'region_name', 'region_type', 'measure_units'] Population Characteristics: ncr_cttr_acs_2016_2020_carpools.csv.xz </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'measure_units', 'region_name', 'region_type'] Population Characteristics: ncr_cttr_acs_2016_2020_carpools.csv.xz </p>
 <h3> sdc.business_climate </h3>
 	<p><font color='#009E73'> [VALID] </font> Business_characteristics/Industry: va059_cttrbg_mi_2010_2020_business_metrics_by_Industry.csv.xz</p>
 	<p><font color='#009E73'> [VALID] </font> Business_characteristics/Industry: rva_cttrbg_mi_2010_2020_business_metrics_by_Industry.csv.xz</p>
@@ -271,18 +271,18 @@ NA<h3> sdc.environment </h3>
 	<p><font color='#009E73'> [VALID] </font> Wired/Accessibility/Average Download Speed: ncr_cttrbg_ookla_download_speeds.csv.xz</p>
 	<p><font color='#009E73'> [VALID] </font> Wired/Accessibility/Average Upload Speed: ncr_cttrbg_ookla_upload_speeds.csv.xz</p>
 	<p><font color='#D55E00'> [MISSING COLUMNS] </font> ['moe'] Wired/Accessibility/Number of devices: ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'region_name', 'region_type', 'measure_units'] Wired/Accessibility/Number of devices: ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['region_name', 'measure_units', 'Unnamed: 0', 'measure_type', 'region_type'] Wired/Accessibility/Percent Fast (internet-connected): ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['region_name', 'measure_units', 'Unnamed: 0', 'measure_type', 'region_type'] Wired/Accessibility/Percent Fast (total): ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['region_name', 'measure_units', 'Unnamed: 0', 'measure_type', 'region_type'] Wired/Accessibility/Percent Good (internet-connected): ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['region_name', 'measure_units', 'Unnamed: 0', 'measure_type', 'region_type'] Wired/Accessibility/Percent Good (total): ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_type', 'measure_units', 'region_name', 'region_type'] Wired/Accessibility/Number of devices: ncr_hdcttrbg_2019_2021q3_speed_measurements.csv.xz </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_units', 'region_name', 'region_type', 'Unnamed: 0', 'measure_type'] Wired/Accessibility/Percent Fast (internet-connected): ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_units', 'region_name', 'region_type', 'Unnamed: 0', 'measure_type'] Wired/Accessibility/Percent Fast (total): ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_units', 'region_name', 'region_type', 'Unnamed: 0', 'measure_type'] Wired/Accessibility/Percent Good (internet-connected): ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_units', 'region_name', 'region_type', 'Unnamed: 0', 'measure_type'] Wired/Accessibility/Percent Good (total): ncr_hdcttrbg_2019_2021q3_percent_above_threshold.csv.xz </p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['region_name', 'region_type'] Wired/Adoption/Computer Type: va_hdcttrbg_acs_2017_2021_hh_without_compdev.csv.xz </p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['region_name', 'region_type'] Wired/Adoption/Computer Type: ncr_cttrbg_acs_2017_2021_hh_without_compdev.csv.xz </p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['region_name', 'region_type'] Wired/Adoption/Internet Type: va_hdcttrbg_acs_2017_2021_hh_internet_type.csv.xz </p>
 	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['region_name', 'region_type'] Wired/Adoption/Internet Type: ncr_cttrbg_acs_2017_2021_hh_internet_type.csv.xz </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['region_name', 'measure_units', 'Unnamed: 0', 'measure_type', 'region_type'] Wired/Affordability/Percentage of income for fast internet: ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['region_name', 'measure_units', 'Unnamed: 0', 'measure_type', 'region_type'] Wired/Affordability/Percentage of income for good internet: ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz </p>
-	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['region_name', 'measure_units', 'Unnamed: 0', 'measure_type', 'region_type'] Wired/Affordability/Percentage of income for internet (average): ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_units', 'region_name', 'region_type', 'Unnamed: 0', 'measure_type'] Wired/Affordability/Percentage of income for fast internet: ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_units', 'region_name', 'region_type', 'Unnamed: 0', 'measure_type'] Wired/Affordability/Percentage of income for good internet: ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz </p>
+	<p><font color='#0072B2'> [EXTRA COLUMNS] </font> ['measure_units', 'region_name', 'region_type', 'Unnamed: 0', 'measure_type'] Wired/Affordability/Percentage of income for internet (average): ncr_broadbandnow_acs_sdad_2021_perc_income_on_internet.csv.xz </p>
 
                 </body>
             </html>
