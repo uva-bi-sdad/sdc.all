@@ -7,10 +7,10 @@
         "data_type": "decimal",
         "equity_category": "Accessibility",
         "layer": "",
-        "long_description": "",
+        "long_description": "The number of unique devices accessing Ookla Internet speed tests. Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd_xx)",
         "long_name": "Number of devices",
         "measure_type": "count",
-        "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
+        "short_description": "",
         "short_name": "Number of devices",
         "sources": [
             {

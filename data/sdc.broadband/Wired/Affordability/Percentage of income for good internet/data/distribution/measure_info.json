@@ -7,7 +7,7 @@
         "data_type": "decimal",
         "equity_category": "Affordability",
         "layer": "",
-        "long_description": "The minimum price for good internet (25 MB/s upload) as a percentage of median household income.",
+        "long_description": "The minimum price for good internet (which is defined as 25 MB/s upload) as a percentage of median household income. Geographies: Block group (12), Census Tract (11), County (5) ",
         "long_name": "The minimum price for good internet (25 MB/s upload) as a percentage of median household income",
         "measure_type": "percent",
         "short_description": "The minimum price for good internet (25 MB/s upload) as a percentage of median household income",

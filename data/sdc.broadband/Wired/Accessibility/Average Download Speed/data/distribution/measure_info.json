@@ -7,10 +7,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "",
+        "long_description": "Average download speed weighted by the number of devices.",
         "long_name": "Average Download Speed",
         "measure_type": "speed",
-        "short_description": "Average download speed weighted by number of devices.",
+        "short_description": "",
         "short_name": "Average Download Speed",
         "sources": [
             {
