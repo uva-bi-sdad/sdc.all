@@ -17476,10 +17476,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "",
+        "long_description": "Average download speed weighted by the number of devices.",
         "long_name": "Average Download Speed",
         "measure_type": "speed",
-        "short_description": "Average download speed weighted by number of devices.",
+        "short_description": "",
         "short_name": "Average Download Speed",
         "sources": [
             {
@@ -17530,10 +17530,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "",
+        "long_description": "Average upload speed weighted by the number of devices",
         "long_name": "Average Upload Speed",
         "measure_type": "speed",
-        "short_description": "Average upload speed weighted by number of devices.",
+        "short_description": "",
         "short_name": "Average Upload Speed",
         "sources": [
             {
@@ -18637,10 +18637,10 @@
         "data_type": "decimal",
         "equity_category": "Accessibility",
         "layer": "",
-        "long_description": "",
+        "long_description": "The number of unique devices accessing Ookla Internet speed tests. Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd_xx)",
         "long_name": "Number of devices",
         "measure_type": "count",
-        "short_description": "The number of unique devices accessing Ookla Internet speed tests.",
+        "short_description": "",
         "short_name": "Number of devices",
         "sources": [
             {
@@ -23613,10 +23613,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Percentage of households self-reported to have a broadband internet connection. Broadband internet is defined as any type of internet other than a dial-up. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
+        "long_description": "Percentage of households self-reported to have a broadband internet connection. Broadband internet is defined as any type of internet other than a dial-up. Data is based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates. Geographies: County (5), Block group (12), Census Tract (11), Health Districts (51_hd_xx)",
         "long_name": "Percentage of households with broadband",
         "measure_type": "percent",
-        "short_description": "Percentage of households self-reported to have a broadband internet connection (any type of internet other than a dial-up)",
+        "short_description": "",
         "short_name": "Households with broadband",
         "sources": [
             {
@@ -23640,10 +23640,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Percentage of households self-reported to have a high speed internet service. A high speed internet service is defined as a cable, fiber optic, or DSL internet connection. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
+        "long_description": "Percentage of households self-reported to have a high-speed internet service. A high-speed internet service is defined as a cable, fiber optic, or DSL internet connection. Data is based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates. Geographies: County (5), Block group (12), Census Tract (11), Health Districts (51_hd_xx)",
         "long_name": "Percentage of households with a high speed internet service (cable, fiber optic, or DSL)",
         "measure_type": "percent",
-        "short_description": "Percentage of households self-reported to have a high speed internet service (cable, fiber optic, or DSL)",
+        "short_description": "",
         "short_name": "Households with cable, fiber optic, or DSL",
         "sources": [
             {
@@ -23667,10 +23667,10 @@
         "data_type": "decimal",
         "equity_category": "Accessibility",
         "layer": "",
-        "long_description": "Percentage of the households self-reported to not have a computer or device at home. Based on American Community Survey Table B28001 in ACS 2015/2019 5-year estimates.",
+        "long_description": "Percentage of households self-reported to not have a computer or device at home. Data is based on American Community Survey Table B28001 in ACS 2015/2019 5-year estimates. Geographies: County (5), Block group (12), Census Tract (11), Health Districts (51_hd_xx)",
         "long_name": "Percentage of households without a computer",
         "measure_type": "percent",
-        "short_description": "Percentage of households self-reported to not have a computer or device at home",
+        "short_description": "",
         "short_name": "Households without a computer",
         "sources": [
             {
@@ -23694,10 +23694,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Percentage of households self-reported to not have internet access at home. Based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates.",
+        "long_description": "Percentage of households self-reported to not have internet access at home. Data is based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates. Geographies: County (5), Block group (12), Census Tract (11), Health Districts (51_hd_xx)",
         "long_name": "Percentage of households without internet access",
         "measure_type": "percent",
-        "short_description": "Percentage of households self-reported to not have internet access at home",
+        "short_description": "",
         "short_name": "Households without internet access",
         "sources": [
             {
@@ -23721,7 +23721,7 @@
         "data_type": "decimal",
         "equity_category": "Affordability",
         "layer": "",
-        "long_description": "The national average price for internet ($64) as a percentage of median household income.",
+        "long_description": "The national average price for internet, which is $64, as a percentage of median household income. Geographies: Block group (12), Census Tract (11), County (5)",
         "long_name": "The national average price for internet as a percentage of average income",
         "measure_type": "percent",
         "short_description": "The national average price for internet ($64) as a percentage of median household income",
@@ -23755,7 +23755,7 @@
         "data_type": "decimal",
         "equity_category": "Affordability",
         "layer": "",
-        "long_description": "The minimum price for fast internet (100 MB/s upload) as a percentage of median household income.",
+        "long_description": "TThe minimum price for fast internet (which is defined as 100 MB/s upload) as a percentage of median household income. Geographis: Block group (12), Census Tract (11), County (5)",
         "long_name": "The minimum price for fast internet (100 MB/s upload) as a percentage of median household income",
         "measure_type": "percent",
         "short_description": "The minimum price for fast internet (100 MB/s upload) as a percent of median household income",
@@ -23789,7 +23789,7 @@
         "data_type": "decimal",
         "equity_category": "Affordability",
         "layer": "",
-        "long_description": "The minimum price for good internet (25 MB/s upload) as a percentage of median household income.",
+        "long_description": "The minimum price for good internet (which is defined as 25 MB/s upload) as a percentage of median household income. Geographies: Block group (12), Census Tract (11), County (5) ",
         "long_name": "The minimum price for good internet (25 MB/s upload) as a percentage of median household income",
         "measure_type": "percent",
         "short_description": "The minimum price for good internet (25 MB/s upload) as a percentage of median household income",
@@ -24120,10 +24120,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "",
+        "long_description": "Percent of the total population with a fast internet speed, which is defined as above 100/20 MB/S and able to stream HD video on multiple devices or download large files quickly. Geographies: Block group (12), Census tract (11), County (5), Health Districts (h1_hd_xx) ",
         "long_name": "Percent of the Total Population with Fast Internet Speed",
         "measure_type": "percent",
-        "short_description": "Percent of the total population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
+        "short_description": "",
         "short_name": "Percent Fast (total)",
         "sources": [
             {
@@ -24147,10 +24147,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "",
+        "long_description": "Percent of the total population with a good internet speed, which is defined as above 25/3 MB/S and able to stream video or online games for one device. Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd_xx)",
         "long_name": "Percent of the Total Population with Good Internet Speed",
         "measure_type": "percent",
-        "short_description": "Percent of the total population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
+        "short_description": "",
         "short_name": "Percent Good (total)",
         "sources": [
             {
@@ -24174,10 +24174,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "",
+        "long_description": "Percent of the internet-connected population with a fast internet speed, which is defined as above 100/20 MB/S and able to stream HD video on multiple devices or download large files quickly. Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd_xx)",
         "long_name": "Percent of the Internet-Connected Population with Fast Internet Speed",
         "measure_type": "percent",
-        "short_description": "Percent of the internet-connected population with a fast internet speed (above 100/20 MB/s, able to stream HD video on multiple devices or download large files quickly).",
+        "short_description": "",
         "short_name": "Percent Fast (internet-connected)",
         "sources": [
             {
@@ -24201,10 +24201,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "",
+        "long_description": "Percent of the internet-connected population with a good internet speed, which is defined as above 25/3 MB/S and able to stream video or online games for one device. Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd_xx)",
         "long_name": "Percent of the Internet-Connected Population with Good Internet Speed",
         "measure_type": "percent",
-        "short_description": "Percent of the internet-connected population with a good internet speed (above 25/3 MB/s, able to stream video or online game for one device).",
+        "short_description": "",
         "short_name": "Percent Good (internet-connected)",
         "sources": [
             {
