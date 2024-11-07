@@ -15381,10 +15381,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percentage of the population who reported any postsecondary education, according to the US Census American Community Survey 5-year estimates.",
+        "long_description": "Percentage of the population who reported any postsecondary education, according to the U.S. Census American Community Survey 5-year estimates.",
         "long_name": "Estimated Percentage of the Population With Any Postsecondary Education",
         "measure_type": "",
-        "short_description": "Percentage of the population who reported any postsecondary education, according to the US Census American Community Survey 5-year estimates.",
+        "short_description": "Percentage of the population who reported any postsecondary education.",
         "short_name": "Postsecondary Education (percent)",
         "sources": [
             {
@@ -17449,10 +17449,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The Education Index measures the average education level achieved by the adult population in an area. This is based on the average years of schooling in an area. Geographies: Census tract (11)",
+        "long_description": "The Education Index measures the average education level achieved by the adult population in an area. This is based on the average years of schooling in an area. The calculation used to calculate the index can be found in (Bennett, D.L. Educational Inequailty in the United States: Methodology and Historical Estimates of Education Gini Coefficients. Econ. Modeling Microeconom. Stud. Health 2001). Higher educational attainment has been shown to have positive impacts on economic earning and positive health outcomes.",
         "long_name": "Education Index (Average Years of Schooling)",
         "measure_type": "average",
-        "short_description": "The Education Index measures the average education level achieved by the adult population in an area. This is based on the average years of schooling in an area. Geographies: Census tract (11)",
+        "short_description": "Education Index (Average Years of Schooling)",
         "short_name": "Average Years of Schooling",
         "sources": [
             {
@@ -18691,10 +18691,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Earnings per job are calculated based on the GDP and Personal Income table for the Bureau of Economic Analysis (BEA). Earnings per job is the total earnings divided by total number of jobs. Total earnings is the sum of wages and salaries, supplements to wages and salaries, and proprietor\u2019s income. Wages and salaries refer to the monetary remuneration of employees; it includes compensation of corporate officers; commissions, tips, and bonuses, compensation plans, such as a 401(k) plans; and receipts in kind, or pay-in0kind, that represent income to the recipient. Supplements to wages and salaries consist of employer contributions for employee pension and insurance funds and employer contributions for government social insurance. The proprietor\u2019s income is the current-production income (including the income in kind) of sole proprietorships and partnerships and of tax-exempt cooperatives. Geographies: County(5), Health Districts (51_hd)",
+        "long_description": "Earnings per job is calculated based on the GDP and Personal Income table from the Bureau of Economic Analysis(BEA).  Earnings per job is total earnings divided by total number of jobs. Total earnings is the sum of wages and salaries, supplements to wages and salaries, and proprietor\u2019s income. Wages and salaries refer to the monetary remuneration of employees; it includes compensation of corporate officers; commissions, tips, and bonuses, compensation plans, such as 401(k) plans; and receipts in kind, or pay-in-kind, that represent income to the recipient. Supplements to wages and salaries consists of employer contributions for employee pension and insurance funds and employer contributions for government social insurance. Proprietor\u2019s income is the current-production income (including the income in kind) of sole proprietorships and partnerships and of tax-exempt cooperatives.\n\nRaw data observations are generally per county/city; however, some observations involve multiple counties/cities. For example, Fairfax County, Fairfax City and Falls Church City are grouped into one observation in the raw data.  We split the multi-county/city raw data observations into multiple observations so that one observation corresponds to only one county/city.  We set the value of each split individual observation to be that of the corresponding raw multi-county/city observation.\n\nThese are the multi-county/city groupings in the raw data: Albemarle County, Charlottesville; Alleghany County, Covington; Augusta County, Staunton, Waynesboro; Campbell County,  Lynchburg; Carroll County, Galax; Dinwiddie County, Colonial Heights, Petersburg; Fairfax County, Fairfax City, Falls Church; Frederick County, Winchester; Greensville County, Emporia; Henry County,  Martinsville; James City County, Williamsburg; Montgomery County, Radford; Pittsylvania County, Danville; Prince George County, Hopewell; Prince William County, Manassas, Manassas Park; Roanoke County, Salem; Rockbridge County, Buena Vista, Lexington; Rockingham County, Harrisonburg; Southampton County, Franklin; Spotsylvania County, Fredericksburg; Washington County, Bristol; Wise County, Norton; York County, Poquoson.",
         "long_name": "Earnings per job",
         "measure_type": "",
-        "short_description": "Earnings per job are calculated based on the GDP and Personal Income table for the Bureau of Economic Analysis (BEA). Earnings per job is the total earnings divided by total number of jobs. Total earnings is the sum of wages and salaries, supplements to wages and salaries, and proprietor\u2019s income. Wages and salaries refer to the monetary remuneration of employees; it includes compensation of corporate officers; commissions, tips, and bonuses, compensation plans, such as a 401(k) plans; and receipts in kind, or pay-in0kind, that represent income to the recipient. Supplements to wages and salaries consist of employer contributions for employee pension and insurance funds and employer contributions for government social insurance. The proprietor\u2019s income is the current-production income (including the income in kind) of sole proprietorships and partnerships and of tax-exempt cooperatives. Geographies: County(5), Health Districts (51_hd)",
+        "short_description": "Average of earnings per job.",
         "short_name": "Earnings per job",
         "sources": [
             {
@@ -18772,10 +18772,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Population, self-reported as employed, as a percentage of the total civilian workforce population. Geographies: Census Tract (11), County (5)",
+        "long_description": "Population self-reported as employed as a percentage of total civilian workforce population. Based on American Community Survey Table 2015/2019 5-year estimates.",
         "long_name": "Percentage civilian employed",
         "measure_type": "",
-        "short_description": "Population, self-reported as employed, as a percentage of the total civilian workforce population. Geographies: Census Tract (11), County (5)",
+        "short_description": "Population self-reported as employed as a percentage of total civilian workforce population.",
         "short_name": "Percentage employed",
         "sources": [
             {
@@ -21393,10 +21393,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Median percentage of 3rd grade population passing a reading test, the median is calculated across schools in the region. Geographies: County (5)",
+        "long_description": "Median percentage of 3rd grade population passing reading test. The median is calculated across schools in the region.",
         "long_name": "Median percentage of 3rd graders passing reading test",
         "measure_type": "",
-        "short_description": "Median percentage of 3rd grade population passing a reading test, the median is calculated across schools in the region. Geographies: County (5)",
+        "short_description": "Median percentage of 3rd grade population passing reading test for schools in the region",
         "short_name": "Median 3rd graders passing reading",
         "sources": [
             {
@@ -28465,10 +28465,10 @@
             },
             "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson"
         },
-        "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported by the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
         "long_name": "2-year schools per 100k people over 14",
         "measure_type": "",
-        "short_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported by the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "short_description": "Number of 2-year schools per 100k people over 14, calculated within floating catchment areas.",
         "short_name": "2-year schools",
         "sources": [
             {
@@ -28513,10 +28513,10 @@
             },
             "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson"
         },
-        "long_description": "Minimal drive time to schools authorized to award Associates degrees or 2-year or longer certificates from the Census block group centroid, as calculated by the Open Source Routing Machine. School locations are from the National Center for Education Statistics. All distances are calculated at the block group level and then averaged up to higher-level geographies.",
+        "long_description": "Minimal drive time to a schools authorized to award Associates degrees or 2-year or longer certificates from the Census block group centroid, as calculated by the Open Source Routing Machine. School locations are from the National Center for Education Statistics. All distances are calculated at the block group level, then averaged up to higher-level geographies.",
         "long_name": "drive time to nearest 2-year school",
         "measure_type": "",
-        "short_description": "Minimal drive time to schools authorized to award Associates degrees or 2-year or longer certificates from the Census block group centroid, as calculated by the Open Source Routing Machine. School locations are from the National Center for Education Statistics. All distances are calculated at the block group level and then averaged up to higher-level geographies.",
+        "short_description": "Drive time to the nearest 2-year schools.",
         "short_name": "2-year school drive time",
         "sources": [
             {
@@ -28564,10 +28564,10 @@
             ],
             "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson"
         },
-        "long_description": "The number of schools authorized to award Associates degrees or 2-year or longer certificates with biomedical programs (any with Classification of Institutional Programs (CIP) codes starting with 26) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported by the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with biomedical programs (any with Classification of Institutional Programs [CIP] codes starting with 26) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
         "long_name": "2-year schools with biomedical programs per 100k people over 14",
         "measure_type": "",
-        "short_description": "The number of schools authorized to award Associates degrees or 2-year or longer certificates with biomedical programs (any with Classification of Institutional Programs (CIP) codes starting with 26) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported by the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "short_description": "Number of 2-year schools with biomedical programs per 100k people over 14, calculated within floating catchment areas.",
         "short_name": "2-year schools with biomedical programs",
         "sources": [
             {
@@ -28622,10 +28622,10 @@
             ],
             "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson"
         },
-        "long_description": "The number of schools authorized to award Associates degrees or 2-year or longer certificates with computer programs (any with Classification of Institutional Programs (CIP) codes starting with 11) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported by the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 11) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
         "long_name": "2-year schools with computer programs per 100k people over 14",
         "measure_type": "",
-        "short_description": "The number of schools authorized to award Associates degrees or 2-year or longer certificates with computer programs (any with Classification of Institutional Programs (CIP) codes starting with 11) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported by the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "short_description": "Number of 2-year schools with computer programs per 100k people over 14, calculated within floating catchment areas.",
         "short_name": "2-year schools with computer programs",
         "sources": [
             {
@@ -28680,10 +28680,10 @@
             ],
             "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson"
         },
-        "long_description": "The number of schools authorized to award Associates degrees or 2-year or longer certificates with engineering programs (any with Classification of Institutional Programs (CIP) codes starting with 14 or 15) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported by the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 14 or 15) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
         "long_name": "2-year schools with engineering programs per 100k people over 14",
         "measure_type": "",
-        "short_description": "The number of schools authorized to award Associates degrees or 2-year or longer certificates with engineering programs (any with Classification of Institutional Programs (CIP) codes starting with 14 or 15) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported by the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "short_description": "Number of 2-year schools with engineering programs per 100k people over 14, calculated within floating catchment areas.",
         "short_name": "2-year schools with engineering programs",
         "sources": [
             {
@@ -28738,10 +28738,10 @@
             ],
             "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson"
         },
-        "long_description": "The number of schools authorized to award Associates degrees or 2-year or longer certificates with physical programs (any with Classification of Institutional Programs (CIP) codes starting with 40) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported by the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 40) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
         "long_name": "2-year schools with physical programs per 100k people over 14",
         "measure_type": "",
-        "short_description": "The number of schools authorized to award Associates degrees or 2-year or longer certificates with physical programs (any with Classification of Institutional Programs (CIP) codes starting with 40) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported by the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "short_description": "Number of 2-year schools with physical programs per 100k people over 14, calculated within floating catchment areas.",
         "short_name": "2-year schools with physical programs",
         "sources": [
             {
@@ -28796,10 +28796,10 @@
             ],
             "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson"
         },
-        "long_description": "The number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs (CIP) codes starting with 41) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported by the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "long_description": "Number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs [CIP] codes starting with 41) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
         "long_name": "2-year schools with science programs per 100k people over 14",
         "measure_type": "",
-        "short_description": "The number of schools authorized to award Associates degrees or 2-year or longer certificates with science programs (any with Classification of Institutional Programs (CIP) codes starting with 41) per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) qualifying 2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported by the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "short_description": "Number of 2-year schools with science programs per 100k people over 14, calculated within floating catchment areas.",
         "short_name": "2-year schools with science programs",
         "sources": [
             {
@@ -28993,10 +28993,10 @@
             },
             "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson"
         },
-        "long_description": "The number of schools authorized to award certificates that are typically obtained in less than 2 years per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) <2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported by the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "long_description": "Number of schools authorized to award certificates that are typically obtained in less than 2 years per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) <2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
         "long_name": "<2-year schools per 100k people over 14",
         "measure_type": "",
-        "short_description": "The number of schools authorized to award certificates that are typically obtained in less than 2 years per 100k people over 14, based on 3-step floating catchment areas defined by distance. Catchment areas were calculated using (a) <2-year schools as listed by the National Center for Education Statistics, with supply values of 1, (b) Census block groups, with supply values as the population over the age of 14 as reported by the American Community Survey 5-year summaries, and (c) distances between school locations and block group centroids, weighted by a Gaussian function with a scaling parameter set to 18, as calculated by the catchment R package.",
+        "short_description": "Number of <2-year schools per 100k people over 14, calculated within floating catchment areas.",
         "short_name": "<2-year schools",
         "sources": [
             {
@@ -29041,10 +29041,10 @@
             },
             "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.education/main/Postsecondary/data/distribution/points_{time}.geojson"
         },
-        "long_description": "Minimal drive time to schools authorized to award certificates that are typically obtained in less than 2 years from the Census block group centroid, as calculated by the Open Source Routing Machine. School locations are from the National Center for Education Statistics. All distances are calculated at the block group level and then averaged up to higher-level geographies.",
+        "long_description": "Minimal drive time to a schools authorized to award certificates that are typically obtained in less than 2 years from the Census block group centroid, as calculated by the Open Source Routing Machine. School locations are from the National Center for Education Statistics. All distances are calculated at the block group level, then averaged up to higher-level geographies.",
         "long_name": "drive time to nearest <2-year school",
         "measure_type": "",
-        "short_description": "Minimal drive time to schools authorized to award certificates that are typically obtained in less than 2 years from the Census block group centroid, as calculated by the Open Source Routing Machine. School locations are from the National Center for Education Statistics. All distances are calculated at the block group level and then averaged up to higher-level geographies.",
+        "short_description": "Drive time to the nearest <2-year schools.",
         "short_name": "<2-year school drive time",
         "sources": [
             {
