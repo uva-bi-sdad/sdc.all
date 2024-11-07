@@ -7,10 +7,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Population self-reported as employed as a percentage of total civilian workforce population. Based on American Community Survey Table 2015/2019 5-year estimates.",
+        "long_description": "Population, self-reported as employed, as a percentage of the total civilian workforce population. Geographies: Census Tract (11), County (5)",
         "long_name": "Percentage civilian employed",
         "measure_type": "",
-        "short_description": "Population self-reported as employed as a percentage of total civilian workforce population.",
+        "short_description": "Population, self-reported as employed, as a percentage of the total civilian workforce population. Geographies: Census Tract (11), County (5)",
         "short_name": "Percentage employed",
         "sources": [
             {

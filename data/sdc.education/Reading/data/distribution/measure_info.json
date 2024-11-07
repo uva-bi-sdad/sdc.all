@@ -7,10 +7,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Median percentage of 3rd grade population passing reading test. The median is calculated across schools in the region.",
+        "long_description": "Median percentage of 3rd grade population passing a reading test, the median is calculated across schools in the region. Geographies: County (5)",
         "long_name": "Median percentage of 3rd graders passing reading test",
         "measure_type": "",
-        "short_description": "Median percentage of 3rd grade population passing reading test for schools in the region",
+        "short_description": "Median percentage of 3rd grade population passing a reading test, the median is calculated across schools in the region. Geographies: County (5)",
         "short_name": "Median 3rd graders passing reading",
         "sources": [
             {

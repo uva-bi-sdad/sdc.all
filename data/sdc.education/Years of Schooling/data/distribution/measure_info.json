@@ -7,10 +7,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The Education Index measures the average education level achieved by the adult population in an area. This is based on the average years of schooling in an area. The calculation used to calculate the index can be found in (Bennett, D.L. Educational Inequailty in the United States: Methodology and Historical Estimates of Education Gini Coefficients. Econ. Modeling Microeconom. Stud. Health 2001). Higher educational attainment has been shown to have positive impacts on economic earning and positive health outcomes.",
+        "long_description": "The Education Index measures the average education level achieved by the adult population in an area. This is based on the average years of schooling in an area. Geographies: Census tract (11)",
         "long_name": "Education Index (Average Years of Schooling)",
         "measure_type": "average",
-        "short_description": "Education Index (Average Years of Schooling)",
+        "short_description": "The Education Index measures the average education level achieved by the adult population in an area. This is based on the average years of schooling in an area. Geographies: Census tract (11)",
         "short_name": "Average Years of Schooling",
         "sources": [
             {
