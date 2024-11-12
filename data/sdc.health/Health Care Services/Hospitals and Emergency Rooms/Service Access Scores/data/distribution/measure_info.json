@@ -7,10 +7,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Median drive time in minutes to the ten closest hospitals. Facility location data were collected from the Center for Medicare and Medicaid Services. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
+        "long_description": "Median drive time in minutes to the ten closest hospitals. Facility location data were collected from the Center for Medicare and Medicaid Services repository. Drive times were computer using Open Source Routing Machine (looking at roads for 2021). Geographies: Block group (12), Census tract (11), County (5)",
         "long_name": "Hospital availability by median drive time to the ten closest facilities in minutes",
         "measure_type": "count",
-        "short_description": "Median drive time (minutes) to the ten closest hospitals",
+        "short_description": "",
         "short_name": "Hospital drive time",
         "sources": [
             {
@@ -39,10 +39,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Hospital access score based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
+        "long_description": "Hospital access score is based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined as the demand for facilities (in the adult population). Geographies: Block group (12), Census tract (11), County (5)",
         "long_name": "Hospital geographic availability (3-step floating catchment areas)",
         "measure_type": "index",
-        "short_description": "Index of hospital availability based on supply and demand of facilities",
+        "short_description": "",
         "short_name": "Hospital geographic availability",
         "sources": [
             {
@@ -66,10 +66,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Count of hospitals based on facility locations. Location data were collected from the Center for Medicare and Medicaid Services.",
+        "long_description": "Count of hospitals based on facility locations. Location data was collected from the Center for Medicare and Medicaid Services repository.Geographies: Block group (12), Census tract (11), County (5)",
         "long_name": "Availability of hospitals by count",
         "measure_type": "count",
-        "short_description": "Count of hospitals based on facility locations",
+        "short_description": "",
         "short_name": "Hospital availability (count)",
         "sources": [
             {

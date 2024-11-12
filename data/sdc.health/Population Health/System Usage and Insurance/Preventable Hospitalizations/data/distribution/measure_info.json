@@ -7,10 +7,10 @@
         "data_type": "numeric",
         "equity_category": "",
         "layer": "",
-        "long_description": "Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees. Ambulatory care refers to diagnoses that are usually treatable in outpatient settings. This data is based on Medicare claims and comes from County Health Rankings.",
+        "long_description": "Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees. Ambulatory care refers to diagnoses that are usually treatable in outpatient settings. This data is based on Medicare claims and comes from County Health Rankings. Geographies: County (5), Health Districts (51_hd)",
         "long_name": "Preventable hospital stays per 100,000 Medicare enrollees",
         "measure_type": "rate per 100K",
-        "short_description": "Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees",
+        "short_description": "",
         "short_name": "Preventable hospitalizations per 100,000",
         "sources": [
             {

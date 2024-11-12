@@ -7,10 +7,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the number of people in food insecure households. Food insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
+        "long_description": "Estimate of the number of people in food-insecure households. Food insecurity refers to the US Department of Agriculture’s (USDA) measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. Food insecurity may reflect a household’s need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods. Geographies: Census tract (11)",
         "long_name": "Estimated number of food insecure people",
         "measure_type": "count",
-        "short_description": "Food insecure people live in households experiencing food insecurity (a lack of access to enough food for an active, healthy life).",
+        "short_description": "",
         "short_name": "Food Insecure Population Count",
         "sources": [
             {
@@ -104,10 +104,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the percent of people in food insecure households.  The brief providing the methodology of calculating these estimates is available at Feeding America's Map the Meal Gap website (linked below). Food insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
+        "long_description": "Estimate of percentage of people in food-insecure households. Food insecurity refers to the US Department of Agriculture’s (USDA) measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. Food insecurity may reflect a household’s need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods. Geographies: Census tract (11)",
         "long_name": "Estimated percentage of food insecure households",
         "measure_type": "percent",
-        "short_description": "Food insecure households experience food insecurity (a lack of access to enough food for an active, healthy life).",
+        "short_description": "",
         "short_name": "Food Insecure Population Percentage",
         "sources": [
             {
@@ -201,10 +201,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Number of persons with income that is sufficient to pay for Food Costs using the Food budget, and in addition, the food budget is larger than the dollar amount of Food Costs.",
+        "long_description": "The number of persons with an income that is sufficient to pay for food costs using the food budget, and in addition, the food budget is larger than the dollar amount of food costs. Geographies: Census Tract (11)",
         "long_name": "Estimated number of food secure people",
         "measure_type": "count",
-        "short_description": "Food secure people live in households that have proper access to food and lead a healthy life.",
+        "short_description": "",
         "short_name": "Food Secure Population Count",
         "sources": [
             {
@@ -298,10 +298,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Food security for a household means access by all members at all times to enough food for an active, healthy life. Food security includes at a minimum: The ready availability of nutritionally adequate and safe foods.",
+        "long_description": "Percentage of persons with an income that is sufficient to pay for food costs using the food budget, and in addition, the food budget is larger than the dollar amount of food costs. Geographies: Census Tract (11)",
         "long_name": "Estimated percentage of food secure households",
         "measure_type": "percent",
-        "short_description": "Food secure households have proper access to food and lead a healthy life.",
+        "short_description": "",
         "short_name": "Food Secure Households Percentage",
         "sources": [
             {
@@ -422,10 +422,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Weighted mean average of the dollar amount of Supplemental Nutrition Assistance Program (SNAP) benefit. The financial benefit is estimated following the guidelines and procedures from the Virginia Department of Social Services. The weighting component corresponds to the number of households in different income categories, household combinations, and geographies. The weighted average is obtained for every census tract.",
+        "long_description": "Weighted mean average of the dollar amount of Supplemental Nutrition Assitance Program (SNAP) benefit. The financial benefit is estimated following the guidelines and procedures from the Virginia Department of Social Services. The weighting component corresponds to the number of households in different income categories, household combinations, and geographies. The weighted average is obtained for every census tract. Geographies: Census Tract (11)",
         "long_name": "Average SNAP Benefit",
         "measure_type": "dollars",
-        "short_description": "Weighted mean average dollar amount of SNAP benefits",
+        "short_description": "",
         "short_name": "Average SNAP Benefit",
         "sources": [
             {
@@ -533,10 +533,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The average SNAP shortfall is the estimated dollar amount that a household lacks to pay for their food costs. SNAP benefit is the dollar amount of dollars that a household may receive for supplemental food assistance after eligibility.  The SNAP shortfall is the ratio between the SNAP benefit divided by the food shortfall money.  The weighted average uses the number of households in different income categories, household combination and geography, and average is estimated for every census tract.",
+        "long_description": "The average supplemental Nutrition Assistance Program (SNAP) shortfall is the estimated dollar amount that a household lacks to pay for their food costs. SNAP benefit is the dollar amount of money that a household may receive for supplemental food assistance after eligibility. The SNAP shortfall is the ratio between the SNAP benefit divided by the food shortfall money. The weighted average uses the number of households in different income categories, household combinations, and geography, and the average is estimated for every census tract. Geographies: Census Tract (11)",
         "long_name": "Average SNAP Shortfall",
         "measure_type": "ratio",
-        "short_description": "The average SNAP shortfall is the estimated dollar amount that a household lacks to pay for their food costs",
+        "short_description": "",
         "short_name": "Average SNAP Shortfall",
         "sources": [
             {
@@ -644,10 +644,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percentage of households at high risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
+        "long_description": "The percentage of households at high risk of racing food insecurity, based on financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses. Geographies: Census Tract (11)",
         "long_name": "Estimated percentage of total households classified at high risk of facing food insecurity",
         "measure_type": "percent",
-        "short_description": "Percentage of households classified at high risk of facing food insecurity",
+        "short_description": "",
         "short_name": "Food Insecure Population Percentage - High Risk",
         "sources": [
             {
@@ -741,10 +741,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percentage of households at medium risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
+        "long_description": "The percentage of households at medium risk of racing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses. Geographies: Census Tract (11)",
         "long_name": "Estimated percentage of total households classified at medium risk of facing food insecurity",
         "measure_type": "percent",
-        "short_description": "Percentage of households classified at medium risk of facing food insecurity",
+        "short_description": "",
         "short_name": "Food Insecure Population Percentage - Medium Risk",
         "sources": [
             {
@@ -838,10 +838,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percentage of households at low risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
+        "long_description": "The percentage of households at low risk of racing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses. Geographies: Census Tract (11)",
         "long_name": "Estimated percentage of total households classified at low risk of facing food insecurity",
         "measure_type": "percent",
-        "short_description": "Percentage of households classified at low risk of facing food insecurity",
+        "short_description": "",
         "short_name": "Food Insecure Population Percentage - Low Risk",
         "sources": [
             {
@@ -935,10 +935,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Number of households with income that is sufficient to pay for Food Costs using the Food budget, and in addition, the food budget is less than one third of  the dollar amount of Food Costs. ",
+        "long_description": "Number of households with income that is sufficient to pay for food costs using the food budget, and in addition, the food budget is less than one-third of the dollar amount of food costs. Geographies: Census Tract (11)",
         "long_name": "Estimated number of households classified at high risk of food insecurity",
         "measure_type": "count",
-        "short_description": "Count of households classified at high risk of food insecurity",
+        "short_description": "",
         "short_name": "Food Insecure Population Count - High Risk",
         "sources": [
             {
@@ -1032,10 +1032,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Number of households with income that is sufficient to pay for Food Costs using the Food budget, and in addition, the food budget is larger than two-thirds of  the dollar amount of Food Costs. ",
+        "long_description": "Number of households with income that is sufficient to pay for food costs using the food budget, and in addition, the food budget is larger than two-thirds of the dollar amount of food costs. Geographies: Census Tract (11) ",
         "long_name": "Estimated number of households classified at low risk of food insecurity",
         "measure_type": "count",
-        "short_description": "Count of households classified at low risk of food insecurity",
+        "short_description": "",
         "short_name": "Food Insecure Population Count - Low Risk",
         "sources": [
             {
@@ -1129,10 +1129,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Number of households with income that is sufficient to pay for Food Costs using the Food budget and, in addition, the food budget is larger than one third and less than two-thirds of the dollar amount of Food Costs. ",
+        "long_description": "Number of households with income that is sufficient to pay for food costs using the food budget, and in addition, the food budget is larger than one-third and less than two-thirds of the dollar amount of food costs. Geographies: Census Tract (11)",
         "long_name": "Estimated number of households classified at medium risk of food insecurity",
         "measure_type": "count",
-        "short_description": "Count of households classified at medium risk of food insecurity",
+        "short_description": "",
         "short_name": "Food Insecure Population Count - Medium Risk",
         "sources": [
             {

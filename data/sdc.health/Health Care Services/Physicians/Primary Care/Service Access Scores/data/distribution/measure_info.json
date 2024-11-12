@@ -7,10 +7,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Count of primary care physicians based on provider locations. Address data were collected from WebMD's online Physician Directory.",
+        "long_description": "Primary care availability is based on 2-step floating catchment areas. This method is an aggregation of physicians per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined as the demand for physicians (population served by physicians). Provider address data was collected from WebMD’s online physician directory. Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd), Civic Associations (51013_ca)",
         "long_name": "Primary care availability by count",
         "measure_type": "count",
-        "short_description": "Count of primary care physicians based on provider locations",
+        "short_description": "",
         "short_name": "Primary care availability (count)",
         "sources": [
             {

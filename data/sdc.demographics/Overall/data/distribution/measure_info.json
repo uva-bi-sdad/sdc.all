@@ -10,7 +10,7 @@
         "long_description": "Total number of people, as reported in census ACS population data. For non-census geographies, values are redistributed based on proportional overlap between census block groups and the local regions, using the redistribute R package.",
         "long_name": "Population: Total Number of People (direct method)",
         "measure_type": "",
-        "short_description": "Total number of people (direct method).",
+        "short_description": "",
         "short_name": "Population (direct method)",
         "sources": [
             {
@@ -83,10 +83,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Total number of people, as reported in census ACS population data. For non-census geographies, values are redistributed from census block groups to parcels, based on proportional geometric overlap and weighted by number of living units per parcel, then from parcels to the local regions based on proportional geometric overlap, using the redistribute R package.",
+        "long_description": "Total number of people, as reported in census ACS population data. For non-census geographies, values are redistributed from census block groups to parcels, based on proportional geometric overlap and weighted by the number of living units per parcel, then from parcels to the local regions based on proportional geometric overlap, using the redistribute R package.",
         "long_name": "Population: Total Number of People (parcels method)",
         "measure_type": "",
-        "short_description": "Total number of people (parcels method).",
+        "short_description": "",
         "short_name": "Population (parcels method)",
         "sources": [
             {
@@ -159,10 +159,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas: \\[\\frac{population_{r}}{meters^{2}_{r}}1609.344^{2}\\] Where r is each region (e.g., census tract or county). For non-census geographies, values are redistributed based on proportional overlap between census block groups and the local regions, using the redistribute R package.",
+        "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas. Where r is each region (for example, census tract or county). For non-census geographies, values are redistributed based on proportional overlap between census block groups and the local regions, using the redistribute R package.",
         "long_name": "Population Density: People Per Square Mile (direct method)",
         "measure_type": "",
-        "short_description": "People per square mile (direct method).",
+        "short_description": "",
         "short_name": "Population Density (direct method)",
         "sources": [
             {
@@ -235,10 +235,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas: \\[\\frac{population_{r}}{meters^{2}_{r}}1609.344^{2}\\] Where r is each region (e.g., census tract or county). For non-census geographies, values are redistributed from census block groups to parcels, based on proportional geometric overlap and weighted by number of living units per parcel, then from parcels to the local regions based on proportional geometric overlap, using the redistribute R package.",
+        "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas. Where r is each region (for example, census tract or county). For non-census geographies, values are redistributed based on proportional geometric overlap and weighted by the number of living units per parcel, then from parcels to the local regions based on proportional geometric overlap, using the redistribute R package.",
         "long_name": "Population Density: People Per Square Mile (parcels method)",
         "measure_type": "",
-        "short_description": "People per square mile (parcels method).",
+        "short_description": "",
         "short_name": "Population Density (parcels method)",
         "sources": [
             {

@@ -7,10 +7,10 @@
         "data_type": "decimal",
         "equity_category": "",
         "layer": "",
-        "long_description": "The Gini Index is a summary measure of income inequality. The Gini coefficient incorporates the detailed shares data into a single statistic, which summarizes the dispersion of income across the entire income distribution. The Gini coefficient ranges from 0, indicating perfect equality (where everyone receives an equal share), to 1, perfect inequality (where only one recipient or group of recipients receives all the income). The Gini is based on the difference between the Lorenz curve (the observed cumulative income distribution) and the notion of a perfectly equal income distribution.",
+        "long_description": "The Gini Index is a summary measure of income inequality. The Gini coefficient incorporates the detailed shares data into a single statistic, which summarizes income dispersion across the entire income distribution. The Gini coefficient ranges from 0 (which indicates perfect equality where everyone receives an equal share) to 1 (perfect inequality where only one recipient or group of recipients receives all the income). The Gini is based on the difference between the Lorenz curve (the observed cumulative income distribution) and the notion of a perfectly equal income distribution.",
         "long_name": "Income Inequality (Gini Index)",
         "measure_type": "index",
-        "short_description": "The Gini Index is a summary measure of income inequality.",
+        "short_description": "",
         "short_name": "Income Inequality (Gini Index)",
         "sources": [
             {

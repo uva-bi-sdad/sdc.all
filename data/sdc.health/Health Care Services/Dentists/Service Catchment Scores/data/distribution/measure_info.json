@@ -7,10 +7,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Count of dentists based on provider locations. Address data were collected from WebMD's online Physician Directory.",
+        "long_description": "Dental care availability is based on 2-step enhanced floating catchment areas. This method is an aggregation of dentists per population with ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined as the demand for dentists (which is the population served by dentists). Provide address data was collected from WebMD’s online Physician Directory. Geographies: Block group (12), Census tract (11), County (5), Civic Associations (51013_ca)",
         "long_name": "Dental care availability by count",
         "measure_type": "count",
-        "short_description": "Count of dentists based on provider locations",
+        "short_description": "",
         "short_name": "Dental care availability (count)",
         "sources": [
             {

@@ -7,10 +7,10 @@
         "data_type": "numeric",
         "equity_category": "",
         "layer": "",
-        "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the number of people in food insecure households.  The brief providing the methodology of calculating these estimates is available at Feeding America's Map the Meal Gap website (linked below). Food insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
+        "long_description": "Estimated number of total people in food insecure households according to Feeding America. Food insecurity refers to the US Department of Agriculture’s (USDA) measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. The brief providing the methodology of calculating these estimates is available on Feeding America’s Map the Meal Gap website. Food insecurity may reflect a household’s need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods. Geographies: Census tract (11), County (5), Health Districts (51_hd)",
         "long_name": "Estimated number of total people in food insecure households",
         "measure_type": "count",
-        "short_description": "Food insecure persons are people living in households experiencing food insecurity (a lack of access to enough food for an active, healthy life).",
+        "short_description": "",
         "short_name": "Food Insecure Population Count (Feeding America)",
         "sources": [
             {
@@ -34,10 +34,10 @@
         "data_type": "numeric",
         "equity_category": "",
         "layer": "",
-        "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the percent of people in food insecure households.  The brief providing the methodology of calculating these estimates is available at Feeding America's Map the Meal Gap website (linked below). Food insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
+        "long_description": "Estimated percentage of total people in food insecure households according to Feeding America. Food insecurity refers to the US Department of Agriculture’s (USDA) measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. The brief providing the methodology of calculating these estimates is available on Feeding America’s Map the Meal Gap website. Food insecurity may reflect a household’s need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods. Geographies: Census tract (11), County (5), Health Districts (51_hd)",
         "long_name": "Estimated percentage of total people in food insecure households",
         "measure_type": "percent",
-        "short_description": "Food insecure persons are people living in households experiencing food insecurity (a lack of access to enough food for an active, healthy life).",
+        "short_description": "",
         "short_name": "Food Insecure Population Percentage (Feeding America)",
         "sources": [
             {

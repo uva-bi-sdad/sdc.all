@@ -7,10 +7,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Count of OBGYN care providers based on provider locations. Address data were collected from WebMD's online Physician Directory.",
+        "long_description": "OBGYN care availability is based on 2-step floating catchment areas. This method is an aggregation of OBGYNS per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined as the demand for OBGYNs (population served by OBGYNs).  Provider address data was collected from WebMD’s online physician directory. Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd), Civic Associations (51013_ca)",
         "long_name": "OBGYN care availability by count",
         "measure_type": "count",
-        "short_description": "Count of OBGYNs based on provider locations",
+        "short_description": "",
         "short_name": "OBGYN care availability (count)",
         "sources": [
             {

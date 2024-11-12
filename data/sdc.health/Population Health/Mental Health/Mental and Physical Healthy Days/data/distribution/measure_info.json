@@ -7,10 +7,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of the population self-reporting poor mental health in over 14 days of the previous month. Based on the Virginia Behavioral Risk Factor Surveillance Survey.",
+        "long_description": "Percent of the population self-reporting poor mental health in over 14 days of the previous month. Based on the Virginia Behavioral Risk Factor Surveillance Survey. Geographies: Census tract (11), County (5)",
         "long_name": "Percentage reporting poor mental health",
         "measure_type": "prevalence estimate",
-        "short_description": "Percent of the population self-reporting poor mental health",
+        "short_description": "",
         "short_name": "Percentage reporting poor mental health",
         "sources": [
             {
@@ -34,7 +34,7 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of the population self-reporting poor physical health in over 14 days of the previous month. Based on the Virginia Behavioral Risk Factor Surveillance Survey.",
+        "long_description": "Percent of the population self-reporting poor physical health in over 14 days of the previous month. Based on the Virginia Behavioral Risk Factor Surveillance Survey. Geographies: Census tract (11), County (5)",
         "long_name": "Percentage reporting poor physical health",
         "measure_type": "prevalence estimate",
         "short_description": "Percent of the population self-reporting poor physical health",

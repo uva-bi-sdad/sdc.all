@@ -7,10 +7,10 @@
         "data_type": "numeric",
         "equity_category": "",
         "layer": "",
-        "long_description": "Percent of the population self-reported to not be currently covered by any type of health insurance or health coverage plan. Based on American Community Survey Tables B27010 in ACS 2015/2019 5-year estimates.",
+        "long_description": "Percent of the self-reported population not covered by any type of health insurance or health coverage plan. Based on American Community Survey Tables B27010 in ACS 2015/2019 5-year estimates. Geographies: Block group (12), Census tract (11), County (5)",
         "long_name": "Percent of population without health insurance",
         "measure_type": "percent",
-        "short_description": "Percent of the population (ages 19-64) self-reported to not be currently covered by any type of health insurance or health coverage plan",
+        "short_description": "",
         "short_name": "Uninsured population",
         "sources": [
             {

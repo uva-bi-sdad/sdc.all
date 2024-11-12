@@ -7,10 +7,10 @@
         "data_type": "integer",
         "equity_category": "",
         "layer": "",
-        "long_description": "The number of owner-occupied households whose monthly housing costs from mortgage payments account for 30% or more of their household income in the past 12 months.",
+        "long_description": "The percentage of households whose monthly housing costs from mortgage payments or rent account for 30% or more of their household’s income in the past 12 months.",
         "long_name": "Number of Owner-Occupied Households Whose Mortgage Payments are 30% or More of Their Household Income",
         "measure_type": "count",
-        "short_description": "The number of owner-occupied households whose mortgage payments are 30% or more of their household income.",
+        "short_description": "",
         "short_name": "Cost-Burdened Households - Owner-Occupied & Mortgaged",
         "sources": [
             {
@@ -61,10 +61,10 @@
         "data_type": "decimal",
         "equity_category": "",
         "layer": "",
-        "long_description": "The percentage of households whose monthly housing costs from mortgage payments or rent account for 30% or more of their household income in the past 12 months.",
+        "long_description": "The percentage of households whose monthly housing costs from mortgage payments or rent account for 30% or more of their household’s income in the past 12 months.",
         "long_name": "Percentage of Households Whose Mortgage Payments or Rent Account for 30% or More of Their Household Income",
         "measure_type": "percent",
-        "short_description": "The percentage of households whose mortgage payments or rent account for 30% or more of their household income.",
+        "short_description": "",
         "short_name": "Cost-Burdened Households - Owner-Occupied & Mortgaged, and Renter-Occupied",
         "sources": [
             {
@@ -115,10 +115,10 @@
         "data_type": "decimal",
         "equity_category": "",
         "layer": "",
-        "long_description": "The percentage of renter-occupied households whose monthly housing costs from rent account for 30% or more of their household income in the past 12 months.",
+        "long_description": "The percentage of renter-occupied households whose monthly housing costs from rent payments account for 30% or more of their household’s income in the past 12 months.",
         "long_name": "Percentage of Renter-Occupied Households Whose Rent Accounts for 30% or More of Their Household Income",
         "measure_type": "percent",
-        "short_description": "The percentage of renter-occupied households whose rent accounts for 30% or more of their household income.",
+        "short_description": "",
         "short_name": "Cost-Burdened Households - Renter-Occupied",
         "sources": [
             {

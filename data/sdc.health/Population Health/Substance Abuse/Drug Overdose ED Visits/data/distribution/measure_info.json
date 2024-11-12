@@ -7,10 +7,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Monthly average emergency department visits for drug overdose per 100,000 residents.",
+        "long_description": "Average monthly emergency department visits for drug overdose per 100,000 residents. Geographies: County (5), Health Districts (51_hd)",
         "long_name": "Monthly average emergency department visits for drug overdose rate per 100,000 residents",
         "measure_type": "rate per 100k",
-        "short_description": "Monthly average emergency department visits for drug overdose per 100,000 residents.",
+        "short_description": "",
         "short_name": "Monthly average ED visits for drug overdose",
         "sources": [
             {

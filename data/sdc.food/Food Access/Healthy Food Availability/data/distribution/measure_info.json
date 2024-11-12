@@ -10,10 +10,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "The number of available healthy and less healthy food retailers. A higher score indicates more available healthy options per less healthy options. A score of 0 indicates no available options (food desert).",
+        "long_description": "The number of available healthy and less healthy food retailers. A higher score indicates more available healthy options per less healthy options. A score of 0 indicates no available options, therefore a food desert. Geographies: Block group (12), Census tract (11), County (5), Civic Association (51013_hd)",
         "long_name": "Retail food environment index",
         "measure_type": "index",
-        "short_description": "The number of available healthy and less healthy food retailers. A higher score indicates more available healthy options per less healthy options. A score of 0 indicates no available options (food desert).",
+        "short_description": "",
         "short_name": "Retail food environment index",
         "sources": [
             {
