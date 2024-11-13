@@ -115,10 +115,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. Food insecure children are those children living in households experiencing food insecurity. Food-insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
+        "long_description": "The percentage of food insecure children. Food insecurity refers to the US Department of Agriculture\u2019s (USDA) measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. Food insecure children are those children living in households that are not necessarily food insecure all the time. Food insecurity may reflect a household\u2019s need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods. Geographies: County (5)",
         "long_name": "Percentage of food insecure children",
         "measure_type": "percent",
-        "short_description": "Food insecure children are those children living in households experiencing food insecurity (a lack of access to enough food for an active, healthy life).",
+        "short_description": "",
         "short_name": "Percentage of food insecure children",
         "sources": [
             {
@@ -142,10 +142,10 @@
         "data_type": "numeric",
         "equity_category": "Affordability",
         "layer": "",
-        "long_description": "The average weekly dollar amount food-secure individuals report spending on food, as estimated by the Current Population Survey, divided by 21 (assuming three meals a day, seven days a week). This amount has been adjusted to reflect local food prices and relevant taxes.",
+        "long_description": "The average weekly dollar amount food-secure individuals report spending on food, as estimated by the Current Population Survey, divided by 21 (assuming three meals a day for seven days a week). This amount has been adjusted to reflect local food prices and relevant taxes. Geographies: County (5)",
         "long_name": "Average meal cost ($)",
         "measure_type": "cost",
-        "short_description": "The average weekly dollar amount food-secure individuals report spending on food.",
+        "short_description": "",
         "short_name": "Average meal cost ($)",
         "sources": [
             {
@@ -14425,10 +14425,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. Food insecure children are those children living in households experiencing food insecurity. Food-insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
+        "long_description": "The number of food insecure children. Food insecurity refers to the US Department of Agriculture\u2019s (USDA) measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. Food insecure children are those children living in households that are not necessarily food insecure all the time. Food insecurity may reflect a household\u2019s need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods. Geographies: County (5)",
         "long_name": "Count of food insecure children",
         "measure_type": "count",
-        "short_description": "Food insecure children are those children living in households experiencing food insecurity (a lack of access to enough food for an active, healthy life).",
+        "short_description": "",
         "short_name": "Food insecure children (count)",
         "sources": [
             {
@@ -15604,10 +15604,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The population estimates between age 20 and 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Between 20 and 64 population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The population estimates between age 20 and 64.",
         "measure_type": "",
-        "short_description": "The population estimates between age 20 and 64.",
+        "short_description": "",
         "short_name": "Population between age 20 and 64 direct",
         "sources": [
             {
@@ -15666,10 +15666,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The population estimates between age 20 and 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Between 20 and 64 population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The population estimates between age 20 and 64.",
         "measure_type": "",
-        "short_description": "The population estimates between age 20 and 64.",
+        "short_description": "",
         "short_name": "Population between age 20 and 64 parcels",
         "sources": [
             {
@@ -15852,10 +15852,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Over 64 population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The population over age 64.",
         "measure_type": "",
-        "short_description": "The population over age 64.",
+        "short_description": "",
         "short_name": "Population over age 64 direct",
         "sources": [
             {
@@ -15914,10 +15914,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The population over age 64. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Over 64 population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The population over age 64.",
         "measure_type": "",
-        "short_description": "The population over age 64.",
+        "short_description": "",
         "short_name": "Population over age 64 parcels",
         "sources": [
             {
@@ -16224,10 +16224,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The population estimates under age 20. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Under 20 population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The population estimates under age 20.",
         "measure_type": "",
-        "short_description": "The population estimates under age 20.",
+        "short_description": "",
         "short_name": "Population under age 20 direct",
         "sources": [
             {
@@ -16286,10 +16286,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The population estimates under age 20. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Under 20 population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The population estimates under age 20.",
         "measure_type": "",
-        "short_description": "The population estimates under age 20.",
+        "short_description": "",
         "short_name": "Population under age 20 parcels",
         "sources": [
             {
@@ -16867,10 +16867,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Number of households with income that is sufficient to pay for Food Costs using the Food budget, and in addition, the food budget is less than one third of  the dollar amount of Food Costs. ",
+        "long_description": "Number of households with income that is sufficient to pay for food costs using the food budget, and in addition, the food budget is less than one-third of the dollar amount of food costs. Geographies: Census Tract (11)",
         "long_name": "Estimated number of households classified at high risk of food insecurity",
         "measure_type": "count",
-        "short_description": "Count of households classified at high risk of food insecurity",
+        "short_description": "",
         "short_name": "Food Insecure Population Count - High Risk",
         "sources": [
             {
@@ -16964,10 +16964,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percentage of households at high risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
+        "long_description": "The percentage of households at high risk of racing food insecurity, based on financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses. Geographies: Census Tract (11)",
         "long_name": "Estimated percentage of total households classified at high risk of facing food insecurity",
         "measure_type": "percent",
-        "short_description": "Percentage of households classified at high risk of facing food insecurity",
+        "short_description": "",
         "short_name": "Food Insecure Population Percentage - High Risk",
         "sources": [
             {
@@ -17061,10 +17061,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Number of households with income that is sufficient to pay for Food Costs using the Food budget, and in addition, the food budget is larger than two-thirds of  the dollar amount of Food Costs. ",
+        "long_description": "Number of households with income that is sufficient to pay for food costs using the food budget, and in addition, the food budget is larger than two-thirds of the dollar amount of food costs. Geographies: Census Tract (11) ",
         "long_name": "Estimated number of households classified at low risk of food insecurity",
         "measure_type": "count",
-        "short_description": "Count of households classified at low risk of food insecurity",
+        "short_description": "",
         "short_name": "Food Insecure Population Count - Low Risk",
         "sources": [
             {
@@ -17158,10 +17158,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percentage of households at low risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
+        "long_description": "The percentage of households at low risk of racing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses. Geographies: Census Tract (11)",
         "long_name": "Estimated percentage of total households classified at low risk of facing food insecurity",
         "measure_type": "percent",
-        "short_description": "Percentage of households classified at low risk of facing food insecurity",
+        "short_description": "",
         "short_name": "Food Insecure Population Percentage - Low Risk",
         "sources": [
             {
@@ -17255,10 +17255,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Number of households with income that is sufficient to pay for Food Costs using the Food budget and, in addition, the food budget is larger than one third and less than two-thirds of the dollar amount of Food Costs. ",
+        "long_description": "Number of households with income that is sufficient to pay for food costs using the food budget, and in addition, the food budget is larger than one-third and less than two-thirds of the dollar amount of food costs. Geographies: Census Tract (11)",
         "long_name": "Estimated number of households classified at medium risk of food insecurity",
         "measure_type": "count",
-        "short_description": "Count of households classified at medium risk of food insecurity",
+        "short_description": "",
         "short_name": "Food Insecure Population Count - Medium Risk",
         "sources": [
             {
@@ -17352,10 +17352,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percentage of households at medium risk of facing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses.",
+        "long_description": "The percentage of households at medium risk of racing food insecurity, based on a financial model considering income category and household size. The food security status is determined after comparing household income versus cost-of-living. Cost of living includes eight categories, including food, housing, healthcare, childcare, transportation, taxes, internet, and other expenses. Geographies: Census Tract (11)",
         "long_name": "Estimated percentage of total households classified at medium risk of facing food insecurity",
         "measure_type": "percent",
-        "short_description": "Percentage of households classified at medium risk of facing food insecurity",
+        "short_description": "",
         "short_name": "Food Insecure Population Percentage - Medium Risk",
         "sources": [
             {
@@ -17503,10 +17503,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Monthly average emergency department visits for drug overdose per 100,000 residents.",
+        "long_description": "Average monthly emergency department visits for drug overdose per 100,000 residents. Geographies: County (5), Health Districts (51_hd)",
         "long_name": "Monthly average emergency department visits for drug overdose rate per 100,000 residents",
         "measure_type": "rate per 100k",
-        "short_description": "Monthly average emergency department visits for drug overdose per 100,000 residents.",
+        "short_description": "",
         "short_name": "Monthly average ED visits for drug overdose",
         "sources": [
             {
@@ -18578,10 +18578,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Count of dentists based on provider locations. Address data were collected from WebMD's online Physician Directory.",
+        "long_description": "Dental care availability is based on 2-step enhanced floating catchment areas. This method is an aggregation of dentists per population with ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined as the demand for dentists (which is the population served by dentists). Provide address data was collected from WebMD\u2019s online Physician Directory. Geographies: Block group (12), Census tract (11), County (5), Civic Associations (51013_ca)",
         "long_name": "Dental care availability by count",
         "measure_type": "count",
-        "short_description": "Count of dentists based on provider locations",
+        "short_description": "",
         "short_name": "Dental care availability (count)",
         "sources": [
             {
@@ -18858,10 +18858,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Emergency medical services availability based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
+        "long_description": "Emergency medical services availability is based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined as the demand for facilities (or the adult population). Geographies: Block group (12), Census tract (11), County (5), Civic Associations (51013_ca)",
         "long_name": "Emergency medical services geographic availability (3-step floating catchment areas)",
         "measure_type": "index",
-        "short_description": "Index of emergency medical services availability based on supply and demand of facilities",
+        "short_description": "",
         "short_name": "Emergency medical services geographic availability",
         "sources": [
             {
@@ -18885,10 +18885,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Count of emergency medical services facilities based on facility locations. Location data was collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository.",
+        "long_description": "Count of emergency medical services facilities based on facility locations. Location data was collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository. Geographies: Block group (12), Census tract (11), County (5), Civic Associations (51013_ca)",
         "long_name": "Availability of emergency medical services by count",
         "measure_type": "count",
-        "short_description": "Count of emergency medical services facilities based on facility locations",
+        "short_description": "",
         "short_name": "Emergency medical services availability (count)",
         "sources": [
             {
@@ -18912,10 +18912,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Median drive time in minutes to the ten closest emergency medical services facilities. Facility location data were collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
+        "long_description": "Median drive time in minutes to the ten closest emergency medical services facilities. Facility location data were collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository. Drive times were computer using Open Source Routing Machine (looking at roads for 2021) Geographies: Block group (12), Census tract (11), County (5), Civic Associations (51013_ca)",
         "long_name": "Emergency medical services availability by median drive time to the ten closest facilities in minutes",
         "measure_type": "count",
-        "short_description": "Median drive time (minutes) to the ten closest emergency medical services facilities",
+        "short_description": "",
         "short_name": "Emergency medical services availability (drive time)",
         "sources": [
             {
@@ -19101,10 +19101,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the number of people in food insecure households. Food insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
+        "long_description": "Estimate of the number of people in food-insecure households. Food insecurity refers to the US Department of Agriculture\u2019s (USDA) measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. Food insecurity may reflect a household\u2019s need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods. Geographies: Census tract (11)",
         "long_name": "Estimated number of food insecure people",
         "measure_type": "count",
-        "short_description": "Food insecure people live in households experiencing food insecurity (a lack of access to enough food for an active, healthy life).",
+        "short_description": "",
         "short_name": "Food Insecure Population Count",
         "sources": [
             {
@@ -19198,10 +19198,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the percent of people in food insecure households.  The brief providing the methodology of calculating these estimates is available at Feeding America's Map the Meal Gap website (linked below). Food insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
+        "long_description": "Estimate of percentage of people in food-insecure households. Food insecurity refers to the US Department of Agriculture\u2019s (USDA) measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. Food insecurity may reflect a household\u2019s need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods. Geographies: Census tract (11)",
         "long_name": "Estimated percentage of food insecure households",
         "measure_type": "percent",
-        "short_description": "Food insecure households experience food insecurity (a lack of access to enough food for an active, healthy life).",
+        "short_description": "",
         "short_name": "Food Insecure Population Percentage",
         "sources": [
             {
@@ -19295,10 +19295,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Number of persons with income that is sufficient to pay for Food Costs using the Food budget, and in addition, the food budget is larger than the dollar amount of Food Costs.",
+        "long_description": "The number of persons with an income that is sufficient to pay for food costs using the food budget, and in addition, the food budget is larger than the dollar amount of food costs. Geographies: Census Tract (11)",
         "long_name": "Estimated number of food secure people",
         "measure_type": "count",
-        "short_description": "Food secure people live in households that have proper access to food and lead a healthy life.",
+        "short_description": "",
         "short_name": "Food Secure Population Count",
         "sources": [
             {
@@ -19392,10 +19392,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Food security for a household means access by all members at all times to enough food for an active, healthy life. Food security includes at a minimum: The ready availability of nutritionally adequate and safe foods.",
+        "long_description": "Percentage of persons with an income that is sufficient to pay for food costs using the food budget, and in addition, the food budget is larger than the dollar amount of food costs. Geographies: Census Tract (11)",
         "long_name": "Estimated percentage of food secure households",
         "measure_type": "percent",
-        "short_description": "Food secure households have proper access to food and lead a healthy life.",
+        "short_description": "",
         "short_name": "Food Secure Households Percentage",
         "sources": [
             {
@@ -19516,10 +19516,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The count of females in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Female population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The count of females in population.",
         "measure_type": "",
-        "short_description": "The count of females in population.",
+        "short_description": "",
         "short_name": "Female population direct",
         "sources": [
             {
@@ -19578,10 +19578,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The count of females in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Female population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The count of females in population.",
         "measure_type": "",
-        "short_description": "The count of females in population.",
+        "short_description": "",
         "short_name": "Female population parcels",
         "sources": [
             {
@@ -19764,10 +19764,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The count of males in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Male population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The count of males in population.",
         "measure_type": "",
-        "short_description": "The count of males in population.",
+        "short_description": "",
         "short_name": "Male population direct",
         "sources": [
             {
@@ -19826,10 +19826,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The count of males in the total population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Male population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The count of males in population.",
         "measure_type": "",
-        "short_description": "The count of males in population.",
+        "short_description": "",
         "short_name": "Male population parcels",
         "sources": [
             {
@@ -20245,10 +20245,10 @@
         "data_type": "decimal",
         "equity_category": "",
         "layer": "",
-        "long_description": "The Gini Index is a summary measure of income inequality. The Gini coefficient incorporates the detailed shares data into a single statistic, which summarizes the dispersion of income across the entire income distribution. The Gini coefficient ranges from 0, indicating perfect equality (where everyone receives an equal share), to 1, perfect inequality (where only one recipient or group of recipients receives all the income). The Gini is based on the difference between the Lorenz curve (the observed cumulative income distribution) and the notion of a perfectly equal income distribution.",
+        "long_description": "The Gini Index is a summary measure of income inequality. The Gini coefficient incorporates the detailed shares data into a single statistic, which summarizes income dispersion across the entire income distribution. The Gini coefficient ranges from 0 (which indicates perfect equality where everyone receives an equal share) to 1 (perfect inequality where only one recipient or group of recipients receives all the income). The Gini is based on the difference between the Lorenz curve (the observed cumulative income distribution) and the notion of a perfectly equal income distribution.",
         "long_name": "Income Inequality (Gini Index)",
         "measure_type": "index",
-        "short_description": "The Gini Index is a summary measure of income inequality.",
+        "short_description": "",
         "short_name": "Income Inequality (Gini Index)",
         "sources": [
             {
@@ -20299,10 +20299,10 @@
         "data_type": "numeric",
         "equity_category": "",
         "layer": "",
-        "long_description": "The number of households in which at least one member of the household received benefits from the Food Stamp Program or the Supplemental Nutrition Assistance Program (SNAP) in the past 12 months.  This does not include households in which at least one member recieved benefits from WIC, the School Lunch Program, or assistance from food banks and not also from the Food Stamp Program or SNAP in the past 12 months.",
+        "long_description": "The number of households in which at least one member of the household received benefits from the Food Stamp Program or the Supplemental Nutrition Assistance Program (SNAP) in the past 12 months. This does not include households in which at least one member received benefits from WIC, the School Lunch Program, or assistance from food banks and not also from the Food Stamp Program or SNAP in the past 12 months. Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd)",
         "long_name": "Count of Households That Received Supplemental Nutrition Assistance Program (SNAP)",
         "measure_type": "count",
-        "short_description": "The number of households in which at least one member received benefits from the Food Stamp Program or SNAP in the past 12 months",
+        "short_description": "",
         "short_name": "Count of Households That Received SNAP",
         "sources": [
             {
@@ -20326,10 +20326,10 @@
         "data_type": "numeric",
         "equity_category": "",
         "layer": "",
-        "long_description": "The percentage of households in which at least one member of the household received benefits from the Food Stamp Program or the Supplemental Nutrition Assistance Program (SNAP) in the past 12 months.  This does not include households in which at least one member recieved benefits from WIC, the School Lunch Program, or assistance from food banks and not also from the Food Stamp Program or SNAP in the past 12 months.",
+        "long_description": "The percentage of households in which at least one member of the household received benefits from the Food Stamp Program or the Supplemental Nutrition Assistance Program (SNAP) in the past 12 months. This does not include households in which at least one member received benefits from WIC, the School Lunch Program, or assistance from food banks and not also from the Food Stamp Program or SNAP in the past 12 months. Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd)",
         "long_name": "Percentage of Households That Received Supplemental Nutrition Assistance Program (SNAP)",
         "measure_type": "percent",
-        "short_description": "The percentage of households in which at least one member received benefits from the Food Stamp Program or SNAP in the past 12 months",
+        "short_description": "",
         "short_name": "Percentage of Households That Received SNAP",
         "sources": [
             {
@@ -20601,10 +20601,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Hospital access score based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
+        "long_description": "Hospital access score is based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined as the demand for facilities (in the adult population). Geographies: Block group (12), Census tract (11), County (5)",
         "long_name": "Hospital geographic availability (3-step floating catchment areas)",
         "measure_type": "index",
-        "short_description": "Index of hospital availability based on supply and demand of facilities",
+        "short_description": "",
         "short_name": "Hospital geographic availability",
         "sources": [
             {
@@ -20628,10 +20628,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Count of hospitals based on facility locations. Location data were collected from the Center for Medicare and Medicaid Services.",
+        "long_description": "Count of hospitals based on facility locations. Location data was collected from the Center for Medicare and Medicaid Services repository.Geographies: Block group (12), Census tract (11), County (5)",
         "long_name": "Availability of hospitals by count",
         "measure_type": "count",
-        "short_description": "Count of hospitals based on facility locations",
+        "short_description": "",
         "short_name": "Hospital availability (count)",
         "sources": [
             {
@@ -20655,10 +20655,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Median drive time in minutes to the ten closest hospitals. Facility location data were collected from the Center for Medicare and Medicaid Services. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
+        "long_description": "Median drive time in minutes to the ten closest hospitals. Facility location data were collected from the Center for Medicare and Medicaid Services repository. Drive times were computer using Open Source Routing Machine (looking at roads for 2021). Geographies: Block group (12), Census tract (11), County (5)",
         "long_name": "Hospital availability by median drive time to the ten closest facilities in minutes",
         "measure_type": "count",
-        "short_description": "Median drive time (minutes) to the ten closest hospitals",
+        "short_description": "",
         "short_name": "Hospital drive time",
         "sources": [
             {
@@ -20952,10 +20952,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The percentage of individuals aged 16 years and over in the labor force. In other words, the labor force participation rate is the number of people who are either working or actively looking for work. The labor force participation rate is often used by economists as an indicator of economic development and growth. /n Here the labor force includes all people classified in the civilian labor force and members of the members of the U.S. Armed Forces (people on active duty with the United States Army, Air Force, Navy, Marine Corps, or Coast Guard). The civilian labor force population consists of all people aged 16 and older who are classified as employed and unemployed. /n Based on American Community Survey Table 5-year estimates from 2015 to 2021. Labor force participation rate data is available at the tract, county and health district level for the state of Virginia.",
+        "long_description": "The percentage of individuals, ages 16-64, in the active labor force. The job participation rate is often used by economists as an indicator of economic development and growth. Geographies: Census Tract (11), County (5)",
         "long_name": "Labor Force Participation Rate",
         "measure_type": "",
-        "short_description": "The percentage of individuals aged 16 years and over in the labor force.",
+        "short_description": "The percentage of individuals, ages 16-64, in the active labor force. The job participation rate is often used by economists as an indicator of economic development and growth. Geographies: Census Tract (11), County (5)",
         "short_name": "Labor Force Participation Rate",
         "sources": [
             {
@@ -20979,10 +20979,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The count of households with limited English. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Households with Limited English Direct population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The count of households with limited English.",
         "measure_type": "",
-        "short_description": "The count of households with limited English.",
+        "short_description": "",
         "short_name": "Households with limited English direct",
         "sources": [
             {
@@ -21041,10 +21041,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The count of households with limited English. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Households with Limited English Direct population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The count of households with limited English.",
         "measure_type": "",
-        "short_description": "The count of households with limited English.",
+        "short_description": "",
         "short_name": "Households with limited English parcels",
         "sources": [
             {
@@ -21366,10 +21366,10 @@
         "data_type": "integer",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Self-reported median household income in the past 12 months (in 2019 inflation adjusted-dollars. Based on the American Community Survey Table B19013 ACS 2015/2019 5-year estimates. The equation $a_{i} = b^\\frac{c}{d}$ was used.",
+        "long_description": "Self-reported median household income in the past 12 months (adjusted for 2019 inflation dollars). Based on the American Community Survey Table B19013 ACS 2015/2019 5-year estimates. The equation $a_{i} = b^\\frac{c}{d}$ was used. Geographies: Block Group (12), Census tract (11), County (5)",
         "long_name": "Median household income",
         "measure_type": "count",
-        "short_description": "Self-reported median household income in the past 12 months (in 2019 inflation adjusted-dollars.",
+        "short_description": "",
         "short_name": "Median household income",
         "sources": [
             {
@@ -21425,10 +21425,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Mental health services availability based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
+        "long_description": "Mental health services availability is based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined as the demand for facilities (or the adult population). Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd), Civic Associations (51013_ca)",
         "long_name": "Mental health services geographic availability (3-step  floating catchment areas)",
         "measure_type": "index",
-        "short_description": "Index of mental health services accessibility based on supply and demand of facilities",
+        "short_description": "",
         "short_name": "Mental health services geographic availability",
         "sources": [
             {
@@ -21452,10 +21452,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Count of mental health facilities based on facility locations. Location data were collected from the Substance Abuse and Mental Health Services Administration (SAMHSA) repository.",
+        "long_description": "Count of mental health facilities based on facility locations. Location data was collected from the Substance Abuse and Mental Health Services Administration (SAMHSA) repository. Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd), Civic Associations (51013_ca)",
         "long_name": "Availability of mental health services by count",
         "measure_type": "count",
-        "short_description": "Count of mental health facilities based on facility locations",
+        "short_description": "",
         "short_name": "Mental health services availability (count)",
         "sources": [
             {
@@ -21479,10 +21479,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Median drive time in minutes to the ten closest mental health facilities. Facility location data were collected from the Substance Abuse and Mental Health Services Administration (SAMHSA) repository. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
+        "long_description": "Median drive time in minutes to the ten closest mental health facilities. Facility location data were collected from the Substance Abuse and Mental Health Services Administration (SAMHSA) repository. Drive times were computer using Open Source Routing Machine (looking at roads for 2021). Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd), Civic Associations (51013_ca)",
         "long_name": "Mental health availability by median drive time to the ten closest facilities in minutes",
         "measure_type": "count",
-        "short_description": "Median drive time (minutes) to the ten closest mental health facilities",
+        "short_description": "",
         "short_name": "Mental health availability (drive time)",
         "sources": [
             {
@@ -22235,10 +22235,10 @@
         "data_type": "integer",
         "equity_category": "",
         "layer": "",
-        "long_description": "The number of owner-occupied households whose monthly housing costs from mortgage payments account for 30% or more of their household income in the past 12 months.",
+        "long_description": "The percentage of households whose monthly housing costs from mortgage payments or rent account for 30% or more of their household\u2019s income in the past 12 months.",
         "long_name": "Number of Owner-Occupied Households Whose Mortgage Payments are 30% or More of Their Household Income",
         "measure_type": "count",
-        "short_description": "The number of owner-occupied households whose mortgage payments are 30% or more of their household income.",
+        "short_description": "",
         "short_name": "Cost-Burdened Households - Owner-Occupied & Mortgaged",
         "sources": [
             {
@@ -22265,10 +22265,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "The number of available healthy and less healthy food retailers. A higher score indicates more available healthy options per less healthy options. A score of 0 indicates no available options (food desert).",
+        "long_description": "The number of available healthy and less healthy food retailers. A higher score indicates more available healthy options per less healthy options. A score of 0 indicates no available options, therefore a food desert. Geographies: Block group (12), Census tract (11), County (5), Civic Association (51013_hd)",
         "long_name": "Retail food environment index",
         "measure_type": "index",
-        "short_description": "The number of available healthy and less healthy food retailers. A higher score indicates more available healthy options per less healthy options. A score of 0 indicates no available options (food desert).",
+        "short_description": "",
         "short_name": "Retail food environment index",
         "sources": [
             {
@@ -22319,10 +22319,10 @@
         "data_type": "numeric",
         "equity_category": "",
         "layer": "",
-        "long_description": "Percent of the population self-reported to not be currently covered by any type of health insurance or health coverage plan. Based on American Community Survey Tables B27010 in ACS 2015/2019 5-year estimates.",
+        "long_description": "Percent of the self-reported population not covered by any type of health insurance or health coverage plan. Based on American Community Survey Tables B27010 in ACS 2015/2019 5-year estimates. Geographies: Block group (12), Census tract (11), County (5)",
         "long_name": "Percent of population without health insurance",
         "measure_type": "percent",
-        "short_description": "Percent of the population (ages 19-64) self-reported to not be currently covered by any type of health insurance or health coverage plan",
+        "short_description": "",
         "short_name": "Uninsured population",
         "sources": [
             {
@@ -22967,10 +22967,10 @@
         "data_type": "numeric",
         "equity_category": "",
         "layer": "",
-        "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the number of people in food insecure households.  The brief providing the methodology of calculating these estimates is available at Feeding America's Map the Meal Gap website (linked below). Food insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
+        "long_description": "Estimated number of total people in food insecure households according to Feeding America. Food insecurity refers to the US Department of Agriculture\u2019s (USDA) measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. The brief providing the methodology of calculating these estimates is available on Feeding America\u2019s Map the Meal Gap website. Food insecurity may reflect a household\u2019s need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods. Geographies: Census tract (11), County (5), Health Districts (51_hd)",
         "long_name": "Estimated number of total people in food insecure households",
         "measure_type": "count",
-        "short_description": "Food insecure persons are people living in households experiencing food insecurity (a lack of access to enough food for an active, healthy life).",
+        "short_description": "",
         "short_name": "Food Insecure Population Count (Feeding America)",
         "sources": [
             {
@@ -23058,10 +23058,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Count of OBGYN care providers based on provider locations. Address data were collected from WebMD's online Physician Directory.",
+        "long_description": "OBGYN care availability is based on 2-step floating catchment areas. This method is an aggregation of OBGYNS per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined as the demand for OBGYNs (population served by OBGYNs).  Provider address data was collected from WebMD\u2019s online physician directory. Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd), Civic Associations (51013_ca)",
         "long_name": "OBGYN care availability by count",
         "measure_type": "count",
-        "short_description": "Count of OBGYNs based on provider locations",
+        "short_description": "",
         "short_name": "OBGYN care availability (count)",
         "sources": [
             {
@@ -23419,10 +23419,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Count of pediatricians based on provider locations. Address data were collected from WebMD's online Physician Directory.",
+        "long_description": "Pediatric care availability is based on 2-step floating catchment areas. This method is an aggregation of pediatricians per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined as the demand for pediatricians (population under 16). Provider address data was collected from WebMD\u2019s online physician directory. Geographies: Block group (12), Census tract (11), County (5), Civic Association, (51013_ca), Health Districts (51_hd)",
         "long_name": "Pediatric care availability by count",
         "measure_type": "count",
-        "short_description": "Count of pediatricians based on provider locations",
+        "short_description": "",
         "short_name": "Pediatric care availability (count)",
         "sources": [
             {
@@ -23478,10 +23478,10 @@
         "data_type": "decimal",
         "equity_category": "",
         "layer": "",
-        "long_description": "The percentage of households whose monthly housing costs from mortgage payments or rent account for 30% or more of their household income in the past 12 months.",
+        "long_description": "The percentage of households whose monthly housing costs from mortgage payments or rent account for 30% or more of their household\u2019s income in the past 12 months.",
         "long_name": "Percentage of Households Whose Mortgage Payments or Rent Account for 30% or More of Their Household Income",
         "measure_type": "percent",
-        "short_description": "The percentage of households whose mortgage payments or rent account for 30% or more of their household income.",
+        "short_description": "",
         "short_name": "Cost-Burdened Households - Owner-Occupied & Mortgaged, and Renter-Occupied",
         "sources": [
             {
@@ -23532,10 +23532,10 @@
         "data_type": "decimal",
         "equity_category": "",
         "layer": "",
-        "long_description": "The percentage of renter-occupied households whose monthly housing costs from rent account for 30% or more of their household income in the past 12 months.",
+        "long_description": "The percentage of renter-occupied households whose monthly housing costs from rent payments account for 30% or more of their household\u2019s income in the past 12 months.",
         "long_name": "Percentage of Renter-Occupied Households Whose Rent Accounts for 30% or More of Their Household Income",
         "measure_type": "percent",
-        "short_description": "The percentage of renter-occupied households whose rent accounts for 30% or more of their household income.",
+        "short_description": "",
         "short_name": "Cost-Burdened Households - Renter-Occupied",
         "sources": [
             {
@@ -24012,10 +24012,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of the population self-reporting poor mental health in over 14 days of the previous month. Based on the Virginia Behavioral Risk Factor Surveillance Survey.",
+        "long_description": "Percent of the population self-reporting poor mental health in over 14 days of the previous month. Based on the Virginia Behavioral Risk Factor Surveillance Survey. Geographies: Census tract (11), County (5)",
         "long_name": "Percentage reporting poor mental health",
         "measure_type": "prevalence estimate",
-        "short_description": "Percent of the population self-reporting poor mental health",
+        "short_description": "",
         "short_name": "Percentage reporting poor mental health",
         "sources": [
             {
@@ -24039,7 +24039,7 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Percent of the population self-reporting poor physical health in over 14 days of the previous month. Based on the Virginia Behavioral Risk Factor Surveillance Survey.",
+        "long_description": "Percent of the population self-reporting poor physical health in over 14 days of the previous month. Based on the Virginia Behavioral Risk Factor Surveillance Survey. Geographies: Census tract (11), County (5)",
         "long_name": "Percentage reporting poor physical health",
         "measure_type": "prevalence estimate",
         "short_description": "Percent of the population self-reporting poor physical health",
@@ -24228,10 +24228,10 @@
         "data_type": "numeric",
         "equity_category": "",
         "layer": "",
-        "long_description": "Food insecurity refers to USDA's measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. This measure is an estimate of the percent of people in food insecure households.  The brief providing the methodology of calculating these estimates is available at Feeding America's Map the Meal Gap website (linked below). Food insecure households are not necessarily food insecure all the time. Food insecurity may reflect a household's need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods.",
+        "long_description": "Estimated percentage of total people in food insecure households according to Feeding America. Food insecurity refers to the US Department of Agriculture\u2019s (USDA) measure of lack of access, at times, to enough food for an active, healthy life for all household members and limited or uncertain availability of nutritionally adequate foods. The brief providing the methodology of calculating these estimates is available on Feeding America\u2019s Map the Meal Gap website. Food insecurity may reflect a household\u2019s need to make trade-offs between important basic needs, such as housing or medical bills, and purchasing nutritionally adequate foods. Geographies: Census tract (11), County (5), Health Districts (51_hd)",
         "long_name": "Estimated percentage of total people in food insecure households",
         "measure_type": "percent",
-        "short_description": "Food insecure persons are people living in households experiencing food insecurity (a lack of access to enough food for an active, healthy life).",
+        "short_description": "",
         "short_name": "Food Insecure Population Percentage (Feeding America)",
         "sources": [
             {
@@ -24336,10 +24336,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas: \\[\\frac{population_{r}}{meters^{2}_{r}}1609.344^{2}\\] Where r is each region (e.g., census tract or county). For non-census geographies, values are redistributed based on proportional overlap between census block groups and the local regions, using the redistribute R package.",
+        "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas. Where r is each region (for example, census tract or county). For non-census geographies, values are redistributed based on proportional overlap between census block groups and the local regions, using the redistribute R package.",
         "long_name": "Population Density: People Per Square Mile (direct method)",
         "measure_type": "",
-        "short_description": "People per square mile (direct method).",
+        "short_description": "",
         "short_name": "Population Density (direct method)",
         "sources": [
             {
@@ -24446,10 +24446,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas: \\[\\frac{population_{r}}{meters^{2}_{r}}1609.344^{2}\\] Where r is each region (e.g., census tract or county). For non-census geographies, values are redistributed from census block groups to parcels, based on proportional geometric overlap and weighted by number of living units per parcel, then from parcels to the local regions based on proportional geometric overlap, using the redistribute R package.",
+        "long_description": "Population density, or number of people per square mile, as calculated from census ACS population data and shapefile areas. Where r is each region (for example, census tract or county). For non-census geographies, values are redistributed based on proportional geometric overlap and weighted by the number of living units per parcel, then from parcels to the local regions based on proportional geometric overlap, using the redistribute R package.",
         "long_name": "Population Density: People Per Square Mile (parcels method)",
         "measure_type": "",
-        "short_description": "People per square mile (parcels method).",
+        "short_description": "",
         "short_name": "Population Density (parcels method)",
         "sources": [
             {
@@ -24525,7 +24525,7 @@
         "long_description": "Total number of people, as reported in census ACS population data. For non-census geographies, values are redistributed based on proportional overlap between census block groups and the local regions, using the redistribute R package.",
         "long_name": "Population: Total Number of People (direct method)",
         "measure_type": "",
-        "short_description": "Total number of people (direct method).",
+        "short_description": "",
         "short_name": "Population (direct method)",
         "sources": [
             {
@@ -24598,10 +24598,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Total number of people, as reported in census ACS population data. For non-census geographies, values are redistributed from census block groups to parcels, based on proportional geometric overlap and weighted by number of living units per parcel, then from parcels to the local regions based on proportional geometric overlap, using the redistribute R package.",
+        "long_description": "Total number of people, as reported in census ACS population data. For non-census geographies, values are redistributed from census block groups to parcels, based on proportional geometric overlap and weighted by the number of living units per parcel, then from parcels to the local regions based on proportional geometric overlap, using the redistribute R package.",
         "long_name": "Population: Total Number of People (parcels method)",
         "measure_type": "",
-        "short_description": "Total number of people (parcels method).",
+        "short_description": "",
         "short_name": "Population (parcels method)",
         "sources": [
             {
@@ -25017,10 +25017,10 @@
         "data_type": "numeric",
         "equity_category": "",
         "layer": "",
-        "long_description": "Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees. Ambulatory care refers to diagnoses that are usually treatable in outpatient settings. This data is based on Medicare claims and comes from County Health Rankings.",
+        "long_description": "Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees. Ambulatory care refers to diagnoses that are usually treatable in outpatient settings. This data is based on Medicare claims and comes from County Health Rankings. Geographies: County (5), Health Districts (51_hd)",
         "long_name": "Preventable hospital stays per 100,000 Medicare enrollees",
         "measure_type": "rate per 100K",
-        "short_description": "Rate of hospital stays for ambulatory-care sensitive conditions per 100,000 Medicare enrollees",
+        "short_description": "",
         "short_name": "Preventable hospitalizations per 100,000",
         "sources": [
             {
@@ -25108,10 +25108,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Count of primary care physicians based on provider locations. Address data were collected from WebMD's online Physician Directory.",
+        "long_description": "Primary care availability is based on 2-step floating catchment areas. This method is an aggregation of physicians per population ratios weighted by distance or travel time in each catchment area (area within which a provider is accessible). Weights are defined as the demand for physicians (population served by physicians). Provider address data was collected from WebMD\u2019s online physician directory. Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd), Civic Associations (51013_ca)",
         "long_name": "Primary care availability by count",
         "measure_type": "count",
-        "short_description": "Count of primary care physicians based on provider locations",
+        "short_description": "",
         "short_name": "Primary care availability (count)",
         "sources": [
             {
@@ -26193,10 +26193,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The Asian American/Pacific Islander population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Asian American/Pacific Islanders population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Asian American/Pacific Islander population.",
         "measure_type": "",
-        "short_description": "The Asian American/Pacific Islander population.",
+        "short_description": "",
         "short_name": "The Asian American/Pacific Islander population direct",
         "sources": [
             {
@@ -26255,10 +26255,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The Asian American/Pacific Islander population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Asian American/Pacific Islanders population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Asian American/Pacific Islander population.",
         "measure_type": "",
-        "short_description": "The Asian American/Pacific Islander population.",
+        "short_description": "",
         "short_name": "The Asian American/Pacific Islander population parcels",
         "sources": [
             {
@@ -26441,10 +26441,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The Black population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Black population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Black population.",
         "measure_type": "",
-        "short_description": "The Black population.",
+        "short_description": "",
         "short_name": "The Black population direct",
         "sources": [
             {
@@ -26503,10 +26503,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The Black population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Black population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Black population.",
         "measure_type": "",
-        "short_description": "The Black population.",
+        "short_description": "",
         "short_name": "The Black population parcels",
         "sources": [
             {
@@ -26813,10 +26813,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The Hispanic/Latino population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Hispanic/Latino population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Hispanic/Latino population.",
         "measure_type": "",
-        "short_description": "The Hispanic/Latino population.",
+        "short_description": "",
         "short_name": "The Hispanic/Latino population direct",
         "sources": [
             {
@@ -26875,10 +26875,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The Hispanic/Latino population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Hispanic/Latino population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Hispanic/Latino population.",
         "measure_type": "",
-        "short_description": "The Hispanic/Latino population.",
+        "short_description": "",
         "short_name": "The Hispanic/Latino population parcels",
         "sources": [
             {
@@ -27061,10 +27061,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The Native population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Native population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Native population.",
         "measure_type": "",
-        "short_description": "The Native population.",
+        "short_description": "",
         "short_name": "The Native population direct",
         "sources": [
             {
@@ -27123,10 +27123,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The Native population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Native population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Native population.",
         "measure_type": "",
-        "short_description": "The Native population.",
+        "short_description": "",
         "short_name": "The Native population parcels",
         "sources": [
             {
@@ -27309,10 +27309,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The Other racial population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Other Racial population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Other racial population.",
         "measure_type": "",
-        "short_description": "The Other racial population.",
+        "short_description": "",
         "short_name": "The Other racial population direct",
         "sources": [
             {
@@ -27371,10 +27371,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The Other racial population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Other Racial population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Other racial population.",
         "measure_type": "",
-        "short_description": "The Other racial population.",
+        "short_description": "",
         "short_name": "The Other racial population parcels",
         "sources": [
             {
@@ -27681,10 +27681,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The two or more races population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Two or More Races population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The two or more races population.",
         "measure_type": "",
-        "short_description": "The two or more races population.",
+        "short_description": "",
         "short_name": "The two or more races population direct",
         "sources": [
             {
@@ -27743,10 +27743,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The two or more races population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Two or More Races population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The two or more races population.",
         "measure_type": "",
-        "short_description": "The two or more races population.",
+        "short_description": "",
         "short_name": "The two or more races population parcels",
         "sources": [
             {
@@ -27929,10 +27929,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The White population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The White population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The White population.",
         "measure_type": "",
-        "short_description": "The White population.",
+        "short_description": "",
         "short_name": "The White population direct",
         "sources": [
             {
@@ -27991,10 +27991,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The White population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The White population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The White population.",
         "measure_type": "",
-        "short_description": "The White population.",
+        "short_description": "",
         "short_name": "The White population parcels",
         "sources": [
             {
@@ -29208,10 +29208,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The average SNAP shortfall is the estimated dollar amount that a household lacks to pay for their food costs. SNAP benefit is the dollar amount of dollars that a household may receive for supplemental food assistance after eligibility.  The SNAP shortfall is the ratio between the SNAP benefit divided by the food shortfall money.  The weighted average uses the number of households in different income categories, household combination and geography, and average is estimated for every census tract.",
+        "long_description": "The average supplemental Nutrition Assistance Program (SNAP) shortfall is the estimated dollar amount that a household lacks to pay for their food costs. SNAP benefit is the dollar amount of money that a household may receive for supplemental food assistance after eligibility. The SNAP shortfall is the ratio between the SNAP benefit divided by the food shortfall money. The weighted average uses the number of households in different income categories, household combinations, and geography, and the average is estimated for every census tract. Geographies: Census Tract (11)",
         "long_name": "Average SNAP Shortfall",
         "measure_type": "ratio",
-        "short_description": "The average SNAP shortfall is the estimated dollar amount that a household lacks to pay for their food costs",
+        "short_description": "",
         "short_name": "Average SNAP Shortfall",
         "sources": [
             {
@@ -29319,10 +29319,10 @@
         "data_type": "numeric",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "Weighted mean average of the dollar amount of Supplemental Nutrition Assistance Program (SNAP) benefit. The financial benefit is estimated following the guidelines and procedures from the Virginia Department of Social Services. The weighting component corresponds to the number of households in different income categories, household combinations, and geographies. The weighted average is obtained for every census tract.",
+        "long_description": "Weighted mean average of the dollar amount of Supplemental Nutrition Assitance Program (SNAP) benefit. The financial benefit is estimated following the guidelines and procedures from the Virginia Department of Social Services. The weighting component corresponds to the number of households in different income categories, household combinations, and geographies. The weighted average is obtained for every census tract. Geographies: Census Tract (11)",
         "long_name": "Average SNAP Benefit",
         "measure_type": "dollars",
-        "short_description": "Weighted mean average dollar amount of SNAP benefits",
+        "short_description": "",
         "short_name": "Average SNAP Benefit",
         "sources": [
             {
@@ -29462,10 +29462,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Substance use/behavioral health services availability based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
+        "long_description": "Substance use/behavioral health services availability is based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined as the demand for facilities (in the adult population). Geographies: Block group (12), Census tract (11), County (5), Health District (51_hd), Civic Associations (51013_ca)",
         "long_name": "Substance use/behavioral health services geographic availability (3-step floating catchment areas)",
         "measure_type": "index",
-        "short_description": "Index of substance use/behavioral health services availability based on supply and demand of facilities",
+        "short_description": "",
         "short_name": "Substance use/behavioral health services geographic availability",
         "sources": [
             {
@@ -29489,10 +29489,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Count of substance use/behavioral health facilities based on facility locations. Location data were collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository.",
+        "long_description": "Count of substance use/behavioral health facilities based on facility locations. Location data was collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository. Geographies: Block group (12), Census tract (11), County (5), Health District (51_hd), Civic Associations (51013_ca",
         "long_name": "Availability of substance use/behavioral health by count",
         "measure_type": "count",
-        "short_description": "Count of substance use/behavioral health facilities based on facility locations",
+        "short_description": "",
         "short_name": "Substance use/behavioral health availability (count)",
         "sources": [
             {
@@ -29516,10 +29516,10 @@
         "data_type": "numeric",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Median drive time in minutes to the ten closest substance use/behavioral health services facilities. Facility location data were collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
+        "long_description": "Median drive time in minutes to the ten closest substance use/behavioral health services facilities. Facility location data were collected from the Homeland Infrastructure Foundation-Level Data (HIFLD) repository. Drive times were computer using Open Source Routing Machine (looking at roads for 2021). Geographies: Block group (12), Census tract (11), County (5), Health District (51_hd), Civic Associations (51013_ca)",
         "long_name": "Substance use/behavioral health services availability by median drive time to the ten closest facilities in minutes",
         "measure_type": "count",
-        "short_description": "Median drive time (minutes) to the ten closest substance use/behavioral health services facilities",
+        "short_description": "",
         "short_name": "Substance use/behavioral health services availability (drive time)",
         "sources": [
             {
@@ -30144,10 +30144,10 @@
         "layer": {
             "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.health/main/Health%20Care%20Services/Urgent%20Care%20Centers/Service%20Access%20Scores/data/distribution/urgent_care_points_2022.geojson"
         },
-        "long_description": "Urgent care availability based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined for the demand for facilities (adult population).",
+        "long_description": "Urgent care availability is based on 3-step floating catchment areas. This method is an aggregation of facilities per population ratios weighted by distance or travel time in each catchment area (area within which a facility is accessible). Weights are defined as the demand for facilities (in the adult population). Geographies: Block group (12), Census tract (11), County (5)",
         "long_name": "Urgent care geographic availability (3-step floating catchment areas)",
         "measure_type": "index",
-        "short_description": "Index of urgent care availability based on supply and demand of facilities",
+        "short_description": "",
         "short_name": "Urgent care geographic availability",
         "sources": [
             {
@@ -30173,10 +30173,10 @@
         "layer": {
             "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.health/main/Health%20Care%20Services/Urgent%20Care%20Centers/Service%20Access%20Scores/data/distribution/urgent_care_points_2022.geojson"
         },
-        "long_description": "Count of urgent care facilities based on facility locations. Location data was collected from Google Maps.",
+        "long_description": "Count of urgent care facilities based on facility locations. Location data was collected from the Google Maps. Geographies: Block group (12), Census tract (11), County (5)",
         "long_name": "Availability of urgent care by count",
         "measure_type": "count",
-        "short_description": "Count of urgent care facilities based on facility locations",
+        "short_description": "",
         "short_name": "Urgent care availability (count)",
         "sources": [
             {
@@ -30202,10 +30202,10 @@
         "layer": {
             "source": "https://raw.githubusercontent.com/uva-bi-sdad/sdc.health/main/Health%20Care%20Services/Urgent%20Care%20Centers/Service%20Access%20Scores/data/distribution/urgent_care_points_2022.geojson"
         },
-        "long_description": "Median drive time in minutes to the ten closest urgent care facilities. Facility location data were collected from Google Maps. Drive times were computed using Open Source Routing Machine (Using roads for year 2021).",
+        "long_description": "Median drive time in minutes to the ten closest urgent care facilities. Facility location data were collected from Google Maps. Drive times were computer using Open Source Routing Machine (looking at roads for 2021). Geographies: Block group (12), Census tract (11), County (5)",
         "long_name": "Urgent care availability by median drive time to the ten closest facilities in minutes",
         "measure_type": "count",
-        "short_description": "Median drive time (minutes) to the ten closest urgent care facilities",
+        "short_description": "",
         "short_name": "Urgent care availability (drive time)",
         "sources": [
             {
@@ -30229,10 +30229,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The Veteran population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Veteran population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and target regions, then the value of each block group is aggregated/disaggregated to any intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Veteran population.",
         "measure_type": "",
-        "short_description": "The Veteran population.",
+        "short_description": "",
         "short_name": "The Veteran population direct",
         "sources": [
             {
@@ -30291,10 +30291,10 @@
         "data_type": "decimal",
         "equity_category": "Status",
         "layer": "",
-        "long_description": "The Veteran population. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
+        "long_description": "The Veteran population percent. 5-year ACS estimates in provided census geolevels. For non-census geolevels (such as zip codes), spatial overlaps are calculated between census block groups and parcels, then the value of each block group is divided across all living units within each intersecting parcel. Once parcel-level values are assigned, spatial overlaps are calculated between parcels and target regions such that parcel values can be aggregated to each intersecting target region based on proportion of overlap. Redistribution to non-census geolevels was performed using the redistribute R package.",
         "long_name": "The Veteran population.",
         "measure_type": "",
-        "short_description": "The Veteran population.",
+        "short_description": "",
         "short_name": "The Veteran population parcels",
         "sources": [
             {
