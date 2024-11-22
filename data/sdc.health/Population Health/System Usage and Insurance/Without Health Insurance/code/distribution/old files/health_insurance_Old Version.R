@@ -7,7 +7,7 @@ library(tidycensus)
 library(tidyverse)
 
 census_api_key(Sys.getenv("CENSUS_API_KEY"))
-install=TRUE
+
 # DC, MD, VA data pull -----------------------------------------
 
 states <- c("VA", "MD", "DC")
