@@ -42,6 +42,8 @@ library(tidyverse)
 library(readr)
 library(stringr)
 library(readxl)
+library(reshape2)
+
 
 # working directory
 setwd("~/git/sdc.health_dev/Health Care Services/Health Professionals/VA Graduates")
@@ -49,13 +51,13 @@ setwd("~/git/sdc.health_dev/Health Care Services/Health Professionals/VA Graduat
 ###################
 # LOAD COUNTY DATA
 ###################
-under <- read_csv("data/working/out_under.csv")
+under <- read_csv("/Users/avagutshall/Desktop/folder/sdc.health_dev/Health Care Services/Health Professionals/VA Graduates/data/working/out_under.csv")
 under$geoid <- as.character(under$geoid)
-grad <- read_csv("data/working/out_grad.csv")
+grad <- read_csv("/Users/avagutshall/Desktop/folder/sdc.health_dev/Health Care Services/Health Professionals/VA Graduates/data/working/out_grad.csv")
 grad$geoid <- as.character(grad$geoid)
-profs <- read_csv("data/working/out_profs.csv")
+profs <- read_csv("/Users/avagutshall/Desktop/folder/sdc.health_dev/Health Care Services/Health Professionals/VA Graduates/data/working/out_profs.csv")
 profs$geoid <- as.character(profs$geoid)
-two <- read_csv("data/working/out_two.csv")
+two <- read_csv("/Users/avagutshall/Desktop/folder/sdc.health_dev/Health Care Services/Health Professionals/VA Graduates/data/working/out_two.csv")
 two$geoid <- as.character(two$geoid)
 
 ######################
@@ -63,7 +65,7 @@ two$geoid <- as.character(two$geoid)
 ######################
 
 # load AHEC regions (shared by Rexford Anson-Dwamena)
-ahec <- read_excel("data/original/AHEC_RUCAs.xlsx")
+ahec <- read_excel("/Users/avagutshall/Desktop/folder/sdc.health_dev/Health Care Services/Health Professionals/VA Graduates/data/original/AHEC_RUCAs.xlsx")
 # correct Blue Ridge AHEC name
 ahec$`AHEC Name`[ahec$`AHEC Code` == 1] = "Blue Ridge AHEC"
 
@@ -216,7 +218,7 @@ under <- under  %>%
             `2018` = sum(`2018`),
             `2019` = sum(`2019`)) %>%
   ungroup() 
-write_csv(under, "data/working/under_ahec.csv")
+write_csv(under, "/Users/avagutshall/Downloads/under_ahec.csv")
 
 grad <- grad  %>%
   group_by(geoid, region_name, region_type) %>%
@@ -225,7 +227,7 @@ grad <- grad  %>%
             `2018` = sum(`2018`),
             `2019` = sum(`2019`)) %>%
   ungroup() 
-write_csv(grad, "data/working/grad_ahec.csv")
+write_csv(grad, "/Users/avagutshall/Downloads/grad_ahec.csv")
 
 profs <- profs  %>%
   group_by(geoid, region_name, region_type) %>%
@@ -234,7 +236,7 @@ profs <- profs  %>%
             `2018` = sum(`2018`),
             `2019` = sum(`2019`)) %>%
   ungroup()
-write_csv(profs, "data/working/profs_ahec.csv")
+write_csv(profs, "/Users/avagutshall/Downloads/profs_ahec.csv")
 
 two <- two  %>%
   group_by(geoid, region_name, region_type) %>%
@@ -243,7 +245,7 @@ two <- two  %>%
             `2018` = sum(`2018`),
             `2019` = sum(`2019`)) %>%
   ungroup() 
-write_csv(two, "data/working/two_ahec.csv")
+write_csv(two, "/Users/avagutshall/Downloads/two_ahec.csv")
 
 # long format
 out_under_long <- melt(under,
@@ -294,4 +296,4 @@ out_df <- rbind(out_under_long, out_grad_long, out_prof_long, out_two_long)
 
 # save to distribution folder
 # write_csv(out_df, "data/distribution/va_ahec_schev_2016_2019_health_degrees_awarded.csv")
-readr::write_csv(out_df, xzfile("data/distribution/va_ahec_schev_2016_2019_health_degrees_awarded.csv.xz", compression = 9))
+readr::write_csv(out_df, xzfile("/Users/avagutshall/Downloads/va_ahec_schev_2016_2023_health_degrees_awarded.csv.xz", compression = 9))
