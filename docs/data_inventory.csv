@@ -818,7 +818,7 @@ demographics,veteran_count_direct,The Veteran population direct,2009,2021,,X,X,,
 demographics,veteran_percent_direct,The Veteran population percent direct,2009,2021,,X,X,,X,X,,X,,X,X,X,X,X,X
 demographics,veteran_count_parcels,The Veteran population parcels,2009,2021,,X,X,,X,X,,,,X,,,,X,
 demographics,veteran_percent_parcels,The Veteran population percent parcels,2009,2021,,X,X,,X,X,,,,X,,,,X,
-demographics,segregation_indicator_geo20,Segregation indicator,2015,2022,,,,,,,,,,X,X,,,X,
+demographics,segregation_indicator_geo20,Segregation indicator,2015,2023,,,,,,,,,,X,,,,X,
 demographics,segregation_indicator_geo10,,2015,2019,,,,,,,,,,,,,,X,
 demographics,gender_male_count_direct,Male population direct,2009,2023,,X,X,,X,X,,,,X,,,,X,
 demographics,gender_total_count_direct,Total count of the population direct,2009,2023,,X,X,,X,X,,,,X,,,,X,
@@ -842,6 +842,7 @@ demographics,gender_male_percent_direct,Percentage of males direct,2009,2021,,,,
 demographics,gender_female_percent_direct,Percentage of females direct,2009,2021,,,,,,,,X,,X,X,,X,X,X
 demographics,population_density_geo20,"Population Density, Persons per Square Mile",2015,2022,,,,,,,,,,X,X,,,X,
 demographics,population_density_geo10,,2015,2019,,,,,,,,,,,,,,X,
+demographics,population_density_geo20,"Population Density, Persons per Square Mile",2015,2023,,,,,,,,,,X,X,,,X,
 demographics,age_total_count_direct,Total count of the population direct,2009,2021,,X,X,,X,X,,X,,X,X,X,X,X,X
 demographics,age_20_64_percent_direct,Percent of the population between age 20 and 64 direct,2009,2021,,X,X,,X,X,,X,,X,X,X,X,X,X
 demographics,age_65_plus_percent_direct,Percent of the population over age 64 direct,2009,2021,,X,X,,X,X,,X,,X,X,X,X,X,X
@@ -908,10 +909,9 @@ demographics,language_hh_limited_english_count_direct,Households with limited En
 demographics,language_hh_limited_english_percent_parcels,Percentage of households with limited English parcels,2016,2023,X,X,X,X,X,X,,X,,X,,,,X,
 demographics,language_hh_limited_english_count_parcels,Households with limited English parcels,2016,2023,X,X,X,X,X,X,,X,,X,,,,X,
 demographics,language_hh_limited_english_count_parcels,Households with limited English parcels,2009,2021,,,,,,,,,,,,,,X,
-demographics,language_hh_limited_english_percent_parcels,Percentage of households with limited English parcels,2016,2021,X,X,X,X,X,X,,X,,X,,X,X,X,X
-demographics,language_hh_limited_english_count_direct,Households with limited English direct,2016,2021,X,X,X,X,X,X,,X,,X,X,X,X,X,X
-demographics,language_hh_limited_english_percent_direct,Percentage of households with limited English direct,2016,2021,X,X,X,X,X,X,,X,,X,X,X,X,X,X
-demographics,language_hh_limited_english_count_parcels,Households with limited English parcels,2016,2021,X,X,X,X,X,X,,X,,X,,,,X,
+demographics,language_hh_limited_english_percent_parcels,Percentage of households with limited English parcels,2016,2021,,,,,,,,X,,X,,X,X,X,X
+demographics,language_hh_limited_english_count_direct,Households with limited English direct,2016,2021,,,,,,,,X,,X,X,X,X,X,X
+demographics,language_hh_limited_english_percent_direct,Percentage of households with limited English direct,2016,2021,,,,,,,,X,,X,X,X,X,X,X
 demographics,perc_male,Male population,2010,2021,,,,,,,,,,X,,,,X,
 demographics,perc_children_raised_by_GPs,Children Raised by Grandparents,2010,2021,,,,,,,,,,X,,,,X,
 demographics,disconnectedYouth,Disconnected youth,2017,2023,,,,,,,,,,X,,,,,
@@ -1079,10 +1079,13 @@ health,urgent_near_10_median,Urgent care availability (drive time),2022,2022,X,X
 health,urgent_2sfca,,2022,2022,X,X,X,X,X,X,,X,,X,,,,X,
 health,urgent_e2sfca,,2022,2022,X,X,X,X,X,X,,X,,X,,,,X,
 health,urgent_3sfca,Urgent care geographic availability,2022,2022,X,X,X,X,X,X,,X,,X,,,,X,
-health,degrees_awarded_undergraduate,Undergraduate Health Degrees Awarded,2016,2019,,,,,,,X,,,X,X,,,,
+health,degrees_awarded_undergraduate,Undergraduate Health Degrees Awarded,2016,2019,,,,,,,,,,X,X,,,,
 health,degrees_awarded_graduate,Graduate Health Degrees Awarded,2016,2019,,,,,,,X,,,X,X,,,,
-health,degrees_awarded_first_professional,First Professinal Health Degrees Awarded,2016,2019,,,,,,,X,,,X,X,,,,
-health,degrees_awarded_two_year,2-year Health Degrees Awarded,2016,2019,,,,,,,X,,,X,X,,,,
+health,degrees_awarded_first_professional,First Professinal Health Degrees Awarded,2016,2019,,,,,,,,,,X,X,,,,
+health,degrees_awarded_two_year,2-year Health Degrees Awarded,2016,2019,,,,,,,,,,X,X,,,,
+health,degrees_awarded_undergraduate,Undergraduate Health Degrees Awarded,2016,2023,,,,,,,X,,,,,,,,
+health,degrees_awarded_first_professional,First Professinal Health Degrees Awarded,2016,2023,,,,,,,X,,,,,,,,
+health,degrees_awarded_two_year,2-year Health Degrees Awarded,2016,2023,,,,,,,X,,,,,,,,
 health,primcare_pop_cnt,,2021,2021,X,X,X,X,X,X,,X,X,X,X,,,X,
 health,primcare_cnt,Primary care availability (count),2021,2021,X,X,X,X,X,X,,X,X,X,X,,,X,
 health,primcare_near_10_mean,,2021,2021,X,X,X,X,X,X,,X,X,X,X,,,X,

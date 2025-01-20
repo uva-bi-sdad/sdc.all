@@ -31,7 +31,7 @@ geographies <- c('tract','county','block group')
 states <- c('VA','MD','DC')
 
 # periods (this table start in 2016)
-years <- 2016:2021
+years <- 2016:2023
 
 # Download the data from ACS for VA and NCR
 # 1. Virginia (all census geographies) . (comments: block groups information are available after 2012)

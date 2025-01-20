@@ -4,7 +4,7 @@ library(sf)
 
 census_api_key(Sys.getenv("CENSUS_API_KEY"))
 
-years <- c(2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022)
+years <- c(2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023)
 geos <- c("tract", "county")
 
 if (exists("acsdata")) rm(acsdata)
@@ -57,6 +57,6 @@ hds <- aggregate(stnd[nchar(stnd$geoid)==5,], "county")
 stnd <- rbindlist(list(stnd, hds[!nchar(hds$geoid)==5,]), use.names = T)
 
 # save standardized file
-write.csv(stnd, file = xzfile("Population Density/data/distribution/va_hdtrct_2015_2022_population_density.csv.xz"), row.names = FALSE)
+write.csv(stnd, file = xzfile("Population Density/data/distribution/va_hdtrct_2015_2023_population_density.csv.xz"), row.names = FALSE)
 
 
