@@ -1,30 +1,30 @@
 [
     {
         "path": "Daycare/data/distribution/vdss.csv.xz",
-        "last_modified_utc": "2024-05-21_19:26:46"
-    },
-    {
-        "path": "Funding/data/distribution/va_ct_2022_2023_funding_adequacy.csv.xz",
-        "last_modified_utc": "2024-05-21_19:26:46"
+        "last_modified_utc": "2025-01-21_03:37:25"
     },
     {
         "path": "Postsecondary/data/distribution/acs.csv.xz",
-        "last_modified_utc": "2024-05-21_19:26:46"
+        "last_modified_utc": "2025-01-21_03:37:26"
     },
     {
         "path": "Postsecondary/data/distribution/nces.csv.xz",
-        "last_modified_utc": "2024-05-21_19:26:46"
+        "last_modified_utc": "2025-01-21_03:37:26"
+    },
+    {
+        "path": "Reading/data/distribution/va_hdctsd_vdoe_2015_2023_3rd_grade_mean_read_score.csv.xz",
+        "last_modified_utc": "2025-01-21_03:37:26"
     },
     {
         "path": "Years of Schooling/data/distribution/ncr_tr_acs5_2017_2021_years_of_schooling.csv.xz",
-        "last_modified_utc": "2024-05-21_19:26:47"
+        "last_modified_utc": "2025-01-21_03:37:26"
     },
     {
         "path": "Years of Schooling/data/distribution/va_hdcttr_acs5_2015_2021_years_of_schooling.csv.xz",
-        "last_modified_utc": "2024-05-21_19:26:47"
+        "last_modified_utc": "2025-01-21_03:37:26"
     },
     {
         "path": "Years of Schooling/data/distribution/va_hdtrct_acs5_2015_2021_years_of_schooling_std.csv.xz",
-        "last_modified_utc": "2024-05-21_19:26:47"
+        "last_modified_utc": "2025-01-21_03:37:26"
     }
 ]

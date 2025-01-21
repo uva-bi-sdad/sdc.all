@@ -12,50 +12,118 @@ library(RPostgreSQL)
 library(fuzzyjoin)
 library(reshape2)
 library(sf)
+library(data.table)
 ```
 
 #Reading files and merging the three dfs (2015-2021)
 ```{r}
 
-df1 <- read_excel("../../data/working/2020-2021-school-test-by-test.xlsx")
-df2 <- read_excel("../../data/working/2017-2018-school-test-by-test.xlsx")
-df3 <- read_excel("../../data/working/school-by-test-2022.xlsx")
+dt0 <- setDT(read_excel("../../data/working/2017-2018-division-test-by-test.xlsx", skip = 1))
+dt1 <- setDT(read_excel("../../data/working/division-by-test-2019.xlsx", sheet = 2))
+dt2 <- setDT(read_excel("../../data/working/division-by-test-2022.xlsx"))
+dt3 <- setDT(read_excel("../../data/working/Division_Test_by_level_2023_2024.xlsx"))
 
-df1 <- subset(df1, Subject == "English: Reading" & Grade == "Gr 3")
-df2 <- subset(df2, Subject == "English: Reading" & Grade == "Gr 3")
-df3 <- subset(df3, Subject == "English: Reading" & Grade == "Gr 3")
 
-df1 <- df1 %>% select(-"Sch Type",-"Low Grade", -"High Grade", -"Subject", -"Grade", -"Test")
-df2 <- df2 %>% select(-"Sch Type",-"Low Grade", -"High Grade", -"Subject", -"Grade", -"Test")
-df3 <- df3 %>% select(-"Sch Type",-"Low Grade", -"High Grade", -"Subject", -"Grade", -"Test")
 
-df3 <- df3 %>% select(-"2019-2020 Pass Rate",-"2020-2021 Pass Rate", -"2019-2020 Adv Pass Rate", -"2020-2021 Adv Pass Rate")
+to_melt <- function(dt) {
+  melt(
+    dt[Grade == "Gr 3" & Test == "English Reading", 
+    -c("LEVEL", "Div Num", "Subject"), with = F],
+    id.vars = c("Div Name", "Grade", "Test"), 
+    variable.name = "measure", 
+    value.name = "value"
+  )[!measure %like% "* Adv",]
+}
 
-reading_score <- merge(merge(df1, df2, by = c("LEVEL", "Div Num", "Div Name", "Sch Num", "Sch Name"), all=TRUE),
-                   df3, by = c("LEVEL", "Div Num", "Div Name", "Sch Num", "Sch Name"), all=TRUE)
+dt <- rbindlist(list(
+  to_melt(dt0),
+  to_melt(dt1),
+  to_melt(dt2),
+  to_melt(dt3)
+))
 
+dt <- unique(dt[, value := as.numeric(value)][!is.na(value)])
+
+# add ", Virginia" to Div Name
+dt[, `Div Name` := paste0(`Div Name`, ", Virginia")]
+
+# create year column
+dt[, year := substr(measure, 1, 4)]
+
+# set measure name
+dt[, measure := "median_read_pass_rate"]
+
+# get geographies with geoids
+geos <- fread("https://raw.githubusercontent.com/uva-bi-sdad/sdc.metadata/refs/heads/master/geographies.csv")
+
+# merge by name and correct year for census geography (either 2010 or 2020)
+mrg2010 <- merge(dt[year < 2020], geos[year == 2010], by.x = "Div Name", by.y = "region_name")
+mrg2020 <- merge(dt[year >= 2020], geos[year == 2020], by.x = "Div Name", by.y = "region_name")
+mrg <- rbindlist(list(mrg2010, mrg2020))
+
+mrg_select <-  mrg[, .(geoid, year = year.x, measure, value, moe = "")]
+
+# get Virginia Health Districts
+hd <- fread("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/refs/heads/main/VA/State%20Geographies/Health%20Districts/2020/data/distribution/va_ct_to_hd_crosswalk.csv")[, ct_geoid := as.character(ct_geoid)]
+
+# match counties with health districts
+cthd <- merge(mrg_select, hd, by.x = "geoid", by.y = "ct_geoid")
+
+
+# for (y in min(mrg_select$year):max(mrg_select$year)) {
+#   p <- fread(paste0("https://api.census.gov/data/", y,"/acs/acs5?get=NAME,B01001_001E&for=county:*&in=state:51"))
+#   j <- jsonlite::read_json("https://api.census.gov/data/", y,"/acs/acs5?get=NAME,B01001_001E&for=county:*&in=state:51")
+# }
+
+# get county populations for health district weighted medians
+# if(exists("p_tots")) rm(p_tots)
+# for (y in min(mrg_select$year):max(mrg_select$year)) {
+#   p <- tidycensus::get_acs(
+#   geography = "county",
+#   variables = "B01001_001E",
+#   year = y,
+#   state = "VA"
+#   )
+#   p$year <- as.character(y)
+#   # assign(paste0("pt_", y), value = p)
+#   print(exists("p_tots"))
+#   if(!exists("p_tots")) {
+#     p_tots = p
+#   } else {
+#     p_tots = rbindlist(list(p_tots, p))
+#   }
+# }
+
+# merge
+# mrg_pop <- merge(cthd, p_tots, by.x = c("geoid", "year"), by.y = c("GEOID", "year"), all.x = TRUE)
+# mrg_pop[, val_pop := value * estimate]
+
+hd_avg <- cthd[, round(mean(value), 0), c("hd_name", "hd_geoid", "year")]
+hd_avg <- hd_avg[, .(geoid = hd_geoid, year, measure = "median_read_pass_rate", value = V1, moe = ""),]
+
+fin <- rbindlist(list(mrg_select, hd_avg))
 ```
 
 #Rearranging the df (renaming colmuns, stacking the years, and dropping NA)
 ```{r}
 
-reading_score1 <- reading_score %>% select(-"LEVEL",-"Div Num", -"Sch Num", -"2015-2016 Adv Pass Rate", -"2016-2017 Adv Pass Rate",-"2017-2018 Adv Pass Rate",-"2018-2019 Adv Pass Rate",-"2019-2020 Adv Pass Rate",-"2020-2021 Adv Pass Rate",-"2021-2022 Adv Pass Rate",)
-
-names(reading_score1)[names(reading_score1) == "2015-2016 Pass Rate"] <- "2015"
-names(reading_score1)[names(reading_score1) == "2016-2017 Pass Rate"] <- "2016"
-names(reading_score1)[names(reading_score1) == "2017-2018 Pass Rate"] <- "2017"
-names(reading_score1)[names(reading_score1) == "2018-2019 Pass Rate"] <- "2018"
-names(reading_score1)[names(reading_score1) == "2019-2020 Pass Rate"] <- "2019"
-names(reading_score1)[names(reading_score1) == "2020-2021 Pass Rate"] <- "2020"
-names(reading_score1)[names(reading_score1) == "2021-2022 Pass Rate"] <- "2021"
-
-reading_score1 <- reading_score1 %>%
-  pivot_longer(cols = c(`2015`, `2016`,`2017`, `2018`,`2019`, `2020`, `2021`), names_to = "year", values_to = "value")
-
-reading_score1 <- reading_score1 %>% filter(!is.na(value)) %>% filter(!str_detect(value, fixed('<')))
-
-reading_score1$value <- as.numeric(reading_score1$value)
-reading_score1$year <- as.numeric(reading_score1$year)
+# reading_score1 <- reading_score %>% select(-"LEVEL",-"Div Num", -"Sch Num", -"2015-2016 Adv Pass Rate", -"2016-2017 Adv Pass Rate",-"2017-2018 Adv Pass Rate",-"2018-2019 Adv Pass Rate",-"2019-2020 Adv Pass Rate",-"2020-2021 Adv Pass Rate",-"2021-2022 Adv Pass Rate",)
+# 
+# names(reading_score1)[names(reading_score1) == "2015-2016 Pass Rate"] <- "2015"
+# names(reading_score1)[names(reading_score1) == "2016-2017 Pass Rate"] <- "2016"
+# names(reading_score1)[names(reading_score1) == "2017-2018 Pass Rate"] <- "2017"
+# names(reading_score1)[names(reading_score1) == "2018-2019 Pass Rate"] <- "2018"
+# names(reading_score1)[names(reading_score1) == "2019-2020 Pass Rate"] <- "2019"
+# names(reading_score1)[names(reading_score1) == "2020-2021 Pass Rate"] <- "2020"
+# names(reading_score1)[names(reading_score1) == "2021-2022 Pass Rate"] <- "2021"
+# 
+# reading_score1 <- reading_score1 %>%
+#   pivot_longer(cols = c(`2015`, `2016`,`2017`, `2018`,`2019`, `2020`, `2021`), names_to = "year", values_to = "value")
+# 
+# reading_score1 <- reading_score1 %>% filter(!is.na(value)) %>% filter(!str_detect(value, fixed('<')))
+# 
+# reading_score1$value <- as.numeric(reading_score1$value)
+# reading_score1$year <- as.numeric(reading_score1$year)
 
 
 
@@ -66,55 +134,55 @@ reading_score1$year <- as.numeric(reading_score1$year)
 
 #Estimating median values, and matching county names to getting geoids
 ```{r}
-
-names(reading_score1)[names(reading_score1) == "Div Name"] <- "region_name"
-
-
-reading_score2 <- reading_score1 %>%
-  group_by(year, region_name) %>%
-  summarize(median_value = median(value, na.rm = TRUE))
-
-reading_score2 <- reading_score2 %>%
-  mutate(region_name = str_replace_all(region_name, "Williamsburg-James City County", "Williamsburg City")) %>%
-  mutate(region_name = str_replace_all(region_name, "King and Queen County", "King And Queen County")) %>%
-  mutate(region_name = str_replace_all(region_name, "Isle of Wight County", "Isle Of Wight County"))
-  
-
-
-us_geo_census_cb_2020_counties <- sf::st_read("../../../../sdc.geographies_dev/VA/Census Geographies/County/2020/data/original/us_geo_census_cb_2020_counties.geojson")
-va_geo_census_cb_2020_counties <- us_geo_census_cb_2020_counties[substr(us_geo_census_cb_2020_counties$geoid, 1, 2) == "51",]
-va_geo_census_cb_2020_counties <- va_geo_census_cb_2020_counties %>%
-   select(region_name, geoid) %>%
-   mutate(region_name = str_replace_all(region_name, ", Virginia", ""))
-
-
-
-years <- 2015:2021
-
-geoid <- data.frame()
-for(i in years) {
-  temp_df <- va_geo_census_cb_2020_counties
-  temp_df$year <- i
-  geoid <- rbind(geoid, temp_df)
-}
-
-
-median_read_pass_rate = merge(geoid, reading_score2, by = c("region_name", 'year'), all=TRUE)
-
-median_read_pass_rate <- median_read_pass_rate %>% filter(!is.na(geoid))
+# 
+# names(reading_score1)[names(reading_score1) == "Div Name"] <- "region_name"
+# 
+# 
+# reading_score2 <- reading_score1 %>%
+#   group_by(year, region_name) %>%
+#   summarize(median_value = median(value, na.rm = TRUE))
+# 
+# reading_score2 <- reading_score2 %>%
+#   mutate(region_name = str_replace_all(region_name, "Williamsburg-James City County", "Williamsburg City")) %>%
+#   mutate(region_name = str_replace_all(region_name, "King and Queen County", "King And Queen County")) %>%
+#   mutate(region_name = str_replace_all(region_name, "Isle of Wight County", "Isle Of Wight County"))
+#   
+# 
+# 
+# us_geo_census_cb_2020_counties <- sf::st_read("../../../../sdc.geographies_dev/VA/Census Geographies/County/2020/data/original/us_geo_census_cb_2020_counties.geojson")
+# va_geo_census_cb_2020_counties <- us_geo_census_cb_2020_counties[substr(us_geo_census_cb_2020_counties$geoid, 1, 2) == "51",]
+# va_geo_census_cb_2020_counties <- va_geo_census_cb_2020_counties %>%
+#    select(region_name, geoid) %>%
+#    mutate(region_name = str_replace_all(region_name, ", Virginia", ""))
+# 
+# 
+# 
+# years <- 2015:2021
+# 
+# geoid <- data.frame()
+# for(i in years) {
+#   temp_df <- va_geo_census_cb_2020_counties
+#   temp_df$year <- i
+#   geoid <- rbind(geoid, temp_df)
+# }
+# 
+# 
+# median_read_pass_rate = merge(geoid, reading_score2, by = c("region_name", 'year'), all=TRUE)
+# 
+# median_read_pass_rate <- median_read_pass_rate %>% filter(!is.na(geoid))
 
 ```
 #Formating and writing csv
 ```{r}
-median_read_pass_rate$measure_type <- 'percent'
-median_read_pass_rate$measure <- 'median_read_pass_rate'
-median_read_pass_rate$region_type <- 'county'
-median_read_pass_rate <- st_set_geometry(median_read_pass_rate, NULL)
-median_read_pass_rate <- median_read_pass_rate %>% rename(value = median_value)
+# median_read_pass_rate$measure_type <- 'percent'
+# median_read_pass_rate$measure <- 'median_read_pass_rate'
+# median_read_pass_rate$region_type <- 'county'
+# median_read_pass_rate <- st_set_geometry(median_read_pass_rate, NULL)
+# median_read_pass_rate <- median_read_pass_rate %>% rename(value = median_value)
 
 
-readr::write_csv(median_read_pass_rate,
-                 xzfile("../../data/distribution/va_hdctsd_vdoe_2015_2021_3rd_grade_mean_read_score.csv.xz", compression = 9))
+readr::write_csv(fin,
+                 xzfile(paste0("../../data/distribution/va_hdctsd_vdoe_", min(fin$year), "_", max(fin$year), "_3rd_grade_mean_read_score.csv.xz"), compression = 9))
 
 
 

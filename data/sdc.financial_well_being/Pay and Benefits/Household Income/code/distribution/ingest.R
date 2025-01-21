@@ -2,7 +2,7 @@ library(tidycensus)
 
 # get individual files
 for (g in c("county", "tract", "block group")) {
-  for (y in 2015:2021) {
+  for (y in 2015:2023) {
     dt <- get_acs(geography = g,
                   year = y,
                   variables = c(median_household_income = "B19013_001"),
@@ -23,7 +23,7 @@ for (g in c("county", "tract", "block group")) {
 # combine
 file_paths <-
   list.files(
-    "Pay and Benefits/Household Income/data/original/individual",
+    "Pay and Benefits/Household Income/data/original",
     pattern = "dmv_*",
     full.names = TRUE
   )
@@ -40,4 +40,6 @@ for (f in file_paths) {
 }
 
 # write
-readr::write_csv(dta, xzfile("Pay and Benefits/Household Income/data/original/dmv_cttrbg_2015_2021_median_household_income.csv.xz", compression = 9))
+readr::write_csv(dta, xzfile(paste0("Pay and Benefits/Household Income/data/original/dmv_cttrbg_", min(dta$year), "_", max(dta$year), "_median_household_income.csv.xz"), compression = 9))
+
+unlink(file_paths)

@@ -13,7 +13,7 @@ census_api_key(Sys.getenv("CENSUS_API_KEY"))
 # geographies and years to pull from ACS
 
 geographies <- c("county", "tract")  
-years <- c(2014:2021)  
+years <- c(2014:2023)  
 
 #
 # DATA PULL ------------------------------------ 
@@ -148,7 +148,7 @@ ncr_dat <- dat_long %>%
 
 # save
 
-write_csv(ncr_dat, xzfile("Cost-burdened HHs/data/working/ncr_cttr_acs_2014_2021_cost_burdened_hhs.csv.xz", compression = 9))
+write_csv(ncr_dat, xzfile(paste0("Cost-burdened HHs/data/working/ncr_cttr_acs_", min(years), "_", max(years), "_cost_burdened_hhs.csv.xz"), compression = 9))
 
 
 #
@@ -162,4 +162,4 @@ va_dat <- dat_long %>%
 
 # save
 
-write_csv(va_dat, xzfile("Cost-burdened HHs/data/working/va_hdcttr_acs_2014_2021_cost_burdened_hhs.csv.xz", compression = 9))
+write_csv(va_dat, xzfile(paste0("Cost-burdened HHs/data/working/va_hdcttr_acs_", min(years), "_", max(years), "_cost_burdened_hhs.csv.xz"), compression = 9))

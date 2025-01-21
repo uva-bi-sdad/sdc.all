@@ -16,10 +16,10 @@ library(jsonlite)
 # prop_inc <- read_csv("./data/earnings/original/prop_inc.csv.xz")
 
 #load data
-tot_emp <- read_csv("~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/original/tot_emp.csv.xz")
-wage_sup <- read_csv("~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/original/wage_sup.csv.xz")
-wage_sal <- read_csv("~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/original/wage_sal.csv.xz")
-prop_inc <- read_csv("~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/original/prop_inc.csv.xz")
+tot_emp <- read_csv("Pay and Benefits/Personal Income/data/original/tot_emp.csv.xz")
+wage_sup <- read_csv("Pay and Benefits/Personal Income/data/original/wage_sup.csv.xz")
+wage_sal <- read_csv("Pay and Benefits/Personal Income/data/original/wage_sal.csv.xz")
+prop_inc <- read_csv("Pay and Benefits/Personal Income/data/original/prop_inc.csv.xz")
 
 # init empty df
 earn_job <- tot_emp %>% select(GeoFips, GeoName)
@@ -32,6 +32,8 @@ earn_job['tot_compensation_2018'] <- (wage_sup$`2018`+wage_sal$`2018`+prop_inc$`
 earn_job['tot_compensation_2019'] <- (wage_sup$`2019`+wage_sal$`2019`+prop_inc$`2019`) * 1000
 earn_job['tot_compensation_2020'] <- (wage_sup$`2020`+wage_sal$`2020`+prop_inc$`2020`) * 1000
 earn_job['tot_compensation_2021'] <- (wage_sup$`2021`+wage_sal$`2021`+prop_inc$`2021`) * 1000
+earn_job['tot_compensation_2022'] <- (wage_sup$`2022`+wage_sal$`2022`+prop_inc$`2022`) * 1000
+earn_job['tot_compensation_2023'] <- (wage_sup$`2023`+wage_sal$`2023`+prop_inc$`2023`) * 1000
 
 earn_job['tot_employment_2015'] <- tot_emp$`2015`
 earn_job['tot_employment_2016'] <- tot_emp$`2016`
@@ -40,6 +42,8 @@ earn_job['tot_employment_2018'] <- tot_emp$`2018`
 earn_job['tot_employment_2019'] <- tot_emp$`2019`
 earn_job['tot_employment_2020'] <- tot_emp$`2020`
 earn_job['tot_employment_2021'] <- tot_emp$`2021`
+earn_job['tot_employment_2022'] <- tot_emp$`2022`
+earn_job['tot_employment_2023'] <- tot_emp$`2023`
 
 earn_job['earnings_per_job_2015'] <- (wage_sup$`2015`+wage_sal$`2015`+prop_inc$`2015`)/tot_emp$`2015` * 1000
 earn_job['earnings_per_job_2016'] <- (wage_sup$`2016`+wage_sal$`2016`+prop_inc$`2016`)/tot_emp$`2016` * 1000
@@ -48,6 +52,8 @@ earn_job['earnings_per_job_2018'] <- (wage_sup$`2018`+wage_sal$`2018`+prop_inc$`
 earn_job['earnings_per_job_2019'] <- (wage_sup$`2019`+wage_sal$`2019`+prop_inc$`2019`)/tot_emp$`2019` * 1000
 earn_job['earnings_per_job_2020'] <- (wage_sup$`2020`+wage_sal$`2020`+prop_inc$`2020`)/tot_emp$`2020` * 1000
 earn_job['earnings_per_job_2021'] <- (wage_sup$`2021`+wage_sal$`2021`+prop_inc$`2021`)/tot_emp$`2021` * 1000
+earn_job['earnings_per_job_2022'] <- (wage_sup$`2022`+wage_sal$`2022`+prop_inc$`2022`)/tot_emp$`2022` * 1000
+earn_job['earnings_per_job_2023'] <- (wage_sup$`2023`+wage_sal$`2023`+prop_inc$`2023`)/tot_emp$`2023` * 1000
 
 
 # splitting combined rows to individual rows

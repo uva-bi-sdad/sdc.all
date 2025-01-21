@@ -3,10 +3,13 @@
 library(tidycensus)
 library(sf)
 library(data.table)
+library(readr)
+library(magrittr)
+library(tidyverse)
 
 source('utils/distribution/aggregate.R')
 
-yrs <- c(2015, 2016, 2017, 2018, 2019, 2020, 2021)
+yrs <- c(2015:2023)
 
 # GET TRACTS
 if(exists("va_tract_ginis_all")) rm("va_tract_ginis_all")
@@ -15,7 +18,6 @@ for (y in yrs) {
   va_tract_ginis <- get_acs(geography = "tract",
                             variables = "B19083_001",
                             state = "VA",
-                            # county = c("ARLINGTON", "FAIRFAX COUNTY"),
                             geometry = F,
                             output = "wide",
                             year = y)
@@ -74,15 +76,15 @@ combined <- rbind(va_tract_ginis_all, county_healthdis)
 
 # Write file
 # fwrite(va_cttr_2015_2021_income_inequality_gini_index, "Pay and Benefits/Income Inequality/data/distribution/va_cttr_2015_2021_income_inequality_gini_index.csv")
-readr::write_csv(combined, xzfile("Pay and Benefits/Income Inequality/data/distribution/va_hdcttr_2015_2021_income_inequality_gini_index.csv.xz", compression = 9))
+readr::write_csv(combined, xzfile(paste0("Pay and Benefits/Income Inequality/data/working/va_hdcttr_", min(yrs), "_", max(yrs), "_income_inequality_gini_index.csv.xz"), compression = 9))
 
 # standardize to 2020 geographies
 ## get the tract conversion function
 source("https://github.com/uva-bi-sdad/sdc.geographies/raw/main/utils/distribution/tract_conversions.R")
 ## convert
-rcsv <- read.csv(xzfile("Pay and Benefits/Income Inequality/data/distribution/va_hdcttr_2015_2021_income_inequality_gini_index.csv.xz", open = "r"))
+rcsv <- read.csv(xzfile(paste0("Pay and Benefits/Income Inequality/data/working/va_hdcttr_", min(yrs), "_", max(yrs), "_income_inequality_gini_index.csv.xz"), open = "r"))
 stnd <- standardize_all(rcsv)
 
 # save standardized file
-write.csv(stnd, file = xzfile("Pay and Benefits/Income Inequality/data/distribution/va_hdcttr_2015_2021_income_inequality_gini_index_std.csv.xz"), row.names = FALSE)
+write.csv(stnd, file = xzfile(paste0("Pay and Benefits/Income Inequality/data/distribution/va_hdcttr_", min(yrs), "_", max(yrs), "_income_inequality_gini_index_std.csv.xz")), row.names = FALSE)
 
