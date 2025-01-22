@@ -207,7 +207,7 @@ earnings_per_job <- earn_job_ct_long
 #source("./code/earnings/ingest_earnings.R")
 
 readr::write_csv(earnings_per_job,
-                 xzfile("~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/working/va_ct_bea_2015_2020_earnings_per_job.csv.xz", compression = 9))
+                 xzfile("~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/working/va_ct_bea_2015_2023_earnings_per_job.csv.xz", compression = 9))
 
 #write.csv(earnings_per_job, "~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/distribution/va_ct_bea_2015_2020_earnings_per_job.csv.xz")
 
@@ -281,6 +281,6 @@ row_binded_data <- rbind(earnings_per_job_df, earnings_per_job_hd_year_long_df) 
 
 
 readr::write_csv(row_binded_data,
-                 xzfile("~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/distribution/va_hdct_bea_2015_2021_earnings_per_job.csv.xz", compression = 9))
+                 xzfile("~/git/sdc.financial_well_being_dev/Pay and Benefits/Personal Income/data/distribution/va_hdct_bea_2015_2023_earnings_per_job.csv.xz", compression = 9))
 
 

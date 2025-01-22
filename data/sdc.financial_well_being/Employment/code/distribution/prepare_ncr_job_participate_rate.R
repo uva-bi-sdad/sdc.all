@@ -4,7 +4,7 @@ library(tidycensus)
 library(sf)
 library(data.table)
 
-yrs <- c(2015, 2016, 2017, 2018, 2019, 2020, 2021)
+yrs <- 2015:2023
 ncr_counties <- c("51013" , "51059" , "51600" , "51107" , "51610" , "51683", "51685" , "51153" , "51510" , "24021" , "24031" , "24033" , "24017", "11001")
 
 # GET TRACTS
@@ -41,7 +41,7 @@ for (y in yrs) {
   }
 }
 
-ncr_tract_partic_rt_all <- ncr_tract_partic_rt_all[, c("geoid", "measure", "measure_type", "region_name", "region_type", "value", "year", "moe")]
+ncr_tract_partic_rt_all <- ncr_tract_partic_rt_all[, c("geoid", "year", "measure", "value", "moe")]
 
 # GET COUNTIES
 if(exists("ncr_county_partic_rt_all")) rm("ncr_county_partic_rt_all")
@@ -77,13 +77,12 @@ for (y in yrs) {
   }
 }
 
-ncr_county_partic_rt_all <- ncr_county_partic_rt_all[, c("geoid", "measure", "measure_type", "region_name", "region_type", "value", "year", "moe")]
+ncr_county_partic_rt_all <- ncr_county_partic_rt_all[, c("geoid", "year", "measure", "value", "moe")]
 
 # Combine tract and counties
-ncr_cttr_2015_2021_job_participate_rate <-
+ncr_cttr_job_participate_rate <-
   rbindlist(list(ncr_tract_partic_rt_all, ncr_county_partic_rt_all))
 
 # Write file
-# fwrite(ncr_cttr_2015_2021_job_participate_rate, "Employment/data/distribution/ncr_cttr_2015_2021_job_participate_rate.csv")
-readr::write_csv(ncr_cttr_2015_2021_job_participate_rate, xzfile("Employment/data/distribution/ncr_cttr_2015_2021_job_participate_rate.csv.xz", compression=9))
+readr::write_csv(ncr_cttr_job_participate_rate, xzfile(paste0("Employment/data/distribution/ncr_cttr_", min(yrs), "_", max(yrs), "_job_participate_rate.csv.xz"), compression=9))
 
