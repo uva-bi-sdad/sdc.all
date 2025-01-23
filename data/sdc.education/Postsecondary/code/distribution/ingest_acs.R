@@ -9,7 +9,7 @@ districts <- read.csv(paste0(
 county_districts <- structure(districts$hd_geoid, names = districts$ct_geoid)
 
 states <- c("DC", "MD", "VA")
-years <- 2010:2021
+years <- 2010:2023
 
 # download and aggregate ACS data
 ## for margin or error:

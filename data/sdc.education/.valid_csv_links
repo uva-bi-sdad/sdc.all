@@ -1,26 +1,26 @@
 [
     {
         "path": "Daycare/data/distribution/vdss.csv.xz",
-        "last_modified_utc": "2025-01-21_18:50:22"
+        "last_modified_utc": "2025-01-22_16:47:11"
     },
     {
         "path": "Postsecondary/data/distribution/acs.csv.xz",
-        "last_modified_utc": "2025-01-21_18:50:23"
+        "last_modified_utc": "2025-01-22_16:47:11"
     },
     {
         "path": "Postsecondary/data/distribution/nces.csv.xz",
-        "last_modified_utc": "2025-01-21_18:50:23"
+        "last_modified_utc": "2025-01-22_16:47:11"
     },
     {
         "path": "Reading/data/distribution/va_hdctsd_vdoe_2015_2023_3rd_grade_mean_read_score.csv.xz",
-        "last_modified_utc": "2025-01-21_18:50:23"
+        "last_modified_utc": "2025-01-22_16:47:12"
     },
     {
         "path": "Years of Schooling/data/distribution/ncr_trct_acs5_2015_2023_years_of_schooling_std.csv.xz",
-        "last_modified_utc": "2025-01-21_18:50:23"
+        "last_modified_utc": "2025-01-22_16:47:12"
     },
     {
         "path": "Years of Schooling/data/distribution/va_hdtrct_acs5_2015_2023_years_of_schooling_std.csv.xz",
-        "last_modified_utc": "2025-01-21_18:50:23"
+        "last_modified_utc": "2025-01-22_16:47:12"
     }
 ]
