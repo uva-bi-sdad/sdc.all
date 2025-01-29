@@ -61,7 +61,7 @@ for (y in yrs) {
                                 year = y)
 
     ncr_county_partic_rt$geoid <- ncr_county_partic_rt$GEOID
-    ncr_county_partic_rt$measure <- "job_participate_rate"
+    ncr_county_partic_rt$measure <- "labor_participate_rate_geo20"
     ncr_county_partic_rt$measure_type <- "percent"
     ncr_county_partic_rt$region_name <- ncr_county_partic_rt$NAME
     ncr_county_partic_rt$region_type <- "county"

@@ -1,1 +1,26 @@
-[]
+[
+    {
+        "path": "Incarceration/data/distribution/va_hdcttr_2015_incarceration_rate.csv.xz",
+        "last_modified_utc": "2024-05-23_20:41:26"
+    },
+    {
+        "path": "Incarceration/data/distribution/va_hdcttr_2016_incarceration_rate.csv.xz",
+        "last_modified_utc": "2024-05-23_20:41:26"
+    },
+    {
+        "path": "Incarceration/data/distribution/va_hdcttr_2017_incarceration_rate.csv.xz",
+        "last_modified_utc": "2024-05-23_20:41:26"
+    },
+    {
+        "path": "Incarceration/data/distribution/va_hdcttr_2018_incarceration_rate.csv.xz",
+        "last_modified_utc": "2024-05-23_20:41:26"
+    },
+    {
+        "path": "Incarceration/data/distribution/va_hdcttr_2019_incarceration_rate.csv.xz",
+        "last_modified_utc": "2024-05-23_20:41:26"
+    },
+    {
+        "path": "Incarceration/data/distribution/va_hdcttr_2021_incarceration_rate.csv.xz",
+        "last_modified_utc": "2024-05-23_20:41:26"
+    }
+]

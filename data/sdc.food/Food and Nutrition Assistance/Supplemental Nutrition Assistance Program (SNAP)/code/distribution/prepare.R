@@ -9,7 +9,7 @@ library(readr)
 library(naniar)
 
 # Data frame from running ingest.R: hh_snap_all_yrs
-
+hh_snap_all_yrs <- read.csv("Food and Nutrition Assistance/Supplemental Nutrition Assistance Program (SNAP)/data/working/vamddc_hh_receiving_snap.csv")
 #
 # Missingness check ------------------------------------
 #
@@ -22,7 +22,7 @@ hh_snap_all_yrs[is.na(hh_snap_all_yrs$hh_received_snap_pct), "hh_received_snap_p
 # Aggregate VA county data to VA Health District data
 #
 
-ct_hd_crosswalk <- read_csv("https://raw.githubusercontent.com/uva-bi-sdad/dc.geographies/main/data/va_geo_vhd_2020_health_districts/distribution/va_ct_to_hd_crosswalk.csv", 
+ct_hd_crosswalk <- read_csv("https://raw.githubusercontent.com/uva-bi-sdad/sdc.geographies/refs/heads/main/VA/State%20Geographies/Health%20Districts/2020/data/distribution/va_ct_to_hd_crosswalk.csv", 
                             col_types = "cccc")
 
 # get VA county data
@@ -83,7 +83,7 @@ ncr_hh_snap <- hh_snap_long %>%
 
 # save
 
-write_csv(ncr_hh_snap, xzfile("data/hh_receiving_snap/distribution/ncr_cttrbg_acs_2013_2020_hh_receiving_snap.csv.xz", compression = 9))
+write_csv(ncr_hh_snap, xzfile("Food and Nutrition Assistance/Supplemental Nutrition Assistance Program (SNAP)/data/distribution/ncr_cttrbg_acs_2013_2023_hh_receiving_snap.csv.xz", compression = 9))
 
 
 #
@@ -97,5 +97,5 @@ va_hh_snap <- hh_snap_long %>%
 
 # save
 
-write_csv(va_hh_snap, xzfile("data/hh_receiving_snap/distribution/va_hdcttrbg_acs_2013_2020_hh_receiving_snap.csv.xz", compression = 9))
+write_csv(va_hh_snap, xzfile("Food and Nutrition Assistance/Supplemental Nutrition Assistance Program (SNAP)/data/distribution/va_hdcttrbg_acs_2013_2023_hh_receiving_snap.csv.xz", compression = 9))
 

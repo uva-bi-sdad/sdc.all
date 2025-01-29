@@ -9,7 +9,7 @@ census_api_key(Sys.getenv("CENSUS_API_KEY"))
 # geographies and years to pull from ACS
 
 geographies <- c("county", "tract", "block group")  
-years <- c(2013:2020)  
+years <- c(2013:2023)  
 
 #
 # DATA PULL ------------------------------------ 
@@ -43,6 +43,7 @@ for(year in years)
   }
 }
 
+write.csv(hh_snap_all_yrs, "Food and Nutrition Assistance/Supplemental Nutrition Assistance Program (SNAP)/data/working/vamddc_hh_receiving_snap.csv", row.names = F)
 #
 # ACS has stable API - not saving into data/original
 #
