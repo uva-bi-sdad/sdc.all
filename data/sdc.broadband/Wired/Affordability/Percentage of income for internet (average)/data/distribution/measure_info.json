@@ -10,7 +10,7 @@
         "long_description": "The national average price for internet, which is $64, as a percentage of median household income. Geographies: Block group (12), Census Tract (11), County (5)",
         "long_name": "The national average price for internet as a percentage of average income",
         "measure_type": "percent",
-        "short_description": "The national average price for internet ($64) as a percentage of median household income",
+        "short_description": "The national average price for internet, which is $64, as a percentage of median household income. Geographies: Block group (12), Census Tract (11), County (5)",
         "short_name": "Percentage of income for internet (average)",
         "sources": [
             {

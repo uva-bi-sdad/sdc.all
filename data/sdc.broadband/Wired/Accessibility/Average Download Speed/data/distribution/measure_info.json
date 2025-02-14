@@ -10,7 +10,7 @@
         "long_description": "Average download speed weighted by the number of devices.",
         "long_name": "Average Download Speed",
         "measure_type": "speed",
-        "short_description": "",
+        "short_description": "Average download speed weighted by the number of devices.",
         "short_name": "Average Download Speed",
         "sources": [
             {

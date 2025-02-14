@@ -7,10 +7,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Percentage of households self-reported to have a broadband internet connection. Broadband internet is defined as any type of internet other than a dial-up. Data is based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates. Geographies: County (5), Block group (12), Census Tract (11), Health Districts (51_hd_xx)",
+        "long_description": "Percentage of households self-reported to have a broadband internet connection. Broadband internet is defined as any type of internet other than a dial-up. Data is based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates. Geographies: County (5), Block group (12), Census Tract (11), Health District (51_hd)",
         "long_name": "Percentage of households with broadband",
         "measure_type": "percent",
-        "short_description": "",
+        "short_description": "Percentage of households self-reported to have a broadband internet connection. Broadband internet is defined as any type of internet other than a dial-up. Data is based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates. Geographies: County (5), Block group (12), Census Tract (11), Health District (51_hd)",
         "short_name": "Households with broadband",
         "sources": [
             {
@@ -34,10 +34,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Percentage of households self-reported to have a high-speed internet service. A high-speed internet service is defined as a cable, fiber optic, or DSL internet connection. Data is based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates. Geographies: County (5), Block group (12), Census Tract (11), Health Districts (51_hd_xx)",
+        "long_description": "Percentage of households self-reported to have a high-speed internet service. A high-speed internet service is defined as a cable, fiber optic, or DSL internet connection. Data is based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates. Geographies: County (5), Block group (12), Census Tract (11), Health Districts (51_hd)",
         "long_name": "Percentage of households with a high speed internet service (cable, fiber optic, or DSL)",
         "measure_type": "percent",
-        "short_description": "",
+        "short_description": "Percentage of households self-reported to have a high-speed internet service. A high-speed internet service is defined as a cable, fiber optic, or DSL internet connection. Data is based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates. Geographies: County (5), Block group (12), Census Tract (11), Health Districts (51_hd)",
         "short_name": "Households with cable, fiber optic, or DSL",
         "sources": [
             {
@@ -61,10 +61,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Percentage of households self-reported to not have internet access at home. Data is based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates. Geographies: County (5), Block group (12), Census Tract (11), Health Districts (51_hd_xx)",
+        "long_description": "Percentage of households self-reported to not have internet access at home. Data is based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates. Geographies: County (5), Block group (12), Census Tract (11), Health District (51_hd)",
         "long_name": "Percentage of households without internet access",
         "measure_type": "percent",
-        "short_description": "",
+        "short_description": "Percentage of households self-reported to not have internet access at home. Data is based on American Community Survey Table B28002 in ACS 2015/2019 5-year estimates. Geographies: County (5), Block group (12), Census Tract (11), Health District (51_hd)",
         "short_name": "Households without internet access",
         "sources": [
             {

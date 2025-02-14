@@ -1,0 +1,179 @@
+name: Process Data Repository
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    branches:
+    - main
+
+# Cacnel previous runs if a new push is sent
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+    
+jobs:
+  update_private_repo:
+    if: github.repository == 'uva-bi-sdad/sdc.broadband_dev' && ((github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == 'true') || github.event_name == 'push')
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - name: Check out repository code
+        uses: actions/checkout@master
+      - run: echo "💡 The ${{ github.repository }} repository have been cloned to the runner."
+      - name: Check out auditor repository code
+        uses: actions/checkout@master
+        with:
+          repository: uva-bi-sdad/sdc.editor
+          path: sdc.editor/
+      - run: echo "🌝 The repo is now cloned on the runner"
+      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
+      - name: List files in the repository (Useful for debugging)
+        run: |
+          ls -la ${{ github.workspace }}
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.10.6 #install the python needed
+      - name: Install requirements
+        run: |
+          pip install -r sdc.editor/code/requirements.txt
+      - name: Edit the repository
+        run: |
+          python sdc.editor/code/repo-edit_00_generate_csv_links.py -i .
+          python sdc.editor/code/repo-edit_01_add_measure_info_keys.py -i .
+          python sdc.editor/code/repo-edit_02_delete_measure_info_keys.py -i .
+          python sdc.editor/code/repo-edit_03_order_csv_columns.py -i .
+      - name: Remove editor files
+        run: |
+          rm -rf sdc.editor
+      - name: Commit the results
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add -A
+          git diff-index --quiet HEAD || git commit -m 'Automated edits'
+      - name: Push changes # push the output folder to your repo        
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
+        continue-on-error: true
+  
+  update_public_repo:
+    needs: update_private_repo
+    if: success() || failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@master    
+      - name: List current working directory
+        run: |
+          ls -la  
+      - name: Pull latest git repo
+        run : |
+          git pull
+      - name: Remove all files that do not have a distribution in its path, ignoring all files in root
+        run: |
+          find ${{ github.workspace }} -mindepth 2 -type f ! -wholename "**/distribution/*" -delete
+      - name: Remove github things # Required so that you can push to another directory
+        run: |
+          rm -rf .git
+      - name: Print working directory
+        run: |
+          pwd
+      - name: List current working directory
+        run: |
+          tree .
+      - name: Push directory to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+        with:
+          source-directory: .
+          destination-github-username: 'uva-bi-sdad'
+          destination-repository-name: 'sdc.broadband'
+          target-branch: main
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+
+#   generate-dashboard:
+#     needs: update_private_repo
+#     runs-on: ubuntu-latest
+#     env:
+#       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+#       RENV_PATHS_ROOT: ${{ github.workspace }}/renv    
+#     steps:
+#       - uses: r-lib/actions/setup-r@v2
+#         with:
+#           r-version: 'release'
+        
+#       - name: Check out repository code
+#         uses: actions/checkout@main
+#       - run: echo "💡 The ${{ github.repository }} repository have been cloned to the runner."
+      
+#       - name: Checkout latest submodules
+#         run: |
+#           git pull
+#           git submodule update --init --recursive --remote
+
+#       - name: Make renv directory, if it does not yet exist
+#         run: |
+#           mkdir -p renv
+#       - name: Cache packages
+#         uses: actions/cache@v3
+#         with:
+#           path: ${{ env.RENV_PATHS_ROOT }}
+#           key: ${{ runner.os }}-renv-${{ hashFiles('**/renv.lock') }}
+#           restore-keys: |
+#             ${{ runner.os }}-renv-
+#       - name: Restore packages
+#         shell: Rscript {0}
+#         run: |
+#           if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")
+#           renv::restore()
+#       - name: List current working directory
+#         run: |
+#           tree ${{ github.workspace }}      
+#       - name: change current directory
+#         run: | 
+#           cd ${{ github.workspace }}
+#           pwd
+#       - name: Initialize data repository
+#         run: |
+#           install.packages("remotes")
+#           remotes::install_github("uva-bi-sdad/community")
+#         shell: Rscript {0}       
+
+#       - name: Load Library
+#         run: |
+#           library(community)
+#         shell: Rscript {0}
+        
+#       - name: Snapshot data
+#         run: |
+#           renv::snapshot()
+#         shell: Rscript {0}      
+  
+#       - name: Configure the user
+#         run: |
+#           git config --local user.email "actions@github.com"
+#           git config --local user.name "GitHub Actions"
+    
+#       - name: Commit renv files to the <main> 
+#         run: |
+#           git add -A
+#           git diff-index --quiet HEAD || (git commit -m "update data" && git push)
+          
+#       - name: Build website
+#         run: |
+#           init_repository('.')
+#           source("build.R")
+#         shell: Rscript {0}
+          
+#       - name: Commit files to <dashboard> branch # Commit changes
+#         run: |
+#           git add -A
+#           git diff-index --quiet HEAD || (git commit -m "update data")
+#           git push -f origin main:dashboard

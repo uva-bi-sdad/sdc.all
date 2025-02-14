@@ -7,10 +7,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Average upload speed weighted by the number of devices",
+        "long_description": "Average upload speed weighted by the number of devices.",
         "long_name": "Average Upload Speed",
         "measure_type": "speed",
-        "short_description": "",
+        "short_description": "Average upload speed weighted by the number of devices.",
         "short_name": "Average Upload Speed",
         "sources": [
             {

@@ -7,10 +7,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Percent of the internet-connected population with a good internet speed, which is defined as above 25/3 MB/S and able to stream video or online games for one device. Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd_xx)",
+        "long_description": "Percent of the internet-connected population with a good internet speed, which is defined as above 25/3 MB/S and able to stream video or online games for one device. Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd)",
         "long_name": "Percent of the Internet-Connected Population with Good Internet Speed",
         "measure_type": "percent",
-        "short_description": "",
+        "short_description": "Percent of the internet-connected population with a good internet speed, which is defined as above 25/3 MB/S and able to stream video or online games for one device. Geographies: Block group (12), Census tract (11), County (5), Health Districts (51_hd)",
         "short_name": "Percent Good (internet-connected)",
         "sources": [
             {

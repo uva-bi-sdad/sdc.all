@@ -14,7 +14,7 @@ census_api_key(Sys.getenv("CENSUS_API_KEY"))
 # geographies and years to pull from ACS
 
 geographies <- c("county", "tract", "block group")  
-years <- c(2017:2021)  
+years <- c(2017:2023)  
 
 #
 # DATA PULL ------------------------------------ 
@@ -130,7 +130,7 @@ ncr_hh_int <- hh_int_long %>%
 
 # save
 
-write_csv(ncr_hh_int, xzfile("Wired/Adoption/Internet Type/data/distribution/ncr_cttrbg_acs_2017_2021_hh_internet_type.csv.xz", compression = 9))
+write_csv(ncr_hh_int, xzfile(paste0("Wired/Adoption/Internet Type/data/distribution/ncr_cttrbg_acs_", min(years), "_", max(years), "_hh_internet_type.csv.xz"), compression = 9))
 
 
 #
@@ -144,5 +144,5 @@ va_hh_int <- hh_int_long %>%
 
 # save
 
-write_csv(va_hh_int, xzfile("Wired/Adoption/Internet Type/data/distribution/va_hdcttrbg_acs_2017_2021_hh_internet_type.csv.xz", compression = 9))
+write_csv(va_hh_int, xzfile(paste0("Wired/Adoption/Internet Type/data/distribution/va_hdcttrbg_acs_", min(years), "_", max(years), "_hh_internet_type.csv.xz"), compression = 9))
 

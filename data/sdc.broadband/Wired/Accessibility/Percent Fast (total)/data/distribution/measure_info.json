@@ -7,10 +7,10 @@
         "data_type": "decimal",
         "equity_category": "Availability",
         "layer": "",
-        "long_description": "Percent of the total population with a fast internet speed, which is defined as above 100/20 MB/S and able to stream HD video on multiple devices or download large files quickly. Geographies: Block group (12), Census tract (11), County (5), Health Districts (h1_hd_xx) ",
+        "long_description": "Percent of the total population with a fast internet speed, which is defined as above 100/20 MB/S and able to stream HD video on multiple devices or download large files quickly. Geographies: Block group (12), Census tract (11), County (5), Health District (51_hd)",
         "long_name": "Percent of the Total Population with Fast Internet Speed",
         "measure_type": "percent",
-        "short_description": "",
+        "short_description": "Percent of the total population with a fast internet speed, which is defined as above 100/20 MB/S and able to stream HD video on multiple devices or download large files quickly. Geographies: Block group (12), Census tract (11), County (5), Health District (51_hd)",
         "short_name": "Percent Fast (total)",
         "sources": [
             {
